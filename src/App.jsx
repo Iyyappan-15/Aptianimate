@@ -1,13 +1,18 @@
 // src/App.jsx
 import { useState, useEffect } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import PracticePage from './pages/PracticePage';
 import SavedPage from './pages/SavedPage';
 import ProgressPage from './pages/ProgressPage';
+import SplashScreen from './components/SplashScreen';
 
 function App() {
   const [route, setRoute] = useState(window.location.hash.replace('#/', '') || '');
+  const [showSplash, setShowSplash] = useState(() => {
+    return !sessionStorage.getItem('splash_seen');
+  });
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -20,6 +25,11 @@ function App() {
 
   const navigate = (path) => {
     window.location.hash = `/${path}`;
+  };
+
+  const handleSplashComplete = () => {
+    sessionStorage.setItem('splash_seen', 'true');
+    setShowSplash(false);
   };
 
   // Simple Hash Router
@@ -41,24 +51,38 @@ function App() {
   }
 
   return (
-    <div className="app-shell">
-      <nav className="navbar">
-        <div className="navbar-inner">
-          <div className="nav-brand" onClick={() => navigate('')}>
-            <div className="nav-brand-icon">⚡</div>
-            AptitudeAnimate
-          </div>
-          <div className="nav-links">
-            <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => navigate('')}>Home</button>
-            <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => navigate('saved')}>Saved</button>
-            <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => navigate('progress')}>Progress</button>
-          </div>
-        </div>
-      </nav>
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-        {pageComponent}
-      </main>
-    </div>
+    <>
+      <AnimatePresence mode="wait">
+        {showSplash ? (
+          <SplashScreen key="splash" onComplete={handleSplashComplete} />
+        ) : (
+          <motion.div 
+            key="app"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="app-shell"
+          >
+            <nav className="navbar">
+              <div className="navbar-inner">
+                <div className="nav-brand" onClick={() => navigate('')}>
+                  <div className="nav-brand-icon">⚡</div>
+                  AptitudeAnimate
+                </div>
+                <div className="nav-links">
+                  <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => navigate('')}>Home</button>
+                  <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => navigate('saved')}>Saved</button>
+                  <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => navigate('progress')}>Progress</button>
+                </div>
+              </div>
+            </nav>
+            <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+              {pageComponent}
+            </main>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
 
