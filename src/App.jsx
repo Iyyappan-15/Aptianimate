@@ -1,6 +1,7 @@
 // src/App.jsx
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import PracticePage from './pages/PracticePage';
@@ -82,6 +83,7 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
+      <Analytics />
     </>
   );
 }
