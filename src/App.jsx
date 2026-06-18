@@ -1,5 +1,6 @@
 // src/App.jsx
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import PracticePage from './pages/PracticePage';
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <div className="app-shell">
+      <Analytics />
       <nav className="navbar">
         <div className="navbar-inner">
           <div className="nav-brand" onClick={() => navigate('')}>
