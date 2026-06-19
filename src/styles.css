@@ -70,16 +70,15 @@ img, svg { display: block; }
   height: 60px; display: flex; align-items: center; justify-content: space-between;
 }
 .nav-brand {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 1.2rem; font-weight: 800; color: var(--text);
+  display: flex; align-items: center; gap: 12px;
+  font-size: 1.25rem; font-weight: 800; color: var(--text);
   cursor: pointer;
 }
-.nav-brand-icon {
-  width: 32px; height: 32px;
-  background: linear-gradient(135deg, var(--violet), var(--teal));
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 16px;
+.nav-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px; /* In case the logo has hard edges, slight rounding can look nice if it's solid, but if it's transparent this does no harm */
 }
 .nav-links { display: flex; align-items: center; gap: 8px; }
 .nav-link {

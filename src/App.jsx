@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
+import logoImg from './assets/logo.png';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import PracticePage from './pages/PracticePage';
@@ -67,7 +68,7 @@ function App() {
             <nav className="navbar">
               <div className="navbar-inner">
                 <div className="nav-brand" onClick={() => navigate('')}>
-                  <div className="nav-brand-icon">⚡</div>
+                  <img src={logoImg} alt="AptitudeAnimate Logo" className="nav-logo" />
                   AptitudeAnimate
                 </div>
                 <div className="nav-links">
