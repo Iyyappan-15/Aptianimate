@@ -236,6 +236,8 @@ export const CATEGORIES = [
     accent: '#7F77DD',
     description: 'Series, Divisibility, LCM/HCF, Remainders & more',
     teaching: {
+      topics: [
+        {
           name: 'Number Series & Patterns',
           description: 'Find the rule connecting numbers in a sequence — could be AP, GP, squares, cubes, or prime differences.',
           formulas: [
@@ -1329,7 +1331,7 @@ export const QUESTIONS = [
     ],
     concept_summary: 'Complex coding: identify if each symbol follows different rules based on its type (vowel/consonant, odd/even position).',
     follow_up_questions: [{ question: 'Apply same rule: Code for "AT"?', options: { A: 'EU', B: 'AJ', C: 'EJ', D: 'AU' }, correct_answer: 'D' }]
-  }
+  },
   // ═══════════════════════════════════════════════════════
   // TIME, SPEED & DISTANCE — Additional 10 Questions
   // ═══════════════════════════════════════════════════════
