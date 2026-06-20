@@ -127,18 +127,7 @@ export default function SplashScreen({ onComplete }) {
           transition={{ duration: 1.8, delay: 3.1, ease: 'easeInOut' }}
         />
 
-        {/* ════════════════════════════════════════
-            PLAY TRIANGLE
-        ════════════════════════════════════════ */}
-        <motion.path
-          d="M 176 224 L 200 210 L 200 238 Z"
-          fill="#00DEFF"
-          filter="url(#fA)"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.45, ease: 'backOut' }}
-          style={{ transformOrigin: '188px 224px' }}
-        />
+
 
         {/* ════════════════════════════════════════
             LETTER "A"
@@ -290,18 +279,7 @@ export default function SplashScreen({ onComplete }) {
           transition={{ duration: 0.90, delay: 3.15, ease: 'easeOut' }}
         />
 
-        {/* ════════════════════════════════════════
-            DECORATIVE 4-POINTED STAR  (bottom-right)
-        ════════════════════════════════════════ */}
-        <motion.path
-          d="M 826 397 L 833 412 L 840 397 L 833 382 Z
-             M 818 405 L 833 412 L 848 405 L 833 397 Z"
-          fill="rgba(255,255,255,0.52)"
-          initial={{ opacity: 0, scale: 0.2 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.55, delay: 3.7, ease: 'backOut' }}
-          style={{ transformOrigin: '833px 397px' }}
-        />
+
       </svg>
 
       {/* ════════════════════════════════════════
