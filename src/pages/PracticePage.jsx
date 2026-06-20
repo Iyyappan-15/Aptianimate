@@ -58,10 +58,8 @@ export default function PracticePage({ questionId, navigate }) {
     setSubmitted(true);
     setResult(isCorrect ? 'correct' : 'wrong');
     recordAnswer(question.id, question.category, isCorrect);
-    
-    if (isCorrect) {
-      setShowAnimation(true);
-    }
+    // Always show the visual explanation regardless of right or wrong
+    setShowAnimation(true);
   };
 
   const handleRevealAnswer = () => {
