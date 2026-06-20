@@ -57,18 +57,16 @@ export default function CategoryPage({ categoryId, navigate }) {
 
   return (
     <div className="page cat-page" style={{ animation: 'fadeIn 0.5s ease' }}>
-      <div style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
+      <div style={{ marginBottom: '24px' }}>
         <button 
           onClick={() => navigate('')} 
-          style={{ background: 'none', border: 'none', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', padding: 0, fontWeight: 500, transition: 'color 0.2s' }}
+          style={{ background: 'none', border: 'none', color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: '6px', cursor: 'pointer', padding: 0, fontWeight: 500, transition: 'color 0.2s' }}
           onMouseOver={(e) => e.currentTarget.style.color = 'var(--text)'}
           onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
         >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-          Home
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back
         </button>
-        <span style={{ opacity: 0.5 }}>/</span>
-        <span style={{ color: 'var(--text)', fontWeight: 600 }}>{cat.name}</span>
       </div>
 
       {/* ── Hero ── */}
