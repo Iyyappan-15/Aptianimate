@@ -194,6 +194,7 @@ img, svg { display: block; }
 .pillar-label::after {
   content: ''; flex: 1; height: 1px; background: var(--border);
 }
+[data-theme='dark'] .pillar-label::after { display: none; }
 
 /* ── Question List ── */
 .question-list { display: flex; flex-direction: column; gap: 10px; }
