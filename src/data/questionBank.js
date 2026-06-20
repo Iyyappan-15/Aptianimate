@@ -11,7 +11,57 @@ export const CATEGORIES = [
     accent: '#7F77DD',
     description: 'Trains, boats, relative speed & more',
     teaching: {
-      topics: ['Basic Speed-Distance', 'Relative Speed', 'Trains & Platforms', 'Boats & Streams', 'Average Speed'],
+      topics: [
+        {
+          name: 'Basic Speed-Distance',
+          description: 'The core relationship between Speed, Distance, and Time. Every question in this chapter is a variation of one formula.',
+          formulas: [
+            { title: 'Core Formula', formula: 'Distance = Speed × Time' },
+            { title: 'Find Speed', formula: 'Speed = Distance ÷ Time' },
+            { title: 'Find Time', formula: 'Time = Distance ÷ Speed' },
+          ],
+          example: 'A car covers 240 km in 4 hrs → Speed = 240 ÷ 4 = 60 km/h'
+        },
+        {
+          name: 'Relative Speed',
+          description: 'When two objects move, their effective speed depends on direction. This is used in train-crossing and chase problems.',
+          formulas: [
+            { title: 'Opposite Directions', formula: 'Relative Speed = Speed A + Speed B' },
+            { title: 'Same Direction', formula: 'Relative Speed = |Speed A − Speed B|' },
+          ],
+          example: 'Two trains at 60 & 40 km/h going opposite → relative speed = 100 km/h'
+        },
+        {
+          name: 'Trains & Platforms',
+          description: 'Train problems require you to add the length of the train AND the platform/object to get the total distance covered.',
+          formulas: [
+            { title: 'Train crossing a pole', formula: 'Time = Train Length ÷ Speed' },
+            { title: 'Train crossing a platform', formula: 'Time = (Train Length + Platform Length) ÷ Speed' },
+            { title: 'Unit conversion', formula: 'km/h → m/s: multiply by 5/18' },
+          ],
+          example: '150m train at 54 km/h = 15 m/s crosses a 100m platform in (150+100)/15 = 16.67 s'
+        },
+        {
+          name: 'Boats & Streams',
+          description: 'A boat moving in water is affected by the current. Downstream means current helps, upstream means it resists.',
+          formulas: [
+            { title: 'Downstream Speed', formula: 'D = Boat Speed + Stream Speed' },
+            { title: 'Upstream Speed', formula: 'U = Boat Speed − Stream Speed' },
+            { title: 'Find Boat Speed', formula: 'Boat Speed = (D + U) / 2' },
+            { title: 'Find Stream Speed', formula: 'Stream Speed = (D − U) / 2' },
+          ],
+          example: 'Downstream=10, Upstream=6 → Boat speed=8, Stream=2 km/h'
+        },
+        {
+          name: 'Average Speed',
+          description: 'When the same distance is covered at two different speeds, you CANNOT just take the arithmetic mean. Use the harmonic mean formula.',
+          formulas: [
+            { title: 'Equal Distances', formula: 'Avg Speed = 2ab / (a + b)' },
+            { title: 'Equal Times', formula: 'Avg Speed = (a + b) / 2' },
+          ],
+          example: 'Going at 40, returning at 60 → Avg = 2×40×60/(40+60) = 48 km/h (NOT 50!)'
+        },
+      ],
       formulas: [
         { title: 'Golden Rule', formula: 'Distance = Speed × Time', tip: 'This is the foundation of every question in this chapter.' },
         { title: 'Unit Conversion', formula: 'km/h → m/s : Multiply by 5/18', tip: 'Always convert units before substituting.' },
@@ -29,7 +79,45 @@ export const CATEGORIES = [
     accent: '#1D9E75',
     description: 'Cost price, selling price, discounts',
     teaching: {
-      topics: ['Cost Price vs Selling Price', 'Profit & Loss %', 'Discount & Markup', 'Successive Discounts', 'Dishonest Dealers'],
+      topics: [
+        {
+          name: 'Cost Price vs Selling Price',
+          description: 'CP is what you pay to get the product. SP is what you sell it for. The difference is your profit or loss.',
+          formulas: [
+            { title: 'Profit', formula: 'Profit = SP − CP  (when SP > CP)' },
+            { title: 'Loss', formula: 'Loss = CP − SP  (when CP > SP)' },
+          ],
+          example: 'Buy at ₹80, sell at ₹100 → Profit = ₹20'
+        },
+        {
+          name: 'Profit & Loss %',
+          description: 'Percentages are always calculated on Cost Price. This is the most tested formula in this chapter.',
+          formulas: [
+            { title: 'Profit %', formula: 'Profit% = (SP − CP) / CP × 100' },
+            { title: 'Loss %', formula: 'Loss% = (CP − SP) / CP × 100' },
+            { title: 'Find SP from Profit%', formula: 'SP = CP × (100 + Profit%) / 100' },
+          ],
+          example: 'CP=100, SP=125 → Profit% = 25/100×100 = 25%'
+        },
+        {
+          name: 'Discount & Markup',
+          description: 'Discount is always on the Marked Price (MP), not CP. The chain of calculations goes: CP → MP → SP.',
+          formulas: [
+            { title: 'Discount', formula: 'Discount = MP − SP' },
+            { title: 'SP after Discount', formula: 'SP = MP × (1 − Discount%/100)' },
+          ],
+          example: 'MP=₹500, Discount=20% → SP = 500 × 0.8 = ₹400'
+        },
+        {
+          name: 'Dishonest Dealer Trick',
+          description: 'If a dealer claims to sell at CP but uses a faulty weight, he still makes a profit. Use this shortcut to find it instantly.',
+          formulas: [
+            { title: 'Profit % (false weight)', formula: 'Profit% = (True Weight − False Weight) / False Weight × 100' },
+            { title: 'Articles Shortcut', formula: 'If CP of n₁ = SP of n₂ → Profit% = (n₁−n₂)/n₂ × 100' },
+          ],
+          example: 'CP of 20 = SP of 16 → Profit% = (20−16)/16 × 100 = 25%'
+        },
+      ],
       formulas: [
         { title: 'Profit %', formula: 'Profit% = (SP − CP) / CP × 100', tip: 'Always divide by CP, not SP.' },
         { title: 'Selling Price', formula: 'SP = CP × (1 + Profit%/100)', tip: 'For 25% profit: SP = 1.25 × CP.' },
@@ -47,7 +135,44 @@ export const CATEGORIES = [
     accent: '#EF9F27',
     description: 'SI, CI, and rate calculations',
     teaching: {
-      topics: ['Simple Interest', 'Compound Interest', 'Difference between SI & CI', 'Finding P, R, or T', 'Effective Rate'],
+      topics: [
+        {
+          name: 'Simple Interest',
+          description: 'In SI, interest is calculated on the original principal every year. The amount grows linearly.',
+          formulas: [
+            { title: 'Simple Interest', formula: 'SI = (P × R × T) / 100' },
+            { title: 'Amount', formula: 'A = P + SI' },
+          ],
+          example: 'P=1000, R=10%, T=3 yrs → SI = 1000×10×3/100 = ₹300'
+        },
+        {
+          name: 'Compound Interest',
+          description: 'In CI, interest is added to the principal at each period, so interest earns more interest. Growth is exponential.',
+          formulas: [
+            { title: 'Amount', formula: 'A = P × (1 + R/100)^T' },
+            { title: 'CI', formula: 'CI = A − P' },
+          ],
+          example: 'P=1000, R=10%, T=2 → A = 1000×1.1² = ₹1210, CI=₹210'
+        },
+        {
+          name: 'CI − SI Shortcut',
+          description: 'A very common exam question asks for the difference between CI and SI for the same P, R, T. Use these shortcuts instead of full calculation.',
+          formulas: [
+            { title: '2 Year Shortcut', formula: 'CI − SI = P × (R/100)²' },
+            { title: '3 Year Shortcut', formula: 'CI − SI = P(R/100)²(3 + R/100)' },
+          ],
+          example: 'P=10000, R=10%, T=2 → CI−SI = 10000×(0.1)² = ₹100'
+        },
+        {
+          name: 'Half-Yearly Compounding',
+          description: 'When interest is compounded more frequently, the rate is divided and time is multiplied by the compounding frequency.',
+          formulas: [
+            { title: 'Half-Yearly', formula: 'A = P × (1 + R/200)^(2T)' },
+            { title: 'Quarterly', formula: 'A = P × (1 + R/400)^(4T)' },
+          ],
+          example: 'P=1000, R=10%, T=1 yr half-yearly → A = 1000×(1.05)² = ₹1102.5'
+        },
+      ],
       formulas: [
         { title: 'Simple Interest', formula: 'SI = (P × R × T) / 100', tip: 'Interest is the same every year.' },
         { title: 'Compound Interest', formula: 'A = P × (1 + R/100)^T', tip: 'Interest is added to principal each year, causing growth.' },
@@ -65,7 +190,35 @@ export const CATEGORIES = [
     accent: '#D85A30',
     description: 'Mean, weighted avg, alligation',
     teaching: {
-      topics: ['Arithmetic Mean', 'Weighted Average', 'Ratios & Proportions', 'Alligation Rule', 'Mixing Two Solutions'],
+      topics: [
+        {
+          name: 'Arithmetic Mean',
+          description: 'Average is the sum of all values divided by the count. The key trick: if one value changes, find the total change in sum.',
+          formulas: [
+            { title: 'Average', formula: 'Avg = Sum / Count' },
+            { title: 'Sum from Avg', formula: 'Sum = Avg × Count' },
+          ],
+          example: 'Average of 5 numbers is 20 → Sum = 100. If one number removed and avg becomes 18 → new sum=72, removed = 100−72=28'
+        },
+        {
+          name: 'Ratios & Proportions',
+          description: 'Ratios compare two quantities. To find actual values from a ratio, divide the total by the sum of ratio parts.',
+          formulas: [
+            { title: 'Ratio to Value', formula: 'If a:b, then a = Total × a/(a+b)' },
+            { title: 'Proportion', formula: 'a/b = c/d  →  a×d = b×c' },
+          ],
+          example: 'a:b = 3:5, total=160 → a = 160×3/8 = 60, b = 100'
+        },
+        {
+          name: 'Alligation Rule',
+          description: 'Alligation finds the mixing ratio of two items at different prices/concentrations to get a target mean value.',
+          formulas: [
+            { title: 'Alligation Cross', formula: '(Cheaper)   (Dearer)\n    \\       /\n      (Mean)\n    /       \\\n(Mean−Ch) (De−Mean)' },
+            { title: 'Mixing Ratio', formula: 'Cheaper : Dearer = (Dearer − Mean) : (Mean − Cheaper)' },
+          ],
+          example: 'Mix milk at ₹20 and ₹30 to get ₹24 → ratio = (30−24):(24−20) = 6:4 = 3:2'
+        },
+      ],
       formulas: [
         { title: 'Average', formula: 'Average = Sum of Items / Number of Items', tip: 'If average changes when a member joins/leaves, find the new sum.' },
         { title: 'Weighted Average', formula: 'WAvg = (w₁×v₁ + w₂×v₂) / (w₁+w₂)', tip: 'Used when two groups merge.' },
@@ -83,7 +236,65 @@ export const CATEGORIES = [
     accent: '#7F77DD',
     description: 'Series, Divisibility, LCM/HCF, Remainders & more',
     teaching: {
-      topics: ['Number Series & Patterns', 'Divisibility Rules', 'Prime Factorization & Factors', 'LCM & HCF', 'Unit Digits & Remainders', 'Trailing Zeros', 'Simplification'],
+      topics: [
+        {
+          name: 'Number Series & Patterns',
+          description: 'Find the rule connecting numbers in a sequence — could be AP, GP, squares, cubes, or prime differences.',
+          formulas: [
+            { title: 'AP', formula: 'a, a+d, a+2d, ... → nth term = a + (n−1)d' },
+            { title: 'GP', formula: 'a, ar, ar², ... → nth term = a × r^(n−1)' },
+          ],
+          example: '3, 7, 11, 15, ? → AP with d=4 → Answer = 19'
+        },
+        {
+          name: 'Divisibility Rules',
+          description: 'Quick checks to test if a number is divisible by small primes without actually dividing.',
+          formulas: [
+            { title: 'By 2', formula: 'Last digit is even (0,2,4,6,8)' },
+            { title: 'By 3', formula: 'Sum of digits divisible by 3' },
+            { title: 'By 4', formula: 'Last 2 digits divisible by 4' },
+            { title: 'By 9', formula: 'Sum of digits divisible by 9' },
+            { title: 'By 11', formula: '(Sum of odd-pos digits) − (Sum of even-pos) = 0 or ±11' },
+          ],
+          example: '1234: 1+2+3+4=10, not div by 3. Last 2 digits=34, 34÷4=8.5, not div by 4.'
+        },
+        {
+          name: 'LCM & HCF',
+          description: 'HCF (GCD) is the largest factor common to both numbers. LCM is the smallest multiple common to both.',
+          formulas: [
+            { title: 'Product Rule', formula: 'LCM(a,b) × HCF(a,b) = a × b' },
+            { title: 'LCM shortcut', formula: 'Assume total work = LCM of days' },
+          ],
+          example: 'HCF(12,18)=6, LCM = 12×18/6 = 36'
+        },
+        {
+          name: 'Unit Digits & Remainders',
+          description: 'To find the unit digit of x^n, use the cyclicity pattern. Digits 2,3,7,8 repeat every 4 steps.',
+          formulas: [
+            { title: 'Cyclicity Rule', formula: 'Unit digit of x^n: divide n by 4, use remainder position' },
+            { title: 'Cyclicity of 7', formula: '7¹=7, 7²=9, 7³=3, 7⁴=1 (cycle of 4)' },
+            { title: 'Add to Divisor', formula: 'Least to add for divisibility = Divisor − Remainder' },
+          ],
+          example: '7^105: 105 mod 4 = 1, so unit digit = 7^1 = 7'
+        },
+        {
+          name: 'Trailing Zeros',
+          description: 'Trailing zeros in n! come from pairs of 2×5. Since 2s are plentiful, just count the 5s.',
+          formulas: [
+            { title: 'Formula', formula: 'Zeros = ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + ...' },
+          ],
+          example: '100!: ⌊100/5⌋+⌊100/25⌋ = 20+4 = 24 trailing zeros'
+        },
+        {
+          name: 'Simplification',
+          description: 'Use BODMAS order and approximation techniques to quickly evaluate complex expressions without full calculation.',
+          formulas: [
+            { title: 'BODMAS', formula: 'Brackets → Of → Division → Multiplication → Addition → Subtraction' },
+            { title: 'Approximation', formula: 'Round numbers to nearest convenient value, then adjust' },
+          ],
+          example: '√4096 = 64 (memorize perfect squares up to 30)'
+        },
+      ],
       formulas: [
         { title: 'Unit Digit (Cyclicity)', formula: 'Power of any digit repeats every 4 steps. Divide exponent by 4, use remainder.', tip: '7¹=7, 7²=9, 7³=3, 7⁴=1 — then it repeats. 7¹⁰⁵ → 105÷4=rem1 → unit digit=7.' },
         { title: 'LCM × HCF Product', formula: 'LCM(a,b) × HCF(a,b) = a × b', tip: 'Use this to find LCM if HCF is given, or vice versa.' },
