@@ -15,6 +15,14 @@ function App() {
   const [showSplash, setShowSplash] = useState(() => {
     return !sessionStorage.getItem('splash_seen');
   });
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -32,6 +40,10 @@ function App() {
   const handleSplashComplete = () => {
     sessionStorage.setItem('splash_seen', 'true');
     setShowSplash(false);
+  };
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
   // Simple Hash Router
@@ -75,6 +87,12 @@ function App() {
                   <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => navigate('')}>Home</button>
                   <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => navigate('saved')}>Saved</button>
                   <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => navigate('progress')}>Progress</button>
+                  <button 
+                    onClick={toggleTheme} 
+                    style={{ background: 'transparent', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '12px' }}
+                  >
+                    {theme === 'light' ? '🌙' : '☀️'}
+                  </button>
                 </div>
               </div>
             </nav>
