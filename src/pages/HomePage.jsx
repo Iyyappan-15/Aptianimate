@@ -34,7 +34,7 @@ export default function HomePage({ navigate }) {
       </div>
 
       <div className="goal-selector">
-        {['Campus Placement', 'Competitive Exams', 'General Practice'].map(g => (
+        {['Campus Placements', 'Government Exams', 'Interview Aptitude', 'Topic-wise Practice', 'Most Asked Topics', 'Mock Tests'].map(g => (
           <button
             key={g}
             className={`goal-btn ${goal === g ? 'selected' : ''}`}
