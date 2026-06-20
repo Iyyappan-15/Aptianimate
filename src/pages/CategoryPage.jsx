@@ -195,16 +195,15 @@ export default function CategoryPage({ categoryId, navigate }) {
 }
 
 // ── Beautiful Formula Component ────────────────────────────────────────────────
-function BeautifulFormula({ text }) {
-  // If the formula contains an '=', we split it to highlight the Left Hand Side
-  const parts = text.split('=');
+// Splits on the FIRST = only, so "a = b = c" renders as "a" = "b = c"
+function BeautifulFormula({ text, accent }) {
+  const eqIdx = text.indexOf('=');
   
-  if (parts.length === 2) {
-    const lhs = parts[0].trim();
-    const rhs = parts[1].trim();
-    
+  if (eqIdx !== -1) {
+    const lhs = text.slice(0, eqIdx).trim();
+    const rhs = text.slice(eqIdx + 1).trim();
     return (
-      <div className="beautiful-formula">
+      <div className="beautiful-formula" style={{ '--accent': accent }}>
         <span className="formula-lhs">{lhs}</span>
         <span className="formula-equals">=</span>
         <span className="formula-rhs">{rhs}</span>
@@ -212,13 +211,18 @@ function BeautifulFormula({ text }) {
     );
   }
 
-  return <div className="beautiful-formula">{text}</div>;
+  // No equals sign — render as a single styled chip
+  return (
+    <div className="beautiful-formula" style={{ '--accent': accent }}>
+      <span className="formula-single">{text}</span>
+    </div>
+  );
 }
 
 // ── Topic Detail Panel ──────────────────────────────────────────────────────────
 function TopicDetailPanel({ topic, accent, topicIndex, onGoToQuestions }) {
   return (
-    <div className="topic-detail-panel" style={{ '--accent': accent }} key={topicIndex}>
+    <div className="topic-detail-panel" style={{ '--accent': accent }}>
       {/* Header */}
       <div className="tdp-header">
         <div className="tdp-num" style={{ background: accent }}>{topicIndex + 1}</div>
@@ -231,13 +235,17 @@ function TopicDetailPanel({ topic, accent, topicIndex, onGoToQuestions }) {
       {/* Formulas grid */}
       {topic.formulas?.length > 0 && (
         <div className="tdp-section">
-          <div className="tdp-section-label">📐 Formulas & Rules</div>
+          <div className="tdp-section-label">📐 Formulas &amp; Rules</div>
           <div className="tdp-formulas">
             {topic.formulas.map((f, i) => (
-              <div key={i} className="tdp-formula-card">
+              <div
+                key={i}
+                className="tdp-formula-card"
+                style={{ '--accent': accent }}
+              >
                 <div className="tdp-formula-title">{f.title}</div>
                 <div className="tdp-formula-body">
-                  <BeautifulFormula text={f.formula} />
+                  <BeautifulFormula text={f.formula} accent={accent} />
                 </div>
               </div>
             ))}
@@ -248,17 +256,27 @@ function TopicDetailPanel({ topic, accent, topicIndex, onGoToQuestions }) {
       {/* Worked Example */}
       {topic.example && (
         <div className="tdp-example">
-          <span className="tdp-example-label">💡 Worked Example</span>
-          <span className="tdp-example-text">{topic.example}</span>
+          <div className="tdp-example-inner">
+            <div className="tdp-example-icon">💡</div>
+            <div className="tdp-example-content">
+              <div className="tdp-example-label">Worked Example</div>
+              <div className="tdp-example-text">{topic.example}</div>
+            </div>
+          </div>
         </div>
       )}
 
       {/* Go to Questions CTA */}
       <div className="tdp-cta-row">
-        <button className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} onClick={onGoToQuestions}>
-          <span style={{ fontSize: '1.2em' }}>📚</span> Go to Practice Questions ↓
+        <button
+          className="btn btn-primary"
+          style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+          onClick={onGoToQuestions}
+        >
+          <span>📚</span> Go to Practice Questions ↓
         </button>
       </div>
     </div>
   );
 }
+
