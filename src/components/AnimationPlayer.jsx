@@ -97,29 +97,41 @@ export default function AnimationPlayer({ animationScript, conceptSummary, onCom
         <div className="anim-progress-fill" style={{ width: `${progress}%` }} />
       </div>
 
-      {/* Animation stage */}
-      <div className="anim-stage">
-        <StepRenderer step={step} isActive={true} key={`${currentStep}-${step?.visual_type}`} />
-      </div>
-
-      {/* Step info */}
-      {step && (
-        <div className="step-info">
-          <div className="step-info-title">
-            <StepBadge num={currentStep + 1} /> {step.step_title}
-          </div>
-          <div className="step-info-text">{step.explanation}</div>
-          {step.analogy && (
-            <div style={{
-              marginTop: 8, padding: '8px 12px',
-              background: 'rgba(239,159,39,0.07)', borderRadius: 'var(--radius-sm)',
-              fontSize: '0.8rem', color: 'var(--amber)'
+      {/* Visual Build-up Stage */}
+      <div className="anim-steps-container" style={{ display: 'flex', flexDirection: 'column', gap: '32px', padding: '0 16px 24px' }}>
+        {steps.slice(0, currentStep + 1).map((s, idx) => {
+          const isLatest = idx === currentStep;
+          return (
+            <div key={`${idx}-${s.visual_type}`} style={{
+              animation: 'fadeIn 0.6s ease',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '16px',
+              opacity: isLatest ? 1 : 0.85,
+              transition: 'opacity 0.4s ease'
             }}>
-              💡 {step.analogy}
+              <div className="anim-stage" style={{ minHeight: 'unset', padding: '24px 16px', margin: 0 }}>
+                <StepRenderer step={s} isActive={true} />
+              </div>
+              <div className="step-info" style={{ marginTop: 0, margin: 0 }}>
+                <div className="step-info-title">
+                  <StepBadge num={idx + 1} /> {s.step_title || `Step ${idx + 1}`}
+                </div>
+                <div className="step-info-text">{s.explanation}</div>
+                {s.analogy && (
+                  <div style={{
+                    marginTop: 8, padding: '8px 12px',
+                    background: 'rgba(239,159,39,0.07)', borderRadius: 'var(--radius-sm)',
+                    fontSize: '0.8rem', color: 'var(--amber)'
+                  }}>
+                    💡 {s.analogy}
+                  </div>
+                )}
+              </div>
             </div>
-          )}
-        </div>
-      )}
+          );
+        })}
+      </div>
 
       {/* Controls */}
       <div className="anim-controls">
