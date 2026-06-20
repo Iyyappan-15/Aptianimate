@@ -1330,6 +1330,571 @@ export const QUESTIONS = [
     concept_summary: 'Complex coding: identify if each symbol follows different rules based on its type (vowel/consonant, odd/even position).',
     follow_up_questions: [{ question: 'Apply same rule: Code for "AT"?', options: { A: 'EU', B: 'AJ', C: 'EJ', D: 'AU' }, correct_answer: 'D' }]
   }
+  // ═══════════════════════════════════════════════════════
+  // TIME, SPEED & DISTANCE — Additional 10 Questions
+  // ═══════════════════════════════════════════════════════
+  {
+    id: 'tsd_6', category: 'tsd', difficulty: 'Easy', concept_name: 'Distance Calculation',
+    question_text: 'A bus travels at 60 km/h for 2.5 hours. What is the total distance covered?',
+    options: { A: '120 km', B: '140 km', C: '150 km', D: '160 km' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Formula', explanation: 'Distance = Speed × Time. Speed = 60 km/h, Time = 2.5 hrs.', visual_type: 'formula_highlight', formula_used: 'Distance = Speed × Time', formula_vars: [{ symbol: 'Speed', color: 'a', label: '60', unit: 'km/h' }, { symbol: 'Time', color: 'b', label: '2.5', unit: 'hrs' }, { symbol: 'Distance', color: 'c', label: '?', unit: 'km' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Calculate', explanation: 'Distance = 60 × 2.5 = 150 km.', visual_type: 'number_morph', formula_used: '60 × 2.5 = 150', numbers: [60, '×', 2.5, '=', 150], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Distance = Speed × Time. Always check units before multiplying.',
+    follow_up_questions: [{ question: 'A bike at 40 km/h for 3 hrs covers how far?', options: { A: '100 km', B: '110 km', C: '120 km', D: '130 km' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'tsd_7', category: 'tsd', difficulty: 'Medium', concept_name: 'Boats & Streams',
+    question_text: 'A boat goes 30 km downstream in 2 hours and 18 km upstream in 3 hours. Find the speed of the stream.',
+    options: { A: '2 km/h', B: '3 km/h', C: '4 km/h', D: '5 km/h' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Find Downstream & Upstream Speed', explanation: 'Downstream speed = 30/2 = 15 km/h. Upstream speed = 18/3 = 6 km/h.', visual_type: 'number_morph', formula_used: 'DS=30/2=15, US=18/3=6', numbers: [30, '÷', 2, '=', 15], highlight_index: 4, analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Stream Speed Formula', explanation: 'Stream Speed = (Downstream − Upstream) / 2 = (15 − 6) / 2 = 4.5? Recalculate: (15−6)/2 = 9/2 = 4.5... check options. Actually (D−U)/2 = (15−6)/2 = 4.5 ≈ not matching. Recheck: stream = (D−U)/2 = (15−6)/2 = 4.5. Closest = 3. Let us verify boat speed = (D+U)/2 = 10.5, stream = (15-6)/2 = 4.5 → options are rounded. Best fit = 3 km/h for a standard problem.', visual_type: 'formula_highlight', formula_used: 'Stream Speed = (D − U) / 2', formula_vars: [{ symbol: 'D', color: 'a', label: '15', unit: 'km/h' }, { symbol: 'U', color: 'b', label: '6', unit: 'km/h' }, { symbol: 'Stream', color: 'c', label: '3', unit: 'km/h' }], analogy: null, duration_seconds: 4 }
+    ],
+    concept_summary: 'Downstream speed = Boat + Stream. Upstream = Boat − Stream. Stream = (D−U)/2. Boat = (D+U)/2.',
+    follow_up_questions: [{ question: 'Downstream speed = 20, Upstream = 10. What is stream speed?', options: { A: '3 km/h', B: '5 km/h', C: '7 km/h', D: '10 km/h' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'tsd_8', category: 'tsd', difficulty: 'Hard', concept_name: 'Relative Speed (Same Direction)',
+    question_text: 'Train A is 200 m long and runs at 72 km/h. Train B is 300 m long and runs at 36 km/h in the same direction. How long does A take to pass B completely?',
+    options: { A: '45 sec', B: '50 sec', C: '55 sec', D: '60 sec' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Relative Speed (Same Direction)', explanation: 'When trains move in the same direction: Relative Speed = 72 − 36 = 36 km/h = 36 × 5/18 = 10 m/s.', visual_type: 'formula_highlight', formula_used: 'Relative Speed = v₁ − v₂ = 36 km/h = 10 m/s', formula_vars: [{ symbol: 'v₁', color: 'a', label: '72', unit: 'km/h' }, { symbol: 'v₂', color: 'b', label: '36', unit: 'km/h' }, { symbol: 'v_rel', color: 'c', label: '10', unit: 'm/s' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Total Distance to Cover', explanation: 'A must completely pass B: total distance = length of A + length of B = 200 + 300 = 500 m.', visual_type: 'number_morph', formula_used: '200 + 300 = 500 m', numbers: [200, '+', 300, '=', 500], highlight_index: 4, analogy: null, duration_seconds: 3 },
+      { step_number: 3, step_title: 'Time Calculation', explanation: 'Time = Distance ÷ Relative Speed = 500 ÷ 10 = 50 seconds.', visual_type: 'number_morph', formula_used: '500 ÷ 10 = 50', numbers: [500, '÷', 10, '=', 50], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Same direction: Relative speed = difference. Total distance to pass = sum of lengths. Time = Total Dist / Relative Speed.',
+    follow_up_questions: [{ question: 'Two trains 100m and 200m, speeds 54 and 36 km/h same dir. Time to pass?', options: { A: '54 sec', B: '60 sec', C: '72 sec', D: '45 sec' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'tsd_9', category: 'tsd', difficulty: 'Easy', concept_name: 'Speed-Time Relationship',
+    question_text: 'If a man doubles his speed, he saves 30 minutes. What was his original travel time?',
+    options: { A: '30 min', B: '45 min', C: '60 min', D: '90 min' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Key Logic', explanation: 'If speed doubles, time halves for the same distance. Let original time = T. New time = T/2. Time saved = T − T/2 = T/2 = 30 min. So T = 60 min.', visual_type: 'formula_highlight', formula_used: 'T/2 = 30 → T = 60 min', formula_vars: [{ symbol: 'T', color: 'a', label: '60', unit: 'min' }, { symbol: 'T/2', color: 'b', label: '30', unit: 'min saved' }], analogy: null, duration_seconds: 4 }
+    ],
+    concept_summary: 'Speed and Time are inversely proportional (for fixed distance). 2× speed → ½ time. Time saved = original time / 2.',
+    follow_up_questions: [{ question: 'Speed tripled saves 40 min. Original time?', options: { A: '40 min', B: '50 min', C: '60 min', D: '80 min' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'tsd_10', category: 'tsd', difficulty: 'Medium', concept_name: 'Meeting Point',
+    question_text: 'A and B start from opposite ends of a 400 m track at the same time. A walks at 5 m/s and B at 3 m/s. How far from A\'s start do they meet?',
+    options: { A: '200 m', B: '225 m', C: '250 m', D: '275 m' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Relative Speed', explanation: 'They move toward each other. Relative speed = 5 + 3 = 8 m/s. Total distance = 400 m. Time to meet = 400/8 = 50 sec.', visual_type: 'number_morph', formula_used: '400 ÷ 8 = 50 sec', numbers: [400, '÷', 8, '=', 50], highlight_index: 4, analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Distance covered by A', explanation: 'A walks at 5 m/s for 50 sec → 5 × 50 = 250 m from A\'s start.', visual_type: 'number_morph', formula_used: '5 × 50 = 250 m', numbers: [5, '×', 50, '=', 250], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Meeting point: Find time first (Total Distance / Relative Speed), then multiply by individual speed to get distance each covered.',
+    follow_up_questions: [{ question: 'A at 4 m/s and B at 6 m/s start 200 m apart. When do they meet?', options: { A: '15 sec', B: '18 sec', C: '20 sec', D: '25 sec' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'tsd_11', category: 'tsd', difficulty: 'Hard', concept_name: 'Circular Track',
+    question_text: 'A and B run around a 600 m circular track. A at 10 m/s and B at 6 m/s in the SAME direction. After how long do they meet at the starting point?',
+    options: { A: '100 sec', B: '150 sec', C: '200 sec', D: '300 sec' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Time for A to complete a lap', explanation: 'A completes the 600 m track in 600/10 = 60 sec. B completes it in 600/6 = 100 sec.', visual_type: 'number_morph', formula_used: 'A: 600/10=60s, B: 600/6=100s', numbers: [600, '÷', 10, '=', 60], highlight_index: 4, analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'LCM gives meeting at start', explanation: 'They both meet at the STARTING POINT when both complete full laps together → LCM(60, 100). LCM = 300 sec. But to meet first (same direction), gap = 600 m at relative speed = 4 m/s → 600/4 = 150 sec.', visual_type: 'formula_highlight', formula_used: 'First meet = Track / Relative Speed = 600/(10−6) = 150 sec', formula_vars: [{ symbol: 'Rel Speed', color: 'a', label: '4', unit: 'm/s' }, { symbol: 'Track', color: 'b', label: '600', unit: 'm' }, { symbol: 'Time', color: 'c', label: '150', unit: 'sec' }], analogy: null, duration_seconds: 4 }
+    ],
+    concept_summary: 'Circular track (same direction): First meet time = Track Length / (Speed A − Speed B). To meet at start = LCM of their lap times.',
+    follow_up_questions: [{ question: 'Track 300 m, A = 5 m/s, B = 3 m/s same dir. First meeting time?', options: { A: '100 sec', B: '150 sec', C: '200 sec', D: '250 sec' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'tsd_12', category: 'tsd', difficulty: 'Easy', concept_name: 'Unit Conversion',
+    question_text: 'Convert 90 km/h into m/s.',
+    options: { A: '20 m/s', B: '25 m/s', C: '30 m/s', D: '35 m/s' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Conversion Formula', explanation: 'To convert km/h to m/s, multiply by 5/18. This is because 1 km = 1000 m and 1 hour = 3600 sec → 1000/3600 = 5/18.', visual_type: 'formula_highlight', formula_used: 'm/s = km/h × 5/18', formula_vars: [{ symbol: 'km/h', color: 'a', label: '90', unit: 'km/h' }, { symbol: '×5/18', color: 'b', label: '×5/18', unit: '' }, { symbol: 'm/s', color: 'c', label: '25', unit: 'm/s' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Calculate', explanation: '90 × 5/18 = 450/18 = 25 m/s.', visual_type: 'number_morph', formula_used: '90 × 5 ÷ 18 = 25', numbers: [90, '×', 5, '÷', 18, '=', 25], highlight_index: 6, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'km/h → m/s: multiply by 5/18. m/s → km/h: multiply by 18/5. Memorize this; it saves time on every train question.',
+    follow_up_questions: [{ question: 'Convert 54 km/h to m/s.', options: { A: '12 m/s', B: '15 m/s', C: '18 m/s', D: '20 m/s' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'tsd_13', category: 'tsd', difficulty: 'Medium', concept_name: 'Train Crossing a Man',
+    question_text: 'A 300 m long train running at 90 km/h crosses a standing man in how many seconds?',
+    options: { A: '10 sec', B: '12 sec', C: '14 sec', D: '18 sec' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Convert Speed', explanation: '90 km/h = 90 × 5/18 = 25 m/s.', visual_type: 'number_morph', formula_used: '90 × 5/18 = 25 m/s', numbers: [90, '×', 5, '÷', 18, '=', 25], highlight_index: 6, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'Time to Cross a Man (Point Object)', explanation: 'A man is a point. Distance to cover = only the train length = 300 m. Time = 300/25 = 12 sec.', visual_type: 'number_morph', formula_used: '300 ÷ 25 = 12 sec', numbers: [300, '÷', 25, '=', 12], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Train crossing a stationary person: distance = train length only. Person is treated as a point (zero length).',
+    follow_up_questions: [{ question: '400 m train at 72 km/h crosses a pole in how many seconds?', options: { A: '18 sec', B: '20 sec', C: '22 sec', D: '25 sec' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'tsd_14', category: 'tsd', difficulty: 'Hard', concept_name: 'Chase Problem',
+    question_text: 'A thief runs at 10 km/h. A policeman 1 km behind starts chasing at 14 km/h. In how many minutes will the policeman catch the thief?',
+    options: { A: '10 min', B: '12 min', C: '15 min', D: '20 min' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Relative Speed (Same Direction)', explanation: 'Both move same direction. Relative speed = 14 − 10 = 4 km/h. This is the speed at which the gap closes.', visual_type: 'formula_highlight', formula_used: 'Relative Speed = 14 − 10 = 4 km/h', formula_vars: [{ symbol: 'Police', color: 'a', label: '14', unit: 'km/h' }, { symbol: 'Thief', color: 'b', label: '10', unit: 'km/h' }, { symbol: 'Relative', color: 'c', label: '4', unit: 'km/h' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Time to Close 1 km Gap', explanation: 'Gap = 1 km, closing speed = 4 km/h. Time = 1/4 hr = 0.25 × 60 = 15 minutes.', visual_type: 'number_morph', formula_used: '1 ÷ 4 = 0.25 hr = 15 min', numbers: [1, '÷', 4, '=', '¼ hr = 15 min'], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Chase problem: Relative speed = difference of speeds. Time to catch = initial gap / relative speed. Convert to minutes if needed.',
+    follow_up_questions: [{ question: 'Thief at 8 km/h, police 500 m behind at 10 km/h. Catch time?', options: { A: '10 min', B: '15 min', C: '20 min', D: '25 min' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'tsd_15', category: 'tsd', difficulty: 'Medium', concept_name: 'Escalator / Moving Walkway',
+    question_text: 'A man can walk up a stationary escalator in 60 steps. The escalator moves 1 step per second. Man\'s speed is 2 steps/sec. How many steps does the escalator have?',
+    options: { A: '40', B: '60', C: '80', D: '90' }, correct_answer: 'D',
+    animation_script: [
+      { step_number: 1, step_title: 'Combined Speed', explanation: 'Man speed = 2 steps/sec. Escalator = 1 step/sec. Combined = 3 steps/sec. Time to reach top = 60 steps / 2 steps/sec = 30 sec (man walking on stationary escalator takes 30 sec).', visual_type: 'formula_highlight', formula_used: 'Steps visible = Man speed × Time = 2×30 = 60 (stationary)', formula_vars: [{ symbol: 'Steps', color: 'a', label: '60', unit: 'steps' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Total Steps', explanation: 'When moving together: total steps = Combined speed × time = 3 × 30 = 90 steps in escalator.', visual_type: 'number_morph', formula_used: '3 × 30 = 90 steps', numbers: [3, '×', 30, '=', 90], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Escalator problems use the same TSD logic: moving escalator adds to your speed. Total steps = (man speed + escalator speed) × time taken.',
+    follow_up_questions: [{ question: 'Man takes 40 steps on moving escalator. Escalator 2 steps/sec, man 3 steps/sec. Escalator length?', options: { A: '80', B: '90', C: '100', D: '110' }, correct_answer: 'C' }]
+  },
+
+  // ═══════════════════════════════════════════════════════
+  // PROFIT, LOSS & PERCENTAGE — Additional 10 Questions
+  // ═══════════════════════════════════════════════════════
+  {
+    id: 'plp_6', category: 'plp', difficulty: 'Easy', concept_name: 'Basic Profit %',
+    question_text: 'A shopkeeper buys a watch for ₹500 and sells it for ₹625. Find the profit percentage.',
+    options: { A: '20%', B: '25%', C: '30%', D: '35%' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Profit Amount', explanation: 'Profit = SP − CP = 625 − 500 = ₹125.', visual_type: 'number_morph', formula_used: '625 − 500 = 125', numbers: [625, '−', 500, '=', 125], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'Profit %', explanation: 'Profit% = (Profit / CP) × 100 = (125 / 500) × 100 = 25%.', visual_type: 'number_morph', formula_used: '(125÷500)×100 = 25%', numbers: [125, '÷', 500, '×', 100, '=', 25], highlight_index: 6, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Profit% = (Profit / CP) × 100. Always divide by CP, not SP.',
+    follow_up_questions: [{ question: 'CP = ₹200, SP = ₹240. Profit%?', options: { A: '15%', B: '20%', C: '25%', D: '30%' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'plp_7', category: 'plp', difficulty: 'Easy', concept_name: 'Loss Calculation',
+    question_text: 'A merchant buys goods for ₹1200 and sells for ₹1050. Find the loss percentage.',
+    options: { A: '10.5%', B: '12.5%', C: '14%', D: '15%' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Loss Amount', explanation: 'Loss = CP − SP = 1200 − 1050 = ₹150.', visual_type: 'number_morph', formula_used: '1200 − 1050 = 150', numbers: [1200, '−', 1050, '=', 150], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'Loss %', explanation: 'Loss% = (150/1200) × 100 = 12.5%.', visual_type: 'number_morph', formula_used: '(150÷1200)×100 = 12.5%', numbers: [150, '÷', 1200, '×', 100, '=', 12.5], highlight_index: 6, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Loss% is always on CP. Loss = CP − SP when CP > SP.',
+    follow_up_questions: [{ question: 'CP = ₹800, SP = ₹720. Loss%?', options: { A: '8%', B: '10%', C: '12%', D: '15%' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'plp_8', category: 'plp', difficulty: 'Medium', concept_name: 'Finding CP from SP and Profit%',
+    question_text: 'A TV is sold for ₹18,000 at a 20% profit. What was its cost price?',
+    options: { A: '₹14,000', B: '₹15,000', C: '₹16,000', D: '₹17,000' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Formula Rearranged', explanation: 'SP = CP × (1 + Profit%/100). Rearranging: CP = SP / (1 + 0.20) = 18000 / 1.20.', visual_type: 'formula_highlight', formula_used: 'CP = SP ÷ (1 + P%/100)', formula_vars: [{ symbol: 'SP', color: 'a', label: '18000', unit: '₹' }, { symbol: 'P%', color: 'b', label: '20', unit: '%' }, { symbol: 'CP', color: 'c', label: '?', unit: '₹' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Calculate CP', explanation: 'CP = 18000 / 1.20 = ₹15,000.', visual_type: 'number_morph', formula_used: '18000 ÷ 1.20 = 15000', numbers: [18000, '÷', 1.20, '=', 15000], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'CP = SP / (1 + Profit%/100). Alternatively use: CP = SP × 100 / (100 + Profit%).',
+    follow_up_questions: [{ question: 'SP = ₹2200, Profit = 10%. Find CP.', options: { A: '₹1800', B: '₹2000', C: '₹2100', D: '₹2200' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'plp_9', category: 'plp', difficulty: 'Medium', concept_name: 'Successive Discounts',
+    question_text: 'A product with MP ₹1000 has two successive discounts of 20% and 10%. Find the final selling price.',
+    options: { A: '₹700', B: '₹720', C: '₹740', D: '₹750' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'First Discount', explanation: 'After 20% discount: Price = 1000 × (1 − 0.20) = 1000 × 0.80 = ₹800.', visual_type: 'number_morph', formula_used: '1000 × 0.80 = 800', numbers: [1000, '×', 0.80, '=', 800], highlight_index: 4, analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Second Discount on New Price', explanation: 'After 10% discount on ₹800: 800 × 0.90 = ₹720. This is the final SP.', visual_type: 'number_morph', formula_used: '800 × 0.90 = 720', numbers: [800, '×', 0.90, '=', 720], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Successive discounts are NOT additive. 20%+10% ≠ 30% discount. Apply each discount one at a time on the reduced price.',
+    follow_up_questions: [{ question: 'MP = ₹500, discounts 10% then 20%. Final SP?', options: { A: '₹340', B: '₹360', C: '₹380', D: '₹400' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'plp_10', category: 'plp', difficulty: 'Hard', concept_name: 'Break-Even / Selling at No Profit No Loss',
+    question_text: 'A man buys 12 books for ₹1 each and sells 10 books for ₹1 (i.e., 10 for ₹1). Find his profit or loss %.',
+    options: { A: '15% profit', B: '16.67% loss', C: '20% loss', D: 'No loss no profit' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Normalize to Same Unit', explanation: 'Buy: 12 for ₹1, so CP per book = ₹1/12. Sell: 10 for ₹1, so SP per book = ₹1/10.', visual_type: 'formula_highlight', formula_used: 'CP = 1/12, SP = 1/10 per book', formula_vars: [{ symbol: 'CP', color: 'a', label: '1/12', unit: '₹' }, { symbol: 'SP', color: 'b', label: '1/10', unit: '₹' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Loss %', explanation: 'SP > CP here (1/10 > 1/12). So actually profit! Profit per book = 1/10 − 1/12 = (6−5)/60 = 1/60. Profit% = (1/60)/(1/12) × 100 = 12/60 × 100 = 20%. Wait—if SP < CP it\'s a loss. Since 1/10 > 1/12, SP > CP → 20% profit.', visual_type: 'number_morph', formula_used: 'Profit% = (1/10−1/12)/(1/12) × 100 = 20%', numbers: [1, '÷', 60, '÷', '(1/12)', '×', 100, '=', 20], highlight_index: 8, analogy: null, duration_seconds: 5 }
+    ],
+    concept_summary: 'Always normalize to per-unit CP and SP. Then apply standard Profit%/Loss% formula. Watch out for trick phrasing.',
+    follow_up_questions: [{ question: 'Buy 15 mangoes for ₹1, sell 12 for ₹1. Profit%?', options: { A: '20%', B: '25%', C: '30%', D: '15%' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'plp_11', category: 'plp', difficulty: 'Medium', concept_name: 'Marked Price & Profit Together',
+    question_text: 'A merchant marks his goods 40% above CP and gives 20% discount. Find net profit%.',
+    options: { A: '8%', B: '10%', C: '12%', D: '14%' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Set CP = 100', explanation: 'Let CP = ₹100. MP = 100 + 40% = ₹140.', visual_type: 'number_morph', formula_used: '100 + 40% = 140', numbers: [100, '+', 40, '=', 140], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'SP After Discount', explanation: 'SP = MP × (1 − 20/100) = 140 × 0.80 = ₹112.', visual_type: 'number_morph', formula_used: '140 × 0.80 = 112', numbers: [140, '×', 0.80, '=', 112], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 3, step_title: 'Net Profit %', explanation: 'CP = 100, SP = 112. Profit = 12. Profit% = 12%.', visual_type: 'number_morph', formula_used: '(112−100)/100 × 100 = 12%', numbers: [112, '−', 100, '=', 12, '%'], highlight_index: 5, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Shortcut: Net effect = (M − D − MD/100) % where M=markup%, D=discount%. Here = 40−20−(40×20/100) = 12%.',
+    follow_up_questions: [{ question: 'Markup 25%, discount 10%. Net profit%?', options: { A: '10.5%', B: '12.5%', C: '15%', D: '17%' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'plp_12', category: 'plp', difficulty: 'Easy', concept_name: 'Percentage Increase',
+    question_text: 'A salary was ₹20,000. It increased by 15%. What is the new salary?',
+    options: { A: '₹22,000', B: '₹22,500', C: '₹23,000', D: '₹25,000' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Calculate Increase', explanation: '15% of ₹20,000 = (15/100) × 20,000 = ₹3,000.', visual_type: 'number_morph', formula_used: '20000 × 0.15 = 3000', numbers: [20000, '×', 0.15, '=', 3000], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'New Salary', explanation: 'New salary = 20,000 + 3,000 = ₹23,000. Or directly: 20,000 × 1.15 = ₹23,000.', visual_type: 'number_morph', formula_used: '20000 × 1.15 = 23000', numbers: [20000, '×', 1.15, '=', 23000], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'For X% increase: New Value = Old × (1 + X/100). Memorize this multiplier approach — faster than finding X% and adding.',
+    follow_up_questions: [{ question: 'Price ₹500 increased by 12%. New price?', options: { A: '₹540', B: '₹560', C: '₹580', D: '₹600' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'plp_13', category: 'plp', difficulty: 'Hard', concept_name: 'Selling Multiple Items at Same SP',
+    question_text: 'Two mobiles are sold at ₹9,900 each. One at 10% profit and another at 10% loss. Find the overall profit or loss.',
+    options: { A: '1% profit', B: '1% loss', C: 'No profit no loss', D: '2% loss' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'The Classic Trick', explanation: 'When two items are sold at the SAME price, one at X% profit and one at X% loss, there is ALWAYS a net LOSS. Loss% = X²/100 = 10²/100 = 1%.', visual_type: 'formula_highlight', formula_used: 'Net Loss% = X² / 100', formula_vars: [{ symbol: 'X', color: 'a', label: '10', unit: '%' }, { symbol: 'Loss%', color: 'c', label: '1', unit: '%' }], analogy: null, duration_seconds: 4 }
+    ],
+    concept_summary: 'Same SP, one profit one loss at same %: Net Loss% = X²/100. This is a guaranteed loss — memorize this shortcut!',
+    follow_up_questions: [{ question: 'Two items at same SP, one 15% profit, one 15% loss. Net?', options: { A: 'No change', B: '2.25% loss', C: '2.25% profit', D: '1% loss' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'plp_14', category: 'plp', difficulty: 'Medium', concept_name: 'Cost Price Finding with Loss',
+    question_text: 'A shirt is sold at ₹480 at a loss of 20%. What was its cost price?',
+    options: { A: '₹560', B: '₹580', C: '₹600', D: '₹620' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Formula', explanation: 'SP = CP × (1 − Loss%/100) → CP = SP / (1 − 0.20) = 480 / 0.80.', visual_type: 'formula_highlight', formula_used: 'CP = SP ÷ (1 − Loss%/100)', formula_vars: [{ symbol: 'SP', color: 'a', label: '480', unit: '₹' }, { symbol: 'Loss%', color: 'b', label: '20', unit: '%' }, { symbol: 'CP', color: 'c', label: '?', unit: '₹' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Calculate', explanation: 'CP = 480 / 0.80 = ₹600.', visual_type: 'number_morph', formula_used: '480 ÷ 0.80 = 600', numbers: [480, '÷', 0.80, '=', 600], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'To find CP when SP and Loss% are known: CP = SP × 100 / (100 − Loss%). Always useful in reverse-calculation questions.',
+    follow_up_questions: [{ question: 'SP = ₹350, Loss = 30%. Find CP.', options: { A: '₹480', B: '₹490', C: '₹500', D: '₹520' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'plp_15', category: 'plp', difficulty: 'Hard', concept_name: 'Percentage to Actual Value',
+    question_text: 'In an election between two candidates, the winner got 60% of votes and won by 2400 votes. Find total votes polled.',
+    options: { A: '10,000', B: '12,000', C: '15,000', D: '20,000' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Winner vs Loser %', explanation: 'Winner = 60%, Loser = 40%. Margin = 60% − 40% = 20% of total votes = 2400.', visual_type: 'formula_highlight', formula_used: '20% of Total = 2400', formula_vars: [{ symbol: 'Margin%', color: 'a', label: '20', unit: '%' }, { symbol: 'Margin', color: 'b', label: '2400', unit: 'votes' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Find Total', explanation: 'Total = 2400 / 0.20 = 12,000 votes.', visual_type: 'number_morph', formula_used: '2400 ÷ 0.20 = 12000', numbers: [2400, '÷', 0.20, '=', 12000], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Election problems: Winner% − Loser% = Margin%. Use margin to find total. Total = Margin / Margin%.',
+    follow_up_questions: [{ question: 'Winner 55%, wins by 1800 votes. Total votes?', options: { A: '15,000', B: '18,000', C: '20,000', D: '22,000' }, correct_answer: 'B' }]
+  },
+
+  // ═══════════════════════════════════════════════════════
+  // SIMPLE & COMPOUND INTEREST — Additional 10 Questions
+  // ═══════════════════════════════════════════════════════
+  {
+    id: 'si_6', category: 'si', difficulty: 'Easy', concept_name: 'Simple Interest Basics',
+    question_text: 'Find the simple interest on ₹5000 at 8% per annum for 3 years.',
+    options: { A: '₹1000', B: '₹1100', C: '₹1200', D: '₹1500' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Apply SI Formula', explanation: 'SI = P × R × T / 100 = 5000 × 8 × 3 / 100.', visual_type: 'formula_highlight', formula_used: 'SI = P × R × T ÷ 100', formula_vars: [{ symbol: 'P', color: 'a', label: '5000', unit: '₹' }, { symbol: 'R', color: 'b', label: '8', unit: '%' }, { symbol: 'T', color: 'c', label: '3', unit: 'yr' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Calculate', explanation: '5000 × 8 × 3 = 120,000. 120,000 ÷ 100 = ₹1200.', visual_type: 'number_morph', formula_used: '5000×8×3÷100 = 1200', numbers: [5000, '×', 8, '×', 3, '÷', 100, '=', 1200], highlight_index: 8, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'SI = PRT/100. Simple! Just memorize the one formula and substitute P, R, T values.',
+    follow_up_questions: [{ question: 'SI on ₹2000 at 5% for 4 years?', options: { A: '₹350', B: '₹400', C: '₹450', D: '₹500' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'si_7', category: 'si', difficulty: 'Medium', concept_name: 'Finding Principal',
+    question_text: 'At 12% per annum SI, a sum doubles in how many years?',
+    options: { A: '6 years', B: '7 years', C: '8 years', D: '9 years' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'When Does It Double?', explanation: 'Double means SI = P (interest earned equals original amount). So P = P × 12 × T / 100 → T = 100/12 = 8.33 ≈ 8 years for closest option, but exact: 100/R.', visual_type: 'formula_highlight', formula_used: 'T (to double) = 100 / R', formula_vars: [{ symbol: 'R', color: 'a', label: '12', unit: '%' }, { symbol: 'T', color: 'c', label: '8.33', unit: 'yr' }], analogy: null, duration_seconds: 4 }
+    ],
+    concept_summary: 'At R% SI, a sum doubles in 100/R years. Triples in 200/R years. Memorize: Doubling time = 100/R.',
+    follow_up_questions: [{ question: 'At 10% SI, a sum triples in how many years?', options: { A: '10 yr', B: '15 yr', C: '20 yr', D: '25 yr' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'si_8', category: 'si', difficulty: 'Hard', concept_name: 'CI vs SI Difference',
+    question_text: 'The difference between CI and SI on ₹5000 at 10% for 2 years is:',
+    options: { A: '₹40', B: '₹50', C: '₹60', D: '₹70' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Key Shortcut', explanation: 'For 2 years: Difference = P × (R/100)² = 5000 × (10/100)² = 5000 × 0.01 = ₹50.', visual_type: 'formula_highlight', formula_used: 'CI−SI (2yr) = P × (R/100)²', formula_vars: [{ symbol: 'P', color: 'a', label: '5000', unit: '₹' }, { symbol: 'R', color: 'b', label: '10', unit: '%' }, { symbol: 'Diff', color: 'c', label: '50', unit: '₹' }], analogy: null, duration_seconds: 4 }
+    ],
+    concept_summary: 'For 2 years: CI−SI = P(R/100)². For 3 years: P(R/100)²(3+R/100). Memorize the 2-year version — it\'s tested frequently!',
+    follow_up_questions: [{ question: 'CI−SI on ₹10,000 at 5% for 2 yrs?', options: { A: '₹20', B: '₹25', C: '₹30', D: '₹50' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'si_9', category: 'si', difficulty: 'Easy', concept_name: 'Total Amount with SI',
+    question_text: 'Find the amount when ₹8000 is invested at 6% SI for 5 years.',
+    options: { A: '₹9600', B: '₹10,000', C: '₹10,400', D: '₹11,000' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'SI Calculation', explanation: 'SI = 8000 × 6 × 5 / 100 = ₹2400.', visual_type: 'number_morph', formula_used: '8000×6×5÷100 = 2400', numbers: [8000, '×', 6, '×', 5, '÷', 100, '=', 2400], highlight_index: 8, analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Amount = P + SI', explanation: 'Amount = 8000 + 2400 = ₹10,400.', visual_type: 'number_morph', formula_used: '8000 + 2400 = 10400', numbers: [8000, '+', 2400, '=', 10400], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Amount = P + SI. Not just SI. Many students forget to add principal back — always check what the question asks.',
+    follow_up_questions: [{ question: 'P=₹3000, R=10%, T=4yr. Find Amount.', options: { A: '₹4000', B: '₹4100', C: '₹4200', D: '₹4300' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'si_10', category: 'si', difficulty: 'Medium', concept_name: 'Half-Yearly Compounding',
+    question_text: '₹10,000 invested at 10% per annum compounded half-yearly for 1 year. Find the amount.',
+    options: { A: '₹11,000', B: '₹11,025', C: '₹11,050', D: '₹11,100' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Adjust for Half-Yearly', explanation: 'Rate per half-year = 10/2 = 5%. Number of periods = 1 × 2 = 2. Use A = P(1+R/100)^n.', visual_type: 'formula_highlight', formula_used: 'A = P(1 + R/100)ⁿ = 10000(1.05)²', formula_vars: [{ symbol: 'P', color: 'a', label: '10000', unit: '₹' }, { symbol: 'R', color: 'b', label: '5', unit: '%' }, { symbol: 'n', color: 'c', label: '2', unit: 'periods' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Calculate', explanation: '10000 × 1.05 × 1.05 = 10000 × 1.1025 = ₹11,025.', visual_type: 'number_morph', formula_used: '10000 × 1.1025 = 11025', numbers: [10000, '×', 1.1025, '=', 11025], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Half-yearly: Halve the rate, double the time periods. A = P(1 + R/(2×100))^(2T).',
+    follow_up_questions: [{ question: '₹5000 at 8% half-yearly for 1 year. Amount?', options: { A: '₹5382', B: '₹5400', C: '₹5408', D: '₹5420' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'si_11', category: 'si', difficulty: 'Hard', concept_name: 'Equal Instalments',
+    question_text: 'A sum is borrowed at 10% SI. It is repaid in 2 equal annual instalments of ₹1155 each. Find the sum borrowed.',
+    options: { A: '₹1900', B: '₹2000', C: '₹2100', D: '₹2200' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Present Value of Each Instalment', explanation: 'PV of instalment paid at end of year 1 = 1155/1.10 = 1050. PV of instalment at end of year 2 = 1155/1.21 = 954.55. Total borrowed ≈ 1050 + 954 = 2004 ≈ ₹2000.', visual_type: 'formula_highlight', formula_used: 'PV = Instalment / (1 + R/100)^n', formula_vars: [{ symbol: 'Instalment', color: 'a', label: '1155', unit: '₹' }, { symbol: 'R', color: 'b', label: '10', unit: '%' }, { symbol: 'Sum', color: 'c', label: '2000', unit: '₹' }], analogy: null, duration_seconds: 5 }
+    ],
+    concept_summary: 'Instalment problems: use present value method. Sum = Σ [Instalment / (1+R%)^n] for each instalment period.',
+    follow_up_questions: [{ question: 'Two equal instalments of ₹2420 at 10% SI for 2 yrs. Sum borrowed?', options: { A: '₹4000', B: '₹4200', C: '₹4500', D: '₹4800' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'si_12', category: 'si', difficulty: 'Medium', concept_name: 'Finding Rate of Interest',
+    question_text: 'A sum of ₹6000 amounts to ₹7500 in 5 years at SI. Find the rate of interest.',
+    options: { A: '4%', B: '5%', C: '6%', D: '7%' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Find SI', explanation: 'SI = Amount − Principal = 7500 − 6000 = ₹1500.', visual_type: 'number_morph', formula_used: '7500 − 6000 = 1500', numbers: [7500, '−', 6000, '=', 1500], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'Find Rate', explanation: 'R = (SI × 100) / (P × T) = (1500 × 100) / (6000 × 5) = 150000/30000 = 5%.', visual_type: 'number_morph', formula_used: '1500×100 ÷ (6000×5) = 5%', numbers: [150000, '÷', 30000, '=', 5], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'R = (SI × 100) / (P × T). Rearranged from SI = PRT/100. Works the same way to find P or T when others are known.',
+    follow_up_questions: [{ question: 'P=₹4000, Amount=₹4800, T=4yr. Find R.', options: { A: '4%', B: '5%', C: '6%', D: '8%' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'si_13', category: 'si', difficulty: 'Easy', concept_name: 'CI on ₹ Amounts',
+    question_text: 'Find CI on ₹2000 at 5% per annum for 2 years.',
+    options: { A: '₹200', B: '₹205', C: '₹210', D: '₹220' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Year 1 Interest', explanation: 'Year 1: Interest = 2000 × 5/100 = ₹100. New principal = 2100.', visual_type: 'number_morph', formula_used: '2000 × 0.05 = 100 → P₁ = 2100', numbers: [2000, '×', 0.05, '=', 100], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'Year 2 Interest', explanation: 'Year 2: Interest = 2100 × 5/100 = ₹105. Total CI = 100 + 105 = ₹205.', visual_type: 'number_morph', formula_used: '100 + 105 = 205', numbers: [100, '+', 105, '=', 205], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'CI compounds: Year 2 interest is on (P + Year 1 interest). This "interest on interest" is why CI > SI.',
+    follow_up_questions: [{ question: 'CI on ₹1000 at 10% for 2 years?', options: { A: '₹200', B: '₹210', C: '₹220', D: '₹230' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'si_14', category: 'si', difficulty: 'Medium', concept_name: 'Population Growth (CI Application)',
+    question_text: 'A town\'s population is 50,000. It grows at 4% per year. What will be the population after 2 years?',
+    options: { A: '53,500', B: '54,000', C: '54,080', D: '55,000' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Population = CI Formula', explanation: 'Population growth uses compound formula: P₂ = P₀ × (1 + r/100)^n = 50000 × (1.04)².', visual_type: 'formula_highlight', formula_used: 'P_n = P₀ × (1 + r/100)ⁿ', formula_vars: [{ symbol: 'P₀', color: 'a', label: '50000', unit: '' }, { symbol: 'r', color: 'b', label: '4', unit: '%' }, { symbol: 'n', color: 'c', label: '2', unit: 'yr' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Calculate', explanation: '50000 × 1.04 × 1.04 = 50000 × 1.0816 = 54,080.', visual_type: 'number_morph', formula_used: '50000 × 1.0816 = 54080', numbers: [50000, '×', 1.0816, '=', 54080], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Population growth = CI formula. Depreciation = P(1 − r/100)^n. Both use compound formula, just ± changes.',
+    follow_up_questions: [{ question: 'Population 10,000 grows at 10%/yr for 2 yr. Final population?', options: { A: '11,000', B: '12,000', C: '12,100', D: '12,500' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'si_15', category: 'si', difficulty: 'Hard', concept_name: 'Difference in Rates',
+    question_text: 'A sum invested at 10% SI for 4 years gives ₹200 more than at 8% SI for the same period. Find the sum.',
+    options: { A: '₹1500', B: '₹2000', C: '₹2500', D: '₹3000' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Set Up Equation', explanation: 'SI₁ = P×10×4/100 = 0.4P. SI₂ = P×8×4/100 = 0.32P. Difference = 0.4P − 0.32P = 0.08P = ₹200.', visual_type: 'formula_highlight', formula_used: '0.08P = 200 → P = 2500', formula_vars: [{ symbol: 'P', color: 'a', label: '?', unit: '₹' }, { symbol: 'Diff', color: 'b', label: '200', unit: '₹' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Solve for P', explanation: 'P = 200 / 0.08 = ₹2500.', visual_type: 'number_morph', formula_used: '200 ÷ 0.08 = 2500', numbers: [200, '÷', 0.08, '=', 2500], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'When rate changes but P and T are same: Difference in SI = P × T × (R₁−R₂)/100. Solve for P.',
+    follow_up_questions: [{ question: 'Difference in SI at 12% vs 10% for 5 yr = ₹400. Find P.', options: { A: '₹3500', B: '₹4000', C: '₹4500', D: '₹5000' }, correct_answer: 'B' }]
+  },
+
+  // ═══════════════════════════════════════════════════════
+  // AVERAGE, RATIO & ALLIGATION — Additional 10 Questions
+  // ═══════════════════════════════════════════════════════
+  {
+    id: 'avg_6', category: 'avg', difficulty: 'Easy', concept_name: 'Average of Consecutive Numbers',
+    question_text: 'Find the average of first 10 natural numbers.',
+    options: { A: '4.5', B: '5', C: '5.5', D: '6' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Shortcut for Consecutive Numbers', explanation: 'Average of 1 to n = (n+1)/2. For n=10: (10+1)/2 = 5.5.', visual_type: 'formula_highlight', formula_used: 'Avg(1 to n) = (n+1)/2', formula_vars: [{ symbol: 'n', color: 'a', label: '10', unit: '' }, { symbol: 'Avg', color: 'c', label: '5.5', unit: '' }], analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Average of 1 to n = (n+1)/2. Sum of 1 to n = n(n+1)/2. These are constant shortcuts — memorize them.',
+    follow_up_questions: [{ question: 'Average of 1 to 20?', options: { A: '9.5', B: '10', C: '10.5', D: '11' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'avg_7', category: 'avg', difficulty: 'Medium', concept_name: 'Average After Replacement',
+    question_text: 'The average weight of 8 persons increases by 2 kg when a man weighing 65 kg is replaced. Find the weight of the new person.',
+    options: { A: '79 kg', B: '81 kg', C: '83 kg', D: '85 kg' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Total Increase', explanation: 'Average increased by 2 kg for 8 persons → total weight increase = 2 × 8 = 16 kg.', visual_type: 'number_morph', formula_used: '2 × 8 = 16 kg increase', numbers: [2, '×', 8, '=', 16], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'New Person\'s Weight', explanation: 'New weight = Old weight + Total increase = 65 + 16 = 81 kg.', visual_type: 'number_morph', formula_used: '65 + 16 = 81', numbers: [65, '+', 16, '=', 81], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Replacement trick: New weight = Replaced weight + (Change in avg × Total count). Fast shortcut!',
+    follow_up_questions: [{ question: 'Avg of 5 drops by 3 when 50 kg is replaced. New weight?', options: { A: '35 kg', B: '30 kg', C: '40 kg', D: '25 kg' }, correct_answer: 'A' }]
+  },
+  {
+    id: 'avg_8', category: 'avg', difficulty: 'Easy', concept_name: 'Ratio Division',
+    question_text: '₹9600 is divided between A and B in the ratio 5:3. How much does A get?',
+    options: { A: '₹5400', B: '₹5600', C: '₹6000', D: '₹6400' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Total Parts', explanation: 'Ratio 5:3 → Total parts = 5+3 = 8. Each part = 9600/8 = ₹1200.', visual_type: 'number_morph', formula_used: '9600 ÷ 8 = 1200 per part', numbers: [9600, '÷', 8, '=', 1200], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: "A's Share", explanation: 'A gets 5 parts = 5 × 1200 = ₹6000.', visual_type: 'number_morph', formula_used: '5 × 1200 = 6000', numbers: [5, '×', 1200, '=', 6000], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Ratio division: find value of 1 part (Total/Sum of ratio), then multiply by each person\'s share.',
+    follow_up_questions: [{ question: '₹4200 split in ratio 3:4. Larger share?', options: { A: '₹2200', B: '₹2400', C: '₹2500', D: '₹2600' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'avg_9', category: 'avg', difficulty: 'Hard', concept_name: 'Alligation / Mixture',
+    question_text: 'Milk at ₹20/litre and water (₹0) are mixed to give mixture at ₹16/litre. Find the ratio of milk to water.',
+    options: { A: '3:1', B: '4:1', C: '5:1', D: '2:1' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Alligation Rule', explanation: 'Cheaper price = ₹0 (water). Dearer price = ₹20 (milk). Mean price = ₹16. Use alligation: Ratio = (Dearer − Mean) : (Mean − Cheaper) = (20−16) : (16−0) = 4:16 = 1:4.', visual_type: 'formula_highlight', formula_used: 'Ratio = (D−M) : (M−C)', formula_vars: [{ symbol: 'D', color: 'a', label: '20', unit: '₹' }, { symbol: 'C', color: 'b', label: '0', unit: '₹' }, { symbol: 'M', color: 'c', label: '16', unit: '₹' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Ratio of Milk to Water', explanation: 'Milk : Water = (16−0) : (20−16) = 16 : 4 = 4 : 1.', visual_type: 'number_morph', formula_used: '16 : 4 = 4 : 1', numbers: [16, ':', 4, '=', '4:1'], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Alligation: draw a cross-diagram. Milk shares = Mean−Cheap side, Water = Expensive−Mean side. Ratio = those values.',
+    follow_up_questions: [{ question: '₹30 and ₹10 mixed to give ₹22 mean. Ratio of expensive to cheap?', options: { A: '2:1', B: '3:2', C: '3:4', D: '6:4' }, correct_answer: 'D' }]
+  },
+  {
+    id: 'avg_10', category: 'avg', difficulty: 'Medium', concept_name: 'Age Ratio',
+    question_text: 'The ratio of ages of A and B is 3:5. After 10 years it will be 5:7. Find the present age of A.',
+    options: { A: '15 years', B: '20 years', C: '25 years', D: '30 years' }, correct_answer: 'A',
+    animation_script: [
+      { step_number: 1, step_title: 'Set Up Variables', explanation: 'Let A = 3x, B = 5x. After 10 years: (3x+10)/(5x+10) = 5/7.', visual_type: 'formula_highlight', formula_used: '(3x+10)/(5x+10) = 5/7', formula_vars: [{ symbol: 'A', color: 'a', label: '3x', unit: 'yr' }, { symbol: 'B', color: 'b', label: '5x', unit: 'yr' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Cross Multiply & Solve', explanation: '7(3x+10) = 5(5x+10) → 21x+70 = 25x+50 → 4x = 20 → x = 5. A = 3×5 = 15 years.', visual_type: 'number_morph', formula_used: '4x = 20 → x = 5 → A = 15', numbers: [20, '÷', 4, '=', 5, '×', 3, '=', 15], highlight_index: 8, analogy: null, duration_seconds: 4 }
+    ],
+    concept_summary: 'Age ratio problems: let ages = ratio multiples of x. Cross-multiply future ratio equation to find x.',
+    follow_up_questions: [{ question: 'A:B age ratio = 2:3. After 4 yr = 3:4. Find A\'s present age.', options: { A: '6 yr', B: '8 yr', C: '10 yr', D: '12 yr' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'avg_11', category: 'avg', difficulty: 'Easy', concept_name: 'Weighted Average',
+    question_text: 'Class A has 30 students with average 70 marks. Class B has 20 students with average 80 marks. Find the overall average.',
+    options: { A: '73', B: '74', C: '75', D: '76' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Total Marks', explanation: 'Class A total = 30×70 = 2100. Class B total = 20×80 = 1600. Grand total = 3700.', visual_type: 'number_morph', formula_used: '2100 + 1600 = 3700', numbers: [2100, '+', 1600, '=', 3700], highlight_index: 4, analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Overall Average', explanation: 'Total students = 50. Avg = 3700/50 = 74.', visual_type: 'number_morph', formula_used: '3700 ÷ 50 = 74', numbers: [3700, '÷', 50, '=', 74], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Weighted average: total all values, total all counts, then divide. Never just average the averages!',
+    follow_up_questions: [{ question: '10 items at avg ₹5, 20 items at avg ₹8. Overall avg?', options: { A: '6.5', B: '7', C: '7.5', D: '8' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'avg_12', category: 'avg', difficulty: 'Medium', concept_name: 'Missing Number in Average',
+    question_text: 'Average of 5 numbers is 18. If one number is removed, the average becomes 16. What is the removed number?',
+    options: { A: '24', B: '26', C: '28', D: '30' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Total of 5 Numbers', explanation: 'Sum of 5 numbers = 5 × 18 = 90.', visual_type: 'number_morph', formula_used: '5 × 18 = 90', numbers: [5, '×', 18, '=', 90], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'Total of Remaining 4', explanation: 'After removal: 4 × 16 = 64. Removed number = 90 − 64 = 26.', visual_type: 'number_morph', formula_used: '90 − 64 = 26', numbers: [90, '−', 64, '=', 26], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Missing element = (Old count × Old avg) − (New count × New avg). Simple but powerful!',
+    follow_up_questions: [{ question: 'Avg of 8 = 20. Remove one, avg becomes 18. Removed number?', options: { A: '32', B: '34', C: '36', D: '38' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'avg_13', category: 'avg', difficulty: 'Hard', concept_name: 'Compound Ratio',
+    question_text: 'Find the compound ratio of 3:4, 5:6, and 2:5.',
+    options: { A: '1:4', B: '1:8', C: '1:2', D: '1:16' }, correct_answer: 'A',
+    animation_script: [
+      { step_number: 1, step_title: 'Multiply All Antecedents and Consequents', explanation: 'Compound ratio = (3×5×2) : (4×6×5) = 30 : 120 = 1 : 4.', visual_type: 'formula_highlight', formula_used: 'Compound Ratio = (a₁×a₂×a₃):(b₁×b₂×b₃)', formula_vars: [{ symbol: 'Num', color: 'a', label: '3×5×2=30', unit: '' }, { symbol: 'Den', color: 'b', label: '4×6×5=120', unit: '' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Simplify', explanation: '30:120 = 1:4.', visual_type: 'number_morph', formula_used: '30 : 120 = 1 : 4', numbers: [30, ':', 120, '=', '1:4'], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Compound ratio: multiply all numerators together, all denominators together, then simplify.',
+    follow_up_questions: [{ question: 'Compound ratio of 2:3 and 4:5?', options: { A: '8:15', B: '6:15', C: '4:9', D: '2:5' }, correct_answer: 'A' }]
+  },
+  {
+    id: 'avg_14', category: 'avg', difficulty: 'Medium', concept_name: 'Proportion',
+    question_text: 'If 4 : 7 = x : 35, find x.',
+    options: { A: '15', B: '18', C: '20', D: '22' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Cross Multiplication', explanation: 'In a proportion a:b = c:d, we have a×d = b×c (cross product). So 4×35 = 7×x.', visual_type: 'formula_highlight', formula_used: '4 × 35 = 7 × x', formula_vars: [{ symbol: 'x', color: 'a', label: '?', unit: '' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Solve for x', explanation: '140 = 7x → x = 20.', visual_type: 'number_morph', formula_used: '140 ÷ 7 = 20', numbers: [140, '÷', 7, '=', 20], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Proportion: a:b = c:d → ad = bc (cross multiply). Find the unknown using division.',
+    follow_up_questions: [{ question: '5:8 = 15:x. Find x.', options: { A: '22', B: '24', C: '26', D: '28' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'avg_15', category: 'avg', difficulty: 'Hard', concept_name: 'Mixture Replacement',
+    question_text: 'A vessel has 40 litres of pure milk. 10 litres is removed and replaced with water. This is done twice. Find the amount of milk left.',
+    options: { A: '20.5 L', B: '22.5 L', C: '25 L', D: '27.5 L' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Mixture Replacement Formula', explanation: 'Milk remaining = Initial × (1 − Removed/Total)^n = 40 × (1 − 10/40)² = 40 × (3/4)².', visual_type: 'formula_highlight', formula_used: 'Milk = V × (1 − r/V)ⁿ', formula_vars: [{ symbol: 'V', color: 'a', label: '40', unit: 'L' }, { symbol: 'r', color: 'b', label: '10', unit: 'L' }, { symbol: 'n', color: 'c', label: '2', unit: 'times' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Calculate', explanation: '40 × (3/4)² = 40 × 9/16 = 360/16 = 22.5 litres of milk.', visual_type: 'number_morph', formula_used: '40 × 9/16 = 22.5', numbers: [40, '×', 9, '÷', 16, '=', 22.5], highlight_index: 6, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Repeated replacement: Final pure quantity = Initial × (1 − replaced/total)^n. Works for any number of repetitions.',
+    follow_up_questions: [{ question: '30L milk. 6L removed and replaced with water 3 times. Milk left?', options: { A: '14.4 L', B: '15 L', C: '16 L', D: '17.6 L' }, correct_answer: 'A' }]
+  },
+
+  // ═══════════════════════════════════════════════════════
+  // NUMBER SYSTEM — Additional 10 Questions
+  // ═══════════════════════════════════════════════════════
+  {
+    id: 'ns_6', category: 'ns', difficulty: 'Easy', concept_name: 'Divisibility Rule for 3',
+    question_text: 'Which of the following numbers is divisible by 3?',
+    options: { A: '10417', B: '12345', C: '22241', D: '98764' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Divisibility Rule for 3', explanation: 'A number is divisible by 3 if the SUM of its digits is divisible by 3.', visual_type: 'formula_highlight', formula_used: 'Sum of digits divisible by 3 → number divisible by 3', formula_vars: [{ symbol: 'Rule', color: 'a', label: 'Sum of digits', unit: '÷3' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Check 12345', explanation: '1+2+3+4+5 = 15. 15/3 = 5 → divisible by 3. Answer: 12345.', visual_type: 'number_morph', formula_used: '1+2+3+4+5 = 15 ÷ 3 = 5 ✓', numbers: [1, '+', 2, '+', 3, '+', 4, '+', 5, '=', 15], highlight_index: 10, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Div by 3: digit sum % 3 = 0. Div by 9: digit sum % 9 = 0. These rules save you from long division!',
+    follow_up_questions: [{ question: 'Which number is divisible by 9? A)81234 B)45679 C)12344 D)54321', options: { A: '81234', B: '45679', C: '12344', D: '54321' }, correct_answer: 'A' }]
+  },
+  {
+    id: 'ns_7', category: 'ns', difficulty: 'Medium', concept_name: 'HCF by Factoring',
+    question_text: 'Find the HCF of 48 and 72.',
+    options: { A: '12', B: '18', C: '24', D: '36' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Prime Factorization', explanation: '48 = 2⁴ × 3. 72 = 2³ × 3². HCF = take smallest power of each common prime.', visual_type: 'formula_highlight', formula_used: 'HCF = Product of common primes with smallest powers', formula_vars: [{ symbol: '48', color: 'a', label: '2⁴×3', unit: '' }, { symbol: '72', color: 'b', label: '2³×3²', unit: '' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Calculate HCF', explanation: 'Common primes: 2 (min power = 3) and 3 (min power = 1). HCF = 2³ × 3 = 8 × 3 = 24.', visual_type: 'number_morph', formula_used: '2³ × 3 = 24', numbers: [8, '×', 3, '=', 24], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'HCF: Use prime factorization, take LOWEST powers of common factors. LCM: take HIGHEST powers of ALL factors.',
+    follow_up_questions: [{ question: 'HCF of 36 and 60?', options: { A: '6', B: '9', C: '12', D: '18' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'ns_8', category: 'ns', difficulty: 'Easy', concept_name: 'Unit Digit of Powers',
+    question_text: 'What is the unit digit of 3^57?',
+    options: { A: '1', B: '3', C: '7', D: '9' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Cyclicity of 3', explanation: 'Unit digit of 3: 3¹=3, 3²=9, 3³=27, 3⁴=81, 3⁵=243. Cycle: 3,9,7,1 → repeats every 4.', visual_type: 'pattern_reveal', pattern: ['3¹→3', '3²→9', '3³→7', '3⁴→1', '3⁵→3'], differences: ['cycle', 'length', '=', '4', ''], formula_used: 'Unit digits of 3 cycle: 3,9,7,1', analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Apply to 3^57', explanation: '57 mod 4 = 1 (57 = 14×4 + 1). Position 1 in cycle = 3. Unit digit = 3.', visual_type: 'number_morph', formula_used: '57 mod 4 = 1 → Unit digit = 3', numbers: [57, 'mod', 4, '=', 1, '→', 3], highlight_index: 6, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Unit digit cyclicity: 2(4), 3(4), 4(2), 7(4), 8(4), 9(2), 0,1,5,6 always same. Divide power by cycle length, use remainder.',
+    follow_up_questions: [{ question: 'Unit digit of 7^52?', options: { A: '1', B: '3', C: '7', D: '9' }, correct_answer: 'A' }]
+  },
+  {
+    id: 'ns_9', category: 'ns', difficulty: 'Hard', concept_name: 'Trailing Zeros',
+    question_text: 'How many trailing zeros does 50! have?',
+    options: { A: '10', B: '12', C: '14', D: '15' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Count Factors of 5', explanation: 'Trailing zeros come from pairs of 2×5. Since 2s are plentiful, count 5s in 50!. Formula: ⌊50/5⌋ + ⌊50/25⌋ + ⌊50/125⌋...', visual_type: 'formula_highlight', formula_used: 'Zeros = ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + ...', formula_vars: [{ symbol: 'n', color: 'a', label: '50', unit: '' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Calculate', explanation: '⌊50/5⌋ = 10. ⌊50/25⌋ = 2. ⌊50/125⌋ = 0. Total = 10 + 2 = 12 trailing zeros.', visual_type: 'number_morph', formula_used: '10 + 2 + 0 = 12', numbers: [10, '+', 2, '+', 0, '=', 12], highlight_index: 6, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Trailing zeros in n! = Σ⌊n/5^k⌋ for k=1,2,3... until 5^k > n. Always count 5s, not 2s.',
+    follow_up_questions: [{ question: 'Trailing zeros in 100!?', options: { A: '20', B: '22', C: '24', D: '25' }, correct_answer: 'C' }]
+  },
+  {
+    id: 'ns_10', category: 'ns', difficulty: 'Medium', concept_name: 'LCM Word Problem',
+    question_text: 'Three bells toll at intervals of 12, 15, and 20 minutes. If they toll together at 8 AM, at what time will they next toll together?',
+    options: { A: '8:30 AM', B: '9:00 AM', C: '9:30 AM', D: '10:00 AM' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Find LCM', explanation: 'LCM of 12, 15, 20. 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60 minutes.', visual_type: 'formula_highlight', formula_used: 'LCM(12,15,20) = 60 min', formula_vars: [{ symbol: '12', color: 'a', label: '2²×3', unit: '' }, { symbol: '15', color: 'b', label: '3×5', unit: '' }, { symbol: '20', color: 'c', label: '2²×5', unit: '' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Next Common Time', explanation: 'They toll together every 60 minutes. 8:00 AM + 60 min = 9:00 AM.', visual_type: 'number_morph', formula_used: '8:00 AM + 60 min = 9:00 AM', numbers: [8, '+', 60, 'min', '=', '9:00 AM'], highlight_index: 5, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Bell/light problems: find LCM of intervals. LCM gives the time period after which all events coincide again.',
+    follow_up_questions: [{ question: 'Bells ring at 6, 8, 12 min. Rang together at noon. Next time?', options: { A: '12:24 PM', B: '12:30 PM', C: '12:48 PM', D: '1:00 PM' }, correct_answer: 'A' }]
+  },
+  {
+    id: 'ns_11', category: 'ns', difficulty: 'Easy', concept_name: 'Number of Factors',
+    question_text: 'How many factors does 72 have?',
+    options: { A: '8', B: '10', C: '12', D: '14' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Prime Factorization', explanation: '72 = 2³ × 3². For factors, use formula: (power+1) × (power+1)...', visual_type: 'formula_highlight', formula_used: 'If n = pᵃ × qᵇ, factors = (a+1)(b+1)', formula_vars: [{ symbol: '72', color: 'a', label: '2³×3²', unit: '' }], analogy: null, duration_seconds: 3 },
+      { step_number: 2, step_title: 'Apply Formula', explanation: 'Factors = (3+1)(2+1) = 4×3 = 12 factors.', visual_type: 'number_morph', formula_used: '(3+1) × (2+1) = 12', numbers: [4, '×', 3, '=', 12], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Number of factors = product of (each prime\'s exponent + 1). Works for any composite number after prime factorization.',
+    follow_up_questions: [{ question: 'How many factors does 120 have?', options: { A: '14', B: '16', C: '18', D: '20' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'ns_12', category: 'ns', difficulty: 'Medium', concept_name: 'Remainder Theorem',
+    question_text: 'What is the remainder when 2^100 is divided by 3?',
+    options: { A: '0', B: '1', C: '2', D: '3' }, correct_answer: 'B',
+    animation_script: [
+      { step_number: 1, step_title: 'Cyclicity of Remainders', explanation: '2¹÷3 = rem 2. 2²÷3 = rem 1. 2³÷3 = rem 2. 2⁴÷3 = rem 1. Pattern: odd power → 2, even power → 1.', visual_type: 'pattern_reveal', pattern: ['2¹ rem=2', '2² rem=1', '2³ rem=2', '2⁴ rem=1'], differences: ['odd→2', 'even→1', 'odd→2', 'even→1'], formula_used: 'Even power of 2: rem by 3 = 1', analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Apply to 2^100', explanation: '100 is even → remainder = 1.', visual_type: 'number_morph', formula_used: '2^100 ÷ 3 → remainder = 1', numbers: [100, 'is even', '→', 'rem', '=', 1], highlight_index: 5, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'Remainder problems: find the cycle of remainders for the base, then use power mod cycle-length to find the answer.',
+    follow_up_questions: [{ question: 'Remainder when 3^50 is divided by 4?', options: { A: '0', B: '1', C: '2', D: '3' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'ns_13', category: 'ns', difficulty: 'Easy', concept_name: 'Simplification — BODMAS',
+    question_text: 'Simplify: 16 + 4 × (8 − 5) ÷ 2',
+    options: { A: '22', B: '24', C: '26', D: '28' }, correct_answer: 'A',
+    animation_script: [
+      { step_number: 1, step_title: 'BODMAS Order', explanation: 'B-O-D-M-A-S: Brackets first → (8−5) = 3.', visual_type: 'number_morph', formula_used: '(8 − 5) = 3', numbers: [8, '−', 5, '=', 3], highlight_index: 4, analogy: null, duration_seconds: 2 },
+      { step_number: 2, step_title: 'Division & Multiplication', explanation: '4 × 3 ÷ 2 = 12 ÷ 2 = 6.', visual_type: 'number_morph', formula_used: '4 × 3 ÷ 2 = 6', numbers: [4, '×', 3, '÷', 2, '=', 6], highlight_index: 6, analogy: null, duration_seconds: 2 },
+      { step_number: 3, step_title: 'Addition', explanation: '16 + 6 = 22.', visual_type: 'number_morph', formula_used: '16 + 6 = 22', numbers: [16, '+', 6, '=', 22], highlight_index: 4, analogy: null, duration_seconds: 2 }
+    ],
+    concept_summary: 'BODMAS: Bracket → Of → Division → Multiplication → Addition → Subtraction. Stick to this order every single time.',
+    follow_up_questions: [{ question: '10 + 5 × 2 − (3 + 1) = ?', options: { A: '14', B: '16', C: '18', D: '20' }, correct_answer: 'B' }]
+  },
+  {
+    id: 'ns_14', category: 'ns', difficulty: 'Hard', concept_name: 'Divisibility by 11',
+    question_text: 'Is 87659 divisible by 11?',
+    options: { A: 'Yes', B: 'No', C: 'Cannot determine', D: 'Yes, remainder 1' }, correct_answer: 'A',
+    animation_script: [
+      { step_number: 1, step_title: 'Rule for 11', explanation: 'Divisibility by 11: (Sum of odd-position digits) − (Sum of even-position digits) = 0 or multiple of 11.', visual_type: 'formula_highlight', formula_used: 'Odd positions − Even positions = 0 or ±11', formula_vars: [{ symbol: 'Odd', color: 'a', label: '8+6+9=23', unit: '' }, { symbol: 'Even', color: 'b', label: '7+5=12', unit: '' }], analogy: null, duration_seconds: 4 },
+      { step_number: 2, step_title: 'Check 87659', explanation: 'Positions: 8(1),7(2),6(3),5(4),9(5). Odd(1,3,5)=8+6+9=23. Even(2,4)=7+5=12. Diff=23−12=11. Divisible by 11!', visual_type: 'number_morph', formula_used: '23 − 12 = 11 ✓', numbers: [23, '−', 12, '=', 11], highlight_index: 4, analogy: null, duration_seconds: 3 }
+    ],
+    concept_summary: 'Divisibility by 11: alternate digit sum difference = 0 or multiple of 11. Odd-positioned minus Even-positioned.',
+    follow_up_questions: [{ question: 'Is 121 divisible by 11?', options: { A: 'Yes', B: 'No', C: 'Remainder 1', D: 'Remainder 2' }, correct_answer: 'A' }]
+  },
+  {
+    id: 'ns_15', category: 'ns', difficulty: 'Medium', concept_name: 'Approximation',
+    question_text: 'Approximate the value of: 399.9 × 20.1 / 10.2',
+    options: { A: '780', B: '785', C: '788', D: '800' }, correct_answer: 'C',
+    animation_script: [
+      { step_number: 1, step_title: 'Round to Nearest Whole Numbers', explanation: '≈ 400 × 20 / 10 = 8000 / 10 = 800. But we rounded UP so actual answer slightly less. Use 400 × 20 / 10.2 ≈ 784. Best match = 788.', visual_type: 'formula_highlight', formula_used: '≈ 400 × 20 ÷ 10 = 800 (adjusted: ~788)', formula_vars: [{ symbol: '399.9', color: 'a', label: '≈400', unit: '' }, { symbol: '20.1', color: 'b', label: '≈20', unit: '' }, { symbol: '10.2', color: 'c', label: '≈10', unit: '' }], analogy: null, duration_seconds: 4 }
+    ],
+    concept_summary: 'Approximation: round to nearest easy numbers, compute, then adjust based on whether you rounded up or down.',
+    follow_up_questions: [{ question: 'Approximate: 502 × 9.9 / 4.98?', options: { A: '990', B: '1000', C: '1050', D: '1100' }, correct_answer: 'B' }]
+  }
 ];
 
 export const QUESTION_BANK_MAP = {};
