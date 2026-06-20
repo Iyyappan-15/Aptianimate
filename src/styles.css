@@ -1016,3 +1016,74 @@ img, svg { display: block; }
   box-shadow: 0 3px 12px rgba(0,0,0,0.06);
 }
 
+
+/* -- Campus Placement Syllabus View -- */
+.campus-syllabus-view {
+  margin-top: 32px;
+}
+.syllabus-section {
+  margin-bottom: 48px;
+}
+.syllabus-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.syllabus-section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+.syllabus-icon {
+  font-size: 1.8rem;
+}
+.syllabus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.syllabus-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.syllabus-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-sm);
+}
+.syllabus-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.syllabus-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.syllabus-topic-pill {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.syllabus-topic-pill:hover {
+  color: var(--text);
+  border-color: var(--violet);
+  background: rgba(99, 102, 241, 0.05);
+}

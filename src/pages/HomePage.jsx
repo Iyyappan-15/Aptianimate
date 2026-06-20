@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { CATEGORIES } from '../data/questionBank';
 import { getGoal, setGoal, getLastSession, getStats } from '../utils/localStorage';
 import ProgressDashboard from '../components/ProgressDashboard';
+import CampusPlacementView from '../components/CampusPlacementView';
 
 export default function HomePage({ navigate }) {
   const [goal, setLocalGoal] = useState(getGoal());
@@ -62,29 +63,35 @@ export default function HomePage({ navigate }) {
         </div>
       )}
 
-      <div className="section-header">
-        <div className="section-title">Explore Categories</div>
-      </div>
-
-      {['Quantitative', 'Logical'].map(pillar => (
-        <div key={pillar}>
-          <div className="pillar-label">{pillar}</div>
-          <div className="category-grid">
-            {CATEGORIES.filter(c => c.pillar === pillar).map(cat => (
-              <div
-                key={cat.id}
-                className="category-card"
-                style={{ '--accent-color': cat.accent }}
-                onClick={() => navigate(`category/${cat.id}`)}
-              >
-                <div className="cat-icon">{cat.icon}</div>
-                <div className="cat-name">{cat.name}</div>
-                <div className="cat-meta">{cat.description}</div>
-              </div>
-            ))}
+      {goal === 'Campus Placements' ? (
+        <CampusPlacementView navigate={navigate} />
+      ) : (
+        <>
+          <div className="section-header">
+            <div className="section-title">Explore Categories</div>
           </div>
-        </div>
-      ))}
+
+          {['Quantitative', 'Logical'].map(pillar => (
+            <div key={pillar}>
+              <div className="pillar-label">{pillar}</div>
+              <div className="category-grid">
+                {CATEGORIES.filter(c => c.pillar === pillar).map(cat => (
+                  <div
+                    key={cat.id}
+                    className="category-card"
+                    style={{ '--accent-color': cat.accent }}
+                    onClick={() => navigate(`category/${cat.id}`)}
+                  >
+                    <div className="cat-icon">{cat.icon}</div>
+                    <div className="cat-name">{cat.name}</div>
+                    <div className="cat-meta">{cat.description}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 }
