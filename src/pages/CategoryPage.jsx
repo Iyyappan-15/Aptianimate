@@ -1,26 +1,31 @@
 // src/pages/CategoryPage.jsx
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CATEGORIES, QUESTION_BANK_MAP } from '../data/questionBank';
 import { getAnswered, setLastSession } from '../utils/localStorage';
 import { parseUserQuestion } from '../api/groqApi';
 import LoadingSkeleton from '../components/LoadingSkeleton';
 
 export default function CategoryPage({ categoryId, navigate }) {
-  const [questions, setQuestions] = useState([]);
-  const [cat, setCat] = useState(null);
+  const [questions, setQuestions]   = useState([]);
+  const [cat, setCat]               = useState(null);
   const [answeredMap, setAnsweredMap] = useState({});
   const [customText, setCustomText] = useState('');
-  const [loadingAI, setLoadingAI] = useState(false);
-  const [aiError, setAiError] = useState('');
+  const [loadingAI, setLoadingAI]   = useState(false);
+  const [aiError, setAiError]       = useState('');
+  const [activeTopic, setActiveTopic] = useState(null); // which topic card is expanded
+  const practiceRef = useRef(null);
 
   useEffect(() => {
     const category = CATEGORIES.find(c => c.id === categoryId);
     if (!category) { navigate(''); return; }
     setCat(category);
-    const bankQs = QUESTION_BANK_MAP[categoryId] || [];
-    setQuestions(bankQs);
+    setQuestions(QUESTION_BANK_MAP[categoryId] || []);
     setAnsweredMap(getAnswered());
   }, [categoryId, navigate]);
+
+  const scrollToPractice = () => {
+    practiceRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   const handleCustomSubmit = async () => {
     if (!customText.trim()) return;
@@ -48,6 +53,7 @@ export default function CategoryPage({ categoryId, navigate }) {
   };
 
   if (!cat) return null;
+  const topics = cat.teaching?.topics || [];
 
   return (
     <div className="page cat-page" style={{ animation: 'fadeIn 0.5s ease' }}>
@@ -55,19 +61,70 @@ export default function CategoryPage({ categoryId, navigate }) {
         ← Back to Home
       </button>
 
-      {/* ── Category Header ── */}
+      {/* ── Hero ── */}
       <div className="cat-hero" style={{ '--accent': cat.accent }}>
         <div className="cat-hero-icon">{cat.icon}</div>
         <div className="cat-hero-text">
           <h1 className="cat-hero-title">{cat.name}</h1>
           <p className="cat-hero-desc">{cat.description}</p>
         </div>
+        <button className="btn btn-primary btn-sm cat-hero-cta" onClick={scrollToPractice}>
+          Practice Questions →
+        </button>
       </div>
 
-      {/* ── Teaching Section ── */}
-      {cat.teaching && <TeachingSection teaching={cat.teaching} accent={cat.accent} />}
+      {/* ── Topics Section ── */}
+      {topics.length > 0 && (
+        <div className="topics-section">
+          <div className="topics-section-header">
+            <div className="topics-section-title">
+              <span>📌</span> Topics in this Chapter
+            </div>
+            <div className="topics-section-sub">
+              Click any topic to learn its concepts, formulas & tricks
+            </div>
+          </div>
 
-      {/* ── AI Question Input (user-entered, at top of practice) ── */}
+          {/* Topic chips row */}
+          <div className="topics-chip-row">
+            {topics.map((topic, i) => {
+              const topicName = typeof topic === 'string' ? topic : topic.name;
+              const isActive = activeTopic === i;
+              return (
+                <button
+                  key={i}
+                  className={`topic-chip-btn ${isActive ? 'active' : ''}`}
+                  style={{ '--chip-accent': cat.accent }}
+                  onClick={() => setActiveTopic(isActive ? null : i)}
+                >
+                  <span className="topic-chip-num">{i + 1}</span>
+                  {topicName}
+                  <span className="topic-chip-arrow">{isActive ? '▲' : '▼'}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Expanded Topic Detail Panel */}
+          {activeTopic !== null && typeof topics[activeTopic] === 'object' && (
+            <TopicDetailPanel
+              topic={topics[activeTopic]}
+              accent={cat.accent}
+              topicIndex={activeTopic}
+              onGoToQuestions={scrollToPractice}
+            />
+          )}
+
+          {/* Placement Tip Banner */}
+          {cat.teaching?.tip && (
+            <div className="teaching-tip-banner" style={{ '--accent': cat.accent }}>
+              <div className="teaching-tip-text">{cat.teaching.tip}</div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ── Ask Your Own Question ── */}
       <div className="user-input-section mb-24">
         <div className="uq-header">
           <div>
@@ -77,7 +134,7 @@ export default function CategoryPage({ categoryId, navigate }) {
         </div>
         <textarea
           className="uq-textarea"
-          placeholder={`e.g. A number when divided by 6 leaves remainder 3. What is the remainder when square of the number is divided by 6?`}
+          placeholder="e.g. A number when divided by 6 leaves remainder 3. What is the remainder when the square of the number is divided by 6?"
           value={customText}
           onChange={e => setCustomText(e.target.value)}
           disabled={loadingAI}
@@ -99,7 +156,7 @@ export default function CategoryPage({ categoryId, navigate }) {
       {loadingAI && <div className="mb-24"><LoadingSkeleton /></div>}
 
       {/* ── Practice Bank ── */}
-      <div className="practice-bank-header">
+      <div ref={practiceRef} className="practice-bank-header">
         <div className="section-title">📚 Practice Bank</div>
         <span className="practice-count">{questions.length} Questions</span>
       </div>
@@ -121,12 +178,9 @@ export default function CategoryPage({ categoryId, navigate }) {
               </div>
               <div className="q-status">
                 {status && (
-                  <div
-                    className={`q-status-dot ${status.correct ? 'correct' : 'wrong'}`}
-                    title={status.correct ? 'Answered Correctly' : 'Answered Incorrectly'}
-                  />
+                  <div className={`q-status-dot ${status.correct ? 'correct' : 'wrong'}`} />
                 )}
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'var(--muted2)' }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: 'var(--muted2)', flexShrink: 0 }}>
                   <path d="M9 18l6-6-6-6" />
                 </svg>
               </div>
@@ -138,61 +192,48 @@ export default function CategoryPage({ categoryId, navigate }) {
   );
 }
 
-// ── Teaching Section Component ─────────────────────────────────────────────────
-function TeachingSection({ teaching, accent }) {
-  const [openFormula, setOpenFormula] = useState(null);
-
+// ── Topic Detail Panel ──────────────────────────────────────────────────────────
+function TopicDetailPanel({ topic, accent, topicIndex, onGoToQuestions }) {
   return (
-    <div className="teaching-section">
-
-      {/* Topics Covered */}
-      <div className="teaching-block">
-        <div className="teaching-block-title">
-          <span className="teaching-icon">📌</span> Topics Covered
-        </div>
-        <div className="topics-grid">
-          {teaching.topics.map((topic, i) => (
-            <div key={i} className="topic-chip" style={{ '--chip-accent': accent }}>
-              <span className="topic-num">{i + 1}</span>
-              {topic}
-            </div>
-          ))}
+    <div className="topic-detail-panel" style={{ '--accent': accent }} key={topicIndex}>
+      {/* Header */}
+      <div className="tdp-header">
+        <div className="tdp-num" style={{ background: accent }}>{topicIndex + 1}</div>
+        <div>
+          <div className="tdp-title">{topic.name}</div>
+          <div className="tdp-desc">{topic.description}</div>
         </div>
       </div>
 
-      {/* Key Formulas */}
-      <div className="teaching-block">
-        <div className="teaching-block-title">
-          <span className="teaching-icon">📐</span> Key Formulas & Tricks
-        </div>
-        <div className="formulas-grid">
-          {teaching.formulas.map((f, i) => (
-            <div
-              key={i}
-              className={`formula-card ${openFormula === i ? 'open' : ''}`}
-              onClick={() => setOpenFormula(openFormula === i ? null : i)}
-            >
-              <div className="formula-card-header">
-                <span className="formula-card-title">{f.title}</span>
-                <span className="formula-card-chevron">{openFormula === i ? '▲' : '▼'}</span>
+      {/* Formulas grid */}
+      {topic.formulas?.length > 0 && (
+        <div className="tdp-section">
+          <div className="tdp-section-label">📐 Formulas & Rules</div>
+          <div className="tdp-formulas">
+            {topic.formulas.map((f, i) => (
+              <div key={i} className="tdp-formula-card">
+                <div className="tdp-formula-title">{f.title}</div>
+                <div className="tdp-formula-body">{f.formula}</div>
               </div>
-              <div className="formula-card-formula">{f.formula}</div>
-              {openFormula === i && f.tip && (
-                <div className="formula-card-tip">
-                  💡 {f.tip}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Placement Tip */}
-      {teaching.tip && (
-        <div className="teaching-tip-banner" style={{ '--accent': accent }}>
-          <div className="teaching-tip-text">{teaching.tip}</div>
+            ))}
+          </div>
         </div>
       )}
+
+      {/* Worked Example */}
+      {topic.example && (
+        <div className="tdp-example">
+          <span className="tdp-example-label">💡 Worked Example</span>
+          <span className="tdp-example-text">{topic.example}</span>
+        </div>
+      )}
+
+      {/* Go to Questions CTA */}
+      <div className="tdp-cta-row">
+        <button className="btn btn-primary" onClick={onGoToQuestions}>
+          📚 Go to Practice Questions ↓
+        </button>
+      </div>
     </div>
   );
 }
