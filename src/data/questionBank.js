@@ -1894,7 +1894,1793 @@ export const QUESTIONS = [
     ],
     concept_summary: 'Approximation: round to nearest easy numbers, compute, then adjust based on whether you rounded up or down.',
     follow_up_questions: [{ question: 'Approximate: 502 × 9.9 / 4.98?', options: { A: '990', B: '1000', C: '1050', D: '1100' }, correct_answer: 'B' }]
-  }
+  },
+  {
+    "id": "syn_6",
+    "category": "syn",
+    "difficulty": "Easy",
+    "concept_name": "Synonyms",
+    "question_text": "Choose the correct synonym for \"MITIGATE\".",
+    "options": [
+      "Aggravate",
+      "Alleviate",
+      "Instigate",
+      "Elevate"
+    ],
+    "correct_answer": "Alleviate",
+    "explanation": "\"Mitigate\" means to make something less severe, harmful, or painful. \"Alleviate\" is the exact synonym.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Mitigate",
+        "text": "To lessen in force or intensity, as wrath, grief, harshness, or pain.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Aggravate = make worse\\nAlleviate = make easier/lighter\\nInstigate = provoke",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Alleviate matches the meaning perfectly.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_7",
+    "category": "syn",
+    "difficulty": "Medium",
+    "concept_name": "Antonyms",
+    "question_text": "Choose the correct antonym for \"EPHEMERAL\".",
+    "options": [
+      "Transient",
+      "Permanent",
+      "Fleeting",
+      "Brief"
+    ],
+    "correct_answer": "Permanent",
+    "explanation": "\"Ephemeral\" means lasting for a very short time. The opposite is \"Permanent\".",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Ephemeral",
+        "text": "Lasting a very short time; short-lived.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Transient, Fleeting, and Brief are SYNONYMS.\\nPermanent means lasting forever.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Since we need an antonym, Permanent is the correct choice.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_8",
+    "category": "syn",
+    "difficulty": "Medium",
+    "concept_name": "Synonyms",
+    "question_text": "What is the closest meaning to \"LUCID\"?",
+    "options": [
+      "Confusing",
+      "Clear",
+      "Dark",
+      "Heavy"
+    ],
+    "correct_answer": "Clear",
+    "explanation": "\"Lucid\" means expressed clearly; easy to understand.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Lucid",
+        "text": "Characterized by clear perception or understanding; rational or sane.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Confusing is an antonym.\\nClear is the exact meaning.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Clear is the correct synonym.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_9",
+    "category": "syn",
+    "difficulty": "Hard",
+    "concept_name": "Antonyms",
+    "question_text": "Find the antonym of \"CACOPHONY\".",
+    "options": [
+      "Noise",
+      "Harmony",
+      "Discord",
+      "Chatter"
+    ],
+    "correct_answer": "Harmony",
+    "explanation": "\"Cacophony\" is a harsh, discordant mixture of sounds. Its opposite is \"Harmony\".",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Cacophony",
+        "text": "Harsh discordance of sound.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Noise and Discord are synonyms.\\nHarmony means agreement or a pleasing arrangement of sounds.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Harmony is the antonym.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_10",
+    "category": "syn",
+    "difficulty": "Medium",
+    "concept_name": "Synonyms",
+    "question_text": "What is the synonym of \"PRAGMATIC\"?",
+    "options": [
+      "Idealistic",
+      "Practical",
+      "Theoretical",
+      "Irrational"
+    ],
+    "correct_answer": "Practical",
+    "explanation": "\"Pragmatic\" means dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Pragmatic",
+        "text": "Practical, down-to-earth, realistic.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Idealistic and Theoretical are opposites.\\nPractical is the exact match.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Practical is the synonym.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_11",
+    "category": "syn",
+    "difficulty": "Hard",
+    "concept_name": "Antonyms",
+    "question_text": "Choose the correct antonym for \"UBIQUITOUS\".",
+    "options": [
+      "Omnipresent",
+      "Rare",
+      "Everywhere",
+      "Common"
+    ],
+    "correct_answer": "Rare",
+    "explanation": "\"Ubiquitous\" means present, appearing, or found everywhere. The opposite is \"Rare\".",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Ubiquitous",
+        "text": "Existing or being everywhere, especially at the same time.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Omnipresent, Everywhere, Common are synonyms.\\nRare means not found everywhere.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Rare is the antonym.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_12",
+    "category": "syn",
+    "difficulty": "Easy",
+    "concept_name": "Synonyms",
+    "question_text": "What is the synonym of \"CANDID\"?",
+    "options": [
+      "Deceptive",
+      "Frank",
+      "Secretive",
+      "Shy"
+    ],
+    "correct_answer": "Frank",
+    "explanation": "\"Candid\" means truthful and straightforward; frank.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Candid",
+        "text": "Outspoken; open and sincere.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Deceptive and Secretive are antonyms.\\nFrank means open and sincere.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Frank is the synonym.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_13",
+    "category": "syn",
+    "difficulty": "Hard",
+    "concept_name": "Antonyms",
+    "question_text": "Choose the antonym for \"ENERVATE\".",
+    "options": [
+      "Exhaust",
+      "Energize",
+      "Weaken",
+      "Tire"
+    ],
+    "correct_answer": "Energize",
+    "explanation": "\"Enervate\" means to cause someone to feel drained of energy or vitality; weaken. The opposite is \"Energize\".",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Enervate",
+        "text": "To deprive of force or strength; destroy the vigor of; weaken.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Exhaust, Weaken, Tire are synonyms.\\nEnergize means to give energy.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Energize is the correct antonym.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_14",
+    "category": "syn",
+    "difficulty": "Medium",
+    "concept_name": "Synonyms",
+    "question_text": "What is the closest meaning to \"BENEVOLENT\"?",
+    "options": [
+      "Cruel",
+      "Kind",
+      "Selfish",
+      "Hostile"
+    ],
+    "correct_answer": "Kind",
+    "explanation": "\"Benevolent\" means well meaning and kindly.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Benevolent",
+        "text": "Characterized by or expressing goodwill or kindly feelings.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Cruel, Selfish, Hostile are negative traits.\\nKind is a positive trait matching the meaning.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Kind is the synonym.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "syn_15",
+    "category": "syn",
+    "difficulty": "Medium",
+    "concept_name": "Antonyms",
+    "question_text": "Choose the antonym for \"TENTATIVE\".",
+    "options": [
+      "Hesitant",
+      "Uncertain",
+      "Definite",
+      "Provisional"
+    ],
+    "correct_answer": "Definite",
+    "explanation": "\"Tentative\" means not certain or fixed; provisional. The opposite is \"Definite\".",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Meaning of Tentative",
+        "text": "Unsure; uncertain; not definite or positive.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Hesitant, Uncertain, Provisional are synonyms.\\nDefinite means certain and fixed.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Definite is the antonym.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_6",
+    "category": "fib",
+    "difficulty": "Easy",
+    "concept_name": "Prepositions",
+    "question_text": "She is completely absorbed ____ her work.",
+    "options": [
+      "in",
+      "with",
+      "at",
+      "by"
+    ],
+    "correct_answer": "in",
+    "explanation": "The correct preposition to use after \"absorbed\" when referring to deep involvement is \"in\".",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify the Phrasal Verb",
+        "text": "The verb is \"absorbed\". We need the preposition that follows it to mean \"deeply engaged\".",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Rule of Prepositions",
+        "text": "\"Absorbed in\" is a fixed prepositional phrase meaning fully focused on something.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The correct preposition is \"in\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_7",
+    "category": "fib",
+    "difficulty": "Medium",
+    "concept_name": "Vocabulary",
+    "question_text": "The new manager is very ____; she always plans for the future.",
+    "options": [
+      "reckless",
+      "provident",
+      "impulsive",
+      "myopic"
+    ],
+    "correct_answer": "provident",
+    "explanation": "\"Provident\" means making or indicative of timely preparation for the future.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Context",
+        "text": "The person \"always plans for the future\". We need a positive word meaning forward-looking.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Reckless and Impulsive mean acting without thinking.\\nMyopic means short-sighted.\\nProvident means planning for the future.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "\"Provident\" fits perfectly.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_8",
+    "category": "fib",
+    "difficulty": "Medium",
+    "concept_name": "Conjunctions",
+    "question_text": "____ he was tired, he finished the assignment.",
+    "options": [
+      "Because",
+      "Therefore",
+      "Although",
+      "Since"
+    ],
+    "correct_answer": "Although",
+    "explanation": "The sentence contrasts two ideas: being tired and finishing the assignment. \"Although\" is the correct conjunction for contrast.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify the Relationship",
+        "text": "Clause 1: He was tired. (Negative state)\\nClause 2: He finished the assignment. (Positive action)",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Choose the Conjunction",
+        "text": "Because, Therefore, Since imply cause and effect.\\nAlthough implies contrast.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "\"Although\" connects the contrasting ideas.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_9",
+    "category": "fib",
+    "difficulty": "Hard",
+    "concept_name": "Tense Context",
+    "question_text": "By the time we reach the station, the train ____.",
+    "options": [
+      "will have left",
+      "has left",
+      "will leave",
+      "left"
+    ],
+    "correct_answer": "will have left",
+    "explanation": "For an action that will be completed before a certain time in the future, the future perfect tense (\"will have left\") is used.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Time Frame",
+        "text": "\"By the time we reach\" sets a point in the future.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Determine the Tense",
+        "text": "An action completed before a future point requires the Future Perfect Tense.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "\"Will have left\" is the correct Future Perfect form.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_10",
+    "category": "fib",
+    "difficulty": "Medium",
+    "concept_name": "Subject-Verb Agreement",
+    "question_text": "Neither the principal nor the teachers ____ present at the meeting.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "has been"
+    ],
+    "correct_answer": "were",
+    "explanation": "When \"neither...nor\" connects two subjects, the verb agrees with the subject closer to it. \"Teachers\" is plural, so \"were\" is used.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Rule",
+        "text": "For \"neither...nor\", the verb matches the nearest subject.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Find the Nearest Subject",
+        "text": "Nearest subject is \"the teachers\" (plural).",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The plural past tense verb \"were\" is correct.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_11",
+    "category": "fib",
+    "difficulty": "Easy",
+    "concept_name": "Articles",
+    "question_text": "He is ____ honorable man.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "explanation": "Although \"honorable\" starts with an \"h\", it is silent, making the first sound a vowel sound (\"o\"). Therefore, \"an\" is used.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Check the Sound",
+        "text": "The word \"honorable\" begins with a silent H. The spoken sound is \"on-er-able\".",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply the Rule",
+        "text": "Use \"an\" before a vowel sound.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "\"an honorable\" is correct.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_12",
+    "category": "fib",
+    "difficulty": "Medium",
+    "concept_name": "Vocabulary",
+    "question_text": "The politician tried to ____ the fears of the public.",
+    "options": [
+      "allay",
+      "ignite",
+      "elevate",
+      "provoke"
+    ],
+    "correct_answer": "allay",
+    "explanation": "\"Allay\" means to diminish or put at rest (fear, suspicion, or worry).",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Context",
+        "text": "The object is \"fears\". A politician would try to reduce or calm fears.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Ignite, elevate, and provoke mean to increase.\\nAllay means to calm or reduce.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "\"allay\" fits the context.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_13",
+    "category": "fib",
+    "difficulty": "Hard",
+    "concept_name": "Idioms",
+    "question_text": "The manager decided to throw ____ the towel after failing repeatedly.",
+    "options": [
+      "in",
+      "out",
+      "away",
+      "up"
+    ],
+    "correct_answer": "in",
+    "explanation": "The idiom is \"throw in the towel\", which means to give up or admit defeat.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Phrase",
+        "text": "The sentence uses an idiomatic expression related to a towel and giving up.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Recall Idiom",
+        "text": "Originating from boxing, to \"throw in the towel\" means to surrender.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The correct preposition is \"in\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_14",
+    "category": "fib",
+    "difficulty": "Medium",
+    "concept_name": "Prepositions",
+    "question_text": "He was acquitted ____ all charges.",
+    "options": [
+      "from",
+      "of",
+      "with",
+      "for"
+    ],
+    "correct_answer": "of",
+    "explanation": "The verb \"acquitted\" takes the preposition \"of\".",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Verb",
+        "text": "The verb is \"acquitted\", meaning cleared of criminal charges.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Rule of Prepositions",
+        "text": "\"Acquitted of\" is the standard fixed preposition in legal terminology.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "\"of\" is the correct choice.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "fib_15",
+    "category": "fib",
+    "difficulty": "Hard",
+    "concept_name": "Vocabulary",
+    "question_text": "The detective’s ____ logic solved the mysterious case quickly.",
+    "options": [
+      "flawed",
+      "impeccable",
+      "specious",
+      "erratic"
+    ],
+    "correct_answer": "impeccable",
+    "explanation": "\"Impeccable\" means in accordance with the highest standards; faultless. Flawed, specious, and erratic are negative terms.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Context",
+        "text": "The logic successfully solved the case quickly, so it must be highly effective.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze Options",
+        "text": "Flawed = having errors.\\nSpecious = superficially plausible, but actually wrong.\\nErratic = unpredictable.\\nImpeccable = flawless.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "\"impeccable\" is the correct choice.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_6",
+    "category": "sc",
+    "difficulty": "Medium",
+    "concept_name": "Subject-Verb Agreement",
+    "question_text": "One of the boys are missing from the class.",
+    "options": [
+      "One of the boys is missing",
+      "One of the boy are missing",
+      "One of the boys was missed",
+      "No correction required"
+    ],
+    "correct_answer": "One of the boys is missing",
+    "explanation": "The subject \"One\" is singular, so the verb must be singular (\"is\").",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Subject",
+        "text": "The subject of the sentence is \"One\", not \"boys\".",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Check Agreement",
+        "text": "Singular subject \"One\" requires a singular verb.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Change \"are\" to \"is\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_7",
+    "category": "sc",
+    "difficulty": "Hard",
+    "concept_name": "Conditional Clauses",
+    "question_text": "If I was the Prime Minister, I would change the rules.",
+    "options": [
+      "If I am the Prime Minister",
+      "If I were the Prime Minister",
+      "If I had been the Prime Minister",
+      "No correction required"
+    ],
+    "correct_answer": "If I were the Prime Minister",
+    "explanation": "For hypothetical or unreal situations, the subjunctive mood \"were\" is used instead of \"was\" for all subjects.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Context",
+        "text": "The sentence describes a hypothetical, imaginary situation.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply Subjunctive Mood",
+        "text": "In unreal conditionals, use \"were\" for all subjects (I, he, she, it).",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Change \"was\" to \"were\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_8",
+    "category": "sc",
+    "difficulty": "Medium",
+    "concept_name": "Comparisons",
+    "question_text": "He is more smarter than his brother.",
+    "options": [
+      "He is more smart",
+      "He is much smarter",
+      "He is smarter",
+      "No correction required"
+    ],
+    "correct_answer": "He is smarter",
+    "explanation": "\"Smarter\" is already the comparative form of \"smart\". Using \"more smarter\" is a double comparative error.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify the Adjective",
+        "text": "\"Smart\" is a one-syllable adjective.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Comparative Rule",
+        "text": "Add \"-er\" for one-syllable adjectives. Do not use \"more\".",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Remove \"more\" and use \"smarter\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_9",
+    "category": "sc",
+    "difficulty": "Easy",
+    "concept_name": "Pronouns",
+    "question_text": "Between you and I, this is a secret.",
+    "options": [
+      "Between you and me",
+      "Between I and you",
+      "Between me and you",
+      "No correction required"
+    ],
+    "correct_answer": "Between you and me",
+    "explanation": "\"Between\" is a preposition, and it must be followed by an objective pronoun (\"me\").",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Preposition",
+        "text": "The word \"Between\" is a preposition.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Rule of Prepositions",
+        "text": "Prepositions are followed by object pronouns (me, him, her, us, them).",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Change \"I\" to \"me\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_10",
+    "category": "sc",
+    "difficulty": "Hard",
+    "concept_name": "Inversion",
+    "question_text": "Hardly I had reached the station when the train left.",
+    "options": [
+      "Hardly had I reached",
+      "Hardly did I reached",
+      "Hardly I reached",
+      "No correction required"
+    ],
+    "correct_answer": "Hardly had I reached",
+    "explanation": "When a sentence begins with a negative word like \"Hardly\", \"Scarcely\", or \"No sooner\", the subject and auxiliary verb are inverted.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Structure",
+        "text": "The sentence starts with the negative adverb \"Hardly\".",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply Inversion Rule",
+        "text": "Negative adverb at start -> Auxiliary Verb + Subject.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Change \"I had\" to \"had I\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_11",
+    "category": "sc",
+    "difficulty": "Medium",
+    "concept_name": "Noun Plurals",
+    "question_text": "I have bought some new furnitures for my house.",
+    "options": [
+      "some new furniture",
+      "a new furnitures",
+      "some of new furnitures",
+      "No correction required"
+    ],
+    "correct_answer": "some new furniture",
+    "explanation": "\"Furniture\" is an uncountable noun and does not have a plural form ending in \"s\".",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Noun",
+        "text": "The noun is \"furnitures\".",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Check Countability",
+        "text": "Furniture, information, luggage, and advice are uncountable nouns.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Remove the \"s\" from furnitures.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_12",
+    "category": "sc",
+    "difficulty": "Hard",
+    "concept_name": "Participles",
+    "question_text": "Walking in the park, a snake bit him.",
+    "options": [
+      "While walking in the park",
+      "While he was walking in the park",
+      "Walking in the park he",
+      "No correction required"
+    ],
+    "correct_answer": "While he was walking in the park",
+    "explanation": "The original sentence implies the snake was walking in the park (dangling participle). It needs a clear subject.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify the Modifier",
+        "text": "\"Walking in the park\" modifies the nearest noun.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Find the Subject",
+        "text": "The nearest noun is \"a snake\", implying the snake was walking.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Add an explicit subject: \"While he was walking\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_13",
+    "category": "sc",
+    "difficulty": "Medium",
+    "concept_name": "Tense Usage",
+    "question_text": "I am knowing him for a long time.",
+    "options": [
+      "I have been knowing him",
+      "I have known him",
+      "I know him",
+      "No correction required"
+    ],
+    "correct_answer": "I have known him",
+    "explanation": "\"Know\" is a stative verb and is not generally used in the continuous (-ing) form.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify the Verb",
+        "text": "The verb is \"knowing\".",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply Rule",
+        "text": "Stative verbs (know, believe, understand) aren't used in continuous tenses.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Use Present Perfect tense: \"have known\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_14",
+    "category": "sc",
+    "difficulty": "Easy",
+    "concept_name": "Superfluous Errors",
+    "question_text": "Please revert back to me by tomorrow.",
+    "options": [
+      "reply back",
+      "revert to",
+      "revert",
+      "No correction required"
+    ],
+    "correct_answer": "revert",
+    "explanation": "\"Revert\" already means \"reply\" or \"go back\". Using \"back\" with \"revert\" is redundant.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Meaning",
+        "text": "\"Revert\" means to reply or return to a previous state.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Check Redundancy",
+        "text": "Saying \"revert back\" is like saying \"reply back back\".",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Remove \"back\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "sc_15",
+    "category": "sc",
+    "difficulty": "Hard",
+    "concept_name": "Prepositions",
+    "question_text": "The team comprises of 11 players.",
+    "options": [
+      "comprises 11 players",
+      "consists 11 players",
+      "comprises with 11 players",
+      "No correction required"
+    ],
+    "correct_answer": "comprises 11 players",
+    "explanation": "The verb \"comprise\" means \"consist of\". It does not take the preposition \"of\" in active voice.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Identify Verb",
+        "text": "The verb is \"comprises\".",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply Rule",
+        "text": "\"Comprises\" = \"Consists of\". Therefore, \"comprises of\" is incorrect.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Fix the Error",
+        "text": "Remove \"of\".",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_6",
+    "category": "br",
+    "difficulty": "Medium",
+    "concept_name": "Family Tree",
+    "question_text": "Pointing to a photograph, a woman says, \"He is the only son of the wife of my husband’s father.\" How is the man in the photograph related to the woman?",
+    "options": [
+      "Brother",
+      "Brother-in-law",
+      "Husband",
+      "Father-in-law"
+    ],
+    "correct_answer": "Husband",
+    "explanation": "My husband’s father = Father-in-law. Wife of father-in-law = Mother-in-law. Only son of mother-in-law = The husband himself.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Breakdown 1",
+        "text": "\"my husband’s father\" = the woman's Father-in-law.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Breakdown 2",
+        "text": "\"wife of my husband’s father\" = Mother-in-law.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Breakdown 3",
+        "text": "\"only son of mother-in-law\" = Her husband.",
+        "color": "purple"
+      },
+      {
+        "step": 4,
+        "title": "Conclusion",
+        "text": "The man is the woman's husband.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_7",
+    "category": "br",
+    "difficulty": "Easy",
+    "concept_name": "Direct Relation",
+    "question_text": "A is B’s sister. C is B’s mother. D is C’s father. E is D’s mother. Then, how is A related to D?",
+    "options": [
+      "Grandmother",
+      "Grandfather",
+      "Daughter",
+      "Granddaughter"
+    ],
+    "correct_answer": "Granddaughter",
+    "explanation": "C is the mother of A and B. D is the father of C. Thus, D is the grandfather of A, making A the granddaughter of D.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Map A, B, C",
+        "text": "C is the mother of both A and B.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Map D",
+        "text": "D is C’s father. So D is the grandfather of A and B.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Determine A's Gender",
+        "text": "A is B’s sister, so A is female.",
+        "color": "purple"
+      },
+      {
+        "step": 4,
+        "title": "Conclusion",
+        "text": "A is D’s granddaughter.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_8",
+    "category": "br",
+    "difficulty": "Medium",
+    "concept_name": "Pointing",
+    "question_text": "Pointing to a boy, Meena said, \"He is the son of my grandmother’s only child.\" How is the boy related to Meena?",
+    "options": [
+      "Brother",
+      "Cousin",
+      "Uncle",
+      "Data Inadequate"
+    ],
+    "correct_answer": "Brother",
+    "explanation": "Meena’s grandmother’s only child is Meena’s parent (father or mother). The son of her parent is her brother.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Breakdown 1",
+        "text": "\"my grandmother’s only child\" = Meena's parent.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Breakdown 2",
+        "text": "\"son of my parent\" = Meena's brother.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The boy is Meena's brother.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_9",
+    "category": "br",
+    "difficulty": "Hard",
+    "concept_name": "Coded Relations",
+    "question_text": "If A + B means A is the brother of B; A - B means A is the sister of B, and A x B means A is the father of B. Which of the following means that C is the son of M?",
+    "options": [
+      "M - N x C + F",
+      "F - C + N x M",
+      "N + M - F x C",
+      "M x N - C + F"
+    ],
+    "correct_answer": "M x N - C + F",
+    "explanation": "In option 4: M x N means M is father of N. N - C means N is sister of C. C + F means C is brother of F. So, M is the father of C, and C is male. Thus C is the son of M.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Check Goal",
+        "text": "We need M to be the parent of C, and C must be male (brother/father).",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Test Option D",
+        "text": "M x N: M is father of N.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Test Option D cont.",
+        "text": "N - C: N is sister of C. (So M is also father of C)",
+        "color": "purple"
+      },
+      {
+        "step": 4,
+        "title": "Test Option D end",
+        "text": "C + F: C is brother of F. (So C is male). C is M's son.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_10",
+    "category": "br",
+    "difficulty": "Medium",
+    "concept_name": "Family Tree",
+    "question_text": "There are six children playing football, namely A, B, C, D, E, and F. A and E are brothers. F is the sister of E. C is the only son of A’s uncle. B and D are the daughters of the brother of C’s father. How is C related to F?",
+    "options": [
+      "Cousin",
+      "Brother",
+      "Uncle",
+      "None of these"
+    ],
+    "correct_answer": "Cousin",
+    "explanation": "A, E, and F are siblings. A’s uncle is also F’s uncle. C is the son of F’s uncle, meaning C is the cousin of F.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Group 1",
+        "text": "A, E (brothers) and F (sister) are siblings.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Group 2",
+        "text": "C is the son of A's uncle. So C is A's cousin.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Connect Groups",
+        "text": "Since A and F are siblings, C is also F's cousin.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_11",
+    "category": "br",
+    "difficulty": "Easy",
+    "concept_name": "Pointing",
+    "question_text": "Introducing a man, a woman said, \"His wife is the only daughter of my father.\" How is that man related to the woman?",
+    "options": [
+      "Husband",
+      "Brother",
+      "Father-in-law",
+      "Maternal Uncle"
+    ],
+    "correct_answer": "Husband",
+    "explanation": "Only daughter of the woman's father is the woman herself. So, the man's wife is the woman herself.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Breakdown 1",
+        "text": "\"only daughter of my father\" (spoken by a woman) = Herself.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Breakdown 2",
+        "text": "\"His wife is [Herself]\".",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The man is her husband.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_12",
+    "category": "br",
+    "difficulty": "Hard",
+    "concept_name": "Coded Relations",
+    "question_text": "A $ B means A is the father of B. A # B means A is the mother of B. A @ B means A is the wife of B. What does P @ Q $ R # S mean?",
+    "options": [
+      "P is the grandmother of S",
+      "P is the mother-in-law of S",
+      "P is the sister of S",
+      "P is the aunt of S"
+    ],
+    "correct_answer": "P is the grandmother of S",
+    "explanation": "P @ Q (P is wife of Q). Q $ R (Q is father of R, so P is mother of R). R # S (R is mother of S). Since P is the mother of R and R is the mother of S, P is the grandmother of S.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze P @ Q $ R",
+        "text": "P is wife of Q, Q is father of R. So P is the mother of R.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze R # S",
+        "text": "R is the mother of S.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Mother of Mother = Grandmother. P is the grandmother of S.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_13",
+    "category": "br",
+    "difficulty": "Medium",
+    "concept_name": "Pointing",
+    "question_text": "Pointing to a gentleman, Deepak said, \"His only brother is the father of my daughter's father.\" How is the gentleman related to Deepak?",
+    "options": [
+      "Father",
+      "Uncle",
+      "Grandfather",
+      "Brother-in-law"
+    ],
+    "correct_answer": "Uncle",
+    "explanation": "Father of Deepak's daughter's father = Father of Deepak (since Deepak is a man). The gentleman's brother is Deepak's father. Therefore, the gentleman is Deepak's uncle.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Breakdown 1",
+        "text": "\"my daughter's father\" (spoken by Deepak) = Deepak.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Breakdown 2",
+        "text": "\"father of Deepak\" = Deepak's Father.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Breakdown 3",
+        "text": "\"His only brother is Deepak's Father\".",
+        "color": "purple"
+      },
+      {
+        "step": 4,
+        "title": "Conclusion",
+        "text": "The gentleman is the brother of Deepak's father, so he is his Uncle.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_14",
+    "category": "br",
+    "difficulty": "Easy",
+    "concept_name": "Direct Relation",
+    "question_text": "If X is the brother of the son of Y's son, how is X related to Y?",
+    "options": [
+      "Son",
+      "Brother",
+      "Grandson",
+      "Nephew"
+    ],
+    "correct_answer": "Grandson",
+    "explanation": "Son of Y's son is Y's grandson. The brother of a grandson is also a grandson.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Breakdown 1",
+        "text": "\"son of Y's son\" = Y's grandson.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Breakdown 2",
+        "text": "\"brother of Y's grandson\" = Also Y's grandson.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "X is the grandson of Y.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "br_15",
+    "category": "br",
+    "difficulty": "Hard",
+    "concept_name": "Puzzle Relation",
+    "question_text": "A family consists of six members P, Q, R, X, Y, and Z. Q is the son of R but R is not the mother of Q. P and R are a married couple. Y is the brother of R. X is the daughter of P. Z is the brother of P. How many female members are there in the family?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "2",
+    "explanation": "Q is son of R. R is not mother, so R is father. P is married to R, so P is mother (Female). Y is brother of R (Male). X is daughter of P (Female). Z is brother of P (Male). Q is son (Male). Females: P and X.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Find R and P's Gender",
+        "text": "Q is son of R, but R is not mother -> R is Father (Male). P is his wife -> P is Female.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Find Children's Gender",
+        "text": "Q is a son (Male). X is a daughter (Female).",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Find Sibling's Gender",
+        "text": "Y is brother of R (Male). Z is brother of P (Male).",
+        "color": "purple"
+      },
+      {
+        "step": 4,
+        "title": "Count Females",
+        "text": "Only P and X are females. Total = 2.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_6",
+    "category": "cd",
+    "difficulty": "Easy",
+    "concept_name": "Letter Shift Coding",
+    "question_text": "If in a certain code language, WATER is written as YCVGT, how is FIRE written in that code?",
+    "options": [
+      "HKTG",
+      "HKUG",
+      "HLTG",
+      "GJQF"
+    ],
+    "correct_answer": "HKTG",
+    "explanation": "Each letter is shifted forward by 2 positions (+2). F+2=H, I+2=K, R+2=T, E+2=G.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Pattern",
+        "text": "W -> Y (+2)\\nA -> C (+2)\\nT -> V (+2)",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply to FIRE",
+        "text": "F + 2 = H\\nI + 2 = K\\nR + 2 = T\\nE + 2 = G",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The code is HKTG.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_7",
+    "category": "cd",
+    "difficulty": "Medium",
+    "concept_name": "Reverse Alphabet",
+    "question_text": "If KING is coded as PRMT, then how will RAIN be coded?",
+    "options": [
+      "IZRM",
+      "IRZM",
+      "ZIRM",
+      "MRZI"
+    ],
+    "correct_answer": "IZRM",
+    "explanation": "Each letter is replaced by its opposite/reverse letter in the alphabet (A-Z, B-Y, etc.). R->I, A->Z, I->R, N->M.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Pattern",
+        "text": "K <-> P (Opposite pairs)\\nI <-> R\\nN <-> M\\nG <-> T",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply to RAIN",
+        "text": "R <-> I\\nA <-> Z\\nI <-> R\\nN <-> M",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The code is IZRM.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_8",
+    "category": "cd",
+    "difficulty": "Hard",
+    "concept_name": "Number Coding",
+    "question_text": "If BAT is coded as 23 and CAT is coded as 24, how will BALL be coded?",
+    "options": [
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "correct_answer": "27",
+    "explanation": "Code is sum of alphabetic positions. B(2)+A(1)+T(20) = 23. C(3)+A(1)+T(20) = 24. BALL = B(2)+A(1)+L(12)+L(12) = 27.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze BAT",
+        "text": "B=2, A=1, T=20. Sum = 2+1+20 = 23.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Analyze CAT",
+        "text": "C=3, A=1, T=20. Sum = 3+1+20 = 24.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Apply to BALL",
+        "text": "B=2, A=1, L=12, L=12.\\nSum = 2+1+12+12 = 27.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_9",
+    "category": "cd",
+    "difficulty": "Medium",
+    "concept_name": "Vowel/Consonant Logic",
+    "question_text": "If ORANGE is coded as PQAOHF, how is APPLE coded?",
+    "options": [
+      "BQQMF",
+      "BQQMD",
+      "CQQMF",
+      "BQQNF"
+    ],
+    "correct_answer": "BQQMF",
+    "explanation": "Each letter is shifted by +1. A(+1)=B, P(+1)=Q, P(+1)=Q, L(+1)=M, E(+1)=F.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Pattern",
+        "text": "Each letter is shifted forward by 1 (+1).",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply to APPLE",
+        "text": "A -> B\\nP -> Q\\nP -> Q\\nL -> M\\nE -> F",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Code is BQQMF.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_10",
+    "category": "cd",
+    "difficulty": "Easy",
+    "concept_name": "Word Replacement",
+    "question_text": "If 'white' is called 'blue', 'blue' is called 'red', 'red' is called 'yellow', 'yellow' is called 'green', then what is the color of human blood?",
+    "options": [
+      "Red",
+      "Yellow",
+      "Blue",
+      "Green"
+    ],
+    "correct_answer": "Yellow",
+    "explanation": "The color of human blood is 'red'. But according to the code, 'red' is called 'yellow'.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Find Actual Answer",
+        "text": "The natural color of human blood is Red.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Look up Code",
+        "text": "According to the question, \"red is called yellow\".",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The coded answer is Yellow.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_11",
+    "category": "cd",
+    "difficulty": "Medium",
+    "concept_name": "Position Shift",
+    "question_text": "If MENTAL is written as LNDOMSUZKMBK, how is TEST written?",
+    "options": [
+      "SUDFRTSU",
+      "SUDFRTSS",
+      "SUDERTSS",
+      "SUDFRSUU"
+    ],
+    "correct_answer": "SUDFRTSU",
+    "explanation": "Each letter is replaced by its previous and next letter. M -> LN, E -> DF, N -> MO, T -> SU, A -> ZB, L -> KM. TEST -> T(SU), E(DF), S(RT), T(SU) -> SUDFRTSU.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Pattern",
+        "text": "Each letter becomes TWO letters: the one before it and the one after it.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply to TEST",
+        "text": "T -> S,U\\nE -> D,F\\nS -> R,T\\nT -> S,U",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Combine them: SUDFRTSU.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_12",
+    "category": "cd",
+    "difficulty": "Hard",
+    "concept_name": "Symbol Coding",
+    "question_text": "In a certain code, ROAD is written as URDG. How is SWAN written?",
+    "options": [
+      "VZDQ",
+      "VZCP",
+      "UXDQ",
+      "VZEQ"
+    ],
+    "correct_answer": "VZDQ",
+    "explanation": "Each letter is shifted +3. R(+3)=U, O(+3)=R, A(+3)=D, D(+3)=G. For SWAN: S(+3)=V, W(+3)=Z, A(+3)=D, N(+3)=Q -> VZDQ.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Pattern",
+        "text": "R -> U (+3)\\nO -> R (+3)",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply to SWAN",
+        "text": "S + 3 = V\\nW + 3 = Z\\nA + 3 = D\\nN + 3 = Q",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "The code is VZDQ.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_13",
+    "category": "cd",
+    "difficulty": "Easy",
+    "concept_name": "Number Shift",
+    "question_text": "If MACHINE is coded as 19-7-9-14-15-20-11, how will you code DANGER?",
+    "options": [
+      "10-7-20-13-11-24",
+      "10-7-20-13-11-25",
+      "11-7-20-16-11-24",
+      "13-7-20-9-11-25"
+    ],
+    "correct_answer": "10-7-20-13-11-24",
+    "explanation": "Position of letter + 6. M(13)+6=19, A(1)+6=7. D(4)+6=10, A(1)+6=7, N(14)+6=20, G(7)+6=13, E(5)+6=11, R(18)+6=24.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Pattern",
+        "text": "M is 13th letter. Code is 19. (13 + 6)\\nA is 1st letter. Code is 7. (1 + 6)",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply to DANGER",
+        "text": "D=4(+6)=10\\nA=1(+6)=7\\nN=14(+6)=20\\nG=7(+6)=13\\nE=5(+6)=11\\nR=18(+6)=24",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "Code is 10-7-20-13-11-24.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_14",
+    "category": "cd",
+    "difficulty": "Medium",
+    "concept_name": "Jumbled Coding",
+    "question_text": "In a certain code, SYSTEM is written as SYSMET and NEARER is written as AENRER. How is FRACTION written?",
+    "options": [
+      "CARFNOIT",
+      "NOITCARF",
+      "FRACNOIT",
+      "ARFCNOIT"
+    ],
+    "correct_answer": "CARFNOIT",
+    "explanation": "Split the word in half. Reverse each half. SYSTEM (SYS TEM) -> SYS MET. FRACTION (FRAC TION) -> CARF NOIT.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Analyze Pattern",
+        "text": "Word is split in two halves. SYS|TEM. Each half is reversed.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Apply to FRACTION",
+        "text": "Split into FRAC | TION.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Reverse Halves",
+        "text": "FRAC reversed is CARF.\\nTION reversed is NOIT.",
+        "color": "purple"
+      },
+      {
+        "step": 4,
+        "title": "Conclusion",
+        "text": "Combine them: CARFNOIT.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "cd_15",
+    "category": "cd",
+    "difficulty": "Hard",
+    "concept_name": "Sentence Coding",
+    "question_text": "If \"sky is blue\" is 123, \"blue sea deep\" is 245, and \"sea looks blue\" is 256. What is the code for \"blue\"?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "5"
+    ],
+    "correct_answer": "2",
+    "explanation": "The word \"blue\" is common in all three sentences. The only number common in 123, 245, and 256 is 2.",
+    "visual_steps": [
+      {
+        "step": 1,
+        "title": "Sentence 1 & 2",
+        "text": "\"sky is blue\" = 123\\n\"blue sea deep\" = 245\\nCommon word: blue. Common number: 2.",
+        "color": "blue"
+      },
+      {
+        "step": 2,
+        "title": "Sentence 3",
+        "text": "\"sea looks blue\" = 256\\nContains number 2 as well.",
+        "color": "orange"
+      },
+      {
+        "step": 3,
+        "title": "Conclusion",
+        "text": "\"blue\" is coded as 2.",
+        "color": "green"
+      }
+    ]
+  },
 ];
 
 export const QUESTION_BANK_MAP = {};
