@@ -9,7 +9,17 @@ export const CATEGORIES = [
     icon: '🚀',
     pillar: 'Quantitative',
     accent: '#7F77DD',
-    description: 'Trains, boats, relative speed & more'
+    description: 'Trains, boats, relative speed & more',
+    teaching: {
+      topics: ['Basic Speed-Distance', 'Relative Speed', 'Trains & Platforms', 'Boats & Streams', 'Average Speed'],
+      formulas: [
+        { title: 'Golden Rule', formula: 'Distance = Speed × Time', tip: 'This is the foundation of every question in this chapter.' },
+        { title: 'Unit Conversion', formula: 'km/h → m/s : Multiply by 5/18', tip: 'Always convert units before substituting.' },
+        { title: 'Relative Speed', formula: 'Opposite dirs: Add speeds | Same dir: Subtract speeds', tip: 'Used for trains crossing each other.' },
+        { title: 'Average Speed', formula: 'Avg Speed = 2ab / (a+b)  [for equal distances]', tip: 'Never just add and divide when distances are equal.' },
+      ],
+      tip: '🎯 Placement Trick: Train questions almost always require converting km/h to m/s. The moment you see meters and seconds, multiply speed by 5/18. Memorize this conversion — it saves 60 seconds per question.'
+    }
   },
   {
     id: 'plp',
@@ -17,7 +27,17 @@ export const CATEGORIES = [
     icon: '💰',
     pillar: 'Quantitative',
     accent: '#1D9E75',
-    description: 'Cost price, selling price, discounts'
+    description: 'Cost price, selling price, discounts',
+    teaching: {
+      topics: ['Cost Price vs Selling Price', 'Profit & Loss %', 'Discount & Markup', 'Successive Discounts', 'Dishonest Dealers'],
+      formulas: [
+        { title: 'Profit %', formula: 'Profit% = (SP − CP) / CP × 100', tip: 'Always divide by CP, not SP.' },
+        { title: 'Selling Price', formula: 'SP = CP × (1 + Profit%/100)', tip: 'For 25% profit: SP = 1.25 × CP.' },
+        { title: 'Discount', formula: 'SP = MP × (1 − Discount%/100)', tip: 'Marked Price is the original tag; Discount reduces it.' },
+        { title: 'Articles Trick', formula: 'If CP of n₁ = SP of n₂ → Profit% = (n₁−n₂)/n₂ × 100', tip: 'Classic question type: "CP of 20 = SP of 16" → find profit.' },
+      ],
+      tip: '🎯 Placement Trick: When you see "CP of X articles = SP of Y articles", immediately use: Profit% = (X−Y)/Y × 100. Do NOT set up x/y equations — this shortcut solves it in under 10 seconds.'
+    }
   },
   {
     id: 'si',
@@ -25,7 +45,17 @@ export const CATEGORIES = [
     icon: '📈',
     pillar: 'Quantitative',
     accent: '#EF9F27',
-    description: 'SI, CI, and rate calculations'
+    description: 'SI, CI, and rate calculations',
+    teaching: {
+      topics: ['Simple Interest', 'Compound Interest', 'Difference between SI & CI', 'Finding P, R, or T', 'Effective Rate'],
+      formulas: [
+        { title: 'Simple Interest', formula: 'SI = (P × R × T) / 100', tip: 'Interest is the same every year.' },
+        { title: 'Compound Interest', formula: 'A = P × (1 + R/100)^T', tip: 'Interest is added to principal each year, causing growth.' },
+        { title: 'CI − SI Shortcut (2 yrs)', formula: 'CI − SI = P × (R/100)²', tip: 'Use this to find P or R without long calculation.' },
+        { title: 'Half-Yearly Compounding', formula: 'A = P × (1 + R/200)^(2T)', tip: 'Double the time, halve the rate when compounded half-yearly.' },
+      ],
+      tip: '🎯 Placement Trick: For the very common question "find CI−SI for 2 years", use the shortcut P(R/100)². For 3 years, CI−SI = P(R/100)²(3 + R/100). These eliminate the need to compute full compound amounts.'
+    }
   },
   {
     id: 'avg',
@@ -33,7 +63,17 @@ export const CATEGORIES = [
     icon: '⚖️',
     pillar: 'Quantitative',
     accent: '#D85A30',
-    description: 'Mean, weighted avg, alligation'
+    description: 'Mean, weighted avg, alligation',
+    teaching: {
+      topics: ['Arithmetic Mean', 'Weighted Average', 'Ratios & Proportions', 'Alligation Rule', 'Mixing Two Solutions'],
+      formulas: [
+        { title: 'Average', formula: 'Average = Sum of Items / Number of Items', tip: 'If average changes when a member joins/leaves, find the new sum.' },
+        { title: 'Weighted Average', formula: 'WAvg = (w₁×v₁ + w₂×v₂) / (w₁+w₂)', tip: 'Used when two groups merge.' },
+        { title: 'Alligation Rule', formula: '(Cheaper) : (Dearer) = (Dearer−Mean) : (Mean−Cheaper)', tip: 'Draw a cross/diamond diagram — it always works visually.' },
+        { title: 'Ratio to Actual', formula: 'If a:b = 3:5 and total=80, then a=30, b=50', tip: 'Divide total by sum of ratio parts, then multiply.' },
+      ],
+      tip: '🎯 Placement Trick: For mixture questions, always draw the Alligation Cross. Write cheaper on the left, dearer on the right, mean in the center. Cross-subtract to get the mixing ratio. This works for ANY mixture problem.'
+    }
   },
   {
     id: 'ns',
@@ -41,7 +81,18 @@ export const CATEGORIES = [
     icon: '🔢',
     pillar: 'Quantitative',
     accent: '#7F77DD',
-    description: 'Series, Divisibility, LCM/HCF, Remainders & more'
+    description: 'Series, Divisibility, LCM/HCF, Remainders & more',
+    teaching: {
+      topics: ['Number Series & Patterns', 'Divisibility Rules', 'Prime Factorization & Factors', 'LCM & HCF', 'Unit Digits & Remainders', 'Trailing Zeros', 'Simplification'],
+      formulas: [
+        { title: 'Unit Digit (Cyclicity)', formula: 'Power of any digit repeats every 4 steps. Divide exponent by 4, use remainder.', tip: '7¹=7, 7²=9, 7³=3, 7⁴=1 — then it repeats. 7¹⁰⁵ → 105÷4=rem1 → unit digit=7.' },
+        { title: 'LCM × HCF Product', formula: 'LCM(a,b) × HCF(a,b) = a × b', tip: 'Use this to find LCM if HCF is given, or vice versa.' },
+        { title: 'Number of Factors', formula: 'If n = p^a × q^b, then factors = (a+1)(b+1)', tip: 'E.g. 12 = 2² × 3¹ → factors = (2+1)(1+1) = 6.' },
+        { title: 'Trailing Zeros in n!', formula: 'Count pairs of (2×5). Zeros = ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + ...', tip: '100! has ⌊100/5⌋+⌊100/25⌋ = 20+4 = 24 trailing zeros.' },
+        { title: 'Divisibility by 3 & 9', formula: 'Sum of all digits must be divisible by 3 (or 9).', tip: 'Quick check: 1+2+3=6, divisible by 3 ✓.' },
+      ],
+      tip: '🎯 Placement Trick: Unit digit questions appear in 90% of placement exams. Memorize the cyclicity pattern: digits 2,3,7,8 have cycle of 4; digits 4,9 have cycle of 2; digits 0,1,5,6 always end in themselves. This gets you the answer in under 5 seconds.'
+    }
   },
 
 
@@ -52,7 +103,15 @@ export const CATEGORIES = [
     icon: '👨‍👩‍👧',
     pillar: 'Logical',
     accent: '#7F77DD',
-    description: 'Family trees and relation puzzles'
+    description: 'Family trees and relation puzzles',
+    teaching: {
+      topics: ['Direct Relations', 'Indirect Relations', 'Coded Relations', 'Puzzle-based Family Trees', 'Gender Identification'],
+      formulas: [
+        { title: 'Key Relations', formula: 'Son/Daughter of Parent = Sibling of each other', tip: 'Build the family tree on paper, never try to solve in your head.' },
+        { title: 'Coded Relation', formula: 'A + B = A is the father of B | A − B = A is the husband/wife of B', tip: 'Always decode the symbols first before drawing the tree.' },
+      ],
+      tip: '🎯 Placement Trick: For any blood relation puzzle longer than 2 lines, immediately draw a tree. Write Male = △, Female = ○. This prevents confusion between mother\'s brother and brother\'s father.'
+    }
   },
   {
     id: 'cd',
@@ -60,7 +119,15 @@ export const CATEGORIES = [
     icon: '🔐',
     pillar: 'Logical',
     accent: '#1D9E75',
-    description: 'Encode and decode patterns'
+    description: 'Encode and decode patterns',
+    teaching: {
+      topics: ['Letter Coding', 'Number Coding', 'Symbol Substitution', 'Reverse Coding', 'Mixed Coding'],
+      formulas: [
+        { title: 'Alphabet Position', formula: 'A=1, B=2 ... Z=26 | Reverse: A=26, Z=1', tip: 'Memorize A=1 and Z=26. For reverse, use (27 − position).' },
+        { title: 'Opposite Letters', formula: 'A↔Z, B↔Y, C↔X ... Use: Opposite of X = 27 − position(X)', tip: 'A+Z=27, B+Y=27. All pairs sum to 27.' },
+      ],
+      tip: '🎯 Placement Trick: 80% of coding-decoding questions use a simple +N or −N shift. Write down the first 5 letters of the code and check if the shift is consistent. Once you find the pattern, apply it to the entire word without checking each letter.'
+    }
   }
 ];
 
