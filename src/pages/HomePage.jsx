@@ -66,7 +66,7 @@ export default function HomePage({ navigate }) {
         <div className="section-title">Explore Categories</div>
       </div>
 
-      {['Quantitative', 'Verbal', 'Logical'].map(pillar => (
+      {['Quantitative', 'Logical'].map(pillar => (
         <div key={pillar}>
           <div className="pillar-label">{pillar}</div>
           <div className="category-grid">

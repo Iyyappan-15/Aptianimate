@@ -37,38 +37,13 @@ export const CATEGORIES = [
   },
   {
     id: 'ns',
-    name: 'Number Series & Patterns',
+    name: 'Number System',
     icon: '🔢',
     pillar: 'Quantitative',
     accent: '#7F77DD',
-    description: 'Sequences, missing terms & rules'
+    description: 'Series, Divisibility, LCM/HCF, Remainders & more'
   },
 
-  // ─── VERBAL ───
-  {
-    id: 'syn',
-    name: 'Synonyms & Antonyms',
-    icon: '📖',
-    pillar: 'Verbal',
-    accent: '#1D9E75',
-    description: 'Vocabulary and word meaning'
-  },
-  {
-    id: 'fib',
-    name: 'Fill in the Blanks',
-    icon: '✏️',
-    pillar: 'Verbal',
-    accent: '#EF9F27',
-    description: 'Grammar and contextual usage'
-  },
-  {
-    id: 'sc',
-    name: 'Sentence Correction',
-    icon: '🔧',
-    pillar: 'Verbal',
-    accent: '#D85A30',
-    description: 'Identify and fix grammatical errors'
-  },
 
   // ─── LOGICAL ───
   {
