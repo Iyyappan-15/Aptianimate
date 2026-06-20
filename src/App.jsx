@@ -80,8 +80,8 @@ function App() {
             <nav className="navbar">
               <div className="navbar-inner">
                 <div className="nav-brand" onClick={() => navigate('')}>
-                  <img src={logoImg} alt="AptitudeAnimate Logo" className="nav-logo" />
-                  AptitudeAnimate
+                  <img src={logoImg} alt="AptiAnimate Logo" className="nav-logo" />
+                  AptiAnimate
                 </div>
                 <div className="nav-links">
                   <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => navigate('')}>Home</button>
