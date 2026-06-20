@@ -26,17 +26,16 @@ export default function StepRenderer({ step, isActive }) {
 // Shows a formula building up piece by piece with colored labeled tokens
 function FormulaHighlight({ step, isActive }) {
   const [visibleVars, setVisibleVars] = useState([]);
-  const [showSubs, setShowSubs] = useState(false);
+  const [showFormulaDesc, setShowFormulaDesc] = useState(false);
   const timerRef = useRef(null);
 
   useEffect(() => {
     setVisibleVars([]);
-    setShowSubs(false);
+    setShowFormulaDesc(false);
     if (!isActive) return;
 
-    // If no formula_vars, fall back to just showing formula_used
     if (!step.formula_vars?.length) {
-      timerRef.current = setTimeout(() => setShowSubs(true), 400);
+      timerRef.current = setTimeout(() => setShowFormulaDesc(true), 400);
       return;
     }
 
@@ -45,90 +44,108 @@ function FormulaHighlight({ step, isActive }) {
       if (i < step.formula_vars.length) {
         setVisibleVars(prev => [...prev, i]);
         i++;
-        timerRef.current = setTimeout(show, 500);
+        timerRef.current = setTimeout(show, 300);
       } else {
-        timerRef.current = setTimeout(() => setShowSubs(true), 500);
+        timerRef.current = setTimeout(() => setShowFormulaDesc(true), 400);
       }
     };
-    timerRef.current = setTimeout(show, 300);
+    timerRef.current = setTimeout(show, 200);
     return () => clearTimeout(timerRef.current);
   }, [isActive, step]);
 
   const colorMap = {
-    a: { bg: 'rgba(59,130,246,0.15)', text: 'var(--violet)', border: 'rgba(59,130,246,0.4)' },
-    b: { bg: 'rgba(20,184,166,0.15)', text: 'var(--teal)',   border: 'rgba(20,184,166,0.4)' },
-    c: { bg: 'rgba(245,158,11,0.15)', text: 'var(--amber)',  border: 'rgba(245,158,11,0.4)' },
-    d: { bg: 'rgba(239,68,68,0.15)',  text: 'var(--coral)',  border: 'rgba(239,68,68,0.4)'  },
+    a: { bg: 'rgba(59,130,246,0.12)', text: 'var(--violet)', border: 'rgba(59,130,246,0.3)' },
+    b: { bg: 'rgba(20,184,166,0.12)', text: 'var(--teal)',   border: 'rgba(20,184,166,0.3)' },
+    c: { bg: 'rgba(245,158,11,0.12)', text: 'var(--amber)',  border: 'rgba(245,158,11,0.3)' },
+    d: { bg: 'rgba(239,68,68,0.12)',  text: 'var(--coral)',  border: 'rgba(239,68,68,0.3)'  },
   };
 
   const isOperator = (sym) => ['=', '+', '-', '×', '÷', '→', '≈', '∴', '⟹'].includes(sym?.trim());
 
   return (
-    <div className="sr-formula">
-      {/* Formula row with colored token boxes */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 6, marginBottom: 24 }}>
+    <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+      {/* Formula row */}
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: '12px',
+        marginBottom: '24px',
+        padding: '24px',
+        background: 'var(--surface2)',
+        borderRadius: '16px',
+        border: '1px solid var(--border)',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+        width: '100%',
+        maxWidth: '500px'
+      }}>
         {step.formula_vars?.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
           const op = isOperator(v.symbol);
           return (
-            <span
+            <div
               key={i}
               style={{
                 opacity: visibleVars.includes(i) ? 1 : 0,
-                transform: visibleVars.includes(i) ? 'translateY(0) scale(1)' : 'translateY(-16px) scale(0.7)',
-                transition: 'all 0.45s cubic-bezier(0.34,1.56,0.64,1)',
-                display: 'inline-flex',
+                transform: visibleVars.includes(i) ? 'translateY(0) scale(1)' : 'translateY(-10px) scale(0.9)',
+                transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: 4,
+                gap: '6px',
               }}
             >
-              <span style={{
-                background: op ? 'transparent' : c.bg,
-                color: op ? 'var(--muted)' : c.text,
-                border: op ? 'none' : `1.5px solid ${c.border}`,
-                borderRadius: 8,
-                padding: op ? '0 4px' : '6px 14px',
-                fontSize: op ? '1.4rem' : '1.25rem',
-                fontWeight: 800,
-                fontFamily: 'monospace',
-                minWidth: op ? 'unset' : 44,
-                textAlign: 'center',
-              }}>
-                {v.symbol}
-              </span>
-              {!op && v.label && (
-                <span style={{ fontSize: '0.62rem', color: 'var(--muted)', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase' }}>
-                  {v.label}
+              {op ? (
+                <span style={{
+                  fontSize: '1.8rem',
+                  fontWeight: '600',
+                  color: 'var(--muted)',
+                  margin: '0 4px'
+                }}>
+                  {v.symbol}
                 </span>
+              ) : (
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  background: c.bg,
+                  border: `1.5px solid ${c.border}`,
+                  borderRadius: '12px',
+                  padding: '10px 16px',
+                  minWidth: '70px',
+                }}>
+                  <span style={{ fontSize: '1.25rem', fontWeight: 800, color: c.text, fontFamily: 'monospace' }}>
+                    {v.symbol}
+                  </span>
+                  {v.label && (
+                    <span style={{ fontSize: '0.65rem', color: 'var(--muted)', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '4px' }}>
+                      {v.label}
+                    </span>
+                  )}
+                </div>
               )}
-            </span>
+            </div>
           );
         })}
       </div>
 
-      {/* Variable legend cards */}
-      {showSubs && step.formula_vars?.filter(v => v.label && !isOperator(v.symbol)).length > 0 && (
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'wrap', animation: 'slideUp 0.4s ease' }}>
-          {step.formula_vars.filter(v => v.label && !isOperator(v.symbol)).map((v, i) => {
-            const c = colorMap[v.color] || colorMap.a;
-            return (
-              <div key={i} style={{
-                background: c.bg, border: `1px solid ${c.border}`, borderRadius: 8,
-                padding: '8px 14px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2,
-                animation: `popIn 0.35s ease ${i * 0.08}s both`,
-              }}>
-                <span style={{ fontSize: '1rem', fontWeight: 800, color: c.text, fontFamily: 'monospace' }}>{v.symbol}</span>
-                <span style={{ fontSize: '0.7rem', color: 'var(--muted)', fontWeight: 600 }}>{v.label}{v.unit ? ` (${v.unit})` : ''}</span>
-              </div>
-            );
-          })}
-        </div>
-      )}
-
-      {/* Formula string */}
+      {/* Formula description string */}
       {step.formula_used && (
-        <div className="step-formula" style={{ marginTop: 16, opacity: showSubs ? 1 : 0, transition: 'opacity 0.5s ease' }}>
+        <div style={{
+          opacity: showFormulaDesc ? 1 : 0,
+          transform: showFormulaDesc ? 'translateY(0)' : 'translateY(10px)',
+          transition: 'all 0.5s ease',
+          fontSize: '0.9rem',
+          color: 'var(--text)',
+          fontWeight: 600,
+          textAlign: 'center',
+          maxWidth: '80%',
+          background: 'var(--surface3)',
+          padding: '8px 16px',
+          borderRadius: '8px'
+        }}>
           {step.formula_used}
         </div>
       )}
