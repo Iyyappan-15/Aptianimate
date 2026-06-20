@@ -57,9 +57,11 @@ export default function CategoryPage({ categoryId, navigate }) {
 
   return (
     <div className="page cat-page" style={{ animation: 'fadeIn 0.5s ease' }}>
-      <button className="btn btn-ghost btn-sm mb-16" onClick={() => navigate('')}>
-        ← Back to Home
-      </button>
+      <div className="page-top-bar" style={{ display: 'flex', alignItems: 'center', marginBottom: '24px' }}>
+        <button className="btn btn-outline btn-sm" onClick={() => navigate('')}>
+          ← Back to Home
+        </button>
+      </div>
 
       {/* ── Hero ── */}
       <div className="cat-hero" style={{ '--accent': cat.accent }}>
@@ -192,6 +194,27 @@ export default function CategoryPage({ categoryId, navigate }) {
   );
 }
 
+// ── Beautiful Formula Component ────────────────────────────────────────────────
+function BeautifulFormula({ text }) {
+  // If the formula contains an '=', we split it to highlight the Left Hand Side
+  const parts = text.split('=');
+  
+  if (parts.length === 2) {
+    const lhs = parts[0].trim();
+    const rhs = parts[1].trim();
+    
+    return (
+      <div className="beautiful-formula">
+        <span className="formula-lhs">{lhs}</span>
+        <span className="formula-equals">=</span>
+        <span className="formula-rhs">{rhs}</span>
+      </div>
+    );
+  }
+
+  return <div className="beautiful-formula">{text}</div>;
+}
+
 // ── Topic Detail Panel ──────────────────────────────────────────────────────────
 function TopicDetailPanel({ topic, accent, topicIndex, onGoToQuestions }) {
   return (
@@ -213,7 +236,9 @@ function TopicDetailPanel({ topic, accent, topicIndex, onGoToQuestions }) {
             {topic.formulas.map((f, i) => (
               <div key={i} className="tdp-formula-card">
                 <div className="tdp-formula-title">{f.title}</div>
-                <div className="tdp-formula-body">{f.formula}</div>
+                <div className="tdp-formula-body">
+                  <BeautifulFormula text={f.formula} />
+                </div>
               </div>
             ))}
           </div>
@@ -230,8 +255,8 @@ function TopicDetailPanel({ topic, accent, topicIndex, onGoToQuestions }) {
 
       {/* Go to Questions CTA */}
       <div className="tdp-cta-row">
-        <button className="btn btn-primary" onClick={onGoToQuestions}>
-          📚 Go to Practice Questions ↓
+        <button className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} onClick={onGoToQuestions}>
+          <span style={{ fontSize: '1.2em' }}>📚</span> Go to Practice Questions ↓
         </button>
       </div>
     </div>

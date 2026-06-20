@@ -825,12 +825,41 @@ img, svg { display: block; }
   margin-bottom: 6px;
 }
 .tdp-formula-body {
-  font-family: 'Courier New', monospace;
+  margin-top: 8px;
+}
+
+/* Beautiful Formula Design */
+.beautiful-formula {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.85rem;
-  font-weight: 600;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+  width: 100%;
+}
+.formula-lhs {
+  font-weight: 700;
   color: var(--violet);
-  white-space: pre-line;
-  line-height: 1.6;
+  background: color-mix(in srgb, var(--violet) 12%, transparent);
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.formula-equals {
+  color: var(--muted);
+  font-weight: 800;
+}
+.formula-rhs {
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.02em;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Worked example */

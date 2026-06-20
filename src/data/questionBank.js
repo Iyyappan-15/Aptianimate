@@ -236,13 +236,13 @@ export const CATEGORIES = [
     accent: '#7F77DD',
     description: 'Series, Divisibility, LCM/HCF, Remainders & more',
     teaching: {
-      topics: [
-        {
           name: 'Number Series & Patterns',
           description: 'Find the rule connecting numbers in a sequence — could be AP, GP, squares, cubes, or prime differences.',
           formulas: [
-            { title: 'AP', formula: 'a, a+d, a+2d, ... → nth term = a + (n−1)d' },
-            { title: 'GP', formula: 'a, ar, ar², ... → nth term = a × r^(n−1)' },
+            { title: 'AP nth term', formula: 'Tn = a + (n-1)d' },
+            { title: 'AP Sum', formula: 'Sn = (n/2)(2a + (n-1)d)' },
+            { title: 'GP nth term', formula: 'Tn = a × r^(n-1)' },
+            { title: 'GP Sum', formula: 'Sn = a(r^n - 1) / (r - 1)' },
           ],
           example: '3, 7, 11, 15, ? → AP with d=4 → Answer = 19'
         },
@@ -262,8 +262,10 @@ export const CATEGORIES = [
           name: 'LCM & HCF',
           description: 'HCF (GCD) is the largest factor common to both numbers. LCM is the smallest multiple common to both.',
           formulas: [
-            { title: 'Product Rule', formula: 'LCM(a,b) × HCF(a,b) = a × b' },
-            { title: 'LCM shortcut', formula: 'Assume total work = LCM of days' },
+            { title: 'Product Rule', formula: 'LCM × HCF = a × b' },
+            { title: 'Fractions LCM', formula: 'LCM(a/b) = LCM(num) / HCF(den)' },
+            { title: 'Fractions HCF', formula: 'HCF(a/b) = HCF(num) / LCM(den)' },
+            { title: 'Co-primes', formula: 'HCF of co-primes = 1' },
           ],
           example: 'HCF(12,18)=6, LCM = 12×18/6 = 36'
         },
