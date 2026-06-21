@@ -8,6 +8,7 @@ import CategoryPage from './pages/CategoryPage';
 import PracticePage from './pages/PracticePage';
 import SavedPage from './pages/SavedPage';
 import ProgressPage from './pages/ProgressPage';
+import TopicPage from './pages/TopicPage';
 import SplashScreen from './components/SplashScreen';
 
 function App() {
@@ -56,6 +57,11 @@ function App() {
   } else if (route.startsWith('practice/')) {
     const id = route.split('/')[1];
     pageComponent = <PracticePage questionId={id} navigate={navigate} />;
+  } else if (route.startsWith('topic/')) {
+    const parts = route.split('/');
+    const slug = parts[1];
+    const name = parts.slice(2).join('/');
+    pageComponent = <TopicPage topicSlug={slug} topicName={decodeURIComponent(name)} navigate={navigate} />;
   } else if (route === 'saved') {
     pageComponent = <SavedPage navigate={navigate} />;
   } else if (route === 'progress') {

@@ -1250,3 +1250,266 @@ img, svg { display: block; }
   .cp-subcat-header { padding: 14px 16px; }
   .cp-topics-grid { padding: 4px 16px 16px 16px; }
 }
+
+/* --------------------------------------
+   Topic Page
+-------------------------------------- */
+.topic-page { max-width: 820px; margin: 0 auto; }
+
+.topic-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 0;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+.topic-back-btn:hover { color: var(--text); }
+
+/* Hero */
+.topic-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 28px;
+  background: color-mix(in srgb, var(--topic-color) 10%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--topic-color) 25%, var(--border));
+  border-radius: var(--radius-lg);
+  margin-bottom: 36px;
+}
+.topic-hero-icon {
+  font-size: 2.8rem;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--topic-color) 18%, transparent);
+  border-radius: 16px;
+}
+.topic-hero-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 6px 0;
+}
+.topic-hero-tagline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Sections */
+.topic-section {
+  margin-bottom: 36px;
+}
+.topic-section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.topic-description {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Key Facts */
+.topic-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.topic-fact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+.fact-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.fact-value {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Formulas */
+.topic-formulas { display: flex; flex-direction: column; gap: 14px; }
+.topic-formula-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--topic-color);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+}
+.formula-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.formula-expr {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  font-family: 'Courier New', monospace;
+  background: var(--bg);
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.formula-example {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
+.formula-example-label {
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Identify */
+.topic-identify-list { display: flex; flex-direction: column; gap: 10px; }
+.identify-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+.identify-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+/* Approach Steps */
+.topic-approach-steps { display: flex; flex-direction: column; gap: 12px; }
+.approach-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+}
+.approach-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.approach-tip {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.6;
+  padding-top: 3px;
+}
+
+/* User Question Form */
+.user-question-form { display: flex; flex-direction: column; gap: 12px; }
+.user-question-input {
+  width: 100%;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  color: var(--text);
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.user-question-input:focus {
+  outline: none;
+  border-color: var(--tab-color, var(--violet));
+}
+.user-question-input::placeholder { color: var(--text-muted); }
+.user-question-submit {
+  align-self: flex-start;
+  padding: 12px 24px;
+  background: var(--tab-color, var(--violet));
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.user-question-submit:disabled { opacity: 0.4; cursor: not-allowed; }
+.user-question-submit:not(:disabled):hover { opacity: 0.88; }
+
+.user-question-thanks {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.user-question-thanks p { margin: 4px 0 0; color: var(--text-muted); }
+
+/* Coming Soon Banner */
+.coming-soon-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  color: var(--text-muted);
+}
+.cs-icon { font-size: 2rem; }
+.coming-soon-banner strong { color: var(--text); }
+.coming-soon-banner p { margin: 6px 0 0; font-size: 0.9rem; }
+
+/* Not Found */
+.topic-not-found {
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--text-muted);
+}
+.topic-not-found h2 { color: var(--text); font-size: 1.5rem; margin: 16px 0 8px; }
+
+/* Mobile */
+@media (max-width: 640px) {
+  .topic-hero { flex-direction: column; align-items: flex-start; gap: 14px; padding: 20px; }
+  .topic-hero-title { font-size: 1.4rem; }
+  .topic-facts-grid { grid-template-columns: 1fr; }
+}

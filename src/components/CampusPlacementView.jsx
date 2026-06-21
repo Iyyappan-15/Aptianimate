@@ -1,6 +1,7 @@
 // src/components/CampusPlacementView.jsx
 import { useState } from 'react';
 import { CAMPUS_PLACEMENT_SYLLABUS } from '../data/campusPlacementSyllabus';
+import { topicToSlug } from '../data/topicContent';
 
 export default function CampusPlacementView({ navigate }) {
   const [openSection, setOpenSection] = useState(0);
@@ -84,10 +85,7 @@ export default function CampusPlacementView({ navigate }) {
                                 key={tIdx}
                                 className="cp-topic-btn"
                                 style={{ '--tab-color': section.color }}
-                                onClick={() => {
-                                  // TODO: navigate to topic page when questions are added
-                                  alert(`"${topic}" — Practice module coming soon!`);
-                                }}
+                                onClick={() => navigate(`topic/${topicToSlug(topic)}/${encodeURIComponent(topic)}`)}
                               >
                                 <span className="cp-topic-dot" style={{ background: section.color }} />
                                 {topic}
