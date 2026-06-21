@@ -60,14 +60,14 @@ function FormulaHighlight({ step, isActive }) {
     d: { bg: 'rgba(239,68,68,0.12)',  text: 'var(--coral)',  border: 'rgba(239,68,68,0.3)'  },
   };
 
-  const isOperator = (sym) => ['=', '+', '-', '×', '÷', '→', '≈', '∴', '⟹'].includes(sym?.trim());
+  const isOperator = (sym) => ['=', '+', '-', '×', '÷', '→', '≈', '∴', '⟹', '*', 'x', 'X'].includes(sym?.trim());
 
   return (
     <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
       {/* Formula row */}
-      <div style={{
+      <div className="custom-scrollbar" style={{
         display: 'flex',
-        flexWrap: 'wrap',
+        flexWrap: 'nowrap',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '12px',
@@ -78,7 +78,8 @@ function FormulaHighlight({ step, isActive }) {
         border: '1px solid var(--border)',
         boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
         width: '100%',
-        maxWidth: '500px'
+        maxWidth: '100%',
+        overflowX: 'auto'
       }}>
         {step.formula_vars?.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
