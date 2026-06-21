@@ -1,6 +1,7 @@
 // src/pages/HomePage.jsx
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { CATEGORIES } from '../data/questionBank';
+import { TOPIC_CONTENT } from '../data/topicContent';
 import { getGoal, setGoal, getLastSession, getStats } from '../utils/localStorage';
 import ProgressDashboard from '../components/ProgressDashboard';
 import CampusPlacementView from '../components/CampusPlacementView';
@@ -10,11 +11,40 @@ export default function HomePage({ navigate }) {
   const [goal, setLocalGoal] = useState(getGoal());
   const [lastSession, setLocalLastSession] = useState(null);
   const [stats, setLocalStats] = useState(null);
+  
+  // Search State
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const searchRef = useRef(null);
 
   useEffect(() => {
     setLocalLastSession(getLastSession());
     setLocalStats(getStats());
+    
+    // Close search dropdown on click outside
+    const handleClickOutside = (e) => {
+      if (searchRef.current && !searchRef.current.contains(e.target)) {
+        setIsSearchFocused(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  // Handle Search Input
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      setSearchResults([]);
+      return;
+    }
+    const query = searchQuery.toLowerCase();
+    const results = Object.entries(TOPIC_CONTENT)
+      .filter(([slug, content]) => content.title.toLowerCase().includes(query))
+      .map(([slug, content]) => ({ slug, title: content.title, icon: content.icon }))
+      .slice(0, 5); // Max 5 results
+    setSearchResults(results);
+  }, [searchQuery]);
 
   const handleGoalSelect = (g) => {
     setGoal(g);
@@ -33,6 +63,39 @@ export default function HomePage({ navigate }) {
         <div className="hero-badge">✨ Interactive Learning Engine</div>
         <h1>Master Aptitude<br/>Visually.</h1>
         <p>Don't just memorize formulas. Understand them through interactive animations and step-by-step logic.</p>
+        
+        {/* Global Search Box */}
+        <div className="home-search-container" ref={searchRef}>
+          <div className={`home-search-box ${isSearchFocused ? 'focused' : ''}`}>
+            <span className="search-icon">🔍</span>
+            <input 
+              type="text" 
+              placeholder="Search for any topic (e.g. 'Percentages', 'Time & Work')..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onFocus={() => setIsSearchFocused(true)}
+            />
+          </div>
+          
+          {isSearchFocused && searchQuery.trim() && (
+            <div className="home-search-dropdown">
+              {searchResults.length > 0 ? (
+                searchResults.map(res => (
+                  <div 
+                    key={res.slug} 
+                    className="search-result-item"
+                    onClick={() => navigate(`topic/${res.slug}`)}
+                  >
+                    <span className="sr-icon">{res.icon}</span>
+                    <span className="sr-title">{res.title}</span>
+                  </div>
+                ))
+              ) : (
+                <div className="search-no-results">No topics found for "{searchQuery}"</div>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="goal-selector">
