@@ -1074,7 +1074,7 @@ img, svg { display: block; }
 .syllabus-topic-pill {
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--muted);
   background: var(--bg);
   border: 1px solid var(--border);
   padding: 6px 12px;
@@ -1102,7 +1102,7 @@ img, svg { display: block; }
 }
 .cp-subtitle {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: var(--muted);
   margin: 0;
 }
 
@@ -1121,7 +1121,7 @@ img, svg { display: block; }
   border-radius: var(--radius-pill);
   border: 2px solid var(--border);
   background: var(--surface);
-  color: var(--text-muted);
+  color: var(--muted);
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
@@ -1190,7 +1190,7 @@ img, svg { display: block; }
 .cp-subcat-count {
   font-size: 0.78rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--muted);
   background: var(--bg);
   border: 1px solid var(--border);
   padding: 2px 10px;
@@ -1198,7 +1198,7 @@ img, svg { display: block; }
 }
 .cp-chevron {
   font-size: 1.4rem;
-  color: var(--text-muted);
+  color: var(--muted);
   font-weight: 300;
   transform: rotate(90deg);
   transition: transform 0.25s ease;
@@ -1220,7 +1220,7 @@ img, svg { display: block; }
   gap: 7px;
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--muted);
   background: var(--bg);
   border: 1px solid var(--border);
   padding: 7px 14px;
@@ -1262,7 +1262,7 @@ img, svg { display: block; }
   gap: 6px;
   background: none;
   border: none;
-  color: var(--text-muted);
+  color: var(--muted);
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -1302,7 +1302,7 @@ img, svg { display: block; }
 }
 .topic-hero-tagline {
   font-size: 1rem;
-  color: var(--text-muted);
+  color: var(--muted);
   margin: 0;
 }
 
@@ -1315,7 +1315,7 @@ img, svg { display: block; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-muted);
+  color: var(--muted);
   margin-bottom: 14px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--border);
@@ -1342,7 +1342,7 @@ img, svg { display: block; }
 .fact-label {
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--text-muted);
+  color: var(--muted);
   margin-bottom: 4px;
 }
 .fact-value {
@@ -1363,7 +1363,7 @@ img, svg { display: block; }
 .formula-title {
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--text-muted);
+  color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 8px;
@@ -1380,7 +1380,7 @@ img, svg { display: block; }
 }
 .formula-example {
   font-size: 0.88rem;
-  color: var(--text-muted);
+  color: var(--muted);
   margin-top: 10px;
 }
 .formula-example-label {
@@ -1455,7 +1455,7 @@ img, svg { display: block; }
   outline: none;
   border-color: var(--tab-color, var(--violet));
 }
-.user-question-input::placeholder { color: var(--text-muted); }
+.user-question-input::placeholder { color: var(--muted); }
 .user-question-submit {
   align-self: flex-start;
   padding: 12px 24px;
@@ -1482,7 +1482,7 @@ img, svg { display: block; }
   font-size: 0.95rem;
   color: var(--text);
 }
-.user-question-thanks p { margin: 4px 0 0; color: var(--text-muted); }
+.user-question-thanks p { margin: 4px 0 0; color: var(--muted); }
 
 /* Coming Soon Banner */
 .coming-soon-banner {
@@ -1493,7 +1493,7 @@ img, svg { display: block; }
   border: 1.5px dashed var(--border);
   border-radius: var(--radius-lg);
   padding: 24px;
-  color: var(--text-muted);
+  color: var(--muted);
 }
 .cs-icon { font-size: 2rem; }
 .coming-soon-banner strong { color: var(--text); }
@@ -1503,7 +1503,7 @@ img, svg { display: block; }
 .topic-not-found {
   text-align: center;
   padding: 80px 24px;
-  color: var(--text-muted);
+  color: var(--muted);
 }
 .topic-not-found h2 { color: var(--text); font-size: 1.5rem; margin: 16px 0 8px; }
 
