@@ -1,82 +1,74 @@
+// src/data/campusPlacementSyllabus.js
+// ─── Campus Placements Full Syllabus ───
+// To add/edit topics, simply update this file. No other file needs to change.
+
 export const CAMPUS_PLACEMENT_SYLLABUS = [
   {
     section: "Quantitative Aptitude",
-    icon: "🔢",
+    icon: "📊",
+    color: "#6366f1",
+    gradient: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
     subcategories: [
       {
-        name: "Number System",
+        name: "Number Systems",
+        icon: "🔢",
         topics: [
-          "Numbers",
-          "Problems on Numbers",
-          "HCF & LCM",
+          "Number System Basics",
+          "LCM & HCF",
+          "Divisibility Rules",
+          "Prime Factorization",
+          "Number of Factors",
+          "Remainders",
+          "Unit Digits & Cyclicity",
           "Decimal Fractions",
           "Simplification",
-          "Square Root & Cube Root",
-          "Surds & Indices"
+          "Approximation",
+          "Trailing Zeros"
         ]
       },
       {
         name: "Arithmetic",
+        icon: "➕",
         topics: [
-          "Percentage",
+          "Percentages",
           "Ratio & Proportion",
-          "Average",
+          "Averages",
           "Profit & Loss",
           "Simple Interest",
           "Compound Interest",
-          "Partnership",
-          "Problems on Ages",
-          "Alligation & Mixture"
+          "Ages",
+          "Alligation & Mixtures"
         ]
       },
       {
-        name: "Time, Speed & Distance",
+        name: "Work & Motion",
+        icon: "⚙️",
         topics: [
-          "Time and Distance",
-          "Problems on Trains",
-          "Boats and Streams",
-          "Races and Games",
-          "Height and Distance"
-        ]
-      },
-      {
-        name: "Time & Work",
-        topics: [
-          "Time and Work",
-          "Pipes and Cisterns"
-        ]
-      },
-      {
-        name: "Geometry & Mensuration",
-        topics: [
-          "Area",
-          "Volume and Surface Area"
-        ]
-      },
-      {
-        name: "Modern Mathematics",
-        topics: [
-          "Permutation & Combination",
-          "Probability",
-          "Logarithm"
+          "Time & Work",
+          "Pipes & Cisterns",
+          "Time, Speed & Distance",
+          "Trains",
+          "Boats & Streams"
         ]
       },
       {
         name: "Data Interpretation",
+        icon: "📈",
         topics: [
           "Tables",
-          "Bar Graphs",
+          "Bar Charts",
           "Pie Charts",
           "Line Graphs",
-          "Caselets"
+          "Mixed DI Sets"
         ]
       },
       {
-        name: "Miscellaneous",
+        name: "Advanced Aptitude",
+        icon: "🎯",
         topics: [
-          "Calendar",
-          "Clock",
-          "Stocks and Shares"
+          "Probability",
+          "Permutation & Combination",
+          "Logarithm"
         ]
       }
     ]
@@ -84,88 +76,56 @@ export const CAMPUS_PLACEMENT_SYLLABUS = [
   {
     section: "Logical Reasoning",
     icon: "🧠",
+    color: "#ec4899",
+    gradient: "linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)",
     subcategories: [
       {
         name: "Series",
+        icon: "🔗",
         topics: [
           "Number Series",
           "Letter Series",
-          "Symbol Series",
-          "Odd Man Out"
+          "Alphanumeric Series"
         ]
       },
       {
-        name: "Analogy & Classification",
+        name: "Logical Relations",
+        icon: "🔄",
         topics: [
-          "Analogies",
-          "Verbal Classification",
-          "Essential Part"
-        ]
-      },
-      {
-        name: "Coding-Decoding",
-        topics: [
-          "Artificial Language",
-          "Coding-Decoding"
-        ]
-      },
-      {
-        name: "Blood Relations",
-        topics: [
+          "Coding-Decoding",
           "Blood Relations",
-          "Family Tree Problems"
+          "Direction Sense",
+          "Ranking & Ordering"
         ]
       },
       {
-        name: "Direction Sense",
+        name: "Analytical Reasoning",
+        icon: "🧩",
         topics: [
-          "Direction Sense Test"
+          "Syllogism",
+          "Statement & Conclusion",
+          "Statement & Assumption"
         ]
       },
       {
-        name: "Ranking & Ordering",
+        name: "Arrangements & Puzzles",
+        icon: "🪆",
         topics: [
-          "Order and Ranking"
-        ]
-      },
-      {
-        name: "Logical Puzzles",
-        topics: [
-          "Logical Problems",
-          "Logical Games"
-        ]
-      },
-      {
-        name: "Seating Arrangement",
-        topics: [
+          "Linear Arrangement",
           "Circular Arrangement",
-          "Linear Arrangement"
+          "Floor Puzzles",
+          "Box Puzzles"
         ]
       },
       {
-        name: "Syllogism",
+        name: "Visual Reasoning",
+        icon: "👁️",
         topics: [
-          "Syllogisms",
-          "Venn Diagram Problems"
-        ]
-      },
-      {
-        name: "Critical Reasoning",
-        topics: [
-          "Statement and Assumption",
-          "Statement and Conclusion",
-          "Statement and Argument",
-          "Cause and Effect",
-          "Course of Action",
-          "Theme Detection",
-          "Logical Deduction",
-          "Analyzing Arguments"
-        ]
-      },
-      {
-        name: "Data Sufficiency",
-        topics: [
-          "Data Sufficiency"
+          "Pattern Completion",
+          "Figure Series",
+          "Mirror Images",
+          "Water Images",
+          "Odd Figure Out"
         ]
       }
     ]
@@ -173,99 +133,26 @@ export const CAMPUS_PLACEMENT_SYLLABUS = [
   {
     section: "Verbal Ability",
     icon: "📖",
+    color: "#10b981",
+    gradient: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
     subcategories: [
       {
-        name: "Grammar",
+        name: "Reading & Comprehension",
+        icon: "📝",
+        topics: [
+          "Reading Comprehension",
+          "Para Jumbles"
+        ]
+      },
+      {
+        name: "Grammar & Usage",
+        icon: "✏️",
         topics: [
           "Error Spotting",
           "Sentence Correction",
-          "Fill in the Blanks"
-        ]
-      },
-      {
-        name: "Vocabulary",
-        topics: [
-          "Synonyms",
-          "Antonyms",
-          "One Word Substitution",
-          "Idioms and Phrases"
-        ]
-      },
-      {
-        name: "Reading Comprehension",
-        topics: [
-          "Reading Comprehension"
-        ]
-      },
-      {
-        name: "Verbal Reasoning",
-        topics: [
-          "Para Jumbles",
-          "Sentence Arrangement"
-        ]
-      }
-    ]
-  },
-  {
-    section: "Coding Aptitude",
-    icon: "💻",
-    subcategories: [
-      {
-        name: "Programming Logic",
-        topics: [
-          "Flowcharts",
-          "Pseudocode",
-          "Output Prediction"
-        ]
-      },
-      {
-        name: "Coding Concepts",
-        topics: [
-          "Arrays",
-          "Strings",
-          "Recursion Basics",
-          "Searching",
-          "Sorting"
-        ]
-      },
-      {
-        name: "Problem Solving",
-        topics: [
-          "Basic Coding Questions",
-          "Pattern Problems",
-          "Logical Coding Questions"
-        ]
-      }
-    ]
-  },
-  {
-    section: "Technical MCQs",
-    icon: "🖥️",
-    subcategories: [
-      {
-        name: "Computer Science Fundamentals",
-        topics: [
-          "Operating Systems",
-          "DBMS",
-          "Computer Networks",
-          "OOPs"
-        ]
-      },
-      {
-        name: "Programming",
-        topics: [
-          "C",
-          "C++",
-          "Java",
-          "Python"
-        ]
-      },
-      {
-        name: "Web Development",
-        topics: [
-          "HTML",
-          "CSS",
-          "JavaScript"
+          "Fill in the Blanks",
+          "Sentence Completion",
+          "Cloze Test"
         ]
       }
     ]
