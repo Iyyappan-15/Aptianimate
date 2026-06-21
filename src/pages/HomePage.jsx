@@ -35,8 +35,6 @@ export default function HomePage({ navigate }) {
         <p>Don't just memorize formulas. Understand them through interactive animations and step-by-step logic.</p>
       </div>
 
-      <VisualExplanationDemo navigate={navigate} />
-
       <div className="goal-selector">
         {['Campus Placements', 'Government Exams', 'Aptitude Roadmap', 'Mock Tests', 'Technical Interview Prep'].map(g => (
           <button
@@ -95,6 +93,8 @@ export default function HomePage({ navigate }) {
           ))}
         </>
       )}
+
+      <VisualExplanationDemo navigate={navigate} />
     </div>
   );
 }
