@@ -18,6 +18,8 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
   const [result, setResult] = useState(null);
   const [errorMsg, setErrorMsg] = useState('');
   const [showFollowUp, setShowFollowUp] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [showExplanation, setShowExplanation] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,6 +30,8 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
     setResult(null);
     setErrorMsg('');
     setShowFollowUp(false);
+    setSelectedOption(null);
+    setShowExplanation(false);
 
     try {
       const data = await parseUserQuestion(q);
@@ -45,6 +49,8 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
     setResult(null);
     setErrorMsg('');
     setShowFollowUp(false);
+    setSelectedOption(null);
+    setShowExplanation(false);
   };
 
   const handleFollowUp = async (q) => {
@@ -52,6 +58,8 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
     setState(STATES.LOADING);
     setResult(null);
     setShowFollowUp(false);
+    setSelectedOption(null);
+    setShowExplanation(false);
     try {
       const data = await parseUserQuestion(q.question);
       setResult(data);
@@ -140,66 +148,108 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
           {/* Options */}
           {result.options && (
             <div className="ai-result-options">
-              {Object.entries(result.options).map(([key, val]) => (
-                <div
-                  key={key}
-                  className={`ai-option ${result.correct_answer === key ? 'ai-option-correct' : ''}`}
-                >
-                  <span className="ai-option-key">{key}</span>
-                  <span className="ai-option-val">{val}</span>
-                  {result.correct_answer === key && (
-                    <span className="ai-option-tick">✓</span>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
+              {Object.entries(result.options).map(([key, val]) => {
+                const isSelected = selectedOption === key;
+                const isCorrect = result.correct_answer === key;
+                const showCorrectness = selectedOption !== null;
+                
+                let optionClass = 'ai-option';
+                if (showCorrectness) {
+                  if (isCorrect) optionClass += ' ai-option-correct';
+                  else if (isSelected && !isCorrect) optionClass += ' ai-option-wrong';
+                  else optionClass += ' ai-option-disabled';
+                } else {
+                  optionClass += ' ai-option-clickable';
+                }
 
-          {/* Animation Player — the real visual engine */}
-          {result.animation_script?.length > 0 && (
-            <div className="ai-animation-wrap">
-              <AnimationPlayer
-                animationScript={result.animation_script}
-                conceptSummary={result.concept_summary}
-                onComplete={() => setTimeout(() => setShowFollowUp(true), 800)}
-              />
-            </div>
-          )}
-
-          {/* Final Answer Banner */}
-          <div className="ai-final-answer" style={{ '--solver-color': topicColor }}>
-            <div className="ai-final-icon">🎯</div>
-            <div>
-              <div className="ai-final-label">Correct Answer</div>
-              <div className="ai-final-value">
-                Option {result.correct_answer}: {result.options?.[result.correct_answer]}
-              </div>
-            </div>
-          </div>
-
-          {/* Concept Summary */}
-          {result.concept_summary && (
-            <div className="ai-concept-tip">
-              <span>💡</span>
-              <span>{result.concept_summary}</span>
-            </div>
-          )}
-
-          {/* Follow-up Questions */}
-          {showFollowUp && result.follow_up_questions?.length > 0 && (
-            <div className="ai-followup" style={{ animation: 'slideUp 0.5s ease' }}>
-              <div className="ai-followup-label">🔁 Try a Similar Question</div>
-              <div className="ai-followup-list">
-                {result.follow_up_questions.slice(0, 2).map((q, i) => (
-                  <button
-                    key={i}
-                    className="ai-followup-btn"
-                    onClick={() => handleFollowUp(q)}
+                return (
+                  <div
+                    key={key}
+                    className={optionClass}
+                    onClick={() => !selectedOption && setSelectedOption(key)}
                   >
-                    {q.question.length > 90 ? q.question.slice(0, 90) + '...' : q.question}
-                  </button>
-                ))}
+                    <span className="ai-option-key">{key}</span>
+                    <span className="ai-option-val">{val}</span>
+                    {showCorrectness && isCorrect && <span className="ai-option-tick">✓</span>}
+                    {showCorrectness && isSelected && !isCorrect && <span className="ai-option-cross">✕</span>}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Post-selection feedback */}
+          {selectedOption && !showExplanation && (
+            <div className={`ai-selection-feedback ${selectedOption === result.correct_answer ? 'correct' : 'wrong'}`} style={{ animation: 'fadeIn 0.4s ease' }}>
+              <div className="feedback-message">
+                {selectedOption === result.correct_answer 
+                  ? '🎉 Correct! Great job.' 
+                  : `Oops! Option ${selectedOption} is incorrect.`}
               </div>
+              <button 
+                className="ai-solver-submit" 
+                style={{ '--solver-color': topicColor, marginTop: 12, width: '100%' }}
+                onClick={() => setShowExplanation(true)}
+              >
+                <span>🎬 View Visual Explanation</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          )}
+
+          {/* ── Explanation Section ── */}
+          {showExplanation && (
+            <div className="ai-explanation-section" style={{ animation: 'slideUp 0.6s ease', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              
+              {/* Animation Player — the real visual engine */}
+              {result.animation_script?.length > 0 && (
+                <div className="ai-animation-wrap">
+                  <AnimationPlayer
+                    animationScript={result.animation_script}
+                    conceptSummary={result.concept_summary}
+                    onComplete={() => setTimeout(() => setShowFollowUp(true), 800)}
+                  />
+                </div>
+              )}
+
+              {/* Final Answer Banner */}
+              <div className="ai-final-answer" style={{ '--solver-color': topicColor }}>
+                <div className="ai-final-icon">🎯</div>
+                <div>
+                  <div className="ai-final-label">Correct Answer</div>
+                  <div className="ai-final-value">
+                    Option {result.correct_answer}: {result.options?.[result.correct_answer]}
+                  </div>
+                </div>
+              </div>
+
+              {/* Concept Summary */}
+              {result.concept_summary && (
+                <div className="ai-concept-tip">
+                  <span>💡</span>
+                  <span>{result.concept_summary}</span>
+                </div>
+              )}
+
+              {/* Follow-up Questions */}
+              {showFollowUp && result.follow_up_questions?.length > 0 && (
+                <div className="ai-followup" style={{ animation: 'slideUp 0.5s ease' }}>
+                  <div className="ai-followup-label">🔁 Try a Similar Question</div>
+                  <div className="ai-followup-list">
+                    {result.follow_up_questions.slice(0, 2).map((q, i) => (
+                      <button
+                        key={i}
+                        className="ai-followup-btn"
+                        onClick={() => handleFollowUp(q)}
+                      >
+                        {q.question.length > 90 ? q.question.slice(0, 90) + '...' : q.question}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
