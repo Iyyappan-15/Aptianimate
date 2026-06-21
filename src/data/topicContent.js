@@ -412,6 +412,1087 @@ export const TOPIC_CONTENT = {
       { step: '4', tip: 'Common preposition traps: "Discuss about" (wrong — just "discuss"), "Married to" (right), "Accused of" (right).' },
     ],
   },
+
+
+  // ════════════════════════════════════════
+  //  AUTO-GENERATED TOPICS
+  // ════════════════════════════════════════
+
+  'prime-factorization': {
+    title: 'Prime Factorization',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Prime Factorization.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Prime Factorization. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Prime Factorization.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'number-of-factors': {
+    title: 'Number of Factors',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Number of Factors.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Number of Factors. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Number of Factors.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'unit-digits-cyclicity': {
+    title: 'Unit Digits & Cyclicity',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Unit Digits & Cyclicity.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Unit Digits & Cyclicity. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Unit Digits & Cyclicity.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'decimal-fractions': {
+    title: 'Decimal Fractions',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Decimal Fractions.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Decimal Fractions. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Decimal Fractions.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'simplification': {
+    title: 'Simplification',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Simplification.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Simplification. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Simplification.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'approximation': {
+    title: 'Approximation',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Approximation.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Approximation. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Approximation.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'trailing-zeros': {
+    title: 'Trailing Zeros',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Trailing Zeros.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Trailing Zeros. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Trailing Zeros.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'ratio-proportion': {
+    title: 'Ratio & Proportion',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Ratio & Proportion.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Ratio & Proportion. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Ratio & Proportion.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'averages': {
+    title: 'Averages',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Averages.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Averages. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Averages.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'simple-interest': {
+    title: 'Simple Interest',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Simple Interest.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Simple Interest. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Simple Interest.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'compound-interest': {
+    title: 'Compound Interest',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Compound Interest.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Compound Interest. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Compound Interest.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'ages': {
+    title: 'Ages',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Ages.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Ages. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Ages.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'alligation-mixtures': {
+    title: 'Alligation & Mixtures',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Alligation & Mixtures.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Alligation & Mixtures. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Alligation & Mixtures.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'pipes-cisterns': {
+    title: 'Pipes & Cisterns',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Pipes & Cisterns.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Pipes & Cisterns. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Pipes & Cisterns.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'trains': {
+    title: 'Trains',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Trains.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Trains. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Trains.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'boats-streams': {
+    title: 'Boats & Streams',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Boats & Streams.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Boats & Streams. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Boats & Streams.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'tables': {
+    title: 'Tables',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Tables.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Tables. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Tables.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'bar-charts': {
+    title: 'Bar Charts',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Bar Charts.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Bar Charts. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Bar Charts.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'pie-charts': {
+    title: 'Pie Charts',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Pie Charts.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Pie Charts. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Pie Charts.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'line-graphs': {
+    title: 'Line Graphs',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Line Graphs.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Line Graphs. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Line Graphs.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'mixed-di-sets': {
+    title: 'Mixed DI Sets',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Mixed DI Sets.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Mixed DI Sets. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Mixed DI Sets.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'permutation-combination': {
+    title: 'Permutation & Combination',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Permutation & Combination.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Permutation & Combination. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Permutation & Combination.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'logarithm': {
+    title: 'Logarithm',
+    icon: '📊',
+    color: '#6366f1',
+    tagline: 'Master the concepts of Logarithm.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Logarithm. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Logarithm.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'number-series': {
+    title: 'Number Series',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Number Series.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Number Series. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Number Series.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'letter-series': {
+    title: 'Letter Series',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Letter Series.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Letter Series. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Letter Series.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'alphanumeric-series': {
+    title: 'Alphanumeric Series',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Alphanumeric Series.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Alphanumeric Series. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Alphanumeric Series.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'direction-sense': {
+    title: 'Direction Sense',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Direction Sense.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Direction Sense. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Direction Sense.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'ranking-ordering': {
+    title: 'Ranking & Ordering',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Ranking & Ordering.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Ranking & Ordering. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Ranking & Ordering.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'statement-conclusion': {
+    title: 'Statement & Conclusion',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Statement & Conclusion.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Statement & Conclusion. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Statement & Conclusion.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'statement-assumption': {
+    title: 'Statement & Assumption',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Statement & Assumption.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Statement & Assumption. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Statement & Assumption.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'linear-arrangement': {
+    title: 'Linear Arrangement',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Linear Arrangement.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Linear Arrangement. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Linear Arrangement.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'circular-arrangement': {
+    title: 'Circular Arrangement',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Circular Arrangement.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Circular Arrangement. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Circular Arrangement.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'floor-puzzles': {
+    title: 'Floor Puzzles',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Floor Puzzles.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Floor Puzzles. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Floor Puzzles.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'box-puzzles': {
+    title: 'Box Puzzles',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Box Puzzles.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Box Puzzles. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Box Puzzles.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'pattern-completion': {
+    title: 'Pattern Completion',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Pattern Completion.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Pattern Completion. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Pattern Completion.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'figure-series': {
+    title: 'Figure Series',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Figure Series.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Figure Series. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Figure Series.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'mirror-images': {
+    title: 'Mirror Images',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Mirror Images.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Mirror Images. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Mirror Images.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'water-images': {
+    title: 'Water Images',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Water Images.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Water Images. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Water Images.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'odd-figure-out': {
+    title: 'Odd Figure Out',
+    icon: '🧠',
+    color: '#ec4899',
+    tagline: 'Master the concepts of Odd Figure Out.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Odd Figure Out. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Odd Figure Out.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'sentence-correction': {
+    title: 'Sentence Correction',
+    icon: '📖',
+    color: '#10b981',
+    tagline: 'Master the concepts of Sentence Correction.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Sentence Correction. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Sentence Correction.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'fill-in-the-blanks': {
+    title: 'Fill in the Blanks',
+    icon: '📖',
+    color: '#10b981',
+    tagline: 'Master the concepts of Fill in the Blanks.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Fill in the Blanks. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Fill in the Blanks.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'sentence-completion': {
+    title: 'Sentence Completion',
+    icon: '📖',
+    color: '#10b981',
+    tagline: 'Master the concepts of Sentence Completion.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Sentence Completion. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Sentence Completion.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
+  'cloze-test': {
+    title: 'Cloze Test',
+    icon: '📖',
+    color: '#10b981',
+    tagline: 'Master the concepts of Cloze Test.',
+    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Cloze Test. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
+    keyFacts: [
+      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
+      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
+    ],
+    formulas: [
+      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+    ],
+    identify: [
+      'Look for keywords specific to Cloze Test.',
+      'Identify the given values and what needs to be found.',
+    ],
+    approach: [
+      { step: '1', tip: 'Read the question carefully and note down the given data.' },
+      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
+      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
+      { step: '4', tip: 'Verify if the answer makes logical sense.' },
+    ],
+  },
+
 };
 
 // Helper to create a URL-safe slug from a topic name

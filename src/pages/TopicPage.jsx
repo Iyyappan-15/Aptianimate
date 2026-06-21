@@ -1,16 +1,38 @@
 // src/pages/TopicPage.jsx
-import { useState } from 'react';
-import { TOPIC_CONTENT } from '../data/topicContent';
+import { useState, useEffect } from 'react';
+import { topicService } from '../services/topicService';
 
 export default function TopicPage({ topicSlug, topicName, navigate }) {
-  const topic = TOPIC_CONTENT[topicSlug];
+  const [topic, setTopic] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [userQuestion, setUserQuestion] = useState('');
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    async function loadTopic() {
+      setLoading(true);
+      const data = await topicService.getTopicBySlug(topicSlug);
+      setTopic(data);
+      setLoading(false);
+    }
+    loadTopic();
+  }, [topicSlug]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (userQuestion.trim()) setSubmitted(true);
   };
+
+  if (loading) {
+    return (
+      <div className="topic-page page" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
+        <div style={{ textAlign: 'center', color: 'var(--text-muted)' }}>
+          <div className="spinner" style={{ fontSize: '2rem', marginBottom: '16px' }}>⏳</div>
+          <p>Loading topic...</p>
+        </div>
+      </div>
+    );
+  }
 
   // Topic not yet written — show a "coming soon" state
   if (!topic) {
