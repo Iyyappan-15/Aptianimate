@@ -4,6 +4,7 @@ import { CATEGORIES } from '../data/questionBank';
 import { getGoal, setGoal, getLastSession, getStats } from '../utils/localStorage';
 import ProgressDashboard from '../components/ProgressDashboard';
 import CampusPlacementView from '../components/CampusPlacementView';
+import VisualExplanationDemo from '../components/VisualExplanationDemo';
 
 export default function HomePage({ navigate }) {
   const [goal, setLocalGoal] = useState(getGoal());
@@ -33,6 +34,8 @@ export default function HomePage({ navigate }) {
         <h1>Master Aptitude<br/>Visually.</h1>
         <p>Don't just memorize formulas. Understand them through interactive animations and step-by-step logic.</p>
       </div>
+
+      <VisualExplanationDemo navigate={navigate} />
 
       <div className="goal-selector">
         {['Campus Placements', 'Government Exams', 'Aptitude Roadmap', 'Mock Tests', 'Technical Interview Prep'].map(g => (
