@@ -2113,3 +2113,56 @@ img, svg { display: block; }
   .ai-result-options { grid-template-columns: 1fr; }
   .ai-solver-submit { width: 100%; justify-content: center; }
 }
+
+/* ── Interactive Options ── */
+.ai-option-clickable {
+  cursor: pointer;
+}
+.ai-option-clickable:hover {
+  border-color: var(--violet);
+  background: var(--bg);
+  transform: translateY(-1px);
+}
+.ai-option-disabled {
+  opacity: 0.6;
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+.ai-option-wrong {
+  border-color: var(--coral);
+  background: rgba(239,68,68,0.08);
+}
+.ai-option-wrong .ai-option-key {
+  background: var(--coral);
+  color: #fff;
+}
+.ai-option-cross {
+  margin-left: auto;
+  color: var(--coral);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+/* ── Selection Feedback ── */
+.ai-selection-feedback {
+  padding: 16px;
+  border-radius: var(--radius);
+  margin-top: 8px;
+  text-align: center;
+}
+.ai-selection-feedback.correct {
+  background: rgba(20,184,166,0.1);
+  border: 1px solid rgba(20,184,166,0.3);
+}
+.ai-selection-feedback.wrong {
+  background: rgba(239,68,68,0.08);
+  border: 1px solid rgba(239,68,68,0.25);
+}
+.feedback-message {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.ai-selection-feedback.correct .feedback-message { color: var(--teal); }
+.ai-selection-feedback.wrong .feedback-message { color: var(--coral); }
