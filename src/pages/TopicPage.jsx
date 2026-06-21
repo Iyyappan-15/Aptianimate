@@ -1,12 +1,11 @@
 // src/pages/TopicPage.jsx
 import { useState, useEffect } from 'react';
 import { topicService } from '../services/topicService';
+import AISolver from '../components/AISolver';
 
 export default function TopicPage({ topicSlug, topicName, navigate }) {
   const [topic, setTopic] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [userQuestion, setUserQuestion] = useState('');
-  const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
     async function loadTopic() {
@@ -17,11 +16,6 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     }
     loadTopic();
   }, [topicSlug]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (userQuestion.trim()) setSubmitted(true);
-  };
 
   if (loading) {
     return (
@@ -142,42 +136,13 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
         </section>
       )}
 
-      {/* ── User Question Input ── */}
+      {/* ── AI Solver ── */}
       <section className="topic-section">
-        <div className="topic-section-label">🙋 Got a Question? Ask Here</div>
+        <div className="topic-section-label">🤖 Ask AI — Visual Explanation</div>
         <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginBottom: 16 }}>
-          Paste a question you are stuck on and we will help you solve it step by step.
+          Paste any <strong>{topic.title}</strong> question and get an instant animated, step-by-step visual solution.
         </p>
-        {!submitted ? (
-          <form className="user-question-form" onSubmit={handleSubmit}>
-            <textarea
-              className="user-question-input"
-              placeholder="Type or paste your aptitude question here... e.g. 'A can do a work in 10 days, B in 15 days. Together in how many days?'"
-              value={userQuestion}
-              onChange={(e) => setUserQuestion(e.target.value)}
-              rows={4}
-            />
-            <button
-              type="submit"
-              className="user-question-submit"
-              style={{ '--topic-color': topic.color }}
-              disabled={!userQuestion.trim()}
-            >
-              Submit Question →
-            </button>
-          </form>
-        ) : (
-          <div className="user-question-thanks">
-            <div style={{ fontSize: '1.5rem' }}>✅</div>
-            <div>
-              <strong>Question received!</strong>
-              <p>Step-by-step solution will be shown here once this feature goes live.</p>
-            </div>
-            <button className="topic-back-btn" style={{ marginTop: 0 }} onClick={() => { setSubmitted(false); setUserQuestion(''); }}>
-              Ask another
-            </button>
-          </div>
-        )}
+        <AISolver topicColor={topic.color} topicName={topic.title} />
       </section>
 
       {/* ── Similar Questions Placeholder ── */}
