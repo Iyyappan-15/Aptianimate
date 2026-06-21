@@ -26,7 +26,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   if (loading) {
     return (
       <div className="topic-page page" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
-        <div style={{ textAlign: 'center', color: 'var(--text-muted)' }}>
+        <div style={{ textAlign: 'center', color: 'var(--muted)' }}>
           <div className="spinner" style={{ fontSize: '2rem', marginBottom: '16px' }}>⏳</div>
           <p>Loading topic...</p>
         </div>
@@ -145,7 +145,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
       {/* ── User Question Input ── */}
       <section className="topic-section">
         <div className="topic-section-label">🙋 Got a Question? Ask Here</div>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: 16 }}>
+        <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginBottom: 16 }}>
           Paste a question you are stuck on and we will help you solve it step by step.
         </p>
         {!submitted ? (
