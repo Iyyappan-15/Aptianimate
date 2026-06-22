@@ -3,6 +3,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { describeArc, CHART_COLORS } from '../utils/animationHelpers';
+import { MotionVisual, ContainerVisual, ProgressVisual, TimelineVisual, TankVisual, WorkVisual, VennVisual, SeatingVisual, FamilyTreeVisual, ProbabilityTreeVisual, NumberLineVisual, ChartVisual } from './AptitudeVisuals';
 
 export default function StepRenderer({ step, isActive }) {
   if (!step) return null;
@@ -18,6 +19,21 @@ export default function StepRenderer({ step, isActive }) {
     case 'pattern_reveal':    return <PatternReveal step={step} isActive={isActive} />;
     case 'bar_race':          return <BarRace step={step} isActive={isActive} />;
     case 'pie_build':         return <PieBuild step={step} isActive={isActive} />;
+
+    /* --- NEW 12-TYPE ENGINE --- */
+    case 'motion':            return <MotionVisual step={step} isActive={isActive} />;
+    case 'container':         return <ContainerVisual step={step} isActive={isActive} />;
+    case 'progress':          return <ProgressVisual step={step} isActive={isActive} />;
+    case 'timeline':          return <TimelineVisual step={step} isActive={isActive} />;
+    case 'tank':              return <TankVisual step={step} isActive={isActive} />;
+    case 'work':              return <WorkVisual step={step} isActive={isActive} />;
+    case 'venn':              return <VennVisual step={step} isActive={isActive} />;
+    case 'seating':           return <SeatingVisual step={step} isActive={isActive} />;
+    case 'family_tree':       return <FamilyTreeVisual step={step} isActive={isActive} />;
+    case 'probability_tree':  return <ProbabilityTreeVisual step={step} isActive={isActive} />;
+    case 'number_line':       return <NumberLineVisual step={step} isActive={isActive} />;
+    case 'chart':             return <ChartVisual step={step} isActive={isActive} />;
+    
     default:                  return <DefaultVisual step={step} isActive={isActive} />;
   }
 }

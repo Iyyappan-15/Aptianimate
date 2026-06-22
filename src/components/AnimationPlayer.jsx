@@ -5,7 +5,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import StepRenderer from './StepRenderer';
 import { stepDurationMs } from '../utils/animationHelpers';
 
-export default function AnimationPlayer({ animationScript, conceptSummary, onComplete }) {
+export default function AnimationPlayer({ animationScript, conceptSummary, formula, verification, onComplete }) {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
@@ -205,6 +205,37 @@ export default function AnimationPlayer({ animationScript, conceptSummary, onCom
         <div className="concept-summary" style={{ margin: '0 16px 16px', animation: 'slideUp 0.5s ease' }}>
           <div className="concept-summary-label">✨ Key Concept</div>
           <div className="concept-summary-text">{conceptSummary}</div>
+        </div>
+      )}
+
+      {/* Formula & Verification */}
+      {finished && (formula || verification) && (
+        <div className="verification-panel" style={{ margin: '0 16px 16px', padding: '16px', background: 'var(--surface2)', borderRadius: '16px', border: '1px solid var(--border)', animation: 'slideUp 0.6s ease' }}>
+          {formula && (
+            <div style={{ marginBottom: verification ? '16px' : '0' }}>
+              <div style={{ fontSize: '0.8rem', color: 'var(--text-sec)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>
+                📐 Applied Formula
+              </div>
+              <div style={{ fontSize: '1.1rem', color: 'var(--text-main)', fontFamily: 'monospace', padding: '12px', background: 'var(--bg)', borderRadius: '8px', border: '1px dashed var(--border)' }}>
+                {formula}
+              </div>
+            </div>
+          )}
+          {verification && verification.verified && (
+            <div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--text-sec)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>
+                ✅ AI Verification
+              </div>
+              <div style={{ fontSize: '0.9rem', color: 'var(--text-main)', padding: '12px', background: 'var(--bg)', borderRadius: '8px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
+                  <span style={{ color: 'var(--teal)' }}>1️⃣</span> <span>{verification.method1}</span>
+                </div>
+                <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
+                  <span style={{ color: 'var(--violet)' }}>2️⃣</span> <span>{verification.method2}</span>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
