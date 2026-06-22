@@ -132,11 +132,15 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
 
           {/* Question metadata bar */}
           <div className="ai-result-meta">
-            <span className="ai-meta-tag ai-meta-category">📂 {result.category}</span>
-            <span className="ai-meta-tag ai-meta-concept">💡 {result.concept_name}</span>
+            <span className="ai-meta-tag ai-meta-category">📂 {result.topic || result.category}</span>
+            {result.subTopic && <span className="ai-meta-tag ai-meta-category">🏷️ {result.subTopic}</span>}
+            <span className="ai-meta-tag ai-meta-concept">💡 {result.concept || result.concept_name}</span>
             <span className={`ai-meta-tag ai-meta-diff ai-diff-${(result.difficulty || 'medium').toLowerCase()}`}>
               {result.difficulty === 'Easy' ? '🟢' : result.difficulty === 'Hard' ? '🔴' : '🟡'} {result.difficulty}
             </span>
+            {result.verification?.verified && (
+              <span className="ai-meta-tag ai-meta-verified">✅ Verified</span>
+            )}
           </div>
 
           {/* The cleaned question text */}
@@ -208,7 +212,9 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
                 <div className="ai-animation-wrap">
                   <AnimationPlayer
                     animationScript={result.animation_script}
-                    conceptSummary={result.concept_summary}
+                    conceptSummary={result.concept_summary || result.concept}
+                    formula={result.formula}
+                    verification={result.verification}
                     onComplete={() => setTimeout(() => setShowFollowUp(true), 800)}
                   />
                 </div>
