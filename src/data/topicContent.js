@@ -420,7 +420,7 @@ export const TOPIC_CONTENT = {
 
   'prime-factorization': {
     title: 'Prime Factorization',
-    icon: '📊',
+    icon: '🌳',
     color: '#6366f1',
     tagline: 'Master the concepts of Prime Factorization.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Prime Factorization. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -445,7 +445,7 @@ export const TOPIC_CONTENT = {
 
   'number-of-factors': {
     title: 'Number of Factors',
-    icon: '📊',
+    icon: '🔢',
     color: '#6366f1',
     tagline: 'Master the concepts of Number of Factors.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Number of Factors. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -470,7 +470,7 @@ export const TOPIC_CONTENT = {
 
   'unit-digits-cyclicity': {
     title: 'Unit Digits & Cyclicity',
-    icon: '📊',
+    icon: '🔄',
     color: '#6366f1',
     tagline: 'Master the concepts of Unit Digits & Cyclicity.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Unit Digits & Cyclicity. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -495,7 +495,7 @@ export const TOPIC_CONTENT = {
 
   'decimal-fractions': {
     title: 'Decimal Fractions',
-    icon: '📊',
+    icon: '➗',
     color: '#6366f1',
     tagline: 'Master the concepts of Decimal Fractions.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Decimal Fractions. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -520,7 +520,7 @@ export const TOPIC_CONTENT = {
 
   'simplification': {
     title: 'Simplification',
-    icon: '📊',
+    icon: '✂️',
     color: '#6366f1',
     tagline: 'Master the concepts of Simplification.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Simplification. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -545,7 +545,7 @@ export const TOPIC_CONTENT = {
 
   'approximation': {
     title: 'Approximation',
-    icon: '📊',
+    icon: '〰️',
     color: '#6366f1',
     tagline: 'Master the concepts of Approximation.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Approximation. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -570,7 +570,7 @@ export const TOPIC_CONTENT = {
 
   'trailing-zeros': {
     title: 'Trailing Zeros',
-    icon: '📊',
+    icon: '0️⃣',
     color: '#6366f1',
     tagline: 'Master the concepts of Trailing Zeros.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Trailing Zeros. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -595,7 +595,7 @@ export const TOPIC_CONTENT = {
 
   'ratio-proportion': {
     title: 'Ratio & Proportion',
-    icon: '📊',
+    icon: '⚖️',
     color: '#6366f1',
     tagline: 'Master the concepts of Ratio & Proportion.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Ratio & Proportion. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -670,7 +670,7 @@ export const TOPIC_CONTENT = {
 
   'compound-interest': {
     title: 'Compound Interest',
-    icon: '📊',
+    icon: '📈',
     color: '#6366f1',
     tagline: 'Master the concepts of Compound Interest.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Compound Interest. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -719,7 +719,7 @@ export const TOPIC_CONTENT = {
 
   'alligation-mixtures': {
     title: 'Alligation & Mixtures',
-    icon: '📊',
+    icon: '🧪',
     color: '#6366f1',
     tagline: 'Master the concepts of Alligation & Mixtures.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Alligation & Mixtures. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -744,7 +744,7 @@ export const TOPIC_CONTENT = {
 
   'pipes-cisterns': {
     title: 'Pipes & Cisterns',
-    icon: '📊',
+    icon: '🚰',
     color: '#6366f1',
     tagline: 'Master the concepts of Pipes & Cisterns.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Pipes & Cisterns. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -794,7 +794,7 @@ export const TOPIC_CONTENT = {
 
   'boats-streams': {
     title: 'Boats & Streams',
-    icon: '📊',
+    icon: '🛶',
     color: '#6366f1',
     tagline: 'Master the concepts of Boats & Streams.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Boats & Streams. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -819,7 +819,7 @@ export const TOPIC_CONTENT = {
 
   'tables': {
     title: 'Tables',
-    icon: '📊',
+    icon: '📋',
     color: '#6366f1',
     tagline: 'Master the concepts of Tables.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Tables. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -869,7 +869,7 @@ export const TOPIC_CONTENT = {
 
   'pie-charts': {
     title: 'Pie Charts',
-    icon: '📊',
+    icon: '🥧',
     color: '#6366f1',
     tagline: 'Master the concepts of Pie Charts.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Pie Charts. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -894,7 +894,7 @@ export const TOPIC_CONTENT = {
 
   'line-graphs': {
     title: 'Line Graphs',
-    icon: '📊',
+    icon: '📉',
     color: '#6366f1',
     tagline: 'Master the concepts of Line Graphs.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Line Graphs. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -919,7 +919,7 @@ export const TOPIC_CONTENT = {
 
   'mixed-di-sets': {
     title: 'Mixed DI Sets',
-    icon: '📊',
+    icon: '🗂️',
     color: '#6366f1',
     tagline: 'Master the concepts of Mixed DI Sets.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Mixed DI Sets. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -944,7 +944,7 @@ export const TOPIC_CONTENT = {
 
   'permutation-combination': {
     title: 'Permutation & Combination',
-    icon: '📊',
+    icon: '🔀',
     color: '#6366f1',
     tagline: 'Master the concepts of Permutation & Combination.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Permutation & Combination. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -969,7 +969,7 @@ export const TOPIC_CONTENT = {
 
   'logarithm': {
     title: 'Logarithm',
-    icon: '📊',
+    icon: '🪵',
     color: '#6366f1',
     tagline: 'Master the concepts of Logarithm.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Logarithm. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
