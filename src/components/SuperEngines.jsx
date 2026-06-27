@@ -208,7 +208,7 @@ export function AxisEngine({ step, isActive }) {
                 {/* Value display */}
                 <div style={{ 
                   position: 'absolute', 
-                  top: '28px', 
+                  top: i % 2 === 0 ? '28px' : '48px', 
                   left: '50%', 
                   transform: 'translateX(-50%)', 
                   fontWeight: '800', 
@@ -222,7 +222,7 @@ export function AxisEngine({ step, isActive }) {
                 {p.label && (
                   <div style={{ 
                     position: 'absolute', 
-                    top: '-35px', 
+                    top: i % 2 === 0 ? '-35px' : '-65px', 
                     left: '50%', 
                     transform: 'translateX(-50%)', 
                     fontSize: '0.75rem', 
