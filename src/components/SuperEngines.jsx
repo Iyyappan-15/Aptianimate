@@ -374,8 +374,12 @@ export function AxisEngine({ step, isActive }) {
 // ==========================================
 export function BarEngine({ step, isActive }) {
   const data = step.render_data || {};
-  const bars = data.bars || [];
-  const maxVal = Math.max(10, ...bars.map(b => b.val));
+  // AI might use different keys instead of 'bars'
+  const bars = data.bars || data.data || data.values || data.items || [];
+  
+  // Safely parse values
+  const getVal = (b) => parseFloat(b.val !== undefined ? b.val : b.value) || 0;
+  const maxVal = Math.max(10, ...bars.map(getVal));
 
   function getBarHeight(val) {
     return (val / maxVal) * 100 + '%';
@@ -398,6 +402,8 @@ export function BarEngine({ step, isActive }) {
 
       {bars.map((bar, i) => {
         const isHighlight = bar.highlight;
+        const val = getVal(bar);
+        
         return (
           <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', zIndex: 1 }}>
             
@@ -417,13 +423,13 @@ export function BarEngine({ step, isActive }) {
                 border: isHighlight ? '2px solid var(--amber)' : '1px solid var(--border)'
               }}
             >
-              {bar.val}
+              {bar.val !== undefined ? bar.val : bar.value}
             </motion.div>
             
             {/* The Bar */}
             <motion.div
               initial={{ height: 0 }}
-              animate={{ height: isActive ? getBarHeight(bar.val) : 0 }}
+              animate={{ height: isActive ? getBarHeight(val) : 0 }}
               transition={{ delay: i * 0.1, duration: 0.8, type: 'spring', bounce: 0.4 }}
               style={{
                 width: '48px',
