@@ -6,6 +6,7 @@ import { getGoal, setGoal, getLastSession, getStats } from '../utils/localStorag
 import ProgressDashboard from '../components/ProgressDashboard';
 import CampusPlacementView from '../components/CampusPlacementView';
 import GovtExamView from '../components/GovtExamView';
+import AptitudeRoadmapView from '../components/AptitudeRoadmapView';
 import VisualExplanationDemo from '../components/VisualExplanationDemo';
 
 export default function HomePage({ navigate }) {
@@ -147,6 +148,8 @@ export default function HomePage({ navigate }) {
         <CampusPlacementView navigate={navigate} />
       ) : goal === 'Government Exams' ? (
         <GovtExamView navigate={navigate} />
+      ) : goal === 'Aptitude Roadmap' ? (
+        <AptitudeRoadmapView navigate={navigate} />
       ) : (
         <>
           <div className="section-header">

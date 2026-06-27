@@ -1794,6 +1794,200 @@ export const TOPIC_CONTENT = {
       { step: '2', tip: 'If it sounds like a literal action but the context is abstract, it\'s an idiom.' },
     ],
   },
+
+  // ════════════════════════════════════════
+  //  ROADMAP EXCLUSIVE TOPICS (PHASES 2-9)
+  // ════════════════════════════════════════
+  
+  'partnership': {
+    title: 'Partnership', icon: '🤝', color: '#3b82f6', tagline: 'Dividing profits among partners.',
+    description: `Partnership involves two or more individuals investing money in a business. Profits are divided based on the investment amount and the time duration of the investment.`,
+    keyFacts: [{ label: 'Profit Ratio', value: 'Profit is directly proportional to Investment × Time.' }],
+    formulas: [{ title: 'Profit Share', formula: 'P1 : P2 = (I1 × T1) : (I2 × T2)', example: 'If A invests 100 for 12m and B 200 for 6m, Ratio = 1200:1200 = 1:1.' }],
+    identify: ['Keywords like investment, profit share, joined later, active partner.'],
+    approach: [{ step: '1', tip: 'Always bring investments to a common time frame (usually months).' }]
+  },
+
+  'race-problems': {
+    title: 'Race Problems', icon: '🏁', color: '#6366f1', tagline: 'Head starts and beating times.',
+    description: `Race problems are an extension of Time, Speed, and Distance. They involve terms like 'A gives B a head start of 10m' or 'A beats B by 5 seconds'.`,
+    keyFacts: [{ label: 'Head Start in Distance', value: 'If A gives B 10m start in 100m, A runs 100m while B runs 90m in the SAME time.' }],
+    formulas: [{ title: 'Dead Heat', formula: 'Both runners reach the finish line at the exact same time.', example: '' }],
+    identify: ['Mentions of circular tracks, head starts, or beating by distance/time.'],
+    approach: [{ step: '1', tip: 'Identify what is constant: Time (head start in distance) or Distance (head start in time).' }]
+  },
+
+  'analogies': {
+    title: 'Analogies', icon: '🔗', color: '#f43f5e', tagline: 'Finding the logical relationship.',
+    description: `Analogy means similarity. You are given a pair of words/numbers with a certain relationship, and you must find another pair with the exact same relationship.`,
+    keyFacts: [{ label: 'Word Analogy', value: 'E.g., Doctor : Hospital :: Teacher : School' }],
+    formulas: [{ title: 'Number Analogy', formula: 'Look for squares, cubes, prime numbers, or common differences.', example: '4 : 16 :: 5 : 25' }],
+    identify: ['Questions formatted as A : B :: C : ?'],
+    approach: [{ step: '1', tip: 'Define the relationship between A and B precisely before looking at options.' }]
+  },
+
+  'classification': {
+    title: 'Classification', icon: '🗂️', color: '#f43f5e', tagline: 'Find the odd one out.',
+    description: `Classification involves grouping items based on common properties and identifying the one item that does not fit into that group.`,
+    keyFacts: [{ label: 'Odd Man Out', value: '3 out of 4 options will share a logical rule. Find the one that doesn\'t.' }],
+    formulas: [],
+    identify: ['"Find the odd word/letters/number from the given alternatives."'],
+    approach: [{ step: '1', tip: 'For numbers, check prime status, squares, cubes, and divisibility.' }]
+  },
+
+  'missing-number': {
+    title: 'Missing Number', icon: '❓', color: '#f43f5e', tagline: 'Crack the mathematical pattern.',
+    description: `You are presented with a figure (matrix, circle, star) containing numbers governed by a specific mathematical rule. You must find the rule to identify the missing number.`,
+    keyFacts: [{ label: 'Common Operations', value: 'Addition, subtraction, multiplication, squares, cubes, and their combinations.' }],
+    formulas: [],
+    identify: ['A visual grid or shape with numbers and a question mark (?).'],
+    approach: [{ step: '1', tip: 'If numbers grow very fast, look for multiplication or squares/cubes.' }, { step: '2', tip: 'Check row-wise and column-wise logic.' }]
+  },
+
+  'cause-effect': {
+    title: 'Cause & Effect', icon: '💥', color: '#f43f5e', tagline: 'Identify the trigger and the result.',
+    description: `You are given two statements. You need to determine if one is the cause and the other is its effect, or if both are independent causes/effects.`,
+    keyFacts: [{ label: 'Cause', value: 'The reason why something happened.' }, { label: 'Effect', value: 'The result or outcome of the cause.' }],
+    formulas: [],
+    identify: ['Options like: "Statement I is cause and II is effect".'],
+    approach: [{ step: '1', tip: 'Chronology: The cause always happens before the effect.' }]
+  },
+
+  'course-of-action': {
+    title: 'Course of Action', icon: '🛠️', color: '#f43f5e', tagline: 'Solving a presented problem.',
+    description: `A problem or situation is described, followed by suggested courses of action. You must choose the action that practically and positively resolves the problem.`,
+    keyFacts: [{ label: 'Practicality', value: 'The action must be realistic and implementable.' }],
+    formulas: [],
+    identify: ['Followed by "Courses of Action: I..., II...".'],
+    approach: [{ step: '1', tip: 'Avoid extreme or harsh actions unless the situation is dire.' }]
+  },
+
+  'decision-making': {
+    title: 'Decision Making', icon: '⚖️', color: '#f43f5e', tagline: 'Evaluating eligibility criteria.',
+    description: `You are given a set of criteria for selection (e.g., job recruitment) and a candidate\\'s profile. You must decide if the candidate is selected, rejected, or referred to higher authority.`,
+    keyFacts: [{ label: 'Strict adherence', value: 'Do not assume any information not explicitly stated about the candidate.' }],
+    formulas: [],
+    identify: ['Long paragraphs detailing age limits, educational marks, and experience.'],
+    approach: [{ step: '1', tip: 'Create a quick checklist table on your scratchpad to tick off criteria.' }]
+  },
+
+  'paper-folding': {
+    title: 'Paper Folding', icon: '📄', color: '#f59e0b', tagline: 'Visualizing transparency.',
+    description: `A transparent sheet with a pattern is folded along a dotted line. You must visualize how the pattern will look after folding.`,
+    keyFacts: [{ label: 'Mirror Image Principle', value: 'The folded half acts as a mirror image superimposed on the stationary half.' }],
+    formulas: [],
+    identify: ['Dotted lines on a square sheet with arrows indicating a fold.'],
+    approach: [{ step: '1', tip: 'Mentally trace the reflection of the folded side over the dotted line.' }]
+  },
+
+  'paper-cutting': {
+    title: 'Paper Cutting', icon: '✂️', color: '#f59e0b', tagline: 'Unfolding a punched paper.',
+    description: `A piece of paper is folded multiple times and then cut/punched. You must predict the pattern when the paper is completely unfolded.`,
+    keyFacts: [{ label: 'Reverse Symmetry', value: 'Unfold step-by-step in reverse order, applying mirror images at each fold line.' }],
+    formulas: [],
+    identify: ['Sequence of 3-4 figures showing folding, followed by a cut mark.'],
+    approach: [{ step: '1', tip: 'The number of cuts usually multiplies by 2 with every unfold.' }]
+  },
+
+  'embedded-figures': {
+    title: 'Embedded Figures', icon: '🧩', color: '#f59e0b', tagline: 'Find the hidden shape.',
+    description: `You are given a simple target figure and 4 complex option figures. You must find which option has the target figure perfectly hidden inside it.`,
+    keyFacts: [{ label: 'Proportions matter', value: 'The hidden figure must have the exact same proportions and orientation (unless rotation is allowed).' }],
+    formulas: [],
+    identify: ['Question asks "Find the figure in which the given figure is embedded".'],
+    approach: [{ step: '1', tip: 'Look for the most distinct or unique angle/curve in the target figure and scan for it.' }]
+  },
+
+  'cube-dice': {
+    title: 'Cube & Dice', icon: '🎲', color: '#f59e0b', tagline: 'Unfolding 3D boxes.',
+    description: `Problems involving standard/ordinary dice, finding opposite faces from different views, or folding a flat 2D net into a 3D cube.`,
+    keyFacts: [{ label: 'Standard Dice', value: 'Opposite faces always sum to 7 (1-6, 2-5, 3-4).' }, { label: 'Ordinary Dice', value: 'Adjacent faces can sum to 7.' }],
+    formulas: [{ title: 'One Common Face Rule', formula: 'Write adjacent faces clockwise starting from the common face to find opposites.', example: '' }],
+    identify: ['Images of dice or flattened cross shapes.'],
+    approach: [{ step: '1', tip: 'In an open net, alternate squares in a straight line are always opposite to each other.' }]
+  },
+
+  'figure-counting': {
+    title: 'Figure Counting', icon: '📐', color: '#f59e0b', tagline: 'Counting hidden triangles and squares.',
+    description: `You must count the total number of specific shapes (usually triangles, squares, or rectangles) within a complex composite figure.`,
+    keyFacts: [{ label: 'Formula driven', value: 'Many standard symmetrical figures have mathematical formulas for counting.' }],
+    formulas: [{ title: 'Square with diagonals', formula: 'Number of small triangles × 2', example: 'A square with 4 small internal triangles = 4 × 2 = 8 total triangles.' }],
+    identify: ['"How many triangles are there in the given figure?"'],
+    approach: [{ step: '1', tip: 'Count the smallest shapes first, then combine two at a time, then three.' }]
+  },
+
+  'vedic-maths': {
+    title: 'Vedic Maths', icon: '⚡', color: '#eab308', tagline: 'Ancient high-speed calculation.',
+    description: `Vedic Mathematics is a collection of ancient techniques/sutras to solve arithmetic operations rapidly and mentally.`,
+    keyFacts: [{ label: 'Base Method', value: 'Multiplying numbers close to powers of 10 (e.g., 98 × 97) becomes a 3-second mental sum.' }],
+    formulas: [],
+    identify: ['Any calculation-heavy problem in exams.'],
+    approach: [{ step: '1', tip: 'Master the Base Method and the Criss-Cross multiplication method.' }]
+  },
+
+  'calculation-tricks': {
+    title: 'Calculation Tricks', icon: '🧮', color: '#eab308', tagline: 'Never use long division again.',
+    description: `Modern shortcuts for handling decimals, fractions, and large numbers without resorting to slow, traditional methods.`,
+    keyFacts: [{ label: 'Digital Sum', value: 'The sum of digits of the question equals the sum of digits of the answer (for +, -, ×).' }],
+    formulas: [],
+    identify: ['Simplification and Data Interpretation questions.'],
+    approach: [{ step: '1', tip: 'Use Digital Sum to eliminate options instantly in complex multiplications.' }]
+  },
+
+  'percentage-tricks': {
+    title: 'Percentage Tricks', icon: '💯', color: '#eab308', tagline: 'Fractions to percentages instantly.',
+    description: `Mastering the conversion table between fractions and percentages is the single most important skill for Data Interpretation.`,
+    keyFacts: [{ label: 'Reciprocals', value: 'Memorize 1/2 up to 1/20 as percentages.' }],
+    formulas: [{ title: 'Reverse Percentage', formula: 'x% of y = y% of x', example: '16% of 25 is hard. 25% of 16 is easy (1/4 of 16 = 4).' }],
+    identify: ['Profit/Loss, SI/CI, and DI tables.'],
+    approach: [{ step: '1', tip: 'Never calculate 16.66% by multiplying. Divide by 6 instead (since 1/6 = 16.66%).' }]
+  },
+
+  'square-tricks': {
+    title: 'Square Tricks', icon: '⬛', color: '#eab308', tagline: 'Squaring 1 to 100 mentally.',
+    description: `Techniques to instantly find the square of any two-digit number, especially numbers ending in 5 or near 50.`,
+    keyFacts: [{ label: 'Ending in 5', value: '(n5)² = [n × (n+1)] appended with 25.' }],
+    formulas: [{ title: 'Example', formula: '65²', example: '6 × 7 = 42. Append 25. Answer: 4225.' }],
+    identify: ['Compound interest or mensuration area formulas.'],
+    approach: [{ step: '1', tip: 'Memorize squares 1 to 30. Use base 50 trick for 31-70, and base 100 trick for 71-100.' }]
+  },
+
+  'cube-tricks': {
+    title: 'Cube Tricks', icon: '🧊', color: '#eab308', tagline: 'Finding cubes and cube roots.',
+    description: `Shortcuts to find perfect cube roots instantly by looking at the last digit, and methods to calculate cubes using ratio expansion.`,
+    keyFacts: [{ label: 'Last Digit Rule', value: 'The last digit of a perfect cube corresponds uniquely to a single digit.' }],
+    formulas: [{ title: 'Pairs', formula: '2<->8, 3<->7', example: 'If cube ends in 2, root ends in 8. (All other digits stay the same, e.g. ends in 4 -> root ends in 4).' }],
+    identify: ['Mensuration volume formulas and Simplification.'],
+    approach: [{ step: '1', tip: 'Ignore the last 3 digits to find the tens place of a cube root.' }]
+  },
+
+  'multiplication-tricks': {
+    title: 'Multiplication Tricks', icon: '✖️', color: '#eab308', tagline: 'Mental multiplication hacks.',
+    description: `Techniques like multiplying by 11, multiplying by 5, 25, 125, and line multiplication.`,
+    keyFacts: [{ label: 'Multiply by 11', value: 'Write the outer digits, and insert the sum of adjacent digits in the middle.' }],
+    formulas: [{ title: 'Example', formula: '45 × 11', example: '4 (4+5) 5 = 495' }],
+    identify: ['Whenever you need to multiply large numbers in DI.'],
+    approach: [{ step: '1', tip: 'To multiply by 25, just multiply by 100 and divide by 4.' }]
+  },
+
+  'division-tricks': {
+    title: 'Division Tricks', icon: '➗', color: '#eab308', tagline: 'Divide without the long bracket.',
+    description: `How to divide by 5, 25, 9, and how to use cancellation techniques efficiently.`,
+    keyFacts: [{ label: 'Divide by 5', value: 'Multiply by 2 and divide by 10 (move decimal one spot left).' }],
+    formulas: [{ title: 'Example', formula: '140 / 5', example: '140 × 2 = 280 -> 28.0' }],
+    identify: ['Averages, Ratio, and DI.'],
+    approach: [{ step: '1', tip: 'Always look for common factors (2, 3, 5, 11) to cancel before actually dividing.' }]
+  },
+
+  'approximation-techniques': {
+    title: 'Approximation Techniques', icon: '🎯', color: '#eab308', tagline: 'Close enough is good enough.',
+    description: `In many exams, options are far apart. Approximation allows you to round numbers aggressively to reach the correct option in a fraction of the time.`,
+    keyFacts: [{ label: 'Balancing', value: 'If you round the numerator UP, round the denominator UP to keep the fraction balanced.' }],
+    formulas: [],
+    identify: ['Data Interpretation (especially Pie Charts) and Banking Simplification sections.'],
+    approach: [{ step: '1', tip: 'Look at the distance between the options first. If they are far, approximate wildly.' }]
+  }
+
 };
 
 // Helper to create a URL-safe slug from a topic name
