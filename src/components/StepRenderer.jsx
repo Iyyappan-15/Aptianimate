@@ -18,16 +18,16 @@ export default function StepRenderer({ step, isActive }) {
     case 'axis_engine':       return <AxisEngine step={step} isActive={isActive} />;
     case 'bar_engine':        return <BarEngine step={step} isActive={isActive} />;
     case 'entity_engine':     return <EntityEngine step={step} isActive={isActive} />;
-    
-    // Formula handling
-    case 'formula_engine':    return step.render_data?.equation_lines ? <EquationSolve step={step} isActive={isActive} /> : <FormulaHighlight step={step} isActive={isActive} />;
-    
-    // Legacy support (optional, keeping a few for safety)
+
+    // Formula engine — reads from render_data.formula_vars (new) or step.formula_vars (legacy)
+    case 'formula_engine':    return <FormulaHighlight step={step} isActive={isActive} />;
+
+    // Legacy support
     case 'formula_highlight': return <FormulaHighlight step={step} isActive={isActive} />;
     case 'equation_solve':    return <EquationSolve step={step} isActive={isActive} />;
     case 'number_morph':      return <NumberMorph step={step} isActive={isActive} />;
     case 'comparison_visual': return <ComparisonVisual step={step} isActive={isActive} />;
-    
+
     default:                  return <DefaultVisual step={step} isActive={isActive} />;
   }
 }
@@ -36,24 +36,28 @@ export default function StepRenderer({ step, isActive }) {
 
 // ─── FORMULA HIGHLIGHT ────────────────────────────────────────────────────────
 // Shows a formula building up piece by piece with colored labeled tokens
+// Reads from step.render_data.formula_vars (v2) OR step.formula_vars (legacy)
 function FormulaHighlight({ step, isActive }) {
   const [visibleVars, setVisibleVars] = useState([]);
   const [showFormulaDesc, setShowFormulaDesc] = useState(false);
   const timerRef = useRef(null);
+
+  // Support both new format (render_data.formula_vars) and legacy (step.formula_vars)
+  const formulaVars = step.render_data?.formula_vars || step.formula_vars || [];
 
   useEffect(() => {
     setVisibleVars([]);
     setShowFormulaDesc(false);
     if (!isActive) return;
 
-    if (!step.formula_vars?.length) {
+    if (!formulaVars.length) {
       timerRef.current = setTimeout(() => setShowFormulaDesc(true), 400);
       return;
     }
 
     let i = 0;
     const show = () => {
-      if (i < step.formula_vars.length) {
+      if (i < formulaVars.length) {
         setVisibleVars(prev => [...prev, i]);
         i++;
         timerRef.current = setTimeout(show, 300);
@@ -66,13 +70,15 @@ function FormulaHighlight({ step, isActive }) {
   }, [isActive, step]);
 
   const colorMap = {
-    a: { bg: 'rgba(59,130,246,0.12)', text: 'var(--violet)', border: 'rgba(59,130,246,0.3)' },
-    b: { bg: 'rgba(20,184,166,0.12)', text: 'var(--teal)',   border: 'rgba(20,184,166,0.3)' },
-    c: { bg: 'rgba(245,158,11,0.12)', text: 'var(--amber)',  border: 'rgba(245,158,11,0.3)' },
-    d: { bg: 'rgba(239,68,68,0.12)',  text: 'var(--coral)',  border: 'rgba(239,68,68,0.3)'  },
+    a:  { bg: 'rgba(124,58,237,0.12)',  text: '#7C3AED', border: 'rgba(124,58,237,0.35)' },
+    b:  { bg: 'rgba(13,148,136,0.12)',  text: '#0D9488', border: 'rgba(13,148,136,0.35)' },
+    c:  { bg: 'rgba(217,119,6,0.12)',   text: '#D97706', border: 'rgba(217,119,6,0.35)'  },
+    d:  { bg: 'rgba(220,38,38,0.12)',   text: '#DC2626', border: 'rgba(220,38,38,0.35)'  },
+    op: { bg: 'transparent',            text: 'var(--muted)', border: 'transparent'       },
   };
 
-  const isOperator = (sym) => ['=', '+', '-', '×', '÷', '→', '≈', '∴', '⟹', '*', 'x', 'X'].includes(sym?.trim());
+  const isOperator = (sym, color) =>
+    color === 'op' || ['=', '+', '-', '×', '÷', '→', '≈', '∴', '⟹'].includes(sym?.trim());
 
   return (
     <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
@@ -93,9 +99,9 @@ function FormulaHighlight({ step, isActive }) {
         maxWidth: '100%',
         overflowX: 'auto'
       }}>
-        {step.formula_vars?.map((v, i) => {
+        {formulaVars.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
-          const op = isOperator(v.symbol);
+          const op = isOperator(v.symbol, v.color);
           return (
             <div
               key={i}
@@ -128,12 +134,13 @@ function FormulaHighlight({ step, isActive }) {
                   borderRadius: '12px',
                   padding: '10px 16px',
                   minWidth: '70px',
+                  boxShadow: `0 0 12px ${c.border}`,
                 }}>
                   <span style={{ fontSize: '1.25rem', fontWeight: 800, color: c.text, fontFamily: 'monospace' }}>
                     {v.symbol}
                   </span>
                   {v.label && (
-                    <span style={{ fontSize: '0.65rem', color: 'var(--muted)', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '4px' }}>
+                    <span style={{ fontSize: '0.65rem', color: c.text, fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '4px', opacity: 0.75 }}>
                       {v.label}
                     </span>
                   )}
