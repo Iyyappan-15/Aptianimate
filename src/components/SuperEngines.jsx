@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // ==========================================
@@ -76,6 +76,9 @@ export function NodeEngine({ step, isActive }) {
   const data = step.render_data || {};
   const nodes = data.nodes || [];
   const [revealed, setRevealed] = useState([]);
+  const [lines, setLines] = useState([]);
+  const containerRef = useRef(null);
+  const nodeRefs = useRef({});
 
   useEffect(() => {
     if (!isActive) return;
@@ -85,9 +88,50 @@ export function NodeEngine({ step, isActive }) {
       setRevealed(prev => [...prev, i]);
       i++;
       if (i >= nodes.length) clearInterval(interval);
-    }, 600);
+    }, 500);
     return () => clearInterval(interval);
   }, [isActive, nodes.length]);
+
+  useEffect(() => {
+    if (!containerRef.current || revealed.length === 0) return;
+    
+    // Draw lines after a short delay to allow DOM/animations to settle
+    const timeout = setTimeout(() => {
+      const containerRect = containerRef.current.getBoundingClientRect();
+      const newLines = [];
+      
+      nodes.forEach(node => {
+        const nodeIndex = nodes.findIndex(n => n.id === node.id);
+        const parentIndex = nodes.findIndex(n => n.id === node.parentId);
+        
+        if (node.parentId && revealed.includes(nodeIndex) && revealed.includes(parentIndex)) {
+          const parentEl = nodeRefs.current[node.parentId];
+          const childEl = nodeRefs.current[node.id];
+          if (parentEl && childEl) {
+            const pRect = parentEl.getBoundingClientRect();
+            const cRect = childEl.getBoundingClientRect();
+            newLines.push({
+              key: `${node.parentId}-${node.id}`,
+              x1: pRect.left + pRect.width / 2 - containerRect.left,
+              y1: pRect.bottom - containerRect.top,
+              x2: cRect.left + cRect.width / 2 - containerRect.left,
+              y2: cRect.top - containerRect.top
+            });
+          }
+        }
+      });
+      setLines(newLines);
+    }, 100); // 100ms for framer-motion to finish popping in
+
+    return () => clearTimeout(timeout);
+  }, [revealed, nodes]);
+
+  // Handle window resize to redraw lines
+  useEffect(() => {
+    const handleResize = () => setRevealed(r => [...r]); // force re-render lines
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const grouped = nodes.reduce((acc, node) => {
     (acc[node.level] = acc[node.level] || []).push(node);
@@ -95,26 +139,60 @@ export function NodeEngine({ step, isActive }) {
   }, {});
 
   return (
-    <div style={{ position: 'relative', width: '100%', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px' }}>
+    <div ref={containerRef} style={{ position: 'relative', width: '100%', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '40px', padding: '20px' }}>
+      
+      {/* SVG Canvas for connecting lines */}
+      <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0 }}>
+        <AnimatePresence>
+          {lines.map((line) => (
+            <motion.line
+              key={line.key}
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 1 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              x1={line.x1}
+              y1={line.y1}
+              x2={line.x2}
+              y2={line.y2}
+              stroke="var(--teal)"
+              strokeWidth="3"
+              strokeLinecap="round"
+              style={{ filter: 'drop-shadow(0px 2px 4px rgba(20, 184, 166, 0.4))' }}
+            />
+          ))}
+        </AnimatePresence>
+      </svg>
+
+      {/* Render the nodes level by level */}
       {Object.entries(grouped).map(([level, levelNodes]) => (
-        <div key={level} style={{ display: 'flex', gap: '32px', justifyContent: 'center' }}>
+        <div key={level} style={{ display: 'flex', gap: '48px', justifyContent: 'center', zIndex: 1 }}>
           {levelNodes.map((node) => {
             const nodeIndex = nodes.findIndex(n => n.id === node.id);
             const isVisible = revealed.includes(nodeIndex);
+            const isHighlight = node.highlight;
+            
             return (
               <motion.div
                 key={node.id}
+                ref={el => nodeRefs.current[node.id] = el}
                 initial={{ opacity: 0, scale: 0.5, y: -20 }}
                 animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.5, y: isVisible ? 0 : -20 }}
                 transition={{ type: 'spring', stiffness: 200, damping: 15 }}
                 style={{
-                  padding: '12px 24px',
-                  backgroundColor: node.highlight ? 'rgba(20, 184, 166, 0.15)' : 'var(--surface2)',
-                  border: node.highlight ? '2px solid var(--teal)' : '2px solid var(--violet)',
-                  borderRadius: '12px',
-                  fontWeight: 'bold',
+                  padding: '12px 28px',
+                  backgroundColor: isHighlight ? 'rgba(245, 158, 11, 0.1)' : 'var(--surface2)',
+                  border: isHighlight ? '2px solid var(--amber)' : '2px solid var(--violet)',
+                  borderRadius: '16px',
+                  fontWeight: '800',
                   fontSize: '1.2rem',
-                  color: node.highlight ? 'var(--teal)' : 'var(--text)'
+                  color: isHighlight ? 'var(--amber)' : 'var(--text-main)',
+                  boxShadow: isHighlight ? '0 0 20px rgba(245, 158, 11, 0.3)' : '0 4px 12px rgba(0,0,0,0.1)',
+                  backdropFilter: 'blur(8px)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                  minWidth: '100px'
                 }}
               >
                 {node.text}
