@@ -79,20 +79,35 @@ export default function HomePage({ navigate }) {
           
           {isSearchFocused && searchQuery.trim() && (
             <div className="home-search-dropdown">
-              {searchResults.length > 0 ? (
-                searchResults.map(res => (
-                  <div 
-                    key={res.slug} 
-                    className="search-result-item"
-                    onClick={() => navigate(`topic/${res.slug}`)}
-                  >
-                    <span className="sr-icon">{res.icon}</span>
-                    <span className="sr-title">{res.title}</span>
-                  </div>
-                ))
-              ) : (
-                <div className="search-no-results">No topics found for "{searchQuery}"</div>
-              )}
+              {searchResults.map(res => (
+                <div 
+                  key={res.slug} 
+                  className="search-result-item"
+                  onClick={() => navigate(`topic/${res.slug}`)}
+                >
+                  <span className="sr-icon">{res.icon}</span>
+                  <span className="sr-title">{res.title}</span>
+                </div>
+              ))}
+              {/* Always show Ask AI option at the bottom */}
+              <div
+                className="search-result-item"
+                onClick={() => {
+                  setIsSearchFocused(false);
+                  navigate(`ask?q=${encodeURIComponent(searchQuery.trim())}`);
+                }}
+                style={{
+                  borderTop: searchResults.length > 0 ? '1px solid var(--border)' : 'none',
+                  background: 'linear-gradient(135deg, rgba(124,58,237,0.06), rgba(20,184,166,0.06))',
+                  marginTop: searchResults.length > 0 ? '4px' : '0',
+                }}
+              >
+                <span className="sr-icon">✨</span>
+                <span className="sr-title" style={{ color: 'var(--violet)', fontWeight: '700' }}>
+                  Ask AI: "{searchQuery.length > 40 ? searchQuery.slice(0, 40) + '...' : searchQuery}"
+                </span>
+                <span style={{ marginLeft: 'auto', fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '600', whiteSpace: 'nowrap' }}>Solve visually →</span>
+              </div>
             </div>
           )}
         </div>
