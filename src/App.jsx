@@ -9,6 +9,7 @@ import PracticePage from './pages/PracticePage';
 import SavedPage from './pages/SavedPage';
 import ProgressPage from './pages/ProgressPage';
 import TopicPage from './pages/TopicPage';
+import AskPage from './pages/AskPage';
 import SplashScreen from './components/SplashScreen';
 
 function App() {
@@ -32,6 +33,18 @@ function App() {
     };
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  // Ctrl+K global shortcut → navigate to Ask AI page
+  useEffect(() => {
+    const handler = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        navigate('ask');
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
   }, []);
 
   const navigate = (path) => {
@@ -66,6 +79,12 @@ function App() {
     pageComponent = <SavedPage navigate={navigate} />;
   } else if (route === 'progress') {
     pageComponent = <ProgressPage navigate={navigate} />;
+  } else if (route.startsWith('ask')) {
+    // Support optional ?q= pre-fill: #/ask?q=your+question
+    const rawHash = window.location.hash.replace('#/', '');
+    const qIndex = rawHash.indexOf('?q=');
+    const initialQuery = qIndex !== -1 ? decodeURIComponent(rawHash.slice(qIndex + 3).replace(/\+/g, ' ')) : '';
+    pageComponent = <AskPage navigate={navigate} initialQuery={initialQuery} />;
   } else {
     pageComponent = <HomePage navigate={navigate} />;
   }
@@ -93,9 +112,25 @@ function App() {
                   <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => navigate('')}>Home</button>
                   <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => navigate('saved')}>Saved</button>
                   <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => navigate('progress')}>Progress</button>
+                  {/* ✨ Ask AI nav button */}
+                  <button
+                    onClick={() => navigate('ask')}
+                    style={{
+                      display: 'inline-flex', alignItems: 'center', gap: '6px',
+                      background: route.startsWith('ask') ? 'linear-gradient(135deg, var(--violet), var(--teal))' : 'linear-gradient(135deg, rgba(124,58,237,0.12), rgba(20,184,166,0.12))',
+                      color: route.startsWith('ask') ? '#fff' : 'var(--violet)',
+                      border: '1px solid rgba(124,58,237,0.3)',
+                      borderRadius: '20px', padding: '6px 14px',
+                      fontWeight: '700', fontSize: '0.85rem', cursor: 'pointer',
+                      transition: 'all 0.2s', marginLeft: '4px',
+                      boxShadow: route.startsWith('ask') ? '0 4px 14px rgba(124,58,237,0.35)' : 'none',
+                    }}
+                  >
+                    ✨ Ask AI
+                  </button>
                   <button 
                     onClick={toggleTheme} 
-                    style={{ background: 'transparent', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '12px' }}
+                    style={{ background: 'transparent', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '8px' }}
                   >
                     {theme === 'light' ? '🌙' : '☀️'}
                   </button>
