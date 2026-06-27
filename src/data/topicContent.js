@@ -1,32 +1,32 @@
 // src/data/topicContent.js
-// ─── Topic Content Database ───
+// â”€â”€â”€ Topic Content Database â”€â”€â”€
 // Each key is a URL-safe topic slug.
 // To add content for a new topic, just add a new entry below.
 
 export const TOPIC_CONTENT = {
 
-  // ════════════════════════════════════════
-  //  QUANTITATIVE — Number Systems
-  // ════════════════════════════════════════
+  // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+  //  QUANTITATIVE â€” Number Systems
+  // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
   'number-system-basics': {
     title: 'Number System Basics',
-    icon: '🔢',
+    icon: 'ðŸ”¢',
     color: '#6366f1',
     tagline: 'The foundation of all aptitude math.',
-    description: `The Number System is the most fundamental topic in Quantitative Aptitude. Every number you see in an aptitude exam falls into a specific category — knowing these categories helps you eliminate wrong answers instantly.`,
+    description: `The Number System is the most fundamental topic in Quantitative Aptitude. Every number you see in an aptitude exam falls into a specific category â€” knowing these categories helps you eliminate wrong answers instantly.`,
     keyFacts: [
       { label: 'Natural Numbers', value: '1, 2, 3, 4, ... (counting numbers, starts at 1)' },
       { label: 'Whole Numbers', value: '0, 1, 2, 3, ... (Natural + zero)' },
       { label: 'Integers', value: '...-2, -1, 0, 1, 2... (includes negatives)' },
-      { label: 'Rational Numbers', value: 'Any number of the form p/q where q ≠ 0' },
+      { label: 'Rational Numbers', value: 'Any number of the form p/q where q â‰  0' },
       { label: 'Prime Numbers', value: 'Divisible only by 1 and itself (2, 3, 5, 7, 11...)' },
       { label: 'Composite Numbers', value: 'Has more than 2 factors (4, 6, 8, 9...)' },
     ],
     formulas: [
-      { title: 'Sum of first n natural numbers', formula: 'n(n+1) / 2', example: 'Sum of 1–10 = 10×11/2 = 55' },
-      { title: 'Sum of first n odd numbers', formula: 'n²', example: 'Sum of first 5 odds = 5² = 25' },
-      { title: 'Sum of first n even numbers', formula: 'n(n+1)', example: 'Sum of first 4 evens = 4×5 = 20' },
+      { title: 'Sum of first n natural numbers', formula: 'n(n+1) / 2', example: 'Sum of 1â€“10 = 10Ã—11/2 = 55' },
+      { title: 'Sum of first n odd numbers', formula: 'nÂ²', example: 'Sum of first 5 odds = 5Â² = 25' },
+      { title: 'Sum of first n even numbers', formula: 'n(n+1)', example: 'Sum of first 4 evens = 4Ã—5 = 20' },
     ],
     identify: [
       'Question says "How many prime numbers between X and Y?"',
@@ -38,46 +38,46 @@ export const TOPIC_CONTENT = {
       { step: '1', tip: 'Memorize primes up to 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47' },
       { step: '2', tip: 'Remember: 1 is neither prime nor composite.' },
       { step: '3', tip: '2 is the ONLY even prime number.' },
-      { step: '4', tip: 'For range questions, simply count — do not try to calculate from formulas.' },
+      { step: '4', tip: 'For range questions, simply count â€” do not try to calculate from formulas.' },
     ],
   },
 
   'lcm-hcf': {
     title: 'LCM & HCF',
-    icon: '🔗',
+    icon: 'ðŸ”—',
     color: '#6366f1',
     tagline: 'Two of the most frequently tested topics in campus aptitude.',
     description: `HCF (Highest Common Factor) is the largest number that divides two or more numbers exactly. LCM (Least Common Multiple) is the smallest number that is divisible by two or more numbers. These two are inverses of each other and have a golden relationship.`,
     keyFacts: [
       { label: 'HCF', value: 'Largest common divisor of given numbers' },
       { label: 'LCM', value: 'Smallest common multiple of given numbers' },
-      { label: 'Product Rule', value: 'HCF × LCM = Product of two numbers (only for 2 numbers)' },
+      { label: 'Product Rule', value: 'HCF Ã— LCM = Product of two numbers (only for 2 numbers)' },
     ],
     formulas: [
-      { title: 'Golden Relationship', formula: 'HCF × LCM = A × B', example: 'A=12, B=18 → HCF=6, LCM=36. Check: 6×36 = 12×18 = 216 ✓' },
+      { title: 'Golden Relationship', formula: 'HCF Ã— LCM = A Ã— B', example: 'A=12, B=18 â†’ HCF=6, LCM=36. Check: 6Ã—36 = 12Ã—18 = 216 âœ“' },
       { title: 'HCF of fractions', formula: 'HCF of numerators / LCM of denominators', example: 'HCF of 2/3 and 4/9 = HCF(2,4)/LCM(3,9) = 2/9' },
       { title: 'LCM of fractions', formula: 'LCM of numerators / HCF of denominators', example: 'LCM of 2/3 and 4/9 = LCM(2,4)/HCF(3,9) = 4/3' },
     ],
     identify: [
-      '"What is the largest number that divides X, Y, Z?" → HCF',
-      '"What is the smallest number divisible by X, Y, Z?" → LCM',
-      '"When do the bells ring together again?" → LCM of time intervals',
-      '"Tiles to fill a room" or "cut ropes into equal parts" → HCF',
+      '"What is the largest number that divides X, Y, Z?" â†’ HCF',
+      '"What is the smallest number divisible by X, Y, Z?" â†’ LCM',
+      '"When do the bells ring together again?" â†’ LCM of time intervals',
+      '"Tiles to fill a room" or "cut ropes into equal parts" â†’ HCF',
     ],
     approach: [
-      { step: '1', tip: 'If question says "largest/maximum/greatest" → Think HCF.' },
-      { step: '2', tip: 'If question says "smallest/minimum/least" → Think LCM.' },
+      { step: '1', tip: 'If question says "largest/maximum/greatest" â†’ Think HCF.' },
+      { step: '2', tip: 'If question says "smallest/minimum/least" â†’ Think LCM.' },
       { step: '3', tip: 'Use factorization for small numbers. Use division method for large numbers.' },
-      { step: '4', tip: 'For 3+ numbers, you CANNOT use HCF × LCM = product. Only works for exactly 2 numbers.' },
+      { step: '4', tip: 'For 3+ numbers, you CANNOT use HCF Ã— LCM = product. Only works for exactly 2 numbers.' },
     ],
   },
 
   'divisibility-rules': {
     title: 'Divisibility Rules',
-    icon: '➗',
+    icon: 'âž—',
     color: '#6366f1',
-    tagline: 'Solve in 5 seconds — no calculator needed.',
-    description: `Divisibility rules let you check if a large number is divisible by small numbers (2–11) without actually dividing. In competitive exams, these rules help you solve questions in under 5 seconds.`,
+    tagline: 'Solve in 5 seconds â€” no calculator needed.',
+    description: `Divisibility rules let you check if a large number is divisible by small numbers (2â€“11) without actually dividing. In competitive exams, these rules help you solve questions in under 5 seconds.`,
     keyFacts: [
       { label: 'Div by 2', value: 'Last digit is 0, 2, 4, 6, or 8' },
       { label: 'Div by 3', value: 'Sum of digits divisible by 3' },
@@ -89,7 +89,7 @@ export const TOPIC_CONTENT = {
       { label: 'Div by 11', value: 'Alternate digit sum difference is 0 or divisible by 11' },
     ],
     formulas: [
-      { title: 'Div by 11', formula: '(Sum of odd-position digits) − (Sum of even-position digits) = 0 or multiple of 11', example: '121: (1+1)−(2) = 0 → Divisible by 11 ✓' },
+      { title: 'Div by 11', formula: '(Sum of odd-position digits) âˆ’ (Sum of even-position digits) = 0 or multiple of 11', example: '121: (1+1)âˆ’(2) = 0 â†’ Divisible by 11 âœ“' },
     ],
     identify: [
       'Question asks "Is X divisible by Y?"',
@@ -97,25 +97,25 @@ export const TOPIC_CONTENT = {
       '"Find the missing digit so the number is divisible by 9"',
     ],
     approach: [
-      { step: '1', tip: 'Memorize all rules from 2 to 11 — they appear verbatim in TCS, Wipro, Infosys papers.' },
-      { step: '2', tip: 'For "divisible by 6" — check div by 2 first (quick), then by 3.' },
+      { step: '1', tip: 'Memorize all rules from 2 to 11 â€” they appear verbatim in TCS, Wipro, Infosys papers.' },
+      { step: '2', tip: 'For "divisible by 6" â€” check div by 2 first (quick), then by 3.' },
       { step: '3', tip: 'For missing digit questions: Use div-by-9 rule: add digits, subtract from next multiple of 9 to find the missing one.' },
     ],
   },
 
   'remainders': {
     title: 'Remainders',
-    icon: '🧮',
+    icon: 'ðŸ§®',
     color: '#6366f1',
     tagline: 'Trick your way through remainder problems.',
-    description: `Remainder problems look complex but follow simple patterns. The key insight is that when a number N divided by D gives remainder R, then N = D×Q + R. Remainder questions are among the most commonly asked in TCS, Wipro, and Cognizant campus drives.`,
+    description: `Remainder problems look complex but follow simple patterns. The key insight is that when a number N divided by D gives remainder R, then N = DÃ—Q + R. Remainder questions are among the most commonly asked in TCS, Wipro, and Cognizant campus drives.`,
     keyFacts: [
-      { label: 'Basic Rule', value: 'N = Divisor × Quotient + Remainder' },
-      { label: 'Cyclicity Trick', value: 'Remainders of powers follow a repeating cycle (period usually 1–4)' },
+      { label: 'Basic Rule', value: 'N = Divisor Ã— Quotient + Remainder' },
+      { label: 'Cyclicity Trick', value: 'Remainders of powers follow a repeating cycle (period usually 1â€“4)' },
     ],
     formulas: [
-      { title: 'Basic', formula: 'Remainder of N÷D = N mod D', example: '17 ÷ 5 = 3 remainder 2. So 17 mod 5 = 2' },
-      { title: 'Powers Trick', formula: 'Find pattern of N^1, N^2, N^3... mod D — cycle repeats', example: 'Remainder of 2^100 ÷ 3: Cycle of 2^n mod 3 = 2,1,2,1... Power 100 (even) → remainder 1' },
+      { title: 'Basic', formula: 'Remainder of NÃ·D = N mod D', example: '17 Ã· 5 = 3 remainder 2. So 17 mod 5 = 2' },
+      { title: 'Powers Trick', formula: 'Find pattern of N^1, N^2, N^3... mod D â€” cycle repeats', example: 'Remainder of 2^100 Ã· 3: Cycle of 2^n mod 3 = 2,1,2,1... Power 100 (even) â†’ remainder 1' },
     ],
     identify: [
       '"What is the remainder when X is divided by Y?"',
@@ -135,7 +135,7 @@ export const TOPIC_CONTENT = {
     icon: '%',
     color: '#ec4899',
     tagline: 'The single most important topic in arithmetic.',
-    description: `Percentage is used in almost every other aptitude topic — Profit & Loss, Simple Interest, Ratio, Data Interpretation. If you master percentages, half your arithmetic is already done. The key is converting percentages to fractions for faster mental calculation.`,
+    description: `Percentage is used in almost every other aptitude topic â€” Profit & Loss, Simple Interest, Ratio, Data Interpretation. If you master percentages, half your arithmetic is already done. The key is converting percentages to fractions for faster mental calculation.`,
     keyFacts: [
       { label: '10%', value: '1/10' }, { label: '20%', value: '1/5' },
       { label: '25%', value: '1/4' }, { label: '33.3%', value: '1/3' },
@@ -143,9 +143,9 @@ export const TOPIC_CONTENT = {
       { label: '75%', value: '3/4' }, { label: '12.5%', value: '1/8' },
     ],
     formulas: [
-      { title: 'Basic', formula: 'X% of Y = (X × Y) / 100', example: '15% of 80 = 15×80/100 = 12' },
-      { title: 'Percentage Change', formula: '((New − Old) / Old) × 100', example: 'Price goes 40→50: Change = (50−40)/40 × 100 = 25% increase' },
-      { title: 'Successive % Change', formula: 'a% then b% net change = a + b + (ab/100)', example: '10% then 20% = 10+20+(10×20/100) = 32% net increase' },
+      { title: 'Basic', formula: 'X% of Y = (X Ã— Y) / 100', example: '15% of 80 = 15Ã—80/100 = 12' },
+      { title: 'Percentage Change', formula: '((New âˆ’ Old) / Old) Ã— 100', example: 'Price goes 40â†’50: Change = (50âˆ’40)/40 Ã— 100 = 25% increase' },
+      { title: 'Successive % Change', formula: 'a% then b% net change = a + b + (ab/100)', example: '10% then 20% = 10+20+(10Ã—20/100) = 32% net increase' },
     ],
     identify: [
       '"X is what percent of Y?"',
@@ -153,18 +153,18 @@ export const TOPIC_CONTENT = {
       '"Population decreases by X% then Y%, net change?"',
     ],
     approach: [
-      { step: '1', tip: 'Convert % to fraction before calculating — much faster than decimal.' },
+      { step: '1', tip: 'Convert % to fraction before calculating â€” much faster than decimal.' },
       { step: '2', tip: 'Use the successive change formula for two back-to-back percentage changes.' },
-      { step: '3', tip: '"More by X%" means multiply by (1 + X/100). "Less by X%" means multiply by (1 − X/100).' },
+      { step: '3', tip: '"More by X%" means multiply by (1 + X/100). "Less by X%" means multiply by (1 âˆ’ X/100).' },
       { step: '4', tip: 'Fraction shortcuts: 25% of any number = divide by 4. 33.3% = divide by 3.' },
     ],
   },
 
   'profit-loss': {
     title: 'Profit & Loss',
-    icon: '💰',
+    icon: 'ðŸ’°',
     color: '#ec4899',
-    tagline: 'Always calculate on Cost Price — that is the key rule.',
+    tagline: 'Always calculate on Cost Price â€” that is the key rule.',
     description: `Profit & Loss builds directly on Percentages. The most important rule: Profit % and Loss % are ALWAYS calculated on Cost Price (CP), never on Selling Price. Get this right and 80% of questions become trivial.`,
     keyFacts: [
       { label: 'Cost Price (CP)', value: 'Price you pay to buy/make the item' },
@@ -172,37 +172,37 @@ export const TOPIC_CONTENT = {
       { label: 'Marked Price (MP)', value: 'Price written on the label (before discount)' },
     ],
     formulas: [
-      { title: 'Profit / Loss', formula: 'Profit = SP − CP   |   Loss = CP − SP', example: 'CP=100, SP=120 → Profit = 20' },
-      { title: 'Profit %', formula: 'Profit% = (Profit / CP) × 100', example: 'Profit=20, CP=100 → Profit% = 20%' },
-      { title: 'Find SP', formula: 'SP = CP × (100 + P%) / 100', example: 'CP=200, P%=25 → SP = 200×125/100 = 250' },
-      { title: 'Discount', formula: 'SP = MP × (100 − Discount%) / 100', example: 'MP=500, Discount=20% → SP = 400' },
+      { title: 'Profit / Loss', formula: 'Profit = SP âˆ’ CP   |   Loss = CP âˆ’ SP', example: 'CP=100, SP=120 â†’ Profit = 20' },
+      { title: 'Profit %', formula: 'Profit% = (Profit / CP) Ã— 100', example: 'Profit=20, CP=100 â†’ Profit% = 20%' },
+      { title: 'Find SP', formula: 'SP = CP Ã— (100 + P%) / 100', example: 'CP=200, P%=25 â†’ SP = 200Ã—125/100 = 250' },
+      { title: 'Discount', formula: 'SP = MP Ã— (100 âˆ’ Discount%) / 100', example: 'MP=500, Discount=20% â†’ SP = 400' },
     ],
     identify: [
-      '"A shopkeeper sells at X% profit" → use SP = CP×(100+X)/100',
-      '"Find profit %" → always use CP in denominator',
-      '"Marked price, discount given, find CP or profit" → chain: MP → SP → CP',
+      '"A shopkeeper sells at X% profit" â†’ use SP = CPÃ—(100+X)/100',
+      '"Find profit %" â†’ always use CP in denominator',
+      '"Marked price, discount given, find CP or profit" â†’ chain: MP â†’ SP â†’ CP',
     ],
     approach: [
       { step: '1', tip: 'Identify what you are given: CP, SP, or MP + Discount.' },
       { step: '2', tip: 'Use multiplier method: 20% profit = multiply CP by 1.2' },
-      { step: '3', tip: 'For dishonest dealer: Profit% = (True weight − False weight)/False weight × 100' },
+      { step: '3', tip: 'For dishonest dealer: Profit% = (True weight âˆ’ False weight)/False weight Ã— 100' },
     ],
   },
 
   'time-work': {
     title: 'Time & Work',
-    icon: '⚙️',
+    icon: 'âš™ï¸',
     color: '#10b981',
-    tagline: 'Think in terms of work done per day — not total time.',
+    tagline: 'Think in terms of work done per day â€” not total time.',
     description: `Time & Work problems are about efficiency. The trick is to stop thinking about "total time" and instead think about "fraction of work done per day". Once you express everyone's work as a daily fraction, the math becomes simple addition.`,
     keyFacts: [
-      { label: 'Core Concept', value: 'If A can do work in N days → A does 1/N of work per day' },
+      { label: 'Core Concept', value: 'If A can do work in N days â†’ A does 1/N of work per day' },
       { label: 'Together', value: 'Add individual daily work fractions' },
     ],
     formulas: [
-      { title: 'Work Per Day', formula: 'Daily work = 1/Number of days', example: 'A takes 10 days → does 1/10 per day' },
-      { title: 'Together', formula: 'Days together = 1 / (1/A + 1/B)', example: 'A=10 days, B=15 days → Together = 1/(1/10+1/15) = 6 days' },
-      { title: 'Shortcut for 2 people', formula: '(A × B) / (A + B)', example: '(10×15)/(10+15) = 150/25 = 6 days ✓' },
+      { title: 'Work Per Day', formula: 'Daily work = 1/Number of days', example: 'A takes 10 days â†’ does 1/10 per day' },
+      { title: 'Together', formula: 'Days together = 1 / (1/A + 1/B)', example: 'A=10 days, B=15 days â†’ Together = 1/(1/10+1/15) = 6 days' },
+      { title: 'Shortcut for 2 people', formula: '(A Ã— B) / (A + B)', example: '(10Ã—15)/(10+15) = 150/25 = 6 days âœ“' },
     ],
     identify: [
       '"A does work in X days, B does in Y days, together?"',
@@ -211,33 +211,33 @@ export const TOPIC_CONTENT = {
     ],
     approach: [
       { step: '1', tip: 'Convert everyone to "per day" work fractions immediately.' },
-      { step: '2', tip: 'Use LCM of days as "total work units" — it makes the math integer-friendly.' },
+      { step: '2', tip: 'Use LCM of days as "total work units" â€” it makes the math integer-friendly.' },
       { step: '3', tip: 'If B leaves after k days, calculate work done by both in k days, subtract from 1, rest done by A alone.' },
     ],
   },
 
   'time-speed-distance': {
     title: 'Time, Speed & Distance',
-    icon: '🚀',
+    icon: 'ðŸš€',
     color: '#10b981',
-    tagline: 'Everything is D = S × T. Master the unit conversion.',
-    description: `Time, Speed & Distance is one of the highest-frequency topics in campus placement tests. Every single question — whether about cars, trains, boats, or races — is a variation of just one formula: Distance = Speed × Time.`,
+    tagline: 'Everything is D = S Ã— T. Master the unit conversion.',
+    description: `Time, Speed & Distance is one of the highest-frequency topics in campus placement tests. Every single question â€” whether about cars, trains, boats, or races â€” is a variation of just one formula: Distance = Speed Ã— Time.`,
     keyFacts: [
-      { label: 'Unit Conversion', value: 'km/h × 5/18 = m/s  |  m/s × 18/5 = km/h' },
+      { label: 'Unit Conversion', value: 'km/h Ã— 5/18 = m/s  |  m/s Ã— 18/5 = km/h' },
       { label: 'Relative Speed', value: 'Opposite directions: Add | Same direction: Subtract' },
     ],
     formulas: [
-      { title: 'Core Formula', formula: 'Distance = Speed × Time', example: '60 km/h for 2 hrs = 120 km' },
-      { title: 'Average Speed (equal distances)', formula: '2ab / (a + b)', example: 'Go at 40, return at 60 → Avg = 2×40×60/100 = 48 km/h' },
-      { title: 'Train crossing pole', formula: 'Time = Length of train / Speed', example: '200m train at 72 km/h (=20 m/s) → 200/20 = 10 sec' },
+      { title: 'Core Formula', formula: 'Distance = Speed Ã— Time', example: '60 km/h for 2 hrs = 120 km' },
+      { title: 'Average Speed (equal distances)', formula: '2ab / (a + b)', example: 'Go at 40, return at 60 â†’ Avg = 2Ã—40Ã—60/100 = 48 km/h' },
+      { title: 'Train crossing pole', formula: 'Time = Length of train / Speed', example: '200m train at 72 km/h (=20 m/s) â†’ 200/20 = 10 sec' },
     ],
     identify: [
-      '"Train A crosses train B" → Relative speed problem',
-      '"Goes from A to B and returns" → Average speed formula',
-      '"Train crosses a platform of length X" → Total distance = Train + Platform',
+      '"Train A crosses train B" â†’ Relative speed problem',
+      '"Goes from A to B and returns" â†’ Average speed formula',
+      '"Train crosses a platform of length X" â†’ Total distance = Train + Platform',
     ],
     approach: [
-      { step: '1', tip: 'ALWAYS check units first — if speed is km/h and time is seconds, convert before substituting.' },
+      { step: '1', tip: 'ALWAYS check units first â€” if speed is km/h and time is seconds, convert before substituting.' },
       { step: '2', tip: 'Average speed trick: Never add two speeds and divide unless time is equal.' },
       { step: '3', tip: 'Train + platform: distance = length of train + length of platform.' },
     ],
@@ -245,39 +245,39 @@ export const TOPIC_CONTENT = {
 
   'probability': {
     title: 'Probability',
-    icon: '🎲',
+    icon: 'ðŸŽ²',
     color: '#6366f1',
     tagline: 'Favourable outcomes out of total outcomes.',
     description: `Probability measures the likelihood of an event. In campus aptitude, probability questions involve coins, dice, cards, and balls in a bag. The key is correctly counting the total outcomes and the favourable outcomes.`,
     keyFacts: [
       { label: 'Range', value: 'P(event) is always between 0 and 1' },
       { label: 'Certain Event', value: 'P = 1  |  Impossible Event: P = 0' },
-      { label: 'Complement', value: "P(A') = 1 − P(A)" },
-      { label: 'Standard deck', value: '52 cards: 4 suits × 13 cards each' },
+      { label: 'Complement', value: "P(A') = 1 âˆ’ P(A)" },
+      { label: 'Standard deck', value: '52 cards: 4 suits Ã— 13 cards each' },
     ],
     formulas: [
       { title: 'Basic', formula: 'P(E) = Favourable outcomes / Total outcomes', example: 'P(Head in coin toss) = 1/2' },
-      { title: 'P(A or B)', formula: 'P(A) + P(B) − P(A and B)', example: '' },
-      { title: 'P(A and B) — Independent', formula: 'P(A) × P(B)', example: 'P(2 heads in 2 tosses) = 1/2 × 1/2 = 1/4' },
+      { title: 'P(A or B)', formula: 'P(A) + P(B) âˆ’ P(A and B)', example: '' },
+      { title: 'P(A and B) â€” Independent', formula: 'P(A) Ã— P(B)', example: 'P(2 heads in 2 tosses) = 1/2 Ã— 1/2 = 1/4' },
     ],
     identify: [
-      '"A card is drawn at random from a deck" → Probability question',
+      '"A card is drawn at random from a deck" â†’ Probability question',
       '"Two dice are rolled, find P(sum=7)"',
       '"Bag has X red, Y blue balls, find P(drawing red)"',
     ],
     approach: [
-      { step: '1', tip: 'List total outcomes clearly — dice: 36, coin 2 tosses: 4, etc.' },
-      { step: '2', tip: 'Count favourable outcomes carefully — draw a table for dice problems.' },
-      { step: '3', tip: 'For "at least one" questions: use P(at least 1) = 1 − P(none).' },
+      { step: '1', tip: 'List total outcomes clearly â€” dice: 36, coin 2 tosses: 4, etc.' },
+      { step: '2', tip: 'Count favourable outcomes carefully â€” draw a table for dice problems.' },
+      { step: '3', tip: 'For "at least one" questions: use P(at least 1) = 1 âˆ’ P(none).' },
     ],
   },
 
   'syllogism': {
     title: 'Syllogism',
-    icon: '🧩',
+    icon: 'ðŸ§©',
     color: '#ec4899',
-    tagline: 'Use Venn diagrams — never guess from words.',
-    description: `Syllogism is a deductive reasoning topic where you are given statements and must identify which conclusions logically follow. The trick is to always draw Venn diagrams and NOT be misled by your real-world knowledge — only what the statements say counts.`,
+    tagline: 'Use Venn diagrams â€” never guess from words.',
+    description: `Syllogism is a deductive reasoning topic where you are given statements and must identify which conclusions logically follow. The trick is to always draw Venn diagrams and NOT be misled by your real-world knowledge â€” only what the statements say counts.`,
     keyFacts: [
       { label: 'All A are B', value: 'Circle A is fully inside circle B' },
       { label: 'No A is B', value: 'Circles A and B do not overlap at all' },
@@ -285,16 +285,16 @@ export const TOPIC_CONTENT = {
       { label: 'Some A are not B', value: 'Part of A is outside B' },
     ],
     formulas: [
-      { title: 'All + All = All', formula: '"All A are B" + "All B are C" → All A are C ✓', example: '' },
-      { title: 'All + No = No', formula: '"All A are B" + "No B is C" → No A is C ✓', example: '' },
-      { title: 'Some + All = Some', formula: '"Some A are B" + "All B are C" → Some A are C ✓', example: '' },
+      { title: 'All + All = All', formula: '"All A are B" + "All B are C" â†’ All A are C âœ“', example: '' },
+      { title: 'All + No = No', formula: '"All A are B" + "No B is C" â†’ No A is C âœ“', example: '' },
+      { title: 'Some + All = Some', formula: '"Some A are B" + "All B are C" â†’ Some A are C âœ“', example: '' },
     ],
     identify: [
-      'Question gives 2–3 "All/No/Some" statements and asks which conclusions follow',
+      'Question gives 2â€“3 "All/No/Some" statements and asks which conclusions follow',
       'Options say "Both I and II follow" or "Neither follows" etc.',
     ],
     approach: [
-      { step: '1', tip: 'Draw Venn diagrams — do not rely on logic in your head.' },
+      { step: '1', tip: 'Draw Venn diagrams â€” do not rely on logic in your head.' },
       { step: '2', tip: 'Check if each conclusion is DEFINITELY true (not possibly true).' },
       { step: '3', tip: '"Some A are not B" does NOT mean "No A is B".' },
       { step: '4', tip: 'Complementary pairs: if one of "Some A are B" and "No A is B" is a conclusion, answer is "either I or II follows".' },
@@ -303,13 +303,13 @@ export const TOPIC_CONTENT = {
 
   'coding-decoding': {
     title: 'Coding-Decoding',
-    icon: '🔐',
+    icon: 'ðŸ”',
     color: '#ec4899',
-    tagline: 'Find the pattern — it is always consistent.',
-    description: `Coding-Decoding tests your ability to find the rule by which one word or number is converted into a code. The rule is always consistent — find it with one example and apply it to the rest.`,
+    tagline: 'Find the pattern â€” it is always consistent.',
+    description: `Coding-Decoding tests your ability to find the rule by which one word or number is converted into a code. The rule is always consistent â€” find it with one example and apply it to the rest.`,
     keyFacts: [
       { label: 'Letter Position', value: 'A=1, B=2, C=3 ... Z=26. Also reverse: A=26, Z=1.' },
-      { label: 'Opposite Letter', value: 'A↔Z, B↔Y, C↔X ... (A+Z=27)' },
+      { label: 'Opposite Letter', value: 'Aâ†”Z, Bâ†”Y, Câ†”X ... (A+Z=27)' },
     ],
     formulas: [],
     identify: [
@@ -317,7 +317,7 @@ export const TOPIC_CONTENT = {
       '"In a certain code language, 123 means Red Light Green, what does 2 mean?"',
     ],
     approach: [
-      { step: '1', tip: 'For letter codes: find the shift. Is each letter shifted by +2? −1? Reversed?' },
+      { step: '1', tip: 'For letter codes: find the shift. Is each letter shifted by +2? âˆ’1? Reversed?' },
       { step: '2', tip: 'For number codes: map each number to a word, then identify which number = which word by finding the common element.' },
       { step: '3', tip: 'Always check: is the pattern applied to positions (1st, 2nd letter) or values (A=1)?' },
     ],
@@ -325,9 +325,9 @@ export const TOPIC_CONTENT = {
 
   'blood-relations': {
     title: 'Blood Relations',
-    icon: '👨‍👩‍👧',
+    icon: 'ðŸ‘¨â€ðŸ‘©â€ðŸ‘§',
     color: '#ec4899',
-    tagline: 'Draw the family tree — always.',
+    tagline: 'Draw the family tree â€” always.',
     description: `Blood Relations questions ask you to find the relationship between people based on a series of clues. The only reliable method is to draw a family tree diagram as you read each clue. Never try to solve these in your head.`,
     keyFacts: [
       { label: "Father's / Mother's brother", value: 'Uncle' },
@@ -343,58 +343,58 @@ export const TOPIC_CONTENT = {
     approach: [
       { step: '1', tip: 'Use M for Male, F for Female. Draw boxes and connect with lines.' },
       { step: '2', tip: 'Start from the person you know the most about and build outward.' },
-      { step: '3', tip: 'Be careful about gender — "sister\'s husband" is not the same as "husband\'s sister".' },
+      { step: '3', tip: 'Be careful about gender â€” "sister\'s husband" is not the same as "husband\'s sister".' },
     ],
   },
 
   'reading-comprehension': {
     title: 'Reading Comprehension',
-    icon: '📖',
+    icon: 'ðŸ“–',
     color: '#10b981',
-    tagline: 'The answer is always in the passage — trust it.',
+    tagline: 'The answer is always in the passage â€” trust it.',
     description: `Reading Comprehension (RC) tests your ability to read a passage quickly and answer questions accurately. The key principle: NEVER answer from your personal knowledge. The answer is always found within the passage itself.`,
     keyFacts: [
       { label: 'Types of Questions', value: 'Main idea, Detail, Inference, Tone, Vocabulary-in-context' },
     ],
     formulas: [],
     identify: [
-      'A passage (200–500 words) followed by 4–6 questions',
+      'A passage (200â€“500 words) followed by 4â€“6 questions',
       'Questions like "What is the main idea?", "The author\'s tone is?", "What can be inferred?"',
     ],
     approach: [
       { step: '1', tip: 'Read the questions FIRST, then skim the passage for those answers.' },
-      { step: '2', tip: 'For "main idea" — it is always stated in the first or last paragraph.' },
-      { step: '3', tip: 'For "tone" — look for emotion words in the passage (critical, optimistic, neutral, etc.).' },
+      { step: '2', tip: 'For "main idea" â€” it is always stated in the first or last paragraph.' },
+      { step: '3', tip: 'For "tone" â€” look for emotion words in the passage (critical, optimistic, neutral, etc.).' },
       { step: '4', tip: 'Eliminate options that are too extreme ("always", "never") or too narrow (only one detail).' },
     ],
   },
 
   'para-jumbles': {
     title: 'Para Jumbles',
-    icon: '🔀',
+    icon: 'ðŸ”€',
     color: '#10b981',
     tagline: 'Find the opening sentence and the mandatory pairs.',
-    description: `Para Jumbles give you 4–6 sentences in a scrambled order and ask you to arrange them into a coherent paragraph. The strategy is systematic — find the first sentence, find pairs that must go together, and the order will emerge.`,
+    description: `Para Jumbles give you 4â€“6 sentences in a scrambled order and ask you to arrange them into a coherent paragraph. The strategy is systematic â€” find the first sentence, find pairs that must go together, and the order will emerge.`,
     keyFacts: [
-      { label: 'Opening Sentence', value: 'Introduces a new idea or topic — no pronouns or connector words like "however", "but", "also"' },
+      { label: 'Opening Sentence', value: 'Introduces a new idea or topic â€” no pronouns or connector words like "however", "but", "also"' },
       { label: 'Closing Sentence', value: 'Contains a conclusion, result, or summary word like "thus", "therefore", "finally"' },
     ],
     formulas: [],
     identify: [
-      '4–6 numbered/lettered sentences asked to be arranged in correct order',
+      '4â€“6 numbered/lettered sentences asked to be arranged in correct order',
       'Options like BDAC, CABD, etc.',
     ],
     approach: [
-      { step: '1', tip: 'Eliminate sentences with pronouns (he, she, it, they) from being the opener — they refer to something already introduced.' },
-      { step: '2', tip: 'Find "mandatory pairs" — a sentence that introduces a concept followed by one that expands on it.' },
+      { step: '1', tip: 'Eliminate sentences with pronouns (he, she, it, they) from being the opener â€” they refer to something already introduced.' },
+      { step: '2', tip: 'Find "mandatory pairs" â€” a sentence that introduces a concept followed by one that expands on it.' },
       { step: '3', tip: 'Transition words tell you order: "However/But" = contrast. "Also/Moreover" = addition. "Therefore" = conclusion.' },
-      { step: '4', tip: 'Use elimination from options — once you fix the first sentence, half the options are ruled out.' },
+      { step: '4', tip: 'Use elimination from options â€” once you fix the first sentence, half the options are ruled out.' },
     ],
   },
 
   'error-spotting': {
     title: 'Error Spotting',
-    icon: '✏️',
+    icon: 'âœï¸',
     color: '#10b981',
     tagline: 'Focus on subject-verb agreement and tense consistency.',
     description: `Error Spotting questions give you a sentence divided into parts (A, B, C, D) and ask you to identify which part has a grammatical error. The errors almost always fall into a predictable set of patterns.`,
@@ -403,24 +403,24 @@ export const TOPIC_CONTENT = {
     ],
     formulas: [],
     identify: [
-      'A sentence split into 3–4 underlined parts, asked "which has an error?"',
+      'A sentence split into 3â€“4 underlined parts, asked "which has an error?"',
     ],
     approach: [
-      { step: '1', tip: 'Always check Subject-Verb agreement first — singular subject needs singular verb.' },
-      { step: '2', tip: 'Check tense consistency — if sentence starts in past, it should stay in past.' },
-      { step: '3', tip: 'Watch out for: "each/every/either/neither" — these are always SINGULAR.' },
-      { step: '4', tip: 'Common preposition traps: "Discuss about" (wrong — just "discuss"), "Married to" (right), "Accused of" (right).' },
+      { step: '1', tip: 'Always check Subject-Verb agreement first â€” singular subject needs singular verb.' },
+      { step: '2', tip: 'Check tense consistency â€” if sentence starts in past, it should stay in past.' },
+      { step: '3', tip: 'Watch out for: "each/every/either/neither" â€” these are always SINGULAR.' },
+      { step: '4', tip: 'Common preposition traps: "Discuss about" (wrong â€” just "discuss"), "Married to" (right), "Accused of" (right).' },
     ],
   },
 
 
-  // ════════════════════════════════════════
+  // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
   //  AUTO-GENERATED TOPICS
-  // ════════════════════════════════════════
+  // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
   'prime-factorization': {
     title: 'Prime Factorization',
-    icon: '🌳',
+    icon: 'ðŸŒ³',
     color: '#6366f1',
     tagline: 'Master the concepts of Prime Factorization.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Prime Factorization. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -429,7 +429,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Prime Factorization.',
@@ -445,7 +445,7 @@ export const TOPIC_CONTENT = {
 
   'number-of-factors': {
     title: 'Number of Factors',
-    icon: '🔢',
+    icon: 'ðŸ”¢',
     color: '#6366f1',
     tagline: 'Master the concepts of Number of Factors.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Number of Factors. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -454,7 +454,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Number of Factors.',
@@ -470,7 +470,7 @@ export const TOPIC_CONTENT = {
 
   'unit-digits-cyclicity': {
     title: 'Unit Digits & Cyclicity',
-    icon: '🔄',
+    icon: 'ðŸ”„',
     color: '#6366f1',
     tagline: 'Master the concepts of Unit Digits & Cyclicity.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Unit Digits & Cyclicity. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -479,7 +479,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Unit Digits & Cyclicity.',
@@ -495,7 +495,7 @@ export const TOPIC_CONTENT = {
 
   'decimal-fractions': {
     title: 'Decimal Fractions',
-    icon: '➗',
+    icon: 'âž—',
     color: '#6366f1',
     tagline: 'Master the concepts of Decimal Fractions.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Decimal Fractions. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -504,7 +504,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Decimal Fractions.',
@@ -520,7 +520,7 @@ export const TOPIC_CONTENT = {
 
   'simplification': {
     title: 'Simplification',
-    icon: '✂️',
+    icon: 'âœ‚ï¸',
     color: '#6366f1',
     tagline: 'Master the concepts of Simplification.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Simplification. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -529,7 +529,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Simplification.',
@@ -545,7 +545,7 @@ export const TOPIC_CONTENT = {
 
   'approximation': {
     title: 'Approximation',
-    icon: '〰️',
+    icon: 'ã€°ï¸',
     color: '#6366f1',
     tagline: 'Master the concepts of Approximation.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Approximation. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -554,7 +554,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Approximation.',
@@ -570,7 +570,7 @@ export const TOPIC_CONTENT = {
 
   'trailing-zeros': {
     title: 'Trailing Zeros',
-    icon: '0️⃣',
+    icon: '0ï¸âƒ£',
     color: '#6366f1',
     tagline: 'Master the concepts of Trailing Zeros.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Trailing Zeros. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -579,7 +579,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Trailing Zeros.',
@@ -595,7 +595,7 @@ export const TOPIC_CONTENT = {
 
   'ratio-proportion': {
     title: 'Ratio & Proportion',
-    icon: '⚖️',
+    icon: 'âš–ï¸',
     color: '#6366f1',
     tagline: 'Master the concepts of Ratio & Proportion.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Ratio & Proportion. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -604,7 +604,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Ratio & Proportion.',
@@ -620,7 +620,7 @@ export const TOPIC_CONTENT = {
 
   'averages': {
     title: 'Averages',
-    icon: '⚖️',
+    icon: 'âš–ï¸',
     color: '#6366f1',
     tagline: 'Balance everything out evenly.',
     description: 'An average is just a way to share things equally. If 5 people have different amounts of money, the average is how much each person gets if they pool all their money together and split it evenly.',
@@ -629,8 +629,8 @@ export const TOPIC_CONTENT = {
       { label: 'Shortcut', value: 'If the numbers go up by a fixed amount (like 2, 4, 6), the average is exactly the middle number.' },
     ],
     formulas: [
-      { title: 'The Main Formula', formula: 'Average = Total Sum ÷ Total Count', example: 'Average of 10, 20, 30 = (10+20+30) ÷ 3 = 20' },
-      { title: 'Finding Total', formula: 'Total Sum = Average × Count', example: 'If average of 4 kids is 10 years, total age = 4 × 10 = 40 years' },
+      { title: 'The Main Formula', formula: 'Average = Total Sum Ã· Total Count', example: 'Average of 10, 20, 30 = (10+20+30) Ã· 3 = 20' },
+      { title: 'Finding Total', formula: 'Total Sum = Average Ã— Count', example: 'If average of 4 kids is 10 years, total age = 4 Ã— 10 = 40 years' },
     ],
     identify: [
       'Questions asking "What is the new average?"',
@@ -645,7 +645,7 @@ export const TOPIC_CONTENT = {
 
   'simple-interest': {
     title: 'Simple Interest',
-    icon: '💸',
+    icon: 'ðŸ’¸',
     color: '#10b981',
     tagline: 'Interest is calculated only on the original money.',
     description: 'Simple interest is the easiest way to calculate extra money you owe or earn. The interest is ALWAYS calculated on the original amount you started with (the Principal), year after year.',
@@ -654,7 +654,7 @@ export const TOPIC_CONTENT = {
       { label: 'Rate (R)', value: 'The percentage of interest per year.' },
     ],
     formulas: [
-      { title: 'Simple Interest Formula', formula: 'SI = (P × R × T) ÷ 100', example: '1000 borrowed at 10% for 2 years = (1000 × 10 × 2) ÷ 100 = 200' },
+      { title: 'Simple Interest Formula', formula: 'SI = (P Ã— R Ã— T) Ã· 100', example: '1000 borrowed at 10% for 2 years = (1000 Ã— 10 Ã— 2) Ã· 100 = 200' },
       { title: 'Total Amount', formula: 'Amount = Principal + Simple Interest', example: 'Total to pay back = 1000 + 200 = 1200' },
     ],
     identify: [
@@ -670,7 +670,7 @@ export const TOPIC_CONTENT = {
 
   'compound-interest': {
     title: 'Compound Interest',
-    icon: '📈',
+    icon: 'ðŸ“ˆ',
     color: '#6366f1',
     tagline: 'Master the concepts of Compound Interest.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Compound Interest. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -679,7 +679,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Compound Interest.',
@@ -695,7 +695,7 @@ export const TOPIC_CONTENT = {
 
   'ages': {
     title: 'Ages',
-    icon: '⏳',
+    icon: 'â³',
     color: '#f59e0b',
     tagline: 'The difference in age never changes.',
     description: 'Problems on ages are just simple linear equations. The biggest secret to solving them is realizing that the age gap between two people is always exactly the same, no matter how many years pass!',
@@ -719,7 +719,7 @@ export const TOPIC_CONTENT = {
 
   'alligation-mixtures': {
     title: 'Alligation & Mixtures',
-    icon: '🧪',
+    icon: 'ðŸ§ª',
     color: '#6366f1',
     tagline: 'Master the concepts of Alligation & Mixtures.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Alligation & Mixtures. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -728,7 +728,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Alligation & Mixtures.',
@@ -744,7 +744,7 @@ export const TOPIC_CONTENT = {
 
   'pipes-cisterns': {
     title: 'Pipes & Cisterns',
-    icon: '🚰',
+    icon: 'ðŸš°',
     color: '#6366f1',
     tagline: 'Master the concepts of Pipes & Cisterns.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Pipes & Cisterns. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -753,7 +753,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Pipes & Cisterns.',
@@ -769,7 +769,7 @@ export const TOPIC_CONTENT = {
 
   'trains': {
     title: 'Trains',
-    icon: '🚄',
+    icon: 'ðŸš„',
     color: '#10b981',
     tagline: 'The length of the train is the secret.',
     description: 'Train problems are just simple Speed & Distance problems with one twist: trains are very long! When a train crosses a pole, it travels its own length. When it crosses a bridge, it travels its own length PLUS the bridge.',
@@ -778,8 +778,8 @@ export const TOPIC_CONTENT = {
       { label: 'Crossing an Object', value: 'When crossing a bridge or platform, Distance = Train + Bridge.' },
     ],
     formulas: [
-      { title: 'The Golden Rule', formula: 'Distance = Speed × Time', example: '' },
-      { title: 'Unit Conversion', formula: 'Multiply km/hr by (5/18) to get m/s', example: '54 km/hr = 54 × (5/18) = 15 m/s' },
+      { title: 'The Golden Rule', formula: 'Distance = Speed Ã— Time', example: '' },
+      { title: 'Unit Conversion', formula: 'Multiply km/hr by (5/18) to get m/s', example: '54 km/hr = 54 Ã— (5/18) = 15 m/s' },
     ],
     identify: [
       'Questions mentioning "train crosses a bridge in 10 seconds".',
@@ -788,13 +788,13 @@ export const TOPIC_CONTENT = {
     approach: [
       { step: '1', tip: 'Check the units! Usually speed is km/hr but time is seconds. Convert speed to m/s immediately.' },
       { step: '2', tip: 'Write down the total Distance. If there is a bridge, add both lengths.' },
-      { step: '3', tip: 'Plug into Distance = Speed × Time and solve.' },
+      { step: '3', tip: 'Plug into Distance = Speed Ã— Time and solve.' },
     ],
   },
 
   'boats-streams': {
     title: 'Boats & Streams',
-    icon: '🛶',
+    icon: 'ðŸ›¶',
     color: '#6366f1',
     tagline: 'Master the concepts of Boats & Streams.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Boats & Streams. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -803,7 +803,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Boats & Streams.',
@@ -819,7 +819,7 @@ export const TOPIC_CONTENT = {
 
   'tables': {
     title: 'Tables',
-    icon: '📋',
+    icon: 'ðŸ“‹',
     color: '#6366f1',
     tagline: 'Master the concepts of Tables.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Tables. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -828,7 +828,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Tables.',
@@ -844,7 +844,7 @@ export const TOPIC_CONTENT = {
 
   'bar-charts': {
     title: 'Bar Charts',
-    icon: '📊',
+    icon: 'ðŸ“Š',
     color: '#6366f1',
     tagline: 'Master the concepts of Bar Charts.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Bar Charts. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -853,7 +853,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Bar Charts.',
@@ -869,7 +869,7 @@ export const TOPIC_CONTENT = {
 
   'pie-charts': {
     title: 'Pie Charts',
-    icon: '🥧',
+    icon: 'ðŸ¥§',
     color: '#6366f1',
     tagline: 'Master the concepts of Pie Charts.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Pie Charts. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -878,7 +878,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Pie Charts.',
@@ -894,7 +894,7 @@ export const TOPIC_CONTENT = {
 
   'line-graphs': {
     title: 'Line Graphs',
-    icon: '📉',
+    icon: 'ðŸ“‰',
     color: '#6366f1',
     tagline: 'Master the concepts of Line Graphs.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Line Graphs. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -903,7 +903,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Line Graphs.',
@@ -919,7 +919,7 @@ export const TOPIC_CONTENT = {
 
   'mixed-di-sets': {
     title: 'Mixed DI Sets',
-    icon: '🗂️',
+    icon: 'ðŸ—‚ï¸',
     color: '#6366f1',
     tagline: 'Master the concepts of Mixed DI Sets.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Mixed DI Sets. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -928,7 +928,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Mixed DI Sets.',
@@ -944,7 +944,7 @@ export const TOPIC_CONTENT = {
 
   'permutation-combination': {
     title: 'Permutation & Combination',
-    icon: '🔀',
+    icon: 'ðŸ”€',
     color: '#6366f1',
     tagline: 'Master the concepts of Permutation & Combination.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Permutation & Combination. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -953,7 +953,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Permutation & Combination.',
@@ -969,7 +969,7 @@ export const TOPIC_CONTENT = {
 
   'logarithm': {
     title: 'Logarithm',
-    icon: '🪵',
+    icon: 'ðŸªµ',
     color: '#6366f1',
     tagline: 'Master the concepts of Logarithm.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Logarithm. Understanding this topic is crucial for maximizing your score in the Quantitative Aptitude section.`,
@@ -978,7 +978,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Logarithm.',
@@ -994,7 +994,7 @@ export const TOPIC_CONTENT = {
 
   'number-series': {
     title: 'Number Series',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Number Series.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Number Series. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1003,7 +1003,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Number Series.',
@@ -1019,7 +1019,7 @@ export const TOPIC_CONTENT = {
 
   'letter-series': {
     title: 'Letter Series',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Letter Series.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Letter Series. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1028,7 +1028,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Letter Series.',
@@ -1044,7 +1044,7 @@ export const TOPIC_CONTENT = {
 
   'alphanumeric-series': {
     title: 'Alphanumeric Series',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Alphanumeric Series.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Alphanumeric Series. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1053,7 +1053,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Alphanumeric Series.',
@@ -1069,7 +1069,7 @@ export const TOPIC_CONTENT = {
 
   'direction-sense': {
     title: 'Direction Sense',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Direction Sense.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Direction Sense. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1078,7 +1078,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Direction Sense.',
@@ -1094,7 +1094,7 @@ export const TOPIC_CONTENT = {
 
   'ranking-ordering': {
     title: 'Ranking & Ordering',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Ranking & Ordering.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Ranking & Ordering. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1103,7 +1103,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Ranking & Ordering.',
@@ -1119,7 +1119,7 @@ export const TOPIC_CONTENT = {
 
   'statement-conclusion': {
     title: 'Statement & Conclusion',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Statement & Conclusion.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Statement & Conclusion. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1128,7 +1128,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Statement & Conclusion.',
@@ -1144,7 +1144,7 @@ export const TOPIC_CONTENT = {
 
   'statement-assumption': {
     title: 'Statement & Assumption',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Statement & Assumption.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Statement & Assumption. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1153,7 +1153,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Statement & Assumption.',
@@ -1169,7 +1169,7 @@ export const TOPIC_CONTENT = {
 
   'linear-arrangement': {
     title: 'Linear Arrangement',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Linear Arrangement.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Linear Arrangement. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1178,7 +1178,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Linear Arrangement.',
@@ -1194,7 +1194,7 @@ export const TOPIC_CONTENT = {
 
   'circular-arrangement': {
     title: 'Circular Arrangement',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Circular Arrangement.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Circular Arrangement. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1203,7 +1203,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Circular Arrangement.',
@@ -1219,7 +1219,7 @@ export const TOPIC_CONTENT = {
 
   'floor-puzzles': {
     title: 'Floor Puzzles',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Floor Puzzles.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Floor Puzzles. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1228,7 +1228,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Floor Puzzles.',
@@ -1244,7 +1244,7 @@ export const TOPIC_CONTENT = {
 
   'box-puzzles': {
     title: 'Box Puzzles',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Box Puzzles.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Box Puzzles. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1253,7 +1253,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Box Puzzles.',
@@ -1269,7 +1269,7 @@ export const TOPIC_CONTENT = {
 
   'pattern-completion': {
     title: 'Pattern Completion',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Pattern Completion.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Pattern Completion. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1278,7 +1278,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Pattern Completion.',
@@ -1294,7 +1294,7 @@ export const TOPIC_CONTENT = {
 
   'figure-series': {
     title: 'Figure Series',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Figure Series.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Figure Series. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1303,7 +1303,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Figure Series.',
@@ -1319,7 +1319,7 @@ export const TOPIC_CONTENT = {
 
   'mirror-images': {
     title: 'Mirror Images',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Mirror Images.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Mirror Images. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1328,7 +1328,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Mirror Images.',
@@ -1344,7 +1344,7 @@ export const TOPIC_CONTENT = {
 
   'water-images': {
     title: 'Water Images',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Water Images.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Water Images. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1353,7 +1353,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Water Images.',
@@ -1369,7 +1369,7 @@ export const TOPIC_CONTENT = {
 
   'odd-figure-out': {
     title: 'Odd Figure Out',
-    icon: '🧠',
+    icon: 'ðŸ§ ',
     color: '#ec4899',
     tagline: 'Master the concepts of Odd Figure Out.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Odd Figure Out. Understanding this topic is crucial for maximizing your score in the Logical Reasoning section.`,
@@ -1378,7 +1378,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Odd Figure Out.',
@@ -1394,7 +1394,7 @@ export const TOPIC_CONTENT = {
 
   'sentence-correction': {
     title: 'Sentence Correction',
-    icon: '📖',
+    icon: 'ðŸ“–',
     color: '#10b981',
     tagline: 'Master the concepts of Sentence Correction.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Sentence Correction. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
@@ -1403,7 +1403,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Sentence Correction.',
@@ -1419,7 +1419,7 @@ export const TOPIC_CONTENT = {
 
   'fill-in-the-blanks': {
     title: 'Fill in the Blanks',
-    icon: '📖',
+    icon: 'ðŸ“–',
     color: '#10b981',
     tagline: 'Master the concepts of Fill in the Blanks.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Fill in the Blanks. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
@@ -1428,7 +1428,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Fill in the Blanks.',
@@ -1444,7 +1444,7 @@ export const TOPIC_CONTENT = {
 
   'sentence-completion': {
     title: 'Sentence Completion',
-    icon: '📖',
+    icon: 'ðŸ“–',
     color: '#10b981',
     tagline: 'Master the concepts of Sentence Completion.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Sentence Completion. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
@@ -1453,7 +1453,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Sentence Completion.',
@@ -1469,7 +1469,7 @@ export const TOPIC_CONTENT = {
 
   'cloze-test': {
     title: 'Cloze Test',
-    icon: '📖',
+    icon: 'ðŸ“–',
     color: '#10b981',
     tagline: 'Master the concepts of Cloze Test.',
     description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Cloze Test. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
@@ -1478,7 +1478,7 @@ export const TOPIC_CONTENT = {
       { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
     ],
     formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) × Concept', example: 'Apply the formula directly to the given numbers.' },
+      { title: 'Standard Formula', formula: 'Result = (Given Data) Ã— Concept', example: 'Apply the formula directly to the given numbers.' },
     ],
     identify: [
       'Look for keywords specific to Cloze Test.',
@@ -1492,9 +1492,97 @@ export const TOPIC_CONTENT = {
     ],
   },
 
+  // ════════════════════════════════════════
+  //  GOVERNMENT EXAMS — EXCLUSIVE TOPICS
+  // ════════════════════════════════════════
+  
+  'geometry': {
+    title: 'Geometry',
+    icon: '📐',
+    color: '#3b82f6',
+    tagline: 'Lines, angles, triangles, and circles.',
+    description: `Geometry deals with the properties and relations of points, lines, surfaces, and solids. In government exams, questions heavily focus on triangle properties, circle tangents, and angle chasing.`,
+    keyFacts: [
+      { label: 'Triangle Sum', value: 'Sum of internal angles is always 180°' },
+      { label: 'Straight Line', value: 'A straight line measures 180°' },
+    ],
+    formulas: [
+      { title: 'Pythagoras Theorem', formula: 'a² + b² = c²', example: '3² + 4² = 5²' },
+    ],
+    identify: [
+      'Question mentions angles, triangles, circles, or parallel lines.',
+    ],
+    approach: [
+      { step: '1', tip: 'Always draw a rough diagram.' },
+      { step: '2', tip: 'Look for Z, F, and C shapes in parallel lines.' },
+    ],
+  },
+  
+  'mensuration': {
+    title: 'Mensuration',
+    icon: '🧊',
+    color: '#3b82f6',
+    tagline: 'Areas, Volumes, and Surface Areas.',
+    description: `Mensuration is the branch of mathematics that deals with the measurement of length, area, or volume of various geometric shapes.`,
+    keyFacts: [
+      { label: '2D Shapes', value: 'Square, Rectangle, Circle, Triangle (measured in Area)' },
+      { label: '3D Shapes', value: 'Cube, Cylinder, Cone, Sphere (measured in Volume)' },
+    ],
+    formulas: [
+      { title: 'Area of Circle', formula: 'πr²', example: 'r=7 → Area ≈ 154' },
+      { title: 'Volume of Cylinder', formula: 'πr²h', example: 'r=7, h=10 → Vol ≈ 1540' },
+    ],
+    identify: [
+      'Keywords like area, volume, perimeter, surface area, melting and recasting.',
+    ],
+    approach: [
+      { step: '1', tip: 'Ensure all units (cm, m) are the same before calculating.' },
+      { step: '2', tip: 'When one 3D object is melted into another, their Volumes remain equal.' },
+    ],
+  },
+  
+  'algebra': {
+    title: 'Algebra',
+    icon: '🧮',
+    color: '#3b82f6',
+    tagline: 'Equations, Polynomials, and Identities.',
+    description: `Algebra involves solving for unknown variables using mathematical identities. SSC exams heavily feature x + 1/x type questions.`,
+    keyFacts: [
+      { label: 'Variables', value: 'Unknown values usually represented by x, y, z' },
+    ],
+    formulas: [
+      { title: 'Basic Identity', formula: '(a+b)² = a² + b² + 2ab', example: '(x+1)² = x² + 1 + 2x' },
+    ],
+    identify: [
+      'Equations with x, y, or asks for the value of x² + 1/x².',
+    ],
+    approach: [
+      { step: '1', tip: 'Try value putting (e.g., let x=1 or x=0) if it satisfies the condition.' },
+    ],
+  },
+
+  'general-intelligence': {
+    title: 'General Intelligence',
+    icon: '🧩',
+    color: '#f59e0b',
+    tagline: 'Visual patterns and logic puzzles.',
+    description: `General intelligence tests your ability to spot visual and logical patterns quickly. It includes matrix puzzles, number analogies, and missing characters.`,
+    keyFacts: [
+      { label: 'Analogies', value: 'A is to B as C is to D' },
+    ],
+    formulas: [],
+    identify: [
+      'Matrix of numbers with one missing (?), or visual sequences.',
+    ],
+    approach: [
+      { step: '1', tip: 'Check row-wise and column-wise differences or sums.' },
+      { step: '2', tip: 'Look for squares and cubes of numbers.' },
+    ],
+  },
 };
 
 // Helper to create a URL-safe slug from a topic name
 export function topicToSlug(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
+
