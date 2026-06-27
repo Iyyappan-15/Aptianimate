@@ -3,40 +3,36 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { describeArc, CHART_COLORS } from '../utils/animationHelpers';
-import { MotionVisual, ContainerVisual, ProgressVisual, TimelineVisual, TankVisual, WorkVisual, VennVisual, SeatingVisual, FamilyTreeVisual, ProbabilityTreeVisual, NumberLineVisual, ChartVisual } from './AptitudeVisuals';
+import { GridEngine, NodeEngine, AxisEngine, BarEngine, EntityEngine } from './SuperEngines';
 
 export default function StepRenderer({ step, isActive }) {
   if (!step) return null;
 
-  switch (step.visual_type) {
-    case 'formula_highlight': return <FormulaHighlight step={step} isActive={isActive} />;
-    case 'number_morph':      return <NumberMorph step={step} isActive={isActive} />;
-    case 'equation_solve':    return <EquationSolve step={step} isActive={isActive} />;
-    case 'comparison_visual': return <ComparisonVisual step={step} isActive={isActive} />;
-    case 'story_scene':       return <StoryScene step={step} isActive={isActive} />;
-    case 'motion_graphic':    return <MotionGraphic step={step} isActive={isActive} />;
-    case 'word_highlight':    return <WordHighlight step={step} isActive={isActive} />;
-    case 'pattern_reveal':    return <PatternReveal step={step} isActive={isActive} />;
-    case 'bar_race':          return <BarRace step={step} isActive={isActive} />;
-    case 'pie_build':         return <PieBuild step={step} isActive={isActive} />;
+  // Route based on the new visual_engine field (or fallback to old visual_type for backwards compatibility)
+  const engine = step.visual_engine || step.visual_type;
 
-    /* --- NEW 12-TYPE ENGINE --- */
-    case 'motion':            return <MotionVisual step={step} isActive={isActive} />;
-    case 'container':         return <ContainerVisual step={step} isActive={isActive} />;
-    case 'progress':          return <ProgressVisual step={step} isActive={isActive} />;
-    case 'timeline':          return <TimelineVisual step={step} isActive={isActive} />;
-    case 'tank':              return <TankVisual step={step} isActive={isActive} />;
-    case 'work':              return <WorkVisual step={step} isActive={isActive} />;
-    case 'venn':              return <VennVisual step={step} isActive={isActive} />;
-    case 'seating':           return <SeatingVisual step={step} isActive={isActive} />;
-    case 'family_tree':       return <FamilyTreeVisual step={step} isActive={isActive} />;
-    case 'probability_tree':  return <ProbabilityTreeVisual step={step} isActive={isActive} />;
-    case 'number_line':       return <NumberLineVisual step={step} isActive={isActive} />;
-    case 'chart':             return <ChartVisual step={step} isActive={isActive} />;
+  switch (engine) {
+    // ── SUPER ENGINES v2.0 ──
+    case 'grid_engine':       return <GridEngine step={step} isActive={isActive} />;
+    case 'node_engine':       return <NodeEngine step={step} isActive={isActive} />;
+    case 'axis_engine':       return <AxisEngine step={step} isActive={isActive} />;
+    case 'bar_engine':        return <BarEngine step={step} isActive={isActive} />;
+    case 'entity_engine':     return <EntityEngine step={step} isActive={isActive} />;
+    
+    // Formula handling
+    case 'formula_engine':    return step.render_data?.equation_lines ? <EquationSolve step={step} isActive={isActive} /> : <FormulaHighlight step={step} isActive={isActive} />;
+    
+    // Legacy support (optional, keeping a few for safety)
+    case 'formula_highlight': return <FormulaHighlight step={step} isActive={isActive} />;
+    case 'equation_solve':    return <EquationSolve step={step} isActive={isActive} />;
+    case 'number_morph':      return <NumberMorph step={step} isActive={isActive} />;
+    case 'comparison_visual': return <ComparisonVisual step={step} isActive={isActive} />;
     
     default:                  return <DefaultVisual step={step} isActive={isActive} />;
   }
 }
+
+
 
 // ─── FORMULA HIGHLIGHT ────────────────────────────────────────────────────────
 // Shows a formula building up piece by piece with colored labeled tokens
