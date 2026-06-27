@@ -148,69 +148,144 @@ export function AxisEngine({ step, isActive }) {
     return ((to - from) / range) * 100 + '%';
   }
 
+  // Generate tick marks if range is reasonable (less than 50)
+  const ticks = [];
+  if (range <= 50) {
+    for (let i = Math.floor(min); i <= Math.ceil(max); i++) {
+      ticks.push(i);
+    }
+  }
+
   return (
-    <div style={{ width: '100%', padding: '40px 16px', position: 'relative' }}>
-      <div style={{ width: '100%', height: '4px', backgroundColor: 'var(--border)', borderRadius: '2px', position: 'relative' }}>
+    <div style={{ width: '100%', padding: '60px 24px', position: 'relative' }}>
+      {/* The main glowing axis line */}
+      <div style={{ 
+        width: '100%', 
+        height: '6px', 
+        background: 'linear-gradient(90deg, var(--surface3), var(--violet), var(--surface3))', 
+        borderRadius: '3px', 
+        position: 'relative',
+        boxShadow: '0 0 15px rgba(124, 58, 237, 0.2)'
+      }}>
+
+        {/* Tick marks */}
+        {isActive && ticks.map(tick => (
+          <div key={`tick-${tick}`} style={{
+            position: 'absolute',
+            left: getPos(tick),
+            top: '0',
+            width: '2px',
+            height: '12px',
+            backgroundColor: 'var(--border)',
+            transform: 'translateX(-50%)',
+            opacity: 0.5
+          }} />
+        ))}
 
         <AnimatePresence>
-          {isActive && points.map((p, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: i * 0.3, type: 'spring' }}
-              style={{
-                position: 'absolute',
-                left: getPos(p.val),
-                top: '-6px',
-                width: '16px',
-                height: '16px',
-                borderRadius: '50%',
-                backgroundColor: p.highlight ? 'var(--amber)' : 'var(--violet)',
-                transform: 'translateX(-50%)'
-              }}
-            >
-              <div style={{ position: 'absolute', top: '24px', left: '50%', transform: 'translateX(-50%)', fontWeight: 'bold', color: 'var(--text-sec)', whiteSpace: 'nowrap' }}>
-                {p.val}
-              </div>
-              {p.label && (
-                <div style={{ position: 'absolute', top: '-24px', left: '50%', transform: 'translateX(-50%)', fontSize: '0.8rem', color: p.highlight ? 'var(--amber)' : 'var(--violet)', whiteSpace: 'nowrap', fontWeight: 'bold' }}>
-                  {p.label}
+          {isActive && points.map((p, i) => {
+            const isHighlight = p.highlight;
+            const color = isHighlight ? 'var(--amber)' : 'var(--teal)';
+            return (
+              <motion.div
+                key={`point-${i}`}
+                initial={{ opacity: 0, scale: 0, y: -20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: i * 0.2, type: 'spring', stiffness: 300, damping: 15 }}
+                style={{
+                  position: 'absolute',
+                  left: getPos(p.val),
+                  top: '-7px',
+                  width: isHighlight ? '20px' : '16px',
+                  height: isHighlight ? '20px' : '16px',
+                  borderRadius: '50%',
+                  backgroundColor: color,
+                  transform: 'translateX(-50%)',
+                  boxShadow: `0 0 ${isHighlight ? '20px' : '10px'} ${color}`,
+                  border: '2px solid var(--surface)'
+                }}
+              >
+                {/* Value display */}
+                <div style={{ 
+                  position: 'absolute', 
+                  top: '28px', 
+                  left: '50%', 
+                  transform: 'translateX(-50%)', 
+                  fontWeight: '800', 
+                  color: 'var(--text-main)', 
+                  whiteSpace: 'nowrap',
+                  fontSize: isHighlight ? '1.1rem' : '0.9rem'
+                }}>
+                  {p.val}
                 </div>
-              )}
-            </motion.div>
-          ))}
+                {/* Label display */}
+                {p.label && (
+                  <div style={{ 
+                    position: 'absolute', 
+                    top: '-35px', 
+                    left: '50%', 
+                    transform: 'translateX(-50%)', 
+                    fontSize: '0.75rem', 
+                    color: color, 
+                    whiteSpace: 'nowrap', 
+                    fontWeight: '800',
+                    background: 'var(--surface2)',
+                    padding: '4px 10px',
+                    borderRadius: '12px',
+                    border: `1px solid ${color}`,
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+                  }}>
+                    {p.label}
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
         </AnimatePresence>
 
-        {isActive && jumps.map((j, i) => (
-          <motion.svg
-            key={'jump-' + i}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: points.length * 0.3 + i * 0.5, duration: 0.5 }}
-            style={{
-              position: 'absolute',
-              left: getPos(j.from),
-              width: getWidth(j.from, j.to),
-              height: '40px',
-              top: '-40px',
-              overflow: 'visible'
-            }}
-          >
-            <path
-              d="M 0 40 Q 50% 0 100% 40"
-              fill="none"
-              stroke="var(--teal)"
-              strokeWidth="2"
-              strokeDasharray="4 4"
-            />
-            {j.label && (
-              <text x="50%" y="10" fill="var(--teal)" fontSize="12" textAnchor="middle" fontWeight="bold">
-                {j.label}
-              </text>
-            )}
-          </motion.svg>
-        ))}
+        {/* Jumps (Arcs) */}
+        {isActive && jumps.map((j, i) => {
+          const isForward = j.to > j.from;
+          const arcHeight = 45 + (i * 10); // Offset overlapping arcs
+          
+          return (
+            <motion.svg
+              key={'jump-' + i}
+              initial={{ opacity: 0, strokeDashoffset: 100 }}
+              animate={{ opacity: 1, strokeDashoffset: 0 }}
+              transition={{ delay: points.length * 0.2 + i * 0.4, duration: 0.8, ease: "easeOut" }}
+              style={{
+                position: 'absolute',
+                left: getPos(isForward ? j.from : j.to),
+                width: getWidth(isForward ? j.from : j.to, isForward ? j.to : j.from),
+                height: arcHeight + 'px',
+                top: `-${arcHeight}px`,
+                overflow: 'visible',
+                pointerEvents: 'none'
+              }}
+            >
+              <path
+                d={`M 0 ${arcHeight} Q 50% 0 100% ${arcHeight}`}
+                fill="none"
+                stroke="var(--violet)"
+                strokeWidth="2.5"
+                strokeDasharray="6 6"
+                style={{ filter: 'drop-shadow(0px 4px 6px rgba(124, 58, 237, 0.4))' }}
+              />
+              {/* Arrow head */}
+              <polygon 
+                points={isForward ? `100%,${arcHeight} 90%,${arcHeight-10} 95%,${arcHeight-15}` : `0,${arcHeight} 10%,${arcHeight-10} 5%,${arcHeight-15}`} 
+                fill="var(--violet)" 
+              />
+              {j.label && (
+                <text x="50%" y="12" fill="var(--text-main)" fontSize="13" textAnchor="middle" fontWeight="bold" 
+                  style={{ textShadow: '0 2px 4px var(--surface)' }}>
+                  {j.label}
+                </text>
+              )}
+            </motion.svg>
+          );
+        })}
       </div>
     </div>
   );
@@ -228,40 +303,76 @@ export function BarEngine({ step, isActive }) {
     return (val / maxVal) * 100 + '%';
   }
 
+  // Map requested colors to nice gradients
+  const getGradient = (colorStr) => {
+    if (!colorStr) return 'linear-gradient(180deg, #7C3AED 0%, #5B21B6 100%)';
+    if (colorStr.includes('81') || colorStr.toLowerCase().includes('green')) return 'linear-gradient(180deg, #10B981 0%, #047857 100%)';
+    if (colorStr.includes('06') || colorStr.toLowerCase().includes('orange')) return 'linear-gradient(180deg, #F59E0B 0%, #B45309 100%)';
+    if (colorStr.includes('teal') || colorStr.toLowerCase().includes('88')) return 'linear-gradient(180deg, #14B8A6 0%, #0F766E 100%)';
+    return `linear-gradient(180deg, ${colorStr} 0%, rgba(0,0,0,0.5) 200%)`;
+  };
+
   return (
-    <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: '24px', height: '160px', width: '100%', paddingBottom: '20px', borderBottom: '2px solid var(--border)' }}>
-      {bars.map((bar, i) => (
-        <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: isActive ? 1 : 0, y: isActive ? 0 : 10 }}
-            transition={{ delay: i * 0.1 + 0.3 }}
-            style={{ fontWeight: 'bold', color: bar.highlight ? 'var(--teal)' : 'var(--text)' }}
-          >
-            {bar.val}
-          </motion.div>
-          <motion.div
-            initial={{ height: 0 }}
-            animate={{ height: isActive ? getBarHeight(bar.val) : 0 }}
-            transition={{ delay: i * 0.1, duration: 0.6, type: 'spring' }}
-            style={{
-              width: '40px',
-              backgroundColor: bar.color || 'var(--violet)',
-              borderRadius: '6px 6px 0 0',
-              opacity: 0.9
-            }}
-          />
-          <div style={{ fontSize: '0.8rem', color: 'var(--muted)', fontWeight: 'bold' }}>
-            {bar.label}
+    <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: '32px', height: '200px', width: '100%', paddingBottom: '30px', position: 'relative' }}>
+      
+      {/* Ground Axis */}
+      <div style={{ position: 'absolute', bottom: '30px', left: '10%', right: '10%', height: '3px', background: 'var(--border)', borderRadius: '2px' }} />
+
+      {bars.map((bar, i) => {
+        const isHighlight = bar.highlight;
+        return (
+          <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', zIndex: 1 }}>
+            
+            {/* Value floating above */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: isActive ? 1 : 0, y: isActive ? 0 : 15 }}
+              transition={{ delay: i * 0.1 + 0.4, type: 'spring' }}
+              style={{ 
+                fontWeight: '900', 
+                fontSize: isHighlight ? '1.3rem' : '1.1rem',
+                color: isHighlight ? 'var(--amber)' : 'var(--text-main)',
+                background: 'var(--surface2)',
+                padding: '4px 12px',
+                borderRadius: '8px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                border: isHighlight ? '2px solid var(--amber)' : '1px solid var(--border)'
+              }}
+            >
+              {bar.val}
+            </motion.div>
+            
+            {/* The Bar */}
+            <motion.div
+              initial={{ height: 0 }}
+              animate={{ height: isActive ? getBarHeight(bar.val) : 0 }}
+              transition={{ delay: i * 0.1, duration: 0.8, type: 'spring', bounce: 0.4 }}
+              style={{
+                width: '48px',
+                background: getGradient(bar.color),
+                borderRadius: '8px 8px 2px 2px',
+                boxShadow: isHighlight ? '0 0 20px rgba(245, 158, 11, 0.4)' : '0 4px 10px rgba(0,0,0,0.2)',
+                position: 'relative',
+                overflow: 'hidden'
+              }}
+            >
+              {/* Glass shine effect inside bar */}
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '40%', background: 'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%)' }} />
+            </motion.div>
+
+            {/* Label below */}
+            <div style={{ fontSize: '0.85rem', color: 'var(--text-sec)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+              {bar.label}
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
 
 // ==========================================
-// 5. Entity Engine (Cars, Trains, Coins)
+// 5. Entity Engine (Cars, Trains, Coins, Workers)
 // ==========================================
 export function EntityEngine({ step, isActive }) {
   const data = step.render_data || {};
@@ -269,52 +380,116 @@ export function EntityEngine({ step, isActive }) {
 
   function getEmoji(type) {
     const map = {
-      car: '🚗',
-      train: '🚆',
+      car: '🚙',
+      train: '🚂',
       coin: '🪙',
-      worker: '👷',
+      worker: '👷‍♂️',
       box: '📦',
-      clock: '⏱️',
-      person: '🧑'
+      clock: '⏳',
+      person: '🏃'
     };
     return map[(type || '').toLowerCase()] || '🔵';
   }
 
   function getStartStyle(ent) {
-    return { left: (ent.startX || 0) + '%', opacity: 0 };
+    return { left: (ent.startX || 0) + '%', opacity: 0, scale: 0.8 };
   }
 
   function getEndStyle(ent) {
     return {
       left: (isActive ? (ent.endX != null ? ent.endX : 50) : (ent.startX || 0)) + '%',
-      opacity: isActive ? 1 : 0
+      opacity: isActive ? 1 : 0,
+      scale: isActive ? 1 : 0.8
     };
   }
 
+  // Add subtle bobbing animation based on type
+  const getBobbing = (type) => {
+    if (['car', 'train', 'person', 'worker'].includes(type?.toLowerCase())) {
+      return {
+        y: [0, -6, 0],
+        transition: { repeat: Infinity, duration: 0.5, ease: "easeInOut" }
+      };
+    }
+    return {};
+  };
+
   return (
-    <div style={{ width: '100%', height: '140px', position: 'relative', borderBottom: '2px dashed var(--border)' }}>
+    <div style={{ width: '100%', height: '180px', position: 'relative', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+      
+      {/* The Road / Track Background */}
+      <div style={{ 
+        position: 'absolute', 
+        bottom: '30px', 
+        width: '100%', 
+        height: '40px', 
+        background: 'var(--surface2)', 
+        borderTop: '2px solid var(--border)',
+        borderBottom: '4px solid var(--surface3)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 0
+      }}>
+        {/* Dashed line in middle of road */}
+        <div style={{ width: '100%', height: '2px', background: 'var(--border)', opacity: 0.5, borderStyle: 'dashed', borderWidth: '2px', borderColor: 'var(--text-muted)' }} />
+      </div>
+
+      {/* Start and End Flags if distance is mentioned */}
+      {data.distance && (
+        <>
+          <div style={{ position: 'absolute', bottom: '10px', left: '5%', fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--muted)' }}>Start</div>
+          <div style={{ position: 'absolute', bottom: '10px', right: '5%', fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--muted)' }}>End ({data.distance})</div>
+        </>
+      )}
+
       {entities.map((ent, i) => (
         <motion.div
           key={i}
           initial={getStartStyle(ent)}
           animate={getEndStyle(ent)}
-          transition={{ duration: ent.duration || 2, ease: 'easeInOut', delay: ent.delay || 0 }}
+          transition={{ duration: ent.duration || 3, ease: 'easeInOut', delay: ent.delay || 0 }}
           style={{
             position: 'absolute',
-            bottom: '10px',
+            bottom: '40px', // Sit on the road
             transform: 'translateX(-50%)',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            fontSize: '2.5rem'
+            zIndex: 10 + i
           }}
         >
-          {getEmoji(ent.type)}
+          {/* Label Bubble (Glassmorphism) */}
           {ent.label && (
-            <div style={{ fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--text)', backgroundColor: 'var(--surface2)', padding: '2px 8px', borderRadius: '4px', marginTop: '4px' }}>
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: (ent.delay || 0) + 0.5 }}
+              style={{ 
+                fontSize: '0.85rem', 
+                fontWeight: '800', 
+                color: 'var(--text-main)', 
+                backgroundColor: 'rgba(255,255,255,0.85)',
+                backdropFilter: 'blur(4px)',
+                padding: '4px 12px', 
+                borderRadius: '12px', 
+                marginBottom: '10px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                border: '1px solid rgba(0,0,0,0.05)',
+                whiteSpace: 'nowrap'
+              }}
+            >
               {ent.label}
-            </div>
+            </motion.div>
           )}
+
+          {/* Emoji Character with Bobbing */}
+          <motion.div 
+            animate={isActive ? getBobbing(ent.type) : {}} 
+            style={{ fontSize: '3.5rem', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))' }}
+          >
+            {getEmoji(ent.type)}
+          </motion.div>
         </motion.div>
       ))}
     </div>
