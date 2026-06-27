@@ -10,6 +10,9 @@ import SavedPage from './pages/SavedPage';
 import ProgressPage from './pages/ProgressPage';
 import TopicPage from './pages/TopicPage';
 import AskPage from './pages/AskPage';
+import GovtPYQPage from './pages/GovtPYQPage';
+import GovtRoadmapPage from './pages/GovtRoadmapPage';
+import GovtDailyPracticePage from './pages/GovtDailyPracticePage';
 import SplashScreen from './components/SplashScreen';
 
 function App() {
@@ -85,6 +88,12 @@ function App() {
     const qIndex = rawHash.indexOf('?q=');
     const initialQuery = qIndex !== -1 ? decodeURIComponent(rawHash.slice(qIndex + 3).replace(/\+/g, ' ')) : '';
     pageComponent = <AskPage navigate={navigate} initialQuery={initialQuery} />;
+  } else if (route === 'govt-pyq') {
+    pageComponent = <GovtPYQPage navigate={navigate} />;
+  } else if (route === 'govt-roadmaps') {
+    pageComponent = <GovtRoadmapPage navigate={navigate} />;
+  } else if (route === 'govt-daily') {
+    pageComponent = <GovtDailyPracticePage navigate={navigate} />;
   } else {
     pageComponent = <HomePage navigate={navigate} />;
   }

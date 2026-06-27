@@ -5,6 +5,7 @@ import { TOPIC_CONTENT } from '../data/topicContent';
 import { getGoal, setGoal, getLastSession, getStats } from '../utils/localStorage';
 import ProgressDashboard from '../components/ProgressDashboard';
 import CampusPlacementView from '../components/CampusPlacementView';
+import GovtExamView from '../components/GovtExamView';
 import VisualExplanationDemo from '../components/VisualExplanationDemo';
 
 export default function HomePage({ navigate }) {
@@ -144,6 +145,8 @@ export default function HomePage({ navigate }) {
 
       {goal === 'Campus Placements' ? (
         <CampusPlacementView navigate={navigate} />
+      ) : goal === 'Government Exams' ? (
+        <GovtExamView navigate={navigate} />
       ) : (
         <>
           <div className="section-header">
