@@ -374,86 +374,122 @@ export function AxisEngine({ step, isActive }) {
 // ==========================================
 export function BarEngine({ step, isActive }) {
   const data = step.render_data || {};
-  // AI might use different keys instead of 'bars'
   const bars = data.bars || data.data || data.values || data.items || [];
-  
-  // Safely parse values
   const getVal = (b) => parseFloat(b.val !== undefined ? b.val : b.value) || 0;
   const maxVal = Math.max(10, ...bars.map(getVal));
 
-  function getBarHeight(val) {
-    return (val / maxVal) * 100 + '%';
-  }
+  // ROOT FIX: Framer Motion CANNOT animate "0 → '80%'" — must use pixels
+  const CHART_H = 160;
+  const getBarPx = (val) => Math.max(4, (val / maxVal) * CHART_H);
 
-  // Map requested colors to nice gradients
-  const getGradient = (colorStr) => {
-    if (!colorStr) return 'linear-gradient(180deg, #7C3AED 0%, #5B21B6 100%)';
-    if (colorStr.includes('81') || colorStr.toLowerCase().includes('green')) return 'linear-gradient(180deg, #10B981 0%, #047857 100%)';
-    if (colorStr.includes('06') || colorStr.toLowerCase().includes('orange')) return 'linear-gradient(180deg, #F59E0B 0%, #B45309 100%)';
-    if (colorStr.includes('teal') || colorStr.toLowerCase().includes('88')) return 'linear-gradient(180deg, #14B8A6 0%, #0F766E 100%)';
-    return `linear-gradient(180deg, ${colorStr} 0%, rgba(0,0,0,0.5) 200%)`;
+  const PALETTE = [
+    'linear-gradient(180deg, #7C3AED 0%, #5B21B6 100%)',
+    'linear-gradient(180deg, #0D9488 0%, #0F766E 100%)',
+    'linear-gradient(180deg, #D97706 0%, #B45309 100%)',
+    'linear-gradient(180deg, #DB2777 0%, #9D174D 100%)',
+    'linear-gradient(180deg, #2563EB 0%, #1E40AF 100%)',
+    'linear-gradient(180deg, #059669 0%, #047857 100%)',
+  ];
+
+  const getGradient = (colorStr, idx) => {
+    if (!colorStr) return PALETTE[idx % PALETTE.length];
+    const c = colorStr.toLowerCase();
+    if (c.includes('10b981') || c.includes('green')) return 'linear-gradient(180deg, #10B981 0%, #047857 100%)';
+    if (c.includes('f59e0b') || c.includes('amber') || c.includes('d97706')) return 'linear-gradient(180deg, #F59E0B 0%, #B45309 100%)';
+    if (c.includes('14b8a6') || c.includes('teal') || c.includes('0d9488')) return 'linear-gradient(180deg, #14B8A6 0%, #0F766E 100%)';
+    if (c.includes('7c3aed') || c.includes('violet')) return 'linear-gradient(180deg, #7C3AED 0%, #5B21B6 100%)';
+    if (c.includes('6b7280') || c.includes('gray') || c.includes('grey')) return 'linear-gradient(180deg, #6B7280 0%, #374151 100%)';
+    if (c.startsWith('#') || c.startsWith('rgb')) return `linear-gradient(180deg, ${colorStr} 0%, rgba(0,0,0,0.4) 100%)`;
+    return PALETTE[idx % PALETTE.length];
   };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: '32px', height: '200px', width: '100%', paddingBottom: '30px', position: 'relative' }}>
-      
-      {/* Ground Axis */}
-      <div style={{ position: 'absolute', bottom: '30px', left: '10%', right: '10%', height: '3px', background: 'var(--border)', borderRadius: '2px' }} />
+    <div style={{ width: '100%', padding: '16px 8px 4px 8px' }}>
+      {/* Chart area with border axes */}
+      <div style={{
+        display: 'flex', alignItems: 'flex-end', justifyContent: 'center',
+        gap: '20px', height: `${CHART_H + 8}px`, width: '100%',
+        position: 'relative',
+        borderBottom: '3px solid var(--border)',
+        borderLeft: '3px solid var(--border)',
+        paddingBottom: '4px',
+      }}>
+        {/* Y-axis grid lines at 25%, 50%, 75%, 100% */}
+        {[0.25, 0.5, 0.75, 1].map((frac) => (
+          <div key={frac} style={{
+            position: 'absolute', left: 0, right: 0,
+            bottom: `${frac * CHART_H}px`, height: '1px',
+            background: 'var(--border)', opacity: 0.35,
+          }} />
+        ))}
 
-      {bars.map((bar, i) => {
-        const isHighlight = bar.highlight;
-        const val = getVal(bar);
-        
-        return (
-          <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', zIndex: 1 }}>
-            
-            {/* Value floating above */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: isActive ? 1 : 0, y: isActive ? 0 : 15 }}
-              transition={{ delay: i * 0.1 + 0.4, type: 'spring' }}
-              style={{ 
-                fontWeight: '900', 
-                fontSize: isHighlight ? '1.3rem' : '1.1rem',
-                color: isHighlight ? 'var(--amber)' : 'var(--text-main)',
-                background: 'var(--surface2)',
-                padding: '4px 12px',
-                borderRadius: '8px',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-                border: isHighlight ? '2px solid var(--amber)' : '1px solid var(--border)'
-              }}
-            >
-              {bar.val !== undefined ? bar.val : bar.value}
-            </motion.div>
-            
-            {/* The Bar */}
-            <motion.div
-              initial={{ height: 0 }}
-              animate={{ height: isActive ? getBarHeight(val) : 0 }}
-              transition={{ delay: i * 0.1, duration: 0.8, type: 'spring', bounce: 0.4 }}
-              style={{
-                width: '48px',
-                background: getGradient(bar.color),
-                borderRadius: '8px 8px 2px 2px',
-                boxShadow: isHighlight ? '0 0 20px rgba(245, 158, 11, 0.4)' : '0 4px 10px rgba(0,0,0,0.2)',
-                position: 'relative',
-                overflow: 'hidden'
-              }}
-            >
-              {/* Glass shine effect inside bar */}
-              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '40%', background: 'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%)' }} />
-            </motion.div>
+        {bars.map((bar, i) => {
+          const val = getVal(bar);
+          const isHighlight = bar.highlight;
+          const heightPx = getBarPx(val);
+          return (
+            <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px', zIndex: 1 }}>
+              {/* Value badge */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: isActive ? 1 : 0, y: isActive ? 0 : 10 }}
+                transition={{ delay: i * 0.12 + 0.5, type: 'spring', stiffness: 200 }}
+                style={{
+                  fontWeight: '900', fontSize: isHighlight ? '1.05rem' : '0.9rem',
+                  color: isHighlight ? 'var(--amber)' : 'var(--text-main)',
+                  background: 'var(--surface2)', padding: '3px 10px', borderRadius: '8px',
+                  border: isHighlight ? '2px solid var(--amber)' : '1px solid var(--border)',
+                  boxShadow: isHighlight ? '0 0 12px rgba(245,158,11,0.3)' : '0 2px 6px rgba(0,0,0,0.15)',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                {bar.val !== undefined ? bar.val : bar.value}
+              </motion.div>
 
-            {/* Label below */}
-            <div style={{ fontSize: '0.85rem', color: 'var(--text-sec)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-              {bar.label}
+              {/* Bar — pixel height so Framer Motion can interpolate correctly */}
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: isActive ? heightPx : 0, opacity: isActive ? 1 : 0 }}
+                transition={{ delay: i * 0.12, duration: 0.7, ease: [0.34, 1.56, 0.64, 1] }}
+                style={{
+                  width: '52px', background: getGradient(bar.color, i),
+                  borderRadius: '8px 8px 2px 2px',
+                  boxShadow: isHighlight
+                    ? '0 0 24px rgba(245,158,11,0.5), 0 4px 12px rgba(0,0,0,0.2)'
+                    : '0 4px 10px rgba(0,0,0,0.25)',
+                  position: 'relative', overflow: 'hidden', flexShrink: 0,
+                }}
+              >
+                <div style={{
+                  position: 'absolute', top: 0, left: 0, right: 0, height: '40%',
+                  background: 'linear-gradient(180deg, rgba(255,255,255,0.25) 0%, transparent 100%)',
+                  borderRadius: '8px 8px 0 0',
+                }} />
+              </motion.div>
             </div>
+          );
+        })}
+      </div>
+
+      {/* X-axis labels */}
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '8px' }}>
+        {bars.map((bar, i) => (
+          <div key={i} style={{
+            width: '52px', textAlign: 'center', fontSize: '0.78rem',
+            color: bar.highlight ? 'var(--amber)' : 'var(--text-sec)',
+            fontWeight: bar.highlight ? '800' : '600',
+            letterSpacing: '0.03em', overflow: 'hidden',
+            textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+          }}>
+            {bar.label}
           </div>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 }
+
+
 
 // ==========================================
 // 5. Entity Engine (Cars, Trains, Coins, Workers)
