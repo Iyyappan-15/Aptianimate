@@ -765,3 +765,203 @@ export function PieEngine({ step, isActive }) {
     </div>
   );
 }
+
+// ==========================================
+// 7. Direction Engine (GPS Navigation Path)
+// ==========================================
+export function DirectionEngine({ step, isActive }) {
+  const data = step.render_data || {};
+  const path = data.path || [];
+  const hypotenuse = data.hypotenuse;
+  const finalMarker = data.final_marker;
+
+  if (path.length === 0) return <div>No path data</div>;
+
+  // 1. Calculate Bounds in SVG Coordinate Space (Y is inverted: N is -y)
+  const padding = 20;
+  let minX = Math.min(...path.map(p => p.x));
+  let maxX = Math.max(...path.map(p => p.x));
+  let minY = Math.min(...path.map(p => -p.y));
+  let maxY = Math.max(...path.map(p => -p.y));
+
+  if (hypotenuse) {
+    minX = Math.min(minX, hypotenuse.fromX, hypotenuse.toX);
+    maxX = Math.max(maxX, hypotenuse.fromX, hypotenuse.toX);
+    minY = Math.min(minY, -hypotenuse.fromY, -hypotenuse.toY);
+    maxY = Math.max(maxY, -hypotenuse.fromY, -hypotenuse.toY);
+  }
+
+  // Ensure square-ish aspect ratio and minimum size so it doesn't look weird
+  const width = Math.max(maxX - minX, 10);
+  const height = Math.max(maxY - minY, 10);
+  const maxDim = Math.max(width, height);
+  
+  // Center it
+  const cx = (minX + maxX) / 2;
+  const cy = (minY + maxY) / 2;
+
+  const vMinX = cx - maxDim / 2 - padding;
+  const vMaxX = cx + maxDim / 2 + padding;
+  const vMinY = cy - maxDim / 2 - padding;
+  const vMaxY = cy + maxDim / 2 + padding;
+  const vWidth = vMaxX - vMinX;
+  const vHeight = vMaxY - vMinY;
+
+  // The last point for character animation
+  const lastPoint = path[path.length - 1];
+  const prevPoint = path.length > 1 ? path[path.length - 2] : lastPoint;
+
+  return (
+    <div style={{ position: 'relative', width: '100%', minHeight: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'var(--card-bg)', borderRadius: '16px', padding: '16px', overflow: 'hidden' }}>
+      
+      {/* Compass Overlay */}
+      <div style={{ position: 'absolute', top: '16px', right: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', color: 'var(--text-sec)', fontSize: '0.75rem', fontWeight: 600, background: 'rgba(0,0,0,0.05)', padding: '8px', borderRadius: '8px', zIndex: 10 }}>
+        <span style={{ color: 'var(--blue)' }}>N</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+          <span>W</span>
+          <div style={{ width: '24px', height: '24px', border: '2px solid var(--text-sec)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+             <div style={{ position: 'absolute', top: 0, width: '2px', height: '50%', background: 'var(--blue)' }}></div>
+          </div>
+          <span>E</span>
+        </div>
+        <span>S</span>
+      </div>
+
+      {/* SVG Canvas */}
+      <svg 
+        viewBox={`${vMinX} ${vMinY} ${vWidth} ${vHeight}`} 
+        style={{ width: '100%', height: '100%', maxHeight: '400px', overflow: 'visible' }}
+      >
+        {/* Start Marker */}
+        <circle cx={path[0].x} cy={-path[0].y} r={maxDim * 0.03 + 2} fill="var(--blue)" />
+        <text x={path[0].x} y={-path[0].y + (maxDim * 0.06 + 4)} fontSize={maxDim * 0.04 + 2} fill="var(--blue)" textAnchor="middle" fontWeight="bold">Start</text>
+
+        {/* Paths */}
+        {path.map((p, i) => {
+          if (i === 0) return null;
+          const prev = path[i - 1];
+          const isLast = i === path.length - 1;
+          
+          return (
+            <g key={`path-${i}`}>
+              <motion.line
+                x1={prev.x} y1={-prev.y}
+                x2={p.x} y2={-p.y}
+                stroke="var(--teal)"
+                strokeWidth={maxDim * 0.02 + 1}
+                strokeLinecap="round"
+                initial={isLast ? { pathLength: 0 } : { pathLength: 1 }}
+                animate={isActive ? { pathLength: 1 } : { pathLength: 0 }}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                style={{ filter: 'drop-shadow(0 0 6px rgba(20, 184, 166, 0.5))' }}
+              />
+              
+              {/* Distance Label */}
+              {p.label && (
+                <motion.text
+                  initial={isLast ? { opacity: 0 } : { opacity: 1 }}
+                  animate={isActive ? { opacity: 1 } : { opacity: 0 }}
+                  transition={{ delay: isLast ? 0.8 : 0 }}
+                  x={(prev.x + p.x) / 2} 
+                  y={-(prev.y + p.y) / 2 - (maxDim * 0.03)}
+                  fontSize={maxDim * 0.04 + 2}
+                  fill="var(--text-main)"
+                  fontWeight="bold"
+                  textAnchor="middle"
+                >
+                  {p.label}
+                </motion.text>
+              )}
+              
+              {/* Turn Label / Facing */}
+              {p.turn && isLast && (
+                <motion.text
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={isActive ? { opacity: 1, y: 0 } : {}}
+                  transition={{ delay: 1 }}
+                  x={p.x} y={-p.y - (maxDim * 0.06)}
+                  fontSize={maxDim * 0.035 + 1}
+                  fill="var(--orange)"
+                  fontWeight="bold"
+                  textAnchor="middle"
+                >
+                  {p.turn} {p.facing && `(${p.facing})`}
+                </motion.text>
+              )}
+            </g>
+          );
+        })}
+
+        {/* Hypotenuse (Dashed Line) */}
+        {hypotenuse && (
+          <g>
+            <motion.line
+              x1={hypotenuse.fromX} y1={-hypotenuse.fromY}
+              x2={hypotenuse.toX} y2={-hypotenuse.toY}
+              stroke="var(--violet)"
+              strokeWidth={maxDim * 0.015 + 1}
+              strokeDasharray={`${maxDim * 0.04} ${maxDim * 0.04}`}
+              initial={{ pathLength: 0 }}
+              animate={isActive ? { pathLength: 1 } : {}}
+              transition={{ duration: 1.5, delay: 1 }}
+            />
+            {hypotenuse.label && (
+               <motion.text
+                  initial={{ opacity: 0 }}
+                  animate={isActive ? { opacity: 1 } : {}}
+                  transition={{ delay: 2 }}
+                  x={(hypotenuse.fromX + hypotenuse.toX) / 2} 
+                  y={-(hypotenuse.fromY + hypotenuse.toY) / 2 + (maxDim * 0.05)}
+                  fontSize={maxDim * 0.04 + 2}
+                  fill="var(--violet)"
+                  fontWeight="bold"
+                  textAnchor="middle"
+                >
+                  {hypotenuse.label}
+                </motion.text>
+            )}
+          </g>
+        )}
+
+        {/* Final Marker Glow */}
+        {finalMarker && (
+          <motion.circle
+            cx={finalMarker.x} cy={-finalMarker.y} r={maxDim * 0.06 + 4}
+            fill="rgba(16, 185, 129, 0.3)"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={isActive ? { scale: [0, 1.2, 1], opacity: 1 } : {}}
+            transition={{ duration: 0.5, delay: 1.2 }}
+          />
+        )}
+        
+        {/* Final Marker Label */}
+        {finalMarker && finalMarker.label && (
+          <motion.text
+            initial={{ opacity: 0 }}
+            animate={isActive ? { opacity: 1 } : {}}
+            transition={{ delay: 1.5 }}
+            x={finalMarker.x} y={-finalMarker.y + (maxDim * 0.08 + 4)}
+            fontSize={maxDim * 0.04 + 2}
+            fill="var(--green)"
+            fontWeight="bold"
+            textAnchor="middle"
+          >
+            {finalMarker.label}
+          </motion.text>
+        )}
+
+        {/* Character Dot Animating Along the path */}
+        {path.length > 1 && (
+          <motion.circle
+            r={maxDim * 0.035 + 2}
+            fill="var(--amber)"
+            style={{ filter: 'drop-shadow(0 0 8px var(--amber))' }}
+            initial={isActive ? { cx: prevPoint.x, cy: -prevPoint.y } : { cx: lastPoint.x, cy: -lastPoint.y }}
+            animate={isActive ? { cx: lastPoint.x, cy: -lastPoint.y } : {}}
+            transition={{ duration: 1, ease: "easeInOut" }}
+          />
+        )}
+      </svg>
+    </div>
+  );
+}
