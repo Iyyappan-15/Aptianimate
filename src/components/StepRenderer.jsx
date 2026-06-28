@@ -83,7 +83,11 @@ function FormulaHighlight({ step, isActive }) {
 
   return (
     <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', width: '100%' }}>
-      {/* Formula scroll wrapper — outer handles overflow, inner centers content */}
+      {/*
+       * BULLETPROOF CENTERING: outer text-align:center + inner display:inline-flex
+       * Inline elements centered by text-align start at x≥0, so overflow:hidden on
+       * the parent panel can never clip the leftmost formula token.
+       */}
       <div style={{
         marginBottom: '24px',
         background: 'var(--surface2)',
@@ -93,17 +97,17 @@ function FormulaHighlight({ step, isActive }) {
         width: '100%',
         overflowX: 'auto',
         overflowY: 'visible',
-        scrollbarWidth: 'thin'
+        scrollbarWidth: 'thin',
+        textAlign: 'center'
       }}>
-        {/* Inner row: max-content width + margin auto = never clips left element */}
         <div className="custom-scrollbar" style={{
-          display: 'flex',
+          display: 'inline-flex',
           flexWrap: 'nowrap',
           alignItems: 'center',
           gap: '12px',
-          padding: '24px 40px',
-          width: 'max-content',
-          margin: '0 auto'
+          padding: '24px 32px',
+          textAlign: 'left',
+          verticalAlign: 'middle'
         }}>
         {formulaVars.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
@@ -115,10 +119,11 @@ function FormulaHighlight({ step, isActive }) {
                 opacity: visibleVars.includes(i) ? 1 : 0,
                 transform: visibleVars.includes(i) ? 'translateY(0) scale(1)' : 'translateY(-10px) scale(0.9)',
                 transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-                display: 'flex',
+                display: 'inline-flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 gap: '6px',
+                flexShrink: 0
               }}
             >
               {op ? (
