@@ -615,3 +615,78 @@ export function EntityEngine({ step, isActive }) {
     </div>
   );
 }
+
+// ==========================================
+// 6. Pie Engine (Data Interpretation Donut Chart)
+// ==========================================
+export function PieEngine({ step, isActive }) {
+  const data = step.render_data || {};
+  const slices = data.slices || [];
+  
+  const total = slices.reduce((acc, s) => acc + (s.val || 0), 0) || 1;
+  const C = 2 * Math.PI * 40; // r=40
+  
+  let cumulative = 0;
+  const chartData = slices.map((slice, i) => {
+    const percent = (slice.val || 0) / total;
+    const length = percent * C;
+    const offset = cumulative;
+    cumulative += length;
+    
+    return {
+      ...slice,
+      percent,
+      length,
+      offset
+    };
+  });
+
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '32px', width: '100%', justifyContent: 'center', padding: '16px 0' }}>
+      
+      {/* Chart */}
+      <div style={{ position: 'relative', width: '160px', height: '160px' }}>
+        <svg viewBox="0 0 100 100" style={{ transform: 'rotate(-90deg)', width: '100%', height: '100%', overflow: 'visible' }}>
+          {/* Background track (optional, if we want a gray ring) */}
+          <circle cx="50" cy="50" r="40" fill="transparent" stroke="var(--card-bg)" strokeWidth="20" />
+          
+          {/* Slices */}
+          {chartData.map((s, i) => (
+            <motion.circle
+              key={i}
+              cx="50" cy="50" r="40"
+              fill="transparent"
+              stroke={s.color || 'var(--violet)'}
+              strokeWidth="20"
+              initial={{ strokeDasharray: `0 ${C}` }}
+              animate={isActive ? { strokeDasharray: `${s.length} ${C}` } : { strokeDasharray: `0 ${C}` }}
+              transition={{ duration: 0.8, delay: 0.1 + (i * 0.15), ease: "easeOut" }}
+              strokeDashoffset={-s.offset}
+            />
+          ))}
+        </svg>
+      </div>
+      
+      {/* Legend */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', minWidth: '120px' }}>
+        {chartData.map((s, i) => (
+          <motion.div 
+            key={i} 
+            initial={{ opacity: 0, x: 20 }}
+            animate={isActive ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+            transition={{ delay: 0.4 + (i * 0.1) }}
+            style={{ display: 'flex', alignItems: 'center', gap: '10px' }}
+          >
+            <div style={{ width: '14px', height: '14px', borderRadius: '4px', background: s.color || 'var(--violet)' }} />
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <span style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-main)', lineHeight: 1 }}>{s.label}</span>
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-sec)', marginTop: '2px' }}>
+                {s.val} ({(s.percent * 100).toFixed(1)}%)
+              </span>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
