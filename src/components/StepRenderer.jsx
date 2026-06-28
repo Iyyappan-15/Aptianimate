@@ -3,7 +3,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { describeArc, CHART_COLORS } from '../utils/animationHelpers';
-import { GridEngine, NodeEngine, AxisEngine, BarEngine, EntityEngine, PieEngine } from './SuperEngines';
+import { GridEngine, NodeEngine, AxisEngine, BarEngine, EntityEngine, PieEngine, DirectionEngine } from './SuperEngines';
 
 export default function StepRenderer({ step, isActive }) {
   if (!step) return null;
@@ -19,6 +19,7 @@ export default function StepRenderer({ step, isActive }) {
     case 'bar_engine':        return <BarEngine step={step} isActive={isActive} />;
     case 'entity_engine':     return <EntityEngine step={step} isActive={isActive} />;
     case 'pie_engine':        return <PieEngine step={step} isActive={isActive} />;
+    case 'direction_engine':  return <DirectionEngine step={step} isActive={isActive} />;
 
     // Formula engine — reads from render_data.formula_vars (new) or step.formula_vars (legacy)
     case 'formula_engine':    return <FormulaHighlight step={step} isActive={isActive} />;
