@@ -14,6 +14,7 @@ import GovtPYQPage from './pages/GovtPYQPage';
 import GovtRoadmapPage from './pages/GovtRoadmapPage';
 import GovtDailyPracticePage from './pages/GovtDailyPracticePage';
 import SplashScreen from './components/SplashScreen';
+import DoodleOverlay from './components/DoodleOverlay';
 
 function App() {
   const [route, setRoute] = useState(window.location.hash.replace('#/', '') || '');
@@ -152,6 +153,8 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
+      {/* Global Scratchpad — floats over every page */}
+      <DoodleOverlay />
       <Analytics />
     </>
   );
