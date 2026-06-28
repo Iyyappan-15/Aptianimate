@@ -6,7 +6,7 @@
 //  what they get when they submit a real question.
 // ─────────────────────────────────────────────────────────────────
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { parseUserQuestion } from '../api/groqApi';
 import AnimationPlayer from './AnimationPlayer';
 
@@ -21,10 +21,73 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
   const [selectedOption, setSelectedOption] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
 
+  // ── Image Upload state ────────────────────────────────────────
+  const [imagePreview, setImagePreview]   = useState(null); // data URL for display
+  const [imageBase64,  setImageBase64]    = useState(null); // compressed base64 for API
+  const [isDragging, setIsDragging]       = useState(false);
+  const fileInputRef = useRef(null);
+
+  // Compress image client-side to max 1024px, JPEG 80%
+  const compressImage = (file) => new Promise((resolve) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      const MAX = 1024;
+      let { width, height } = img;
+      if (width > MAX || height > MAX) {
+        if (width > height) { height = Math.round(height * MAX / width); width = MAX; }
+        else                { width  = Math.round(width  * MAX / height); height = MAX; }
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width  = width;
+      canvas.height = height;
+      canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+      URL.revokeObjectURL(url);
+      resolve(canvas.toDataURL('image/jpeg', 0.8)); // ~100-250 KB
+    };
+    img.src = url;
+  });
+
+  const processFile = async (file) => {
+    if (!file || !file.type.startsWith('image/')) return;
+    const compressed = await compressImage(file);
+    setImagePreview(compressed);          // thumbnail preview
+    setImageBase64(compressed);           // what we send to Gemini
+  };
+
+  const handleImageChange = (e) => {
+    processFile(e.target.files[0]);
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = (e) => {
+    e.preventDefault();
+    setIsDragging(false);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setIsDragging(false);
+    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      processFile(e.dataTransfer.files[0]);
+    }
+  };
+
+  const removeImage = () => {
+    setImagePreview(null);
+    setImageBase64(null);
+    if (fileInputRef.current) fileInputRef.current.value = '';
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const q = userQuestion.trim();
-    if (!q) return;
+    // Allow text-only OR image-only OR both
+    if (!q && !imageBase64) return;
 
     setState(STATES.LOADING);
     setResult(null);
@@ -34,7 +97,8 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
     setShowExplanation(false);
 
     try {
-      const data = await parseUserQuestion(q);
+      // Pass imageBase64 (null when no image selected — text-only mode)
+      const data = await parseUserQuestion(q, imageBase64);
       setResult(data);
       setState(STATES.SUCCESS);
     } catch (err) {
@@ -46,6 +110,7 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
   const handleReset = () => {
     setState(STATES.IDLE);
     setUserQuestion('');
+    removeImage();
     setResult(null);
     setErrorMsg('');
     setShowFollowUp(false);
@@ -76,20 +141,73 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
       {/* ── Question Input (always visible when idle or error) ── */}
       {(state === STATES.IDLE || state === STATES.ERROR) && (
         <form className="ai-solver-form" onSubmit={handleSubmit}>
-          <div className="ai-solver-input-wrap">
-            <textarea
-              className="ai-solver-textarea"
-              placeholder={`Ask any ${topicName} question...\ne.g. "A can do a work in 10 days, B in 15 days. Together in how many days?"`}
-              value={userQuestion}
-              onChange={(e) => setUserQuestion(e.target.value)}
-              rows={4}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
-                  handleSubmit(e);
-                }
+          <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+            <div 
+              className="ai-solver-input-wrap" 
+              style={{ 
+                flex: 1, 
+                transition: 'all 0.2s',
+                borderRadius: 'var(--radius)',
+                border: isDragging ? '2px dashed var(--violet)' : '2px dashed transparent',
+                backgroundColor: isDragging ? 'rgba(124,58,237,0.05)' : 'transparent',
+                padding: isDragging ? '4px' : '0'
               }}
-            />
-            <div className="ai-solver-hint">Press Ctrl + Enter to submit</div>
+              onDragOver={handleDragOver}
+              onDragLeave={handleDragLeave}
+              onDrop={handleDrop}
+            >
+              <textarea
+                className="ai-solver-textarea"
+                placeholder={isDragging ? 'Drop image here...' : `Ask any ${topicName} question...\ne.g. "A can do a work in 10 days, B in 15 days. Together in how many days?"`}
+                value={userQuestion}
+                onChange={(e) => setUserQuestion(e.target.value)}
+                rows={4}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+                    handleSubmit(e);
+                  }
+                }}
+              />
+              <div className="ai-solver-hint">
+                {isDragging ? 'Drop image to upload' : 'Press Ctrl + Enter to submit'}
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                style={{
+                  width: '48px', height: '48px', borderRadius: '12px',
+                  background: imagePreview ? 'var(--violet)' : 'var(--card-bg, rgba(255,255,255,0.05))',
+                  border: '1px solid var(--border)',
+                  color: imagePreview ? '#fff' : 'var(--text-sec)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  cursor: 'pointer', transition: 'all 0.2s',
+                  boxShadow: imagePreview ? '0 4px 12px rgba(124,58,237,0.3)' : 'none'
+                }}
+                title="Upload Chart / Table"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="17 8 12 3 7 8"/>
+                  <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+              </button>
+              <input type="file" ref={fileInputRef} onChange={handleImageChange} accept="image/*" style={{ display: 'none' }} />
+              
+              {/* Image preview thumbnail below the button */}
+              {imagePreview && (
+                <div style={{ position: 'relative', width: '48px', height: '48px', borderRadius: '8px', overflow: 'hidden', border: '1.5px solid var(--violet)' }}>
+                  <img src={imagePreview} alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <button
+                    type="button"
+                    onClick={removeImage}
+                    style={{ position: 'absolute', top: 2, right: 2, width: 16, height: 16, borderRadius: '50%', background: 'rgba(239,68,68,0.9)', color: '#fff', border: 'none', fontSize: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+                  >✕</button>
+                </div>
+              )}
+            </div>
           </div>
 
           {state === STATES.ERROR && (
@@ -103,7 +221,7 @@ export default function AISolver({ topicColor = 'var(--violet)', topicName = '' 
             type="submit"
             className="ai-solver-submit"
             style={{ '--solver-color': topicColor }}
-            disabled={!userQuestion.trim()}
+            disabled={!userQuestion.trim() && !imageBase64}
           >
             <span>✨ Solve Visually</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
