@@ -98,10 +98,10 @@ export default function AnimationPlayer({ animationScript, conceptSummary, formu
       </div>
 
       {/* Visual Build-up Stage */}
-      <div className="anim-steps-container" style={{ display: 'flex', flexDirection: 'column', gap: '32px', padding: '0 16px 24px' }}>
+      <div className="anim-steps-container" style={{ display: 'flex', flexDirection: 'column', gap: '32px', padding: '0 8px 24px' }}>
         
         {/* SINGLE PINNED STAGE */}
-        <div className="anim-stage" style={{ minHeight: 'unset', padding: '24px 16px', margin: 0, position: 'sticky', top: 0, zIndex: 10, background: 'var(--surface)' }}>
+        <div className="anim-stage" style={{ minHeight: 'unset', padding: '24px 32px', margin: 0, position: 'sticky', top: 0, zIndex: 10, background: 'var(--surface)', overflowX: 'auto', overflowY: 'visible' }}>
           <StepRenderer step={steps[currentStep]} isActive={true} />
         </div>
 

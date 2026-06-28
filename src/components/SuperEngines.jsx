@@ -139,7 +139,7 @@ export function NodeEngine({ step, isActive }) {
   }, {});
 
   return (
-    <div ref={containerRef} style={{ position: 'relative', width: '100%', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '40px', padding: '20px' }}>
+    <div ref={containerRef} style={{ position: 'relative', width: '100%', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '40px', padding: '20px 40px', overflowX: 'auto', overflowY: 'visible' }}>
       
       {/* SVG Canvas for connecting lines */}
       <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0 }}>
