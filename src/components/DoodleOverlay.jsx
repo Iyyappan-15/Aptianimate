@@ -6,6 +6,7 @@
 // ─────────────────────────────────────────────────────────────────
 
 import { useState, useRef, useEffect, useCallback } from 'react';
+import { motion } from 'framer-motion';
 
 const STROKE_SIZES = [
   { label: 'S', width: 2 },
@@ -211,6 +212,23 @@ export default function DoodleOverlay() {
           text-transform: uppercase; letter-spacing: 1.2px;
           margin-bottom: 2px;
         }
+        
+        .doodle-fab {
+          transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.3s;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+          .doodle-fab {
+            /* Make it slightly translucent and smaller on mobile to not disturb content */
+            opacity: 0.6;
+            transform: scale(0.9);
+          }
+          .doodle-fab:active, .doodle-fab:hover, .doodle-fab.is-open {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+          }
+        }
       `}</style>
 
       {/* ── Canvas Overlay (only when open) ── */}
@@ -296,11 +314,15 @@ export default function DoodleOverlay() {
       )}
 
       {/* ── Floating Action Button ── */}
-      <button
-        style={fabStyle}
+      <motion.button
+        drag
+        dragMomentum={false}
+        className={`doodle-fab ${isOpen ? 'is-open' : ''}`}
+        style={{ ...fabStyle, touchAction: 'none' }}
         onClick={() => setIsOpen(v => !v)}
-        title={isOpen ? 'Close scratchpad' : 'Open scratchpad (Draw)'}
+        title={isOpen ? 'Close scratchpad' : 'Open scratchpad (Drag to move)'}
         aria-label="Toggle doodle scratchpad"
+        whileTap={{ scale: 0.95 }}
       >
         {isOpen ? (
           /* Close icon (✕) */
@@ -313,7 +335,7 @@ export default function DoodleOverlay() {
             <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
           </svg>
         )}
-      </button>
+      </motion.button>
     </>
   );
 }
