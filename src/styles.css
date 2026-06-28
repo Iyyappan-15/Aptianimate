@@ -305,10 +305,10 @@ img, svg { display: block; }
 .hint-card .label { font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
 .hint-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 
-/* â”€â”€ Animation Player â”€â”€ */
+/* ── Animation Player ── */
 .animation-panel {
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); overflow: visible;
+  border-radius: var(--radius); overflow: hidden;
   display: flex; flex-direction: column;
 }
 .anim-header {
@@ -330,9 +330,9 @@ img, svg { display: block; }
   transition: width 0.4s ease;
 }
 .anim-stage {
-  flex: 1; min-height: 320px;
+  flex: 1; min-height: 300px;
   display: flex; align-items: center; justify-content: center;
-  padding: 28px 40px; position: relative; overflow-x: auto; overflow-y: visible;
+  padding: 24px 20px; position: relative; overflow: visible;
   background: var(--surface);
 }
 .anim-controls {

@@ -82,25 +82,29 @@ function FormulaHighlight({ step, isActive }) {
     color === 'op' || ['=', '+', '-', '×', '÷', '→', '≈', '∴', '⟹'].includes(sym?.trim());
 
   return (
-    <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-      {/* Formula row */}
-      <div className="custom-scrollbar" style={{
-        display: 'flex',
-        flexWrap: 'nowrap',
-        justifyContent: 'safe center',
-        alignItems: 'center',
-        gap: '12px',
+    <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', width: '100%' }}>
+      {/* Formula scroll wrapper — outer handles overflow, inner centers content */}
+      <div style={{
         marginBottom: '24px',
-        padding: '24px 40px',
         background: 'var(--surface2)',
         borderRadius: '16px',
         border: '1px solid var(--border)',
         boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
         width: '100%',
-        maxWidth: '100%',
         overflowX: 'auto',
+        overflowY: 'visible',
         scrollbarWidth: 'thin'
       }}>
+        {/* Inner row: max-content width + margin auto = never clips left element */}
+        <div className="custom-scrollbar" style={{
+          display: 'flex',
+          flexWrap: 'nowrap',
+          alignItems: 'center',
+          gap: '12px',
+          padding: '24px 40px',
+          width: 'max-content',
+          margin: '0 auto'
+        }}>
         {formulaVars.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
           const op = isOperator(v.symbol, v.color);
@@ -151,6 +155,7 @@ function FormulaHighlight({ step, isActive }) {
             </div>
           );
         })}
+        </div>
       </div>
 
       {/* Formula description string */}

@@ -139,7 +139,7 @@ export function NodeEngine({ step, isActive }) {
   }, {});
 
   return (
-    <div ref={containerRef} style={{ position: 'relative', width: '100%', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '40px', padding: '20px 40px', overflowX: 'auto', overflowY: 'visible' }}>
+    <div ref={containerRef} style={{ position: 'relative', width: '100%', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'stretch', gap: '40px', padding: '16px 8px' }}>
       
       {/* SVG Canvas for connecting lines */}
       <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0 }}>
@@ -165,40 +165,45 @@ export function NodeEngine({ step, isActive }) {
 
       {/* Render the nodes level by level */}
       {Object.entries(grouped).map(([level, levelNodes]) => (
-        <div key={level} style={{ display: 'flex', flexWrap: 'wrap', gap: '48px', justifyContent: 'center', zIndex: 1 }}>
-          {levelNodes.map((node) => {
-            const nodeIndex = nodes.findIndex(n => n.id === node.id);
-            const isVisible = revealed.includes(nodeIndex);
-            const isHighlight = node.highlight;
-            
-            return (
-              <motion.div
-                key={node.id}
-                ref={el => nodeRefs.current[node.id] = el}
-                initial={{ opacity: 0, scale: 0.5, y: -20 }}
-                animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.5, y: isVisible ? 0 : -20 }}
-                transition={{ type: 'spring', stiffness: 200, damping: 15 }}
-                style={{
-                  padding: '12px 28px',
-                  backgroundColor: isHighlight ? 'rgba(245, 158, 11, 0.1)' : 'var(--surface2)',
-                  border: isHighlight ? '2px solid var(--amber)' : '2px solid var(--violet)',
-                  borderRadius: '16px',
-                  fontWeight: '800',
-                  fontSize: '1.2rem',
-                  color: isHighlight ? 'var(--amber)' : 'var(--text-main)',
-                  boxShadow: isHighlight ? '0 0 20px rgba(245, 158, 11, 0.3)' : '0 4px 12px rgba(0,0,0,0.1)',
-                  backdropFilter: 'blur(8px)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                  minWidth: '100px'
-                }}
-              >
-                {node.text}
-              </motion.div>
-            );
-          })}
+        /* Outer scroll wrapper — prevents left-clipping by allowing horizontal scroll */
+        <div key={level} style={{ width: '100%', overflowX: 'auto', overflowY: 'visible', paddingBottom: '4px' }}>
+          {/* Inner row: width:max-content + margin:auto = true centering without clipping */}
+          <div style={{ display: 'flex', flexWrap: 'nowrap', gap: '32px', width: 'max-content', margin: '0 auto', zIndex: 1 }}>
+            {levelNodes.map((node) => {
+              const nodeIndex = nodes.findIndex(n => n.id === node.id);
+              const isVisible = revealed.includes(nodeIndex);
+              const isHighlight = node.highlight;
+              
+              return (
+                <motion.div
+                  key={node.id}
+                  ref={el => nodeRefs.current[node.id] = el}
+                  initial={{ opacity: 0, scale: 0.5, y: -20 }}
+                  animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.5, y: isVisible ? 0 : -20 }}
+                  transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+                  style={{
+                    padding: '12px 28px',
+                    backgroundColor: isHighlight ? 'rgba(245, 158, 11, 0.1)' : 'var(--surface2)',
+                    border: isHighlight ? '2px solid var(--amber)' : '2px solid var(--violet)',
+                    borderRadius: '16px',
+                    fontWeight: '800',
+                    fontSize: '1.1rem',
+                    color: isHighlight ? 'var(--amber)' : 'var(--text-main)',
+                    boxShadow: isHighlight ? '0 0 20px rgba(245, 158, 11, 0.3)' : '0 4px 12px rgba(0,0,0,0.1)',
+                    backdropFilter: 'blur(8px)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    textAlign: 'center',
+                    minWidth: '100px',
+                    whiteSpace: 'nowrap'
+                  }}
+                >
+                  {node.text}
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
       ))}
     </div>
