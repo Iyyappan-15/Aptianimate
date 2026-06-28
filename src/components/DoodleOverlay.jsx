@@ -23,6 +23,7 @@ const PEN_COLORS = [
 
 export default function DoodleOverlay() {
   const [isOpen, setIsOpen]           = useState(false);
+  const [showToolbar, setShowToolbar] = useState(false);
   const [strokeWidth, setStrokeWidth] = useState(5);
   const [penColor, setPenColor]       = useState('#1e3a8a');
   const [isDrawing, setIsDrawing]     = useState(false);
@@ -90,6 +91,7 @@ export default function DoodleOverlay() {
 
   const startDraw = (e) => {
     if (!ctxRef.current) return;
+    setShowToolbar(false); // Auto-hide toolbar on draw
     const { x, y } = getXY(e);
     ctxRef.current.beginPath();
     ctxRef.current.moveTo(x, y);
@@ -121,6 +123,7 @@ export default function DoodleOverlay() {
 
   const closeDoodle = () => {
     setIsOpen(false);
+    setShowToolbar(false);
     setIsDrawing(false);
   };
 
@@ -133,18 +136,18 @@ export default function DoodleOverlay() {
     height:          '52px',
     borderRadius:    '50%',
     background:      isOpen
-      ? 'linear-gradient(135deg, #7c3aed, #14b8a6)'
+      ? 'var(--card-bg, #1e293b)'
       : 'linear-gradient(135deg, rgba(124,58,237,0.90), rgba(124,58,237,0.75))',
-    color:           '#fff',
+    color:           isOpen ? 'var(--text-main, #f1f5f9)' : '#fff',
     border:          '2px solid rgba(255,255,255,0.25)',
     boxShadow:       '0 4px 18px rgba(124,58,237,0.45)',
     cursor:          'pointer',
     display:         'flex',
     alignItems:      'center',
     justifyContent:  'center',
-    zIndex:          10000,
+    zIndex:          10002,
     transition:      'transform 0.25s ease, box-shadow 0.25s ease',
-    transform:       isOpen ? 'rotate(45deg) scale(1.08)' : 'scale(1)',
+    transform:       (isOpen && showToolbar) ? 'scale(1.05)' : 'scale(1)',
   };
 
   const toolbarStyle = {
@@ -229,6 +232,17 @@ export default function DoodleOverlay() {
             transform: scale(1) !important;
           }
         }
+        
+        .doodle-quick-actions {
+          position: fixed;
+          bottom: 28px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          gap: 12px;
+          z-index: 10001;
+          animation: doodle-slide-in 0.22s ease;
+        }
       `}</style>
 
       {/* ── Canvas Overlay (only when open) ── */}
@@ -257,7 +271,7 @@ export default function DoodleOverlay() {
       )}
 
       {/* ── Toolbar (visible when open) ── */}
-      {isOpen && (
+      {isOpen && showToolbar && (
         <div style={toolbarStyle}>
 
           {/* Pen Size */}
@@ -267,7 +281,7 @@ export default function DoodleOverlay() {
               <button
                 key={s.label}
                 className={`doodle-size-btn ${strokeWidth === s.width ? 'active' : ''}`}
-                onClick={() => setStrokeWidth(s.width)}
+                onClick={() => { setStrokeWidth(s.width); setShowToolbar(false); }}
                 title={`${s.label} pen`}
               >
                 {s.label}
@@ -283,27 +297,28 @@ export default function DoodleOverlay() {
                 key={c.color}
                 className={`doodle-color-btn ${penColor === c.color ? 'active' : ''}`}
                 style={{ background: c.color }}
-                onClick={() => setPenColor(c.color)}
+                onClick={() => { setPenColor(c.color); setShowToolbar(false); }}
                 title={c.label}
               />
             ))}
           </div>
+        </div>
+      )}
 
-          <div className="doodle-divider" />
-
-          {/* Clear */}
-          <button className="doodle-action-btn" onClick={clearCanvas}>
+      {/* ── Quick Actions (Clear & Done) always visible when drawing ── */}
+      {isOpen && (
+        <div className="doodle-quick-actions">
+          <button className="doodle-action-btn" style={{ width: 'auto', padding: '8px 16px', boxShadow: '0 4px 12px rgba(0,0,0,0.3)', background: 'var(--card-bg)' }} onClick={clearCanvas}>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
               <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
             </svg>
-            Clear Canvas
+            Clear
           </button>
 
-          {/* Done */}
           <button
             className="doodle-action-btn"
             onClick={closeDoodle}
-            style={{ background: 'rgba(16,185,129,0.15)', borderColor: 'rgba(16,185,129,0.35)', color: '#34d399' }}
+            style={{ width: 'auto', padding: '8px 16px', boxShadow: '0 4px 12px rgba(0,0,0,0.3)', background: 'rgba(16,185,129,0.15)', borderColor: 'rgba(16,185,129,0.35)', color: '#34d399' }}
           >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M5 13l4 4L19 7"/>
@@ -319,15 +334,26 @@ export default function DoodleOverlay() {
         dragMomentum={false}
         className={`doodle-fab ${isOpen ? 'is-open' : ''}`}
         style={{ ...fabStyle, touchAction: 'none' }}
-        onClick={() => setIsOpen(v => !v)}
-        title={isOpen ? 'Close scratchpad' : 'Open scratchpad (Drag to move)'}
+        onClick={() => {
+          if (!isOpen) {
+            setIsOpen(true);
+            setShowToolbar(true);
+          } else {
+            setShowToolbar(v => !v);
+          }
+        }}
+        title={isOpen ? 'Toggle Palette' : 'Open scratchpad'}
         aria-label="Toggle doodle scratchpad"
         whileTap={{ scale: 0.95 }}
       >
         {isOpen ? (
-          /* Close icon (✕) */
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          /* Palette / Settings icon */
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
+            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
+            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
+            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.38 0 2.5-1.12 2.5-2.5 0-.61-.23-1.17-.61-1.61-.31-.35-.49-.8-.49-1.29 0-1.01.81-1.83 1.83-1.83h2.32c2.72 0 4.95-2.23 4.95-4.95C22 6.58 17.52 2 12 2z"/>
           </svg>
         ) : (
           /* Pencil icon */
