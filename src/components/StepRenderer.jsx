@@ -87,18 +87,19 @@ function FormulaHighlight({ step, isActive }) {
       <div className="custom-scrollbar" style={{
         display: 'flex',
         flexWrap: 'nowrap',
-        justifyContent: 'center',
+        justifyContent: 'safe center',
         alignItems: 'center',
         gap: '12px',
         marginBottom: '24px',
-        padding: '24px',
+        padding: '24px 40px',
         background: 'var(--surface2)',
         borderRadius: '16px',
         border: '1px solid var(--border)',
         boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
         width: '100%',
         maxWidth: '100%',
-        overflowX: 'auto'
+        overflowX: 'auto',
+        scrollbarWidth: 'thin'
       }}>
         {formulaVars.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
