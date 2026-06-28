@@ -117,6 +117,7 @@ export function NodeEngine({ step, isActive }) {
         const nodeIndex = nodes.findIndex(n => n.id === node.id);
         const parentIndex = nodes.findIndex(n => n.id === node.parentId);
         
+        // Parent -> Child line (diagonal/vertical)
         if (node.parentId && revealed.includes(nodeIndex) && revealed.includes(parentIndex)) {
           const parentEl = nodeRefs.current[node.parentId];
           const childEl = nodeRefs.current[node.id];
@@ -133,6 +134,41 @@ export function NodeEngine({ step, isActive }) {
           }
         }
       });
+
+      // Sibling lines (horizontal connections between adjacent nodes on the same level)
+      // Group nodes by level to connect siblings
+      const grouped = nodes.reduce((acc, node) => {
+        (acc[node.level] = acc[node.level] || []).push(node);
+        return acc;
+      }, {});
+
+      Object.values(grouped).forEach(levelNodes => {
+        // Only connect if they are on the same level and revealed
+        for (let i = 0; i < levelNodes.length - 1; i++) {
+          const n1 = levelNodes[i];
+          const n2 = levelNodes[i + 1];
+          const idx1 = nodes.findIndex(n => n.id === n1.id);
+          const idx2 = nodes.findIndex(n => n.id === n2.id);
+
+          if (revealed.includes(idx1) && revealed.includes(idx2)) {
+            const el1 = nodeRefs.current[n1.id];
+            const el2 = nodeRefs.current[n2.id];
+            if (el1 && el2) {
+              const rect1 = el1.getBoundingClientRect();
+              const rect2 = el2.getBoundingClientRect();
+              newLines.push({
+                key: `sib-${n1.id}-${n2.id}`,
+                x1: rect1.right - containerRect.left,
+                y1: rect1.top + rect1.height / 2 - containerRect.top,
+                x2: rect2.left - containerRect.left,
+                y2: rect2.top + rect2.height / 2 - containerRect.top,
+                isSibling: true // Flag to style it differently if needed
+              });
+            }
+          }
+        }
+      });
+
       setLines(newLines);
     }, 100); // 100ms for framer-motion to finish popping in
 
@@ -167,10 +203,11 @@ export function NodeEngine({ step, isActive }) {
               y1={line.y1}
               x2={line.x2}
               y2={line.y2}
-              stroke="var(--teal)"
-              strokeWidth="3"
+              stroke={line.isSibling ? "var(--muted)" : "var(--teal)"}
+              strokeWidth={line.isSibling ? "2" : "3"}
               strokeLinecap="round"
-              style={{ filter: 'drop-shadow(0px 2px 4px rgba(20, 184, 166, 0.4))' }}
+              strokeDasharray={line.isSibling ? "6, 6" : "none"}
+              style={{ filter: line.isSibling ? 'none' : 'drop-shadow(0px 2px 4px rgba(20, 184, 166, 0.4))' }}
             />
           ))}
         </AnimatePresence>
