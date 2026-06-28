@@ -165,7 +165,7 @@ export function NodeEngine({ step, isActive }) {
 
       {/* Render the nodes level by level */}
       {Object.entries(grouped).map(([level, levelNodes]) => (
-        <div key={level} style={{ display: 'flex', gap: '48px', justifyContent: 'center', zIndex: 1 }}>
+        <div key={level} style={{ display: 'flex', flexWrap: 'wrap', gap: '48px', justifyContent: 'center', zIndex: 1 }}>
           {levelNodes.map((node) => {
             const nodeIndex = nodes.findIndex(n => n.id === node.id);
             const isVisible = revealed.includes(nodeIndex);
