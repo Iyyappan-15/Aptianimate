@@ -777,23 +777,59 @@ export function DirectionEngine({ step, isActive }) {
 
   if (path.length === 0) return <div>No path data</div>;
 
-  // 1. Calculate Bounds in SVG Coordinate Space (Y is inverted: N is -y)
-  const padding = 20;
-  let minX = Math.min(...path.map(p => p.x));
-  let maxX = Math.max(...path.map(p => p.x));
-  let minY = Math.min(...path.map(p => -p.y));
-  let maxY = Math.max(...path.map(p => -p.y));
+  // 1. Calculate raw bounds to check if path is too small
+  let rawMinX = Math.min(...path.map(p => p.x));
+  let rawMaxX = Math.max(...path.map(p => p.x));
+  let rawMinY = Math.min(...path.map(p => -p.y));
+  let rawMaxY = Math.max(...path.map(p => -p.y));
 
   if (hypotenuse) {
-    minX = Math.min(minX, hypotenuse.fromX, hypotenuse.toX);
-    maxX = Math.max(maxX, hypotenuse.fromX, hypotenuse.toX);
-    minY = Math.min(minY, -hypotenuse.fromY, -hypotenuse.toY);
-    maxY = Math.max(maxY, -hypotenuse.fromY, -hypotenuse.toY);
+    rawMinX = Math.min(rawMinX, hypotenuse.fromX, hypotenuse.toX);
+    rawMaxX = Math.max(rawMaxX, hypotenuse.fromX, hypotenuse.toX);
+    rawMinY = Math.min(rawMinY, -hypotenuse.fromY, -hypotenuse.toY);
+    rawMaxY = Math.max(rawMaxY, -hypotenuse.fromY, -hypotenuse.toY);
+  }
+
+  const rawWidth = Math.max(rawMaxX - rawMinX, 0.1);
+  const rawHeight = Math.max(rawMaxY - rawMinY, 0.1);
+  const rawMaxDim = Math.max(rawWidth, rawHeight);
+
+  // If the total dimension is very small (e.g. 1 unit), text offsets will overlap. 
+  // We scale all coordinates up so maxDim is at least 100.
+  const scaleFactor = rawMaxDim < 100 ? (100 / rawMaxDim) : 1;
+
+  // 2. Create scaled versions of the data
+  const sPath = path.map(p => ({ ...p, x: p.x * scaleFactor, y: p.y * scaleFactor }));
+  const sHypotenuse = hypotenuse ? {
+    ...hypotenuse,
+    fromX: hypotenuse.fromX * scaleFactor,
+    fromY: hypotenuse.fromY * scaleFactor,
+    toX: hypotenuse.toX * scaleFactor,
+    toY: hypotenuse.toY * scaleFactor
+  } : null;
+  const sFinalMarker = finalMarker ? {
+    ...finalMarker,
+    x: finalMarker.x * scaleFactor,
+    y: finalMarker.y * scaleFactor
+  } : null;
+
+  // 3. Calculate SVG Bounds based on scaled coordinates (Y is inverted: N is -y)
+  const padding = 20;
+  let minX = Math.min(...sPath.map(p => p.x));
+  let maxX = Math.max(...sPath.map(p => p.x));
+  let minY = Math.min(...sPath.map(p => -p.y));
+  let maxY = Math.max(...sPath.map(p => -p.y));
+
+  if (sHypotenuse) {
+    minX = Math.min(minX, sHypotenuse.fromX, sHypotenuse.toX);
+    maxX = Math.max(maxX, sHypotenuse.fromX, sHypotenuse.toX);
+    minY = Math.min(minY, -sHypotenuse.fromY, -sHypotenuse.toY);
+    maxY = Math.max(maxY, -sHypotenuse.fromY, -sHypotenuse.toY);
   }
 
   // Ensure square-ish aspect ratio and minimum size so it doesn't look weird
-  const width = Math.max(maxX - minX, 10);
-  const height = Math.max(maxY - minY, 10);
+  const width = Math.max(maxX - minX, 100);
+  const height = Math.max(maxY - minY, 100);
   const maxDim = Math.max(width, height);
   
   // Center it
@@ -808,8 +844,8 @@ export function DirectionEngine({ step, isActive }) {
   const vHeight = vMaxY - vMinY;
 
   // The last point for character animation
-  const lastPoint = path[path.length - 1];
-  const prevPoint = path.length > 1 ? path[path.length - 2] : lastPoint;
+  const lastPoint = sPath[sPath.length - 1];
+  const prevPoint = sPath.length > 1 ? sPath[sPath.length - 2] : lastPoint;
 
   return (
     <div style={{ position: 'relative', width: '100%', minHeight: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'var(--card-bg)', borderRadius: '16px', padding: '16px', overflow: 'hidden' }}>
@@ -833,14 +869,14 @@ export function DirectionEngine({ step, isActive }) {
         style={{ width: '100%', height: '100%', maxHeight: '400px', overflow: 'visible' }}
       >
         {/* Start Marker */}
-        <circle cx={path[0].x} cy={-path[0].y} r={maxDim * 0.03 + 2} fill="var(--blue)" />
-        <text x={path[0].x} y={-path[0].y + (maxDim * 0.06 + 4)} fontSize={maxDim * 0.04 + 2} fill="var(--blue)" textAnchor="middle" fontWeight="bold">Start</text>
+        <circle cx={sPath[0].x} cy={-sPath[0].y} r={maxDim * 0.03 + 2} fill="var(--blue)" />
+        <text x={sPath[0].x} y={-sPath[0].y + (maxDim * 0.06 + 4)} fontSize={maxDim * 0.04 + 2} fill="var(--blue)" textAnchor="middle" fontWeight="bold">Start</text>
 
         {/* Paths */}
-        {path.map((p, i) => {
+        {sPath.map((p, i) => {
           if (i === 0) return null;
-          const prev = path[i - 1];
-          const isLast = i === path.length - 1;
+          const prev = sPath[i - 1];
+          const isLast = i === sPath.length - 1;
           
           return (
             <g key={`path-${i}`}>
@@ -893,11 +929,11 @@ export function DirectionEngine({ step, isActive }) {
         })}
 
         {/* Hypotenuse (Dashed Line) */}
-        {hypotenuse && (
+        {sHypotenuse && (
           <g>
             <motion.line
-              x1={hypotenuse.fromX} y1={-hypotenuse.fromY}
-              x2={hypotenuse.toX} y2={-hypotenuse.toY}
+              x1={sHypotenuse.fromX} y1={-sHypotenuse.fromY}
+              x2={sHypotenuse.toX} y2={-sHypotenuse.toY}
               stroke="var(--violet)"
               strokeWidth={maxDim * 0.015 + 1}
               strokeDasharray={`${maxDim * 0.04} ${maxDim * 0.04}`}
@@ -905,28 +941,28 @@ export function DirectionEngine({ step, isActive }) {
               animate={isActive ? { pathLength: 1 } : {}}
               transition={{ duration: 1.5, delay: 1 }}
             />
-            {hypotenuse.label && (
+            {sHypotenuse.label && (
                <motion.text
                   initial={{ opacity: 0 }}
                   animate={isActive ? { opacity: 1 } : {}}
                   transition={{ delay: 2 }}
-                  x={(hypotenuse.fromX + hypotenuse.toX) / 2} 
-                  y={-(hypotenuse.fromY + hypotenuse.toY) / 2 + (maxDim * 0.05)}
+                  x={(sHypotenuse.fromX + sHypotenuse.toX) / 2} 
+                  y={-(sHypotenuse.fromY + sHypotenuse.toY) / 2 + (maxDim * 0.05)}
                   fontSize={maxDim * 0.04 + 2}
                   fill="var(--violet)"
                   fontWeight="bold"
                   textAnchor="middle"
                 >
-                  {hypotenuse.label}
+                  {sHypotenuse.label}
                 </motion.text>
             )}
           </g>
         )}
 
         {/* Final Marker Glow */}
-        {finalMarker && (
+        {sFinalMarker && (
           <motion.circle
-            cx={finalMarker.x} cy={-finalMarker.y} r={maxDim * 0.06 + 4}
+            cx={sFinalMarker.x} cy={-sFinalMarker.y} r={maxDim * 0.06 + 4}
             fill="rgba(16, 185, 129, 0.3)"
             initial={{ scale: 0, opacity: 0 }}
             animate={isActive ? { scale: [0, 1.2, 1], opacity: 1 } : {}}
@@ -935,23 +971,23 @@ export function DirectionEngine({ step, isActive }) {
         )}
         
         {/* Final Marker Label */}
-        {finalMarker && finalMarker.label && (
+        {sFinalMarker && sFinalMarker.label && (
           <motion.text
             initial={{ opacity: 0 }}
             animate={isActive ? { opacity: 1 } : {}}
             transition={{ delay: 1.5 }}
-            x={finalMarker.x} y={-finalMarker.y + (maxDim * 0.08 + 4)}
+            x={sFinalMarker.x} y={-sFinalMarker.y + (maxDim * 0.08 + 4)}
             fontSize={maxDim * 0.04 + 2}
             fill="var(--green)"
             fontWeight="bold"
             textAnchor="middle"
           >
-            {finalMarker.label}
+            {sFinalMarker.label}
           </motion.text>
         )}
 
         {/* Character Dot Animating Along the path */}
-        {path.length > 1 && (
+        {sPath.length > 1 && (
           <motion.circle
             r={maxDim * 0.035 + 2}
             fill="var(--amber)"
