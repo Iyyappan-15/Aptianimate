@@ -794,9 +794,9 @@ export function DirectionEngine({ step, isActive }) {
   const rawHeight = Math.max(rawMaxY - rawMinY, 0.1);
   const rawMaxDim = Math.max(rawWidth, rawHeight);
 
-  // If the total dimension is very small (e.g. 1 unit), text offsets will overlap. 
-  // We scale all coordinates up so maxDim is at least 100.
-  const scaleFactor = rawMaxDim < 100 ? (100 / rawMaxDim) : 1;
+  // We ALWAYS scale all coordinates up so maxDim is exactly 100.
+  // This allows us to use perfectly hardcoded font sizes and offsets that never overlap.
+  const scaleFactor = 100 / rawMaxDim;
 
   // 2. Create scaled versions of the data
   const sPath = path.map(p => ({ ...p, x: p.x * scaleFactor, y: p.y * scaleFactor }));
@@ -814,7 +814,7 @@ export function DirectionEngine({ step, isActive }) {
   } : null;
 
   // 3. Calculate SVG Bounds based on scaled coordinates (Y is inverted: N is -y)
-  const padding = 20;
+  const padding = 35; // Generous padding for labels
   let minX = Math.min(...sPath.map(p => p.x));
   let maxX = Math.max(...sPath.map(p => p.x));
   let minY = Math.min(...sPath.map(p => -p.y));
@@ -827,7 +827,7 @@ export function DirectionEngine({ step, isActive }) {
     maxY = Math.max(maxY, -sHypotenuse.fromY, -sHypotenuse.toY);
   }
 
-  // Ensure square-ish aspect ratio and minimum size so it doesn't look weird
+  // maxDim is guaranteed to be 100 due to our scaling above
   const width = Math.max(maxX - minX, 100);
   const height = Math.max(maxY - minY, 100);
   const maxDim = Math.max(width, height);
@@ -869,8 +869,9 @@ export function DirectionEngine({ step, isActive }) {
         style={{ width: '100%', height: '100%', maxHeight: '400px', overflow: 'visible' }}
       >
         {/* Start Marker */}
-        <circle cx={sPath[0].x} cy={-sPath[0].y} r={maxDim * 0.03 + 2} fill="var(--blue)" />
-        <text x={sPath[0].x} y={-sPath[0].y + (maxDim * 0.06 + 4)} fontSize={maxDim * 0.04 + 2} fill="var(--blue)" textAnchor="middle" fontWeight="bold">Start</text>
+        <circle cx={sPath[0].x} cy={-sPath[0].y} r={5} fill="var(--blue)" />
+        {/* Render LLM's start label if provided, else hardcode Start */}
+        <text x={sPath[0].x} y={-sPath[0].y + 11} fontSize={5} fill="var(--blue)" textAnchor="middle" fontWeight="bold">{sPath[0].label || 'Start'}</text>
 
         {/* Paths */}
         {sPath.map((p, i) => {
@@ -884,7 +885,7 @@ export function DirectionEngine({ step, isActive }) {
                 x1={prev.x} y1={-prev.y}
                 x2={p.x} y2={-p.y}
                 stroke="var(--teal)"
-                strokeWidth={maxDim * 0.02 + 1}
+                strokeWidth={3}
                 strokeLinecap="round"
                 initial={isLast ? { pathLength: 0 } : { pathLength: 1 }}
                 animate={isActive ? { pathLength: 1 } : { pathLength: 0 }}
@@ -892,15 +893,15 @@ export function DirectionEngine({ step, isActive }) {
                 style={{ filter: 'drop-shadow(0 0 6px rgba(20, 184, 166, 0.5))' }}
               />
               
-              {/* Distance Label */}
+              {/* Distance Label (at midpoint) */}
               {p.label && (
                 <motion.text
                   initial={isLast ? { opacity: 0 } : { opacity: 1 }}
                   animate={isActive ? { opacity: 1 } : { opacity: 0 }}
                   transition={{ delay: isLast ? 0.8 : 0 }}
                   x={(prev.x + p.x) / 2} 
-                  y={-(prev.y + p.y) / 2 - (maxDim * 0.03)}
-                  fontSize={maxDim * 0.04 + 2}
+                  y={-(prev.y + p.y) / 2 - 5}
+                  fontSize={4.5}
                   fill="var(--text-main)"
                   fontWeight="bold"
                   textAnchor="middle"
@@ -909,14 +910,14 @@ export function DirectionEngine({ step, isActive }) {
                 </motion.text>
               )}
               
-              {/* Turn Label / Facing */}
+              {/* Turn Label / Facing (at end point) */}
               {p.turn && isLast && (
                 <motion.text
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={{ opacity: 0, y: -4 }}
                   animate={isActive ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 1 }}
-                  x={p.x} y={-p.y - (maxDim * 0.06)}
-                  fontSize={maxDim * 0.035 + 1}
+                  x={p.x} y={-p.y - 12}
+                  fontSize={4.5}
                   fill="var(--orange)"
                   fontWeight="bold"
                   textAnchor="middle"
@@ -935,8 +936,8 @@ export function DirectionEngine({ step, isActive }) {
               x1={sHypotenuse.fromX} y1={-sHypotenuse.fromY}
               x2={sHypotenuse.toX} y2={-sHypotenuse.toY}
               stroke="var(--violet)"
-              strokeWidth={maxDim * 0.015 + 1}
-              strokeDasharray={`${maxDim * 0.04} ${maxDim * 0.04}`}
+              strokeWidth={2.5}
+              strokeDasharray="4 4"
               initial={{ pathLength: 0 }}
               animate={isActive ? { pathLength: 1 } : {}}
               transition={{ duration: 1.5, delay: 1 }}
@@ -947,8 +948,8 @@ export function DirectionEngine({ step, isActive }) {
                   animate={isActive ? { opacity: 1 } : {}}
                   transition={{ delay: 2 }}
                   x={(sHypotenuse.fromX + sHypotenuse.toX) / 2} 
-                  y={-(sHypotenuse.fromY + sHypotenuse.toY) / 2 + (maxDim * 0.05)}
-                  fontSize={maxDim * 0.04 + 2}
+                  y={-(sHypotenuse.fromY + sHypotenuse.toY) / 2 + 10}
+                  fontSize={4.5}
                   fill="var(--violet)"
                   fontWeight="bold"
                   textAnchor="middle"
@@ -962,7 +963,7 @@ export function DirectionEngine({ step, isActive }) {
         {/* Final Marker Glow */}
         {sFinalMarker && (
           <motion.circle
-            cx={sFinalMarker.x} cy={-sFinalMarker.y} r={maxDim * 0.06 + 4}
+            cx={sFinalMarker.x} cy={-sFinalMarker.y} r={9}
             fill="rgba(16, 185, 129, 0.3)"
             initial={{ scale: 0, opacity: 0 }}
             animate={isActive ? { scale: [0, 1.2, 1], opacity: 1 } : {}}
@@ -976,8 +977,8 @@ export function DirectionEngine({ step, isActive }) {
             initial={{ opacity: 0 }}
             animate={isActive ? { opacity: 1 } : {}}
             transition={{ delay: 1.5 }}
-            x={sFinalMarker.x} y={-sFinalMarker.y + (maxDim * 0.08 + 4)}
-            fontSize={maxDim * 0.04 + 2}
+            x={sFinalMarker.x} y={-sFinalMarker.y + 20}
+            fontSize={5}
             fill="var(--green)"
             fontWeight="bold"
             textAnchor="middle"
@@ -989,7 +990,7 @@ export function DirectionEngine({ step, isActive }) {
         {/* Character Dot Animating Along the path */}
         {sPath.length > 1 && (
           <motion.circle
-            r={maxDim * 0.035 + 2}
+            r={5}
             fill="var(--amber)"
             style={{ filter: 'drop-shadow(0 0 8px var(--amber))' }}
             initial={isActive ? { cx: prevPoint.x, cy: -prevPoint.y } : { cx: lastPoint.x, cy: -lastPoint.y }}
