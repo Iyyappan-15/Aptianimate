@@ -80,17 +80,30 @@ export function NodeEngine({ step, isActive }) {
   const containerRef = useRef(null);
   const nodeRefs = useRef({});
 
+  // Create a stable key from node IDs so animation reruns whenever nodes actually change
+  // (not just when count changes — fixes the bug where step 1→5 both have 4 nodes)
+  const stepKey = nodes.map(n => n.id).join(',');
+
   useEffect(() => {
     if (!isActive) return;
+    // Reset immediately
     setRevealed([]);
     let i = 0;
     const interval = setInterval(() => {
       setRevealed(prev => [...prev, i]);
       i++;
       if (i >= nodes.length) clearInterval(interval);
-    }, 500);
-    return () => clearInterval(interval);
-  }, [isActive, nodes.length]);
+    }, 400);
+    // Safety fallback: reveal ALL nodes after 4 seconds no matter what
+    const fallback = setTimeout(() => {
+      setRevealed(nodes.map((_, idx) => idx));
+    }, 4000);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(fallback);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isActive, stepKey]);
 
   useEffect(() => {
     if (!containerRef.current || revealed.length === 0) return;
