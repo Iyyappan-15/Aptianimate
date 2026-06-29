@@ -103,69 +103,77 @@ export default function AskPage({ navigate, initialQuery = "" }) {
 
       {/* Input Form */}
       {(state === STATES.IDLE || state === STATES.ERROR) && (
-        <form onSubmit={handleSubmit} style={{ marginBottom: "32px" }}>
-          <div style={{ position: "relative", borderRadius: "16px", background: "var(--surface)", border: "2px solid var(--border)", boxShadow: "0 4px 24px rgba(0,0,0,0.06)", transition: "border-color 0.2s" }}
-            onFocusCapture={e => e.currentTarget.style.borderColor = "var(--violet)"}
-            onBlurCapture={e => e.currentTarget.style.borderColor = "var(--border)"}
-          >
-            <textarea ref={textareaRef} value={question} onChange={e => setQuestion(e.target.value)}
-              onKeyDown={e => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) handleSubmit(e); }}
-              placeholder={"Paste or type any aptitude question here...\n\ne.g. \"The average marks of 4 students are 40, 50, 60, 70. Find the overall average.\"\ne.g. \"A train 130m long crosses a 245m bridge at 45 km/hr. Find the time.\""}
-              rows={5} style={{ width: "100%", border: "none", background: "transparent", padding: "18px 20px", fontSize: "1rem", color: "var(--text-main)", resize: "vertical", outline: "none", fontFamily: "inherit", lineHeight: 1.6, boxSizing: "border-box" }}
-            />
-            <div style={{ padding: "12px 16px", display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
-              {/* Image Preview & Upload Button */}
-              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <input 
-                  type="file" 
-                  accept="image/*" 
-                  ref={fileInputRef} 
-                  style={{ display: "none" }} 
-                  onChange={handleImageUpload} 
-                />
-                
-                <button 
-                  type="button" 
-                  onClick={() => fileInputRef.current?.click()}
-                  style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", borderRadius: "10px", background: "var(--surface2)", border: "1px solid var(--border)", color: "var(--text-sec)", cursor: "pointer", transition: "all 0.2s" }}
-                  title="Upload image"
-                  onMouseOver={e => { e.currentTarget.style.color = "var(--violet)"; e.currentTarget.style.borderColor = "var(--violet)"; }}
-                  onMouseOut={e => { e.currentTarget.style.color = "var(--text-sec)"; e.currentTarget.style.borderColor = "var(--border)"; }}
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                    <circle cx="8.5" cy="8.5" r="1.5"/>
-                    <polyline points="21 15 16 10 5 21"/>
-                  </svg>
-                </button>
-
-                {selectedImage && (
-                  <div style={{ position: "relative", width: "48px", height: "48px", borderRadius: "8px", overflow: "hidden", border: "2px solid var(--violet)" }}>
-                    <img src={selectedImage} alt="Uploaded preview" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                    <button 
-                      type="button" 
-                      onClick={() => setSelectedImage(null)}
-                      style={{ position: "absolute", top: "2px", right: "2px", width: "18px", height: "18px", background: "rgba(0,0,0,0.6)", color: "#fff", border: "none", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", padding: 0 }}
-                      title="Remove image"
-                    >
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                    </button>
-                  </div>
-                )}
+        <form className="ai-solver-form" onSubmit={handleSubmit}>
+          <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+            <div className="ai-solver-input-wrap" style={{ flex: 1 }}>
+              <textarea
+                ref={textareaRef}
+                className="ai-solver-textarea"
+                value={question}
+                onChange={e => setQuestion(e.target.value)}
+                onKeyDown={e => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) handleSubmit(e); }}
+                placeholder={"Paste or type any aptitude question here...\n\ne.g. \"The average marks of 4 students are 40, 50, 60, 70. Find the overall average.\"\ne.g. \"A train 130m long crosses a 245m bridge at 45 km/hr. Find the time.\""}
+                rows={4}
+              />
+              <div className="ai-solver-hint">
+                Press Ctrl + Enter to submit
               </div>
+            </div>
 
-              {/* Submit Button */}
-              <button type="submit" disabled={!(question.trim() || selectedImage)} style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: (question.trim() || selectedImage) ? "linear-gradient(135deg, var(--violet), var(--teal))" : "var(--surface2)", color: (question.trim() || selectedImage) ? "#fff" : "var(--text-muted)", border: "none", borderRadius: "10px", padding: "10px 24px", fontWeight: "700", fontSize: "0.95rem", cursor: (question.trim() || selectedImage) ? "pointer" : "not-allowed", boxShadow: (question.trim() || selectedImage) ? "0 4px 16px rgba(124,58,237,0.35)" : "none" }}>
-                ✨ Solve Visually
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                style={{
+                  width: '48px', height: '48px', borderRadius: '12px',
+                  background: selectedImage ? 'var(--violet)' : 'var(--card-bg, rgba(255,255,255,0.05))',
+                  border: '1px solid var(--border)',
+                  color: selectedImage ? '#fff' : 'var(--text-sec)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  cursor: 'pointer', transition: 'all 0.2s',
+                  boxShadow: selectedImage ? '0 4px 12px rgba(124,58,237,0.3)' : 'none'
+                }}
+                title="Upload Image"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
               </button>
+              <input type="file" accept="image/*" ref={fileInputRef} style={{ display: "none" }} onChange={handleImageUpload} />
+
+              {selectedImage && (
+                <div style={{ position: 'relative', width: '48px', height: '48px', borderRadius: '8px', overflow: 'hidden', border: '1.5px solid var(--violet)' }}>
+                  <img src={selectedImage} alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <button
+                    type="button"
+                    onClick={() => setSelectedImage(null)}
+                    style={{ position: 'absolute', top: 2, right: 2, width: 16, height: 16, borderRadius: '50%', background: 'rgba(239,68,68,0.9)', color: '#fff', border: 'none', fontSize: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+                  >✕</button>
+                </div>
+              )}
             </div>
           </div>
+
           {state === STATES.ERROR && (
-            <div style={{ marginTop: "12px", padding: "12px 16px", background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.3)", borderRadius: "10px", color: "#EF4444", fontSize: "0.9rem" }}>
-              ⚠️ {errorMsg}
+            <div className="ai-solver-error">
+              <span>⚠️</span>
+              <span>{errorMsg}</span>
             </div>
           )}
+
+          <button
+            type="submit"
+            className="ai-solver-submit"
+            style={{ '--solver-color': 'var(--violet)' }}
+            disabled={!question.trim() && !selectedImage}
+          >
+            <span>✨ Solve Visually</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
         </form>
       )}
 
