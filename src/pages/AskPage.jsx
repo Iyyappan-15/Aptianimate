@@ -1,4 +1,4 @@
-﻿// src/pages/AskPage.jsx
+// src/pages/AskPage.jsx
 import { useState, useEffect, useRef } from "react";
 import { parseUserQuestion } from "../api/groqApi";
 import AnimationPlayer from "../components/AnimationPlayer";
@@ -25,7 +25,9 @@ export default function AskPage({ navigate, initialQuery = "" }) {
   const [selectedOption, setSelectedOption] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
   const [showFollowUp, setShowFollowUp] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null); // base64 string
   const textareaRef = useRef(null);
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     if (initialQuery && initialQuery.trim()) handleSubmit(null, initialQuery.trim());
@@ -34,15 +36,20 @@ export default function AskPage({ navigate, initialQuery = "" }) {
 
   const handleSubmit = async (e, overrideQ) => {
     if (e) e.preventDefault();
-    const q = (overrideQ || question).trim();
-    if (!q) return;
+    const q = (overrideQ !== undefined ? overrideQ : question).trim();
+    if (!q && !selectedImage) return; // Allow empty question if image is present
     setState(STATES.LOADING);
     setResult(null); setErrorMsg("");
     setSelectedOption(null); setShowExplanation(false); setShowFollowUp(false);
-    saveToHistory(q);
-    setHistory(loadHistory());
+    
+    // Only save to history if there is text
+    if (q) {
+      saveToHistory(q);
+      setHistory(loadHistory());
+    }
+
     try {
-      const data = await parseUserQuestion(q);
+      const data = await parseUserQuestion(q, selectedImage);
       setResult(data);
       setState(STATES.SUCCESS);
     } catch (err) {
@@ -54,7 +61,22 @@ export default function AskPage({ navigate, initialQuery = "" }) {
   const handleReset = () => {
     setState(STATES.IDLE); setResult(null); setErrorMsg("");
     setSelectedOption(null); setShowExplanation(false); setShowFollowUp(false);
+    setSelectedImage(null);
     setTimeout(() => textareaRef.current?.focus(), 100);
+  };
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.size > 5 * 1024 * 1024) {
+      setErrorMsg("Image size must be less than 5MB");
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = (event) => setSelectedImage(event.target.result);
+    reader.readAsDataURL(file);
+    // Clear file input so same file can be selected again
+    e.target.value = '';
   };
 
   const handleHistoryClick = (q) => { setQuestion(q); handleSubmit(null, q); };
@@ -91,8 +113,49 @@ export default function AskPage({ navigate, initialQuery = "" }) {
               placeholder={"Paste or type any aptitude question here...\n\ne.g. \"The average marks of 4 students are 40, 50, 60, 70. Find the overall average.\"\ne.g. \"A train 130m long crosses a 245m bridge at 45 km/hr. Find the time.\""}
               rows={5} style={{ width: "100%", border: "none", background: "transparent", padding: "18px 20px", fontSize: "1rem", color: "var(--text-main)", resize: "vertical", outline: "none", fontFamily: "inherit", lineHeight: 1.6, boxSizing: "border-box" }}
             />
-            <div style={{ padding: "12px 16px", display: "flex", justifyContent: "flex-end" }}>
-              <button type="submit" disabled={!question.trim()} style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: question.trim() ? "linear-gradient(135deg, var(--violet), var(--teal))" : "var(--surface2)", color: question.trim() ? "#fff" : "var(--text-muted)", border: "none", borderRadius: "10px", padding: "10px 24px", fontWeight: "700", fontSize: "0.95rem", cursor: question.trim() ? "pointer" : "not-allowed", boxShadow: question.trim() ? "0 4px 16px rgba(124,58,237,0.35)" : "none" }}>
+            <div style={{ padding: "12px 16px", display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+              {/* Image Preview & Upload Button */}
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <input 
+                  type="file" 
+                  accept="image/*" 
+                  ref={fileInputRef} 
+                  style={{ display: "none" }} 
+                  onChange={handleImageUpload} 
+                />
+                
+                <button 
+                  type="button" 
+                  onClick={() => fileInputRef.current?.click()}
+                  style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", borderRadius: "10px", background: "var(--surface2)", border: "1px solid var(--border)", color: "var(--text-sec)", cursor: "pointer", transition: "all 0.2s" }}
+                  title="Upload image"
+                  onMouseOver={e => { e.currentTarget.style.color = "var(--violet)"; e.currentTarget.style.borderColor = "var(--violet)"; }}
+                  onMouseOut={e => { e.currentTarget.style.color = "var(--text-sec)"; e.currentTarget.style.borderColor = "var(--border)"; }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </button>
+
+                {selectedImage && (
+                  <div style={{ position: "relative", width: "48px", height: "48px", borderRadius: "8px", overflow: "hidden", border: "2px solid var(--violet)" }}>
+                    <img src={selectedImage} alt="Uploaded preview" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <button 
+                      type="button" 
+                      onClick={() => setSelectedImage(null)}
+                      style={{ position: "absolute", top: "2px", right: "2px", width: "18px", height: "18px", background: "rgba(0,0,0,0.6)", color: "#fff", border: "none", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", padding: 0 }}
+                      title="Remove image"
+                    >
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                  </div>
+                )}
+              </div>
+
+              {/* Submit Button */}
+              <button type="submit" disabled={!(question.trim() || selectedImage)} style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: (question.trim() || selectedImage) ? "linear-gradient(135deg, var(--violet), var(--teal))" : "var(--surface2)", color: (question.trim() || selectedImage) ? "#fff" : "var(--text-muted)", border: "none", borderRadius: "10px", padding: "10px 24px", fontWeight: "700", fontSize: "0.95rem", cursor: (question.trim() || selectedImage) ? "pointer" : "not-allowed", boxShadow: (question.trim() || selectedImage) ? "0 4px 16px rgba(124,58,237,0.35)" : "none" }}>
                 ✨ Solve Visually
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </button>
