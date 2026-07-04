@@ -1,7 +1,12 @@
 -- Supabase Schema for AptitudeAnimate
 
+-- DROP existing tables to ensure a clean slate (Safe for new setups)
+DROP TABLE IF EXISTS public.bookmarks CASCADE;
+DROP TABLE IF EXISTS public.topic_progress CASCADE;
+DROP TABLE IF EXISTS public.roadmap_progress CASCADE;
+
 -- 1. Bookmarks Table
-CREATE TABLE IF NOT EXISTS public.bookmarks (
+CREATE TABLE public.bookmarks (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
   topic_name TEXT NOT NULL,
@@ -12,7 +17,7 @@ CREATE TABLE IF NOT EXISTS public.bookmarks (
 ALTER TABLE public.bookmarks ADD CONSTRAINT bookmarks_user_id_topic_name_key UNIQUE (user_id, topic_name);
 
 -- 2. Topic Progress Table
-CREATE TABLE IF NOT EXISTS public.topic_progress (
+CREATE TABLE public.topic_progress (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
   topic_name TEXT NOT NULL,
@@ -25,7 +30,7 @@ CREATE TABLE IF NOT EXISTS public.topic_progress (
 ALTER TABLE public.topic_progress ADD CONSTRAINT topic_progress_user_id_topic_name_key UNIQUE (user_id, topic_name);
 
 -- 3. Roadmap Progress Table
-CREATE TABLE IF NOT EXISTS public.roadmap_progress (
+CREATE TABLE public.roadmap_progress (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
   current_phase TEXT,
