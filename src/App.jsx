@@ -16,6 +16,8 @@ import GovtRoadmapPage from './pages/GovtRoadmapPage';
 import GovtDailyPracticePage from './pages/GovtDailyPracticePage';
 import SplashScreen from './components/SplashScreen';
 import DoodleOverlay from './components/DoodleOverlay';
+import UsernameModal from './components/UsernameModal';
+import { signInWithGoogle, signOut } from './services/authService';
 
 function App() {
   const [route, setRoute] = useState(window.location.hash.replace('#/', '') || '');
@@ -26,14 +28,14 @@ function App() {
     return localStorage.getItem('theme') || 'light';
   });
 
-  const { user } = useAuth();
+  const { user, profile } = useAuth();
   
   useEffect(() => {
     if (user) {
       console.log("✅ SUPABASE AUTH SUCCESS! Your Anonymous User ID is:", user.id);
-      console.log("Check this ID in your Supabase Dashboard!");
+      console.log("Profile Data:", profile);
     }
-  }, [user]);
+  }, [user, profile]);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -148,6 +150,74 @@ function App() {
                   >
                     ✨ Ask AI
                   </button>
+
+                  {/* 🔐 Google Login / User Profile */}
+                  {(!user || user.is_anonymous || user.id === 'offline_user') ? (
+                    <button
+                      onClick={signInWithGoogle}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        background: 'var(--surface)',
+                        color: 'var(--text)',
+                        border: '1px solid var(--border)',
+                        borderRadius: '20px',
+                        padding: '6px 14px',
+                        fontWeight: '700',
+                        fontSize: '0.85rem',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s',
+                        marginLeft: '8px',
+                      }}
+                      onMouseOver={(e) => e.currentTarget.style.background = 'var(--surface3)'}
+                      onMouseOut={(e) => e.currentTarget.style.background = 'var(--surface)'}
+                    >
+                      <svg width="14" height="14" viewBox="0 0 48 48" style={{ flexShrink: 0 }}>
+                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                        <path fill="#4285F4" d="M46.5 24c0-1.61-.15-3.16-.42-4.69H24v9.09h12.75c-.53 2.87-2.14 5.3-4.57 6.96l7.14 5.53C43.51 36.31 46.5 30.8 46.5 24z"/>
+                        <path fill="#FBBC05" d="M10.54 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.98-6.19z"/>
+                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.14-5.53c-1.97 1.33-4.5 2.13-8.75 2.13-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                      </svg>
+                      Google Sign In
+                    </button>
+                  ) : (
+                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', marginLeft: '12px' }}>
+                      {profile?.avatar_url ? (
+                        <img 
+                          src={profile.avatar_url} 
+                          alt={profile.username} 
+                          style={{ width: '28px', height: '28px', borderRadius: '50%', border: '2px solid var(--violet)', objectFit: 'cover' }} 
+                        />
+                      ) : (
+                        <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--violet)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '0.8rem' }}>
+                          {profile?.username?.charAt(0).toUpperCase() || 'U'}
+                        </div>
+                      )}
+                      <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--text)' }}>
+                        @{profile?.username || 'user'}
+                      </span>
+                      <button
+                        onClick={signOut}
+                        style={{
+                          background: 'transparent',
+                          color: 'var(--coral)',
+                          border: '1px solid rgba(220, 38, 38, 0.3)',
+                          borderRadius: '20px',
+                          padding: '4px 10px',
+                          fontSize: '0.72rem',
+                          fontWeight: '700',
+                          cursor: 'pointer',
+                          transition: 'all 0.2s',
+                        }}
+                        onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(220, 38, 38, 0.08)' }}
+                        onMouseOut={(e) => { e.currentTarget.style.background = 'transparent' }}
+                      >
+                        Sign Out
+                      </button>
+                    </div>
+                  )}
+
                   <button 
                     onClick={toggleTheme} 
                     style={{ background: 'transparent', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '8px' }}
@@ -165,6 +235,7 @@ function App() {
       </AnimatePresence>
       {/* Global Scratchpad — floats over every page */}
       <DoodleOverlay />
+      <UsernameModal />
       <Analytics />
     </>
   );

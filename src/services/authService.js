@@ -43,16 +43,60 @@ export const ensureAuthenticatedUser = async () => {
 };
 
 /**
+ * Sign in the user using Google OAuth.
+ */
+export const signInWithGoogle = async () => {
+  if (!supabase) {
+    console.warn("signInWithGoogle: Supabase is not initialized.");
+    return;
+  }
+  try {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: window.location.origin + window.location.pathname,
+      }
+    });
+    if (error) throw error;
+  } catch (error) {
+    console.error("Error during Google Sign-In:", error.message);
+    throw error;
+  }
+};
+
+/**
+ * Sign out the current user.
+ */
+export const signOut = async () => {
+  if (!supabase) return;
+  try {
+    const { error } = await supabase.auth.signOut();
+    if (error) throw error;
+    // Clear any local cache/storage if needed
+    localStorage.removeItem("supabase.auth.token");
+  } catch (error) {
+    console.error("Error during sign out:", error.message);
+    throw error;
+  }
+};
+
+/**
  * Placeholder for future Google Login upgrade.
  * This will link the anonymous account to a Google account without losing data.
  */
 export const upgradeWithGoogle = async () => {
+  if (!supabase) return;
   try {
-    // We will use linkIdentity() when implementing Google Login in the future
-    // await supabase.auth.linkIdentity({ provider: 'google' });
-    console.log("Google Login upgrade to be implemented.");
+    const { error } = await supabase.auth.linkIdentity({
+      provider: 'google',
+      options: {
+        redirectTo: window.location.origin + window.location.pathname,
+      }
+    });
+    if (error) throw error;
   } catch (error) {
     console.error("Error upgrading account:", error.message);
     throw error;
   }
 };
+
