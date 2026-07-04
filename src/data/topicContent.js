@@ -54,21 +54,21 @@ export const TOPIC_CONTENT = {
       { label: 'Product Rule', value: 'HCF - LCM = Product of two numbers (only for 2 numbers)' },
     ],
     formulas: [
-      { title: 'Golden Relationship', formula: 'HCF - LCM = A - B', example: 'A=12, B=18 - â€™ HCF=6, LCM=36. Check: 6-36 = 12-18 = 216 -' },
+      { title: 'Golden Relationship', formula: 'HCF × LCM = A × B', example: 'A=12, B=18 → HCF=6, LCM=36. Check: 6 × 36 = 12 × 18 = 216' },
       { title: 'HCF of fractions', formula: 'HCF of numerators / LCM of denominators', example: 'HCF of 2/3 and 4/9 = HCF(2,4)/LCM(3,9) = 2/9' },
       { title: 'LCM of fractions', formula: 'LCM of numerators / HCF of denominators', example: 'LCM of 2/3 and 4/9 = LCM(2,4)/HCF(3,9) = 4/3' },
     ],
     identify: [
-      '"What is the largest number that divides X, Y, Z?" - â€™ HCF',
-      '"What is the smallest number divisible by X, Y, Z?" - â€™ LCM',
-      '"When do the bells ring together again?" - â€™ LCM of time intervals',
-      '"Tiles to fill a room" or "cut ropes into equal parts" - â€™ HCF',
+      '"What is the largest number that divides X, Y, Z?" → HCF',
+      '"What is the smallest number divisible by X, Y, Z?" → LCM',
+      '"When do the bells ring together again?" → LCM of time intervals',
+      '"Tiles to fill a room" or "cut ropes into equal parts" → HCF',
     ],
     approach: [
-      { step: '1', tip: 'If question says "largest/maximum/greatest" - â€™ Think HCF.' },
-      { step: '2', tip: 'If question says "smallest/minimum/least" - â€™ Think LCM.' },
+      { step: '1', tip: 'If question says "largest/maximum/greatest" → Think HCF.' },
+      { step: '2', tip: 'If question says "smallest/minimum/least" → Think LCM.' },
       { step: '3', tip: 'Use factorization for small numbers. Use division method for large numbers.' },
-      { step: '4', tip: 'For 3+ numbers, you CANNOT use HCF - LCM = product. Only works for exactly 2 numbers.' },
+      { step: '4', tip: 'For 3+ numbers, you CANNOT use HCF × LCM = product. Only works for exactly 2 numbers.' },
     ],
   },
 
@@ -89,7 +89,7 @@ export const TOPIC_CONTENT = {
       { label: 'Div by 11', value: 'Alternate digit sum difference is 0 or divisible by 11' },
     ],
     formulas: [
-      { title: 'Div by 11', formula: '(Sum of odd-position digits) - (Sum of even-position digits) = 0 or multiple of 11', example: '121: (1+1)-(2) = 0 - â€™ Divisible by 11 -' },
+      { title: 'Div by 11', formula: '(Sum of odd-position digits) - (Sum of even-position digits) = 0 or multiple of 11', example: '121: (1+1) - (2) = 0 → Divisible by 11' },
     ],
     identify: [
       'Question asks "Is X divisible by Y?"',
@@ -110,12 +110,12 @@ export const TOPIC_CONTENT = {
     tagline: 'Trick your way through remainder problems.',
     description: `Remainder problems look complex but follow simple patterns. The key insight is that when a number N divided by D gives remainder R, then N = D-Q + R. Remainder questions are among the most commonly asked in TCS, Wipro, and Cognizant campus drives.`,
     keyFacts: [
-      { label: 'Basic Rule', value: 'N = Divisor - Quotient + Remainder' },
+      { label: 'Basic Rule', value: 'N = (Divisor × Quotient) + Remainder' },
       { label: 'Cyclicity Trick', value: 'Remainders of powers follow a repeating cycle (period usually 1–4)' },
     ],
     formulas: [
-      { title: 'Basic', formula: 'Remainder of N-D = N mod D', example: '17 - 5 = 3 remainder 2. So 17 mod 5 = 2' },
-      { title: 'Powers Trick', formula: 'Find pattern of N^1, N^2, N^3... mod D - cycle repeats', example: 'Remainder of 2^100 - 3: Cycle of 2^n mod 3 = 2,1,2,1... Power 100 (even) - â€™ remainder 1' },
+      { title: 'Basic', formula: 'Remainder of N / D = N mod D', example: '17 / 5: 17 = 5 × 3 + 2. So 17 mod 5 = 2' },
+      { title: 'Powers Trick', formula: 'Find pattern of N^1, N^2, N^3... mod D - cycle repeats', example: 'Remainder of 2^100 ÷ 3: Cycle of 2^n mod 3 = 2,1,2,1... Power 100 (even) → remainder 1' },
     ],
     identify: [
       '"What is the remainder when X is divided by Y?"',
@@ -143,9 +143,9 @@ export const TOPIC_CONTENT = {
       { label: '75%', value: '3/4' }, { label: '12.5%', value: '1/8' },
     ],
     formulas: [
-      { title: 'Basic', formula: 'X% of Y = (X - Y) / 100', example: '15% of 80 = 15-80/100 = 12' },
-      { title: 'Percentage Change', formula: '((New - Old) / Old) - 100', example: 'Price goes 40- â€™50: Change = (50-40)/40 - 100 = 25% increase' },
-      { title: 'Successive % Change', formula: 'a% then b% net change = a + b + (ab/100)', example: '10% then 20% = 10+20+(10-20/100) = 32% net increase' },
+      { title: 'Basic', formula: 'X% of Y = (X × Y) / 100', example: '15% of 80 = 15 × 80/100 = 12' },
+      { title: 'Percentage Change', formula: '((New - Old) / Old) × 100', example: 'Price goes 40 → 50: Change = (50-40)/40 × 100 = 25% increase' },
+      { title: 'Successive % Change', formula: 'a% then b% net change = a + b + (ab/100)', example: '10% then 20% = 10+20+(10 × 20/100) = 32% net increase' },
     ],
     identify: [
       '"X is what percent of Y?"',
@@ -172,20 +172,20 @@ export const TOPIC_CONTENT = {
       { label: 'Marked Price (MP)', value: 'Price written on the label (before discount)' },
     ],
     formulas: [
-      { title: 'Profit / Loss', formula: 'Profit = SP - CP   |   Loss = CP - SP', example: 'CP=100, SP=120 - â€™ Profit = 20' },
-      { title: 'Profit %', formula: 'Profit% = (Profit / CP) - 100', example: 'Profit=20, CP=100 - â€™ Profit% = 20%' },
-      { title: 'Find SP', formula: 'SP = CP - (100 + P%) / 100', example: 'CP=200, P%=25 - â€™ SP = 200-125/100 = 250' },
-      { title: 'Discount', formula: 'SP = MP - (100 - Discount%) / 100', example: 'MP=500, Discount=20% - â€™ SP = 400' },
+      { title: 'Profit / Loss', formula: 'Profit = SP - CP   |   Loss = CP - SP', example: 'CP=100, SP=120 → Profit = 20' },
+      { title: 'Profit %', formula: 'Profit% = (Profit / CP) × 100', example: 'Profit=20, CP=100 → Profit% = 20%' },
+      { title: 'Find SP', formula: 'SP = CP × (100 + P%) / 100', example: 'CP=200, P%=25 → SP = 200 × 125/100 = 250' },
+      { title: 'Discount', formula: 'SP = MP × (100 - Discount%) / 100', example: 'MP=500, Discount=20% → SP = 400' },
     ],
     identify: [
-      '"A shopkeeper sells at X% profit" - â€™ use SP = CP-(100+X)/100',
-      '"Find profit %" - â€™ always use CP in denominator',
-      '"Marked price, discount given, find CP or profit" - â€™ chain: MP - â€™ SP - â€™ CP',
+      '"A shopkeeper sells at X% profit" → use SP = CP × (100+X)/100',
+      '"Find profit %" → always use CP in denominator',
+      '"Marked price, discount given, find CP or profit" → chain: MP → SP → CP',
     ],
     approach: [
       { step: '1', tip: 'Identify what you are given: CP, SP, or MP + Discount.' },
       { step: '2', tip: 'Use multiplier method: 20% profit = multiply CP by 1.2' },
-      { step: '3', tip: 'For dishonest dealer: Profit% = (True weight - False weight)/False weight - 100' },
+      { step: '3', tip: 'For dishonest dealer: Profit% = (True weight - False weight)/False weight × 100' },
     ],
   },
 
@@ -196,13 +196,13 @@ export const TOPIC_CONTENT = {
     tagline: 'Think in terms of work done per day - not total time.',
     description: `Time & Work problems are about efficiency. The trick is to stop thinking about "total time" and instead think about "fraction of work done per day". Once you express everyone's work as a daily fraction, the math becomes simple addition.`,
     keyFacts: [
-      { label: 'Core Concept', value: 'If A can do work in N days - â€™ A does 1/N of work per day' },
+      { label: 'Core Concept', value: 'If A can do work in N days → A does 1/N of work per day' },
       { label: 'Together', value: 'Add individual daily work fractions' },
     ],
     formulas: [
-      { title: 'Work Per Day', formula: 'Daily work = 1/Number of days', example: 'A takes 10 days - â€™ does 1/10 per day' },
-      { title: 'Together', formula: 'Days together = 1 / (1/A + 1/B)', example: 'A=10 days, B=15 days - â€™ Together = 1/(1/10+1/15) = 6 days' },
-      { title: 'Shortcut for 2 people', formula: '(A - B) / (A + B)', example: '(10-15)/(10+15) = 150/25 = 6 days -' },
+      { title: 'Work Per Day', formula: 'Daily work = 1/Number of days', example: 'A takes 10 days → does 1/10 per day' },
+      { title: 'Together', formula: 'Days together = 1 / (1/A + 1/B)', example: 'A=10 days, B=15 days → Together = 1/(1/10+1/15) = 6 days' },
+      { title: 'Shortcut for 2 people', formula: '(A × B) / (A + B)', example: '(10 × 15)/(10+15) = 150/25 = 6 days' },
     ],
     identify: [
       '"A does work in X days, B does in Y days, together?"',
@@ -220,21 +220,21 @@ export const TOPIC_CONTENT = {
     title: 'Time, Speed & Distance',
     icon: '🚄',
     color: '#10b981',
-    tagline: 'Everything is D = S - T. Master the unit conversion.',
-    description: `Time, Speed & Distance is one of the highest-frequency topics in campus placement tests. Every single question - whether about cars, trains, boats, or races - is a variation of just one formula: Distance = Speed - Time.`,
+    tagline: 'Everything is D = S × T. Master the unit conversion.',
+    description: `Time, Speed & Distance is one of the highest-frequency topics in campus placement tests. Every single question - whether about cars, trains, boats, or races - is a variation of just one formula: Distance = Speed × Time.`,
     keyFacts: [
-      { label: 'Unit Conversion', value: 'km/h - 5/18 = m/s  |  m/s - 18/5 = km/h' },
+      { label: 'Unit Conversion', value: 'km/h × 5/18 = m/s  |  m/s × 18/5 = km/h' },
       { label: 'Relative Speed', value: 'Opposite directions: Add | Same direction: Subtract' },
     ],
     formulas: [
-      { title: 'Core Formula', formula: 'Distance = Speed - Time', example: '60 km/h for 2 hrs = 120 km' },
-      { title: 'Average Speed (equal distances)', formula: '2ab / (a + b)', example: 'Go at 40, return at 60 - â€™ Avg = 2-40-60/100 = 48 km/h' },
-      { title: 'Train crossing pole', formula: 'Time = Length of train / Speed', example: '200m train at 72 km/h (=20 m/s) - â€™ 200/20 = 10 sec' },
+      { title: 'Core Formula', formula: 'Distance = Speed × Time', example: '60 km/h for 2 hrs = 120 km' },
+      { title: 'Average Speed (equal distances)', formula: '2ab / (a + b)', example: 'Go at 40, return at 60 → Avg = 2 × 40 × 60 / 100 = 48 km/h' },
+      { title: 'Train crossing pole', formula: 'Time = Length of train / Speed', example: '200m train at 72 km/h (=20 m/s) → 200/20 = 10 sec' },
     ],
     identify: [
-      '"Train A crosses train B" - â€™ Relative speed problem',
-      '"Goes from A to B and returns" - â€™ Average speed formula',
-      '"Train crosses a platform of length X" - â€™ Total distance = Train + Platform',
+      '"Train A crosses train B" → Relative speed problem',
+      '"Goes from A to B and returns" → Average speed formula',
+      '"Train crosses a platform of length X" → Total distance = Train + Platform',
     ],
     approach: [
       { step: '1', tip: 'ALWAYS check units first - if speed is km/h and time is seconds, convert before substituting.' },
@@ -258,10 +258,10 @@ export const TOPIC_CONTENT = {
     formulas: [
       { title: 'Basic', formula: 'P(E) = Favourable outcomes / Total outcomes', example: 'P(Head in coin toss) = 1/2' },
       { title: 'P(A or B)', formula: 'P(A) + P(B) - P(A and B)', example: '' },
-      { title: 'P(A and B) - Independent', formula: 'P(A) - P(B)', example: 'P(2 heads in 2 tosses) = 1/2 - 1/2 = 1/4' },
+      { title: 'P(A and B) - Independent', formula: 'P(A) × P(B)', example: 'P(2 heads in 2 tosses) = 1/2 × 1/2 = 1/4' },
     ],
     identify: [
-      '"A card is drawn at random from a deck" - â€™ Probability question',
+      '"A card is drawn at random from a deck" → Probability question',
       '"Two dice are rolled, find P(sum=7)"',
       '"Bag has X red, Y blue balls, find P(drawing red)"',
     ],
@@ -285,9 +285,9 @@ export const TOPIC_CONTENT = {
       { label: 'Some A are not B', value: 'Part of A is outside B' },
     ],
     formulas: [
-      { title: 'All + All = All', formula: '"All A are B" + "All B are C" - â€™ All A are C -', example: '' },
-      { title: 'All + No = No', formula: '"All A are B" + "No B is C" - â€™ No A is C -', example: '' },
-      { title: 'Some + All = Some', formula: '"Some A are B" + "All B are C" - â€™ Some A are C -', example: '' },
+      { title: 'All + All = All', formula: '"All A are B" + "All B are C" → All A are C', example: '' },
+      { title: 'All + No = No', formula: '"All A are B" + "No B is C" → No A is C', example: '' },
+      { title: 'Some + All = Some', formula: '"Some A are B" + "All B are C" → Some A are C', example: '' },
     ],
     identify: [
       'Question gives 2–3 "All/No/Some" statements and asks which conclusions follow',
@@ -309,7 +309,7 @@ export const TOPIC_CONTENT = {
     description: `Coding-Decoding tests your ability to find the rule by which one word or number is converted into a code. The rule is always consistent - find it with one example and apply it to the rest.`,
     keyFacts: [
       { label: 'Letter Position', value: 'A=1, B=2, C=3 ... Z=26. Also reverse: A=26, Z=1.' },
-      { label: 'Opposite Letter', value: 'A- â€Z, B- â€Y, C- â€X ... (A+Z=27)' },
+      { label: 'Opposite Letter', value: 'A - Z, B - Y, C - X ... (A+Z=27)' },
     ],
     formulas: [],
     identify: [
@@ -778,7 +778,7 @@ export const TOPIC_CONTENT = {
       { label: 'Crossing an Object', value: 'When crossing a bridge or platform, Distance = Train + Bridge.' },
     ],
     formulas: [
-      { title: 'The Golden Rule', formula: 'Distance = Speed - Time', example: '' },
+      { title: 'The Golden Rule', formula: 'Distance = Speed × Time', example: '' },
       { title: 'Unit Conversion', formula: 'Multiply km/hr by (5/18) to get m/s', example: '54 km/hr = 54 - (5/18) = 15 m/s' },
     ],
     identify: [
@@ -788,7 +788,7 @@ export const TOPIC_CONTENT = {
     approach: [
       { step: '1', tip: 'Check the units! Usually speed is km/hr but time is seconds. Convert speed to m/s immediately.' },
       { step: '2', tip: 'Write down the total Distance. If there is a bridge, add both lengths.' },
-      { step: '3', tip: 'Plug into Distance = Speed - Time and solve.' },
+      { step: '3', tip: 'Plug into Distance = Speed × Time and solve.' },
     ],
   },
 
@@ -1492,9 +1492,9 @@ export const TOPIC_CONTENT = {
     ],
   },
 
-  // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-  //  GOVERNMENT EXAMS â€” EXCLUSIVE TOPICS
-  // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+  // ════════════════════════════════════════
+  //  GOVERNMENT EXAMS — EXCLUSIVE TOPICS
+  // ════════════════════════════════════════
   
   'geometry': {
     title: 'Geometry',
@@ -1503,11 +1503,11 @@ export const TOPIC_CONTENT = {
     tagline: 'Lines, angles, triangles, and circles.',
     description: `Geometry deals with the properties and relations of points, lines, surfaces, and solids. In government exams, questions heavily focus on triangle properties, circle tangents, and angle chasing.`,
     keyFacts: [
-      { label: 'Triangle Sum', value: 'Sum of internal angles is always 180Â°' },
-      { label: 'Straight Line', value: 'A straight line measures 180Â°' },
+      { label: 'Triangle Sum', value: 'Sum of internal angles is always 180°' },
+      { label: 'Straight Line', value: 'A straight line measures 180°' },
     ],
     formulas: [
-      { title: 'Pythagoras Theorem', formula: 'aÂ² + bÂ² = cÂ²', example: '3Â² + 4Â² = 5Â²' },
+      { title: 'Pythagoras Theorem', formula: 'a² + b² = c²', example: '3² + 4² = 5²' },
     ],
     identify: [
       'Question mentions angles, triangles, circles, or parallel lines.',
@@ -1529,8 +1529,8 @@ export const TOPIC_CONTENT = {
       { label: '3D Shapes', value: 'Cube, Cylinder, Cone, Sphere (measured in Volume)' },
     ],
     formulas: [
-      { title: 'Area of Circle', formula: 'Ï€rÂ²', example: 'r=7 â†’ Area â‰ˆ 154' },
-      { title: 'Volume of Cylinder', formula: 'Ï€rÂ²h', example: 'r=7, h=10 â†’ Vol â‰ˆ 1540' },
+      { title: 'Area of Circle', formula: 'πr²', example: 'r=7 → Area ≈ 154' },
+      { title: 'Volume of Cylinder', formula: 'πr²h', example: 'r=7, h=10 → Vol ≈ 1540' },
     ],
     identify: [
       'Keywords like area, volume, perimeter, surface area, melting and recasting.',
@@ -1551,7 +1551,7 @@ export const TOPIC_CONTENT = {
       { label: 'Variables', value: 'Unknown values usually represented by x, y, z' },
     ],
     formulas: [
-      { title: 'Basic Identity', formula: '(a+b)Â² = aÂ² + bÂ² + 2ab', example: '(x+1)Â² = xÂ² + 1 + 2x' },
+      { title: 'Basic Identity', formula: '(a+b)² = a² + b² + 2ab', example: '(x+1)² = x² + 1 + 2x' },
     ],
     identify: [
       'Equations with x, y, or asks for the value of xÂ² + 1/xÂ².',
