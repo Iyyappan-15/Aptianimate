@@ -22,10 +22,10 @@ const getMeta = (slug) => TOPIC_META[slug] || TOPIC_META.default;
 const DIFF_COLOR = { Easy: "#10b981", Medium: "#f59e0b", Hard: "#ef4444" };
 
 const PRACTICE_LEVELS = [
-  { id: "easy",   emoji: "🟢", label: "Easy Practice",    count: 5,  color: "#10b981", desc: "Build confidence with straightforward questions" },
-  { id: "medium", emoji: "🟡", label: "Medium Practice",  count: 10, color: "#f59e0b", desc: "Standard exam-level questions with twists" },
-  { id: "hard",   emoji: "🟠", label: "Hard Practice",    count: 15, color: "#f97316", desc: "Tricky questions that trip most candidates" },
-  { id: "mixed",  emoji: "🔴", label: "Mixed Challenge",  count: 20, color: "#ef4444", desc: "All levels combined for real exam simulation" },
+  { id: "easy",   emoji: "🟢", label: "Easy Practice",    count: 25, color: "#10b981", desc: "Build confidence with straightforward questions" },
+  { id: "medium", emoji: "🟡", label: "Medium Practice",  count: 25, color: "#f59e0b", desc: "Standard exam-level questions with twists" },
+  { id: "hard",   emoji: "🟠", label: "Hard Practice",    count: 25, color: "#f97316", desc: "Tricky questions that trip most candidates" },
+  { id: "mixed",  emoji: "🔴", label: "Mixed Challenge",  count: 100, color: "#ef4444", desc: "All levels combined for real exam simulation" },
 ];
 
 function buildLessons(topic) {
@@ -463,7 +463,9 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                       }
                     }}
                     style={{
-                      padding: '14px 32px',
+                      flex: 1,
+                      minWidth: '200px',
+                      padding: '14px 28px',
                       borderRadius: '12px',
                       border: 'none',
                       background: 'var(--text-main)',
@@ -471,10 +473,15 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                       fontWeight: 800,
                       fontSize: '1rem',
                       cursor: 'pointer',
-                      transition: 'transform 0.15s'
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '8px',
+                      transition: 'transform 0.15s, box-shadow 0.15s',
+                      boxShadow: '0 4px 14px rgba(0,0,0,0.15)'
                     }}
-                    onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                    onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; }}
+                    onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.25)'; }}
+                    onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 14px rgba(0,0,0,0.15)'; }}
                   >
                     {isLastQuestion ? '🏁 Finish Practice' : 'Next Question ➡️'}
                   </button>
