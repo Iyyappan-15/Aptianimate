@@ -191,7 +191,7 @@ function App() {
                         />
                       ) : (
                         <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--violet)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '0.8rem' }}>
-                          {profile?.username?.charAt(0).toUpperCase() || 'U'}
+                          {(profile?.username?.charAt(0) || 'U').toUpperCase()}
                         </div>
                       )}
                       <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--text)' }}>
