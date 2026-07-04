@@ -11,9 +11,6 @@ export default function UsernameModal() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
 
-  // If user is loaded and already has a profile, we don't show the modal
-  if (!user || profile) return null;
-
   // Set default full name from Google metadata if available
   useEffect(() => {
     if (user && user.user_metadata?.full_name) {
@@ -51,6 +48,9 @@ export default function UsernameModal() {
 
     return () => clearTimeout(delayDebounce);
   }, [username]);
+
+  // If user is loaded and already has a profile, we don't show the modal
+  if (!user || profile) return null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
