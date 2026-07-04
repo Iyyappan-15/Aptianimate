@@ -546,8 +546,10 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                       padding: '14px 28px',
                       borderRadius: '12px',
                       border: 'none',
-                      background: 'var(--text-main)',
-                      color: 'var(--surface)',
+                      background: isLastQuestion
+                        ? 'linear-gradient(135deg, #10b981, #059669)'
+                        : 'linear-gradient(135deg, #1e293b, #334155)',
+                      color: '#ffffff',
                       fontWeight: 800,
                       fontSize: '1rem',
                       cursor: 'pointer',
@@ -555,13 +557,16 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                       alignItems: 'center',
                       justifyContent: 'center',
                       gap: '8px',
+                      whiteSpace: 'nowrap',
                       transition: 'transform 0.15s, box-shadow 0.15s',
-                      boxShadow: '0 4px 14px rgba(0,0,0,0.15)'
+                      boxShadow: isLastQuestion
+                        ? '0 4px 14px rgba(16,185,129,0.35)'
+                        : '0 4px 14px rgba(0,0,0,0.25)'
                     }}
-                    onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.25)'; }}
-                    onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 14px rgba(0,0,0,0.15)'; }}
+                    onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.filter = 'brightness(1.1)'; }}
+                    onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.filter = 'none'; }}
                   >
-                    {isLastQuestion ? '🏁 Finish Practice' : 'Next Question ➡️'}
+                    {isLastQuestion ? '🏁 Finish Practice' : '➡️ Next Question'}
                   </button>
 
                 </div>
