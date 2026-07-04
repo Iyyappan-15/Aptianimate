@@ -7,6 +7,10 @@ import { supabase } from '../lib/supabase';
  * @returns {Promise<Array>} Array of progress objects
  */
 export const getAllProgress = async (userId) => {
+  if (!supabase) {
+    console.warn("getAllProgress: Supabase not initialized. Returning empty progress.");
+    return [];
+  }
   try {
     const { data, error } = await supabase
       .from('topic_progress')
@@ -31,6 +35,10 @@ export const getAllProgress = async (userId) => {
  * @returns {Promise<Object>} The updated progress object
  */
 export const updateProgress = async (userId, topicName, completionPercentage, completedStatus) => {
+  if (!supabase) {
+    console.warn("updateProgress: Supabase not initialized. Skipping DB update.");
+    return { topic_name: topicName, completion_percentage: completionPercentage, completed_status: completedStatus };
+  }
   try {
     const { data, error } = await supabase
       .from('topic_progress')

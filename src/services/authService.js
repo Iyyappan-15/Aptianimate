@@ -8,6 +8,10 @@ import { supabase } from '../lib/supabase';
  * @returns {Promise<Object>} The authenticated user object
  */
 export const ensureAuthenticatedUser = async () => {
+  if (!supabase) {
+    console.warn("ensureAuthenticatedUser: Supabase is not initialized. Running in offline/mock mode.");
+    return { id: "offline_user", email: "offline@example.com", is_anonymous: true };
+  }
   try {
     console.log("ensureAuthenticatedUser: Checking existing session...");
     // 1. Check for an existing session

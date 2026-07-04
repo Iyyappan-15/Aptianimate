@@ -2,6 +2,8 @@
 import { useState, useEffect, useRef } from "react";
 import { topicService } from "../services/topicService";
 import AISolver from "../components/AISolver";
+import { useAuth } from "../contexts/AuthContext";
+import { addQuestionBookmark, removeQuestionBookmark, findQuestionBookmark } from "../repositories/questionBookmarkRepository";
 
 const TOPIC_META = {
   default:                  { difficulty: "Medium", time: 30, concepts: 8,  questions: 80,  desc: "Master this topic with step-by-step visual lessons and guided practice." },
@@ -58,6 +60,7 @@ function LessonSlide({ lesson, color, topicName, onNext, isLast }) {
 }
 
 export default function TopicPage({ topicSlug, topicName, navigate }) {
+  const { user } = useAuth();
   const [topic, setTopic] = useState(null);
   const [loading, setLoading] = useState(true);
   const [screen, setScreen] = useState("overview");
@@ -76,10 +79,57 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   const [loadingQuestions, setLoadingQuestions] = useState(false);
   const [fallbackMode, setFallbackMode] = useState(false);
 
+  // Bookmark states
+  const [isBookmarked, setIsBookmarked] = useState(false);
+  const [bookmarkId, setBookmarkId] = useState(null);
+  const [bookmarkLoading, setBookmarkLoading] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     topicService.getTopicBySlug(topicSlug).then(d => { setTopic(d); setLoading(false); });
   }, [topicSlug]);
+
+  // Check bookmark status whenever the active question changes
+  useEffect(() => {
+    const activeQuestion = questionsList[currentQuestionIdx];
+    if (!user || !activeQuestion) {
+      setIsBookmarked(false);
+      setBookmarkId(null);
+      return;
+    }
+    findQuestionBookmark(user.id, activeQuestion.question).then(result => {
+      if (result) {
+        setIsBookmarked(true);
+        setBookmarkId(result.id);
+      } else {
+        setIsBookmarked(false);
+        setBookmarkId(null);
+      }
+    });
+  }, [currentQuestionIdx, questionsList, user]);
+
+  const handleToggleBookmark = async () => {
+    const activeQuestion = questionsList[currentQuestionIdx];
+    if (!user || !activeQuestion || bookmarkLoading) return;
+    setBookmarkLoading(true);
+    try {
+      if (isBookmarked && bookmarkId) {
+        await removeQuestionBookmark(bookmarkId);
+        setIsBookmarked(false);
+        setBookmarkId(null);
+      } else {
+        const saved = await addQuestionBookmark(user.id, topicSlug, topic?.title || topicName, activeQuestion);
+        if (saved) {
+          setIsBookmarked(true);
+          setBookmarkId(saved.id);
+        }
+      }
+    } catch (err) {
+      console.error('Bookmark toggle failed:', err);
+    } finally {
+      setBookmarkLoading(false);
+    }
+  };
 
   useEffect(() => {
     if (screen === "practice" && practiceLevel) {
@@ -90,6 +140,8 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
       setSelectedOption(null);
       setSubmitted(false);
       setCorrectCount(0);
+      setIsBookmarked(false);
+      setBookmarkId(null);
 
       fetch(`/questions/number-system/${topicSlug}.json`)
         .then(res => {
@@ -317,9 +369,35 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
               <span style={{ fontSize: '0.85rem', fontWeight: 700, color: color, textTransform: 'uppercase', letterSpacing: '1px' }}>
                 Question {currentQuestionIdx + 1} of {questionsList.length}
               </span>
-              <span className={`badge ${{ Easy: 'badge-easy', Medium: 'badge-medium', Hard: 'badge-hard' }[activeQuestion.difficulty] || 'badge-easy'}`}>
-                {activeQuestion.difficulty}
-              </span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span className={`badge ${{ Easy: 'badge-easy', Medium: 'badge-medium', Hard: 'badge-hard' }[activeQuestion.difficulty] || 'badge-easy'}`}>
+                  {activeQuestion.difficulty}
+                </span>
+                {/* Bookmark Button */}
+                <button
+                  onClick={handleToggleBookmark}
+                  disabled={bookmarkLoading}
+                  title={isBookmarked ? 'Remove bookmark' : 'Bookmark this question'}
+                  style={{
+                    background: isBookmarked ? '#f59e0b' : 'var(--surface2)',
+                    border: `2px solid ${isBookmarked ? '#f59e0b' : 'var(--border)'}`,
+                    borderRadius: '10px',
+                    width: '38px',
+                    height: '38px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: bookmarkLoading ? 'wait' : 'pointer',
+                    fontSize: '1.1rem',
+                    transition: 'all 0.2s ease',
+                    transform: bookmarkLoading ? 'scale(0.9)' : 'scale(1)',
+                    boxShadow: isBookmarked ? '0 2px 8px rgba(245,158,11,0.4)' : 'none',
+                  }}
+                >
+                  {bookmarkLoading ? '⏳' : isBookmarked ? '🔖' : '🔖'}
+                  <span style={{ position: 'absolute', width: '38px', height: '38px', borderRadius: '10px', background: isBookmarked ? 'transparent' : 'transparent', filter: isBookmarked ? 'none' : 'grayscale(1) opacity(0.5)' }} />
+                </button>
+              </div>
             </div>
 
             {/* Progress Bar */}

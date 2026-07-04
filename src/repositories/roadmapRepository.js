@@ -7,6 +7,10 @@ import { supabase } from '../lib/supabase';
  * @returns {Promise<Object|null>} The roadmap progress object or null if none exists
  */
 export const getRoadmapProgress = async (userId) => {
+  if (!supabase) {
+    console.warn("getRoadmapProgress: Supabase not initialized. Returning null.");
+    return null;
+  }
   try {
     const { data, error } = await supabase
       .from('roadmap_progress')
@@ -33,6 +37,10 @@ export const getRoadmapProgress = async (userId) => {
  * @returns {Promise<Object>} The updated roadmap object
  */
 export const updateRoadmapProgress = async (userId, currentPhase, unlockedPhases, completedTopics, totalTopics) => {
+  if (!supabase) {
+    console.warn("updateRoadmapProgress: Supabase not initialized. Skipping DB update.");
+    return { current_phase: currentPhase, unlocked_phase: unlockedPhases, completed_topics: completedTopics, total_topics: totalTopics };
+  }
   try {
     const { data, error } = await supabase
       .from('roadmap_progress')

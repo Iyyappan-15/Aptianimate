@@ -7,6 +7,10 @@ import { supabase } from '../lib/supabase';
  * @returns {Promise<Array>} Array of bookmark objects
  */
 export const getBookmarks = async (userId) => {
+  if (!supabase) {
+    console.warn("getBookmarks: Supabase not initialized. Returning empty bookmarks.");
+    return [];
+  }
   try {
     const { data, error } = await supabase
       .from('bookmarks')
@@ -29,6 +33,10 @@ export const getBookmarks = async (userId) => {
  * @returns {Promise<Object>} The inserted bookmark object
  */
 export const addBookmark = async (userId, topicName) => {
+  if (!supabase) {
+    console.warn("addBookmark: Supabase not initialized. Skipping DB insert.");
+    return { topic_name: topicName };
+  }
   try {
     const { data, error } = await supabase
       .from('bookmarks')
@@ -57,6 +65,10 @@ export const addBookmark = async (userId, topicName) => {
  * @returns {Promise<void>}
  */
 export const removeBookmark = async (userId, topicName) => {
+  if (!supabase) {
+    console.warn("removeBookmark: Supabase not initialized. Skipping DB delete.");
+    return;
+  }
   try {
     const { error } = await supabase
       .from('bookmarks')
