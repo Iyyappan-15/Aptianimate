@@ -1,17 +1,21 @@
 // src/components/BookmarkButton.jsx
 import { useState, useEffect } from 'react';
-import { isBookmarked, toggleBookmark } from '../utils/localStorage';
+import { useBookmarks } from '../hooks/useBookmarks';
 
 export default function BookmarkButton({ questionId }) {
-  const [bookmarked, setBookmarked] = useState(false);
+  const { bookmarks, addBookmark, removeBookmark } = useBookmarks();
+  const bookmarked = bookmarks.some(b => b.topic_name === questionId);
 
-  useEffect(() => {
-    setBookmarked(isBookmarked(questionId));
-  }, [questionId]);
-
-  const handleToggle = () => {
-    const next = toggleBookmark(questionId);
-    setBookmarked(next);
+  const handleToggle = async () => {
+    try {
+      if (bookmarked) {
+        await removeBookmark(questionId);
+      } else {
+        await addBookmark(questionId);
+      }
+    } catch (error) {
+      console.error("Failed to toggle bookmark", error);
+    }
   };
 
   return (

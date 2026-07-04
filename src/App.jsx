@@ -1,5 +1,6 @@
 // src/App.jsx
 import { useState, useEffect } from 'react';
+import { useAuth } from './contexts/AuthContext';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
 import logoImg from './assets/logo.png';
@@ -24,6 +25,15 @@ function App() {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || 'light';
   });
+
+  const { user } = useAuth();
+  
+  useEffect(() => {
+    if (user) {
+      console.log("✅ SUPABASE AUTH SUCCESS! Your Anonymous User ID is:", user.id);
+      console.log("Check this ID in your Supabase Dashboard!");
+    }
+  }, [user]);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);

@@ -1,4 +1,4 @@
-﻿// src/pages/TopicPage.jsx — Premium Topic Learning Experience
+// src/pages/TopicPage.jsx — Premium Topic Learning Experience
 import { useState, useEffect, useRef } from "react";
 import { topicService } from "../services/topicService";
 import AISolver from "../components/AISolver";
@@ -67,10 +67,65 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   const startRef = useRef(null);
   const meta = getMeta(topicSlug);
 
+  // New Practice Mode states
+  const [questionsList, setQuestionsList] = useState([]);
+  const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [loadingQuestions, setLoadingQuestions] = useState(false);
+  const [fallbackMode, setFallbackMode] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     topicService.getTopicBySlug(topicSlug).then(d => { setTopic(d); setLoading(false); });
   }, [topicSlug]);
+
+  useEffect(() => {
+    if (screen === "practice" && practiceLevel) {
+      setLoadingQuestions(true);
+      setFallbackMode(false);
+      setQuestionsList([]);
+      setCurrentQuestionIdx(0);
+      setSelectedOption(null);
+      setSubmitted(false);
+      setCorrectCount(0);
+
+      fetch(`/questions/number-system/${topicSlug}.json`)
+        .then(res => {
+          if (!res.ok) throw new Error("File not found");
+          return res.json();
+        })
+        .then(data => {
+          if (data && data.questions && data.questions.length > 0) {
+            let filtered = data.questions;
+            if (practiceLevel.id !== 'mixed') {
+              const diffName = practiceLevel.id.charAt(0).toUpperCase() + practiceLevel.id.slice(1);
+              filtered = data.questions.filter(q => q.difficulty === diffName);
+            }
+            if (filtered.length === 0) {
+              filtered = data.questions;
+            }
+            
+            // Shuffle
+            const shuffled = [...filtered].sort(() => 0.5 - Math.random());
+            const selectedQs = shuffled.slice(0, practiceLevel.count);
+            setQuestionsList(selectedQs);
+            if (selectedQs.length === 0) {
+              setFallbackMode(true);
+            }
+          } else {
+            setFallbackMode(true);
+          }
+          setLoadingQuestions(false);
+        })
+        .catch(err => {
+          console.warn("Failed to load preloaded questions, falling back to AI input mode.", err);
+          setFallbackMode(true);
+          setLoadingQuestions(false);
+        });
+    }
+  }, [screen, practiceLevel, topicSlug]);
 
   const saveProgress = p => localStorage.setItem("topicProgress_" + topicSlug, String(p));
   const startLearn = () => { startRef.current = Date.now(); setScreen("learn"); setLessonIdx(0); };
@@ -79,7 +134,15 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   const finishPractice = () => {
     saveProgress(100);
     const elapsed = Math.round((Date.now() - startRef.current) / 60000);
-    setStats({ accuracy: Math.floor(Math.random() * 20) + 75, time: elapsed || meta.time, xp: 120 + meta.concepts * 5 });
+    const actualAccuracy = (!fallbackMode && questionsList.length > 0)
+      ? Math.round((correctCount / questionsList.length) * 100)
+      : Math.floor(Math.random() * 20) + 75;
+    
+    setStats({
+      accuracy: actualAccuracy,
+      time: elapsed || meta.time,
+      xp: 120 + meta.concepts * 5 + (fallbackMode ? 0 : correctCount * 10)
+    });
     setScreen("complete");
   };
 
@@ -208,20 +271,225 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
         </div>
       </div>
     );
+
+    if (fallbackMode) {
+      return (
+        <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
+          <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24,flexWrap:"wrap",gap:12 }}>
+            <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
+            <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>🎯 {practiceLevel.emoji} {practiceLevel.label} · {practiceLevel.count} Questions</div>
+          </div>
+          <div style={{ background:color+"11",border:"1px solid "+color+"33",borderRadius:16,padding:"20px 24px",marginBottom:24 }}>
+            <div style={{ fontWeight:800,color:"var(--text-main)",marginBottom:4 }}>{topic.icon} {topic.title} — Practice Session</div>
+            <p style={{ fontSize:".9rem",color:"var(--text-sec)",margin:0 }}>Paste any <strong>{topic.title}</strong> question below. AI provides animated visual step-by-step solutions with shortcuts.</p>
+          </div>
+          <AISolver topicColor={color} topicName={topic.title} />
+          <div style={{ textAlign:"center",marginTop:32 }}>
+            <button onClick={finishPractice} style={{ padding:"14px 40px",borderRadius:12,border:"none",background:"#10b981",color:"#fff",fontWeight:800,fontSize:"1rem",cursor:"pointer" }}>✅ Mark Session Complete</button>
+          </div>
+        </div>
+      );
+    }
+
+    const activeQuestion = questionsList[currentQuestionIdx];
+    const isLastQuestion = currentQuestionIdx === questionsList.length - 1;
+    const optionKeys = ['A', 'B', 'C', 'D'];
+
     return (
       <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
         <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24,flexWrap:"wrap",gap:12 }}>
           <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
           <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>🎯 {practiceLevel.emoji} {practiceLevel.label} · {practiceLevel.count} Questions</div>
         </div>
-        <div style={{ background:color+"11",border:"1px solid "+color+"33",borderRadius:16,padding:"20px 24px",marginBottom:24 }}>
-          <div style={{ fontWeight:800,color:"var(--text-main)",marginBottom:4 }}>{topic.icon} {topic.title} — Practice Session</div>
-          <p style={{ fontSize:".9rem",color:"var(--text-sec)",margin:0 }}>Paste any <strong>{topic.title}</strong> question below. AI provides animated visual step-by-step solutions with shortcuts.</p>
-        </div>
-        <AISolver topicColor={color} topicName={topic.title} />
-        <div style={{ textAlign:"center",marginTop:32 }}>
-          <button onClick={finishPractice} style={{ padding:"14px 40px",borderRadius:12,border:"none",background:"#10b981",color:"#fff",fontWeight:800,fontSize:"1rem",cursor:"pointer" }}>✅ Mark Session Complete</button>
-        </div>
+
+        {loadingQuestions ? (
+          <div style={{ display:"flex",justifyContent:"center",alignItems:"center",minHeight:"200px" }}>
+            <div style={{ textAlign:"center",color:"var(--text-sec)" }}>
+              <div style={{ border: '4px solid rgba(255,255,255,0.1)', borderTop: `4px solid ${color}`, borderRadius: '50%', width: '40px', height: '40px', animation: 'spin 1s linear infinite', margin: '0 auto 16px' }} />
+              <p>Loading practice questions...</p>
+            </div>
+          </div>
+        ) : activeQuestion ? (
+          <div className="question-card" style={{ animation: 'fadeIn 0.4s ease', padding: '32px', borderRadius: '20px', border: '1px solid var(--border)' }}>
+            
+            {/* Progress Header */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+              <span style={{ fontSize: '0.85rem', fontWeight: 700, color: color, textTransform: 'uppercase', letterSpacing: '1px' }}>
+                Question {currentQuestionIdx + 1} of {questionsList.length}
+              </span>
+              <span className={`badge ${{ Easy: 'badge-easy', Medium: 'badge-medium', Hard: 'badge-hard' }[activeQuestion.difficulty] || 'badge-easy'}`}>
+                {activeQuestion.difficulty}
+              </span>
+            </div>
+
+            {/* Progress Bar */}
+            <div style={{ height: '6px', background: 'var(--surface2)', borderRadius: '4px', overflow: 'hidden', marginBottom: '24px' }}>
+              <div style={{ width: `${((currentQuestionIdx + 1) / questionsList.length) * 100}%`, height: '100%', background: color, transition: 'width 0.3s ease' }} />
+            </div>
+
+            {/* Subtopic */}
+            <div style={{ fontSize: '0.85rem', color: 'var(--text-sec)', marginBottom: '8px', fontWeight: 500 }}>
+              📌 Subtopic: {activeQuestion.subtopic || 'General'}
+            </div>
+
+            {/* Question Text */}
+            <div className="qc-question" style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '28px', lineHeight: 1.6 }}>
+              {activeQuestion.question}
+            </div>
+
+            {/* Options Grid */}
+            <div className="options-grid" style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '28px' }}>
+              {activeQuestion.options.map((opt, idx) => {
+                const letter = optionKeys[idx] || String(idx + 1);
+                const isSelected = selectedOption === opt;
+                const isCorrect = opt === activeQuestion.correctAnswer;
+                
+                let btnClass = 'option-btn';
+                if (submitted) {
+                  if (isCorrect) btnClass = 'option-btn correct';
+                  else if (isSelected && !isCorrect) btnClass = 'option-btn wrong';
+                } else if (isSelected) {
+                  btnClass = 'option-btn selected';
+                }
+
+                return (
+                  <button
+                    key={idx}
+                    className={btnClass}
+                    onClick={() => {
+                      if (!submitted) {
+                        setSelectedOption(opt);
+                        setSubmitted(true);
+                        if (opt === activeQuestion.correctAnswer) {
+                          setCorrectCount(prev => prev + 1);
+                        }
+                      }
+                    }}
+                    disabled={submitted}
+                    style={{ 
+                      width: '100%', 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      textAlign: 'left',
+                      padding: '16px 20px',
+                      borderRadius: '12px',
+                      cursor: submitted ? 'default' : 'pointer'
+                    }}
+                  >
+                    <span className="opt-letter" style={{ flexShrink: 0 }}>{letter}</span>
+                    <span style={{ fontSize: '1rem', fontWeight: 500 }}>{opt}</span>
+                    {submitted && isCorrect && (
+                      <span style={{ marginLeft: 'auto', color: 'var(--teal)', fontWeight: 'bold', fontSize: '1.2rem' }}>✓</span>
+                    )}
+                    {submitted && isSelected && !isCorrect && (
+                      <span style={{ marginLeft: 'auto', color: 'var(--coral)', fontWeight: 'bold', fontSize: '1.2rem' }}>✗</span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Solution and Actions block */}
+            {submitted && (
+              <div style={{ animation: 'slideUp 0.3s ease', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                
+                {/* Correct/Wrong Message */}
+                <div style={{
+                  padding: '14px 20px', 
+                  borderRadius: '12px',
+                  background: selectedOption === activeQuestion.correctAnswer ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.1)',
+                  border: `1px solid ${selectedOption === activeQuestion.correctAnswer ? 'var(--teal)' : 'var(--coral)'}`,
+                  fontSize: '1rem', 
+                  fontWeight: 700,
+                  color: selectedOption === activeQuestion.correctAnswer ? 'var(--teal)' : 'var(--coral)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }}>
+                  {selectedOption === activeQuestion.correctAnswer
+                    ? '🎉 Correct! Great job.'
+                    : `❌ Incorrect. The correct answer is: Option ${optionKeys[activeQuestion.options.indexOf(activeQuestion.correctAnswer)] || ''} (${activeQuestion.correctAnswer})`}
+                </div>
+
+                {/* Question Info / Memory Trick if incorrect */}
+                {selectedOption !== activeQuestion.correctAnswer && activeQuestion.memoryTrick && (
+                  <div style={{ background: 'var(--surface2)', padding: '16px 20px', borderRadius: '12px', fontSize: '0.9rem', color: 'var(--text-sec)', borderLeft: `3px solid var(--amber)` }}>
+                    💡 <strong>Memory Trick:</strong> {activeQuestion.memoryTrick}
+                  </div>
+                )}
+
+                {/* Primary Action Buttons */}
+                <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '8px' }}>
+                  
+                  {/* Solve Visually Button (Navigates to AskPage in a new tab) */}
+                  <button
+                    onClick={() => {
+                      const queryText = `${activeQuestion.question}\n\nOptions:\nA) ${activeQuestion.options[0]}\nB) ${activeQuestion.options[1]}\nC) ${activeQuestion.options[2]}\nD) ${activeQuestion.options[3]}\n\nExplain this step-by-step with visual details.`;
+                      window.open(`#/ask?q=${encodeURIComponent(queryText)}`, '_blank');
+                    }}
+                    style={{
+                      flex: 1,
+                      minWidth: '200px',
+                      padding: '14px 28px',
+                      borderRadius: '12px',
+                      border: 'none',
+                      background: `linear-gradient(135deg, ${color}, #8b5cf6)`,
+                      color: '#fff',
+                      fontWeight: 800,
+                      fontSize: '1rem',
+                      cursor: 'pointer',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '8px',
+                      boxShadow: `0 4px 14px ${color}33`,
+                      transition: 'transform 0.15s, box-shadow 0.15s'
+                    }}
+                    onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = `0 6px 20px ${color}44`; }}
+                    onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = `0 4px 14px ${color}33`; }}
+                  >
+                    🎬 Solve Visually (AI Explainer)
+                  </button>
+
+                  {/* Next Question / Finish Session Button */}
+                  <button
+                    onClick={() => {
+                      if (isLastQuestion) {
+                        finishPractice();
+                      } else {
+                        setCurrentQuestionIdx(prev => prev + 1);
+                        setSelectedOption(null);
+                        setSubmitted(false);
+                      }
+                    }}
+                    style={{
+                      padding: '14px 32px',
+                      borderRadius: '12px',
+                      border: 'none',
+                      background: 'var(--text-main)',
+                      color: 'var(--surface)',
+                      fontWeight: 800,
+                      fontSize: '1rem',
+                      cursor: 'pointer',
+                      transition: 'transform 0.15s'
+                    }}
+                    onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                    onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; }}
+                  >
+                    {isLastQuestion ? '🏁 Finish Practice' : 'Next Question ➡️'}
+                  </button>
+
+                </div>
+
+              </div>
+            )}
+
+          </div>
+        ) : (
+          <div style={{ textAlign: 'center', padding: '40px var(--radius)' }}>
+            <p>No questions found. Try choosing another level.</p>
+          </div>
+        )}
       </div>
     );
   }
