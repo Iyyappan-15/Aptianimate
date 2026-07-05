@@ -104,8 +104,8 @@ export default function AskPage({ navigate, initialQuery = "" }) {
       {/* Input Form */}
       {(state === STATES.IDLE || state === STATES.ERROR) && (
         <form className="ai-solver-form" onSubmit={handleSubmit}>
-          <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-            <div className="ai-solver-input-wrap" style={{ flex: 1 }}>
+          <div className="ai-solver-input-container">
+            <div className="ai-solver-input-wrap">
               <textarea
                 ref={textareaRef}
                 className="ai-solver-textarea"
@@ -120,19 +120,11 @@ export default function AskPage({ navigate, initialQuery = "" }) {
               </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div className="ai-solver-upload-wrap">
               <button
                 type="button"
+                className={`ai-solver-upload-btn ${selectedImage ? 'has-image' : ''}`}
                 onClick={() => fileInputRef.current?.click()}
-                style={{
-                  width: '48px', height: '48px', borderRadius: '12px',
-                  background: selectedImage ? 'var(--violet)' : 'var(--card-bg, rgba(255,255,255,0.05))',
-                  border: '1px solid var(--border)',
-                  color: selectedImage ? '#fff' : 'var(--text-sec)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  cursor: 'pointer', transition: 'all 0.2s',
-                  boxShadow: selectedImage ? '0 4px 12px rgba(124,58,237,0.3)' : 'none'
-                }}
                 title="Upload Image"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -166,7 +158,6 @@ export default function AskPage({ navigate, initialQuery = "" }) {
           <button
             type="submit"
             className="ai-solver-submit"
-            style={{ '--solver-color': 'var(--violet)' }}
             disabled={!question.trim() && !selectedImage}
           >
             <span>✨ Solve Visually</span>

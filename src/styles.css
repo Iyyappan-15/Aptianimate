@@ -2251,3 +2251,193 @@ img, svg { display: block; }
   color: var(--muted);
   font-size: 0.95rem;
 }
+/* ============================================================
+   RESPONSIVE OVERRIDES AND NEW CLASSES
+   ============================================================ */
+
+/* Navbar Buttons */
+.btn-ask-ai {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(20,184,166,0.12));
+  color: var(--violet); border: 1px solid rgba(124,58,237,0.3);
+  border-radius: 20px; padding: 6px 14px; font-weight: 700; font-size: 0.85rem;
+  cursor: pointer; transition: all 0.2s; margin-left: 4px;
+}
+.btn-ask-ai.active {
+  background: linear-gradient(135deg, var(--violet), var(--teal));
+  color: #fff; box-shadow: 0 4px 14px rgba(124,58,237,0.35); border-color: transparent;
+}
+.btn-google {
+  display: inline-flex; align-items: center; gap: 8px; background: var(--surface);
+  color: var(--text); border: 1px solid var(--border); border-radius: 20px;
+  padding: 6px 14px; font-weight: 700; font-size: 0.85rem; cursor: pointer;
+  transition: all 0.2s; margin-left: 8px;
+}
+.btn-google:hover { background: var(--surface3); }
+.nav-profile-wrapper { display: inline-flex; align-items: center; gap: 6px; margin-left: 8px; }
+.btn-profile {
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px 4px 4px;
+  border-radius: 999px; text-decoration: none; background: transparent; cursor: pointer; transition: background 0.2s; border: none; color: inherit;
+}
+.btn-profile:hover { background: var(--surface2); }
+.profile-username { font-size: 0.85rem; font-weight: 700; color: var(--text); pointer-events: none; }
+.btn-theme-toggle {
+  background: transparent; color: var(--text); border: 1px solid var(--border);
+  border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center;
+  justify-content: center; margin-left: 8px; cursor: pointer; transition: background 0.2s;
+}
+.btn-theme-toggle:hover { background: var(--surface2); }
+
+/* Ask AI Page */
+.ai-solver-form {
+  display: flex; flex-direction: column; gap: 16px;
+}
+.ai-solver-input-container {
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.ai-solver-input-wrap {
+  position: relative; flex: 1; display: flex; flex-direction: column;
+}
+.ai-solver-textarea {
+  width: 100%; min-height: 120px; padding: 14px 16px 36px 16px;
+  background: var(--surface); border: 2px solid var(--border);
+  border-radius: var(--radius); color: var(--text); font-size: 1rem;
+  resize: vertical; transition: border-color var(--transition);
+}
+.ai-solver-textarea:focus { border-color: var(--violet); }
+.ai-solver-hint {
+  position: absolute; bottom: 12px; right: 16px;
+  font-size: 0.75rem; color: var(--muted); pointer-events: none;
+}
+.ai-solver-upload-wrap {
+  display: flex; flex-direction: column; gap: 10px;
+}
+.ai-solver-upload-btn {
+  width: 48px; height: 48px; border-radius: 12px;
+  background: var(--card-bg, rgba(255,255,255,0.05));
+  border: 1px solid var(--border); color: var(--text-sec);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.2s; box-shadow: none;
+}
+.ai-solver-upload-btn.has-image {
+  background: var(--violet); color: #fff; box-shadow: 0 4px 12px rgba(124,58,237,0.3);
+}
+.ai-solver-submit {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; padding: 14px; border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--violet), var(--teal));
+  color: #fff; font-weight: 800; font-size: 1rem; border: none;
+  cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(124,58,237,0.3);
+}
+.ai-solver-submit:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(124,58,237,0.4); }
+.ai-solver-submit:disabled { opacity: 0.6; cursor: not-allowed; box-shadow: none; transform: none; }
+
+/* Profile Page */
+.profile-hero-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 20px;
+  overflow: hidden; margin-bottom: 20px; box-shadow: var(--shadow);
+}
+.profile-hero-banner {
+  height: 100px; background: linear-gradient(135deg, var(--violet), #6d28d9);
+}
+.profile-hero-content {
+  display: flex; align-items: center; gap: 20px; padding: 0 28px 24px;
+}
+.profile-hero-avatar-wrap {
+  margin-top: -48px;
+}
+.profile-hero-avatar-img {
+  display: block; width: 96px; height: 96px; border-radius: 50%;
+  border: 4px solid var(--surface); object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15); flex-shrink: 0;
+}
+.profile-hero-avatar-fallback {
+  width: 96px; height: 96px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet), #6d28d9);
+  border: 4px solid var(--surface); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 2.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15); flex-shrink: 0;
+}
+.profile-hero-text {
+  padding-top: 8px;
+}
+.profile-hero-name {
+  margin: 0 0 6px; font-size: 1.6rem; font-weight: 900; color: var(--text); line-height: 1.2;
+}
+.profile-hero-username {
+  margin: 0; font-size: 1rem; font-weight: 600; color: var(--violet);
+}
+
+.setting-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 0; border-bottom: 1px solid var(--border);
+}
+.setting-row:last-child {
+  border-bottom: none;
+}
+.setting-info {
+  display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0;
+}
+.setting-icon {
+  width: 36px; height: 36px; border-radius: 10px; display: flex;
+  align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;
+}
+.setting-title {
+  margin: 0; font-weight: 700; font-size: 0.88rem; color: var(--text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.setting-desc {
+  margin: 0; font-size: 0.75rem; color: var(--muted2);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.setting-edit-group {
+  display: flex; gap: 8px; align-items: center; flex: 1; margin-left: 16px; justify-content: flex-end;
+}
+.setting-edit-actions {
+  display: flex; gap: 8px; align-items: center;
+}
+.setting-select {
+  padding: 6px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 700;
+  border: 1px solid var(--border); background: var(--surface2); color: var(--text); cursor: pointer;
+}
+.profile-photo-preview {
+  width: 36px; height: 36px; border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--violet); flex-shrink: 0;
+}
+
+/* --- MOBILE RESPONSIVE TWEAKS --- */
+@media (max-width: 640px) {
+  /* Navbar tweaks */
+  .nav-brand { font-size: 1.1rem; gap: 6px; }
+  .nav-logo { height: 36px; }
+  .btn-ask-ai { padding: 6px 10px; margin-left: 0; }
+  .btn-ask-ai .btn-text { display: none; }
+  .btn-google { padding: 6px 10px; margin-left: 4px; }
+  .btn-google .btn-text { display: none; }
+  .btn-profile { padding: 4px; }
+  .profile-username { display: none; }
+  .btn-theme-toggle { margin-left: 4px; width: 28px; height: 28px; }
+
+  /* AskPage tweaks */
+  .ai-solver-input-container { flex-direction: column; gap: 8px; }
+  .ai-solver-textarea { font-size: 0.95rem; min-height: 100px; padding-bottom: 14px; }
+  .ai-solver-hint { display: none; } /* Hide hint on mobile to save space */
+  .ai-solver-submit { padding: 12px; font-size: 0.95rem; }
+  .ai-solver-upload-wrap { align-self: flex-end; }
+
+  /* Profile Page tweaks */
+  .profile-hero-content { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 20px 24px; }
+  .profile-hero-avatar-wrap { margin-top: -36px; }
+  .profile-hero-avatar-img, .profile-hero-avatar-fallback { width: 72px; height: 72px; border-width: 3px; font-size: 2rem; }
+  .profile-hero-name { font-size: 1.3rem; }
+  
+  .setting-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .setting-info { width: 100%; }
+  .setting-edit-group { width: 100%; margin-left: 0; flex-direction: column; align-items: stretch; gap: 12px; justify-content: flex-start; }
+  .setting-edit-actions { width: 100%; justify-content: flex-start; flex-wrap: wrap; }
+  .setting-edit-actions > button { flex: 1; text-align: center; justify-content: center; }
+  .setting-select { width: 100%; }
+  .setting-row > button { width: 100%; text-align: center; justify-content: center; }
+}

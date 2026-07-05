@@ -19,6 +19,15 @@ import SplashScreen from './components/SplashScreen';
 import DoodleOverlay from './components/DoodleOverlay';
 import UsernameModal from './components/UsernameModal';
 import { signInWithGoogle, signOut } from './services/authService';
+import { getSystemSettings } from './repositories/adminRepository';
+
+// Admin Components
+import AdminRoute from './components/admin/AdminRoute';
+import AdminLayout from './components/admin/AdminLayout';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import AdminUsers from './pages/admin/AdminUsers';
+import AdminSettings from './pages/admin/AdminSettings';
+import AdminProfile from './pages/admin/AdminProfile';
 
 function App() {
   const [route, setRoute] = useState(window.location.hash.replace('#/', '') || '');
@@ -29,7 +38,8 @@ function App() {
     return localStorage.getItem('theme') || 'light';
   });
 
-  const { user, profile } = useAuth();
+  const { user, profile, loading: authLoading } = useAuth();
+  const [systemSettings, setSystemSettings] = useState(null);
   
   useEffect(() => {
     if (user) {
@@ -37,6 +47,16 @@ function App() {
       console.log("Profile Data:", profile);
     }
   }, [user, profile]);
+
+  useEffect(() => {
+    let mounted = true;
+    getSystemSettings().then(data => {
+      if (mounted && data) {
+        setSystemSettings(data);
+      }
+    });
+    return () => { mounted = false; };
+  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -79,6 +99,8 @@ function App() {
 
   // Simple Hash Router
   let pageComponent;
+  let isRouteAdmin = route === 'admin' || route.startsWith('admin/');
+
   if (route === '') {
     pageComponent = <HomePage navigate={navigate} />;
   } else if (route.startsWith('category/')) {
@@ -110,8 +132,34 @@ function App() {
     pageComponent = <GovtDailyPracticePage navigate={navigate} />;
   } else if (route === 'profile') {
     pageComponent = <ProfilePage />;
+  } else if (route === 'admin') {
+    pageComponent = <AdminDashboard />;
+  } else if (route === 'admin/users') {
+    pageComponent = <AdminUsers />;
+  } else if (route === 'admin/settings') {
+    pageComponent = <AdminSettings />;
+  } else if (route === 'admin/profile') {
+    pageComponent = <AdminProfile />;
   } else {
     pageComponent = <HomePage navigate={navigate} />;
+  }
+
+  const role = profile?.role || 'user';
+  const isAdmin = role === 'admin' || role === 'super_admin';
+
+  if (systemSettings?.maintenance_mode && !isRouteAdmin && !isAdmin && !authLoading) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)', textAlign: 'center', padding: '20px' }}>
+        <h1 style={{ fontSize: '3rem', margin: '0 0 16px 0' }}>🛠️</h1>
+        <h2 style={{ margin: '0 0 16px 0', fontSize: '1.8rem', fontWeight: 900 }}>Under Maintenance</h2>
+        <p style={{ color: 'var(--muted)', maxWidth: '400px' }}>
+          We are currently performing scheduled maintenance on AptiAnimate. We'll be back shortly!
+        </p>
+        <p style={{ marginTop: '24px', fontSize: '0.9rem', color: 'var(--muted)' }}>
+          Need help? Contact <a href={`mailto:${systemSettings?.contact_email}`} style={{ color: 'var(--violet)' }}>{systemSettings?.contact_email}</a>
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -127,127 +175,101 @@ function App() {
             transition={{ duration: 0.8 }}
             className="app-shell"
           >
-            <nav className="navbar">
-              <div className="navbar-inner">
-                <div className="nav-brand" onClick={() => navigate('')}>
-                  <img src={logoImg} alt="AptiAnimate Logo" className="nav-logo" />
-                  AptiAnimate
-                </div>
-                <div className="nav-links">
-                  <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => navigate('')}>Home</button>
-                  <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => navigate('saved')}>Saved</button>
-                  <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => navigate('progress')}>Progress</button>
-                  {/* ✨ Ask AI nav button */}
-                  <button
-                    onClick={() => navigate('ask')}
-                    style={{
-                      display: 'inline-flex', alignItems: 'center', gap: '6px',
-                      background: route.startsWith('ask') ? 'linear-gradient(135deg, var(--violet), var(--teal))' : 'linear-gradient(135deg, rgba(124,58,237,0.12), rgba(20,184,166,0.12))',
-                      color: route.startsWith('ask') ? '#fff' : 'var(--violet)',
-                      border: '1px solid rgba(124,58,237,0.3)',
-                      borderRadius: '20px', padding: '6px 14px',
-                      fontWeight: '700', fontSize: '0.85rem', cursor: 'pointer',
-                      transition: 'all 0.2s', marginLeft: '4px',
-                      boxShadow: route.startsWith('ask') ? '0 4px 14px rgba(124,58,237,0.35)' : 'none',
-                    }}
-                  >
-                    ✨ Ask AI
-                  </button>
-
-                  {/* 🔐 Google Login / User Profile */}
-                  {(!user || user.is_anonymous) ? (
+            {!isRouteAdmin && (
+              <nav className="navbar">
+                {systemSettings?.announcement_text && (
+                  <div style={{ background: 'var(--violet)', color: '#fff', textAlign: 'center', padding: '8px 16px', fontSize: '0.9rem', fontWeight: 'bold' }}>
+                    {systemSettings.announcement_text}
+                  </div>
+                )}
+                <div className="navbar-inner">
+                  <div className="nav-brand" onClick={() => navigate('')}>
+                    <img src={logoImg} alt="AptiAnimate Logo" className="nav-logo" />
+                    AptiAnimate
+                  </div>
+                  <div className="nav-links">
+                    <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => navigate('')}>Home</button>
+                    <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => navigate('saved')}>Saved</button>
+                    <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => navigate('progress')}>Progress</button>
+                    {/* ✨ Ask AI nav button */}
                     <button
-                      onClick={signInWithGoogle}
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '8px',
-                        background: 'var(--surface)',
-                        color: 'var(--text)',
-                        border: '1px solid var(--border)',
-                        borderRadius: '20px',
-                        padding: '6px 14px',
-                        fontWeight: '700',
-                        fontSize: '0.85rem',
-                        cursor: 'pointer',
-                        transition: 'all 0.2s',
-                        marginLeft: '8px',
-                      }}
-                      onMouseOver={(e) => e.currentTarget.style.background = 'var(--surface3)'}
-                      onMouseOut={(e) => e.currentTarget.style.background = 'var(--surface)'}
+                      className={`btn-ask-ai ${route.startsWith('ask') ? 'active' : ''}`}
+                      onClick={() => navigate('ask')}
                     >
-                      <svg width="14" height="14" viewBox="0 0 48 48" style={{ flexShrink: 0 }}>
-                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-                        <path fill="#4285F4" d="M46.5 24c0-1.61-.15-3.16-.42-4.69H24v9.09h12.75c-.53 2.87-2.14 5.3-4.57 6.96l7.14 5.53C43.51 36.31 46.5 30.8 46.5 24z"/>
-                        <path fill="#FBBC05" d="M10.54 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.98-6.19z"/>
-                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.14-5.53c-1.97 1.33-4.5 2.13-8.75 2.13-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-                      </svg>
-                      Google Sign In
+                      <span className="btn-icon-text">✨</span> <span className="btn-text">Ask AI</span>
                     </button>
-                  ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginLeft: '8px' }}>
-                      {/* Clickable profile: avatar + username → goes to /profile */}
-                      <a
-                        href="#/profile"
-                        style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '6px',
-                          padding: '4px 8px 4px 4px',
-                          borderRadius: '999px',
-                          textDecoration: 'none',
-                          background: 'transparent',
-                          cursor: 'pointer',
-                          transition: 'background 0.2s',
-                        }}
-                        onMouseEnter={(e) => e.currentTarget.style.background = 'var(--surface2)'}
-                        onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
-                      >
-                        <img
-                          src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
-                          alt="avatar"
-                          style={{
-                            display: 'inline-block',
-                            width: '28px',
-                            height: '28px',
-                            borderRadius: '50%',
-                            border: '2px solid var(--violet)',
-                            objectFit: 'cover',
-                            flexShrink: 0,
-                            pointerEvents: 'none',
-                          }}
-                        />
-                        {profile?.username && (
-                          <span style={{
-                            fontSize: '0.85rem',
-                            fontWeight: 700,
-                            color: 'var(--text)',
-                            pointerEvents: 'none',
-                          }}>
-                            @{profile.username}
-                          </span>
-                        )}
-                    </a>
-                    </div>
-                  )}
 
-                  <button 
-                    onClick={toggleTheme} 
-                    style={{ background: 'transparent', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '8px' }}
-                  >
-                    {theme === 'light' ? '🌙' : '☀️'}
-                  </button>
+                    {/* 🔐 Google Login / User Profile */}
+                    {(!user || user.is_anonymous) ? (
+                      <button
+                        className="btn-google"
+                        onClick={signInWithGoogle}
+                      >
+                        <svg width="14" height="14" viewBox="0 0 48 48" style={{ flexShrink: 0 }}>
+                          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                          <path fill="#4285F4" d="M46.5 24c0-1.61-.15-3.16-.42-4.69H24v9.09h12.75c-.53 2.87-2.14 5.3-4.57 6.96l7.14 5.53C43.51 36.31 46.5 30.8 46.5 24z"/>
+                          <path fill="#FBBC05" d="M10.54 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.98-6.19z"/>
+                          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.14-5.53c-1.97 1.33-4.5 2.13-8.75 2.13-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                        </svg>
+                        <span className="btn-text">Google Sign In</span>
+                      </button>
+                    ) : (
+                      <div className="nav-profile-wrapper">
+                        {/* Clickable profile: avatar + username → goes to /profile */}
+                        <a
+                          href="#/profile"
+                          className="btn-profile"
+                        >
+                          <img
+                            src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
+                            alt="avatar"
+                            style={{
+                              display: 'inline-block',
+                              width: '28px',
+                              height: '28px',
+                              borderRadius: '50%',
+                              border: '2px solid var(--violet)',
+                              objectFit: 'cover',
+                              flexShrink: 0,
+                              pointerEvents: 'none',
+                            }}
+                          />
+                          {profile?.username && (
+                            <span className="profile-username">
+                              @{profile.username}
+                            </span>
+                          )}
+                      </a>
+                      </div>
+                    )}
+
+                    <button 
+                      onClick={toggleTheme} 
+                      className="btn-theme-toggle"
+                    >
+                      {theme === 'light' ? '🌙' : '☀️'}
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </nav>
-            <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-              {pageComponent}
-            </main>
+              </nav>
+            )}
+            
+            {isRouteAdmin ? (
+              <AdminRoute navigate={navigate}>
+                <AdminLayout currentRoute={route} navigate={navigate}>
+                  {pageComponent}
+                </AdminLayout>
+              </AdminRoute>
+            ) : (
+              <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                {pageComponent}
+              </main>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
       {/* Global Scratchpad — floats over every page */}
-      <DoodleOverlay />
+      {!isRouteAdmin && <DoodleOverlay />}
       <UsernameModal />
       <Analytics />
     </>

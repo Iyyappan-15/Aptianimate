@@ -272,17 +272,17 @@ function AccountSettings({ user, profile, signOut }) {
       )}
 
       {/* ── Change Profile Photo ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>🖼️</div>
+      <div className="setting-row">
+        <div className="setting-info">
+          <div className="setting-icon" style={{ background: 'var(--surface2)' }}>🖼️</div>
           <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Profile Photo</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Upload a JPG, PNG or GIF (max 5MB)</p>
+            <p className="setting-title">Profile Photo</p>
+            <p className="setting-desc">Upload a JPG, PNG or GIF (max 5MB)</p>
           </div>
         </div>
 
         {editingPhoto ? (
-          <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+          <div className="setting-edit-group">
             {/* Hidden real file input */}
             <input
               ref={fileInputRef}
@@ -296,16 +296,17 @@ function AccountSettings({ user, profile, signOut }) {
               <img
                 src={photoPreview}
                 alt="preview"
-                style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--violet)', flexShrink: 0 }}
+                className="profile-photo-preview"
               />
             )}
             {/* Choose file button */}
-            <button
-              onClick={() => fileInputRef.current?.click()}
-              style={{ ...btnSm('var(--violet)', false), display: 'flex', alignItems: 'center', gap: 6 }}
-            >
-              📂 {photoFile ? photoFile.name.slice(0, 14) + '...' : 'Choose File'}
-            </button>
+            <div className="setting-edit-actions">
+              <button
+                onClick={() => fileInputRef.current?.click()}
+                style={{ ...btnSm('var(--violet)', false), display: 'flex', alignItems: 'center', gap: 6 }}
+              >
+                📂 {photoFile ? (photoFile.name.length > 10 ? photoFile.name.slice(0, 8) + '...' : photoFile.name) : 'Choose'}
+              </button>
             {/* Save button — only active when file chosen */}
             {photoFile && (
               <button
@@ -313,7 +314,7 @@ function AccountSettings({ user, profile, signOut }) {
                 disabled={saving}
                 style={btnSm('var(--violet)', true)}
               >
-                {saving ? '… Uploading' : 'Upload'}
+                {saving ? '… Up' : 'Upload'}
               </button>
             )}
             <button
@@ -322,6 +323,7 @@ function AccountSettings({ user, profile, signOut }) {
             >
               Cancel
             </button>
+            </div>
           </div>
         ) : (
           <button onClick={() => setEditingPhoto(true)} style={btnSm('var(--violet)', false)}>Change</button>
@@ -329,24 +331,26 @@ function AccountSettings({ user, profile, signOut }) {
       </div>
 
       {/* ── Change Display Name ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>✏️</div>
+      <div className="setting-row">
+        <div className="setting-info">
+          <div className="setting-icon" style={{ background: 'var(--surface2)' }}>✏️</div>
           <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Display Name</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Current: {profile?.full_name || '—'}</p>
+            <p className="setting-title">Display Name</p>
+            <p className="setting-desc">Current: {profile?.full_name || '—'}</p>
           </div>
         </div>
         {editingDisplayName ? (
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flex: 1, marginLeft: 16 }}>
+          <div className="setting-edit-group">
             <input
               style={inputStyle}
               value={newDisplayName}
               onChange={e => setNewDisplayName(e.target.value)}
               placeholder="Your display name"
             />
-            <button onClick={handleSaveDisplayName} disabled={saving} style={btnSm('var(--violet)', true)}>{saving ? '…' : 'Save'}</button>
-            <button onClick={() => setEditingDisplayName(false)} style={btnSm('var(--muted)')}>Cancel</button>
+            <div className="setting-edit-actions">
+              <button onClick={handleSaveDisplayName} disabled={saving} style={btnSm('var(--violet)', true)}>{saving ? '…' : 'Save'}</button>
+              <button onClick={() => setEditingDisplayName(false)} style={btnSm('var(--muted)')}>Cancel</button>
+            </div>
           </div>
         ) : (
           <button onClick={() => setEditingDisplayName(true)} style={btnSm('var(--violet)', false)}>Change</button>
@@ -354,24 +358,26 @@ function AccountSettings({ user, profile, signOut }) {
       </div>
 
       {/* ── Change Username ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>@</div>
+      <div className="setting-row">
+        <div className="setting-info">
+          <div className="setting-icon" style={{ background: 'var(--surface2)' }}>@</div>
           <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Username</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Current: @{profile?.username || '—'}</p>
+            <p className="setting-title">Username</p>
+            <p className="setting-desc">Current: @{profile?.username || '—'}</p>
           </div>
         </div>
         {editingUsername ? (
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flex: 1, marginLeft: 16 }}>
+          <div className="setting-edit-group">
             <input
               style={inputStyle}
               value={newUsername}
               onChange={e => setNewUsername(e.target.value)}
               placeholder="new_username"
             />
-            <button onClick={handleSaveUsername} disabled={saving} style={btnSm('var(--violet)', true)}>{saving ? '…' : 'Save'}</button>
-            <button onClick={() => setEditingUsername(false)} style={btnSm('var(--muted)')}>Cancel</button>
+            <div className="setting-edit-actions">
+              <button onClick={handleSaveUsername} disabled={saving} style={btnSm('var(--violet)', true)}>{saving ? '…' : 'Save'}</button>
+              <button onClick={() => setEditingUsername(false)} style={btnSm('var(--muted)')}>Cancel</button>
+            </div>
           </div>
         ) : (
           <button onClick={() => setEditingUsername(true)} style={btnSm('var(--violet)', false)}>Change</button>
@@ -379,15 +385,15 @@ function AccountSettings({ user, profile, signOut }) {
       </div>
 
       {/* ── Language ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>🌐</div>
+      <div className="setting-row">
+        <div className="setting-info">
+          <div className="setting-icon" style={{ background: 'var(--surface2)' }}>🌐</div>
           <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Language</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Interface language preference</p>
+            <p className="setting-title">Language</p>
+            <p className="setting-desc">Interface language preference</p>
           </div>
         </div>
-        <select style={{ padding: '6px 12px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}>
+        <select className="setting-select">
           <option value="en">English</option>
           <option value="ta">Tamil</option>
           <option value="hi">Hindi</option>
@@ -395,16 +401,16 @@ function AccountSettings({ user, profile, signOut }) {
       </div>
 
       {/* ── Export Progress ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>📤</div>
+      <div className="setting-row">
+        <div className="setting-info">
+          <div className="setting-icon" style={{ background: 'var(--surface2)' }}>📤</div>
           <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Export Progress</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Download your activity as JSON or PDF</p>
+            <p className="setting-title">Export Progress</p>
+            <p className="setting-desc">Download your activity as JSON or PDF</p>
           </div>
         </div>
         {showExportOptions ? (
-          <div style={{ display: 'flex', gap: 8 }}>
+          <div className="setting-edit-actions">
             <button onClick={handleExportJSON} style={btnSm('var(--violet)', false)}>JSON</button>
             <button onClick={handleExportPDF} style={btnSm('var(--violet)', false)}>PDF</button>
             <button onClick={() => setShowExportOptions(false)} style={{ ...btnSm('var(--muted)'), border: 'none' }}>Cancel</button>
@@ -415,12 +421,12 @@ function AccountSettings({ user, profile, signOut }) {
       </div>
 
       {/* ── Reset Progress ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'rgba(217,119,6,0.1)' }}>🔄</div>
+      <div className="setting-row">
+        <div className="setting-info">
+          <div className="setting-icon" style={{ background: 'rgba(217,119,6,0.1)' }}>🔄</div>
           <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--amber)' }}>Reset Progress</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Erase all analytics and topic progress</p>
+            <p className="setting-title" style={{ color: 'var(--amber)' }}>Reset Progress</p>
+            <p className="setting-desc">Erase all analytics and topic progress</p>
           </div>
         </div>
         <button
@@ -433,12 +439,12 @@ function AccountSettings({ user, profile, signOut }) {
       </div>
 
       {/* ── Logout ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'rgba(220,38,38,0.08)' }}>🚪</div>
+      <div className="setting-row">
+        <div className="setting-info">
+          <div className="setting-icon" style={{ background: 'rgba(220,38,38,0.08)' }}>🚪</div>
           <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Logout</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Sign out of your account</p>
+            <p className="setting-title">Logout</p>
+            <p className="setting-desc">Sign out of your account</p>
           </div>
         </div>
         <button
@@ -450,12 +456,12 @@ function AccountSettings({ user, profile, signOut }) {
       </div>
 
       {/* ── Delete Account ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'rgba(220,38,38,0.1)' }}>🗑️</div>
+      <div className="setting-row">
+        <div className="setting-info">
+          <div className="setting-icon" style={{ background: 'rgba(220,38,38,0.1)' }}>🗑️</div>
           <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--coral)' }}>Delete Account</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Permanently delete your account and all data</p>
+            <p className="setting-title" style={{ color: 'var(--coral)' }}>Delete Account</p>
+            <p className="setting-desc">Permanently delete your account and all data</p>
           </div>
         </div>
         <button
@@ -488,38 +494,23 @@ export default function ProfilePage() {
   return (
     <div style={{ maxWidth: 900, margin: '0 auto', padding: '24px 20px 60px' }}>
       {/* ── Profile Hero ── */}
-      <div style={{
-        background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 20,
-        overflow: 'hidden', marginBottom: 20,
-        boxShadow: 'var(--shadow)',
-      }}>
-        <div style={{ height: 100, background: 'linear-gradient(135deg, var(--violet), #6d28d9)' }} />
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20, padding: '0 28px 24px' }}>
-          <div style={{ marginTop: -48 }}>
+      <div className="profile-hero-card">
+        <div className="profile-hero-banner" />
+        <div className="profile-hero-content">
+          <div className="profile-hero-avatar-wrap">
             {avatarSrc ? (
-              <img src={avatarSrc} alt={profile.username} style={{
-                display: 'block', width: 96, height: 96, borderRadius: '50%',
-                border: '4px solid var(--surface)', objectFit: 'cover',
-                boxShadow: '0 4px 16px rgba(0,0,0,0.15)', flexShrink: 0,
-              }} />
+              <img src={avatarSrc} alt={profile.username} className="profile-hero-avatar-img" />
             ) : (
-              <div style={{
-                width: 96, height: 96, borderRadius: '50%',
-                background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
-                border: '4px solid var(--surface)', color: '#fff',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontWeight: 800, fontSize: '2.5rem',
-                boxShadow: '0 4px 16px rgba(0,0,0,0.15)', flexShrink: 0,
-              }}>
+              <div className="profile-hero-avatar-fallback">
                 {profile.username?.charAt(0).toUpperCase() || '?'}
               </div>
             )}
           </div>
-          <div style={{ paddingTop: 8 }}>
-            <h1 style={{ margin: '0 0 6px', fontSize: '1.6rem', fontWeight: 900, color: 'var(--text)', lineHeight: 1.2 }}>
+          <div className="profile-hero-text">
+            <h1 className="profile-hero-name">
               {profile.full_name || profile.username}
             </h1>
-            <p style={{ margin: 0, fontSize: '1rem', fontWeight: 600, color: 'var(--violet)' }}>
+            <p className="profile-hero-username">
               @{profile.username}
             </p>
           </div>
