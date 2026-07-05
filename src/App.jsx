@@ -1,5 +1,5 @@
 // src/App.jsx
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useAuth } from './contexts/AuthContext';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
@@ -67,10 +67,10 @@ function App() {
     window.location.hash = `/${path}`;
   };
 
-  const handleSplashComplete = () => {
+  const handleSplashComplete = useCallback(() => {
     sessionStorage.setItem('splash_seen', 'true');
     setShowSplash(false);
-  };
+  }, []);
 
   const toggleTheme = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
