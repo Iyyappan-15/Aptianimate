@@ -182,36 +182,66 @@ function App() {
                       Google Sign In
                     </button>
                   ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', marginLeft: '12px' }}>
+                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginLeft: '12px' }}>
+                      {/* Avatar */}
                       {profile?.avatar_url ? (
-                        <img 
-                          src={profile.avatar_url} 
-                          alt={profile.username} 
-                          style={{ width: '28px', height: '28px', borderRadius: '50%', border: '2px solid var(--violet)', objectFit: 'cover' }} 
+                        <img
+                          src={profile.avatar_url}
+                          alt={profile.username}
+                          style={{
+                            width: '30px',
+                            height: '30px',
+                            borderRadius: '50%',
+                            border: '2px solid var(--violet)',
+                            objectFit: 'cover',
+                            flexShrink: 0,
+                          }}
                         />
                       ) : (
-                        <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--violet)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '0.8rem' }}>
-                          {(profile?.username?.charAt(0) || 'U').toUpperCase()}
+                        <div style={{
+                          width: '30px',
+                          height: '30px',
+                          borderRadius: '50%',
+                          background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
+                          color: '#fff',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          fontWeight: 800,
+                          fontSize: '0.82rem',
+                          flexShrink: 0,
+                        }}>
+                          {profile?.username?.charAt(0).toUpperCase() || '?'}
                         </div>
                       )}
-                      <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--text)' }}>
-                        @{profile?.username || 'user'}
-                      </span>
+
+                      {/* Username — only shown when profile exists */}
+                      {profile?.username && (
+                        <span style={{
+                          fontSize: '0.85rem',
+                          fontWeight: 700,
+                          color: 'var(--text)',
+                        }}>
+                          @{profile.username}
+                        </span>
+                      )}
+
+                      {/* Sign Out */}
                       <button
                         onClick={signOut}
                         style={{
                           background: 'transparent',
                           color: 'var(--coral)',
-                          border: '1px solid rgba(220, 38, 38, 0.3)',
+                          border: '1px solid rgba(220,38,38,0.3)',
                           borderRadius: '20px',
-                          padding: '4px 10px',
-                          fontSize: '0.72rem',
-                          fontWeight: '700',
+                          padding: '4px 12px',
+                          fontSize: '0.75rem',
+                          fontWeight: 700,
                           cursor: 'pointer',
                           transition: 'all 0.2s',
                         }}
-                        onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(220, 38, 38, 0.08)' }}
-                        onMouseOut={(e) => { e.currentTarget.style.background = 'transparent' }}
+                        onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(220,38,38,0.08)'; }}
+                        onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; }}
                       >
                         Sign Out
                       </button>
