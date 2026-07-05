@@ -14,6 +14,7 @@ import AskPage from './pages/AskPage';
 import GovtPYQPage from './pages/GovtPYQPage';
 import GovtRoadmapPage from './pages/GovtRoadmapPage';
 import GovtDailyPracticePage from './pages/GovtDailyPracticePage';
+import ProfilePage from './pages/ProfilePage';
 import SplashScreen from './components/SplashScreen';
 import DoodleOverlay from './components/DoodleOverlay';
 import UsernameModal from './components/UsernameModal';
@@ -107,6 +108,8 @@ function App() {
     pageComponent = <GovtRoadmapPage navigate={navigate} />;
   } else if (route === 'govt-daily') {
     pageComponent = <GovtDailyPracticePage navigate={navigate} />;
+  } else if (route === 'profile') {
+    pageComponent = <ProfilePage />;
   } else {
     pageComponent = <HomePage navigate={navigate} />;
   }
@@ -183,30 +186,38 @@ function App() {
                     </button>
                   ) : (
                     <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginLeft: '12px' }}>
-                      {/* Avatar (Uses Google avatar if profile avatar isn't set yet) */}
-                      <img
-                        src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
-                        alt={profile?.username || 'User'}
-                        style={{
-                          width: '30px',
-                          height: '30px',
-                          borderRadius: '50%',
-                          border: '2px solid var(--violet)',
-                          objectFit: 'cover',
-                          flexShrink: 0,
-                        }}
-                      />
+                      <div 
+                        onClick={() => navigate('profile')}
+                        style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer', padding: '4px', borderRadius: '24px', transition: 'background 0.2s' }}
+                        onMouseOver={(e) => e.currentTarget.style.background = 'var(--surface2)'}
+                        onMouseOut={(e) => e.currentTarget.style.background = 'transparent'}
+                        title="View Profile"
+                      >
+                        {/* Avatar (Uses Google avatar if profile avatar isn't set yet) */}
+                        <img
+                          src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
+                          alt={profile?.username || 'User'}
+                          style={{
+                            width: '30px',
+                            height: '30px',
+                            borderRadius: '50%',
+                            border: '2px solid var(--violet)',
+                            objectFit: 'cover',
+                            flexShrink: 0,
+                          }}
+                        />
 
-                      {/* Username — only shown when profile exists */}
-                      {profile?.username && (
-                        <span style={{
-                          fontSize: '0.85rem',
-                          fontWeight: 700,
-                          color: 'var(--text)',
-                        }}>
-                          @{profile.username}
-                        </span>
-                      )}
+                        {/* Username — only shown when profile exists */}
+                        {profile?.username && (
+                          <span style={{
+                            fontSize: '0.85rem',
+                            fontWeight: 700,
+                            color: 'var(--text)',
+                          }}>
+                            @{profile.username}
+                          </span>
+                        )}
+                      </div>
 
                       {/* Sign Out */}
                       <button

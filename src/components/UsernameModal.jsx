@@ -243,32 +243,6 @@ export default function UsernameModal() {
             onMouseOut={(e) => { if (status === 'available') e.currentTarget.style.transform = 'translateY(0)'; }}
           >
             {submitting ? 'Setting up your profile…' : 'Confirm Username 🚀'}
-          </button>
-          
-          <button
-            type="button"
-            onClick={async () => {
-              const { signOut } = await import('../services/authService');
-              signOut();
-            }}
-            style={{
-              width: '100%',
-              padding: '12px',
-              borderRadius: '12px',
-              border: '1px solid var(--border)',
-              background: 'transparent',
-              color: 'var(--text-sec)',
-              fontWeight: 700,
-              fontSize: '0.9rem',
-              cursor: 'pointer',
-              marginTop: '4px',
-              transition: 'background 0.2s',
-            }}
-            onMouseOver={(e) => e.currentTarget.style.background = 'var(--surface2)'}
-            onMouseOut={(e) => e.currentTarget.style.background = 'transparent'}
-          >
-            Cancel & Sign Out
-          </button>
         </form>
       </div>
     </div>
