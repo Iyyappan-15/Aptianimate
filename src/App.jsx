@@ -185,31 +185,44 @@ function App() {
                       Google Sign In
                     </button>
                   ) : (
-                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginLeft: '12px' }}>
-                      <a 
+                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginLeft: '8px' }}>
+                      {/* Clickable profile: avatar + username → goes to /profile */}
+                      <a
                         href="#/profile"
-                        className="nav-profile-link"
-                        title="View Profile"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '6px',
+                          padding: '4px 8px 4px 4px',
+                          borderRadius: '999px',
+                          textDecoration: 'none',
+                          background: 'transparent',
+                          cursor: 'pointer',
+                          transition: 'background 0.2s',
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.background = 'var(--surface2)'}
+                        onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
                       >
-                        {/* Avatar */}
                         <img
                           src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
-                          alt={profile?.username || 'User'}
+                          alt="avatar"
                           style={{
-                            width: '30px',
-                            height: '30px',
+                            display: 'inline-block',
+                            width: '28px',
+                            height: '28px',
                             borderRadius: '50%',
                             border: '2px solid var(--violet)',
                             objectFit: 'cover',
                             flexShrink: 0,
+                            pointerEvents: 'none',
                           }}
                         />
-                        {/* Username */}
                         {profile?.username && (
                           <span style={{
                             fontSize: '0.85rem',
                             fontWeight: 700,
                             color: 'var(--text)',
+                            pointerEvents: 'none',
                           }}>
                             @{profile.username}
                           </span>
