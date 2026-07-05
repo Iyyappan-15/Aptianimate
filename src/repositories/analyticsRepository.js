@@ -167,9 +167,12 @@ export const getStatistics = async (userId) => {
   // Avg problems/day (over active days)
   const avgProblemsPerDay = activeDays > 0 ? +(totalSolved / activeDays).toFixed(1) : 0;
 
+  const totalTimeSeconds = rows.reduce((a, r) => a + (r.time_seconds || 0), 0);
+
   return {
     totalSolved,
     totalMinutes,
+    totalTimeSeconds,
     activeDays,
     totalSessions,
     topicsCompleted: allTopics.size,
