@@ -8,7 +8,9 @@ import { deleteAllAnalytics } from '../repositories/analyticsRepository';
 import { supabase } from '../lib/supabase';
 
 // ─── Section Wrapper ───────────────────────────────────────────────────────
-function Section({ title, icon, children }) {
+function Section({ title, icon, children, isCollapsible = false, defaultOpen = true }) {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
+
   return (
     <div style={{
       background: 'var(--surface)',
@@ -17,14 +19,37 @@ function Section({ title, icon, children }) {
       padding: '24px 28px',
       marginBottom: 20,
     }}>
-      <h2 style={{
-        fontSize: '0.95rem', fontWeight: 800, color: 'var(--text)',
-        margin: '0 0 20px', display: 'flex', alignItems: 'center', gap: 8,
-        textTransform: 'uppercase', letterSpacing: '0.07em',
-      }}>
-        <span>{icon}</span> {title}
-      </h2>
-      {children}
+      <div 
+        style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center',
+          cursor: isCollapsible ? 'pointer' : 'default',
+          marginBottom: isOpen ? 20 : 0
+        }}
+        onClick={() => isCollapsible && setIsOpen(!isOpen)}
+      >
+        <h2 style={{
+          fontSize: '0.95rem', fontWeight: 800, color: 'var(--text)',
+          margin: 0, display: 'flex', alignItems: 'center', gap: 8,
+          textTransform: 'uppercase', letterSpacing: '0.07em',
+        }}>
+          <span>{icon}</span> {title}
+        </h2>
+        {isCollapsible && (
+          <div style={{
+            width: 28, height: 28, borderRadius: '50%',
+            background: 'var(--surface2)', display: 'flex',
+            alignItems: 'center', justifyContent: 'center',
+            color: 'var(--text)', fontSize: '0.8rem',
+            transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+            transition: 'transform 0.3s ease',
+          }}>
+            ▼
+          </div>
+        )}
+      </div>
+      {isOpen && children}
     </div>
   );
 }
@@ -249,31 +274,33 @@ export default function ProfilePage() {
         overflow: 'hidden', marginBottom: 20,
         boxShadow: 'var(--shadow)',
       }}>
-        <div style={{ height: 80, background: 'linear-gradient(135deg, var(--violet), #6d28d9)' }} />
-        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16, padding: '0 28px 24px', marginTop: -44 }}>
-          {avatarSrc ? (
-            <img src={avatarSrc} alt={profile.username} style={{
-              display: 'inline-block', width: 88, height: 88, borderRadius: '50%',
-              border: '4px solid var(--surface)', objectFit: 'cover',
-              boxShadow: '0 4px 16px rgba(0,0,0,0.15)', flexShrink: 0,
-            }} />
-          ) : (
-            <div style={{
-              width: 88, height: 88, borderRadius: '50%',
-              background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
-              border: '4px solid var(--surface)', color: '#fff',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontWeight: 800, fontSize: '2rem',
-              boxShadow: '0 4px 16px rgba(0,0,0,0.15)', flexShrink: 0,
-            }}>
-              {profile.username?.charAt(0).toUpperCase() || '?'}
-            </div>
-          )}
-          <div style={{ paddingBottom: 4 }}>
-            <h1 style={{ margin: '0 0 4px', fontSize: '1.4rem', fontWeight: 900, color: 'var(--text)' }}>
+        <div style={{ height: 100, background: 'linear-gradient(135deg, var(--violet), #6d28d9)' }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20, padding: '0 28px 24px' }}>
+          <div style={{ marginTop: -48 }}>
+            {avatarSrc ? (
+              <img src={avatarSrc} alt={profile.username} style={{
+                display: 'block', width: 96, height: 96, borderRadius: '50%',
+                border: '4px solid var(--surface)', objectFit: 'cover',
+                boxShadow: '0 4px 16px rgba(0,0,0,0.15)', flexShrink: 0,
+              }} />
+            ) : (
+              <div style={{
+                width: 96, height: 96, borderRadius: '50%',
+                background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
+                border: '4px solid var(--surface)', color: '#fff',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontWeight: 800, fontSize: '2.5rem',
+                boxShadow: '0 4px 16px rgba(0,0,0,0.15)', flexShrink: 0,
+              }}>
+                {profile.username?.charAt(0).toUpperCase() || '?'}
+              </div>
+            )}
+          </div>
+          <div style={{ paddingTop: 8 }}>
+            <h1 style={{ margin: '0 0 6px', fontSize: '1.6rem', fontWeight: 900, color: 'var(--text)', lineHeight: 1.2 }}>
               {profile.full_name || profile.username}
             </h1>
-            <p style={{ margin: 0, fontSize: '0.9rem', fontWeight: 600, color: 'var(--violet)' }}>
+            <p style={{ margin: 0, fontSize: '1rem', fontWeight: 600, color: 'var(--violet)' }}>
               @{profile.username}
             </p>
           </div>
@@ -303,7 +330,7 @@ export default function ProfilePage() {
       </Section>
 
       {/* ── Account Settings ── */}
-      <Section title="Account Settings" icon="⚙️">
+      <Section title="Account Settings" icon="⚙️" isCollapsible={true} defaultOpen={false}>
         <AccountSettings user={user} profile={profile} signOut={signOut} />
       </Section>
     </div>

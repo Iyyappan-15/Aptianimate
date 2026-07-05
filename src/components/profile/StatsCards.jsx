@@ -44,8 +44,8 @@ function Card({ icon, title, value, description, loading, color = 'var(--violet)
 
   return (
     <div style={{
-      background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 16,
-      padding: '20px 18px', display: 'flex', flexDirection: 'column', gap: 6,
+      background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 20,
+      padding: '24px 20px', display: 'flex', flexDirection: 'column', gap: 8,
       transition: 'transform 0.2s, box-shadow 0.2s',
       cursor: 'default',
     }}
@@ -53,17 +53,17 @@ function Card({ icon, title, value, description, loading, color = 'var(--violet)
       onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
     >
       <div style={{
-        width: 36, height: 36, borderRadius: 10, display: 'flex',
-        alignItems: 'center', justifyContent: 'center', fontSize: '1.1rem',
-        background: `color-mix(in srgb, ${color} 12%, transparent)`,
-        marginBottom: 4,
+        width: 44, height: 44, borderRadius: '50%', display: 'flex',
+        alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem',
+        background: `color-mix(in srgb, ${color} 15%, transparent)`,
+        marginBottom: 8,
       }}>
         {icon}
       </div>
-      <p style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.07em', margin: 0 }}>
+      <p style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>
         {title}
       </p>
-      <p style={{ fontSize: '1.9rem', fontWeight: 900, color: 'var(--text)', margin: 0, lineHeight: 1 }}>
+      <p style={{ fontSize: '2.1rem', fontWeight: 900, color: 'var(--text)', margin: '2px 0 0 0', lineHeight: 1 }}>
         <AnimatedNumber value={value} />{suffix}
       </p>
       <p style={{ fontSize: '0.75rem', color: 'var(--muted2)', margin: 0 }}>{description}</p>
@@ -100,8 +100,8 @@ export default function StatsCards() {
   return (
     <div style={{
       display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))',
-      gap: 14,
+      gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))',
+      gap: 16,
     }}>
       {cards.map((card) => (
         <Card key={card.title} {...card} loading={loading} />
