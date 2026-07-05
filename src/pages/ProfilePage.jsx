@@ -1,5 +1,5 @@
 // src/pages/ProfilePage.jsx
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import { useAuth } from '../contexts/AuthContext';
@@ -70,9 +70,11 @@ function AccountSettings({ user, profile, signOut }) {
   const [editingPhoto, setEditingPhoto] = useState(false);
   const [newUsername, setNewUsername] = useState(profile?.username || '');
   const [newDisplayName, setNewDisplayName] = useState(profile?.full_name || '');
-  const [newPhotoUrl, setNewPhotoUrl] = useState(profile?.avatar_url || '');
+  const [photoFile, setPhotoFile] = useState(null);
+  const [photoPreview, setPhotoPreview] = useState(null);
   const [saving, setSaving] = useState(false);
   const [saveMsg, setSaveMsg] = useState('');
+  const fileInputRef = useRef(null);
 
   const showMsg = (msg) => { setSaveMsg(msg); setTimeout(() => setSaveMsg(''), 3000); };
 
@@ -108,20 +110,57 @@ function AccountSettings({ user, profile, signOut }) {
     finally { setSaving(false); }
   };
 
-  const handleSavePhoto = async () => {
-    if (!newPhotoUrl.trim()) return;
+  const handleUploadPhoto = async () => {
+    if (!photoFile) return;
     setSaving(true);
     try {
-      const { error } = await supabase
+      const ext = photoFile.name.split('.').pop();
+      const filePath = `${user.id}/avatar.${ext}`;
+
+      // Upload to Supabase Storage bucket 'avatars'
+      const { error: uploadError } = await supabase.storage
+        .from('avatars')
+        .upload(filePath, photoFile, { upsert: true, contentType: photoFile.type });
+
+      if (uploadError) throw uploadError;
+
+      // Get the public URL
+      const { data: urlData } = supabase.storage
+        .from('avatars')
+        .getPublicUrl(filePath);
+
+      const publicUrl = urlData?.publicUrl;
+      if (!publicUrl) throw new Error('Could not get public URL');
+
+      // Save URL to profiles table
+      const { error: dbError } = await supabase
         .from('profiles')
-        .update({ avatar_url: newPhotoUrl.trim() })
+        .update({ avatar_url: publicUrl })
         .eq('id', user.id);
-      if (error) throw error;
+
+      if (dbError) throw dbError;
+
       showMsg('Profile photo updated!');
       setEditingPhoto(false);
+      setPhotoFile(null);
+      setPhotoPreview(null);
       window.location.reload();
-    } catch (e) { showMsg('Error: ' + e.message); }
-    finally { setSaving(false); }
+    } catch (e) {
+      showMsg('Error: ' + e.message);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    if (file.size > 5 * 1024 * 1024) {
+      showMsg('File too large. Max 5MB.');
+      return;
+    }
+    setPhotoFile(file);
+    setPhotoPreview(URL.createObjectURL(file));
   };
 
   const handleResetProgress = async () => {
@@ -238,19 +277,51 @@ function AccountSettings({ user, profile, signOut }) {
           <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>🖼️</div>
           <div>
             <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Profile Photo</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Paste an image URL to update your avatar</p>
+            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Upload a JPG, PNG or GIF (max 5MB)</p>
           </div>
         </div>
+
         {editingPhoto ? (
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flex: 1, marginLeft: 16 }}>
+          <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+            {/* Hidden real file input */}
             <input
-              style={inputStyle}
-              value={newPhotoUrl}
-              onChange={e => setNewPhotoUrl(e.target.value)}
-              placeholder="https://example.com/photo.jpg"
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              style={{ display: 'none' }}
+              onChange={handleFileChange}
             />
-            <button onClick={handleSavePhoto} disabled={saving} style={btnSm('var(--violet)', true)}>{saving ? '…' : 'Save'}</button>
-            <button onClick={() => setEditingPhoto(false)} style={btnSm('var(--muted)')} >Cancel</button>
+            {/* Preview */}
+            {photoPreview && (
+              <img
+                src={photoPreview}
+                alt="preview"
+                style={{ width: 36, height: 36, borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--violet)', flexShrink: 0 }}
+              />
+            )}
+            {/* Choose file button */}
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              style={{ ...btnSm('var(--violet)', false), display: 'flex', alignItems: 'center', gap: 6 }}
+            >
+              📂 {photoFile ? photoFile.name.slice(0, 14) + '...' : 'Choose File'}
+            </button>
+            {/* Save button — only active when file chosen */}
+            {photoFile && (
+              <button
+                onClick={handleUploadPhoto}
+                disabled={saving}
+                style={btnSm('var(--violet)', true)}
+              >
+                {saving ? '… Uploading' : 'Upload'}
+              </button>
+            )}
+            <button
+              onClick={() => { setEditingPhoto(false); setPhotoFile(null); setPhotoPreview(null); }}
+              style={btnSm('var(--muted)')}
+            >
+              Cancel
+            </button>
           </div>
         ) : (
           <button onClick={() => setEditingPhoto(true)} style={btnSm('var(--violet)', false)}>Change</button>
