@@ -1,5 +1,7 @@
 // src/pages/ProfilePage.jsx
 import React, { useState } from 'react';
+import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 import { useAuth } from '../contexts/AuthContext';
 import WeeklyChart from '../components/profile/WeeklyChart';
 import ActivityHeatmap from '../components/profile/ActivityHeatmap';
@@ -77,10 +79,10 @@ function AccountSettings({ user, profile, signOut }) {
     }
   };
 
-  const handleExportProgress = async () => {
+  const [showExportOptions, setShowExportOptions] = useState(false);
+
+  const handleExportJSON = async () => {
     try {
-      const res = await fetch(`https://api.supabase.io`, { method: 'GET' });
-      // Build a JSON export of sessions from daily_activity
       if (supabase) {
         const { data } = await supabase
           .from('daily_activity')
@@ -98,6 +100,53 @@ function AccountSettings({ user, profile, signOut }) {
     } catch (e) {
       console.error(e);
     }
+    setShowExportOptions(false);
+  };
+
+  const handleExportPDF = async () => {
+    try {
+      if (supabase) {
+        const { data } = await supabase
+          .from('daily_activity')
+          .select('*')
+          .eq('user_id', user.id)
+          .order('activity_date', { ascending: true });
+        
+        const doc = new jsPDF();
+        doc.setFontSize(18);
+        doc.text('AptiAnimate Progress Report', 14, 22);
+        doc.setFontSize(11);
+        doc.setTextColor(100);
+        doc.text(`User: ${profile?.full_name || profile?.username}`, 14, 30);
+        doc.text(`Generated: ${new Date().toLocaleDateString()}`, 14, 36);
+
+        if (data && data.length > 0) {
+            const tableColumn = ["Date", "Solved", "Minutes", "Topics"];
+            const tableRows = [];
+            data.forEach(activity => {
+                const rowData = [
+                    activity.activity_date,
+                    activity.problems_solved,
+                    activity.minutes_practiced,
+                    (activity.topics_covered || []).join(', ')
+                ];
+                tableRows.push(rowData);
+            });
+            doc.autoTable({
+                startY: 45,
+                head: [tableColumn],
+                body: tableRows,
+            });
+        } else {
+            doc.text('No activity recorded yet.', 14, 50);
+        }
+
+        doc.save(`aptianimate_progress_${new Date().toISOString().slice(0, 10)}.pdf`);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+    setShowExportOptions(false);
   };
 
   const handleDeleteAccount = async () => {
@@ -173,15 +222,39 @@ function AccountSettings({ user, profile, signOut }) {
           <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>📤</div>
           <div>
             <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Export Progress</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Download your activity as JSON</p>
+            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Download your activity as JSON or PDF</p>
           </div>
         </div>
-        <button
-          onClick={handleExportProgress}
-          style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}
-        >
-          Export
-        </button>
+        
+        {showExportOptions ? (
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button
+              onClick={handleExportJSON}
+              style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}
+            >
+              JSON
+            </button>
+            <button
+              onClick={handleExportPDF}
+              style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}
+            >
+              PDF
+            </button>
+            <button
+              onClick={() => setShowExportOptions(false)}
+              style={{ padding: '6px 12px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: 'none', background: 'transparent', color: 'var(--muted)', cursor: 'pointer' }}
+            >
+              Cancel
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => setShowExportOptions(true)}
+            style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}
+          >
+            Export
+          </button>
+        )}
       </div>
 
       {/* Reset Progress */}
