@@ -11,7 +11,8 @@ export default function SavedPage({ navigate }) {
   const [expandedId, setExpandedId] = useState(null);
 
   useEffect(() => {
-    if (!user) return;
+    // Only fetch bookmarks for real (non-anonymous) signed-in users
+    if (!user || user.is_anonymous) return;
     setLoading(true);
     getQuestionBookmarks(user.id)
       .then(data => setBookmarks(data))
@@ -43,24 +44,36 @@ export default function SavedPage({ navigate }) {
     return '#6366f1';
   };
 
-  if (authLoading || loading) {
+  if (authLoading) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
         <div style={{ textAlign: 'center', color: 'var(--text-sec)' }}>
           <div style={{ fontSize: '2.5rem', marginBottom: '16px' }}>⏳</div>
-          <p>Loading your saved questions...</p>
+          <p>Loading...</p>
         </div>
       </div>
     );
   }
 
-  if (!user) {
+  // Guest user (not signed in) — show sign-in prompt
+  if (!user || user.is_anonymous) {
     return (
       <div className="page">
         <div className="empty-state">
           <div className="icon">🔒</div>
           <div className="title">Sign in to see saved questions</div>
-          <div className="sub">Your bookmarks are securely stored in the cloud.</div>
+          <div className="sub">Your bookmarks are securely stored in the cloud. Sign in with Google to access them from any device.</div>
+        </div>
+      </div>
+    );
+  }
+
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
+        <div style={{ textAlign: 'center', color: 'var(--text-sec)' }}>
+          <div style={{ fontSize: '2.5rem', marginBottom: '16px' }}>⏳</div>
+          <p>Loading your saved questions...</p>
         </div>
       </div>
     );

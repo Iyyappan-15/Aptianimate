@@ -110,7 +110,12 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
 
   const handleToggleBookmark = async () => {
     const activeQuestion = questionsList[currentQuestionIdx];
-    if (!user || !activeQuestion || bookmarkLoading) return;
+    // Guest user — prompt them to sign in
+    if (!user || user.is_anonymous) {
+      alert('Please sign in with Google to bookmark questions and save your progress!');
+      return;
+    }
+    if (!activeQuestion || bookmarkLoading) return;
     setBookmarkLoading(true);
     try {
       if (isBookmarked && bookmarkId) {

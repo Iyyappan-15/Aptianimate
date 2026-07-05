@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { ensureAuthenticatedUser } from '../services/authService';
 import { getProfile } from '../repositories/profileRepository';
 import { supabase } from '../lib/supabase';
 
@@ -31,9 +30,10 @@ export const AuthProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    // Offline / no Supabase config mode
     if (!supabase) {
       setLoading(false);
-      setUser({ id: "offline_user", email: "offline@example.com", is_anonymous: true });
+      setUser(null);
       return;
     }
 
@@ -50,17 +50,20 @@ export const AuthProvider = ({ children }) => {
       if (mounted) {
         setUser(sessionUser);
       }
-      try {
-        const prof = await getProfile(sessionUser.id);
-        if (mounted) {
-          setProfile(prof);
+      // Only fetch profile for real (non-anonymous) users
+      if (!sessionUser.is_anonymous) {
+        try {
+          const prof = await getProfile(sessionUser.id);
+          if (mounted) {
+            setProfile(prof);
+          }
+        } catch (err) {
+          console.error("Error fetching profile during auth init:", err);
         }
-      } catch (err) {
-        console.error("Error fetching profile during auth init:", err);
       }
     };
 
-    // 1. Initial check
+    // 1. Check if there is an existing session (e.g. a returning Google user)
     supabase.auth.getSession().then(({ data: { session }, error: sessionError }) => {
       if (sessionError) {
         console.error("getSession error:", sessionError);
@@ -72,30 +75,17 @@ export const AuthProvider = ({ children }) => {
       }
 
       if (session?.user) {
+        // Returning user (Google or anonymous still in session)
         checkUserAndFetchProfile(session.user).then(() => {
           if (mounted) setLoading(false);
         });
       } else {
-        // No session found, trigger anonymous login
-        ensureAuthenticatedUser()
-          .then((anonUser) => {
-            if (mounted) {
-              setUser(anonUser);
-              setError(null);
-            }
-          })
-          .catch((err) => {
-            if (mounted) {
-              setError(err.message || 'Failed to authenticate user');
-            }
-          })
-          .finally(() => {
-            if (mounted) setLoading(false);
-          });
+        // No session — guest mode, no auto sign-in
+        if (mounted) setLoading(false);
       }
     });
 
-    // 2. Listen to state changes
+    // 2. Listen to auth state changes (handles Google sign-in / sign-out)
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       console.log(`onAuthStateChange event: ${event}`);
       if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
@@ -104,20 +94,11 @@ export const AuthProvider = ({ children }) => {
           if (mounted) setLoading(false);
         }
       } else if (event === 'SIGNED_OUT') {
+        // After sign out, go back to pure guest mode (no user, no profile)
         if (mounted) {
           setUser(null);
           setProfile(null);
-          setLoading(true);
-        }
-        try {
-          const anonUser = await ensureAuthenticatedUser();
-          if (mounted) {
-            setUser(anonUser);
-          }
-        } catch (err) {
-          console.error("Error signing in anonymously after sign out:", err);
-        } finally {
-          if (mounted) setLoading(false);
+          setLoading(false);
         }
       }
     });

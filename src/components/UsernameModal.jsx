@@ -49,8 +49,8 @@ export default function UsernameModal() {
     return () => clearTimeout(delayDebounce);
   }, [username]);
 
-  // If user is loaded and already has a profile, we don't show the modal
-  if (!user || profile) return null;
+  // Only show for real (Google-authenticated) users who don't have a profile yet
+  if (!user || user.is_anonymous || profile) return null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
