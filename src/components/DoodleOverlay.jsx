@@ -6,7 +6,6 @@
 // ─────────────────────────────────────────────────────────────────
 
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { motion } from 'framer-motion';
 
 const STROKE_SIZES = [
   { label: 'S', width: 2 },
@@ -329,11 +328,9 @@ export default function DoodleOverlay() {
       )}
 
       {/* ── Floating Action Button ── */}
-      <motion.button
-        drag
-        dragMomentum={false}
+      <button
         className={`doodle-fab ${isOpen ? 'is-open' : ''}`}
-        style={{ ...fabStyle, touchAction: 'none' }}
+        style={fabStyle}
         onClick={() => {
           if (!isOpen) {
             setIsOpen(true);
@@ -344,7 +341,6 @@ export default function DoodleOverlay() {
         }}
         title={isOpen ? 'Toggle Palette' : 'Open scratchpad'}
         aria-label="Toggle doodle scratchpad"
-        whileTap={{ scale: 0.95 }}
       >
         {isOpen ? (
           /* Palette / Settings icon */
@@ -361,7 +357,7 @@ export default function DoodleOverlay() {
             <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
           </svg>
         )}
-      </motion.button>
+      </button>
     </>
   );
 }
