@@ -152,7 +152,7 @@ function App() {
                   </button>
 
                   {/* 🔐 Google Login / User Profile */}
-                  {(!user || !profile) ? (
+                  {!user ? (
                     <button
                       onClick={signInWithGoogle}
                       style={{
@@ -183,37 +183,19 @@ function App() {
                     </button>
                   ) : (
                     <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginLeft: '12px' }}>
-                      {/* Avatar */}
-                      {profile?.avatar_url ? (
-                        <img
-                          src={profile.avatar_url}
-                          alt={profile.username}
-                          style={{
-                            width: '30px',
-                            height: '30px',
-                            borderRadius: '50%',
-                            border: '2px solid var(--violet)',
-                            objectFit: 'cover',
-                            flexShrink: 0,
-                          }}
-                        />
-                      ) : (
-                        <div style={{
+                      {/* Avatar (Uses Google avatar if profile avatar isn't set yet) */}
+                      <img
+                        src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
+                        alt={profile?.username || 'User'}
+                        style={{
                           width: '30px',
                           height: '30px',
                           borderRadius: '50%',
-                          background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
-                          color: '#fff',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          fontWeight: 800,
-                          fontSize: '0.82rem',
+                          border: '2px solid var(--violet)',
+                          objectFit: 'cover',
                           flexShrink: 0,
-                        }}>
-                          {profile?.username?.charAt(0).toUpperCase() || '?'}
-                        </div>
-                      )}
+                        }}
+                      />
 
                       {/* Username — only shown when profile exists */}
                       {profile?.username && (
