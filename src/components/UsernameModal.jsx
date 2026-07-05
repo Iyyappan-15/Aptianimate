@@ -243,6 +243,7 @@ export default function UsernameModal() {
             onMouseOut={(e) => { if (status === 'available') e.currentTarget.style.transform = 'translateY(0)'; }}
           >
             {submitting ? 'Setting up your profile…' : 'Confirm Username 🚀'}
+          </button>
         </form>
       </div>
     </div>
