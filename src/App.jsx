@@ -152,7 +152,7 @@ function App() {
                   </button>
 
                   {/* 🔐 Google Login / User Profile */}
-                  {!user ? (
+                  {(!user || !profile) ? (
                     <button
                       onClick={signInWithGoogle}
                       style={{
