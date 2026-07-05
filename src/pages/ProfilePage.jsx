@@ -62,13 +62,73 @@ function AccountSettings({ user, profile, signOut }) {
   const [resettingProgress, setResettingProgress] = useState(false);
   const [confirmReset, setConfirmReset] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
+  const [showExportOptions, setShowExportOptions] = useState(false);
+
+  // Edit profile states
+  const [editingUsername, setEditingUsername] = useState(false);
+  const [editingDisplayName, setEditingDisplayName] = useState(false);
+  const [editingPhoto, setEditingPhoto] = useState(false);
+  const [newUsername, setNewUsername] = useState(profile?.username || '');
+  const [newDisplayName, setNewDisplayName] = useState(profile?.full_name || '');
+  const [newPhotoUrl, setNewPhotoUrl] = useState(profile?.avatar_url || '');
+  const [saving, setSaving] = useState(false);
+  const [saveMsg, setSaveMsg] = useState('');
+
+  const showMsg = (msg) => { setSaveMsg(msg); setTimeout(() => setSaveMsg(''), 3000); };
+
+  const handleSaveUsername = async () => {
+    if (!newUsername.trim()) return;
+    setSaving(true);
+    try {
+      const { error } = await supabase
+        .from('profiles')
+        .update({ username: newUsername.trim().toLowerCase().replace(/\s+/g, '_') })
+        .eq('id', user.id);
+      if (error) throw error;
+      showMsg('Username updated!');
+      setEditingUsername(false);
+      window.location.reload();
+    } catch (e) { showMsg('Error: ' + e.message); }
+    finally { setSaving(false); }
+  };
+
+  const handleSaveDisplayName = async () => {
+    if (!newDisplayName.trim()) return;
+    setSaving(true);
+    try {
+      const { error } = await supabase
+        .from('profiles')
+        .update({ full_name: newDisplayName.trim() })
+        .eq('id', user.id);
+      if (error) throw error;
+      showMsg('Display name updated!');
+      setEditingDisplayName(false);
+      window.location.reload();
+    } catch (e) { showMsg('Error: ' + e.message); }
+    finally { setSaving(false); }
+  };
+
+  const handleSavePhoto = async () => {
+    if (!newPhotoUrl.trim()) return;
+    setSaving(true);
+    try {
+      const { error } = await supabase
+        .from('profiles')
+        .update({ avatar_url: newPhotoUrl.trim() })
+        .eq('id', user.id);
+      if (error) throw error;
+      showMsg('Profile photo updated!');
+      setEditingPhoto(false);
+      window.location.reload();
+    } catch (e) { showMsg('Error: ' + e.message); }
+    finally { setSaving(false); }
+  };
 
   const handleResetProgress = async () => {
     if (!confirmReset) { setConfirmReset(true); return; }
     try {
       setResettingProgress(true);
       await deleteAllAnalytics(user.id);
-      // Also delete topic_progress
       if (supabase) await supabase.from('topic_progress').delete().eq('user_id', user.id);
       setConfirmReset(false);
       window.location.reload();
@@ -78,8 +138,6 @@ function AccountSettings({ user, profile, signOut }) {
       setResettingProgress(false);
     }
   };
-
-  const [showExportOptions, setShowExportOptions] = useState(false);
 
   const handleExportJSON = async () => {
     try {
@@ -97,9 +155,7 @@ function AccountSettings({ user, profile, signOut }) {
         a.click();
         URL.revokeObjectURL(url);
       }
-    } catch (e) {
-      console.error(e);
-    }
+    } catch (e) { console.error(e); }
     setShowExportOptions(false);
   };
 
@@ -111,7 +167,6 @@ function AccountSettings({ user, profile, signOut }) {
           .select('*')
           .eq('user_id', user.id)
           .order('activity_date', { ascending: true });
-        
         const doc = new jsPDF();
         doc.setFontSize(18);
         doc.text('AptiAnimate Progress Report', 14, 22);
@@ -119,33 +174,19 @@ function AccountSettings({ user, profile, signOut }) {
         doc.setTextColor(100);
         doc.text(`User: ${profile?.full_name || profile?.username}`, 14, 30);
         doc.text(`Generated: ${new Date().toLocaleDateString()}`, 14, 36);
-
         if (data && data.length > 0) {
-            const tableColumn = ["Date", "Solved", "Minutes", "Topics"];
-            const tableRows = [];
-            data.forEach(activity => {
-                const rowData = [
-                    activity.activity_date,
-                    activity.problems_solved,
-                    activity.minutes_practiced,
-                    (activity.topics_covered || []).join(', ')
-                ];
-                tableRows.push(rowData);
-            });
-            doc.autoTable({
-                startY: 45,
-                head: [tableColumn],
-                body: tableRows,
-            });
+          const tableColumn = ['Date', 'Solved', 'Minutes', 'Topics'];
+          const tableRows = data.map(a => [
+            a.activity_date, a.problems_solved, a.minutes_practiced,
+            (a.topics_covered || []).join(', ')
+          ]);
+          doc.autoTable({ startY: 45, head: [tableColumn], body: tableRows });
         } else {
-            doc.text('No activity recorded yet.', 14, 50);
+          doc.text('No activity recorded yet.', 14, 50);
         }
-
         doc.save(`aptianimate_progress_${new Date().toISOString().slice(0, 10)}.pdf`);
       }
-    } catch (e) {
-      console.error(e);
-    }
+    } catch (e) { console.error(e); }
     setShowExportOptions(false);
   };
 
@@ -154,17 +195,14 @@ function AccountSettings({ user, profile, signOut }) {
     try {
       setResetting(true);
       if (supabase) {
-        // Delete all user data across every table
         await Promise.all([
           supabase.from('daily_activity').delete().eq('user_id', user.id),
           supabase.from('practice_sessions').delete().eq('user_id', user.id),
           supabase.from('topic_progress').delete().eq('user_id', user.id),
           supabase.from('bookmarks').delete().eq('user_id', user.id),
         ]);
-        // Delete the profile row (may cascade)
         await supabase.from('profiles').delete().eq('id', user.id);
       }
-      // Sign the user out — Supabase anonymous account is cleaned up
       await signOut();
     } catch (e) {
       console.error('Delete account error:', e);
@@ -173,42 +211,103 @@ function AccountSettings({ user, profile, signOut }) {
     }
   };
 
-  const settingRow = (icon, label, description, action, danger = false, loading = false, confirm = false) => (
-    <div style={{
-      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      padding: '14px 0', borderBottom: '1px solid var(--border)',
-    }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <div style={{
-          width: 36, height: 36, borderRadius: 10, display: 'flex',
-          alignItems: 'center', justifyContent: 'center', fontSize: '1rem',
-          background: danger ? 'rgba(220,38,38,0.1)' : 'var(--surface2)',
-        }}>{icon}</div>
-        <div>
-          <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: danger ? 'var(--coral)' : 'var(--text)' }}>{label}</p>
-          <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>{description}</p>
-        </div>
-      </div>
-      <button
-        onClick={action}
-        disabled={loading}
-        style={{
-          padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700,
-          border: danger ? '1px solid rgba(220,38,38,0.4)' : '1px solid var(--border)',
-          background: danger ? (confirm ? 'var(--coral)' : 'transparent') : 'var(--surface2)',
-          color: danger ? (confirm ? '#fff' : 'var(--coral)') : 'var(--text)',
-          cursor: loading ? 'wait' : 'pointer',
-          transition: 'all 0.2s', whiteSpace: 'nowrap',
-        }}
-      >
-        {loading ? '…' : confirm ? 'Confirm?' : 'Action'}
-      </button>
-    </div>
-  );
+  const inputStyle = {
+    flex: 1, padding: '6px 12px', borderRadius: 10, fontSize: '0.85rem',
+    border: '1px solid var(--border)', background: 'var(--surface2)',
+    color: 'var(--text)', outline: 'none',
+  };
+  const btnSm = (color = 'var(--violet)', filled = false) => ({
+    padding: '5px 14px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700,
+    border: `1px solid ${color}`,
+    background: filled ? color : 'transparent',
+    color: filled ? '#fff' : color,
+    cursor: saving ? 'wait' : 'pointer', transition: 'all 0.2s',
+  });
 
   return (
     <div>
-      {/* Language preference */}
+      {saveMsg && (
+        <div style={{ padding: '8px 16px', borderRadius: 10, background: 'rgba(22,163,74,0.12)', color: '#16a34a', fontSize: '0.82rem', fontWeight: 700, marginBottom: 12 }}>
+          ✅ {saveMsg}
+        </div>
+      )}
+
+      {/* ── Change Profile Photo ── */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>🖼️</div>
+          <div>
+            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Profile Photo</p>
+            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Paste an image URL to update your avatar</p>
+          </div>
+        </div>
+        {editingPhoto ? (
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flex: 1, marginLeft: 16 }}>
+            <input
+              style={inputStyle}
+              value={newPhotoUrl}
+              onChange={e => setNewPhotoUrl(e.target.value)}
+              placeholder="https://example.com/photo.jpg"
+            />
+            <button onClick={handleSavePhoto} disabled={saving} style={btnSm('var(--violet)', true)}>{saving ? '…' : 'Save'}</button>
+            <button onClick={() => setEditingPhoto(false)} style={btnSm('var(--muted)')} >Cancel</button>
+          </div>
+        ) : (
+          <button onClick={() => setEditingPhoto(true)} style={btnSm('var(--violet)', false)}>Change</button>
+        )}
+      </div>
+
+      {/* ── Change Display Name ── */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>✏️</div>
+          <div>
+            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Display Name</p>
+            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Current: {profile?.full_name || '—'}</p>
+          </div>
+        </div>
+        {editingDisplayName ? (
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flex: 1, marginLeft: 16 }}>
+            <input
+              style={inputStyle}
+              value={newDisplayName}
+              onChange={e => setNewDisplayName(e.target.value)}
+              placeholder="Your display name"
+            />
+            <button onClick={handleSaveDisplayName} disabled={saving} style={btnSm('var(--violet)', true)}>{saving ? '…' : 'Save'}</button>
+            <button onClick={() => setEditingDisplayName(false)} style={btnSm('var(--muted)')}>Cancel</button>
+          </div>
+        ) : (
+          <button onClick={() => setEditingDisplayName(true)} style={btnSm('var(--violet)', false)}>Change</button>
+        )}
+      </div>
+
+      {/* ── Change Username ── */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>@</div>
+          <div>
+            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Username</p>
+            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Current: @{profile?.username || '—'}</p>
+          </div>
+        </div>
+        {editingUsername ? (
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flex: 1, marginLeft: 16 }}>
+            <input
+              style={inputStyle}
+              value={newUsername}
+              onChange={e => setNewUsername(e.target.value)}
+              placeholder="new_username"
+            />
+            <button onClick={handleSaveUsername} disabled={saving} style={btnSm('var(--violet)', true)}>{saving ? '…' : 'Save'}</button>
+            <button onClick={() => setEditingUsername(false)} style={btnSm('var(--muted)')}>Cancel</button>
+          </div>
+        ) : (
+          <button onClick={() => setEditingUsername(true)} style={btnSm('var(--violet)', false)}>Change</button>
+        )}
+      </div>
+
+      {/* ── Language ── */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>🌐</div>
@@ -217,17 +316,14 @@ function AccountSettings({ user, profile, signOut }) {
             <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Interface language preference</p>
           </div>
         </div>
-        <select style={{
-          padding: '6px 12px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700,
-          border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer',
-        }}>
+        <select style={{ padding: '6px 12px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}>
           <option value="en">English</option>
           <option value="ta">Tamil</option>
           <option value="hi">Hindi</option>
         </select>
       </div>
 
-      {/* Export */}
+      {/* ── Export Progress ── */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'var(--surface2)' }}>📤</div>
@@ -236,39 +332,18 @@ function AccountSettings({ user, profile, signOut }) {
             <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Download your activity as JSON or PDF</p>
           </div>
         </div>
-        
         {showExportOptions ? (
           <div style={{ display: 'flex', gap: 8 }}>
-            <button
-              onClick={handleExportJSON}
-              style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}
-            >
-              JSON
-            </button>
-            <button
-              onClick={handleExportPDF}
-              style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}
-            >
-              PDF
-            </button>
-            <button
-              onClick={() => setShowExportOptions(false)}
-              style={{ padding: '6px 12px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: 'none', background: 'transparent', color: 'var(--muted)', cursor: 'pointer' }}
-            >
-              Cancel
-            </button>
+            <button onClick={handleExportJSON} style={btnSm('var(--violet)', false)}>JSON</button>
+            <button onClick={handleExportPDF} style={btnSm('var(--violet)', false)}>PDF</button>
+            <button onClick={() => setShowExportOptions(false)} style={{ ...btnSm('var(--muted)'), border: 'none' }}>Cancel</button>
           </div>
         ) : (
-          <button
-            onClick={() => setShowExportOptions(true)}
-            style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid var(--border)', background: 'var(--surface2)', color: 'var(--text)', cursor: 'pointer' }}
-          >
-            Export
-          </button>
+          <button onClick={() => setShowExportOptions(true)} style={btnSm('var(--violet)', false)}>Export</button>
         )}
       </div>
 
-      {/* Reset Progress */}
+      {/* ── Reset Progress ── */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'rgba(217,119,6,0.1)' }}>🔄</div>
@@ -280,19 +355,30 @@ function AccountSettings({ user, profile, signOut }) {
         <button
           onClick={handleResetProgress}
           disabled={resettingProgress}
-          style={{
-            padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700,
-            border: '1px solid rgba(217,119,6,0.4)',
-            background: confirmReset ? 'var(--amber)' : 'transparent',
-            color: confirmReset ? '#fff' : 'var(--amber)',
-            cursor: resettingProgress ? 'wait' : 'pointer', transition: 'all 0.2s',
-          }}
+          style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid rgba(217,119,6,0.4)', background: confirmReset ? 'var(--amber)' : 'transparent', color: confirmReset ? '#fff' : 'var(--amber)', cursor: resettingProgress ? 'wait' : 'pointer', transition: 'all 0.2s' }}
         >
           {resettingProgress ? '…' : confirmReset ? '⚠️ Confirm?' : 'Reset'}
         </button>
       </div>
 
-      {/* Delete Account */}
+      {/* ── Logout ── */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'rgba(220,38,38,0.08)' }}>🚪</div>
+          <div>
+            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Logout</p>
+            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Sign out of your account</p>
+          </div>
+        </div>
+        <button
+          onClick={signOut}
+          style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid rgba(220,38,38,0.4)', background: 'transparent', color: 'var(--coral)', cursor: 'pointer', transition: 'all 0.2s' }}
+        >
+          Sign Out
+        </button>
+      </div>
+
+      {/* ── Delete Account ── */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'rgba(220,38,38,0.1)' }}>🗑️</div>
@@ -303,13 +389,7 @@ function AccountSettings({ user, profile, signOut }) {
         </div>
         <button
           onClick={handleDeleteAccount}
-          style={{
-            padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700,
-            border: '1px solid rgba(220,38,38,0.4)',
-            background: confirmDelete ? 'var(--coral)' : 'transparent',
-            color: confirmDelete ? '#fff' : 'var(--coral)',
-            cursor: 'pointer', transition: 'all 0.2s',
-          }}
+          style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid rgba(220,38,38,0.4)', background: confirmDelete ? 'var(--coral)' : 'transparent', color: confirmDelete ? '#fff' : 'var(--coral)', cursor: 'pointer', transition: 'all 0.2s' }}
         >
           {confirmDelete ? '⚠️ Confirm Delete' : 'Delete'}
         </button>
@@ -317,6 +397,7 @@ function AccountSettings({ user, profile, signOut }) {
     </div>
   );
 }
+
 
 // ─── Main Profile Page ────────────────────────────────────────────────────
 export default function ProfilePage() {
