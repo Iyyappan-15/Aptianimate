@@ -227,27 +227,7 @@ function App() {
                             @{profile.username}
                           </span>
                         )}
-                      </a>
-
-                      {/* Sign Out */}
-                      <button
-                        onClick={signOut}
-                        style={{
-                          background: 'transparent',
-                          color: 'var(--coral)',
-                          border: '1px solid rgba(220,38,38,0.3)',
-                          borderRadius: '20px',
-                          padding: '4px 12px',
-                          fontSize: '0.75rem',
-                          fontWeight: 700,
-                          cursor: 'pointer',
-                          transition: 'all 0.2s',
-                        }}
-                        onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(220,38,38,0.08)'; }}
-                        onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; }}
-                      >
-                        Sign Out
-                      </button>
+                    </a>
                     </div>
                   )}
 

@@ -152,13 +152,24 @@ function AccountSettings({ user, profile, signOut }) {
   const handleDeleteAccount = async () => {
     if (!confirmDelete) { setConfirmDelete(true); return; }
     try {
-      // Delete profile — cascade will clean up everything
+      setResetting(true);
       if (supabase) {
+        // Delete all user data across every table
+        await Promise.all([
+          supabase.from('daily_activity').delete().eq('user_id', user.id),
+          supabase.from('practice_sessions').delete().eq('user_id', user.id),
+          supabase.from('topic_progress').delete().eq('user_id', user.id),
+          supabase.from('bookmarks').delete().eq('user_id', user.id),
+        ]);
+        // Delete the profile row (may cascade)
         await supabase.from('profiles').delete().eq('id', user.id);
       }
+      // Sign the user out — Supabase anonymous account is cleaned up
       await signOut();
     } catch (e) {
-      console.error(e);
+      console.error('Delete account error:', e);
+      setResetting(false);
+      setConfirmDelete(false);
     }
   };
 
@@ -278,23 +289,6 @@ function AccountSettings({ user, profile, signOut }) {
           }}
         >
           {resettingProgress ? '…' : confirmReset ? '⚠️ Confirm?' : 'Reset'}
-        </button>
-      </div>
-
-      {/* Logout */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 0', borderBottom: '1px solid var(--border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: 'rgba(220,38,38,0.08)' }}>🚪</div>
-          <div>
-            <p style={{ margin: 0, fontWeight: 700, fontSize: '0.88rem', color: 'var(--text)' }}>Logout</p>
-            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted2)' }}>Sign out of your account</p>
-          </div>
-        </div>
-        <button
-          onClick={signOut}
-          style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.78rem', fontWeight: 700, border: '1px solid rgba(220,38,38,0.4)', background: 'transparent', color: 'var(--coral)', cursor: 'pointer' }}
-        >
-          Sign Out
         </button>
       </div>
 
