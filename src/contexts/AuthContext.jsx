@@ -75,7 +75,13 @@ export const AuthProvider = ({ children }) => {
       }
 
       if (session?.user) {
-        // Returning user (Google or anonymous still in session)
+        if (session.user.is_anonymous) {
+          // We no longer use anonymous sessions. Clear legacy sessions automatically.
+          supabase.auth.signOut();
+          if (mounted) setLoading(false);
+          return;
+        }
+        // Returning Google user
         checkUserAndFetchProfile(session.user).then(() => {
           if (mounted) setLoading(false);
         });
