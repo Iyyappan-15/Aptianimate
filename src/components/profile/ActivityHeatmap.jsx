@@ -146,6 +146,24 @@ export default function ActivityHeatmap() {
 
   return (
     <div style={{ width: '100%' }}>
+      {/* Active Days Header */}
+      <div style={{ marginBottom: 24, display: 'flex', flexDirection: 'column', gap: 4 }}>
+        <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--muted)' }}>Active Days</p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ fontSize: '1.8rem', color: 'var(--violet)' }}>📅</span>
+          <span style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--violet)', lineHeight: 1 }}>{totalActive}</span>
+        </div>
+        <p style={{ margin: '8px 0 4px', fontSize: '0.8rem', color: 'var(--muted)' }}>Consistency score</p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <div style={{ width: '200px', height: 6, background: 'var(--surface3)', borderRadius: 3, overflow: 'hidden' }}>
+            <div style={{ height: '100%', width: `${Math.max(1, Math.round((totalActive/365)*100))}%`, background: 'var(--violet)', borderRadius: 3, transition: 'width 1s ease-out' }} />
+          </div>
+          <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text)' }}>
+            {Math.round((totalActive/365)*100)}%
+          </span>
+        </div>
+      </div>
+
       {/* Month labels */}
       <div style={{ display: 'flex', gap: 3, marginBottom: 4, marginLeft: 22, position: 'relative', height: 16 }}>
         {monthLabels.map(({ col, label }) => (
@@ -213,10 +231,6 @@ export default function ActivityHeatmap() {
         ))}
         <span style={{ fontSize: '0.7rem', color: 'var(--muted2)' }}>More</span>
       </div>
-
-      <p style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: 8 }}>
-        {totalActive} active {totalActive === 1 ? 'day' : 'days'} in the last year
-      </p>
 
       {tooltip.cell && <Tooltip cell={tooltip.cell} rect={tooltip.rect} />}
     </div>
