@@ -188,12 +188,10 @@ function App() {
                     <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginLeft: '12px' }}>
                       <a 
                         href="#/profile"
-                        style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer', padding: '4px 10px', borderRadius: '24px', transition: 'background 0.2s', background: 'transparent', border: 'none', color: 'inherit', textDecoration: 'none', userSelect: 'none' }}
-                        onMouseOver={(e) => e.currentTarget.style.background = 'var(--surface2)'}
-                        onMouseOut={(e) => e.currentTarget.style.background = 'transparent'}
+                        className="nav-profile-link"
                         title="View Profile"
                       >
-                        {/* Avatar (Uses Google avatar if profile avatar isn't set yet) */}
+                        {/* Avatar */}
                         <img
                           src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
                           alt={profile?.username || 'User'}
@@ -206,8 +204,7 @@ function App() {
                             flexShrink: 0,
                           }}
                         />
-
-                        {/* Username — only shown when profile exists */}
+                        {/* Username */}
                         {profile?.username && (
                           <span style={{
                             fontSize: '0.85rem',
