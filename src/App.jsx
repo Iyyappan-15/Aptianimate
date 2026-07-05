@@ -186,9 +186,9 @@ function App() {
                     </button>
                   ) : (
                     <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginLeft: '12px' }}>
-                      <div 
+                      <button 
                         onClick={() => navigate('profile')}
-                        style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer', padding: '4px', borderRadius: '24px', transition: 'background 0.2s' }}
+                        style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer', padding: '4px 10px', borderRadius: '24px', transition: 'background 0.2s', background: 'transparent', border: 'none', color: 'inherit', fontFamily: 'inherit' }}
                         onMouseOver={(e) => e.currentTarget.style.background = 'var(--surface2)'}
                         onMouseOut={(e) => e.currentTarget.style.background = 'transparent'}
                         title="View Profile"
@@ -217,7 +217,7 @@ function App() {
                             @{profile.username}
                           </span>
                         )}
-                      </div>
+                      </button>
 
                       {/* Sign Out */}
                       <button
