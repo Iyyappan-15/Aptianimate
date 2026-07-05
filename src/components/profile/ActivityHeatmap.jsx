@@ -158,21 +158,21 @@ export default function ActivityHeatmap() {
   return (
     <div style={{ width: '100%' }}>
       {/* Activity Overview Header */}
-      <div style={{ marginBottom: 32, display: 'flex', gap: 48, flexWrap: 'wrap' }}>
+      <div style={{ marginBottom: 32, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 24, alignItems: 'start' }}>
         
         {/* Active Days */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--muted)' }}>Active Days</p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <span style={{ fontSize: '1.8rem', color: 'var(--violet)' }}>📅</span>
-            <span style={{ fontSize: '2rem', fontWeight: 600, color: 'var(--violet)', lineHeight: 1 }}>{totalActive}</span>
+          <p style={{ margin: 0, fontSize: '0.85rem', fontWeight: 600, color: 'var(--muted)' }}>Active Days</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+            <span style={{ fontSize: '1.6rem', color: 'var(--violet)' }}>📅</span>
+            <span style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--violet)', lineHeight: 1 }}>{totalActive}</span>
           </div>
-          <p style={{ margin: '8px 0 4px', fontSize: '0.8rem', color: 'var(--muted)' }}>Consistency score</p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div style={{ width: '160px', height: 6, background: 'var(--surface3)', borderRadius: 3, overflow: 'hidden' }}>
+          <p style={{ margin: '0 0 6px', fontSize: '0.75rem', fontWeight: 600, color: 'var(--muted)' }}>Consistency score</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <div style={{ flex: 1, height: 6, background: 'var(--surface3)', borderRadius: 3, overflow: 'hidden' }}>
               <div style={{ height: '100%', width: `${Math.max(1, Math.round((totalActive/365)*100))}%`, background: 'var(--violet)', borderRadius: 3, transition: 'width 1s ease-out' }} />
             </div>
-            <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text)' }}>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text)' }}>
               {Math.round((totalActive/365)*100)}%
             </span>
           </div>
@@ -180,10 +180,10 @@ export default function ActivityHeatmap() {
 
         {/* Fastest Solve */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--muted)' }}>Fastest Solve</p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 4 }}>
+          <p style={{ margin: 0, fontSize: '0.85rem', fontWeight: 600, color: 'var(--muted)' }}>Fastest Solve</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
             <span style={{ fontSize: '1.6rem', color: '#f97316' }}>⚡</span>
-            <span style={{ fontSize: '1.8rem', fontWeight: 500, color: 'var(--text)', lineHeight: 1 }}>
+            <span style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text)', lineHeight: 1 }}>
               {stats?.fastestSolve || 0}s
             </span>
           </div>
@@ -191,14 +191,14 @@ export default function ActivityHeatmap() {
 
         {/* Total Practice Time */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--muted)' }}>Total Practice Time</p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 4 }}>
+          <p style={{ margin: 0, fontSize: '0.85rem', fontWeight: 600, color: 'var(--muted)' }}>Total Practice Time</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
             <span style={{ fontSize: '1.6rem', color: '#3b82f6' }}>⏱</span>
-            <span style={{ fontSize: '1.8rem', fontWeight: 500, color: 'var(--text)', lineHeight: 1 }}>
+            <span style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--text)', lineHeight: 1 }}>
               {formatTime(stats?.totalTimeSeconds || 0)}
             </span>
           </div>
-          <p style={{ margin: '8px 0 0', fontSize: '0.85rem', color: 'var(--muted)' }}>
+          <p style={{ margin: '0 0 6px', fontSize: '0.75rem', fontWeight: 600, color: 'var(--muted)' }}>
             Avg per day: {formatTime((stats?.totalTimeSeconds || 0) / (stats?.activeDays || 1))}
           </p>
         </div>

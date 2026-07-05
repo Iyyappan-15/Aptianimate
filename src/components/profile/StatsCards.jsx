@@ -85,13 +85,10 @@ export default function StatsCards() {
 
   const cards = [
     { icon: '✅', title: 'Problems Solved', value: stats?.totalSolved ?? 0, description: 'Total across all topics', color: '#16a34a' },
-    { icon: '⏱', title: 'Practice Time', value: stats?.totalMinutes ?? 0, suffix: 'm', description: 'Total minutes practiced', color: '#2563eb' },
     { icon: '🔥', title: 'Current Streak', value: currentStreak, suffix: 'd', description: 'Consecutive days', color: '#dc2626' },
     { icon: '🏆', title: 'Longest Streak', value: longestStreak, suffix: 'd', description: 'Best streak ever', color: '#d97706' },
     { icon: '📊', title: 'Avg / Day', value: stats?.avgProblemsPerDay ?? 0, description: 'Problems per active day', color: '#0d9488' },
     { icon: '⚡', title: 'Avg Solve Time', value: stats?.avgSolveTime ? Math.round(stats.avgSolveTime / 60) : 0, suffix: 'm', description: 'Average per question', color: '#7c3aed' },
-    { icon: '🚀', title: 'Fastest Solve', value: stats?.fastestSolve ? Math.round(stats.fastestSolve / 60) : 0, suffix: 'm', description: 'Fastest single question', color: '#16a34a' },
-    { icon: '📚', title: 'Topics Studied', value: stats?.topicsCompleted ?? 0, description: 'Unique topics covered', color: '#2563eb' },
     { icon: '💾', title: 'Bookmarks', value: bookmarks?.length ?? 0, description: 'Saved questions', color: '#d97706' },
   ];
 
