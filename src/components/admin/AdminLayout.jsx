@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AdminLayout({ children, currentRoute, navigate }) {
+export default function AdminLayout({ children, currentRoute, navigate, theme, toggleTheme }) {
   const navItems = [
     { label: 'Dashboard', path: 'admin' },
     { label: 'User Analytics', path: 'admin/users' },
@@ -56,7 +56,18 @@ export default function AdminLayout({ children, currentRoute, navigate }) {
             );
           })}
         </div>
-        <div style={{ padding: '16px', borderTop: '1px solid var(--border)' }}>
+        <div style={{ padding: '16px', borderTop: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <button 
+            onClick={toggleTheme} 
+            style={{ 
+              width: '100%', padding: '10px', borderRadius: '10px', 
+              background: 'var(--surface2)', border: 'none', 
+              color: 'var(--text)', cursor: 'pointer', fontWeight: 'bold',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
+            }}
+          >
+            {theme === 'light' ? '🌙 Switch to Dark' : '☀️ Switch to Light'}
+          </button>
           <button 
             onClick={() => navigate('')} 
             style={{ 

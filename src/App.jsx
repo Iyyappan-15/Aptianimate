@@ -256,7 +256,7 @@ function App() {
             
             {isRouteAdmin ? (
               <AdminRoute navigate={navigate}>
-                <AdminLayout currentRoute={route} navigate={navigate}>
+                <AdminLayout currentRoute={route} navigate={navigate} theme={theme} toggleTheme={toggleTheme}>
                   {pageComponent}
                 </AdminLayout>
               </AdminRoute>

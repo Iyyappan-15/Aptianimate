@@ -49,11 +49,11 @@ CREATE POLICY "Only admins can update system settings" ON public.system_settings
 -- 3. ASSIGN SUPER ADMIN
 -- ────────────────────────────────────────────────────────
 
--- Set studyprojects2005@gmail.com to super_admin.
+-- Set studyprojects2005@gmail.com and iyyappan200509@gmail.com to super_admin.
 -- Note: We have to find their UUID from the auth.users table.
 
 UPDATE public.profiles
 SET role = 'super_admin'
 WHERE id IN (
-  SELECT id FROM auth.users WHERE email = 'studyprojects2005@gmail.com'
+  SELECT id FROM auth.users WHERE email IN ('studyprojects2005@gmail.com', 'iyyappan200509@gmail.com')
 );
