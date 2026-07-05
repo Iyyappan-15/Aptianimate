@@ -8,6 +8,7 @@ const AuthContext = createContext({
   loading: true,
   error: null,
   refreshProfile: async () => {},
+  signOut: async () => {},
 });
 
 export const AuthProvider = ({ children }) => {
@@ -128,8 +129,12 @@ export const AuthProvider = ({ children }) => {
     );
   }
 
+  const signOut = async () => {
+    if (supabase) await supabase.auth.signOut();
+  };
+
   return (
-    <AuthContext.Provider value={{ user, profile, loading, error, refreshProfile }}>
+    <AuthContext.Provider value={{ user, profile, loading, error, refreshProfile, signOut }}>
       {children}
     </AuthContext.Provider>
   );
