@@ -5,6 +5,9 @@
 -- Add role column to profiles if it doesn't exist
 ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS role TEXT DEFAULT 'user';
 
+-- Drop policy if it already exists to prevent errors on re-runs
+DROP POLICY IF EXISTS "Admins can update any profile" ON public.profiles;
+
 -- Create policy allowing admins to update profiles (requires role column)
 CREATE POLICY "Admins can update any profile" ON public.profiles 
   FOR UPDATE USING (
@@ -33,10 +36,12 @@ ON CONFLICT (id) DO NOTHING;
 -- Enable RLS
 ALTER TABLE public.system_settings ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "System settings are publicly viewable" ON public.system_settings;
 -- Everyone can read settings
 CREATE POLICY "System settings are publicly viewable" ON public.system_settings
   FOR SELECT USING (true);
 
+DROP POLICY IF EXISTS "Only admins can update system settings" ON public.system_settings;
 -- Only admins can update settings
 CREATE POLICY "Only admins can update system settings" ON public.system_settings
   FOR UPDATE USING (
