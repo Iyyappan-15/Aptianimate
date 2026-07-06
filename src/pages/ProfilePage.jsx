@@ -14,12 +14,15 @@ function Section({ title, icon, children, isCollapsible = false, defaultOpen = t
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div style={{
+    <div className="profile-section-card" style={{
       background: 'var(--surface)',
       border: '1px solid var(--border)',
       borderRadius: 20,
-      padding: '24px 28px',
+      padding: '20px',
       marginBottom: 20,
+      width: '100%',
+      boxSizing: 'border-box',
+      overflow: 'hidden',
     }}>
       <div 
         style={{ 
@@ -492,7 +495,7 @@ export default function ProfilePage() {
   const avatarSrc = profile.avatar_url || user?.user_metadata?.avatar_url || null;
 
   return (
-    <div style={{ maxWidth: 900, margin: '0 auto', padding: '24px 20px 60px' }}>
+    <div style={{ maxWidth: 900, margin: '0 auto', padding: '16px 14px 60px', width: '100%', boxSizing: 'border-box' }}>
       {/* ── Profile Hero ── */}
       <div className="profile-hero-card">
         <div className="profile-hero-banner" />

@@ -156,9 +156,9 @@ export default function ActivityHeatmap() {
   const totalActive = data.filter(d => d.problems_solved > 0 || d.minutes_practiced > 0).length;
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '100%', maxWidth: '100%', overflow: 'hidden' }}>
       {/* Activity Overview Header */}
-      <div style={{ marginBottom: 32, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 24, alignItems: 'start' }}>
+      <div style={{ marginBottom: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 16, alignItems: 'start' }}>
         
         {/* Active Days */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
@@ -204,8 +204,10 @@ export default function ActivityHeatmap() {
         </div>
       </div>
 
-      {/* Month labels */}
-      <div style={{ display: 'flex', gap: 3, marginBottom: 4, marginLeft: 22, position: 'relative', height: 16 }}>
+      {/* Heatmap: scrollable on mobile */}
+      <div style={{ width: '100%', overflowX: 'auto', WebkitOverflowScrolling: 'touch', paddingBottom: 8 }}>
+        {/* Month labels */}
+        <div style={{ display: 'flex', gap: 3, marginBottom: 4, marginLeft: 22, position: 'relative', height: 16, minWidth: 'max-content' }}>
         {monthLabels.map(({ col, label }) => (
           <span
             key={`${col}-${label}`}
@@ -223,45 +225,46 @@ export default function ActivityHeatmap() {
         ))}
       </div>
 
-      <div style={{ display: 'flex', gap: 2 }}>
-        {/* Day labels */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginRight: 4, paddingTop: 0 }}>
-          {DAYS.map((d, i) => (
-            <div key={i} style={{ width: 18, height: 13, fontSize: '0.6rem', color: 'var(--muted2)', display: 'flex', alignItems: 'center' }}>
-              {d}
-            </div>
-          ))}
-        </div>
+        <div style={{ display: 'flex', gap: 2, minWidth: 'max-content' }}>
+          {/* Day labels */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginRight: 4, paddingTop: 0 }}>
+            {DAYS.map((d, i) => (
+              <div key={i} style={{ width: 18, height: 13, fontSize: '0.6rem', color: 'var(--muted2)', display: 'flex', alignItems: 'center' }}>
+                {d}
+              </div>
+            ))}
+          </div>
 
-        {/* Grid */}
-        <div style={{ display: 'flex', gap: 3, overflowX: 'auto', paddingBottom: 4 }}>
-          {weeks.map((week, wi) => (
-            <div key={wi} style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-              {week.map((cell, di) => (
-                <div
-                  key={di}
-                  title={cell.inRange ? cell.date : ''}
-                  style={{
-                    width: 13,
-                    height: 13,
-                    borderRadius: 3,
-                    background: cell.inRange ? colors[cell.level] : 'transparent',
-                    cursor: cell.inRange && cell.data ? 'pointer' : 'default',
-                    transition: 'transform 0.1s',
-                    flexShrink: 0,
-                  }}
-                  onMouseEnter={(e) => {
-                    if (cell.inRange) {
-                      setTooltip({ cell, rect: e.currentTarget.getBoundingClientRect() });
-                    }
-                  }}
-                  onMouseLeave={() => setTooltip({ cell: null, rect: null })}
-                />
-              ))}
-            </div>
-          ))}
+          {/* Grid */}
+          <div style={{ display: 'flex', gap: 3, paddingBottom: 4 }}>
+            {weeks.map((week, wi) => (
+              <div key={wi} style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                {week.map((cell, di) => (
+                  <div
+                    key={di}
+                    title={cell.inRange ? cell.date : ''}
+                    style={{
+                      width: 13,
+                      height: 13,
+                      borderRadius: 3,
+                      background: cell.inRange ? colors[cell.level] : 'transparent',
+                      cursor: cell.inRange && cell.data ? 'pointer' : 'default',
+                      transition: 'transform 0.1s',
+                      flexShrink: 0,
+                    }}
+                    onMouseEnter={(e) => {
+                      if (cell.inRange) {
+                        setTooltip({ cell, rect: e.currentTarget.getBoundingClientRect() });
+                      }
+                    }}
+                    onMouseLeave={() => setTooltip({ cell: null, rect: null })}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </div> {/* end scrollable wrapper */}
 
       {/* Legend */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 10, justifyContent: 'flex-end' }}>

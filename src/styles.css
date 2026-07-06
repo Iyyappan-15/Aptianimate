@@ -2577,6 +2577,15 @@ img, svg { display: block; }
     gap: 10px !important;
   }
 
+  /* Profile section card - ensure it doesn't overflow */
+  .profile-section-card {
+    border-radius: 14px !important;
+    padding: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
   /* ── Profile Page ── */
   .profile-hero-banner {
     height: 80px;
