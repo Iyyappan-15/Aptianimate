@@ -2570,12 +2570,9 @@ img, svg { display: block; }
 
   /* ── Stats Cards (Profile page) ── */
   /* Override StatsCards minmax to always show 2 per row */
-  [style*="grid-template-columns: repeat(auto-fill, minmax(210px, 1fr))"] {
+  .profile-stats-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
-  }
-  [style*="minmax(210px"] {
-    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   /* ── Profile Page ── */
@@ -2957,7 +2954,7 @@ img, svg { display: block; }
   .category-card {
     padding: 12px 10px;
   }
-  [style*="grid-template-columns: repeat(auto-fill, minmax(210px, 1fr))"] {
+  .profile-stats-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 8px !important;
   }

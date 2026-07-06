@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from 'react';
 import { CATEGORIES } from '../data/questionBank';
 import { TOPIC_CONTENT } from '../data/topicContent';
 import { getGoal, setGoal, getLastSession, getStats } from '../utils/localStorage';
-import ProgressDashboard from '../components/ProgressDashboard';
+
 import CampusPlacementView from '../components/CampusPlacementView';
 import GovtExamView from '../components/GovtExamView';
 import AptitudeRoadmapView from '../components/AptitudeRoadmapView';
@@ -138,11 +138,7 @@ export default function HomePage({ navigate }) {
         </div>
       )}
 
-      {stats && stats.total_attempted > 0 && (
-        <div style={{ marginBottom: 48 }}>
-          <ProgressDashboard />
-        </div>
-      )}
+      {/* ProgressDashboard removed as requested */}
 
       {goal === 'Campus Placements' ? (
         <CampusPlacementView navigate={navigate} />

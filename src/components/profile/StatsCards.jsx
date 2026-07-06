@@ -93,7 +93,7 @@ export default function StatsCards() {
   ];
 
   return (
-    <div style={{
+    <div className="profile-stats-grid" style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))',
       gap: 16,
