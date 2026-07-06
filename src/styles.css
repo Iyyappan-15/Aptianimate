@@ -2424,10 +2424,9 @@ img, svg { display: block; }
 
   /* AskPage tweaks */
   .ai-solver-input-container { flex-direction: column; gap: 8px; }
-  .ai-solver-textarea { font-size: 0.95rem; min-height: 100px; padding-bottom: 14px; }
-  .ai-solver-hint { display: none; } /* Hide hint on mobile to save space */
+  .ai-solver-textarea { font-size: 0.95rem; min-height: 100px; padding-bottom: 50px; }
+  .desktop-only-hint { display: none !important; } /* Hide hint on mobile to save space */
   .ai-solver-submit { padding: 12px; font-size: 0.95rem; }
-  .ai-solver-upload-wrap { align-self: flex-end; }
 
   /* Profile Page tweaks */
   .profile-hero-content { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 20px 24px; }
@@ -2766,19 +2765,16 @@ img, svg { display: block; }
   .ai-solver-textarea {
     font-size: 0.9rem;
     min-height: 96px;
-    padding-bottom: 14px;
+    padding-bottom: 50px;
   }
-  .ai-solver-hint {
-    display: none;
+  .desktop-only-hint {
+    display: none !important;
   }
   .ai-solver-submit {
     width: 100%;
     justify-content: center;
     padding: 12px;
     font-size: 0.95rem;
-  }
-  .ai-solver-upload-wrap {
-    align-self: flex-end;
   }
   .ai-result-options {
     grid-template-columns: 1fr;

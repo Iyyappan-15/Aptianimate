@@ -96,7 +96,7 @@ export default function AskPage({ navigate, initialQuery = "" }) {
         <p style={{ color: "var(--text-sec)", fontSize: "1rem", margin: "0 0 8px" }}>
           Type any question and get an instant step-by-step animated visual explanation.
         </p>
-        <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", fontWeight: "500" }}>
+        <div className="desktop-only-hint" style={{ fontSize: "0.8rem", color: "var(--text-muted)", fontWeight: "500" }}>
           Press <kbd style={{ background: "var(--surface2)", border: "1px solid var(--border)", borderRadius: "4px", padding: "1px 6px", fontFamily: "monospace" }}>Ctrl</kbd> + <kbd style={{ background: "var(--surface2)", border: "1px solid var(--border)", borderRadius: "4px", padding: "1px 6px", fontFamily: "monospace" }}>Enter</kbd> to submit
         </div>
       </div>
@@ -105,46 +105,49 @@ export default function AskPage({ navigate, initialQuery = "" }) {
       {(state === STATES.IDLE || state === STATES.ERROR) && (
         <form className="ai-solver-form" onSubmit={handleSubmit}>
           <div className="ai-solver-input-container">
-            <div className="ai-solver-input-wrap">
+            <div className="ai-solver-input-wrap" style={{ position: 'relative', width: '100%' }}>
               <textarea
                 ref={textareaRef}
                 className="ai-solver-textarea"
                 value={question}
                 onChange={e => setQuestion(e.target.value)}
                 onKeyDown={e => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) handleSubmit(e); }}
-                placeholder={"Paste or type any aptitude question here...\n\ne.g. \"The average marks of 4 students are 40, 50, 60, 70. Find the overall average.\"\ne.g. \"A train 130m long crosses a 245m bridge at 45 km/hr. Find the time.\""}
+                placeholder="Paste or type any aptitude question here..."
                 rows={4}
+                style={{ paddingBottom: '50px' }} // Make room for the button
               />
-              <div className="ai-solver-hint">
+              <div className="ai-solver-hint desktop-only-hint">
                 Press Ctrl + Enter to submit
               </div>
-            </div>
 
-            <div className="ai-solver-upload-wrap">
-              <button
-                type="button"
-                className={`ai-solver-upload-btn ${selectedImage ? 'has-image' : ''}`}
-                onClick={() => fileInputRef.current?.click()}
-                title="Upload Image"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                  <circle cx="8.5" cy="8.5" r="1.5"/>
-                  <polyline points="21 15 16 10 5 21"/>
-                </svg>
-              </button>
-              <input type="file" accept="image/*" ref={fileInputRef} style={{ display: "none" }} onChange={handleImageUpload} />
+              {/* Upload Button integrated inside the text area */}
+              <div className="ai-solver-upload-wrap" style={{ position: 'absolute', bottom: '12px', left: '16px', display: 'flex', gap: '8px', alignItems: 'center' }}>
+                <button
+                  type="button"
+                  className={`ai-solver-upload-btn ${selectedImage ? 'has-image' : ''}`}
+                  onClick={() => fileInputRef.current?.click()}
+                  title="Upload Image"
+                  style={{ width: '36px', height: '36px', borderRadius: '8px', padding: 0 }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </button>
+                <input type="file" accept="image/*" ref={fileInputRef} style={{ display: "none" }} onChange={handleImageUpload} />
 
-              {selectedImage && (
-                <div style={{ position: 'relative', width: '48px', height: '48px', borderRadius: '8px', overflow: 'hidden', border: '1.5px solid var(--violet)' }}>
-                  <img src={selectedImage} alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                  <button
-                    type="button"
-                    onClick={() => setSelectedImage(null)}
-                    style={{ position: 'absolute', top: 2, right: 2, width: 16, height: 16, borderRadius: '50%', background: 'rgba(239,68,68,0.9)', color: '#fff', border: 'none', fontSize: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
-                  >✕</button>
-                </div>
-              )}
+                {selectedImage && (
+                  <div style={{ position: 'relative', width: '36px', height: '36px', borderRadius: '8px', overflow: 'hidden', border: '1.5px solid var(--violet)' }}>
+                    <img src={selectedImage} alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <button
+                      type="button"
+                      onClick={() => setSelectedImage(null)}
+                      style={{ position: 'absolute', top: 2, right: 2, width: 14, height: 14, borderRadius: '50%', background: 'rgba(239,68,68,0.9)', color: '#fff', border: 'none', fontSize: 9, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+                    >✕</button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 

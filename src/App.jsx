@@ -131,7 +131,7 @@ function App() {
   } else if (route === 'govt-daily') {
     pageComponent = <GovtDailyPracticePage navigate={navigate} />;
   } else if (route === 'profile') {
-    pageComponent = <ProfilePage />;
+    pageComponent = <ProfilePage navigate={navigate} />;
   } else if (route === 'admin') {
     pageComponent = <AdminDashboard />;
   } else if (route === 'admin/users') {

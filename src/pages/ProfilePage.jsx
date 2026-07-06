@@ -480,7 +480,7 @@ function AccountSettings({ user, profile, signOut }) {
 
 
 // ─── Main Profile Page ────────────────────────────────────────────────────
-export default function ProfilePage() {
+export default function ProfilePage({ navigate }) {
   const { user, profile, signOut } = useAuth();
 
   if (!user || !profile) {
@@ -496,6 +496,12 @@ export default function ProfilePage() {
 
   return (
     <div style={{ maxWidth: 900, margin: '0 auto', padding: '16px 14px 60px', width: '100%', boxSizing: 'border-box' }}>
+      <button 
+        onClick={() => navigate('home')} 
+        style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'transparent', color: 'var(--muted)', fontSize: '0.9rem', fontWeight: 600, padding: '4px 0', marginBottom: '16px', border: 'none', cursor: 'pointer' }}
+      >
+        <span>←</span> Back to Home
+      </button>
       {/* ── Profile Hero ── */}
       <div className="profile-hero-card">
         <div className="profile-hero-banner" />
