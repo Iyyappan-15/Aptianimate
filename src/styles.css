@@ -2441,3 +2441,541 @@ img, svg { display: block; }
   .setting-select { width: 100%; }
   .setting-row > button { width: 100%; text-align: center; justify-content: center; }
 }
+
+/* ============================================================
+   MASTER MOBILE RESPONSIVE SYSTEM — ≤ 768px
+   Only overrides for mobile. Desktop is untouched.
+   ============================================================ */
+
+/* ── Base Layout ── */
+@media (max-width: 768px) {
+  .page, .page-wide {
+    padding: 0 14px 80px;
+  }
+
+  /* ── Navbar ── */
+  .navbar {
+    padding: 12px 14px 10px;
+    max-width: 100%;
+  }
+  .navbar-inner {
+    height: 52px;
+    gap: 6px;
+  }
+  .nav-brand {
+    font-size: 1rem;
+    gap: 6px;
+  }
+  .nav-logo {
+    height: 32px;
+  }
+  .nav-links {
+    gap: 4px;
+  }
+  .nav-links .nav-link {
+    display: none;
+  }
+  .btn-ask-ai {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+  .btn-ask-ai .btn-text {
+    display: none;
+  }
+  .btn-google {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    margin-left: 4px;
+  }
+  .btn-google .btn-text {
+    display: none;
+  }
+  .btn-profile {
+    padding: 3px;
+  }
+  .profile-username {
+    display: none;
+  }
+  .btn-theme-toggle {
+    width: 28px;
+    height: 28px;
+    margin-left: 4px;
+    font-size: 0.85rem;
+  }
+
+  /* ── Hero Section ── */
+  .hero {
+    padding: 32px 0 24px;
+  }
+  .hero h1 {
+    font-size: clamp(1.6rem, 7vw, 2.4rem);
+  }
+  .hero p {
+    font-size: 0.95rem;
+    padding: 0 4px;
+  }
+  .hero-badge {
+    font-size: 0.75rem;
+  }
+  .home-search-container {
+    margin: 20px auto 0;
+    padding: 0 2px;
+  }
+  .home-search-box {
+    padding: 11px 14px;
+    gap: 8px;
+  }
+  .home-search-box input {
+    font-size: 0.88rem;
+  }
+
+  /* ── Goal Selector ── */
+  .goal-selector {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .goal-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  /* ── Section Headers ── */
+  .section-header {
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-size: 1rem;
+  }
+
+  /* ── Category Grid ── */
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .category-card {
+    padding: 14px 12px;
+  }
+  .cat-icon {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+  .cat-name {
+    font-size: 0.82rem;
+  }
+  .cat-meta {
+    font-size: 0.68rem;
+  }
+
+  /* ── Stats Cards (Profile page) ── */
+  /* Override StatsCards minmax to always show 2 per row */
+  [style*="grid-template-columns: repeat(auto-fill, minmax(210px, 1fr))"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  [style*="minmax(210px"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── Profile Page ── */
+  .profile-hero-banner {
+    height: 80px;
+  }
+  .profile-hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 16px 20px;
+  }
+  .profile-hero-avatar-wrap {
+    margin-top: -32px;
+  }
+  .profile-hero-avatar-img,
+  .profile-hero-avatar-fallback {
+    width: 68px;
+    height: 68px;
+    border-width: 3px;
+    font-size: 1.8rem;
+  }
+  .profile-hero-name {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+  }
+  .profile-hero-username {
+    font-size: 0.9rem;
+  }
+
+  /* Section card padding */
+  .profile-hero-card,
+  [style*="borderRadius: 20"] {
+    border-radius: 14px !important;
+  }
+
+  /* Setting rows */
+  .setting-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 0;
+  }
+  .setting-info {
+    width: 100%;
+  }
+  .setting-edit-group {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .setting-edit-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .setting-edit-actions > button {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+  }
+  .setting-select {
+    width: 100%;
+  }
+  .setting-row > button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* ── Saved Page (inline-styled cards) ── */
+  /* Force full-width layout for saved cards */
+  .saved-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Topic Page ── */
+  .topic-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px;
+    margin-bottom: 24px;
+  }
+  .topic-hero-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 2.2rem;
+    border-radius: 12px;
+  }
+  .topic-hero-title {
+    font-size: 1.3rem;
+  }
+  .topic-hero-tagline {
+    font-size: 0.88rem;
+  }
+  .topic-facts-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .topic-section {
+    margin-bottom: 24px;
+  }
+
+  /* Category Page Hero */
+  .cat-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+  .cat-hero-icon {
+    font-size: 2.2rem;
+  }
+  .cat-hero-title {
+    font-size: 1.4rem;
+  }
+  .cat-hero-cta {
+    margin-left: 0;
+    width: 100%;
+  }
+  .cat-hero-cta button,
+  .cat-hero-cta a {
+    width: 100%;
+  }
+
+  /* Topic chip row */
+  .topics-chip-row {
+    gap: 6px;
+  }
+  .topic-chip-btn {
+    font-size: 0.78rem;
+    padding: 6px 10px 6px 5px;
+  }
+
+  /* Detail panel */
+  .tdp-header {
+    padding: 16px 16px 12px;
+  }
+  .tdp-section {
+    padding: 16px 16px;
+  }
+  .tdp-formulas {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .tdp-example {
+    margin: 0 16px 14px;
+  }
+  .tdp-cta-row {
+    padding: 12px 16px 14px;
+  }
+
+  /* ── Practice Layout ── */
+  .practice-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 16px;
+  }
+  .question-card {
+    padding: 20px 16px;
+  }
+  .qc-question {
+    font-size: 0.95rem;
+  }
+  .option-btn {
+    padding: 11px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* ── Ask AI Page ── */
+  .ai-solver-input-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ai-solver-textarea {
+    font-size: 0.9rem;
+    min-height: 96px;
+    padding-bottom: 14px;
+  }
+  .ai-solver-hint {
+    display: none;
+  }
+  .ai-solver-submit {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  .ai-solver-upload-wrap {
+    align-self: flex-end;
+  }
+  .ai-result-options {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .ai-final-answer {
+    padding: 16px;
+    gap: 12px;
+  }
+  .ai-final-icon {
+    font-size: 1.5rem;
+  }
+  .ai-final-value {
+    font-size: 1rem;
+  }
+
+  /* ── Stats Grid (Progress Dashboard) ── */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .stat-card {
+    padding: 14px 12px;
+  }
+  .stat-val {
+    font-size: 1.6rem;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+  }
+
+  /* ── Last Session Card ── */
+  .last-session-card {
+    padding: 14px 16px;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .ls-icon {
+    font-size: 1.4rem;
+  }
+  .ls-title {
+    font-size: 0.9rem;
+  }
+  .ls-sub {
+    font-size: 0.75rem;
+  }
+
+  /* ── Hint System ── */
+  .hint-panel {
+    padding: 16px;
+  }
+  .hint-actions {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .hint-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ── Animation Player ── */
+  .anim-header {
+    padding: 12px 14px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .anim-stage {
+    min-height: 220px;
+    padding: 16px 12px;
+  }
+  .anim-controls {
+    padding: 10px 14px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .anim-ctrl-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .step-info {
+    padding: 12px 14px;
+  }
+
+  /* ── Campus Placement View ── */
+  .cp-tabs {
+    gap: 6px;
+  }
+  .cp-tab {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+  .cp-tab-label {
+    display: none;
+  }
+  .cp-section-banner {
+    padding: 14px 16px;
+    gap: 10px;
+  }
+  .cp-banner-icon {
+    font-size: 1.6rem;
+  }
+  .cp-banner-title {
+    font-size: 1rem;
+  }
+  .cp-subcat-header {
+    padding: 12px 14px;
+  }
+  .cp-topics-grid {
+    padding: 4px 14px 14px;
+    gap: 6px;
+  }
+
+  /* ── Syllabus Grid ── */
+  .syllabus-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* ── Question List ── */
+  .question-item {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+  .q-num {
+    width: 28px;
+    height: 28px;
+    font-size: 0.72rem;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  .q-text {
+    font-size: 0.85rem;
+  }
+
+  /* ── Mascot ── */
+  .mascot-wrap {
+    bottom: 10px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+  }
+
+  /* ── Admin Layout sidebar — Collapse to top bar on mobile ── */
+  .admin-layout-shell {
+    flex-direction: column !important;
+  }
+  .admin-sidebar {
+    width: 100% !important;
+    height: auto !important;
+    flex-direction: row !important;
+    border-right: none !important;
+    border-bottom: 1px solid var(--border) !important;
+    overflow-x: auto;
+  }
+  .admin-sidebar-nav {
+    flex-direction: row !important;
+    padding: 8px !important;
+    gap: 4px !important;
+  }
+  .admin-sidebar-bottom {
+    display: none !important;
+  }
+  .admin-content-area {
+    padding: 16px !important;
+  }
+}
+
+/* ── Extra small phones ── */
+@media (max-width: 400px) {
+  .page, .page-wide {
+    padding: 0 10px 80px;
+  }
+  .navbar {
+    padding: 10px 10px 8px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .category-card {
+    padding: 12px 10px;
+  }
+  [style*="grid-template-columns: repeat(auto-fill, minmax(210px, 1fr))"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+  .stat-val {
+    font-size: 1.4rem;
+  }
+  .btn-ask-ai, .btn-google {
+    padding: 5px 8px;
+  }
+  .profile-hero-avatar-img,
+  .profile-hero-avatar-fallback {
+    width: 60px;
+    height: 60px;
+  }
+  .profile-hero-name {
+    font-size: 1.1rem;
+  }
+  .topic-hero-title {
+    font-size: 1.2rem;
+  }
+}

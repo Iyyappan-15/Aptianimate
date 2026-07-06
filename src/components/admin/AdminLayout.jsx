@@ -9,9 +9,9 @@ export default function AdminLayout({ children, currentRoute, navigate, theme, t
   ];
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
+    <div className="admin-layout-shell" style={{ display: 'flex', minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
       {/* Sidebar */}
-      <div style={{ 
+      <div className="admin-sidebar" style={{ 
         width: '260px', 
         background: 'var(--surface)', 
         borderRight: '1px solid var(--border)',
@@ -23,7 +23,7 @@ export default function AdminLayout({ children, currentRoute, navigate, theme, t
             AptiAnimate <span style={{ color: 'var(--text)' }}>Admin</span>
           </h1>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column', padding: '16px 12px', gap: '8px', flex: 1 }}>
+        <div className="admin-sidebar-nav" style={{ display: 'flex', flexDirection: 'column', padding: '16px 12px', gap: '8px', flex: 1 }}>
           {navItems.map((item) => {
             const isActive = currentRoute === item.path;
             return (
@@ -56,7 +56,7 @@ export default function AdminLayout({ children, currentRoute, navigate, theme, t
             );
           })}
         </div>
-        <div style={{ padding: '16px', borderTop: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div className="admin-sidebar-bottom" style={{ padding: '16px', borderTop: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <button 
             onClick={toggleTheme} 
             style={{ 
@@ -82,7 +82,7 @@ export default function AdminLayout({ children, currentRoute, navigate, theme, t
       </div>
 
       {/* Main Content Area */}
-      <div style={{ flex: 1, padding: '32px', overflowY: 'auto' }}>
+      <div className="admin-content-area" style={{ flex: 1, padding: '32px', overflowY: 'auto' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           {children}
         </div>
