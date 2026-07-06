@@ -60,9 +60,9 @@
   --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* â”€â”€ Reset â”€â”€ */
+/* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
@@ -71,6 +71,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   transition: background-color var(--transition), color var(--transition);
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 button { cursor: pointer; font-family: inherit; border: none; outline: none; }
 input, textarea, select { font-family: inherit; outline: none; }
@@ -78,17 +80,17 @@ a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 img, svg { display: block; }
 
-/* â”€â”€ Scrollbar â”€â”€ */
+/* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-/* â”€â”€ Layout â”€â”€ */
-.app-shell { display: flex; flex-direction: column; min-height: 100vh; }
-.page { flex: 1; max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; width: 100%; }
-.page-wide { flex: 1; max-width: 1300px; margin: 0 auto; padding: 0 20px 60px; width: 100%; }
+/* ── Layout ── */
+.app-shell { display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; }
+.page { flex: 1; max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; width: 100%; box-sizing: border-box; }
+.page-wide { flex: 1; max-width: 1300px; margin: 0 auto; padding: 0 20px 60px; width: 100%; box-sizing: border-box; }
 
-/* â”€â”€ Navbar â”€â”€ */
+/* ── Navbar ── */
 .navbar {
   width: 100%;
   max-width: 1100px;
@@ -651,8 +653,8 @@ img, svg { display: block; }
 @media (max-width: 640px) {
   .navbar-inner { padding: 0 4px; }
   .nav-links .nav-link { display: none; }
-  .category-grid { grid-template-columns: repeat(2, 1fr); }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .category-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; }
   .anim-controls { gap: 6px; }
   .anim-ctrl-right { width: 100%; justify-content: flex-end; }
   .practice-layout { grid-template-columns: 1fr; }
@@ -2550,7 +2552,7 @@ img, svg { display: block; }
 
   /* ── Category Grid ── */
   .category-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 10px;
     margin-bottom: 28px;
   }
@@ -2571,7 +2573,7 @@ img, svg { display: block; }
   /* ── Stats Cards (Profile page) ── */
   /* Override StatsCards minmax to always show 2 per row */
   .profile-stats-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: 1fr !important;
     gap: 10px !important;
   }
 
@@ -2786,7 +2788,7 @@ img, svg { display: block; }
 
   /* ── Stats Grid (Progress Dashboard) ── */
   .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 10px;
     margin-bottom: 16px;
   }
@@ -2948,14 +2950,14 @@ img, svg { display: block; }
     font-size: 1.5rem;
   }
   .category-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 8px;
   }
   .category-card {
     padding: 12px 10px;
   }
   .profile-stats-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: 1fr !important;
     gap: 8px !important;
   }
   .stat-val {
