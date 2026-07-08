@@ -1,0 +1,3012 @@
+[
+  {
+    "id": "ADV_PROB_001",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "1/3",
+      "1/2",
+      "1/4",
+      "3/4"
+    ],
+    "correctAnswer": 1,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_002",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "1/2",
+      "1/3",
+      "3/4",
+      "1/4"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_003",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "1/2",
+      "3/4",
+      "1/4",
+      "1/3"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_004",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "1/4",
+      "1/3",
+      "3/4",
+      "1/2"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_005",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "1/2",
+      "3/4",
+      "1/3",
+      "1/4"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_006",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "3/4",
+      "1/3",
+      "1/4",
+      "1/2"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_007",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "3/4",
+      "1/3",
+      "1/4",
+      "1/2"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_008",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "1/4",
+      "3/4",
+      "1/2",
+      "1/3"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_009",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "3/4",
+      "1/2",
+      "1/4",
+      "1/3"
+    ],
+    "correctAnswer": 1,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_010",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Easy",
+    "question": "Two unbiased coins are tossed simultaneously. What is the probability of getting exactly one head?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "3/4"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/2",
+    "explanation": "Sample space for 2 coins: {HH, HT, TH, TT}. Total outcomes = 4. Favorable outcomes (exactly one head): {HT, TH} = 2. Probability = 2/4 = 1/2.",
+    "shortcut": "For 2 coins, P(exactly 1 H) = 2/4 = 1/2.",
+    "commonMistake": "Thinking 'exactly one head' means at least one head.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_011",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "1/3",
+      "2/3",
+      "1/2",
+      "1/6"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_012",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_013",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "1/3",
+      "2/3",
+      "1/6",
+      "1/2"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_014",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "2/3",
+      "1/2",
+      "1/6",
+      "1/3"
+    ],
+    "correctAnswer": 1,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_015",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "2/3",
+      "1/3",
+      "1/2",
+      "1/6"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_016",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "1/6",
+      "1/3",
+      "2/3",
+      "1/2"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_017",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "1/6",
+      "2/3",
+      "1/3",
+      "1/2"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_018",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "1/6"
+    ],
+    "correctAnswer": 1,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_019",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "1/6"
+    ],
+    "correctAnswer": 1,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_020",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Easy",
+    "question": "A single die is rolled. What is the probability of getting a prime number?",
+    "options": [
+      "1/3",
+      "1/6",
+      "1/2",
+      "2/3"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/2",
+    "explanation": "Total outcomes = {1, 2, 3, 4, 5, 6} = 6. Prime numbers on a die = {2, 3, 5}. Favorable outcomes = 3. Probability = 3/6 = 1/2.",
+    "shortcut": "Primes on a die are 2, 3, 5 (three numbers). So 3/6 = 1/2.",
+    "commonMistake": "Counting 1 as a prime number (1 is neither prime nor composite).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "prime"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_021",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "3/13",
+      "4/13",
+      "3/52",
+      "1/13"
+    ],
+    "correctAnswer": 0,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_022",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "4/13",
+      "1/13",
+      "3/13",
+      "3/52"
+    ],
+    "correctAnswer": 2,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_023",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "3/52",
+      "4/13",
+      "3/13",
+      "1/13"
+    ],
+    "correctAnswer": 2,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_024",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "3/52",
+      "3/13",
+      "1/13",
+      "4/13"
+    ],
+    "correctAnswer": 1,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_025",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "3/52",
+      "3/13",
+      "4/13",
+      "1/13"
+    ],
+    "correctAnswer": 1,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_026",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "4/13",
+      "1/13",
+      "3/13",
+      "3/52"
+    ],
+    "correctAnswer": 2,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_027",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "4/13",
+      "1/13",
+      "3/13",
+      "3/52"
+    ],
+    "correctAnswer": 2,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_028",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "3/13",
+      "4/13",
+      "1/13",
+      "3/52"
+    ],
+    "correctAnswer": 0,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_029",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "1/13",
+      "3/13",
+      "3/52",
+      "4/13"
+    ],
+    "correctAnswer": 1,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_030",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Easy",
+    "question": "From a well-shuffled deck of 52 cards, one card is drawn at random. What is the probability that the card is a face card?",
+    "options": [
+      "3/52",
+      "3/13",
+      "4/13",
+      "1/13"
+    ],
+    "correctAnswer": 1,
+    "answer": "3/13",
+    "explanation": "Total cards = 52. Face cards (Jack, Queen, King in 4 suits) = 3 * 4 = 12. Probability = 12/52 = 3/13.",
+    "shortcut": "There are 3 face cards per suit, 4 suits. 12/52 = 3/13.",
+    "commonMistake": "Including Aces as face cards.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "face card"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_031",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "3/5",
+      "1/2",
+      "1/3",
+      "2/5"
+    ],
+    "correctAnswer": 3,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_032",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "1/2",
+      "3/5",
+      "1/3",
+      "2/5"
+    ],
+    "correctAnswer": 3,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_033",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "2/5",
+      "1/2",
+      "3/5",
+      "1/3"
+    ],
+    "correctAnswer": 0,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_034",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "1/3",
+      "3/5",
+      "2/5",
+      "1/2"
+    ],
+    "correctAnswer": 2,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_035",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "3/5",
+      "1/3",
+      "1/2",
+      "2/5"
+    ],
+    "correctAnswer": 3,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_036",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "1/2",
+      "1/3",
+      "2/5",
+      "3/5"
+    ],
+    "correctAnswer": 2,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_037",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "2/5",
+      "1/2",
+      "1/3",
+      "3/5"
+    ],
+    "correctAnswer": 0,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_038",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "3/5",
+      "2/5",
+      "1/3",
+      "1/2"
+    ],
+    "correctAnswer": 1,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_039",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "3/5",
+      "1/2",
+      "1/3",
+      "2/5"
+    ],
+    "correctAnswer": 3,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_040",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Easy",
+    "question": "A bag contains 4 red and 6 black balls. If one ball is drawn at random, what is the probability that it is red?",
+    "options": [
+      "1/2",
+      "1/3",
+      "3/5",
+      "2/5"
+    ],
+    "correctAnswer": 3,
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. Red balls = 4. Probability = 4/10 = 2/5.",
+    "shortcut": "Probability = (Red Balls) / (Total Balls) = 4/10 = 2/5.",
+    "commonMistake": "Using the number of black balls in the numerator.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "basic"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_041",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "3/8",
+      "1/8",
+      "5/8",
+      "7/8"
+    ],
+    "correctAnswer": 3,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_042",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "3/8",
+      "5/8",
+      "7/8",
+      "1/8"
+    ],
+    "correctAnswer": 2,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_043",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "3/8",
+      "1/8",
+      "5/8",
+      "7/8"
+    ],
+    "correctAnswer": 3,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_044",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "7/8",
+      "1/8",
+      "3/8",
+      "5/8"
+    ],
+    "correctAnswer": 0,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_045",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "7/8",
+      "5/8",
+      "3/8",
+      "1/8"
+    ],
+    "correctAnswer": 0,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_046",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "7/8",
+      "1/8",
+      "3/8",
+      "5/8"
+    ],
+    "correctAnswer": 0,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_047",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "7/8",
+      "5/8",
+      "3/8",
+      "1/8"
+    ],
+    "correctAnswer": 0,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_048",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "1/8",
+      "3/8",
+      "7/8",
+      "5/8"
+    ],
+    "correctAnswer": 2,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_049",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "7/8",
+      "5/8",
+      "1/8",
+      "3/8"
+    ],
+    "correctAnswer": 0,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_050",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at most two heads?",
+    "options": [
+      "1/8",
+      "3/8",
+      "7/8",
+      "5/8"
+    ],
+    "correctAnswer": 2,
+    "answer": "7/8",
+    "explanation": "Total outcomes for 3 coins = 2^3 = 8. 'At most two heads' means everything except 3 heads (HHH). Favorable outcomes = 8 - 1 = 7. Probability = 7/8.",
+    "shortcut": "P(at most 2H) = 1 - P(all heads) = 1 - 1/8 = 7/8.",
+    "commonMistake": "Forgetting to include zero heads as a valid outcome for 'at most'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "at most"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_051",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "1/9",
+      "7/36",
+      "5/36",
+      "1/6"
+    ],
+    "correctAnswer": 2,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_052",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "5/36",
+      "7/36",
+      "1/6",
+      "1/9"
+    ],
+    "correctAnswer": 0,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_053",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "5/36",
+      "1/6",
+      "1/9",
+      "7/36"
+    ],
+    "correctAnswer": 0,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_054",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "1/9",
+      "5/36",
+      "7/36",
+      "1/6"
+    ],
+    "correctAnswer": 1,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_055",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "7/36",
+      "5/36",
+      "1/9",
+      "1/6"
+    ],
+    "correctAnswer": 1,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_056",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "1/9",
+      "1/6",
+      "5/36",
+      "7/36"
+    ],
+    "correctAnswer": 2,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_057",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "1/6",
+      "1/9",
+      "5/36",
+      "7/36"
+    ],
+    "correctAnswer": 2,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_058",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "5/36",
+      "1/6",
+      "7/36",
+      "1/9"
+    ],
+    "correctAnswer": 0,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_059",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "7/36",
+      "1/9",
+      "1/6",
+      "5/36"
+    ],
+    "correctAnswer": 3,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_060",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled simultaneously. What is the probability that the sum of the numbers is 8?",
+    "options": [
+      "1/9",
+      "1/6",
+      "7/36",
+      "5/36"
+    ],
+    "correctAnswer": 3,
+    "answer": "5/36",
+    "explanation": "Total outcomes = 6 * 6 = 36. Favorable outcomes for sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). Total favorable = 5. Probability = 5/36.",
+    "shortcut": "For sum S (where S > 7), favorable outcomes = 13 - S. So for 8, 13 - 8 = 5 outcomes.",
+    "commonMistake": "Missing permutations like (5,3) and (3,5) assuming they are the same outcome.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_061",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "1/169",
+      "4/221",
+      "1/220",
+      "1/221"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_062",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "1/221",
+      "1/220",
+      "1/169",
+      "4/221"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_063",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "1/220",
+      "4/221",
+      "1/169",
+      "1/221"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_064",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "1/221",
+      "1/220",
+      "1/169",
+      "4/221"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_065",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "1/169",
+      "1/221",
+      "4/221",
+      "1/220"
+    ],
+    "correctAnswer": 1,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_066",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "1/169",
+      "4/221",
+      "1/221",
+      "1/220"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_067",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "1/221",
+      "1/169",
+      "1/220",
+      "4/221"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_068",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "4/221",
+      "1/169",
+      "1/220",
+      "1/221"
+    ],
+    "correctAnswer": 3,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_069",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "4/221",
+      "1/220",
+      "1/221",
+      "1/169"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_070",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Medium",
+    "question": "Two cards are drawn from a pack of 52 cards one after another without replacement. What is the probability that both are kings?",
+    "options": [
+      "1/221",
+      "4/221",
+      "1/220",
+      "1/169"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/221",
+    "explanation": "Total ways to draw 2 cards = 52C2 = 1326. Ways to draw 2 kings from 4 = 4C2 = 6. Probability = 6/1326 = 1/221. Alternatively: (4/52) * (3/51) = 1/13 * 1/17 = 1/221.",
+    "shortcut": "P = (4/52) * (3/51) = 1/221.",
+    "commonMistake": "Assuming replacement when the problem says 'without replacement'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "without replacement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_071",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "41/44",
+      "5/44",
+      "3/44",
+      "39/44"
+    ],
+    "correctAnswer": 0,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_072",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "39/44",
+      "5/44",
+      "41/44",
+      "3/44"
+    ],
+    "correctAnswer": 2,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_073",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "5/44",
+      "3/44",
+      "41/44",
+      "39/44"
+    ],
+    "correctAnswer": 2,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_074",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "41/44",
+      "5/44",
+      "39/44",
+      "3/44"
+    ],
+    "correctAnswer": 0,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_075",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "39/44",
+      "5/44",
+      "3/44",
+      "41/44"
+    ],
+    "correctAnswer": 3,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_076",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "3/44",
+      "39/44",
+      "41/44",
+      "5/44"
+    ],
+    "correctAnswer": 2,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_077",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "41/44",
+      "5/44",
+      "3/44",
+      "39/44"
+    ],
+    "correctAnswer": 0,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_078",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "3/44",
+      "5/44",
+      "39/44",
+      "41/44"
+    ],
+    "correctAnswer": 3,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_079",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "41/44",
+      "3/44",
+      "5/44",
+      "39/44"
+    ],
+    "correctAnswer": 0,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_080",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Medium",
+    "question": "A box contains 5 green, 4 yellow and 3 white marbles. Three marbles are drawn at random. What is the probability that they are not of the same color?",
+    "options": [
+      "39/44",
+      "5/44",
+      "41/44",
+      "3/44"
+    ],
+    "correctAnswer": 2,
+    "answer": "41/44",
+    "explanation": "Total marbles = 12. Ways to draw 3 = 12C3 = 220. 'Same color' means all 3 green OR all 3 yellow OR all 3 white. Ways = 5C3 + 4C3 + 3C3 = 10 + 4 + 1 = 15. P(same color) = 15/220 = 3/44. P(not same) = 1 - 3/44 = 41/44.",
+    "shortcut": "P(Not same) = 1 - P(All same).",
+    "commonMistake": "Trying to calculate 'not same color' directly instead of using the complement.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "balls",
+      "combinations",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_081",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "Five fair coins are tossed. What is the probability of getting exactly 3 heads?",
+    "options": [
+      "5/32",
+      "5/16",
+      "3/16",
+      "1/4"
+    ],
+    "correctAnswer": 1,
+    "answer": "5/16",
+    "explanation": "Total outcomes = 2^5 = 32. Favorable outcomes = Choosing 3 coins out of 5 to be heads = 5C3 = 10. Probability = 10/32 = 5/16.",
+    "shortcut": "Use Binomial: nCr * (1/2)^n. 5C3 / 2^5 = 10/32 = 5/16.",
+    "commonMistake": "Trying to manually count all 32 outcomes and making a mistake.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "binomial"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_082",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "Five fair coins are tossed. What is the probability of getting exactly 3 heads?",
+    "options": [
+      "1/4",
+      "3/16",
+      "5/16",
+      "5/32"
+    ],
+    "correctAnswer": 2,
+    "answer": "5/16",
+    "explanation": "Total outcomes = 2^5 = 32. Favorable outcomes = Choosing 3 coins out of 5 to be heads = 5C3 = 10. Probability = 10/32 = 5/16.",
+    "shortcut": "Use Binomial: nCr * (1/2)^n. 5C3 / 2^5 = 10/32 = 5/16.",
+    "commonMistake": "Trying to manually count all 32 outcomes and making a mistake.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "binomial"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_083",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "Five fair coins are tossed. What is the probability of getting exactly 3 heads?",
+    "options": [
+      "3/16",
+      "5/32",
+      "1/4",
+      "5/16"
+    ],
+    "correctAnswer": 3,
+    "answer": "5/16",
+    "explanation": "Total outcomes = 2^5 = 32. Favorable outcomes = Choosing 3 coins out of 5 to be heads = 5C3 = 10. Probability = 10/32 = 5/16.",
+    "shortcut": "Use Binomial: nCr * (1/2)^n. 5C3 / 2^5 = 10/32 = 5/16.",
+    "commonMistake": "Trying to manually count all 32 outcomes and making a mistake.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "binomial"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_084",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "Five fair coins are tossed. What is the probability of getting exactly 3 heads?",
+    "options": [
+      "5/16",
+      "3/16",
+      "5/32",
+      "1/4"
+    ],
+    "correctAnswer": 0,
+    "answer": "5/16",
+    "explanation": "Total outcomes = 2^5 = 32. Favorable outcomes = Choosing 3 coins out of 5 to be heads = 5C3 = 10. Probability = 10/32 = 5/16.",
+    "shortcut": "Use Binomial: nCr * (1/2)^n. 5C3 / 2^5 = 10/32 = 5/16.",
+    "commonMistake": "Trying to manually count all 32 outcomes and making a mistake.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "binomial"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_085",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "Five fair coins are tossed. What is the probability of getting exactly 3 heads?",
+    "options": [
+      "1/4",
+      "3/16",
+      "5/16",
+      "5/32"
+    ],
+    "correctAnswer": 2,
+    "answer": "5/16",
+    "explanation": "Total outcomes = 2^5 = 32. Favorable outcomes = Choosing 3 coins out of 5 to be heads = 5C3 = 10. Probability = 10/32 = 5/16.",
+    "shortcut": "Use Binomial: nCr * (1/2)^n. 5C3 / 2^5 = 10/32 = 5/16.",
+    "commonMistake": "Trying to manually count all 32 outcomes and making a mistake.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "coins"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "coins",
+      "binomial"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_086",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Hard",
+    "question": "Three dice are rolled. What is the probability that the sum of the numbers is exactly 10?",
+    "options": [
+      "1/8",
+      "27/216",
+      "1/9",
+      "25/216"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/8",
+    "explanation": "Total outcomes = 6^3 = 216. Number of ways to get sum 10 with 3 dice is 27. (Using partitions or manual counting). Probability = 27/216 = 1/8.",
+    "shortcut": "Use multinomial theorem or standard lookup tables for 3 dice sums.",
+    "commonMistake": "Miscounting the combinations for sum 10.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "three dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_087",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Hard",
+    "question": "Three dice are rolled. What is the probability that the sum of the numbers is exactly 10?",
+    "options": [
+      "1/8",
+      "1/9",
+      "25/216",
+      "27/216"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/8",
+    "explanation": "Total outcomes = 6^3 = 216. Number of ways to get sum 10 with 3 dice is 27. (Using partitions or manual counting). Probability = 27/216 = 1/8.",
+    "shortcut": "Use multinomial theorem or standard lookup tables for 3 dice sums.",
+    "commonMistake": "Miscounting the combinations for sum 10.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "three dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_088",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Hard",
+    "question": "Three dice are rolled. What is the probability that the sum of the numbers is exactly 10?",
+    "options": [
+      "1/8",
+      "27/216",
+      "25/216",
+      "1/9"
+    ],
+    "correctAnswer": 0,
+    "answer": "1/8",
+    "explanation": "Total outcomes = 6^3 = 216. Number of ways to get sum 10 with 3 dice is 27. (Using partitions or manual counting). Probability = 27/216 = 1/8.",
+    "shortcut": "Use multinomial theorem or standard lookup tables for 3 dice sums.",
+    "commonMistake": "Miscounting the combinations for sum 10.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "three dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_089",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Hard",
+    "question": "Three dice are rolled. What is the probability that the sum of the numbers is exactly 10?",
+    "options": [
+      "27/216",
+      "1/9",
+      "1/8",
+      "25/216"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/8",
+    "explanation": "Total outcomes = 6^3 = 216. Number of ways to get sum 10 with 3 dice is 27. (Using partitions or manual counting). Probability = 27/216 = 1/8.",
+    "shortcut": "Use multinomial theorem or standard lookup tables for 3 dice sums.",
+    "commonMistake": "Miscounting the combinations for sum 10.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "three dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_090",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Dice",
+    "difficulty": "Hard",
+    "question": "Three dice are rolled. What is the probability that the sum of the numbers is exactly 10?",
+    "options": [
+      "25/216",
+      "27/216",
+      "1/8",
+      "1/9"
+    ],
+    "correctAnswer": 2,
+    "answer": "1/8",
+    "explanation": "Total outcomes = 6^3 = 216. Number of ways to get sum 10 with 3 dice is 27. (Using partitions or manual counting). Probability = 27/216 = 1/8.",
+    "shortcut": "Use multinomial theorem or standard lookup tables for 3 dice sums.",
+    "commonMistake": "Miscounting the combinations for sum 10.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "dice"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "dice",
+      "three dice",
+      "sum"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_091",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Hard",
+    "question": "From a pack of 52 cards, 3 cards are drawn at random. What is the probability that they consist of a king, a queen, and a jack?",
+    "options": [
+      "12/5525",
+      "16/5525",
+      "64/5525",
+      "1/5525"
+    ],
+    "correctAnswer": 1,
+    "answer": "16/5525",
+    "explanation": "Total ways to draw 3 cards = 52C3 = 22100. We need 1 King (out of 4), 1 Queen (out of 4), and 1 Jack (out of 4). Ways = 4C1 * 4C1 * 4C1 = 4 * 4 * 4 = 64. Probability = 64 / 22100 = 16 / 5525.",
+    "shortcut": "Choose 1 of each: 4 * 4 * 4. Divide by 52C3.",
+    "commonMistake": "Forgetting that any suit combination is valid.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "combinations"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_092",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Hard",
+    "question": "From a pack of 52 cards, 3 cards are drawn at random. What is the probability that they consist of a king, a queen, and a jack?",
+    "options": [
+      "16/5525",
+      "1/5525",
+      "12/5525",
+      "64/5525"
+    ],
+    "correctAnswer": 0,
+    "answer": "16/5525",
+    "explanation": "Total ways to draw 3 cards = 52C3 = 22100. We need 1 King (out of 4), 1 Queen (out of 4), and 1 Jack (out of 4). Ways = 4C1 * 4C1 * 4C1 = 4 * 4 * 4 = 64. Probability = 64 / 22100 = 16 / 5525.",
+    "shortcut": "Choose 1 of each: 4 * 4 * 4. Divide by 52C3.",
+    "commonMistake": "Forgetting that any suit combination is valid.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "combinations"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_093",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Hard",
+    "question": "From a pack of 52 cards, 3 cards are drawn at random. What is the probability that they consist of a king, a queen, and a jack?",
+    "options": [
+      "16/5525",
+      "64/5525",
+      "12/5525",
+      "1/5525"
+    ],
+    "correctAnswer": 0,
+    "answer": "16/5525",
+    "explanation": "Total ways to draw 3 cards = 52C3 = 22100. We need 1 King (out of 4), 1 Queen (out of 4), and 1 Jack (out of 4). Ways = 4C1 * 4C1 * 4C1 = 4 * 4 * 4 = 64. Probability = 64 / 22100 = 16 / 5525.",
+    "shortcut": "Choose 1 of each: 4 * 4 * 4. Divide by 52C3.",
+    "commonMistake": "Forgetting that any suit combination is valid.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "combinations"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_094",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Hard",
+    "question": "From a pack of 52 cards, 3 cards are drawn at random. What is the probability that they consist of a king, a queen, and a jack?",
+    "options": [
+      "16/5525",
+      "12/5525",
+      "1/5525",
+      "64/5525"
+    ],
+    "correctAnswer": 0,
+    "answer": "16/5525",
+    "explanation": "Total ways to draw 3 cards = 52C3 = 22100. We need 1 King (out of 4), 1 Queen (out of 4), and 1 Jack (out of 4). Ways = 4C1 * 4C1 * 4C1 = 4 * 4 * 4 = 64. Probability = 64 / 22100 = 16 / 5525.",
+    "shortcut": "Choose 1 of each: 4 * 4 * 4. Divide by 52C3.",
+    "commonMistake": "Forgetting that any suit combination is valid.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "combinations"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_095",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Cards",
+    "difficulty": "Hard",
+    "question": "From a pack of 52 cards, 3 cards are drawn at random. What is the probability that they consist of a king, a queen, and a jack?",
+    "options": [
+      "12/5525",
+      "1/5525",
+      "64/5525",
+      "16/5525"
+    ],
+    "correctAnswer": 3,
+    "answer": "16/5525",
+    "explanation": "Total ways to draw 3 cards = 52C3 = 22100. We need 1 King (out of 4), 1 Queen (out of 4), and 1 Jack (out of 4). Ways = 4C1 * 4C1 * 4C1 = 4 * 4 * 4 = 64. Probability = 64 / 22100 = 16 / 5525.",
+    "shortcut": "Choose 1 of each: 4 * 4 * 4. Divide by 52C3.",
+    "commonMistake": "Forgetting that any suit combination is valid.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "cards"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "cards",
+      "combinations"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_096",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Hard",
+    "question": "Bag A contains 3 red and 4 black balls. Bag B contains 4 red and 5 black balls. One ball is transferred from Bag A to Bag B, and then a ball is drawn from Bag B. What is the probability that the ball drawn from Bag B is red?",
+    "options": [
+      "3/10",
+      "33/70",
+      "31/70",
+      "4/9"
+    ],
+    "correctAnswer": 2,
+    "answer": "31/70",
+    "explanation": "Case 1: Red transferred (Prob = 3/7). Bag B now has 5R, 5B. P(Red from B) = 5/10 = 1/2. Total Prob = (3/7)*(1/2) = 3/14 = 15/70. Case 2: Black transferred (Prob = 4/7). Bag B now has 4R, 6B. P(Red from B) = 4/10. Total Prob = (4/7)*(4/10) = 16/70. Final Probability = 15/70 + 16/70 = 31/70.",
+    "shortcut": "Use Total Probability Theorem: P(R from B) = P(R tr)*P(R|R tr) + P(B tr)*P(R|B tr).",
+    "commonMistake": "Forgetting to update the total number of balls in Bag B after the transfer.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "bags",
+      "transfer",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_097",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Hard",
+    "question": "Bag A contains 3 red and 4 black balls. Bag B contains 4 red and 5 black balls. One ball is transferred from Bag A to Bag B, and then a ball is drawn from Bag B. What is the probability that the ball drawn from Bag B is red?",
+    "options": [
+      "3/10",
+      "31/70",
+      "33/70",
+      "4/9"
+    ],
+    "correctAnswer": 1,
+    "answer": "31/70",
+    "explanation": "Case 1: Red transferred (Prob = 3/7). Bag B now has 5R, 5B. P(Red from B) = 5/10 = 1/2. Total Prob = (3/7)*(1/2) = 3/14 = 15/70. Case 2: Black transferred (Prob = 4/7). Bag B now has 4R, 6B. P(Red from B) = 4/10. Total Prob = (4/7)*(4/10) = 16/70. Final Probability = 15/70 + 16/70 = 31/70.",
+    "shortcut": "Use Total Probability Theorem: P(R from B) = P(R tr)*P(R|R tr) + P(B tr)*P(R|B tr).",
+    "commonMistake": "Forgetting to update the total number of balls in Bag B after the transfer.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "bags",
+      "transfer",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_098",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Hard",
+    "question": "Bag A contains 3 red and 4 black balls. Bag B contains 4 red and 5 black balls. One ball is transferred from Bag A to Bag B, and then a ball is drawn from Bag B. What is the probability that the ball drawn from Bag B is red?",
+    "options": [
+      "33/70",
+      "3/10",
+      "31/70",
+      "4/9"
+    ],
+    "correctAnswer": 2,
+    "answer": "31/70",
+    "explanation": "Case 1: Red transferred (Prob = 3/7). Bag B now has 5R, 5B. P(Red from B) = 5/10 = 1/2. Total Prob = (3/7)*(1/2) = 3/14 = 15/70. Case 2: Black transferred (Prob = 4/7). Bag B now has 4R, 6B. P(Red from B) = 4/10. Total Prob = (4/7)*(4/10) = 16/70. Final Probability = 15/70 + 16/70 = 31/70.",
+    "shortcut": "Use Total Probability Theorem: P(R from B) = P(R tr)*P(R|R tr) + P(B tr)*P(R|B tr).",
+    "commonMistake": "Forgetting to update the total number of balls in Bag B after the transfer.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "bags",
+      "transfer",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_099",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Hard",
+    "question": "Bag A contains 3 red and 4 black balls. Bag B contains 4 red and 5 black balls. One ball is transferred from Bag A to Bag B, and then a ball is drawn from Bag B. What is the probability that the ball drawn from Bag B is red?",
+    "options": [
+      "3/10",
+      "33/70",
+      "31/70",
+      "4/9"
+    ],
+    "correctAnswer": 2,
+    "answer": "31/70",
+    "explanation": "Case 1: Red transferred (Prob = 3/7). Bag B now has 5R, 5B. P(Red from B) = 5/10 = 1/2. Total Prob = (3/7)*(1/2) = 3/14 = 15/70. Case 2: Black transferred (Prob = 4/7). Bag B now has 4R, 6B. P(Red from B) = 4/10. Total Prob = (4/7)*(4/10) = 16/70. Final Probability = 15/70 + 16/70 = 31/70.",
+    "shortcut": "Use Total Probability Theorem: P(R from B) = P(R tr)*P(R|R tr) + P(B tr)*P(R|B tr).",
+    "commonMistake": "Forgetting to update the total number of balls in Bag B after the transfer.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "bags",
+      "transfer",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PROB_100",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Balls & Bags",
+    "difficulty": "Hard",
+    "question": "Bag A contains 3 red and 4 black balls. Bag B contains 4 red and 5 black balls. One ball is transferred from Bag A to Bag B, and then a ball is drawn from Bag B. What is the probability that the ball drawn from Bag B is red?",
+    "options": [
+      "4/9",
+      "33/70",
+      "3/10",
+      "31/70"
+    ],
+    "correctAnswer": 3,
+    "answer": "31/70",
+    "explanation": "Case 1: Red transferred (Prob = 3/7). Bag B now has 5R, 5B. P(Red from B) = 5/10 = 1/2. Total Prob = (3/7)*(1/2) = 3/14 = 15/70. Case 2: Black transferred (Prob = 4/7). Bag B now has 4R, 6B. P(Red from B) = 4/10. Total Prob = (4/7)*(4/10) = 16/70. Final Probability = 15/70 + 16/70 = 31/70.",
+    "shortcut": "Use Total Probability Theorem: P(R from B) = P(R tr)*P(R|R tr) + P(B tr)*P(R|B tr).",
+    "commonMistake": "Forgetting to update the total number of balls in Bag B after the transfer.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "probability",
+      "balls & bags"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "bags",
+      "transfer",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  }
+]

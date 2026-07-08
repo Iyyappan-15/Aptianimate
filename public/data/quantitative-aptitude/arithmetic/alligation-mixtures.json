@@ -1,0 +1,2669 @@
+[
+  {
+    "id": "ARI_ALG_001",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $10/kg and $15/kg are mixed to produce a mixture costing $12/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "3:3",
+      "3:2",
+      "4:2",
+      "2:3"
+    ],
+    "correctAnswer": 1,
+    "answer": "3:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_002",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $20/kg and $30/kg are mixed to produce a mixture costing $25/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "1:1",
+      "1:2",
+      "2:1",
+      "1:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_003",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $5/kg and $8/kg are mixed to produce a mixture costing $6/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "1:2",
+      "2:1",
+      "3:1",
+      "2:2"
+    ],
+    "correctAnswer": 1,
+    "answer": "2:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_004",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $12/kg and $20/kg are mixed to produce a mixture costing $16/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "2:1",
+      "1:1",
+      "1:2",
+      "1:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_005",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $6/kg and $10/kg are mixed to produce a mixture costing $8/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "2:1",
+      "1:2",
+      "1:1",
+      "1:1"
+    ],
+    "correctAnswer": 2,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_006",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $15/kg and $25/kg are mixed to produce a mixture costing $18/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "8:3",
+      "7:4",
+      "3:7",
+      "7:3"
+    ],
+    "correctAnswer": 3,
+    "answer": "7:3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_007",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $30/kg and $50/kg are mixed to produce a mixture costing $35/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "1:3",
+      "3:2",
+      "3:1",
+      "4:1"
+    ],
+    "correctAnswer": 2,
+    "answer": "3:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_008",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $8/kg and $14/kg are mixed to produce a mixture costing $10/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "2:1",
+      "2:2",
+      "3:1",
+      "1:2"
+    ],
+    "correctAnswer": 0,
+    "answer": "2:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_009",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $40/kg and $60/kg are mixed to produce a mixture costing $45/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "1:3",
+      "3:2",
+      "3:1",
+      "4:1"
+    ],
+    "correctAnswer": 2,
+    "answer": "3:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_010",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $3/kg and $7/kg are mixed to produce a mixture costing $5/kg. Find the ratio in which they must be mixed.",
+    "options": [
+      "1:1",
+      "2:1",
+      "1:2",
+      "1:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "ratio",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_011",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $20/kg and another costing $40/kg, to get a blend selling at $30/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "3:0",
+      "1:1",
+      "1:1",
+      "1:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_012",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $15/kg and another costing $35/kg, to get a blend selling at $20/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "1:1",
+      "3:1",
+      "5:0",
+      "1:3"
+    ],
+    "correctAnswer": 1,
+    "answer": "3:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_013",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $8/kg and another costing $20/kg, to get a blend selling at $14/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "1:1",
+      "3:0",
+      "1:1",
+      "1:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_014",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $25/kg and another costing $45/kg, to get a blend selling at $32/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "13:7",
+      "7:13",
+      "1:1",
+      "15:6"
+    ],
+    "correctAnswer": 0,
+    "answer": "13:7",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_015",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $10/kg and another costing $30/kg, to get a blend selling at $18/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "5:1",
+      "3:2",
+      "1:1",
+      "2:3"
+    ],
+    "correctAnswer": 1,
+    "answer": "3:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_016",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $5/kg and another costing $25/kg, to get a blend selling at $15/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "3:0",
+      "1:1",
+      "1:1",
+      "1:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_017",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $18/kg and another costing $42/kg, to get a blend selling at $24/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "3:1",
+      "1:1",
+      "1:3",
+      "5:0"
+    ],
+    "correctAnswer": 0,
+    "answer": "3:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_018",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $12/kg and another costing $28/kg, to get a blend selling at $18/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "5:3",
+      "3:5",
+      "1:1",
+      "7:2"
+    ],
+    "correctAnswer": 0,
+    "answer": "5:3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_019",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $50/kg and another costing $90/kg, to get a blend selling at $60/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "3:1",
+      "1:1",
+      "1:3",
+      "5:0"
+    ],
+    "correctAnswer": 0,
+    "answer": "3:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_020",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Medium",
+    "question": "A shopkeeper mixes two kinds of tea, one costing $30/kg and another costing $70/kg, to get a blend selling at $40/kg with 25% profit. What is the ratio in which they should be mixed?",
+    "options": [
+      "5:0",
+      "1:1",
+      "3:1",
+      "1:3"
+    ],
+    "correctAnswer": 2,
+    "answer": "3:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea",
+      "blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_021",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "Two alloys contain gold and silver in the ratio 3:4 and 5:3 respectively. In what ratio must they be mixed so that the new alloy has gold and silver in the ratio 1:1?",
+    "options": [
+      "1:3",
+      "3:5",
+      "5:3",
+      "3:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "3:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "gold",
+      "silver",
+      "alloy"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_022",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "In what ratio must a grocer mix tea at $60/kg with tea at $40/kg to obtain a blend worth $52/kg?",
+    "options": [
+      "2:1",
+      "1:2",
+      "2:3",
+      "3:2"
+    ],
+    "correctAnswer": 3,
+    "answer": "3:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "tea blend"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_023",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "A merchant has 3 types of tea at $40/kg, $50/kg, and $60/kg. What is the ratio they should be mixed to produce a mixture at $48/kg?",
+    "options": [
+      "2:3:3",
+      "3:2:1",
+      "1:2:3",
+      "3:3:2"
+    ],
+    "correctAnswer": 3,
+    "answer": "3:3:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "three varieties"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_024",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "In what ratio must water be added to spirit to obtain a mixture worth half the price of spirit?",
+    "options": [
+      "1:1",
+      "1:2",
+      "2:1",
+      "3:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "water adulteration"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_025",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Hard",
+    "question": "Two vessels have milk and water in ratios 4:1 and 3:2. In what ratio should they be mixed to get a 7:3 ratio?",
+    "options": [
+      "1:1",
+      "2:1",
+      "3:2",
+      "1:2"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "vessels"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_026",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Easy",
+    "question": "A 30% alcohol solution and a 50% alcohol solution are mixed to produce a 40% alcohol solution. Find the ratio of mixing.",
+    "options": [
+      "1:1",
+      "2:1",
+      "1:1",
+      "1:2"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "concentration",
+      "alcohol"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_027",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Easy",
+    "question": "A 20% alcohol solution and a 60% alcohol solution are mixed to produce a 40% alcohol solution. Find the ratio of mixing.",
+    "options": [
+      "1:2",
+      "1:1",
+      "1:1",
+      "2:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "concentration",
+      "alcohol"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_028",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Easy",
+    "question": "A 10% alcohol solution and a 40% alcohol solution are mixed to produce a 25% alcohol solution. Find the ratio of mixing.",
+    "options": [
+      "1:1",
+      "1:2",
+      "2:1",
+      "1:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "concentration",
+      "alcohol"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_029",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Easy",
+    "question": "A 15% alcohol solution and a 35% alcohol solution are mixed to produce a 20% alcohol solution. Find the ratio of mixing.",
+    "options": [
+      "3:1",
+      "4:1",
+      "1:2",
+      "1:3"
+    ],
+    "correctAnswer": 0,
+    "answer": "3:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "concentration",
+      "alcohol"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_030",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Easy",
+    "question": "A 25% alcohol solution and a 75% alcohol solution are mixed to produce a 50% alcohol solution. Find the ratio of mixing.",
+    "options": [
+      "1:2",
+      "1:1",
+      "1:1",
+      "2:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "concentration",
+      "alcohol"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_031",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Removal and Replacement",
+    "difficulty": "Medium",
+    "question": "A vessel contains 40 litres of pure milk. 10 litres is removed and replaced with water. This is repeated 1 time(s). What fraction of the mixture is milk?",
+    "options": [
+      "85.00%",
+      "80.00%",
+      "70.00%",
+      "75.00%"
+    ],
+    "correctAnswer": 3,
+    "answer": "75.00%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "replacement",
+      "milk"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_032",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Removal and Replacement",
+    "difficulty": "Medium",
+    "question": "A vessel contains 50 litres of pure milk. 10 litres is removed and replaced with water. This is repeated 2 time(s). What fraction of the mixture is milk?",
+    "options": [
+      "69.00%",
+      "59.00%",
+      "74.00%",
+      "64.00%"
+    ],
+    "correctAnswer": 3,
+    "answer": "64.00%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "replacement",
+      "milk"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_033",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Removal and Replacement",
+    "difficulty": "Medium",
+    "question": "A vessel contains 20 litres of pure milk. 4 litres is removed and replaced with water. This is repeated 2 time(s). What fraction of the mixture is milk?",
+    "options": [
+      "74.00%",
+      "64.00%",
+      "59.00%",
+      "69.00%"
+    ],
+    "correctAnswer": 1,
+    "answer": "64.00%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "replacement",
+      "milk"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_034",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Removal and Replacement",
+    "difficulty": "Medium",
+    "question": "A vessel contains 100 litres of pure milk. 20 litres is removed and replaced with water. This is repeated 2 time(s). What fraction of the mixture is milk?",
+    "options": [
+      "69.00%",
+      "59.00%",
+      "74.00%",
+      "64.00%"
+    ],
+    "correctAnswer": 3,
+    "answer": "64.00%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "replacement",
+      "milk"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_035",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Removal and Replacement",
+    "difficulty": "Medium",
+    "question": "A vessel contains 60 litres of pure milk. 12 litres is removed and replaced with water. This is repeated 3 time(s). What fraction of the mixture is milk?",
+    "options": [
+      "56.20%",
+      "46.20%",
+      "61.20%",
+      "51.20%"
+    ],
+    "correctAnswer": 3,
+    "answer": "51.20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "replacement",
+      "milk"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_036",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Medium",
+    "question": "20 litres of a 80% milk solution has 10 litres of water added to it. What is the new concentration of milk?",
+    "options": [
+      "58.3%",
+      "53.3%",
+      "80%",
+      "50.3%"
+    ],
+    "correctAnswer": 1,
+    "answer": "53.3%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "dilution",
+      "water added"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_037",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Medium",
+    "question": "50 litres of a 60% milk solution has 20 litres of water added to it. What is the new concentration of milk?",
+    "options": [
+      "39.9%",
+      "42.9%",
+      "60%",
+      "47.9%"
+    ],
+    "correctAnswer": 1,
+    "answer": "42.9%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "dilution",
+      "water added"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_038",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Medium",
+    "question": "30 litres of a 70% milk solution has 15 litres of water added to it. What is the new concentration of milk?",
+    "options": [
+      "51.7%",
+      "70%",
+      "43.7%",
+      "46.7%"
+    ],
+    "correctAnswer": 3,
+    "answer": "46.7%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "dilution",
+      "water added"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_039",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Medium",
+    "question": "25 litres of a 100% milk solution has 20 litres of water added to it. What is the new concentration of milk?",
+    "options": [
+      "100%",
+      "60.6%",
+      "55.6%",
+      "52.6%"
+    ],
+    "correctAnswer": 2,
+    "answer": "55.6%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "dilution",
+      "water added"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_040",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Medium",
+    "question": "40 litres of a 60% milk solution has 25 litres of water added to it. What is the new concentration of milk?",
+    "options": [
+      "33.9%",
+      "60%",
+      "41.9%",
+      "36.9%"
+    ],
+    "correctAnswer": 3,
+    "answer": "36.9%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "dilution",
+      "water added"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_041",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Hard",
+    "question": "From a vessel containing 40 litres of pure milk, 8 litres is drawn and replaced with water. This is done 3 times. Find the amount of milk remaining.",
+    "options": [
+      "24 litres",
+      "22 litres",
+      "20.48 litres",
+      "18 litres"
+    ],
+    "correctAnswer": 2,
+    "answer": "20.48 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "successive replacement"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_042",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Hard",
+    "question": "Two solutions of 90% and 97% purity are mixed. What should be the percentage of the 90% solution in the mixture so that the resultant is 93% pure?",
+    "options": [
+      "50%",
+      "60%",
+      "57.14%",
+      "55%"
+    ],
+    "correctAnswer": 2,
+    "answer": "57.14%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "alligation purity"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_043",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Hard",
+    "question": "A container holds 40L of milk. 4L is replaced with water. Then 4L of this mixture is replaced with water. Find the ratio of milk to water.",
+    "options": [
+      "81:19",
+      "36:4",
+      "80:20",
+      "32:8"
+    ],
+    "correctAnswer": 0,
+    "answer": "81:19",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "two replacements ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_044",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Hard",
+    "question": "A chemist has a 25% acid solution and a 50% acid solution. To make 10 litres of a 40% solution, how much of the 25% solution is needed?",
+    "options": [
+      "5 litres",
+      "3 litres",
+      "6 litres",
+      "4 litres"
+    ],
+    "correctAnswer": 3,
+    "answer": "4 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "specific volume"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_045",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Mixture Concentration",
+    "difficulty": "Hard",
+    "question": "In what ratio must a grocer mix 2 types of pulses at Rs.15/kg and Rs.20/kg to get a mixture of Rs.16.50/kg?",
+    "options": [
+      "3:7",
+      "7:3",
+      "2:5",
+      "5:2"
+    ],
+    "correctAnswer": 1,
+    "answer": "7:3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "pulse blending"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_046",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 2:1. If the total mixture is 30 litres, find the quantity of milk.",
+    "options": [
+      "25 litres",
+      "10 litres",
+      "17 litres",
+      "20 litres"
+    ],
+    "correctAnswer": 3,
+    "answer": "20 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_047",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 3:2. If the total mixture is 50 litres, find the quantity of milk.",
+    "options": [
+      "35 litres",
+      "27 litres",
+      "30 litres",
+      "20 litres"
+    ],
+    "correctAnswer": 2,
+    "answer": "30 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_048",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 4:1. If the total mixture is 60 litres, find the quantity of milk.",
+    "options": [
+      "45 litres",
+      "48 litres",
+      "53 litres",
+      "12 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "48 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_049",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 5:3. If the total mixture is 80 litres, find the quantity of milk.",
+    "options": [
+      "47 litres",
+      "55 litres",
+      "30 litres",
+      "50 litres"
+    ],
+    "correctAnswer": 3,
+    "answer": "50 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_050",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 7:3. If the total mixture is 50 litres, find the quantity of milk.",
+    "options": [
+      "15 litres",
+      "35 litres",
+      "32 litres",
+      "40 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "35 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_051",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 1:2. If the total mixture is 30 litres, find the quantity of milk.",
+    "options": [
+      "7 litres",
+      "20 litres",
+      "15 litres",
+      "10 litres"
+    ],
+    "correctAnswer": 3,
+    "answer": "10 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_052",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 3:5. If the total mixture is 40 litres, find the quantity of milk.",
+    "options": [
+      "12 litres",
+      "25 litres",
+      "15 litres",
+      "20 litres"
+    ],
+    "correctAnswer": 2,
+    "answer": "15 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_053",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 2:3. If the total mixture is 50 litres, find the quantity of milk.",
+    "options": [
+      "17 litres",
+      "30 litres",
+      "20 litres",
+      "25 litres"
+    ],
+    "correctAnswer": 2,
+    "answer": "20 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_054",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 5:7. If the total mixture is 60 litres, find the quantity of milk.",
+    "options": [
+      "22 litres",
+      "25 litres",
+      "35 litres",
+      "30 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "25 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_055",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Easy",
+    "question": "A mixture contains milk and water in the ratio 4:6. If the total mixture is 100 litres, find the quantity of milk.",
+    "options": [
+      "40 litres",
+      "60 litres",
+      "45 litres",
+      "37 litres"
+    ],
+    "correctAnswer": 0,
+    "answer": "40 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "milk",
+      "water ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_056",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A mixture of 100 litres has milk and water in the ratio 2:3. How much milk should be added to make the ratio 3:2?",
+    "options": [
+      "60 litres",
+      "48 litres",
+      "50 litres",
+      "55 litres"
+    ],
+    "correctAnswer": 2,
+    "answer": "50 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add milk",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_057",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A mixture of 60 litres has milk and water in the ratio 1:2. How much milk should be added to make the ratio 2:1?",
+    "options": [
+      "70 litres",
+      "58 litres",
+      "65 litres",
+      "60 litres"
+    ],
+    "correctAnswer": 3,
+    "answer": "60 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add milk",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_058",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A mixture of 40 litres has milk and water in the ratio 3:7. How much milk should be added to make the ratio 1:1?",
+    "options": [
+      "26 litres",
+      "16 litres",
+      "21 litres",
+      "14 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "16 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add milk",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_059",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A mixture of 80 litres has milk and water in the ratio 1:3. How much milk should be added to make the ratio 3:5?",
+    "options": [
+      "14 litres",
+      "21 litres",
+      "26 litres",
+      "16 litres"
+    ],
+    "correctAnswer": 3,
+    "answer": "16 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add milk",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_060",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A mixture of 70 litres has milk and water in the ratio 2:5. How much milk should be added to make the ratio 3:4?",
+    "options": [
+      "23 litres",
+      "18 litres",
+      "28 litres",
+      "16 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "18 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add milk",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_061",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A vessel has 100 litres of mixture with milk and water in the ratio 3:2. How many litres of water must be added to get a ratio of 3:4?",
+    "options": [
+      "37 litres",
+      "40 litres",
+      "45 litres",
+      "48 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "40 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add water",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_062",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A vessel has 80 litres of mixture with milk and water in the ratio 5:3. How many litres of water must be added to get a ratio of 1:1?",
+    "options": [
+      "25 litres",
+      "20 litres",
+      "28 litres",
+      "17 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "20 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add water",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_063",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A vessel has 60 litres of mixture with milk and water in the ratio 7:5. How many litres of water must be added to get a ratio of 3:4?",
+    "options": [
+      "30 litres",
+      "27 litres",
+      "22 litres",
+      "19 litres"
+    ],
+    "correctAnswer": 2,
+    "answer": "22 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add water",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_064",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A vessel has 50 litres of mixture with milk and water in the ratio 4:1. How many litres of water must be added to get a ratio of 2:1?",
+    "options": [
+      "7 litres",
+      "10 litres",
+      "15 litres",
+      "18 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "10 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add water",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_065",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Milk and Water Mixture",
+    "difficulty": "Medium",
+    "question": "A vessel has 70 litres of mixture with milk and water in the ratio 5:2. How many litres of water must be added to get a ratio of 5:4?",
+    "options": [
+      "25 litres",
+      "28 litres",
+      "20 litres",
+      "17 litres"
+    ],
+    "correctAnswer": 2,
+    "answer": "20 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "add water",
+      "change ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_066",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Easy",
+    "question": "Workers of type A earn $500/day and workers of type B earn $800/day. If the average wage is $650/day, find the ratio of type A to type B workers.",
+    "options": [
+      "2:1",
+      "1:1",
+      "1:1",
+      "1:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "wages",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_067",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Easy",
+    "question": "Workers of type A earn $1000/day and workers of type B earn $1400/day. If the average wage is $1200/day, find the ratio of type A to type B workers.",
+    "options": [
+      "1:1",
+      "1:1",
+      "1:1",
+      "2:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "wages",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_068",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Easy",
+    "question": "Workers of type A earn $200/day and workers of type B earn $400/day. If the average wage is $280/day, find the ratio of type A to type B workers.",
+    "options": [
+      "4:2",
+      "1:1",
+      "3:2",
+      "2:3"
+    ],
+    "correctAnswer": 2,
+    "answer": "3:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "wages",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_069",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Easy",
+    "question": "Workers of type A earn $600/day and workers of type B earn $900/day. If the average wage is $720/day, find the ratio of type A to type B workers.",
+    "options": [
+      "1:1",
+      "4:2",
+      "2:3",
+      "3:2"
+    ],
+    "correctAnswer": 3,
+    "answer": "3:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "wages",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_070",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Easy",
+    "question": "Workers of type A earn $300/day and workers of type B earn $700/day. If the average wage is $500/day, find the ratio of type A to type B workers.",
+    "options": [
+      "1:1",
+      "1:1",
+      "1:1",
+      "2:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "wages",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_071",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Medium",
+    "question": "A school has 100 students. Some paid $12 fees and the rest paid $16 fees. If the average fee is $14, how many paid $16?",
+    "options": [
+      "50",
+      "45",
+      "60",
+      "50"
+    ],
+    "correctAnswer": 0,
+    "answer": "50",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "fees",
+      "students"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_072",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Medium",
+    "question": "A school has 200 students. Some paid $20 fees and the rest paid $30 fees. If the average fee is $24, how many paid $30?",
+    "options": [
+      "90",
+      "80",
+      "75",
+      "120"
+    ],
+    "correctAnswer": 1,
+    "answer": "80",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "fees",
+      "students"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_073",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Medium",
+    "question": "A school has 150 students. Some paid $15 fees and the rest paid $25 fees. If the average fee is $18, how many paid $25?",
+    "options": [
+      "105",
+      "40",
+      "55",
+      "45"
+    ],
+    "correctAnswer": 3,
+    "answer": "45",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "fees",
+      "students"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_074",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Medium",
+    "question": "A school has 120 students. Some paid $10 fees and the rest paid $18 fees. If the average fee is $14, how many paid $18?",
+    "options": [
+      "70",
+      "60",
+      "60",
+      "55"
+    ],
+    "correctAnswer": 1,
+    "answer": "60",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "fees",
+      "students"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_075",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Medium",
+    "question": "A school has 80 students. Some paid $25 fees and the rest paid $35 fees. If the average fee is $28, how many paid $35?",
+    "options": [
+      "56",
+      "24",
+      "19",
+      "34"
+    ],
+    "correctAnswer": 1,
+    "answer": "24",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "fees",
+      "students"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_076",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Hard",
+    "question": "A train journey covers part of the distance at 60 km/hr and the rest at 40 km/hr. If the average speed is 48 km/hr, find the ratio of distances covered at each speed.",
+    "options": [
+      "1:2",
+      "3:2",
+      "2:1",
+      "2:3"
+    ],
+    "correctAnswer": 3,
+    "answer": "2:3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "speed alligation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_077",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Hard",
+    "question": "In an exam, the average marks of boys and girls are 70 and 80. The overall average is 76. Find the ratio of boys to girls.",
+    "options": [
+      "3:2",
+      "4:3",
+      "2:3",
+      "1:2"
+    ],
+    "correctAnswer": 2,
+    "answer": "2:3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "exam marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_078",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Hard",
+    "question": "A merchant mixes two grades of coffee at $24/kg and $36/kg to sell at $34.20/kg making a 14% profit. Find the ratio of mixing.",
+    "options": [
+      "3:1",
+      "1:3",
+      "4:1",
+      "1:4"
+    ],
+    "correctAnswer": 3,
+    "answer": "1:4",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "profit included"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_079",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Hard",
+    "question": "Two types of liquid A and B cost $4 and $5 per litre. A mixture of 90 litres is priced at $4.60 per litre. How many litres of B are in the mixture?",
+    "options": [
+      "36 litres",
+      "54 litres",
+      "45 litres",
+      "60 litres"
+    ],
+    "correctAnswer": 1,
+    "answer": "54 litres",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "volume calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_080",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Weighted Average (Alligation)",
+    "difficulty": "Hard",
+    "question": "A grocer mixes sugar worth $1.20 per kg with sugar worth $1.45 per kg in a ratio of 5:3. Find the price per kg of the mixture.",
+    "options": [
+      "$1.30/kg",
+      "$1.2938/kg",
+      "$1.25/kg",
+      "$1.35/kg"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1.2938/kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "price per kg mix"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_081",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $10 and $20 each be mixed to produce a mixture worth $15?",
+    "options": [
+      "3:1",
+      "2:1",
+      "1:2",
+      "1:1"
+    ],
+    "correctAnswer": 3,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_082",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $12 and $24 each be mixed to produce a mixture worth $18?",
+    "options": [
+      "3:1",
+      "1:1",
+      "1:2",
+      "2:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_083",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $15 and $30 each be mixed to produce a mixture worth $22.5?",
+    "options": [
+      "3:1",
+      "1:1",
+      "1:2",
+      "2:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_084",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $20 and $40 each be mixed to produce a mixture worth $30?",
+    "options": [
+      "1:2",
+      "3:1",
+      "1:1",
+      "2:1"
+    ],
+    "correctAnswer": 2,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_085",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $25 and $50 each be mixed to produce a mixture worth $37.5?",
+    "options": [
+      "3:1",
+      "1:2",
+      "1:1",
+      "2:1"
+    ],
+    "correctAnswer": 2,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_086",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $10 and $20 each be mixed to produce a mixture worth $15?",
+    "options": [
+      "1:2",
+      "3:1",
+      "2:1",
+      "1:1"
+    ],
+    "correctAnswer": 3,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_087",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $12 and $24 each be mixed to produce a mixture worth $18?",
+    "options": [
+      "1:2",
+      "1:1",
+      "2:1",
+      "3:1"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_088",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $15 and $30 each be mixed to produce a mixture worth $22.5?",
+    "options": [
+      "2:1",
+      "1:1",
+      "3:1",
+      "1:2"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_089",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $20 and $40 each be mixed to produce a mixture worth $30?",
+    "options": [
+      "2:1",
+      "3:1",
+      "1:2",
+      "1:1"
+    ],
+    "correctAnswer": 3,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_090",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $25 and $50 each be mixed to produce a mixture worth $37.5?",
+    "options": [
+      "2:1",
+      "1:2",
+      "3:1",
+      "1:1"
+    ],
+    "correctAnswer": 3,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_091",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $10 and $20 each be mixed to produce a mixture worth $15?",
+    "options": [
+      "3:1",
+      "1:2",
+      "2:1",
+      "1:1"
+    ],
+    "correctAnswer": 3,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_092",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $12 and $24 each be mixed to produce a mixture worth $18?",
+    "options": [
+      "1:1",
+      "1:2",
+      "3:1",
+      "2:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_093",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $15 and $30 each be mixed to produce a mixture worth $22.5?",
+    "options": [
+      "2:1",
+      "1:2",
+      "1:1",
+      "3:1"
+    ],
+    "correctAnswer": 2,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_094",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $20 and $40 each be mixed to produce a mixture worth $30?",
+    "options": [
+      "3:1",
+      "2:1",
+      "1:1",
+      "1:2"
+    ],
+    "correctAnswer": 2,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_095",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $25 and $50 each be mixed to produce a mixture worth $37.5?",
+    "options": [
+      "2:1",
+      "1:1",
+      "3:1",
+      "1:2"
+    ],
+    "correctAnswer": 1,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_096",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $10 and $20 each be mixed to produce a mixture worth $15?",
+    "options": [
+      "1:1",
+      "3:1",
+      "2:1",
+      "1:2"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_097",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $12 and $24 each be mixed to produce a mixture worth $18?",
+    "options": [
+      "1:1",
+      "2:1",
+      "3:1",
+      "1:2"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_098",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $15 and $30 each be mixed to produce a mixture worth $22.5?",
+    "options": [
+      "1:1",
+      "3:1",
+      "1:2",
+      "2:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_099",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $20 and $40 each be mixed to produce a mixture worth $30?",
+    "options": [
+      "1:2",
+      "3:1",
+      "1:1",
+      "2:1"
+    ],
+    "correctAnswer": 2,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_ALG_100",
+    "topic": "Alligation & Mixtures",
+    "subtopic": "Basic Alligation",
+    "difficulty": "Easy",
+    "question": "In what ratio must items costing $25 and $50 each be mixed to produce a mixture worth $37.5?",
+    "options": [
+      "1:1",
+      "3:1",
+      "1:2",
+      "2:1"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "alligation",
+      "mixture",
+      "equal ratio"
+    ],
+    "source": "AI Generated"
+  }
+]

@@ -4,6 +4,8 @@ import { topicService } from "../services/topicService";
 import AISolver from "../components/AISolver";
 import { useAuth } from "../contexts/AuthContext";
 import { addQuestionBookmark, removeQuestionBookmark, findQuestionBookmark } from "../repositories/questionBookmarkRepository";
+import { getTopicCategoryPath } from "../utils/categoryMapper";
+import TopicSkeleton from "../components/TopicSkeleton";
 
 const TOPIC_META = {
   default:                  { difficulty: "Medium", time: 30, concepts: 8,  questions: 80,  desc: "Master this topic with step-by-step visual lessons and guided practice." },
@@ -29,6 +31,36 @@ const PRACTICE_LEVELS = [
   { id: "hard",   emoji: "🟠", label: "Hard Practice",    count: 25, color: "#f97316", desc: "Tricky questions that trip most candidates" },
   { id: "mixed",  emoji: "🔴", label: "Mixed Challenge",  count: 100, color: "#ef4444", desc: "All levels combined for real exam simulation" },
 ];
+
+// ─── Universal answer resolver ─────────────────────────────────────────────
+// Handles 3 formats found in different JSON files:
+//   1. number  (0-3) — most generated topics (e.g. percentages, error-spotting)
+//   2. letter  (A/B/C/D) — number-series, letter-series etc.
+//   3. string  (exact text) — number-system-basics
+function resolveCorrectIndex(question) {
+  const ca = question.correctAnswer;
+  const opts = question.options || [];
+  if (typeof ca === "number") return ca; // already an index
+  if (typeof ca === "string") {
+    // Letter A/B/C/D ?
+    const letter = ca.trim().toUpperCase();
+    if (/^[A-D]$/.test(letter)) return letter.charCodeAt(0) - 65;
+    // Otherwise find exact text match
+    const idx = opts.indexOf(ca);
+    return idx >= 0 ? idx : 0;
+  }
+  return 0;
+}
+
+function isAnswerCorrect(question, selectedOption) {
+  const correctIdx = resolveCorrectIndex(question);
+  return selectedOption === (question.options || [])[correctIdx];
+}
+
+function getCorrectText(question) {
+  const correctIdx = resolveCorrectIndex(question);
+  return (question.options || [])[correctIdx] || "";
+}
 
 function buildLessons(topic) {
   const lessons = [];
@@ -70,14 +102,14 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   const startRef = useRef(null);
   const meta = getMeta(topicSlug);
 
-  // New Practice Mode states
+  // Practice Mode states
   const [questionsList, setQuestionsList] = useState([]);
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [submitted, setSubmitted] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
   const [loadingQuestions, setLoadingQuestions] = useState(false);
-  const [fallbackMode, setFallbackMode] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   // Bookmark states
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -89,7 +121,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     topicService.getTopicBySlug(topicSlug).then(d => { setTopic(d); setLoading(false); });
   }, [topicSlug]);
 
-  // Check bookmark status whenever the active question changes
+  // Check bookmark status whenever active question changes
   useEffect(() => {
     const activeQuestion = questionsList[currentQuestionIdx];
     if (!user || !activeQuestion) {
@@ -110,7 +142,6 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
 
   const handleToggleBookmark = async () => {
     const activeQuestion = questionsList[currentQuestionIdx];
-    // Guest user — prompt them to sign in
     if (!user || user.is_anonymous) {
       alert('Please sign in with Google to bookmark questions and save your progress!');
       return;
@@ -136,52 +167,58 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     }
   };
 
+  // ─── Load questions when practice level selected ─────────────────────────
   useEffect(() => {
-    if (screen === "practice" && practiceLevel) {
-      setLoadingQuestions(true);
-      setFallbackMode(false);
-      setQuestionsList([]);
-      setCurrentQuestionIdx(0);
-      setSelectedOption(null);
-      setSubmitted(false);
-      setCorrectCount(0);
-      setIsBookmarked(false);
-      setBookmarkId(null);
+    if (screen !== "practice" || !practiceLevel) return;
 
-      fetch(`/questions/number-system/${topicSlug}.json`)
-        .then(res => {
-          if (!res.ok) throw new Error("File not found");
-          return res.json();
-        })
-        .then(data => {
-          if (data && data.questions && data.questions.length > 0) {
-            let filtered = data.questions;
-            if (practiceLevel.id !== 'mixed') {
-              const diffName = practiceLevel.id.charAt(0).toUpperCase() + practiceLevel.id.slice(1);
-              filtered = data.questions.filter(q => q.difficulty === diffName);
-            }
-            if (filtered.length === 0) {
-              filtered = data.questions;
-            }
-            
-            // Shuffle
-            const shuffled = [...filtered].sort(() => 0.5 - Math.random());
-            const selectedQs = shuffled.slice(0, practiceLevel.count);
-            setQuestionsList(selectedQs);
-            if (selectedQs.length === 0) {
-              setFallbackMode(true);
-            }
-          } else {
-            setFallbackMode(true);
-          }
-          setLoadingQuestions(false);
-        })
-        .catch(err => {
-          console.warn("Failed to load preloaded questions, falling back to AI input mode.", err);
-          setFallbackMode(true);
-          setLoadingQuestions(false);
-        });
-    }
+    setLoadingQuestions(true);
+    setErrorMessage(null);
+    setQuestionsList([]);
+    setCurrentQuestionIdx(0);
+    setSelectedOption(null);
+    setSubmitted(false);
+    setCorrectCount(0);
+    setIsBookmarked(false);
+    setBookmarkId(null);
+
+    const categoryPath = getTopicCategoryPath(topicSlug);
+    const url = `/data/${categoryPath}/${topicSlug}.json`;
+
+    console.log(`[TopicPage] Fetching questions from: ${url}`);
+
+    fetch(url)
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status} — ${url}`);
+        return res.json();
+      })
+      .then(data => {
+        // Normalise: support both array and { questions: [] }
+        let qs = Array.isArray(data) ? data : (data && data.questions) ? data.questions : [];
+
+        if (qs.length === 0) {
+          throw new Error("No questions found in data file.");
+        }
+
+        // Filter by difficulty
+        let filtered = qs;
+        if (practiceLevel.id !== "mixed") {
+          const diffName = practiceLevel.id.charAt(0).toUpperCase() + practiceLevel.id.slice(1);
+          const byDiff = qs.filter(q => (q.difficulty || "").toLowerCase() === practiceLevel.id);
+          filtered = byDiff.length > 0 ? byDiff : qs; // graceful fallback to all
+        }
+
+        // Shuffle and slice
+        const shuffled = [...filtered].sort(() => Math.random() - 0.5);
+        const selected = shuffled.slice(0, practiceLevel.count);
+
+        setQuestionsList(selected);
+        setLoadingQuestions(false);
+      })
+      .catch(err => {
+        console.error("[TopicPage] Failed to load questions:", err);
+        setErrorMessage(err.message);
+        setLoadingQuestions(false);
+      });
   }, [screen, practiceLevel, topicSlug]);
 
   const saveProgress = p => localStorage.setItem("topicProgress_" + topicSlug, String(p));
@@ -191,21 +228,31 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   const finishPractice = () => {
     saveProgress(100);
     const elapsed = Math.round((Date.now() - startRef.current) / 60000);
-    const actualAccuracy = (!fallbackMode && questionsList.length > 0)
+    const actualAccuracy = questionsList.length > 0
       ? Math.round((correctCount / questionsList.length) * 100)
       : Math.floor(Math.random() * 20) + 75;
-    
+
     setStats({
       accuracy: actualAccuracy,
       time: elapsed || meta.time,
-      xp: 120 + meta.concepts * 5 + (fallbackMode ? 0 : correctCount * 10)
+      xp: 120 + meta.concepts * 5 + correctCount * 10
     });
     setScreen("complete");
   };
 
-  if (loading) return <div style={{ display:"flex",justifyContent:"center",alignItems:"center",minHeight:"60vh" }}><div style={{ textAlign:"center",color:"var(--text-sec)" }}><div style={{ fontSize:"2.5rem",marginBottom:16 }}>⏳</div><p>Loading topic...</p></div></div>;
+  if (loading) return <TopicSkeleton />;
 
-  if (!topic) return <div className="topic-page page"><button className="topic-back-btn" onClick={() => navigate("")}>← Back</button><div className="topic-not-found"><div style={{ fontSize:"3rem" }}>🚧</div><h2>{decodeURIComponent(topicName || topicSlug)}</h2><p>Content is being prepared. Check back soon!</p><button className="goal-btn selected" style={{ marginTop:24 }} onClick={() => navigate("")}>Go Home</button></div></div>;
+  if (!topic) return (
+    <div className="topic-page page">
+      <button className="topic-back-btn" onClick={() => navigate("")}>← Back</button>
+      <div className="topic-not-found">
+        <div style={{ fontSize: "3rem" }}>🚧</div>
+        <h2>{decodeURIComponent(topicName || topicSlug)}</h2>
+        <p>Content is being prepared. Check back soon!</p>
+        <button className="goal-btn selected" style={{ marginTop: 24 }} onClick={() => navigate("")}>Go Home</button>
+      </div>
+    </div>
+  );
 
   const color = topic.color || "#6366f1";
   const progress = parseInt(localStorage.getItem("topicProgress_" + topicSlug) || "0", 10);
@@ -305,6 +352,8 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
 
   /* ── PRACTICE MODE ── */
   if (screen === "practice") {
+
+    // STEP 1: Show level selection if no level chosen
     if (!practiceLevel) return (
       <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
         <button className="topic-back-btn" onClick={() => setScreen("overview")}>← Overview</button>
@@ -329,262 +378,251 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
       </div>
     );
 
-    if (fallbackMode) {
-      return (
-        <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
-          <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24,flexWrap:"wrap",gap:12 }}>
-            <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
-            <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>🎯 {practiceLevel.emoji} {practiceLevel.label} · {practiceLevel.count} Questions</div>
-          </div>
-          <div style={{ background:color+"11",border:"1px solid "+color+"33",borderRadius:16,padding:"20px 24px",marginBottom:24 }}>
-            <div style={{ fontWeight:800,color:"var(--text-main)",marginBottom:4 }}>{topic.icon} {topic.title} — Practice Session</div>
-            <p style={{ fontSize:".9rem",color:"var(--text-sec)",margin:0 }}>Paste any <strong>{topic.title}</strong> question below. AI provides animated visual step-by-step solutions with shortcuts.</p>
-          </div>
-          <AISolver topicColor={color} topicName={topic.title} />
-          <div style={{ textAlign:"center",marginTop:32 }}>
-            <button onClick={finishPractice} style={{ padding:"14px 40px",borderRadius:12,border:"none",background:"#10b981",color:"#fff",fontWeight:800,fontSize:"1rem",cursor:"pointer" }}>✅ Mark Session Complete</button>
-          </div>
-        </div>
-      );
-    }
-
-    const activeQuestion = questionsList[currentQuestionIdx];
-    const isLastQuestion = currentQuestionIdx === questionsList.length - 1;
-    const optionKeys = ['A', 'B', 'C', 'D'];
-
-    return (
+    // STEP 2: Loading spinner
+    if (loadingQuestions) return (
       <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
-        <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24,flexWrap:"wrap",gap:12 }}>
+        <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24 }}>
           <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
           <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>🎯 {practiceLevel.emoji} {practiceLevel.label} · {practiceLevel.count} Questions</div>
         </div>
+        <div style={{ display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",minHeight:300,gap:20 }}>
+          <div style={{ width:56,height:56,borderRadius:"50%",border:"4px solid "+color+"33",borderTopColor:color,animation:"spin 0.8s linear infinite" }} />
+          <p style={{ color:"var(--text-sec)",fontWeight:600,fontSize:"1rem" }}>Loading {practiceLevel.label} questions…</p>
+        </div>
+        <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+      </div>
+    );
 
-        {loadingQuestions ? (
-          <div style={{ display:"flex",justifyContent:"center",alignItems:"center",minHeight:"200px" }}>
-            <div style={{ textAlign:"center",color:"var(--text-sec)" }}>
-              <div style={{ border: '4px solid rgba(255,255,255,0.1)', borderTop: `4px solid ${color}`, borderRadius: '50%', width: '40px', height: '40px', animation: 'spin 1s linear infinite', margin: '0 auto 16px' }} />
-              <p>Loading practice questions...</p>
+    // STEP 3: Error state — questions couldn't load
+    if (errorMessage) return (
+      <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
+        <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24 }}>
+          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
+        </div>
+        <div style={{ textAlign:"center",padding:"60px 24px",background:"var(--surface)",border:"1px solid var(--border)",borderRadius:20 }}>
+          <div style={{ fontSize:"3rem",marginBottom:16 }}>⚠️</div>
+          <h3 style={{ color:"var(--text-main)",marginBottom:12 }}>Questions Unavailable</h3>
+          <p style={{ color:"var(--text-sec)",fontSize:".9rem",marginBottom:24 }}>The question bank for <strong>{topic.title}</strong> — {practiceLevel.label} could not be loaded. Please try a different level or come back later.</p>
+          <p style={{ color:"var(--text-sec)",fontSize:".8rem",fontFamily:"monospace",background:"var(--surface2)",padding:"8px 16px",borderRadius:8,display:"inline-block" }}>{errorMessage}</p>
+          <div style={{ marginTop:24,display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap" }}>
+            <button onClick={() => setPracticeLevel(null)} style={{ padding:"12px 28px",borderRadius:12,border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--text-main)",fontWeight:700,cursor:"pointer" }}>← Try Another Level</button>
+          </div>
+        </div>
+      </div>
+    );
+
+    // STEP 4: Actual question interface
+    const activeQuestion = questionsList[currentQuestionIdx];
+    const isLastQuestion = currentQuestionIdx === questionsList.length - 1;
+    const optionKeys = ["A", "B", "C", "D"];
+
+    if (!activeQuestion) return (
+      <div className="topic-page page" style={{ maxWidth:760,margin:"0 auto",padding:"24px 16px 80px",textAlign:"center" }}>
+        <button className="topic-back-btn" onClick={() => setPracticeLevel(null)}>← Change Level</button>
+        <div style={{ padding:"60px 24px" }}>
+          <div style={{ fontSize:"3rem",marginBottom:16 }}>📭</div>
+          <p style={{ color:"var(--text-sec)" }}>No questions available for this level. Try another level.</p>
+          <button onClick={() => setPracticeLevel(null)} style={{ marginTop:20,padding:"12px 28px",borderRadius:12,border:"none",background:color,color:"#fff",fontWeight:700,cursor:"pointer" }}>← Choose Another Level</button>
+        </div>
+      </div>
+    );
+
+    // Compute correct index and correct text ONCE for this question
+    const correctIdx = resolveCorrectIndex(activeQuestion);
+    const correctText = (activeQuestion.options || [])[correctIdx] || "";
+    const isAnsweredCorrectly = submitted && selectedOption === correctText;
+
+    return (
+      <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
+        {/* Top Bar */}
+        <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24,flexWrap:"wrap",gap:12 }}>
+          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
+          <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>🎯 {practiceLevel.emoji} {practiceLevel.label} · {questionsList.length} Questions</div>
+        </div>
+
+        {/* Question Card */}
+        <div className="question-card" style={{ animation:"fadeIn 0.4s ease",padding:"32px",borderRadius:"20px",border:"1px solid var(--border)",background:"var(--surface)" }}>
+
+          {/* Progress Header */}
+          <div style={{ display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:"20px" }}>
+            <span style={{ fontSize:"0.85rem",fontWeight:700,color:color,textTransform:"uppercase",letterSpacing:"1px" }}>
+              Question {currentQuestionIdx + 1} of {questionsList.length}
+            </span>
+            <div style={{ display:"flex",alignItems:"center",gap:"10px" }}>
+              <span className={`badge ${{ Easy:"badge-easy",Medium:"badge-medium",Hard:"badge-hard" }[activeQuestion.difficulty] || "badge-easy"}`}>
+                {activeQuestion.difficulty}
+              </span>
+              {/* Score */}
+              <span style={{ fontSize:".8rem",fontWeight:700,color:"#10b981" }}>✅ {correctCount} correct</span>
+              {/* Bookmark Button */}
+              <button
+                onClick={handleToggleBookmark}
+                disabled={bookmarkLoading}
+                title={isBookmarked ? "Remove bookmark" : "Bookmark this question"}
+                style={{
+                  background: isBookmarked ? "#f59e0b" : "var(--surface2)",
+                  border: `2px solid ${isBookmarked ? "#f59e0b" : "var(--border)"}`,
+                  borderRadius:"10px",width:"38px",height:"38px",
+                  display:"flex",alignItems:"center",justifyContent:"center",
+                  cursor: bookmarkLoading ? "wait" : "pointer",
+                  fontSize:"1.1rem",transition:"all 0.2s ease",
+                }}
+              >
+                {bookmarkLoading ? "⏳" : isBookmarked ? "🔖" : "🏳️"}
+              </button>
             </div>
           </div>
-        ) : activeQuestion ? (
-          <div className="question-card" style={{ animation: 'fadeIn 0.4s ease', padding: '32px', borderRadius: '20px', border: '1px solid var(--border)' }}>
-            
-            {/* Progress Header */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-              <span style={{ fontSize: '0.85rem', fontWeight: 700, color: color, textTransform: 'uppercase', letterSpacing: '1px' }}>
-                Question {currentQuestionIdx + 1} of {questionsList.length}
-              </span>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <span className={`badge ${{ Easy: 'badge-easy', Medium: 'badge-medium', Hard: 'badge-hard' }[activeQuestion.difficulty] || 'badge-easy'}`}>
-                  {activeQuestion.difficulty}
-                </span>
-                {/* Bookmark Button */}
+
+          {/* Progress Bar */}
+          <div style={{ height:"6px",background:"var(--surface2)",borderRadius:"4px",overflow:"hidden",marginBottom:"24px" }}>
+            <div style={{ width:`${((currentQuestionIdx + 1) / questionsList.length) * 100}%`,height:"100%",background:color,transition:"width 0.3s ease" }} />
+          </div>
+
+          {/* Subtopic */}
+          <div style={{ fontSize:"0.85rem",color:"var(--text-sec)",marginBottom:"8px",fontWeight:500 }}>
+            📌 {activeQuestion.subtopic || "General"}
+          </div>
+
+          {/* Question Text */}
+          <div className="qc-question" style={{ fontSize:"1.2rem",fontWeight:700,color:"var(--text-main)",marginBottom:"28px",lineHeight:1.6 }}>
+            {activeQuestion.question}
+          </div>
+
+          {/* Options */}
+          <div className="options-grid" style={{ display:"flex",flexDirection:"column",gap:"12px",marginBottom:"28px" }}>
+            {(activeQuestion.options || []).map((opt, idx) => {
+              const letter = optionKeys[idx] || String(idx + 1);
+              const isSelected = selectedOption === opt;
+              const isThisCorrect = idx === correctIdx;
+
+              let btnClass = "option-btn";
+              if (submitted) {
+                if (isThisCorrect) btnClass = "option-btn correct";
+                else if (isSelected && !isThisCorrect) btnClass = "option-btn wrong";
+              } else if (isSelected) {
+                btnClass = "option-btn selected";
+              }
+
+              return (
                 <button
-                  onClick={handleToggleBookmark}
-                  disabled={bookmarkLoading}
-                  title={isBookmarked ? 'Remove bookmark' : 'Bookmark this question'}
+                  key={idx}
+                  className={btnClass}
+                  onClick={() => {
+                    if (!submitted) {
+                      setSelectedOption(opt);
+                      setSubmitted(true);
+                      if (idx === correctIdx) {
+                        setCorrectCount(prev => prev + 1);
+                      }
+                    }
+                  }}
+                  disabled={submitted}
                   style={{
-                    background: isBookmarked ? '#f59e0b' : 'var(--surface2)',
-                    border: `2px solid ${isBookmarked ? '#f59e0b' : 'var(--border)'}`,
-                    borderRadius: '10px',
-                    width: '38px',
-                    height: '38px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    cursor: bookmarkLoading ? 'wait' : 'pointer',
-                    fontSize: '1.1rem',
-                    transition: 'all 0.2s ease',
-                    transform: bookmarkLoading ? 'scale(0.9)' : 'scale(1)',
-                    boxShadow: isBookmarked ? '0 2px 8px rgba(245,158,11,0.4)' : 'none',
+                    width:"100%",display:"flex",alignItems:"center",textAlign:"left",
+                    padding:"16px 20px",borderRadius:"12px",
+                    cursor: submitted ? "default" : "pointer"
                   }}
                 >
-                  {bookmarkLoading ? '⏳' : isBookmarked ? '🔖' : '🔖'}
-                  <span style={{ position: 'absolute', width: '38px', height: '38px', borderRadius: '10px', background: isBookmarked ? 'transparent' : 'transparent', filter: isBookmarked ? 'none' : 'grayscale(1) opacity(0.5)' }} />
+                  <span className="opt-letter" style={{ flexShrink:0 }}>{letter}</span>
+                  <span style={{ fontSize:"1rem",fontWeight:500 }}>{opt}</span>
+                  {submitted && isThisCorrect && (
+                    <span style={{ marginLeft:"auto",color:"var(--teal)",fontWeight:"bold",fontSize:"1.2rem" }}>✓</span>
+                  )}
+                  {submitted && isSelected && !isThisCorrect && (
+                    <span style={{ marginLeft:"auto",color:"var(--coral)",fontWeight:"bold",fontSize:"1.2rem" }}>✗</span>
+                  )}
                 </button>
-              </div>
-            </div>
+              );
+            })}
+          </div>
 
-            {/* Progress Bar */}
-            <div style={{ height: '6px', background: 'var(--surface2)', borderRadius: '4px', overflow: 'hidden', marginBottom: '24px' }}>
-              <div style={{ width: `${((currentQuestionIdx + 1) / questionsList.length) * 100}%`, height: '100%', background: color, transition: 'width 0.3s ease' }} />
-            </div>
+          {/* Result & Actions */}
+          {submitted && (
+            <div style={{ animation:"slideUp 0.3s ease",display:"flex",flexDirection:"column",gap:"20px" }}>
 
-            {/* Subtopic */}
-            <div style={{ fontSize: '0.85rem', color: 'var(--text-sec)', marginBottom: '8px', fontWeight: 500 }}>
-              📌 Subtopic: {activeQuestion.subtopic || 'General'}
-            </div>
-
-            {/* Question Text */}
-            <div className="qc-question" style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '28px', lineHeight: 1.6 }}>
-              {activeQuestion.question}
-            </div>
-
-            {/* Options Grid */}
-            <div className="options-grid" style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '28px' }}>
-              {activeQuestion.options.map((opt, idx) => {
-                const letter = optionKeys[idx] || String(idx + 1);
-                const isSelected = selectedOption === opt;
-                const isCorrect = opt === activeQuestion.correctAnswer;
-                
-                let btnClass = 'option-btn';
-                if (submitted) {
-                  if (isCorrect) btnClass = 'option-btn correct';
-                  else if (isSelected && !isCorrect) btnClass = 'option-btn wrong';
-                } else if (isSelected) {
-                  btnClass = 'option-btn selected';
+              {/* Correct / Wrong Banner */}
+              <div style={{
+                padding:"14px 20px",borderRadius:"12px",
+                background: isAnsweredCorrectly ? "rgba(16,185,129,0.1)" : "rgba(239,68,68,0.1)",
+                border: `1px solid ${isAnsweredCorrectly ? "var(--teal)" : "var(--coral)"}`,
+                fontSize:"1rem",fontWeight:700,
+                color: isAnsweredCorrectly ? "var(--teal)" : "var(--coral)",
+                display:"flex",alignItems:"center",gap:"8px"
+              }}>
+                {isAnsweredCorrectly
+                  ? "🎉 Correct! Great job."
+                  : `❌ Wrong. Correct answer: Option ${optionKeys[correctIdx]} — ${correctText}`
                 }
+              </div>
 
-                return (
-                  <button
-                    key={idx}
-                    className={btnClass}
-                    onClick={() => {
-                      if (!submitted) {
-                        setSelectedOption(opt);
-                        setSubmitted(true);
-                        if (opt === activeQuestion.correctAnswer) {
-                          setCorrectCount(prev => prev + 1);
-                        }
-                      }
-                    }}
-                    disabled={submitted}
-                    style={{ 
-                      width: '100%', 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      textAlign: 'left',
-                      padding: '16px 20px',
-                      borderRadius: '12px',
-                      cursor: submitted ? 'default' : 'pointer'
-                    }}
-                  >
-                    <span className="opt-letter" style={{ flexShrink: 0 }}>{letter}</span>
-                    <span style={{ fontSize: '1rem', fontWeight: 500 }}>{opt}</span>
-                    {submitted && isCorrect && (
-                      <span style={{ marginLeft: 'auto', color: 'var(--teal)', fontWeight: 'bold', fontSize: '1.2rem' }}>✓</span>
-                    )}
-                    {submitted && isSelected && !isCorrect && (
-                      <span style={{ marginLeft: 'auto', color: 'var(--coral)', fontWeight: 'bold', fontSize: '1.2rem' }}>✗</span>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Solution and Actions block */}
-            {submitted && (
-              <div style={{ animation: 'slideUp 0.3s ease', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                
-                {/* Correct/Wrong Message */}
-                <div style={{
-                  padding: '14px 20px', 
-                  borderRadius: '12px',
-                  background: selectedOption === activeQuestion.correctAnswer ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.1)',
-                  border: `1px solid ${selectedOption === activeQuestion.correctAnswer ? 'var(--teal)' : 'var(--coral)'}`,
-                  fontSize: '1rem', 
-                  fontWeight: 700,
-                  color: selectedOption === activeQuestion.correctAnswer ? 'var(--teal)' : 'var(--coral)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
-                }}>
-                  {selectedOption === activeQuestion.correctAnswer
-                    ? '🎉 Correct! Great job.'
-                    : `❌ Incorrect. The correct answer is: Option ${optionKeys[activeQuestion.options.indexOf(activeQuestion.correctAnswer)] || ''} (${activeQuestion.correctAnswer})`}
+              {/* Memory Trick */}
+              {!isAnsweredCorrectly && activeQuestion.memoryTrick && (
+                <div style={{ background:"var(--surface2)",padding:"16px 20px",borderRadius:"12px",fontSize:"0.9rem",color:"var(--text-sec)",borderLeft:"3px solid var(--amber)" }}>
+                  💡 <strong>Memory Trick:</strong> {activeQuestion.memoryTrick}
                 </div>
+              )}
 
-                {/* Question Info / Memory Trick if incorrect */}
-                {selectedOption !== activeQuestion.correctAnswer && activeQuestion.memoryTrick && (
-                  <div style={{ background: 'var(--surface2)', padding: '16px 20px', borderRadius: '12px', fontSize: '0.9rem', color: 'var(--text-sec)', borderLeft: `3px solid var(--amber)` }}>
-                    💡 <strong>Memory Trick:</strong> {activeQuestion.memoryTrick}
-                  </div>
-                )}
-
-                {/* Primary Action Buttons */}
-                <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '8px' }}>
-                  
-                  {/* Solve Visually Button (Navigates to AskPage in a new tab) */}
-                  <button
-                    onClick={() => {
-                      const queryText = `${activeQuestion.question}\n\nOptions:\nA) ${activeQuestion.options[0]}\nB) ${activeQuestion.options[1]}\nC) ${activeQuestion.options[2]}\nD) ${activeQuestion.options[3]}\n\nExplain this step-by-step with visual details.`;
-                      window.open(`#/ask?q=${encodeURIComponent(queryText)}`, '_blank');
-                    }}
-                    style={{
-                      flex: 1,
-                      minWidth: '200px',
-                      padding: '14px 28px',
-                      borderRadius: '12px',
-                      border: 'none',
-                      background: `linear-gradient(135deg, ${color}, #8b5cf6)`,
-                      color: '#fff',
-                      fontWeight: 800,
-                      fontSize: '1rem',
-                      cursor: 'pointer',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: '8px',
-                      boxShadow: `0 4px 14px ${color}33`,
-                      transition: 'transform 0.15s, box-shadow 0.15s'
-                    }}
-                    onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = `0 6px 20px ${color}44`; }}
-                    onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = `0 4px 14px ${color}33`; }}
-                  >
-                    🎬 Solve Visually (AI Explainer)
-                  </button>
-
-                  {/* Next Question / Finish Session Button */}
-                  <button
-                    onClick={() => {
-                      if (isLastQuestion) {
-                        finishPractice();
-                      } else {
-                        setCurrentQuestionIdx(prev => prev + 1);
-                        setSelectedOption(null);
-                        setSubmitted(false);
-                      }
-                    }}
-                    style={{
-                      flex: 1,
-                      minWidth: '200px',
-                      padding: '14px 28px',
-                      borderRadius: '12px',
-                      border: 'none',
-                      background: isLastQuestion
-                        ? 'linear-gradient(135deg, #10b981, #059669)'
-                        : 'linear-gradient(135deg, #1e293b, #334155)',
-                      color: '#ffffff',
-                      fontWeight: 800,
-                      fontSize: '1rem',
-                      cursor: 'pointer',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: '8px',
-                      whiteSpace: 'nowrap',
-                      transition: 'transform 0.15s, box-shadow 0.15s',
-                      boxShadow: isLastQuestion
-                        ? '0 4px 14px rgba(16,185,129,0.35)'
-                        : '0 4px 14px rgba(0,0,0,0.25)'
-                    }}
-                    onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.filter = 'brightness(1.1)'; }}
-                    onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.filter = 'none'; }}
-                  >
-                    {isLastQuestion ? '🏁 Finish Practice' : '➡️ Next Question'}
-                  </button>
-
+              {/* Explanation if available */}
+              {activeQuestion.explanation && (
+                <div style={{ background:"var(--surface2)",padding:"16px 20px",borderRadius:"12px",fontSize:"0.9rem",color:"var(--text-sec)",borderLeft:"3px solid "+color }}>
+                  📖 <strong>Explanation:</strong> {activeQuestion.explanation}
                 </div>
+              )}
+
+              {/* Action Buttons */}
+              <div style={{ display:"flex",gap:"16px",flexWrap:"wrap",marginTop:"8px" }}>
+
+                {/* AI Visual Explainer */}
+                <button
+                  onClick={() => {
+                    const opts = activeQuestion.options || [];
+                    const queryText = `${activeQuestion.question}\n\nOptions:\nA) ${opts[0]||""}\nB) ${opts[1]||""}\nC) ${opts[2]||""}\nD) ${opts[3]||""}\n\nExplain step-by-step with visual details.`;
+                    window.open(`#/ask?q=${encodeURIComponent(queryText)}`, "_blank");
+                  }}
+                  style={{
+                    flex:1,minWidth:"200px",padding:"14px 28px",borderRadius:"12px",border:"none",
+                    background:`linear-gradient(135deg, ${color}, #8b5cf6)`,
+                    color:"#fff",fontWeight:800,fontSize:"1rem",cursor:"pointer",
+                    display:"inline-flex",alignItems:"center",justifyContent:"center",gap:"8px",
+                    boxShadow:`0 4px 14px ${color}33`,transition:"transform 0.15s, box-shadow 0.15s"
+                  }}
+                  onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; }}
+                  onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; }}
+                >
+                  🎬 Solve Visually (AI)
+                </button>
+
+                {/* Next / Finish */}
+                <button
+                  onClick={() => {
+                    if (isLastQuestion) {
+                      finishPractice();
+                    } else {
+                      setCurrentQuestionIdx(prev => prev + 1);
+                      setSelectedOption(null);
+                      setSubmitted(false);
+                    }
+                  }}
+                  style={{
+                    flex:1,minWidth:"200px",padding:"14px 28px",borderRadius:"12px",border:"none",
+                    background: isLastQuestion
+                      ? "linear-gradient(135deg, #10b981, #059669)"
+                      : "linear-gradient(135deg, #1e293b, #334155)",
+                    color:"#ffffff",fontWeight:800,fontSize:"1rem",cursor:"pointer",
+                    display:"inline-flex",alignItems:"center",justifyContent:"center",gap:"8px",
+                    whiteSpace:"nowrap",transition:"transform 0.15s",
+                    boxShadow: isLastQuestion ? "0 4px 14px rgba(16,185,129,0.35)" : "0 4px 14px rgba(0,0,0,0.25)"
+                  }}
+                  onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; }}
+                  onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; }}
+                >
+                  {isLastQuestion ? "🏁 Finish Practice" : "➡️ Next Question"}
+                </button>
 
               </div>
-            )}
-
-          </div>
-        ) : (
-          <div style={{ textAlign: 'center', padding: '40px var(--radius)' }}>
-            <p>No questions found. Try choosing another level.</p>
-          </div>
-        )}
+            </div>
+          )}
+        </div>
       </div>
     );
   }

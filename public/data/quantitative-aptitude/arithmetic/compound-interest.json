@@ -1,0 +1,2618 @@
+[
+  {
+    "id": "ARI_CI_001",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "Find the Compound Interest on $1000 at 10% per annum for 2 years, compounded annually.",
+    "options": [
+      "$210",
+      "$310",
+      "$180",
+      "$260"
+    ],
+    "correctAnswer": 0,
+    "answer": "$210",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_002",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "Find the Compound Interest on $2000 at 5% per annum for 2 years, compounded annually.",
+    "options": [
+      "$205",
+      "$175",
+      "$255",
+      "$305"
+    ],
+    "correctAnswer": 0,
+    "answer": "$205",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_003",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "Find the Compound Interest on $5000 at 8% per annum for 2 years, compounded annually.",
+    "options": [
+      "$932",
+      "$802",
+      "$882",
+      "$832"
+    ],
+    "correctAnswer": 3,
+    "answer": "$832",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_004",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "Find the Compound Interest on $3000 at 10% per annum for 3 years, compounded annually.",
+    "options": [
+      "$963",
+      "$1093",
+      "$993",
+      "$1043"
+    ],
+    "correctAnswer": 2,
+    "answer": "$993",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_005",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "Find the Compound Interest on $4000 at 5% per annum for 3 years, compounded annually.",
+    "options": [
+      "$600.5",
+      "$630.5",
+      "$680.5",
+      "$730.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "$630.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_006",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Find the Compound Interest on $6000 at 10% per annum for 2 years, compounded annually.",
+    "options": [
+      "$1360",
+      "$1260",
+      "$1230",
+      "$1310"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1260",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_007",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Find the Compound Interest on $8000 at 5% per annum for 2 years, compounded annually.",
+    "options": [
+      "$920",
+      "$820",
+      "$870",
+      "$790"
+    ],
+    "correctAnswer": 1,
+    "answer": "$820",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_008",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Find the Compound Interest on $10000 at 8% per annum for 3 years, compounded annually.",
+    "options": [
+      "$2597.12",
+      "$2697.12",
+      "$2567.12",
+      "$2647.12"
+    ],
+    "correctAnswer": 0,
+    "answer": "$2597.12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_009",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Find the Compound Interest on $1500 at 20% per annum for 2 years, compounded annually.",
+    "options": [
+      "$760",
+      "$710",
+      "$660",
+      "$630"
+    ],
+    "correctAnswer": 2,
+    "answer": "$660",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_010",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Find the Compound Interest on $2500 at 4% per annum for 3 years, compounded annually.",
+    "options": [
+      "$362.16",
+      "$312.16",
+      "$282.16",
+      "$412.16"
+    ],
+    "correctAnswer": 1,
+    "answer": "$312.16",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "annual"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_011",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $12000 amount to in 2 years at 10% per annum compound interest?",
+    "options": [
+      "$14520",
+      "$14320",
+      "$15020",
+      "$15520"
+    ],
+    "correctAnswer": 0,
+    "answer": "$14520",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_012",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $15000 amount to in 3 years at 8% per annum compound interest?",
+    "options": [
+      "$18895.68",
+      "$18695.68",
+      "$19895.68",
+      "$19395.68"
+    ],
+    "correctAnswer": 0,
+    "answer": "$18895.68",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_013",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $20000 amount to in 4 years at 5% per annum compound interest?",
+    "options": [
+      "$24810.13",
+      "$24110.13",
+      "$25310.13",
+      "$24310.13"
+    ],
+    "correctAnswer": 3,
+    "answer": "$24310.13",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_014",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $25000 amount to in 3 years at 10% per annum compound interest?",
+    "options": [
+      "$33775",
+      "$33075",
+      "$33275",
+      "$34275"
+    ],
+    "correctAnswer": 2,
+    "answer": "$33275",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_015",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $30000 amount to in 3 years at 4% per annum compound interest?",
+    "options": [
+      "$33545.92",
+      "$34245.92",
+      "$34745.92",
+      "$33745.92"
+    ],
+    "correctAnswer": 3,
+    "answer": "$33745.92",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_016",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $50000 amount to in 2 years at 10% per annum compound interest?",
+    "options": [
+      "$61000",
+      "$61500",
+      "$60500",
+      "$60300"
+    ],
+    "correctAnswer": 2,
+    "answer": "$60500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_017",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $8000 amount to in 2 years at 15% per annum compound interest?",
+    "options": [
+      "$11080",
+      "$10580",
+      "$11580",
+      "$10380"
+    ],
+    "correctAnswer": 1,
+    "answer": "$10580",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_018",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $6000 amount to in 2 years at 25% per annum compound interest?",
+    "options": [
+      "$9875",
+      "$10375",
+      "$9375",
+      "$9175"
+    ],
+    "correctAnswer": 2,
+    "answer": "$9375",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_019",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $9000 amount to in 3 years at 10% per annum compound interest?",
+    "options": [
+      "$12979",
+      "$11779",
+      "$12479",
+      "$11979"
+    ],
+    "correctAnswer": 3,
+    "answer": "$11979",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_020",
+    "topic": "Compound Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "What will $4000 amount to in 4 years at 10% per annum compound interest?",
+    "options": [
+      "$6356.4",
+      "$5656.4",
+      "$6856.4",
+      "$5856.4"
+    ],
+    "correctAnswer": 3,
+    "answer": "$5856.4",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_021",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "The compound interest on a sum for 2 years at 10% is $2100. Find the principal.",
+    "options": [
+      "$9000",
+      "$12000",
+      "$8000",
+      "$10000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "reverse principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_022",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "If the amount on compound interest after 2 years at 10% is $12100, find the principal.",
+    "options": [
+      "$10500",
+      "$11000",
+      "$10000",
+      "$9000"
+    ],
+    "correctAnswer": 2,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "reverse amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_023",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "Find the CI on $64000 at 12.5% per annum for 3 years, compounded annually.",
+    "options": [
+      "$27100",
+      "$28000",
+      "$24000",
+      "$25000"
+    ],
+    "correctAnswer": 0,
+    "answer": "$27100",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "3 years large principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_024",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "A certain sum of money at CI amounts to $21980 in 2 years and $24178 in 3 years. Find the rate of interest.",
+    "options": [
+      "12%",
+      "8%",
+      "10%",
+      "15%"
+    ],
+    "correctAnswer": 2,
+    "answer": "10%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "find rate from amounts"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_025",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Medium",
+    "question": "If CI on a sum for 2 years at 5% per annum is $328, find the sum.",
+    "options": [
+      "$3000",
+      "$3200",
+      "$3500",
+      "$2800"
+    ],
+    "correctAnswer": 1,
+    "answer": "$3200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "reverse calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_026",
+    "topic": "Compound Interest",
+    "subtopic": "Half-Yearly Compounding",
+    "difficulty": "Easy",
+    "question": "Find the CI on $10000 at 10% per annum for 2 year(s), compounded half-yearly.",
+    "options": [
+      "$2355.06",
+      "$2105.06",
+      "$2155.06",
+      "$2255.06"
+    ],
+    "correctAnswer": 2,
+    "answer": "$2155.06",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "half-yearly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_027",
+    "topic": "Compound Interest",
+    "subtopic": "Half-Yearly Compounding",
+    "difficulty": "Easy",
+    "question": "Find the CI on $8000 at 20% per annum for 1 year(s), compounded half-yearly.",
+    "options": [
+      "$1780",
+      "$1630",
+      "$1680",
+      "$1880"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1680",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "half-yearly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_028",
+    "topic": "Compound Interest",
+    "subtopic": "Half-Yearly Compounding",
+    "difficulty": "Easy",
+    "question": "Find the CI on $5000 at 8% per annum for 2 year(s), compounded half-yearly.",
+    "options": [
+      "$1049.29",
+      "$799.29",
+      "$849.29",
+      "$949.29"
+    ],
+    "correctAnswer": 2,
+    "answer": "$849.29",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "half-yearly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_029",
+    "topic": "Compound Interest",
+    "subtopic": "Half-Yearly Compounding",
+    "difficulty": "Easy",
+    "question": "Find the CI on $20000 at 10% per annum for 1 year(s), compounded half-yearly.",
+    "options": [
+      "$2000",
+      "$2250",
+      "$2050",
+      "$2150"
+    ],
+    "correctAnswer": 2,
+    "answer": "$2050",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "half-yearly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_030",
+    "topic": "Compound Interest",
+    "subtopic": "Half-Yearly Compounding",
+    "difficulty": "Easy",
+    "question": "Find the CI on $16000 at 20% per annum for 2 year(s), compounded half-yearly.",
+    "options": [
+      "$7425.6",
+      "$7375.6",
+      "$7525.6",
+      "$7625.6"
+    ],
+    "correctAnswer": 0,
+    "answer": "$7425.6",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "half-yearly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_031",
+    "topic": "Compound Interest",
+    "subtopic": "Quarterly Compounding",
+    "difficulty": "Medium",
+    "question": "Find the CI on $10000 at 40% per annum for 1 year, compounded quarterly.",
+    "options": [
+      "$4641",
+      "$4841",
+      "$5141",
+      "$4541"
+    ],
+    "correctAnswer": 0,
+    "answer": "$4641",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "quarterly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_032",
+    "topic": "Compound Interest",
+    "subtopic": "Quarterly Compounding",
+    "difficulty": "Medium",
+    "question": "Find the CI on $8000 at 20% per annum for 1 year, compounded quarterly.",
+    "options": [
+      "$1724.05",
+      "$1924.05",
+      "$1624.05",
+      "$2224.05"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1724.05",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "quarterly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_033",
+    "topic": "Compound Interest",
+    "subtopic": "Quarterly Compounding",
+    "difficulty": "Medium",
+    "question": "Find the CI on $16000 at 20% per annum for 1 year, compounded quarterly.",
+    "options": [
+      "$3648.1",
+      "$3448.1",
+      "$3348.1",
+      "$3948.1"
+    ],
+    "correctAnswer": 1,
+    "answer": "$3448.1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "quarterly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_034",
+    "topic": "Compound Interest",
+    "subtopic": "Quarterly Compounding",
+    "difficulty": "Medium",
+    "question": "Find the CI on $100000 at 10% per annum for 1 year, compounded quarterly.",
+    "options": [
+      "$10581.29",
+      "$10381.29",
+      "$10281.29",
+      "$10881.29"
+    ],
+    "correctAnswer": 1,
+    "answer": "$10381.29",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "quarterly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_035",
+    "topic": "Compound Interest",
+    "subtopic": "Quarterly Compounding",
+    "difficulty": "Medium",
+    "question": "Find the CI on $50000 at 8% per annum for 1 year, compounded quarterly.",
+    "options": [
+      "$4021.6099999999997",
+      "$4621.61",
+      "$4321.61",
+      "$4121.61"
+    ],
+    "correctAnswer": 3,
+    "answer": "$4121.61",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "quarterly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_036",
+    "topic": "Compound Interest",
+    "subtopic": "Half-Yearly Compounding",
+    "difficulty": "Hard",
+    "question": "The difference between compound interest compounded half-yearly and annually on $10000 at 10% for 1 year is:",
+    "options": [
+      "$25",
+      "$30",
+      "$50",
+      "$20"
+    ],
+    "correctAnswer": 0,
+    "answer": "$25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "difference annual vs half-yearly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_037",
+    "topic": "Compound Interest",
+    "subtopic": "Half-Yearly Compounding",
+    "difficulty": "Hard",
+    "question": "Find the CI on Rs. 1000 at 10% per annum for 1.5 years, compounded half-yearly.",
+    "options": [
+      "Rs. 157.625",
+      "Rs. 165",
+      "Rs. 160",
+      "Rs. 150"
+    ],
+    "correctAnswer": 0,
+    "answer": "Rs. 157.625",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "fractional years"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_038",
+    "topic": "Compound Interest",
+    "subtopic": "Quarterly Compounding",
+    "difficulty": "Hard",
+    "question": "Rs. 10000 is invested at 10% per annum compounded quarterly. What is the amount after 6 months?",
+    "options": [
+      "Rs. 10510",
+      "Rs. 10506.25",
+      "Rs. 10500",
+      "Rs. 10250"
+    ],
+    "correctAnswer": 1,
+    "answer": "Rs. 10506.25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "6 months quarterly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_039",
+    "topic": "Compound Interest",
+    "subtopic": "Half-Yearly Compounding",
+    "difficulty": "Hard",
+    "question": "If principal $P amounts to $4410 in 2 years at 5% per annum compounded half-yearly, find P.",
+    "options": [
+      "$4500",
+      "$4000",
+      "$3800",
+      "$4200"
+    ],
+    "correctAnswer": 1,
+    "answer": "$4000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "reverse half-yearly"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_040",
+    "topic": "Compound Interest",
+    "subtopic": "Quarterly Compounding",
+    "difficulty": "Hard",
+    "question": "What is the difference between SI and CI on $2000 at 10% per annum for 2 years compounded annually?",
+    "options": [
+      "$40",
+      "$25",
+      "$20",
+      "$10"
+    ],
+    "correctAnswer": 2,
+    "answer": "$20",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "SI vs CI difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_041",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Easy",
+    "question": "Find the difference between Compound Interest and Simple Interest on $10000 at 10% per annum for 2 years.",
+    "options": [
+      "$110",
+      "$95",
+      "$100",
+      "$120"
+    ],
+    "correctAnswer": 2,
+    "answer": "$100",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "difference",
+      "2 years"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_042",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Easy",
+    "question": "Find the difference between Compound Interest and Simple Interest on $5000 at 4% per annum for 2 years.",
+    "options": [
+      "$28",
+      "$3",
+      "$8",
+      "$18"
+    ],
+    "correctAnswer": 2,
+    "answer": "$8",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "difference",
+      "2 years"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_043",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Easy",
+    "question": "Find the difference between Compound Interest and Simple Interest on $8000 at 5% per annum for 2 years.",
+    "options": [
+      "$30",
+      "$20",
+      "$40",
+      "$15"
+    ],
+    "correctAnswer": 1,
+    "answer": "$20",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "difference",
+      "2 years"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_044",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Easy",
+    "question": "Find the difference between Compound Interest and Simple Interest on $20000 at 5% per annum for 2 years.",
+    "options": [
+      "$70",
+      "$50",
+      "$45",
+      "$60"
+    ],
+    "correctAnswer": 1,
+    "answer": "$50",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "difference",
+      "2 years"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_045",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Easy",
+    "question": "Find the difference between Compound Interest and Simple Interest on $1000 at 10% per annum for 2 years.",
+    "options": [
+      "$30",
+      "$10",
+      "$20",
+      "$5"
+    ],
+    "correctAnswer": 1,
+    "answer": "$10",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "difference",
+      "2 years"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_046",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Medium",
+    "question": "The SI on a sum at 10% for 2 years is $1200. Find the CI for the same period.",
+    "options": [
+      "$1360",
+      "$1260",
+      "$1310",
+      "$1230"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1260",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "SI given",
+      "find CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_047",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Medium",
+    "question": "The SI on a sum at 5% for 2 years is $400. Find the CI for the same period.",
+    "options": [
+      "$510",
+      "$380",
+      "$410",
+      "$460"
+    ],
+    "correctAnswer": 2,
+    "answer": "$410",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "SI given",
+      "find CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_048",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Medium",
+    "question": "The SI on a sum at 10% for 2 years is $2400. Find the CI for the same period.",
+    "options": [
+      "$2490",
+      "$2570",
+      "$2520",
+      "$2620"
+    ],
+    "correctAnswer": 2,
+    "answer": "$2520",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "SI given",
+      "find CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_049",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Medium",
+    "question": "The SI on a sum at 4% for 2 years is $1200. Find the CI for the same period.",
+    "options": [
+      "$1324",
+      "$1194",
+      "$1224",
+      "$1274"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1224",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "SI given",
+      "find CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_050",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Medium",
+    "question": "The SI on a sum at 10% for 2 years is $1600. Find the CI for the same period.",
+    "options": [
+      "$1780",
+      "$1680",
+      "$1730",
+      "$1650"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1680",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "SI given",
+      "find CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_051",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Hard",
+    "question": "The difference between CI and SI on $1000 at 10% per annum for 3 years is:",
+    "options": [
+      "$20",
+      "$25",
+      "$31",
+      "$30"
+    ],
+    "correctAnswer": 2,
+    "answer": "$31",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "3 year difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_052",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Hard",
+    "question": "For 2 years at compound interest, if the SI is $800 and CI is $840, find the rate of interest.",
+    "options": [
+      "10%",
+      "8%",
+      "5%",
+      "12%"
+    ],
+    "correctAnswer": 0,
+    "answer": "10%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "find rate from difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_053",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Hard",
+    "question": "The CI on a sum for 2 years at 5% is $51.25. Find the SI for the same sum and period.",
+    "options": [
+      "$50",
+      "$52",
+      "$55",
+      "$48"
+    ],
+    "correctAnswer": 0,
+    "answer": "$50",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "find SI from CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_054",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Hard",
+    "question": "If the difference between CI and SI on a certain sum for 3 years at 10% is $31, find the sum.",
+    "options": [
+      "$1100",
+      "$1000",
+      "$1200",
+      "$900"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "find sum from difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_055",
+    "topic": "Compound Interest",
+    "subtopic": "CI vs SI Comparison",
+    "difficulty": "Hard",
+    "question": "The SI on a sum for 2 years is $240 and CI is $252. Find the rate of interest and the sum.",
+    "options": [
+      "Rate = 10%, Sum = $1200",
+      "Rate = 8%, Sum = $1500",
+      "Rate = 12%, Sum = $1000",
+      "Rate = 10%, Sum = $1000"
+    ],
+    "correctAnswer": 0,
+    "answer": "Rate = 10%, Sum = $1200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "both R and P"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_056",
+    "topic": "Compound Interest",
+    "subtopic": "Depreciation",
+    "difficulty": "Easy",
+    "question": "A machine costs $100000. It depreciates at 10% per annum. Find its value after 2 years.",
+    "options": [
+      "$83000",
+      "$86000",
+      "$80000",
+      "$81000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$81000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_057",
+    "topic": "Compound Interest",
+    "subtopic": "Depreciation",
+    "difficulty": "Easy",
+    "question": "A machine costs $50000. It depreciates at 20% per annum. Find its value after 2 years.",
+    "options": [
+      "$31000",
+      "$34000",
+      "$37000",
+      "$32000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$32000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_058",
+    "topic": "Compound Interest",
+    "subtopic": "Depreciation",
+    "difficulty": "Easy",
+    "question": "A machine costs $80000. It depreciates at 5% per annum. Find its value after 3 years.",
+    "options": [
+      "$70590",
+      "$67590",
+      "$68590",
+      "$73590"
+    ],
+    "correctAnswer": 2,
+    "answer": "$68590",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_059",
+    "topic": "Compound Interest",
+    "subtopic": "Depreciation",
+    "difficulty": "Easy",
+    "question": "A machine costs $200000. It depreciates at 10% per annum. Find its value after 3 years.",
+    "options": [
+      "$144800",
+      "$150800",
+      "$147800",
+      "$145800"
+    ],
+    "correctAnswer": 3,
+    "answer": "$145800",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_060",
+    "topic": "Compound Interest",
+    "subtopic": "Depreciation",
+    "difficulty": "Easy",
+    "question": "A machine costs $40000. It depreciates at 25% per annum. Find its value after 2 years.",
+    "options": [
+      "$24500",
+      "$27500",
+      "$22500",
+      "$21500"
+    ],
+    "correctAnswer": 2,
+    "answer": "$22500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_061",
+    "topic": "Compound Interest",
+    "subtopic": "Population Growth",
+    "difficulty": "Medium",
+    "question": "The current population of a town is 10000. If it grows at the compound rate of 10% per annum, what will be its population after 2 years?",
+    "options": [
+      "12300",
+      "11100",
+      "12100",
+      "12600"
+    ],
+    "correctAnswer": 2,
+    "answer": "12100",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "population",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_062",
+    "topic": "Compound Interest",
+    "subtopic": "Population Growth",
+    "difficulty": "Medium",
+    "question": "The current population of a town is 50000. If it grows at the compound rate of 5% per annum, what will be its population after 3 years?",
+    "options": [
+      "57881",
+      "58381",
+      "58081",
+      "56881"
+    ],
+    "correctAnswer": 0,
+    "answer": "57881",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "population",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_063",
+    "topic": "Compound Interest",
+    "subtopic": "Population Growth",
+    "difficulty": "Medium",
+    "question": "The current population of a town is 100000. If it grows at the compound rate of 2% per annum, what will be its population after 3 years?",
+    "options": [
+      "106321",
+      "105121",
+      "106121",
+      "106621"
+    ],
+    "correctAnswer": 2,
+    "answer": "106121",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "population",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_064",
+    "topic": "Compound Interest",
+    "subtopic": "Population Growth",
+    "difficulty": "Medium",
+    "question": "The current population of a town is 200000. If it grows at the compound rate of 10% per annum, what will be its population after 2 years?",
+    "options": [
+      "241000",
+      "242200",
+      "242500",
+      "242000"
+    ],
+    "correctAnswer": 3,
+    "answer": "242000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "population",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_065",
+    "topic": "Compound Interest",
+    "subtopic": "Population Growth",
+    "difficulty": "Medium",
+    "question": "The current population of a town is 75000. If it grows at the compound rate of 4% per annum, what will be its population after 2 years?",
+    "options": [
+      "81320",
+      "80120",
+      "81620",
+      "81120"
+    ],
+    "correctAnswer": 3,
+    "answer": "81120",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "population",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_066",
+    "topic": "Compound Interest",
+    "subtopic": "Depreciation",
+    "difficulty": "Hard",
+    "question": "A car worth $100000 depreciates by 20% in the first year and 10% in subsequent years. Find its value after 3 years.",
+    "options": [
+      "$64000",
+      "$57600",
+      "$55000",
+      "$60000"
+    ],
+    "correctAnswer": 1,
+    "answer": "$57600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "successive depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_067",
+    "topic": "Compound Interest",
+    "subtopic": "Population Growth",
+    "difficulty": "Hard",
+    "question": "The population of a city was 125000 three years ago. It grew at 4% per annum. Find the current population.",
+    "options": [
+      "140000",
+      "145000",
+      "138000",
+      "140608"
+    ],
+    "correctAnswer": 3,
+    "answer": "140608",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "reverse population"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_068",
+    "topic": "Compound Interest",
+    "subtopic": "Depreciation",
+    "difficulty": "Hard",
+    "question": "A laptop depreciates at 20% per year. After how many years will its value be less than half the original price?",
+    "options": [
+      "6 years",
+      "3 years",
+      "4 years",
+      "5 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "4 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "when value halves"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_069",
+    "topic": "Compound Interest",
+    "subtopic": "Population Growth",
+    "difficulty": "Hard",
+    "question": "The population of a town grows at 5% per annum. If the population 2 years hence will be 44100, find the present population.",
+    "options": [
+      "42000",
+      "45000",
+      "40000",
+      "38000"
+    ],
+    "correctAnswer": 2,
+    "answer": "40000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "reverse compounding"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_070",
+    "topic": "Compound Interest",
+    "subtopic": "Depreciation",
+    "difficulty": "Hard",
+    "question": "A machine is depreciated by 10% at the end of each year. After 2 years its value is $8100. Find its original cost.",
+    "options": [
+      "$11000",
+      "$10000",
+      "$9500",
+      "$9000"
+    ],
+    "correctAnswer": 1,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "reverse depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_071",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Medium",
+    "question": "A sum of $8820 is to be paid back in 2 equal annual installments at 5% CI. Find each installment.",
+    "options": [
+      "$4200",
+      "$4410",
+      "$4800",
+      "$4500"
+    ],
+    "correctAnswer": 1,
+    "answer": "$4410",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "installments",
+      "2 years"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_072",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Medium",
+    "question": "What is the present value of $4840 due in 2 years at 10% compound interest?",
+    "options": [
+      "$3800",
+      "$4000",
+      "$4400",
+      "$4200"
+    ],
+    "correctAnswer": 1,
+    "answer": "$4000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "present value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_073",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Medium",
+    "question": "A TV set is available for $12000 cash or $6000 down payment and $7200 after 1 year at 20% CI. Which is better?",
+    "options": [
+      "Cash payment is better",
+      "Cannot be determined",
+      "Both are same",
+      "Installment is better"
+    ],
+    "correctAnswer": 0,
+    "answer": "Cash payment is better",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "installment comparison"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_074",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Medium",
+    "question": "Find the present worth of $1331 due in 3 years at 10% per annum compound interest.",
+    "options": [
+      "$1100",
+      "$1000",
+      "$1200",
+      "$900"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "present worth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_075",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Medium",
+    "question": "Rs. 9261 is to be paid back in 3 equal annual installments at 5% CI. Find each installment.",
+    "options": [
+      "Rs. 3087",
+      "Rs. 3000",
+      "Rs. 3500",
+      "Rs. 3200"
+    ],
+    "correctAnswer": 0,
+    "answer": "Rs. 3087",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "3 year installments"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_076",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Hard",
+    "question": "A borrowed Rs. 16000 and agreed to repay it in 3 years in equal annual installments at 10% CI. What is each installment?",
+    "options": [
+      "Rs. 7000",
+      "Rs. 6000",
+      "Rs. 6500",
+      "Rs. 6430.48"
+    ],
+    "correctAnswer": 3,
+    "answer": "Rs. 6430.48",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "complex installment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_077",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Hard",
+    "question": "A person borrows $13280 to be paid back in 2 years in 2 equal installments at 10% per annum CI. Find each installment.",
+    "options": [
+      "$8000",
+      "$7000",
+      "$6800",
+      "$7744"
+    ],
+    "correctAnswer": 3,
+    "answer": "$7744",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "installment hard"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_078",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Hard",
+    "question": "If the present value of an amount due 2 years hence at 5% CI is $9070.29, find the amount.",
+    "options": [
+      "$9800",
+      "$10500",
+      "$10000",
+      "$9500"
+    ],
+    "correctAnswer": 2,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "present value reverse"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_079",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Hard",
+    "question": "A sum of money doubles in 3 years at compound interest. In how many years will it become 8 times?",
+    "options": [
+      "12 years",
+      "8 years",
+      "6 years",
+      "9 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "9 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "geometric growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_080",
+    "topic": "Compound Interest",
+    "subtopic": "Installments",
+    "difficulty": "Hard",
+    "question": "A sum amounts to $1331 in 3 years and $1464.10 in 4 years at compound interest. Find the rate of interest.",
+    "options": [
+      "11%",
+      "10%",
+      "9%",
+      "12%"
+    ],
+    "correctAnswer": 1,
+    "answer": "10%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "find rate from 2 amounts"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_081",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $9000 at 5% per annum for 2 years.",
+    "options": [
+      "$1022.5",
+      "$922.5",
+      "$902.5",
+      "$972.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "$922.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_082",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $7000 at 10% per annum for 2 years.",
+    "options": [
+      "$1520",
+      "$1570",
+      "$1470",
+      "$1450"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1470",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_083",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $1000 at 20% per annum for 1 years.",
+    "options": [
+      "$200",
+      "$180",
+      "$300",
+      "$250"
+    ],
+    "correctAnswer": 0,
+    "answer": "$200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_084",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $6000 at 8% per annum for 3 years.",
+    "options": [
+      "$1658.27",
+      "$1558.27",
+      "$1538.27",
+      "$1608.27"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1558.27",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_085",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $3000 at 4% per annum for 2 years.",
+    "options": [
+      "$224.8",
+      "$244.8",
+      "$294.8",
+      "$344.8"
+    ],
+    "correctAnswer": 1,
+    "answer": "$244.8",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_086",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $6000 at 5% per annum for 2 years.",
+    "options": [
+      "$615",
+      "$665",
+      "$715",
+      "$595"
+    ],
+    "correctAnswer": 0,
+    "answer": "$615",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_087",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $1000 at 10% per annum for 2 years.",
+    "options": [
+      "$210",
+      "$190",
+      "$260",
+      "$310"
+    ],
+    "correctAnswer": 0,
+    "answer": "$210",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_088",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $1000 at 20% per annum for 1 years.",
+    "options": [
+      "$200",
+      "$180",
+      "$300",
+      "$250"
+    ],
+    "correctAnswer": 0,
+    "answer": "$200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_089",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $5000 at 8% per annum for 3 years.",
+    "options": [
+      "$1398.56",
+      "$1348.56",
+      "$1278.56",
+      "$1298.56"
+    ],
+    "correctAnswer": 3,
+    "answer": "$1298.56",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_090",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $6000 at 4% per annum for 2 years.",
+    "options": [
+      "$489.6",
+      "$589.6",
+      "$539.6",
+      "$469.6"
+    ],
+    "correctAnswer": 0,
+    "answer": "$489.6",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_091",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $2000 at 5% per annum for 2 years.",
+    "options": [
+      "$205",
+      "$255",
+      "$185",
+      "$305"
+    ],
+    "correctAnswer": 0,
+    "answer": "$205",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_092",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $6000 at 10% per annum for 2 years.",
+    "options": [
+      "$1260",
+      "$1310",
+      "$1360",
+      "$1240"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1260",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_093",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $5000 at 20% per annum for 1 years.",
+    "options": [
+      "$1000",
+      "$1050",
+      "$1100",
+      "$980"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_094",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $7000 at 8% per annum for 3 years.",
+    "options": [
+      "$1867.98",
+      "$1797.98",
+      "$1817.98",
+      "$1917.98"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1817.98",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_095",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $9000 at 4% per annum for 2 years.",
+    "options": [
+      "$784.4",
+      "$714.4",
+      "$834.4",
+      "$734.4"
+    ],
+    "correctAnswer": 3,
+    "answer": "$734.4",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_096",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $9000 at 5% per annum for 2 years.",
+    "options": [
+      "$1022.5",
+      "$972.5",
+      "$922.5",
+      "$902.5"
+    ],
+    "correctAnswer": 2,
+    "answer": "$922.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_097",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $3000 at 10% per annum for 2 years.",
+    "options": [
+      "$730",
+      "$630",
+      "$610",
+      "$680"
+    ],
+    "correctAnswer": 1,
+    "answer": "$630",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_098",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $5000 at 20% per annum for 1 years.",
+    "options": [
+      "$1050",
+      "$1000",
+      "$980",
+      "$1100"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_099",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $6000 at 8% per annum for 3 years.",
+    "options": [
+      "$1608.27",
+      "$1558.27",
+      "$1538.27",
+      "$1658.27"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1558.27",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_CI_100",
+    "topic": "Compound Interest",
+    "subtopic": "Finding CI",
+    "difficulty": "Easy",
+    "question": "Calculate the CI on $2000 at 4% per annum for 2 years.",
+    "options": [
+      "$143.2",
+      "$263.2",
+      "$213.2",
+      "$163.2"
+    ],
+    "correctAnswer": 3,
+    "answer": "$163.2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "compound interest",
+      "CI",
+      "basic CI"
+    ],
+    "source": "AI Generated"
+  }
+]

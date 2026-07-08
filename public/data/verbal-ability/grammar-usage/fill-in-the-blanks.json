@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "FITB_001",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The book is ____ the table.",
+    "options": [
+      "over",
+      "in",
+      "on",
+      "at"
+    ],
+    "correctAnswer": 2,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_002",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "She has been studying ____ three hours.",
+    "options": [
+      "from",
+      "for",
+      "by",
+      "since"
+    ],
+    "correctAnswer": 1,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_003",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ apple.",
+    "options": [
+      "some",
+      "the",
+      "an",
+      "a"
+    ],
+    "correctAnswer": 2,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_004",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "They ____ to the market yesterday.",
+    "options": [
+      "gone",
+      "were going",
+      "go",
+      "went"
+    ],
+    "correctAnswer": 3,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_005",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "on",
+      "over",
+      "at",
+      "in"
+    ],
+    "correctAnswer": 0,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_006",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "by",
+      "for",
+      "from",
+      "since"
+    ],
+    "correctAnswer": 1,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_007",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "an",
+      "the",
+      "a",
+      "some"
+    ],
+    "correctAnswer": 0,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_008",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "go",
+      "were going",
+      "went",
+      "gone"
+    ],
+    "correctAnswer": 2,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_009",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "in",
+      "on",
+      "over",
+      "at"
+    ],
+    "correctAnswer": 1,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_010",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "by",
+      "since",
+      "for",
+      "from"
+    ],
+    "correctAnswer": 2,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_011",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "an",
+      "the",
+      "some",
+      "a"
+    ],
+    "correctAnswer": 0,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_012",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "went",
+      "gone",
+      "go",
+      "were going"
+    ],
+    "correctAnswer": 0,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_013",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "at",
+      "over",
+      "in",
+      "on"
+    ],
+    "correctAnswer": 3,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_014",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "from",
+      "since",
+      "for",
+      "by"
+    ],
+    "correctAnswer": 2,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_015",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "a",
+      "some",
+      "the",
+      "an"
+    ],
+    "correctAnswer": 3,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_016",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "were going",
+      "went",
+      "go",
+      "gone"
+    ],
+    "correctAnswer": 1,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_017",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "over"
+    ],
+    "correctAnswer": 1,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_018",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "from",
+      "for",
+      "since",
+      "by"
+    ],
+    "correctAnswer": 1,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_019",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "an",
+      "some",
+      "a",
+      "the"
+    ],
+    "correctAnswer": 0,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_020",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "went",
+      "were going",
+      "go",
+      "gone"
+    ],
+    "correctAnswer": 0,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_021",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "in",
+      "over",
+      "on",
+      "at"
+    ],
+    "correctAnswer": 2,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_022",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "by",
+      "from",
+      "for",
+      "since"
+    ],
+    "correctAnswer": 2,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_023",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "some"
+    ],
+    "correctAnswer": 1,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_024",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "were going",
+      "gone",
+      "went",
+      "go"
+    ],
+    "correctAnswer": 2,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_025",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "at",
+      "over",
+      "on",
+      "in"
+    ],
+    "correctAnswer": 2,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_026",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "from",
+      "since",
+      "for",
+      "by"
+    ],
+    "correctAnswer": 2,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_027",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "the",
+      "a",
+      "some",
+      "an"
+    ],
+    "correctAnswer": 3,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_028",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "go",
+      "went",
+      "were going",
+      "gone"
+    ],
+    "correctAnswer": 1,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_029",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "over",
+      "in",
+      "at",
+      "on"
+    ],
+    "correctAnswer": 3,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_030",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "from",
+      "by",
+      "for",
+      "since"
+    ],
+    "correctAnswer": 2,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_031",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "an",
+      "a",
+      "some",
+      "the"
+    ],
+    "correctAnswer": 0,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_032",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "gone",
+      "go",
+      "were going",
+      "went"
+    ],
+    "correctAnswer": 3,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_033",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "in",
+      "at",
+      "over",
+      "on"
+    ],
+    "correctAnswer": 3,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_034",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "for",
+      "from",
+      "since",
+      "by"
+    ],
+    "correctAnswer": 0,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_035",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "some",
+      "an",
+      "the",
+      "a"
+    ],
+    "correctAnswer": 1,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_036",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "gone",
+      "went",
+      "were going",
+      "go"
+    ],
+    "correctAnswer": 1,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_037",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "The laptop is ____ the desk.",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "over"
+    ],
+    "correctAnswer": 0,
+    "answer": "on",
+    "explanation": "The preposition 'on' is used to indicate position on a surface. 'In' implies inside, and 'over' implies above without touching.",
+    "grammarRule": "Prepositions (Surface)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (surface)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_038",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "He has been studying ____ five days.",
+    "options": [
+      "since",
+      "for",
+      "from",
+      "by"
+    ],
+    "correctAnswer": 1,
+    "answer": "for",
+    "explanation": "Use 'for' to indicate a duration of time (three hours). 'Since' is used for a specific starting point in time (e.g., since 3 PM).",
+    "grammarRule": "Prepositions (Time - For vs Since)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "prepositions (time - for vs since)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_039",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "I would like to have ____ orange.",
+    "options": [
+      "an",
+      "a",
+      "the",
+      "some"
+    ],
+    "correctAnswer": 0,
+    "answer": "an",
+    "explanation": "'Apple' starts with a vowel sound, so the indefinite article 'an' is required.",
+    "grammarRule": "Articles (Vowel Sounds)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "articles (vowel sounds)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_040",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Easy",
+    "question": "We ____ to the park yesterday.",
+    "options": [
+      "were going",
+      "go",
+      "went",
+      "gone"
+    ],
+    "correctAnswer": 2,
+    "answer": "went",
+    "explanation": "The word 'yesterday' indicates a completed action in the past, so the simple past tense 'went' is required.",
+    "grammarRule": "Tenses (Simple Past)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "tenses (simple past)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_041",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "He is entirely absorbed ____ his studies.",
+    "options": [
+      "in",
+      "into",
+      "with",
+      "by"
+    ],
+    "correctAnswer": 0,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_042",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that decision.",
+    "options": [
+      "am",
+      "was",
+      "have been",
+      "were"
+    ],
+    "correctAnswer": 3,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_043",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the manager nor the employees ____ informed about the meeting.",
+    "options": [
+      "has been",
+      "was",
+      "is",
+      "were"
+    ],
+    "correctAnswer": 3,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_044",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new policy will ____ both local and international branches.",
+    "options": [
+      "affect",
+      "effect",
+      "affects",
+      "effecting"
+    ],
+    "correctAnswer": 0,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_045",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "into",
+      "with",
+      "in",
+      "by"
+    ],
+    "correctAnswer": 2,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_046",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "am",
+      "were",
+      "was",
+      "have been"
+    ],
+    "correctAnswer": 1,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_047",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "is",
+      "has been",
+      "was",
+      "were"
+    ],
+    "correctAnswer": 3,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_048",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "affect",
+      "effecting",
+      "effect",
+      "affects"
+    ],
+    "correctAnswer": 0,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_049",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "in",
+      "into",
+      "by",
+      "with"
+    ],
+    "correctAnswer": 0,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_050",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "am",
+      "was",
+      "were",
+      "have been"
+    ],
+    "correctAnswer": 2,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_051",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "were",
+      "has been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": 0,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_052",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "affects",
+      "effect",
+      "affect",
+      "effecting"
+    ],
+    "correctAnswer": 2,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_053",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "by",
+      "with",
+      "into",
+      "in"
+    ],
+    "correctAnswer": 3,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_054",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "were",
+      "am",
+      "was",
+      "have been"
+    ],
+    "correctAnswer": 0,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_055",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "were",
+      "is",
+      "was",
+      "has been"
+    ],
+    "correctAnswer": 0,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_056",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "affects",
+      "affect",
+      "effect",
+      "effecting"
+    ],
+    "correctAnswer": 1,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_057",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "in",
+      "with",
+      "by",
+      "into"
+    ],
+    "correctAnswer": 0,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_058",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "have been",
+      "were",
+      "was",
+      "am"
+    ],
+    "correctAnswer": 1,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_059",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "has been",
+      "was",
+      "were",
+      "is"
+    ],
+    "correctAnswer": 2,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_060",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "effect",
+      "effecting",
+      "affects",
+      "affect"
+    ],
+    "correctAnswer": 3,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_061",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "by",
+      "into",
+      "with",
+      "in"
+    ],
+    "correctAnswer": 3,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_062",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "am",
+      "was",
+      "have been",
+      "were"
+    ],
+    "correctAnswer": 3,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_063",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "is",
+      "were",
+      "has been",
+      "was"
+    ],
+    "correctAnswer": 1,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_064",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "effect",
+      "effecting",
+      "affects",
+      "affect"
+    ],
+    "correctAnswer": 3,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_065",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "into",
+      "by",
+      "with",
+      "in"
+    ],
+    "correctAnswer": 3,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_066",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "were",
+      "am",
+      "have been",
+      "was"
+    ],
+    "correctAnswer": 0,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_067",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "was",
+      "were",
+      "has been",
+      "is"
+    ],
+    "correctAnswer": 1,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_068",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "effecting",
+      "affects",
+      "affect",
+      "effect"
+    ],
+    "correctAnswer": 2,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_069",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "into",
+      "with",
+      "in",
+      "by"
+    ],
+    "correctAnswer": 2,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_070",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "was",
+      "am",
+      "have been",
+      "were"
+    ],
+    "correctAnswer": 3,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_071",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "has been",
+      "is",
+      "were",
+      "was"
+    ],
+    "correctAnswer": 2,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_072",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "affects",
+      "affect",
+      "effect",
+      "effecting"
+    ],
+    "correctAnswer": 1,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_073",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "into",
+      "with",
+      "in",
+      "by"
+    ],
+    "correctAnswer": 2,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_074",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "was",
+      "were",
+      "am",
+      "have been"
+    ],
+    "correctAnswer": 1,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_075",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "is",
+      "has been",
+      "were",
+      "was"
+    ],
+    "correctAnswer": 2,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_076",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "effecting",
+      "effect",
+      "affect",
+      "affects"
+    ],
+    "correctAnswer": 2,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_077",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "She is entirely absorbed ____ his work.",
+    "options": [
+      "in",
+      "by",
+      "with",
+      "into"
+    ],
+    "correctAnswer": 0,
+    "answer": "in",
+    "explanation": "The word 'absorbed' is idiomatically followed by the preposition 'in' when referring to deep attention or involvement.",
+    "grammarRule": "Phrasal Verbs & Fixed Prepositions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "phrasal verbs & fixed prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_078",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "If I ____ you, I would not make that mistake.",
+    "options": [
+      "were",
+      "was",
+      "am",
+      "have been"
+    ],
+    "correctAnswer": 0,
+    "answer": "were",
+    "explanation": "In subjunctive conditional sentences expressing a hypothetical situation, 'were' is used regardless of the subject.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_079",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "Neither the director nor the staff members ____ informed about the meeting.",
+    "options": [
+      "were",
+      "has been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": 0,
+    "answer": "were",
+    "explanation": "When using 'neither...nor', the verb agrees with the subject closest to it. 'Employees' is plural, so 'were' is correct.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_080",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Medium",
+    "question": "The company's new strategy will ____ both local and international offices.",
+    "options": [
+      "effecting",
+      "affect",
+      "effect",
+      "affects"
+    ],
+    "correctAnswer": 1,
+    "answer": "affect",
+    "explanation": "'Affect' is the verb meaning 'to influence'. 'Effect' is usually a noun. After the modal 'will', a base verb is required.",
+    "grammarRule": "Vocabulary (Affect vs Effect)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "vocabulary (affect vs effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_081",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The CEO, accompanied by his vice presidents, ____ attending the conference tomorrow.",
+    "options": [
+      "is",
+      "have been",
+      "were",
+      "are"
+    ],
+    "correctAnswer": 0,
+    "answer": "is",
+    "explanation": "Phrases like 'accompanied by', 'along with', or 'as well as' do not make the subject plural. The main subject 'The CEO' is singular, so the verb must be 'is'.",
+    "grammarRule": "Subject-Verb Agreement (Intervening Phrases)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement (intervening phrases)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_082",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "Scarcely ____ the station when the train departed.",
+    "options": [
+      "he reached",
+      "did he reach",
+      "had he reached",
+      "he had reached"
+    ],
+    "correctAnswer": 2,
+    "answer": "had he reached",
+    "explanation": "When a sentence begins with a negative adverb like 'Scarcely', inversion is required (auxiliary verb before the subject). Also, 'scarcely' pairs with the past perfect tense.",
+    "grammarRule": "Inversion & Conjunctions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "inversion & conjunctions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_083",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "She was so exhausted that she could barely ____ her eyes open.",
+    "options": [
+      "keep",
+      "maintain",
+      "hold",
+      "leave"
+    ],
+    "correctAnswer": 0,
+    "answer": "keep",
+    "explanation": "The idiomatic expression is 'to keep one's eyes open'. 'Hold', 'maintain', and 'leave' do not fit this specific collocation.",
+    "grammarRule": "Idiomatic Collocations",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "idiomatic collocations"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_084",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The detective sought to ____ the truth from the suspect's contradictory statements.",
+    "options": [
+      "elicit",
+      "illicit",
+      "deduce",
+      "extract"
+    ],
+    "correctAnswer": 0,
+    "answer": "elicit",
+    "explanation": "'Elicit' means to draw out or evoke (a response or fact). 'Illicit' means illegal. 'Extract' and 'deduce' are less precise for drawing out truth through questioning.",
+    "grammarRule": "Advanced Vocabulary & Homophones",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "advanced vocabulary & homophones"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_085",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The President, accompanied by his ministers, ____ attending the conference tomorrow.",
+    "options": [
+      "have been",
+      "is",
+      "were",
+      "are"
+    ],
+    "correctAnswer": 1,
+    "answer": "is",
+    "explanation": "Phrases like 'accompanied by', 'along with', or 'as well as' do not make the subject plural. The main subject 'The CEO' is singular, so the verb must be 'is'.",
+    "grammarRule": "Subject-Verb Agreement (Intervening Phrases)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement (intervening phrases)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_086",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "Scarcely ____ the airport when the flight departed.",
+    "options": [
+      "did he reach",
+      "had he reached",
+      "he reached",
+      "he had reached"
+    ],
+    "correctAnswer": 1,
+    "answer": "had he reached",
+    "explanation": "When a sentence begins with a negative adverb like 'Scarcely', inversion is required (auxiliary verb before the subject). Also, 'scarcely' pairs with the past perfect tense.",
+    "grammarRule": "Inversion & Conjunctions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "inversion & conjunctions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_087",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "She was so tired that she could barely ____ her eyes open.",
+    "options": [
+      "leave",
+      "maintain",
+      "hold",
+      "keep"
+    ],
+    "correctAnswer": 3,
+    "answer": "keep",
+    "explanation": "The idiomatic expression is 'to keep one's eyes open'. 'Hold', 'maintain', and 'leave' do not fit this specific collocation.",
+    "grammarRule": "Idiomatic Collocations",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "idiomatic collocations"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_088",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The lawyer sought to ____ the truth from the witness's contradictory statements.",
+    "options": [
+      "deduce",
+      "illicit",
+      "elicit",
+      "extract"
+    ],
+    "correctAnswer": 2,
+    "answer": "elicit",
+    "explanation": "'Elicit' means to draw out or evoke (a response or fact). 'Illicit' means illegal. 'Extract' and 'deduce' are less precise for drawing out truth through questioning.",
+    "grammarRule": "Advanced Vocabulary & Homophones",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "advanced vocabulary & homophones"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_089",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The President, accompanied by his ministers, ____ attending the conference tomorrow.",
+    "options": [
+      "is",
+      "were",
+      "are",
+      "have been"
+    ],
+    "correctAnswer": 0,
+    "answer": "is",
+    "explanation": "Phrases like 'accompanied by', 'along with', or 'as well as' do not make the subject plural. The main subject 'The CEO' is singular, so the verb must be 'is'.",
+    "grammarRule": "Subject-Verb Agreement (Intervening Phrases)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement (intervening phrases)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_090",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "Scarcely ____ the airport when the flight departed.",
+    "options": [
+      "had he reached",
+      "he had reached",
+      "he reached",
+      "did he reach"
+    ],
+    "correctAnswer": 0,
+    "answer": "had he reached",
+    "explanation": "When a sentence begins with a negative adverb like 'Scarcely', inversion is required (auxiliary verb before the subject). Also, 'scarcely' pairs with the past perfect tense.",
+    "grammarRule": "Inversion & Conjunctions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "inversion & conjunctions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_091",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "She was so tired that she could barely ____ her eyes open.",
+    "options": [
+      "hold",
+      "keep",
+      "leave",
+      "maintain"
+    ],
+    "correctAnswer": 1,
+    "answer": "keep",
+    "explanation": "The idiomatic expression is 'to keep one's eyes open'. 'Hold', 'maintain', and 'leave' do not fit this specific collocation.",
+    "grammarRule": "Idiomatic Collocations",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "idiomatic collocations"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_092",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The lawyer sought to ____ the truth from the witness's contradictory statements.",
+    "options": [
+      "deduce",
+      "extract",
+      "illicit",
+      "elicit"
+    ],
+    "correctAnswer": 3,
+    "answer": "elicit",
+    "explanation": "'Elicit' means to draw out or evoke (a response or fact). 'Illicit' means illegal. 'Extract' and 'deduce' are less precise for drawing out truth through questioning.",
+    "grammarRule": "Advanced Vocabulary & Homophones",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "advanced vocabulary & homophones"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_093",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The President, accompanied by his ministers, ____ attending the conference tomorrow.",
+    "options": [
+      "have been",
+      "is",
+      "were",
+      "are"
+    ],
+    "correctAnswer": 1,
+    "answer": "is",
+    "explanation": "Phrases like 'accompanied by', 'along with', or 'as well as' do not make the subject plural. The main subject 'The CEO' is singular, so the verb must be 'is'.",
+    "grammarRule": "Subject-Verb Agreement (Intervening Phrases)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement (intervening phrases)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_094",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "Scarcely ____ the airport when the flight departed.",
+    "options": [
+      "did he reach",
+      "he had reached",
+      "had he reached",
+      "he reached"
+    ],
+    "correctAnswer": 2,
+    "answer": "had he reached",
+    "explanation": "When a sentence begins with a negative adverb like 'Scarcely', inversion is required (auxiliary verb before the subject). Also, 'scarcely' pairs with the past perfect tense.",
+    "grammarRule": "Inversion & Conjunctions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "inversion & conjunctions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_095",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "She was so tired that she could barely ____ her eyes open.",
+    "options": [
+      "maintain",
+      "leave",
+      "keep",
+      "hold"
+    ],
+    "correctAnswer": 2,
+    "answer": "keep",
+    "explanation": "The idiomatic expression is 'to keep one's eyes open'. 'Hold', 'maintain', and 'leave' do not fit this specific collocation.",
+    "grammarRule": "Idiomatic Collocations",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "idiomatic collocations"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_096",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The lawyer sought to ____ the truth from the witness's contradictory statements.",
+    "options": [
+      "deduce",
+      "extract",
+      "illicit",
+      "elicit"
+    ],
+    "correctAnswer": 3,
+    "answer": "elicit",
+    "explanation": "'Elicit' means to draw out or evoke (a response or fact). 'Illicit' means illegal. 'Extract' and 'deduce' are less precise for drawing out truth through questioning.",
+    "grammarRule": "Advanced Vocabulary & Homophones",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "advanced vocabulary & homophones"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_097",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The President, accompanied by his ministers, ____ attending the conference tomorrow.",
+    "options": [
+      "is",
+      "were",
+      "are",
+      "have been"
+    ],
+    "correctAnswer": 0,
+    "answer": "is",
+    "explanation": "Phrases like 'accompanied by', 'along with', or 'as well as' do not make the subject plural. The main subject 'The CEO' is singular, so the verb must be 'is'.",
+    "grammarRule": "Subject-Verb Agreement (Intervening Phrases)",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "subject-verb agreement (intervening phrases)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_098",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "Scarcely ____ the airport when the flight departed.",
+    "options": [
+      "did he reach",
+      "had he reached",
+      "he reached",
+      "he had reached"
+    ],
+    "correctAnswer": 1,
+    "answer": "had he reached",
+    "explanation": "When a sentence begins with a negative adverb like 'Scarcely', inversion is required (auxiliary verb before the subject). Also, 'scarcely' pairs with the past perfect tense.",
+    "grammarRule": "Inversion & Conjunctions",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "inversion & conjunctions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_099",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "She was so tired that she could barely ____ her eyes open.",
+    "options": [
+      "keep",
+      "leave",
+      "hold",
+      "maintain"
+    ],
+    "correctAnswer": 0,
+    "answer": "keep",
+    "explanation": "The idiomatic expression is 'to keep one's eyes open'. 'Hold', 'maintain', and 'leave' do not fit this specific collocation.",
+    "grammarRule": "Idiomatic Collocations",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "idiomatic collocations"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "FITB_100",
+    "topic": "Grammar & Usage",
+    "subtopic": "Fill in the Blanks",
+    "difficulty": "Hard",
+    "question": "The lawyer sought to ____ the truth from the witness's contradictory statements.",
+    "options": [
+      "elicit",
+      "deduce",
+      "illicit",
+      "extract"
+    ],
+    "correctAnswer": 0,
+    "answer": "elicit",
+    "explanation": "'Elicit' means to draw out or evoke (a response or fact). 'Illicit' means illegal. 'Extract' and 'deduce' are less precise for drawing out truth through questioning.",
+    "grammarRule": "Advanced Vocabulary & Homophones",
+    "shortcut": "Look for contextual clues in the sentence before and after the blank.",
+    "commonMistake": "Choosing an option that sounds good but violates a specific grammatical rule or preposition pairing.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "fill in the blanks",
+      "advanced vocabulary & homophones"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  }
+]

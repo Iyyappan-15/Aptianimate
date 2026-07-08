@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "SC_001",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She have been working here since 2018.",
+      "She has been working here from 2018.",
+      "She is working here since 2018.",
+      "She has been working here since 2018."
+    ],
+    "correctAnswer": 3,
+    "answer": "She has been working here since 2018.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_002",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is tallest boy in the class.",
+      "He is the tallest boy in the class.",
+      "He is the tallest boy of the class.",
+      "He is the more taller boy in the class."
+    ],
+    "correctAnswer": 1,
+    "answer": "He is the tallest boy in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_003",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the answers is correct.",
+      "Neither of the answers are correct.",
+      "Neither off the answers is correct.",
+      "Neither of the answer is correct."
+    ],
+    "correctAnswer": 0,
+    "answer": "Neither of the answers is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_004",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer coffee more than tea.",
+      "I prefer coffee over tea.",
+      "I prefer coffee to tea.",
+      "I prefer coffee than tea."
+    ],
+    "correctAnswer": 2,
+    "answer": "I prefer coffee to tea.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_005",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He have been working here since 2020.",
+      "He is working here since 2020.",
+      "He has been working here from 2020.",
+      "He has been working here since 2020."
+    ],
+    "correctAnswer": 3,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_006",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is the more taller student in the class.",
+      "He is the smartest student in the class.",
+      "He is the smartest student of the class.",
+      "He is smartest student in the class."
+    ],
+    "correctAnswer": 1,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_007",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the options are correct.",
+      "Neither off the options is correct.",
+      "Neither of the answer is correct.",
+      "Neither of the options is correct."
+    ],
+    "correctAnswer": 3,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_008",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples than oranges.",
+      "I prefer apples over oranges.",
+      "I prefer apples more than oranges.",
+      "I prefer apples to oranges."
+    ],
+    "correctAnswer": 3,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_009",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He have been working here since 2020.",
+      "He is working here since 2020.",
+      "He has been working here since 2020.",
+      "He has been working here from 2020."
+    ],
+    "correctAnswer": 2,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_010",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is the smartest student in the class.",
+      "He is the smartest student of the class.",
+      "He is the more taller student in the class.",
+      "He is smartest student in the class."
+    ],
+    "correctAnswer": 0,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_011",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the answer is correct.",
+      "Neither off the options is correct.",
+      "Neither of the options is correct.",
+      "Neither of the options are correct."
+    ],
+    "correctAnswer": 2,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_012",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples to oranges.",
+      "I prefer apples more than oranges.",
+      "I prefer apples over oranges.",
+      "I prefer apples than oranges."
+    ],
+    "correctAnswer": 0,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_013",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He has been working here from 2020.",
+      "He is working here since 2020.",
+      "He has been working here since 2020.",
+      "He have been working here since 2020."
+    ],
+    "correctAnswer": 2,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_014",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is the smartest student in the class.",
+      "He is the smartest student of the class.",
+      "He is the more taller student in the class.",
+      "He is smartest student in the class."
+    ],
+    "correctAnswer": 0,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_015",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the options are correct.",
+      "Neither off the options is correct.",
+      "Neither of the options is correct.",
+      "Neither of the answer is correct."
+    ],
+    "correctAnswer": 2,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_016",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples to oranges.",
+      "I prefer apples than oranges.",
+      "I prefer apples over oranges.",
+      "I prefer apples more than oranges."
+    ],
+    "correctAnswer": 0,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_017",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He has been working here from 2020.",
+      "He has been working here since 2020.",
+      "He is working here since 2020.",
+      "He have been working here since 2020."
+    ],
+    "correctAnswer": 1,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_018",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is smartest student in the class.",
+      "He is the smartest student in the class.",
+      "He is the more taller student in the class.",
+      "He is the smartest student of the class."
+    ],
+    "correctAnswer": 1,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_019",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the options is correct.",
+      "Neither off the options is correct.",
+      "Neither of the answer is correct.",
+      "Neither of the options are correct."
+    ],
+    "correctAnswer": 0,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_020",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples than oranges.",
+      "I prefer apples to oranges.",
+      "I prefer apples over oranges.",
+      "I prefer apples more than oranges."
+    ],
+    "correctAnswer": 1,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_021",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is working here since 2020.",
+      "He has been working here since 2020.",
+      "He has been working here from 2020.",
+      "He have been working here since 2020."
+    ],
+    "correctAnswer": 1,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_022",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is smartest student in the class.",
+      "He is the smartest student of the class.",
+      "He is the more taller student in the class.",
+      "He is the smartest student in the class."
+    ],
+    "correctAnswer": 3,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_023",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the answer is correct.",
+      "Neither of the options are correct.",
+      "Neither of the options is correct.",
+      "Neither off the options is correct."
+    ],
+    "correctAnswer": 2,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_024",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples to oranges.",
+      "I prefer apples more than oranges.",
+      "I prefer apples than oranges.",
+      "I prefer apples over oranges."
+    ],
+    "correctAnswer": 0,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_025",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He have been working here since 2020.",
+      "He has been working here since 2020.",
+      "He has been working here from 2020.",
+      "He is working here since 2020."
+    ],
+    "correctAnswer": 1,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_026",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is smartest student in the class.",
+      "He is the smartest student in the class.",
+      "He is the more taller student in the class.",
+      "He is the smartest student of the class."
+    ],
+    "correctAnswer": 1,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_027",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the answer is correct.",
+      "Neither of the options is correct.",
+      "Neither of the options are correct.",
+      "Neither off the options is correct."
+    ],
+    "correctAnswer": 1,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_028",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples to oranges.",
+      "I prefer apples more than oranges.",
+      "I prefer apples over oranges.",
+      "I prefer apples than oranges."
+    ],
+    "correctAnswer": 0,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_029",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He have been working here since 2020.",
+      "He is working here since 2020.",
+      "He has been working here since 2020.",
+      "He has been working here from 2020."
+    ],
+    "correctAnswer": 2,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_030",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is the smartest student in the class.",
+      "He is the smartest student of the class.",
+      "He is the more taller student in the class.",
+      "He is smartest student in the class."
+    ],
+    "correctAnswer": 0,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_031",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the options is correct.",
+      "Neither off the options is correct.",
+      "Neither of the answer is correct.",
+      "Neither of the options are correct."
+    ],
+    "correctAnswer": 0,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_032",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples to oranges.",
+      "I prefer apples more than oranges.",
+      "I prefer apples than oranges.",
+      "I prefer apples over oranges."
+    ],
+    "correctAnswer": 0,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_033",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is working here since 2020.",
+      "He has been working here from 2020.",
+      "He have been working here since 2020.",
+      "He has been working here since 2020."
+    ],
+    "correctAnswer": 3,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_034",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is the smartest student of the class.",
+      "He is the more taller student in the class.",
+      "He is smartest student in the class.",
+      "He is the smartest student in the class."
+    ],
+    "correctAnswer": 3,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_035",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the options is correct.",
+      "Neither of the options are correct.",
+      "Neither off the options is correct.",
+      "Neither of the answer is correct."
+    ],
+    "correctAnswer": 0,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_036",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples over oranges.",
+      "I prefer apples to oranges.",
+      "I prefer apples more than oranges.",
+      "I prefer apples than oranges."
+    ],
+    "correctAnswer": 1,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_037",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is working here since 2020.",
+      "He has been working here since 2020.",
+      "He have been working here since 2020.",
+      "He has been working here from 2020."
+    ],
+    "correctAnswer": 1,
+    "answer": "He has been working here since 2020.",
+    "explanation": "When referring to an action that started in the past and continues to the present, use the present perfect continuous tense ('has been working'). 'Since' is used for a specific point in time.",
+    "grammarRule": "Tenses & Prepositions",
+    "shortcut": "Time markers like 'since 2018' require perfect tenses, not continuous tenses ('is working').",
+    "commonMistake": "Using 'is working' with 'since', which is a common spoken error.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "tenses & prepositions"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_038",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is the smartest student in the class.",
+      "He is the more taller student in the class.",
+      "He is the smartest student of the class.",
+      "He is smartest student in the class."
+    ],
+    "correctAnswer": 0,
+    "answer": "He is the smartest student in the class.",
+    "explanation": "Superlative adjectives ('tallest') must be preceded by the definite article 'the'. 'In the class' is the correct prepositional phrase.",
+    "grammarRule": "Adjectives (Superlative) & Articles",
+    "shortcut": "Always use 'the' before superlative adjectives (-est).",
+    "commonMistake": "Omitting the article 'the' or using double comparatives ('more taller').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "adjectives (superlative) & articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_039",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Neither of the answer is correct.",
+      "Neither off the options is correct.",
+      "Neither of the options is correct.",
+      "Neither of the options are correct."
+    ],
+    "correctAnswer": 2,
+    "answer": "Neither of the options is correct.",
+    "explanation": "'Neither of' is a singular subject and must take a singular verb ('is'). It is followed by a plural noun ('the answers').",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Phrases starting with 'Neither of', 'Either of', or 'Each of' take singular verbs.",
+    "commonMistake": "Matching the verb to the plural noun 'answers' instead of the true subject 'Neither'.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_040",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Easy",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "I prefer apples to oranges.",
+      "I prefer apples than oranges.",
+      "I prefer apples more than oranges.",
+      "I prefer apples over oranges."
+    ],
+    "correctAnswer": 0,
+    "answer": "I prefer apples to oranges.",
+    "explanation": "The verb 'prefer' is followed by the preposition 'to', not 'than' or 'over', when comparing two nouns.",
+    "grammarRule": "Prepositions (Idiomatic)",
+    "shortcut": "Prefer always pairs with 'to'.",
+    "commonMistake": "Using 'than' because it implies comparison, but 'prefer' has a specific prepositional pair.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "prepositions (idiomatic)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_041",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Had I known about the meeting, I would have attended.",
+      "If I would have known about the meeting, I would have attended.",
+      "Had I knew about the meeting, I would have attended.",
+      "If I know about the meeting, I would have attended."
+    ],
+    "correctAnswer": 0,
+    "answer": "Had I known about the meeting, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_042",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys reading, writing, and to paint.",
+      "She enjoys reading, to write, and painting.",
+      "She enjoys reading, writing, and painting.",
+      "She enjoys to read, writing, and to paint."
+    ],
+    "correctAnswer": 2,
+    "answer": "She enjoys reading, writing, and painting.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_043",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The committee have submitted its report.",
+      "The committee has submitted its report.",
+      "The committee has submitted their report.",
+      "The committee have submitted their report."
+    ],
+    "correctAnswer": 1,
+    "answer": "The committee has submitted its report.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_044",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly we had left the house when it started raining.",
+      "Hardly did we leave the house than it started raining.",
+      "Hardly had we left the house than it started raining.",
+      "Hardly had we left the house when it started raining."
+    ],
+    "correctAnswer": 3,
+    "answer": "Hardly had we left the house when it started raining.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_045",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "If I know about the seminar, I would have attended.",
+      "If I would have known about the seminar, I would have attended.",
+      "Had I knew about the seminar, I would have attended.",
+      "Had I known about the seminar, I would have attended."
+    ],
+    "correctAnswer": 3,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_046",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys to run, swimming, and to cycle.",
+      "She enjoys running, to swim, and cycling.",
+      "She enjoys running, swimming, and cycling.",
+      "She enjoys running, swimming, and to cycle."
+    ],
+    "correctAnswer": 2,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_047",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury have submitted their verdict.",
+      "The jury has submitted their verdict.",
+      "The jury has submitted its verdict.",
+      "The jury have submitted its verdict."
+    ],
+    "correctAnswer": 2,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_048",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly had we reached the station than it started snowing.",
+      "Hardly did we reach the station than it started snowing.",
+      "Hardly had we reached the station when it started snowing.",
+      "Hardly we had reached the station when it started snowing."
+    ],
+    "correctAnswer": 2,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_049",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Had I knew about the seminar, I would have attended.",
+      "If I know about the seminar, I would have attended.",
+      "If I would have known about the seminar, I would have attended.",
+      "Had I known about the seminar, I would have attended."
+    ],
+    "correctAnswer": 3,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_050",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys running, swimming, and cycling.",
+      "She enjoys running, swimming, and to cycle.",
+      "She enjoys running, to swim, and cycling.",
+      "She enjoys to run, swimming, and to cycle."
+    ],
+    "correctAnswer": 0,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_051",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury have submitted its verdict.",
+      "The jury have submitted their verdict.",
+      "The jury has submitted their verdict.",
+      "The jury has submitted its verdict."
+    ],
+    "correctAnswer": 3,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_052",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly had we reached the station than it started snowing.",
+      "Hardly we had reached the station when it started snowing.",
+      "Hardly had we reached the station when it started snowing.",
+      "Hardly did we reach the station than it started snowing."
+    ],
+    "correctAnswer": 2,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_053",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "If I would have known about the seminar, I would have attended.",
+      "Had I known about the seminar, I would have attended.",
+      "Had I knew about the seminar, I would have attended.",
+      "If I know about the seminar, I would have attended."
+    ],
+    "correctAnswer": 1,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_054",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys running, swimming, and to cycle.",
+      "She enjoys to run, swimming, and to cycle.",
+      "She enjoys running, swimming, and cycling.",
+      "She enjoys running, to swim, and cycling."
+    ],
+    "correctAnswer": 2,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_055",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury has submitted their verdict.",
+      "The jury have submitted their verdict.",
+      "The jury has submitted its verdict.",
+      "The jury have submitted its verdict."
+    ],
+    "correctAnswer": 2,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_056",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly we had reached the station when it started snowing.",
+      "Hardly had we reached the station when it started snowing.",
+      "Hardly did we reach the station than it started snowing.",
+      "Hardly had we reached the station than it started snowing."
+    ],
+    "correctAnswer": 1,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_057",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "If I know about the seminar, I would have attended.",
+      "Had I known about the seminar, I would have attended.",
+      "Had I knew about the seminar, I would have attended.",
+      "If I would have known about the seminar, I would have attended."
+    ],
+    "correctAnswer": 1,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_058",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys running, to swim, and cycling.",
+      "She enjoys to run, swimming, and to cycle.",
+      "She enjoys running, swimming, and cycling.",
+      "She enjoys running, swimming, and to cycle."
+    ],
+    "correctAnswer": 2,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_059",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury has submitted their verdict.",
+      "The jury have submitted its verdict.",
+      "The jury have submitted their verdict.",
+      "The jury has submitted its verdict."
+    ],
+    "correctAnswer": 3,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_060",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly had we reached the station when it started snowing.",
+      "Hardly we had reached the station when it started snowing.",
+      "Hardly had we reached the station than it started snowing.",
+      "Hardly did we reach the station than it started snowing."
+    ],
+    "correctAnswer": 0,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_061",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Had I known about the seminar, I would have attended.",
+      "If I know about the seminar, I would have attended.",
+      "If I would have known about the seminar, I would have attended.",
+      "Had I knew about the seminar, I would have attended."
+    ],
+    "correctAnswer": 0,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_062",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys running, to swim, and cycling.",
+      "She enjoys running, swimming, and to cycle.",
+      "She enjoys to run, swimming, and to cycle.",
+      "She enjoys running, swimming, and cycling."
+    ],
+    "correctAnswer": 3,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_063",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury have submitted its verdict.",
+      "The jury have submitted their verdict.",
+      "The jury has submitted their verdict.",
+      "The jury has submitted its verdict."
+    ],
+    "correctAnswer": 3,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_064",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly did we reach the station than it started snowing.",
+      "Hardly we had reached the station when it started snowing.",
+      "Hardly had we reached the station than it started snowing.",
+      "Hardly had we reached the station when it started snowing."
+    ],
+    "correctAnswer": 3,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_065",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "If I know about the seminar, I would have attended.",
+      "Had I known about the seminar, I would have attended.",
+      "Had I knew about the seminar, I would have attended.",
+      "If I would have known about the seminar, I would have attended."
+    ],
+    "correctAnswer": 1,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_066",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys running, to swim, and cycling.",
+      "She enjoys running, swimming, and cycling.",
+      "She enjoys running, swimming, and to cycle.",
+      "She enjoys to run, swimming, and to cycle."
+    ],
+    "correctAnswer": 1,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_067",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury has submitted its verdict.",
+      "The jury have submitted their verdict.",
+      "The jury has submitted their verdict.",
+      "The jury have submitted its verdict."
+    ],
+    "correctAnswer": 0,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_068",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly had we reached the station when it started snowing.",
+      "Hardly we had reached the station when it started snowing.",
+      "Hardly had we reached the station than it started snowing.",
+      "Hardly did we reach the station than it started snowing."
+    ],
+    "correctAnswer": 0,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_069",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "If I know about the seminar, I would have attended.",
+      "If I would have known about the seminar, I would have attended.",
+      "Had I known about the seminar, I would have attended.",
+      "Had I knew about the seminar, I would have attended."
+    ],
+    "correctAnswer": 2,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_070",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys running, to swim, and cycling.",
+      "She enjoys running, swimming, and cycling.",
+      "She enjoys to run, swimming, and to cycle.",
+      "She enjoys running, swimming, and to cycle."
+    ],
+    "correctAnswer": 1,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_071",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury has submitted its verdict.",
+      "The jury have submitted their verdict.",
+      "The jury has submitted their verdict.",
+      "The jury have submitted its verdict."
+    ],
+    "correctAnswer": 0,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_072",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly did we reach the station than it started snowing.",
+      "Hardly had we reached the station when it started snowing.",
+      "Hardly we had reached the station when it started snowing.",
+      "Hardly had we reached the station than it started snowing."
+    ],
+    "correctAnswer": 1,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_073",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "If I would have known about the seminar, I would have attended.",
+      "Had I knew about the seminar, I would have attended.",
+      "If I know about the seminar, I would have attended.",
+      "Had I known about the seminar, I would have attended."
+    ],
+    "correctAnswer": 3,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_074",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys running, to swim, and cycling.",
+      "She enjoys to run, swimming, and to cycle.",
+      "She enjoys running, swimming, and cycling.",
+      "She enjoys running, swimming, and to cycle."
+    ],
+    "correctAnswer": 2,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_075",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury has submitted its verdict.",
+      "The jury has submitted their verdict.",
+      "The jury have submitted its verdict.",
+      "The jury have submitted their verdict."
+    ],
+    "correctAnswer": 0,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_076",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly we had reached the station when it started snowing.",
+      "Hardly had we reached the station when it started snowing.",
+      "Hardly had we reached the station than it started snowing.",
+      "Hardly did we reach the station than it started snowing."
+    ],
+    "correctAnswer": 1,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_077",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "If I know about the seminar, I would have attended.",
+      "Had I knew about the seminar, I would have attended.",
+      "If I would have known about the seminar, I would have attended.",
+      "Had I known about the seminar, I would have attended."
+    ],
+    "correctAnswer": 3,
+    "answer": "Had I known about the seminar, I would have attended.",
+    "explanation": "This is a third conditional sentence expressing an unreal past situation. The correct structure is 'If + Past Perfect, Subject + would have + Past Participle'. 'Had I known' is an inversion of 'If I had known'.",
+    "grammarRule": "Conditionals & Inversion",
+    "shortcut": "Never use 'would have' in the 'If' clause.",
+    "commonMistake": "Using 'If I would have known', which is grammatically incorrect in formal English.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conditionals & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_078",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "She enjoys running, swimming, and cycling.",
+      "She enjoys to run, swimming, and to cycle.",
+      "She enjoys running, swimming, and to cycle.",
+      "She enjoys running, to swim, and cycling."
+    ],
+    "correctAnswer": 0,
+    "answer": "She enjoys running, swimming, and cycling.",
+    "explanation": "Items in a series must have parallel grammatical structures. Since 'reading' and 'writing' are gerunds (-ing forms), 'painting' must also be a gerund.",
+    "grammarRule": "Parallelism",
+    "shortcut": "Ensure all verbs in a list share the same ending (all -ing, or all infinitives).",
+    "commonMistake": "Mixing gerunds and infinitives in a single list.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "parallelism"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_079",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "The jury have submitted their verdict.",
+      "The jury has submitted its verdict.",
+      "The jury has submitted their verdict.",
+      "The jury have submitted its verdict."
+    ],
+    "correctAnswer": 1,
+    "answer": "The jury has submitted its verdict.",
+    "explanation": "The collective noun 'committee' acts as a single unit here, so it takes a singular verb ('has') and a singular pronoun ('its').",
+    "grammarRule": "Collective Nouns & Pronouns",
+    "shortcut": "If a group acts together, use 'it' and a singular verb.",
+    "commonMistake": "Using the plural pronoun 'their' with a singular verb 'has'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "collective nouns & pronouns"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_080",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Medium",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Hardly had we reached the station when it started snowing.",
+      "Hardly did we reach the station than it started snowing.",
+      "Hardly we had reached the station when it started snowing.",
+      "Hardly had we reached the station than it started snowing."
+    ],
+    "correctAnswer": 0,
+    "answer": "Hardly had we reached the station when it started snowing.",
+    "explanation": "'Hardly' must be followed by an inversion (auxiliary verb before the subject, 'had we') and pairs with the conjunction 'when'.",
+    "grammarRule": "Conjunctions & Inversion",
+    "shortcut": "Hardly + Inverted Subject + When.",
+    "commonMistake": "Using 'than' with 'hardly', or failing to invert the subject and verb.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & inversion"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_081",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Walking down the street, I saw a beautiful bird.",
+      "Walking down the street, a beautiful bird was seen.",
+      "Walking down the street, a beautiful bird flew past me.",
+      "Walking down the street, my eyes caught a beautiful bird."
+    ],
+    "correctAnswer": 0,
+    "answer": "Walking down the street, I saw a beautiful bird.",
+    "explanation": "The introductory participle phrase 'Walking down the street' must modify the subject immediately following it. 'I' was the one walking, not the bird or 'my eyes'.",
+    "grammarRule": "Modifiers (Dangling Participles)",
+    "shortcut": "The noun immediately after the comma must be the one performing the '-ing' action.",
+    "commonMistake": "Creating a dangling modifier where the action is attributed to an inanimate object or the wrong subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "modifiers (dangling participles)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_082",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is one of the few employees who are dedicated to their work.",
+      "He is one of the few employees who is dedicated to their work.",
+      "He is one of the few employees who is dedicated to his work.",
+      "He is one of the few employees whom are dedicated to his work."
+    ],
+    "correctAnswer": 0,
+    "answer": "He is one of the few employees who are dedicated to their work.",
+    "explanation": "In the phrase 'one of the [plural noun] who', the relative pronoun 'who' refers to the plural noun ('employees'). Therefore, it takes a plural verb ('are') and plural pronoun ('their').",
+    "grammarRule": "Relative Pronouns & Subject-Verb Agreement",
+    "shortcut": "'One of the [plural noun] who' always takes a plural verb.",
+    "commonMistake": "Looking at 'one' and mistakenly using singular verbs/pronouns ('is', 'his').",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "relative pronouns & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_083",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Who did you say you were going to invite to the party?",
+      "Whom did you say you were going to invite to the party?",
+      "Who did you say whom were going to invite to the party?",
+      "Whom did you say was going to invite to the party?"
+    ],
+    "correctAnswer": 1,
+    "answer": "Whom did you say you were going to invite to the party?",
+    "explanation": "'Whom' is the object of the verb 'invite' (you were going to invite whom). 'Who' is used for subjects.",
+    "grammarRule": "Pronouns (Who vs. Whom)",
+    "shortcut": "If you can replace it with 'him' or 'her', use 'whom'. If you can replace it with 'he' or 'she', use 'who'.",
+    "commonMistake": "Using 'who' in the objective case, which is common in casual speech but incorrect in formal grammar.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "pronouns (who vs. whom)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_084",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "No sooner did the alarm rang than the students rushed out.",
+      "No sooner had the alarm rung when the students rushed out.",
+      "No sooner the alarm had rung than the students rushed out.",
+      "No sooner had the alarm rung than the students rushed out."
+    ],
+    "correctAnswer": 3,
+    "answer": "No sooner had the alarm rung than the students rushed out.",
+    "explanation": "'No sooner' takes an inversion (had + subject + past participle) and pairs with 'than'. 'Did' requires a base verb ('ring'), not 'rang'.",
+    "grammarRule": "Conjunctions & Verb Forms",
+    "shortcut": "No sooner + Inversion + than.",
+    "commonMistake": "Pairing 'No sooner' with 'when' or using past tense verbs with the auxiliary 'did'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & verb forms"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_085",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Looking out the window, my eyes caught a shooting star.",
+      "Looking out the window, a shooting star was seen.",
+      "Looking out the window, a shooting star flew past me.",
+      "Looking out the window, I saw a shooting star."
+    ],
+    "correctAnswer": 3,
+    "answer": "Looking out the window, I saw a shooting star.",
+    "explanation": "The introductory participle phrase 'Walking down the street' must modify the subject immediately following it. 'I' was the one walking, not the bird or 'my eyes'.",
+    "grammarRule": "Modifiers (Dangling Participles)",
+    "shortcut": "The noun immediately after the comma must be the one performing the '-ing' action.",
+    "commonMistake": "Creating a dangling modifier where the action is attributed to an inanimate object or the wrong subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "modifiers (dangling participles)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_086",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is one of the few managers who are dedicated to their work.",
+      "He is one of the few managers who is dedicated to their work.",
+      "He is one of the few managers who is dedicated to his work.",
+      "He is one of the few managers whom are dedicated to his work."
+    ],
+    "correctAnswer": 0,
+    "answer": "He is one of the few managers who are dedicated to their work.",
+    "explanation": "In the phrase 'one of the [plural noun] who', the relative pronoun 'who' refers to the plural noun ('employees'). Therefore, it takes a plural verb ('are') and plural pronoun ('their').",
+    "grammarRule": "Relative Pronouns & Subject-Verb Agreement",
+    "shortcut": "'One of the [plural noun] who' always takes a plural verb.",
+    "commonMistake": "Looking at 'one' and mistakenly using singular verbs/pronouns ('is', 'his').",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "relative pronouns & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_087",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Who did you say you were going to invite to the conference?",
+      "Whom did you say you were going to invite to the conference?",
+      "Who did you say whom were going to invite to the conference?",
+      "Whom did you say was going to invite to the conference?"
+    ],
+    "correctAnswer": 1,
+    "answer": "Whom did you say you were going to invite to the conference?",
+    "explanation": "'Whom' is the object of the verb 'invite' (you were going to invite whom). 'Who' is used for subjects.",
+    "grammarRule": "Pronouns (Who vs. Whom)",
+    "shortcut": "If you can replace it with 'him' or 'her', use 'whom'. If you can replace it with 'he' or 'she', use 'who'.",
+    "commonMistake": "Using 'who' in the objective case, which is common in casual speech but incorrect in formal grammar.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "pronouns (who vs. whom)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_088",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "No sooner had the bell rung than the workers rushed out.",
+      "No sooner the alarm had rung than the workers rushed out.",
+      "No sooner did the bell rang than the workers rushed out.",
+      "No sooner had the bell rung when the workers rushed out."
+    ],
+    "correctAnswer": 0,
+    "answer": "No sooner had the bell rung than the workers rushed out.",
+    "explanation": "'No sooner' takes an inversion (had + subject + past participle) and pairs with 'than'. 'Did' requires a base verb ('ring'), not 'rang'.",
+    "grammarRule": "Conjunctions & Verb Forms",
+    "shortcut": "No sooner + Inversion + than.",
+    "commonMistake": "Pairing 'No sooner' with 'when' or using past tense verbs with the auxiliary 'did'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & verb forms"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_089",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Looking out the window, my eyes caught a shooting star.",
+      "Looking out the window, a shooting star was seen.",
+      "Looking out the window, a shooting star flew past me.",
+      "Looking out the window, I saw a shooting star."
+    ],
+    "correctAnswer": 3,
+    "answer": "Looking out the window, I saw a shooting star.",
+    "explanation": "The introductory participle phrase 'Walking down the street' must modify the subject immediately following it. 'I' was the one walking, not the bird or 'my eyes'.",
+    "grammarRule": "Modifiers (Dangling Participles)",
+    "shortcut": "The noun immediately after the comma must be the one performing the '-ing' action.",
+    "commonMistake": "Creating a dangling modifier where the action is attributed to an inanimate object or the wrong subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "modifiers (dangling participles)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_090",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is one of the few managers whom are dedicated to his work.",
+      "He is one of the few managers who is dedicated to his work.",
+      "He is one of the few managers who are dedicated to their work.",
+      "He is one of the few managers who is dedicated to their work."
+    ],
+    "correctAnswer": 2,
+    "answer": "He is one of the few managers who are dedicated to their work.",
+    "explanation": "In the phrase 'one of the [plural noun] who', the relative pronoun 'who' refers to the plural noun ('employees'). Therefore, it takes a plural verb ('are') and plural pronoun ('their').",
+    "grammarRule": "Relative Pronouns & Subject-Verb Agreement",
+    "shortcut": "'One of the [plural noun] who' always takes a plural verb.",
+    "commonMistake": "Looking at 'one' and mistakenly using singular verbs/pronouns ('is', 'his').",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "relative pronouns & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_091",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Whom did you say you were going to invite to the conference?",
+      "Whom did you say was going to invite to the conference?",
+      "Who did you say whom were going to invite to the conference?",
+      "Who did you say you were going to invite to the conference?"
+    ],
+    "correctAnswer": 0,
+    "answer": "Whom did you say you were going to invite to the conference?",
+    "explanation": "'Whom' is the object of the verb 'invite' (you were going to invite whom). 'Who' is used for subjects.",
+    "grammarRule": "Pronouns (Who vs. Whom)",
+    "shortcut": "If you can replace it with 'him' or 'her', use 'whom'. If you can replace it with 'he' or 'she', use 'who'.",
+    "commonMistake": "Using 'who' in the objective case, which is common in casual speech but incorrect in formal grammar.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "pronouns (who vs. whom)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_092",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "No sooner the alarm had rung than the workers rushed out.",
+      "No sooner did the bell rang than the workers rushed out.",
+      "No sooner had the bell rung when the workers rushed out.",
+      "No sooner had the bell rung than the workers rushed out."
+    ],
+    "correctAnswer": 3,
+    "answer": "No sooner had the bell rung than the workers rushed out.",
+    "explanation": "'No sooner' takes an inversion (had + subject + past participle) and pairs with 'than'. 'Did' requires a base verb ('ring'), not 'rang'.",
+    "grammarRule": "Conjunctions & Verb Forms",
+    "shortcut": "No sooner + Inversion + than.",
+    "commonMistake": "Pairing 'No sooner' with 'when' or using past tense verbs with the auxiliary 'did'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & verb forms"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_093",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Looking out the window, a shooting star was seen.",
+      "Looking out the window, I saw a shooting star.",
+      "Looking out the window, my eyes caught a shooting star.",
+      "Looking out the window, a shooting star flew past me."
+    ],
+    "correctAnswer": 1,
+    "answer": "Looking out the window, I saw a shooting star.",
+    "explanation": "The introductory participle phrase 'Walking down the street' must modify the subject immediately following it. 'I' was the one walking, not the bird or 'my eyes'.",
+    "grammarRule": "Modifiers (Dangling Participles)",
+    "shortcut": "The noun immediately after the comma must be the one performing the '-ing' action.",
+    "commonMistake": "Creating a dangling modifier where the action is attributed to an inanimate object or the wrong subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "modifiers (dangling participles)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_094",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is one of the few managers whom are dedicated to his work.",
+      "He is one of the few managers who is dedicated to his work.",
+      "He is one of the few managers who are dedicated to their work.",
+      "He is one of the few managers who is dedicated to their work."
+    ],
+    "correctAnswer": 2,
+    "answer": "He is one of the few managers who are dedicated to their work.",
+    "explanation": "In the phrase 'one of the [plural noun] who', the relative pronoun 'who' refers to the plural noun ('employees'). Therefore, it takes a plural verb ('are') and plural pronoun ('their').",
+    "grammarRule": "Relative Pronouns & Subject-Verb Agreement",
+    "shortcut": "'One of the [plural noun] who' always takes a plural verb.",
+    "commonMistake": "Looking at 'one' and mistakenly using singular verbs/pronouns ('is', 'his').",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "relative pronouns & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_095",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Who did you say you were going to invite to the conference?",
+      "Who did you say whom were going to invite to the conference?",
+      "Whom did you say was going to invite to the conference?",
+      "Whom did you say you were going to invite to the conference?"
+    ],
+    "correctAnswer": 3,
+    "answer": "Whom did you say you were going to invite to the conference?",
+    "explanation": "'Whom' is the object of the verb 'invite' (you were going to invite whom). 'Who' is used for subjects.",
+    "grammarRule": "Pronouns (Who vs. Whom)",
+    "shortcut": "If you can replace it with 'him' or 'her', use 'whom'. If you can replace it with 'he' or 'she', use 'who'.",
+    "commonMistake": "Using 'who' in the objective case, which is common in casual speech but incorrect in formal grammar.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "pronouns (who vs. whom)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_096",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "No sooner the alarm had rung than the workers rushed out.",
+      "No sooner had the bell rung when the workers rushed out.",
+      "No sooner did the bell rang than the workers rushed out.",
+      "No sooner had the bell rung than the workers rushed out."
+    ],
+    "correctAnswer": 3,
+    "answer": "No sooner had the bell rung than the workers rushed out.",
+    "explanation": "'No sooner' takes an inversion (had + subject + past participle) and pairs with 'than'. 'Did' requires a base verb ('ring'), not 'rang'.",
+    "grammarRule": "Conjunctions & Verb Forms",
+    "shortcut": "No sooner + Inversion + than.",
+    "commonMistake": "Pairing 'No sooner' with 'when' or using past tense verbs with the auxiliary 'did'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & verb forms"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_097",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Looking out the window, a shooting star flew past me.",
+      "Looking out the window, I saw a shooting star.",
+      "Looking out the window, a shooting star was seen.",
+      "Looking out the window, my eyes caught a shooting star."
+    ],
+    "correctAnswer": 1,
+    "answer": "Looking out the window, I saw a shooting star.",
+    "explanation": "The introductory participle phrase 'Walking down the street' must modify the subject immediately following it. 'I' was the one walking, not the bird or 'my eyes'.",
+    "grammarRule": "Modifiers (Dangling Participles)",
+    "shortcut": "The noun immediately after the comma must be the one performing the '-ing' action.",
+    "commonMistake": "Creating a dangling modifier where the action is attributed to an inanimate object or the wrong subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "modifiers (dangling participles)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_098",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "He is one of the few managers who is dedicated to their work.",
+      "He is one of the few managers who is dedicated to his work.",
+      "He is one of the few managers whom are dedicated to his work.",
+      "He is one of the few managers who are dedicated to their work."
+    ],
+    "correctAnswer": 3,
+    "answer": "He is one of the few managers who are dedicated to their work.",
+    "explanation": "In the phrase 'one of the [plural noun] who', the relative pronoun 'who' refers to the plural noun ('employees'). Therefore, it takes a plural verb ('are') and plural pronoun ('their').",
+    "grammarRule": "Relative Pronouns & Subject-Verb Agreement",
+    "shortcut": "'One of the [plural noun] who' always takes a plural verb.",
+    "commonMistake": "Looking at 'one' and mistakenly using singular verbs/pronouns ('is', 'his').",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "relative pronouns & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_099",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "Whom did you say was going to invite to the conference?",
+      "Who did you say whom were going to invite to the conference?",
+      "Whom did you say you were going to invite to the conference?",
+      "Who did you say you were going to invite to the conference?"
+    ],
+    "correctAnswer": 2,
+    "answer": "Whom did you say you were going to invite to the conference?",
+    "explanation": "'Whom' is the object of the verb 'invite' (you were going to invite whom). 'Who' is used for subjects.",
+    "grammarRule": "Pronouns (Who vs. Whom)",
+    "shortcut": "If you can replace it with 'him' or 'her', use 'whom'. If you can replace it with 'he' or 'she', use 'who'.",
+    "commonMistake": "Using 'who' in the objective case, which is common in casual speech but incorrect in formal grammar.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "pronouns (who vs. whom)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "SC_100",
+    "topic": "Grammar & Usage",
+    "subtopic": "Sentence Correction",
+    "difficulty": "Hard",
+    "question": "Select the grammatically correct sentence from the given options.",
+    "options": [
+      "No sooner did the bell rang than the workers rushed out.",
+      "No sooner the alarm had rung than the workers rushed out.",
+      "No sooner had the bell rung than the workers rushed out.",
+      "No sooner had the bell rung when the workers rushed out."
+    ],
+    "correctAnswer": 2,
+    "answer": "No sooner had the bell rung than the workers rushed out.",
+    "explanation": "'No sooner' takes an inversion (had + subject + past participle) and pairs with 'than'. 'Did' requires a base verb ('ring'), not 'rang'.",
+    "grammarRule": "Conjunctions & Verb Forms",
+    "shortcut": "No sooner + Inversion + than.",
+    "commonMistake": "Pairing 'No sooner' with 'when' or using past tense verbs with the auxiliary 'did'.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "sentence correction",
+      "conjunctions & verb forms"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  }
+]

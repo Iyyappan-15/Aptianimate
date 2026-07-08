@@ -1,0 +1,2603 @@
+[
+  {
+    "id": "ARI_AGE_001",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 30 years and their difference is 10 years. Find the older person's age.",
+    "options": [
+      "16 years",
+      "25 years",
+      "20 years",
+      "30 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "20 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_002",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 40 years and their difference is 8 years. Find the younger person's age.",
+    "options": [
+      "16 years",
+      "14 years",
+      "19 years",
+      "22 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "16 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_003",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 50 years and their difference is 14 years. Find the older person's age.",
+    "options": [
+      "37 years",
+      "42 years",
+      "28 years",
+      "32 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "32 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_004",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 60 years and their difference is 20 years. Find the younger person's age.",
+    "options": [
+      "20 years",
+      "18 years",
+      "26 years",
+      "23 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "20 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_005",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 70 years and their difference is 10 years. Find the older person's age.",
+    "options": [
+      "50 years",
+      "40 years",
+      "36 years",
+      "45 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "40 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_006",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 36 years and their difference is 12 years. Find the younger person's age.",
+    "options": [
+      "12 years",
+      "18 years",
+      "15 years",
+      "10 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_007",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 44 years and their difference is 8 years. Find the older person's age.",
+    "options": [
+      "22 years",
+      "36 years",
+      "31 years",
+      "26 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "26 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_008",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 52 years and their difference is 16 years. Find the younger person's age.",
+    "options": [
+      "21 years",
+      "24 years",
+      "18 years",
+      "16 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "18 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_009",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 64 years and their difference is 18 years. Find the older person's age.",
+    "options": [
+      "37 years",
+      "51 years",
+      "46 years",
+      "41 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "41 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_010",
+    "topic": "Ages",
+    "subtopic": "Sum and Difference of Ages",
+    "difficulty": "Medium",
+    "question": "The sum of ages of A and B is 72 years and their difference is 24 years. Find the younger person's age.",
+    "options": [
+      "27 years",
+      "24 years",
+      "22 years",
+      "30 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "24 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "sum",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_011",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of ages of P and Q is 2:3. If the sum of their ages is 30 years, find the age of P.",
+    "options": [
+      "18 years",
+      "16 years",
+      "12 years",
+      "9 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_012",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 3:5. If the sum of their ages is 40 years, find the age of P.",
+    "options": [
+      "15 years",
+      "25 years",
+      "19 years",
+      "12 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "15 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_013",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 4:7. If the sum of their ages is 55 years, find the age of P.",
+    "options": [
+      "35 years",
+      "17 years",
+      "24 years",
+      "20 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "20 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_014",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 5:7. If the sum of their ages is 60 years, find the age of P.",
+    "options": [
+      "29 years",
+      "22 years",
+      "25 years",
+      "35 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "25 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_015",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 3:4. If the sum of their ages is 35 years, find the age of P.",
+    "options": [
+      "15 years",
+      "12 years",
+      "19 years",
+      "20 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "15 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_016",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 2:5. If the sum of their ages is 35 years, find the age of P.",
+    "options": [
+      "7 years",
+      "14 years",
+      "10 years",
+      "25 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_017",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 7:9. If the sum of their ages is 80 years, find the age of P.",
+    "options": [
+      "39 years",
+      "45 years",
+      "35 years",
+      "32 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "35 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_018",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 5:8. If the sum of their ages is 65 years, find the age of P.",
+    "options": [
+      "29 years",
+      "22 years",
+      "25 years",
+      "40 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "25 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_019",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 4:5. If the sum of their ages is 45 years, find the age of P.",
+    "options": [
+      "25 years",
+      "17 years",
+      "24 years",
+      "20 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "20 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_020",
+    "topic": "Ages",
+    "subtopic": "Ratio of Ages",
+    "difficulty": "Medium",
+    "question": "The ratio of ages of P and Q is 3:7. If the sum of their ages is 50 years, find the age of P.",
+    "options": [
+      "19 years",
+      "35 years",
+      "12 years",
+      "15 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "15 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "present"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_021",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A father is 40 years old and his son is 12 years old. What was the ratio of their ages 5 years ago?",
+    "options": [
+      "35:7",
+      "35:9",
+      "34:6",
+      "37:7"
+    ],
+    "correctAnswer": 0,
+    "answer": "35:7",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "father",
+      "son",
+      "past"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_022",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A father is 45 years old and his son is 15 years old. What was the ratio of their ages 8 years ago?",
+    "options": [
+      "39:7",
+      "36:6",
+      "37:7",
+      "37:9"
+    ],
+    "correctAnswer": 2,
+    "answer": "37:7",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "father",
+      "son",
+      "past"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_023",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A father is 50 years old and his son is 20 years old. What was the ratio of their ages 10 years ago?",
+    "options": [
+      "42:10",
+      "40:12",
+      "39:9",
+      "40:10"
+    ],
+    "correctAnswer": 3,
+    "answer": "40:10",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "father",
+      "son",
+      "past"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_024",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A father is 36 years old and his son is 6 years old. What was the ratio of their ages 3 years ago?",
+    "options": [
+      "33:3",
+      "35:3",
+      "32:2",
+      "33:5"
+    ],
+    "correctAnswer": 0,
+    "answer": "33:3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "father",
+      "son",
+      "past"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_025",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A father is 42 years old and his son is 12 years old. What was the ratio of their ages 6 years ago?",
+    "options": [
+      "36:8",
+      "35:5",
+      "38:6",
+      "36:6"
+    ],
+    "correctAnswer": 3,
+    "answer": "36:6",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "father",
+      "son",
+      "past"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_026",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A is 25 years old and B is 15 years old. What will be the ratio of their ages after 5 years?",
+    "options": [
+      "30:22",
+      "31:19",
+      "3:2",
+      "25:15"
+    ],
+    "correctAnswer": 2,
+    "answer": "3:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_027",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A is 30 years old and B is 10 years old. What will be the ratio of their ages after 10 years?",
+    "options": [
+      "40:22",
+      "2:1",
+      "41:19",
+      "30:10"
+    ],
+    "correctAnswer": 1,
+    "answer": "2:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_028",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A is 20 years old and B is 8 years old. What will be the ratio of their ages after 4 years?",
+    "options": [
+      "2:1",
+      "20:8",
+      "24:14",
+      "25:11"
+    ],
+    "correctAnswer": 0,
+    "answer": "2:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_029",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Medium",
+    "question": "A is 35 years old and B is 25 years old. What will be the ratio of their ages after 5 years?",
+    "options": [
+      "35:25",
+      "40:32",
+      "4:3",
+      "41:29"
+    ],
+    "correctAnswer": 2,
+    "answer": "4:3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_030",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A is 28 years old and B is 18 years old. What will be the ratio of their ages after 7 years?",
+    "options": [
+      "28:18",
+      "36:24",
+      "35:27",
+      "7:5"
+    ],
+    "correctAnswer": 3,
+    "answer": "7:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_031",
+    "topic": "Ages",
+    "subtopic": "Ratio of Present and Future Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of ages of A and B is 3:1. After 10 years, the ratio becomes 2:1. Find B's present age.",
+    "options": [
+      "14 years",
+      "5 years",
+      "30 years",
+      "10 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "10 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "future equation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_032",
+    "topic": "Ages",
+    "subtopic": "Ratio of Present and Future Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of ages of A and B is 5:3. After 4 years, the ratio becomes 3:2. Find B's present age.",
+    "options": [
+      "7 years",
+      "20 years",
+      "16 years",
+      "12 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "future equation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_033",
+    "topic": "Ages",
+    "subtopic": "Ratio of Present and Future Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of ages of A and B is 4:3. After 5 years, the ratio becomes 5:4. Find B's present age.",
+    "options": [
+      "20 years",
+      "19 years",
+      "15 years",
+      "10 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "15 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "future equation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_034",
+    "topic": "Ages",
+    "subtopic": "Ratio of Present and Future Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of ages of A and B is 7:4. After 8 years, the ratio becomes 9:6. Find B's present age.",
+    "options": [
+      "16 years",
+      "20 years",
+      "11 years",
+      "28 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "16 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "future equation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_035",
+    "topic": "Ages",
+    "subtopic": "Ratio of Present and Future Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of ages of A and B is 9:5. After 6 years, the ratio becomes 7:4. Find B's present age.",
+    "options": [
+      "94 years",
+      "90 years",
+      "85 years",
+      "162 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "90 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "future equation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_097",
+    "topic": "Ages",
+    "subtopic": "Ratio of Present and Past Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of ages of A and B is 7:3. 6 years ago, the ratio was 5:2. Find A's present age.",
+    "options": [
+      "122 years",
+      "132 years",
+      "126 years",
+      "54 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "126 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "past equation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_098",
+    "topic": "Ages",
+    "subtopic": "Three Person Ages",
+    "difficulty": "Hard",
+    "question": "Ages of A, B, and C are 15, 20, and 25 years. Find the age of the oldest after 5 years.",
+    "options": [
+      "35 years",
+      "27 years",
+      "38 years",
+      "30 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "30 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "three person"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_099",
+    "topic": "Ages",
+    "subtopic": "Three Person Ages",
+    "difficulty": "Hard",
+    "question": "Ages of A, B, and C are 10, 18, and 30 years. Find the age of the youngest after 8 years.",
+    "options": [
+      "23 years",
+      "18 years",
+      "15 years",
+      "26 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "18 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "three person"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_100",
+    "topic": "Ages",
+    "subtopic": "Three Person Ages",
+    "difficulty": "Hard",
+    "question": "Ages of A, B, and C are 12, 24, and 36 years. Find the middle person's age after 6 years.",
+    "options": [
+      "35 years",
+      "27 years",
+      "30 years",
+      "38 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "30 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "three person"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_036",
+    "topic": "Ages",
+    "subtopic": "Three Person Ages",
+    "difficulty": "Medium",
+    "question": "Ages of A, B, and C are 20, 30, and 40 years. Find the sum of their ages after 10 years.",
+    "options": [
+      "125 years",
+      "117 years",
+      "128 years",
+      "120 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "120 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "three person"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_037",
+    "topic": "Ages",
+    "subtopic": "Three Person Ages",
+    "difficulty": "Medium",
+    "question": "Ages of A, B, and C are 8, 16, and 32 years. Find the sum of their ages after 4 years.",
+    "options": [
+      "68 years",
+      "76 years",
+      "73 years",
+      "65 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "68 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "three person"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_038",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "A father's age is 3 times his son's age. 10 years hence, the father's age will be twice his son's age. Find the present age of the son.",
+    "options": [
+      "15 years",
+      "12 years",
+      "10 years",
+      "8 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "father son"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_039",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "The sum of the ages of a mother and her daughter is 50. Five years ago the mother's age was 5 times her daughter's age. Find the mother's current age.",
+    "options": [
+      "45 years",
+      "35 years",
+      "40 years",
+      "38 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "40 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "mother daughter"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_040",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of ages of two brothers is 3:5. After 6 years, the ratio becomes 3:4. Find the sum of their present ages.",
+    "options": [
+      "24 years",
+      "20 years",
+      "28 years",
+      "30 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "24 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "ratio",
+      "brothers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_041",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "15 years ago the ratio of ages of A to B was 3:5. After 15 years the ratio will be 4:5. Find the current age of A.",
+    "options": [
+      "45 years",
+      "36 years",
+      "42 years",
+      "39 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "42 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "past and future"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_042",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "If 6 years are subtracted from the present age of Ravi and the remainder is divided by 18, then the present age of his grandson Anand is obtained. If Anand is 2 years younger to Maya whose age is 5 years, find the age of Ravi.",
+    "options": [
+      "78 years",
+      "84 years",
+      "96 years",
+      "90 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "96 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "chain ages"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_043",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 5 persons is 20 years. A new person aged 25 years joins the group. Find the new average age.",
+    "options": [
+      "22.833333333333332 years",
+      "20.833333333333332 years",
+      "20.333333333333332 years",
+      "21.833333333333332 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "20.833333333333332 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_044",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 4 persons is 18 years. A new person aged 22 years joins the group. Find the new average age.",
+    "options": [
+      "18.3 years",
+      "20.8 years",
+      "18.8 years",
+      "19.8 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "18.8 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_045",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 6 persons is 30 years. A new person aged 35 years joins the group. Find the new average age.",
+    "options": [
+      "30.214285714285715 years",
+      "32.714285714285715 years",
+      "30.714285714285715 years",
+      "31.714285714285715 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "30.714285714285715 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_046",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 10 persons is 40 years. A new person aged 42 years joins the group. Find the new average age.",
+    "options": [
+      "40.18181818181818 years",
+      "41.18181818181818 years",
+      "39.68181818181818 years",
+      "42.18181818181818 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "40.18181818181818 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_047",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 8 persons is 25 years. A new person aged 28 years joins the group. Find the new average age.",
+    "options": [
+      "27.333333333333332 years",
+      "25.333333333333332 years",
+      "24.833333333333332 years",
+      "26.333333333333332 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "25.333333333333332 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_048",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 3 persons is 15 years. A new person aged 18 years joins the group. Find the new average age.",
+    "options": [
+      "15.75 years",
+      "16.75 years",
+      "17.75 years",
+      "15.25 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "15.75 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_049",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 7 persons is 22 years. A new person aged 26 years joins the group. Find the new average age.",
+    "options": [
+      "22 years",
+      "23.5 years",
+      "22.5 years",
+      "24.5 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "22.5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_050",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 12 persons is 35 years. A new person aged 38 years joins the group. Find the new average age.",
+    "options": [
+      "37.23076923076923 years",
+      "34.73076923076923 years",
+      "36.23076923076923 years",
+      "35.23076923076923 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "35.23076923076923 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_051",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 5 persons is 28 years. A new person aged 32 years joins the group. Find the new average age.",
+    "options": [
+      "30.666666666666668 years",
+      "28.666666666666668 years",
+      "29.666666666666668 years",
+      "28.166666666666668 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "28.666666666666668 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_052",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Easy",
+    "question": "The average age of a group of 9 persons is 16 years. A new person aged 19 years joins the group. Find the new average age.",
+    "options": [
+      "16.3 years",
+      "18.3 years",
+      "17.3 years",
+      "15.8 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "16.3 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "group",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_053",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 30 students is 14 years. A teacher aged 34 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "14.15 years",
+      "14 years",
+      "14.65 years",
+      "15.65 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "14.65 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_054",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 25 students is 16 years. A teacher aged 40 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "17.92 years",
+      "16.42 years",
+      "16.92 years",
+      "16 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "16.92 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_055",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 40 students is 15 years. A teacher aged 30 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "15.37 years",
+      "15 years",
+      "16.37 years",
+      "14.87 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "15.37 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_056",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 20 students is 12 years. A teacher aged 28 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "12.76 years",
+      "13.76 years",
+      "12 years",
+      "12.26 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "12.76 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_057",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 35 students is 18 years. A teacher aged 38 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "18 years",
+      "18.56 years",
+      "19.56 years",
+      "18.06 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "18.56 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_058",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 50 students is 15 years. A teacher aged 25 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "14.70 years",
+      "16.20 years",
+      "15 years",
+      "15.20 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "15.20 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_059",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 28 students is 13 years. A teacher aged 31 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "13.12 years",
+      "13 years",
+      "14.62 years",
+      "13.62 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "13.62 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_060",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 45 students is 17 years. A teacher aged 35 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "16.89 years",
+      "17 years",
+      "18.39 years",
+      "17.39 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "17.39 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_061",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 22 students is 14 years. A teacher aged 28 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "14 years",
+      "14.61 years",
+      "14.11 years",
+      "15.61 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "14.61 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_062",
+    "topic": "Ages",
+    "subtopic": "Average Age",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 32 students is 12 years. A teacher aged 30 years joins the class. Find the new average age of the class including the teacher.",
+    "options": [
+      "12.55 years",
+      "13.55 years",
+      "12 years",
+      "12.05 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "12.55 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "teacher",
+      "class",
+      "average"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_063",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "The ages of two persons A and B differ by 20 years. If 5 years ago, A was 5 times as old as B, find their present ages.",
+    "options": [
+      "A: 40, B: 20",
+      "A: 30, B: 10",
+      "A: 35, B: 15",
+      "A: 25, B: 5"
+    ],
+    "correctAnswer": 1,
+    "answer": "A: 30, B: 10",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "trick"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_064",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "A is twice as old as B was when A was as old as B is now. If A is 30 years old, how old is B?",
+    "options": [
+      "15 years",
+      "25 years",
+      "20 years",
+      "22.5 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "22.5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "complex ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_065",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "The ages of three friends are in the ratio 4:7:9. Eight years ago the sum of their ages was 56. Find their present ages.",
+    "options": [
+      "20, 35, 45",
+      "8, 14, 18",
+      "12, 21, 27",
+      "16, 28, 36"
+    ],
+    "correctAnswer": 3,
+    "answer": "16, 28, 36",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "three person ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_066",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "Present ages of Anu and Binu are in the ratio 4:5. Ten years hence, the ratio of their ages will be 6:7. Find Anu's present age.",
+    "options": [
+      "20 years",
+      "24 years",
+      "25 years",
+      "16 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "20 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "linear equations"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_067",
+    "topic": "Ages",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "The product of the ages of Anita and Nikita is 240. If twice the age of Nikita is more than Anita's age by 4, find Nikita's age.",
+    "options": [
+      "12",
+      "10",
+      "16",
+      "14"
+    ],
+    "correctAnswer": 0,
+    "answer": "12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "product of ages"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_068",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 40 years old and his son is 12 years old. After 8 years, find the ratio of their ages.",
+    "options": [
+      "40:12",
+      "13:5",
+      "48:20",
+      "12:5"
+    ],
+    "correctAnswer": 3,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_069",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 42 years old and his son is 14 years old. After 6 years, find the ratio of their ages.",
+    "options": [
+      "42:14",
+      "12:5",
+      "13:5",
+      "48:20"
+    ],
+    "correctAnswer": 1,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_070",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 45 years old and his son is 15 years old. After 5 years, find the ratio of their ages.",
+    "options": [
+      "5:2",
+      "45:15",
+      "50:20",
+      "6:2"
+    ],
+    "correctAnswer": 0,
+    "answer": "5:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_071",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 48 years old and his son is 16 years old. After 4 years, find the ratio of their ages.",
+    "options": [
+      "48:16",
+      "14:5",
+      "52:20",
+      "13:5"
+    ],
+    "correctAnswer": 3,
+    "answer": "13:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_072",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 50 years old and his son is 18 years old. After 7 years, find the ratio of their ages.",
+    "options": [
+      "50:18",
+      "57:25",
+      "57:25",
+      "58:25"
+    ],
+    "correctAnswer": 1,
+    "answer": "57:25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_073",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 40 years old and his son is 12 years old. After 8 years, find the ratio of their ages.",
+    "options": [
+      "48:20",
+      "40:12",
+      "13:5",
+      "12:5"
+    ],
+    "correctAnswer": 3,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_074",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 42 years old and his son is 14 years old. After 6 years, find the ratio of their ages.",
+    "options": [
+      "42:14",
+      "48:20",
+      "13:5",
+      "12:5"
+    ],
+    "correctAnswer": 3,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_075",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 45 years old and his son is 15 years old. After 5 years, find the ratio of their ages.",
+    "options": [
+      "50:20",
+      "45:15",
+      "6:2",
+      "5:2"
+    ],
+    "correctAnswer": 3,
+    "answer": "5:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_076",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 48 years old and his son is 16 years old. After 4 years, find the ratio of their ages.",
+    "options": [
+      "13:5",
+      "48:16",
+      "52:20",
+      "14:5"
+    ],
+    "correctAnswer": 0,
+    "answer": "13:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_077",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 50 years old and his son is 18 years old. After 7 years, find the ratio of their ages.",
+    "options": [
+      "50:18",
+      "58:25",
+      "57:25",
+      "57:25"
+    ],
+    "correctAnswer": 2,
+    "answer": "57:25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_078",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 40 years old and his son is 12 years old. After 8 years, find the ratio of their ages.",
+    "options": [
+      "13:5",
+      "12:5",
+      "48:20",
+      "40:12"
+    ],
+    "correctAnswer": 1,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_079",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 42 years old and his son is 14 years old. After 6 years, find the ratio of their ages.",
+    "options": [
+      "13:5",
+      "42:14",
+      "12:5",
+      "48:20"
+    ],
+    "correctAnswer": 2,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_080",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 45 years old and his son is 15 years old. After 5 years, find the ratio of their ages.",
+    "options": [
+      "6:2",
+      "50:20",
+      "5:2",
+      "45:15"
+    ],
+    "correctAnswer": 2,
+    "answer": "5:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_081",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 48 years old and his son is 16 years old. After 4 years, find the ratio of their ages.",
+    "options": [
+      "52:20",
+      "14:5",
+      "13:5",
+      "48:16"
+    ],
+    "correctAnswer": 2,
+    "answer": "13:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_082",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 50 years old and his son is 18 years old. After 7 years, find the ratio of their ages.",
+    "options": [
+      "57:25",
+      "58:25",
+      "57:25",
+      "50:18"
+    ],
+    "correctAnswer": 0,
+    "answer": "57:25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_083",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 40 years old and his son is 12 years old. After 8 years, find the ratio of their ages.",
+    "options": [
+      "40:12",
+      "48:20",
+      "13:5",
+      "12:5"
+    ],
+    "correctAnswer": 3,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_084",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 42 years old and his son is 14 years old. After 6 years, find the ratio of their ages.",
+    "options": [
+      "12:5",
+      "13:5",
+      "42:14",
+      "48:20"
+    ],
+    "correctAnswer": 0,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_085",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 45 years old and his son is 15 years old. After 5 years, find the ratio of their ages.",
+    "options": [
+      "50:20",
+      "5:2",
+      "45:15",
+      "6:2"
+    ],
+    "correctAnswer": 1,
+    "answer": "5:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_086",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 48 years old and his son is 16 years old. After 4 years, find the ratio of their ages.",
+    "options": [
+      "13:5",
+      "52:20",
+      "14:5",
+      "48:16"
+    ],
+    "correctAnswer": 0,
+    "answer": "13:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_087",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 50 years old and his son is 18 years old. After 7 years, find the ratio of their ages.",
+    "options": [
+      "57:25",
+      "57:25",
+      "58:25",
+      "50:18"
+    ],
+    "correctAnswer": 0,
+    "answer": "57:25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_088",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 40 years old and his son is 12 years old. After 8 years, find the ratio of their ages.",
+    "options": [
+      "48:20",
+      "40:12",
+      "13:5",
+      "12:5"
+    ],
+    "correctAnswer": 3,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_089",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 42 years old and his son is 14 years old. After 6 years, find the ratio of their ages.",
+    "options": [
+      "42:14",
+      "13:5",
+      "12:5",
+      "48:20"
+    ],
+    "correctAnswer": 2,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_090",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 45 years old and his son is 15 years old. After 5 years, find the ratio of their ages.",
+    "options": [
+      "45:15",
+      "50:20",
+      "6:2",
+      "5:2"
+    ],
+    "correctAnswer": 3,
+    "answer": "5:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_091",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 48 years old and his son is 16 years old. After 4 years, find the ratio of their ages.",
+    "options": [
+      "13:5",
+      "48:16",
+      "14:5",
+      "52:20"
+    ],
+    "correctAnswer": 0,
+    "answer": "13:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_092",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 50 years old and his son is 18 years old. After 7 years, find the ratio of their ages.",
+    "options": [
+      "57:25",
+      "58:25",
+      "57:25",
+      "50:18"
+    ],
+    "correctAnswer": 0,
+    "answer": "57:25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_093",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 40 years old and his son is 12 years old. After 8 years, find the ratio of their ages.",
+    "options": [
+      "48:20",
+      "13:5",
+      "12:5",
+      "40:12"
+    ],
+    "correctAnswer": 2,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_094",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 42 years old and his son is 14 years old. After 6 years, find the ratio of their ages.",
+    "options": [
+      "12:5",
+      "48:20",
+      "42:14",
+      "13:5"
+    ],
+    "correctAnswer": 0,
+    "answer": "12:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_095",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 45 years old and his son is 15 years old. After 5 years, find the ratio of their ages.",
+    "options": [
+      "5:2",
+      "6:2",
+      "50:20",
+      "45:15"
+    ],
+    "correctAnswer": 0,
+    "answer": "5:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AGE_096",
+    "topic": "Ages",
+    "subtopic": "Past/Future Age Problems",
+    "difficulty": "Easy",
+    "question": "A father is 48 years old and his son is 16 years old. After 4 years, find the ratio of their ages.",
+    "options": [
+      "13:5",
+      "52:20",
+      "48:16",
+      "14:5"
+    ],
+    "correctAnswer": 0,
+    "answer": "13:5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ages",
+      "future",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  }
+]

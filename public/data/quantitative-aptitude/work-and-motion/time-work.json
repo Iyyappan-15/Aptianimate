@@ -1,0 +1,2598 @@
+[
+  {
+    "id": "WM_TW_001",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 10 days and B can complete the same work in 15 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "13 days",
+      "6 days",
+      "8 days",
+      "5 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "6 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_002",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 12 days and B can complete the same work in 15 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "13 days",
+      "21/3 days",
+      "20/3 days",
+      "18/3 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "20/3 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_003",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 20 days and B can complete the same work in 30 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "14 days",
+      "11 days",
+      "12 days",
+      "28 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_004",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 24 days and B can complete the same work in 36 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "34 days",
+      "72/5 days",
+      "70/5 days",
+      "73/5 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "72/5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_005",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 15 days and B can complete the same work in 30 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "9 days",
+      "28 days",
+      "10 days",
+      "12 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_006",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 18 days and B can complete the same work in 36 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "14 days",
+      "12 days",
+      "34 days",
+      "11 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_007",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 14 days and B can complete the same work in 35 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "9 days",
+      "10 days",
+      "33 days",
+      "12 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "10 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_008",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 20 days and B can complete the same work in 25 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "23 days",
+      "100/9 days",
+      "101/9 days",
+      "98/9 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "100/9 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_009",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 15 days and B can complete the same work in 20 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "58/7 days",
+      "18 days",
+      "61/7 days",
+      "60/7 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "60/7 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_010",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can complete a piece of work in 8 days and B can complete the same work in 12 days. How many days will they take to complete the work if they work together?",
+    "options": [
+      "22/5 days",
+      "24/5 days",
+      "25/5 days",
+      "10 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "24/5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_011",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is twice as good a workman as B. If B alone can complete the work in 15 days, in how many days can A and B working together complete it?",
+    "options": [
+      "4 days",
+      "7 days",
+      "7 days",
+      "5 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_012",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is thrice as good a workman as B. If B alone can complete the work in 20 days, in how many days can A and B working together complete it?",
+    "options": [
+      "7 days",
+      "6 days",
+      "5 days",
+      "4 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_013",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is twice as good a workman as B. If B alone can complete the work in 12 days, in how many days can A and B working together complete it?",
+    "options": [
+      "6 days",
+      "3 days",
+      "6 days",
+      "4 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "4 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_014",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is 4 times as good a workman as B. If B alone can complete the work in 25 days, in how many days can A and B working together complete it?",
+    "options": [
+      "6 days",
+      "5 days",
+      "7 days",
+      "4 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_015",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is thrice as good a workman as B. If B alone can complete the work in 16 days, in how many days can A and B working together complete it?",
+    "options": [
+      "4 days",
+      "6 days",
+      "5 days",
+      "3 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "4 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_016",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is 1.5 times as good a workman as B. If B alone can complete the work in 10 days, in how many days can A and B working together complete it?",
+    "options": [
+      "6 days",
+      "3 days",
+      "4 days",
+      "6 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "4 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_017",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is 2.5 times as good a workman as B. If B alone can complete the work in 14 days, in how many days can A and B working together complete it?",
+    "options": [
+      "6 days",
+      "3 days",
+      "4 days",
+      "5 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "4 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_018",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is twice as good a workman as B. If B alone can complete the work in 18 days, in how many days can A and B working together complete it?",
+    "options": [
+      "5 days",
+      "9 days",
+      "6 days",
+      "8 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "6 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_019",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is thrice as good a workman as B. If B alone can complete the work in 24 days, in how many days can A and B working together complete it?",
+    "options": [
+      "6 days",
+      "5 days",
+      "8 days",
+      "8 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "6 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_020",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Easy",
+    "question": "A is 4 times as good a workman as B. If B alone can complete the work in 30 days, in how many days can A and B working together complete it?",
+    "options": [
+      "6 days",
+      "5 days",
+      "7 days",
+      "8 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "6 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency",
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_021",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 12 men can complete a piece of work in 10 days, in how many days will 8 men complete the same work?",
+    "options": [
+      "17 days",
+      "12 days",
+      "15 days",
+      "22 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "15 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_022",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 20 men can complete a piece of work in 15 days, in how many days will 25 men complete the same work?",
+    "options": [
+      "12 days",
+      "18 days",
+      "9 days",
+      "14 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_023",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 10 men can complete a piece of work in 12 days, in how many days will 15 men complete the same work?",
+    "options": [
+      "5 days",
+      "10 days",
+      "8 days",
+      "12 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "8 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_024",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 15 men can complete a piece of work in 16 days, in how many days will 20 men complete the same work?",
+    "options": [
+      "9 days",
+      "18 days",
+      "12 days",
+      "14 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_025",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 8 men can complete a piece of work in 14 days, in how many days will 7 men complete the same work?",
+    "options": [
+      "16 days",
+      "13 days",
+      "18 days",
+      "24 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "16 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_026",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 16 men can complete a piece of work in 12 days, in how many days will 8 men complete the same work?",
+    "options": [
+      "36 days",
+      "24 days",
+      "26 days",
+      "21 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "24 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_027",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 25 men can complete a piece of work in 20 days, in how many days will 50 men complete the same work?",
+    "options": [
+      "15 days",
+      "7 days",
+      "10 days",
+      "12 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_028",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 18 men can complete a piece of work in 10 days, in how many days will 12 men complete the same work?",
+    "options": [
+      "12 days",
+      "17 days",
+      "15 days",
+      "22 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "15 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_029",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 30 men can complete a piece of work in 15 days, in how many days will 45 men complete the same work?",
+    "options": [
+      "10 days",
+      "7 days",
+      "12 days",
+      "15 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_030",
+    "topic": "Time & Work",
+    "subtopic": "Man-Days (MDH Rule)",
+    "difficulty": "Easy",
+    "question": "If 14 men can complete a piece of work in 20 days, in how many days will 28 men complete the same work?",
+    "options": [
+      "10 days",
+      "7 days",
+      "15 days",
+      "12 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_031",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 4 days. B can do it in 12 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "6 days",
+      "3 days",
+      "4 days",
+      "5 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "3 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_032",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 5 days. B can do it in 20 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "5 days",
+      "4 days",
+      "7 days",
+      "6 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "4 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_033",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 6 days. B can do it in 30 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "6 days",
+      "8 days",
+      "7 days",
+      "5 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_034",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 8 days. B can do it in 24 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "8 days",
+      "9 days",
+      "6 days",
+      "7 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "6 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_035",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 10 days. B can do it in 40 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "11 days",
+      "10 days",
+      "8 days",
+      "9 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "8 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_036",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 12 days. B can do it in 36 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "9 days",
+      "11 days",
+      "12 days",
+      "10 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "9 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_037",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 15 days. B can do it in 60 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "13 days",
+      "14 days",
+      "15 days",
+      "12 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_038",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 20 days. B can do it in 80 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "18 days",
+      "16 days",
+      "17 days",
+      "19 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "16 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_039",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 25 days. B can do it in 100 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "20 days",
+      "23 days",
+      "21 days",
+      "22 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "20 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_040",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Easy",
+    "question": "A can do a piece of work in 30 days. B can do it in 120 days. If they work together, in how many days will the work be completed?",
+    "options": [
+      "25 days",
+      "24 days",
+      "27 days",
+      "26 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "24 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "basic",
+      "together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_041",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 10, 12, and 15 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "4 days",
+      "6 days",
+      "3 days",
+      "5 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "4 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_042",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 15, 20, and 30 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "21/3 days",
+      "23/3 days",
+      "7 days",
+      "20/3 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "20/3 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_043",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 20, 24, and 30 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "7 days",
+      "10 days",
+      "8 days",
+      "10 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "8 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_044",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 12, 15, and 20 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "4 days",
+      "5 days",
+      "6 days",
+      "7 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_045",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 24, 30, and 40 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "10 days",
+      "12 days",
+      "9 days",
+      "12 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_046",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 10, 20, and 30 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "63/11 days",
+      "5 days",
+      "61/11 days",
+      "60/11 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "60/11 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_047",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 8, 12, and 24 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "4 days",
+      "4 days",
+      "6 days",
+      "3 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "4 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_048",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 6, 8, and 12 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "11/3 days",
+      "3 days",
+      "9/3 days",
+      "8/3 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "8/3 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_049",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 18, 24, and 36 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "7 days",
+      "9 days",
+      "8 days",
+      "10 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "8 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_050",
+    "topic": "Time & Work",
+    "subtopic": "Basic Work",
+    "difficulty": "Medium",
+    "question": "A, B, and C can complete a piece of work in 30, 45, and 90 days respectively. In how many days will they complete the work if they all work together?",
+    "options": [
+      "14 days",
+      "15 days",
+      "17 days",
+      "15 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "15 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people",
+      "working together"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_051",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 50% more efficient than B. If A alone can complete a work in 15 days, in how many days can B alone complete the same work?",
+    "options": [
+      "24.5 days",
+      "20 days",
+      "22.5 days",
+      "18.5 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "22.5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_052",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 20% more efficient than B. If A alone can complete a work in 24 days, in how many days can B alone complete the same work?",
+    "options": [
+      "30.799999999999997 days",
+      "24.799999999999997 days",
+      "29 days",
+      "28.799999999999997 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "28.799999999999997 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_053",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 25% more efficient than B. If A alone can complete a work in 20 days, in how many days can B alone complete the same work?",
+    "options": [
+      "27 days",
+      "25 days",
+      "25 days",
+      "21 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "25 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_054",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 40% more efficient than B. If A alone can complete a work in 28 days, in how many days can B alone complete the same work?",
+    "options": [
+      "35.199999999999996 days",
+      "33 days",
+      "41.199999999999996 days",
+      "39.199999999999996 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "39.199999999999996 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_055",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 60% more efficient than B. If A alone can complete a work in 32 days, in how many days can B alone complete the same work?",
+    "options": [
+      "53.2 days",
+      "47.2 days",
+      "37 days",
+      "51.2 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "51.2 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_056",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 25% more efficient than B. If A alone can complete a work in 15 days, in how many days can B alone complete the same work?",
+    "options": [
+      "20.75 days",
+      "14.75 days",
+      "20 days",
+      "18.75 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "18.75 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_057",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 50% more efficient than B. If A alone can complete a work in 20 days, in how many days can B alone complete the same work?",
+    "options": [
+      "30 days",
+      "26 days",
+      "25 days",
+      "32 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "30 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_058",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 30% more efficient than B. If A alone can complete a work in 26 days, in how many days can B alone complete the same work?",
+    "options": [
+      "35.800000000000004 days",
+      "29.800000000000004 days",
+      "31 days",
+      "33.800000000000004 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "33.800000000000004 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_059",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 75% more efficient than B. If A alone can complete a work in 35 days, in how many days can B alone complete the same work?",
+    "options": [
+      "57.25 days",
+      "63.25 days",
+      "40 days",
+      "61.25 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "61.25 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_060",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Medium",
+    "question": "A is 20% more efficient than B. If A alone can complete a work in 18 days, in how many days can B alone complete the same work?",
+    "options": [
+      "23 days",
+      "23.599999999999998 days",
+      "21.599999999999998 days",
+      "17.599999999999998 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "21.599999999999998 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "percentage",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_061",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 10 days and 15 days respectively. A started the work alone and then left after 2 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "14 days",
+      "13 days",
+      "12 days",
+      "11 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_062",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 12 days and 16 days respectively. A started the work alone and then left after 3 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "13 days",
+      "14 days",
+      "11 days",
+      "12 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_063",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 15 days and 20 days respectively. A started the work alone and then left after 4 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "42/3 days",
+      "45/3 days",
+      "44/3 days",
+      "16 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "44/3 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_064",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 20 days and 30 days respectively. A started the work alone and then left after 5 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "43/2 days",
+      "25 days",
+      "45/2 days",
+      "46/2 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "45/2 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_065",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 24 days and 36 days respectively. A started the work alone and then left after 6 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "30 days",
+      "27 days",
+      "29 days",
+      "26 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "27 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_066",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 18 days and 24 days respectively. A started the work alone and then left after 4 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "57/3 days",
+      "20 days",
+      "54/3 days",
+      "56/3 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "56/3 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_067",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 16 days and 24 days respectively. A started the work alone and then left after 4 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "20 days",
+      "20 days",
+      "18 days",
+      "17 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "18 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_068",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 25 days and 30 days respectively. A started the work alone and then left after 5 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "23 days",
+      "26 days",
+      "25 days",
+      "24 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "24 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_069",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 30 days and 40 days respectively. A started the work alone and then left after 8 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "32 days",
+      "88/3 days",
+      "89/3 days",
+      "86/3 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "88/3 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_070",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Midway",
+    "difficulty": "Medium",
+    "question": "A and B can do a piece of work in 14 days and 21 days respectively. A started the work alone and then left after 3 days. How many days will B take to finish the remaining work?",
+    "options": [
+      "34/2 days",
+      "31/2 days",
+      "33/2 days",
+      "18 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "33/2 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "remaining work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_071",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 3 men OR 4 women can do a piece of work in 43 days, in how many days will 7 men AND 5 women do it?",
+    "options": [
+      "12 days",
+      "16 days",
+      "18 days",
+      "10 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_072",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 5 men OR 8 women can do a piece of work in 34 days, in how many days will 4 men AND 18 women do it?",
+    "options": [
+      "10 days",
+      "16 days",
+      "14 days",
+      "8 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_073",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 2 men OR 3 women can do a piece of work in 96 days, in how many days will 6 men AND 7 women do it?",
+    "options": [
+      "22 days",
+      "18 days",
+      "16 days",
+      "24 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "18 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_074",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 4 men OR 6 women can do a piece of work in 24 days, in how many days will 3 men AND 1 women do it?",
+    "options": [
+      "30 days",
+      "38 days",
+      "36 days",
+      "32 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "32 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_075",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 6 men OR 9 women can do a piece of work in 40 days, in how many days will 8 men AND 12 women do it?",
+    "options": [
+      "36 days",
+      "28 days",
+      "30 days",
+      "34 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "30 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_076",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 3 men OR 5 women can do a piece of work in 15 days, in how many days will 4 men AND 10 women do it?",
+    "options": [
+      "6 days",
+      "12 days",
+      "10 days",
+      "4 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "6 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_077",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 2 men OR 5 women can do a piece of work in 30 days, in how many days will 4 men AND 10 women do it?",
+    "options": [
+      "19 days",
+      "13 days",
+      "15 days",
+      "21 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "15 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_078",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 4 men OR 7 women can do a piece of work in 29 days, in how many days will 7 men AND 5 women do it?",
+    "options": [
+      "14 days",
+      "12 days",
+      "20 days",
+      "18 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "14 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_079",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 1 men OR 2 women can do a piece of work in 30 days, in how many days will 2 men AND 4 women do it?",
+    "options": [
+      "15 days",
+      "19 days",
+      "21 days",
+      "13 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "15 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_080",
+    "topic": "Time & Work",
+    "subtopic": "Men and Women Work",
+    "difficulty": "Medium",
+    "question": "If 3 men OR 6 women can do a piece of work in 18 days, in how many days will 6 men AND 12 women do it?",
+    "options": [
+      "13 days",
+      "9 days",
+      "7 days",
+      "15 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "9 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "men and women",
+      "OR condition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_081",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Hard",
+    "question": "A is thrice as efficient as B and B is twice as efficient as C. If A, B, and C together can finish a work in 10 days, in how many days can A alone finish the work?",
+    "options": [
+      "15 days",
+      "45 days",
+      "20 days",
+      "30 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "15 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "three people efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_082",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Hard",
+    "question": "A is 50% more efficient than B, and C is half as efficient as A. If A and B together can complete a work in 12 days, how long will C alone take to complete it?",
+    "options": [
+      "30 days",
+      "45 days",
+      "60 days",
+      "40 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "40 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency fractions"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_083",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Hard",
+    "question": "Two workers A and B are engaged to do a piece of work. A working alone would take 8 hours more to complete the work than when working together. B working alone would take 4.5 hours more than when working together. The time required to finish the work together is:",
+    "options": [
+      "5 hours",
+      "4 hours",
+      "6 hours",
+      "8 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "6 hours",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "efficiency trick",
+      "time difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_084",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Hard",
+    "question": "A can do a piece of work in 40 days. He works at it for 8 days and then B finishes it in 16 days. How long will they together take to complete the work?",
+    "options": [
+      "16 days",
+      "12 days",
+      "13 1/3 days",
+      "15 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "13 1/3 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving work",
+      "efficiency"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_085",
+    "topic": "Time & Work",
+    "subtopic": "Efficiency",
+    "difficulty": "Hard",
+    "question": "A takes three times as long as B and C together to do a job. B takes four times as long as A and C together to do the work. If all three work together, they can complete the job in 24 days. In how many days can A alone complete the job?",
+    "options": [
+      "72 days",
+      "80 days",
+      "96 days",
+      "120 days"
+    ],
+    "correctAnswer": 2,
+    "answer": "96 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "complex efficiency",
+      "ratios"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_086",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Before Completion",
+    "difficulty": "Hard",
+    "question": "A and B can complete a work in 10 and 15 days respectively. They began the work together, but A left 2 days before the completion of the work. In how many days was the whole work completed?",
+    "options": [
+      "36/5 days",
+      "39/5 days",
+      "13 days",
+      "34/5 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "36/5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving before completion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_087",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Before Completion",
+    "difficulty": "Hard",
+    "question": "A and B can complete a work in 12 and 16 days respectively. They began the work together, but A left 3 days before the completion of the work. In how many days was the whole work completed?",
+    "options": [
+      "58/7 days",
+      "13 days",
+      "63/7 days",
+      "60/7 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "60/7 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving before completion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_088",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Before Completion",
+    "difficulty": "Hard",
+    "question": "A and B can complete a work in 15 and 20 days respectively. They began the work together, but A left 4 days before the completion of the work. In how many days was the whole work completed?",
+    "options": [
+      "79/7 days",
+      "76/7 days",
+      "16 days",
+      "74/7 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "76/7 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving before completion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_089",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Before Completion",
+    "difficulty": "Hard",
+    "question": "A and B can complete a work in 20 and 30 days respectively. They began the work together, but A left 5 days before the completion of the work. In how many days was the whole work completed?",
+    "options": [
+      "25 days",
+      "15 days",
+      "17 days",
+      "14 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "15 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving before completion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_090",
+    "topic": "Time & Work",
+    "subtopic": "Leaving Before Completion",
+    "difficulty": "Hard",
+    "question": "A and B can complete a work in 24 and 36 days respectively. They began the work together, but A left 6 days before the completion of the work. In how many days was the whole work completed?",
+    "options": [
+      "20 days",
+      "30 days",
+      "17 days",
+      "18 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "18 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "leaving before completion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_091",
+    "topic": "Time & Work",
+    "subtopic": "Joining Later",
+    "difficulty": "Hard",
+    "question": "A can build a wall in 30 days, B in 40 days, and C in 60 days. They start working together, but A leaves after 2 days, and B leaves 3 days before the work is completed. How many days in total does the work take?",
+    "options": [
+      "18 days",
+      "21 days",
+      "24 days",
+      "15 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "21 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "multiple workers leaving"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_092",
+    "topic": "Time & Work",
+    "subtopic": "Alternate Days",
+    "difficulty": "Hard",
+    "question": "A can do a piece of work in 10 days and B in 15 days. If they work on alternate days with A beginning, in how many days will the work be completed?",
+    "options": [
+      "12.5 days",
+      "11 days",
+      "13 days",
+      "12 days"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "alternate days"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_093",
+    "topic": "Time & Work",
+    "subtopic": "Alternate Days",
+    "difficulty": "Hard",
+    "question": "A, B and C can do a piece of work in 11 days, 20 days and 55 days respectively. In how many days will the work be completed if A is assisted by B and C on alternate days?",
+    "options": [
+      "7 days",
+      "8 days",
+      "10 days",
+      "9 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "8 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "alternate days",
+      "assistance"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_094",
+    "topic": "Time & Work",
+    "subtopic": "Fraction of Work",
+    "difficulty": "Hard",
+    "question": "A does 4/5 of a work in 20 days. He then calls in B and they together finish the remaining work in 3 days. How long B alone would take to do the whole work?",
+    "options": [
+      "30 days",
+      "37.5 days",
+      "45 days",
+      "40 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "37.5 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "fractional work"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_095",
+    "topic": "Time & Work",
+    "subtopic": "Work and Wages",
+    "difficulty": "Hard",
+    "question": "A, B and C undertake to do a work for $707. A and B together do 5/7 of the work. Rest is done by C alone. How much should C get?",
+    "options": [
+      "$303",
+      "$101",
+      "$404",
+      "$202"
+    ],
+    "correctAnswer": 3,
+    "answer": "$202",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "wages",
+      "fraction"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_096",
+    "topic": "Time & Work",
+    "subtopic": "MDH with Efficiency",
+    "difficulty": "Hard",
+    "question": "10 men can complete a work in 15 days, working 8 hours a day. In how many days can 20 men complete it, working 10 hours a day, if 2 men of the first group do as much work in an hour as 3 men of the second group?",
+    "options": [
+      "9 days",
+      "8 days",
+      "6 days",
+      "10 days"
+    ],
+    "correctAnswer": 0,
+    "answer": "9 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "MDH",
+      "efficiency transfer"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_097",
+    "topic": "Time & Work",
+    "subtopic": "Contractor Problems",
+    "difficulty": "Hard",
+    "question": "A contractor undertook to do a certain piece of work in 40 days. He engaged 100 men for the work and after 35 days, he found that only 5/7 of the work was done. How many extra men should he employ to finish the work on time?",
+    "options": [
+      "150 extra men",
+      "50 extra men",
+      "100 extra men",
+      "80 extra men"
+    ],
+    "correctAnswer": 2,
+    "answer": "100 extra men",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "contractor",
+      "extra men"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_098",
+    "topic": "Time & Work",
+    "subtopic": "Men, Women & Children",
+    "difficulty": "Hard",
+    "question": "2 men, 3 women and 4 children can do a work in 10 days. 3 men, 4 women and 5 children can do it in 8 days. 2 women and 3 children can do it in 20 days. In how many days can 1 man and 2 children do it?",
+    "options": [
+      "30 days",
+      "24 days",
+      "20 days",
+      "18 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "24 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "simultaneous equations"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_099",
+    "topic": "Time & Work",
+    "subtopic": "Garrison Provisions",
+    "difficulty": "Hard",
+    "question": "A garrison of 500 men had provisions for 27 days. After 3 days, a reinforcement of 300 men arrived. For how many more days will the remaining food last now?",
+    "options": [
+      "18 days",
+      "15 days",
+      "16 days",
+      "20 days"
+    ],
+    "correctAnswer": 1,
+    "answer": "15 days",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "food provision",
+      "chain rule"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "WM_TW_100",
+    "topic": "Time & Work",
+    "subtopic": "Work equivalence",
+    "difficulty": "Hard",
+    "question": "If 5 men or 7 women can earn $5250 a day, how much would 7 men and 13 women earn a day?",
+    "options": [
+      "0",
+      "$17100",
+      "5",
+      "0",
+      "2",
+      "$",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "answer": "$17100",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "time and work",
+      "$",
+      "1",
+      "8",
+      "0",
+      "0",
+      "0"
+    ],
+    "source": "AI Generated"
+  }
+]

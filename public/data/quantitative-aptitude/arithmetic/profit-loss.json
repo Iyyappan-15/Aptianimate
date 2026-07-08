@@ -1,0 +1,2647 @@
+[
+  {
+    "id": "ARI_PNL_001",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $100 and sold for $120. Find the profit or loss percentage.",
+    "options": [
+      "25% profit",
+      "20% loss",
+      "18% loss",
+      "20% profit"
+    ],
+    "correctAnswer": 3,
+    "answer": "20% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_002",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $200 and sold for $240. Find the profit or loss percentage.",
+    "options": [
+      "20% profit",
+      "20% loss",
+      "18% loss",
+      "25% profit"
+    ],
+    "correctAnswer": 0,
+    "answer": "20% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_003",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $150 and sold for $180. Find the profit or loss percentage.",
+    "options": [
+      "25% profit",
+      "18% loss",
+      "20% loss",
+      "20% profit"
+    ],
+    "correctAnswer": 3,
+    "answer": "20% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_004",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $250 and sold for $300. Find the profit or loss percentage.",
+    "options": [
+      "18% loss",
+      "20% profit",
+      "25% profit",
+      "20% loss"
+    ],
+    "correctAnswer": 1,
+    "answer": "20% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_005",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $300 and sold for $360. Find the profit or loss percentage.",
+    "options": [
+      "25% profit",
+      "20% loss",
+      "20% profit",
+      "18% loss"
+    ],
+    "correctAnswer": 2,
+    "answer": "20% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_006",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $400 and sold for $480. Find the profit or loss percentage.",
+    "options": [
+      "20% profit",
+      "18% loss",
+      "25% profit",
+      "20% loss"
+    ],
+    "correctAnswer": 0,
+    "answer": "20% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_007",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $500 and sold for $600. Find the profit or loss percentage.",
+    "options": [
+      "20% loss",
+      "25% profit",
+      "18% loss",
+      "20% profit"
+    ],
+    "correctAnswer": 3,
+    "answer": "20% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_008",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $600 and sold for $660. Find the profit or loss percentage.",
+    "options": [
+      "10% loss",
+      "10% profit",
+      "15% profit",
+      "8% loss"
+    ],
+    "correctAnswer": 1,
+    "answer": "10% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_009",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $800 and sold for $900. Find the profit or loss percentage.",
+    "options": [
+      "13% profit",
+      "18% profit",
+      "11% loss",
+      "13% loss"
+    ],
+    "correctAnswer": 0,
+    "answer": "13% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_010",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $1000 and sold for $1100. Find the profit or loss percentage.",
+    "options": [
+      "10% profit",
+      "8% loss",
+      "15% profit",
+      "10% loss"
+    ],
+    "correctAnswer": 0,
+    "answer": "10% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_011",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $120 and sold for $96. Find the profit or loss percentage.",
+    "options": [
+      "20% profit",
+      "25% loss",
+      "20% loss",
+      "18% loss"
+    ],
+    "correctAnswer": 2,
+    "answer": "20% loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_012",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An article is bought for $480 and sold for $360. Find the profit or loss percentage.",
+    "options": [
+      "23% loss",
+      "30% loss",
+      "25% profit",
+      "25% loss"
+    ],
+    "correctAnswer": 3,
+    "answer": "25% loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_013",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Hard",
+    "question": "A trader buys an article for $500 and sells it at a profit of 20%. What is the selling price?",
+    "options": [
+      "$700",
+      "$600",
+      "$650",
+      "$570"
+    ],
+    "correctAnswer": 1,
+    "answer": "$600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "SP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_014",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Hard",
+    "question": "A trader buys an article for $800 and sells it at a profit of 25%. What is the selling price?",
+    "options": [
+      "$1050",
+      "$970",
+      "$1000",
+      "$1100"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "SP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_015",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Hard",
+    "question": "A trader buys an article for $1200 and sells it at a profit of 15%. What is the selling price?",
+    "options": [
+      "$1380",
+      "$1480",
+      "$1350",
+      "$1430"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1380",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "SP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_016",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Hard",
+    "question": "A trader buys an article for $1500 and sells it at a profit of 30%. What is the selling price?",
+    "options": [
+      "$1950",
+      "$2000",
+      "$2050",
+      "$1920"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1950",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "SP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_017",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Hard",
+    "question": "A trader buys an article for $2000 and sells it at a profit of 10%. What is the selling price?",
+    "options": [
+      "$2200",
+      "$2300",
+      "$2170",
+      "$2250"
+    ],
+    "correctAnswer": 0,
+    "answer": "$2200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "SP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_018",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "A trader buys an article for $750 and sells it at a profit of 40%. What is the selling price?",
+    "options": [
+      "$1150",
+      "$1020",
+      "$1100",
+      "$1050"
+    ],
+    "correctAnswer": 3,
+    "answer": "$1050",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "SP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_019",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "A trader buys an article for $960 and sells it at a profit of 12.5%. What is the selling price?",
+    "options": [
+      "$1080",
+      "$1050",
+      "$1130",
+      "$1180"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1080",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "SP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_020",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Medium",
+    "question": "A trader buys an article for $1100 and sells it at a profit of 20%. What is the selling price?",
+    "options": [
+      "$1290",
+      "$1420",
+      "$1370",
+      "$1320"
+    ],
+    "correctAnswer": 3,
+    "answer": "$1320",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "SP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_021",
+    "topic": "Profit & Loss",
+    "subtopic": "Selling Price",
+    "difficulty": "Easy",
+    "question": "An item costing $400 is sold at a loss of 10%. Find the selling price.",
+    "options": [
+      "$420",
+      "$340",
+      "$400",
+      "$360"
+    ],
+    "correctAnswer": 3,
+    "answer": "$360",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "loss SP"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_022",
+    "topic": "Profit & Loss",
+    "subtopic": "Selling Price",
+    "difficulty": "Easy",
+    "question": "An item costing $600 is sold at a loss of 15%. Find the selling price.",
+    "options": [
+      "$550",
+      "$510",
+      "$490",
+      "$570"
+    ],
+    "correctAnswer": 1,
+    "answer": "$510",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "loss SP"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_023",
+    "topic": "Profit & Loss",
+    "subtopic": "Selling Price",
+    "difficulty": "Easy",
+    "question": "An item costing $750 is sold at a loss of 20%. Find the selling price.",
+    "options": [
+      "$660",
+      "$580",
+      "$600",
+      "$640"
+    ],
+    "correctAnswer": 2,
+    "answer": "$600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "loss SP"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_024",
+    "topic": "Profit & Loss",
+    "subtopic": "Selling Price",
+    "difficulty": "Easy",
+    "question": "An item costing $900 is sold at a loss of 12.5%. Find the selling price.",
+    "options": [
+      "$767.5",
+      "$787.5",
+      "$847.5",
+      "$827.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "$787.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "loss SP"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_025",
+    "topic": "Profit & Loss",
+    "subtopic": "Selling Price",
+    "difficulty": "Easy",
+    "question": "An item costing $1200 is sold at a loss of 8%. Find the selling price.",
+    "options": [
+      "$1084",
+      "$1164",
+      "$1144",
+      "$1104"
+    ],
+    "correctAnswer": 3,
+    "answer": "$1104",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "loss SP"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_026",
+    "topic": "Profit & Loss",
+    "subtopic": "Cost Price",
+    "difficulty": "Medium",
+    "question": "An article is sold for $660 at a profit of 10%. Find the cost price.",
+    "options": [
+      "$680",
+      "$650",
+      "$570",
+      "$600"
+    ],
+    "correctAnswer": 3,
+    "answer": "$600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "CP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_027",
+    "topic": "Profit & Loss",
+    "subtopic": "Cost Price",
+    "difficulty": "Medium",
+    "question": "An article is sold for $840 at a profit of 5%. Find the cost price.",
+    "options": [
+      "$880",
+      "$800",
+      "$770",
+      "$850"
+    ],
+    "correctAnswer": 1,
+    "answer": "$800",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "CP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_028",
+    "topic": "Profit & Loss",
+    "subtopic": "Cost Price",
+    "difficulty": "Medium",
+    "question": "An article is sold for $1380 at a profit of 15%. Find the cost price.",
+    "options": [
+      "$1170",
+      "$1200",
+      "$1280",
+      "$1250"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "CP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_029",
+    "topic": "Profit & Loss",
+    "subtopic": "Cost Price",
+    "difficulty": "Medium",
+    "question": "An article is sold for $780 at a profit of 30%. Find the cost price.",
+    "options": [
+      "$680",
+      "$570",
+      "$600",
+      "$650"
+    ],
+    "correctAnswer": 2,
+    "answer": "$600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "CP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_030",
+    "topic": "Profit & Loss",
+    "subtopic": "Cost Price",
+    "difficulty": "Medium",
+    "question": "An article is sold for $1440 at a profit of 20%. Find the cost price.",
+    "options": [
+      "$1250",
+      "$1200",
+      "$1170",
+      "$1280"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "CP calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_031",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Easy",
+    "question": "The marked price of an item is $500. A discount of 10% is offered. Find the selling price.",
+    "options": [
+      "$450",
+      "$420",
+      "$550",
+      "$500"
+    ],
+    "correctAnswer": 0,
+    "answer": "$450",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "marked price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_032",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Easy",
+    "question": "The marked price of an item is $800. A discount of 20% is offered. Find the selling price.",
+    "options": [
+      "$640",
+      "$610",
+      "$740",
+      "$690"
+    ],
+    "correctAnswer": 0,
+    "answer": "$640",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "marked price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_033",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Easy",
+    "question": "The marked price of an item is $1200. A discount of 15% is offered. Find the selling price.",
+    "options": [
+      "$1020",
+      "$1120",
+      "$1070",
+      "$990"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1020",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "marked price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_034",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Easy",
+    "question": "The marked price of an item is $1500. A discount of 25% is offered. Find the selling price.",
+    "options": [
+      "$1095",
+      "$1225",
+      "$1125",
+      "$1175"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1125",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "marked price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_035",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Easy",
+    "question": "The marked price of an item is $2000. A discount of 30% is offered. Find the selling price.",
+    "options": [
+      "$1450",
+      "$1370",
+      "$1400",
+      "$1500"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1400",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "marked price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_036",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Medium",
+    "question": "An article has a marked price of $1000 and cost price of $700. If it is sold at a 20% discount, find the profit or loss percentage.",
+    "options": [
+      "19.29% profit",
+      "14.29% profit",
+      "11.29% profit",
+      "16.29% loss"
+    ],
+    "correctAnswer": 1,
+    "answer": "14.29% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "discount",
+      "profit"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_037",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Medium",
+    "question": "An article has a marked price of $1500 and cost price of $900. If it is sold at a 25% discount, find the profit or loss percentage.",
+    "options": [
+      "27.00% loss",
+      "25.00% profit",
+      "30.00% profit",
+      "22.00% profit"
+    ],
+    "correctAnswer": 1,
+    "answer": "25.00% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "discount",
+      "profit"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_038",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Medium",
+    "question": "An article has a marked price of $2400 and cost price of $1500. If it is sold at a 30% discount, find the profit or loss percentage.",
+    "options": [
+      "14.00% loss",
+      "17.00% profit",
+      "9.00% profit",
+      "12.00% profit"
+    ],
+    "correctAnswer": 3,
+    "answer": "12.00% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "discount",
+      "profit"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_039",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Medium",
+    "question": "An article has a marked price of $3600 and cost price of $2000. If it is sold at a 40% discount, find the profit or loss percentage.",
+    "options": [
+      "13.00% profit",
+      "10.00% loss",
+      "8.00% profit",
+      "5.00% profit"
+    ],
+    "correctAnswer": 2,
+    "answer": "8.00% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "discount",
+      "profit"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_040",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Medium",
+    "question": "An article has a marked price of $5000 and cost price of $3500. If it is sold at a 20% discount, find the profit or loss percentage.",
+    "options": [
+      "16.29% loss",
+      "14.29% profit",
+      "11.29% profit",
+      "19.29% profit"
+    ],
+    "correctAnswer": 1,
+    "answer": "14.29% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "discount",
+      "profit"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_041",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Hard",
+    "question": "A shopkeeper marks his goods 40% above the cost price and gives a 25% discount. Find the profit or loss percentage.",
+    "options": [
+      "5% loss",
+      "15% profit",
+      "5% profit",
+      "10% profit"
+    ],
+    "correctAnswer": 2,
+    "answer": "5% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "successive discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_042",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Hard",
+    "question": "Two successive discounts of 20% and 10% are equivalent to a single discount of:",
+    "options": [
+      "30%",
+      "32%",
+      "25%",
+      "28%"
+    ],
+    "correctAnswer": 3,
+    "answer": "28%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "equivalent discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_043",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Hard",
+    "question": "A dealer marks goods 25% above cost price and allows a 10% discount. What discount % should be allowed to gain 12.5%?",
+    "options": [
+      "12.5%",
+      "15%",
+      "8%",
+      "10%"
+    ],
+    "correctAnswer": 3,
+    "answer": "10%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "reverse discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_044",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Hard",
+    "question": "A trader marks an article at $1200. He gives two successive discounts of 15% and 10%. Find the final selling price.",
+    "options": [
+      "$",
+      "0",
+      "0",
+      "$918",
+      "9"
+    ],
+    "correctAnswer": 3,
+    "answer": "$918",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "$930",
+      "$950"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_045",
+    "topic": "Profit & Loss",
+    "subtopic": "Discount",
+    "difficulty": "Hard",
+    "question": "A shopkeeper marks goods 50% above cost price. If he gives a discount of 20% and still makes a profit of $60, find the cost price.",
+    "options": [
+      "$400",
+      "$600",
+      "$500",
+      "$450"
+    ],
+    "correctAnswer": 2,
+    "answer": "$500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "reverse CP"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_046",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Medium",
+    "question": "Two articles are sold at $240 each. One is sold at a 20% profit and the other at a 20% loss. Find the overall profit or loss percentage.",
+    "options": [
+      "4.00% loss",
+      "4.00% profit",
+      "6.00% loss",
+      "No profit no loss"
+    ],
+    "correctAnswer": 0,
+    "answer": "4.00% loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "two articles",
+      "trick"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_047",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Medium",
+    "question": "Two articles are sold at $360 each. One is sold at a 20% profit and the other at a 20% loss. Find the overall profit or loss percentage.",
+    "options": [
+      "4.00% profit",
+      "No profit no loss",
+      "6.00% loss",
+      "4.00% loss"
+    ],
+    "correctAnswer": 3,
+    "answer": "4.00% loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "two articles",
+      "trick"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_048",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Medium",
+    "question": "Two articles are sold at $480 each. One is sold at a 20% profit and the other at a 20% loss. Find the overall profit or loss percentage.",
+    "options": [
+      "4.00% loss",
+      "4.00% profit",
+      "6.00% loss",
+      "No profit no loss"
+    ],
+    "correctAnswer": 0,
+    "answer": "4.00% loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "two articles",
+      "trick"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_049",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Medium",
+    "question": "Two articles are sold at $600 each. One is sold at a 20% profit and the other at a 20% loss. Find the overall profit or loss percentage.",
+    "options": [
+      "No profit no loss",
+      "4.00% loss",
+      "4.00% profit",
+      "6.00% loss"
+    ],
+    "correctAnswer": 1,
+    "answer": "4.00% loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "two articles",
+      "trick"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_050",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Medium",
+    "question": "Two articles are sold at $720 each. One is sold at a 20% profit and the other at a 20% loss. Find the overall profit or loss percentage.",
+    "options": [
+      "4.00% loss",
+      "6.00% loss",
+      "4.00% profit",
+      "No profit no loss"
+    ],
+    "correctAnswer": 0,
+    "answer": "4.00% loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "two articles",
+      "trick"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_051",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Easy",
+    "question": "A trader buys 10 items at $100 each and sells them at $90 each. Find the total profit or loss.",
+    "options": [
+      "$100 profit",
+      "$80 loss",
+      "$150 profit",
+      "$100 loss"
+    ],
+    "correctAnswer": 3,
+    "answer": "$100 loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "total",
+      "multiple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_052",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Easy",
+    "question": "A trader buys 15 items at $120 each and sells them at $100 each. Find the total profit or loss.",
+    "options": [
+      "$300 profit",
+      "$280 loss",
+      "$350 profit",
+      "$300 loss"
+    ],
+    "correctAnswer": 3,
+    "answer": "$300 loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "total",
+      "multiple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_053",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Easy",
+    "question": "A trader buys 20 items at $80 each and sells them at $100 each. Find the total profit or loss.",
+    "options": [
+      "$400 profit",
+      "$450 profit",
+      "$400 loss",
+      "$380 loss"
+    ],
+    "correctAnswer": 0,
+    "answer": "$400 profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "total",
+      "multiple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_054",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Easy",
+    "question": "A trader buys 5 items at $200 each and sells them at $220 each. Find the total profit or loss.",
+    "options": [
+      "$150 profit",
+      "$100 loss",
+      "$80 loss",
+      "$100 profit"
+    ],
+    "correctAnswer": 3,
+    "answer": "$100 profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "total",
+      "multiple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_055",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Easy",
+    "question": "A trader buys 8 items at $150 each and sells them at $130 each. Find the total profit or loss.",
+    "options": [
+      "$140 loss",
+      "$160 profit",
+      "$160 loss",
+      "$210 profit"
+    ],
+    "correctAnswer": 2,
+    "answer": "$160 loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "total",
+      "multiple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_056",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Hard",
+    "question": "By selling 45 lemons for $40, a person loses 20%. How many lemons should he sell for $24 to gain 20%?",
+    "options": [
+      "6",
+      "1",
+      "18"
+    ],
+    "correctAnswer": 2,
+    "answer": "18",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "20",
+      "15"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_057",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Hard",
+    "question": "A man bought some articles at the rate of 8 for $34 and sold them at 12 for $57. Find his profit or loss percentage.",
+    "options": [
+      "r",
+      "2",
+      "t",
+      "f",
+      "%",
+      "i",
+      "o",
+      " ",
+      "p",
+      "0% (no profit no loss)"
+    ],
+    "correctAnswer": 9,
+    "answer": "0% (no profit no loss)",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "5% loss",
+      "3% profit"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_058",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Hard",
+    "question": "A shopkeeper sells two items for $990 each. On one he gains 10% and on the other he loses 10%. His overall profit/loss is:",
+    "options": [
+      "o",
+      "l",
+      "f",
+      "N",
+      "o",
+      "o",
+      " ",
+      " ",
+      "n",
+      "t",
+      "i",
+      "o",
+      "s",
+      "1% loss",
+      " ",
+      "r",
+      "p",
+      "s"
+    ],
+    "correctAnswer": 13,
+    "answer": "1% loss",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "1% profit",
+      "2% loss"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_059",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Hard",
+    "question": "A person buys 3 articles for $40 each and 4 articles for $25 each. He sells all 7 articles for $300. Find his profit percentage.",
+    "options": [
+      "10%",
+      "7.5%",
+      "8.5%",
+      "5.88%"
+    ],
+    "correctAnswer": 3,
+    "answer": "5.88%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "mixed purchase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_060",
+    "topic": "Profit & Loss",
+    "subtopic": "Multiple Items",
+    "difficulty": "Hard",
+    "question": "A trader sold an article at a loss of 5%. If the selling price had been $120 more, he would have gained 10%. Find the cost price.",
+    "options": [
+      "$900",
+      "$800",
+      "$750",
+      "$1000"
+    ],
+    "correctAnswer": 1,
+    "answer": "$800",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "reverse calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_061",
+    "topic": "Profit & Loss",
+    "subtopic": "Overhead Expenses",
+    "difficulty": "Medium",
+    "question": "A man purchases a fan for $800. He spends $200 on repair and sells it for $1200. Find his profit percentage.",
+    "options": [
+      "15%",
+      "20%",
+      "25%",
+      "10%"
+    ],
+    "correctAnswer": 1,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "overheads"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_062",
+    "topic": "Profit & Loss",
+    "subtopic": "Overhead Expenses",
+    "difficulty": "Medium",
+    "question": "An article costs $2000 to manufacture. A 30% markup is added. After paying a sales commission of 10% of the selling price, find the actual profit percentage.",
+    "options": [
+      "15%",
+      "13%",
+      "17%",
+      "20%"
+    ],
+    "correctAnswer": 2,
+    "answer": "17%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "commission"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_063",
+    "topic": "Profit & Loss",
+    "subtopic": "Overhead Expenses",
+    "difficulty": "Medium",
+    "question": "A car is bought for $10,000. $500 is spent on its painting and $1,500 on repair. It is then sold for $15,000. Find the profit percentage.",
+    "options": [
+      "25%",
+      "20%",
+      "28%",
+      "30%"
+    ],
+    "correctAnswer": 0,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "transport cost"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_064",
+    "topic": "Profit & Loss",
+    "subtopic": "Overhead Expenses",
+    "difficulty": "Medium",
+    "question": "A shopkeeper buys rice for $1800 and spends $200 on transport. He sells the rice for $2,500. Find his gain percentage.",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "22.5%"
+    ],
+    "correctAnswer": 1,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "transport"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_065",
+    "topic": "Profit & Loss",
+    "subtopic": "Overhead Expenses",
+    "difficulty": "Medium",
+    "question": "An article costs $1600. The manufacturer sells it to a wholesaler at 20% profit. The wholesaler sells it to a retailer at 10% profit. Find the price paid by the retailer.",
+    "options": [
+      "$2,000",
+      "$2,112",
+      "$2,200",
+      "$1,960"
+    ],
+    "correctAnswer": 1,
+    "answer": "$2,112",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "chain selling"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_066",
+    "topic": "Profit & Loss",
+    "subtopic": "Honest Weight",
+    "difficulty": "Hard",
+    "question": "A shopkeeper uses a 900g weight for 1 kg and sells at cost price. Find his profit percentage.",
+    "options": [
+      "11.11%",
+      "12.5%",
+      "9.09%",
+      "10%"
+    ],
+    "correctAnswer": 0,
+    "answer": "11.11%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "false weight"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_067",
+    "topic": "Profit & Loss",
+    "subtopic": "Honest Weight",
+    "difficulty": "Hard",
+    "question": "A dishonest dealer professes to sell goods at cost price but uses a 800g weight for 1 kg. What is his actual profit %?",
+    "options": [
+      "20%",
+      "25%",
+      "28%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "false weight"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_068",
+    "topic": "Profit & Loss",
+    "subtopic": "Honest Weight",
+    "difficulty": "Hard",
+    "question": "A milkman mixes water with milk in the ratio 2:10. He claims to sell at cost price. Find his profit percentage.",
+    "options": [
+      "25%",
+      "16.67%",
+      "20%",
+      "18%"
+    ],
+    "correctAnswer": 2,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "adulteration"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_069",
+    "topic": "Profit & Loss",
+    "subtopic": "Honest Weight",
+    "difficulty": "Hard",
+    "question": "A shopkeeper sells at 10% profit and uses a weight 20% less. Find the overall profit percentage.",
+    "options": [
+      "32.5%",
+      "37.5%",
+      "40%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "37.5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "false weight",
+      "profit"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_070",
+    "topic": "Profit & Loss",
+    "subtopic": "Honest Weight",
+    "difficulty": "Hard",
+    "question": "A trader claims to sell at cost price but gives 10% less quantity. What is his effective profit percentage?",
+    "options": [
+      "10%",
+      "11.11%",
+      "12%",
+      "9%"
+    ],
+    "correctAnswer": 1,
+    "answer": "11.11%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "quantity cheat"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_071",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Easy",
+    "question": "A and B invest in a business in the ratio 2:3. If the total profit is $50,000, find A's share.",
+    "options": [
+      "$22,000",
+      "$20,500",
+      "$20,000",
+      "$19,000"
+    ],
+    "correctAnswer": 2,
+    "answer": "$20,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_072",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Easy",
+    "question": "A and B invest in a business in the ratio 3:4. If the total profit is $70,000, find A's share.",
+    "options": [
+      "$29,000",
+      "$30,000",
+      "$32,000",
+      "$30,500"
+    ],
+    "correctAnswer": 1,
+    "answer": "$30,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_073",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Easy",
+    "question": "A and B invest in a business in the ratio 1:2. If the total profit is $30,000, find A's share.",
+    "options": [
+      "$9,000",
+      "$10,000",
+      "$10,500",
+      "$12,000"
+    ],
+    "correctAnswer": 1,
+    "answer": "$10,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_074",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Easy",
+    "question": "A and B invest in a business in the ratio 5:6. If the total profit is $1,10,000, find A's share.",
+    "options": [
+      "$50,500",
+      "$49,000",
+      "$52,000",
+      "$50,000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$50,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_075",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Easy",
+    "question": "A and B invest in a business in the ratio 3:7. If the total profit is $1,00,000, find A's share.",
+    "options": [
+      "$32,000",
+      "$30,500",
+      "$29,000",
+      "$30,000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$30,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_076",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Medium",
+    "question": "A starts a business with $5,000 for the full year. B joins after 3 months with $6,000. If the total annual profit is $33,000, find A's share.",
+    "options": [
+      "$18,368",
+      "$15,368",
+      "$17,368",
+      "$19,868"
+    ],
+    "correctAnswer": 2,
+    "answer": "$17,368",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_077",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Medium",
+    "question": "A starts a business with $8,000 for the full year. B joins after 4 months with $10,000. If the total annual profit is $52,000, find A's share.",
+    "options": [
+      "$29,364",
+      "$26,364",
+      "$28,364",
+      "$30,864"
+    ],
+    "correctAnswer": 2,
+    "answer": "$28,364",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_078",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Medium",
+    "question": "A starts a business with $4,000 for the full year. B joins after 2 months with $6,000. If the total annual profit is $46,000, find A's share.",
+    "options": [
+      "$18,444",
+      "$20,444",
+      "$21,444",
+      "$22,944"
+    ],
+    "correctAnswer": 1,
+    "answer": "$20,444",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_079",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Medium",
+    "question": "A starts a business with $10,000 for the full year. B joins after 4 months with $15,000. If the total annual profit is $58,000, find A's share.",
+    "options": [
+      "$30,000",
+      "$27,000",
+      "$29,000",
+      "$31,500"
+    ],
+    "correctAnswer": 2,
+    "answer": "$29,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_080",
+    "topic": "Profit & Loss",
+    "subtopic": "Partnership",
+    "difficulty": "Medium",
+    "question": "A starts a business with $12,000 for the full year. B joins after 3 months with $8,000. If the total annual profit is $61,200, find A's share.",
+    "options": [
+      "$41,800",
+      "$43,300",
+      "$38,800",
+      "$40,800"
+    ],
+    "correctAnswer": 3,
+    "answer": "$40,800",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "partnership",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_081",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1600 and sold for $1680, find the profit percentage.",
+    "options": [
+      "15%",
+      "10%",
+      "5%",
+      "3%"
+    ],
+    "correctAnswer": 2,
+    "answer": "5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_082",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1500 and sold for $1650.0000000000002, find the profit percentage.",
+    "options": [
+      "20%",
+      "8%",
+      "10%",
+      "15%"
+    ],
+    "correctAnswer": 2,
+    "answer": "10%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_083",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1400 and sold for $1609.9999999999998, find the profit percentage.",
+    "options": [
+      "20%",
+      "25%",
+      "15%",
+      "13%"
+    ],
+    "correctAnswer": 2,
+    "answer": "15%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_084",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $800 and sold for $960, find the profit percentage.",
+    "options": [
+      "18%",
+      "25%",
+      "20%",
+      "30%"
+    ],
+    "correctAnswer": 2,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_085",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $700 and sold for $875, find the profit percentage.",
+    "options": [
+      "35%",
+      "25%",
+      "23%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_086",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1300 and sold for $1365, find the profit percentage.",
+    "options": [
+      "15%",
+      "3%",
+      "10%",
+      "5%"
+    ],
+    "correctAnswer": 3,
+    "answer": "5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_087",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1400 and sold for $1540.0000000000002, find the profit percentage.",
+    "options": [
+      "15%",
+      "20%",
+      "10%",
+      "8%"
+    ],
+    "correctAnswer": 2,
+    "answer": "10%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_088",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1100 and sold for $1265, find the profit percentage.",
+    "options": [
+      "13%",
+      "25%",
+      "15%",
+      "20%"
+    ],
+    "correctAnswer": 2,
+    "answer": "15%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_089",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1800 and sold for $2160, find the profit percentage.",
+    "options": [
+      "25%",
+      "20%",
+      "18%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_090",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1100 and sold for $1375, find the profit percentage.",
+    "options": [
+      "35%",
+      "30%",
+      "23%",
+      "25%"
+    ],
+    "correctAnswer": 3,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_091",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $600 and sold for $630, find the profit percentage.",
+    "options": [
+      "3%",
+      "10%",
+      "15%",
+      "5%"
+    ],
+    "correctAnswer": 3,
+    "answer": "5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_092",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1100 and sold for $1210, find the profit percentage.",
+    "options": [
+      "8%",
+      "10%",
+      "20%",
+      "15%"
+    ],
+    "correctAnswer": 1,
+    "answer": "10%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_093",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $600 and sold for $690, find the profit percentage.",
+    "options": [
+      "25%",
+      "20%",
+      "15%",
+      "13%"
+    ],
+    "correctAnswer": 2,
+    "answer": "15%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_094",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1500 and sold for $1800, find the profit percentage.",
+    "options": [
+      "30%",
+      "25%",
+      "20%",
+      "18%"
+    ],
+    "correctAnswer": 2,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_095",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $700 and sold for $875, find the profit percentage.",
+    "options": [
+      "25%",
+      "23%",
+      "30%",
+      "35%"
+    ],
+    "correctAnswer": 0,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_096",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1300 and sold for $1365, find the profit percentage.",
+    "options": [
+      "5%",
+      "15%",
+      "3%",
+      "10%"
+    ],
+    "correctAnswer": 0,
+    "answer": "5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_097",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1100 and sold for $1210, find the profit percentage.",
+    "options": [
+      "10%",
+      "20%",
+      "15%",
+      "8%"
+    ],
+    "correctAnswer": 0,
+    "answer": "10%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_098",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $1000 and sold for $1150, find the profit percentage.",
+    "options": [
+      "25%",
+      "13%",
+      "20%",
+      "15%"
+    ],
+    "correctAnswer": 3,
+    "answer": "15%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_099",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $900 and sold for $1080, find the profit percentage.",
+    "options": [
+      "25%",
+      "20%",
+      "18%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PNL_100",
+    "topic": "Profit & Loss",
+    "subtopic": "Basic Profit & Loss",
+    "difficulty": "Easy",
+    "question": "If an article is bought for $700 and sold for $875, find the profit percentage.",
+    "options": [
+      "23%",
+      "25%",
+      "35%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "profit",
+      "loss",
+      "basic"
+    ],
+    "source": "AI Generated"
+  }
+]

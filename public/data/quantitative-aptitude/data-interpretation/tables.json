@@ -1,0 +1,8282 @@
+[
+  {
+    "id": "DI_TABLE_001",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nIn the year 2021, which product had the highest sales?",
+    "image": "/assets/di-images/tables/table_001.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          125,
+          129,
+          142,
+          153,
+          161
+        ],
+        "Product B": [
+          137,
+          156,
+          166,
+          176,
+          190
+        ],
+        "Product C": [
+          160,
+          178,
+          190,
+          193,
+          210
+        ],
+        "Product D": [
+          179,
+          185,
+          206,
+          216,
+          230
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "Product B",
+      "Product C",
+      "Product A",
+      "Product D"
+    ],
+    "correctAnswer": 3,
+    "answer": "Product D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Column 2021: Product D=₹206L, Product C=₹190L, Product B=₹166L, Product A=₹142L. Highest → Product D (₹206L).",
+    "shortcut": "Scan the 2021 column, pick maximum.",
+    "commonMistake": "Comparing wrong year column.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_002",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total sales of Product B over all 5 years?",
+    "image": "/assets/di-images/tables/table_001.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          125,
+          129,
+          142,
+          153,
+          161
+        ],
+        "Product B": [
+          137,
+          156,
+          166,
+          176,
+          190
+        ],
+        "Product C": [
+          160,
+          178,
+          190,
+          193,
+          210
+        ],
+        "Product D": [
+          179,
+          185,
+          206,
+          216,
+          230
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "₹825L",
+      "₹835L",
+      "₹850L",
+      "₹810L"
+    ],
+    "correctAnswer": 0,
+    "answer": "₹825L",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Sum of Product B = 137+156+166+176+190 = ₹825L.",
+    "shortcut": "Sum all values in the Product B row.",
+    "commonMistake": "Adding only 4 out of 5 years.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_003",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich department has the highest number of female employees?",
+    "image": "/assets/di-images/tables/table_002.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 45,
+          "f": 43,
+          "t": 88
+        },
+        {
+          "dept": "Finance",
+          "m": 50,
+          "f": 48,
+          "t": 98
+        },
+        {
+          "dept": "IT",
+          "m": 62,
+          "f": 57,
+          "t": 119
+        },
+        {
+          "dept": "Marketing",
+          "m": 62,
+          "f": 62,
+          "t": 124
+        },
+        {
+          "dept": "Operations",
+          "m": 78,
+          "f": 63,
+          "t": 141
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "Finance",
+      "HR",
+      "Operations",
+      "IT"
+    ],
+    "correctAnswer": 2,
+    "answer": "Operations",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Female counts: HR=43, Finance=48, IT=57, Marketing=62, Operations=63. Maximum → Operations (63).",
+    "shortcut": "Scan the Female column.",
+    "commonMistake": "Confusing Female column with Total.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_004",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total number of employees across all departments?",
+    "image": "/assets/di-images/tables/table_002.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 45,
+          "f": 43,
+          "t": 88
+        },
+        {
+          "dept": "Finance",
+          "m": 50,
+          "f": 48,
+          "t": 98
+        },
+        {
+          "dept": "IT",
+          "m": 62,
+          "f": 57,
+          "t": 119
+        },
+        {
+          "dept": "Marketing",
+          "m": 62,
+          "f": 62,
+          "t": 124
+        },
+        {
+          "dept": "Operations",
+          "m": 78,
+          "f": 63,
+          "t": 141
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "555",
+      "590",
+      "570",
+      "605"
+    ],
+    "correctAnswer": 2,
+    "answer": "570",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 88+98+119+124+141 = 570.",
+    "shortcut": "Sum the Total column directly.",
+    "commonMistake": "Summing Male + Female separately leads to same answer, but avoid double counting.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_005",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich student scored the highest aggregate marks across all subjects?",
+    "image": "/assets/di-images/tables/table_003.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          55,
+          50,
+          57,
+          68,
+          67
+        ],
+        "Student B": [
+          55,
+          66,
+          67,
+          62,
+          67
+        ],
+        "Student C": [
+          59,
+          62,
+          78,
+          71,
+          72
+        ],
+        "Student D": [
+          67,
+          73,
+          73,
+          76,
+          82
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "Student A",
+      "Student B",
+      "Student C",
+      "Student D"
+    ],
+    "correctAnswer": 3,
+    "answer": "Student D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Totals: Student D=371, Student C=342, Student B=317, Student A=297. Highest → Student D (371).",
+    "shortcut": "Row-sum each student and compare.",
+    "commonMistake": "Judging by a single subject instead of total.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_006",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the average score of all students in Maths?",
+    "image": "/assets/di-images/tables/table_003.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          55,
+          50,
+          57,
+          68,
+          67
+        ],
+        "Student B": [
+          55,
+          66,
+          67,
+          62,
+          67
+        ],
+        "Student C": [
+          59,
+          62,
+          78,
+          71,
+          72
+        ],
+        "Student D": [
+          67,
+          73,
+          73,
+          76,
+          82
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "67",
+      "56",
+      "63",
+      "59"
+    ],
+    "correctAnswer": 3,
+    "answer": "59",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Scores: 55, 55, 59, 67. Avg = 236/4 = 59.",
+    "shortcut": "Sum column ÷ number of students.",
+    "commonMistake": "Dividing by number of subjects instead of students.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_007",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for 2018?",
+    "image": "/assets/di-images/tables/table_004.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          11,
+          12.9,
+          14.8,
+          16.7,
+          14.6
+        ],
+        "State B": [
+          14.8,
+          15.7,
+          16.6,
+          17.5,
+          17.4
+        ],
+        "State C": [
+          17.6,
+          18.5,
+          19.4,
+          22.3,
+          21.2
+        ],
+        "State D": [
+          22.4,
+          22.3,
+          21.2,
+          23.1,
+          24
+        ],
+        "State E": [
+          22.2,
+          26.1,
+          25,
+          24.9,
+          27.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "State B",
+      "State C",
+      "State D",
+      "State E"
+    ],
+    "correctAnswer": 2,
+    "answer": "State D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "2018 values: State D=22.4, State E=22.2, State C=17.6, State B=14.8, State A=11. Maximum → State D (22.4).",
+    "shortcut": "Scan the 2018 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_008",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the 2018 column?",
+    "image": "/assets/di-images/tables/table_004.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          11,
+          12.9,
+          14.8,
+          16.7,
+          14.6
+        ],
+        "State B": [
+          14.8,
+          15.7,
+          16.6,
+          17.5,
+          17.4
+        ],
+        "State C": [
+          17.6,
+          18.5,
+          19.4,
+          22.3,
+          21.2
+        ],
+        "State D": [
+          22.4,
+          22.3,
+          21.2,
+          23.1,
+          24
+        ],
+        "State E": [
+          22.2,
+          26.1,
+          25,
+          24.9,
+          27.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "110",
+      "78",
+      "100",
+      "88"
+    ],
+    "correctAnswer": 3,
+    "answer": "88",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 22.4+22.2+17.6+14.8+11 = 88.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_009",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Q1?",
+    "image": "/assets/di-images/tables/table_005.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          539,
+          632,
+          691,
+          729
+        ],
+        "Factory B": [
+          681,
+          700,
+          789,
+          828
+        ],
+        "Factory C": [
+          771,
+          870,
+          878,
+          943
+        ],
+        "Factory D": [
+          935,
+          945,
+          1052,
+          1116
+        ],
+        "Factory E": [
+          1015,
+          1127,
+          1163,
+          1225
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "Factory E",
+      "Factory B",
+      "Factory C",
+      "Factory D"
+    ],
+    "correctAnswer": 0,
+    "answer": "Factory E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Q1 values: Factory E=1015, Factory D=935, Factory C=771, Factory B=681, Factory A=539. Maximum → Factory E (1015).",
+    "shortcut": "Scan the Q1 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_010",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Q1 column?",
+    "image": "/assets/di-images/tables/table_005.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          539,
+          632,
+          691,
+          729
+        ],
+        "Factory B": [
+          681,
+          700,
+          789,
+          828
+        ],
+        "Factory C": [
+          771,
+          870,
+          878,
+          943
+        ],
+        "Factory D": [
+          935,
+          945,
+          1052,
+          1116
+        ],
+        "Factory E": [
+          1015,
+          1127,
+          1163,
+          1225
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "3963",
+      "3941",
+      "3953",
+      "3931"
+    ],
+    "correctAnswer": 1,
+    "answer": "3941",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 1015+935+771+681+539 = 3941.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_011",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Revenue?",
+    "image": "/assets/di-images/tables/table_006.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 208,
+          "exp": 177,
+          "prof": 31
+        },
+        {
+          "year": 2020,
+          "rev": 259,
+          "exp": 222,
+          "prof": 37
+        },
+        {
+          "year": 2021,
+          "rev": 307,
+          "exp": 241,
+          "prof": 66
+        },
+        {
+          "year": 2022,
+          "rev": 366,
+          "exp": 283,
+          "prof": 83
+        },
+        {
+          "year": 2023,
+          "rev": 410,
+          "exp": 305,
+          "prof": 105
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "2022",
+      "2021",
+      "2020",
+      "2023"
+    ],
+    "correctAnswer": 3,
+    "answer": "2023",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Revenue values: 2023=410, 2022=366, 2021=307, 2020=259, 2019=208. Maximum → 2023 (410).",
+    "shortcut": "Scan the Revenue column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_012",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Revenue column?",
+    "image": "/assets/di-images/tables/table_006.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 208,
+          "exp": 177,
+          "prof": 31
+        },
+        {
+          "year": 2020,
+          "rev": 259,
+          "exp": 222,
+          "prof": 37
+        },
+        {
+          "year": 2021,
+          "rev": 307,
+          "exp": 241,
+          "prof": 66
+        },
+        {
+          "year": 2022,
+          "rev": 366,
+          "exp": 283,
+          "prof": 83
+        },
+        {
+          "year": 2023,
+          "rev": 410,
+          "exp": 305,
+          "prof": 105
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "1550",
+      "1572",
+      "1540",
+      "1562"
+    ],
+    "correctAnswer": 0,
+    "answer": "1550",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 410+366+307+259+208 = 1550.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_013",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Export?",
+    "image": "/assets/di-images/tables/table_007.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 499,
+          "imp": 509,
+          "bal": -10
+        },
+        {
+          "country": "UK",
+          "exp": 644,
+          "imp": 612,
+          "bal": 32
+        },
+        {
+          "country": "China",
+          "exp": 688,
+          "imp": 659,
+          "bal": 29
+        },
+        {
+          "country": "Japan",
+          "exp": 768,
+          "imp": 752,
+          "bal": 16
+        },
+        {
+          "country": "Germany",
+          "exp": 857,
+          "imp": 763,
+          "bal": 94
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "Germany",
+      "China",
+      "UK",
+      "Japan"
+    ],
+    "correctAnswer": 0,
+    "answer": "Germany",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Export values: Germany=857, Japan=768, China=688, UK=644, USA=499. Maximum → Germany (857).",
+    "shortcut": "Scan the Export column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_014",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Export column?",
+    "image": "/assets/di-images/tables/table_007.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 499,
+          "imp": 509,
+          "bal": -10
+        },
+        {
+          "country": "UK",
+          "exp": 644,
+          "imp": 612,
+          "bal": 32
+        },
+        {
+          "country": "China",
+          "exp": 688,
+          "imp": 659,
+          "bal": 29
+        },
+        {
+          "country": "Japan",
+          "exp": 768,
+          "imp": 752,
+          "bal": 16
+        },
+        {
+          "country": "Germany",
+          "exp": 857,
+          "imp": 763,
+          "bal": 94
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "3468",
+      "3456",
+      "3446",
+      "3478"
+    ],
+    "correctAnswer": 1,
+    "answer": "3456",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 857+768+688+644+499 = 3456.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_015",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Theft?",
+    "image": "/assets/di-images/tables/table_008.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 121,
+          "assault": 79,
+          "fraud": 63,
+          "total": 263
+        },
+        {
+          "city": "City B",
+          "theft": 116,
+          "assault": 91,
+          "fraud": 71,
+          "total": 278
+        },
+        {
+          "city": "City C",
+          "theft": 134,
+          "assault": 99,
+          "fraud": 76,
+          "total": 309
+        },
+        {
+          "city": "City D",
+          "theft": 150,
+          "assault": 121,
+          "fraud": 83,
+          "total": 354
+        },
+        {
+          "city": "City E",
+          "theft": 162,
+          "assault": 118,
+          "fraud": 91,
+          "total": 371
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "City C",
+      "City E",
+      "City D",
+      "City A"
+    ],
+    "correctAnswer": 1,
+    "answer": "City E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Theft values: City E=162, City D=150, City C=134, City A=121, City B=116. Maximum → City E (162).",
+    "shortcut": "Scan the Theft column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_016",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Theft column?",
+    "image": "/assets/di-images/tables/table_008.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 121,
+          "assault": 79,
+          "fraud": 63,
+          "total": 263
+        },
+        {
+          "city": "City B",
+          "theft": 116,
+          "assault": 91,
+          "fraud": 71,
+          "total": 278
+        },
+        {
+          "city": "City C",
+          "theft": 134,
+          "assault": 99,
+          "fraud": 76,
+          "total": 309
+        },
+        {
+          "city": "City D",
+          "theft": 150,
+          "assault": 121,
+          "fraud": 83,
+          "total": 354
+        },
+        {
+          "city": "City E",
+          "theft": 162,
+          "assault": 118,
+          "fraud": 91,
+          "total": 371
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "673",
+      "705",
+      "683",
+      "695"
+    ],
+    "correctAnswer": 2,
+    "answer": "683",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 162+150+134+121+116 = 683.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_017",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nIn the year 2021, which product had the highest sales?",
+    "image": "/assets/di-images/tables/table_009.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          138,
+          139,
+          147,
+          166,
+          173
+        ],
+        "Product B": [
+          150,
+          160,
+          177,
+          190,
+          192
+        ],
+        "Product C": [
+          167,
+          171,
+          192,
+          198,
+          219
+        ],
+        "Product D": [
+          187,
+          202,
+          205,
+          223,
+          224
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "Product D",
+      "Product A",
+      "Product B",
+      "Product C"
+    ],
+    "correctAnswer": 0,
+    "answer": "Product D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Column 2021: Product D=₹205L, Product C=₹192L, Product B=₹177L, Product A=₹147L. Highest → Product D (₹205L).",
+    "shortcut": "Scan the 2021 column, pick maximum.",
+    "commonMistake": "Comparing wrong year column.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_018",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total sales of Product B over all 5 years?",
+    "image": "/assets/di-images/tables/table_009.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          138,
+          139,
+          147,
+          166,
+          173
+        ],
+        "Product B": [
+          150,
+          160,
+          177,
+          190,
+          192
+        ],
+        "Product C": [
+          167,
+          171,
+          192,
+          198,
+          219
+        ],
+        "Product D": [
+          187,
+          202,
+          205,
+          223,
+          224
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "₹854L",
+      "₹869L",
+      "₹894L",
+      "₹879L"
+    ],
+    "correctAnswer": 1,
+    "answer": "₹869L",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Sum of Product B = 150+160+177+190+192 = ₹869L.",
+    "shortcut": "Sum all values in the Product B row.",
+    "commonMistake": "Adding only 4 out of 5 years.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_019",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich department has the highest number of female employees?",
+    "image": "/assets/di-images/tables/table_010.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 42,
+          "f": 42,
+          "t": 84
+        },
+        {
+          "dept": "Finance",
+          "m": 54,
+          "f": 47,
+          "t": 101
+        },
+        {
+          "dept": "IT",
+          "m": 70,
+          "f": 56,
+          "t": 126
+        },
+        {
+          "dept": "Marketing",
+          "m": 77,
+          "f": 66,
+          "t": 143
+        },
+        {
+          "dept": "Operations",
+          "m": 77,
+          "f": 66,
+          "t": 143
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "Operations",
+      "HR",
+      "Marketing",
+      "IT"
+    ],
+    "correctAnswer": 2,
+    "answer": "Marketing",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Female counts: HR=42, Finance=47, IT=56, Marketing=66, Operations=66. Maximum → Marketing (66).",
+    "shortcut": "Scan the Female column.",
+    "commonMistake": "Confusing Female column with Total.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_020",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total number of employees across all departments?",
+    "image": "/assets/di-images/tables/table_010.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 42,
+          "f": 42,
+          "t": 84
+        },
+        {
+          "dept": "Finance",
+          "m": 54,
+          "f": 47,
+          "t": 101
+        },
+        {
+          "dept": "IT",
+          "m": 70,
+          "f": 56,
+          "t": 126
+        },
+        {
+          "dept": "Marketing",
+          "m": 77,
+          "f": 66,
+          "t": 143
+        },
+        {
+          "dept": "Operations",
+          "m": 77,
+          "f": 66,
+          "t": 143
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "597",
+      "617",
+      "632",
+      "582"
+    ],
+    "correctAnswer": 0,
+    "answer": "597",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 84+101+126+143+143 = 597.",
+    "shortcut": "Sum the Total column directly.",
+    "commonMistake": "Summing Male + Female separately leads to same answer, but avoid double counting.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_021",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich student scored the highest aggregate marks across all subjects?",
+    "image": "/assets/di-images/tables/table_011.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          52,
+          66,
+          68,
+          68,
+          70
+        ],
+        "Student B": [
+          63,
+          67,
+          74,
+          79,
+          72
+        ],
+        "Student C": [
+          75,
+          69,
+          68,
+          74,
+          83
+        ],
+        "Student D": [
+          74,
+          81,
+          73,
+          80,
+          84
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "Student B",
+      "Student D",
+      "Student C",
+      "Student A"
+    ],
+    "correctAnswer": 1,
+    "answer": "Student D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Totals: Student D=392, Student C=369, Student B=355, Student A=324. Highest → Student D (392).",
+    "shortcut": "Row-sum each student and compare.",
+    "commonMistake": "Judging by a single subject instead of total.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_022",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the average score of all students in Maths?",
+    "image": "/assets/di-images/tables/table_011.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          52,
+          66,
+          68,
+          68,
+          70
+        ],
+        "Student B": [
+          63,
+          67,
+          74,
+          79,
+          72
+        ],
+        "Student C": [
+          75,
+          69,
+          68,
+          74,
+          83
+        ],
+        "Student D": [
+          74,
+          81,
+          73,
+          80,
+          84
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "66",
+      "70",
+      "63",
+      "74"
+    ],
+    "correctAnswer": 0,
+    "answer": "66",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Scores: 52, 63, 75, 74. Avg = 264/4 = 66.",
+    "shortcut": "Sum column ÷ number of students.",
+    "commonMistake": "Dividing by number of subjects instead of students.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_023",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for 2018?",
+    "image": "/assets/di-images/tables/table_012.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          16,
+          14.9,
+          17.8,
+          15.7,
+          17.6
+        ],
+        "State B": [
+          16.8,
+          18.7,
+          20.6,
+          19.5,
+          19.4
+        ],
+        "State C": [
+          19.6,
+          22.5,
+          20.4,
+          22.3,
+          24.2
+        ],
+        "State D": [
+          24.4,
+          22.3,
+          25.2,
+          24.1,
+          25
+        ],
+        "State E": [
+          26.2,
+          25.1,
+          27,
+          29.9,
+          30.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "State C",
+      "State E",
+      "State D",
+      "State B"
+    ],
+    "correctAnswer": 1,
+    "answer": "State E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "2018 values: State E=26.2, State D=24.4, State C=19.6, State B=16.8, State A=16. Maximum → State E (26.2).",
+    "shortcut": "Scan the 2018 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_024",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the 2018 column?",
+    "image": "/assets/di-images/tables/table_012.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          16,
+          14.9,
+          17.8,
+          15.7,
+          17.6
+        ],
+        "State B": [
+          16.8,
+          18.7,
+          20.6,
+          19.5,
+          19.4
+        ],
+        "State C": [
+          19.6,
+          22.5,
+          20.4,
+          22.3,
+          24.2
+        ],
+        "State D": [
+          24.4,
+          22.3,
+          25.2,
+          24.1,
+          25
+        ],
+        "State E": [
+          26.2,
+          25.1,
+          27,
+          29.9,
+          30.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "103",
+      "93",
+      "125",
+      "115"
+    ],
+    "correctAnswer": 0,
+    "answer": "103",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 26.2+24.4+19.6+16.8+16 = 103.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_025",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Q1?",
+    "image": "/assets/di-images/tables/table_013.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          586,
+          664,
+          740,
+          800
+        ],
+        "Factory B": [
+          730,
+          777,
+          823,
+          852
+        ],
+        "Factory C": [
+          822,
+          902,
+          967,
+          997
+        ],
+        "Factory D": [
+          943,
+          1045,
+          1031,
+          1118
+        ],
+        "Factory E": [
+          1040,
+          1127,
+          1216,
+          1283
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "Factory B",
+      "Factory E",
+      "Factory D",
+      "Factory C"
+    ],
+    "correctAnswer": 1,
+    "answer": "Factory E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Q1 values: Factory E=1040, Factory D=943, Factory C=822, Factory B=730, Factory A=586. Maximum → Factory E (1040).",
+    "shortcut": "Scan the Q1 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_026",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Q1 column?",
+    "image": "/assets/di-images/tables/table_013.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          586,
+          664,
+          740,
+          800
+        ],
+        "Factory B": [
+          730,
+          777,
+          823,
+          852
+        ],
+        "Factory C": [
+          822,
+          902,
+          967,
+          997
+        ],
+        "Factory D": [
+          943,
+          1045,
+          1031,
+          1118
+        ],
+        "Factory E": [
+          1040,
+          1127,
+          1216,
+          1283
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "4121",
+      "4111",
+      "4143",
+      "4133"
+    ],
+    "correctAnswer": 0,
+    "answer": "4121",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 1040+943+822+730+586 = 4121.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_027",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Revenue?",
+    "image": "/assets/di-images/tables/table_014.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 252,
+          "exp": 204,
+          "prof": 48
+        },
+        {
+          "year": 2020,
+          "rev": 275,
+          "exp": 237,
+          "prof": 38
+        },
+        {
+          "year": 2021,
+          "rev": 338,
+          "exp": 268,
+          "prof": 70
+        },
+        {
+          "year": 2022,
+          "rev": 387,
+          "exp": 281,
+          "prof": 106
+        },
+        {
+          "year": 2023,
+          "rev": 410,
+          "exp": 308,
+          "prof": 102
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "2023",
+      "2021",
+      "2020",
+      "2022"
+    ],
+    "correctAnswer": 0,
+    "answer": "2023",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Revenue values: 2023=410, 2022=387, 2021=338, 2020=275, 2019=252. Maximum → 2023 (410).",
+    "shortcut": "Scan the Revenue column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_028",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Revenue column?",
+    "image": "/assets/di-images/tables/table_014.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 252,
+          "exp": 204,
+          "prof": 48
+        },
+        {
+          "year": 2020,
+          "rev": 275,
+          "exp": 237,
+          "prof": 38
+        },
+        {
+          "year": 2021,
+          "rev": 338,
+          "exp": 268,
+          "prof": 70
+        },
+        {
+          "year": 2022,
+          "rev": 387,
+          "exp": 281,
+          "prof": 106
+        },
+        {
+          "year": 2023,
+          "rev": 410,
+          "exp": 308,
+          "prof": 102
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "1674",
+      "1684",
+      "1662",
+      "1652"
+    ],
+    "correctAnswer": 2,
+    "answer": "1662",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 410+387+338+275+252 = 1662.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_029",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Export?",
+    "image": "/assets/di-images/tables/table_015.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 534,
+          "imp": 537,
+          "bal": -3
+        },
+        {
+          "country": "UK",
+          "exp": 627,
+          "imp": 596,
+          "bal": 31
+        },
+        {
+          "country": "China",
+          "exp": 717,
+          "imp": 669,
+          "bal": 48
+        },
+        {
+          "country": "Japan",
+          "exp": 833,
+          "imp": 726,
+          "bal": 107
+        },
+        {
+          "country": "Germany",
+          "exp": 927,
+          "imp": 830,
+          "bal": 97
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "Germany",
+      "China",
+      "Japan",
+      "UK"
+    ],
+    "correctAnswer": 0,
+    "answer": "Germany",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Export values: Germany=927, Japan=833, China=717, UK=627, USA=534. Maximum → Germany (927).",
+    "shortcut": "Scan the Export column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_030",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Export column?",
+    "image": "/assets/di-images/tables/table_015.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 534,
+          "imp": 537,
+          "bal": -3
+        },
+        {
+          "country": "UK",
+          "exp": 627,
+          "imp": 596,
+          "bal": 31
+        },
+        {
+          "country": "China",
+          "exp": 717,
+          "imp": 669,
+          "bal": 48
+        },
+        {
+          "country": "Japan",
+          "exp": 833,
+          "imp": 726,
+          "bal": 107
+        },
+        {
+          "country": "Germany",
+          "exp": 927,
+          "imp": 830,
+          "bal": 97
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "3660",
+      "3628",
+      "3650",
+      "3638"
+    ],
+    "correctAnswer": 3,
+    "answer": "3638",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 927+833+717+627+534 = 3638.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_031",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Theft?",
+    "image": "/assets/di-images/tables/table_016.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 127,
+          "assault": 92,
+          "fraud": 75,
+          "total": 294
+        },
+        {
+          "city": "City B",
+          "theft": 130,
+          "assault": 100,
+          "fraud": 74,
+          "total": 304
+        },
+        {
+          "city": "City C",
+          "theft": 128,
+          "assault": 106,
+          "fraud": 84,
+          "total": 318
+        },
+        {
+          "city": "City D",
+          "theft": 161,
+          "assault": 125,
+          "fraud": 85,
+          "total": 371
+        },
+        {
+          "city": "City E",
+          "theft": 166,
+          "assault": 138,
+          "fraud": 89,
+          "total": 393
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "City D",
+      "City E",
+      "City B",
+      "City C"
+    ],
+    "correctAnswer": 1,
+    "answer": "City E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Theft values: City E=166, City D=161, City B=130, City C=128, City A=127. Maximum → City E (166).",
+    "shortcut": "Scan the Theft column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_032",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Theft column?",
+    "image": "/assets/di-images/tables/table_016.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 127,
+          "assault": 92,
+          "fraud": 75,
+          "total": 294
+        },
+        {
+          "city": "City B",
+          "theft": 130,
+          "assault": 100,
+          "fraud": 74,
+          "total": 304
+        },
+        {
+          "city": "City C",
+          "theft": 128,
+          "assault": 106,
+          "fraud": 84,
+          "total": 318
+        },
+        {
+          "city": "City D",
+          "theft": 161,
+          "assault": 125,
+          "fraud": 85,
+          "total": 371
+        },
+        {
+          "city": "City E",
+          "theft": 166,
+          "assault": 138,
+          "fraud": 89,
+          "total": 393
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "702",
+      "734",
+      "712",
+      "724"
+    ],
+    "correctAnswer": 2,
+    "answer": "712",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 166+161+130+128+127 = 712.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_033",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nIn the year 2021, which product had the highest sales?",
+    "image": "/assets/di-images/tables/table_017.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          132,
+          158,
+          170,
+          169,
+          196
+        ],
+        "Product B": [
+          151,
+          177,
+          180,
+          188,
+          212
+        ],
+        "Product C": [
+          177,
+          186,
+          204,
+          203,
+          216
+        ],
+        "Product D": [
+          185,
+          212,
+          212,
+          221,
+          248
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "Product B",
+      "Product A",
+      "Product D",
+      "Product C"
+    ],
+    "correctAnswer": 2,
+    "answer": "Product D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Column 2021: Product D=₹212L, Product C=₹204L, Product B=₹180L, Product A=₹170L. Highest → Product D (₹212L).",
+    "shortcut": "Scan the 2021 column, pick maximum.",
+    "commonMistake": "Comparing wrong year column.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_034",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total sales of Product B over all 5 years?",
+    "image": "/assets/di-images/tables/table_017.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          132,
+          158,
+          170,
+          169,
+          196
+        ],
+        "Product B": [
+          151,
+          177,
+          180,
+          188,
+          212
+        ],
+        "Product C": [
+          177,
+          186,
+          204,
+          203,
+          216
+        ],
+        "Product D": [
+          185,
+          212,
+          212,
+          221,
+          248
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "₹893L",
+      "₹918L",
+      "₹908L",
+      "₹933L"
+    ],
+    "correctAnswer": 2,
+    "answer": "₹908L",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Sum of Product B = 151+177+180+188+212 = ₹908L.",
+    "shortcut": "Sum all values in the Product B row.",
+    "commonMistake": "Adding only 4 out of 5 years.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_035",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich department has the highest number of female employees?",
+    "image": "/assets/di-images/tables/table_018.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 51,
+          "f": 54,
+          "t": 105
+        },
+        {
+          "dept": "Finance",
+          "m": 54,
+          "f": 60,
+          "t": 114
+        },
+        {
+          "dept": "IT",
+          "m": 66,
+          "f": 59,
+          "t": 125
+        },
+        {
+          "dept": "Marketing",
+          "m": 75,
+          "f": 69,
+          "t": 144
+        },
+        {
+          "dept": "Operations",
+          "m": 85,
+          "f": 75,
+          "t": 160
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "Marketing",
+      "Operations",
+      "Finance",
+      "HR"
+    ],
+    "correctAnswer": 1,
+    "answer": "Operations",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Female counts: HR=54, Finance=60, IT=59, Marketing=69, Operations=75. Maximum → Operations (75).",
+    "shortcut": "Scan the Female column.",
+    "commonMistake": "Confusing Female column with Total.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_036",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total number of employees across all departments?",
+    "image": "/assets/di-images/tables/table_018.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 51,
+          "f": 54,
+          "t": 105
+        },
+        {
+          "dept": "Finance",
+          "m": 54,
+          "f": 60,
+          "t": 114
+        },
+        {
+          "dept": "IT",
+          "m": 66,
+          "f": 59,
+          "t": 125
+        },
+        {
+          "dept": "Marketing",
+          "m": 75,
+          "f": 69,
+          "t": 144
+        },
+        {
+          "dept": "Operations",
+          "m": 85,
+          "f": 75,
+          "t": 160
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "683",
+      "633",
+      "668",
+      "648"
+    ],
+    "correctAnswer": 3,
+    "answer": "648",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 105+114+125+144+160 = 648.",
+    "shortcut": "Sum the Total column directly.",
+    "commonMistake": "Summing Male + Female separately leads to same answer, but avoid double counting.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_037",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich student scored the highest aggregate marks across all subjects?",
+    "image": "/assets/di-images/tables/table_019.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          66,
+          59,
+          65,
+          75,
+          77
+        ],
+        "Student B": [
+          73,
+          63,
+          71,
+          83,
+          78
+        ],
+        "Student C": [
+          76,
+          83,
+          85,
+          82,
+          82
+        ],
+        "Student D": [
+          77,
+          88,
+          79,
+          80,
+          89
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "Student B",
+      "Student A",
+      "Student C",
+      "Student D"
+    ],
+    "correctAnswer": 3,
+    "answer": "Student D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Totals: Student D=413, Student C=408, Student B=368, Student A=342. Highest → Student D (413).",
+    "shortcut": "Row-sum each student and compare.",
+    "commonMistake": "Judging by a single subject instead of total.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_038",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the average score of all students in Maths?",
+    "image": "/assets/di-images/tables/table_019.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          66,
+          59,
+          65,
+          75,
+          77
+        ],
+        "Student B": [
+          73,
+          63,
+          71,
+          83,
+          78
+        ],
+        "Student C": [
+          76,
+          83,
+          85,
+          82,
+          82
+        ],
+        "Student D": [
+          77,
+          88,
+          79,
+          80,
+          89
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "70",
+      "81",
+      "77",
+      "73"
+    ],
+    "correctAnswer": 3,
+    "answer": "73",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Scores: 66, 73, 76, 77. Avg = 292/4 = 73.",
+    "shortcut": "Sum column ÷ number of students.",
+    "commonMistake": "Dividing by number of subjects instead of students.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_039",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for 2018?",
+    "image": "/assets/di-images/tables/table_020.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          17,
+          18.9,
+          18.8,
+          19.7,
+          18.6
+        ],
+        "State B": [
+          19.8,
+          21.7,
+          20.6,
+          21.5,
+          21.4
+        ],
+        "State C": [
+          21.6,
+          21.5,
+          23.4,
+          23.3,
+          27.2
+        ],
+        "State D": [
+          23.4,
+          26.3,
+          25.2,
+          26.1,
+          30
+        ],
+        "State E": [
+          27.2,
+          28.1,
+          31,
+          30.9,
+          31.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "State C",
+      "State D",
+      "State E",
+      "State B"
+    ],
+    "correctAnswer": 2,
+    "answer": "State E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "2018 values: State E=27.2, State D=23.4, State C=21.6, State B=19.8, State A=17. Maximum → State E (27.2).",
+    "shortcut": "Scan the 2018 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_040",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Easy",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the 2018 column?",
+    "image": "/assets/di-images/tables/table_020.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          17,
+          18.9,
+          18.8,
+          19.7,
+          18.6
+        ],
+        "State B": [
+          19.8,
+          21.7,
+          20.6,
+          21.5,
+          21.4
+        ],
+        "State C": [
+          21.6,
+          21.5,
+          23.4,
+          23.3,
+          27.2
+        ],
+        "State D": [
+          23.4,
+          26.3,
+          25.2,
+          26.1,
+          30
+        ],
+        "State E": [
+          27.2,
+          28.1,
+          31,
+          30.9,
+          31.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "131",
+      "109",
+      "121",
+      "99"
+    ],
+    "correctAnswer": 1,
+    "answer": "109",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 27.2+23.4+21.6+19.8+17 = 109.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_041",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Q1?",
+    "image": "/assets/di-images/tables/table_021.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          590,
+          693,
+          754,
+          787
+        ],
+        "Factory B": [
+          700,
+          762,
+          889,
+          883
+        ],
+        "Factory C": [
+          893,
+          952,
+          1002,
+          1035
+        ],
+        "Factory D": [
+          1002,
+          1074,
+          1088,
+          1162
+        ],
+        "Factory E": [
+          1130,
+          1172,
+          1223,
+          1281
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "Factory E",
+      "Factory C",
+      "Factory B",
+      "Factory D"
+    ],
+    "correctAnswer": 0,
+    "answer": "Factory E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Q1 values: Factory E=1130, Factory D=1002, Factory C=893, Factory B=700, Factory A=590. Maximum → Factory E (1130).",
+    "shortcut": "Scan the Q1 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_042",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Q1 column?",
+    "image": "/assets/di-images/tables/table_021.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          590,
+          693,
+          754,
+          787
+        ],
+        "Factory B": [
+          700,
+          762,
+          889,
+          883
+        ],
+        "Factory C": [
+          893,
+          952,
+          1002,
+          1035
+        ],
+        "Factory D": [
+          1002,
+          1074,
+          1088,
+          1162
+        ],
+        "Factory E": [
+          1130,
+          1172,
+          1223,
+          1281
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "4315",
+      "4305",
+      "4337",
+      "4327"
+    ],
+    "correctAnswer": 0,
+    "answer": "4315",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 1130+1002+893+700+590 = 4315.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_043",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Revenue?",
+    "image": "/assets/di-images/tables/table_022.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 234,
+          "exp": 229,
+          "prof": 5
+        },
+        {
+          "year": 2020,
+          "rev": 295,
+          "exp": 242,
+          "prof": 53
+        },
+        {
+          "year": 2021,
+          "rev": 359,
+          "exp": 280,
+          "prof": 79
+        },
+        {
+          "year": 2022,
+          "rev": 388,
+          "exp": 292,
+          "prof": 96
+        },
+        {
+          "year": 2023,
+          "rev": 443,
+          "exp": 337,
+          "prof": 106
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "2023",
+      "2020",
+      "2022",
+      "2021"
+    ],
+    "correctAnswer": 0,
+    "answer": "2023",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Revenue values: 2023=443, 2022=388, 2021=359, 2020=295, 2019=234. Maximum → 2023 (443).",
+    "shortcut": "Scan the Revenue column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_044",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Revenue column?",
+    "image": "/assets/di-images/tables/table_022.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 234,
+          "exp": 229,
+          "prof": 5
+        },
+        {
+          "year": 2020,
+          "rev": 295,
+          "exp": 242,
+          "prof": 53
+        },
+        {
+          "year": 2021,
+          "rev": 359,
+          "exp": 280,
+          "prof": 79
+        },
+        {
+          "year": 2022,
+          "rev": 388,
+          "exp": 292,
+          "prof": 96
+        },
+        {
+          "year": 2023,
+          "rev": 443,
+          "exp": 337,
+          "prof": 106
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "1741",
+      "1731",
+      "1709",
+      "1719"
+    ],
+    "correctAnswer": 3,
+    "answer": "1719",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 443+388+359+295+234 = 1719.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_045",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Export?",
+    "image": "/assets/di-images/tables/table_023.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 603,
+          "imp": 592,
+          "bal": 11
+        },
+        {
+          "country": "UK",
+          "exp": 667,
+          "imp": 631,
+          "bal": 36
+        },
+        {
+          "country": "China",
+          "exp": 728,
+          "imp": 715,
+          "bal": 13
+        },
+        {
+          "country": "Japan",
+          "exp": 832,
+          "imp": 754,
+          "bal": 78
+        },
+        {
+          "country": "Germany",
+          "exp": 934,
+          "imp": 866,
+          "bal": 68
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "Germany",
+      "Japan",
+      "China",
+      "UK"
+    ],
+    "correctAnswer": 0,
+    "answer": "Germany",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Export values: Germany=934, Japan=832, China=728, UK=667, USA=603. Maximum → Germany (934).",
+    "shortcut": "Scan the Export column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_046",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Export column?",
+    "image": "/assets/di-images/tables/table_023.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 603,
+          "imp": 592,
+          "bal": 11
+        },
+        {
+          "country": "UK",
+          "exp": 667,
+          "imp": 631,
+          "bal": 36
+        },
+        {
+          "country": "China",
+          "exp": 728,
+          "imp": 715,
+          "bal": 13
+        },
+        {
+          "country": "Japan",
+          "exp": 832,
+          "imp": 754,
+          "bal": 78
+        },
+        {
+          "country": "Germany",
+          "exp": 934,
+          "imp": 866,
+          "bal": 68
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "3776",
+      "3764",
+      "3754",
+      "3786"
+    ],
+    "correctAnswer": 1,
+    "answer": "3764",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 934+832+728+667+603 = 3764.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_047",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Theft?",
+    "image": "/assets/di-images/tables/table_024.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 118,
+          "assault": 102,
+          "fraud": 81,
+          "total": 301
+        },
+        {
+          "city": "City B",
+          "theft": 136,
+          "assault": 99,
+          "fraud": 78,
+          "total": 313
+        },
+        {
+          "city": "City C",
+          "theft": 157,
+          "assault": 121,
+          "fraud": 98,
+          "total": 376
+        },
+        {
+          "city": "City D",
+          "theft": 162,
+          "assault": 122,
+          "fraud": 92,
+          "total": 376
+        },
+        {
+          "city": "City E",
+          "theft": 167,
+          "assault": 128,
+          "fraud": 100,
+          "total": 395
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "City E",
+      "City B",
+      "City D",
+      "City C"
+    ],
+    "correctAnswer": 0,
+    "answer": "City E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Theft values: City E=167, City D=162, City C=157, City B=136, City A=118. Maximum → City E (167).",
+    "shortcut": "Scan the Theft column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_048",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Theft column?",
+    "image": "/assets/di-images/tables/table_024.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 118,
+          "assault": 102,
+          "fraud": 81,
+          "total": 301
+        },
+        {
+          "city": "City B",
+          "theft": 136,
+          "assault": 99,
+          "fraud": 78,
+          "total": 313
+        },
+        {
+          "city": "City C",
+          "theft": 157,
+          "assault": 121,
+          "fraud": 98,
+          "total": 376
+        },
+        {
+          "city": "City D",
+          "theft": 162,
+          "assault": 122,
+          "fraud": 92,
+          "total": 376
+        },
+        {
+          "city": "City E",
+          "theft": 167,
+          "assault": 128,
+          "fraud": 100,
+          "total": 395
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "762",
+      "740",
+      "730",
+      "752"
+    ],
+    "correctAnswer": 1,
+    "answer": "740",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 167+162+157+136+118 = 740.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_049",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nIn the year 2021, which product had the highest sales?",
+    "image": "/assets/di-images/tables/table_025.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          144,
+          168,
+          174,
+          182,
+          187
+        ],
+        "Product B": [
+          170,
+          178,
+          186,
+          208,
+          217
+        ],
+        "Product C": [
+          192,
+          192,
+          207,
+          212,
+          225
+        ],
+        "Product D": [
+          197,
+          208,
+          230,
+          245,
+          256
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "Product A",
+      "Product B",
+      "Product C",
+      "Product D"
+    ],
+    "correctAnswer": 3,
+    "answer": "Product D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Column 2021: Product D=₹230L, Product C=₹207L, Product B=₹186L, Product A=₹174L. Highest → Product D (₹230L).",
+    "shortcut": "Scan the 2021 column, pick maximum.",
+    "commonMistake": "Comparing wrong year column.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_050",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total sales of Product B over all 5 years?",
+    "image": "/assets/di-images/tables/table_025.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          144,
+          168,
+          174,
+          182,
+          187
+        ],
+        "Product B": [
+          170,
+          178,
+          186,
+          208,
+          217
+        ],
+        "Product C": [
+          192,
+          192,
+          207,
+          212,
+          225
+        ],
+        "Product D": [
+          197,
+          208,
+          230,
+          245,
+          256
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "₹959L",
+      "₹984L",
+      "₹969L",
+      "₹944L"
+    ],
+    "correctAnswer": 0,
+    "answer": "₹959L",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Sum of Product B = 170+178+186+208+217 = ₹959L.",
+    "shortcut": "Sum all values in the Product B row.",
+    "commonMistake": "Adding only 4 out of 5 years.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_051",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich department has the highest number of female employees?",
+    "image": "/assets/di-images/tables/table_026.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 54,
+          "f": 58,
+          "t": 112
+        },
+        {
+          "dept": "Finance",
+          "m": 61,
+          "f": 58,
+          "t": 119
+        },
+        {
+          "dept": "IT",
+          "m": 70,
+          "f": 63,
+          "t": 133
+        },
+        {
+          "dept": "Marketing",
+          "m": 78,
+          "f": 70,
+          "t": 148
+        },
+        {
+          "dept": "Operations",
+          "m": 89,
+          "f": 75,
+          "t": 164
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "Operations",
+      "Marketing",
+      "Finance",
+      "IT"
+    ],
+    "correctAnswer": 0,
+    "answer": "Operations",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Female counts: HR=58, Finance=58, IT=63, Marketing=70, Operations=75. Maximum → Operations (75).",
+    "shortcut": "Scan the Female column.",
+    "commonMistake": "Confusing Female column with Total.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_052",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total number of employees across all departments?",
+    "image": "/assets/di-images/tables/table_026.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 54,
+          "f": 58,
+          "t": 112
+        },
+        {
+          "dept": "Finance",
+          "m": 61,
+          "f": 58,
+          "t": 119
+        },
+        {
+          "dept": "IT",
+          "m": 70,
+          "f": 63,
+          "t": 133
+        },
+        {
+          "dept": "Marketing",
+          "m": 78,
+          "f": 70,
+          "t": 148
+        },
+        {
+          "dept": "Operations",
+          "m": 89,
+          "f": 75,
+          "t": 164
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "661",
+      "676",
+      "696",
+      "711"
+    ],
+    "correctAnswer": 1,
+    "answer": "676",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 112+119+133+148+164 = 676.",
+    "shortcut": "Sum the Total column directly.",
+    "commonMistake": "Summing Male + Female separately leads to same answer, but avoid double counting.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_053",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich student scored the highest aggregate marks across all subjects?",
+    "image": "/assets/di-images/tables/table_027.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          68,
+          75,
+          70,
+          81,
+          81
+        ],
+        "Student B": [
+          72,
+          68,
+          82,
+          73,
+          85
+        ],
+        "Student C": [
+          71,
+          77,
+          84,
+          89,
+          93
+        ],
+        "Student D": [
+          77,
+          92,
+          91,
+          88,
+          99
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "Student D",
+      "Student C",
+      "Student A",
+      "Student B"
+    ],
+    "correctAnswer": 0,
+    "answer": "Student D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Totals: Student D=447, Student C=414, Student B=380, Student A=375. Highest → Student D (447).",
+    "shortcut": "Row-sum each student and compare.",
+    "commonMistake": "Judging by a single subject instead of total.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_054",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the average score of all students in Maths?",
+    "image": "/assets/di-images/tables/table_027.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          68,
+          75,
+          70,
+          81,
+          81
+        ],
+        "Student B": [
+          72,
+          68,
+          82,
+          73,
+          85
+        ],
+        "Student C": [
+          71,
+          77,
+          84,
+          89,
+          93
+        ],
+        "Student D": [
+          77,
+          92,
+          91,
+          88,
+          99
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "76",
+      "69",
+      "72",
+      "80"
+    ],
+    "correctAnswer": 2,
+    "answer": "72",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Scores: 68, 72, 71, 77. Avg = 288/4 = 72.",
+    "shortcut": "Sum column ÷ number of students.",
+    "commonMistake": "Dividing by number of subjects instead of students.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_055",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for 2018?",
+    "image": "/assets/di-images/tables/table_028.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          19,
+          17.9,
+          20.8,
+          21.7,
+          20.6
+        ],
+        "State B": [
+          20.8,
+          23.7,
+          23.6,
+          25.5,
+          23.4
+        ],
+        "State C": [
+          24.6,
+          23.5,
+          25.4,
+          27.3,
+          28.2
+        ],
+        "State D": [
+          26.4,
+          26.3,
+          28.2,
+          31.1,
+          31
+        ],
+        "State E": [
+          31.2,
+          30.1,
+          32,
+          30.9,
+          32.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "State B",
+      "State C",
+      "State E",
+      "State D"
+    ],
+    "correctAnswer": 2,
+    "answer": "State E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "2018 values: State E=31.2, State D=26.4, State C=24.6, State B=20.8, State A=19. Maximum → State E (31.2).",
+    "shortcut": "Scan the 2018 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_056",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the 2018 column?",
+    "image": "/assets/di-images/tables/table_028.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          19,
+          17.9,
+          20.8,
+          21.7,
+          20.6
+        ],
+        "State B": [
+          20.8,
+          23.7,
+          23.6,
+          25.5,
+          23.4
+        ],
+        "State C": [
+          24.6,
+          23.5,
+          25.4,
+          27.3,
+          28.2
+        ],
+        "State D": [
+          26.4,
+          26.3,
+          28.2,
+          31.1,
+          31
+        ],
+        "State E": [
+          31.2,
+          30.1,
+          32,
+          30.9,
+          32.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "112",
+      "122",
+      "144",
+      "134"
+    ],
+    "correctAnswer": 1,
+    "answer": "122",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 31.2+26.4+24.6+20.8+19 = 122.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_057",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Q1?",
+    "image": "/assets/di-images/tables/table_029.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          625,
+          676,
+          787,
+          869
+        ],
+        "Factory B": [
+          743,
+          861,
+          910,
+          973
+        ],
+        "Factory C": [
+          869,
+          915,
+          1000,
+          1065
+        ],
+        "Factory D": [
+          1037,
+          1096,
+          1095,
+          1198
+        ],
+        "Factory E": [
+          1136,
+          1207,
+          1290,
+          1308
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "Factory E",
+      "Factory D",
+      "Factory C",
+      "Factory B"
+    ],
+    "correctAnswer": 0,
+    "answer": "Factory E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Q1 values: Factory E=1136, Factory D=1037, Factory C=869, Factory B=743, Factory A=625. Maximum → Factory E (1136).",
+    "shortcut": "Scan the Q1 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_058",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Q1 column?",
+    "image": "/assets/di-images/tables/table_029.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          625,
+          676,
+          787,
+          869
+        ],
+        "Factory B": [
+          743,
+          861,
+          910,
+          973
+        ],
+        "Factory C": [
+          869,
+          915,
+          1000,
+          1065
+        ],
+        "Factory D": [
+          1037,
+          1096,
+          1095,
+          1198
+        ],
+        "Factory E": [
+          1136,
+          1207,
+          1290,
+          1308
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "4422",
+      "4400",
+      "4410",
+      "4432"
+    ],
+    "correctAnswer": 2,
+    "answer": "4410",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 1136+1037+869+743+625 = 4410.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_059",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Revenue?",
+    "image": "/assets/di-images/tables/table_030.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 257,
+          "exp": 225,
+          "prof": 32
+        },
+        {
+          "year": 2020,
+          "rev": 310,
+          "exp": 261,
+          "prof": 49
+        },
+        {
+          "year": 2021,
+          "rev": 364,
+          "exp": 301,
+          "prof": 63
+        },
+        {
+          "year": 2022,
+          "rev": 412,
+          "exp": 313,
+          "prof": 99
+        },
+        {
+          "year": 2023,
+          "rev": 451,
+          "exp": 337,
+          "prof": 114
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "2020",
+      "2022",
+      "2023",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "answer": "2023",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Revenue values: 2023=451, 2022=412, 2021=364, 2020=310, 2019=257. Maximum → 2023 (451).",
+    "shortcut": "Scan the Revenue column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_060",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Revenue column?",
+    "image": "/assets/di-images/tables/table_030.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 257,
+          "exp": 225,
+          "prof": 32
+        },
+        {
+          "year": 2020,
+          "rev": 310,
+          "exp": 261,
+          "prof": 49
+        },
+        {
+          "year": 2021,
+          "rev": 364,
+          "exp": 301,
+          "prof": 63
+        },
+        {
+          "year": 2022,
+          "rev": 412,
+          "exp": 313,
+          "prof": 99
+        },
+        {
+          "year": 2023,
+          "rev": 451,
+          "exp": 337,
+          "prof": 114
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "1784",
+      "1806",
+      "1794",
+      "1816"
+    ],
+    "correctAnswer": 2,
+    "answer": "1794",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 451+412+364+310+257 = 1794.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_061",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Export?",
+    "image": "/assets/di-images/tables/table_031.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 648,
+          "imp": 613,
+          "bal": 35
+        },
+        {
+          "country": "UK",
+          "exp": 672,
+          "imp": 647,
+          "bal": 25
+        },
+        {
+          "country": "China",
+          "exp": 786,
+          "imp": 737,
+          "bal": 49
+        },
+        {
+          "country": "Japan",
+          "exp": 860,
+          "imp": 790,
+          "bal": 70
+        },
+        {
+          "country": "Germany",
+          "exp": 935,
+          "imp": 895,
+          "bal": 40
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "Japan",
+      "UK",
+      "China",
+      "Germany"
+    ],
+    "correctAnswer": 3,
+    "answer": "Germany",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Export values: Germany=935, Japan=860, China=786, UK=672, USA=648. Maximum → Germany (935).",
+    "shortcut": "Scan the Export column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_062",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Export column?",
+    "image": "/assets/di-images/tables/table_031.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 648,
+          "imp": 613,
+          "bal": 35
+        },
+        {
+          "country": "UK",
+          "exp": 672,
+          "imp": 647,
+          "bal": 25
+        },
+        {
+          "country": "China",
+          "exp": 786,
+          "imp": 737,
+          "bal": 49
+        },
+        {
+          "country": "Japan",
+          "exp": 860,
+          "imp": 790,
+          "bal": 70
+        },
+        {
+          "country": "Germany",
+          "exp": 935,
+          "imp": 895,
+          "bal": 40
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "3901",
+      "3891",
+      "3923",
+      "3913"
+    ],
+    "correctAnswer": 0,
+    "answer": "3901",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 935+860+786+672+648 = 3901.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_063",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Theft?",
+    "image": "/assets/di-images/tables/table_032.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 118,
+          "assault": 107,
+          "fraud": 79,
+          "total": 304
+        },
+        {
+          "city": "City B",
+          "theft": 146,
+          "assault": 107,
+          "fraud": 93,
+          "total": 346
+        },
+        {
+          "city": "City C",
+          "theft": 162,
+          "assault": 122,
+          "fraud": 99,
+          "total": 383
+        },
+        {
+          "city": "City D",
+          "theft": 157,
+          "assault": 125,
+          "fraud": 102,
+          "total": 384
+        },
+        {
+          "city": "City E",
+          "theft": 186,
+          "assault": 147,
+          "fraud": 105,
+          "total": 438
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "City C",
+      "City E",
+      "City B",
+      "City D"
+    ],
+    "correctAnswer": 1,
+    "answer": "City E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Theft values: City E=186, City C=162, City D=157, City B=146, City A=118. Maximum → City E (186).",
+    "shortcut": "Scan the Theft column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_064",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Theft column?",
+    "image": "/assets/di-images/tables/table_032.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 118,
+          "assault": 107,
+          "fraud": 79,
+          "total": 304
+        },
+        {
+          "city": "City B",
+          "theft": 146,
+          "assault": 107,
+          "fraud": 93,
+          "total": 346
+        },
+        {
+          "city": "City C",
+          "theft": 162,
+          "assault": 122,
+          "fraud": 99,
+          "total": 383
+        },
+        {
+          "city": "City D",
+          "theft": 157,
+          "assault": 125,
+          "fraud": 102,
+          "total": 384
+        },
+        {
+          "city": "City E",
+          "theft": 186,
+          "assault": 147,
+          "fraud": 105,
+          "total": 438
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "791",
+      "769",
+      "781",
+      "759"
+    ],
+    "correctAnswer": 1,
+    "answer": "769",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 186+162+157+146+118 = 769.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_065",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nIn the year 2021, which product had the highest sales?",
+    "image": "/assets/di-images/tables/table_033.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          164,
+          167,
+          179,
+          191,
+          202
+        ],
+        "Product B": [
+          171,
+          179,
+          206,
+          215,
+          219
+        ],
+        "Product C": [
+          188,
+          198,
+          221,
+          226,
+          241
+        ],
+        "Product D": [
+          207,
+          230,
+          243,
+          248,
+          257
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "Product B",
+      "Product D",
+      "Product A",
+      "Product C"
+    ],
+    "correctAnswer": 1,
+    "answer": "Product D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Column 2021: Product D=₹243L, Product C=₹221L, Product B=₹206L, Product A=₹179L. Highest → Product D (₹243L).",
+    "shortcut": "Scan the 2021 column, pick maximum.",
+    "commonMistake": "Comparing wrong year column.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_066",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total sales of Product B over all 5 years?",
+    "image": "/assets/di-images/tables/table_033.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          164,
+          167,
+          179,
+          191,
+          202
+        ],
+        "Product B": [
+          171,
+          179,
+          206,
+          215,
+          219
+        ],
+        "Product C": [
+          188,
+          198,
+          221,
+          226,
+          241
+        ],
+        "Product D": [
+          207,
+          230,
+          243,
+          248,
+          257
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "₹975L",
+      "₹990L",
+      "₹1015L",
+      "₹1000L"
+    ],
+    "correctAnswer": 1,
+    "answer": "₹990L",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Sum of Product B = 171+179+206+215+219 = ₹990L.",
+    "shortcut": "Sum all values in the Product B row.",
+    "commonMistake": "Adding only 4 out of 5 years.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_067",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich department has the highest number of female employees?",
+    "image": "/assets/di-images/tables/table_034.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 57,
+          "f": 62,
+          "t": 119
+        },
+        {
+          "dept": "Finance",
+          "m": 69,
+          "f": 67,
+          "t": 136
+        },
+        {
+          "dept": "IT",
+          "m": 76,
+          "f": 75,
+          "t": 151
+        },
+        {
+          "dept": "Marketing",
+          "m": 90,
+          "f": 75,
+          "t": 165
+        },
+        {
+          "dept": "Operations",
+          "m": 99,
+          "f": 81,
+          "t": 180
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "Finance",
+      "Operations",
+      "Marketing",
+      "HR"
+    ],
+    "correctAnswer": 1,
+    "answer": "Operations",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Female counts: HR=62, Finance=67, IT=75, Marketing=75, Operations=81. Maximum → Operations (81).",
+    "shortcut": "Scan the Female column.",
+    "commonMistake": "Confusing Female column with Total.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_068",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total number of employees across all departments?",
+    "image": "/assets/di-images/tables/table_034.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 57,
+          "f": 62,
+          "t": 119
+        },
+        {
+          "dept": "Finance",
+          "m": 69,
+          "f": 67,
+          "t": 136
+        },
+        {
+          "dept": "IT",
+          "m": 76,
+          "f": 75,
+          "t": 151
+        },
+        {
+          "dept": "Marketing",
+          "m": 90,
+          "f": 75,
+          "t": 165
+        },
+        {
+          "dept": "Operations",
+          "m": 99,
+          "f": 81,
+          "t": 180
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "736",
+      "771",
+      "751",
+      "786"
+    ],
+    "correctAnswer": 2,
+    "answer": "751",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 119+136+151+165+180 = 751.",
+    "shortcut": "Sum the Total column directly.",
+    "commonMistake": "Summing Male + Female separately leads to same answer, but avoid double counting.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_069",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich student scored the highest aggregate marks across all subjects?",
+    "image": "/assets/di-images/tables/table_035.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          74,
+          77,
+          75,
+          87,
+          82
+        ],
+        "Student B": [
+          74,
+          82,
+          89,
+          90,
+          91
+        ],
+        "Student C": [
+          83,
+          84,
+          83,
+          90,
+          100
+        ],
+        "Student D": [
+          90,
+          82,
+          95,
+          99,
+          100
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "Student B",
+      "Student D",
+      "Student C",
+      "Student A"
+    ],
+    "correctAnswer": 1,
+    "answer": "Student D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Totals: Student D=466, Student C=440, Student B=426, Student A=395. Highest → Student D (466).",
+    "shortcut": "Row-sum each student and compare.",
+    "commonMistake": "Judging by a single subject instead of total.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_070",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the average score of all students in Maths?",
+    "image": "/assets/di-images/tables/table_035.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          74,
+          77,
+          75,
+          87,
+          82
+        ],
+        "Student B": [
+          74,
+          82,
+          89,
+          90,
+          91
+        ],
+        "Student C": [
+          83,
+          84,
+          83,
+          90,
+          100
+        ],
+        "Student D": [
+          90,
+          82,
+          95,
+          99,
+          100
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "77.3",
+      "80.3",
+      "88.3",
+      "84.3"
+    ],
+    "correctAnswer": 1,
+    "answer": "80.3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Scores: 74, 74, 83, 90. Avg = 321/4 = 80.3.",
+    "shortcut": "Sum column ÷ number of students.",
+    "commonMistake": "Dividing by number of subjects instead of students.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_071",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for 2018?",
+    "image": "/assets/di-images/tables/table_036.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          19,
+          19.9,
+          20.8,
+          22.7,
+          25.6
+        ],
+        "State B": [
+          23.8,
+          25.7,
+          23.6,
+          24.5,
+          26.4
+        ],
+        "State C": [
+          27.6,
+          27.5,
+          26.4,
+          28.3,
+          28.2
+        ],
+        "State D": [
+          27.4,
+          28.3,
+          32.2,
+          30.1,
+          33
+        ],
+        "State E": [
+          31.2,
+          31.1,
+          34,
+          33.9,
+          34.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "State E",
+      "State B",
+      "State C",
+      "State D"
+    ],
+    "correctAnswer": 0,
+    "answer": "State E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "2018 values: State E=31.2, State C=27.6, State D=27.4, State B=23.8, State A=19. Maximum → State E (31.2).",
+    "shortcut": "Scan the 2018 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_072",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the 2018 column?",
+    "image": "/assets/di-images/tables/table_036.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          19,
+          19.9,
+          20.8,
+          22.7,
+          25.6
+        ],
+        "State B": [
+          23.8,
+          25.7,
+          23.6,
+          24.5,
+          26.4
+        ],
+        "State C": [
+          27.6,
+          27.5,
+          26.4,
+          28.3,
+          28.2
+        ],
+        "State D": [
+          27.4,
+          28.3,
+          32.2,
+          30.1,
+          33
+        ],
+        "State E": [
+          31.2,
+          31.1,
+          34,
+          33.9,
+          34.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "141",
+      "119",
+      "151",
+      "129"
+    ],
+    "correctAnswer": 3,
+    "answer": "129",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 31.2+27.6+27.4+23.8+19 = 129.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_073",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Q1?",
+    "image": "/assets/di-images/tables/table_037.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          711,
+          754,
+          776,
+          904
+        ],
+        "Factory B": [
+          771,
+          910,
+          960,
+          1023
+        ],
+        "Factory C": [
+          967,
+          990,
+          1021,
+          1116
+        ],
+        "Factory D": [
+          1064,
+          1113,
+          1180,
+          1200
+        ],
+        "Factory E": [
+          1168,
+          1198,
+          1296,
+          1329
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "Factory B",
+      "Factory D",
+      "Factory E",
+      "Factory C"
+    ],
+    "correctAnswer": 2,
+    "answer": "Factory E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Q1 values: Factory E=1168, Factory D=1064, Factory C=967, Factory B=771, Factory A=711. Maximum → Factory E (1168).",
+    "shortcut": "Scan the Q1 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_074",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Q1 column?",
+    "image": "/assets/di-images/tables/table_037.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          711,
+          754,
+          776,
+          904
+        ],
+        "Factory B": [
+          771,
+          910,
+          960,
+          1023
+        ],
+        "Factory C": [
+          967,
+          990,
+          1021,
+          1116
+        ],
+        "Factory D": [
+          1064,
+          1113,
+          1180,
+          1200
+        ],
+        "Factory E": [
+          1168,
+          1198,
+          1296,
+          1329
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "4671",
+      "4693",
+      "4681",
+      "4703"
+    ],
+    "correctAnswer": 2,
+    "answer": "4681",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 1168+1064+967+771+711 = 4681.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_075",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Revenue?",
+    "image": "/assets/di-images/tables/table_038.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 297,
+          "exp": 260,
+          "prof": 37
+        },
+        {
+          "year": 2020,
+          "rev": 346,
+          "exp": 285,
+          "prof": 61
+        },
+        {
+          "year": 2021,
+          "rev": 382,
+          "exp": 296,
+          "prof": 86
+        },
+        {
+          "year": 2022,
+          "rev": 412,
+          "exp": 325,
+          "prof": 87
+        },
+        {
+          "year": 2023,
+          "rev": 453,
+          "exp": 368,
+          "prof": 85
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "2023",
+      "2021",
+      "2020",
+      "2022"
+    ],
+    "correctAnswer": 0,
+    "answer": "2023",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Revenue values: 2023=453, 2022=412, 2021=382, 2020=346, 2019=297. Maximum → 2023 (453).",
+    "shortcut": "Scan the Revenue column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_076",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Revenue column?",
+    "image": "/assets/di-images/tables/table_038.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 297,
+          "exp": 260,
+          "prof": 37
+        },
+        {
+          "year": 2020,
+          "rev": 346,
+          "exp": 285,
+          "prof": 61
+        },
+        {
+          "year": 2021,
+          "rev": 382,
+          "exp": 296,
+          "prof": 86
+        },
+        {
+          "year": 2022,
+          "rev": 412,
+          "exp": 325,
+          "prof": 87
+        },
+        {
+          "year": 2023,
+          "rev": 453,
+          "exp": 368,
+          "prof": 85
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "1880",
+      "1890",
+      "1902",
+      "1912"
+    ],
+    "correctAnswer": 1,
+    "answer": "1890",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 453+412+382+346+297 = 1890.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_077",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Export?",
+    "image": "/assets/di-images/tables/table_039.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 665,
+          "imp": 621,
+          "bal": 44
+        },
+        {
+          "country": "UK",
+          "exp": 722,
+          "imp": 732,
+          "bal": -10
+        },
+        {
+          "country": "China",
+          "exp": 814,
+          "imp": 780,
+          "bal": 34
+        },
+        {
+          "country": "Japan",
+          "exp": 925,
+          "imp": 813,
+          "bal": 112
+        },
+        {
+          "country": "Germany",
+          "exp": 966,
+          "imp": 904,
+          "bal": 62
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "China",
+      "Germany",
+      "UK",
+      "Japan"
+    ],
+    "correctAnswer": 1,
+    "answer": "Germany",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Export values: Germany=966, Japan=925, China=814, UK=722, USA=665. Maximum → Germany (966).",
+    "shortcut": "Scan the Export column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_078",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Export column?",
+    "image": "/assets/di-images/tables/table_039.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 665,
+          "imp": 621,
+          "bal": 44
+        },
+        {
+          "country": "UK",
+          "exp": 722,
+          "imp": 732,
+          "bal": -10
+        },
+        {
+          "country": "China",
+          "exp": 814,
+          "imp": 780,
+          "bal": 34
+        },
+        {
+          "country": "Japan",
+          "exp": 925,
+          "imp": 813,
+          "bal": 112
+        },
+        {
+          "country": "Germany",
+          "exp": 966,
+          "imp": 904,
+          "bal": 62
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "4092",
+      "4114",
+      "4082",
+      "4104"
+    ],
+    "correctAnswer": 0,
+    "answer": "4092",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 966+925+814+722+665 = 4092.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_079",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Theft?",
+    "image": "/assets/di-images/tables/table_040.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 139,
+          "assault": 114,
+          "fraud": 88,
+          "total": 341
+        },
+        {
+          "city": "City B",
+          "theft": 156,
+          "assault": 128,
+          "fraud": 102,
+          "total": 386
+        },
+        {
+          "city": "City C",
+          "theft": 150,
+          "assault": 141,
+          "fraud": 108,
+          "total": 399
+        },
+        {
+          "city": "City D",
+          "theft": 159,
+          "assault": 136,
+          "fraud": 109,
+          "total": 404
+        },
+        {
+          "city": "City E",
+          "theft": 187,
+          "assault": 148,
+          "fraud": 109,
+          "total": 444
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "City E",
+      "City B",
+      "City C",
+      "City D"
+    ],
+    "correctAnswer": 0,
+    "answer": "City E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Theft values: City E=187, City D=159, City B=156, City C=150, City A=139. Maximum → City E (187).",
+    "shortcut": "Scan the Theft column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_080",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Medium",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Theft column?",
+    "image": "/assets/di-images/tables/table_040.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 139,
+          "assault": 114,
+          "fraud": 88,
+          "total": 341
+        },
+        {
+          "city": "City B",
+          "theft": 156,
+          "assault": 128,
+          "fraud": 102,
+          "total": 386
+        },
+        {
+          "city": "City C",
+          "theft": 150,
+          "assault": 141,
+          "fraud": 108,
+          "total": 399
+        },
+        {
+          "city": "City D",
+          "theft": 159,
+          "assault": 136,
+          "fraud": 109,
+          "total": 404
+        },
+        {
+          "city": "City E",
+          "theft": 187,
+          "assault": 148,
+          "fraud": 109,
+          "total": 444
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "803",
+      "791",
+      "813",
+      "781"
+    ],
+    "correctAnswer": 1,
+    "answer": "791",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 187+159+156+150+139 = 791.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_081",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nIn the year 2021, which product had the highest sales?",
+    "image": "/assets/di-images/tables/table_041.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          161,
+          177,
+          185,
+          194,
+          209
+        ],
+        "Product B": [
+          187,
+          200,
+          214,
+          227,
+          224
+        ],
+        "Product C": [
+          195,
+          217,
+          229,
+          243,
+          259
+        ],
+        "Product D": [
+          214,
+          227,
+          241,
+          252,
+          273
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "Product B",
+      "Product A",
+      "Product C",
+      "Product D"
+    ],
+    "correctAnswer": 3,
+    "answer": "Product D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Column 2021: Product D=₹241L, Product C=₹229L, Product B=₹214L, Product A=₹185L. Highest → Product D (₹241L).",
+    "shortcut": "Scan the 2021 column, pick maximum.",
+    "commonMistake": "Comparing wrong year column.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_082",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total sales of Product B over all 5 years?",
+    "image": "/assets/di-images/tables/table_041.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          161,
+          177,
+          185,
+          194,
+          209
+        ],
+        "Product B": [
+          187,
+          200,
+          214,
+          227,
+          224
+        ],
+        "Product C": [
+          195,
+          217,
+          229,
+          243,
+          259
+        ],
+        "Product D": [
+          214,
+          227,
+          241,
+          252,
+          273
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "₹1077L",
+      "₹1062L",
+      "₹1037L",
+      "₹1052L"
+    ],
+    "correctAnswer": 3,
+    "answer": "₹1052L",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Sum of Product B = 187+200+214+227+224 = ₹1052L.",
+    "shortcut": "Sum all values in the Product B row.",
+    "commonMistake": "Adding only 4 out of 5 years.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_083",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhich department has the highest number of female employees?",
+    "image": "/assets/di-images/tables/table_042.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 61,
+          "f": 70,
+          "t": 131
+        },
+        {
+          "dept": "Finance",
+          "m": 73,
+          "f": 69,
+          "t": 142
+        },
+        {
+          "dept": "IT",
+          "m": 88,
+          "f": 78,
+          "t": 166
+        },
+        {
+          "dept": "Marketing",
+          "m": 92,
+          "f": 84,
+          "t": 176
+        },
+        {
+          "dept": "Operations",
+          "m": 99,
+          "f": 94,
+          "t": 193
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "IT",
+      "Operations",
+      "Finance",
+      "Marketing"
+    ],
+    "correctAnswer": 1,
+    "answer": "Operations",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Female counts: HR=70, Finance=69, IT=78, Marketing=84, Operations=94. Maximum → Operations (94).",
+    "shortcut": "Scan the Female column.",
+    "commonMistake": "Confusing Female column with Total.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_084",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total number of employees across all departments?",
+    "image": "/assets/di-images/tables/table_042.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 61,
+          "f": 70,
+          "t": 131
+        },
+        {
+          "dept": "Finance",
+          "m": 73,
+          "f": 69,
+          "t": 142
+        },
+        {
+          "dept": "IT",
+          "m": 88,
+          "f": 78,
+          "t": 166
+        },
+        {
+          "dept": "Marketing",
+          "m": 92,
+          "f": 84,
+          "t": 176
+        },
+        {
+          "dept": "Operations",
+          "m": 99,
+          "f": 94,
+          "t": 193
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "843",
+      "793",
+      "828",
+      "808"
+    ],
+    "correctAnswer": 3,
+    "answer": "808",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 131+142+166+176+193 = 808.",
+    "shortcut": "Sum the Total column directly.",
+    "commonMistake": "Summing Male + Female separately leads to same answer, but avoid double counting.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_085",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhich student scored the highest aggregate marks across all subjects?",
+    "image": "/assets/di-images/tables/table_043.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          79,
+          83,
+          80,
+          91,
+          81
+        ],
+        "Student B": [
+          80,
+          84,
+          83,
+          81,
+          86
+        ],
+        "Student C": [
+          78,
+          80,
+          83,
+          100,
+          97
+        ],
+        "Student D": [
+          85,
+          88,
+          88,
+          100,
+          94
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "Student C",
+      "Student B",
+      "Student D",
+      "Student A"
+    ],
+    "correctAnswer": 2,
+    "answer": "Student D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Totals: Student D=455, Student C=438, Student A=414, Student B=414. Highest → Student D (455).",
+    "shortcut": "Row-sum each student and compare.",
+    "commonMistake": "Judging by a single subject instead of total.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_086",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the average score of all students in Maths?",
+    "image": "/assets/di-images/tables/table_043.png",
+    "rawData": {
+      "SUBJECTS": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "English",
+        "Biology"
+      ],
+      "STUDENTS": [
+        "Student A",
+        "Student B",
+        "Student C",
+        "Student D"
+      ],
+      "data": {
+        "Student A": [
+          79,
+          83,
+          80,
+          91,
+          81
+        ],
+        "Student B": [
+          80,
+          84,
+          83,
+          81,
+          86
+        ],
+        "Student C": [
+          78,
+          80,
+          83,
+          100,
+          97
+        ],
+        "Student D": [
+          85,
+          88,
+          88,
+          100,
+          94
+        ]
+      },
+      "type": "exam"
+    },
+    "options": [
+      "84.5",
+      "80.5",
+      "77.5",
+      "88.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "80.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Scores: 79, 80, 78, 85. Avg = 322/4 = 80.5.",
+    "shortcut": "Sum column ÷ number of students.",
+    "commonMistake": "Dividing by number of subjects instead of students.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_087",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for 2018?",
+    "image": "/assets/di-images/tables/table_044.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          24,
+          21.9,
+          24.8,
+          25.7,
+          27.6
+        ],
+        "State B": [
+          25.8,
+          27.7,
+          27.6,
+          28.5,
+          28.4
+        ],
+        "State C": [
+          29.6,
+          27.5,
+          29.4,
+          32.3,
+          30.2
+        ],
+        "State D": [
+          29.4,
+          33.3,
+          31.2,
+          33.1,
+          33
+        ],
+        "State E": [
+          32.2,
+          33.1,
+          35,
+          36.9,
+          37.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "State B",
+      "State E",
+      "State D",
+      "State C"
+    ],
+    "correctAnswer": 1,
+    "answer": "State E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "2018 values: State E=32.2, State C=29.6, State D=29.4, State B=25.8, State A=24. Maximum → State E (32.2).",
+    "shortcut": "Scan the 2018 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_088",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the 2018 column?",
+    "image": "/assets/di-images/tables/table_044.png",
+    "rawData": {
+      "STATES": [
+        "State A",
+        "State B",
+        "State C",
+        "State D",
+        "State E"
+      ],
+      "YEARS": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "data": {
+        "State A": [
+          24,
+          21.9,
+          24.8,
+          25.7,
+          27.6
+        ],
+        "State B": [
+          25.8,
+          27.7,
+          27.6,
+          28.5,
+          28.4
+        ],
+        "State C": [
+          29.6,
+          27.5,
+          29.4,
+          32.3,
+          30.2
+        ],
+        "State D": [
+          29.4,
+          33.3,
+          31.2,
+          33.1,
+          33
+        ],
+        "State E": [
+          32.2,
+          33.1,
+          35,
+          36.9,
+          37.8
+        ]
+      },
+      "type": "population"
+    },
+    "options": [
+      "163",
+      "131",
+      "153",
+      "141"
+    ],
+    "correctAnswer": 3,
+    "answer": "141",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 32.2+29.6+29.4+25.8+24 = 141.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_089",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Q1?",
+    "image": "/assets/di-images/tables/table_045.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          696,
+          782,
+          831,
+          874
+        ],
+        "Factory B": [
+          871,
+          887,
+          979,
+          1040
+        ],
+        "Factory C": [
+          967,
+          1028,
+          1111,
+          1146
+        ],
+        "Factory D": [
+          1125,
+          1143,
+          1188,
+          1239
+        ],
+        "Factory E": [
+          1195,
+          1273,
+          1353,
+          1372
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "Factory D",
+      "Factory C",
+      "Factory E",
+      "Factory B"
+    ],
+    "correctAnswer": 2,
+    "answer": "Factory E",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Q1 values: Factory E=1195, Factory D=1125, Factory C=967, Factory B=871, Factory A=696. Maximum → Factory E (1195).",
+    "shortcut": "Scan the Q1 column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_090",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Q1 column?",
+    "image": "/assets/di-images/tables/table_045.png",
+    "rawData": {
+      "FACTORIES": [
+        "Factory A",
+        "Factory B",
+        "Factory C",
+        "Factory D",
+        "Factory E"
+      ],
+      "QUARTERS": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data": {
+        "Factory A": [
+          696,
+          782,
+          831,
+          874
+        ],
+        "Factory B": [
+          871,
+          887,
+          979,
+          1040
+        ],
+        "Factory C": [
+          967,
+          1028,
+          1111,
+          1146
+        ],
+        "Factory D": [
+          1125,
+          1143,
+          1188,
+          1239
+        ],
+        "Factory E": [
+          1195,
+          1273,
+          1353,
+          1372
+        ]
+      },
+      "type": "production"
+    },
+    "options": [
+      "4854",
+      "4844",
+      "4866",
+      "4876"
+    ],
+    "correctAnswer": 0,
+    "answer": "4854",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 1195+1125+967+871+696 = 4854.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_091",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Revenue?",
+    "image": "/assets/di-images/tables/table_046.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 310,
+          "exp": 275,
+          "prof": 35
+        },
+        {
+          "year": 2020,
+          "rev": 336,
+          "exp": 293,
+          "prof": 43
+        },
+        {
+          "year": 2021,
+          "rev": 371,
+          "exp": 328,
+          "prof": 43
+        },
+        {
+          "year": 2022,
+          "rev": 438,
+          "exp": 346,
+          "prof": 92
+        },
+        {
+          "year": 2023,
+          "rev": 460,
+          "exp": 368,
+          "prof": 92
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correctAnswer": 3,
+    "answer": "2023",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Revenue values: 2023=460, 2022=438, 2021=371, 2020=336, 2019=310. Maximum → 2023 (460).",
+    "shortcut": "Scan the Revenue column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_092",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Revenue column?",
+    "image": "/assets/di-images/tables/table_046.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": [
+        {
+          "year": 2019,
+          "rev": 310,
+          "exp": 275,
+          "prof": 35
+        },
+        {
+          "year": 2020,
+          "rev": 336,
+          "exp": 293,
+          "prof": 43
+        },
+        {
+          "year": 2021,
+          "rev": 371,
+          "exp": 328,
+          "prof": 43
+        },
+        {
+          "year": 2022,
+          "rev": 438,
+          "exp": 346,
+          "prof": 92
+        },
+        {
+          "year": 2023,
+          "rev": 460,
+          "exp": 368,
+          "prof": 92
+        }
+      ],
+      "type": "revenue"
+    },
+    "options": [
+      "1927",
+      "1905",
+      "1915",
+      "1937"
+    ],
+    "correctAnswer": 2,
+    "answer": "1915",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 460+438+371+336+310 = 1915.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_093",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Export?",
+    "image": "/assets/di-images/tables/table_047.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 639,
+          "imp": 698,
+          "bal": -59
+        },
+        {
+          "country": "UK",
+          "exp": 774,
+          "imp": 709,
+          "bal": 65
+        },
+        {
+          "country": "China",
+          "exp": 829,
+          "imp": 809,
+          "bal": 20
+        },
+        {
+          "country": "Japan",
+          "exp": 944,
+          "imp": 862,
+          "bal": 82
+        },
+        {
+          "country": "Germany",
+          "exp": 990,
+          "imp": 908,
+          "bal": 82
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "Germany",
+      "UK",
+      "China",
+      "Japan"
+    ],
+    "correctAnswer": 0,
+    "answer": "Germany",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Export values: Germany=990, Japan=944, China=829, UK=774, USA=639. Maximum → Germany (990).",
+    "shortcut": "Scan the Export column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_094",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Export column?",
+    "image": "/assets/di-images/tables/table_047.png",
+    "rawData": {
+      "COUNTRIES": [
+        "USA",
+        "UK",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "rows": [
+        {
+          "country": "USA",
+          "exp": 639,
+          "imp": 698,
+          "bal": -59
+        },
+        {
+          "country": "UK",
+          "exp": 774,
+          "imp": 709,
+          "bal": 65
+        },
+        {
+          "country": "China",
+          "exp": 829,
+          "imp": 809,
+          "bal": 20
+        },
+        {
+          "country": "Japan",
+          "exp": 944,
+          "imp": 862,
+          "bal": 82
+        },
+        {
+          "country": "Germany",
+          "exp": 990,
+          "imp": 908,
+          "bal": 82
+        }
+      ],
+      "type": "export"
+    },
+    "options": [
+      "4166",
+      "4188",
+      "4198",
+      "4176"
+    ],
+    "correctAnswer": 3,
+    "answer": "4176",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 990+944+829+774+639 = 4176.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_095",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhich entity recorded the highest value for Theft?",
+    "image": "/assets/di-images/tables/table_048.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 137,
+          "assault": 127,
+          "fraud": 100,
+          "total": 364
+        },
+        {
+          "city": "City B",
+          "theft": 149,
+          "assault": 131,
+          "fraud": 99,
+          "total": 379
+        },
+        {
+          "city": "City C",
+          "theft": 179,
+          "assault": 139,
+          "fraud": 108,
+          "total": 426
+        },
+        {
+          "city": "City D",
+          "theft": 192,
+          "assault": 138,
+          "fraud": 120,
+          "total": 450
+        },
+        {
+          "city": "City E",
+          "theft": 181,
+          "assault": 149,
+          "fraud": 122,
+          "total": 452
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "City B",
+      "City C",
+      "City D",
+      "City E"
+    ],
+    "correctAnswer": 2,
+    "answer": "City D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Theft values: City D=192, City E=181, City C=179, City B=149, City A=137. Maximum → City D (192).",
+    "shortcut": "Scan the Theft column for the largest value.",
+    "commonMistake": "Confusing row and column labels.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_096",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total of all values in the Theft column?",
+    "image": "/assets/di-images/tables/table_048.png",
+    "rawData": {
+      "CITIES": [
+        "City A",
+        "City B",
+        "City C",
+        "City D",
+        "City E"
+      ],
+      "rows": [
+        {
+          "city": "City A",
+          "theft": 137,
+          "assault": 127,
+          "fraud": 100,
+          "total": 364
+        },
+        {
+          "city": "City B",
+          "theft": 149,
+          "assault": 131,
+          "fraud": 99,
+          "total": 379
+        },
+        {
+          "city": "City C",
+          "theft": 179,
+          "assault": 139,
+          "fraud": 108,
+          "total": 426
+        },
+        {
+          "city": "City D",
+          "theft": 192,
+          "assault": 138,
+          "fraud": 120,
+          "total": 450
+        },
+        {
+          "city": "City E",
+          "theft": 181,
+          "assault": 149,
+          "fraud": 122,
+          "total": 452
+        }
+      ],
+      "type": "crime"
+    },
+    "options": [
+      "860",
+      "838",
+      "850",
+      "828"
+    ],
+    "correctAnswer": 1,
+    "answer": "838",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 192+181+179+149+137 = 838.",
+    "shortcut": "Add all values in the column.",
+    "commonMistake": "Skipping the last row.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_097",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nIn the year 2021, which product had the highest sales?",
+    "image": "/assets/di-images/tables/table_049.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          179,
+          193,
+          195,
+          212,
+          224
+        ],
+        "Product B": [
+          184,
+          211,
+          226,
+          227,
+          246
+        ],
+        "Product C": [
+          216,
+          225,
+          227,
+          242,
+          260
+        ],
+        "Product D": [
+          230,
+          247,
+          248,
+          258,
+          281
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "Product A",
+      "Product B",
+      "Product C",
+      "Product D"
+    ],
+    "correctAnswer": 3,
+    "answer": "Product D",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Column 2021: Product D=₹248L, Product C=₹227L, Product B=₹226L, Product A=₹195L. Highest → Product D (₹248L).",
+    "shortcut": "Scan the 2021 column, pick maximum.",
+    "commonMistake": "Comparing wrong year column.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_098",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total sales of Product B over all 5 years?",
+    "image": "/assets/di-images/tables/table_049.png",
+    "rawData": {
+      "YEARS": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "PRODUCTS": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ],
+      "data": {
+        "Product A": [
+          179,
+          193,
+          195,
+          212,
+          224
+        ],
+        "Product B": [
+          184,
+          211,
+          226,
+          227,
+          246
+        ],
+        "Product C": [
+          216,
+          225,
+          227,
+          242,
+          260
+        ],
+        "Product D": [
+          230,
+          247,
+          248,
+          258,
+          281
+        ]
+      },
+      "type": "sales"
+    },
+    "options": [
+      "₹1104L",
+      "₹1119L",
+      "₹1094L",
+      "₹1079L"
+    ],
+    "correctAnswer": 2,
+    "answer": "₹1094L",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Sum of Product B = 184+211+226+227+246 = ₹1094L.",
+    "shortcut": "Sum all values in the Product B row.",
+    "commonMistake": "Adding only 4 out of 5 years.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_099",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhich department has the highest number of female employees?",
+    "image": "/assets/di-images/tables/table_050.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 67,
+          "f": 74,
+          "t": 141
+        },
+        {
+          "dept": "Finance",
+          "m": 77,
+          "f": 71,
+          "t": 148
+        },
+        {
+          "dept": "IT",
+          "m": 89,
+          "f": 81,
+          "t": 170
+        },
+        {
+          "dept": "Marketing",
+          "m": 94,
+          "f": 92,
+          "t": 186
+        },
+        {
+          "dept": "Operations",
+          "m": 112,
+          "f": 99,
+          "t": 211
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "Marketing",
+      "HR",
+      "Finance",
+      "Operations"
+    ],
+    "correctAnswer": 3,
+    "answer": "Operations",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Female counts: HR=74, Finance=71, IT=81, Marketing=92, Operations=99. Maximum → Operations (99).",
+    "shortcut": "Scan the Female column.",
+    "commonMistake": "Confusing Female column with Total.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  },
+  {
+    "id": "DI_TABLE_100",
+    "topic": "Data Interpretation",
+    "subtopic": "Tables",
+    "difficulty": "Hard",
+    "question": "Study the following table carefully and answer the question.\n\nWhat is the total number of employees across all departments?",
+    "image": "/assets/di-images/tables/table_050.png",
+    "rawData": {
+      "DEPTS": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing",
+        "Operations"
+      ],
+      "rows": [
+        {
+          "dept": "HR",
+          "m": 67,
+          "f": 74,
+          "t": 141
+        },
+        {
+          "dept": "Finance",
+          "m": 77,
+          "f": 71,
+          "t": 148
+        },
+        {
+          "dept": "IT",
+          "m": 89,
+          "f": 81,
+          "t": 170
+        },
+        {
+          "dept": "Marketing",
+          "m": 94,
+          "f": 92,
+          "t": 186
+        },
+        {
+          "dept": "Operations",
+          "m": 112,
+          "f": 99,
+          "t": 211
+        }
+      ],
+      "type": "employee"
+    },
+    "options": [
+      "841",
+      "856",
+      "891",
+      "876"
+    ],
+    "correctAnswer": 1,
+    "answer": "856",
+    "marks": 1,
+    "negativeMarks": 0,
+    "explanation": "Total = 141+148+170+186+211 = 856.",
+    "shortcut": "Sum the Total column directly.",
+    "commonMistake": "Summing Male + Female separately leads to same answer, but avoid double counting.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "data interpretation",
+      "table",
+      "DI",
+      "aptitude"
+    ],
+    "tags": [
+      "placement",
+      "aptitude",
+      "DI",
+      "tables"
+    ],
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "source": "AI Generated"
+  }
+]

@@ -1,0 +1,2519 @@
+[
+  {
+    "id": "ARI_RAT_001",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Medium",
+    "question": "Divide $25 in the ratio 2:3. What is the share of the first part?",
+    "options": [
+      "$15",
+      "$20",
+      "$10",
+      "$-10"
+    ],
+    "correctAnswer": 2,
+    "answer": "$10",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_002",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Medium",
+    "question": "Divide $70 in the ratio 3:4. What is the share of the first part?",
+    "options": [
+      "$10",
+      "$40",
+      "$30",
+      "$40"
+    ],
+    "correctAnswer": 2,
+    "answer": "$30",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_003",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Medium",
+    "question": "Divide $180 in the ratio 4:5. What is the share of the first part?",
+    "options": [
+      "$100",
+      "$60",
+      "$80",
+      "$90"
+    ],
+    "correctAnswer": 2,
+    "answer": "$80",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_004",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "Divide $180 in the ratio 5:7. What is the share of the first part?",
+    "options": [
+      "$90",
+      "$85",
+      "$75",
+      "$55"
+    ],
+    "correctAnswer": 2,
+    "answer": "$75",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_005",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "Divide $275 in the ratio 6:5. What is the share of the first part?",
+    "options": [
+      "$160",
+      "$175",
+      "$130",
+      "$150"
+    ],
+    "correctAnswer": 3,
+    "answer": "$150",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_006",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "Divide $800 in the ratio 7:9. What is the share of the first part?",
+    "options": [
+      "$350",
+      "$330",
+      "$400",
+      "$360"
+    ],
+    "correctAnswer": 0,
+    "answer": "$350",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_007",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "Divide $1100 in the ratio 8:3. What is the share of the first part?",
+    "options": [
+      "$780",
+      "$810",
+      "$800",
+      "$900"
+    ],
+    "correctAnswer": 2,
+    "answer": "$800",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_008",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "Divide $390 in the ratio 9:4. What is the share of the first part?",
+    "options": [
+      "$270",
+      "$280",
+      "$300",
+      "$250"
+    ],
+    "correctAnswer": 0,
+    "answer": "$270",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_009",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "Divide $440 in the ratio 3:8. What is the share of the first part?",
+    "options": [
+      "$130",
+      "$120",
+      "$100",
+      "$160"
+    ],
+    "correctAnswer": 1,
+    "answer": "$120",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_010",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "Divide $420 in the ratio 5:2. What is the share of the first part?",
+    "options": [
+      "$360",
+      "$280",
+      "$300",
+      "$310"
+    ],
+    "correctAnswer": 2,
+    "answer": "$300",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "money"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_011",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "An amount of $60 is distributed among A, B, and C in the ratio 1:2:3. Find the share of B.",
+    "options": [
+      "$20",
+      "$0",
+      "$70",
+      "$30"
+    ],
+    "correctAnswer": 0,
+    "answer": "$20",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "distribution"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_012",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "An amount of $180 is distributed among A, B, and C in the ratio 2:3:4. Find the share of B.",
+    "options": [
+      "$60",
+      "$110",
+      "$70",
+      "$40"
+    ],
+    "correctAnswer": 0,
+    "answer": "$60",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "distribution"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_013",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "An amount of $360 is distributed among A, B, and C in the ratio 3:4:5. Find the share of B.",
+    "options": [
+      "$130",
+      "$170",
+      "$100",
+      "$120"
+    ],
+    "correctAnswer": 3,
+    "answer": "$120",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "distribution"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_014",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "An amount of $600 is distributed among A, B, and C in the ratio 4:5:6. Find the share of B.",
+    "options": [
+      "$210",
+      "$250",
+      "$180",
+      "$200"
+    ],
+    "correctAnswer": 3,
+    "answer": "$200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "distribution"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_015",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Dividing Amounts",
+    "difficulty": "Easy",
+    "question": "An amount of $900 is distributed among A, B, and C in the ratio 5:6:7. Find the share of B.",
+    "options": [
+      "$310",
+      "$280",
+      "$350",
+      "$300"
+    ],
+    "correctAnswer": 3,
+    "answer": "$300",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "distribution"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_016",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two numbers are in the ratio 2:3. If their sum is 20, find the larger number.",
+    "options": [
+      "12",
+      "14",
+      "9",
+      "22"
+    ],
+    "correctAnswer": 0,
+    "answer": "12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_017",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two numbers are in the ratio 3:4. If their sum is 35, find the larger number.",
+    "options": [
+      "16",
+      "30",
+      "23",
+      "20"
+    ],
+    "correctAnswer": 3,
+    "answer": "20",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_018",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two numbers are in the ratio 4:5. If their sum is 54, find the larger number.",
+    "options": [
+      "34",
+      "40",
+      "30",
+      "25"
+    ],
+    "correctAnswer": 2,
+    "answer": "30",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_019",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 5:6. If their sum is 77, find the larger number.",
+    "options": [
+      "36",
+      "47",
+      "42",
+      "52"
+    ],
+    "correctAnswer": 2,
+    "answer": "42",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_020",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 6:7. If their sum is 104, find the larger number.",
+    "options": [
+      "62",
+      "56",
+      "66",
+      "49"
+    ],
+    "correctAnswer": 1,
+    "answer": "56",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_021",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 2:3. If 5 is added to both, the ratio becomes 9:11. What is the smaller number?",
+    "options": [
+      "2",
+      "9",
+      "4",
+      "14"
+    ],
+    "correctAnswer": 2,
+    "answer": "4",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_022",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 3:5. If 10 is added to both, the ratio becomes 19:25. What is the smaller number?",
+    "options": [
+      "14",
+      "19",
+      "7",
+      "9"
+    ],
+    "correctAnswer": 3,
+    "answer": "9",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_023",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 5:8. If 15 is added to both, the ratio becomes 35:47. What is the smaller number?",
+    "options": [
+      "20",
+      "30",
+      "25",
+      "18"
+    ],
+    "correctAnswer": 0,
+    "answer": "20",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_024",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 7:9. If 20 is added to both, the ratio becomes 17:19. What is the smaller number?",
+    "options": [
+      "24",
+      "14",
+      "19",
+      "12"
+    ],
+    "correctAnswer": 1,
+    "answer": "14",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_025",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 4:7. If 10 is added to both, the ratio becomes 2:3. What is the smaller number?",
+    "options": [
+      "18",
+      "25",
+      "20",
+      "30"
+    ],
+    "correctAnswer": 2,
+    "answer": "20",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_026",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Easy",
+    "question": "If A:B = 2:3 and B:C = 3:4, find A:B:C.",
+    "options": [
+      "2:3:5",
+      "3:3:4",
+      "2:3:4",
+      "2:4:4"
+    ],
+    "correctAnswer": 2,
+    "answer": "2:3:4",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "compounding"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_027",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Easy",
+    "question": "If A:B = 3:4 and B:C = 5:6, find A:B:C.",
+    "options": [
+      "15:21:24",
+      "15:20:24",
+      "16:20:24",
+      "15:20:25"
+    ],
+    "correctAnswer": 1,
+    "answer": "15:20:24",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "compounding"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_028",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Easy",
+    "question": "If A:B = 4:5 and B:C = 2:3, find A:B:C.",
+    "options": [
+      "8:10:16",
+      "8:10:15",
+      "8:11:15",
+      "9:10:15"
+    ],
+    "correctAnswer": 1,
+    "answer": "8:10:15",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "compounding"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_029",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Easy",
+    "question": "If A:B = 1:2 and B:C = 3:5, find A:B:C.",
+    "options": [
+      "3:6:11",
+      "3:6:10",
+      "3:7:10",
+      "4:6:10"
+    ],
+    "correctAnswer": 1,
+    "answer": "3:6:10",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "compounding"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_030",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Easy",
+    "question": "If A:B = 5:6 and B:C = 4:7, find A:B:C.",
+    "options": [
+      "10:12:21",
+      "10:12:22",
+      "10:13:21",
+      "11:12:21"
+    ],
+    "correctAnswer": 0,
+    "answer": "10:12:21",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "compounding"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_031",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Duplicate/Triplicate Ratios",
+    "difficulty": "Medium",
+    "question": "What is the duplicate ratio of 2:3?",
+    "options": [
+      "4:9",
+      "8:27",
+      "6:9",
+      "4:6"
+    ],
+    "correctAnswer": 0,
+    "answer": "4:9",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "duplicate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_032",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Duplicate/Triplicate Ratios",
+    "difficulty": "Medium",
+    "question": "What is the duplicate ratio of 3:4?",
+    "options": [
+      "6:8",
+      "9:12",
+      "9:16",
+      "27:64"
+    ],
+    "correctAnswer": 2,
+    "answer": "9:16",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "duplicate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_033",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Duplicate/Triplicate Ratios",
+    "difficulty": "Medium",
+    "question": "What is the duplicate ratio of 4:5?",
+    "options": [
+      "12:15",
+      "16:25",
+      "64:125",
+      "8:10"
+    ],
+    "correctAnswer": 1,
+    "answer": "16:25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "duplicate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_034",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Duplicate/Triplicate Ratios",
+    "difficulty": "Medium",
+    "question": "What is the duplicate ratio of 5:6?",
+    "options": [
+      "125:216",
+      "25:36",
+      "10:12",
+      "15:18"
+    ],
+    "correctAnswer": 1,
+    "answer": "25:36",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "duplicate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_035",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Duplicate/Triplicate Ratios",
+    "difficulty": "Medium",
+    "question": "What is the duplicate ratio of 6:7?",
+    "options": [
+      "36:49",
+      "216:343",
+      "18:21",
+      "12:14"
+    ],
+    "correctAnswer": 0,
+    "answer": "36:49",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "duplicate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_036",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Hard",
+    "question": "If A:B = 2:3, B:C = 4:5, and C:D = 6:7, find A:D.",
+    "options": [
+      "16:35",
+      "12:35",
+      "16:45",
+      "18:35"
+    ],
+    "correctAnswer": 0,
+    "answer": "16:35",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "compound ratio",
+      "4 variables"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_037",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Hard",
+    "question": "If 2A = 3B = 4C, find the ratio A:B:C.",
+    "options": [
+      "6:4:3",
+      "4:3:2",
+      "3:4:6",
+      "2:3:4"
+    ],
+    "correctAnswer": 0,
+    "answer": "6:4:3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "equations"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_038",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Hard",
+    "question": "If (x:y) = 3:4, find the value of (2x + 3y) : (3x - 2y).",
+    "options": [
+      "18:5",
+      "9:1",
+      "18:1",
+      "17:2"
+    ],
+    "correctAnswer": 2,
+    "answer": "18:1",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "algebraic ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_039",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Hard",
+    "question": "The ratio of the number of boys and girls in a school of 720 students is 7:5. How many more girls should be admitted to make the ratio 1:1?",
+    "options": [
+      "120",
+      "80",
+      "150",
+      "100"
+    ],
+    "correctAnswer": 0,
+    "answer": "120",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "admissions"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_040",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Combining Ratios",
+    "difficulty": "Hard",
+    "question": "Two vessels contain milk and water in the ratio 3:2 and 7:3. If both vessels are mixed in equal proportions, find the ratio of milk and water in the new mixture.",
+    "options": [
+      "13:7",
+      "3:2",
+      "7:5",
+      "11:9"
+    ],
+    "correctAnswer": 0,
+    "answer": "13:7",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "mixtures"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_041",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Fourth Proportional",
+    "difficulty": "Easy",
+    "question": "Find the fourth proportional to 2, 4, and 6.",
+    "options": [
+      "14",
+      "16",
+      "11",
+      "12"
+    ],
+    "correctAnswer": 3,
+    "answer": "12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_042",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Fourth Proportional",
+    "difficulty": "Easy",
+    "question": "Find the fourth proportional to 3, 6, and 9.",
+    "options": [
+      "17",
+      "22",
+      "18",
+      "20"
+    ],
+    "correctAnswer": 2,
+    "answer": "18",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_043",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Fourth Proportional",
+    "difficulty": "Easy",
+    "question": "Find the fourth proportional to 4, 8, and 12.",
+    "options": [
+      "28",
+      "26",
+      "24",
+      "23"
+    ],
+    "correctAnswer": 2,
+    "answer": "24",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_044",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Fourth Proportional",
+    "difficulty": "Easy",
+    "question": "Find the fourth proportional to 5, 10, and 15.",
+    "options": [
+      "34",
+      "30",
+      "32",
+      "29"
+    ],
+    "correctAnswer": 1,
+    "answer": "30",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_045",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Fourth Proportional",
+    "difficulty": "Easy",
+    "question": "Find the fourth proportional to 6, 12, and 18.",
+    "options": [
+      "38",
+      "36",
+      "40",
+      "35"
+    ],
+    "correctAnswer": 1,
+    "answer": "36",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_046",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Mean Proportional",
+    "difficulty": "Easy",
+    "question": "Find the mean proportional between 4 and 16.",
+    "options": [
+      "7",
+      "10",
+      "12",
+      "8"
+    ],
+    "correctAnswer": 3,
+    "answer": "8",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "mean"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_047",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Mean Proportional",
+    "difficulty": "Easy",
+    "question": "Find the mean proportional between 9 and 36.",
+    "options": [
+      "22",
+      "20",
+      "18",
+      "17"
+    ],
+    "correctAnswer": 2,
+    "answer": "18",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "mean"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_048",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Mean Proportional",
+    "difficulty": "Easy",
+    "question": "Find the mean proportional between 16 and 64.",
+    "options": [
+      "36",
+      "31",
+      "34",
+      "32"
+    ],
+    "correctAnswer": 3,
+    "answer": "32",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "mean"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_049",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Mean Proportional",
+    "difficulty": "Easy",
+    "question": "Find the mean proportional between 25 and 100.",
+    "options": [
+      "50",
+      "52",
+      "54",
+      "49"
+    ],
+    "correctAnswer": 0,
+    "answer": "50",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "mean"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_050",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Mean Proportional",
+    "difficulty": "Easy",
+    "question": "Find the mean proportional between 36 and 144.",
+    "options": [
+      "76",
+      "71",
+      "72",
+      "74"
+    ],
+    "correctAnswer": 2,
+    "answer": "72",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "mean"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_051",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Third Proportional",
+    "difficulty": "Medium",
+    "question": "Find the third proportional to 2 and 4.",
+    "options": [
+      "8",
+      "10",
+      "6",
+      "12"
+    ],
+    "correctAnswer": 0,
+    "answer": "8",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_052",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Third Proportional",
+    "difficulty": "Medium",
+    "question": "Find the third proportional to 3 and 6.",
+    "options": [
+      "10",
+      "12",
+      "16",
+      "14"
+    ],
+    "correctAnswer": 1,
+    "answer": "12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_053",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Third Proportional",
+    "difficulty": "Medium",
+    "question": "Find the third proportional to 4 and 8.",
+    "options": [
+      "18",
+      "16",
+      "20",
+      "14"
+    ],
+    "correctAnswer": 1,
+    "answer": "16",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_054",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Third Proportional",
+    "difficulty": "Medium",
+    "question": "Find the third proportional to 5 and 10.",
+    "options": [
+      "18",
+      "22",
+      "24",
+      "20"
+    ],
+    "correctAnswer": 3,
+    "answer": "20",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_055",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Third Proportional",
+    "difficulty": "Medium",
+    "question": "Find the third proportional to 6 and 12.",
+    "options": [
+      "22",
+      "26",
+      "24",
+      "28"
+    ],
+    "correctAnswer": 2,
+    "answer": "24",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_056",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Inverse Proportion",
+    "difficulty": "Medium",
+    "question": "If 10 men can do a piece of work in 12 days, how many days will 15 men take to do the same work?",
+    "options": [
+      "11",
+      "7",
+      "8",
+      "10"
+    ],
+    "correctAnswer": 2,
+    "answer": "8",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "work",
+      "inverse"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_057",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Inverse Proportion",
+    "difficulty": "Medium",
+    "question": "If 15 men can do a piece of work in 20 days, how many days will 25 men take to do the same work?",
+    "options": [
+      "14",
+      "15",
+      "12",
+      "11"
+    ],
+    "correctAnswer": 2,
+    "answer": "12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "work",
+      "inverse"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_058",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Inverse Proportion",
+    "difficulty": "Medium",
+    "question": "If 20 men can do a piece of work in 15 days, how many days will 30 men take to do the same work?",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "9"
+    ],
+    "correctAnswer": 0,
+    "answer": "10",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "work",
+      "inverse"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_059",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Inverse Proportion",
+    "difficulty": "Medium",
+    "question": "If 25 men can do a piece of work in 24 days, how many days will 40 men take to do the same work?",
+    "options": [
+      "18",
+      "15",
+      "14",
+      "17"
+    ],
+    "correctAnswer": 1,
+    "answer": "15",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "work",
+      "inverse"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_060",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Inverse Proportion",
+    "difficulty": "Medium",
+    "question": "If 30 men can do a piece of work in 18 days, how many days will 45 men take to do the same work?",
+    "options": [
+      "15",
+      "14",
+      "11",
+      "12"
+    ],
+    "correctAnswer": 3,
+    "answer": "12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "work",
+      "inverse"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_061",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "A bag contains $1, 50c, and 25c coins in the ratio 1:2:3. If the total value is $33, find the number of 50c coins.",
+    "options": [
+      "24",
+      "44",
+      "34",
+      "19"
+    ],
+    "correctAnswer": 0,
+    "answer": "24",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_062",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "A bag contains $1, 50c, and 25c coins in the ratio 1:2:3. If the total value is $66, find the number of 50c coins.",
+    "options": [
+      "58",
+      "48",
+      "43",
+      "68"
+    ],
+    "correctAnswer": 1,
+    "answer": "48",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_063",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "A bag contains $1, 50c, and 25c coins in the ratio 1:2:3. If the total value is $99, find the number of 50c coins.",
+    "options": [
+      "72",
+      "67",
+      "82",
+      "92"
+    ],
+    "correctAnswer": 0,
+    "answer": "72",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_064",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "A bag contains $1, 50c, and 25c coins in the ratio 1:2:3. If the total value is $132, find the number of 50c coins.",
+    "options": [
+      "96",
+      "106",
+      "91",
+      "116"
+    ],
+    "correctAnswer": 0,
+    "answer": "96",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_065",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Medium",
+    "question": "A bag contains $1, 50c, and 25c coins in the ratio 1:2:3. If the total value is $165, find the number of 50c coins.",
+    "options": [
+      "115",
+      "120",
+      "130",
+      "140"
+    ],
+    "correctAnswer": 1,
+    "answer": "120",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_066",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "A box contains 1-rupee, 50-paise, and 25-paise coins. The ratio of their values is 3:4:5. If the total number of coins is 93, find the number of 25-paise coins.",
+    "options": [
+      "60",
+      "40",
+      "90",
+      "70"
+    ],
+    "correctAnswer": 0,
+    "answer": "60",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "inverse value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_067",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "A box contains 1-rupee, 50-paise, and 25-paise coins. The ratio of their values is 3:4:5. If the total number of coins is 155, find the number of 25-paise coins.",
+    "options": [
+      "130",
+      "80",
+      "110",
+      "100"
+    ],
+    "correctAnswer": 3,
+    "answer": "100",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "inverse value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_068",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "A box contains 1-rupee, 50-paise, and 25-paise coins. The ratio of their values is 3:4:5. If the total number of coins is 310, find the number of 25-paise coins.",
+    "options": [
+      "210",
+      "230",
+      "200",
+      "180"
+    ],
+    "correctAnswer": 2,
+    "answer": "200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "inverse value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_069",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "A box contains 1-rupee, 50-paise, and 25-paise coins. The ratio of their values is 3:4:5. If the total number of coins is 465, find the number of 25-paise coins.",
+    "options": [
+      "330",
+      "300",
+      "280",
+      "310"
+    ],
+    "correctAnswer": 1,
+    "answer": "300",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "inverse value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_070",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "A box contains 1-rupee, 50-paise, and 25-paise coins. The ratio of their values is 3:4:5. If the total number of coins is 620, find the number of 25-paise coins.",
+    "options": [
+      "410",
+      "430",
+      "380",
+      "400"
+    ],
+    "correctAnswer": 3,
+    "answer": "400",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins",
+      "inverse value"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_071",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "A bag contains 5-rupee, 2-rupee, and 1-rupee coins in the ratio 4:6:9. If the total amount in the bag is Rs. 410, find the number of 2-rupee coins.",
+    "options": [
+      "40",
+      "50",
+      "90",
+      "60"
+    ],
+    "correctAnswer": 3,
+    "answer": "60",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "denominations"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_072",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "A purse contains 20c, 10c, and 5c coins in the ratio 1:2:3. If the total value is $1.65, how many 5c coins are there?",
+    "options": [
+      "3",
+      "9",
+      "6",
+      "12"
+    ],
+    "correctAnswer": 1,
+    "answer": "9",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "coins"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_073",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Coins",
+    "difficulty": "Hard",
+    "question": "An amount of Rs. 360 is made up of 1-rupee, 50-paise, and 25-paise coins in the ratio 2:3:4. Find the total number of coins.",
+    "options": [
+      "450",
+      "600",
+      "540",
+      "360"
+    ],
+    "correctAnswer": 2,
+    "answer": "540",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "denominations"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_074",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Income",
+    "difficulty": "Hard",
+    "question": "The incomes of A and B are in the ratio 3:2, and their expenditures are in the ratio 5:3. If each saves Rs. 1000, find A's income.",
+    "options": [
+      "Rs. 6000",
+      "Rs. 5000",
+      "Rs. 4000",
+      "Rs. 3000"
+    ],
+    "correctAnswer": 0,
+    "answer": "Rs. 6000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "income",
+      "expenditure"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_075",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Income",
+    "difficulty": "Hard",
+    "question": "A and B have their monthly incomes in the ratio 8:5 and monthly expenses in the ratio 5:3. If they save Rs. 12000 and Rs. 10000 respectively, find the difference in their incomes.",
+    "options": [
+      "Rs. 40000",
+      "Rs. 48000",
+      "Rs. 42000",
+      "Rs. 52000"
+    ],
+    "correctAnswer": 2,
+    "answer": "Rs. 42000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "income",
+      "savings"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_076",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two quantities are in the ratio 2:9. If their difference is 70, find the larger quantity.",
+    "options": [
+      "85",
+      "100",
+      "100",
+      "90"
+    ],
+    "correctAnswer": 3,
+    "answer": "90",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_077",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two quantities are in the ratio 4:6. If their difference is 40, find the larger quantity.",
+    "options": [
+      "120",
+      "140",
+      "130",
+      "115"
+    ],
+    "correctAnswer": 0,
+    "answer": "120",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_078",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two quantities are in the ratio 4:6. If their difference is 50, find the larger quantity.",
+    "options": [
+      "150",
+      "160",
+      "175",
+      "145"
+    ],
+    "correctAnswer": 0,
+    "answer": "150",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_079",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two quantities are in the ratio 3:7. If their difference is 40, find the larger quantity.",
+    "options": [
+      "70",
+      "80",
+      "65",
+      "80"
+    ],
+    "correctAnswer": 0,
+    "answer": "70",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_080",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two quantities are in the ratio 2:5. If their difference is 45, find the larger quantity.",
+    "options": [
+      "85",
+      "90",
+      "75",
+      "70"
+    ],
+    "correctAnswer": 2,
+    "answer": "75",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_081",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two quantities are in the ratio 4:5. If their difference is 20, find the larger quantity.",
+    "options": [
+      "95",
+      "110",
+      "100",
+      "120"
+    ],
+    "correctAnswer": 2,
+    "answer": "100",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_082",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Two quantities are in the ratio 6:2. If their difference is 120, find the larger quantity.",
+    "options": [
+      "180",
+      "175",
+      "210",
+      "190"
+    ],
+    "correctAnswer": 0,
+    "answer": "180",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "difference"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_083",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 2:7. If 2 is added to each number, the ratio becomes 1:3. Find the sum of the original numbers.",
+    "options": [
+      "46",
+      "36",
+      "32",
+      "41"
+    ],
+    "correctAnswer": 1,
+    "answer": "36",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_084",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 5:5. If 4 is added to each number, the ratio becomes 1:1. Find the sum of the original numbers.",
+    "options": [
+      "50",
+      "46",
+      "55",
+      "60"
+    ],
+    "correctAnswer": 0,
+    "answer": "50",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_085",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 5:6. If 5 is added to each number, the ratio becomes 35:41. Find the sum of the original numbers.",
+    "options": [
+      "76",
+      "71",
+      "66",
+      "62"
+    ],
+    "correctAnswer": 2,
+    "answer": "66",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_086",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 3:3. If 8 is added to each number, the ratio becomes 1:1. Find the sum of the original numbers.",
+    "options": [
+      "58",
+      "44",
+      "53",
+      "48"
+    ],
+    "correctAnswer": 3,
+    "answer": "48",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_087",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 6:7. If 10 is added to each number, the ratio becomes 7:8. Find the sum of the original numbers.",
+    "options": [
+      "126",
+      "140",
+      "130",
+      "135"
+    ],
+    "correctAnswer": 2,
+    "answer": "130",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_088",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 6:5. If 2 is added to each number, the ratio becomes 13:11. Find the sum of the original numbers.",
+    "options": [
+      "44",
+      "49",
+      "54",
+      "40"
+    ],
+    "correctAnswer": 0,
+    "answer": "44",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_089",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 2:5. If 4 is added to each number, the ratio becomes 14:29. Find the sum of the original numbers.",
+    "options": [
+      "31",
+      "45",
+      "35",
+      "40"
+    ],
+    "correctAnswer": 2,
+    "answer": "35",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_090",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 5:4. If 5 is added to each number, the ratio becomes 35:29. Find the sum of the original numbers.",
+    "options": [
+      "64",
+      "59",
+      "50",
+      "54"
+    ],
+    "correctAnswer": 3,
+    "answer": "54",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_091",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 2:7. If 8 is added to each number, the ratio becomes 3:8. Find the sum of the original numbers.",
+    "options": [
+      "82",
+      "68",
+      "72",
+      "77"
+    ],
+    "correctAnswer": 2,
+    "answer": "72",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_092",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Number Problems",
+    "difficulty": "Medium",
+    "question": "The ratio of two numbers is 2:5. If 10 is added to each number, the ratio becomes 1:2. Find the sum of the original numbers.",
+    "options": [
+      "75",
+      "70",
+      "66",
+      "80"
+    ],
+    "correctAnswer": 1,
+    "answer": "70",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_093",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Proportion",
+    "difficulty": "Hard",
+    "question": "If 3A = 4B = 5C, find A:B:C.",
+    "options": [
+      "20:15:12",
+      "20:12:15",
+      "15:20:12",
+      "12:15:20"
+    ],
+    "correctAnswer": 0,
+    "answer": "20:15:12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "equations"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_094",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Proportion",
+    "difficulty": "Hard",
+    "question": "What must be added to each of the numbers 7, 11, 19, and 31 so that the resulting numbers are in proportion?",
+    "options": [
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "answer": "2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "addition",
+      "proportion"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_095",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Proportion",
+    "difficulty": "Hard",
+    "question": "What is the least number that must be subtracted from 15, 28, 20, and 38 so that they become proportional?",
+    "options": [
+      "4",
+      "3",
+      "1",
+      "2"
+    ],
+    "correctAnswer": 3,
+    "answer": "2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "subtraction"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_096",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Mixtures",
+    "difficulty": "Hard",
+    "question": "The ratio of milk and water in 55 liters of mixture is 7:4. How much water must be added to make the ratio 7:6?",
+    "options": [
+      "5 liters",
+      "10 liters",
+      "12 liters",
+      "15 liters"
+    ],
+    "correctAnswer": 1,
+    "answer": "10 liters",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "mixtures"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_097",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Ages",
+    "difficulty": "Hard",
+    "question": "The ratio of the ages of a father and his son 10 years ago was 3:1. After 10 years, the ratio will be 2:1. Find the present age of the father.",
+    "options": [
+      "70 years",
+      "50 years",
+      "80 years",
+      "60 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "70 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio",
+      "ages",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_098",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Find the simplified ratio of 108 to 216.",
+    "options": [
+      "1:2",
+      "2:3",
+      "3:4",
+      "4:5"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_099",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Find the simplified ratio of 109 to 218.",
+    "options": [
+      "1:2",
+      "2:3",
+      "3:4",
+      "4:5"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_RAT_100",
+    "topic": "Ratio & Proportion",
+    "subtopic": "Basic Ratios",
+    "difficulty": "Easy",
+    "question": "Find the simplified ratio of 110 to 220.",
+    "options": [
+      "1:2",
+      "2:3",
+      "3:4",
+      "4:5"
+    ],
+    "correctAnswer": 0,
+    "answer": "1:2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "ratio"
+    ],
+    "source": "AI Generated"
+  }
+]

@@ -1,0 +1,2630 @@
+[
+  {
+    "id": "ARI_SI_001",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Medium",
+    "question": "Find the Simple Interest on a principal of $1000 at a rate of 5% per annum for 2 years.",
+    "options": [
+      "$150",
+      "$80",
+      "$100",
+      "$200"
+    ],
+    "correctAnswer": 2,
+    "answer": "$100",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_002",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Medium",
+    "question": "Find the Simple Interest on a principal of $2000 at a rate of 8% per annum for 3 years.",
+    "options": [
+      "$480",
+      "$460",
+      "$580",
+      "$530"
+    ],
+    "correctAnswer": 0,
+    "answer": "$480",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_003",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Medium",
+    "question": "Find the Simple Interest on a principal of $5000 at a rate of 6% per annum for 4 years.",
+    "options": [
+      "$1200",
+      "$1180",
+      "$1300",
+      "$1250"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_004",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Medium",
+    "question": "Find the Simple Interest on a principal of $3000 at a rate of 10% per annum for 2 years.",
+    "options": [
+      "$650",
+      "$700",
+      "$600",
+      "$580"
+    ],
+    "correctAnswer": 2,
+    "answer": "$600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_005",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Medium",
+    "question": "Find the Simple Interest on a principal of $1500 at a rate of 4% per annum for 5 years.",
+    "options": [
+      "$280",
+      "$300",
+      "$350",
+      "$400"
+    ],
+    "correctAnswer": 1,
+    "answer": "$300",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_006",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "Find the Simple Interest on a principal of $2500 at a rate of 7% per annum for 3 years.",
+    "options": [
+      "$575",
+      "$625",
+      "$505",
+      "$525"
+    ],
+    "correctAnswer": 3,
+    "answer": "$525",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_007",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "Find the Simple Interest on a principal of $4000 at a rate of 9% per annum for 2 years.",
+    "options": [
+      "$770",
+      "$820",
+      "$720",
+      "$700"
+    ],
+    "correctAnswer": 2,
+    "answer": "$720",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_008",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "Find the Simple Interest on a principal of $6000 at a rate of 3% per annum for 5 years.",
+    "options": [
+      "$900",
+      "$1000",
+      "$950",
+      "$880"
+    ],
+    "correctAnswer": 0,
+    "answer": "$900",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_009",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "Find the Simple Interest on a principal of $800 at a rate of 12% per annum for 3 years.",
+    "options": [
+      "$288",
+      "$338",
+      "$388",
+      "$268"
+    ],
+    "correctAnswer": 0,
+    "answer": "$288",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_010",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "Find the Simple Interest on a principal of $1200 at a rate of 6% per annum for 4 years.",
+    "options": [
+      "$288",
+      "$388",
+      "$268",
+      "$338"
+    ],
+    "correctAnswer": 0,
+    "answer": "$288",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "SI formula"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_011",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 3 years when a principal of $5000 is invested at 10% per annum simple interest.",
+    "options": [
+      "$6700",
+      "$7000",
+      "$6400",
+      "$6500"
+    ],
+    "correctAnswer": 3,
+    "answer": "$6500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_012",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 2 years when a principal of $8000 is invested at 12% per annum simple interest.",
+    "options": [
+      "$9820",
+      "$10420",
+      "$9920",
+      "$10120"
+    ],
+    "correctAnswer": 2,
+    "answer": "$9920",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_013",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 4 years when a principal of $10000 is invested at 8% per annum simple interest.",
+    "options": [
+      "$13700",
+      "$13400",
+      "$13100",
+      "$13200"
+    ],
+    "correctAnswer": 3,
+    "answer": "$13200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_014",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 5 years when a principal of $3500 is invested at 6% per annum simple interest.",
+    "options": [
+      "$4450",
+      "$4550",
+      "$5050",
+      "$4750"
+    ],
+    "correctAnswer": 1,
+    "answer": "$4550",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_015",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 3 years when a principal of $6000 is invested at 9% per annum simple interest.",
+    "options": [
+      "$7820",
+      "$7620",
+      "$7520",
+      "$8120"
+    ],
+    "correctAnswer": 1,
+    "answer": "$7620",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_016",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 4 years when a principal of $15000 is invested at 5% per annum simple interest.",
+    "options": [
+      "$18000",
+      "$18200",
+      "$18500",
+      "$17900"
+    ],
+    "correctAnswer": 0,
+    "answer": "$18000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_017",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 2 years when a principal of $2000 is invested at 15% per annum simple interest.",
+    "options": [
+      "$2500",
+      "$2800",
+      "$3100",
+      "$2600"
+    ],
+    "correctAnswer": 3,
+    "answer": "$2600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_018",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 3 years when a principal of $4500 is invested at 10% per annum simple interest.",
+    "options": [
+      "$6050",
+      "$5750",
+      "$6350",
+      "$5850"
+    ],
+    "correctAnswer": 3,
+    "answer": "$5850",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_019",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 2 years when a principal of $7500 is invested at 6% per annum simple interest.",
+    "options": [
+      "$8900",
+      "$8400",
+      "$8300",
+      "$8600"
+    ],
+    "correctAnswer": 1,
+    "answer": "$8400",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_020",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Amount",
+    "difficulty": "Medium",
+    "question": "Calculate the total amount after 3 years when a principal of $9000 is invested at 8% per annum simple interest.",
+    "options": [
+      "$11160",
+      "$11060",
+      "$11360",
+      "$11660"
+    ],
+    "correctAnswer": 0,
+    "answer": "$11160",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount",
+      "total"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_021",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Easy",
+    "question": "A sum of $1000 yields a Simple Interest of $200 in 4 years. Find the rate of interest per annum.",
+    "options": [
+      "7%",
+      "6%",
+      "4.5%",
+      "5%"
+    ],
+    "correctAnswer": 3,
+    "answer": "5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_022",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Easy",
+    "question": "A sum of $2000 yields a Simple Interest of $600 in 5 years. Find the rate of interest per annum.",
+    "options": [
+      "7%",
+      "6%",
+      "8%",
+      "5.5%"
+    ],
+    "correctAnswer": 1,
+    "answer": "6%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_023",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Easy",
+    "question": "A sum of $5000 yields a Simple Interest of $1000 in 4 years. Find the rate of interest per annum.",
+    "options": [
+      "4.5%",
+      "7%",
+      "5%",
+      "6%"
+    ],
+    "correctAnswer": 2,
+    "answer": "5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_024",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Easy",
+    "question": "A sum of $3000 yields a Simple Interest of $450 in 3 years. Find the rate of interest per annum.",
+    "options": [
+      "6%",
+      "5%",
+      "7%",
+      "4.5%"
+    ],
+    "correctAnswer": 1,
+    "answer": "5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_025",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Easy",
+    "question": "A sum of $4000 yields a Simple Interest of $800 in 5 years. Find the rate of interest per annum.",
+    "options": [
+      "3.5%",
+      "5%",
+      "4%",
+      "6%"
+    ],
+    "correctAnswer": 2,
+    "answer": "4%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_026",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Medium",
+    "question": "At what rate of simple interest will $6000 amount to $7440 in 4 years?",
+    "options": [
+      "5%",
+      "7%",
+      "6%",
+      "8.5%"
+    ],
+    "correctAnswer": 2,
+    "answer": "6%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_027",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Medium",
+    "question": "At what rate of simple interest will $8000 amount to $10400 in 5 years?",
+    "options": [
+      "8.5%",
+      "5%",
+      "6%",
+      "7%"
+    ],
+    "correctAnswer": 2,
+    "answer": "6%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_028",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Medium",
+    "question": "At what rate of simple interest will $12000 amount to $14880 in 4 years?",
+    "options": [
+      "6%",
+      "5%",
+      "8.5%",
+      "7%"
+    ],
+    "correctAnswer": 0,
+    "answer": "6%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_029",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Medium",
+    "question": "At what rate of simple interest will $15000 amount to $19500 in 5 years?",
+    "options": [
+      "6%",
+      "7%",
+      "8.5%",
+      "5%"
+    ],
+    "correctAnswer": 0,
+    "answer": "6%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_030",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Medium",
+    "question": "At what rate of simple interest will $20000 amount to $26000 in 5 years?",
+    "options": [
+      "8.5%",
+      "6%",
+      "5%",
+      "7%"
+    ],
+    "correctAnswer": 1,
+    "answer": "6%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_031",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Hard",
+    "question": "A sum of money doubles itself in 8 years at simple interest. Find the rate of interest.",
+    "options": [
+      "8%",
+      "15%",
+      "12.5%",
+      "10%"
+    ],
+    "correctAnswer": 2,
+    "answer": "12.5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "doubling",
+      "rate"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_032",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Hard",
+    "question": "At what rate percent per annum will a sum of money triple itself in 16 years?",
+    "options": [
+      "15%",
+      "10%",
+      "12.5%",
+      "8%"
+    ],
+    "correctAnswer": 2,
+    "answer": "12.5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "tripling"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_033",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Hard",
+    "question": "A sum of money becomes 7/4 of itself in 6 years at simple interest. Find the rate of interest.",
+    "options": [
+      "12.5%",
+      "8.33%",
+      "10%",
+      "15%"
+    ],
+    "correctAnswer": 0,
+    "answer": "12.5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "fraction multiple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_034",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Hard",
+    "question": "The simple interest on a sum of money is 4/9 of the principal, and the number of years equals the rate percent. Find the rate of interest.",
+    "options": [
+      "6%",
+      "6.67%",
+      "5%",
+      "7%"
+    ],
+    "correctAnswer": 1,
+    "answer": "6.67%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "equal T and R"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_035",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Rate",
+    "difficulty": "Hard",
+    "question": "If the rate of simple interest increases by 2%, the income from $3000 per year increases by $60. Find the original rate.",
+    "options": [
+      "2%",
+      "4%",
+      "5%",
+      "3%"
+    ],
+    "correctAnswer": 3,
+    "answer": "3%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "rate change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_036",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Easy",
+    "question": "At what time will $1000 produce a Simple Interest of $150 at 5% per annum?",
+    "options": [
+      "3 years",
+      "2.5 years",
+      "5 years",
+      "4 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "3 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_037",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Easy",
+    "question": "At what time will $2000 produce a Simple Interest of $480 at 8% per annum?",
+    "options": [
+      "5 years",
+      "4 years",
+      "3 years",
+      "2.5 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "3 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_038",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Easy",
+    "question": "At what time will $5000 produce a Simple Interest of $1500 at 10% per annum?",
+    "options": [
+      "5 years",
+      "4 years",
+      "3 years",
+      "2.5 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "3 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_039",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Easy",
+    "question": "At what time will $3000 produce a Simple Interest of $540 at 6% per annum?",
+    "options": [
+      "4 years",
+      "3 years",
+      "2.5 years",
+      "5 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "3 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_040",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Easy",
+    "question": "At what time will $4000 produce a Simple Interest of $960 at 12% per annum?",
+    "options": [
+      "4 years",
+      "2 years",
+      "1.5 years",
+      "3 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "2 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_041",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Medium",
+    "question": "In how many years will $6000 amount to $7800 at 5% simple interest per annum?",
+    "options": [
+      "6.5 years",
+      "8 years",
+      "6 years",
+      "5 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "6 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_042",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Medium",
+    "question": "In how many years will $8000 amount to $11200 at 8% simple interest per annum?",
+    "options": [
+      "5 years",
+      "7 years",
+      "4 years",
+      "5.5 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_043",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Medium",
+    "question": "In how many years will $10000 amount to $13600 at 6% simple interest per annum?",
+    "options": [
+      "8 years",
+      "6 years",
+      "5 years",
+      "6.5 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "6 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_044",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Medium",
+    "question": "In how many years will $12000 amount to $18000 at 10% simple interest per annum?",
+    "options": [
+      "7 years",
+      "5.5 years",
+      "4 years",
+      "5 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_045",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Medium",
+    "question": "In how many years will $15000 amount to $18600 at 4% simple interest per annum?",
+    "options": [
+      "8 years",
+      "6 years",
+      "6.5 years",
+      "5 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "6 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "time",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_046",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Hard",
+    "question": "At what time will a sum of money double itself at 12.5% simple interest?",
+    "options": [
+      "6 years",
+      "10 years",
+      "12 years",
+      "8 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "8 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "doubling time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_047",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Hard",
+    "question": "A sum of money triples itself at 10% per annum simple interest. Find the time.",
+    "options": [
+      "30 years",
+      "15 years",
+      "20 years",
+      "25 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "20 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "tripling time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_048",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Hard",
+    "question": "The simple interest on a sum of money is 25% of the principal. If the rate is 5% per annum, find the time.",
+    "options": [
+      "4 years",
+      "6 years",
+      "3 years",
+      "5 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "fraction of principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_049",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Hard",
+    "question": "A sum invested at 5% simple interest grows to $4200 in 4 years. Find the time it will take to grow to $5250 at the same rate.",
+    "options": [
+      "10 years",
+      "6 years",
+      "12 years",
+      "8 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "comparative time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_050",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Time",
+    "difficulty": "Hard",
+    "question": "In how many years will the simple interest on $2400 at 5% per annum be the same as the simple interest on $1500 at 8% per annum for 5 years?",
+    "options": [
+      "3 years",
+      "2 years",
+      "2.5 years",
+      "4 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "2.5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "equal SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_051",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Easy",
+    "question": "Find the principal if the Simple Interest is $300 at 5% per annum for 3 years.",
+    "options": [
+      "$2100",
+      "$2000",
+      "$2200",
+      "$1950"
+    ],
+    "correctAnswer": 1,
+    "answer": "$2000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_052",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Easy",
+    "question": "Find the principal if the Simple Interest is $640 at 8% per annum for 4 years.",
+    "options": [
+      "$2100",
+      "$2200",
+      "$2000",
+      "$1950"
+    ],
+    "correctAnswer": 2,
+    "answer": "$2000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_053",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Easy",
+    "question": "Find the principal if the Simple Interest is $500 at 10% per annum for 2 years.",
+    "options": [
+      "$2450",
+      "$2700",
+      "$2500",
+      "$2600"
+    ],
+    "correctAnswer": 2,
+    "answer": "$2500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_054",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Easy",
+    "question": "Find the principal if the Simple Interest is $450 at 6% per annum for 5 years.",
+    "options": [
+      "$1600",
+      "$1500",
+      "$1700",
+      "$1450"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_055",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Easy",
+    "question": "Find the principal if the Simple Interest is $720 at 12% per annum for 3 years.",
+    "options": [
+      "$1950",
+      "$2000",
+      "$2100",
+      "$2200"
+    ],
+    "correctAnswer": 1,
+    "answer": "$2000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_056",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Medium",
+    "question": "A person invests a sum at 10% per annum simple interest. After 4 years the total amount becomes $8400. Find the principal.",
+    "options": [
+      "$6000",
+      "$5800",
+      "$6500",
+      "$7000"
+    ],
+    "correctAnswer": 0,
+    "answer": "$6000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_057",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Medium",
+    "question": "A person invests a sum at 8% per annum simple interest. After 5 years the total amount becomes $14000. Find the principal.",
+    "options": [
+      "$9800",
+      "$10000",
+      "$11000",
+      "$10500"
+    ],
+    "correctAnswer": 1,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_058",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Medium",
+    "question": "A person invests a sum at 6% per annum simple interest. After 3 years the total amount becomes $17700. Find the principal.",
+    "options": [
+      "$16000",
+      "$14800",
+      "$15500",
+      "$15000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$15000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_059",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Medium",
+    "question": "A person invests a sum at 12% per annum simple interest. After 2 years the total amount becomes $14880. Find the principal.",
+    "options": [
+      "$11800",
+      "$13000",
+      "$12500",
+      "$12000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$12000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_060",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Medium",
+    "question": "A person invests a sum at 15% per annum simple interest. After 3 years the total amount becomes $14500. Find the principal.",
+    "options": [
+      "$10500",
+      "$9800",
+      "$10000",
+      "$11000"
+    ],
+    "correctAnswer": 2,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "principal",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_061",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Hard",
+    "question": "What principal will amount to $1300 in 5 years at 4% per annum simple interest?",
+    "options": [
+      "$1100",
+      "$1000",
+      "$1082.50",
+      "$1050"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1082.50",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "reverse principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_062",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Hard",
+    "question": "A sum of money at simple interest amounts to $1012 in 2.5 years and to $1067.20 in 4 years. Find the principal.",
+    "options": [
+      "9",
+      "0",
+      "$",
+      "$864",
+      "0"
+    ],
+    "correctAnswer": 3,
+    "answer": "$864",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "$920",
+      "$840"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_063",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Hard",
+    "question": "The difference between the simple interest on a sum at 5% for 3 years and at 4% for 4 years is $25. Find the sum.",
+    "options": [
+      "$6000",
+      "$5000",
+      "$4500",
+      "$4000"
+    ],
+    "correctAnswer": 1,
+    "answer": "$5000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "difference of SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_064",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Hard",
+    "question": "The simple interest on a sum for 3 years at 6% is $90 less than the simple interest on the same sum for 4 years at 5%. Find the sum.",
+    "options": [
+      "$3500",
+      "$2500",
+      "$3000",
+      "$4000"
+    ],
+    "correctAnswer": 2,
+    "answer": "$3000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "difference of SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_065",
+    "topic": "Simple Interest",
+    "subtopic": "Finding Principal",
+    "difficulty": "Hard",
+    "question": "A man invests two parts of a sum at 4% and 6% per annum. The total SI in 3 years is $900. If the parts are equal, find the total sum.",
+    "options": [
+      "$6000",
+      "$5000",
+      "$4500",
+      "$4000"
+    ],
+    "correctAnswer": 1,
+    "answer": "$5000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "part investment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_066",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Medium",
+    "question": "Investment 1: $2000 at 6% for 2 years. Investment 2: $3000 at 4% for 2 years. Which investment earns more and by how much?",
+    "options": [
+      "Investment 1 earns $100 more",
+      "Investment 2 earns $50 more",
+      "Both earn equal",
+      "Investment 2 earns $0 more"
+    ],
+    "correctAnswer": 3,
+    "answer": "Investment 2 earns $0 more",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "comparison"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_067",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Medium",
+    "question": "Investment 1: $5000 at 8% for 2 years. Investment 2: $8000 at 5% for 2 years. Which investment earns more and by how much?",
+    "options": [
+      "Investment 2 earns $50 more",
+      "Investment 2 earns $0 more",
+      "Both earn equal",
+      "Investment 1 earns $100 more"
+    ],
+    "correctAnswer": 1,
+    "answer": "Investment 2 earns $0 more",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "comparison"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_068",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Medium",
+    "question": "Investment 1: $1500 at 10% for 2 years. Investment 2: $2500 at 6% for 2 years. Which investment earns more and by how much?",
+    "options": [
+      "Investment 2 earns $50 more",
+      "Investment 1 earns $100 more",
+      "Investment 2 earns $0 more",
+      "Both earn equal"
+    ],
+    "correctAnswer": 2,
+    "answer": "Investment 2 earns $0 more",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "comparison"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_069",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Medium",
+    "question": "Investment 1: $4000 at 5% for 2 years. Investment 2: $6000 at 8% for 2 years. Which investment earns more and by how much?",
+    "options": [
+      "Investment 2 earns $560 more",
+      "Both earn equal",
+      "Investment 1 earns $660 more",
+      "Investment 2 earns $610 more"
+    ],
+    "correctAnswer": 0,
+    "answer": "Investment 2 earns $560 more",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "comparison"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_070",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Medium",
+    "question": "Investment 1: $3000 at 7% for 2 years. Investment 2: $5000 at 4% for 2 years. Which investment earns more and by how much?",
+    "options": [
+      "Investment 1 earns $120 more",
+      "Investment 1 earns $20 more",
+      "Both earn equal",
+      "Investment 2 earns $70 more"
+    ],
+    "correctAnswer": 1,
+    "answer": "Investment 1 earns $20 more",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "comparison"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_071",
+    "topic": "Simple Interest",
+    "subtopic": "Part Investment",
+    "difficulty": "Medium",
+    "question": "A sum of $5000 is divided into two parts invested at 5% and 8% per annum respectively for 3 years. If the difference in SI is $140, find the part invested at 5%.",
+    "options": [
+      "$-14888.888888888889",
+      "$19888.88888888889",
+      "$-14388.888888888889",
+      "$-15188.888888888889"
+    ],
+    "correctAnswer": 0,
+    "answer": "$-14888.888888888889",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "part investment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_072",
+    "topic": "Simple Interest",
+    "subtopic": "Part Investment",
+    "difficulty": "Medium",
+    "question": "A sum of $8000 is divided into two parts invested at 6% and 9% per annum respectively for 2 years. If the difference in SI is $240, find the part invested at 6%.",
+    "options": [
+      "$-27500",
+      "$36000",
+      "$-28000",
+      "$-28300"
+    ],
+    "correctAnswer": 2,
+    "answer": "$-28000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "part investment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_073",
+    "topic": "Simple Interest",
+    "subtopic": "Part Investment",
+    "difficulty": "Medium",
+    "question": "A sum of $10000 is divided into two parts invested at 5% and 10% per annum respectively for 4 years. If the difference in SI is $1200, find the part invested at 5%.",
+    "options": [
+      "$-25500",
+      "$36000",
+      "$-26300",
+      "$-26000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$-26000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "part investment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_074",
+    "topic": "Simple Interest",
+    "subtopic": "Part Investment",
+    "difficulty": "Medium",
+    "question": "A sum of $6000 is divided into two parts invested at 4% and 6% per annum respectively for 3 years. If the difference in SI is $432, find the part invested at 4%.",
+    "options": [
+      "$-25200",
+      "$31200",
+      "$-25500",
+      "$-24700"
+    ],
+    "correctAnswer": 0,
+    "answer": "$-25200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "part investment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_075",
+    "topic": "Simple Interest",
+    "subtopic": "Part Investment",
+    "difficulty": "Medium",
+    "question": "A sum of $12000 is divided into two parts invested at 5% and 8% per annum respectively for 5 years. If the difference in SI is $1800, find the part invested at 5%.",
+    "options": [
+      "$-44300",
+      "$56000",
+      "$-43500",
+      "$-44000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$-44000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "part investment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_076",
+    "topic": "Simple Interest",
+    "subtopic": "Amount Calculation",
+    "difficulty": "Easy",
+    "question": "What will be the amount when $500 is lent out at 10% per annum for 2 years at simple interest?",
+    "options": [
+      "$580",
+      "$680",
+      "$600",
+      "$640"
+    ],
+    "correctAnswer": 2,
+    "answer": "$600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_077",
+    "topic": "Simple Interest",
+    "subtopic": "Amount Calculation",
+    "difficulty": "Easy",
+    "question": "What will be the amount when $800 is lent out at 5% per annum for 3 years at simple interest?",
+    "options": [
+      "$900",
+      "$920",
+      "$960",
+      "$1000"
+    ],
+    "correctAnswer": 1,
+    "answer": "$920",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_078",
+    "topic": "Simple Interest",
+    "subtopic": "Amount Calculation",
+    "difficulty": "Easy",
+    "question": "What will be the amount when $1000 is lent out at 8% per annum for 2 years at simple interest?",
+    "options": [
+      "$1140",
+      "$1200",
+      "$1160",
+      "$1240"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1160",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_079",
+    "topic": "Simple Interest",
+    "subtopic": "Amount Calculation",
+    "difficulty": "Easy",
+    "question": "What will be the amount when $1200 is lent out at 6% per annum for 4 years at simple interest?",
+    "options": [
+      "$1488",
+      "$1528",
+      "$1568",
+      "$1468"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1488",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_080",
+    "topic": "Simple Interest",
+    "subtopic": "Amount Calculation",
+    "difficulty": "Easy",
+    "question": "What will be the amount when $1500 is lent out at 12% per annum for 3 years at simple interest?",
+    "options": [
+      "$2040",
+      "$2020",
+      "$2080",
+      "$2120"
+    ],
+    "correctAnswer": 0,
+    "answer": "$2040",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "amount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_081",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Hard",
+    "question": "A person lent $5000 partly at 4% and partly at 5% per annum simple interest. The total interest in 2 years was $420. What is the sum lent at 5%?",
+    "options": [
+      "$2500",
+      "$1500",
+      "$2000",
+      "$3000"
+    ],
+    "correctAnswer": 2,
+    "answer": "$2000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "part investment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_082",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Hard",
+    "question": "The difference in SI between two loans of $1000 each: one for 3 years at 8% and the other for 5 years at 5%. Find the difference.",
+    "options": [
+      "$25",
+      "$10",
+      "$15",
+      "$20"
+    ],
+    "correctAnswer": 1,
+    "answer": "$10",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "comparison"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_083",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Hard",
+    "question": "Two equal sums are lent for 3 years, one at 5% and another at 4%. If the difference in interest is $48, find the sum.",
+    "options": [
+      "$1800",
+      "$1200",
+      "$2000",
+      "$1600"
+    ],
+    "correctAnswer": 3,
+    "answer": "$1600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "equal principal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_084",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Hard",
+    "question": "A borrows $1200 from B and pays back $1440 after 5 years. Find the simple rate of interest charged.",
+    "options": [
+      "5%",
+      "6%",
+      "4%",
+      "3%"
+    ],
+    "correctAnswer": 2,
+    "answer": "4%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "repayment"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_085",
+    "topic": "Simple Interest",
+    "subtopic": "Comparison of SI",
+    "difficulty": "Hard",
+    "question": "At the same rate of simple interest, $2000 amounts to $2240 in 3 years. What will $3500 amount to in 5 years?",
+    "options": [
+      "$4000",
+      "$4500",
+      "$4375",
+      "$4200"
+    ],
+    "correctAnswer": 2,
+    "answer": "$4375",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "scaled calculation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_086",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $1000 at 4% per annum for 2 years?",
+    "options": [
+      "$180",
+      "$80",
+      "$50",
+      "$130"
+    ],
+    "correctAnswer": 1,
+    "answer": "$80",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_087",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $2000 at 5% per annum for 3 years?",
+    "options": [
+      "$270",
+      "$400",
+      "$300",
+      "$350"
+    ],
+    "correctAnswer": 2,
+    "answer": "$300",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_088",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $6000 at 6% per annum for 4 years?",
+    "options": [
+      "$1540",
+      "$1490",
+      "$1440",
+      "$1410"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1440",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_089",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $6000 at 8% per annum for 5 years?",
+    "options": [
+      "$2370",
+      "$2500",
+      "$2400",
+      "$2450"
+    ],
+    "correctAnswer": 2,
+    "answer": "$2400",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_090",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $10000 at 10% per annum for 3 years?",
+    "options": [
+      "$2970",
+      "$3050",
+      "$3000",
+      "$3100"
+    ],
+    "correctAnswer": 2,
+    "answer": "$3000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_091",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $3000 at 4% per annum for 2 years?",
+    "options": [
+      "$240",
+      "$340",
+      "$290",
+      "$210"
+    ],
+    "correctAnswer": 0,
+    "answer": "$240",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_092",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $8000 at 5% per annum for 3 years?",
+    "options": [
+      "$1200",
+      "$1300",
+      "$1250",
+      "$1170"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_093",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $6000 at 6% per annum for 4 years?",
+    "options": [
+      "$1490",
+      "$1540",
+      "$1410",
+      "$1440"
+    ],
+    "correctAnswer": 3,
+    "answer": "$1440",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_094",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $4000 at 8% per annum for 5 years?",
+    "options": [
+      "$1600",
+      "$1700",
+      "$1650",
+      "$1570"
+    ],
+    "correctAnswer": 0,
+    "answer": "$1600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_095",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $9000 at 10% per annum for 3 years?",
+    "options": [
+      "$2700",
+      "$2750",
+      "$2800",
+      "$2670"
+    ],
+    "correctAnswer": 0,
+    "answer": "$2700",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_096",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $1000 at 4% per annum for 2 years?",
+    "options": [
+      "$80",
+      "$130",
+      "$50",
+      "$180"
+    ],
+    "correctAnswer": 0,
+    "answer": "$80",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_097",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $8000 at 5% per annum for 3 years?",
+    "options": [
+      "$1250",
+      "$1170",
+      "$1200",
+      "$1300"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_098",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $3000 at 6% per annum for 4 years?",
+    "options": [
+      "$690",
+      "$720",
+      "$770",
+      "$820"
+    ],
+    "correctAnswer": 1,
+    "answer": "$720",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_099",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $8000 at 8% per annum for 5 years?",
+    "options": [
+      "$3300",
+      "$3170",
+      "$3200",
+      "$3250"
+    ],
+    "correctAnswer": 2,
+    "answer": "$3200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_SI_100",
+    "topic": "Simple Interest",
+    "subtopic": "Finding SI",
+    "difficulty": "Easy",
+    "question": "What is the Simple Interest on $3000 at 10% per annum for 3 years?",
+    "options": [
+      "$900",
+      "$950",
+      "$870",
+      "$1000"
+    ],
+    "correctAnswer": 0,
+    "answer": "$900",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "simple interest",
+      "SI",
+      "basic SI"
+    ],
+    "source": "AI Generated"
+  }
+]

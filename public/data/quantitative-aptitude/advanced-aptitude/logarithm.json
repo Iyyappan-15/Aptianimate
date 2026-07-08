@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "ADV_LOG_001",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 2 of 4?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "answer": "2",
+    "explanation": "Let x = log base 2 of 4. In exponential form, this means 2^x = 4. Since 2^2 = 4, x = 2.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_002",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 3 of 27?",
+    "options": [
+      "3",
+      "6",
+      "4",
+      "2"
+    ],
+    "correctAnswer": 0,
+    "answer": "3",
+    "explanation": "Let x = log base 3 of 27. In exponential form, this means 3^x = 27. Since 3^3 = 27, x = 3.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_003",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 4 of 256?",
+    "options": [
+      "3",
+      "8",
+      "5",
+      "4"
+    ],
+    "correctAnswer": 3,
+    "answer": "4",
+    "explanation": "Let x = log base 4 of 256. In exponential form, this means 4^x = 256. Since 4^4 = 256, x = 4.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_004",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 5 of 3125?",
+    "options": [
+      "10",
+      "4",
+      "6",
+      "5"
+    ],
+    "correctAnswer": 3,
+    "answer": "5",
+    "explanation": "Let x = log base 5 of 3125. In exponential form, this means 5^x = 3125. Since 5^5 = 3125, x = 5.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_005",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 6 of 36?",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "3"
+    ],
+    "correctAnswer": 0,
+    "answer": "2",
+    "explanation": "Let x = log base 6 of 36. In exponential form, this means 6^x = 36. Since 6^2 = 36, x = 2.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_006",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 7 of 343?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "2"
+    ],
+    "correctAnswer": 0,
+    "answer": "3",
+    "explanation": "Let x = log base 7 of 343. In exponential form, this means 7^x = 343. Since 7^3 = 343, x = 3.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_007",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 8 of 4096?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "answer": "4",
+    "explanation": "Let x = log base 8 of 4096. In exponential form, this means 8^x = 4096. Since 8^4 = 4096, x = 4.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_008",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 9 of 59049?",
+    "options": [
+      "4",
+      "10",
+      "6",
+      "5"
+    ],
+    "correctAnswer": 3,
+    "answer": "5",
+    "explanation": "Let x = log base 9 of 59049. In exponential form, this means 9^x = 59049. Since 9^5 = 59049, x = 5.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_009",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 10 of 100?",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "answer": "2",
+    "explanation": "Let x = log base 10 of 100. In exponential form, this means 10^x = 100. Since 10^2 = 100, x = 2.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_010",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Easy",
+    "question": "What is the value of log base 11 of 1331?",
+    "options": [
+      "6",
+      "2",
+      "4",
+      "3"
+    ],
+    "correctAnswer": 3,
+    "answer": "3",
+    "explanation": "Let x = log base 11 of 1331. In exponential form, this means 11^x = 1331. Since 11^3 = 1331, x = 3.",
+    "shortcut": "Convert log form to exponential form: log_b(a) = c implies b^c = a.",
+    "commonMistake": "Dividing the number by the base instead of finding the exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "basics",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_011",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(2) + log(3)",
+    "options": [
+      "log(1)",
+      "log(6)",
+      "log(5)",
+      "log(4)"
+    ],
+    "correctAnswer": 1,
+    "answer": "log(6)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(2) + log(3) = log(2 × 3) = log(6).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_012",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(3) + log(5)",
+    "options": [
+      "log(15)",
+      "log(8)",
+      "log(2)",
+      "log(6)"
+    ],
+    "correctAnswer": 0,
+    "answer": "log(15)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(3) + log(5) = log(3 × 5) = log(15).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_013",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(4) + log(7)",
+    "options": [
+      "log(28)",
+      "log(3)",
+      "log(11)",
+      "log(8)"
+    ],
+    "correctAnswer": 0,
+    "answer": "log(28)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(4) + log(7) = log(4 × 7) = log(28).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_014",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(5) + log(9)",
+    "options": [
+      "log(10)",
+      "log(45)",
+      "log(4)",
+      "log(14)"
+    ],
+    "correctAnswer": 1,
+    "answer": "log(45)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(5) + log(9) = log(5 × 9) = log(45).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_015",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(6) + log(11)",
+    "options": [
+      "log(5)",
+      "log(66)",
+      "log(12)",
+      "log(17)"
+    ],
+    "correctAnswer": 1,
+    "answer": "log(66)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(6) + log(11) = log(6 × 11) = log(66).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_016",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(7) + log(13)",
+    "options": [
+      "log(14)",
+      "log(91)",
+      "log(6)",
+      "log(20)"
+    ],
+    "correctAnswer": 1,
+    "answer": "log(91)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(7) + log(13) = log(7 × 13) = log(91).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_017",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(8) + log(15)",
+    "options": [
+      "log(16)",
+      "log(23)",
+      "log(7)",
+      "log(120)"
+    ],
+    "correctAnswer": 3,
+    "answer": "log(120)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(8) + log(15) = log(8 × 15) = log(120).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_018",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(9) + log(17)",
+    "options": [
+      "log(18)",
+      "log(153)",
+      "log(26)",
+      "log(8)"
+    ],
+    "correctAnswer": 1,
+    "answer": "log(153)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(9) + log(17) = log(9 × 17) = log(153).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_019",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(10) + log(19)",
+    "options": [
+      "log(190)",
+      "log(29)",
+      "log(20)",
+      "log(9)"
+    ],
+    "correctAnswer": 0,
+    "answer": "log(190)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(10) + log(19) = log(10 × 19) = log(190).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_020",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Easy",
+    "question": "Simplify the expression: log(11) + log(21)",
+    "options": [
+      "log(32)",
+      "log(231)",
+      "log(10)",
+      "log(22)"
+    ],
+    "correctAnswer": 1,
+    "answer": "log(231)",
+    "explanation": "According to the product rule of logarithms, log(m) + log(n) = log(m × n). Therefore, log(11) + log(21) = log(11 × 21) = log(231).",
+    "shortcut": "log(a) + log(b) = log(a*b).",
+    "commonMistake": "Adding the arguments: log(a) + log(b) = log(a+b).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "product rule",
+      "addition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_021",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 2 of x = 2",
+    "options": [
+      "4",
+      "4",
+      "2",
+      "6"
+    ],
+    "correctAnswer": 0,
+    "answer": "4",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 2^2. So, x = 4.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_022",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 3 of x = 3",
+    "options": [
+      "27",
+      "30",
+      "9",
+      "24"
+    ],
+    "correctAnswer": 0,
+    "answer": "27",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 3^3. So, x = 27.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_023",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 4 of x = 4",
+    "options": [
+      "16",
+      "252",
+      "260",
+      "256"
+    ],
+    "correctAnswer": 3,
+    "answer": "256",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 4^4. So, x = 256.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_024",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 5 of x = 2",
+    "options": [
+      "25",
+      "30",
+      "23",
+      "10"
+    ],
+    "correctAnswer": 0,
+    "answer": "25",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 5^2. So, x = 25.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_025",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 2 of x = 3",
+    "options": [
+      "5",
+      "8",
+      "10",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "answer": "8",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 2^3. So, x = 8.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_026",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 3 of x = 4",
+    "options": [
+      "81",
+      "12",
+      "77",
+      "84"
+    ],
+    "correctAnswer": 0,
+    "answer": "81",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 3^4. So, x = 81.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_027",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 4 of x = 2",
+    "options": [
+      "16",
+      "8",
+      "14",
+      "20"
+    ],
+    "correctAnswer": 0,
+    "answer": "16",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 4^2. So, x = 16.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_028",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 5 of x = 3",
+    "options": [
+      "122",
+      "125",
+      "15",
+      "130"
+    ],
+    "correctAnswer": 1,
+    "answer": "125",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 5^3. So, x = 125.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_029",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 2 of x = 4",
+    "options": [
+      "18",
+      "12",
+      "16",
+      "8"
+    ],
+    "correctAnswer": 2,
+    "answer": "16",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 2^4. So, x = 16.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_030",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Easy",
+    "question": "Solve for x: log base 3 of x = 2",
+    "options": [
+      "6",
+      "9",
+      "12",
+      "7"
+    ],
+    "correctAnswer": 1,
+    "answer": "9",
+    "explanation": "Convert the logarithmic equation into an exponential equation: if log_b(x) = y, then x = b^y. Here, x = 3^2. So, x = 9.",
+    "shortcut": "x = base^exponent.",
+    "commonMistake": "Multiplying the base and the exponent instead of raising to the power.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "equation",
+      "exponential form"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_031",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 4.",
+    "options": [
+      "0.9030",
+      "1.2040",
+      "0.6020",
+      "0.6000"
+    ],
+    "correctAnswer": 2,
+    "answer": "0.6020",
+    "explanation": "We can write 4 as 2^2. So, log(4) = log(2^2) = 2 * log(2). Substitute the given value: 2 * 0.3010 = 0.6020.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_032",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 8.",
+    "options": [
+      "0.9030",
+      "0.9000",
+      "2.4080",
+      "1.2040"
+    ],
+    "correctAnswer": 0,
+    "answer": "0.9030",
+    "explanation": "We can write 8 as 2^3. So, log(8) = log(2^3) = 3 * log(2). Substitute the given value: 3 * 0.3010 = 0.9030.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_033",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 16.",
+    "options": [
+      "4.8160",
+      "1.5050",
+      "1.2040",
+      "1.2000"
+    ],
+    "correctAnswer": 2,
+    "answer": "1.2040",
+    "explanation": "We can write 16 as 2^4. So, log(16) = log(2^4) = 4 * log(2). Substitute the given value: 4 * 0.3010 = 1.2040.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_034",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 32.",
+    "options": [
+      "1.5050",
+      "1.5000",
+      "9.6320",
+      "1.8060"
+    ],
+    "correctAnswer": 0,
+    "answer": "1.5050",
+    "explanation": "We can write 32 as 2^5. So, log(32) = log(2^5) = 5 * log(2). Substitute the given value: 5 * 0.3010 = 1.5050.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_035",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 64.",
+    "options": [
+      "19.2640",
+      "1.8000",
+      "1.8060",
+      "2.1070"
+    ],
+    "correctAnswer": 2,
+    "answer": "1.8060",
+    "explanation": "We can write 64 as 2^6. So, log(64) = log(2^6) = 6 * log(2). Substitute the given value: 6 * 0.3010 = 1.8060.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_036",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 128.",
+    "options": [
+      "2.1070",
+      "38.5280",
+      "2.1000",
+      "2.4080"
+    ],
+    "correctAnswer": 0,
+    "answer": "2.1070",
+    "explanation": "We can write 128 as 2^7. So, log(128) = log(2^7) = 7 * log(2). Substitute the given value: 7 * 0.3010 = 2.1070.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_037",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 256.",
+    "options": [
+      "2.4000",
+      "2.7090",
+      "77.0560",
+      "2.4080"
+    ],
+    "correctAnswer": 3,
+    "answer": "2.4080",
+    "explanation": "We can write 256 as 2^8. So, log(256) = log(2^8) = 8 * log(2). Substitute the given value: 8 * 0.3010 = 2.4080.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_038",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 512.",
+    "options": [
+      "2.7000",
+      "154.1120",
+      "2.7090",
+      "3.0100"
+    ],
+    "correctAnswer": 2,
+    "answer": "2.7090",
+    "explanation": "We can write 512 as 2^9. So, log(512) = log(2^9) = 9 * log(2). Substitute the given value: 9 * 0.3010 = 2.7090.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_039",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 1024.",
+    "options": [
+      "3.0000",
+      "3.3110",
+      "308.2240",
+      "3.0100"
+    ],
+    "correctAnswer": 3,
+    "answer": "3.0100",
+    "explanation": "We can write 1024 as 2^10. So, log(1024) = log(2^10) = 10 * log(2). Substitute the given value: 10 * 0.3010 = 3.0100.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_040",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Easy",
+    "question": "Given log 2 = 0.3010, find the value of log 2048.",
+    "options": [
+      "3.6120",
+      "3.3110",
+      "616.4480",
+      "3.3000"
+    ],
+    "correctAnswer": 1,
+    "answer": "3.3110",
+    "explanation": "We can write 2048 as 2^11. So, log(2048) = log(2^11) = 11 * log(2). Substitute the given value: 11 * 0.3010 = 3.3110.",
+    "shortcut": "Express the number as a power of the given value and multiply the exponent by the given log value.",
+    "commonMistake": "Multiplying the given log value by the number itself instead of its exponent.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "common log",
+      "substitution"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_041",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 2 of (1/4)",
+    "options": [
+      "2",
+      "-3",
+      "-2",
+      "0.5"
+    ],
+    "correctAnswer": 2,
+    "answer": "-2",
+    "explanation": "We need to find x such that 2^x = 1/4. We know that 2^2 = 4, so 2^(-2) = 1/4. Therefore, the answer is -2.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_042",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 3 of (1/27)",
+    "options": [
+      "-3",
+      "0.3333333333333333",
+      "3",
+      "-4"
+    ],
+    "correctAnswer": 0,
+    "answer": "-3",
+    "explanation": "We need to find x such that 3^x = 1/27. We know that 3^3 = 27, so 3^(-3) = 1/27. Therefore, the answer is -3.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_043",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 4 of (1/256)",
+    "options": [
+      "-4",
+      "4",
+      "-5",
+      "0.25"
+    ],
+    "correctAnswer": 0,
+    "answer": "-4",
+    "explanation": "We need to find x such that 4^x = 1/256. We know that 4^4 = 256, so 4^(-4) = 1/256. Therefore, the answer is -4.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_044",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 5 of (1/25)",
+    "options": [
+      "-3",
+      "2",
+      "-2",
+      "0.5"
+    ],
+    "correctAnswer": 2,
+    "answer": "-2",
+    "explanation": "We need to find x such that 5^x = 1/25. We know that 5^2 = 25, so 5^(-2) = 1/25. Therefore, the answer is -2.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_045",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 6 of (1/216)",
+    "options": [
+      "-4",
+      "-3",
+      "3",
+      "0.3333333333333333"
+    ],
+    "correctAnswer": 1,
+    "answer": "-3",
+    "explanation": "We need to find x such that 6^x = 1/216. We know that 6^3 = 216, so 6^(-3) = 1/216. Therefore, the answer is -3.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_046",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 7 of (1/2401)",
+    "options": [
+      "0.25",
+      "-4",
+      "-5",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "answer": "-4",
+    "explanation": "We need to find x such that 7^x = 1/2401. We know that 7^4 = 2401, so 7^(-4) = 1/2401. Therefore, the answer is -4.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_047",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 8 of (1/64)",
+    "options": [
+      "-3",
+      "-2",
+      "2",
+      "0.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "-2",
+    "explanation": "We need to find x such that 8^x = 1/64. We know that 8^2 = 64, so 8^(-2) = 1/64. Therefore, the answer is -2.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_048",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 9 of (1/729)",
+    "options": [
+      "3",
+      "0.3333333333333333",
+      "-4",
+      "-3"
+    ],
+    "correctAnswer": 3,
+    "answer": "-3",
+    "explanation": "We need to find x such that 9^x = 1/729. We know that 9^3 = 729, so 9^(-3) = 1/729. Therefore, the answer is -3.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_049",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 10 of (1/10000)",
+    "options": [
+      "0.25",
+      "-5",
+      "4",
+      "-4"
+    ],
+    "correctAnswer": 3,
+    "answer": "-4",
+    "explanation": "We need to find x such that 10^x = 1/10000. We know that 10^4 = 10000, so 10^(-4) = 1/10000. Therefore, the answer is -4.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_050",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Medium",
+    "question": "Evaluate: log base 11 of (1/121)",
+    "options": [
+      "2",
+      "0.5",
+      "-2",
+      "-3"
+    ],
+    "correctAnswer": 2,
+    "answer": "-2",
+    "explanation": "We need to find x such that 11^x = 1/121. We know that 11^2 = 121, so 11^(-2) = 1/121. Therefore, the answer is -2.",
+    "shortcut": "log(1/x) = -log(x). log_b(1/b^n) = -n.",
+    "commonMistake": "Ignoring the negative sign when dealing with fractions.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "fractions",
+      "negative exponent"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_051",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(2) - log(1)",
+    "options": [
+      "log(2/1)",
+      "log(4)",
+      "log(4/1)",
+      "log(3)"
+    ],
+    "correctAnswer": 2,
+    "answer": "log(4/1)",
+    "explanation": "Using the power rule, 2 log(2) = log(2^2) = log(4). Then using the quotient rule, log(4) - log(1) = log(4 / 1).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_052",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(3) - log(2)",
+    "options": [
+      "log(4)",
+      "log(18)",
+      "log(9/2)",
+      "log(3/2)"
+    ],
+    "correctAnswer": 2,
+    "answer": "log(9/2)",
+    "explanation": "Using the power rule, 2 log(3) = log(3^2) = log(9). Then using the quotient rule, log(9) - log(2) = log(9 / 2).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_053",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(4) - log(3)",
+    "options": [
+      "log(16/3)",
+      "log(48)",
+      "log(5)",
+      "log(4/3)"
+    ],
+    "correctAnswer": 0,
+    "answer": "log(16/3)",
+    "explanation": "Using the power rule, 2 log(4) = log(4^2) = log(16). Then using the quotient rule, log(16) - log(3) = log(16 / 3).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_054",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(5) - log(4)",
+    "options": [
+      "log(5/4)",
+      "log(6)",
+      "log(25/4)",
+      "log(100)"
+    ],
+    "correctAnswer": 2,
+    "answer": "log(25/4)",
+    "explanation": "Using the power rule, 2 log(5) = log(5^2) = log(25). Then using the quotient rule, log(25) - log(4) = log(25 / 4).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_055",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(6) - log(5)",
+    "options": [
+      "log(6/5)",
+      "log(7)",
+      "log(36/5)",
+      "log(180)"
+    ],
+    "correctAnswer": 2,
+    "answer": "log(36/5)",
+    "explanation": "Using the power rule, 2 log(6) = log(6^2) = log(36). Then using the quotient rule, log(36) - log(5) = log(36 / 5).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_056",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(7) - log(6)",
+    "options": [
+      "log(294)",
+      "log(7/6)",
+      "log(49/6)",
+      "log(8)"
+    ],
+    "correctAnswer": 2,
+    "answer": "log(49/6)",
+    "explanation": "Using the power rule, 2 log(7) = log(7^2) = log(49). Then using the quotient rule, log(49) - log(6) = log(49 / 6).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_057",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(8) - log(7)",
+    "options": [
+      "log(448)",
+      "log(64/7)",
+      "log(8/7)",
+      "log(9)"
+    ],
+    "correctAnswer": 1,
+    "answer": "log(64/7)",
+    "explanation": "Using the power rule, 2 log(8) = log(8^2) = log(64). Then using the quotient rule, log(64) - log(7) = log(64 / 7).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_058",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(9) - log(8)",
+    "options": [
+      "log(10)",
+      "log(648)",
+      "log(9/8)",
+      "log(81/8)"
+    ],
+    "correctAnswer": 3,
+    "answer": "log(81/8)",
+    "explanation": "Using the power rule, 2 log(9) = log(9^2) = log(81). Then using the quotient rule, log(81) - log(8) = log(81 / 8).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_059",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(10) - log(9)",
+    "options": [
+      "log(100/9)",
+      "log(11)",
+      "log(10/9)",
+      "log(900)"
+    ],
+    "correctAnswer": 0,
+    "answer": "log(100/9)",
+    "explanation": "Using the power rule, 2 log(10) = log(10^2) = log(100). Then using the quotient rule, log(100) - log(9) = log(100 / 9).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_060",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Medium",
+    "question": "Simplify the expression: 2 log(11) - log(10)",
+    "options": [
+      "log(1210)",
+      "log(11/10)",
+      "log(12)",
+      "log(121/10)"
+    ],
+    "correctAnswer": 3,
+    "answer": "log(121/10)",
+    "explanation": "Using the power rule, 2 log(11) = log(11^2) = log(121). Then using the quotient rule, log(121) - log(10) = log(121 / 10).",
+    "shortcut": "Apply power rule first, then quotient rule.",
+    "commonMistake": "Subtracting the numbers before applying the power rule.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quotient rule",
+      "power rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_061",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(8)",
+    "options": [
+      "3",
+      "6",
+      "4",
+      "-2"
+    ],
+    "correctAnswer": 2,
+    "answer": "4",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(8). Since the bases are the same, x(x - 2) = 8. This simplifies to the quadratic equation x² - 2x - 8 = 0. Factoring gives (x - 4)(x + 2) = 0. x = 4 or x = -2. Since log of a negative number is undefined, x must be 4.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_062",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(15)",
+    "options": [
+      "7",
+      "5",
+      "-3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "answer": "5",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(15). Since the bases are the same, x(x - 2) = 15. This simplifies to the quadratic equation x² - 2x - 15 = 0. Factoring gives (x - 5)(x + 3) = 0. x = 5 or x = -3. Since log of a negative number is undefined, x must be 5.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_063",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(24)",
+    "options": [
+      "8",
+      "-4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 3,
+    "answer": "6",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(24). Since the bases are the same, x(x - 2) = 24. This simplifies to the quadratic equation x² - 2x - 24 = 0. Factoring gives (x - 6)(x + 4) = 0. x = 6 or x = -4. Since log of a negative number is undefined, x must be 6.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_064",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(35)",
+    "options": [
+      "9",
+      "6",
+      "7",
+      "-5"
+    ],
+    "correctAnswer": 2,
+    "answer": "7",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(35). Since the bases are the same, x(x - 2) = 35. This simplifies to the quadratic equation x² - 2x - 35 = 0. Factoring gives (x - 7)(x + 5) = 0. x = 7 or x = -5. Since log of a negative number is undefined, x must be 7.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_065",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(48)",
+    "options": [
+      "7",
+      "8",
+      "10",
+      "-6"
+    ],
+    "correctAnswer": 1,
+    "answer": "8",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(48). Since the bases are the same, x(x - 2) = 48. This simplifies to the quadratic equation x² - 2x - 48 = 0. Factoring gives (x - 8)(x + 6) = 0. x = 8 or x = -6. Since log of a negative number is undefined, x must be 8.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_066",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(63)",
+    "options": [
+      "9",
+      "-7",
+      "11",
+      "8"
+    ],
+    "correctAnswer": 0,
+    "answer": "9",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(63). Since the bases are the same, x(x - 2) = 63. This simplifies to the quadratic equation x² - 2x - 63 = 0. Factoring gives (x - 9)(x + 7) = 0. x = 9 or x = -7. Since log of a negative number is undefined, x must be 9.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_067",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(80)",
+    "options": [
+      "12",
+      "9",
+      "10",
+      "-8"
+    ],
+    "correctAnswer": 2,
+    "answer": "10",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(80). Since the bases are the same, x(x - 2) = 80. This simplifies to the quadratic equation x² - 2x - 80 = 0. Factoring gives (x - 10)(x + 8) = 0. x = 10 or x = -8. Since log of a negative number is undefined, x must be 10.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_068",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(99)",
+    "options": [
+      "-9",
+      "10",
+      "11",
+      "13"
+    ],
+    "correctAnswer": 2,
+    "answer": "11",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(99). Since the bases are the same, x(x - 2) = 99. This simplifies to the quadratic equation x² - 2x - 99 = 0. Factoring gives (x - 11)(x + 9) = 0. x = 11 or x = -9. Since log of a negative number is undefined, x must be 11.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_069",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(120)",
+    "options": [
+      "14",
+      "11",
+      "12",
+      "-10"
+    ],
+    "correctAnswer": 2,
+    "answer": "12",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(120). Since the bases are the same, x(x - 2) = 120. This simplifies to the quadratic equation x² - 2x - 120 = 0. Factoring gives (x - 12)(x + 10) = 0. x = 12 or x = -10. Since log of a negative number is undefined, x must be 12.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_070",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Medium",
+    "question": "Solve for x: log(x) + log(x - 2) = log(143)",
+    "options": [
+      "13",
+      "-11",
+      "12",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "answer": "13",
+    "explanation": "Using the product rule, log(x(x - 2)) = log(143). Since the bases are the same, x(x - 2) = 143. This simplifies to the quadratic equation x² - 2x - 143 = 0. Factoring gives (x - 13)(x + 11) = 0. x = 13 or x = -11. Since log of a negative number is undefined, x must be 13.",
+    "shortcut": "Combine logs using product rule, drop logs, solve quadratic, reject negative roots.",
+    "commonMistake": "Accepting the negative root as a valid answer.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "quadratic",
+      "extraneous roots"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_071",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 6.",
+    "options": [
+      "0.6020",
+      "0.7781",
+      "0.7781",
+      "1.5562"
+    ],
+    "correctAnswer": 1,
+    "answer": "0.7781",
+    "explanation": "Prime factorize 6: 6 = 2^1 * 3^1. Therefore, log(6) = log(2^1 * 3^1) = log(2^1) + log(3^1) = 1log(2) + 1log(3). Substituting the values: 1(0.3010) + 1(0.4771) = 0.7781.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_072",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 36.",
+    "options": [
+      "1.2040",
+      "1.5562",
+      "1.5562",
+      "3.1124"
+    ],
+    "correctAnswer": 1,
+    "answer": "1.5562",
+    "explanation": "Prime factorize 36: 36 = 2^2 * 3^2. Therefore, log(36) = log(2^2 * 3^2) = log(2^2) + log(3^2) = 2log(2) + 2log(3). Substituting the values: 2(0.3010) + 2(0.4771) = 1.5562.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_073",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 24.",
+    "options": [
+      "3.1124",
+      "1.7323",
+      "1.2040",
+      "1.3801"
+    ],
+    "correctAnswer": 3,
+    "answer": "1.3801",
+    "explanation": "Prime factorize 24: 24 = 2^3 * 3^1. Therefore, log(24) = log(2^3 * 3^1) = log(2^3) + log(3^1) = 3log(2) + 1log(3). Substituting the values: 3(0.3010) + 1(0.4771) = 1.3801.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_074",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 18.",
+    "options": [
+      "0.9030",
+      "1.2552",
+      "1.0791",
+      "2.3343"
+    ],
+    "correctAnswer": 1,
+    "answer": "1.2552",
+    "explanation": "Prime factorize 18: 18 = 2^1 * 3^2. Therefore, log(18) = log(2^1 * 3^2) = log(2^1) + log(3^2) = 1log(2) + 2log(3). Substituting the values: 1(0.3010) + 2(0.4771) = 1.2552.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_075",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 12.",
+    "options": [
+      "2.3343",
+      "0.9030",
+      "1.0791",
+      "1.2552"
+    ],
+    "correctAnswer": 2,
+    "answer": "1.0791",
+    "explanation": "Prime factorize 12: 12 = 2^2 * 3^1. Therefore, log(12) = log(2^2 * 3^1) = log(2^2) + log(3^1) = 2log(2) + 1log(3). Substituting the values: 2(0.3010) + 1(0.4771) = 1.0791.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_076",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 72.",
+    "options": [
+      "1.5050",
+      "3.8905",
+      "2.0333",
+      "1.8572"
+    ],
+    "correctAnswer": 3,
+    "answer": "1.8572",
+    "explanation": "Prime factorize 72: 72 = 2^3 * 3^2. Therefore, log(72) = log(2^3 * 3^2) = log(2^3) + log(3^2) = 3log(2) + 2log(3). Substituting the values: 3(0.3010) + 2(0.4771) = 1.8572.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_077",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 6.",
+    "options": [
+      "0.7781",
+      "0.7781",
+      "1.5562",
+      "0.6020"
+    ],
+    "correctAnswer": 0,
+    "answer": "0.7781",
+    "explanation": "Prime factorize 6: 6 = 2^1 * 3^1. Therefore, log(6) = log(2^1 * 3^1) = log(2^1) + log(3^1) = 1log(2) + 1log(3). Substituting the values: 1(0.3010) + 1(0.4771) = 0.7781.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_078",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 36.",
+    "options": [
+      "3.1124",
+      "1.5562",
+      "1.2040",
+      "1.5562"
+    ],
+    "correctAnswer": 1,
+    "answer": "1.5562",
+    "explanation": "Prime factorize 36: 36 = 2^2 * 3^2. Therefore, log(36) = log(2^2 * 3^2) = log(2^2) + log(3^2) = 2log(2) + 2log(3). Substituting the values: 2(0.3010) + 2(0.4771) = 1.5562.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_079",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 24.",
+    "options": [
+      "1.3801",
+      "1.2040",
+      "1.7323",
+      "3.1124"
+    ],
+    "correctAnswer": 0,
+    "answer": "1.3801",
+    "explanation": "Prime factorize 24: 24 = 2^3 * 3^1. Therefore, log(24) = log(2^3 * 3^1) = log(2^3) + log(3^1) = 3log(2) + 1log(3). Substituting the values: 3(0.3010) + 1(0.4771) = 1.3801.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_080",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Medium",
+    "question": "Given log 2 = 0.3010 and log 3 = 0.4771, find the value of log 18.",
+    "options": [
+      "0.9030",
+      "1.2552",
+      "1.0791",
+      "2.3343"
+    ],
+    "correctAnswer": 1,
+    "answer": "1.2552",
+    "explanation": "Prime factorize 18: 18 = 2^1 * 3^2. Therefore, log(18) = log(2^1 * 3^2) = log(2^1) + log(3^2) = 1log(2) + 2log(3). Substituting the values: 1(0.3010) + 2(0.4771) = 1.2552.",
+    "shortcut": "Prime factorize the number, then apply product and power rules.",
+    "commonMistake": "Making arithmetic errors during multiplication or addition of decimals.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "prime factorization",
+      "multiple logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_081",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Hard",
+    "question": "Simplify the expression: log base 2 of 3 × log base 3 of 4 × log base 4 of 2.",
+    "options": [
+      "1",
+      "0",
+      "24",
+      "log(abc)"
+    ],
+    "correctAnswer": 0,
+    "answer": "1",
+    "explanation": "Using the change of base formula: log_b(a) = log(a) / log(b). So the expression becomes: (log(3)/log(2)) * (log(4)/log(3)) * (log(2)/log(4)). All terms cancel out, leaving 1.",
+    "shortcut": "Chain rule of logarithms: log_a(b) * log_b(c) = log_a(c). Here it loops back to log_a(a) = 1.",
+    "commonMistake": "Multiplying the bases or arguments together directly.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "change of base",
+      "chain rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_082",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Hard",
+    "question": "Simplify the expression: log base 3 of 4 × log base 4 of 5 × log base 5 of 3.",
+    "options": [
+      "0",
+      "log(abc)",
+      "60",
+      "1"
+    ],
+    "correctAnswer": 3,
+    "answer": "1",
+    "explanation": "Using the change of base formula: log_b(a) = log(a) / log(b). So the expression becomes: (log(4)/log(3)) * (log(5)/log(4)) * (log(3)/log(5)). All terms cancel out, leaving 1.",
+    "shortcut": "Chain rule of logarithms: log_a(b) * log_b(c) = log_a(c). Here it loops back to log_a(a) = 1.",
+    "commonMistake": "Multiplying the bases or arguments together directly.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "change of base",
+      "chain rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_083",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Hard",
+    "question": "Simplify the expression: log base 4 of 5 × log base 5 of 6 × log base 6 of 4.",
+    "options": [
+      "log(abc)",
+      "120",
+      "0",
+      "1"
+    ],
+    "correctAnswer": 3,
+    "answer": "1",
+    "explanation": "Using the change of base formula: log_b(a) = log(a) / log(b). So the expression becomes: (log(5)/log(4)) * (log(6)/log(5)) * (log(4)/log(6)). All terms cancel out, leaving 1.",
+    "shortcut": "Chain rule of logarithms: log_a(b) * log_b(c) = log_a(c). Here it loops back to log_a(a) = 1.",
+    "commonMistake": "Multiplying the bases or arguments together directly.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "change of base",
+      "chain rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_084",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Hard",
+    "question": "Simplify the expression: log base 5 of 6 × log base 6 of 7 × log base 7 of 5.",
+    "options": [
+      "1",
+      "log(abc)",
+      "210",
+      "0"
+    ],
+    "correctAnswer": 0,
+    "answer": "1",
+    "explanation": "Using the change of base formula: log_b(a) = log(a) / log(b). So the expression becomes: (log(6)/log(5)) * (log(7)/log(6)) * (log(5)/log(7)). All terms cancel out, leaving 1.",
+    "shortcut": "Chain rule of logarithms: log_a(b) * log_b(c) = log_a(c). Here it loops back to log_a(a) = 1.",
+    "commonMistake": "Multiplying the bases or arguments together directly.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "change of base",
+      "chain rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_085",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Logarithm Basics",
+    "difficulty": "Hard",
+    "question": "Simplify the expression: log base 6 of 7 × log base 7 of 8 × log base 8 of 6.",
+    "options": [
+      "0",
+      "1",
+      "336",
+      "log(abc)"
+    ],
+    "correctAnswer": 1,
+    "answer": "1",
+    "explanation": "Using the change of base formula: log_b(a) = log(a) / log(b). So the expression becomes: (log(7)/log(6)) * (log(8)/log(7)) * (log(6)/log(8)). All terms cancel out, leaving 1.",
+    "shortcut": "Chain rule of logarithms: log_a(b) * log_b(c) = log_a(c). Here it loops back to log_a(a) = 1.",
+    "commonMistake": "Multiplying the bases or arguments together directly.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "logarithm basics"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "change of base",
+      "chain rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_086",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Hard",
+    "question": "If x = 5 and y = 2, evaluate: log(x² - y²) - log(x - y).",
+    "options": [
+      "log(29)",
+      "log(7)",
+      "log(10)",
+      "log(3)"
+    ],
+    "correctAnswer": 1,
+    "answer": "log(7)",
+    "explanation": "We know that x² - y² = (x - y)(x + y). According to quotient rule, log(x² - y²) - log(x - y) = log( (x² - y²) / (x - y) ) = log(x + y). Substituting the values, log(5 + 2) = log(7).",
+    "shortcut": "Algebraic identities mixed with log quotient rule simplifies to log(x+y).",
+    "commonMistake": "Evaluating the squares first and making a calculation error instead of simplifying algebraically.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "algebraic identity",
+      "quotient rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_087",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Hard",
+    "question": "If x = 6 and y = 3, evaluate: log(x² - y²) - log(x - y).",
+    "options": [
+      "log(45)",
+      "log(18)",
+      "log(9)",
+      "log(3)"
+    ],
+    "correctAnswer": 2,
+    "answer": "log(9)",
+    "explanation": "We know that x² - y² = (x - y)(x + y). According to quotient rule, log(x² - y²) - log(x - y) = log( (x² - y²) / (x - y) ) = log(x + y). Substituting the values, log(6 + 3) = log(9).",
+    "shortcut": "Algebraic identities mixed with log quotient rule simplifies to log(x+y).",
+    "commonMistake": "Evaluating the squares first and making a calculation error instead of simplifying algebraically.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "algebraic identity",
+      "quotient rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_088",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Hard",
+    "question": "If x = 7 and y = 4, evaluate: log(x² - y²) - log(x - y).",
+    "options": [
+      "log(11)",
+      "log(28)",
+      "log(3)",
+      "log(65)"
+    ],
+    "correctAnswer": 0,
+    "answer": "log(11)",
+    "explanation": "We know that x² - y² = (x - y)(x + y). According to quotient rule, log(x² - y²) - log(x - y) = log( (x² - y²) / (x - y) ) = log(x + y). Substituting the values, log(7 + 4) = log(11).",
+    "shortcut": "Algebraic identities mixed with log quotient rule simplifies to log(x+y).",
+    "commonMistake": "Evaluating the squares first and making a calculation error instead of simplifying algebraically.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "algebraic identity",
+      "quotient rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_089",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Hard",
+    "question": "If x = 8 and y = 5, evaluate: log(x² - y²) - log(x - y).",
+    "options": [
+      "log(40)",
+      "log(3)",
+      "log(13)",
+      "log(89)"
+    ],
+    "correctAnswer": 2,
+    "answer": "log(13)",
+    "explanation": "We know that x² - y² = (x - y)(x + y). According to quotient rule, log(x² - y²) - log(x - y) = log( (x² - y²) / (x - y) ) = log(x + y). Substituting the values, log(8 + 5) = log(13).",
+    "shortcut": "Algebraic identities mixed with log quotient rule simplifies to log(x+y).",
+    "commonMistake": "Evaluating the squares first and making a calculation error instead of simplifying algebraically.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "algebraic identity",
+      "quotient rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_090",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Log Laws",
+    "difficulty": "Hard",
+    "question": "If x = 9 and y = 6, evaluate: log(x² - y²) - log(x - y).",
+    "options": [
+      "log(15)",
+      "log(54)",
+      "log(117)",
+      "log(3)"
+    ],
+    "correctAnswer": 0,
+    "answer": "log(15)",
+    "explanation": "We know that x² - y² = (x - y)(x + y). According to quotient rule, log(x² - y²) - log(x - y) = log( (x² - y²) / (x - y) ) = log(x + y). Substituting the values, log(9 + 6) = log(15).",
+    "shortcut": "Algebraic identities mixed with log quotient rule simplifies to log(x+y).",
+    "commonMistake": "Evaluating the squares first and making a calculation error instead of simplifying algebraically.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "log laws"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "algebraic identity",
+      "quotient rule"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_091",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Hard",
+    "question": "Solve for x: x^(log₁₀ x) = 10^4",
+    "options": [
+      "10^2 only",
+      "10^4 or 10^-4",
+      "10^2 or 10^-2",
+      "2 or -2"
+    ],
+    "correctAnswer": 2,
+    "answer": "10^2 or 10^-2",
+    "explanation": "Take log base 10 on both sides: log(x^(log x)) = log(10^4). By the power rule, (log x) * (log x) = 4. So, (log x)² = 4. This means log x = 2 or log x = -2. Therefore, x = 10^2 or x = 10^-2.",
+    "shortcut": "Take log on both sides to bring the exponent down.",
+    "commonMistake": "Forgetting the negative root when taking the square root.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "variable exponent",
+      "taking logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_092",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Hard",
+    "question": "Solve for x: x^(log₁₀ x) = 10^9",
+    "options": [
+      "3 or -3",
+      "10^3 only",
+      "10^9 or 10^-9",
+      "10^3 or 10^-3"
+    ],
+    "correctAnswer": 3,
+    "answer": "10^3 or 10^-3",
+    "explanation": "Take log base 10 on both sides: log(x^(log x)) = log(10^9). By the power rule, (log x) * (log x) = 9. So, (log x)² = 9. This means log x = 3 or log x = -3. Therefore, x = 10^3 or x = 10^-3.",
+    "shortcut": "Take log on both sides to bring the exponent down.",
+    "commonMistake": "Forgetting the negative root when taking the square root.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "variable exponent",
+      "taking logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_093",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Hard",
+    "question": "Solve for x: x^(log₁₀ x) = 10^4",
+    "options": [
+      "2 or -2",
+      "10^2 or 10^-2",
+      "10^4 or 10^-4",
+      "10^2 only"
+    ],
+    "correctAnswer": 1,
+    "answer": "10^2 or 10^-2",
+    "explanation": "Take log base 10 on both sides: log(x^(log x)) = log(10^4). By the power rule, (log x) * (log x) = 4. So, (log x)² = 4. This means log x = 2 or log x = -2. Therefore, x = 10^2 or x = 10^-2.",
+    "shortcut": "Take log on both sides to bring the exponent down.",
+    "commonMistake": "Forgetting the negative root when taking the square root.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "variable exponent",
+      "taking logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_094",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Hard",
+    "question": "Solve for x: x^(log₁₀ x) = 10^9",
+    "options": [
+      "10^3 or 10^-3",
+      "10^9 or 10^-9",
+      "10^3 only",
+      "3 or -3"
+    ],
+    "correctAnswer": 0,
+    "answer": "10^3 or 10^-3",
+    "explanation": "Take log base 10 on both sides: log(x^(log x)) = log(10^9). By the power rule, (log x) * (log x) = 9. So, (log x)² = 9. This means log x = 3 or log x = -3. Therefore, x = 10^3 or x = 10^-3.",
+    "shortcut": "Take log on both sides to bring the exponent down.",
+    "commonMistake": "Forgetting the negative root when taking the square root.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "variable exponent",
+      "taking logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_095",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Solving Equations",
+    "difficulty": "Hard",
+    "question": "Solve for x: x^(log₁₀ x) = 10^4",
+    "options": [
+      "10^4 or 10^-4",
+      "2 or -2",
+      "10^2 or 10^-2",
+      "10^2 only"
+    ],
+    "correctAnswer": 2,
+    "answer": "10^2 or 10^-2",
+    "explanation": "Take log base 10 on both sides: log(x^(log x)) = log(10^4). By the power rule, (log x) * (log x) = 4. So, (log x)² = 4. This means log x = 2 or log x = -2. Therefore, x = 10^2 or x = 10^-2.",
+    "shortcut": "Take log on both sides to bring the exponent down.",
+    "commonMistake": "Forgetting the negative root when taking the square root.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "solving equations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "variable exponent",
+      "taking logs"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_096",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Hard",
+    "question": "Given log 2 = 0.301, find the number of digits in 2^20.",
+    "options": [
+      "7",
+      "14",
+      "6",
+      "8"
+    ],
+    "correctAnswer": 0,
+    "answer": "7",
+    "explanation": "The number of digits in N is given by the formula: floor(log N) + 1. Here N = 2^20. log(N) = log(2^20) = 20 * log(2) = 20 * 0.301 = 6.0200. The floor of this is 6. So, number of digits = 6 + 1 = 7.",
+    "shortcut": "Number of digits = Integer part of (Exponent * log(Base)) + 1.",
+    "commonMistake": "Forgetting to add 1 to the integer part of the logarithm.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "number of digits",
+      "characteristics"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_097",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Hard",
+    "question": "Given log 3 = 0.4771, find the number of digits in 3^30.",
+    "options": [
+      "16",
+      "14",
+      "15",
+      "30"
+    ],
+    "correctAnswer": 2,
+    "answer": "15",
+    "explanation": "The number of digits in N is given by the formula: floor(log N) + 1. Here N = 3^30. log(N) = log(3^30) = 30 * log(3) = 30 * 0.4771 = 14.3130. The floor of this is 14. So, number of digits = 14 + 1 = 15.",
+    "shortcut": "Number of digits = Integer part of (Exponent * log(Base)) + 1.",
+    "commonMistake": "Forgetting to add 1 to the integer part of the logarithm.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "number of digits",
+      "characteristics"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_098",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Hard",
+    "question": "Given log 2 = 0.301, find the number of digits in 2^40.",
+    "options": [
+      "13",
+      "12",
+      "14",
+      "26"
+    ],
+    "correctAnswer": 0,
+    "answer": "13",
+    "explanation": "The number of digits in N is given by the formula: floor(log N) + 1. Here N = 2^40. log(N) = log(2^40) = 40 * log(2) = 40 * 0.301 = 12.0400. The floor of this is 12. So, number of digits = 12 + 1 = 13.",
+    "shortcut": "Number of digits = Integer part of (Exponent * log(Base)) + 1.",
+    "commonMistake": "Forgetting to add 1 to the integer part of the logarithm.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "number of digits",
+      "characteristics"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_099",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Hard",
+    "question": "Given log 3 = 0.4771, find the number of digits in 3^50.",
+    "options": [
+      "23",
+      "48",
+      "24",
+      "25"
+    ],
+    "correctAnswer": 2,
+    "answer": "24",
+    "explanation": "The number of digits in N is given by the formula: floor(log N) + 1. Here N = 3^50. log(N) = log(3^50) = 50 * log(3) = 50 * 0.4771 = 23.8550. The floor of this is 23. So, number of digits = 23 + 1 = 24.",
+    "shortcut": "Number of digits = Integer part of (Exponent * log(Base)) + 1.",
+    "commonMistake": "Forgetting to add 1 to the integer part of the logarithm.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "number of digits",
+      "characteristics"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_LOG_100",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Given Values",
+    "difficulty": "Hard",
+    "question": "Given log 2 = 0.301, find the number of digits in 2^60.",
+    "options": [
+      "20",
+      "38",
+      "18",
+      "19"
+    ],
+    "correctAnswer": 3,
+    "answer": "19",
+    "explanation": "The number of digits in N is given by the formula: floor(log N) + 1. Here N = 2^60. log(N) = log(2^60) = 60 * log(2) = 60 * 0.301 = 18.0600. The floor of this is 18. So, number of digits = 18 + 1 = 19.",
+    "shortcut": "Number of digits = Integer part of (Exponent * log(Base)) + 1.",
+    "commonMistake": "Forgetting to add 1 to the integer part of the logarithm.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "logarithm",
+      "log laws",
+      "given values"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "number of digits",
+      "characteristics"
+    ],
+    "visualizeAvailable": true
+  }
+]

@@ -1,0 +1,2521 @@
+[
+  {
+    "id": "ARI_PER_001",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 10% of 120?",
+    "options": [
+      "22",
+      "12",
+      "7",
+      "27"
+    ],
+    "correctAnswer": 1,
+    "answer": "12",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_002",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 15% of 150?",
+    "options": [
+      "22.5",
+      "17.5",
+      "37.5",
+      "32.5"
+    ],
+    "correctAnswer": 0,
+    "answer": "22.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_003",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 20% of 200?",
+    "options": [
+      "35",
+      "50",
+      "40",
+      "55"
+    ],
+    "correctAnswer": 2,
+    "answer": "40",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_004",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 25% of 250?",
+    "options": [
+      "77.5",
+      "62.5",
+      "72.5",
+      "57.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "62.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_005",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 30% of 300?",
+    "options": [
+      "90",
+      "105",
+      "100",
+      "85"
+    ],
+    "correctAnswer": 0,
+    "answer": "90",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_006",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 40% of 350?",
+    "options": [
+      "155",
+      "135",
+      "150",
+      "140"
+    ],
+    "correctAnswer": 3,
+    "answer": "140",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_007",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 50% of 400?",
+    "options": [
+      "215",
+      "200",
+      "195",
+      "210"
+    ],
+    "correctAnswer": 1,
+    "answer": "200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_008",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 60% of 450?",
+    "options": [
+      "270",
+      "280",
+      "265",
+      "285"
+    ],
+    "correctAnswer": 0,
+    "answer": "270",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_009",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 75% of 500?",
+    "options": [
+      "370",
+      "375",
+      "390",
+      "385"
+    ],
+    "correctAnswer": 1,
+    "answer": "375",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_010",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "What is 80% of 600?",
+    "options": [
+      "490",
+      "475",
+      "480",
+      "495"
+    ],
+    "correctAnswer": 2,
+    "answer": "480",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "basic"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_011",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Hard",
+    "question": "If 20 is a certain percentage of 100, what is that percentage?",
+    "options": [
+      "20%",
+      "35%",
+      "10%",
+      "25%"
+    ],
+    "correctAnswer": 0,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fraction to percentage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_012",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Hard",
+    "question": "If 45 is a certain percentage of 150, what is that percentage?",
+    "options": [
+      "35%",
+      "20%",
+      "30%",
+      "45%"
+    ],
+    "correctAnswer": 2,
+    "answer": "30%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fraction to percentage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_013",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Hard",
+    "question": "If 60 is a certain percentage of 200, what is that percentage?",
+    "options": [
+      "35%",
+      "45%",
+      "20%",
+      "30%"
+    ],
+    "correctAnswer": 3,
+    "answer": "30%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fraction to percentage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_014",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Hard",
+    "question": "If 90 is a certain percentage of 300, what is that percentage?",
+    "options": [
+      "35%",
+      "30%",
+      "45%",
+      "20%"
+    ],
+    "correctAnswer": 1,
+    "answer": "30%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fraction to percentage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_015",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Medium",
+    "question": "If 120 is a certain percentage of 400, what is that percentage?",
+    "options": [
+      "30%",
+      "45%",
+      "20%",
+      "35%"
+    ],
+    "correctAnswer": 0,
+    "answer": "30%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fraction to percentage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_016",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Medium",
+    "question": "If 150 is a certain percentage of 500, what is that percentage?",
+    "options": [
+      "20%",
+      "35%",
+      "45%",
+      "30%"
+    ],
+    "correctAnswer": 3,
+    "answer": "30%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fraction to percentage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_017",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Medium",
+    "question": "If 240 is a certain percentage of 600, what is that percentage?",
+    "options": [
+      "45%",
+      "30%",
+      "40%",
+      "55%"
+    ],
+    "correctAnswer": 2,
+    "answer": "40%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fraction to percentage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_018",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Medium",
+    "question": "If 300 is a certain percentage of 800, what is that percentage?",
+    "options": [
+      "27.5%",
+      "42.5%",
+      "52.5%",
+      "37.5%"
+    ],
+    "correctAnswer": 3,
+    "answer": "37.5%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fraction to percentage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_019",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Hard",
+    "question": "If 16.66% of a number is 45, what is 83.33% of the same number?",
+    "options": [
+      "225",
+      "180",
+      "315",
+      "270"
+    ],
+    "correctAnswer": 0,
+    "answer": "225",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fractions"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_020",
+    "topic": "Percentages",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Hard",
+    "question": "A number is increased by 37.5%, resulting in 330. What was the original number?",
+    "options": [
+      "240",
+      "280",
+      "260",
+      "220"
+    ],
+    "correctAnswer": 0,
+    "answer": "240",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "fractions",
+      "reverse"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_021",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Easy",
+    "question": "The price of a laptop is $500. If the price increases by 10%, what is the new price?",
+    "options": [
+      "$550",
+      "$600",
+      "$520",
+      "$570"
+    ],
+    "correctAnswer": 0,
+    "answer": "$550",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_022",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Easy",
+    "question": "The price of a mobile phone is $800. If the price increases by 20%, what is the new price?",
+    "options": [
+      "$930",
+      "$960",
+      "$1010",
+      "$980"
+    ],
+    "correctAnswer": 1,
+    "answer": "$960",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_023",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Easy",
+    "question": "The price of a bicycle is $1200. If the price increases by 25%, what is the new price?",
+    "options": [
+      "$1470",
+      "$1520",
+      "$1500",
+      "$1550"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_024",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Easy",
+    "question": "The price of a television is $400. If the price increases by 15%, what is the new price?",
+    "options": [
+      "$480",
+      "$510",
+      "$460",
+      "$430"
+    ],
+    "correctAnswer": 2,
+    "answer": "$460",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_025",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Easy",
+    "question": "The price of a watch is $600. If the price increases by 30%, what is the new price?",
+    "options": [
+      "$750",
+      "$780",
+      "$800",
+      "$830"
+    ],
+    "correctAnswer": 1,
+    "answer": "$780",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_026",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Easy",
+    "question": "The price of a book is $1000. During a sale, it decreases by 10%. What is the sale price?",
+    "options": [
+      "$900",
+      "$860",
+      "$950",
+      "$1000"
+    ],
+    "correctAnswer": 0,
+    "answer": "$900",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_027",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Easy",
+    "question": "The price of a bag is $1500. During a sale, it decreases by 20%. What is the sale price?",
+    "options": [
+      "$1160",
+      "$1200",
+      "$1250",
+      "$1300"
+    ],
+    "correctAnswer": 1,
+    "answer": "$1200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_028",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Easy",
+    "question": "The price of a shoe is $2000. During a sale, it decreases by 25%. What is the sale price?",
+    "options": [
+      "$1550",
+      "$1460",
+      "$1500",
+      "$1600"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_029",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Easy",
+    "question": "The price of a desk is $500. During a sale, it decreases by 40%. What is the sale price?",
+    "options": [
+      "$400",
+      "$260",
+      "$300",
+      "$350"
+    ],
+    "correctAnswer": 2,
+    "answer": "$300",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_030",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Easy",
+    "question": "The price of a chair is $800. During a sale, it decreases by 50%. What is the sale price?",
+    "options": [
+      "$500",
+      "$360",
+      "$450",
+      "$400"
+    ],
+    "correctAnswer": 3,
+    "answer": "$400",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_031",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Medium",
+    "question": "The daily wage of a worker increased from $40 to $50. Find the percentage increase.",
+    "options": [
+      "20%",
+      "25%",
+      "35%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "wage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_032",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Medium",
+    "question": "The daily wage of a worker increased from $50 to $65. Find the percentage increase.",
+    "options": [
+      "35%",
+      "40%",
+      "30%",
+      "25%"
+    ],
+    "correctAnswer": 2,
+    "answer": "30%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "wage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_033",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Medium",
+    "question": "The daily wage of a worker increased from $60 to $72. Find the percentage increase.",
+    "options": [
+      "20%",
+      "15%",
+      "25%",
+      "30%"
+    ],
+    "correctAnswer": 0,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "wage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_034",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Medium",
+    "question": "The daily wage of a worker increased from $80 to $100. Find the percentage increase.",
+    "options": [
+      "20%",
+      "30%",
+      "35%",
+      "25%"
+    ],
+    "correctAnswer": 3,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "wage"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_035",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Medium",
+    "question": "The monthly expenses of a family dropped from $120 to $90. What is the percentage decrease?",
+    "options": [
+      "35%",
+      "30%",
+      "25%",
+      "20%"
+    ],
+    "correctAnswer": 2,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenses"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_036",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Medium",
+    "question": "The monthly expenses of a family dropped from $150 to $120. What is the percentage decrease?",
+    "options": [
+      "30%",
+      "20%",
+      "15%",
+      "25%"
+    ],
+    "correctAnswer": 1,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenses"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_037",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Medium",
+    "question": "The monthly expenses of a family dropped from $200 to $150. What is the percentage decrease?",
+    "options": [
+      "35%",
+      "25%",
+      "30%",
+      "20%"
+    ],
+    "correctAnswer": 1,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenses"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_038",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Medium",
+    "question": "The monthly expenses of a family dropped from $300 to $210. What is the percentage decrease?",
+    "options": [
+      "25%",
+      "40%",
+      "35%",
+      "30%"
+    ],
+    "correctAnswer": 3,
+    "answer": "30%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenses"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_039",
+    "topic": "Percentages",
+    "subtopic": "Percentage Increase",
+    "difficulty": "Hard",
+    "question": "If the price of petrol increases by 25%, by what percentage must a person reduce their consumption so that their expenditure remains the same?",
+    "options": [
+      "25%",
+      "16.66%",
+      "33.33%",
+      "20%"
+    ],
+    "correctAnswer": 3,
+    "answer": "20%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "consumption",
+      "expenditure"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_040",
+    "topic": "Percentages",
+    "subtopic": "Percentage Decrease",
+    "difficulty": "Hard",
+    "question": "A's salary is 20% less than B's salary. By what percentage is B's salary more than A's salary?",
+    "options": [
+      "25%",
+      "20%",
+      "33.33%",
+      "30%"
+    ],
+    "correctAnswer": 0,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "comparison"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_041",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "The price of an item is successively increased by 10% and then by 10%. What is the net percentage increase?",
+    "options": [
+      "21.0%",
+      "20%",
+      "19.5%",
+      "23%"
+    ],
+    "correctAnswer": 0,
+    "answer": "21.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_042",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "The price of an item is successively increased by 20% and then by 10%. What is the net percentage increase?",
+    "options": [
+      "34%",
+      "32.0%",
+      "30.5%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "32.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_043",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "The price of an item is successively increased by 15% and then by 20%. What is the net percentage increase?",
+    "options": [
+      "35%",
+      "40%",
+      "38.0%",
+      "36.5%"
+    ],
+    "correctAnswer": 2,
+    "answer": "38.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_044",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "The price of an item is successively increased by 30% and then by 20%. What is the net percentage increase?",
+    "options": [
+      "58%",
+      "50%",
+      "54.5%",
+      "56.0%"
+    ],
+    "correctAnswer": 3,
+    "answer": "56.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_045",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "The price of an item is successively increased by 25% and then by 15%. What is the net percentage increase?",
+    "options": [
+      "43.8%",
+      "45.8%",
+      "40%",
+      "42.3%"
+    ],
+    "correctAnswer": 0,
+    "answer": "43.8%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_046",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "A shopkeeper offers two successive discounts of 10% and 10%. What is the single equivalent discount percentage?",
+    "options": [
+      "19.0%",
+      "20%",
+      "21%",
+      "18%"
+    ],
+    "correctAnswer": 0,
+    "answer": "19.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_047",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "A shopkeeper offers two successive discounts of 20% and 10%. What is the single equivalent discount percentage?",
+    "options": [
+      "27%",
+      "28.0%",
+      "30%",
+      "30%"
+    ],
+    "correctAnswer": 1,
+    "answer": "28.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_048",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "A shopkeeper offers two successive discounts of 15% and 20%. What is the single equivalent discount percentage?",
+    "options": [
+      "32.0%",
+      "35%",
+      "34%",
+      "31%"
+    ],
+    "correctAnswer": 0,
+    "answer": "32.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_049",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "A shopkeeper offers two successive discounts of 25% and 20%. What is the single equivalent discount percentage?",
+    "options": [
+      "42%",
+      "39%",
+      "45%",
+      "40.0%"
+    ],
+    "correctAnswer": 3,
+    "answer": "40.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_050",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Easy",
+    "question": "A shopkeeper offers two successive discounts of 30% and 10%. What is the single equivalent discount percentage?",
+    "options": [
+      "36%",
+      "40%",
+      "39%",
+      "37.0%"
+    ],
+    "correctAnswer": 3,
+    "answer": "37.0%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_051",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Medium",
+    "question": "A number is first increased by 10% and then decreased by 10%. What is the overall percentage change?",
+    "options": [
+      "0% increase",
+      "1% decrease",
+      "3% decrease",
+      "0% decrease"
+    ],
+    "correctAnswer": 1,
+    "answer": "1% decrease",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_052",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Medium",
+    "question": "A number is first increased by 20% and then decreased by 20%. What is the overall percentage change?",
+    "options": [
+      "6% decrease",
+      "3% decrease",
+      "0% increase",
+      "4% decrease"
+    ],
+    "correctAnswer": 3,
+    "answer": "4% decrease",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_053",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Medium",
+    "question": "A number is first increased by 25% and then decreased by 20%. What is the overall percentage change?",
+    "options": [
+      "1% decrease",
+      "1% increase",
+      "5% increase",
+      "No change"
+    ],
+    "correctAnswer": 3,
+    "answer": "No change",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_054",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Medium",
+    "question": "A number is first increased by 30% and then decreased by 10%. What is the overall percentage change?",
+    "options": [
+      "16% increase",
+      "20% increase",
+      "17% increase",
+      "19% increase"
+    ],
+    "correctAnswer": 2,
+    "answer": "17% increase",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_055",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Medium",
+    "question": "A number is first increased by 40% and then decreased by 20%. What is the overall percentage change?",
+    "options": [
+      "20% increase",
+      "12% increase",
+      "14% increase",
+      "11% increase"
+    ],
+    "correctAnswer": 1,
+    "answer": "12% increase",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_056",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Medium",
+    "question": "A number is first increased by 50% and then decreased by 10%. What is the overall percentage change?",
+    "options": [
+      "37% increase",
+      "35% increase",
+      "34% increase",
+      "40% increase"
+    ],
+    "correctAnswer": 1,
+    "answer": "35% increase",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_057",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Medium",
+    "question": "A number is first increased by 15% and then decreased by 15%. What is the overall percentage change?",
+    "options": [
+      "2.25% decrease",
+      "4.25% decrease",
+      "0% increase",
+      "1.25% decrease"
+    ],
+    "correctAnswer": 0,
+    "answer": "2.25% decrease",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_058",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Medium",
+    "question": "A number is first increased by 20% and then decreased by 25%. What is the overall percentage change?",
+    "options": [
+      "10% decrease",
+      "9% decrease",
+      "5% increase",
+      "12% decrease"
+    ],
+    "correctAnswer": 0,
+    "answer": "10% decrease",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive change"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_059",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Hard",
+    "question": "The population of a town increases by 10% in the first year, decreases by 20% in the second year, and increases by 30% in the third year. What is the net percentage change?",
+    "options": [
+      "15% increase",
+      "12.5% increase",
+      "20% increase",
+      "14.4% increase"
+    ],
+    "correctAnswer": 3,
+    "answer": "14.4% increase",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "population",
+      "3 years"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_060",
+    "topic": "Percentages",
+    "subtopic": "Successive Percentage",
+    "difficulty": "Hard",
+    "question": "A trader marks his goods 40% above the cost price and then allows a successive discount of 15% and 10%. Find his net profit or loss percentage.",
+    "options": [
+      "10% profit",
+      "6.5% profit",
+      "7.1% profit",
+      "8% profit"
+    ],
+    "correctAnswer": 2,
+    "answer": "7.1% profit",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "profit",
+      "discount"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_061",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Easy",
+    "question": "The current population of a town is 10000. If it increases at the rate of 5% per annum, what will be the population after 2 years?",
+    "options": [
+      "11525",
+      "10825",
+      "12225",
+      "11025"
+    ],
+    "correctAnswer": 3,
+    "answer": "11025",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_062",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Easy",
+    "question": "The current population of a town is 20000. If it increases at the rate of 10% per annum, what will be the population after 2 years?",
+    "options": [
+      "24000",
+      "24200",
+      "25400",
+      "24700"
+    ],
+    "correctAnswer": 1,
+    "answer": "24200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_063",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Easy",
+    "question": "The current population of a town is 50000. If it increases at the rate of 4% per annum, what will be the population after 2 years?",
+    "options": [
+      "54580",
+      "53880",
+      "55280",
+      "54080"
+    ],
+    "correctAnswer": 3,
+    "answer": "54080",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_064",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Easy",
+    "question": "The current population of a town is 80000. If it increases at the rate of 8% per annum, what will be the population after 2 years?",
+    "options": [
+      "93812",
+      "93312",
+      "93112",
+      "94512"
+    ],
+    "correctAnswer": 1,
+    "answer": "93312",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_065",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Easy",
+    "question": "The current population of a town is 150000. If it increases at the rate of 2% per annum, what will be the population after 2 years?",
+    "options": [
+      "155860",
+      "156060",
+      "157260",
+      "156560"
+    ],
+    "correctAnswer": 1,
+    "answer": "156060",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_066",
+    "topic": "Percentages",
+    "subtopic": "Depreciation",
+    "difficulty": "Medium",
+    "question": "A machine is bought for $50000. Its value depreciates at the rate of 10% per annum. What will be its value after 2 years?",
+    "options": [
+      "$40500",
+      "$44000",
+      "$39000",
+      "$42500"
+    ],
+    "correctAnswer": 0,
+    "answer": "$40500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_067",
+    "topic": "Percentages",
+    "subtopic": "Depreciation",
+    "difficulty": "Medium",
+    "question": "A machine is bought for $80000. Its value depreciates at the rate of 15% per annum. What will be its value after 2 years?",
+    "options": [
+      "$57800",
+      "$59800",
+      "$56300",
+      "$61300"
+    ],
+    "correctAnswer": 0,
+    "answer": "$57800",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_068",
+    "topic": "Percentages",
+    "subtopic": "Depreciation",
+    "difficulty": "Medium",
+    "question": "A machine is bought for $120000. Its value depreciates at the rate of 20% per annum. What will be its value after 2 years?",
+    "options": [
+      "$76800",
+      "$80300",
+      "$75300",
+      "$78800"
+    ],
+    "correctAnswer": 0,
+    "answer": "$76800",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_069",
+    "topic": "Percentages",
+    "subtopic": "Depreciation",
+    "difficulty": "Medium",
+    "question": "A machine is bought for $200000. Its value depreciates at the rate of 25% per annum. What will be its value after 2 years?",
+    "options": [
+      "$111000",
+      "$114500",
+      "$112500",
+      "$116000"
+    ],
+    "correctAnswer": 2,
+    "answer": "$112500",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_070",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Medium",
+    "question": "The population of a city is 11025. If it has been growing at 5% per annum, what was its population 2 years ago?",
+    "options": [
+      "10200",
+      "9000",
+      "10500",
+      "10000"
+    ],
+    "correctAnswer": 3,
+    "answer": "10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "reverse growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_071",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Medium",
+    "question": "The population of a city is 12100. If it has been growing at 10% per annum, what was its population 2 years ago?",
+    "options": [
+      "10200",
+      "9000",
+      "10500",
+      "10000"
+    ],
+    "correctAnswer": 3,
+    "answer": "10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "reverse growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_072",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Medium",
+    "question": "The population of a city is 14400. If it has been growing at 20% per annum, what was its population 2 years ago?",
+    "options": [
+      "10500",
+      "9000",
+      "10200",
+      "10000"
+    ],
+    "correctAnswer": 3,
+    "answer": "10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "reverse growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_073",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Medium",
+    "question": "The population of a city is 44100. If it has been growing at 5% per annum, what was its population 2 years ago?",
+    "options": [
+      "39000",
+      "40000",
+      "40200",
+      "40500"
+    ],
+    "correctAnswer": 1,
+    "answer": "40000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "reverse growth"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_074",
+    "topic": "Percentages",
+    "subtopic": "Population",
+    "difficulty": "Hard",
+    "question": "In a town, the population of males increases by 8% and females by 5%. If the total population grew from 10,000 to 10,680, find the original number of males.",
+    "options": [
+      "4,000",
+      "6,500",
+      "5,500",
+      "6,000"
+    ],
+    "correctAnswer": 3,
+    "answer": "6,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "alligation",
+      "population"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_075",
+    "topic": "Percentages",
+    "subtopic": "Depreciation",
+    "difficulty": "Hard",
+    "question": "The value of a car depreciates by 20% in the first year and by 25% in the second year. If its value after 2 years is $12,000, what was its original price?",
+    "options": [
+      "$20,000",
+      "$25,000",
+      "$24,000",
+      "$22,500"
+    ],
+    "correctAnswer": 0,
+    "answer": "$20,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive depreciation"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_076",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Easy",
+    "question": "A person earns $2000 a month and saves 15% of it. What is his monthly saving?",
+    "options": [
+      "$300",
+      "$250",
+      "$500",
+      "$400"
+    ],
+    "correctAnswer": 0,
+    "answer": "$300",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "savings"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_077",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Easy",
+    "question": "A person earns $3000 a month and saves 20% of it. What is his monthly saving?",
+    "options": [
+      "$800",
+      "$600",
+      "$550",
+      "$700"
+    ],
+    "correctAnswer": 1,
+    "answer": "$600",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "savings"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_078",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Easy",
+    "question": "A person earns $4500 a month and saves 25% of it. What is his monthly saving?",
+    "options": [
+      "$1325",
+      "$1225",
+      "$1125",
+      "$1075"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1125",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "savings"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_079",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Easy",
+    "question": "A person earns $6000 a month and saves 30% of it. What is his monthly saving?",
+    "options": [
+      "$1750",
+      "$1900",
+      "$1800",
+      "$2000"
+    ],
+    "correctAnswer": 2,
+    "answer": "$1800",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "savings"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_080",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Easy",
+    "question": "A person earns $8000 a month and saves 40% of it. What is his monthly saving?",
+    "options": [
+      "$3400",
+      "$3150",
+      "$3200",
+      "$3300"
+    ],
+    "correctAnswer": 2,
+    "answer": "$3200",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "savings"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_081",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Medium",
+    "question": "A man spends 20% of his income on food, 10% on rent, and 15% on miscellaneous expenses. If he saves $2750, what is his total income?",
+    "options": [
+      "$4500",
+      "$6000",
+      "$5000",
+      "$5500"
+    ],
+    "correctAnswer": 2,
+    "answer": "$5000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenditure",
+      "income"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_082",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Medium",
+    "question": "A man spends 30% of his income on food, 15% on rent, and 20% on miscellaneous expenses. If he saves $3500, what is his total income?",
+    "options": [
+      "$11000",
+      "$9500",
+      "$10500",
+      "$10000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenditure",
+      "income"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_083",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Medium",
+    "question": "A man spends 25% of his income on food, 20% on rent, and 10% on miscellaneous expenses. If he saves $4500, what is his total income?",
+    "options": [
+      "$11000",
+      "$10500",
+      "$10000",
+      "$9500"
+    ],
+    "correctAnswer": 2,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenditure",
+      "income"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_084",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Medium",
+    "question": "A man spends 15% of his income on food, 25% on rent, and 10% on miscellaneous expenses. If he saves $5000, what is his total income?",
+    "options": [
+      "$9500",
+      "$10000",
+      "$11000",
+      "$10500"
+    ],
+    "correctAnswer": 1,
+    "answer": "$10000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenditure",
+      "income"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_085",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Medium",
+    "question": "A man spends 40% of his income on food, 10% on rent, and 20% on miscellaneous expenses. If he saves $6000, what is his total income?",
+    "options": [
+      "$20500",
+      "$21000",
+      "$19500",
+      "$20000"
+    ],
+    "correctAnswer": 3,
+    "answer": "$20000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenditure",
+      "income"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_086",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Medium",
+    "question": "A man spends 35% of his income on food, 15% on rent, and 25% on miscellaneous expenses. If he saves $7500, what is his total income?",
+    "options": [
+      "$29500",
+      "$30500",
+      "$30000",
+      "$31000"
+    ],
+    "correctAnswer": 2,
+    "answer": "$30000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "expenditure",
+      "income"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_087",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Hard",
+    "question": "A man spends 20% of his income on food. Of the remaining, he spends 25% on rent, and of the remaining, 30% on education. If he is left with $2,100, find his total income.",
+    "options": [
+      "$5,000",
+      "$5,500",
+      "$6,000",
+      "$4,800"
+    ],
+    "correctAnswer": 0,
+    "answer": "$5,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "successive remaining"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_088",
+    "topic": "Percentages",
+    "subtopic": "Expenditure",
+    "difficulty": "Hard",
+    "question": "The price of sugar is increased by 20%. A family wants to keep its expenditure on sugar the same as before. If they previously consumed 30 kg, what should be their new consumption?",
+    "options": [
+      "25 kg",
+      "26 kg",
+      "24 kg",
+      "20 kg"
+    ],
+    "correctAnswer": 0,
+    "answer": "25 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "consumption",
+      "price increase"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_089",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Hard",
+    "question": "Ravi's salary was reduced by 20%. To bring it back to the original level, by what percentage must the reduced salary be increased?",
+    "options": [
+      "30%",
+      "22.5%",
+      "20%",
+      "25%"
+    ],
+    "correctAnswer": 3,
+    "answer": "25%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "reverse salary"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_090",
+    "topic": "Percentages",
+    "subtopic": "Salary",
+    "difficulty": "Hard",
+    "question": "If the tax on a commodity is reduced by 10% and its consumption increases by 10%, what is the net effect on the revenue?",
+    "options": [
+      "1% decrease",
+      "2% decrease",
+      "1% increase",
+      "No change"
+    ],
+    "correctAnswer": 0,
+    "answer": "1% decrease",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "revenue",
+      "tax"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_091",
+    "topic": "Percentages",
+    "subtopic": "Examination",
+    "difficulty": "Medium",
+    "question": "A student needs 35% marks to pass an exam. If the total marks are 500 and he got 150 marks, by how many marks did he fail?",
+    "options": [
+      "25",
+      "40",
+      "30",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "answer": "25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "pass marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_092",
+    "topic": "Percentages",
+    "subtopic": "Examination",
+    "difficulty": "Medium",
+    "question": "A student needs 40% marks to pass an exam. If the total marks are 600 and he got 200 marks, by how many marks did he fail?",
+    "options": [
+      "45",
+      "55",
+      "40",
+      "30"
+    ],
+    "correctAnswer": 2,
+    "answer": "40",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "pass marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_093",
+    "topic": "Percentages",
+    "subtopic": "Examination",
+    "difficulty": "Medium",
+    "question": "A student needs 45% marks to pass an exam. If the total marks are 800 and he got 320 marks, by how many marks did he fail?",
+    "options": [
+      "30",
+      "40",
+      "45",
+      "55"
+    ],
+    "correctAnswer": 1,
+    "answer": "40",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "pass marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_094",
+    "topic": "Percentages",
+    "subtopic": "Election",
+    "difficulty": "Medium",
+    "question": "In an election between two candidates, the winner got 57.5% of the valid votes and won by a majority of 450 votes. Find the total number of valid votes.",
+    "options": [
+      "2500",
+      "3200",
+      "4000",
+      "3000"
+    ],
+    "correctAnswer": 3,
+    "answer": "3000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "election",
+      "majority"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_095",
+    "topic": "Percentages",
+    "subtopic": "Election",
+    "difficulty": "Medium",
+    "question": "In an election between two candidates, the winner got 60% of the valid votes and won by a majority of 800 votes. Find the total number of valid votes.",
+    "options": [
+      "4000",
+      "5000",
+      "4200",
+      "3500"
+    ],
+    "correctAnswer": 0,
+    "answer": "4000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "election",
+      "majority"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_096",
+    "topic": "Percentages",
+    "subtopic": "Election",
+    "difficulty": "Medium",
+    "question": "In an election between two candidates, the winner got 55% of the valid votes and won by a majority of 600 votes. Find the total number of valid votes.",
+    "options": [
+      "5500",
+      "7000",
+      "6200",
+      "6000"
+    ],
+    "correctAnswer": 3,
+    "answer": "6000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "election",
+      "majority"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_097",
+    "topic": "Percentages",
+    "subtopic": "Examination",
+    "difficulty": "Hard",
+    "question": "A candidate who gets 20% marks fails by 10 marks, but another candidate who gets 42% marks gets 12% more than the passing marks. What is the maximum marks?",
+    "options": [
+      "100",
+      "250",
+      "200",
+      "150"
+    ],
+    "correctAnswer": 0,
+    "answer": "100",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "comparative marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_098",
+    "topic": "Percentages",
+    "subtopic": "Election",
+    "difficulty": "Hard",
+    "question": "In an election, 10% of voters did not cast their vote, and 10% of the votes cast were found invalid. The winning candidate got 54% of the valid votes and won by 1620 votes. Find the total number of enrolled voters.",
+    "options": [
+      "30,000",
+      "25,000",
+      "22,500",
+      "20,000"
+    ],
+    "correctAnswer": 1,
+    "answer": "25,000",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "invalid votes",
+      "election"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_099",
+    "topic": "Percentages",
+    "subtopic": "Venn Diagram",
+    "difficulty": "Hard",
+    "question": "In a class, 60% of students passed in Math and 70% passed in Science. If 20% failed in both and 150 students passed in both, what is the total number of students?",
+    "options": [
+      "300",
+      "400",
+      "350",
+      "250"
+    ],
+    "correctAnswer": 0,
+    "answer": "300",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "sets",
+      "pass/fail"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_PER_100",
+    "topic": "Percentages",
+    "subtopic": "Venn Diagram",
+    "difficulty": "Hard",
+    "question": "In an office, 55% of people like tea, 60% like coffee, and 45% like both. What percentage of people like neither tea nor coffee?",
+    "options": [
+      "30%",
+      "20%",
+      "35%",
+      "25%"
+    ],
+    "correctAnswer": 0,
+    "answer": "30%",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "percentage",
+      "sets",
+      "beverages"
+    ],
+    "source": "AI Generated"
+  }
+]

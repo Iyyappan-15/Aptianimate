@@ -1,0 +1,3317 @@
+[
+  {
+    "id": "ADV_PNC_001",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 2 members be selected from a group of 5 people?",
+    "options": [
+      "10",
+      "5",
+      "20",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "answer": "10",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 5, r = 2. 5C2 = 10.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_002",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 3 members be selected from a group of 6 people?",
+    "options": [
+      "26",
+      "30",
+      "20",
+      "14"
+    ],
+    "correctAnswer": 2,
+    "answer": "20",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 6, r = 3. 6C3 = 20.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_003",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 4 members be selected from a group of 7 people?",
+    "options": [
+      "45",
+      "42",
+      "28",
+      "35"
+    ],
+    "correctAnswer": 3,
+    "answer": "35",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 7, r = 4. 7C4 = 35.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_004",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 2 members be selected from a group of 8 people?",
+    "options": [
+      "28",
+      "20",
+      "38",
+      "36"
+    ],
+    "correctAnswer": 0,
+    "answer": "28",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 8, r = 2. 8C2 = 28.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_005",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 3 members be selected from a group of 9 people?",
+    "options": [
+      "84",
+      "93",
+      "75",
+      "94"
+    ],
+    "correctAnswer": 0,
+    "answer": "84",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 9, r = 3. 9C3 = 84.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_006",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 4 members be selected from a group of 10 people?",
+    "options": [
+      "200",
+      "210",
+      "220",
+      "220"
+    ],
+    "correctAnswer": 1,
+    "answer": "210",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 10, r = 4. 10C4 = 210.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_007",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 2 members be selected from a group of 11 people?",
+    "options": [
+      "55",
+      "65",
+      "66",
+      "44"
+    ],
+    "correctAnswer": 0,
+    "answer": "55",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 11, r = 2. 11C2 = 55.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_008",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 3 members be selected from a group of 12 people?",
+    "options": [
+      "208",
+      "230",
+      "220",
+      "232"
+    ],
+    "correctAnswer": 2,
+    "answer": "220",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 12, r = 3. 12C3 = 220.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_009",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 4 members be selected from a group of 13 people?",
+    "options": [
+      "728",
+      "715",
+      "725",
+      "702"
+    ],
+    "correctAnswer": 1,
+    "answer": "715",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 13, r = 4. 13C4 = 715.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_010",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 2 members be selected from a group of 14 people?",
+    "options": [
+      "105",
+      "101",
+      "91",
+      "77"
+    ],
+    "correctAnswer": 2,
+    "answer": "91",
+    "explanation": "This is a selection problem (order does not matter). Use combination formula nCr = n! / (r! * (n-r)!). Here n = 14, r = 2. 14C2 = 91.",
+    "shortcut": "nCr formula.",
+    "commonMistake": "Using nPr (permutations) instead of nCr.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_011",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'CAT' be arranged?",
+    "options": [
+      "12",
+      "6",
+      "4",
+      "10"
+    ],
+    "correctAnswer": 1,
+    "answer": "6",
+    "explanation": "The word 'CAT' has 3 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 3! / (repeated letters factorial) = 6.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_012",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'MATH' be arranged?",
+    "options": [
+      "24",
+      "22",
+      "28",
+      "48"
+    ],
+    "correctAnswer": 0,
+    "answer": "24",
+    "explanation": "The word 'MATH' has 4 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 4! / (repeated letters factorial) = 24.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_013",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'LOGIC' be arranged?",
+    "options": [
+      "124",
+      "240",
+      "118",
+      "120"
+    ],
+    "correctAnswer": 3,
+    "answer": "120",
+    "explanation": "The word 'LOGIC' has 5 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 5! / (repeated letters factorial) = 120.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_014",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'PAPER' be arranged?",
+    "options": [
+      "60",
+      "120",
+      "58",
+      "64"
+    ],
+    "correctAnswer": 0,
+    "answer": "60",
+    "explanation": "The word 'PAPER' has 5 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 5! / (repeated letters factorial) = 60.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_015",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'BOTTLE' be arranged?",
+    "options": [
+      "364",
+      "360",
+      "358",
+      "720"
+    ],
+    "correctAnswer": 1,
+    "answer": "360",
+    "explanation": "The word 'BOTTLE' has 6 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 6! / (repeated letters factorial) = 360.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_016",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'CUP' be arranged?",
+    "options": [
+      "12",
+      "6",
+      "10",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "answer": "6",
+    "explanation": "The word 'CUP' has 3 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 3! / (repeated letters factorial) = 6.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_017",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'BAG' be arranged?",
+    "options": [
+      "10",
+      "12",
+      "6",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "answer": "6",
+    "explanation": "The word 'BAG' has 3 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 3! / (repeated letters factorial) = 6.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_018",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'PENCIL' be arranged?",
+    "options": [
+      "1440",
+      "718",
+      "720",
+      "724"
+    ],
+    "correctAnswer": 2,
+    "answer": "720",
+    "explanation": "The word 'PENCIL' has 6 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 6! / (repeated letters factorial) = 720.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_019",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'LAPTOP' be arranged?",
+    "options": [
+      "360",
+      "364",
+      "720",
+      "358"
+    ],
+    "correctAnswer": 0,
+    "answer": "360",
+    "explanation": "The word 'LAPTOP' has 6 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 6! / (repeated letters factorial) = 360.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_020",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Easy",
+    "question": "In how many different ways can the letters of the word 'DESK' be arranged?",
+    "options": [
+      "22",
+      "48",
+      "24",
+      "28"
+    ],
+    "correctAnswer": 2,
+    "answer": "24",
+    "explanation": "The word 'DESK' has 4 letters. Calculate factorial of total letters, then divide by factorial of repeated letters. Total ways = 4! / (repeated letters factorial) = 24.",
+    "shortcut": "n! / (p! * q!) where n is total letters and p, q are repeating letter counts.",
+    "commonMistake": "Forgetting to divide by the factorial of repeating letters.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "word arrangement",
+      "anagrams"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_021",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 4 if no digit is repeated?",
+    "options": [
+      "64",
+      "20",
+      "24",
+      "34"
+    ],
+    "correctAnswer": 2,
+    "answer": "24",
+    "explanation": "We need to select and arrange 3 digits out of 4. This is a permutation problem. 4P3 = 4 * 3 * 2 = 24.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_022",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 5 if no digit is repeated?",
+    "options": [
+      "125",
+      "60",
+      "70",
+      "55"
+    ],
+    "correctAnswer": 1,
+    "answer": "60",
+    "explanation": "We need to select and arrange 3 digits out of 5. This is a permutation problem. 5P3 = 5 * 4 * 3 = 60.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_023",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 6 if no digit is repeated?",
+    "options": [
+      "114",
+      "130",
+      "120",
+      "216"
+    ],
+    "correctAnswer": 2,
+    "answer": "120",
+    "explanation": "We need to select and arrange 3 digits out of 6. This is a permutation problem. 6P3 = 6 * 5 * 4 = 120.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_024",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 7 if no digit is repeated?",
+    "options": [
+      "203",
+      "220",
+      "343",
+      "210"
+    ],
+    "correctAnswer": 3,
+    "answer": "210",
+    "explanation": "We need to select and arrange 3 digits out of 7. This is a permutation problem. 7P3 = 7 * 6 * 5 = 210.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_025",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 8 if no digit is repeated?",
+    "options": [
+      "328",
+      "512",
+      "336",
+      "346"
+    ],
+    "correctAnswer": 2,
+    "answer": "336",
+    "explanation": "We need to select and arrange 3 digits out of 8. This is a permutation problem. 8P3 = 8 * 7 * 6 = 336.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_026",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 9 if no digit is repeated?",
+    "options": [
+      "495",
+      "729",
+      "514",
+      "504"
+    ],
+    "correctAnswer": 3,
+    "answer": "504",
+    "explanation": "We need to select and arrange 3 digits out of 9. This is a permutation problem. 9P3 = 9 * 8 * 7 = 504.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_027",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 10 if no digit is repeated?",
+    "options": [
+      "710",
+      "720",
+      "1000",
+      "730"
+    ],
+    "correctAnswer": 1,
+    "answer": "720",
+    "explanation": "We need to select and arrange 3 digits out of 10. This is a permutation problem. 10P3 = 10 * 9 * 8 = 720.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_028",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 11 if no digit is repeated?",
+    "options": [
+      "1331",
+      "1000",
+      "990",
+      "979"
+    ],
+    "correctAnswer": 2,
+    "answer": "990",
+    "explanation": "We need to select and arrange 3 digits out of 11. This is a permutation problem. 11P3 = 11 * 10 * 9 = 990.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_029",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 12 if no digit is repeated?",
+    "options": [
+      "1728",
+      "1330",
+      "1320",
+      "1308"
+    ],
+    "correctAnswer": 2,
+    "answer": "1320",
+    "explanation": "We need to select and arrange 3 digits out of 12. This is a permutation problem. 12P3 = 12 * 11 * 10 = 1320.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_030",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed using the digits 1 to 13 if no digit is repeated?",
+    "options": [
+      "1703",
+      "1716",
+      "2197",
+      "1726"
+    ],
+    "correctAnswer": 1,
+    "answer": "1716",
+    "explanation": "We need to select and arrange 3 digits out of 13. This is a permutation problem. 13P3 = 13 * 12 * 11 = 1716.",
+    "shortcut": "nP3 = n * (n-1) * (n-2)",
+    "commonMistake": "Using combinations (nCr) instead of permutations, ignoring the order of digits.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "digits",
+      "without repetition"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_031",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 4 people be seated around a circular table?",
+    "options": [
+      "24",
+      "12",
+      "3",
+      "6"
+    ],
+    "correctAnswer": 3,
+    "answer": "6",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=4. So, (4-1)! = 3! = 6.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_032",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 5 people be seated around a circular table?",
+    "options": [
+      "48",
+      "120",
+      "12",
+      "24"
+    ],
+    "correctAnswer": 3,
+    "answer": "24",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=5. So, (5-1)! = 4! = 24.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_033",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 6 people be seated around a circular table?",
+    "options": [
+      "240",
+      "720",
+      "60",
+      "120"
+    ],
+    "correctAnswer": 3,
+    "answer": "120",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=6. So, (6-1)! = 5! = 120.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_034",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 7 people be seated around a circular table?",
+    "options": [
+      "1440",
+      "720",
+      "360",
+      "5040"
+    ],
+    "correctAnswer": 1,
+    "answer": "720",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=7. So, (7-1)! = 6! = 720.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_035",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 8 people be seated around a circular table?",
+    "options": [
+      "2520",
+      "10080",
+      "40320",
+      "5040"
+    ],
+    "correctAnswer": 3,
+    "answer": "5040",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=8. So, (8-1)! = 7! = 5040.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_036",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 9 people be seated around a circular table?",
+    "options": [
+      "80640",
+      "40320",
+      "20160",
+      "362880"
+    ],
+    "correctAnswer": 1,
+    "answer": "40320",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=9. So, (9-1)! = 8! = 40320.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_037",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 10 people be seated around a circular table?",
+    "options": [
+      "181440",
+      "725760",
+      "362880",
+      "3628800"
+    ],
+    "correctAnswer": 2,
+    "answer": "362880",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=10. So, (10-1)! = 9! = 362880.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_038",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 11 people be seated around a circular table?",
+    "options": [
+      "7257600",
+      "1814400",
+      "3628800",
+      "39916800"
+    ],
+    "correctAnswer": 2,
+    "answer": "3628800",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=11. So, (11-1)! = 10! = 3628800.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_039",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 12 people be seated around a circular table?",
+    "options": [
+      "19958400",
+      "79833600",
+      "39916800",
+      "479001600"
+    ],
+    "correctAnswer": 2,
+    "answer": "39916800",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=12. So, (12-1)! = 11! = 39916800.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_040",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 13 people be seated around a circular table?",
+    "options": [
+      "239500800",
+      "6227020800",
+      "479001600",
+      "958003200"
+    ],
+    "correctAnswer": 2,
+    "answer": "479001600",
+    "explanation": "For circular permutations of n distinct items, the formula is (n-1)!. Here n=13. So, (13-1)! = 12! = 479001600.",
+    "shortcut": "Circular arrangement of n items = (n-1)!",
+    "commonMistake": "Using n! instead of (n-1)!.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "circular",
+      "seating"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_041",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 4 men and 3 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "30",
+      "6",
+      "18",
+      "38"
+    ],
+    "correctAnswer": 2,
+    "answer": "18",
+    "explanation": "Select 2 men from 4: 4C2 = 6. Select 2 women from 3: 3C2 = 3. Total ways = 6 * 3 = 18.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_042",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 5 men and 4 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "48",
+      "60",
+      "80",
+      "80"
+    ],
+    "correctAnswer": 1,
+    "answer": "60",
+    "explanation": "Select 2 men from 5: 5C2 = 10. Select 2 women from 4: 4C2 = 6. Total ways = 10 * 6 = 60.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_043",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 6 men and 5 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "150",
+      "138",
+      "180",
+      "170"
+    ],
+    "correctAnswer": 0,
+    "answer": "150",
+    "explanation": "Select 2 men from 6: 6C2 = 15. Select 2 women from 5: 5C2 = 10. Total ways = 15 * 10 = 150.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_044",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 7 men and 6 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "357",
+      "303",
+      "335",
+      "315"
+    ],
+    "correctAnswer": 3,
+    "answer": "315",
+    "explanation": "Select 2 men from 7: 7C2 = 21. Select 2 women from 6: 6C2 = 15. Total ways = 21 * 15 = 315.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_045",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 8 men and 7 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "608",
+      "644",
+      "588",
+      "576"
+    ],
+    "correctAnswer": 2,
+    "answer": "588",
+    "explanation": "Select 2 men from 8: 8C2 = 28. Select 2 women from 7: 7C2 = 21. Total ways = 28 * 21 = 588.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_046",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 9 men and 8 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "1008",
+      "1028",
+      "1080",
+      "996"
+    ],
+    "correctAnswer": 0,
+    "answer": "1008",
+    "explanation": "Select 2 men from 9: 9C2 = 36. Select 2 women from 8: 8C2 = 28. Total ways = 36 * 28 = 1008.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_047",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 10 men and 9 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "1620",
+      "1640",
+      "1710",
+      "1608"
+    ],
+    "correctAnswer": 0,
+    "answer": "1620",
+    "explanation": "Select 2 men from 10: 10C2 = 45. Select 2 women from 9: 9C2 = 36. Total ways = 45 * 36 = 1620.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_048",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 11 men and 10 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "2463",
+      "2475",
+      "2495",
+      "2585"
+    ],
+    "correctAnswer": 1,
+    "answer": "2475",
+    "explanation": "Select 2 men from 11: 11C2 = 55. Select 2 women from 10: 10C2 = 45. Total ways = 55 * 45 = 2475.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_049",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 12 men and 11 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "3630",
+      "3650",
+      "3762",
+      "3618"
+    ],
+    "correctAnswer": 0,
+    "answer": "3630",
+    "explanation": "Select 2 men from 12: 12C2 = 66. Select 2 women from 11: 11C2 = 55. Total ways = 66 * 55 = 3630.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_050",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can a committee of 4 people be chosen from 13 men and 12 women if it must contain exactly 2 men and 2 women?",
+    "options": [
+      "5304",
+      "5136",
+      "5148",
+      "5168"
+    ],
+    "correctAnswer": 2,
+    "answer": "5148",
+    "explanation": "Select 2 men from 13: 13C2 = 78. Select 2 women from 12: 12C2 = 66. Total ways = 78 * 66 = 5148.",
+    "shortcut": "AND condition means multiply: nC2 * mC2.",
+    "commonMistake": "Adding the combinations instead of multiplying them.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "committee",
+      "conditional"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_051",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'EQUATION' be arranged such that all the vowels always come together?",
+    "options": [
+      "1440",
+      "3000",
+      "2880",
+      "5760"
+    ],
+    "correctAnswer": 2,
+    "answer": "2880",
+    "explanation": "Vowels in 'EQUATION' are [E,U,A,I,O]. Treat them as a single entity. Number of entities = 3 consonants + 1 vowel group = 4. Arrange entities: 4!. Arrange vowels internally: 5!. (Divide by any repeating letters). Total ways = 2880.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_052",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'MACHINE' be arranged such that all the vowels always come together?",
+    "options": [
+      "360",
+      "1440",
+      "720",
+      "840"
+    ],
+    "correctAnswer": 2,
+    "answer": "720",
+    "explanation": "Vowels in 'MACHINE' are [A,I,E]. Treat them as a single entity. Number of entities = 4 consonants + 1 vowel group = 5. Arrange entities: 5!. Arrange vowels internally: 3!. (Divide by any repeating letters). Total ways = 720.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_053",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'COMPUTER' be arranged such that all the vowels always come together?",
+    "options": [
+      "4440",
+      "8640",
+      "4320",
+      "2160"
+    ],
+    "correctAnswer": 2,
+    "answer": "4320",
+    "explanation": "Vowels in 'COMPUTER' are [O,U,E]. Treat them as a single entity. Number of entities = 5 consonants + 1 vowel group = 6. Arrange entities: 6!. Arrange vowels internally: 3!. (Divide by any repeating letters). Total ways = 4320.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_054",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'PROBLEM' be arranged such that all the vowels always come together?",
+    "options": [
+      "720",
+      "1560",
+      "2880",
+      "1440"
+    ],
+    "correctAnswer": 3,
+    "answer": "1440",
+    "explanation": "Vowels in 'PROBLEM' are [O,E]. Treat them as a single entity. Number of entities = 5 consonants + 1 vowel group = 6. Arrange entities: 6!. Arrange vowels internally: 2!. (Divide by any repeating letters). Total ways = 1440.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_055",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'SOLUTION' be arranged such that all the vowels always come together?",
+    "options": [
+      "720",
+      "2880",
+      "1440",
+      "1560"
+    ],
+    "correctAnswer": 2,
+    "answer": "1440",
+    "explanation": "Vowels in 'SOLUTION' are [O,U,I,O]. Treat them as a single entity. Number of entities = 4 consonants + 1 vowel group = 5. Arrange entities: 5!. Arrange vowels internally: 4!. (Divide by any repeating letters). Total ways = 1440.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_056",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'ARTICLE' be arranged such that all the vowels always come together?",
+    "options": [
+      "1440",
+      "720",
+      "840",
+      "360"
+    ],
+    "correctAnswer": 1,
+    "answer": "720",
+    "explanation": "Vowels in 'ARTICLE' are [A,I,E]. Treat them as a single entity. Number of entities = 4 consonants + 1 vowel group = 5. Arrange entities: 5!. Arrange vowels internally: 3!. (Divide by any repeating letters). Total ways = 720.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_057",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'DIAGRAM' be arranged such that all the vowels always come together?",
+    "options": [
+      "180",
+      "480",
+      "360",
+      "720"
+    ],
+    "correctAnswer": 2,
+    "answer": "360",
+    "explanation": "Vowels in 'DIAGRAM' are [I,A,A]. Treat them as a single entity. Number of entities = 4 consonants + 1 vowel group = 5. Arrange entities: 5!. Arrange vowels internally: 3!. (Divide by any repeating letters). Total ways = 360.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_058",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'SECTION' be arranged such that all the vowels always come together?",
+    "options": [
+      "720",
+      "1440",
+      "360",
+      "840"
+    ],
+    "correctAnswer": 0,
+    "answer": "720",
+    "explanation": "Vowels in 'SECTION' are [E,I,O]. Treat them as a single entity. Number of entities = 4 consonants + 1 vowel group = 5. Arrange entities: 5!. Arrange vowels internally: 3!. (Divide by any repeating letters). Total ways = 720.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_059",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'LIBRARY' be arranged such that all the vowels always come together?",
+    "options": [
+      "720",
+      "360",
+      "1440",
+      "840"
+    ],
+    "correctAnswer": 0,
+    "answer": "720",
+    "explanation": "Vowels in 'LIBRARY' are [I,A]. Treat them as a single entity. Number of entities = 5 consonants + 1 vowel group = 6. Arrange entities: 6!. Arrange vowels internally: 2!. (Divide by any repeating letters). Total ways = 720.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_060",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many different ways can the letters of the word 'STUDENT' be arranged such that all the vowels always come together?",
+    "options": [
+      "840",
+      "360",
+      "1440",
+      "720"
+    ],
+    "correctAnswer": 3,
+    "answer": "720",
+    "explanation": "Vowels in 'STUDENT' are [U,E]. Treat them as a single entity. Number of entities = 5 consonants + 1 vowel group = 6. Arrange entities: 6!. Arrange vowels internally: 2!. (Divide by any repeating letters). Total ways = 720.",
+    "shortcut": "Treat grouped items as a single unit, then multiply by the internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the vowels internally.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels together",
+      "grouping"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_061",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 5 if no digit is repeated?",
+    "options": [
+      "48",
+      "26",
+      "24",
+      "22"
+    ],
+    "correctAnswer": 2,
+    "answer": "24",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 5. Even digits available: 2. So, the units place can be filled in 2 ways. The remaining 2 places can be filled from the remaining 4 digits in 4P2 ways. Total = 2 * 4 * 3 = 24.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_062",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 6 if no digit is repeated?",
+    "options": [
+      "63",
+      "60",
+      "120",
+      "57"
+    ],
+    "correctAnswer": 1,
+    "answer": "60",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 6. Even digits available: 3. So, the units place can be filled in 3 ways. The remaining 2 places can be filled from the remaining 5 digits in 5P2 ways. Total = 3 * 5 * 4 = 60.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_063",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 7 if no digit is repeated?",
+    "options": [
+      "93",
+      "180",
+      "90",
+      "87"
+    ],
+    "correctAnswer": 2,
+    "answer": "90",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 7. Even digits available: 3. So, the units place can be filled in 3 ways. The remaining 2 places can be filled from the remaining 6 digits in 6P2 ways. Total = 3 * 6 * 5 = 90.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_064",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 8 if no digit is repeated?",
+    "options": [
+      "168",
+      "172",
+      "164",
+      "336"
+    ],
+    "correctAnswer": 0,
+    "answer": "168",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 8. Even digits available: 4. So, the units place can be filled in 4 ways. The remaining 2 places can be filled from the remaining 7 digits in 7P2 ways. Total = 4 * 7 * 6 = 168.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_065",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 5 if no digit is repeated?",
+    "options": [
+      "26",
+      "22",
+      "24",
+      "48"
+    ],
+    "correctAnswer": 2,
+    "answer": "24",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 5. Even digits available: 2. So, the units place can be filled in 2 ways. The remaining 2 places can be filled from the remaining 4 digits in 4P2 ways. Total = 2 * 4 * 3 = 24.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_066",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 6 if no digit is repeated?",
+    "options": [
+      "120",
+      "60",
+      "63",
+      "57"
+    ],
+    "correctAnswer": 1,
+    "answer": "60",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 6. Even digits available: 3. So, the units place can be filled in 3 ways. The remaining 2 places can be filled from the remaining 5 digits in 5P2 ways. Total = 3 * 5 * 4 = 60.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_067",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 7 if no digit is repeated?",
+    "options": [
+      "180",
+      "90",
+      "87",
+      "93"
+    ],
+    "correctAnswer": 1,
+    "answer": "90",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 7. Even digits available: 3. So, the units place can be filled in 3 ways. The remaining 2 places can be filled from the remaining 6 digits in 6P2 ways. Total = 3 * 6 * 5 = 90.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_068",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 8 if no digit is repeated?",
+    "options": [
+      "164",
+      "172",
+      "336",
+      "168"
+    ],
+    "correctAnswer": 3,
+    "answer": "168",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 8. Even digits available: 4. So, the units place can be filled in 4 ways. The remaining 2 places can be filled from the remaining 7 digits in 7P2 ways. Total = 4 * 7 * 6 = 168.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_069",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 5 if no digit is repeated?",
+    "options": [
+      "24",
+      "22",
+      "48",
+      "26"
+    ],
+    "correctAnswer": 0,
+    "answer": "24",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 5. Even digits available: 2. So, the units place can be filled in 2 ways. The remaining 2 places can be filled from the remaining 4 digits in 4P2 ways. Total = 2 * 4 * 3 = 24.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_070",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit even numbers can be formed using the digits 1 to 6 if no digit is repeated?",
+    "options": [
+      "60",
+      "57",
+      "63",
+      "120"
+    ],
+    "correctAnswer": 0,
+    "answer": "60",
+    "explanation": "A number is even if it ends in an even digit. Digits available: 1 to 6. Even digits available: 3. So, the units place can be filled in 3 ways. The remaining 2 places can be filled from the remaining 5 digits in 5P2 ways. Total = 3 * 5 * 4 = 60.",
+    "shortcut": "Fill the restricted position (units place) first, then fill the rest.",
+    "commonMistake": "Filling from left to right and getting stuck at the units place constraint.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "even numbers",
+      "digit constraints"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_071",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 3 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "24",
+      "36",
+      "144",
+      "720"
+    ],
+    "correctAnswer": 2,
+    "answer": "144",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 3 boys + 1 girl-unit = 4 units. They can be arranged in (4)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (4)! * 3! = 144.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_072",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 4 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "5040",
+      "120",
+      "720",
+      "144"
+    ],
+    "correctAnswer": 2,
+    "answer": "720",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 4 boys + 1 girl-unit = 5 units. They can be arranged in (5)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (5)! * 3! = 720.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_073",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 5 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "4320",
+      "720",
+      "40320",
+      "720"
+    ],
+    "correctAnswer": 0,
+    "answer": "4320",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 5 boys + 1 girl-unit = 6 units. They can be arranged in (6)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (6)! * 3! = 4320.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_074",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 6 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "5040",
+      "362880",
+      "4320",
+      "30240"
+    ],
+    "correctAnswer": 3,
+    "answer": "30240",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 6 boys + 1 girl-unit = 7 units. They can be arranged in (7)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (7)! * 3! = 30240.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_075",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 7 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "30240",
+      "40320",
+      "241920",
+      "3628800"
+    ],
+    "correctAnswer": 2,
+    "answer": "241920",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 7 boys + 1 girl-unit = 8 units. They can be arranged in (8)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (8)! * 3! = 241920.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_076",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 8 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "2177280",
+      "39916800",
+      "362880",
+      "241920"
+    ],
+    "correctAnswer": 0,
+    "answer": "2177280",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 8 boys + 1 girl-unit = 9 units. They can be arranged in (9)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (9)! * 3! = 2177280.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_077",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 9 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "2177280",
+      "3628800",
+      "479001600",
+      "21772800"
+    ],
+    "correctAnswer": 3,
+    "answer": "21772800",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 9 boys + 1 girl-unit = 10 units. They can be arranged in (10)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (10)! * 3! = 21772800.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_078",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 10 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "39916800",
+      "21772800",
+      "6227020800",
+      "239500800"
+    ],
+    "correctAnswer": 3,
+    "answer": "239500800",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 10 boys + 1 girl-unit = 11 units. They can be arranged in (11)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (11)! * 3! = 239500800.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_079",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 11 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "87178291200",
+      "2874009600",
+      "239500800",
+      "479001600"
+    ],
+    "correctAnswer": 1,
+    "answer": "2874009600",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 11 boys + 1 girl-unit = 12 units. They can be arranged in (12)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (12)! * 3! = 2874009600.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_080",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Seating Arrangements",
+    "difficulty": "Medium",
+    "question": "In how many ways can 12 boys and 3 girls be seated in a row such that all the girls always sit together?",
+    "options": [
+      "1307674368000",
+      "37362124800",
+      "6227020800",
+      "2874009600"
+    ],
+    "correctAnswer": 1,
+    "answer": "37362124800",
+    "explanation": "Treat the 3 girls as a single unit. Total units = 12 boys + 1 girl-unit = 13 units. They can be arranged in (13)! ways. The 3 girls can arrange among themselves in 3! ways. Total ways = (13)! * 3! = 37362124800.",
+    "shortcut": "Group the restricted items into 1 unit, arrange units, then multiply by internal arrangement of the group.",
+    "commonMistake": "Forgetting to arrange the girls among themselves.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "seating arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "row arrangement",
+      "grouping together"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_081",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Hard",
+    "question": "A group consists of 6 men and 4 women. In how many ways can a committee of 4 be formed such that it contains at least one woman?",
+    "options": [
+      "195",
+      "210",
+      "15",
+      "210"
+    ],
+    "correctAnswer": 0,
+    "answer": "195",
+    "explanation": "'At least one woman' = (Total ways to form committee) - (Ways to form committee with NO women). Total ways to select 4 from 10 is 10C4 = 210. Ways to select 4 from 6 men is 6C4 = 15. Answer = 210 - 15 = 195.",
+    "shortcut": "At least one = Total - None.",
+    "commonMistake": "Manually calculating 1W3M + 2W2M + 3W1M + 4W and making a calculation error.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "at least one",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_082",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Hard",
+    "question": "A group consists of 7 men and 4 women. In how many ways can a committee of 4 be formed such that it contains at least one woman?",
+    "options": [
+      "35",
+      "295",
+      "310",
+      "330"
+    ],
+    "correctAnswer": 1,
+    "answer": "295",
+    "explanation": "'At least one woman' = (Total ways to form committee) - (Ways to form committee with NO women). Total ways to select 4 from 11 is 11C4 = 330. Ways to select 4 from 7 men is 7C4 = 35. Answer = 330 - 35 = 295.",
+    "shortcut": "At least one = Total - None.",
+    "commonMistake": "Manually calculating 1W3M + 2W2M + 3W1M + 4W and making a calculation error.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "at least one",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_083",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Hard",
+    "question": "A group consists of 8 men and 4 women. In how many ways can a committee of 4 be formed such that it contains at least one woman?",
+    "options": [
+      "425",
+      "70",
+      "495",
+      "440"
+    ],
+    "correctAnswer": 0,
+    "answer": "425",
+    "explanation": "'At least one woman' = (Total ways to form committee) - (Ways to form committee with NO women). Total ways to select 4 from 12 is 12C4 = 495. Ways to select 4 from 8 men is 8C4 = 70. Answer = 495 - 70 = 425.",
+    "shortcut": "At least one = Total - None.",
+    "commonMistake": "Manually calculating 1W3M + 2W2M + 3W1M + 4W and making a calculation error.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "at least one",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_084",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Hard",
+    "question": "A group consists of 9 men and 4 women. In how many ways can a committee of 4 be formed such that it contains at least one woman?",
+    "options": [
+      "604",
+      "126",
+      "589",
+      "715"
+    ],
+    "correctAnswer": 2,
+    "answer": "589",
+    "explanation": "'At least one woman' = (Total ways to form committee) - (Ways to form committee with NO women). Total ways to select 4 from 13 is 13C4 = 715. Ways to select 4 from 9 men is 9C4 = 126. Answer = 715 - 126 = 589.",
+    "shortcut": "At least one = Total - None.",
+    "commonMistake": "Manually calculating 1W3M + 2W2M + 3W1M + 4W and making a calculation error.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "at least one",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_085",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "Hard",
+    "question": "A group consists of 10 men and 4 women. In how many ways can a committee of 4 be formed such that it contains at least one woman?",
+    "options": [
+      "1001",
+      "791",
+      "210",
+      "806"
+    ],
+    "correctAnswer": 1,
+    "answer": "791",
+    "explanation": "'At least one woman' = (Total ways to form committee) - (Ways to form committee with NO women). Total ways to select 4 from 14 is 14C4 = 1001. Ways to select 4 from 10 men is 10C4 = 210. Answer = 1001 - 210 = 791.",
+    "shortcut": "At least one = Total - None.",
+    "commonMistake": "Manually calculating 1W3M + 2W2M + 3W1M + 4W and making a calculation error.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "combinations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "selection",
+      "at least one",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_086",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Hard",
+    "question": "In how many ways can the letters of the word 'CAPITAL' be arranged such that the vowels never come together?",
+    "options": [
+      "2520",
+      "360",
+      "2160",
+      "2880"
+    ],
+    "correctAnswer": 2,
+    "answer": "2160",
+    "explanation": "First find total arrangements of 'CAPITAL' = 2520. Then find arrangements where vowels ARE together = 360. 'Never together' = Total - 'Always together' = 2520 - 360 = 2160.",
+    "shortcut": "Never together = Total ways - Always together.",
+    "commonMistake": "Trying to calculate 'never together' by placing vowels in gaps (which means no two vowels are together, which is a different question than 'all vowels are not together'). Note: Usually 'vowels never come together' means 'not ALL vowels come together'.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels never together",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_087",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Hard",
+    "question": "In how many ways can the letters of the word 'NATION' be arranged such that the vowels never come together?",
+    "options": [
+      "72",
+      "432",
+      "288",
+      "360"
+    ],
+    "correctAnswer": 2,
+    "answer": "288",
+    "explanation": "First find total arrangements of 'NATION' = 360. Then find arrangements where vowels ARE together = 72. 'Never together' = Total - 'Always together' = 360 - 72 = 288.",
+    "shortcut": "Never together = Total ways - Always together.",
+    "commonMistake": "Trying to calculate 'never together' by placing vowels in gaps (which means no two vowels are together, which is a different question than 'all vowels are not together'). Note: Usually 'vowels never come together' means 'not ALL vowels come together'.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels never together",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_088",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Hard",
+    "question": "In how many ways can the letters of the word 'OFFICE' be arranged such that the vowels never come together?",
+    "options": [
+      "72",
+      "432",
+      "288",
+      "360"
+    ],
+    "correctAnswer": 2,
+    "answer": "288",
+    "explanation": "First find total arrangements of 'OFFICE' = 360. Then find arrangements where vowels ARE together = 72. 'Never together' = Total - 'Always together' = 360 - 72 = 288.",
+    "shortcut": "Never together = Total ways - Always together.",
+    "commonMistake": "Trying to calculate 'never together' by placing vowels in gaps (which means no two vowels are together, which is a different question than 'all vowels are not together'). Note: Usually 'vowels never come together' means 'not ALL vowels come together'.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels never together",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_089",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Hard",
+    "question": "In how many ways can the letters of the word 'LEADER' be arranged such that the vowels never come together?",
+    "options": [
+      "72",
+      "288",
+      "432",
+      "360"
+    ],
+    "correctAnswer": 1,
+    "answer": "288",
+    "explanation": "First find total arrangements of 'LEADER' = 360. Then find arrangements where vowels ARE together = 72. 'Never together' = Total - 'Always together' = 360 - 72 = 288.",
+    "shortcut": "Never together = Total ways - Always together.",
+    "commonMistake": "Trying to calculate 'never together' by placing vowels in gaps (which means no two vowels are together, which is a different question than 'all vowels are not together'). Note: Usually 'vowels never come together' means 'not ALL vowels come together'.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels never together",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_090",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Word Arrangements",
+    "difficulty": "Hard",
+    "question": "In how many ways can the letters of the word 'MARKET' be arranged such that the vowels never come together?",
+    "options": [
+      "720",
+      "240",
+      "480",
+      "960"
+    ],
+    "correctAnswer": 2,
+    "answer": "480",
+    "explanation": "First find total arrangements of 'MARKET' = 720. Then find arrangements where vowels ARE together = 240. 'Never together' = Total - 'Always together' = 720 - 240 = 480.",
+    "shortcut": "Never together = Total ways - Always together.",
+    "commonMistake": "Trying to calculate 'never together' by placing vowels in gaps (which means no two vowels are together, which is a different question than 'all vowels are not together'). Note: Usually 'vowels never come together' means 'not ALL vowels come together'.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "word arrangements"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "vowels never together",
+      "complement"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_091",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Hard",
+    "question": "How many 4-digit numbers divisible by 5 can be formed using the digits 0 to 5 without repetition?",
+    "options": [
+      "60",
+      "118",
+      "108",
+      "48"
+    ],
+    "correctAnswer": 2,
+    "answer": "108",
+    "explanation": "A number is divisible by 5 if it ends in 0 or 5. Case 1 (ends in 0): Units place=1 way. Thousands=non-zero from remaining (5 ways). Hundreds=4. Tens=3. Total=60. Case 2 (ends in 5): Units=1 way. Thousands=Cannot be 0 (4 ways). Hundreds=4. Tens=3. Total=48. Total = 60 + 48 = 108.",
+    "shortcut": "Split into two mutually exclusive cases: ending in 0 and ending in 5.",
+    "commonMistake": "Forgetting that the first digit cannot be 0 when calculating numbers ending in 5.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "divisibility",
+      "zero constraint"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_092",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Hard",
+    "question": "How many 4-digit numbers divisible by 5 can be formed using the digits 0 to 6 without repetition?",
+    "options": [
+      "220",
+      "120",
+      "100",
+      "230"
+    ],
+    "correctAnswer": 0,
+    "answer": "220",
+    "explanation": "A number is divisible by 5 if it ends in 0 or 5. Case 1 (ends in 0): Units place=1 way. Thousands=non-zero from remaining (6 ways). Hundreds=5. Tens=4. Total=120. Case 2 (ends in 5): Units=1 way. Thousands=Cannot be 0 (5 ways). Hundreds=5. Tens=4. Total=100. Total = 120 + 100 = 220.",
+    "shortcut": "Split into two mutually exclusive cases: ending in 0 and ending in 5.",
+    "commonMistake": "Forgetting that the first digit cannot be 0 when calculating numbers ending in 5.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "divisibility",
+      "zero constraint"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_093",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Hard",
+    "question": "How many 4-digit numbers divisible by 5 can be formed using the digits 0 to 7 without repetition?",
+    "options": [
+      "400",
+      "180",
+      "210",
+      "390"
+    ],
+    "correctAnswer": 3,
+    "answer": "390",
+    "explanation": "A number is divisible by 5 if it ends in 0 or 5. Case 1 (ends in 0): Units place=1 way. Thousands=non-zero from remaining (7 ways). Hundreds=6. Tens=5. Total=210. Case 2 (ends in 5): Units=1 way. Thousands=Cannot be 0 (6 ways). Hundreds=6. Tens=5. Total=180. Total = 210 + 180 = 390.",
+    "shortcut": "Split into two mutually exclusive cases: ending in 0 and ending in 5.",
+    "commonMistake": "Forgetting that the first digit cannot be 0 when calculating numbers ending in 5.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "divisibility",
+      "zero constraint"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_094",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Hard",
+    "question": "How many 4-digit numbers divisible by 5 can be formed using the digits 0 to 8 without repetition?",
+    "options": [
+      "630",
+      "294",
+      "640",
+      "336"
+    ],
+    "correctAnswer": 0,
+    "answer": "630",
+    "explanation": "A number is divisible by 5 if it ends in 0 or 5. Case 1 (ends in 0): Units place=1 way. Thousands=non-zero from remaining (8 ways). Hundreds=7. Tens=6. Total=336. Case 2 (ends in 5): Units=1 way. Thousands=Cannot be 0 (7 ways). Hundreds=7. Tens=6. Total=294. Total = 336 + 294 = 630.",
+    "shortcut": "Split into two mutually exclusive cases: ending in 0 and ending in 5.",
+    "commonMistake": "Forgetting that the first digit cannot be 0 when calculating numbers ending in 5.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "divisibility",
+      "zero constraint"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_095",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Number Formations",
+    "difficulty": "Hard",
+    "question": "How many 4-digit numbers divisible by 5 can be formed using the digits 0 to 9 without repetition?",
+    "options": [
+      "504",
+      "952",
+      "962",
+      "448"
+    ],
+    "correctAnswer": 1,
+    "answer": "952",
+    "explanation": "A number is divisible by 5 if it ends in 0 or 5. Case 1 (ends in 0): Units place=1 way. Thousands=non-zero from remaining (9 ways). Hundreds=8. Tens=7. Total=504. Case 2 (ends in 5): Units=1 way. Thousands=Cannot be 0 (8 ways). Hundreds=8. Tens=7. Total=448. Total = 504 + 448 = 952.",
+    "shortcut": "Split into two mutually exclusive cases: ending in 0 and ending in 5.",
+    "commonMistake": "Forgetting that the first digit cannot be 0 when calculating numbers ending in 5.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "number formations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "divisibility",
+      "zero constraint"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_096",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Hard",
+    "question": "In how many ways can 5 different colored beads be strung into a necklace?",
+    "options": [
+      "60",
+      "120",
+      "24",
+      "12"
+    ],
+    "correctAnswer": 3,
+    "answer": "12",
+    "explanation": "For a necklace or garland, clockwise and anti-clockwise arrangements are identical because it can be flipped over. The formula is (n-1)! / 2. Here n=5, so (5-1)! / 2 = 12.",
+    "shortcut": "Necklace arrangement = (n-1)! / 2.",
+    "commonMistake": "Forgetting to divide by 2 for reflection symmetry.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "necklace",
+      "circular symmetry"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_097",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Hard",
+    "question": "In how many ways can 6 different colored beads be strung into a necklace?",
+    "options": [
+      "120",
+      "360",
+      "720",
+      "60"
+    ],
+    "correctAnswer": 3,
+    "answer": "60",
+    "explanation": "For a necklace or garland, clockwise and anti-clockwise arrangements are identical because it can be flipped over. The formula is (n-1)! / 2. Here n=6, so (6-1)! / 2 = 60.",
+    "shortcut": "Necklace arrangement = (n-1)! / 2.",
+    "commonMistake": "Forgetting to divide by 2 for reflection symmetry.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "necklace",
+      "circular symmetry"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_098",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Hard",
+    "question": "In how many ways can 7 different colored beads be strung into a necklace?",
+    "options": [
+      "5040",
+      "360",
+      "720",
+      "2520"
+    ],
+    "correctAnswer": 1,
+    "answer": "360",
+    "explanation": "For a necklace or garland, clockwise and anti-clockwise arrangements are identical because it can be flipped over. The formula is (n-1)! / 2. Here n=7, so (7-1)! / 2 = 360.",
+    "shortcut": "Necklace arrangement = (n-1)! / 2.",
+    "commonMistake": "Forgetting to divide by 2 for reflection symmetry.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "necklace",
+      "circular symmetry"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_099",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Hard",
+    "question": "In how many ways can 8 different colored beads be strung into a necklace?",
+    "options": [
+      "5040",
+      "40320",
+      "20160",
+      "2520"
+    ],
+    "correctAnswer": 3,
+    "answer": "2520",
+    "explanation": "For a necklace or garland, clockwise and anti-clockwise arrangements are identical because it can be flipped over. The formula is (n-1)! / 2. Here n=8, so (8-1)! / 2 = 2520.",
+    "shortcut": "Necklace arrangement = (n-1)! / 2.",
+    "commonMistake": "Forgetting to divide by 2 for reflection symmetry.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "necklace",
+      "circular symmetry"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ADV_PNC_100",
+    "topic": "Advanced Aptitude",
+    "subtopic": "Circular Permutations",
+    "difficulty": "Hard",
+    "question": "In how many ways can 9 different colored beads be strung into a necklace?",
+    "options": [
+      "181440",
+      "362880",
+      "40320",
+      "20160"
+    ],
+    "correctAnswer": 3,
+    "answer": "20160",
+    "explanation": "For a necklace or garland, clockwise and anti-clockwise arrangements are identical because it can be flipped over. The formula is (n-1)! / 2. Here n=9, so (9-1)! / 2 = 20160.",
+    "shortcut": "Necklace arrangement = (n-1)! / 2.",
+    "commonMistake": "Forgetting to divide by 2 for reflection symmetry.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "permutation",
+      "combination",
+      "pnc",
+      "circular permutations"
+    ],
+    "tags": [
+      "placement",
+      "quantitative aptitude",
+      "advanced aptitude",
+      "necklace",
+      "circular symmetry"
+    ],
+    "visualizeAvailable": true
+  }
+]

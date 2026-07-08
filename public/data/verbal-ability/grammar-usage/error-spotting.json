@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "ERROR_001",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The boy",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_002",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "She have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "She have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_003",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking man.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_004",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the manager",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_005",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_006",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_007",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_008",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_009",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_010",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_011",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_012",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_013",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_014",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_015",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_016",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_017",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_018",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_019",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_020",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_021",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_022",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_023",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_024",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_025",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_026",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_027",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_028",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_029",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_030",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_031",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_032",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_033",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_034",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_035",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_036",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_037",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "A girl",
+      "are playing",
+      "in the park",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "are playing",
+    "explanation": "The subject 'The boy' is singular, so the verb must also be singular. 'are playing' should be 'is playing'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "Match singular subjects with singular verbs.",
+    "commonMistake": "Students often overlook the proximity of plural nouns in prepositional phrases, though here it's a direct mismatch.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_038",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He have",
+      "completed her",
+      "assignment yesterday.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "He have",
+    "explanation": "The subject 'She' is singular and requires 'has' in the present perfect, or 'completed' in simple past. Since 'yesterday' is used, it should simply be 'She completed' or 'She had completed'. The error is in part A.",
+    "grammarRule": "Tenses & Subject-Verb Agreement",
+    "shortcut": "Check time markers like 'yesterday' to determine the correct tense.",
+    "commonMistake": "Using present perfect tense ('have/has completed') with a specific past time ('yesterday').",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses & subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_039",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "He is",
+      "a honest",
+      "hardworking person.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "a honest",
+    "explanation": "The word 'honest' begins with a vowel sound (silent 'h'). Therefore, the article 'an' should be used instead of 'a'.",
+    "grammarRule": "Articles",
+    "shortcut": "Focus on the sound, not the letter. 'Honest' sounds like 'onest'.",
+    "commonMistake": "Looking at the consonant 'h' and choosing 'a' instead of listening to the vowel sound.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "articles"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_040",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Neither the director",
+      "nor the employees",
+      "was present.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "was present.",
+    "explanation": "In a 'neither...nor' construction, the verb agrees with the noun closest to it. Here, 'employees' is plural, so the verb should be 'were'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "In 'either/or' or 'neither/nor', the verb matches the subject closest to it.",
+    "commonMistake": "Assuming 'neither' makes the entire compound subject singular.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_041",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the station",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_042",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_043",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the offer.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_044",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The team is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The team is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_045",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_046",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_047",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_048",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_049",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_050",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_051",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_052",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_053",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_054",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_055",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_056",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_057",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_058",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_059",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_060",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_061",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_062",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_063",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_064",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_065",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_066",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_067",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_068",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_069",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_070",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_071",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_072",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_073",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_074",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_075",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_076",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_077",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Scarcely had he",
+      "arrived at the airport",
+      "than the train left.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "than the train left.",
+    "explanation": "The word 'scarcely' is followed by 'when', not 'than'. The correct pair is 'scarcely...when' or 'hardly...when'.",
+    "grammarRule": "Conjunctions (Correlative)",
+    "shortcut": "'Scarcely' and 'hardly' always pair with 'when'. 'No sooner' pairs with 'than'.",
+    "commonMistake": "Mixing up the pairs and using 'than' with 'scarcely'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "conjunctions (correlative)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_078",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The number of",
+      "students attending",
+      "the lecture are low.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "the lecture are low.",
+    "explanation": "The phrase 'The number of' takes a singular verb, whereas 'A number of' takes a plural verb. Therefore, 'are' should be 'is'.",
+    "grammarRule": "Subject-Verb Agreement",
+    "shortcut": "'The number of' = Singular. 'A number of' = Plural.",
+    "commonMistake": "Confusing 'The number of' with 'A number of'.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_079",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "If I was you,",
+      "I would not",
+      "accept the proposal.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "If I was you,",
+    "explanation": "In conditional sentences expressing a hypothetical or unreal situation (subjunctive mood), 'were' is used for all subjects. It should be 'If I were you'.",
+    "grammarRule": "Subjunctive Mood",
+    "shortcut": "For hypothetical 'If' clauses, always use 'were', regardless of the subject.",
+    "commonMistake": "Using 'was' because 'I' is singular, ignoring the hypothetical nature of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subjunctive mood"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_080",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The committee is",
+      "divided in their",
+      "opinion on the matter.",
+      "No Error"
+    ],
+    "correctAnswer": 0,
+    "answer": "The committee is",
+    "explanation": "When a collective noun (team) refers to the members acting individually (indicated by 'their opinion'), it takes a plural verb. It should be 'The team are divided'.",
+    "grammarRule": "Nouns (Collective)",
+    "shortcut": "Collective nouns acting in unison take singular verbs; acting individually, they take plural verbs.",
+    "commonMistake": "Blindly treating all collective nouns as singular without checking the context of the sentence.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "nouns (collective)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_081",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Not only the students",
+      "but also the teacher",
+      "have agreed to the plan.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "have agreed to the plan.",
+    "explanation": "In a 'not only...but also' construction, the verb agrees with the subject closest to it. Here, 'the teacher' is singular, so the verb should be 'has agreed'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "Match the verb to the noun right next to it in correlative pairs.",
+    "commonMistake": "Assuming 'not only...but also' creates a plural compound subject like 'and' does.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_082",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Having completed",
+      "his work, the door",
+      "was locked by him.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "his work, the door",
+    "explanation": "This is a dangling modifier. The phrase 'Having completed his work' must be followed immediately by the subject who completed the work (he). As it stands, it implies the door completed the work.",
+    "grammarRule": "Modifiers (Dangling)",
+    "shortcut": "Ensure the subject right after the comma is the one performing the action in the 'ing' or 'ed' phrase before the comma.",
+    "commonMistake": "Focusing only on verb tenses and ignoring the logical connection between the modifier and the subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "modifiers (dangling)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_083",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "It is high time",
+      "that we leave",
+      "for the airport.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "that we leave",
+    "explanation": "The phrase 'It is high time' or 'It is about time' is followed by a clause in the simple past tense when referring to a present or future urgency. It should be 'that we left'.",
+    "grammarRule": "Tenses (Idiomatic Structure)",
+    "shortcut": "'It is high time' + Subject + Past Tense Verb.",
+    "commonMistake": "Using present tense ('leave') because the urgency feels like it's happening right now.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses (idiomatic structure)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_084",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The new policy",
+      "will affect",
+      "the lives of thousands.",
+      "No Error"
+    ],
+    "correctAnswer": 3,
+    "answer": "No Error",
+    "explanation": "There is no grammatical error in this sentence. 'Affect' is correctly used as a verb (meaning to influence).",
+    "grammarRule": "Vocabulary (Affect vs. Effect)",
+    "shortcut": "Affect is usually a verb. Effect is usually a noun.",
+    "commonMistake": "Over-analyzing and assuming 'affect' should be 'effect' or finding errors where none exist.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "vocabulary (affect vs. effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_085",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Not only the students",
+      "but also the principal",
+      "have agreed to the plan.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "have agreed to the plan.",
+    "explanation": "In a 'not only...but also' construction, the verb agrees with the subject closest to it. Here, 'the teacher' is singular, so the verb should be 'has agreed'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "Match the verb to the noun right next to it in correlative pairs.",
+    "commonMistake": "Assuming 'not only...but also' creates a plural compound subject like 'and' does.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_086",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Having completed",
+      "his work, the door",
+      "was locked by him.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "his work, the door",
+    "explanation": "This is a dangling modifier. The phrase 'Having completed his work' must be followed immediately by the subject who completed the work (he). As it stands, it implies the door completed the work.",
+    "grammarRule": "Modifiers (Dangling)",
+    "shortcut": "Ensure the subject right after the comma is the one performing the action in the 'ing' or 'ed' phrase before the comma.",
+    "commonMistake": "Focusing only on verb tenses and ignoring the logical connection between the modifier and the subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "modifiers (dangling)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_087",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "It is high time",
+      "that we leave",
+      "for the station.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "that we leave",
+    "explanation": "The phrase 'It is high time' or 'It is about time' is followed by a clause in the simple past tense when referring to a present or future urgency. It should be 'that we left'.",
+    "grammarRule": "Tenses (Idiomatic Structure)",
+    "shortcut": "'It is high time' + Subject + Past Tense Verb.",
+    "commonMistake": "Using present tense ('leave') because the urgency feels like it's happening right now.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses (idiomatic structure)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_088",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The new regulation",
+      "will affect",
+      "the lives of thousands.",
+      "No Error"
+    ],
+    "correctAnswer": 3,
+    "answer": "No Error",
+    "explanation": "There is no grammatical error in this sentence. 'Affect' is correctly used as a verb (meaning to influence).",
+    "grammarRule": "Vocabulary (Affect vs. Effect)",
+    "shortcut": "Affect is usually a verb. Effect is usually a noun.",
+    "commonMistake": "Over-analyzing and assuming 'affect' should be 'effect' or finding errors where none exist.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "vocabulary (affect vs. effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_089",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Not only the students",
+      "but also the principal",
+      "have agreed to the plan.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "have agreed to the plan.",
+    "explanation": "In a 'not only...but also' construction, the verb agrees with the subject closest to it. Here, 'the teacher' is singular, so the verb should be 'has agreed'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "Match the verb to the noun right next to it in correlative pairs.",
+    "commonMistake": "Assuming 'not only...but also' creates a plural compound subject like 'and' does.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_090",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Having completed",
+      "his work, the door",
+      "was locked by him.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "his work, the door",
+    "explanation": "This is a dangling modifier. The phrase 'Having completed his work' must be followed immediately by the subject who completed the work (he). As it stands, it implies the door completed the work.",
+    "grammarRule": "Modifiers (Dangling)",
+    "shortcut": "Ensure the subject right after the comma is the one performing the action in the 'ing' or 'ed' phrase before the comma.",
+    "commonMistake": "Focusing only on verb tenses and ignoring the logical connection between the modifier and the subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "modifiers (dangling)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_091",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "It is high time",
+      "that we leave",
+      "for the station.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "that we leave",
+    "explanation": "The phrase 'It is high time' or 'It is about time' is followed by a clause in the simple past tense when referring to a present or future urgency. It should be 'that we left'.",
+    "grammarRule": "Tenses (Idiomatic Structure)",
+    "shortcut": "'It is high time' + Subject + Past Tense Verb.",
+    "commonMistake": "Using present tense ('leave') because the urgency feels like it's happening right now.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses (idiomatic structure)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_092",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The new regulation",
+      "will affect",
+      "the lives of thousands.",
+      "No Error"
+    ],
+    "correctAnswer": 3,
+    "answer": "No Error",
+    "explanation": "There is no grammatical error in this sentence. 'Affect' is correctly used as a verb (meaning to influence).",
+    "grammarRule": "Vocabulary (Affect vs. Effect)",
+    "shortcut": "Affect is usually a verb. Effect is usually a noun.",
+    "commonMistake": "Over-analyzing and assuming 'affect' should be 'effect' or finding errors where none exist.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "vocabulary (affect vs. effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_093",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Not only the students",
+      "but also the principal",
+      "have agreed to the plan.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "have agreed to the plan.",
+    "explanation": "In a 'not only...but also' construction, the verb agrees with the subject closest to it. Here, 'the teacher' is singular, so the verb should be 'has agreed'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "Match the verb to the noun right next to it in correlative pairs.",
+    "commonMistake": "Assuming 'not only...but also' creates a plural compound subject like 'and' does.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_094",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Having completed",
+      "his work, the door",
+      "was locked by him.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "his work, the door",
+    "explanation": "This is a dangling modifier. The phrase 'Having completed his work' must be followed immediately by the subject who completed the work (he). As it stands, it implies the door completed the work.",
+    "grammarRule": "Modifiers (Dangling)",
+    "shortcut": "Ensure the subject right after the comma is the one performing the action in the 'ing' or 'ed' phrase before the comma.",
+    "commonMistake": "Focusing only on verb tenses and ignoring the logical connection between the modifier and the subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "modifiers (dangling)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_095",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "It is high time",
+      "that we leave",
+      "for the station.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "that we leave",
+    "explanation": "The phrase 'It is high time' or 'It is about time' is followed by a clause in the simple past tense when referring to a present or future urgency. It should be 'that we left'.",
+    "grammarRule": "Tenses (Idiomatic Structure)",
+    "shortcut": "'It is high time' + Subject + Past Tense Verb.",
+    "commonMistake": "Using present tense ('leave') because the urgency feels like it's happening right now.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses (idiomatic structure)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_096",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The new regulation",
+      "will affect",
+      "the lives of thousands.",
+      "No Error"
+    ],
+    "correctAnswer": 3,
+    "answer": "No Error",
+    "explanation": "There is no grammatical error in this sentence. 'Affect' is correctly used as a verb (meaning to influence).",
+    "grammarRule": "Vocabulary (Affect vs. Effect)",
+    "shortcut": "Affect is usually a verb. Effect is usually a noun.",
+    "commonMistake": "Over-analyzing and assuming 'affect' should be 'effect' or finding errors where none exist.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "vocabulary (affect vs. effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_097",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Not only the students",
+      "but also the principal",
+      "have agreed to the plan.",
+      "No Error"
+    ],
+    "correctAnswer": 2,
+    "answer": "have agreed to the plan.",
+    "explanation": "In a 'not only...but also' construction, the verb agrees with the subject closest to it. Here, 'the teacher' is singular, so the verb should be 'has agreed'.",
+    "grammarRule": "Subject-Verb Agreement (Proximity Rule)",
+    "shortcut": "Match the verb to the noun right next to it in correlative pairs.",
+    "commonMistake": "Assuming 'not only...but also' creates a plural compound subject like 'and' does.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "subject-verb agreement (proximity rule)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_098",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "Having completed",
+      "his work, the door",
+      "was locked by him.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "his work, the door",
+    "explanation": "This is a dangling modifier. The phrase 'Having completed his work' must be followed immediately by the subject who completed the work (he). As it stands, it implies the door completed the work.",
+    "grammarRule": "Modifiers (Dangling)",
+    "shortcut": "Ensure the subject right after the comma is the one performing the action in the 'ing' or 'ed' phrase before the comma.",
+    "commonMistake": "Focusing only on verb tenses and ignoring the logical connection between the modifier and the subject.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "modifiers (dangling)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_099",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "It is high time",
+      "that we leave",
+      "for the station.",
+      "No Error"
+    ],
+    "correctAnswer": 1,
+    "answer": "that we leave",
+    "explanation": "The phrase 'It is high time' or 'It is about time' is followed by a clause in the simple past tense when referring to a present or future urgency. It should be 'that we left'.",
+    "grammarRule": "Tenses (Idiomatic Structure)",
+    "shortcut": "'It is high time' + Subject + Past Tense Verb.",
+    "commonMistake": "Using present tense ('leave') because the urgency feels like it's happening right now.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "tenses (idiomatic structure)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  },
+  {
+    "id": "ERROR_100",
+    "topic": "Grammar & Usage",
+    "subtopic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the part containing the grammatical error.",
+    "options": [
+      "The new regulation",
+      "will affect",
+      "the lives of thousands.",
+      "No Error"
+    ],
+    "correctAnswer": 3,
+    "answer": "No Error",
+    "explanation": "There is no grammatical error in this sentence. 'Affect' is correctly used as a verb (meaning to influence).",
+    "grammarRule": "Vocabulary (Affect vs. Effect)",
+    "shortcut": "Affect is usually a verb. Effect is usually a noun.",
+    "commonMistake": "Over-analyzing and assuming 'affect' should be 'effect' or finding errors where none exist.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "grammar",
+      "error spotting",
+      "vocabulary (affect vs. effect)"
+    ],
+    "tags": [
+      "placement",
+      "verbal ability"
+    ],
+    "visualizeAvailable": false
+  }
+]

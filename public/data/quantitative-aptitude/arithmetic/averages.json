@@ -1,0 +1,2567 @@
+[
+  {
+    "id": "ARI_AVG_001",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "Find the average of the numbers: 2, 4, 6, 8, 10.",
+    "options": [
+      "6",
+      "4",
+      "9",
+      "7"
+    ],
+    "correctAnswer": 0,
+    "answer": "6",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_002",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "Find the average of the numbers: 4, 6, 8, 10, 12, 14.",
+    "options": [
+      "12",
+      "7",
+      "9",
+      "10"
+    ],
+    "correctAnswer": 2,
+    "answer": "9",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_003",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "Find the average of the numbers: 10, 12, 14, 16, 18, 20, 22.",
+    "options": [
+      "17",
+      "19",
+      "16",
+      "14"
+    ],
+    "correctAnswer": 2,
+    "answer": "16",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_004",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "Find the average of the numbers: 15, 17, 19, 21, 23, 25, 27, 29.",
+    "options": [
+      "22",
+      "23",
+      "20",
+      "25"
+    ],
+    "correctAnswer": 0,
+    "answer": "22",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_005",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "Find the average of the numbers: 20, 22, 24, 26, 28, 30, 32, 34, 36.",
+    "options": [
+      "28",
+      "31",
+      "29",
+      "26"
+    ],
+    "correctAnswer": 0,
+    "answer": "28",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_006",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 10 natural numbers?",
+    "options": [
+      "6.5",
+      "6",
+      "5",
+      "5.5"
+    ],
+    "correctAnswer": 3,
+    "answer": "5.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "natural numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_007",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 20 natural numbers?",
+    "options": [
+      "11.5",
+      "11",
+      "10",
+      "10.5"
+    ],
+    "correctAnswer": 3,
+    "answer": "10.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "natural numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_008",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 30 natural numbers?",
+    "options": [
+      "15.5",
+      "16",
+      "15",
+      "16.5"
+    ],
+    "correctAnswer": 0,
+    "answer": "15.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "natural numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_009",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 40 natural numbers?",
+    "options": [
+      "21",
+      "20",
+      "21.5",
+      "20.5"
+    ],
+    "correctAnswer": 3,
+    "answer": "20.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "natural numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_010",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 50 natural numbers?",
+    "options": [
+      "26",
+      "25.5",
+      "25",
+      "26.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "25.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "natural numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_011",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 15 odd numbers?",
+    "options": [
+      "16",
+      "14",
+      "15",
+      "17"
+    ],
+    "correctAnswer": 2,
+    "answer": "15",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "odd numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_012",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 25 odd numbers?",
+    "options": [
+      "26",
+      "25",
+      "27",
+      "24"
+    ],
+    "correctAnswer": 1,
+    "answer": "25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "odd numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_013",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 35 odd numbers?",
+    "options": [
+      "37",
+      "34",
+      "36",
+      "35"
+    ],
+    "correctAnswer": 3,
+    "answer": "35",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "odd numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_014",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 45 odd numbers?",
+    "options": [
+      "45",
+      "46",
+      "47",
+      "44"
+    ],
+    "correctAnswer": 0,
+    "answer": "45",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "odd numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_015",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 55 odd numbers?",
+    "options": [
+      "54",
+      "56",
+      "55",
+      "57"
+    ],
+    "correctAnswer": 2,
+    "answer": "55",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "odd numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_016",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 12 even numbers?",
+    "options": [
+      "15",
+      "14",
+      "12",
+      "13"
+    ],
+    "correctAnswer": 3,
+    "answer": "13",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "even numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_017",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 22 even numbers?",
+    "options": [
+      "23",
+      "25",
+      "24",
+      "22"
+    ],
+    "correctAnswer": 0,
+    "answer": "23",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "even numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_018",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 32 even numbers?",
+    "options": [
+      "33",
+      "35",
+      "34",
+      "32"
+    ],
+    "correctAnswer": 0,
+    "answer": "33",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "even numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_019",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 42 even numbers?",
+    "options": [
+      "43",
+      "45",
+      "44",
+      "42"
+    ],
+    "correctAnswer": 0,
+    "answer": "43",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "even numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_020",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 52 even numbers?",
+    "options": [
+      "53",
+      "55",
+      "52",
+      "54"
+    ],
+    "correctAnswer": 0,
+    "answer": "53",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "even numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_021",
+    "topic": "Averages",
+    "subtopic": "Addition of a Member",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 10 students is 15 years. If the teacher's age is included, the average increases by 1 years. Find the teacher's age.",
+    "options": [
+      "24 years",
+      "29 years",
+      "31 years",
+      "26 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "26 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "ages",
+      "teacher"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_022",
+    "topic": "Averages",
+    "subtopic": "Addition of a Member",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 20 students is 20 years. If the teacher's age is included, the average increases by 0.5 years. Find the teacher's age.",
+    "options": [
+      "33.5 years",
+      "28.5 years",
+      "30.5 years",
+      "35.5 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "30.5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "ages",
+      "teacher"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_023",
+    "topic": "Averages",
+    "subtopic": "Addition of a Member",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 30 students is 12 years. If the teacher's age is included, the average increases by 2 years. Find the teacher's age.",
+    "options": [
+      "74 years",
+      "72 years",
+      "77 years",
+      "79 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "74 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "ages",
+      "teacher"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_024",
+    "topic": "Averages",
+    "subtopic": "Addition of a Member",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 40 students is 14 years. If the teacher's age is included, the average increases by 1.5 years. Find the teacher's age.",
+    "options": [
+      "73.5 years",
+      "78.5 years",
+      "80.5 years",
+      "75.5 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "75.5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "ages",
+      "teacher"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_025",
+    "topic": "Averages",
+    "subtopic": "Addition of a Member",
+    "difficulty": "Medium",
+    "question": "The average age of a class of 15 students is 16 years. If the teacher's age is included, the average increases by 1 years. Find the teacher's age.",
+    "options": [
+      "30 years",
+      "32 years",
+      "35 years",
+      "37 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "32 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "ages",
+      "teacher"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_026",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 5 persons increases by 1.5 kg when a new person comes in place of one of them weighing 45 kg. What is the weight of the new person?",
+    "options": [
+      "47.5 kg",
+      "52.5 kg",
+      "62.5 kg",
+      "50.5 kg"
+    ],
+    "correctAnswer": 1,
+    "answer": "52.5 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "weight"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_027",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 6 persons increases by 2 kg when a new person comes in place of one of them weighing 50 kg. What is the weight of the new person?",
+    "options": [
+      "60 kg",
+      "57 kg",
+      "72 kg",
+      "62 kg"
+    ],
+    "correctAnswer": 3,
+    "answer": "62 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "weight"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_028",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 8 persons increases by 2.5 kg when a new person comes in place of one of them weighing 60 kg. What is the weight of the new person?",
+    "options": [
+      "90 kg",
+      "78 kg",
+      "80 kg",
+      "75 kg"
+    ],
+    "correctAnswer": 2,
+    "answer": "80 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "weight"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_029",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 10 persons increases by 3 kg when a new person comes in place of one of them weighing 65 kg. What is the weight of the new person?",
+    "options": [
+      "105 kg",
+      "93 kg",
+      "95 kg",
+      "90 kg"
+    ],
+    "correctAnswer": 2,
+    "answer": "95 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "weight"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_030",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 12 persons increases by 1 kg when a new person comes in place of one of them weighing 70 kg. What is the weight of the new person?",
+    "options": [
+      "92 kg",
+      "77 kg",
+      "80 kg",
+      "82 kg"
+    ],
+    "correctAnswer": 3,
+    "answer": "82 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "weight"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_031",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 11 members decreases by 2 kg when a member weighing 60 kg is replaced by a new member. Find the weight of the new member.",
+    "options": [
+      "42 kg",
+      "35 kg",
+      "38 kg",
+      "43 kg"
+    ],
+    "correctAnswer": 2,
+    "answer": "38 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_032",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 15 members decreases by 1 kg when a member weighing 70 kg is replaced by a new member. Find the weight of the new member.",
+    "options": [
+      "60 kg",
+      "55 kg",
+      "59 kg",
+      "52 kg"
+    ],
+    "correctAnswer": 1,
+    "answer": "55 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_033",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 21 members decreases by 3 kg when a member weighing 80 kg is replaced by a new member. Find the weight of the new member.",
+    "options": [
+      "17 kg",
+      "21 kg",
+      "22 kg",
+      "14 kg"
+    ],
+    "correctAnswer": 0,
+    "answer": "17 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_034",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 25 members decreases by 1.5 kg when a member weighing 50 kg is replaced by a new member. Find the weight of the new member.",
+    "options": [
+      "9.5 kg",
+      "16.5 kg",
+      "17.5 kg",
+      "12.5 kg"
+    ],
+    "correctAnswer": 3,
+    "answer": "12.5 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_035",
+    "topic": "Averages",
+    "subtopic": "Replacement",
+    "difficulty": "Medium",
+    "question": "The average weight of 31 members decreases by 2.5 kg when a member weighing 90 kg is replaced by a new member. Find the weight of the new member.",
+    "options": [
+      "17.5 kg",
+      "12.5 kg",
+      "9.5 kg",
+      "16.5 kg"
+    ],
+    "correctAnswer": 1,
+    "answer": "12.5 kg",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "replacement",
+      "decrease"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_036",
+    "topic": "Averages",
+    "subtopic": "Removal of a Member",
+    "difficulty": "Hard",
+    "question": "The average age of 10 persons is 30 years. If 1 person(s) leave the group, the average age decreases by 1 years. Find the age of the person who left.",
+    "options": [
+      "39 years",
+      "43 years",
+      "49 years",
+      "34 years"
+    ],
+    "correctAnswer": 0,
+    "answer": "39 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "removal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_037",
+    "topic": "Averages",
+    "subtopic": "Removal of a Member",
+    "difficulty": "Hard",
+    "question": "The average age of 15 persons is 40 years. If 2 person(s) leave the group, the average age decreases by 2 years. Find the average age of the persons who left.",
+    "options": [
+      "63 years",
+      "57 years",
+      "53 years",
+      "48 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "53 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "removal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_038",
+    "topic": "Averages",
+    "subtopic": "Removal of a Member",
+    "difficulty": "Hard",
+    "question": "The average age of 20 persons is 50 years. If 1 person(s) leave the group, the average age decreases by 1.5 years. Find the age of the person who left.",
+    "options": [
+      "73.5 years",
+      "82.5 years",
+      "78.5 years",
+      "88.5 years"
+    ],
+    "correctAnswer": 2,
+    "answer": "78.5 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "removal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_039",
+    "topic": "Averages",
+    "subtopic": "Removal of a Member",
+    "difficulty": "Hard",
+    "question": "The average age of 25 persons is 60 years. If 2 person(s) leave the group, the average age decreases by 0.5 years. Find the average age of the persons who left.",
+    "options": [
+      "69.75 years",
+      "60.75 years",
+      "75.75 years",
+      "65.75 years"
+    ],
+    "correctAnswer": 3,
+    "answer": "65.75 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "removal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_040",
+    "topic": "Averages",
+    "subtopic": "Removal of a Member",
+    "difficulty": "Hard",
+    "question": "The average age of 30 persons is 70 years. If 1 person(s) leave the group, the average age decreases by 2 years. Find the age of the person who left.",
+    "options": [
+      "138 years",
+      "128 years",
+      "123 years",
+      "132 years"
+    ],
+    "correctAnswer": 1,
+    "answer": "128 years",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "removal"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_041",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "The average of two numbers is 15. If one number is 10, what is the other number?",
+    "options": [
+      "20",
+      "30",
+      "25",
+      "18"
+    ],
+    "correctAnswer": 0,
+    "answer": "20",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "two numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_042",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "The average of two numbers is 21. If one number is 12, what is the other number?",
+    "options": [
+      "28",
+      "40",
+      "35",
+      "30"
+    ],
+    "correctAnswer": 3,
+    "answer": "30",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "two numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_043",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "The average of two numbers is 20. If one number is 15, what is the other number?",
+    "options": [
+      "30",
+      "25",
+      "23",
+      "35"
+    ],
+    "correctAnswer": 1,
+    "answer": "25",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "two numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_044",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "The average of two numbers is 30. If one number is 20, what is the other number?",
+    "options": [
+      "40",
+      "50",
+      "45",
+      "38"
+    ],
+    "correctAnswer": 0,
+    "answer": "40",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "two numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_045",
+    "topic": "Averages",
+    "subtopic": "Basic Averages",
+    "difficulty": "Easy",
+    "question": "The average of two numbers is 40. If one number is 30, what is the other number?",
+    "options": [
+      "60",
+      "50",
+      "48",
+      "55"
+    ],
+    "correctAnswer": 1,
+    "answer": "50",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "two numbers"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_046",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average of 10 numbers was calculated as 40. It was later discovered that one number was mistakenly read as 40 instead of 60. Find the correct average.",
+    "options": [
+      "42.5",
+      "44",
+      "41",
+      "42"
+    ],
+    "correctAnswer": 3,
+    "answer": "42",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "correction"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_047",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average of 20 numbers was calculated as 50. It was later discovered that one number was mistakenly read as 50 instead of 80. Find the correct average.",
+    "options": [
+      "53.5",
+      "52",
+      "51.5",
+      "50.5"
+    ],
+    "correctAnswer": 2,
+    "answer": "51.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "correction"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_048",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average of 25 numbers was calculated as 60. It was later discovered that one number was mistakenly read as 40 instead of 90. Find the correct average.",
+    "options": [
+      "62",
+      "61",
+      "62.5",
+      "64"
+    ],
+    "correctAnswer": 0,
+    "answer": "62",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "correction"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_049",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average of 40 numbers was calculated as 70. It was later discovered that one number was mistakenly read as 60 instead of 100. Find the correct average.",
+    "options": [
+      "70",
+      "73",
+      "71",
+      "71.5"
+    ],
+    "correctAnswer": 2,
+    "answer": "71",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "correction"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_050",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average of 50 numbers was calculated as 80. It was later discovered that one number was mistakenly read as 70 instead of 120. Find the correct average.",
+    "options": [
+      "81.5",
+      "83",
+      "81",
+      "80"
+    ],
+    "correctAnswer": 2,
+    "answer": "81",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "correction"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_051",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average marks of 20 students were found to be 45. Later, it was realized that a score of 30 was misread as 70. Find the correct average.",
+    "options": [
+      "41",
+      "42.5",
+      "43",
+      "44"
+    ],
+    "correctAnswer": 2,
+    "answer": "43",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_052",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average marks of 30 students were found to be 55. Later, it was realized that a score of 40 was misread as 100. Find the correct average.",
+    "options": [
+      "52.5",
+      "54",
+      "53",
+      "51"
+    ],
+    "correctAnswer": 2,
+    "answer": "53",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_053",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average marks of 40 students were found to be 65. Later, it was realized that a score of 50 was misread as 90. Find the correct average.",
+    "options": [
+      "63.5",
+      "62",
+      "64",
+      "65"
+    ],
+    "correctAnswer": 2,
+    "answer": "64",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_054",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average marks of 50 students were found to be 75. Later, it was realized that a score of 60 was misread as 110. Find the correct average.",
+    "options": [
+      "75",
+      "74",
+      "72",
+      "73.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "74",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_055",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Medium",
+    "question": "The average marks of 100 students were found to be 85. Later, it was realized that a score of 50 was misread as 150. Find the correct average.",
+    "options": [
+      "85",
+      "83.5",
+      "82",
+      "84"
+    ],
+    "correctAnswer": 3,
+    "answer": "84",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "marks"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_056",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Hard",
+    "question": "The mean of 50 observations was 50. Later it was found that two observations, 45 and 55, were incorrectly recorded as 25 and 35 respectively. Find the correct mean.",
+    "options": [
+      "49.8",
+      "50.8",
+      "52.3",
+      "51.3"
+    ],
+    "correctAnswer": 1,
+    "answer": "50.8",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "two items"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_057",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Hard",
+    "question": "The mean of 100 observations was 60. Later it was found that two observations, 70 and 80, were incorrectly recorded as 40 and 50 respectively. Find the correct mean.",
+    "options": [
+      "62.1",
+      "59.6",
+      "61.1",
+      "60.6"
+    ],
+    "correctAnswer": 3,
+    "answer": "60.6",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "two items"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_058",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Hard",
+    "question": "The mean of 40 observations was 40. Later it was found that two observations, 35 and 45, were incorrectly recorded as 15 and 25 respectively. Find the correct mean.",
+    "options": [
+      "41",
+      "42.5",
+      "40",
+      "41.5"
+    ],
+    "correctAnswer": 0,
+    "answer": "41",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "two items"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_059",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Hard",
+    "question": "The mean of 20 observations was 30. Later it was found that two observations, 25 and 35, were incorrectly recorded as 10 and 20 respectively. Find the correct mean.",
+    "options": [
+      "31.5",
+      "30.5",
+      "32",
+      "33"
+    ],
+    "correctAnswer": 0,
+    "answer": "31.5",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "two items"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_060",
+    "topic": "Averages",
+    "subtopic": "Error in Reading",
+    "difficulty": "Hard",
+    "question": "The mean of 80 observations was 70. Later it was found that two observations, 80 and 90, were incorrectly recorded as 50 and 60 respectively. Find the correct mean.",
+    "options": [
+      "72.25",
+      "71.25",
+      "70.75",
+      "69.75"
+    ],
+    "correctAnswer": 2,
+    "answer": "70.75",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "error",
+      "two items"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_061",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Medium",
+    "question": "A batsman has a certain average of runs for 10 innings. In the 11th inning, he scores 52 runs, thereby increasing his average by 2. What is his new average?",
+    "options": [
+      "29",
+      "31",
+      "32",
+      "34"
+    ],
+    "correctAnswer": 2,
+    "answer": "32",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_062",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Medium",
+    "question": "A batsman has a certain average of runs for 15 innings. In the 16th inning, he scores 83 runs, thereby increasing his average by 3. What is his new average?",
+    "options": [
+      "40",
+      "38",
+      "37",
+      "35"
+    ],
+    "correctAnswer": 1,
+    "answer": "38",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_063",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Medium",
+    "question": "A batsman has a certain average of runs for 20 innings. In the 21th inning, he scores 61 runs, thereby increasing his average by 1. What is his new average?",
+    "options": [
+      "41",
+      "43",
+      "40",
+      "38"
+    ],
+    "correctAnswer": 0,
+    "answer": "41",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_064",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Medium",
+    "question": "A batsman has a certain average of runs for 25 innings. In the 26th inning, he scores 97 runs, thereby increasing his average by 2. What is his new average?",
+    "options": [
+      "47",
+      "46",
+      "44",
+      "49"
+    ],
+    "correctAnswer": 0,
+    "answer": "47",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_065",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Medium",
+    "question": "A batsman has a certain average of runs for 30 innings. In the 31th inning, he scores 174 runs, thereby increasing his average by 4. What is his new average?",
+    "options": [
+      "56",
+      "51",
+      "53",
+      "54"
+    ],
+    "correctAnswer": 3,
+    "answer": "54",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_066",
+    "topic": "Averages",
+    "subtopic": "Bowling Average",
+    "difficulty": "Hard",
+    "question": "A cricketer's bowling average is 24.85. In his last match, he takes 5 wickets for 52 runs, thereby improving his average by 0.85. Find the total number of wickets taken by him till the last match.",
+    "options": [
+      "80",
+      "85",
+      "95",
+      "80"
+    ],
+    "correctAnswer": 1,
+    "answer": "85",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "bowling",
+      "wickets"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_067",
+    "topic": "Averages",
+    "subtopic": "Bowling Average",
+    "difficulty": "Hard",
+    "question": "A cricketer's bowling average is 12.4. In his last match, he takes 4 wickets for 26 runs, thereby improving his average by 0.4. Find the total number of wickets taken by him till the last match.",
+    "options": [
+      "55",
+      "59",
+      "69",
+      "54"
+    ],
+    "correctAnswer": 1,
+    "answer": "59",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "bowling",
+      "wickets"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_068",
+    "topic": "Averages",
+    "subtopic": "Bowling Average",
+    "difficulty": "Hard",
+    "question": "A cricketer's bowling average is 15.2. In his last match, he takes 5 wickets for 40 runs, thereby improving his average by 0.2. Find the total number of wickets taken by him till the last match.",
+    "options": [
+      "175",
+      "190",
+      "180",
+      "175"
+    ],
+    "correctAnswer": 2,
+    "answer": "180",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "bowling",
+      "wickets"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_069",
+    "topic": "Averages",
+    "subtopic": "Bowling Average",
+    "difficulty": "Hard",
+    "question": "A cricketer's bowling average is 20.5. In his last match, he takes 5 wickets for 50 runs, thereby improving his average by 0.5. Find the total number of wickets taken by him till the last match.",
+    "options": [
+      "115",
+      "105",
+      "100",
+      "100"
+    ],
+    "correctAnswer": 1,
+    "answer": "105",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "bowling",
+      "wickets"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_070",
+    "topic": "Averages",
+    "subtopic": "Bowling Average",
+    "difficulty": "Hard",
+    "question": "A cricketer's bowling average is 18.4. In his last match, he takes 4 wickets for 32 runs, thereby improving his average by 0.4. Find the total number of wickets taken by him till the last match.",
+    "options": [
+      "100",
+      "114",
+      "104",
+      "99"
+    ],
+    "correctAnswer": 2,
+    "answer": "104",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "bowling",
+      "wickets"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_071",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Easy",
+    "question": "A batsman scored 45, 55, 60, 40, 50 runs in his 5 innings. What is his average score?",
+    "options": [
+      "60",
+      "46",
+      "50",
+      "55"
+    ],
+    "correctAnswer": 2,
+    "answer": "50",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting",
+      "simple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_072",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Easy",
+    "question": "A batsman scored 10, 20, 30, 40, 50 runs in his 5 innings. What is his average score?",
+    "options": [
+      "26",
+      "40",
+      "30",
+      "35"
+    ],
+    "correctAnswer": 2,
+    "answer": "30",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting",
+      "simple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_073",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Easy",
+    "question": "A batsman scored 100, 50, 0, 50, 100 runs in his 5 innings. What is his average score?",
+    "options": [
+      "56",
+      "65",
+      "60",
+      "70"
+    ],
+    "correctAnswer": 2,
+    "answer": "60",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting",
+      "simple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_074",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Easy",
+    "question": "A batsman scored 25, 35, 45, 55, 65 runs in his 5 innings. What is his average score?",
+    "options": [
+      "55",
+      "45",
+      "50",
+      "41"
+    ],
+    "correctAnswer": 1,
+    "answer": "45",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting",
+      "simple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_075",
+    "topic": "Averages",
+    "subtopic": "Batting Average",
+    "difficulty": "Easy",
+    "question": "A batsman scored 12, 18, 22, 28, 30 runs in his 5 innings. What is his average score?",
+    "options": [
+      "27",
+      "22",
+      "18",
+      "32"
+    ],
+    "correctAnswer": 1,
+    "answer": "22",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "batting",
+      "simple"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_076",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A car travels from A to B at 20 km/hr and returns from B to A at 30 km/hr. Find the average speed for the entire journey.",
+    "options": [
+      "26 km/hr",
+      "24 km/hr",
+      "25 km/hr",
+      "19 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "24 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "equal distance"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_077",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A car travels from A to B at 30 km/hr and returns from B to A at 60 km/hr. Find the average speed for the entire journey.",
+    "options": [
+      "40 km/hr",
+      "35 km/hr",
+      "42 km/hr",
+      "45 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "40 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "equal distance"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_078",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A car travels from A to B at 40 km/hr and returns from B to A at 60 km/hr. Find the average speed for the entire journey.",
+    "options": [
+      "48 km/hr",
+      "50 km/hr",
+      "43 km/hr",
+      "50 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "48 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "equal distance"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_079",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A car travels from A to B at 50 km/hr and returns from B to A at 75 km/hr. Find the average speed for the entire journey.",
+    "options": [
+      "55 km/hr",
+      "60 km/hr",
+      "62.5 km/hr",
+      "62 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "60 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "equal distance"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_080",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A car travels from A to B at 60 km/hr and returns from B to A at 40 km/hr. Find the average speed for the entire journey.",
+    "options": [
+      "48 km/hr",
+      "50 km/hr",
+      "43 km/hr",
+      "50 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "48 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "equal distance"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_081",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "A class has two sections. Section A has 20 students with an average score of 15. Section B has 30 students with an average score of 25. Find the overall average of the class.",
+    "options": [
+      "24",
+      "21",
+      "23",
+      "19.5"
+    ],
+    "correctAnswer": 1,
+    "answer": "21",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "class"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_082",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "A class has two sections. Section A has 30 students with an average score of 20. Section B has 20 students with an average score of 30. Find the overall average of the class.",
+    "options": [
+      "27",
+      "26",
+      "22.5",
+      "24"
+    ],
+    "correctAnswer": 3,
+    "answer": "24",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "class"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_083",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "A class has two sections. Section A has 40 students with an average score of 25. Section B has 60 students with an average score of 15. Find the overall average of the class.",
+    "options": [
+      "19",
+      "21",
+      "22",
+      "17.5"
+    ],
+    "correctAnswer": 0,
+    "answer": "19",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "class"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_084",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "A class has two sections. Section A has 50 students with an average score of 30. Section B has 50 students with an average score of 40. Find the overall average of the class.",
+    "options": [
+      "37",
+      "38",
+      "35",
+      "33.5"
+    ],
+    "correctAnswer": 2,
+    "answer": "35",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "class"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_085",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "A class has two sections. Section A has 60 students with an average score of 35. Section B has 40 students with an average score of 25. Find the overall average of the class.",
+    "options": [
+      "29.5",
+      "34",
+      "33",
+      "31"
+    ],
+    "correctAnswer": 3,
+    "answer": "31",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "class"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_086",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A person travels 100 km in 2 hours and another 50 km in 1 hours. What is his average speed for the whole journey?",
+    "options": [
+      "48 km/hr",
+      "60 km/hr",
+      "50 km/hr",
+      "55 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "50 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_087",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A person travels 150 km in 3 hours and another 100 km in 2 hours. What is his average speed for the whole journey?",
+    "options": [
+      "50 km/hr",
+      "48 km/hr",
+      "55 km/hr",
+      "60 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "50 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_088",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A person travels 200 km in 4 hours and another 120 km in 2 hours. What is his average speed for the whole journey?",
+    "options": [
+      "51.333333333333336 km/hr",
+      "63.333333333333336 km/hr",
+      "58.333333333333336 km/hr",
+      "53.333333333333336 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "53.333333333333336 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_089",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A person travels 250 km in 5 hours and another 150 km in 3 hours. What is his average speed for the whole journey?",
+    "options": [
+      "60 km/hr",
+      "55 km/hr",
+      "50 km/hr",
+      "48 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "50 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_090",
+    "topic": "Averages",
+    "subtopic": "Average Speed",
+    "difficulty": "Easy",
+    "question": "A person travels 300 km in 6 hours and another 180 km in 3 hours. What is his average speed for the whole journey?",
+    "options": [
+      "53.333333333333336 km/hr",
+      "51.333333333333336 km/hr",
+      "63.333333333333336 km/hr",
+      "58.333333333333336 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "53.333333333333336 km/hr",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 45,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "speed",
+      "time"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_091",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Hard",
+    "question": "In an exam, the average marks of 10 students is 40, of another 20 students is 50, and of the remaining 30 students is 60. Find the average marks of all students.",
+    "options": [
+      "53.3",
+      "52.3",
+      "55.3",
+      "56.3"
+    ],
+    "correctAnswer": 0,
+    "answer": "53.3",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "three groups"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_092",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Hard",
+    "question": "In an exam, the average marks of 15 students is 50, of another 25 students is 60, and of the remaining 35 students is 70. Find the average marks of all students.",
+    "options": [
+      "62.7",
+      "61.7",
+      "65.7",
+      "64.7"
+    ],
+    "correctAnswer": 0,
+    "answer": "62.7",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "three groups"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_093",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Hard",
+    "question": "In an exam, the average marks of 20 students is 60, of another 30 students is 70, and of the remaining 40 students is 80. Find the average marks of all students.",
+    "options": [
+      "74.2",
+      "75.2",
+      "71.2",
+      "72.2"
+    ],
+    "correctAnswer": 3,
+    "answer": "72.2",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "three groups"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_094",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Hard",
+    "question": "In an exam, the average marks of 25 students is 70, of another 35 students is 80, and of the remaining 45 students is 90. Find the average marks of all students.",
+    "options": [
+      "80.9",
+      "81.9",
+      "83.9",
+      "84.9"
+    ],
+    "correctAnswer": 1,
+    "answer": "81.9",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "three groups"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_095",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Hard",
+    "question": "In an exam, the average marks of 30 students is 80, of another 40 students is 90, and of the remaining 50 students is 100. Find the average marks of all students.",
+    "options": [
+      "90.7",
+      "93.7",
+      "94.7",
+      "91.7"
+    ],
+    "correctAnswer": 3,
+    "answer": "91.7",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 90,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "weighted",
+      "three groups"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_096",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $10/kg and $15/kg are mixed in the ratio 1:2. Find the average price of the mixture.",
+    "options": [
+      "$14.33",
+      "$12.83",
+      "$13.33",
+      "$15.33"
+    ],
+    "correctAnswer": 2,
+    "answer": "$13.33",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "mixture",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_097",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $20/kg and $25/kg are mixed in the ratio 2:3. Find the average price of the mixture.",
+    "options": [
+      "$22.50",
+      "$25.00",
+      "$23.00",
+      "$24.00"
+    ],
+    "correctAnswer": 2,
+    "answer": "$23.00",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "mixture",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_098",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $30/kg and $35/kg are mixed in the ratio 3:4. Find the average price of the mixture.",
+    "options": [
+      "$33.86",
+      "$34.86",
+      "$32.36",
+      "$32.86"
+    ],
+    "correctAnswer": 3,
+    "answer": "$32.86",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "mixture",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_099",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $40/kg and $45/kg are mixed in the ratio 4:5. Find the average price of the mixture.",
+    "options": [
+      "$42.78",
+      "$42.28",
+      "$44.78",
+      "$43.78"
+    ],
+    "correctAnswer": 0,
+    "answer": "$42.78",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "mixture",
+      "price"
+    ],
+    "source": "AI Generated"
+  },
+  {
+    "id": "ARI_AVG_100",
+    "topic": "Averages",
+    "subtopic": "Weighted Average",
+    "difficulty": "Medium",
+    "question": "Two varieties of rice costing $50/kg and $55/kg are mixed in the ratio 5:6. Find the average price of the mixture.",
+    "options": [
+      "$52.23",
+      "$54.73",
+      "$53.73",
+      "$52.73"
+    ],
+    "correctAnswer": 3,
+    "answer": "$52.73",
+    "marks": 1,
+    "negativeMarks": 0,
+    "estimatedTime": 60,
+    "visualizable": true,
+    "aiSolverEnabled": true,
+    "tags": [
+      "average",
+      "mixture",
+      "price"
+    ],
+    "source": "AI Generated"
+  }
+]
