@@ -3024,4 +3024,19 @@ img, svg { display: block; }
     padding: 12px 16px;
     text-align: left;
   }
+  /* Overrides to show text inside the open mobile menu */
+  .nav-links.open .nav-link {
+    display: block !important;
+  }
+  .nav-links.open .btn-text {
+    display: inline-block !important;
+  }
+  .nav-links.open .profile-username {
+    display: inline-block !important;
+  }
+  .nav-links.open .btn-ask-ai,
+  .nav-links.open .btn-google {
+    font-size: 1rem !important;
+    margin: 4px 0 !important;
+  }
 }
