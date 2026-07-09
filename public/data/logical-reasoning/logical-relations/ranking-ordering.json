@@ -1,0 +1,3302 @@
+[
+  {
+    "id": "RANKING_ORDERING_001",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Vikram is 10th from the left end and 15th from the right end. How many students are there in the row?",
+    "options": [
+      "26",
+      "23",
+      "24",
+      "25"
+    ],
+    "correctAnswer": "C",
+    "answer": "24",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 10 + 15 - 1. Step 3: 25 - 1 = 24. Final Answer: 24.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_002",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 41 students, Neha's rank is 11th from the top. What is Neha's rank from the bottom?",
+    "options": [
+      "32",
+      "30",
+      "30",
+      "31"
+    ],
+    "correctAnswer": "D",
+    "answer": "31",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 41 - 11 + 1. Step 3: 30 + 1 = 31. Final Answer: 31.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_003",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Aarav is taller than Ravi. Ravi is taller than Amit. Who is the shortest among them?",
+    "options": [
+      "Cannot be determined",
+      "Aarav",
+      "Amit",
+      "Ravi"
+    ],
+    "correctAnswer": "C",
+    "answer": "Amit",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Aarav > Ravi. Step 2: Ravi > Amit. Step 3: Combine them: Aarav > Ravi > Amit. The person at the end of the chain is the shortest. Final Answer: Amit.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_004",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 37 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "20th",
+      "18th",
+      "18th",
+      "19th"
+    ],
+    "correctAnswer": "D",
+    "answer": "19th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (37 + 1) / 2. Step 3: 38 / 2 = 19. Final Answer: 19th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_005",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Sameer is 14th from the left end and 19th from the right end. How many students are there in the row?",
+    "options": [
+      "33",
+      "34",
+      "32",
+      "31"
+    ],
+    "correctAnswer": "C",
+    "answer": "32",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 14 + 19 - 1. Step 3: 33 - 1 = 32. Final Answer: 32.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_006",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 45 students, Karan's rank is 15th from the top. What is Karan's rank from the bottom?",
+    "options": [
+      "32",
+      "30",
+      "30",
+      "31"
+    ],
+    "correctAnswer": "D",
+    "answer": "31",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 45 - 15 + 1. Step 3: 30 + 1 = 31. Final Answer: 31.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_007",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Amit is taller than Vikram. Vikram is taller than Sameer. Who is the shortest among them?",
+    "options": [
+      "Cannot be determined",
+      "Sameer",
+      "Vikram",
+      "Amit"
+    ],
+    "correctAnswer": "B",
+    "answer": "Sameer",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Amit > Vikram. Step 2: Vikram > Sameer. Step 3: Combine them: Amit > Vikram > Sameer. The person at the end of the chain is the shortest. Final Answer: Sameer.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_008",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 45 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "23th",
+      "22th",
+      "24th",
+      "22th"
+    ],
+    "correctAnswer": "A",
+    "answer": "23th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (45 + 1) / 2. Step 3: 46 / 2 = 23. Final Answer: 23th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_009",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Ajay is 18th from the left end and 23th from the right end. How many students are there in the row?",
+    "options": [
+      "41",
+      "39",
+      "40",
+      "42"
+    ],
+    "correctAnswer": "C",
+    "answer": "40",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 18 + 23 - 1. Step 3: 41 - 1 = 40. Final Answer: 40.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_010",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 49 students, Rohan's rank is 19th from the top. What is Rohan's rank from the bottom?",
+    "options": [
+      "30",
+      "30",
+      "32",
+      "31"
+    ],
+    "correctAnswer": "D",
+    "answer": "31",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 49 - 19 + 1. Step 3: 30 + 1 = 31. Final Answer: 31.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_011",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Ajay is taller than Vikram. Vikram is taller than Rohan. Who is the shortest among them?",
+    "options": [
+      "Ajay",
+      "Rohan",
+      "Vikram",
+      "Cannot be determined"
+    ],
+    "correctAnswer": "B",
+    "answer": "Rohan",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Ajay > Vikram. Step 2: Vikram > Rohan. Step 3: Combine them: Ajay > Vikram > Rohan. The person at the end of the chain is the shortest. Final Answer: Rohan.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_012",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 33 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "17th",
+      "18th",
+      "16th",
+      "16th"
+    ],
+    "correctAnswer": "A",
+    "answer": "17th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (33 + 1) / 2. Step 3: 34 / 2 = 17. Final Answer: 17th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_013",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Vikram is 22th from the left end and 27th from the right end. How many students are there in the row?",
+    "options": [
+      "50",
+      "47",
+      "49",
+      "48"
+    ],
+    "correctAnswer": "D",
+    "answer": "48",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 22 + 27 - 1. Step 3: 49 - 1 = 48. Final Answer: 48.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_014",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 53 students, Geeta's rank is 23th from the top. What is Geeta's rank from the bottom?",
+    "options": [
+      "32",
+      "30",
+      "30",
+      "31"
+    ],
+    "correctAnswer": "D",
+    "answer": "31",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 53 - 23 + 1. Step 3: 30 + 1 = 31. Final Answer: 31.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_015",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Sameer is taller than Ravi. Ravi is taller than Vikram. Who is the shortest among them?",
+    "options": [
+      "Sameer",
+      "Vikram",
+      "Ravi",
+      "Cannot be determined"
+    ],
+    "correctAnswer": "B",
+    "answer": "Vikram",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Sameer > Ravi. Step 2: Ravi > Vikram. Step 3: Combine them: Sameer > Ravi > Vikram. The person at the end of the chain is the shortest. Final Answer: Vikram.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_016",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 41 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "21th",
+      "22th",
+      "20th",
+      "20th"
+    ],
+    "correctAnswer": "A",
+    "answer": "21th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (41 + 1) / 2. Step 3: 42 / 2 = 21. Final Answer: 21th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_017",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Pooja is 11th from the left end and 31th from the right end. How many students are there in the row?",
+    "options": [
+      "42",
+      "40",
+      "41",
+      "43"
+    ],
+    "correctAnswer": "C",
+    "answer": "41",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 11 + 31 - 1. Step 3: 42 - 1 = 41. Final Answer: 41.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_018",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 57 students, Ajay's rank is 27th from the top. What is Ajay's rank from the bottom?",
+    "options": [
+      "30",
+      "30",
+      "31",
+      "32"
+    ],
+    "correctAnswer": "C",
+    "answer": "31",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 57 - 27 + 1. Step 3: 30 + 1 = 31. Final Answer: 31.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_019",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Rohan is taller than Raj. Raj is taller than Ravi. Who is the shortest among them?",
+    "options": [
+      "Raj",
+      "Cannot be determined",
+      "Rohan",
+      "Ravi"
+    ],
+    "correctAnswer": "D",
+    "answer": "Ravi",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Rohan > Raj. Step 2: Raj > Ravi. Step 3: Combine them: Rohan > Raj > Ravi. The person at the end of the chain is the shortest. Final Answer: Ravi.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_020",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 49 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "26th",
+      "24th",
+      "24th",
+      "25th"
+    ],
+    "correctAnswer": "D",
+    "answer": "25th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (49 + 1) / 2. Step 3: 50 / 2 = 25. Final Answer: 25th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_021",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Rohan is 15th from the left end and 15th from the right end. How many students are there in the row?",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "correctAnswer": "B",
+    "answer": "29",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 15 + 15 - 1. Step 3: 30 - 1 = 29. Final Answer: 29.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_022",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 41 students, Amit's rank is 31th from the top. What is Amit's rank from the bottom?",
+    "options": [
+      "10",
+      "12",
+      "11",
+      "10"
+    ],
+    "correctAnswer": "C",
+    "answer": "11",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 41 - 31 + 1. Step 3: 10 + 1 = 11. Final Answer: 11.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_023",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Ajay is taller than Rohan. Rohan is taller than Sameer. Who is the shortest among them?",
+    "options": [
+      "Sameer",
+      "Ajay",
+      "Cannot be determined",
+      "Rohan"
+    ],
+    "correctAnswer": "A",
+    "answer": "Sameer",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Ajay > Rohan. Step 2: Rohan > Sameer. Step 3: Combine them: Ajay > Rohan > Sameer. The person at the end of the chain is the shortest. Final Answer: Sameer.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_024",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 37 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "19th",
+      "20th",
+      "18th",
+      "18th"
+    ],
+    "correctAnswer": "A",
+    "answer": "19th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (37 + 1) / 2. Step 3: 38 / 2 = 19. Final Answer: 19th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_025",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Simran is 19th from the left end and 19th from the right end. How many students are there in the row?",
+    "options": [
+      "38",
+      "39",
+      "37",
+      "36"
+    ],
+    "correctAnswer": "C",
+    "answer": "37",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 19 + 19 - 1. Step 3: 38 - 1 = 37. Final Answer: 37.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_026",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 45 students, Neha's rank is 10th from the top. What is Neha's rank from the bottom?",
+    "options": [
+      "37",
+      "35",
+      "36",
+      "35"
+    ],
+    "correctAnswer": "C",
+    "answer": "36",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 45 - 10 + 1. Step 3: 35 + 1 = 36. Final Answer: 36.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_027",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Rohan is taller than Sameer. Sameer is taller than Raj. Who is the shortest among them?",
+    "options": [
+      "Cannot be determined",
+      "Sameer",
+      "Rohan",
+      "Raj"
+    ],
+    "correctAnswer": "D",
+    "answer": "Raj",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Rohan > Sameer. Step 2: Sameer > Raj. Step 3: Combine them: Rohan > Sameer > Raj. The person at the end of the chain is the shortest. Final Answer: Raj.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_028",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 45 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "22th",
+      "23th",
+      "22th",
+      "24th"
+    ],
+    "correctAnswer": "B",
+    "answer": "23th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (45 + 1) / 2. Step 3: 46 / 2 = 23. Final Answer: 23th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_029",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Raj is 23th from the left end and 23th from the right end. How many students are there in the row?",
+    "options": [
+      "47",
+      "45",
+      "44",
+      "46"
+    ],
+    "correctAnswer": "B",
+    "answer": "45",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 23 + 23 - 1. Step 3: 46 - 1 = 45. Final Answer: 45.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_030",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 49 students, Aarav's rank is 14th from the top. What is Aarav's rank from the bottom?",
+    "options": [
+      "35",
+      "36",
+      "35",
+      "37"
+    ],
+    "correctAnswer": "B",
+    "answer": "36",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 49 - 14 + 1. Step 3: 35 + 1 = 36. Final Answer: 36.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_031",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Amit is taller than Rahul. Rahul is taller than Vikram. Who is the shortest among them?",
+    "options": [
+      "Cannot be determined",
+      "Rahul",
+      "Vikram",
+      "Amit"
+    ],
+    "correctAnswer": "C",
+    "answer": "Vikram",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Amit > Rahul. Step 2: Rahul > Vikram. Step 3: Combine them: Amit > Rahul > Vikram. The person at the end of the chain is the shortest. Final Answer: Vikram.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_032",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 33 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "16th",
+      "16th",
+      "17th",
+      "18th"
+    ],
+    "correctAnswer": "C",
+    "answer": "17th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (33 + 1) / 2. Step 3: 34 / 2 = 17. Final Answer: 17th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_033",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Anita is 12th from the left end and 27th from the right end. How many students are there in the row?",
+    "options": [
+      "40",
+      "37",
+      "39",
+      "38"
+    ],
+    "correctAnswer": "D",
+    "answer": "38",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 12 + 27 - 1. Step 3: 39 - 1 = 38. Final Answer: 38.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_034",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 53 students, Sameer's rank is 18th from the top. What is Sameer's rank from the bottom?",
+    "options": [
+      "36",
+      "37",
+      "35",
+      "35"
+    ],
+    "correctAnswer": "A",
+    "answer": "36",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 53 - 18 + 1. Step 3: 35 + 1 = 36. Final Answer: 36.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_035",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Karan is taller than Raj. Raj is taller than Rahul. Who is the shortest among them?",
+    "options": [
+      "Rahul",
+      "Raj",
+      "Cannot be determined",
+      "Karan"
+    ],
+    "correctAnswer": "A",
+    "answer": "Rahul",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Karan > Raj. Step 2: Raj > Rahul. Step 3: Combine them: Karan > Raj > Rahul. The person at the end of the chain is the shortest. Final Answer: Rahul.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_036",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 41 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "20th",
+      "21th",
+      "22th",
+      "20th"
+    ],
+    "correctAnswer": "B",
+    "answer": "21th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (41 + 1) / 2. Step 3: 42 / 2 = 21. Final Answer: 21th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_037",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of students, Ajay is 16th from the left end and 31th from the right end. How many students are there in the row?",
+    "options": [
+      "48",
+      "47",
+      "46",
+      "45"
+    ],
+    "correctAnswer": "C",
+    "answer": "46",
+    "pattern": "Total = Left + Right - 1",
+    "explanation": "Step 1: Identify the formula for total number of elements: Total = (Position from left) + (Position from right) - 1. Step 2: Plug in the values: 16 + 31 - 1. Step 3: 47 - 1 = 46. Final Answer: 46.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_038",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a class of 57 students, Anita's rank is 22th from the top. What is Anita's rank from the bottom?",
+    "options": [
+      "37",
+      "35",
+      "36",
+      "35"
+    ],
+    "correctAnswer": "C",
+    "answer": "36",
+    "pattern": "Right = Total - Left + 1",
+    "explanation": "Step 1: Use the formula: Position from bottom = (Total students) - (Position from top) + 1. Step 2: Plug in the values: 57 - 22 + 1. Step 3: 35 + 1 = 36. Final Answer: 36.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_039",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "Amit is taller than Sameer. Sameer is taller than Vikram. Who is the shortest among them?",
+    "options": [
+      "Amit",
+      "Sameer",
+      "Vikram",
+      "Cannot be determined"
+    ],
+    "correctAnswer": "C",
+    "answer": "Vikram",
+    "pattern": "Transitive inequality",
+    "explanation": "Step 1: Write down the relationships as inequalities: Amit > Sameer. Step 2: Sameer > Vikram. Step 3: Combine them: Amit > Sameer > Vikram. The person at the end of the chain is the shortest. Final Answer: Vikram.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_040",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Easy",
+    "question": "In a row of 49 boys facing North, what is the position of the boy standing exactly in the middle?",
+    "options": [
+      "25th",
+      "24th",
+      "24th",
+      "26th"
+    ],
+    "correctAnswer": "A",
+    "answer": "25th",
+    "pattern": "Middle position = (Total + 1) / 2",
+    "explanation": "Step 1: For an odd number of items, the exact middle position can be found using the formula: (Total + 1) / 2. Step 2: Plug in the total: (49 + 1) / 2. Step 3: 50 / 2 = 25. Final Answer: 25th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_041",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Karan is 12th from the left and Sunita is 18th from the right. When they interchange their positions, Karan becomes 18th from the left. How many students are there in the row?",
+    "options": [
+      "34",
+      "29",
+      "36",
+      "35"
+    ],
+    "correctAnswer": "D",
+    "answer": "35",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Karan and Sunita swap, Karan occupies Sunita's old seat. Step 2: This seat is given as 18th from the left (new pos of Karan) AND we already knew it was 18th from the right (old pos of Sunita). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 18 + 18 - 1 = 35. Final Answer: 35.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_042",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 51 girls, Rahul is 16th from the left end and Sunita is 21th from the right end. How many girls are there between Rahul and Sunita?",
+    "options": [
+      "13",
+      "14",
+      "16",
+      "15"
+    ],
+    "correctAnswer": "B",
+    "answer": "14",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 16 + 21 = 37. Since 37 < 51, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 51 - (16 + 21) = 14. Final Answer: 14.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_043",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 32 boys, Aarav is 22th from the left end and Pooja is 24th from the right end. How many boys are there between Aarav and Pooja?",
+    "options": [
+      "11",
+      "14",
+      "13",
+      "12"
+    ],
+    "correctAnswer": "D",
+    "answer": "12",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 22 + 24 = 46. Since 46 > 32, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Aarav and Pooja themselves). Step 3: 46 - 32 - 2 = 12. Final Answer: 12.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_044",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Anita scores more than Pooja but less than Kavita. Simran scores less than Pooja. Who scored the highest?",
+    "options": [
+      "Simran",
+      "Pooja",
+      "Anita",
+      "Kavita"
+    ],
+    "correctAnswer": "D",
+    "answer": "Kavita",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Anita scores more than Pooja but less than Kavita\" translates to: Kavita > Anita > Pooja. Step 2: \"Simran scores less than Pooja\" translates to: Pooja > Simran. Step 3: Combine them: Kavita > Anita > Pooja > Simran. The highest scorer is Kavita. Final Answer: Kavita.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_045",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Vikram is 16th from the left and Simran is 22th from the right. When they interchange their positions, Vikram becomes 22th from the left. How many students are there in the row?",
+    "options": [
+      "37",
+      "43",
+      "42",
+      "44"
+    ],
+    "correctAnswer": "B",
+    "answer": "43",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Vikram and Simran swap, Vikram occupies Simran's old seat. Step 2: This seat is given as 22th from the left (new pos of Vikram) AND we already knew it was 22th from the right (old pos of Simran). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 22 + 22 - 1 = 43. Final Answer: 43.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_046",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 55 girls, Vikram is 15th from the left end and Pooja is 20th from the right end. How many girls are there between Vikram and Pooja?",
+    "options": [
+      "20",
+      "19",
+      "22",
+      "21"
+    ],
+    "correctAnswer": "A",
+    "answer": "20",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 15 + 20 = 35. Since 35 < 55, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 55 - (15 + 20) = 20. Final Answer: 20.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_047",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 31 boys, Vikram is 21th from the left end and Riya is 23th from the right end. How many boys are there between Vikram and Riya?",
+    "options": [
+      "12",
+      "11",
+      "10",
+      "13"
+    ],
+    "correctAnswer": "B",
+    "answer": "11",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 21 + 23 = 44. Since 44 > 31, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Vikram and Riya themselves). Step 3: 44 - 31 - 2 = 11. Final Answer: 11.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_048",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Anjali scores more than Priya but less than Simran. Anita scores less than Priya. Who scored the highest?",
+    "options": [
+      "Anjali",
+      "Priya",
+      "Simran",
+      "Anita"
+    ],
+    "correctAnswer": "C",
+    "answer": "Simran",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Anjali scores more than Priya but less than Simran\" translates to: Simran > Anjali > Priya. Step 2: \"Anita scores less than Priya\" translates to: Priya > Anita. Step 3: Combine them: Simran > Anjali > Priya > Anita. The highest scorer is Simran. Final Answer: Simran.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_049",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Amit is 20th from the left and Kavita is 26th from the right. When they interchange their positions, Amit becomes 26th from the left. How many students are there in the row?",
+    "options": [
+      "45",
+      "50",
+      "51",
+      "52"
+    ],
+    "correctAnswer": "C",
+    "answer": "51",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Amit and Kavita swap, Amit occupies Kavita's old seat. Step 2: This seat is given as 26th from the left (new pos of Amit) AND we already knew it was 26th from the right (old pos of Kavita). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 26 + 26 - 1 = 51. Final Answer: 51.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_050",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 59 girls, Raj is 19th from the left end and Priya is 24th from the right end. How many girls are there between Raj and Priya?",
+    "options": [
+      "15",
+      "17",
+      "18",
+      "16"
+    ],
+    "correctAnswer": "D",
+    "answer": "16",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 19 + 24 = 43. Since 43 < 59, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 59 - (19 + 24) = 16. Final Answer: 16.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_051",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 30 boys, Karan is 20th from the left end and Neha is 22th from the right end. How many boys are there between Karan and Neha?",
+    "options": [
+      "12",
+      "9",
+      "11",
+      "10"
+    ],
+    "correctAnswer": "D",
+    "answer": "10",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 20 + 22 = 42. Since 42 > 30, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Karan and Neha themselves). Step 3: 42 - 30 - 2 = 10. Final Answer: 10.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_052",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Geeta scores more than Pooja but less than Anjali. Neha scores less than Pooja. Who scored the highest?",
+    "options": [
+      "Pooja",
+      "Neha",
+      "Geeta",
+      "Anjali"
+    ],
+    "correctAnswer": "D",
+    "answer": "Anjali",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Geeta scores more than Pooja but less than Anjali\" translates to: Anjali > Geeta > Pooja. Step 2: \"Neha scores less than Pooja\" translates to: Pooja > Neha. Step 3: Combine them: Anjali > Geeta > Pooja > Neha. The highest scorer is Anjali. Final Answer: Anjali.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_053",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Vikram is 14th from the left and Riya is 30th from the right. When they interchange their positions, Vikram becomes 20th from the left. How many students are there in the row?",
+    "options": [
+      "49",
+      "43",
+      "48",
+      "50"
+    ],
+    "correctAnswer": "A",
+    "answer": "49",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Vikram and Riya swap, Vikram occupies Riya's old seat. Step 2: This seat is given as 20th from the left (new pos of Vikram) AND we already knew it was 30th from the right (old pos of Riya). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 20 + 30 - 1 = 49. Final Answer: 49.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_054",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 53 girls, Amit is 18th from the left end and Geeta is 23th from the right end. How many girls are there between Amit and Geeta?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "11"
+    ],
+    "correctAnswer": "A",
+    "answer": "12",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 18 + 23 = 41. Since 41 < 53, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 53 - (18 + 23) = 12. Final Answer: 12.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_055",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 34 boys, Aarav is 24th from the left end and Neha is 26th from the right end. How many boys are there between Aarav and Neha?",
+    "options": [
+      "16",
+      "14",
+      "15",
+      "13"
+    ],
+    "correctAnswer": "B",
+    "answer": "14",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 24 + 26 = 50. Since 50 > 34, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Aarav and Neha themselves). Step 3: 50 - 34 - 2 = 14. Final Answer: 14.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_056",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Anita scores more than Sunita but less than Kavita. Riya scores less than Sunita. Who scored the highest?",
+    "options": [
+      "Sunita",
+      "Riya",
+      "Anita",
+      "Kavita"
+    ],
+    "correctAnswer": "D",
+    "answer": "Kavita",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Anita scores more than Sunita but less than Kavita\" translates to: Kavita > Anita > Sunita. Step 2: \"Riya scores less than Sunita\" translates to: Sunita > Riya. Step 3: Combine them: Kavita > Anita > Sunita > Riya. The highest scorer is Kavita. Final Answer: Kavita.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_057",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Sameer is 18th from the left and Anita is 19th from the right. When they interchange their positions, Sameer becomes 24th from the left. How many students are there in the row?",
+    "options": [
+      "42",
+      "43",
+      "41",
+      "36"
+    ],
+    "correctAnswer": "A",
+    "answer": "42",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Sameer and Anita swap, Sameer occupies Anita's old seat. Step 2: This seat is given as 24th from the left (new pos of Sameer) AND we already knew it was 19th from the right (old pos of Anita). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 24 + 19 - 1 = 42. Final Answer: 42.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_058",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 57 girls, Ravi is 17th from the left end and Geeta is 22th from the right end. How many girls are there between Ravi and Geeta?",
+    "options": [
+      "20",
+      "17",
+      "19",
+      "18"
+    ],
+    "correctAnswer": "D",
+    "answer": "18",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 17 + 22 = 39. Since 39 < 57, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 57 - (17 + 22) = 18. Final Answer: 18.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_059",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 33 boys, Vikram is 23th from the left end and Riya is 25th from the right end. How many boys are there between Vikram and Riya?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "correctAnswer": "B",
+    "answer": "13",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 23 + 25 = 48. Since 48 > 33, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Vikram and Riya themselves). Step 3: 48 - 33 - 2 = 13. Final Answer: 13.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_060",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Sunita scores more than Geeta but less than Anjali. Pooja scores less than Geeta. Who scored the highest?",
+    "options": [
+      "Geeta",
+      "Sunita",
+      "Pooja",
+      "Anjali"
+    ],
+    "correctAnswer": "D",
+    "answer": "Anjali",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Sunita scores more than Geeta but less than Anjali\" translates to: Anjali > Sunita > Geeta. Step 2: \"Pooja scores less than Geeta\" translates to: Geeta > Pooja. Step 3: Combine them: Anjali > Sunita > Geeta > Pooja. The highest scorer is Anjali. Final Answer: Anjali.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_061",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Raj is 12th from the left and Simran is 23th from the right. When they interchange their positions, Raj becomes 18th from the left. How many students are there in the row?",
+    "options": [
+      "41",
+      "34",
+      "39",
+      "40"
+    ],
+    "correctAnswer": "D",
+    "answer": "40",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Raj and Simran swap, Raj occupies Simran's old seat. Step 2: This seat is given as 18th from the left (new pos of Raj) AND we already knew it was 23th from the right (old pos of Simran). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 18 + 23 - 1 = 40. Final Answer: 40.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_062",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 51 girls, Aarav is 16th from the left end and Neha is 21th from the right end. How many girls are there between Aarav and Neha?",
+    "options": [
+      "16",
+      "15",
+      "13",
+      "14"
+    ],
+    "correctAnswer": "D",
+    "answer": "14",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 16 + 21 = 37. Since 37 < 51, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 51 - (16 + 21) = 14. Final Answer: 14.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_063",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 32 boys, Ravi is 22th from the left end and Anita is 24th from the right end. How many boys are there between Ravi and Anita?",
+    "options": [
+      "13",
+      "14",
+      "12",
+      "11"
+    ],
+    "correctAnswer": "C",
+    "answer": "12",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 22 + 24 = 46. Since 46 > 32, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Ravi and Anita themselves). Step 3: 46 - 32 - 2 = 12. Final Answer: 12.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_064",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Anita scores more than Neha but less than Anjali. Riya scores less than Neha. Who scored the highest?",
+    "options": [
+      "Riya",
+      "Anjali",
+      "Anita",
+      "Neha"
+    ],
+    "correctAnswer": "B",
+    "answer": "Anjali",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Anita scores more than Neha but less than Anjali\" translates to: Anjali > Anita > Neha. Step 2: \"Riya scores less than Neha\" translates to: Neha > Riya. Step 3: Combine them: Anjali > Anita > Neha > Riya. The highest scorer is Anjali. Final Answer: Anjali.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_065",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Karan is 16th from the left and Sunita is 27th from the right. When they interchange their positions, Karan becomes 22th from the left. How many students are there in the row?",
+    "options": [
+      "42",
+      "47",
+      "49",
+      "48"
+    ],
+    "correctAnswer": "D",
+    "answer": "48",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Karan and Sunita swap, Karan occupies Sunita's old seat. Step 2: This seat is given as 22th from the left (new pos of Karan) AND we already knew it was 27th from the right (old pos of Sunita). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 22 + 27 - 1 = 48. Final Answer: 48.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_066",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 55 girls, Ravi is 15th from the left end and Neha is 20th from the right end. How many girls are there between Ravi and Neha?",
+    "options": [
+      "21",
+      "20",
+      "22",
+      "19"
+    ],
+    "correctAnswer": "B",
+    "answer": "20",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 15 + 20 = 35. Since 35 < 55, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 55 - (15 + 20) = 20. Final Answer: 20.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_067",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 31 boys, Karan is 21th from the left end and Riya is 23th from the right end. How many boys are there between Karan and Riya?",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "11"
+    ],
+    "correctAnswer": "D",
+    "answer": "11",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 21 + 23 = 44. Since 44 > 31, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Karan and Riya themselves). Step 3: 44 - 31 - 2 = 11. Final Answer: 11.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_068",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Anita scores more than Pooja but less than Riya. Priya scores less than Pooja. Who scored the highest?",
+    "options": [
+      "Riya",
+      "Pooja",
+      "Priya",
+      "Anita"
+    ],
+    "correctAnswer": "A",
+    "answer": "Riya",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Anita scores more than Pooja but less than Riya\" translates to: Riya > Anita > Pooja. Step 2: \"Priya scores less than Pooja\" translates to: Pooja > Priya. Step 3: Combine them: Riya > Anita > Pooja > Priya. The highest scorer is Riya. Final Answer: Riya.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_069",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Amit is 20th from the left and Anjali is 31th from the right. When they interchange their positions, Amit becomes 26th from the left. How many students are there in the row?",
+    "options": [
+      "55",
+      "57",
+      "50",
+      "56"
+    ],
+    "correctAnswer": "D",
+    "answer": "56",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Amit and Anjali swap, Amit occupies Anjali's old seat. Step 2: This seat is given as 26th from the left (new pos of Amit) AND we already knew it was 31th from the right (old pos of Anjali). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 26 + 31 - 1 = 56. Final Answer: 56.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_070",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 59 girls, Rahul is 19th from the left end and Priya is 24th from the right end. How many girls are there between Rahul and Priya?",
+    "options": [
+      "16",
+      "15",
+      "18",
+      "17"
+    ],
+    "correctAnswer": "A",
+    "answer": "16",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 19 + 24 = 43. Since 43 < 59, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 59 - (19 + 24) = 16. Final Answer: 16.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_071",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 30 boys, Rahul is 20th from the left end and Geeta is 22th from the right end. How many boys are there between Rahul and Geeta?",
+    "options": [
+      "12",
+      "9",
+      "11",
+      "10"
+    ],
+    "correctAnswer": "D",
+    "answer": "10",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 20 + 22 = 42. Since 42 > 30, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Rahul and Geeta themselves). Step 3: 42 - 30 - 2 = 10. Final Answer: 10.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_072",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Riya scores more than Anita but less than Neha. Simran scores less than Anita. Who scored the highest?",
+    "options": [
+      "Simran",
+      "Neha",
+      "Riya",
+      "Anita"
+    ],
+    "correctAnswer": "B",
+    "answer": "Neha",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Riya scores more than Anita but less than Neha\" translates to: Neha > Riya > Anita. Step 2: \"Simran scores less than Anita\" translates to: Anita > Simran. Step 3: Combine them: Neha > Riya > Anita > Simran. The highest scorer is Neha. Final Answer: Neha.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_073",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Rahul is 14th from the left and Priya is 20th from the right. When they interchange their positions, Rahul becomes 20th from the left. How many students are there in the row?",
+    "options": [
+      "38",
+      "39",
+      "40",
+      "33"
+    ],
+    "correctAnswer": "B",
+    "answer": "39",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Rahul and Priya swap, Rahul occupies Priya's old seat. Step 2: This seat is given as 20th from the left (new pos of Rahul) AND we already knew it was 20th from the right (old pos of Priya). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 20 + 20 - 1 = 39. Final Answer: 39.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_074",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 53 girls, Vikram is 18th from the left end and Pooja is 23th from the right end. How many girls are there between Vikram and Pooja?",
+    "options": [
+      "12",
+      "14",
+      "13",
+      "11"
+    ],
+    "correctAnswer": "A",
+    "answer": "12",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 18 + 23 = 41. Since 41 < 53, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 53 - (18 + 23) = 12. Final Answer: 12.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_075",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 34 boys, Rahul is 24th from the left end and Riya is 26th from the right end. How many boys are there between Rahul and Riya?",
+    "options": [
+      "13",
+      "16",
+      "14",
+      "15"
+    ],
+    "correctAnswer": "C",
+    "answer": "14",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 24 + 26 = 50. Since 50 > 34, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Rahul and Riya themselves). Step 3: 50 - 34 - 2 = 14. Final Answer: 14.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_076",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Geeta scores more than Anita but less than Sunita. Anjali scores less than Anita. Who scored the highest?",
+    "options": [
+      "Anita",
+      "Geeta",
+      "Anjali",
+      "Sunita"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sunita",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Geeta scores more than Anita but less than Sunita\" translates to: Sunita > Geeta > Anita. Step 2: \"Anjali scores less than Anita\" translates to: Anita > Anjali. Step 3: Combine them: Sunita > Geeta > Anita > Anjali. The highest scorer is Sunita. Final Answer: Sunita.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_077",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of students, Amit is 18th from the left and Pooja is 24th from the right. When they interchange their positions, Amit becomes 24th from the left. How many students are there in the row?",
+    "options": [
+      "47",
+      "41",
+      "48",
+      "46"
+    ],
+    "correctAnswer": "A",
+    "answer": "47",
+    "pattern": "Swapping: Total = New Pos of Person 1 + Old Pos of Person 2 - 1",
+    "explanation": "Step 1: When Amit and Pooja swap, Amit occupies Pooja's old seat. Step 2: This seat is given as 24th from the left (new pos of Amit) AND we already knew it was 24th from the right (old pos of Pooja). Step 3: Apply the total formula to this specific seat: Total = Left + Right - 1 = 24 + 24 - 1 = 47. Final Answer: 47.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_078",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 57 girls, Amit is 17th from the left end and Geeta is 22th from the right end. How many girls are there between Amit and Geeta?",
+    "options": [
+      "19",
+      "20",
+      "17",
+      "18"
+    ],
+    "correctAnswer": "D",
+    "answer": "18",
+    "pattern": "Non-overlapping between = Total - (Left + Right)",
+    "explanation": "Step 1: Check for overlap. Sum of their positions = 17 + 22 = 39. Since 39 < 57, there is no overlap (normal case). Step 2: The number of people between them is simply the total minus the sum of their positions. Step 3: 57 - (17 + 22) = 18. Final Answer: 18.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_079",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "In a row of 33 boys, Vikram is 23th from the left end and Anjali is 25th from the right end. How many boys are there between Vikram and Anjali?",
+    "options": [
+      "14",
+      "15",
+      "13",
+      "12"
+    ],
+    "correctAnswer": "C",
+    "answer": "13",
+    "pattern": "Overlapping between = (Left + Right) - Total - 2",
+    "explanation": "Step 1: Check for overlap. Sum of positions = 23 + 25 = 48. Since 48 > 33, this is an overlapping case. Step 2: The formula for overlapping is: Between = (Sum of positions) - Total - 2 (we subtract 2 to remove Vikram and Anjali themselves). Step 3: 48 - 33 - 2 = 13. Final Answer: 13.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_080",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Medium",
+    "question": "Kavita scores more than Pooja but less than Priya. Anjali scores less than Pooja. Who scored the highest?",
+    "options": [
+      "Kavita",
+      "Anjali",
+      "Priya",
+      "Pooja"
+    ],
+    "correctAnswer": "C",
+    "answer": "Priya",
+    "pattern": "Linear inequality chain",
+    "explanation": "Step 1: Break down the statements. \"Kavita scores more than Pooja but less than Priya\" translates to: Priya > Kavita > Pooja. Step 2: \"Anjali scores less than Pooja\" translates to: Pooja > Anjali. Step 3: Combine them: Priya > Kavita > Pooja > Anjali. The highest scorer is Priya. Final Answer: Priya.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_081",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Vikram is 15th from the left and Riya is 20th from the right. When they interchange their places, Vikram becomes 23th from the left. What will be Riya's new position from the right?",
+    "options": [
+      "29th",
+      "36th",
+      "28th",
+      "27th"
+    ],
+    "correctAnswer": "C",
+    "answer": "28th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Vikram. Vikram moved from 15th from the left to 23th from the left. This is an increase of 8 positions. Step 2: This means there are exactly 7 people between them. Step 3: When they swap, Riya travels the exact same distance in the opposite direction. Therefore, Riya's position from the right will also increase by 8. Step 4: New position = 20 + 8 = 28. Final Answer: 28th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_082",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Priya, Karan, Aarav, Vikram, and Rahul, Priya is taller than only Karan. Aarav is shorter than Vikram but taller than Rahul. Who is the third tallest among them?",
+    "options": [
+      "Aarav",
+      "Priya",
+      "Rahul",
+      "Vikram"
+    ],
+    "correctAnswer": "C",
+    "answer": "Rahul",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Priya is taller than ONLY Karan\" means Karan is the shortest (5th) and Priya is the second shortest (4th). Step 2: We are left with Aarav, Vikram, and Rahul for the top 3 spots. Step 3: The problem states Vikram > Aarav and Aarav > Rahul. This gives the sequence Vikram > Aarav > Rahul. Step 4: Combining everything: Vikram > Aarav > Rahul > Priya > Karan. The third tallest is Rahul. Final Answer: Rahul.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_083",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Ravi is 17th from the left and Anita is 22th from the right. When they interchange their places, Ravi becomes 27th from the left. What will be Anita's new position from the right?",
+    "options": [
+      "33th",
+      "31th",
+      "32th",
+      "42th"
+    ],
+    "correctAnswer": "C",
+    "answer": "32th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Ravi. Ravi moved from 17th from the left to 27th from the left. This is an increase of 10 positions. Step 2: This means there are exactly 9 people between them. Step 3: When they swap, Anita travels the exact same distance in the opposite direction. Therefore, Anita's position from the right will also increase by 10. Step 4: New position = 22 + 10 = 32. Final Answer: 32th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_084",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Rohan, Anita, Rahul, Neha, and Karan, Rohan is taller than only Anita. Rahul is shorter than Neha but taller than Karan. Who is the third tallest among them?",
+    "options": [
+      "Neha",
+      "Rohan",
+      "Rahul",
+      "Karan"
+    ],
+    "correctAnswer": "D",
+    "answer": "Karan",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Rohan is taller than ONLY Anita\" means Anita is the shortest (5th) and Rohan is the second shortest (4th). Step 2: We are left with Rahul, Neha, and Karan for the top 3 spots. Step 3: The problem states Neha > Rahul and Rahul > Karan. This gives the sequence Neha > Rahul > Karan. Step 4: Combining everything: Neha > Rahul > Karan > Rohan > Anita. The third tallest is Karan. Final Answer: Karan.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_085",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Rohan is 19th from the left and Neha is 24th from the right. When they interchange their places, Rohan becomes 27th from the left. What will be Neha's new position from the right?",
+    "options": [
+      "32th",
+      "33th",
+      "40th",
+      "31th"
+    ],
+    "correctAnswer": "A",
+    "answer": "32th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Rohan. Rohan moved from 19th from the left to 27th from the left. This is an increase of 8 positions. Step 2: This means there are exactly 7 people between them. Step 3: When they swap, Neha travels the exact same distance in the opposite direction. Therefore, Neha's position from the right will also increase by 8. Step 4: New position = 24 + 8 = 32. Final Answer: 32th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_086",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Simran, Ajay, Aarav, Karan, and Amit, Simran is taller than only Ajay. Aarav is shorter than Karan but taller than Amit. Who is the third tallest among them?",
+    "options": [
+      "Aarav",
+      "Simran",
+      "Karan",
+      "Amit"
+    ],
+    "correctAnswer": "D",
+    "answer": "Amit",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Simran is taller than ONLY Ajay\" means Ajay is the shortest (5th) and Simran is the second shortest (4th). Step 2: We are left with Aarav, Karan, and Amit for the top 3 spots. Step 3: The problem states Karan > Aarav and Aarav > Amit. This gives the sequence Karan > Aarav > Amit. Step 4: Combining everything: Karan > Aarav > Amit > Simran > Ajay. The third tallest is Amit. Final Answer: Amit.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_087",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Ajay is 16th from the left and Sunita is 21th from the right. When they interchange their places, Ajay becomes 26th from the left. What will be Sunita's new position from the right?",
+    "options": [
+      "41th",
+      "30th",
+      "31th",
+      "32th"
+    ],
+    "correctAnswer": "C",
+    "answer": "31th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Ajay. Ajay moved from 16th from the left to 26th from the left. This is an increase of 10 positions. Step 2: This means there are exactly 9 people between them. Step 3: When they swap, Sunita travels the exact same distance in the opposite direction. Therefore, Sunita's position from the right will also increase by 10. Step 4: New position = 21 + 10 = 31. Final Answer: 31th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_088",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Rahul, Anita, Rohan, Geeta, and Aarav, Rahul is taller than only Anita. Rohan is shorter than Geeta but taller than Aarav. Who is the third tallest among them?",
+    "options": [
+      "Rohan",
+      "Aarav",
+      "Rahul",
+      "Geeta"
+    ],
+    "correctAnswer": "B",
+    "answer": "Aarav",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Rahul is taller than ONLY Anita\" means Anita is the shortest (5th) and Rahul is the second shortest (4th). Step 2: We are left with Rohan, Geeta, and Aarav for the top 3 spots. Step 3: The problem states Geeta > Rohan and Rohan > Aarav. This gives the sequence Geeta > Rohan > Aarav. Step 4: Combining everything: Geeta > Rohan > Aarav > Rahul > Anita. The third tallest is Aarav. Final Answer: Aarav.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_089",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Aarav is 18th from the left and Kavita is 23th from the right. When they interchange their places, Aarav becomes 26th from the left. What will be Kavita's new position from the right?",
+    "options": [
+      "39th",
+      "31th",
+      "32th",
+      "30th"
+    ],
+    "correctAnswer": "B",
+    "answer": "31th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Aarav. Aarav moved from 18th from the left to 26th from the left. This is an increase of 8 positions. Step 2: This means there are exactly 7 people between them. Step 3: When they swap, Kavita travels the exact same distance in the opposite direction. Therefore, Kavita's position from the right will also increase by 8. Step 4: New position = 23 + 8 = 31. Final Answer: 31th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_090",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Ravi, Ajay, Sunita, Simran, and Rohan, Ravi is taller than only Ajay. Sunita is shorter than Simran but taller than Rohan. Who is the third tallest among them?",
+    "options": [
+      "Ravi",
+      "Sunita",
+      "Simran",
+      "Rohan"
+    ],
+    "correctAnswer": "D",
+    "answer": "Rohan",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Ravi is taller than ONLY Ajay\" means Ajay is the shortest (5th) and Ravi is the second shortest (4th). Step 2: We are left with Sunita, Simran, and Rohan for the top 3 spots. Step 3: The problem states Simran > Sunita and Sunita > Rohan. This gives the sequence Simran > Sunita > Rohan. Step 4: Combining everything: Simran > Sunita > Rohan > Ravi > Ajay. The third tallest is Rohan. Final Answer: Rohan.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_091",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Raj is 15th from the left and Kavita is 20th from the right. When they interchange their places, Raj becomes 25th from the left. What will be Kavita's new position from the right?",
+    "options": [
+      "30th",
+      "31th",
+      "29th",
+      "40th"
+    ],
+    "correctAnswer": "A",
+    "answer": "30th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Raj. Raj moved from 15th from the left to 25th from the left. This is an increase of 10 positions. Step 2: This means there are exactly 9 people between them. Step 3: When they swap, Kavita travels the exact same distance in the opposite direction. Therefore, Kavita's position from the right will also increase by 10. Step 4: New position = 20 + 10 = 30. Final Answer: 30th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_092",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Rohan, Rahul, Amit, Priya, and Anita, Rohan is taller than only Rahul. Amit is shorter than Priya but taller than Anita. Who is the third tallest among them?",
+    "options": [
+      "Priya",
+      "Anita",
+      "Amit",
+      "Rohan"
+    ],
+    "correctAnswer": "B",
+    "answer": "Anita",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Rohan is taller than ONLY Rahul\" means Rahul is the shortest (5th) and Rohan is the second shortest (4th). Step 2: We are left with Amit, Priya, and Anita for the top 3 spots. Step 3: The problem states Priya > Amit and Amit > Anita. This gives the sequence Priya > Amit > Anita. Step 4: Combining everything: Priya > Amit > Anita > Rohan > Rahul. The third tallest is Anita. Final Answer: Anita.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_093",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Karan is 17th from the left and Simran is 22th from the right. When they interchange their places, Karan becomes 25th from the left. What will be Simran's new position from the right?",
+    "options": [
+      "29th",
+      "31th",
+      "38th",
+      "30th"
+    ],
+    "correctAnswer": "D",
+    "answer": "30th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Karan. Karan moved from 17th from the left to 25th from the left. This is an increase of 8 positions. Step 2: This means there are exactly 7 people between them. Step 3: When they swap, Simran travels the exact same distance in the opposite direction. Therefore, Simran's position from the right will also increase by 8. Step 4: New position = 22 + 8 = 30. Final Answer: 30th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_094",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Aarav, Rohan, Amit, Sameer, and Priya, Aarav is taller than only Rohan. Amit is shorter than Sameer but taller than Priya. Who is the third tallest among them?",
+    "options": [
+      "Priya",
+      "Aarav",
+      "Sameer",
+      "Amit"
+    ],
+    "correctAnswer": "A",
+    "answer": "Priya",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Aarav is taller than ONLY Rohan\" means Rohan is the shortest (5th) and Aarav is the second shortest (4th). Step 2: We are left with Amit, Sameer, and Priya for the top 3 spots. Step 3: The problem states Sameer > Amit and Amit > Priya. This gives the sequence Sameer > Amit > Priya. Step 4: Combining everything: Sameer > Amit > Priya > Aarav > Rohan. The third tallest is Priya. Final Answer: Priya.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_095",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Raj is 19th from the left and Priya is 24th from the right. When they interchange their places, Raj becomes 29th from the left. What will be Priya's new position from the right?",
+    "options": [
+      "44th",
+      "34th",
+      "33th",
+      "35th"
+    ],
+    "correctAnswer": "B",
+    "answer": "34th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Raj. Raj moved from 19th from the left to 29th from the left. This is an increase of 10 positions. Step 2: This means there are exactly 9 people between them. Step 3: When they swap, Priya travels the exact same distance in the opposite direction. Therefore, Priya's position from the right will also increase by 10. Step 4: New position = 24 + 10 = 34. Final Answer: 34th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_096",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Ravi, Karan, Priya, Raj, and Simran, Ravi is taller than only Karan. Priya is shorter than Raj but taller than Simran. Who is the third tallest among them?",
+    "options": [
+      "Priya",
+      "Ravi",
+      "Simran",
+      "Raj"
+    ],
+    "correctAnswer": "C",
+    "answer": "Simran",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Ravi is taller than ONLY Karan\" means Karan is the shortest (5th) and Ravi is the second shortest (4th). Step 2: We are left with Priya, Raj, and Simran for the top 3 spots. Step 3: The problem states Raj > Priya and Priya > Simran. This gives the sequence Raj > Priya > Simran. Step 4: Combining everything: Raj > Priya > Simran > Ravi > Karan. The third tallest is Simran. Final Answer: Simran.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_097",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Ravi is 16th from the left and Anjali is 21th from the right. When they interchange their places, Ravi becomes 24th from the left. What will be Anjali's new position from the right?",
+    "options": [
+      "30th",
+      "28th",
+      "29th",
+      "37th"
+    ],
+    "correctAnswer": "C",
+    "answer": "29th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Ravi. Ravi moved from 16th from the left to 24th from the left. This is an increase of 8 positions. Step 2: This means there are exactly 7 people between them. Step 3: When they swap, Anjali travels the exact same distance in the opposite direction. Therefore, Anjali's position from the right will also increase by 8. Step 4: New position = 21 + 8 = 29. Final Answer: 29th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_098",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Sunita, Aarav, Pooja, Amit, and Ajay, Sunita is taller than only Aarav. Pooja is shorter than Amit but taller than Ajay. Who is the third tallest among them?",
+    "options": [
+      "Sunita",
+      "Ajay",
+      "Amit",
+      "Pooja"
+    ],
+    "correctAnswer": "B",
+    "answer": "Ajay",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Sunita is taller than ONLY Aarav\" means Aarav is the shortest (5th) and Sunita is the second shortest (4th). Step 2: We are left with Pooja, Amit, and Ajay for the top 3 spots. Step 3: The problem states Amit > Pooja and Pooja > Ajay. This gives the sequence Amit > Pooja > Ajay. Step 4: Combining everything: Amit > Pooja > Ajay > Sunita > Aarav. The third tallest is Ajay. Final Answer: Ajay.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_099",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "In a row of children, Karan is 18th from the left and Neha is 23th from the right. When they interchange their places, Karan becomes 28th from the left. What will be Neha's new position from the right?",
+    "options": [
+      "34th",
+      "32th",
+      "33th",
+      "43th"
+    ],
+    "correctAnswer": "C",
+    "answer": "33th",
+    "pattern": "Shift invariance during swap",
+    "explanation": "Step 1: Analyze the shift for Karan. Karan moved from 18th from the left to 28th from the left. This is an increase of 10 positions. Step 2: This means there are exactly 9 people between them. Step 3: When they swap, Neha travels the exact same distance in the opposite direction. Therefore, Neha's position from the right will also increase by 10. Step 4: New position = 23 + 10 = 33. Final Answer: 33th.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "RANKING_ORDERING_100",
+    "topic": "Logical Reasoning",
+    "subtopic": "Ranking & Ordering",
+    "difficulty": "Hard",
+    "question": "Among five friends Anjali, Karan, Priya, Amit, and Riya, Anjali is taller than only Karan. Priya is shorter than Amit but taller than Riya. Who is the third tallest among them?",
+    "options": [
+      "Amit",
+      "Priya",
+      "Riya",
+      "Anjali"
+    ],
+    "correctAnswer": "C",
+    "answer": "Riya",
+    "pattern": "Keyword 'only' in inequality puzzles",
+    "explanation": "Step 1: The key phrase \"Anjali is taller than ONLY Karan\" means Karan is the shortest (5th) and Anjali is the second shortest (4th). Step 2: We are left with Priya, Amit, and Riya for the top 3 spots. Step 3: The problem states Amit > Priya and Priya > Riya. This gives the sequence Amit > Priya > Riya. Step 4: Combining everything: Amit > Priya > Riya > Anjali > Karan. The third tallest is Riya. Final Answer: Riya.",
+    "shortcut": "Formula: Total = (Left Rank + Right Rank) - 1. Draw a quick linear diagram for relative positions.",
+    "commonMistake": "Forgetting to subtract 1 when calculating the total from both ends, counting the same person twice.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "ranking",
+      "ordering",
+      "logical reasoning",
+      "position",
+      "queue",
+      "row"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  }
+]
