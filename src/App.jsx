@@ -40,6 +40,7 @@ function App() {
 
   const { user, profile, loading: authLoading } = useAuth();
   const [systemSettings, setSystemSettings] = useState(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   useEffect(() => {
     if (user) {
@@ -187,67 +188,82 @@ function App() {
                     <img src={logoImg} alt="AptiAnimate Logo" className="nav-logo" />
                     AptiAnimate
                   </div>
-                  <div className="nav-links">
-                    <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => navigate('')}>Home</button>
-                    <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => navigate('saved')}>Saved</button>
-                    <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => navigate('progress')}>Progress</button>
-                    {/* ✨ Ask AI nav button */}
-                    <button
-                      className={`btn-ask-ai ${route.startsWith('ask') ? 'active' : ''}`}
-                      onClick={() => navigate('ask')}
-                    >
-                      <span className="btn-icon-text">✨</span> <span className="btn-text">Ask AI</span>
-                    </button>
-
-                    {/* 🔐 Google Login / User Profile */}
-                    {(!user || user.is_anonymous) ? (
+                  <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
+                      <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => { navigate(''); setIsMobileMenuOpen(false); }}>Home</button>
+                      <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => { navigate('saved'); setIsMobileMenuOpen(false); }}>Saved</button>
+                      <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
+                      {/* ✨ Ask AI nav button */}
                       <button
-                        className="btn-google"
-                        onClick={signInWithGoogle}
+                        className={`btn-ask-ai ${route.startsWith('ask') ? 'active' : ''}`}
+                        onClick={() => { navigate('ask'); setIsMobileMenuOpen(false); }}
                       >
-                        <svg width="14" height="14" viewBox="0 0 48 48" style={{ flexShrink: 0 }}>
-                          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-                          <path fill="#4285F4" d="M46.5 24c0-1.61-.15-3.16-.42-4.69H24v9.09h12.75c-.53 2.87-2.14 5.3-4.57 6.96l7.14 5.53C43.51 36.31 46.5 30.8 46.5 24z"/>
-                          <path fill="#FBBC05" d="M10.54 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.98-6.19z"/>
-                          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.14-5.53c-1.97 1.33-4.5 2.13-8.75 2.13-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-                        </svg>
-                        <span className="btn-text">Google Sign In</span>
+                        <span className="btn-icon-text">✨</span> <span className="btn-text">Ask AI</span>
                       </button>
-                    ) : (
-                      <div className="nav-profile-wrapper">
-                        {/* Clickable profile: avatar + username → goes to /profile */}
-                        <a
-                          href="#/profile"
-                          className="btn-profile"
+
+                      {/* ⚔️ AI Battle nav button */}
+                      <button
+                        className={`btn-ask-ai ${route.startsWith('battle') ? 'active' : ''}`}
+                        onClick={() => { navigate('battle'); setIsMobileMenuOpen(false); }}
+                      >
+                        <span className="btn-icon-text">⚔️</span> <span className="btn-text">AI Battle</span>
+                      </button>
+
+                      {/* 🔐 Google Login / User Profile */}
+                      {(!user || user.is_anonymous) ? (
+                        <button
+                          className="btn-google"
+                          onClick={() => { signInWithGoogle(); setIsMobileMenuOpen(false); }}
                         >
-                          <img
-                            src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
-                            alt="avatar"
-                            style={{
-                              display: 'inline-block',
-                              width: '28px',
-                              height: '28px',
-                              borderRadius: '50%',
-                              border: '2px solid var(--violet)',
-                              objectFit: 'cover',
-                              flexShrink: 0,
-                              pointerEvents: 'none',
-                            }}
-                          />
-                          {profile?.username && (
-                            <span className="profile-username">
-                              @{profile.username}
-                            </span>
-                          )}
-                      </a>
-                      </div>
-                    )}
+                          <svg width="14" height="14" viewBox="0 0 48 48" style={{ flexShrink: 0 }}>
+                            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                            <path fill="#4285F4" d="M46.5 24c0-1.61-.15-3.16-.42-4.69H24v9.09h12.75c-.53 2.87-2.14 5.3-4.57 6.96l7.14 5.53C43.51 36.31 46.5 30.8 46.5 24z"/>
+                            <path fill="#FBBC05" d="M10.54 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.98-6.19z"/>
+                            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.14-5.53c-1.97 1.33-4.5 2.13-8.75 2.13-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                          </svg>
+                          <span className="btn-text">Google Sign In</span>
+                        </button>
+                      ) : (
+                        <div className="nav-profile-wrapper">
+                          {/* Clickable profile: avatar + username → goes to /profile */}
+                          <a
+                            href="#/profile"
+                            className="btn-profile"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            <img
+                              src={profile?.avatar_url || user?.user_metadata?.avatar_url || 'https://www.gravatar.com/avatar/0?d=mp'}
+                              alt="avatar"
+                              style={{
+                                display: 'inline-block',
+                                width: '28px',
+                                height: '28px',
+                                borderRadius: '50%',
+                                border: '2px solid var(--violet)',
+                                objectFit: 'cover',
+                                flexShrink: 0,
+                                pointerEvents: 'none',
+                              }}
+                            />
+                            {profile?.username && (
+                              <span className="profile-username">
+                                @{profile.username}
+                              </span>
+                            )}
+                        </a>
+                        </div>
+                      )}
+                    </div>
 
                     <button 
                       onClick={toggleTheme} 
                       className="btn-theme-toggle"
                     >
                       {theme === 'light' ? '🌙' : '☀️'}
+                    </button>
+
+                    <button className="mobile-menu-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                      {isMobileMenuOpen ? '✖' : '☰'}
                     </button>
                   </div>
                 </div>
