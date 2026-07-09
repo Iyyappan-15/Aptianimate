@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "DIRECTION_SENSE_001",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards North. After walking some distance, he turns to his left. He walks further and then turns to his right. In which direction is he facing now?",
+    "options": [
+      "North",
+      "South",
+      "West",
+      "East"
+    ],
+    "correctAnswer": "A",
+    "answer": "North",
+    "pattern": "Tracking cardinal directions through left and right turns",
+    "explanation": "Step 1: He starts facing North. Step 2: A left turn from North makes him face West. Step 3: A right turn from West makes him face North. Final Answer: North.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_002",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 15m towards South, then turns around and walks 25m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "10m North",
+      "40m North",
+      "40m South",
+      "10m South"
+    ],
+    "correctAnswer": "A",
+    "answer": "10m North",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 15m towards South. Step 2: He turns around, meaning he goes towards North. Step 3: He travels 25m towards North. Since 25 > 15, he crosses the starting point. The net distance from start is 25 - 15 = 10m. Since the larger distance is towards North, he is in the North direction. Final Answer: 10m North.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_003",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 9km towards North. Then she turns to her right and walks 12km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "14km",
+      "15km",
+      "21km",
+      "20km"
+    ],
+    "correctAnswer": "B",
+    "answer": "15km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 9km North. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 12km East. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(9² + 12²) = sqrt(81 + 144) = sqrt(225) = 15. Final Answer: 15km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_004",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards West. After walking some distance, he turns to his right. He walks further and then turns to his left. In which direction is he facing now?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correctAnswer": "D",
+    "answer": "West",
+    "pattern": "Tracking cardinal directions through right and left turns",
+    "explanation": "Step 1: He starts facing West. Step 2: A right turn from West makes him face North. Step 3: A left turn from North makes him face West. Final Answer: West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_005",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 30m towards North, then turns around and walks 40m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "70m South",
+      "10m South",
+      "70m North",
+      "10m North"
+    ],
+    "correctAnswer": "B",
+    "answer": "10m South",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 30m towards North. Step 2: He turns around, meaning he goes towards South. Step 3: He travels 40m towards South. Since 40 > 30, he crosses the starting point. The net distance from start is 40 - 30 = 10m. Since the larger distance is towards South, he is in the South direction. Final Answer: 10m South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_006",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 3km towards South. Then she turns to her right and walks 4km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "7km",
+      "10km",
+      "4km",
+      "5km"
+    ],
+    "correctAnswer": "D",
+    "answer": "5km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 3km South. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 4km West. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(3² + 4²) = sqrt(9 + 16) = sqrt(25) = 5. Final Answer: 5km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_007",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards East. After walking some distance, he turns to his left. He walks further and then turns to his right. In which direction is he facing now?",
+    "options": [
+      "West",
+      "East",
+      "South",
+      "North"
+    ],
+    "correctAnswer": "B",
+    "answer": "East",
+    "pattern": "Tracking cardinal directions through left and right turns",
+    "explanation": "Step 1: He starts facing East. Step 2: A left turn from East makes him face North. Step 3: A right turn from North makes him face East. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_008",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 45m towards West, then turns around and walks 55m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "100m East",
+      "100m West",
+      "10m East",
+      "10m West"
+    ],
+    "correctAnswer": "C",
+    "answer": "10m East",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 45m towards West. Step 2: He turns around, meaning he goes towards East. Step 3: He travels 55m towards East. Since 55 > 45, he crosses the starting point. The net distance from start is 55 - 45 = 10m. Since the larger distance is towards East, he is in the East direction. Final Answer: 10m East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_009",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 12km towards North. Then she turns to her right and walks 16km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "25km",
+      "19km",
+      "20km",
+      "28km"
+    ],
+    "correctAnswer": "C",
+    "answer": "20km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 12km North. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 16km East. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(12² + 16²) = sqrt(144 + 256) = sqrt(400) = 20. Final Answer: 20km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_010",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards South. After walking some distance, he turns to his right. He walks further and then turns to his left. In which direction is he facing now?",
+    "options": [
+      "West",
+      "North",
+      "South",
+      "East"
+    ],
+    "correctAnswer": "C",
+    "answer": "South",
+    "pattern": "Tracking cardinal directions through right and left turns",
+    "explanation": "Step 1: He starts facing South. Step 2: A right turn from South makes him face West. Step 3: A left turn from West makes him face South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_011",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 10m towards East, then turns around and walks 20m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "10m West",
+      "10m East",
+      "30m East",
+      "30m West"
+    ],
+    "correctAnswer": "A",
+    "answer": "10m West",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 10m towards East. Step 2: He turns around, meaning he goes towards West. Step 3: He travels 20m towards West. Since 20 > 10, he crosses the starting point. The net distance from start is 20 - 10 = 10m. Since the larger distance is towards West, he is in the West direction. Final Answer: 10m West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_012",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 6km towards South. Then she turns to her right and walks 8km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "15km",
+      "10km",
+      "14km",
+      "9km"
+    ],
+    "correctAnswer": "B",
+    "answer": "10km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 6km South. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 8km West. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(6² + 8²) = sqrt(36 + 64) = sqrt(100) = 10. Final Answer: 10km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_013",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards North. After walking some distance, he turns to his left. He walks further and then turns to his right. In which direction is he facing now?",
+    "options": [
+      "West",
+      "South",
+      "East",
+      "North"
+    ],
+    "correctAnswer": "D",
+    "answer": "North",
+    "pattern": "Tracking cardinal directions through left and right turns",
+    "explanation": "Step 1: He starts facing North. Step 2: A left turn from North makes him face West. Step 3: A right turn from West makes him face North. Final Answer: North.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_014",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 25m towards South, then turns around and walks 35m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "60m South",
+      "60m North",
+      "10m North",
+      "10m South"
+    ],
+    "correctAnswer": "C",
+    "answer": "10m North",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 25m towards South. Step 2: He turns around, meaning he goes towards North. Step 3: He travels 35m towards North. Since 35 > 25, he crosses the starting point. The net distance from start is 35 - 25 = 10m. Since the larger distance is towards North, he is in the North direction. Final Answer: 10m North.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_015",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 15km towards North. Then she turns to her right and walks 20km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "30km",
+      "24km",
+      "25km",
+      "35km"
+    ],
+    "correctAnswer": "C",
+    "answer": "25km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 15km North. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 20km East. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(15² + 20²) = sqrt(225 + 400) = sqrt(625) = 25. Final Answer: 25km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_016",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards West. After walking some distance, he turns to his right. He walks further and then turns to his left. In which direction is he facing now?",
+    "options": [
+      "West",
+      "East",
+      "South",
+      "North"
+    ],
+    "correctAnswer": "A",
+    "answer": "West",
+    "pattern": "Tracking cardinal directions through right and left turns",
+    "explanation": "Step 1: He starts facing West. Step 2: A right turn from West makes him face North. Step 3: A left turn from North makes him face West. Final Answer: West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_017",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 40m towards North, then turns around and walks 50m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "10m South",
+      "90m North",
+      "90m South",
+      "10m North"
+    ],
+    "correctAnswer": "A",
+    "answer": "10m South",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 40m towards North. Step 2: He turns around, meaning he goes towards South. Step 3: He travels 50m towards South. Since 50 > 40, he crosses the starting point. The net distance from start is 50 - 40 = 10m. Since the larger distance is towards South, he is in the South direction. Final Answer: 10m South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_018",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 9km towards South. Then she turns to her right and walks 12km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "21km",
+      "20km",
+      "15km",
+      "14km"
+    ],
+    "correctAnswer": "C",
+    "answer": "15km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 9km South. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 12km West. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(9² + 12²) = sqrt(81 + 144) = sqrt(225) = 15. Final Answer: 15km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_019",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards East. After walking some distance, he turns to his left. He walks further and then turns to his right. In which direction is he facing now?",
+    "options": [
+      "South",
+      "East",
+      "North",
+      "West"
+    ],
+    "correctAnswer": "B",
+    "answer": "East",
+    "pattern": "Tracking cardinal directions through left and right turns",
+    "explanation": "Step 1: He starts facing East. Step 2: A left turn from East makes him face North. Step 3: A right turn from North makes him face East. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_020",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 55m towards West, then turns around and walks 65m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "120m East",
+      "10m East",
+      "120m West",
+      "10m West"
+    ],
+    "correctAnswer": "B",
+    "answer": "10m East",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 55m towards West. Step 2: He turns around, meaning he goes towards East. Step 3: He travels 65m towards East. Since 65 > 55, he crosses the starting point. The net distance from start is 65 - 55 = 10m. Since the larger distance is towards East, he is in the East direction. Final Answer: 10m East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_021",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 3km towards North. Then she turns to her right and walks 4km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "7km",
+      "5km",
+      "10km",
+      "4km"
+    ],
+    "correctAnswer": "B",
+    "answer": "5km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 3km North. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 4km East. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(3² + 4²) = sqrt(9 + 16) = sqrt(25) = 5. Final Answer: 5km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_022",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards South. After walking some distance, he turns to his right. He walks further and then turns to his left. In which direction is he facing now?",
+    "options": [
+      "East",
+      "North",
+      "South",
+      "West"
+    ],
+    "correctAnswer": "C",
+    "answer": "South",
+    "pattern": "Tracking cardinal directions through right and left turns",
+    "explanation": "Step 1: He starts facing South. Step 2: A right turn from South makes him face West. Step 3: A left turn from West makes him face South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_023",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 20m towards East, then turns around and walks 30m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "50m East",
+      "50m West",
+      "10m East",
+      "10m West"
+    ],
+    "correctAnswer": "D",
+    "answer": "10m West",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 20m towards East. Step 2: He turns around, meaning he goes towards West. Step 3: He travels 30m towards West. Since 30 > 20, he crosses the starting point. The net distance from start is 30 - 20 = 10m. Since the larger distance is towards West, he is in the West direction. Final Answer: 10m West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_024",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 12km towards South. Then she turns to her right and walks 16km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "20km",
+      "25km",
+      "28km",
+      "19km"
+    ],
+    "correctAnswer": "A",
+    "answer": "20km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 12km South. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 16km West. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(12² + 16²) = sqrt(144 + 256) = sqrt(400) = 20. Final Answer: 20km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_025",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards North. After walking some distance, he turns to his left. He walks further and then turns to his right. In which direction is he facing now?",
+    "options": [
+      "North",
+      "South",
+      "West",
+      "East"
+    ],
+    "correctAnswer": "A",
+    "answer": "North",
+    "pattern": "Tracking cardinal directions through left and right turns",
+    "explanation": "Step 1: He starts facing North. Step 2: A left turn from North makes him face West. Step 3: A right turn from West makes him face North. Final Answer: North.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_026",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 35m towards South, then turns around and walks 45m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "80m North",
+      "10m North",
+      "10m South",
+      "80m South"
+    ],
+    "correctAnswer": "B",
+    "answer": "10m North",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 35m towards South. Step 2: He turns around, meaning he goes towards North. Step 3: He travels 45m towards North. Since 45 > 35, he crosses the starting point. The net distance from start is 45 - 35 = 10m. Since the larger distance is towards North, he is in the North direction. Final Answer: 10m North.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_027",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 6km towards North. Then she turns to her right and walks 8km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "9km",
+      "15km",
+      "10km",
+      "14km"
+    ],
+    "correctAnswer": "C",
+    "answer": "10km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 6km North. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 8km East. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(6² + 8²) = sqrt(36 + 64) = sqrt(100) = 10. Final Answer: 10km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_028",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards West. After walking some distance, he turns to his right. He walks further and then turns to his left. In which direction is he facing now?",
+    "options": [
+      "South",
+      "West",
+      "East",
+      "North"
+    ],
+    "correctAnswer": "B",
+    "answer": "West",
+    "pattern": "Tracking cardinal directions through right and left turns",
+    "explanation": "Step 1: He starts facing West. Step 2: A right turn from West makes him face North. Step 3: A left turn from North makes him face West. Final Answer: West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_029",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 50m towards North, then turns around and walks 60m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "110m South",
+      "110m North",
+      "10m South",
+      "10m North"
+    ],
+    "correctAnswer": "C",
+    "answer": "10m South",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 50m towards North. Step 2: He turns around, meaning he goes towards South. Step 3: He travels 60m towards South. Since 60 > 50, he crosses the starting point. The net distance from start is 60 - 50 = 10m. Since the larger distance is towards South, he is in the South direction. Final Answer: 10m South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_030",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 15km towards South. Then she turns to her right and walks 20km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "25km",
+      "24km",
+      "35km",
+      "30km"
+    ],
+    "correctAnswer": "A",
+    "answer": "25km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 15km South. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 20km West. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(15² + 20²) = sqrt(225 + 400) = sqrt(625) = 25. Final Answer: 25km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_031",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards East. After walking some distance, he turns to his left. He walks further and then turns to his right. In which direction is he facing now?",
+    "options": [
+      "West",
+      "East",
+      "North",
+      "South"
+    ],
+    "correctAnswer": "B",
+    "answer": "East",
+    "pattern": "Tracking cardinal directions through left and right turns",
+    "explanation": "Step 1: He starts facing East. Step 2: A left turn from East makes him face North. Step 3: A right turn from North makes him face East. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_032",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 15m towards West, then turns around and walks 25m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "40m East",
+      "10m East",
+      "40m West",
+      "10m West"
+    ],
+    "correctAnswer": "B",
+    "answer": "10m East",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 15m towards West. Step 2: He turns around, meaning he goes towards East. Step 3: He travels 25m towards East. Since 25 > 15, he crosses the starting point. The net distance from start is 25 - 15 = 10m. Since the larger distance is towards East, he is in the East direction. Final Answer: 10m East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_033",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 9km towards North. Then she turns to her right and walks 12km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "20km",
+      "14km",
+      "21km",
+      "15km"
+    ],
+    "correctAnswer": "D",
+    "answer": "15km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 9km North. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 12km East. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(9² + 12²) = sqrt(81 + 144) = sqrt(225) = 15. Final Answer: 15km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_034",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards South. After walking some distance, he turns to his right. He walks further and then turns to his left. In which direction is he facing now?",
+    "options": [
+      "North",
+      "South",
+      "West",
+      "East"
+    ],
+    "correctAnswer": "B",
+    "answer": "South",
+    "pattern": "Tracking cardinal directions through right and left turns",
+    "explanation": "Step 1: He starts facing South. Step 2: A right turn from South makes him face West. Step 3: A left turn from West makes him face South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_035",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 30m towards East, then turns around and walks 40m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "10m West",
+      "10m East",
+      "70m East",
+      "70m West"
+    ],
+    "correctAnswer": "A",
+    "answer": "10m West",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 30m towards East. Step 2: He turns around, meaning he goes towards West. Step 3: He travels 40m towards West. Since 40 > 30, he crosses the starting point. The net distance from start is 40 - 30 = 10m. Since the larger distance is towards West, he is in the West direction. Final Answer: 10m West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_036",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 3km towards South. Then she turns to her right and walks 4km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "5km",
+      "10km",
+      "4km",
+      "7km"
+    ],
+    "correctAnswer": "A",
+    "answer": "5km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 3km South. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 4km West. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(3² + 4²) = sqrt(9 + 16) = sqrt(25) = 5. Final Answer: 5km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_037",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards North. After walking some distance, he turns to his left. He walks further and then turns to his right. In which direction is he facing now?",
+    "options": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "correctAnswer": "A",
+    "answer": "North",
+    "pattern": "Tracking cardinal directions through left and right turns",
+    "explanation": "Step 1: He starts facing North. Step 2: A left turn from North makes him face West. Step 3: A right turn from West makes him face North. Final Answer: North.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_038",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Rahul walks 45m towards South, then turns around and walks 55m in the opposite direction. How far and in which direction is he from the starting point?",
+    "options": [
+      "100m South",
+      "100m North",
+      "10m North",
+      "10m South"
+    ],
+    "correctAnswer": "C",
+    "answer": "10m North",
+    "pattern": "Net distance on a single axis",
+    "explanation": "Step 1: Rahul goes 45m towards South. Step 2: He turns around, meaning he goes towards North. Step 3: He travels 55m towards North. Since 55 > 45, he crosses the starting point. The net distance from start is 55 - 45 = 10m. Since the larger distance is towards North, he is in the North direction. Final Answer: 10m North.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_039",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A girl walks 12km towards North. Then she turns to her right and walks 16km. What is the shortest distance between her starting and ending point?",
+    "options": [
+      "19km",
+      "25km",
+      "20km",
+      "28km"
+    ],
+    "correctAnswer": "C",
+    "answer": "20km",
+    "pattern": "Shortest distance using Pythagorean theorem",
+    "explanation": "Step 1: She walks 12km North. This is the vertical leg of a right-angled triangle. Step 2: She turns and walks 16km East. This is the horizontal leg. Step 3: To find the shortest distance, calculate the hypotenuse: sqrt(12² + 16²) = sqrt(144 + 256) = sqrt(400) = 20. Final Answer: 20km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_040",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man starts walking towards West. After walking some distance, he turns to his right. He walks further and then turns to his left. In which direction is he facing now?",
+    "options": [
+      "West",
+      "East",
+      "South",
+      "North"
+    ],
+    "correctAnswer": "A",
+    "answer": "West",
+    "pattern": "Tracking cardinal directions through right and left turns",
+    "explanation": "Step 1: He starts facing West. Step 2: A right turn from West makes him face North. Step 3: A left turn from North makes him face West. Final Answer: West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_041",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 15m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "15m",
+      "55m",
+      "40m",
+      "25m"
+    ],
+    "correctAnswer": "A",
+    "answer": "15m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 15m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 15m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_042",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing South. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "South-West",
+      "South-East",
+      "West",
+      "South"
+    ],
+    "correctAnswer": "B",
+    "answer": "South-East",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from South brings him to face South-East. Final Answer: South-East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_043",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "North",
+      "South-East",
+      "East",
+      "North-East"
+    ],
+    "correctAnswer": "C",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_044",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 30m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "30m",
+      "70m",
+      "40m",
+      "40m"
+    ],
+    "correctAnswer": "A",
+    "answer": "30m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 30m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 30m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_045",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing North. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "North",
+      "East",
+      "North-East",
+      "North-West"
+    ],
+    "correctAnswer": "D",
+    "answer": "North-West",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from North brings him to face North-West. Final Answer: North-West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_046",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "East",
+      "North-East",
+      "South-East",
+      "North"
+    ],
+    "correctAnswer": "A",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_047",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 20m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "20m",
+      "40m",
+      "60m",
+      "30m"
+    ],
+    "correctAnswer": "A",
+    "answer": "20m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 20m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 20m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_048",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing West. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "South-West",
+      "North",
+      "West",
+      "North-West"
+    ],
+    "correctAnswer": "A",
+    "answer": "South-West",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from West brings him to face South-West. Final Answer: South-West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_049",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "South-East",
+      "North",
+      "East",
+      "North-East"
+    ],
+    "correctAnswer": "C",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_050",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 35m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "40m",
+      "75m",
+      "45m",
+      "35m"
+    ],
+    "correctAnswer": "D",
+    "answer": "35m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 35m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 35m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_051",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing East. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "East",
+      "South-East",
+      "North-East",
+      "South"
+    ],
+    "correctAnswer": "C",
+    "answer": "North-East",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from East brings him to face North-East. Final Answer: North-East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_052",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "East",
+      "North",
+      "North-East",
+      "South-East"
+    ],
+    "correctAnswer": "A",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_053",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 25m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "40m",
+      "35m",
+      "65m",
+      "25m"
+    ],
+    "correctAnswer": "D",
+    "answer": "25m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 25m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 25m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_054",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing South. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "West",
+      "South-East",
+      "South",
+      "South-West"
+    ],
+    "correctAnswer": "B",
+    "answer": "South-East",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from South brings him to face South-East. Final Answer: South-East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_055",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "East",
+      "North",
+      "North-East",
+      "South-East"
+    ],
+    "correctAnswer": "A",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_056",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 15m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "15m",
+      "40m",
+      "55m",
+      "25m"
+    ],
+    "correctAnswer": "A",
+    "answer": "15m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 15m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 15m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_057",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing North. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "North-West",
+      "North",
+      "East",
+      "North-East"
+    ],
+    "correctAnswer": "A",
+    "answer": "North-West",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from North brings him to face North-West. Final Answer: North-West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_058",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "East",
+      "South-East",
+      "North",
+      "North-East"
+    ],
+    "correctAnswer": "A",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_059",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 30m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "40m",
+      "40m",
+      "30m",
+      "70m"
+    ],
+    "correctAnswer": "C",
+    "answer": "30m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 30m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 30m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_060",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing West. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "North-West",
+      "West",
+      "South-West",
+      "North"
+    ],
+    "correctAnswer": "C",
+    "answer": "South-West",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from West brings him to face South-West. Final Answer: South-West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_061",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "East",
+      "South-East",
+      "North",
+      "North-East"
+    ],
+    "correctAnswer": "A",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_062",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 20m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "40m",
+      "60m",
+      "30m",
+      "20m"
+    ],
+    "correctAnswer": "D",
+    "answer": "20m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 20m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 20m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_063",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing East. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "North-East",
+      "East",
+      "South-East",
+      "South"
+    ],
+    "correctAnswer": "A",
+    "answer": "North-East",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from East brings him to face North-East. Final Answer: North-East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_064",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "East",
+      "North-East",
+      "North",
+      "South-East"
+    ],
+    "correctAnswer": "A",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_065",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 35m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "40m",
+      "35m",
+      "75m",
+      "45m"
+    ],
+    "correctAnswer": "B",
+    "answer": "35m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 35m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 35m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_066",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing South. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "South-East",
+      "South",
+      "South-West",
+      "West"
+    ],
+    "correctAnswer": "A",
+    "answer": "South-East",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from South brings him to face South-East. Final Answer: South-East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_067",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "North-East",
+      "North",
+      "East",
+      "South-East"
+    ],
+    "correctAnswer": "C",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_068",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 25m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "40m",
+      "25m",
+      "35m",
+      "65m"
+    ],
+    "correctAnswer": "B",
+    "answer": "25m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 25m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 25m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_069",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing North. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "North-West",
+      "East",
+      "North",
+      "North-East"
+    ],
+    "correctAnswer": "A",
+    "answer": "North-West",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from North brings him to face North-West. Final Answer: North-West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_070",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "North",
+      "South-East",
+      "East",
+      "North-East"
+    ],
+    "correctAnswer": "C",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_071",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 15m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "55m",
+      "15m",
+      "40m",
+      "25m"
+    ],
+    "correctAnswer": "B",
+    "answer": "15m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 15m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 15m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_072",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing West. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "North-West",
+      "West",
+      "South-West",
+      "North"
+    ],
+    "correctAnswer": "C",
+    "answer": "South-West",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from West brings him to face South-West. Final Answer: South-West.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_073",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "South-East",
+      "North",
+      "East",
+      "North-East"
+    ],
+    "correctAnswer": "C",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_074",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 30m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "30m",
+      "40m",
+      "70m",
+      "40m"
+    ],
+    "correctAnswer": "A",
+    "answer": "30m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 30m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 30m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_075",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing East. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "North-East",
+      "South-East",
+      "East",
+      "South"
+    ],
+    "correctAnswer": "A",
+    "answer": "North-East",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from East brings him to face North-East. Final Answer: North-East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_076",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "North",
+      "South-East",
+      "North-East",
+      "East"
+    ],
+    "correctAnswer": "D",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_077",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 20m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "20m",
+      "60m",
+      "40m",
+      "30m"
+    ],
+    "correctAnswer": "A",
+    "answer": "20m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 20m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 20m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_078",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man is facing South. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+    "options": [
+      "South-West",
+      "South",
+      "West",
+      "South-East"
+    ],
+    "correctAnswer": "D",
+    "answer": "South-East",
+    "pattern": "Net angular rotation",
+    "explanation": "Step 1: Clockwise turn = +90°. Anti-clockwise turn = -135°. Step 2: Net rotation = 90 - 135 = -45°. Step 3: A -45° rotation from South brings him to face South-East. Final Answer: South-East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_079",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Point A is 5m North of Point B. Point C is 5m East of Point B. Point D is 5m North of Point C. In which direction is Point D with respect to Point A?",
+    "options": [
+      "East",
+      "North",
+      "South-East",
+      "North-East"
+    ],
+    "correctAnswer": "A",
+    "answer": "East",
+    "pattern": "Grid-based coordinate geometry",
+    "explanation": "Step 1: Let B be at origin (0,0). Step 2: A is 5m North of B, so A is at (0,5). Step 3: C is 5m East of B, so C is at (5,0). Step 4: D is 5m North of C, so D is at (5,5). Step 5: Comparing A (0,5) and D (5,5), D is purely along the positive X axis from A. Therefore, D is East of A. Final Answer: East.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_080",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 20m towards North. Then he turns right and walks 35m. Again he turns right and walks 20m. How far is he from his starting point?",
+    "options": [
+      "40m",
+      "35m",
+      "45m",
+      "75m"
+    ],
+    "correctAnswer": "B",
+    "answer": "35m",
+    "pattern": "Rectangular path, finding horizontal/vertical displacement",
+    "explanation": "Step 1: The boy walks 20m North. Step 2: He turns right (East) and walks 35m. Step 3: He turns right again (South) and walks 20m. Step 4: Since he walked 20m North and then 20m South (which is the same distance), his vertical displacement is zero. He is only horizontally displaced by the distance he walked East. Final Answer: 35m.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_081",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "West",
+      "North",
+      "South",
+      "East"
+    ],
+    "correctAnswer": "C",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_082",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "34km",
+      "62km",
+      "24km",
+      "30km"
+    ],
+    "correctAnswer": "D",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_083",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "South",
+      "East",
+      "West",
+      "North"
+    ],
+    "correctAnswer": "A",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_084",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "30km",
+      "24km",
+      "34km",
+      "62km"
+    ],
+    "correctAnswer": "A",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_085",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correctAnswer": "C",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_086",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "24km",
+      "30km",
+      "34km",
+      "62km"
+    ],
+    "correctAnswer": "B",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_087",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "East",
+      "West",
+      "South",
+      "North"
+    ],
+    "correctAnswer": "C",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_088",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "62km",
+      "30km",
+      "34km",
+      "24km"
+    ],
+    "correctAnswer": "B",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_089",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "West",
+      "South",
+      "East",
+      "North"
+    ],
+    "correctAnswer": "B",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_090",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "24km",
+      "30km",
+      "34km",
+      "62km"
+    ],
+    "correctAnswer": "B",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_091",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "West",
+      "South",
+      "East",
+      "North"
+    ],
+    "correctAnswer": "B",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_092",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "62km",
+      "24km",
+      "30km",
+      "34km"
+    ],
+    "correctAnswer": "C",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_093",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correctAnswer": "C",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_094",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "24km",
+      "62km",
+      "34km",
+      "30km"
+    ],
+    "correctAnswer": "D",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_095",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "North",
+      "South",
+      "West",
+      "East"
+    ],
+    "correctAnswer": "B",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_096",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "24km",
+      "30km",
+      "34km",
+      "62km"
+    ],
+    "correctAnswer": "B",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_097",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "South",
+      "West",
+      "North",
+      "East"
+    ],
+    "correctAnswer": "A",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_098",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "30km",
+      "24km",
+      "62km",
+      "34km"
+    ],
+    "correctAnswer": "A",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_099",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "One morning after sunrise, Rohan and Mohit were standing in a park, talking to each other face to face. If Mohit's shadow fell exactly to the right of Rohan, which direction was Rohan facing?",
+    "options": [
+      "West",
+      "East",
+      "South",
+      "North"
+    ],
+    "correctAnswer": "C",
+    "answer": "South",
+    "pattern": "Sun and shadow logical deduction",
+    "explanation": "Step 1: Determine the sun's position. In the morning, the sun is in the East. Step 2: Because of the sun, shadows always fall to the West. Step 3: The problem states the shadow fell to the right of Rohan. This means Rohan's right side is towards the West. Step 4: If a person's right arm points West, they must be facing South. Final Answer: South.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "DIRECTION_SENSE_100",
+    "topic": "Logical Reasoning",
+    "subtopic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A vehicle starts from point P and runs 10km towards North. It turns right and runs 10km. It then turns right again and runs 34km. Finally, it turns left and runs 8km to reach point Q. What is the shortest distance between P and Q?",
+    "options": [
+      "34km",
+      "30km",
+      "62km",
+      "24km"
+    ],
+    "correctAnswer": "B",
+    "answer": "30km",
+    "pattern": "Complex polygonal path reduced to a right triangle",
+    "explanation": "Step 1: Calculate net horizontal (East/West) movement. Right turn from North is East (10km). Left turn from South is also East (8km). Total East = 10 + 8 = 18km. Step 2: Calculate net vertical (North/South) movement. Initial North = 10km. Right turn from East is South (34km). Total South displacement = 34 - 10 = 24km. Step 3: Draw a right-angled triangle with base 18km and height 24km. Step 4: Shortest distance = sqrt(18² + 24²) = sqrt(324 + 576) = sqrt(900) = 30km. Final Answer: 30km.",
+    "shortcut": "Draw a small plus sign (+) to represent N, S, E, W and trace the path step-by-step.",
+    "commonMistake": "Confusing Left and Right turns, especially when facing South (where Left is East and Right is West).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "direction",
+      "logical reasoning",
+      "NSEW",
+      "shortest distance",
+      "path"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  }
+]
