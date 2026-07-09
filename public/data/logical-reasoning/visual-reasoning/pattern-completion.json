@@ -1,0 +1,4742 @@
+[
+  {
+    "id": "PATTERN_001",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_001_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_001_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_001_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_001_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_001_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_002",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_002_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_002_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_002_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_002_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_002_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_003",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_003_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_003_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_003_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_003_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_003_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_004",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_004_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_004_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_004_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_004_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_004_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_005",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_005_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_005_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_005_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_005_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_005_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_006",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_006_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_006_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_006_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_006_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_006_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_007",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_007_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_007_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_007_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_007_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_007_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_008",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_008_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_008_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_008_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_008_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_008_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_009",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_009_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_009_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_009_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_009_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_009_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_010",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_010_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_010_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_010_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_010_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_010_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_011",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_011_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_011_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_011_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_011_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_011_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_012",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_012_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_012_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_012_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_012_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_012_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_013",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_013_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_013_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_013_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_013_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_013_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_014",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_014_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_014_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_014_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_014_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_014_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_015",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_015_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_015_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_015_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_015_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_015_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_016",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_016_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_016_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_016_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_016_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_016_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_017",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_017_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_017_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_017_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_017_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_017_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_018",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_018_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_018_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_018_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_018_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_018_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_019",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_019_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_019_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_019_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_019_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_019_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_020",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_020_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_020_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_020_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_020_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_020_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_021",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_021_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_021_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_021_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_021_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_021_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_022",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_022_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_022_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_022_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_022_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_022_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_023",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_023_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_023_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_023_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_023_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_023_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_024",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_024_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_024_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_024_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_024_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_024_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_025",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_025_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_025_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_025_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_025_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_025_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_026",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_026_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_026_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_026_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_026_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_026_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_027",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_027_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_027_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_027_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_027_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_027_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_028",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_028_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_028_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_028_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_028_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_028_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_029",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_029_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_029_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_029_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_029_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_029_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_030",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_030_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_030_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_030_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_030_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_030_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_031",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_031_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_031_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_031_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_031_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_031_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_032",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_032_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_032_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_032_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_032_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_032_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_033",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_033_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_033_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_033_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_033_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_033_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_034",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_034_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_034_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_034_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_034_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_034_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_035",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_035_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_035_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_035_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_035_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_035_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_036",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_036_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_036_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_036_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_036_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_036_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_037",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_037_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_037_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_037_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_037_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_037_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation",
+    "visualMetadata": {
+      "type": "Rotation",
+      "rotation": 90,
+      "shape": "arrow"
+    },
+    "explanation": "Step 1: Observe the arrow in the top-left cell. Step 2: The arrow rotates 90 degrees clockwise in each subsequent cell. Step 3: Following this pattern, the missing figure should be the arrow rotated 270 degrees from the start. Final Answer: Select the correctly rotated arrow.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_038",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_038_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_038_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_038_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_038_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_038_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Scaling",
+    "visualMetadata": {
+      "type": "Scaling",
+      "shape": "circle",
+      "progression": "+10 radius"
+    },
+    "explanation": "Step 1: Observe the circle size. Step 2: The circle's radius increases uniformly across the cells. Step 3: The missing figure must be the largest circle in the sequence. Final Answer: Select the circle with the correct increased size.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_039",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_039_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_039_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_039_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_039_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_039_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Shape Addition",
+    "visualMetadata": {
+      "type": "Shape Addition",
+      "shape": "quadrants",
+      "progression": "clockwise fill"
+    },
+    "explanation": "Step 1: Notice which quadrant is filled initially. Step 2: In each step, one additional adjacent quadrant is filled. Step 3: The missing figure should have all four quadrants filled based on the sequence. Final Answer: Select the fully filled square.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_040",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Easy",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_040_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_040_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_040_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_040_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_040_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Number progression",
+    "visualMetadata": {
+      "type": "Number progression",
+      "shape": "dots",
+      "progression": "+1 dot"
+    },
+    "explanation": "Step 1: Count the dots in the first cell. Step 2: The number of dots increases by 1 in each subsequent cell. Step 3: The missing figure must have exactly one more dot than the previous cell. Final Answer: Select the correct dot count.",
+    "shortcut": "Identify the single rule (like rotation or counting) and apply it directly to the last state.",
+    "commonMistake": "Overcomplicating the pattern instead of looking for basic increment or rotation.",
+    "estimatedTime": "40 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_041",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_041_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_041_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_041_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_041_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_041_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_042",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_042_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_042_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_042_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_042_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_042_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_043",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_043_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_043_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_043_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_043_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_043_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_044",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_044_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_044_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_044_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_044_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_044_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_045",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_045_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_045_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_045_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_045_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_045_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_046",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_046_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_046_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_046_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_046_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_046_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_047",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_047_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_047_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_047_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_047_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_047_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_048",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_048_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_048_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_048_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_048_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_048_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_049",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_049_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_049_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_049_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_049_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_049_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_050",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_050_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_050_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_050_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_050_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_050_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_051",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_051_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_051_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_051_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_051_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_051_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_052",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_052_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_052_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_052_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_052_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_052_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_053",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_053_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_053_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_053_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_053_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_053_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_054",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_054_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_054_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_054_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_054_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_054_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_055",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_055_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_055_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_055_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_055_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_055_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_056",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_056_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_056_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_056_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_056_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_056_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_057",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_057_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_057_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_057_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_057_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_057_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_058",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_058_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_058_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_058_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_058_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_058_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_059",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_059_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_059_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_059_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_059_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_059_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_060",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_060_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_060_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_060_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_060_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_060_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_061",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_061_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_061_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_061_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_061_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_061_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_062",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_062_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_062_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_062_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_062_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_062_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_063",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_063_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_063_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_063_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_063_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_063_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_064",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_064_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_064_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_064_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_064_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_064_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_065",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_065_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_065_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_065_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_065_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_065_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_066",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_066_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_066_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_066_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_066_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_066_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_067",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_067_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_067_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_067_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_067_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_067_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_068",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_068_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_068_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_068_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_068_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_068_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_069",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_069_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_069_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_069_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_069_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_069_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_070",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_070_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_070_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_070_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_070_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_070_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_071",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_071_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_071_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_071_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_071_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_071_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_072",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_072_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_072_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_072_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_072_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_072_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_073",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_073_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_073_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_073_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_073_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_073_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_074",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_074_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_074_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_074_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_074_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_074_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_075",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_075_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_075_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_075_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_075_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_075_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_076",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_076_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_076_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_076_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_076_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_076_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_077",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_077_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_077_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_077_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_077_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_077_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_078",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_078_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_078_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_078_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_078_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_078_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_079",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_079_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_079_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_079_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_079_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_079_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Rotation + Color",
+    "visualMetadata": {
+      "type": "Rotation + Color",
+      "rotation": 90,
+      "progression": "color cycles"
+    },
+    "explanation": "Step 1: Observe the triangle's rotation; it turns 90 degrees clockwise each step. Step 2: Observe the color; it changes completely each step. Step 3: The missing figure must be rotated 270 degrees from start and have the 4th color in the sequence. Final Answer: Select the matching rotated and colored shape.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_080",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Medium",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_080_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_080_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_080_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_080_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_080_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Alternation + Scaling",
+    "visualMetadata": {
+      "type": "Alternation + Scaling",
+      "shapes": [
+        "circle",
+        "rect"
+      ]
+    },
+    "explanation": "Step 1: Look at the outer shape; it alternates between circle and square. Step 2: Look at the inner shape; it is always a square but grows in size. Step 3: Since cell 3 has an outer circle, cell 4 must have an outer square with a large inner square. Final Answer: Select the correct combination.",
+    "shortcut": "Check transformations independently (e.g. track shape first, then color).",
+    "commonMistake": "Failing to notice one of the transformations (e.g. noticing rotation but missing color change).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_081",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_081_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_081_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_081_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_081_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_081_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_082",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_082_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_082_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_082_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_082_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_082_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_083",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_083_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_083_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_083_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_083_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_083_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_084",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_084_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_084_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_084_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_084_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_084_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_085",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_085_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_085_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_085_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_085_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_085_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_086",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_086_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_086_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_086_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_086_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_086_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_087",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_087_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_087_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_087_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_087_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_087_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_088",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_088_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_088_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_088_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_088_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_088_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_089",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_089_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_089_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_089_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_089_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_089_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_090",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_090_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_090_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_090_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_090_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_090_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_091",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_091_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_091_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_091_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_091_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_091_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_092",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_092_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_092_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_092_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_092_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_092_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_093",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_093_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_093_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_093_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_093_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_093_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "D",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_094",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_094_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_094_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_094_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_094_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_094_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_095",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_095_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_095_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_095_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_095_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_095_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_096",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_096_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_096_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_096_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_096_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_096_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_097",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_097_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_097_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_097_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_097_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_097_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "C",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_098",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_098_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_098_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_098_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_098_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_098_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_099",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_099_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_099_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_099_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_099_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_099_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "B",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "PATTERN_100",
+    "topic": "Logical Reasoning",
+    "subtopic": "Pattern Completion",
+    "difficulty": "Hard",
+    "questionImage": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_100_q.svg",
+    "question": "Choose the missing figure that completes the pattern.",
+    "options": [
+      {
+        "id": "A",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_100_opt_a.svg"
+      },
+      {
+        "id": "B",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_100_opt_b.svg"
+      },
+      {
+        "id": "C",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_100_opt_c.svg"
+      },
+      {
+        "id": "D",
+        "image": "images/logical-reasoning/visual-reasoning/pattern-completion/pattern_100_opt_d.svg"
+      }
+    ],
+    "correctAnswer": "A",
+    "patternType": "Movement + Rotation + Color",
+    "visualMetadata": {
+      "type": "Movement + Rotation + Color",
+      "progression": "complex"
+    },
+    "explanation": "Step 1: Observe the dot; it moves clockwise to each corner. Step 2: Observe the line; it rotates 45 degrees clockwise. Step 3: Observe the background; it alternates colors. Step 4: Combine all three rules for the final cell. Final Answer: Select the option with the dot in the bottom-left, line at 135 degrees, and the alternating background color.",
+    "shortcut": "Eliminate options by verifying one rule at a time (e.g. check the dot position first to discard wrong answers instantly).",
+    "commonMistake": "Getting overwhelmed and guessing, or missing the background color alternation.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "visual reasoning",
+      "pattern completion",
+      "svg",
+      "complex"
+    ],
+    "tags": [
+      "placement",
+      "visual"
+    ],
+    "visualizeAvailable": true
+  }
+]

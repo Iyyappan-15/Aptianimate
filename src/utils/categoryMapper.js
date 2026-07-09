@@ -84,6 +84,13 @@ export function getTopicCategoryPath(topicSlug) {
     'circular-arrangement':     'logical-reasoning/arrangements-puzzles',
     'floor-puzzles':            'logical-reasoning/arrangements-puzzles',
     'box-puzzles':              'logical-reasoning/arrangements-puzzles',
+
+    // ── Logical Reasoning / Visual Reasoning ────────────────────────────
+    'pattern-completion':       'logical-reasoning/visual-reasoning',
+    'figure-series':            'logical-reasoning/visual-reasoning',
+    'mirror-images':            'logical-reasoning/visual-reasoning',
+    'water-images':             'logical-reasoning/visual-reasoning',
+    'odd-figure-out':           'logical-reasoning/visual-reasoning',
   };
 
   if (map[topicSlug]) return map[topicSlug];
