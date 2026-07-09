@@ -1,1 +1,1942 @@
-[]
+[
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 10 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "17 km/hr",
+      "5 km/hr",
+      "10 km/hr",
+      "15 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "15 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 18 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "18 km/hr",
+      "23 km/hr",
+      "13 km/hr",
+      "25 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "23 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 18 km/hr in still water. If the speed of the stream is 6 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "18 km/hr",
+      "26 km/hr",
+      "12 km/hr",
+      "24 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "24 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 12 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "12 km/hr",
+      "8 km/hr",
+      "16 km/hr",
+      "18 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "16 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 11 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "6 km/hr",
+      "16 km/hr",
+      "11 km/hr",
+      "18 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "16 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 16 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "21 km/hr",
+      "11 km/hr",
+      "23 km/hr",
+      "16 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "21 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 15 km/hr in still water. If the speed of the stream is 2 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "17 km/hr",
+      "13 km/hr",
+      "19 km/hr",
+      "15 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "17 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 16 km/hr in still water. If the speed of the stream is 2 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "16 km/hr",
+      "20 km/hr",
+      "14 km/hr",
+      "18 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "18 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 19 km/hr in still water. If the speed of the stream is 6 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "19 km/hr",
+      "27 km/hr",
+      "13 km/hr",
+      "25 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "25 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 16 km/hr in still water. If the speed of the stream is 3 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "16 km/hr",
+      "13 km/hr",
+      "19 km/hr",
+      "21 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 18 km/hr in still water. If the speed of the stream is 3 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "18 km/hr",
+      "23 km/hr",
+      "15 km/hr",
+      "21 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "21 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 18 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "18 km/hr",
+      "23 km/hr",
+      "13 km/hr",
+      "25 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "23 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 17 km/hr in still water. If the speed of the stream is 3 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "17 km/hr",
+      "22 km/hr",
+      "20 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "20 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 12 km/hr in still water. If the speed of the stream is 6 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "18 km/hr",
+      "6 km/hr",
+      "12 km/hr",
+      "20 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "18 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 12 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "12 km/hr",
+      "17 km/hr",
+      "7 km/hr",
+      "19 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "17 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 13 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "20 km/hr",
+      "8 km/hr",
+      "18 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "18 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 18 km/hr in still water. If the speed of the stream is 2 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "18 km/hr",
+      "22 km/hr",
+      "16 km/hr",
+      "20 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "20 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 15 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "19 km/hr",
+      "11 km/hr",
+      "21 km/hr",
+      "15 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 10 km/hr in still water. If the speed of the stream is 2 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "14 km/hr",
+      "10 km/hr",
+      "8 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 17 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "17 km/hr",
+      "24 km/hr",
+      "12 km/hr",
+      "22 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "22 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 15 km/hr in still water. If the speed of the stream is 3 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "18 km/hr",
+      "15 km/hr",
+      "20 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "18 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 11 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "11 km/hr",
+      "15 km/hr",
+      "17 km/hr",
+      "7 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "15 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 10 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "6 km/hr",
+      "14 km/hr",
+      "16 km/hr",
+      "10 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "14 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 17 km/hr in still water. If the speed of the stream is 2 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "21 km/hr",
+      "15 km/hr",
+      "17 km/hr",
+      "19 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 10 km/hr in still water. If the speed of the stream is 3 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "10 km/hr",
+      "15 km/hr",
+      "13 km/hr",
+      "7 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "13 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 17 km/hr in still water. If the speed of the stream is 2 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "19 km/hr",
+      "15 km/hr",
+      "17 km/hr",
+      "21 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 16 km/hr in still water. If the speed of the stream is 3 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "21 km/hr",
+      "16 km/hr",
+      "13 km/hr",
+      "19 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 13 km/hr in still water. If the speed of the stream is 3 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "16 km/hr",
+      "10 km/hr",
+      "18 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "16 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 14 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "19 km/hr",
+      "14 km/hr",
+      "9 km/hr",
+      "21 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 16 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "20 km/hr",
+      "12 km/hr",
+      "22 km/hr",
+      "16 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "20 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 16 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "20 km/hr",
+      "12 km/hr",
+      "22 km/hr",
+      "16 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "20 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 11 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "17 km/hr",
+      "11 km/hr",
+      "15 km/hr",
+      "7 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "15 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 14 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "14 km/hr",
+      "21 km/hr",
+      "9 km/hr",
+      "19 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 17 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "21 km/hr",
+      "13 km/hr",
+      "23 km/hr",
+      "17 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "21 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 17 km/hr in still water. If the speed of the stream is 4 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "21 km/hr",
+      "17 km/hr",
+      "13 km/hr",
+      "23 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "21 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 19 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "26 km/hr",
+      "14 km/hr",
+      "19 km/hr",
+      "24 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "24 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 17 km/hr in still water. If the speed of the stream is 2 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "19 km/hr",
+      "15 km/hr",
+      "21 km/hr",
+      "17 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 13 km/hr in still water. If the speed of the stream is 5 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "8 km/hr",
+      "18 km/hr",
+      "13 km/hr",
+      "20 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "18 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 16 km/hr in still water. If the speed of the stream is 3 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "19 km/hr",
+      "13 km/hr",
+      "21 km/hr",
+      "16 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Basic Speeds",
+    "difficulty": "Easy",
+    "question": "A boat can travel at 13 km/hr in still water. If the speed of the stream is 6 km/hr, find the speed of the boat downstream.",
+    "options": [
+      "19 km/hr",
+      "7 km/hr",
+      "13 km/hr",
+      "21 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "19 km/hr",
+    "tags": [
+      "downstream"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 18 km/hr and upstream at 10 km/hr. What is his speed in still water?",
+    "options": [
+      "14 km/hr",
+      "15 km/hr",
+      "13 km/hr",
+      "8 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "14 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 24 km/hr and upstream at 18 km/hr. What is his speed in still water?",
+    "options": [
+      "21 km/hr",
+      "6 km/hr",
+      "22 km/hr",
+      "20 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "21 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 18 km/hr and upstream at 10 km/hr. What is his speed in still water?",
+    "options": [
+      "15 km/hr",
+      "13 km/hr",
+      "8 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "14 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 17 km/hr and upstream at 13 km/hr. What is his speed in still water?",
+    "options": [
+      "14 km/hr",
+      "4 km/hr",
+      "16 km/hr",
+      "15 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "15 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 19 km/hr and upstream at 11 km/hr. What is his speed in still water?",
+    "options": [
+      "16 km/hr",
+      "8 km/hr",
+      "14 km/hr",
+      "15 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "15 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 16 km/hr and upstream at 8 km/hr. What is his speed in still water?",
+    "options": [
+      "12 km/hr",
+      "8 km/hr",
+      "11 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 19 km/hr and upstream at 11 km/hr. What is his speed in still water?",
+    "options": [
+      "8 km/hr",
+      "14 km/hr",
+      "16 km/hr",
+      "15 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "15 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 17 km/hr and upstream at 11 km/hr. What is his speed in still water?",
+    "options": [
+      "14 km/hr",
+      "6 km/hr",
+      "15 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "14 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 20 km/hr and upstream at 14 km/hr. What is his speed in still water?",
+    "options": [
+      "17 km/hr",
+      "18 km/hr",
+      "16 km/hr",
+      "6 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "17 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 15 km/hr and upstream at 9 km/hr. What is his speed in still water?",
+    "options": [
+      "13 km/hr",
+      "6 km/hr",
+      "12 km/hr",
+      "11 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 18 km/hr and upstream at 10 km/hr. What is his speed in still water?",
+    "options": [
+      "8 km/hr",
+      "14 km/hr",
+      "15 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "14 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 24 km/hr and upstream at 20 km/hr. What is his speed in still water?",
+    "options": [
+      "23 km/hr",
+      "4 km/hr",
+      "22 km/hr",
+      "21 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "22 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 20 km/hr and upstream at 10 km/hr. What is his speed in still water?",
+    "options": [
+      "14 km/hr",
+      "10 km/hr",
+      "15 km/hr",
+      "16 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "15 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 16 km/hr and upstream at 6 km/hr. What is his speed in still water?",
+    "options": [
+      "11 km/hr",
+      "12 km/hr",
+      "10 km/hr",
+      "10 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "11 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 24 km/hr and upstream at 20 km/hr. What is his speed in still water?",
+    "options": [
+      "22 km/hr",
+      "21 km/hr",
+      "4 km/hr",
+      "23 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "22 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 21 km/hr and upstream at 15 km/hr. What is his speed in still water?",
+    "options": [
+      "6 km/hr",
+      "18 km/hr",
+      "19 km/hr",
+      "17 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "18 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 24 km/hr and upstream at 18 km/hr. What is his speed in still water?",
+    "options": [
+      "6 km/hr",
+      "20 km/hr",
+      "22 km/hr",
+      "21 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "21 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 17 km/hr and upstream at 7 km/hr. What is his speed in still water?",
+    "options": [
+      "13 km/hr",
+      "12 km/hr",
+      "10 km/hr",
+      "11 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "12 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 23 km/hr and upstream at 13 km/hr. What is his speed in still water?",
+    "options": [
+      "17 km/hr",
+      "19 km/hr",
+      "10 km/hr",
+      "18 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "18 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 21 km/hr and upstream at 13 km/hr. What is his speed in still water?",
+    "options": [
+      "18 km/hr",
+      "8 km/hr",
+      "17 km/hr",
+      "16 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "17 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 21 km/hr and upstream at 15 km/hr. What is his speed in still water?",
+    "options": [
+      "6 km/hr",
+      "17 km/hr",
+      "19 km/hr",
+      "18 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "18 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 24 km/hr and upstream at 14 km/hr. What is his speed in still water?",
+    "options": [
+      "19 km/hr",
+      "20 km/hr",
+      "18 km/hr",
+      "10 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "19 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 19 km/hr and upstream at 9 km/hr. What is his speed in still water?",
+    "options": [
+      "14 km/hr",
+      "13 km/hr",
+      "10 km/hr",
+      "15 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "14 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 24 km/hr and upstream at 16 km/hr. What is his speed in still water?",
+    "options": [
+      "8 km/hr",
+      "21 km/hr",
+      "19 km/hr",
+      "20 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "20 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 15 km/hr and upstream at 11 km/hr. What is his speed in still water?",
+    "options": [
+      "13 km/hr",
+      "14 km/hr",
+      "4 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "13 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 24 km/hr and upstream at 14 km/hr. What is his speed in still water?",
+    "options": [
+      "18 km/hr",
+      "10 km/hr",
+      "20 km/hr",
+      "19 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "19 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 22 km/hr and upstream at 12 km/hr. What is his speed in still water?",
+    "options": [
+      "16 km/hr",
+      "18 km/hr",
+      "17 km/hr",
+      "10 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "17 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 15 km/hr and upstream at 9 km/hr. What is his speed in still water?",
+    "options": [
+      "6 km/hr",
+      "12 km/hr",
+      "13 km/hr",
+      "11 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "12 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 23 km/hr and upstream at 19 km/hr. What is his speed in still water?",
+    "options": [
+      "21 km/hr",
+      "22 km/hr",
+      "20 km/hr",
+      "4 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "21 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 17 km/hr and upstream at 7 km/hr. What is his speed in still water?",
+    "options": [
+      "11 km/hr",
+      "10 km/hr",
+      "12 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 15 km/hr and upstream at 9 km/hr. What is his speed in still water?",
+    "options": [
+      "6 km/hr",
+      "13 km/hr",
+      "11 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 19 km/hr and upstream at 15 km/hr. What is his speed in still water?",
+    "options": [
+      "17 km/hr",
+      "18 km/hr",
+      "4 km/hr",
+      "16 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "17 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 23 km/hr and upstream at 15 km/hr. What is his speed in still water?",
+    "options": [
+      "19 km/hr",
+      "20 km/hr",
+      "18 km/hr",
+      "8 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "19 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 17 km/hr and upstream at 7 km/hr. What is his speed in still water?",
+    "options": [
+      "10 km/hr",
+      "11 km/hr",
+      "12 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 15 km/hr and upstream at 5 km/hr. What is his speed in still water?",
+    "options": [
+      "10 km/hr",
+      "11 km/hr",
+      "9 km/hr",
+      "10 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 15 km/hr and upstream at 9 km/hr. What is his speed in still water?",
+    "options": [
+      "6 km/hr",
+      "12 km/hr",
+      "13 km/hr",
+      "11 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "12 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 17 km/hr and upstream at 13 km/hr. What is his speed in still water?",
+    "options": [
+      "15 km/hr",
+      "4 km/hr",
+      "16 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "15 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 18 km/hr and upstream at 8 km/hr. What is his speed in still water?",
+    "options": [
+      "10 km/hr",
+      "12 km/hr",
+      "14 km/hr",
+      "13 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "13 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 22 km/hr and upstream at 12 km/hr. What is his speed in still water?",
+    "options": [
+      "17 km/hr",
+      "16 km/hr",
+      "10 km/hr",
+      "18 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "17 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Finding Still Water Speed",
+    "difficulty": "Medium",
+    "question": "A man rows downstream at 21 km/hr and upstream at 11 km/hr. What is his speed in still water?",
+    "options": [
+      "10 km/hr",
+      "16 km/hr",
+      "17 km/hr",
+      "15 km/hr"
+    ],
+    "correctAnswer": 1,
+    "answer": "16 km/hr",
+    "tags": [
+      "still water"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "8 km/hr",
+      "12 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "8 km/hr",
+      "12 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "14 km/hr",
+      "8 km/hr",
+      "10 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "8 km/hr",
+      "12 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "8 km/hr",
+      "12 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "8 km/hr",
+      "12 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "12 km/hr",
+      "8 km/hr",
+      "10 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "14 km/hr",
+      "12 km/hr",
+      "10 km/hr",
+      "8 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "8 km/hr",
+      "12 km/hr",
+      "10 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "14 km/hr",
+      "8 km/hr",
+      "10 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "8 km/hr",
+      "12 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "14 km/hr",
+      "8 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "14 km/hr",
+      "12 km/hr",
+      "8 km/hr",
+      "10 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "12 km/hr",
+      "14 km/hr",
+      "8 km/hr",
+      "10 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "8 km/hr",
+      "12 km/hr",
+      "14 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "12 km/hr",
+      "14 km/hr",
+      "8 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "14 km/hr",
+      "8 km/hr",
+      "10 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "12 km/hr",
+      "8 km/hr",
+      "14 km/hr",
+      "10 km/hr"
+    ],
+    "correctAnswer": 3,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "14 km/hr",
+      "12 km/hr",
+      "10 km/hr",
+      "8 km/hr"
+    ],
+    "correctAnswer": 2,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "BS_001",
+    "topic": "Work & Motion",
+    "subtopic": "Total Time",
+    "difficulty": "Hard",
+    "question": "A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water.",
+    "options": [
+      "10 km/hr",
+      "8 km/hr",
+      "14 km/hr",
+      "12 km/hr"
+    ],
+    "correctAnswer": 0,
+    "answer": "10 km/hr",
+    "tags": [
+      "equations",
+      "upstream",
+      "downstream"
+    ],
+    "estimatedTime": 90
+  }
+]

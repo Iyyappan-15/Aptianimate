@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "DI_BAR_1_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 1",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_001.png"
+  },
+  {
+    "id": "DI_BAR_1_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 1",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_001.png"
+  },
+  {
+    "id": "DI_BAR_1_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 1",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_001.png"
+  },
+  {
+    "id": "DI_BAR_1_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 1",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_001.png"
+  },
+  {
+    "id": "DI_BAR_1_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 1",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_001.png"
+  },
+  {
+    "id": "DI_BAR_2_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 2",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_002.png"
+  },
+  {
+    "id": "DI_BAR_2_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 2",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_002.png"
+  },
+  {
+    "id": "DI_BAR_2_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 2",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_002.png"
+  },
+  {
+    "id": "DI_BAR_2_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 2",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_002.png"
+  },
+  {
+    "id": "DI_BAR_2_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 2",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_002.png"
+  },
+  {
+    "id": "DI_BAR_3_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 3",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_003.png"
+  },
+  {
+    "id": "DI_BAR_3_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 3",
+    "options": [
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_003.png"
+  },
+  {
+    "id": "DI_BAR_3_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 3",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_003.png"
+  },
+  {
+    "id": "DI_BAR_3_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 3",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_003.png"
+  },
+  {
+    "id": "DI_BAR_3_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 3",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_003.png"
+  },
+  {
+    "id": "DI_BAR_4_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 4",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_004.png"
+  },
+  {
+    "id": "DI_BAR_4_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 4",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_004.png"
+  },
+  {
+    "id": "DI_BAR_4_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 4",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_004.png"
+  },
+  {
+    "id": "DI_BAR_4_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 4",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_004.png"
+  },
+  {
+    "id": "DI_BAR_4_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 4",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_004.png"
+  },
+  {
+    "id": "DI_BAR_5_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 5",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_005.png"
+  },
+  {
+    "id": "DI_BAR_5_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 5",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_005.png"
+  },
+  {
+    "id": "DI_BAR_5_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 5",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_005.png"
+  },
+  {
+    "id": "DI_BAR_5_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 5",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_005.png"
+  },
+  {
+    "id": "DI_BAR_5_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 5",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_005.png"
+  },
+  {
+    "id": "DI_BAR_6_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 6",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_006.png"
+  },
+  {
+    "id": "DI_BAR_6_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 6",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_006.png"
+  },
+  {
+    "id": "DI_BAR_6_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 6",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_006.png"
+  },
+  {
+    "id": "DI_BAR_6_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 6",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_006.png"
+  },
+  {
+    "id": "DI_BAR_6_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 6",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_006.png"
+  },
+  {
+    "id": "DI_BAR_7_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 7",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_007.png"
+  },
+  {
+    "id": "DI_BAR_7_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 7",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_007.png"
+  },
+  {
+    "id": "DI_BAR_7_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 7",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_007.png"
+  },
+  {
+    "id": "DI_BAR_7_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 7",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_007.png"
+  },
+  {
+    "id": "DI_BAR_7_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 7",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_007.png"
+  },
+  {
+    "id": "DI_BAR_8_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 8",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_008.png"
+  },
+  {
+    "id": "DI_BAR_8_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 8",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_008.png"
+  },
+  {
+    "id": "DI_BAR_8_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 8",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_008.png"
+  },
+  {
+    "id": "DI_BAR_8_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 8",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_008.png"
+  },
+  {
+    "id": "DI_BAR_8_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 8",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_008.png"
+  },
+  {
+    "id": "DI_BAR_9_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 9",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_009.png"
+  },
+  {
+    "id": "DI_BAR_9_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 9",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_009.png"
+  },
+  {
+    "id": "DI_BAR_9_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 9",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_009.png"
+  },
+  {
+    "id": "DI_BAR_9_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 9",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_009.png"
+  },
+  {
+    "id": "DI_BAR_9_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 9",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_009.png"
+  },
+  {
+    "id": "DI_BAR_10_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 10",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_010.png"
+  },
+  {
+    "id": "DI_BAR_10_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 10",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_010.png"
+  },
+  {
+    "id": "DI_BAR_10_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 10",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_010.png"
+  },
+  {
+    "id": "DI_BAR_10_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 10",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_010.png"
+  },
+  {
+    "id": "DI_BAR_10_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 10",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_010.png"
+  },
+  {
+    "id": "DI_BAR_11_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 11",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_011.png"
+  },
+  {
+    "id": "DI_BAR_11_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 11",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_011.png"
+  },
+  {
+    "id": "DI_BAR_11_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 11",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_011.png"
+  },
+  {
+    "id": "DI_BAR_11_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 11",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 1"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_011.png"
+  },
+  {
+    "id": "DI_BAR_11_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 11",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_011.png"
+  },
+  {
+    "id": "DI_BAR_12_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 12",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_012.png"
+  },
+  {
+    "id": "DI_BAR_12_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 12",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_012.png"
+  },
+  {
+    "id": "DI_BAR_12_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 12",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_012.png"
+  },
+  {
+    "id": "DI_BAR_12_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 12",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_012.png"
+  },
+  {
+    "id": "DI_BAR_12_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 12",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_012.png"
+  },
+  {
+    "id": "DI_BAR_13_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 13",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_013.png"
+  },
+  {
+    "id": "DI_BAR_13_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 13",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_013.png"
+  },
+  {
+    "id": "DI_BAR_13_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 13",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_013.png"
+  },
+  {
+    "id": "DI_BAR_13_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 13",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_013.png"
+  },
+  {
+    "id": "DI_BAR_13_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 13",
+    "options": [
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_013.png"
+  },
+  {
+    "id": "DI_BAR_14_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 14",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_014.png"
+  },
+  {
+    "id": "DI_BAR_14_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 14",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_014.png"
+  },
+  {
+    "id": "DI_BAR_14_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 14",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_014.png"
+  },
+  {
+    "id": "DI_BAR_14_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 14",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_014.png"
+  },
+  {
+    "id": "DI_BAR_14_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 14",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_014.png"
+  },
+  {
+    "id": "DI_BAR_15_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 15",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_015.png"
+  },
+  {
+    "id": "DI_BAR_15_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 15",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_015.png"
+  },
+  {
+    "id": "DI_BAR_15_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 15",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_015.png"
+  },
+  {
+    "id": "DI_BAR_15_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 15",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_015.png"
+  },
+  {
+    "id": "DI_BAR_15_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 15",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_015.png"
+  },
+  {
+    "id": "DI_BAR_16_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 16",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_016.png"
+  },
+  {
+    "id": "DI_BAR_16_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 16",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_016.png"
+  },
+  {
+    "id": "DI_BAR_16_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 16",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_016.png"
+  },
+  {
+    "id": "DI_BAR_16_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 16",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_016.png"
+  },
+  {
+    "id": "DI_BAR_16_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 16",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_016.png"
+  },
+  {
+    "id": "DI_BAR_17_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 17",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_017.png"
+  },
+  {
+    "id": "DI_BAR_17_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 17",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_017.png"
+  },
+  {
+    "id": "DI_BAR_17_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 17",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_017.png"
+  },
+  {
+    "id": "DI_BAR_17_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 17",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_017.png"
+  },
+  {
+    "id": "DI_BAR_17_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 17",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_017.png"
+  },
+  {
+    "id": "DI_BAR_18_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 18",
+    "options": [
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_018.png"
+  },
+  {
+    "id": "DI_BAR_18_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 18",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_018.png"
+  },
+  {
+    "id": "DI_BAR_18_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 18",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_018.png"
+  },
+  {
+    "id": "DI_BAR_18_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 18",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_018.png"
+  },
+  {
+    "id": "DI_BAR_18_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 18",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_018.png"
+  },
+  {
+    "id": "DI_BAR_19_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 19",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_019.png"
+  },
+  {
+    "id": "DI_BAR_19_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 19",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_019.png"
+  },
+  {
+    "id": "DI_BAR_19_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 19",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_019.png"
+  },
+  {
+    "id": "DI_BAR_19_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 19",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_019.png"
+  },
+  {
+    "id": "DI_BAR_19_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 19",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_019.png"
+  },
+  {
+    "id": "DI_BAR_20_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Bar Chart 20",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_020.png"
+  },
+  {
+    "id": "DI_BAR_20_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Bar Chart 20",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/bar-charts/bar_020.png"
+  },
+  {
+    "id": "DI_BAR_20_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Bar Chart 20",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_020.png"
+  },
+  {
+    "id": "DI_BAR_20_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Bar Chart 20",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 1"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/bar-charts/bar_020.png"
+  },
+  {
+    "id": "DI_BAR_20_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Bar Chart 20",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "bar-charts"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/bar-charts/bar_020.png"
+  }
+]

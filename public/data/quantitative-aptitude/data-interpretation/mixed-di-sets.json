@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "DI_MIX_1_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 1",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_001.png"
+  },
+  {
+    "id": "DI_MIX_1_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 1",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_001.png"
+  },
+  {
+    "id": "DI_MIX_1_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 1",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_001.png"
+  },
+  {
+    "id": "DI_MIX_1_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 1",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_001.png"
+  },
+  {
+    "id": "DI_MIX_1_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 1",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_001.png"
+  },
+  {
+    "id": "DI_MIX_2_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 2",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_002.png"
+  },
+  {
+    "id": "DI_MIX_2_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 2",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_002.png"
+  },
+  {
+    "id": "DI_MIX_2_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 2",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_002.png"
+  },
+  {
+    "id": "DI_MIX_2_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 2",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_002.png"
+  },
+  {
+    "id": "DI_MIX_2_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 2",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_002.png"
+  },
+  {
+    "id": "DI_MIX_3_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 3",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_003.png"
+  },
+  {
+    "id": "DI_MIX_3_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 3",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_003.png"
+  },
+  {
+    "id": "DI_MIX_3_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 3",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_003.png"
+  },
+  {
+    "id": "DI_MIX_3_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 3",
+    "options": [
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_003.png"
+  },
+  {
+    "id": "DI_MIX_3_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 3",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_003.png"
+  },
+  {
+    "id": "DI_MIX_4_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 4",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_004.png"
+  },
+  {
+    "id": "DI_MIX_4_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 4",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_004.png"
+  },
+  {
+    "id": "DI_MIX_4_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 4",
+    "options": [
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_004.png"
+  },
+  {
+    "id": "DI_MIX_4_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 4",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_004.png"
+  },
+  {
+    "id": "DI_MIX_4_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 4",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_004.png"
+  },
+  {
+    "id": "DI_MIX_5_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 5",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_005.png"
+  },
+  {
+    "id": "DI_MIX_5_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 5",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_005.png"
+  },
+  {
+    "id": "DI_MIX_5_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 5",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_005.png"
+  },
+  {
+    "id": "DI_MIX_5_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 5",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_005.png"
+  },
+  {
+    "id": "DI_MIX_5_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 5",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_005.png"
+  },
+  {
+    "id": "DI_MIX_6_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 6",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_006.png"
+  },
+  {
+    "id": "DI_MIX_6_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 6",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_006.png"
+  },
+  {
+    "id": "DI_MIX_6_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 6",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_006.png"
+  },
+  {
+    "id": "DI_MIX_6_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 6",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_006.png"
+  },
+  {
+    "id": "DI_MIX_6_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 6",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_006.png"
+  },
+  {
+    "id": "DI_MIX_7_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 7",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_007.png"
+  },
+  {
+    "id": "DI_MIX_7_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 7",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_007.png"
+  },
+  {
+    "id": "DI_MIX_7_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 7",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_007.png"
+  },
+  {
+    "id": "DI_MIX_7_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 7",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_007.png"
+  },
+  {
+    "id": "DI_MIX_7_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 7",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_007.png"
+  },
+  {
+    "id": "DI_MIX_8_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 8",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_008.png"
+  },
+  {
+    "id": "DI_MIX_8_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 8",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_008.png"
+  },
+  {
+    "id": "DI_MIX_8_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 8",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_008.png"
+  },
+  {
+    "id": "DI_MIX_8_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 8",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_008.png"
+  },
+  {
+    "id": "DI_MIX_8_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 8",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_008.png"
+  },
+  {
+    "id": "DI_MIX_9_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 9",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_009.png"
+  },
+  {
+    "id": "DI_MIX_9_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 9",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_009.png"
+  },
+  {
+    "id": "DI_MIX_9_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 9",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_009.png"
+  },
+  {
+    "id": "DI_MIX_9_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 9",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_009.png"
+  },
+  {
+    "id": "DI_MIX_9_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 9",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_009.png"
+  },
+  {
+    "id": "DI_MIX_10_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 10",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_010.png"
+  },
+  {
+    "id": "DI_MIX_10_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 10",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_010.png"
+  },
+  {
+    "id": "DI_MIX_10_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 10",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_010.png"
+  },
+  {
+    "id": "DI_MIX_10_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 10",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_010.png"
+  },
+  {
+    "id": "DI_MIX_10_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 10",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_010.png"
+  },
+  {
+    "id": "DI_MIX_11_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 11",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_011.png"
+  },
+  {
+    "id": "DI_MIX_11_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 11",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_011.png"
+  },
+  {
+    "id": "DI_MIX_11_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 11",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_011.png"
+  },
+  {
+    "id": "DI_MIX_11_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 11",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_011.png"
+  },
+  {
+    "id": "DI_MIX_11_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 11",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_011.png"
+  },
+  {
+    "id": "DI_MIX_12_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 12",
+    "options": [
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_012.png"
+  },
+  {
+    "id": "DI_MIX_12_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 12",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_012.png"
+  },
+  {
+    "id": "DI_MIX_12_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 12",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_012.png"
+  },
+  {
+    "id": "DI_MIX_12_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 12",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_012.png"
+  },
+  {
+    "id": "DI_MIX_12_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 12",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_012.png"
+  },
+  {
+    "id": "DI_MIX_13_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 13",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_013.png"
+  },
+  {
+    "id": "DI_MIX_13_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 13",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_013.png"
+  },
+  {
+    "id": "DI_MIX_13_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 13",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_013.png"
+  },
+  {
+    "id": "DI_MIX_13_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 13",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_013.png"
+  },
+  {
+    "id": "DI_MIX_13_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 13",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_013.png"
+  },
+  {
+    "id": "DI_MIX_14_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 14",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_014.png"
+  },
+  {
+    "id": "DI_MIX_14_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 14",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_014.png"
+  },
+  {
+    "id": "DI_MIX_14_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 14",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_014.png"
+  },
+  {
+    "id": "DI_MIX_14_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 14",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_014.png"
+  },
+  {
+    "id": "DI_MIX_14_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 14",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_014.png"
+  },
+  {
+    "id": "DI_MIX_15_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 15",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_015.png"
+  },
+  {
+    "id": "DI_MIX_15_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 15",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_015.png"
+  },
+  {
+    "id": "DI_MIX_15_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 15",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_015.png"
+  },
+  {
+    "id": "DI_MIX_15_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 15",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_015.png"
+  },
+  {
+    "id": "DI_MIX_15_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 15",
+    "options": [
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_015.png"
+  },
+  {
+    "id": "DI_MIX_16_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 16",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_016.png"
+  },
+  {
+    "id": "DI_MIX_16_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 16",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_016.png"
+  },
+  {
+    "id": "DI_MIX_16_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 16",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_016.png"
+  },
+  {
+    "id": "DI_MIX_16_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 16",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_016.png"
+  },
+  {
+    "id": "DI_MIX_16_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 16",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_016.png"
+  },
+  {
+    "id": "DI_MIX_17_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 17",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_017.png"
+  },
+  {
+    "id": "DI_MIX_17_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 17",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_017.png"
+  },
+  {
+    "id": "DI_MIX_17_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 17",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_017.png"
+  },
+  {
+    "id": "DI_MIX_17_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 17",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_017.png"
+  },
+  {
+    "id": "DI_MIX_17_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 17",
+    "options": [
+      "Wrong 1",
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_017.png"
+  },
+  {
+    "id": "DI_MIX_18_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 18",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_018.png"
+  },
+  {
+    "id": "DI_MIX_18_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 18",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_018.png"
+  },
+  {
+    "id": "DI_MIX_18_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 18",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_018.png"
+  },
+  {
+    "id": "DI_MIX_18_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 18",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_018.png"
+  },
+  {
+    "id": "DI_MIX_18_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 18",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_018.png"
+  },
+  {
+    "id": "DI_MIX_19_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 19",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_019.png"
+  },
+  {
+    "id": "DI_MIX_19_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 19",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_019.png"
+  },
+  {
+    "id": "DI_MIX_19_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 19",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_019.png"
+  },
+  {
+    "id": "DI_MIX_19_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 19",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_019.png"
+  },
+  {
+    "id": "DI_MIX_19_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 19",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_019.png"
+  },
+  {
+    "id": "DI_MIX_20_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Mixed DI Set 20",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_020.png"
+  },
+  {
+    "id": "DI_MIX_20_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Mixed DI Set 20",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/mixed-di-sets/mixed_020.png"
+  },
+  {
+    "id": "DI_MIX_20_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Mixed DI Set 20",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_020.png"
+  },
+  {
+    "id": "DI_MIX_20_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Mixed DI Set 20",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/mixed-di-sets/mixed_020.png"
+  },
+  {
+    "id": "DI_MIX_20_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Mixed DI",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Mixed DI Set 20",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "mixed-di"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/mixed-di-sets/mixed_020.png"
+  }
+]

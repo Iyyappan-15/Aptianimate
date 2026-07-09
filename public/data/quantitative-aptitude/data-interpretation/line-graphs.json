@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "DI_LINE_1_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 1",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_001.png"
+  },
+  {
+    "id": "DI_LINE_1_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 1",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_001.png"
+  },
+  {
+    "id": "DI_LINE_1_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 1",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_001.png"
+  },
+  {
+    "id": "DI_LINE_1_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 1",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_001.png"
+  },
+  {
+    "id": "DI_LINE_1_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 1",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_001.png"
+  },
+  {
+    "id": "DI_LINE_2_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 2",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_002.png"
+  },
+  {
+    "id": "DI_LINE_2_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 2",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_002.png"
+  },
+  {
+    "id": "DI_LINE_2_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 2",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_002.png"
+  },
+  {
+    "id": "DI_LINE_2_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 2",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_002.png"
+  },
+  {
+    "id": "DI_LINE_2_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 2",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_002.png"
+  },
+  {
+    "id": "DI_LINE_3_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 3",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_003.png"
+  },
+  {
+    "id": "DI_LINE_3_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 3",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_003.png"
+  },
+  {
+    "id": "DI_LINE_3_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 3",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_003.png"
+  },
+  {
+    "id": "DI_LINE_3_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 3",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_003.png"
+  },
+  {
+    "id": "DI_LINE_3_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 3",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_003.png"
+  },
+  {
+    "id": "DI_LINE_4_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 4",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_004.png"
+  },
+  {
+    "id": "DI_LINE_4_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 4",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_004.png"
+  },
+  {
+    "id": "DI_LINE_4_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 4",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_004.png"
+  },
+  {
+    "id": "DI_LINE_4_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 4",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_004.png"
+  },
+  {
+    "id": "DI_LINE_4_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 4",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_004.png"
+  },
+  {
+    "id": "DI_LINE_5_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 5",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_005.png"
+  },
+  {
+    "id": "DI_LINE_5_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 5",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_005.png"
+  },
+  {
+    "id": "DI_LINE_5_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 5",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_005.png"
+  },
+  {
+    "id": "DI_LINE_5_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 5",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_005.png"
+  },
+  {
+    "id": "DI_LINE_5_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 5",
+    "options": [
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_005.png"
+  },
+  {
+    "id": "DI_LINE_6_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 6",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_006.png"
+  },
+  {
+    "id": "DI_LINE_6_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 6",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_006.png"
+  },
+  {
+    "id": "DI_LINE_6_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 6",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_006.png"
+  },
+  {
+    "id": "DI_LINE_6_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 6",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_006.png"
+  },
+  {
+    "id": "DI_LINE_6_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 6",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_006.png"
+  },
+  {
+    "id": "DI_LINE_7_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 7",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_007.png"
+  },
+  {
+    "id": "DI_LINE_7_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 7",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_007.png"
+  },
+  {
+    "id": "DI_LINE_7_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 7",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_007.png"
+  },
+  {
+    "id": "DI_LINE_7_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 7",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_007.png"
+  },
+  {
+    "id": "DI_LINE_7_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 7",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_007.png"
+  },
+  {
+    "id": "DI_LINE_8_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 8",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_008.png"
+  },
+  {
+    "id": "DI_LINE_8_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 8",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_008.png"
+  },
+  {
+    "id": "DI_LINE_8_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 8",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_008.png"
+  },
+  {
+    "id": "DI_LINE_8_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 8",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_008.png"
+  },
+  {
+    "id": "DI_LINE_8_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 8",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_008.png"
+  },
+  {
+    "id": "DI_LINE_9_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 9",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_009.png"
+  },
+  {
+    "id": "DI_LINE_9_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 9",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_009.png"
+  },
+  {
+    "id": "DI_LINE_9_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 9",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_009.png"
+  },
+  {
+    "id": "DI_LINE_9_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 9",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_009.png"
+  },
+  {
+    "id": "DI_LINE_9_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 9",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_009.png"
+  },
+  {
+    "id": "DI_LINE_10_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 10",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_010.png"
+  },
+  {
+    "id": "DI_LINE_10_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 10",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_010.png"
+  },
+  {
+    "id": "DI_LINE_10_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 10",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_010.png"
+  },
+  {
+    "id": "DI_LINE_10_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 10",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_010.png"
+  },
+  {
+    "id": "DI_LINE_10_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 10",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_010.png"
+  },
+  {
+    "id": "DI_LINE_11_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 11",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_011.png"
+  },
+  {
+    "id": "DI_LINE_11_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 11",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_011.png"
+  },
+  {
+    "id": "DI_LINE_11_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 11",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_011.png"
+  },
+  {
+    "id": "DI_LINE_11_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 11",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_011.png"
+  },
+  {
+    "id": "DI_LINE_11_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 11",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_011.png"
+  },
+  {
+    "id": "DI_LINE_12_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 12",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_012.png"
+  },
+  {
+    "id": "DI_LINE_12_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 12",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_012.png"
+  },
+  {
+    "id": "DI_LINE_12_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 12",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_012.png"
+  },
+  {
+    "id": "DI_LINE_12_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 12",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_012.png"
+  },
+  {
+    "id": "DI_LINE_12_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 12",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_012.png"
+  },
+  {
+    "id": "DI_LINE_13_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 13",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_013.png"
+  },
+  {
+    "id": "DI_LINE_13_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 13",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_013.png"
+  },
+  {
+    "id": "DI_LINE_13_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 13",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_013.png"
+  },
+  {
+    "id": "DI_LINE_13_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 13",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_013.png"
+  },
+  {
+    "id": "DI_LINE_13_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 13",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_013.png"
+  },
+  {
+    "id": "DI_LINE_14_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 14",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Wrong 2",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_014.png"
+  },
+  {
+    "id": "DI_LINE_14_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 14",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_014.png"
+  },
+  {
+    "id": "DI_LINE_14_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 14",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_014.png"
+  },
+  {
+    "id": "DI_LINE_14_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 14",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_014.png"
+  },
+  {
+    "id": "DI_LINE_14_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 14",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_014.png"
+  },
+  {
+    "id": "DI_LINE_15_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 15",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_015.png"
+  },
+  {
+    "id": "DI_LINE_15_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 15",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_015.png"
+  },
+  {
+    "id": "DI_LINE_15_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 15",
+    "options": [
+      "Wrong 1",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_015.png"
+  },
+  {
+    "id": "DI_LINE_15_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 15",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_015.png"
+  },
+  {
+    "id": "DI_LINE_15_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 15",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_015.png"
+  },
+  {
+    "id": "DI_LINE_16_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 16",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_016.png"
+  },
+  {
+    "id": "DI_LINE_16_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 16",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_016.png"
+  },
+  {
+    "id": "DI_LINE_16_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 16",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_016.png"
+  },
+  {
+    "id": "DI_LINE_16_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 16",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_016.png"
+  },
+  {
+    "id": "DI_LINE_16_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 16",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_016.png"
+  },
+  {
+    "id": "DI_LINE_17_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 17",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_017.png"
+  },
+  {
+    "id": "DI_LINE_17_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 17",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_017.png"
+  },
+  {
+    "id": "DI_LINE_17_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 17",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_017.png"
+  },
+  {
+    "id": "DI_LINE_17_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 17",
+    "options": [
+      "Wrong 2",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 3"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_017.png"
+  },
+  {
+    "id": "DI_LINE_17_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 17",
+    "options": [
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_017.png"
+  },
+  {
+    "id": "DI_LINE_18_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 18",
+    "options": [
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_018.png"
+  },
+  {
+    "id": "DI_LINE_18_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 18",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_018.png"
+  },
+  {
+    "id": "DI_LINE_18_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 18",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_018.png"
+  },
+  {
+    "id": "DI_LINE_18_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 18",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_018.png"
+  },
+  {
+    "id": "DI_LINE_18_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 18",
+    "options": [
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2"
+    ],
+    "correctAnswer": 1,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_018.png"
+  },
+  {
+    "id": "DI_LINE_19_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 19",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_019.png"
+  },
+  {
+    "id": "DI_LINE_19_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 19",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_019.png"
+  },
+  {
+    "id": "DI_LINE_19_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 19",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Correct Answer",
+      "Wrong 1"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_019.png"
+  },
+  {
+    "id": "DI_LINE_19_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 19",
+    "options": [
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 3"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_019.png"
+  },
+  {
+    "id": "DI_LINE_19_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 19",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_019.png"
+  },
+  {
+    "id": "DI_LINE_20_1",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 1 for Line Graph 20",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_020.png"
+  },
+  {
+    "id": "DI_LINE_20_2",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "Sample Question 2 for Line Graph 20",
+    "options": [
+      "Wrong 3",
+      "Wrong 2",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 60,
+    "image": "/assets/di-images/line-graphs/line_020.png"
+  },
+  {
+    "id": "DI_LINE_20_3",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 3 for Line Graph 20",
+    "options": [
+      "Correct Answer",
+      "Wrong 1",
+      "Wrong 2",
+      "Wrong 3"
+    ],
+    "correctAnswer": 0,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_020.png"
+  },
+  {
+    "id": "DI_LINE_20_4",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Sample Question 4 for Line Graph 20",
+    "options": [
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer",
+      "Wrong 2"
+    ],
+    "correctAnswer": 2,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 90,
+    "image": "/assets/di-images/line-graphs/line_020.png"
+  },
+  {
+    "id": "DI_LINE_20_5",
+    "topic": "Data Interpretation",
+    "subtopic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "Sample Question 5 for Line Graph 20",
+    "options": [
+      "Wrong 2",
+      "Wrong 3",
+      "Wrong 1",
+      "Correct Answer"
+    ],
+    "correctAnswer": 3,
+    "answer": "Correct Answer",
+    "tags": [
+      "DI",
+      "line-graphs"
+    ],
+    "estimatedTime": 120,
+    "image": "/assets/di-images/line-graphs/line_020.png"
+  }
+]

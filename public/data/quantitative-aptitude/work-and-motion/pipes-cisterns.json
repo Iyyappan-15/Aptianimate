@@ -1,1 +1,1982 @@
-[]
+[
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 14 hours and Pipe B can fill it in 24 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "9.84 hours",
+      "38 hours",
+      "7.84 hours",
+      "8.84 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "8.84 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 8 hours and Pipe B can fill it in 16 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "5.33 hours",
+      "24 hours",
+      "4.33 hours",
+      "6.33 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "5.33 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 21 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "7.03 hours",
+      "8.03 hours",
+      "9.03 hours",
+      "34 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "8.03 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 11 hours and Pipe B can fill it in 13 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "5.96 hours",
+      "6.96 hours",
+      "24 hours",
+      "4.96 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "5.96 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 10 hours and Pipe B can fill it in 22 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "32 hours",
+      "5.88 hours",
+      "7.88 hours",
+      "6.88 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "6.88 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 5 hours and Pipe B can fill it in 13 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "3.61 hours",
+      "4.61 hours",
+      "2.61 hours",
+      "18 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "3.61 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 5 hours and Pipe B can fill it in 14 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "19 hours",
+      "2.68 hours",
+      "4.68 hours",
+      "3.68 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "3.68 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 5 hours and Pipe B can fill it in 19 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "24 hours",
+      "2.96 hours",
+      "4.96 hours",
+      "3.96 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "3.96 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 11 hours and Pipe B can fill it in 23 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "34 hours",
+      "6.44 hours",
+      "8.44 hours",
+      "7.44 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "7.44 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 10 hours and Pipe B can fill it in 11 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "4.24 hours",
+      "6.24 hours",
+      "5.24 hours",
+      "21 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "5.24 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 11 hours and Pipe B can fill it in 15 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "6.35 hours",
+      "7.35 hours",
+      "5.35 hours",
+      "26 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "6.35 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 11 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "4.96 hours",
+      "6.96 hours",
+      "24 hours",
+      "5.96 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "5.96 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 11 hours and Pipe B can fill it in 16 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "27 hours",
+      "5.52 hours",
+      "6.52 hours",
+      "7.52 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "6.52 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 14 hours and Pipe B can fill it in 20 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "34 hours",
+      "7.24 hours",
+      "9.24 hours",
+      "8.24 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "8.24 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 22 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "35 hours",
+      "7.17 hours",
+      "9.17 hours",
+      "8.17 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "8.17 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 5 hours and Pipe B can fill it in 12 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "4.53 hours",
+      "3.53 hours",
+      "2.53 hours",
+      "17 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "3.53 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 12 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "6.24 hours",
+      "7.24 hours",
+      "25 hours",
+      "5.24 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "6.24 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 5 hours and Pipe B can fill it in 16 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "21 hours",
+      "4.81 hours",
+      "2.81 hours",
+      "3.81 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "3.81 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 7 hours and Pipe B can fill it in 21 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "6.25 hours",
+      "28 hours",
+      "5.25 hours",
+      "4.25 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "5.25 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 12 hours and Pipe B can fill it in 12 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "6.00 hours",
+      "7.00 hours",
+      "24 hours",
+      "5.00 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "6.00 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 22 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "7.17 hours",
+      "9.17 hours",
+      "8.17 hours",
+      "35 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "8.17 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 5 hours and Pipe B can fill it in 14 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "2.68 hours",
+      "3.68 hours",
+      "19 hours",
+      "4.68 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "3.68 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 10 hours and Pipe B can fill it in 10 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "6.00 hours",
+      "20 hours",
+      "5.00 hours",
+      "4.00 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "5.00 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 19 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "32 hours",
+      "7.72 hours",
+      "8.72 hours",
+      "6.72 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "7.72 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 6 hours and Pipe B can fill it in 19 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "3.56 hours",
+      "5.56 hours",
+      "4.56 hours",
+      "25 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "4.56 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 5 hours and Pipe B can fill it in 10 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "2.33 hours",
+      "4.33 hours",
+      "15 hours",
+      "3.33 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "3.33 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 14 hours and Pipe B can fill it in 19 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "7.06 hours",
+      "9.06 hours",
+      "8.06 hours",
+      "33 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "8.06 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 23 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "8.31 hours",
+      "9.31 hours",
+      "7.31 hours",
+      "36 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "8.31 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 12 hours and Pipe B can fill it in 18 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "8.20 hours",
+      "7.20 hours",
+      "30 hours",
+      "6.20 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "7.20 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 14 hours and Pipe B can fill it in 16 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "7.47 hours",
+      "8.47 hours",
+      "30 hours",
+      "6.47 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "7.47 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 14 hours and Pipe B can fill it in 18 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "6.88 hours",
+      "8.88 hours",
+      "32 hours",
+      "7.88 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "7.88 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 11 hours and Pipe B can fill it in 18 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "6.83 hours",
+      "7.83 hours",
+      "5.83 hours",
+      "29 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "6.83 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 14 hours and Pipe B can fill it in 22 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "8.56 hours",
+      "9.56 hours",
+      "7.56 hours",
+      "36 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "8.56 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 19 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "32 hours",
+      "6.72 hours",
+      "8.72 hours",
+      "7.72 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "7.72 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 15 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "28 hours",
+      "5.96 hours",
+      "7.96 hours",
+      "6.96 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "6.96 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 8 hours and Pipe B can fill it in 12 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "20 hours",
+      "3.80 hours",
+      "5.80 hours",
+      "4.80 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "4.80 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 12 hours and Pipe B can fill it in 24 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "7.00 hours",
+      "9.00 hours",
+      "36 hours",
+      "8.00 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "8.00 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 7 hours and Pipe B can fill it in 13 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "3.55 hours",
+      "5.55 hours",
+      "20 hours",
+      "4.55 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "4.55 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 13 hours and Pipe B can fill it in 10 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "23 hours",
+      "4.65 hours",
+      "6.65 hours",
+      "5.65 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "5.65 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Two Pipes Filling",
+    "difficulty": "Easy",
+    "question": "Pipe A can fill a tank in 6 hours and Pipe B can fill it in 15 hours. If both are opened together, how many hours will it take to fill the tank?",
+    "options": [
+      "4.29 hours",
+      "21 hours",
+      "5.29 hours",
+      "3.29 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "4.29 hours",
+    "tags": [
+      "filling",
+      "basic"
+    ],
+    "estimatedTime": 45
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 8 hours while Pipe B can empty the full tank in 24 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "10.50 hours",
+      "14.00 hours",
+      "12.00 hours",
+      "16.00 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "12.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 7 hours while Pipe B can empty the full tank in 10 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "27.33 hours",
+      "21.83 hours",
+      "25.33 hours",
+      "23.33 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "23.33 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 8 hours while Pipe B can empty the full tank in 22 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "11.07 hours",
+      "14.57 hours",
+      "16.57 hours",
+      "12.57 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "12.57 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 13 hours while Pipe B can empty the full tank in 19 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "45.17 hours",
+      "39.67 hours",
+      "43.17 hours",
+      "41.17 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "41.17 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 6 hours while Pipe B can empty the full tank in 12 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "16.00 hours",
+      "10.50 hours",
+      "14.00 hours",
+      "12.00 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "12.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 6 hours while Pipe B can empty the full tank in 24 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "6.50 hours",
+      "10.00 hours",
+      "12.00 hours",
+      "8.00 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "8.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 5 hours while Pipe B can empty the full tank in 16 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "11.27 hours",
+      "5.77 hours",
+      "9.27 hours",
+      "7.27 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "7.27 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 5 hours while Pipe B can empty the full tank in 12 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "12.57 hours",
+      "7.07 hours",
+      "10.57 hours",
+      "8.57 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "8.57 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 9 hours while Pipe B can empty the full tank in 17 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "21.13 hours",
+      "23.13 hours",
+      "17.63 hours",
+      "19.13 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "19.13 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 9 hours while Pipe B can empty the full tank in 23 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "18.79 hours",
+      "13.29 hours",
+      "16.79 hours",
+      "14.79 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "14.79 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 14 hours while Pipe B can empty the full tank in 22 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "37.00 hours",
+      "40.50 hours",
+      "38.50 hours",
+      "42.50 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "38.50 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 13 hours while Pipe B can empty the full tank in 22 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "31.78 hours",
+      "33.78 hours",
+      "30.28 hours",
+      "35.78 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "31.78 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 14 hours while Pipe B can empty the full tank in 17 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "79.33 hours",
+      "81.33 hours",
+      "77.83 hours",
+      "83.33 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "79.33 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 6 hours while Pipe B can empty the full tank in 12 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "12.00 hours",
+      "14.00 hours",
+      "10.50 hours",
+      "16.00 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 11 hours while Pipe B can empty the full tank in 18 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "28.29 hours",
+      "30.29 hours",
+      "32.29 hours",
+      "26.79 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "28.29 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 6 hours while Pipe B can empty the full tank in 21 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "12.40 hours",
+      "10.40 hours",
+      "6.90 hours",
+      "8.40 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "8.40 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 5 hours while Pipe B can empty the full tank in 16 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "9.27 hours",
+      "11.27 hours",
+      "5.77 hours",
+      "7.27 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "7.27 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 8 hours while Pipe B can empty the full tank in 10 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "44.00 hours",
+      "42.00 hours",
+      "40.00 hours",
+      "38.50 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "40.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 6 hours while Pipe B can empty the full tank in 19 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "12.77 hours",
+      "8.77 hours",
+      "10.77 hours",
+      "7.27 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "8.77 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 11 hours while Pipe B can empty the full tank in 23 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "23.08 hours",
+      "25.08 hours",
+      "21.08 hours",
+      "19.58 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "21.08 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 13 hours while Pipe B can empty the full tank in 20 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "41.14 hours",
+      "35.64 hours",
+      "39.14 hours",
+      "37.14 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "37.14 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 13 hours while Pipe B can empty the full tank in 16 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "69.33 hours",
+      "73.33 hours",
+      "71.33 hours",
+      "67.83 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "69.33 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 12 hours while Pipe B can empty the full tank in 19 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "31.07 hours",
+      "34.57 hours",
+      "32.57 hours",
+      "36.57 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "32.57 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 13 hours while Pipe B can empty the full tank in 16 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "73.33 hours",
+      "69.33 hours",
+      "71.33 hours",
+      "67.83 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "69.33 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 14 hours while Pipe B can empty the full tank in 18 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "63.00 hours",
+      "65.00 hours",
+      "67.00 hours",
+      "61.50 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "63.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 11 hours while Pipe B can empty the full tank in 13 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "75.50 hours",
+      "70.00 hours",
+      "73.50 hours",
+      "71.50 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "71.50 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 10 hours while Pipe B can empty the full tank in 23 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "21.69 hours",
+      "16.19 hours",
+      "19.69 hours",
+      "17.69 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "17.69 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 5 hours while Pipe B can empty the full tank in 19 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "8.79 hours",
+      "10.79 hours",
+      "5.29 hours",
+      "6.79 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "6.79 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 9 hours while Pipe B can empty the full tank in 19 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "17.10 hours",
+      "21.10 hours",
+      "19.10 hours",
+      "15.60 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "17.10 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 5 hours while Pipe B can empty the full tank in 16 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "7.27 hours",
+      "9.27 hours",
+      "5.77 hours",
+      "11.27 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "7.27 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 9 hours while Pipe B can empty the full tank in 18 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "18.00 hours",
+      "20.00 hours",
+      "22.00 hours",
+      "16.50 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "18.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 6 hours while Pipe B can empty the full tank in 18 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "13.00 hours",
+      "11.00 hours",
+      "9.00 hours",
+      "7.50 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "9.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 8 hours while Pipe B can empty the full tank in 24 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "14.00 hours",
+      "10.50 hours",
+      "12.00 hours",
+      "16.00 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "12.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 5 hours while Pipe B can empty the full tank in 24 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "10.32 hours",
+      "6.32 hours",
+      "8.32 hours",
+      "4.82 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "6.32 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 7 hours while Pipe B can empty the full tank in 22 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "14.27 hours",
+      "8.77 hours",
+      "12.27 hours",
+      "10.27 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "10.27 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 9 hours while Pipe B can empty the full tank in 12 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "34.50 hours",
+      "36.00 hours",
+      "38.00 hours",
+      "40.00 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "36.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 10 hours while Pipe B can empty the full tank in 15 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "25.00 hours",
+      "20.00 hours",
+      "15.00 hours",
+      "30.00 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "30.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 10 hours while Pipe B can empty the full tank in 15 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "25.00 hours",
+      "20.00 hours",
+      "15.00 hours",
+      "30.00 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "30.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 10 hours while Pipe B can empty the full tank in 15 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "30.00 hours",
+      "15.00 hours",
+      "20.00 hours",
+      "25.00 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "30.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Filling and Emptying",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 10 hours while Pipe B can empty the full tank in 15 hours. If both are opened together, how long will it take to fill the empty tank?",
+    "options": [
+      "20.00 hours",
+      "30.00 hours",
+      "25.00 hours",
+      "15.00 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "30.00 hours",
+    "tags": [
+      "filling",
+      "emptying"
+    ],
+    "estimatedTime": 60
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "10 hours",
+      "12 hours",
+      "14 hours",
+      "15 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "12 hours",
+      "10 hours",
+      "14 hours",
+      "15 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "15 hours",
+      "14 hours",
+      "10 hours",
+      "12 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "12 hours",
+      "10 hours",
+      "14 hours",
+      "15 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "10 hours",
+      "14 hours",
+      "12 hours",
+      "15 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "12 hours",
+      "10 hours",
+      "15 hours",
+      "14 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "10 hours",
+      "14 hours",
+      "12 hours",
+      "15 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "14 hours",
+      "15 hours",
+      "10 hours",
+      "12 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "15 hours",
+      "10 hours",
+      "14 hours",
+      "12 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "12 hours",
+      "10 hours",
+      "14 hours",
+      "15 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "15 hours",
+      "12 hours",
+      "10 hours",
+      "14 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "14 hours",
+      "10 hours",
+      "15 hours",
+      "12 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "12 hours",
+      "15 hours",
+      "10 hours",
+      "14 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "12 hours",
+      "10 hours",
+      "15 hours",
+      "14 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "12 hours",
+      "10 hours",
+      "15 hours",
+      "14 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "14 hours",
+      "12 hours",
+      "10 hours",
+      "15 hours"
+    ],
+    "correctAnswer": 1,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "14 hours",
+      "10 hours",
+      "15 hours",
+      "12 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "15 hours",
+      "14 hours",
+      "12 hours",
+      "10 hours"
+    ],
+    "correctAnswer": 2,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "12 hours",
+      "10 hours",
+      "14 hours",
+      "15 hours"
+    ],
+    "correctAnswer": 0,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  },
+  {
+    "id": "PC_001",
+    "topic": "Work & Motion",
+    "subtopic": "Three Pipes",
+    "difficulty": "Hard",
+    "question": "Pipe A and B can fill a tank in 10 and 15 hours respectively. Pipe C can empty it in 20 hours. If all three are opened, how much time is needed to fill the tank?",
+    "options": [
+      "15 hours",
+      "14 hours",
+      "10 hours",
+      "12 hours"
+    ],
+    "correctAnswer": 3,
+    "answer": "12 hours",
+    "tags": [
+      "three pipes"
+    ],
+    "estimatedTime": 90
+  }
+]
