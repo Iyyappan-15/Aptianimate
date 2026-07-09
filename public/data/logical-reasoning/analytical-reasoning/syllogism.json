@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "SYLLOGISM_001",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All round are light.\n2. Some light are elephants.\n\nConclusions:\nI. Some round are elephants.\nII. Some light are round.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for round completely inside the circle for light. Step 2: Draw a circle for elephants overlapping with light. However, there is no direct relationship stated between round and elephants. Step 3: Conclusion I says 'Some round are elephants'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some light are round'. Since all round are light, the part of light covering round makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_002",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All pets are red.\n2. All red are cows.\n\nConclusions:\nI. All pets are cows.\nII. Some cows are pets.",
+    "options": [
+      "Neither I nor II follows",
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle pets inside red. Step 2: Draw circle red completely inside cows. Step 3: Thus, circle pets is entirely inside circle cows. Conclusion I ('All pets are cows') is true. Since cows contains pets, there are some cows that are pets. Conclusion II ('Some cows are pets') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_003",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some machines are tigers.\n2. No tigers is monkeys.\n\nConclusions:\nI. Some machines are not monkeys.\nII. Some monkeys are machines.",
+    "options": [
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle machines intersecting with circle tigers. Step 2: Draw circle monkeys totally separate from circle tigers. Step 3: The part of machines that overlaps with tigers can NEVER be monkeys because No tigers is monkeys. Therefore, Conclusion I ('Some machines are not monkeys') is definitely true. There is no direct relation between monkeys and the rest of machines, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_004",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No machines is sweet.\n2. No sweet is dogs.\n\nConclusions:\nI. No machines is dogs.\nII. Some machines are dogs.",
+    "options": [
+      "Only I follows",
+      "Either I or II follows",
+      "Only II follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles machines, sweet, and dogs. machines and sweet are separate. sweet and dogs are separate. Step 2: The relationship between machines and dogs is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between machines and dogs (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_005",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All black are animals.\n2. Some animals are birds.\n\nConclusions:\nI. Some black are birds.\nII. Some animals are black.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for black completely inside the circle for animals. Step 2: Draw a circle for birds overlapping with animals. However, there is no direct relationship stated between black and birds. Step 3: Conclusion I says 'Some black are birds'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some animals are black'. Since all black are animals, the part of animals covering black makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_006",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All pets are soft.\n2. All soft are cars.\n\nConclusions:\nI. All pets are cars.\nII. Some cars are pets.",
+    "options": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle pets inside soft. Step 2: Draw circle soft completely inside cars. Step 3: Thus, circle pets is entirely inside circle cars. Conclusion I ('All pets are cars') is true. Since cars contains pets, there are some cars that are pets. Conclusion II ('Some cars are pets') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_007",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some living beings are vegetables.\n2. No vegetables is colors.\n\nConclusions:\nI. Some living beings are not colors.\nII. Some colors are living beings.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle living beings intersecting with circle vegetables. Step 2: Draw circle colors totally separate from circle vegetables. Step 3: The part of living beings that overlaps with vegetables can NEVER be colors because No vegetables is colors. Therefore, Conclusion I ('Some living beings are not colors') is definitely true. There is no direct relation between colors and the rest of living beings, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_008",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No monkeys is fruits.\n2. No fruits is apples.\n\nConclusions:\nI. No monkeys is apples.\nII. Some monkeys are apples.",
+    "options": [
+      "Only II follows",
+      "Either I or II follows",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles monkeys, fruits, and apples. monkeys and fruits are separate. fruits and apples are separate. Step 2: The relationship between monkeys and apples is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between monkeys and apples (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_009",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All monkeys are oranges.\n2. Some oranges are horses.\n\nConclusions:\nI. Some monkeys are horses.\nII. Some oranges are monkeys.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for monkeys completely inside the circle for oranges. Step 2: Draw a circle for horses overlapping with oranges. However, there is no direct relationship stated between monkeys and horses. Step 3: Conclusion I says 'Some monkeys are horses'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some oranges are monkeys'. Since all monkeys are oranges, the part of oranges covering monkeys makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_010",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All birds are soft.\n2. All soft are sweets.\n\nConclusions:\nI. All birds are sweets.\nII. Some sweets are birds.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle birds inside soft. Step 2: Draw circle soft completely inside sweets. Step 3: Thus, circle birds is entirely inside circle sweets. Conclusion I ('All birds are sweets') is true. Since sweets contains birds, there are some sweets that are birds. Conclusion II ('Some sweets are birds') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_011",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some elephants are cows.\n2. No cows is sour.\n\nConclusions:\nI. Some elephants are not sour.\nII. Some sour are elephants.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle elephants intersecting with circle cows. Step 2: Draw circle sour totally separate from circle cows. Step 3: The part of elephants that overlaps with cows can NEVER be sour because No cows is sour. Therefore, Conclusion I ('Some elephants are not sour') is definitely true. There is no direct relation between sour and the rest of elephants, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_012",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No bikes is sweet.\n2. No sweet is short.\n\nConclusions:\nI. No bikes is short.\nII. Some bikes are short.",
+    "options": [
+      "Either I or II follows",
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles bikes, sweet, and short. bikes and sweet are separate. sweet and short are separate. Step 2: The relationship between bikes and short is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between bikes and short (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_013",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All cars are pets.\n2. Some pets are soft.\n\nConclusions:\nI. Some cars are soft.\nII. Some pets are cars.",
+    "options": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for cars completely inside the circle for pets. Step 2: Draw a circle for soft overlapping with pets. However, there is no direct relationship stated between cars and soft. Step 3: Conclusion I says 'Some cars are soft'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some pets are cars'. Since all cars are pets, the part of pets covering cars makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_014",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All hard are monkeys.\n2. All monkeys are tigers.\n\nConclusions:\nI. All hard are tigers.\nII. Some tigers are hard.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle hard inside monkeys. Step 2: Draw circle monkeys completely inside tigers. Step 3: Thus, circle hard is entirely inside circle tigers. Conclusion I ('All hard are tigers') is true. Since tigers contains hard, there are some tigers that are hard. Conclusion II ('Some tigers are hard') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_015",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some animals are cats.\n2. No cats is black.\n\nConclusions:\nI. Some animals are not black.\nII. Some black are animals.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle animals intersecting with circle cats. Step 2: Draw circle black totally separate from circle cats. Step 3: The part of animals that overlaps with cats can NEVER be black because No cats is black. Therefore, Conclusion I ('Some animals are not black') is definitely true. There is no direct relation between black and the rest of animals, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_016",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No lions is cars.\n2. No cars is hard.\n\nConclusions:\nI. No lions is hard.\nII. Some lions are hard.",
+    "options": [
+      "Neither I nor II follows",
+      "Either I or II follows",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles lions, cars, and hard. lions and cars are separate. cars and hard are separate. Step 2: The relationship between lions and hard is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between lions and hard (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_017",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All apples are creatures.\n2. Some creatures are hard.\n\nConclusions:\nI. Some apples are hard.\nII. Some creatures are apples.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for apples completely inside the circle for creatures. Step 2: Draw a circle for hard overlapping with creatures. However, there is no direct relationship stated between apples and hard. Step 3: Conclusion I says 'Some apples are hard'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some creatures are apples'. Since all apples are creatures, the part of creatures covering apples makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_018",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All apples are bikes.\n2. All bikes are living beings.\n\nConclusions:\nI. All apples are living beings.\nII. Some living beings are apples.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle apples inside bikes. Step 2: Draw circle bikes completely inside living beings. Step 3: Thus, circle apples is entirely inside circle living beings. Conclusion I ('All apples are living beings') is true. Since living beings contains apples, there are some living beings that are apples. Conclusion II ('Some living beings are apples') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_019",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some living beings are boxes.\n2. No boxes is toys.\n\nConclusions:\nI. Some living beings are not toys.\nII. Some toys are living beings.",
+    "options": [
+      "Only I follows",
+      "Both I and II follow",
+      "Only II follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle living beings intersecting with circle boxes. Step 2: Draw circle toys totally separate from circle boxes. Step 3: The part of living beings that overlaps with boxes can NEVER be toys because No boxes is toys. Therefore, Conclusion I ('Some living beings are not toys') is definitely true. There is no direct relation between toys and the rest of living beings, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_020",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No toys is sour.\n2. No sour is grapes.\n\nConclusions:\nI. No toys is grapes.\nII. Some toys are grapes.",
+    "options": [
+      "Either I or II follows",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles toys, sour, and grapes. toys and sour are separate. sour and grapes are separate. Step 2: The relationship between toys and grapes is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between toys and grapes (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_021",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All wild are white.\n2. Some white are heavy.\n\nConclusions:\nI. Some wild are heavy.\nII. Some white are wild.",
+    "options": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Only II follows"
+    ],
+    "correctAnswer": "D",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for wild completely inside the circle for white. Step 2: Draw a circle for heavy overlapping with white. However, there is no direct relationship stated between wild and heavy. Step 3: Conclusion I says 'Some wild are heavy'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some white are wild'. Since all wild are white, the part of white covering wild makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_022",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All grapes are pets.\n2. All pets are oranges.\n\nConclusions:\nI. All grapes are oranges.\nII. Some oranges are grapes.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle grapes inside pets. Step 2: Draw circle pets completely inside oranges. Step 3: Thus, circle grapes is entirely inside circle oranges. Conclusion I ('All grapes are oranges') is true. Since oranges contains grapes, there are some oranges that are grapes. Conclusion II ('Some oranges are grapes') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_023",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some bikes are apples.\n2. No apples is cows.\n\nConclusions:\nI. Some bikes are not cows.\nII. Some cows are bikes.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "D",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle bikes intersecting with circle apples. Step 2: Draw circle cows totally separate from circle apples. Step 3: The part of bikes that overlaps with apples can NEVER be cows because No apples is cows. Therefore, Conclusion I ('Some bikes are not cows') is definitely true. There is no direct relation between cows and the rest of bikes, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_024",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No elephants is creatures.\n2. No creatures is fast.\n\nConclusions:\nI. No elephants is fast.\nII. Some elephants are fast.",
+    "options": [
+      "Only II follows",
+      "Either I or II follows",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles elephants, creatures, and fast. elephants and creatures are separate. creatures and fast are separate. Step 2: The relationship between elephants and fast is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between elephants and fast (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_025",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All tigers are tall.\n2. Some tall are horses.\n\nConclusions:\nI. Some tigers are horses.\nII. Some tall are tigers.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for tigers completely inside the circle for tall. Step 2: Draw a circle for horses overlapping with tall. However, there is no direct relationship stated between tigers and horses. Step 3: Conclusion I says 'Some tigers are horses'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some tall are tigers'. Since all tigers are tall, the part of tall covering tigers makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_026",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All black are oranges.\n2. All oranges are dogs.\n\nConclusions:\nI. All black are dogs.\nII. Some dogs are black.",
+    "options": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Only II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle black inside oranges. Step 2: Draw circle oranges completely inside dogs. Step 3: Thus, circle black is entirely inside circle dogs. Conclusion I ('All black are dogs') is true. Since dogs contains black, there are some dogs that are black. Conclusion II ('Some dogs are black') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_027",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some heavy are fishes.\n2. No fishes is wild.\n\nConclusions:\nI. Some heavy are not wild.\nII. Some wild are heavy.",
+    "options": [
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "D",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle heavy intersecting with circle fishes. Step 2: Draw circle wild totally separate from circle fishes. Step 3: The part of heavy that overlaps with fishes can NEVER be wild because No fishes is wild. Therefore, Conclusion I ('Some heavy are not wild') is definitely true. There is no direct relation between wild and the rest of heavy, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_028",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No toys is soft.\n2. No soft is mangoes.\n\nConclusions:\nI. No toys is mangoes.\nII. Some toys are mangoes.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Either I or II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles toys, soft, and mangoes. toys and soft are separate. soft and mangoes are separate. Step 2: The relationship between toys and mangoes is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between toys and mangoes (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_029",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All colors are animals.\n2. Some animals are round.\n\nConclusions:\nI. Some colors are round.\nII. Some animals are colors.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for colors completely inside the circle for animals. Step 2: Draw a circle for round overlapping with animals. However, there is no direct relationship stated between colors and round. Step 3: Conclusion I says 'Some colors are round'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some animals are colors'. Since all colors are animals, the part of animals covering colors makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_030",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All monkeys are toys.\n2. All toys are living beings.\n\nConclusions:\nI. All monkeys are living beings.\nII. Some living beings are monkeys.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle monkeys inside toys. Step 2: Draw circle toys completely inside living beings. Step 3: Thus, circle monkeys is entirely inside circle living beings. Conclusion I ('All monkeys are living beings') is true. Since living beings contains monkeys, there are some living beings that are monkeys. Conclusion II ('Some living beings are monkeys') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_031",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some tigers are vegetables.\n2. No vegetables is bikes.\n\nConclusions:\nI. Some tigers are not bikes.\nII. Some bikes are tigers.",
+    "options": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle tigers intersecting with circle vegetables. Step 2: Draw circle bikes totally separate from circle vegetables. Step 3: The part of tigers that overlaps with vegetables can NEVER be bikes because No vegetables is bikes. Therefore, Conclusion I ('Some tigers are not bikes') is definitely true. There is no direct relation between bikes and the rest of tigers, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_032",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No horses is light.\n2. No light is sweet.\n\nConclusions:\nI. No horses is sweet.\nII. Some horses are sweet.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Only I follows",
+      "Either I or II follows"
+    ],
+    "correctAnswer": "D",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles horses, light, and sweet. horses and light are separate. light and sweet are separate. Step 2: The relationship between horses and sweet is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between horses and sweet (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_033",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All cats are bikes.\n2. Some bikes are light.\n\nConclusions:\nI. Some cats are light.\nII. Some bikes are cats.",
+    "options": [
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for cats completely inside the circle for bikes. Step 2: Draw a circle for light overlapping with bikes. However, there is no direct relationship stated between cats and light. Step 3: Conclusion I says 'Some cats are light'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some bikes are cats'. Since all cats are bikes, the part of bikes covering cats makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_034",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All mammals are pets.\n2. All pets are light.\n\nConclusions:\nI. All mammals are light.\nII. Some light are mammals.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle mammals inside pets. Step 2: Draw circle pets completely inside light. Step 3: Thus, circle mammals is entirely inside circle light. Conclusion I ('All mammals are light') is true. Since light contains mammals, there are some light that are mammals. Conclusion II ('Some light are mammals') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_035",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some mangoes are horses.\n2. No horses is cows.\n\nConclusions:\nI. Some mangoes are not cows.\nII. Some cows are mangoes.",
+    "options": [
+      "Both I and II follow",
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle mangoes intersecting with circle horses. Step 2: Draw circle cows totally separate from circle horses. Step 3: The part of mangoes that overlaps with horses can NEVER be cows because No horses is cows. Therefore, Conclusion I ('Some mangoes are not cows') is definitely true. There is no direct relation between cows and the rest of mangoes, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_036",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No pets is boxes.\n2. No boxes is mammals.\n\nConclusions:\nI. No pets is mammals.\nII. Some pets are mammals.",
+    "options": [
+      "Either I or II follows",
+      "Only II follows",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles pets, boxes, and mammals. pets and boxes are separate. boxes and mammals are separate. Step 2: The relationship between pets and mammals is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between pets and mammals (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_037",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All mammals are pets.\n2. Some pets are wild.\n\nConclusions:\nI. Some mammals are wild.\nII. Some pets are mammals.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Universal Positive + Particular Positive",
+    "explanation": "Step 1: Draw the Venn diagram. Draw a circle for mammals completely inside the circle for pets. Step 2: Draw a circle for wild overlapping with pets. However, there is no direct relationship stated between mammals and wild. Step 3: Conclusion I says 'Some mammals are wild'. We cannot guarantee this from the diagram, so it doesn't follow. Conclusion II says 'Some pets are mammals'. Since all mammals are pets, the part of pets covering mammals makes this definitely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_038",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. All horses are dogs.\n2. All dogs are birds.\n\nConclusions:\nI. All horses are birds.\nII. Some birds are horses.",
+    "options": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Universal Positive + Universal Positive",
+    "explanation": "Step 1: Draw circle horses inside dogs. Step 2: Draw circle dogs completely inside birds. Step 3: Thus, circle horses is entirely inside circle birds. Conclusion I ('All horses are birds') is true. Since birds contains horses, there are some birds that are horses. Conclusion II ('Some birds are horses') is also true. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_039",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. Some red are living beings.\n2. No living beings is boxes.\n\nConclusions:\nI. Some red are not boxes.\nII. Some boxes are red.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only I follows",
+    "logicRule": "Particular Positive + Universal Negative",
+    "explanation": "Step 1: Draw circle red intersecting with circle living beings. Step 2: Draw circle boxes totally separate from circle living beings. Step 3: The part of red that overlaps with living beings can NEVER be boxes because No living beings is boxes. Therefore, Conclusion I ('Some red are not boxes') is definitely true. There is no direct relation between boxes and the rest of red, so Conclusion II does not follow. Final Answer: Only I follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_040",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Easy",
+    "question": "Statements:\n1. No toys is cars.\n2. No cars is fruits.\n\nConclusions:\nI. No toys is fruits.\nII. Some toys are fruits.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Either I or II follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Either I or II follows",
+    "logicRule": "Universal Negative + Universal Negative (Complementary Pair)",
+    "explanation": "Step 1: Draw circles toys, cars, and fruits. toys and cars are separate. cars and fruits are separate. Step 2: The relationship between toys and fruits is unknown. They could overlap, or they could be completely separate. Step 3: Conclusion I says they are separate. Conclusion II says they overlap. Since these two cover all possibilities between toys and fruits (Subject and Predicate are the same), they form an 'Either/Or' pair. Final Answer: Either I or II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_041",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some short are oranges.\n2. All oranges are heavy.\n\nConclusions:\nI. All short being heavy is a possibility.\nII. All heavy being short is a possibility.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has short intersecting oranges, and oranges fully inside heavy. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle short entirely inside heavy without violating 'Some short are oranges'. Thus I follows. Similarly, we can draw heavy entirely inside short (meaning short, oranges, heavy are all equal or short is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_042",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few fast are grapes.\n2. No grapes is apples.\n\nConclusions:\nI. Some grapes are not fast.\nII. All grapes being fast is a possibility.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few fast are grapes' means 'Some fast are grapes' AND 'Some fast are not grapes'. Note that the restriction is on fast, not grapes. Step 2: Thus, all fast can NEVER go inside grapes. But all grapes CAN go inside fast. Step 3: Conclusion I ('Some grapes are not fast') cannot be definitively concluded. Conclusion II ('All grapes being fast is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_043",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All fast are elephants.\n2. Some elephants are cows.\n3. No cows is toys.\n\nConclusions:\nI. Some fast are not toys.\nII. Some elephants are not toys.",
+    "options": [
+      "Both I and II follow",
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle fast inside elephants. Intersect elephants with cows. Draw toys totally separate from cows. Step 2: Conclusion I says 'Some fast are not toys'. We don't know the exact relation between fast and cows, so we can't definitively connect fast and toys. I is False. Step 3: Conclusion II says 'Some elephants are not toys'. Because 'Some elephants are cows' and 'No cows is toys', the part of elephants that is in cows can NEVER be toys. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_044",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only soft are tigers.\n2. Some soft are fast.\n\nConclusions:\nI. All tigers being fast is a possibility.\nII. No tigers is fast.",
+    "options": [
+      "Only II follows",
+      "Either I or II follows",
+      "Only I follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only soft are tigers' means 'All tigers are soft' AND it implies an exclusive relationship: tigers can NEVER be anything else but soft. Step 2: Therefore, tigers will never intersect with fast. Conclusion I says 'All tigers being fast is a possibility', which is False because tigers is exclusive to soft. Step 3: Conclusion II says 'No tigers is fast', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_045",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some colors are hard.\n2. All hard are vegetables.\n\nConclusions:\nI. All colors being vegetables is a possibility.\nII. All vegetables being colors is a possibility.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has colors intersecting hard, and hard fully inside vegetables. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle colors entirely inside vegetables without violating 'Some colors are hard'. Thus I follows. Similarly, we can draw vegetables entirely inside colors (meaning colors, hard, vegetables are all equal or colors is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_046",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few toys are cows.\n2. No cows is vegetables.\n\nConclusions:\nI. Some cows are not toys.\nII. All cows being toys is a possibility.",
+    "options": [
+      "Neither I nor II follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Only I follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few toys are cows' means 'Some toys are cows' AND 'Some toys are not cows'. Note that the restriction is on toys, not cows. Step 2: Thus, all toys can NEVER go inside cows. But all cows CAN go inside toys. Step 3: Conclusion I ('Some cows are not toys') cannot be definitively concluded. Conclusion II ('All cows being toys is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_047",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All mangoes are dogs.\n2. Some dogs are fishes.\n3. No fishes is apples.\n\nConclusions:\nI. Some mangoes are not apples.\nII. Some dogs are not apples.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle mangoes inside dogs. Intersect dogs with fishes. Draw apples totally separate from fishes. Step 2: Conclusion I says 'Some mangoes are not apples'. We don't know the exact relation between mangoes and fishes, so we can't definitively connect mangoes and apples. I is False. Step 3: Conclusion II says 'Some dogs are not apples'. Because 'Some dogs are fishes' and 'No fishes is apples', the part of dogs that is in fishes can NEVER be apples. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_048",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only apples are heavy.\n2. Some apples are tigers.\n\nConclusions:\nI. All heavy being tigers is a possibility.\nII. No heavy is tigers.",
+    "options": [
+      "Both I and II follow",
+      "Only II follows",
+      "Either I or II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only apples are heavy' means 'All heavy are apples' AND it implies an exclusive relationship: heavy can NEVER be anything else but apples. Step 2: Therefore, heavy will never intersect with tigers. Conclusion I says 'All heavy being tigers is a possibility', which is False because heavy is exclusive to apples. Step 3: Conclusion II says 'No heavy is tigers', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_049",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some pets are boxes.\n2. All boxes are mammals.\n\nConclusions:\nI. All pets being mammals is a possibility.\nII. All mammals being pets is a possibility.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has pets intersecting boxes, and boxes fully inside mammals. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle pets entirely inside mammals without violating 'Some pets are boxes'. Thus I follows. Similarly, we can draw mammals entirely inside pets (meaning pets, boxes, mammals are all equal or pets is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_050",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few apples are tall.\n2. No tall is boxes.\n\nConclusions:\nI. Some tall are not apples.\nII. All tall being apples is a possibility.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few apples are tall' means 'Some apples are tall' AND 'Some apples are not tall'. Note that the restriction is on apples, not tall. Step 2: Thus, all apples can NEVER go inside tall. But all tall CAN go inside apples. Step 3: Conclusion I ('Some tall are not apples') cannot be definitively concluded. Conclusion II ('All tall being apples is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_051",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All elephants are apples.\n2. Some apples are red.\n3. No red is dogs.\n\nConclusions:\nI. Some elephants are not dogs.\nII. Some apples are not dogs.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only II follows"
+    ],
+    "correctAnswer": "D",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle elephants inside apples. Intersect apples with red. Draw dogs totally separate from red. Step 2: Conclusion I says 'Some elephants are not dogs'. We don't know the exact relation between elephants and red, so we can't definitively connect elephants and dogs. I is False. Step 3: Conclusion II says 'Some apples are not dogs'. Because 'Some apples are red' and 'No red is dogs', the part of apples that is in red can NEVER be dogs. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_052",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only machines are horses.\n2. Some machines are bikes.\n\nConclusions:\nI. All horses being bikes is a possibility.\nII. No horses is bikes.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Either I or II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only machines are horses' means 'All horses are machines' AND it implies an exclusive relationship: horses can NEVER be anything else but machines. Step 2: Therefore, horses will never intersect with bikes. Conclusion I says 'All horses being bikes is a possibility', which is False because horses is exclusive to machines. Step 3: Conclusion II says 'No horses is bikes', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_053",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some bananas are tigers.\n2. All tigers are black.\n\nConclusions:\nI. All bananas being black is a possibility.\nII. All black being bananas is a possibility.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has bananas intersecting tigers, and tigers fully inside black. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle bananas entirely inside black without violating 'Some bananas are tigers'. Thus I follows. Similarly, we can draw black entirely inside bananas (meaning bananas, tigers, black are all equal or bananas is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_054",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few creatures are tigers.\n2. No tigers is horses.\n\nConclusions:\nI. Some tigers are not creatures.\nII. All tigers being creatures is a possibility.",
+    "options": [
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few creatures are tigers' means 'Some creatures are tigers' AND 'Some creatures are not tigers'. Note that the restriction is on creatures, not tigers. Step 2: Thus, all creatures can NEVER go inside tigers. But all tigers CAN go inside creatures. Step 3: Conclusion I ('Some tigers are not creatures') cannot be definitively concluded. Conclusion II ('All tigers being creatures is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_055",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All apples are light.\n2. Some light are monkeys.\n3. No monkeys is sour.\n\nConclusions:\nI. Some apples are not sour.\nII. Some light are not sour.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle apples inside light. Intersect light with monkeys. Draw sour totally separate from monkeys. Step 2: Conclusion I says 'Some apples are not sour'. We don't know the exact relation between apples and monkeys, so we can't definitively connect apples and sour. I is False. Step 3: Conclusion II says 'Some light are not sour'. Because 'Some light are monkeys' and 'No monkeys is sour', the part of light that is in monkeys can NEVER be sour. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_056",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only sour are light.\n2. Some sour are dogs.\n\nConclusions:\nI. All light being dogs is a possibility.\nII. No light is dogs.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Either I or II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only sour are light' means 'All light are sour' AND it implies an exclusive relationship: light can NEVER be anything else but sour. Step 2: Therefore, light will never intersect with dogs. Conclusion I says 'All light being dogs is a possibility', which is False because light is exclusive to sour. Step 3: Conclusion II says 'No light is dogs', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_057",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some oranges are birds.\n2. All birds are sweets.\n\nConclusions:\nI. All oranges being sweets is a possibility.\nII. All sweets being oranges is a possibility.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Only I follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has oranges intersecting birds, and birds fully inside sweets. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle oranges entirely inside sweets without violating 'Some oranges are birds'. Thus I follows. Similarly, we can draw sweets entirely inside oranges (meaning oranges, birds, sweets are all equal or oranges is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_058",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few animals are heavy.\n2. No heavy is toys.\n\nConclusions:\nI. Some heavy are not animals.\nII. All heavy being animals is a possibility.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few animals are heavy' means 'Some animals are heavy' AND 'Some animals are not heavy'. Note that the restriction is on animals, not heavy. Step 2: Thus, all animals can NEVER go inside heavy. But all heavy CAN go inside animals. Step 3: Conclusion I ('Some heavy are not animals') cannot be definitively concluded. Conclusion II ('All heavy being animals is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_059",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All smart are sour.\n2. Some sour are fishes.\n3. No fishes is bikes.\n\nConclusions:\nI. Some smart are not bikes.\nII. Some sour are not bikes.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle smart inside sour. Intersect sour with fishes. Draw bikes totally separate from fishes. Step 2: Conclusion I says 'Some smart are not bikes'. We don't know the exact relation between smart and fishes, so we can't definitively connect smart and bikes. I is False. Step 3: Conclusion II says 'Some sour are not bikes'. Because 'Some sour are fishes' and 'No fishes is bikes', the part of sour that is in fishes can NEVER be bikes. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_060",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only mammals are round.\n2. Some mammals are cats.\n\nConclusions:\nI. All round being cats is a possibility.\nII. No round is cats.",
+    "options": [
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows",
+      "Either I or II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only mammals are round' means 'All round are mammals' AND it implies an exclusive relationship: round can NEVER be anything else but mammals. Step 2: Therefore, round will never intersect with cats. Conclusion I says 'All round being cats is a possibility', which is False because round is exclusive to mammals. Step 3: Conclusion II says 'No round is cats', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_061",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some mammals are fishes.\n2. All fishes are mangoes.\n\nConclusions:\nI. All mammals being mangoes is a possibility.\nII. All mangoes being mammals is a possibility.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has mammals intersecting fishes, and fishes fully inside mangoes. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle mammals entirely inside mangoes without violating 'Some mammals are fishes'. Thus I follows. Similarly, we can draw mangoes entirely inside mammals (meaning mammals, fishes, mangoes are all equal or mammals is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_062",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few monkeys are lions.\n2. No lions is cows.\n\nConclusions:\nI. Some lions are not monkeys.\nII. All lions being monkeys is a possibility.",
+    "options": [
+      "Both I and II follow",
+      "Only II follows",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few monkeys are lions' means 'Some monkeys are lions' AND 'Some monkeys are not lions'. Note that the restriction is on monkeys, not lions. Step 2: Thus, all monkeys can NEVER go inside lions. But all lions CAN go inside monkeys. Step 3: Conclusion I ('Some lions are not monkeys') cannot be definitively concluded. Conclusion II ('All lions being monkeys is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_063",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All light are bananas.\n2. Some bananas are creatures.\n3. No creatures is white.\n\nConclusions:\nI. Some light are not white.\nII. Some bananas are not white.",
+    "options": [
+      "Only I follows",
+      "Both I and II follow",
+      "Only II follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle light inside bananas. Intersect bananas with creatures. Draw white totally separate from creatures. Step 2: Conclusion I says 'Some light are not white'. We don't know the exact relation between light and creatures, so we can't definitively connect light and white. I is False. Step 3: Conclusion II says 'Some bananas are not white'. Because 'Some bananas are creatures' and 'No creatures is white', the part of bananas that is in creatures can NEVER be white. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_064",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only apples are elephants.\n2. Some apples are slow.\n\nConclusions:\nI. All elephants being slow is a possibility.\nII. No elephants is slow.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Either I or II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only apples are elephants' means 'All elephants are apples' AND it implies an exclusive relationship: elephants can NEVER be anything else but apples. Step 2: Therefore, elephants will never intersect with slow. Conclusion I says 'All elephants being slow is a possibility', which is False because elephants is exclusive to apples. Step 3: Conclusion II says 'No elephants is slow', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_065",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some elephants are cows.\n2. All cows are slow.\n\nConclusions:\nI. All elephants being slow is a possibility.\nII. All slow being elephants is a possibility.",
+    "options": [
+      "Only I follows",
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has elephants intersecting cows, and cows fully inside slow. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle elephants entirely inside slow without violating 'Some elephants are cows'. Thus I follows. Similarly, we can draw slow entirely inside elephants (meaning elephants, cows, slow are all equal or elephants is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_066",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few hard are elephants.\n2. No elephants is boxes.\n\nConclusions:\nI. Some elephants are not hard.\nII. All elephants being hard is a possibility.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only II follows"
+    ],
+    "correctAnswer": "D",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few hard are elephants' means 'Some hard are elephants' AND 'Some hard are not elephants'. Note that the restriction is on hard, not elephants. Step 2: Thus, all hard can NEVER go inside elephants. But all elephants CAN go inside hard. Step 3: Conclusion I ('Some elephants are not hard') cannot be definitively concluded. Conclusion II ('All elephants being hard is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_067",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All fishes are sour.\n2. Some sour are cars.\n3. No cars is round.\n\nConclusions:\nI. Some fishes are not round.\nII. Some sour are not round.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle fishes inside sour. Intersect sour with cars. Draw round totally separate from cars. Step 2: Conclusion I says 'Some fishes are not round'. We don't know the exact relation between fishes and cars, so we can't definitively connect fishes and round. I is False. Step 3: Conclusion II says 'Some sour are not round'. Because 'Some sour are cars' and 'No cars is round', the part of sour that is in cars can NEVER be round. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_068",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only heavy are cows.\n2. Some heavy are boxes.\n\nConclusions:\nI. All cows being boxes is a possibility.\nII. No cows is boxes.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Either I or II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only heavy are cows' means 'All cows are heavy' AND it implies an exclusive relationship: cows can NEVER be anything else but heavy. Step 2: Therefore, cows will never intersect with boxes. Conclusion I says 'All cows being boxes is a possibility', which is False because cows is exclusive to heavy. Step 3: Conclusion II says 'No cows is boxes', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_069",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some horses are white.\n2. All white are colors.\n\nConclusions:\nI. All horses being colors is a possibility.\nII. All colors being horses is a possibility.",
+    "options": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Only II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has horses intersecting white, and white fully inside colors. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle horses entirely inside colors without violating 'Some horses are white'. Thus I follows. Similarly, we can draw colors entirely inside horses (meaning horses, white, colors are all equal or horses is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_070",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few horses are tall.\n2. No tall is tigers.\n\nConclusions:\nI. Some tall are not horses.\nII. All tall being horses is a possibility.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Only I follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few horses are tall' means 'Some horses are tall' AND 'Some horses are not tall'. Note that the restriction is on horses, not tall. Step 2: Thus, all horses can NEVER go inside tall. But all tall CAN go inside horses. Step 3: Conclusion I ('Some tall are not horses') cannot be definitively concluded. Conclusion II ('All tall being horses is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_071",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All apples are bananas.\n2. Some bananas are monkeys.\n3. No monkeys is bikes.\n\nConclusions:\nI. Some apples are not bikes.\nII. Some bananas are not bikes.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle apples inside bananas. Intersect bananas with monkeys. Draw bikes totally separate from monkeys. Step 2: Conclusion I says 'Some apples are not bikes'. We don't know the exact relation between apples and monkeys, so we can't definitively connect apples and bikes. I is False. Step 3: Conclusion II says 'Some bananas are not bikes'. Because 'Some bananas are monkeys' and 'No monkeys is bikes', the part of bananas that is in monkeys can NEVER be bikes. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_072",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only lions are vegetables.\n2. Some lions are sweets.\n\nConclusions:\nI. All vegetables being sweets is a possibility.\nII. No vegetables is sweets.",
+    "options": [
+      "Either I or II follows",
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only lions are vegetables' means 'All vegetables are lions' AND it implies an exclusive relationship: vegetables can NEVER be anything else but lions. Step 2: Therefore, vegetables will never intersect with sweets. Conclusion I says 'All vegetables being sweets is a possibility', which is False because vegetables is exclusive to lions. Step 3: Conclusion II says 'No vegetables is sweets', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_073",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some slow are elephants.\n2. All elephants are dogs.\n\nConclusions:\nI. All slow being dogs is a possibility.\nII. All dogs being slow is a possibility.",
+    "options": [
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has slow intersecting elephants, and elephants fully inside dogs. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle slow entirely inside dogs without violating 'Some slow are elephants'. Thus I follows. Similarly, we can draw dogs entirely inside slow (meaning slow, elephants, dogs are all equal or slow is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_074",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few horses are white.\n2. No white is oranges.\n\nConclusions:\nI. Some white are not horses.\nII. All white being horses is a possibility.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "D",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few horses are white' means 'Some horses are white' AND 'Some horses are not white'. Note that the restriction is on horses, not white. Step 2: Thus, all horses can NEVER go inside white. But all white CAN go inside horses. Step 3: Conclusion I ('Some white are not horses') cannot be definitively concluded. Conclusion II ('All white being horses is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_075",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All dogs are cats.\n2. Some cats are slow.\n3. No slow is living beings.\n\nConclusions:\nI. Some dogs are not living beings.\nII. Some cats are not living beings.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle dogs inside cats. Intersect cats with slow. Draw living beings totally separate from slow. Step 2: Conclusion I says 'Some dogs are not living beings'. We don't know the exact relation between dogs and slow, so we can't definitively connect dogs and living beings. I is False. Step 3: Conclusion II says 'Some cats are not living beings'. Because 'Some cats are slow' and 'No slow is living beings', the part of cats that is in slow can NEVER be living beings. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_076",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only cats are sweets.\n2. Some cats are round.\n\nConclusions:\nI. All sweets being round is a possibility.\nII. No sweets is round.",
+    "options": [
+      "Both I and II follow",
+      "Only II follows",
+      "Only I follows",
+      "Either I or II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only cats are sweets' means 'All sweets are cats' AND it implies an exclusive relationship: sweets can NEVER be anything else but cats. Step 2: Therefore, sweets will never intersect with round. Conclusion I says 'All sweets being round is a possibility', which is False because sweets is exclusive to cats. Step 3: Conclusion II says 'No sweets is round', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_077",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Some elephants are bananas.\n2. All bananas are soft.\n\nConclusions:\nI. All elephants being soft is a possibility.\nII. All soft being elephants is a possibility.",
+    "options": [
+      "Both I and II follow",
+      "Only II follows",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility Cases",
+    "explanation": "Step 1: The basic diagram has elephants intersecting bananas, and bananas fully inside soft. Step 2: In syllogism, 'possibility' means if we can draw a diagram without violating the statements, it's true. Step 3: We can draw circle elephants entirely inside soft without violating 'Some elephants are bananas'. Thus I follows. Similarly, we can draw soft entirely inside elephants (meaning elephants, bananas, soft are all equal or elephants is the largest). Thus II follows. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_078",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only a few black are round.\n2. No round is mangoes.\n\nConclusions:\nI. Some round are not black.\nII. All round being black is a possibility.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Only a few",
+    "explanation": "Step 1: 'Only a few black are round' means 'Some black are round' AND 'Some black are not round'. Note that the restriction is on black, not round. Step 2: Thus, all black can NEVER go inside round. But all round CAN go inside black. Step 3: Conclusion I ('Some round are not black') cannot be definitively concluded. Conclusion II ('All round being black is a possibility') is completely true. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_079",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. All black are tall.\n2. Some tall are grapes.\n3. No grapes is animals.\n\nConclusions:\nI. Some black are not animals.\nII. Some tall are not animals.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "3 Statements Mix",
+    "explanation": "Step 1: Draw circle black inside tall. Intersect tall with grapes. Draw animals totally separate from grapes. Step 2: Conclusion I says 'Some black are not animals'. We don't know the exact relation between black and grapes, so we can't definitively connect black and animals. I is False. Step 3: Conclusion II says 'Some tall are not animals'. Because 'Some tall are grapes' and 'No grapes is animals', the part of tall that is in grapes can NEVER be animals. II is True. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_080",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Medium",
+    "question": "Statements:\n1. Only horses are apples.\n2. Some horses are fishes.\n\nConclusions:\nI. All apples being fishes is a possibility.\nII. No apples is fishes.",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Either I or II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "A",
+    "answer": "Only II follows",
+    "logicRule": "Exclusive Proposition (Only A are B)",
+    "explanation": "Step 1: 'Only horses are apples' means 'All apples are horses' AND it implies an exclusive relationship: apples can NEVER be anything else but horses. Step 2: Therefore, apples will never intersect with fishes. Conclusion I says 'All apples being fishes is a possibility', which is False because apples is exclusive to horses. Step 3: Conclusion II says 'No apples is fishes', which is absolutely True due to the exclusivity. Final Answer: Only II follows.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_081",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few living beings are oranges.\n2. Some oranges are lions.\n3. All lions are light.\n4. No light is living beings.\n\nConclusions:\nI. Some oranges are not living beings.\nII. Some light are oranges.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few living beings are oranges' means living beings and oranges intersect. 'No light is living beings' means light and living beings are totally separate. Step 2: 'Some oranges are lions' and 'All lions are light' means that the part of oranges which is lions is definitely inside light. Step 3: Since light cannot touch living beings, the part of oranges inside light can NEVER touch living beings. Therefore, 'Some oranges are not living beings' (Conclusion I) is definitely true. Step 4: 'All lions are light' and 'Some oranges are lions' directly implies that 'Some light are oranges' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_082",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All apples are tall.\n2. No tall is oranges.\n3. Some oranges are bananas.\n\nConclusions:\nI. All apples being bananas is a possibility.\nII. Some bananas are not apples.",
+    "options": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: apples is entirely inside tall. tall and oranges are separate. Therefore, apples and oranges are completely separate (No apples is oranges). Step 2: oranges intersects with bananas. Step 3: Conclusion I: We can draw bananas very large to encompass all of apples, without touching tall's restriction on oranges. So, 'All apples being bananas' is possible. True. Step 4: Conclusion II: The part of bananas that intersects with oranges can NEVER be tall, and thus can NEVER be apples. So, 'Some bananas are not apples' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_083",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few round are bananas.\n2. Some bananas are smart.\n3. All smart are fishes.\n4. No fishes is round.\n\nConclusions:\nI. Some bananas are not round.\nII. Some fishes are bananas.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few round are bananas' means round and bananas intersect. 'No fishes is round' means fishes and round are totally separate. Step 2: 'Some bananas are smart' and 'All smart are fishes' means that the part of bananas which is smart is definitely inside fishes. Step 3: Since fishes cannot touch round, the part of bananas inside fishes can NEVER touch round. Therefore, 'Some bananas are not round' (Conclusion I) is definitely true. Step 4: 'All smart are fishes' and 'Some bananas are smart' directly implies that 'Some fishes are bananas' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_084",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All bikes are soft.\n2. No soft is cars.\n3. Some cars are fast.\n\nConclusions:\nI. All bikes being fast is a possibility.\nII. Some fast are not bikes.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: bikes is entirely inside soft. soft and cars are separate. Therefore, bikes and cars are completely separate (No bikes is cars). Step 2: cars intersects with fast. Step 3: Conclusion I: We can draw fast very large to encompass all of bikes, without touching soft's restriction on cars. So, 'All bikes being fast' is possible. True. Step 4: Conclusion II: The part of fast that intersects with cars can NEVER be soft, and thus can NEVER be bikes. So, 'Some fast are not bikes' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_085",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few toys are hard.\n2. Some hard are grapes.\n3. All grapes are vegetables.\n4. No vegetables is toys.\n\nConclusions:\nI. Some hard are not toys.\nII. Some vegetables are hard.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few toys are hard' means toys and hard intersect. 'No vegetables is toys' means vegetables and toys are totally separate. Step 2: 'Some hard are grapes' and 'All grapes are vegetables' means that the part of hard which is grapes is definitely inside vegetables. Step 3: Since vegetables cannot touch toys, the part of hard inside vegetables can NEVER touch toys. Therefore, 'Some hard are not toys' (Conclusion I) is definitely true. Step 4: 'All grapes are vegetables' and 'Some hard are grapes' directly implies that 'Some vegetables are hard' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_086",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All sweet are fruits.\n2. No fruits is round.\n3. Some round are birds.\n\nConclusions:\nI. All sweet being birds is a possibility.\nII. Some birds are not sweet.",
+    "options": [
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: sweet is entirely inside fruits. fruits and round are separate. Therefore, sweet and round are completely separate (No sweet is round). Step 2: round intersects with birds. Step 3: Conclusion I: We can draw birds very large to encompass all of sweet, without touching fruits's restriction on round. So, 'All sweet being birds' is possible. True. Step 4: Conclusion II: The part of birds that intersects with round can NEVER be fruits, and thus can NEVER be sweet. So, 'Some birds are not sweet' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_087",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few oranges are animals.\n2. Some animals are soft.\n3. All soft are mammals.\n4. No mammals is oranges.\n\nConclusions:\nI. Some animals are not oranges.\nII. Some mammals are animals.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Only I follows",
+      "Both I and II follow"
+    ],
+    "correctAnswer": "D",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few oranges are animals' means oranges and animals intersect. 'No mammals is oranges' means mammals and oranges are totally separate. Step 2: 'Some animals are soft' and 'All soft are mammals' means that the part of animals which is soft is definitely inside mammals. Step 3: Since mammals cannot touch oranges, the part of animals inside mammals can NEVER touch oranges. Therefore, 'Some animals are not oranges' (Conclusion I) is definitely true. Step 4: 'All soft are mammals' and 'Some animals are soft' directly implies that 'Some mammals are animals' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_088",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All heavy are cars.\n2. No cars is elephants.\n3. Some elephants are short.\n\nConclusions:\nI. All heavy being short is a possibility.\nII. Some short are not heavy.",
+    "options": [
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: heavy is entirely inside cars. cars and elephants are separate. Therefore, heavy and elephants are completely separate (No heavy is elephants). Step 2: elephants intersects with short. Step 3: Conclusion I: We can draw short very large to encompass all of heavy, without touching cars's restriction on elephants. So, 'All heavy being short' is possible. True. Step 4: Conclusion II: The part of short that intersects with elephants can NEVER be cars, and thus can NEVER be heavy. So, 'Some short are not heavy' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_089",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few bikes are white.\n2. Some white are elephants.\n3. All elephants are dogs.\n4. No dogs is bikes.\n\nConclusions:\nI. Some white are not bikes.\nII. Some dogs are white.",
+    "options": [
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few bikes are white' means bikes and white intersect. 'No dogs is bikes' means dogs and bikes are totally separate. Step 2: 'Some white are elephants' and 'All elephants are dogs' means that the part of white which is elephants is definitely inside dogs. Step 3: Since dogs cannot touch bikes, the part of white inside dogs can NEVER touch bikes. Therefore, 'Some white are not bikes' (Conclusion I) is definitely true. Step 4: 'All elephants are dogs' and 'Some white are elephants' directly implies that 'Some dogs are white' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_090",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All cows are toys.\n2. No toys is birds.\n3. Some birds are dogs.\n\nConclusions:\nI. All cows being dogs is a possibility.\nII. Some dogs are not cows.",
+    "options": [
+      "Only I follows",
+      "Both I and II follow",
+      "Only II follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: cows is entirely inside toys. toys and birds are separate. Therefore, cows and birds are completely separate (No cows is birds). Step 2: birds intersects with dogs. Step 3: Conclusion I: We can draw dogs very large to encompass all of cows, without touching toys's restriction on birds. So, 'All cows being dogs' is possible. True. Step 4: Conclusion II: The part of dogs that intersects with birds can NEVER be toys, and thus can NEVER be cows. So, 'Some dogs are not cows' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_091",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few light are creatures.\n2. Some creatures are tigers.\n3. All tigers are elephants.\n4. No elephants is light.\n\nConclusions:\nI. Some creatures are not light.\nII. Some elephants are creatures.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few light are creatures' means light and creatures intersect. 'No elephants is light' means elephants and light are totally separate. Step 2: 'Some creatures are tigers' and 'All tigers are elephants' means that the part of creatures which is tigers is definitely inside elephants. Step 3: Since elephants cannot touch light, the part of creatures inside elephants can NEVER touch light. Therefore, 'Some creatures are not light' (Conclusion I) is definitely true. Step 4: 'All tigers are elephants' and 'Some creatures are tigers' directly implies that 'Some elephants are creatures' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_092",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All smart are oranges.\n2. No oranges is hard.\n3. Some hard are fast.\n\nConclusions:\nI. All smart being fast is a possibility.\nII. Some fast are not smart.",
+    "options": [
+      "Only II follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only I follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: smart is entirely inside oranges. oranges and hard are separate. Therefore, smart and hard are completely separate (No smart is hard). Step 2: hard intersects with fast. Step 3: Conclusion I: We can draw fast very large to encompass all of smart, without touching oranges's restriction on hard. So, 'All smart being fast' is possible. True. Step 4: Conclusion II: The part of fast that intersects with hard can NEVER be oranges, and thus can NEVER be smart. So, 'Some fast are not smart' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_093",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few tall are elephants.\n2. Some elephants are bananas.\n3. All bananas are fruits.\n4. No fruits is tall.\n\nConclusions:\nI. Some elephants are not tall.\nII. Some fruits are elephants.",
+    "options": [
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few tall are elephants' means tall and elephants intersect. 'No fruits is tall' means fruits and tall are totally separate. Step 2: 'Some elephants are bananas' and 'All bananas are fruits' means that the part of elephants which is bananas is definitely inside fruits. Step 3: Since fruits cannot touch tall, the part of elephants inside fruits can NEVER touch tall. Therefore, 'Some elephants are not tall' (Conclusion I) is definitely true. Step 4: 'All bananas are fruits' and 'Some elephants are bananas' directly implies that 'Some fruits are elephants' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_094",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All lions are heavy.\n2. No heavy is apples.\n3. Some apples are fishes.\n\nConclusions:\nI. All lions being fishes is a possibility.\nII. Some fishes are not lions.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: lions is entirely inside heavy. heavy and apples are separate. Therefore, lions and apples are completely separate (No lions is apples). Step 2: apples intersects with fishes. Step 3: Conclusion I: We can draw fishes very large to encompass all of lions, without touching heavy's restriction on apples. So, 'All lions being fishes' is possible. True. Step 4: Conclusion II: The part of fishes that intersects with apples can NEVER be heavy, and thus can NEVER be lions. So, 'Some fishes are not lions' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_095",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few white are red.\n2. Some red are short.\n3. All short are cows.\n4. No cows is white.\n\nConclusions:\nI. Some red are not white.\nII. Some cows are red.",
+    "options": [
+      "Only II follows",
+      "Both I and II follow",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "B",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few white are red' means white and red intersect. 'No cows is white' means cows and white are totally separate. Step 2: 'Some red are short' and 'All short are cows' means that the part of red which is short is definitely inside cows. Step 3: Since cows cannot touch white, the part of red inside cows can NEVER touch white. Therefore, 'Some red are not white' (Conclusion I) is definitely true. Step 4: 'All short are cows' and 'Some red are short' directly implies that 'Some cows are red' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_096",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All light are hard.\n2. No hard is vegetables.\n3. Some vegetables are horses.\n\nConclusions:\nI. All light being horses is a possibility.\nII. Some horses are not light.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: light is entirely inside hard. hard and vegetables are separate. Therefore, light and vegetables are completely separate (No light is vegetables). Step 2: vegetables intersects with horses. Step 3: Conclusion I: We can draw horses very large to encompass all of light, without touching hard's restriction on vegetables. So, 'All light being horses' is possible. True. Step 4: Conclusion II: The part of horses that intersects with vegetables can NEVER be hard, and thus can NEVER be light. So, 'Some horses are not light' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_097",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few white are vegetables.\n2. Some vegetables are dogs.\n3. All dogs are tall.\n4. No tall is white.\n\nConclusions:\nI. Some vegetables are not white.\nII. Some tall are vegetables.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few white are vegetables' means white and vegetables intersect. 'No tall is white' means tall and white are totally separate. Step 2: 'Some vegetables are dogs' and 'All dogs are tall' means that the part of vegetables which is dogs is definitely inside tall. Step 3: Since tall cannot touch white, the part of vegetables inside tall can NEVER touch white. Therefore, 'Some vegetables are not white' (Conclusion I) is definitely true. Step 4: 'All dogs are tall' and 'Some vegetables are dogs' directly implies that 'Some tall are vegetables' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_098",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All white are wild.\n2. No wild is sweet.\n3. Some sweet are creatures.\n\nConclusions:\nI. All white being creatures is a possibility.\nII. Some creatures are not white.",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow",
+      "Only II follows"
+    ],
+    "correctAnswer": "C",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: white is entirely inside wild. wild and sweet are separate. Therefore, white and sweet are completely separate (No white is sweet). Step 2: sweet intersects with creatures. Step 3: Conclusion I: We can draw creatures very large to encompass all of white, without touching wild's restriction on sweet. So, 'All white being creatures' is possible. True. Step 4: Conclusion II: The part of creatures that intersects with sweet can NEVER be wild, and thus can NEVER be white. So, 'Some creatures are not white' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_099",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. Only a few light are oranges.\n2. Some oranges are mangoes.\n3. All mangoes are animals.\n4. No animals is light.\n\nConclusions:\nI. Some oranges are not light.\nII. Some animals are oranges.",
+    "options": [
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows",
+      "Neither I nor II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Complex overlapping constraints",
+    "explanation": "Step 1: 'Only a few light are oranges' means light and oranges intersect. 'No animals is light' means animals and light are totally separate. Step 2: 'Some oranges are mangoes' and 'All mangoes are animals' means that the part of oranges which is mangoes is definitely inside animals. Step 3: Since animals cannot touch light, the part of oranges inside animals can NEVER touch light. Therefore, 'Some oranges are not light' (Conclusion I) is definitely true. Step 4: 'All mangoes are animals' and 'Some oranges are mangoes' directly implies that 'Some animals are oranges' is true (Conclusion II). Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "SYLLOGISM_100",
+    "topic": "Logical Reasoning",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "question": "Statements:\n1. All fruits are slow.\n2. No slow is dogs.\n3. Some dogs are vegetables.\n\nConclusions:\nI. All fruits being vegetables is a possibility.\nII. Some vegetables are not fruits.",
+    "options": [
+      "Both I and II follow",
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "correctAnswer": "A",
+    "answer": "Both I and II follow",
+    "logicRule": "Possibility with Universal Negative",
+    "explanation": "Step 1: fruits is entirely inside slow. slow and dogs are separate. Therefore, fruits and dogs are completely separate (No fruits is dogs). Step 2: dogs intersects with vegetables. Step 3: Conclusion I: We can draw vegetables very large to encompass all of fruits, without touching slow's restriction on dogs. So, 'All fruits being vegetables' is possible. True. Step 4: Conclusion II: The part of vegetables that intersects with dogs can NEVER be slow, and thus can NEVER be fruits. So, 'Some vegetables are not fruits' is definitively True. Final Answer: Both I and II follow.",
+    "shortcut": "Draw Venn diagrams. Standardize circles for 'All', intersecting for 'Some', non-intersecting with cross for 'No'.",
+    "commonMistake": "Assuming 'Some' means 'Only Some' (e.g., if 'All A are B', 'Some A are B' is also logically true).",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "syllogism",
+      "logical reasoning",
+      "statements",
+      "conclusions",
+      "venn diagram"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  }
+]

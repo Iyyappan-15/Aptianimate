@@ -73,6 +73,11 @@ export function getTopicCategoryPath(topicSlug) {
     'blood-relations':          'logical-reasoning/logical-relations',
     'direction-sense':          'logical-reasoning/logical-relations',
     'ranking-ordering':         'logical-reasoning/logical-relations',
+
+    // ── Logical Reasoning / Analytical Reasoning ────────────────────────
+    'syllogism':                'logical-reasoning/analytical-reasoning',
+    'statement-conclusion':     'logical-reasoning/analytical-reasoning',
+    'statement-assumption':     'logical-reasoning/analytical-reasoning',
   };
 
   if (map[topicSlug]) return map[topicSlug];
