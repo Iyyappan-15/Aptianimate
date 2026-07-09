@@ -78,6 +78,12 @@ export function getTopicCategoryPath(topicSlug) {
     'syllogism':                'logical-reasoning/analytical-reasoning',
     'statement-conclusion':     'logical-reasoning/analytical-reasoning',
     'statement-assumption':     'logical-reasoning/analytical-reasoning',
+
+    // ── Logical Reasoning / Arrangements & Puzzles ──────────────────────
+    'linear-arrangement':       'logical-reasoning/arrangements-puzzles',
+    'circular-arrangement':     'logical-reasoning/arrangements-puzzles',
+    'floor-puzzles':            'logical-reasoning/arrangements-puzzles',
+    'box-puzzles':              'logical-reasoning/arrangements-puzzles',
   };
 
   if (map[topicSlug]) return map[topicSlug];
