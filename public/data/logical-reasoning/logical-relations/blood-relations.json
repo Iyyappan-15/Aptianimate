@@ -1,0 +1,3102 @@
+[
+  {
+    "id": "BLOOD_RELATIONS_001",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Karan said, \"He is the son of the only son of my mother.\" How is Karan related to that boy?",
+    "options": [
+      "Father",
+      "Uncle",
+      "Brother",
+      "Grandfather"
+    ],
+    "correctAnswer": "A",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Karan's mother's only son\" is Karan himself (since he is male). Step 2: The boy is the \"son of\" this person (Karan). Step 3: Therefore, the boy is Karan's son, which means Karan is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_002",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Anjali said, \"His brother's father is the only son of my grandfather.\" How is Anjali related to the man in the photograph?",
+    "options": [
+      "Aunt",
+      "Mother",
+      "Sister",
+      "Daughter"
+    ],
+    "correctAnswer": "C",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Anjali's grandfather's only son\" is Anjali's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Anjali's father. Thus, they are siblings. Since Anjali is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_003",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "D is the brother of R. R is the sister of Z. How is D related to Z?",
+    "options": [
+      "Sister",
+      "Brother",
+      "Cannot be determined",
+      "Cousin"
+    ],
+    "correctAnswer": "B",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: D is the brother of R (So, D is male). Step 2: R is the sister of Z. Step 3: This means D, R, and Z are siblings. Since D is male, he is the brother of Z. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_004",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Karan is the father of Raj. Sunil is the brother of Karan. How is Sunil related to Raj?",
+    "options": [
+      "Cousin",
+      "Grandfather",
+      "Uncle",
+      "Brother"
+    ],
+    "correctAnswer": "C",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Karan is the father of Raj. Step 2: Sunil is the brother of Karan. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_005",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Amit said, \"He is the son of the only son of my mother.\" How is Amit related to that boy?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Father",
+      "Grandfather"
+    ],
+    "correctAnswer": "C",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Amit's mother's only son\" is Amit himself (since he is male). Step 2: The boy is the \"son of\" this person (Amit). Step 3: Therefore, the boy is Amit's son, which means Amit is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_006",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Simran said, \"His brother's father is the only son of my grandfather.\" How is Simran related to the man in the photograph?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Aunt",
+      "Daughter"
+    ],
+    "correctAnswer": "B",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Simran's grandfather's only son\" is Simran's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Simran's father. Thus, they are siblings. Since Simran is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_007",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "E is the brother of X. X is the sister of P. How is E related to P?",
+    "options": [
+      "Cousin",
+      "Brother",
+      "Sister",
+      "Cannot be determined"
+    ],
+    "correctAnswer": "B",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: E is the brother of X (So, E is male). Step 2: X is the sister of P. Step 3: This means E, X, and P are siblings. Since E is male, he is the brother of P. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_008",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Raj is the father of Sunil. Rohan is the brother of Raj. How is Rohan related to Sunil?",
+    "options": [
+      "Uncle",
+      "Cousin",
+      "Grandfather",
+      "Brother"
+    ],
+    "correctAnswer": "A",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Raj is the father of Sunil. Step 2: Rohan is the brother of Raj. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_009",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Ajay said, \"He is the son of the only son of my mother.\" How is Ajay related to that boy?",
+    "options": [
+      "Brother",
+      "Grandfather",
+      "Uncle",
+      "Father"
+    ],
+    "correctAnswer": "D",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Ajay's mother's only son\" is Ajay himself (since he is male). Step 2: The boy is the \"son of\" this person (Ajay). Step 3: Therefore, the boy is Ajay's son, which means Ajay is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_010",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Sunita said, \"His brother's father is the only son of my grandfather.\" How is Sunita related to the man in the photograph?",
+    "options": [
+      "Daughter",
+      "Aunt",
+      "Mother",
+      "Sister"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Sunita's grandfather's only son\" is Sunita's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Sunita's father. Thus, they are siblings. Since Sunita is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_011",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "D is the brother of E. E is the sister of M. How is D related to M?",
+    "options": [
+      "Brother",
+      "Sister",
+      "Cousin",
+      "Cannot be determined"
+    ],
+    "correctAnswer": "A",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: D is the brother of E (So, D is male). Step 2: E is the sister of M. Step 3: This means D, E, and M are siblings. Since D is male, he is the brother of M. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_012",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Vikram is the father of Ajay. Ravi is the brother of Vikram. How is Ravi related to Ajay?",
+    "options": [
+      "Uncle",
+      "Grandfather",
+      "Brother",
+      "Cousin"
+    ],
+    "correctAnswer": "A",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Vikram is the father of Ajay. Step 2: Ravi is the brother of Vikram. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_013",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Aarav said, \"He is the son of the only son of my mother.\" How is Aarav related to that boy?",
+    "options": [
+      "Father",
+      "Uncle",
+      "Grandfather",
+      "Brother"
+    ],
+    "correctAnswer": "A",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Aarav's mother's only son\" is Aarav himself (since he is male). Step 2: The boy is the \"son of\" this person (Aarav). Step 3: Therefore, the boy is Aarav's son, which means Aarav is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_014",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Reena said, \"His brother's father is the only son of my grandfather.\" How is Reena related to the man in the photograph?",
+    "options": [
+      "Mother",
+      "Daughter",
+      "Aunt",
+      "Sister"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Reena's grandfather's only son\" is Reena's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Reena's father. Thus, they are siblings. Since Reena is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_015",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Q is the brother of B. B is the sister of C. How is Q related to C?",
+    "options": [
+      "Brother",
+      "Cousin",
+      "Cannot be determined",
+      "Sister"
+    ],
+    "correctAnswer": "A",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: Q is the brother of B (So, Q is male). Step 2: B is the sister of C. Step 3: This means Q, B, and C are siblings. Since Q is male, he is the brother of C. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_016",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Rohan is the father of Aarav. Amit is the brother of Rohan. How is Amit related to Aarav?",
+    "options": [
+      "Grandfather",
+      "Uncle",
+      "Brother",
+      "Cousin"
+    ],
+    "correctAnswer": "B",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Rohan is the father of Aarav. Step 2: Amit is the brother of Rohan. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_017",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Vikram said, \"He is the son of the only son of my mother.\" How is Vikram related to that boy?",
+    "options": [
+      "Father",
+      "Brother",
+      "Grandfather",
+      "Uncle"
+    ],
+    "correctAnswer": "A",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Vikram's mother's only son\" is Vikram himself (since he is male). Step 2: The boy is the \"son of\" this person (Vikram). Step 3: Therefore, the boy is Vikram's son, which means Vikram is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_018",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Anjali said, \"His brother's father is the only son of my grandfather.\" How is Anjali related to the man in the photograph?",
+    "options": [
+      "Aunt",
+      "Daughter",
+      "Mother",
+      "Sister"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Anjali's grandfather's only son\" is Anjali's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Anjali's father. Thus, they are siblings. Since Anjali is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_019",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Y is the brother of P. P is the sister of E. How is Y related to E?",
+    "options": [
+      "Cannot be determined",
+      "Sister",
+      "Brother",
+      "Cousin"
+    ],
+    "correctAnswer": "C",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: Y is the brother of P (So, Y is male). Step 2: P is the sister of E. Step 3: This means Y, P, and E are siblings. Since Y is male, he is the brother of E. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_020",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Amit is the father of Rahul. Sunil is the brother of Amit. How is Sunil related to Rahul?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Grandfather",
+      "Cousin"
+    ],
+    "correctAnswer": "B",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Amit is the father of Rahul. Step 2: Sunil is the brother of Amit. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_021",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Aarav said, \"He is the son of the only son of my mother.\" How is Aarav related to that boy?",
+    "options": [
+      "Grandfather",
+      "Father",
+      "Brother",
+      "Uncle"
+    ],
+    "correctAnswer": "B",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Aarav's mother's only son\" is Aarav himself (since he is male). Step 2: The boy is the \"son of\" this person (Aarav). Step 3: Therefore, the boy is Aarav's son, which means Aarav is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_022",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Anjali said, \"His brother's father is the only son of my grandfather.\" How is Anjali related to the man in the photograph?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Daughter",
+      "Aunt"
+    ],
+    "correctAnswer": "B",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Anjali's grandfather's only son\" is Anjali's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Anjali's father. Thus, they are siblings. Since Anjali is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_023",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "S is the brother of M. M is the sister of Z. How is S related to Z?",
+    "options": [
+      "Cannot be determined",
+      "Sister",
+      "Cousin",
+      "Brother"
+    ],
+    "correctAnswer": "D",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: S is the brother of M (So, S is male). Step 2: M is the sister of Z. Step 3: This means S, M, and Z are siblings. Since S is male, he is the brother of Z. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_024",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Sameer is the father of Raj. Amit is the brother of Sameer. How is Amit related to Raj?",
+    "options": [
+      "Cousin",
+      "Uncle",
+      "Grandfather",
+      "Brother"
+    ],
+    "correctAnswer": "B",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Sameer is the father of Raj. Step 2: Amit is the brother of Sameer. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_025",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Suresh said, \"He is the son of the only son of my mother.\" How is Suresh related to that boy?",
+    "options": [
+      "Father",
+      "Uncle",
+      "Brother",
+      "Grandfather"
+    ],
+    "correctAnswer": "A",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Suresh's mother's only son\" is Suresh himself (since he is male). Step 2: The boy is the \"son of\" this person (Suresh). Step 3: Therefore, the boy is Suresh's son, which means Suresh is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_026",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Anjali said, \"His brother's father is the only son of my grandfather.\" How is Anjali related to the man in the photograph?",
+    "options": [
+      "Daughter",
+      "Mother",
+      "Aunt",
+      "Sister"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Anjali's grandfather's only son\" is Anjali's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Anjali's father. Thus, they are siblings. Since Anjali is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_027",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Z is the brother of R. R is the sister of S. How is Z related to S?",
+    "options": [
+      "Cousin",
+      "Sister",
+      "Brother",
+      "Cannot be determined"
+    ],
+    "correctAnswer": "C",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: Z is the brother of R (So, Z is male). Step 2: R is the sister of S. Step 3: This means Z, R, and S are siblings. Since Z is male, he is the brother of S. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_028",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Deepak is the father of Ravi. Rahul is the brother of Deepak. How is Rahul related to Ravi?",
+    "options": [
+      "Grandfather",
+      "Cousin",
+      "Uncle",
+      "Brother"
+    ],
+    "correctAnswer": "C",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Deepak is the father of Ravi. Step 2: Rahul is the brother of Deepak. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_029",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Rohan said, \"He is the son of the only son of my mother.\" How is Rohan related to that boy?",
+    "options": [
+      "Father",
+      "Brother",
+      "Grandfather",
+      "Uncle"
+    ],
+    "correctAnswer": "A",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Rohan's mother's only son\" is Rohan himself (since he is male). Step 2: The boy is the \"son of\" this person (Rohan). Step 3: Therefore, the boy is Rohan's son, which means Rohan is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_030",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Anjali said, \"His brother's father is the only son of my grandfather.\" How is Anjali related to the man in the photograph?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Daughter"
+    ],
+    "correctAnswer": "C",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Anjali's grandfather's only son\" is Anjali's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Anjali's father. Thus, they are siblings. Since Anjali is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_031",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Z is the brother of E. E is the sister of S. How is Z related to S?",
+    "options": [
+      "Cousin",
+      "Brother",
+      "Sister",
+      "Cannot be determined"
+    ],
+    "correctAnswer": "B",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: Z is the brother of E (So, Z is male). Step 2: E is the sister of S. Step 3: This means Z, E, and S are siblings. Since Z is male, he is the brother of S. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_032",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Aarav is the father of Amit. Suresh is the brother of Aarav. How is Suresh related to Amit?",
+    "options": [
+      "Cousin",
+      "Grandfather",
+      "Uncle",
+      "Brother"
+    ],
+    "correctAnswer": "C",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Aarav is the father of Amit. Step 2: Suresh is the brother of Aarav. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_033",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Rahul said, \"He is the son of the only son of my mother.\" How is Rahul related to that boy?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Grandfather",
+      "Father"
+    ],
+    "correctAnswer": "D",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Rahul's mother's only son\" is Rahul himself (since he is male). Step 2: The boy is the \"son of\" this person (Rahul). Step 3: Therefore, the boy is Rahul's son, which means Rahul is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_034",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Geeta said, \"His brother's father is the only son of my grandfather.\" How is Geeta related to the man in the photograph?",
+    "options": [
+      "Daughter",
+      "Sister",
+      "Mother",
+      "Aunt"
+    ],
+    "correctAnswer": "B",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Geeta's grandfather's only son\" is Geeta's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Geeta's father. Thus, they are siblings. Since Geeta is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_035",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "B is the brother of E. E is the sister of Y. How is B related to Y?",
+    "options": [
+      "Sister",
+      "Cannot be determined",
+      "Brother",
+      "Cousin"
+    ],
+    "correctAnswer": "C",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: B is the brother of E (So, B is male). Step 2: E is the sister of Y. Step 3: This means B, E, and Y are siblings. Since B is male, he is the brother of Y. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_036",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Ajay is the father of Sunil. Suresh is the brother of Ajay. How is Suresh related to Sunil?",
+    "options": [
+      "Uncle",
+      "Grandfather",
+      "Cousin",
+      "Brother"
+    ],
+    "correctAnswer": "A",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Ajay is the father of Sunil. Step 2: Suresh is the brother of Ajay. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_037",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a photograph of a boy, Ravi said, \"He is the son of the only son of my mother.\" How is Ravi related to that boy?",
+    "options": [
+      "Uncle",
+      "Father",
+      "Brother",
+      "Grandfather"
+    ],
+    "correctAnswer": "B",
+    "answer": "Father",
+    "pattern": "Direct family trace backward",
+    "explanation": "Step 1: Break down the sentence. \"Ravi's mother's only son\" is Ravi himself (since he is male). Step 2: The boy is the \"son of\" this person (Ravi). Step 3: Therefore, the boy is Ravi's son, which means Ravi is the boy's father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_038",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man in a photograph, Seema said, \"His brother's father is the only son of my grandfather.\" How is Seema related to the man in the photograph?",
+    "options": [
+      "Aunt",
+      "Daughter",
+      "Sister",
+      "Mother"
+    ],
+    "correctAnswer": "C",
+    "answer": "Sister",
+    "pattern": "Tracing from grandfather down",
+    "explanation": "Step 1: \"Seema's grandfather's only son\" is Seema's father. Step 2: \"His (the man's) brother's father\" is simply the man's father. Step 3: So, the man's father is Seema's father. Thus, they are siblings. Since Seema is female, she is his sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_039",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "M is the brother of E. E is the sister of A. How is M related to A?",
+    "options": [
+      "Brother",
+      "Cannot be determined",
+      "Cousin",
+      "Sister"
+    ],
+    "correctAnswer": "A",
+    "answer": "Brother",
+    "pattern": "Sibling relationship chain",
+    "explanation": "Step 1: M is the brother of E (So, M is male). Step 2: E is the sister of A. Step 3: This means M, E, and A are siblings. Since M is male, he is the brother of A. Final Answer: Brother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_040",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Ramesh is the father of Vikram. Rahul is the brother of Ramesh. How is Rahul related to Vikram?",
+    "options": [
+      "Cousin",
+      "Brother",
+      "Grandfather",
+      "Uncle"
+    ],
+    "correctAnswer": "D",
+    "answer": "Uncle",
+    "pattern": "Parent's sibling",
+    "explanation": "Step 1: Ramesh is the father of Vikram. Step 2: Rahul is the brother of Ramesh. Step 3: The brother of a person's father is their uncle. Final Answer: Uncle.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_041",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Sameer is the brother of Sunita. Ravi is the son of Sameer. Meena is the daughter of Sunita. How are Ravi and Meena related?",
+    "options": [
+      "Brother and Sister",
+      "Uncle and Niece",
+      "Nephew and Niece",
+      "Cousins"
+    ],
+    "correctAnswer": "D",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Sameer and Sunita are siblings. Step 2: Ravi is the child of Sameer, and Meena is the child of Sunita. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_042",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "P is the mother of N. N is the sister of X. R is the son of X. How is P related to R?",
+    "options": [
+      "Aunt",
+      "Grandmother",
+      "Sister",
+      "Mother"
+    ],
+    "correctAnswer": "B",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: P is the mother of N. Step 2: N and X are siblings, so P is also the mother of X. Step 3: R is the son of X. Step 4: The mother of one's parent (X) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_043",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does S + Y - C mean?",
+    "options": [
+      "C is the father of S",
+      "S is the father of C",
+      "S is the brother of C",
+      "S is the uncle of C"
+    ],
+    "correctAnswer": "B",
+    "answer": "S is the father of C",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. S + Y means S is the father of Y. Step 2: Y - C means Y is the sister of C. Step 3: Since Y and C are siblings, their father is the same. Therefore, S is the father of C. Final Answer: S is the father of C.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_044",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is M related to X in the expression M $ Q @ D # X?",
+    "options": [
+      "Father",
+      "Brother",
+      "Grandfather",
+      "Uncle"
+    ],
+    "correctAnswer": "A",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: D # X -> D is the sister of X. Step 2: Q @ D -> Q is the mother of D. So, Q is the mother of both D and X. Step 3: M $ Q -> M is the husband of Q. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_045",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Amit is the brother of Rita. Deepak is the son of Amit. Geeta is the daughter of Rita. How are Deepak and Geeta related?",
+    "options": [
+      "Cousins",
+      "Brother and Sister",
+      "Nephew and Niece",
+      "Uncle and Niece"
+    ],
+    "correctAnswer": "A",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Amit and Rita are siblings. Step 2: Deepak is the child of Amit, and Geeta is the child of Rita. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_046",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "X is the mother of T. T is the sister of Z. M is the son of Z. How is X related to M?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Grandmother"
+    ],
+    "correctAnswer": "D",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: X is the mother of T. Step 2: T and Z are siblings, so X is also the mother of Z. Step 3: M is the son of Z. Step 4: The mother of one's parent (Z) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_047",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does S + C - N mean?",
+    "options": [
+      "S is the brother of N",
+      "S is the father of N",
+      "S is the uncle of N",
+      "N is the father of S"
+    ],
+    "correctAnswer": "B",
+    "answer": "S is the father of N",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. S + C means S is the father of C. Step 2: C - N means C is the sister of N. Step 3: Since C and N are siblings, their father is the same. Therefore, S is the father of N. Final Answer: S is the father of N.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_048",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is Q related to Y in the expression Q $ N @ R # Y?",
+    "options": [
+      "Grandfather",
+      "Brother",
+      "Father",
+      "Uncle"
+    ],
+    "correctAnswer": "C",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: R # Y -> R is the sister of Y. Step 2: N @ R -> N is the mother of R. So, N is the mother of both R and Y. Step 3: Q $ N -> Q is the husband of N. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_049",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Vikram is the brother of Riya. Aarav is the son of Vikram. Anjali is the daughter of Riya. How are Aarav and Anjali related?",
+    "options": [
+      "Uncle and Niece",
+      "Nephew and Niece",
+      "Brother and Sister",
+      "Cousins"
+    ],
+    "correctAnswer": "D",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Vikram and Riya are siblings. Step 2: Aarav is the child of Vikram, and Anjali is the child of Riya. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_050",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "N is the mother of E. E is the sister of S. Y is the son of S. How is N related to Y?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Grandmother"
+    ],
+    "correctAnswer": "D",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: N is the mother of E. Step 2: E and S are siblings, so N is also the mother of S. Step 3: Y is the son of S. Step 4: The mother of one's parent (S) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_051",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does N + D - P mean?",
+    "options": [
+      "N is the uncle of P",
+      "N is the father of P",
+      "P is the father of N",
+      "N is the brother of P"
+    ],
+    "correctAnswer": "B",
+    "answer": "N is the father of P",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. N + D means N is the father of D. Step 2: D - P means D is the sister of P. Step 3: Since D and P are siblings, their father is the same. Therefore, N is the father of P. Final Answer: N is the father of P.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_052",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is Y related to Q in the expression Y $ D @ B # Q?",
+    "options": [
+      "Father",
+      "Grandfather",
+      "Uncle",
+      "Brother"
+    ],
+    "correctAnswer": "A",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: B # Q -> B is the sister of Q. Step 2: D @ B -> D is the mother of B. So, D is the mother of both B and Q. Step 3: Y $ D -> Y is the husband of D. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_053",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Karan is the brother of Anjali. Ravi is the son of Karan. Neha is the daughter of Anjali. How are Ravi and Neha related?",
+    "options": [
+      "Cousins",
+      "Uncle and Niece",
+      "Nephew and Niece",
+      "Brother and Sister"
+    ],
+    "correctAnswer": "A",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Karan and Anjali are siblings. Step 2: Ravi is the child of Karan, and Neha is the child of Anjali. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_054",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Z is the mother of Y. Y is the sister of M. A is the son of M. How is Z related to A?",
+    "options": [
+      "Grandmother",
+      "Aunt",
+      "Sister",
+      "Mother"
+    ],
+    "correctAnswer": "A",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: Z is the mother of Y. Step 2: Y and M are siblings, so Z is also the mother of M. Step 3: A is the son of M. Step 4: The mother of one's parent (M) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_055",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does T + B - Y mean?",
+    "options": [
+      "T is the brother of Y",
+      "Y is the father of T",
+      "T is the uncle of Y",
+      "T is the father of Y"
+    ],
+    "correctAnswer": "D",
+    "answer": "T is the father of Y",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. T + B means T is the father of B. Step 2: B - Y means B is the sister of Y. Step 3: Since B and Y are siblings, their father is the same. Therefore, T is the father of Y. Final Answer: T is the father of Y.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_056",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is Z related to E in the expression Z $ B @ N # E?",
+    "options": [
+      "Grandfather",
+      "Brother",
+      "Father",
+      "Uncle"
+    ],
+    "correctAnswer": "C",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: N # E -> N is the sister of E. Step 2: B @ N -> B is the mother of N. So, B is the mother of both N and E. Step 3: Z $ B -> Z is the husband of B. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_057",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Ramesh is the brother of Anita. Ajay is the son of Ramesh. Meena is the daughter of Anita. How are Ajay and Meena related?",
+    "options": [
+      "Brother and Sister",
+      "Cousins",
+      "Nephew and Niece",
+      "Uncle and Niece"
+    ],
+    "correctAnswer": "B",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Ramesh and Anita are siblings. Step 2: Ajay is the child of Ramesh, and Meena is the child of Anita. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_058",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "C is the mother of B. B is the sister of Q. Y is the son of Q. How is C related to Y?",
+    "options": [
+      "Aunt",
+      "Sister",
+      "Grandmother",
+      "Mother"
+    ],
+    "correctAnswer": "C",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: C is the mother of B. Step 2: B and Q are siblings, so C is also the mother of Q. Step 3: Y is the son of Q. Step 4: The mother of one's parent (Q) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_059",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does R + T - M mean?",
+    "options": [
+      "R is the brother of M",
+      "R is the uncle of M",
+      "M is the father of R",
+      "R is the father of M"
+    ],
+    "correctAnswer": "D",
+    "answer": "R is the father of M",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. R + T means R is the father of T. Step 2: T - M means T is the sister of M. Step 3: Since T and M are siblings, their father is the same. Therefore, R is the father of M. Final Answer: R is the father of M.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_060",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is A related to T in the expression A $ M @ E # T?",
+    "options": [
+      "Father",
+      "Grandfather",
+      "Brother",
+      "Uncle"
+    ],
+    "correctAnswer": "A",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: E # T -> E is the sister of T. Step 2: M @ E -> M is the mother of E. So, M is the mother of both E and T. Step 3: A $ M -> A is the husband of M. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_061",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Vikram is the brother of Pooja. Raj is the son of Vikram. Seema is the daughter of Pooja. How are Raj and Seema related?",
+    "options": [
+      "Nephew and Niece",
+      "Brother and Sister",
+      "Cousins",
+      "Uncle and Niece"
+    ],
+    "correctAnswer": "C",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Vikram and Pooja are siblings. Step 2: Raj is the child of Vikram, and Seema is the child of Pooja. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_062",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "A is the mother of Z. Z is the sister of R. C is the son of R. How is A related to C?",
+    "options": [
+      "Sister",
+      "Grandmother",
+      "Mother",
+      "Aunt"
+    ],
+    "correctAnswer": "B",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: A is the mother of Z. Step 2: Z and R are siblings, so A is also the mother of R. Step 3: C is the son of R. Step 4: The mother of one's parent (R) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_063",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does Y + S - N mean?",
+    "options": [
+      "Y is the uncle of N",
+      "N is the father of Y",
+      "Y is the father of N",
+      "Y is the brother of N"
+    ],
+    "correctAnswer": "C",
+    "answer": "Y is the father of N",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. Y + S means Y is the father of S. Step 2: S - N means S is the sister of N. Step 3: Since S and N are siblings, their father is the same. Therefore, Y is the father of N. Final Answer: Y is the father of N.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_064",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is Q related to D in the expression Q $ X @ A # D?",
+    "options": [
+      "Uncle",
+      "Grandfather",
+      "Father",
+      "Brother"
+    ],
+    "correctAnswer": "C",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: A # D -> A is the sister of D. Step 2: X @ A -> X is the mother of A. So, X is the mother of both A and D. Step 3: Q $ X -> Q is the husband of X. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_065",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Karan is the brother of Simran. Suresh is the son of Karan. Geeta is the daughter of Simran. How are Suresh and Geeta related?",
+    "options": [
+      "Cousins",
+      "Brother and Sister",
+      "Nephew and Niece",
+      "Uncle and Niece"
+    ],
+    "correctAnswer": "A",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Karan and Simran are siblings. Step 2: Suresh is the child of Karan, and Geeta is the child of Simran. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_066",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "R is the mother of P. P is the sister of E. T is the son of E. How is R related to T?",
+    "options": [
+      "Sister",
+      "Mother",
+      "Grandmother",
+      "Aunt"
+    ],
+    "correctAnswer": "C",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: R is the mother of P. Step 2: P and E are siblings, so R is also the mother of E. Step 3: T is the son of E. Step 4: The mother of one's parent (E) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_067",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does E + T - C mean?",
+    "options": [
+      "E is the uncle of C",
+      "C is the father of E",
+      "E is the brother of C",
+      "E is the father of C"
+    ],
+    "correctAnswer": "D",
+    "answer": "E is the father of C",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. E + T means E is the father of T. Step 2: T - C means T is the sister of C. Step 3: Since T and C are siblings, their father is the same. Therefore, E is the father of C. Final Answer: E is the father of C.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_068",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is P related to Q in the expression P $ D @ T # Q?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Father",
+      "Grandfather"
+    ],
+    "correctAnswer": "C",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: T # Q -> T is the sister of Q. Step 2: D @ T -> D is the mother of T. So, D is the mother of both T and Q. Step 3: P $ D -> P is the husband of D. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_069",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Suresh is the brother of Pooja. Deepak is the son of Suresh. Priya is the daughter of Pooja. How are Deepak and Priya related?",
+    "options": [
+      "Uncle and Niece",
+      "Cousins",
+      "Nephew and Niece",
+      "Brother and Sister"
+    ],
+    "correctAnswer": "B",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Suresh and Pooja are siblings. Step 2: Deepak is the child of Suresh, and Priya is the child of Pooja. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_070",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "T is the mother of N. N is the sister of M. Z is the son of M. How is T related to Z?",
+    "options": [
+      "Aunt",
+      "Sister",
+      "Grandmother",
+      "Mother"
+    ],
+    "correctAnswer": "C",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: T is the mother of N. Step 2: N and M are siblings, so T is also the mother of M. Step 3: Z is the son of M. Step 4: The mother of one's parent (M) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_071",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does A + P - X mean?",
+    "options": [
+      "A is the father of X",
+      "A is the uncle of X",
+      "A is the brother of X",
+      "X is the father of A"
+    ],
+    "correctAnswer": "A",
+    "answer": "A is the father of X",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. A + P means A is the father of P. Step 2: P - X means P is the sister of X. Step 3: Since P and X are siblings, their father is the same. Therefore, A is the father of X. Final Answer: A is the father of X.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_072",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is A related to Q in the expression A $ X @ S # Q?",
+    "options": [
+      "Grandfather",
+      "Brother",
+      "Uncle",
+      "Father"
+    ],
+    "correctAnswer": "D",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: S # Q -> S is the sister of Q. Step 2: X @ S -> X is the mother of S. So, X is the mother of both S and Q. Step 3: A $ X -> A is the husband of X. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_073",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Anil is the brother of Rita. Ramesh is the son of Anil. Kavita is the daughter of Rita. How are Ramesh and Kavita related?",
+    "options": [
+      "Brother and Sister",
+      "Cousins",
+      "Uncle and Niece",
+      "Nephew and Niece"
+    ],
+    "correctAnswer": "B",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Anil and Rita are siblings. Step 2: Ramesh is the child of Anil, and Kavita is the child of Rita. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_074",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "P is the mother of A. A is the sister of R. Q is the son of R. How is P related to Q?",
+    "options": [
+      "Grandmother",
+      "Aunt",
+      "Sister",
+      "Mother"
+    ],
+    "correctAnswer": "A",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: P is the mother of A. Step 2: A and R are siblings, so P is also the mother of R. Step 3: Q is the son of R. Step 4: The mother of one's parent (R) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_075",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does Z + C - P mean?",
+    "options": [
+      "Z is the brother of P",
+      "Z is the uncle of P",
+      "Z is the father of P",
+      "P is the father of Z"
+    ],
+    "correctAnswer": "C",
+    "answer": "Z is the father of P",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. Z + C means Z is the father of C. Step 2: C - P means C is the sister of P. Step 3: Since C and P are siblings, their father is the same. Therefore, Z is the father of P. Final Answer: Z is the father of P.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_076",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is B related to C in the expression B $ Z @ T # C?",
+    "options": [
+      "Brother",
+      "Grandfather",
+      "Father",
+      "Uncle"
+    ],
+    "correctAnswer": "C",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: T # C -> T is the sister of C. Step 2: Z @ T -> Z is the mother of T. So, Z is the mother of both T and C. Step 3: B $ Z -> B is the husband of Z. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_077",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Rahul is the brother of Geeta. Anil is the son of Rahul. Rita is the daughter of Geeta. How are Anil and Rita related?",
+    "options": [
+      "Uncle and Niece",
+      "Nephew and Niece",
+      "Brother and Sister",
+      "Cousins"
+    ],
+    "correctAnswer": "D",
+    "answer": "Cousins",
+    "pattern": "Children of siblings",
+    "explanation": "Step 1: Rahul and Geeta are siblings. Step 2: Anil is the child of Rahul, and Rita is the child of Geeta. Step 3: The children of siblings are cousins. Final Answer: Cousins.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_078",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "P is the mother of B. B is the sister of S. N is the son of S. How is P related to N?",
+    "options": [
+      "Sister",
+      "Aunt",
+      "Mother",
+      "Grandmother"
+    ],
+    "correctAnswer": "D",
+    "answer": "Grandmother",
+    "pattern": "Two generations up",
+    "explanation": "Step 1: P is the mother of B. Step 2: B and S are siblings, so P is also the mother of S. Step 3: N is the son of S. Step 4: The mother of one's parent (S) is their grandmother. Final Answer: Grandmother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_079",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A + B means A is the father of B, A - B means A is the sister of B, and A * B means A is the brother of B. What does N + R - P mean?",
+    "options": [
+      "N is the uncle of P",
+      "P is the father of N",
+      "N is the brother of P",
+      "N is the father of P"
+    ],
+    "correctAnswer": "D",
+    "answer": "N is the father of P",
+    "pattern": "Coded equation: Father -> Sister -> Child",
+    "explanation": "Step 1: Break down the equation. N + R means N is the father of R. Step 2: R - P means R is the sister of P. Step 3: Since R and P are siblings, their father is the same. Therefore, N is the father of P. Final Answer: N is the father of P.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_080",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If P @ Q means P is the mother of Q, P $ Q means P is the husband of Q, and P # Q means P is the sister of Q. How is R related to M in the expression R $ X @ S # M?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Grandfather",
+      "Father"
+    ],
+    "correctAnswer": "D",
+    "answer": "Father",
+    "pattern": "Coded equation: Husband -> Mother -> Sister -> Child",
+    "explanation": "Step 1: S # M -> S is the sister of M. Step 2: X @ S -> X is the mother of S. So, X is the mother of both S and M. Step 3: R $ X -> R is the husband of X. Step 4: Husband of the mother is the father. Final Answer: Father.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "60 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_081",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: X, Y, Q, C, A, and B. Q is the sister of B. Y is the brother of A's husband. C is the father of X and grandfather of B. There are two fathers, three brothers, and a mother in the family. How is A related to B?",
+    "options": [
+      "Grandmother",
+      "Sister",
+      "Mother",
+      "Aunt"
+    ],
+    "correctAnswer": "C",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: C is grandfather of B, and father of X. So generation 1 is C, generation 2 is X and A's husband, generation 3 is B and Q. Step 2: Y is the brother of A's husband. Since there are 3 brothers and 2 fathers, X must be A's husband, making Y and X brothers. Step 3: If A is married to X, and X is the son of C (grandfather of B), then X and A are the parents of B and Q. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_082",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Amit said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Amit?",
+    "options": [
+      "Sister",
+      "Aunt",
+      "Cousin",
+      "Daughter"
+    ],
+    "correctAnswer": "A",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Amit's grandfather's only son\" refers to Amit's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Amit's father. Step 3: The daughter of Amit's father is Amit's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_083",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: A, R, S, Y, T, and Z. S is the sister of Z. R is the brother of T's husband. Y is the father of A and grandfather of Z. There are two fathers, three brothers, and a mother in the family. How is T related to Z?",
+    "options": [
+      "Sister",
+      "Grandmother",
+      "Aunt",
+      "Mother"
+    ],
+    "correctAnswer": "D",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: Y is grandfather of Z, and father of A. So generation 1 is Y, generation 2 is A and T's husband, generation 3 is Z and S. Step 2: R is the brother of T's husband. Since there are 3 brothers and 2 fathers, A must be T's husband, making R and A brothers. Step 3: If T is married to A, and A is the son of Y (grandfather of Z), then A and T are the parents of Z and S. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_084",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Ajay said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Ajay?",
+    "options": [
+      "Sister",
+      "Daughter",
+      "Cousin",
+      "Aunt"
+    ],
+    "correctAnswer": "A",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Ajay's grandfather's only son\" refers to Ajay's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Ajay's father. Step 3: The daughter of Ajay's father is Ajay's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_085",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: Y, N, B, R, X, and S. B is the sister of S. N is the brother of X's husband. R is the father of Y and grandfather of S. There are two fathers, three brothers, and a mother in the family. How is X related to S?",
+    "options": [
+      "Sister",
+      "Mother",
+      "Aunt",
+      "Grandmother"
+    ],
+    "correctAnswer": "B",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: R is grandfather of S, and father of Y. So generation 1 is R, generation 2 is Y and X's husband, generation 3 is S and B. Step 2: N is the brother of X's husband. Since there are 3 brothers and 2 fathers, Y must be X's husband, making N and Y brothers. Step 3: If X is married to Y, and Y is the son of R (grandfather of S), then Y and X are the parents of S and B. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_086",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Rohan said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Rohan?",
+    "options": [
+      "Cousin",
+      "Aunt",
+      "Daughter",
+      "Sister"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Rohan's grandfather's only son\" refers to Rohan's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Rohan's father. Step 3: The daughter of Rohan's father is Rohan's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_087",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: Q, D, R, B, A, and T. R is the sister of T. D is the brother of A's husband. B is the father of Q and grandfather of T. There are two fathers, three brothers, and a mother in the family. How is A related to T?",
+    "options": [
+      "Grandmother",
+      "Sister",
+      "Aunt",
+      "Mother"
+    ],
+    "correctAnswer": "D",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: B is grandfather of T, and father of Q. So generation 1 is B, generation 2 is Q and A's husband, generation 3 is T and R. Step 2: D is the brother of A's husband. Since there are 3 brothers and 2 fathers, Q must be A's husband, making D and Q brothers. Step 3: If A is married to Q, and Q is the son of B (grandfather of T), then Q and A are the parents of T and R. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_088",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Vikram said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Vikram?",
+    "options": [
+      "Daughter",
+      "Aunt",
+      "Cousin",
+      "Sister"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Vikram's grandfather's only son\" refers to Vikram's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Vikram's father. Step 3: The daughter of Vikram's father is Vikram's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_089",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: T, R, X, Z, S, and P. X is the sister of P. R is the brother of S's husband. Z is the father of T and grandfather of P. There are two fathers, three brothers, and a mother in the family. How is S related to P?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Grandmother",
+      "Aunt"
+    ],
+    "correctAnswer": "A",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: Z is grandfather of P, and father of T. So generation 1 is Z, generation 2 is T and S's husband, generation 3 is P and X. Step 2: R is the brother of S's husband. Since there are 3 brothers and 2 fathers, T must be S's husband, making R and T brothers. Step 3: If S is married to T, and T is the son of Z (grandfather of P), then T and S are the parents of P and X. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_090",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Suresh said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Suresh?",
+    "options": [
+      "Daughter",
+      "Cousin",
+      "Sister",
+      "Aunt"
+    ],
+    "correctAnswer": "C",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Suresh's grandfather's only son\" refers to Suresh's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Suresh's father. Step 3: The daughter of Suresh's father is Suresh's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_091",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: P, T, D, X, Y, and N. D is the sister of N. T is the brother of Y's husband. X is the father of P and grandfather of N. There are two fathers, three brothers, and a mother in the family. How is Y related to N?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Grandmother",
+      "Sister"
+    ],
+    "correctAnswer": "A",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: X is grandfather of N, and father of P. So generation 1 is X, generation 2 is P and Y's husband, generation 3 is N and D. Step 2: T is the brother of Y's husband. Since there are 3 brothers and 2 fathers, P must be Y's husband, making T and P brothers. Step 3: If Y is married to P, and P is the son of X (grandfather of N), then P and Y are the parents of N and D. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_092",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Aarav said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Aarav?",
+    "options": [
+      "Cousin",
+      "Aunt",
+      "Sister",
+      "Daughter"
+    ],
+    "correctAnswer": "C",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Aarav's grandfather's only son\" refers to Aarav's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Aarav's father. Step 3: The daughter of Aarav's father is Aarav's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_093",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: Y, N, C, D, R, and S. C is the sister of S. N is the brother of R's husband. D is the father of Y and grandfather of S. There are two fathers, three brothers, and a mother in the family. How is R related to S?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Grandmother",
+      "Sister"
+    ],
+    "correctAnswer": "A",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: D is grandfather of S, and father of Y. So generation 1 is D, generation 2 is Y and R's husband, generation 3 is S and C. Step 2: N is the brother of R's husband. Since there are 3 brothers and 2 fathers, Y must be R's husband, making N and Y brothers. Step 3: If R is married to Y, and Y is the son of D (grandfather of S), then Y and R are the parents of S and C. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_094",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Deepak said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Deepak?",
+    "options": [
+      "Cousin",
+      "Sister",
+      "Aunt",
+      "Daughter"
+    ],
+    "correctAnswer": "B",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Deepak's grandfather's only son\" refers to Deepak's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Deepak's father. Step 3: The daughter of Deepak's father is Deepak's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_095",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: N, P, T, Q, Z, and E. T is the sister of E. P is the brother of Z's husband. Q is the father of N and grandfather of E. There are two fathers, three brothers, and a mother in the family. How is Z related to E?",
+    "options": [
+      "Grandmother",
+      "Mother",
+      "Aunt",
+      "Sister"
+    ],
+    "correctAnswer": "B",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: Q is grandfather of E, and father of N. So generation 1 is Q, generation 2 is N and Z's husband, generation 3 is E and T. Step 2: P is the brother of Z's husband. Since there are 3 brothers and 2 fathers, N must be Z's husband, making P and N brothers. Step 3: If Z is married to N, and N is the son of Q (grandfather of E), then N and Z are the parents of E and T. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_096",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Ramesh said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Ramesh?",
+    "options": [
+      "Cousin",
+      "Daughter",
+      "Aunt",
+      "Sister"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Ramesh's grandfather's only son\" refers to Ramesh's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Ramesh's father. Step 3: The daughter of Ramesh's father is Ramesh's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_097",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: R, C, Q, M, D, and A. Q is the sister of A. C is the brother of D's husband. M is the father of R and grandfather of A. There are two fathers, three brothers, and a mother in the family. How is D related to A?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Grandmother"
+    ],
+    "correctAnswer": "A",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: M is grandfather of A, and father of R. So generation 1 is M, generation 2 is R and D's husband, generation 3 is A and Q. Step 2: C is the brother of D's husband. Since there are 3 brothers and 2 fathers, R must be D's husband, making C and R brothers. Step 3: If D is married to R, and R is the son of M (grandfather of A), then R and D are the parents of A and Q. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_098",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Sameer said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Sameer?",
+    "options": [
+      "Cousin",
+      "Aunt",
+      "Daughter",
+      "Sister"
+    ],
+    "correctAnswer": "D",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Sameer's grandfather's only son\" refers to Sameer's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Sameer's father. Step 3: The daughter of Sameer's father is Sameer's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_099",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "There is a family of 6 members: A, P, Q, S, X, and T. Q is the sister of T. P is the brother of X's husband. S is the father of A and grandfather of T. There are two fathers, three brothers, and a mother in the family. How is X related to T?",
+    "options": [
+      "Sister",
+      "Aunt",
+      "Grandmother",
+      "Mother"
+    ],
+    "correctAnswer": "D",
+    "answer": "Mother",
+    "pattern": "Multi-generation puzzle with implicit marriages",
+    "explanation": "Step 1: S is grandfather of T, and father of A. So generation 1 is S, generation 2 is A and X's husband, generation 3 is T and Q. Step 2: P is the brother of X's husband. Since there are 3 brothers and 2 fathers, A must be X's husband, making P and A brothers. Step 3: If X is married to A, and A is the son of S (grandfather of T), then A and X are the parents of T and Q. Final Answer: Mother.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "BLOOD_RELATIONS_100",
+    "topic": "Logical Reasoning",
+    "subtopic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a lady in the garden, Vikram said, \"She is the daughter of my grandfather's only son.\" How is the lady related to Vikram?",
+    "options": [
+      "Sister",
+      "Cousin",
+      "Daughter",
+      "Aunt"
+    ],
+    "correctAnswer": "A",
+    "answer": "Sister",
+    "pattern": "Ambiguous gender mapping required",
+    "explanation": "Step 1: Break down the statement. \"Vikram's grandfather's only son\" refers to Vikram's father (since it is the *only* son). Step 2: The lady is the \"daughter of\" Vikram's father. Step 3: The daughter of Vikram's father is Vikram's sister. Final Answer: Sister.",
+    "shortcut": "Draw a quick family tree: use (+) for male, (-) for female, (=) for marriage, and vertical lines for generations.",
+    "commonMistake": "Assuming gender based purely on a name when it is not explicitly stated in the problem.",
+    "estimatedTime": "120 sec",
+    "keywords": [
+      "blood relations",
+      "logical reasoning",
+      "family tree",
+      "relations"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  }
+]
