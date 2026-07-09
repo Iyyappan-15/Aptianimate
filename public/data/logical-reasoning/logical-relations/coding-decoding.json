@@ -1,0 +1,3102 @@
+[
+  {
+    "id": "CODING_DECODING_001",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language OCEAN is written as PDFBO, how will CLOCK be written in that language?",
+    "options": [
+      "DKPBL",
+      "DMPDL",
+      "CLOCK",
+      "ENQEM"
+    ],
+    "correctAnswer": "B",
+    "answer": "DMPDL",
+    "pattern": "Each letter shifted by +1",
+    "explanation": "Step 1: Identify the rule in OCEAN -> PDFBO. Each letter is shifted forward by 1 places in the alphabet. Step 2: Apply the rule to CLOCK. Step 3: C+1=D, L+1=M, O+1=P, C+1=D, K+1=L. Final Answer: DMPDL.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_002",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language MANGO is written as KYLEM, how will LION be written in that language?",
+    "options": [
+      "KHNM",
+      "JKMP",
+      "JGML",
+      "IFLK"
+    ],
+    "correctAnswer": "C",
+    "answer": "JGML",
+    "pattern": "Each letter shifted by -2",
+    "explanation": "Step 1: Identify the rule in MANGO -> KYLEM. Each letter is shifted backward by 2 places in the alphabet. Step 2: Apply the rule to LION. Step 3: L-2=J, I-2=G, O-2=M, N-2=L. Final Answer: JGML.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_003",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If BAT is coded as TAB, how is MOON coded?",
+    "options": [
+      "NOOM",
+      "OOMN",
+      "OPPN",
+      "NPPO"
+    ],
+    "correctAnswer": "A",
+    "answer": "NOOM",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. BAT is completely reversed to form TAB. Step 2: Apply the rule to MOON. Step 3: Reversing MOON gives NOOM. Final Answer: NOOM.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_004",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If MOON is coded as 57, then what is the code for BIRD?",
+    "options": [
+      "32",
+      "33",
+      "34",
+      "37"
+    ],
+    "correctAnswer": "B",
+    "answer": "33",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For MOON: M=13, O=15, O=15, N=14. Their sum is 57. Step 2: Apply the rule to BIRD. Step 3: For BIRD: B=2, I=9, R=18, D=4. Sum = 33. Final Answer: 33.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_005",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language EARTH is written as GCTVJ, how will FISH be written in that language?",
+    "options": [
+      "HKUJ",
+      "GJTI",
+      "HGUF",
+      "ILVK"
+    ],
+    "correctAnswer": "A",
+    "answer": "HKUJ",
+    "pattern": "Each letter shifted by +2",
+    "explanation": "Step 1: Identify the rule in EARTH -> GCTVJ. Each letter is shifted forward by 2 places in the alphabet. Step 2: Apply the rule to FISH. Step 3: F+2=H, I+2=K, S+2=U, H+2=J. Final Answer: HKUJ.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_006",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language DANCE is written as AXKZB, how will FIRE be written in that language?",
+    "options": [
+      "BENA",
+      "CLOH",
+      "CFOB",
+      "DGPC"
+    ],
+    "correctAnswer": "C",
+    "answer": "CFOB",
+    "pattern": "Each letter shifted by -3",
+    "explanation": "Step 1: Identify the rule in DANCE -> AXKZB. Each letter is shifted backward by 3 places in the alphabet. Step 2: Apply the rule to FIRE. Step 3: F-3=C, I-3=F, R-3=O, E-3=B. Final Answer: CFOB.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_007",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If RIVER is coded as REVIR, how is SOUND coded?",
+    "options": [
+      "DNUOS",
+      "TPVOE",
+      "EOVPT",
+      "NUOSD"
+    ],
+    "correctAnswer": "A",
+    "answer": "DNUOS",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. RIVER is completely reversed to form REVIR. Step 2: Apply the rule to SOUND. Step 3: Reversing SOUND gives DNUOS. Final Answer: DNUOS.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_008",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If LOGIC is coded as 46, then what is the code for BIRD?",
+    "options": [
+      "33",
+      "37",
+      "32",
+      "34"
+    ],
+    "correctAnswer": "A",
+    "answer": "33",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For LOGIC: L=12, O=15, G=7, I=9, C=3. Their sum is 46. Step 2: Apply the rule to BIRD. Step 3: For BIRD: B=2, I=9, R=18, D=4. Sum = 33. Final Answer: 33.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_009",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language OCEAN is written as RFHDQ, how will LOGIC be written in that language?",
+    "options": [
+      "NQIKE",
+      "ORJLF",
+      "PSKMG",
+      "OLJFF"
+    ],
+    "correctAnswer": "B",
+    "answer": "ORJLF",
+    "pattern": "Each letter shifted by +3",
+    "explanation": "Step 1: Identify the rule in OCEAN -> RFHDQ. Each letter is shifted forward by 3 places in the alphabet. Step 2: Apply the rule to LOGIC. Step 3: L+3=O, O+3=R, G+3=J, I+3=L, C+3=F. Final Answer: ORJLF.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_010",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language OCEAN is written as NBDZM, how will POWER be written in that language?",
+    "options": [
+      "POWER",
+      "ONVDQ",
+      "NMUCP",
+      "OPVFQ"
+    ],
+    "correctAnswer": "B",
+    "answer": "ONVDQ",
+    "pattern": "Each letter shifted by -1",
+    "explanation": "Step 1: Identify the rule in OCEAN -> NBDZM. Each letter is shifted backward by 1 places in the alphabet. Step 2: Apply the rule to POWER. Step 3: P-1=O, O-1=N, W-1=V, E-1=D, R-1=Q. Final Answer: ONVDQ.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_011",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If WATCH is coded as HCTAW, how is EAGLE coded?",
+    "options": [
+      "ELGAE",
+      "LGAEE",
+      "FMHBF",
+      "FBHMF"
+    ],
+    "correctAnswer": "A",
+    "answer": "ELGAE",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. WATCH is completely reversed to form HCTAW. Step 2: Apply the rule to EAGLE. Step 3: Reversing EAGLE gives ELGAE. Final Answer: ELGAE.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_012",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If MAGIC is coded as 33, then what is the code for TREE?",
+    "options": [
+      "52",
+      "47",
+      "48",
+      "49"
+    ],
+    "correctAnswer": "C",
+    "answer": "48",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For MAGIC: M=13, A=1, G=7, I=9, C=3. Their sum is 33. Step 2: Apply the rule to TREE. Step 3: For TREE: T=20, R=18, E=5, E=5. Sum = 48. Final Answer: 48.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_013",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language BAT is written as CBU, how will CAT be written in that language?",
+    "options": [
+      "DBU",
+      "ECV",
+      "CAT",
+      "DZU"
+    ],
+    "correctAnswer": "A",
+    "answer": "DBU",
+    "pattern": "Each letter shifted by +1",
+    "explanation": "Step 1: Identify the rule in BAT -> CBU. Each letter is shifted forward by 1 places in the alphabet. Step 2: Apply the rule to CAT. Step 3: C+1=D, A+1=B, T+1=U. Final Answer: DBU.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_014",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language LION is written as JGML, how will ZEBRA be written in that language?",
+    "options": [
+      "XGZTY",
+      "YDAQZ",
+      "XCZPY",
+      "WBYOX"
+    ],
+    "correctAnswer": "C",
+    "answer": "XCZPY",
+    "pattern": "Each letter shifted by -2",
+    "explanation": "Step 1: Identify the rule in LION -> JGML. Each letter is shifted backward by 2 places in the alphabet. Step 2: Apply the rule to ZEBRA. Step 3: Z-2=X, E-2=C, B-2=Z, R-2=P, A-2=Y. Final Answer: XCZPY.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_015",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If RAT is coded as TAR, how is SNAKE coded?",
+    "options": [
+      "KANSE",
+      "EKANS",
+      "TOBLF",
+      "FLBOT"
+    ],
+    "correctAnswer": "B",
+    "answer": "EKANS",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. RAT is completely reversed to form TAR. Step 2: Apply the rule to SNAKE. Step 3: Reversing SNAKE gives EKANS. Final Answer: EKANS.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_016",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If WATER is coded as 67, then what is the code for MOON?",
+    "options": [
+      "57",
+      "56",
+      "58",
+      "61"
+    ],
+    "correctAnswer": "A",
+    "answer": "57",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For WATER: W=23, A=1, T=20, E=5, R=18. Their sum is 67. Step 2: Apply the rule to MOON. Step 3: For MOON: M=13, O=15, O=15, N=14. Sum = 57. Final Answer: 57.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_017",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language MOUSE is written as OQWUG, how will BIRD be written in that language?",
+    "options": [
+      "DGTB",
+      "ELUG",
+      "CJSE",
+      "DKTF"
+    ],
+    "correctAnswer": "D",
+    "answer": "DKTF",
+    "pattern": "Each letter shifted by +2",
+    "explanation": "Step 1: Identify the rule in MOUSE -> OQWUG. Each letter is shifted forward by 2 places in the alphabet. Step 2: Apply the rule to BIRD. Step 3: B+2=D, I+2=K, R+2=T, D+2=F. Final Answer: DKTF.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_018",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language STAR is written as PQXO, how will ZEBRA be written in that language?",
+    "options": [
+      "XCZPY",
+      "WHYUX",
+      "WBYOX",
+      "VAXNW"
+    ],
+    "correctAnswer": "C",
+    "answer": "WBYOX",
+    "pattern": "Each letter shifted by -3",
+    "explanation": "Step 1: Identify the rule in STAR -> PQXO. Each letter is shifted backward by 3 places in the alphabet. Step 2: Apply the rule to ZEBRA. Step 3: Z-3=W, E-3=B, B-3=Y, R-3=O, A-3=X. Final Answer: WBYOX.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_019",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If BAT is coded as TAB, how is LION coded?",
+    "options": [
+      "OPJM",
+      "MJPO",
+      "OILN",
+      "NOIL"
+    ],
+    "correctAnswer": "D",
+    "answer": "NOIL",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. BAT is completely reversed to form TAB. Step 2: Apply the rule to LION. Step 3: Reversing LION gives NOIL. Final Answer: NOIL.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_020",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If SUN is coded as 54, then what is the code for MUSIC?",
+    "options": [
+      "65",
+      "64",
+      "70",
+      "66"
+    ],
+    "correctAnswer": "A",
+    "answer": "65",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For SUN: S=19, U=21, N=14. Their sum is 54. Step 2: Apply the rule to MUSIC. Step 3: For MUSIC: M=13, U=21, S=19, I=9, C=3. Sum = 65. Final Answer: 65.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_021",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language TRAIN is written as WUDLQ, how will LOGIC be written in that language?",
+    "options": [
+      "OLJFF",
+      "ORJLF",
+      "PSKMG",
+      "NQIKE"
+    ],
+    "correctAnswer": "B",
+    "answer": "ORJLF",
+    "pattern": "Each letter shifted by +3",
+    "explanation": "Step 1: Identify the rule in TRAIN -> WUDLQ. Each letter is shifted forward by 3 places in the alphabet. Step 2: Apply the rule to LOGIC. Step 3: L+3=O, O+3=R, G+3=J, I+3=L, C+3=F. Final Answer: ORJLF.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_022",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language MOON is written as LNNM, how will STAR be written in that language?",
+    "options": [
+      "QRYP",
+      "STAR",
+      "RUZS",
+      "RSZQ"
+    ],
+    "correctAnswer": "D",
+    "answer": "RSZQ",
+    "pattern": "Each letter shifted by -1",
+    "explanation": "Step 1: Identify the rule in MOON -> LNNM. Each letter is shifted backward by 1 places in the alphabet. Step 2: Apply the rule to STAR. Step 3: S-1=R, T-1=S, A-1=Z, R-1=Q. Final Answer: RSZQ.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_023",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If BRAIN is coded as NIARB, how is OCEAN coded?",
+    "options": [
+      "OBFDP",
+      "AECON",
+      "PDFBO",
+      "NAECO"
+    ],
+    "correctAnswer": "D",
+    "answer": "NAECO",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. BRAIN is completely reversed to form NIARB. Step 2: Apply the rule to OCEAN. Step 3: Reversing OCEAN gives NAECO. Final Answer: NAECO.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_024",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If SUN is coded as 54, then what is the code for LOGIC?",
+    "options": [
+      "46",
+      "45",
+      "51",
+      "47"
+    ],
+    "correctAnswer": "A",
+    "answer": "46",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For SUN: S=19, U=21, N=14. Their sum is 54. Step 2: Apply the rule to LOGIC. Step 3: For LOGIC: L=12, O=15, G=7, I=9, C=3. Sum = 46. Final Answer: 46.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_025",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language BRAIN is written as CSBJO, how will LOGIC be written in that language?",
+    "options": [
+      "MNHHD",
+      "MPHJD",
+      "LOGIC",
+      "NQIKE"
+    ],
+    "correctAnswer": "B",
+    "answer": "MPHJD",
+    "pattern": "Each letter shifted by +1",
+    "explanation": "Step 1: Identify the rule in BRAIN -> CSBJO. Each letter is shifted forward by 1 places in the alphabet. Step 2: Apply the rule to LOGIC. Step 3: L+1=M, O+1=P, G+1=H, I+1=J, C+1=D. Final Answer: MPHJD.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_026",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language LOGIC is written as JMEGA, how will FIRE be written in that language?",
+    "options": [
+      "DKPG",
+      "CFOB",
+      "EHQD",
+      "DGPC"
+    ],
+    "correctAnswer": "D",
+    "answer": "DGPC",
+    "pattern": "Each letter shifted by -2",
+    "explanation": "Step 1: Identify the rule in LOGIC -> JMEGA. Each letter is shifted backward by 2 places in the alphabet. Step 2: Apply the rule to FIRE. Step 3: F-2=D, I-2=G, R-2=P, E-2=C. Final Answer: DGPC.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_027",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If RAT is coded as TAR, how is BIRD coded?",
+    "options": [
+      "CJSE",
+      "ESJC",
+      "RIBD",
+      "DRIB"
+    ],
+    "correctAnswer": "D",
+    "answer": "DRIB",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. RAT is completely reversed to form TAR. Step 2: Apply the rule to BIRD. Step 3: Reversing BIRD gives DRIB. Final Answer: DRIB.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_028",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If SNAKE is coded as 50, then what is the code for BAT?",
+    "options": [
+      "24",
+      "26",
+      "23",
+      "22"
+    ],
+    "correctAnswer": "C",
+    "answer": "23",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For SNAKE: S=19, N=14, A=1, K=11, E=5. Their sum is 50. Step 2: Apply the rule to BAT. Step 3: For BAT: B=2, A=1, T=20. Sum = 23. Final Answer: 23.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_029",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language LIGHT is written as NKIJV, how will LION be written in that language?",
+    "options": [
+      "NGQL",
+      "MJPO",
+      "OLRQ",
+      "NKQP"
+    ],
+    "correctAnswer": "D",
+    "answer": "NKQP",
+    "pattern": "Each letter shifted by +2",
+    "explanation": "Step 1: Identify the rule in LIGHT -> NKIJV. Each letter is shifted forward by 2 places in the alphabet. Step 2: Apply the rule to LION. Step 3: L+2=N, I+2=K, O+2=Q, N+2=P. Final Answer: NKQP.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_030",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language MOON is written as JLLK, how will MANGO be written in that language?",
+    "options": [
+      "IWJCK",
+      "KYLEM",
+      "JXKDL",
+      "JDKJL"
+    ],
+    "correctAnswer": "C",
+    "answer": "JXKDL",
+    "pattern": "Each letter shifted by -3",
+    "explanation": "Step 1: Identify the rule in MOON -> JLLK. Each letter is shifted backward by 3 places in the alphabet. Step 2: Apply the rule to MANGO. Step 3: M-3=J, A-3=X, N-3=K, G-3=D, O-3=L. Final Answer: JXKDL.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_031",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If HORSE is coded as ESROH, how is WATCH coded?",
+    "options": [
+      "IDUBX",
+      "CTAWH",
+      "XBUDI",
+      "HCTAW"
+    ],
+    "correctAnswer": "D",
+    "answer": "HCTAW",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. HORSE is completely reversed to form ESROH. Step 2: Apply the rule to WATCH. Step 3: Reversing WATCH gives HCTAW. Final Answer: HCTAW.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_032",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If SOUND is coded as 73, then what is the code for FIRE?",
+    "options": [
+      "37",
+      "39",
+      "42",
+      "38"
+    ],
+    "correctAnswer": "D",
+    "answer": "38",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For SOUND: S=19, O=15, U=21, N=14, D=4. Their sum is 73. Step 2: Apply the rule to FIRE. Step 3: For FIRE: F=6, I=9, R=18, E=5. Sum = 38. Final Answer: 38.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_033",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language LIGHT is written as OLJKW, how will BRAIN be written in that language?",
+    "options": [
+      "FVEMR",
+      "DTCKP",
+      "EODFQ",
+      "EUDLQ"
+    ],
+    "correctAnswer": "D",
+    "answer": "EUDLQ",
+    "pattern": "Each letter shifted by +3",
+    "explanation": "Step 1: Identify the rule in LIGHT -> OLJKW. Each letter is shifted forward by 3 places in the alphabet. Step 2: Apply the rule to BRAIN. Step 3: B+3=E, R+3=U, A+3=D, I+3=L, N+3=Q. Final Answer: EUDLQ.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_034",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language MOON is written as LNNM, how will CLOCK be written in that language?",
+    "options": [
+      "AJMAI",
+      "BMNDJ",
+      "BKNBJ",
+      "CLOCK"
+    ],
+    "correctAnswer": "C",
+    "answer": "BKNBJ",
+    "pattern": "Each letter shifted by -1",
+    "explanation": "Step 1: Identify the rule in MOON -> LNNM. Each letter is shifted backward by 1 places in the alphabet. Step 2: Apply the rule to CLOCK. Step 3: C-1=B, L-1=K, O-1=N, C-1=B, K-1=J. Final Answer: BKNBJ.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_035",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If FISH is coded as HSIF, how is RAT coded?",
+    "options": [
+      "ART",
+      "SBU",
+      "UBS",
+      "TAR"
+    ],
+    "correctAnswer": "D",
+    "answer": "TAR",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. FISH is completely reversed to form HSIF. Step 2: Apply the rule to RAT. Step 3: Reversing RAT gives TAR. Final Answer: TAR.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_036",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If PLANE is coded as 48, then what is the code for RIVER?",
+    "options": [
+      "71",
+      "73",
+      "77",
+      "72"
+    ],
+    "correctAnswer": "D",
+    "answer": "72",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For PLANE: P=16, L=12, A=1, N=14, E=5. Their sum is 48. Step 2: Apply the rule to RIVER. Step 3: For RIVER: R=18, I=9, V=22, E=5, R=18. Sum = 72. Final Answer: 72.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_037",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language SOUND is written as TPVOE, how will APPLE be written in that language?",
+    "options": [
+      "CRRNG",
+      "BQQMF",
+      "APPLE",
+      "BOQKF"
+    ],
+    "correctAnswer": "B",
+    "answer": "BQQMF",
+    "pattern": "Each letter shifted by +1",
+    "explanation": "Step 1: Identify the rule in SOUND -> TPVOE. Each letter is shifted forward by 1 places in the alphabet. Step 2: Apply the rule to APPLE. Step 3: A+1=B, P+1=Q, P+1=Q, L+1=M, E+1=F. Final Answer: BQQMF.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_038",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If in a certain code language BRAIN is written as ZPYGL, how will MANGO be written in that language?",
+    "options": [
+      "KYLEM",
+      "KCLIM",
+      "JXKDL",
+      "LZMFN"
+    ],
+    "correctAnswer": "A",
+    "answer": "KYLEM",
+    "pattern": "Each letter shifted by -2",
+    "explanation": "Step 1: Identify the rule in BRAIN -> ZPYGL. Each letter is shifted backward by 2 places in the alphabet. Step 2: Apply the rule to MANGO. Step 3: M-2=K, A-2=Y, N-2=L, G-2=E, O-2=M. Final Answer: KYLEM.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_039",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If SOUND is coded as DNUOS, how is APPLE coded?",
+    "options": [
+      "FMQQB",
+      "ELPPA",
+      "LPPAE",
+      "BQQMF"
+    ],
+    "correctAnswer": "B",
+    "answer": "ELPPA",
+    "pattern": "The word is written in reverse order",
+    "explanation": "Step 1: Identify the rule. SOUND is completely reversed to form DNUOS. Step 2: Apply the rule to APPLE. Step 3: Reversing APPLE gives ELPPA. Final Answer: ELPPA.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_040",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If EARTH is coded as 52, then what is the code for BAT?",
+    "options": [
+      "24",
+      "26",
+      "22",
+      "23"
+    ],
+    "correctAnswer": "D",
+    "answer": "23",
+    "pattern": "The sum of the numerical position values of all letters",
+    "explanation": "Step 1: Assign position values to letters. For EARTH: E=5, A=1, R=18, T=20, H=8. Their sum is 52. Step 2: Apply the rule to BAT. Step 3: For BAT: B=2, A=1, T=20. Sum = 23. Final Answer: 23.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_041",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If HORSE is coded as JMTQG, how will RIVER be coded?",
+    "options": [
+      "PKTGP",
+      "UFYBU",
+      "TGXCT",
+      "TKXGT"
+    ],
+    "correctAnswer": "C",
+    "answer": "TGXCT",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: H -> J (+2). 2nd letter: O -> M (-2). The pattern is alternating. Step 2: Apply to RIVER. Step 3: R + 2 = T, I -2 = G, etc. Final Answer: TGXCT.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_042",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If TIGER is coded as UKJIW, how is MAGIC coded?",
+    "options": [
+      "REJKD",
+      "ODKNI",
+      "NCJMH",
+      "NBHJD"
+    ],
+    "correctAnswer": "C",
+    "answer": "NCJMH",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare TIGER and UKJIW. T->U (+1), I->K (+2), G->J (+3). The shift increases by 1 each time. Step 2: Apply to MAGIC. Step 3: M+1=N, A+2=C, etc. Final Answer: NCJMH.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_043",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If WATCH is coded as DZGXS, what is the code for SNAKE?",
+    "options": [
+      "HMZPV",
+      "GLYOU",
+      "TOBLF",
+      "INAQW"
+    ],
+    "correctAnswer": "A",
+    "answer": "HMZPV",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe WATCH -> DZGXS. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to SNAKE. Step 3: Find opposite of each letter. Final Answer: HMZPV.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_044",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, SNAKE is written as TOELI. How is TRAIN written in that code?",
+    "options": [
+      "VTCKP",
+      "ATCKU",
+      "USEOO",
+      "USBJO"
+    ],
+    "correctAnswer": "C",
+    "answer": "USEOO",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze SNAKE -> TOELI. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to TRAIN. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: USEOO.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_045",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If TRAIN is coded as VPCGP, how will HORSE be coded?",
+    "options": [
+      "FQPUC",
+      "JMTQG",
+      "JQTUG",
+      "KLUPH"
+    ],
+    "correctAnswer": "B",
+    "answer": "JMTQG",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: T -> V (+2). 2nd letter: R -> P (-2). The pattern is alternating. Step 2: Apply to HORSE. Step 3: H + 2 = J, O -2 = M, etc. Final Answer: JMTQG.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_046",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If SNAKE is coded as TPDOJ, how is OCEAN coded?",
+    "options": [
+      "QFIFT",
+      "TGHCO",
+      "PDFBO",
+      "PEHES"
+    ],
+    "correctAnswer": "D",
+    "answer": "PEHES",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare SNAKE and TPDOJ. S->T (+1), N->P (+2), A->D (+3). The shift increases by 1 each time. Step 2: Apply to OCEAN. Step 3: O+1=P, C+2=E, etc. Final Answer: PEHES.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_047",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MANGO is coded as NZMTL, what is the code for MAGIC?",
+    "options": [
+      "NBHJD",
+      "MYSQW",
+      "OAUSY",
+      "NZTRX"
+    ],
+    "correctAnswer": "D",
+    "answer": "NZTRX",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe MANGO -> NZMTL. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to MAGIC. Step 3: Find opposite of each letter. Final Answer: NZTRX.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_048",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, EARTH is written as IESUI. How is DANCE written in that code?",
+    "options": [
+      "FCPEG",
+      "ICUEG",
+      "EEODI",
+      "EBODF"
+    ],
+    "correctAnswer": "C",
+    "answer": "EEODI",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze EARTH -> IESUI. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to DANCE. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: EEODI.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_049",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If LION is coded as NGQL, how will BIRD be coded?",
+    "options": [
+      "ZKPF",
+      "DKTF",
+      "EFUA",
+      "DGTB"
+    ],
+    "correctAnswer": "D",
+    "answer": "DGTB",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: L -> N (+2). 2nd letter: I -> G (-2). The pattern is alternating. Step 2: Apply to BIRD. Step 3: B + 2 = D, I -2 = G, etc. Final Answer: DGTB.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_050",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BIRD is coded as CKUH, how is FIRE coded?",
+    "options": [
+      "GJSF",
+      "GKUI",
+      "HLVJ",
+      "JLTF"
+    ],
+    "correctAnswer": "B",
+    "answer": "GKUI",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare BIRD and CKUH. B->C (+1), I->K (+2), R->U (+3). The shift increases by 1 each time. Step 2: Apply to FIRE. Step 3: F+1=G, I+2=K, etc. Final Answer: GKUI.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_051",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If WATCH is coded as DZGXS, what is the code for DANCE?",
+    "options": [
+      "VYLWU",
+      "XANYW",
+      "WZMXV",
+      "EBODF"
+    ],
+    "correctAnswer": "C",
+    "answer": "WZMXV",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe WATCH -> DZGXS. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to DANCE. Step 3: Find opposite of each letter. Final Answer: WZMXV.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_052",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, WATCH is written as XEUDI. How is APPLE written in that code?",
+    "options": [
+      "EQQMI",
+      "CRRNG",
+      "CRRNG",
+      "BQQMF"
+    ],
+    "correctAnswer": "A",
+    "answer": "EQQMI",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze WATCH -> XEUDI. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to APPLE. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: EQQMI.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_053",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MAGIC is coded as OYIGE, how will ZEBRA be coded?",
+    "options": [
+      "XGZTY",
+      "BCDPC",
+      "BGDTC",
+      "CBEOD"
+    ],
+    "correctAnswer": "B",
+    "answer": "BCDPC",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: M -> O (+2). 2nd letter: A -> Y (-2). The pattern is alternating. Step 2: Apply to ZEBRA. Step 3: Z + 2 = B, E -2 = C, etc. Final Answer: BCDPC.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_054",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BIRD is coded as CKUH, how is MOON coded?",
+    "options": [
+      "QRQO",
+      "ORSS",
+      "NPPO",
+      "NQRR"
+    ],
+    "correctAnswer": "D",
+    "answer": "NQRR",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare BIRD and CKUH. B->C (+1), I->K (+2), R->U (+3). The shift increases by 1 each time. Step 2: Apply to MOON. Step 3: M+1=N, O+2=Q, etc. Final Answer: NQRR.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_055",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If HORSE is coded as SLIHV, what is the code for SOUND?",
+    "options": [
+      "IMGNX",
+      "HLFMW",
+      "GKELV",
+      "TPVOE"
+    ],
+    "correctAnswer": "B",
+    "answer": "HLFMW",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe HORSE -> SLIHV. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to SOUND. Step 3: Find opposite of each letter. Final Answer: HLFMW.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_056",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, FIRE is written as GOSI. How is BIRD written in that code?",
+    "options": [
+      "DKTF",
+      "COSE",
+      "DKTI",
+      "CJSE"
+    ],
+    "correctAnswer": "B",
+    "answer": "COSE",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze FIRE -> GOSI. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to BIRD. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: COSE.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_057",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BAT is coded as DYV, how will RAT be coded?",
+    "options": [
+      "PCR",
+      "UXW",
+      "TCV",
+      "TYV"
+    ],
+    "correctAnswer": "D",
+    "answer": "TYV",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: B -> D (+2). 2nd letter: A -> Y (-2). The pattern is alternating. Step 2: Apply to RAT. Step 3: R + 2 = T, A -2 = Y, etc. Final Answer: TYV.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_058",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MANGO is coded as NCQKT, how is SMART coded?",
+    "options": [
+      "UPEWZ",
+      "TNBSU",
+      "TODVY",
+      "XQDTU"
+    ],
+    "correctAnswer": "C",
+    "answer": "TODVY",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare MANGO and NCQKT. M->N (+1), A->C (+2), N->Q (+3). The shift increases by 1 each time. Step 2: Apply to SMART. Step 3: S+1=T, M+2=O, etc. Final Answer: TODVY.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_059",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BAT is coded as YZG, what is the code for CAT?",
+    "options": [
+      "WYF",
+      "DBU",
+      "YAH",
+      "XZG"
+    ],
+    "correctAnswer": "D",
+    "answer": "XZG",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe BAT -> YZG. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to CAT. Step 3: Find opposite of each letter. Final Answer: XZG.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_060",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, HORSE is written as IUSTI. How is WATCH written in that code?",
+    "options": [
+      "XBUDI",
+      "XEUDI",
+      "YCAEO",
+      "YCVEJ"
+    ],
+    "correctAnswer": "B",
+    "answer": "XEUDI",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze HORSE -> IUSTI. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to WATCH. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: XEUDI.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_061",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MOUSE is coded as OMWQG, how will TRAIN be coded?",
+    "options": [
+      "WODFQ",
+      "VTCKP",
+      "RTYKL",
+      "VPCGP"
+    ],
+    "correctAnswer": "D",
+    "answer": "VPCGP",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: M -> O (+2). 2nd letter: O -> M (-2). The pattern is alternating. Step 2: Apply to TRAIN. Step 3: T + 2 = V, R -2 = P, etc. Final Answer: VPCGP.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_062",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MOON is coded as NQRR, how is FIRE coded?",
+    "options": [
+      "GKUI",
+      "GJSF",
+      "HLVJ",
+      "JLTF"
+    ],
+    "correctAnswer": "A",
+    "answer": "GKUI",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare MOON and NQRR. M->N (+1), O->Q (+2), O->R (+3). The shift increases by 1 each time. Step 2: Apply to FIRE. Step 3: F+1=G, I+2=K, etc. Final Answer: GKUI.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_063",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If RAT is coded as IZG, what is the code for SUN?",
+    "options": [
+      "HFM",
+      "IGN",
+      "GEL",
+      "TVO"
+    ],
+    "correctAnswer": "A",
+    "answer": "HFM",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe RAT -> IZG. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to SUN. Step 3: Find opposite of each letter. Final Answer: HFM.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_064",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, OCEAN is written as UDIEO. How is MUSIC written in that code?",
+    "options": [
+      "OWUKE",
+      "NATOD",
+      "NVTJD",
+      "OWUKE"
+    ],
+    "correctAnswer": "B",
+    "answer": "NATOD",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze OCEAN -> UDIEO. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to MUSIC. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: NATOD.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_065",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If LOGIC is coded as NMIGE, how will DANCE be coded?",
+    "options": [
+      "BCLEC",
+      "FCPEG",
+      "GXQZH",
+      "FYPAG"
+    ],
+    "correctAnswer": "D",
+    "answer": "FYPAG",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: L -> N (+2). 2nd letter: O -> M (-2). The pattern is alternating. Step 2: Apply to DANCE. Step 3: D + 2 = F, A -2 = Y, etc. Final Answer: FYPAG.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_066",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BIRD is coded as CKUH, how is MOON coded?",
+    "options": [
+      "NQRR",
+      "ORSS",
+      "NPPO",
+      "QRQO"
+    ],
+    "correctAnswer": "A",
+    "answer": "NQRR",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare BIRD and CKUH. B->C (+1), I->K (+2), R->U (+3). The shift increases by 1 each time. Step 2: Apply to MOON. Step 3: M+1=N, O+2=Q, etc. Final Answer: NQRR.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_067",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If CLOCK is coded as XOLXP, what is the code for APPLE?",
+    "options": [
+      "YJJNU",
+      "ZKKOV",
+      "BQQMF",
+      "ALLPW"
+    ],
+    "correctAnswer": "B",
+    "answer": "ZKKOV",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe CLOCK -> XOLXP. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to APPLE. Step 3: Find opposite of each letter. Final Answer: ZKKOV.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_068",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, CAT is written as DEU. How is RAT written in that code?",
+    "options": [
+      "SEU",
+      "TCA",
+      "TCV",
+      "SBU"
+    ],
+    "correctAnswer": "A",
+    "answer": "SEU",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze CAT -> DEU. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to RAT. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: SEU.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_069",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MANGO is coded as OYPEQ, how will APPLE be coded?",
+    "options": [
+      "DMSIH",
+      "CNRJG",
+      "YRNNC",
+      "CRRNG"
+    ],
+    "correctAnswer": "B",
+    "answer": "CNRJG",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: M -> O (+2). 2nd letter: A -> Y (-2). The pattern is alternating. Step 2: Apply to APPLE. Step 3: A + 2 = C, P -2 = N, etc. Final Answer: CNRJG.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_070",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If CLOCK is coded as DNRGP, how is EAGLE coded?",
+    "options": [
+      "FCJPJ",
+      "JEJNF",
+      "GDKQK",
+      "FBHMF"
+    ],
+    "correctAnswer": "A",
+    "answer": "FCJPJ",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare CLOCK and DNRGP. C->D (+1), L->N (+2), O->R (+3). The shift increases by 1 each time. Step 2: Apply to EAGLE. Step 3: E+1=F, A+2=C, etc. Final Answer: FCJPJ.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_071",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MOON is coded as NLLM, what is the code for BIRD?",
+    "options": [
+      "XQHV",
+      "YRIW",
+      "CJSE",
+      "ZSJX"
+    ],
+    "correctAnswer": "B",
+    "answer": "YRIW",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe MOON -> NLLM. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to BIRD. Step 3: Find opposite of each letter. Final Answer: YRIW.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_072",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, BIRD is written as COSE. How is STAR written in that code?",
+    "options": [
+      "TUES",
+      "TUBS",
+      "UVCT",
+      "UACT"
+    ],
+    "correctAnswer": "A",
+    "answer": "TUES",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze BIRD -> COSE. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to STAR. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: TUES.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_073",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MAGIC is coded as OYIGE, how will DANCE be coded?",
+    "options": [
+      "GXQZH",
+      "BCLEC",
+      "FYPAG",
+      "FCPEG"
+    ],
+    "correctAnswer": "C",
+    "answer": "FYPAG",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: M -> O (+2). 2nd letter: A -> Y (-2). The pattern is alternating. Step 2: Apply to DANCE. Step 3: D + 2 = F, A -2 = Y, etc. Final Answer: FYPAG.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_074",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MUSIC is coded as NWVMH, how is MANGO coded?",
+    "options": [
+      "NBOHP",
+      "REQIP",
+      "ODRLU",
+      "NCQKT"
+    ],
+    "correctAnswer": "D",
+    "answer": "NCQKT",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare MUSIC and NWVMH. M->N (+1), U->W (+2), S->V (+3). The shift increases by 1 each time. Step 2: Apply to MANGO. Step 3: M+1=N, A+2=C, etc. Final Answer: NCQKT.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_075",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If MAGIC is coded as NZTRX, what is the code for APPLE?",
+    "options": [
+      "ZKKOV",
+      "ALLPW",
+      "YJJNU",
+      "BQQMF"
+    ],
+    "correctAnswer": "A",
+    "answer": "ZKKOV",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe MAGIC -> NZTRX. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to APPLE. Step 3: Find opposite of each letter. Final Answer: ZKKOV.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_076",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, SNAKE is written as TOELI. How is OCEAN written in that code?",
+    "options": [
+      "PDFBO",
+      "UDIEO",
+      "QEGCP",
+      "QEGCU"
+    ],
+    "correctAnswer": "B",
+    "answer": "UDIEO",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze SNAKE -> TOELI. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to OCEAN. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: UDIEO.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_077",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If TRAIN is coded as VPCGP, how will MANGO be coded?",
+    "options": [
+      "PXQDR",
+      "OYPEQ",
+      "KCLIM",
+      "OCPIQ"
+    ],
+    "correctAnswer": "B",
+    "answer": "OYPEQ",
+    "pattern": "Alternating shift of +2 and -2",
+    "explanation": "Step 1: Check letter by letter. 1st letter: T -> V (+2). 2nd letter: R -> P (-2). The pattern is alternating. Step 2: Apply to MANGO. Step 3: M + 2 = O, A -2 = Y, etc. Final Answer: OYPEQ.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_078",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If APPLE is coded as BRSPJ, how is HORSE coded?",
+    "options": [
+      "IPSTF",
+      "MSUUF",
+      "JRVXK",
+      "IQUWJ"
+    ],
+    "correctAnswer": "D",
+    "answer": "IQUWJ",
+    "pattern": "Letters are shifted by increasing amounts: +1, +2, +3...",
+    "explanation": "Step 1: Compare APPLE and BRSPJ. A->B (+1), P->R (+2), P->S (+3). The shift increases by 1 each time. Step 2: Apply to HORSE. Step 3: H+1=I, O+2=Q, etc. Final Answer: IQUWJ.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_079",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BIRD is coded as YRIW, what is the code for TREE?",
+    "options": [
+      "FHUU",
+      "GIVV",
+      "HJWW",
+      "USFF"
+    ],
+    "correctAnswer": "B",
+    "answer": "GIVV",
+    "pattern": "Each letter is replaced by its opposite letter in the alphabet",
+    "explanation": "Step 1: Observe BIRD -> YRIW. Sum of positions of corresponding letters is always 27 (e.g., A=1, Z=26, 1+26=27). They are opposite letters. Step 2: Apply to TREE. Step 3: Find opposite of each letter. Final Answer: GIVV.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_080",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, RIVER is written as SOWIS. How is EARTH written in that code?",
+    "options": [
+      "FBSUI",
+      "GCTAO",
+      "IESUI",
+      "GCTVJ"
+    ],
+    "correctAnswer": "C",
+    "answer": "IESUI",
+    "pattern": "Vowels shift to the next vowel, consonants shift +1",
+    "explanation": "Step 1: Analyze RIVER -> SOWIS. Consonants are shifted by +1. Vowels are replaced by the next vowel in the sequence A, E, I, O, U. Step 2: Apply to EARTH. Step 3: Convert vowels to next vowel and consonants +1. Final Answer: IESUI.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_081",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If BIRD is coded as ESJC, how is STAR coded?",
+    "options": [
+      "SBUT",
+      "RATS",
+      "QZSR",
+      "TUBS"
+    ],
+    "correctAnswer": "A",
+    "answer": "SBUT",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing BIRD to get DRIB. Step 2: Compare DRIB to ESJC. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to STAR. Reverse: RATS. Shift +1: SBUT. Final Answer: SBUT.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_082",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language TIGER is written as JUSFH, what is the code for PLANE?",
+    "options": [
+      "NRGPC",
+      "QMBOF",
+      "MQFOB",
+      "FOBMQ"
+    ],
+    "correctAnswer": "C",
+    "answer": "MQFOB",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word TIGER is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get JUSFH. Step 3: Apply to PLANE. Split in half, reverse each half, then add +1. Final Answer: MQFOB.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_083",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If SUN is coded as OVT, how is DOG coded?",
+    "options": [
+      "EPH",
+      "GOD",
+      "HPE",
+      "FNC"
+    ],
+    "correctAnswer": "C",
+    "answer": "HPE",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing SUN to get NUS. Step 2: Compare NUS to OVT. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to DOG. Reverse: GOD. Shift +1: HPE. Final Answer: HPE.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_084",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language RIVER is written as JSSFW, what is the code for TIGER?",
+    "options": [
+      "JUSFH",
+      "SFHJU",
+      "KVTGI",
+      "UJHFS"
+    ],
+    "correctAnswer": "A",
+    "answer": "JUSFH",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word RIVER is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get JSSFW. Step 3: Apply to TIGER. Split in half, reverse each half, then add +1. Final Answer: JUSFH.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_085",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If TRAIN is coded as OJBSU, how is LOGIC coded?",
+    "options": [
+      "BHFNK",
+      "MPHJD",
+      "CIGOL",
+      "DJHPM"
+    ],
+    "correctAnswer": "D",
+    "answer": "DJHPM",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing TRAIN to get NIART. Step 2: Compare NIART to OJBSU. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to LOGIC. Reverse: CIGOL. Shift +1: DJHPM. Final Answer: DJHPM.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_086",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language PLANE is written as MQFOB, what is the code for WATER?",
+    "options": [
+      "SFUBX",
+      "CYTGV",
+      "XBUFS",
+      "BXSFU"
+    ],
+    "correctAnswer": "D",
+    "answer": "BXSFU",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word PLANE is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get MQFOB. Step 3: Apply to WATER. Split in half, reverse each half, then add +1. Final Answer: BXSFU.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_087",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If BIRD is coded as ESJC, how is FIRE coded?",
+    "options": [
+      "ERIF",
+      "DQHE",
+      "GJSF",
+      "FSJG"
+    ],
+    "correctAnswer": "D",
+    "answer": "FSJG",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing BIRD to get DRIB. Step 2: Compare DRIB to ESJC. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to FIRE. Reverse: ERIF. Shift +1: FSJG. Final Answer: FSJG.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_088",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language TREE is written as SUFF, what is the code for LION?",
+    "options": [
+      "JMOP",
+      "KNPQ",
+      "MJPO",
+      "OPJM"
+    ],
+    "correctAnswer": "A",
+    "answer": "JMOP",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word TREE is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get SUFF. Step 3: Apply to LION. Split in half, reverse each half, then add +1. Final Answer: JMOP.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_089",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If DOG is coded as HPE, how is CAT coded?",
+    "options": [
+      "UBD",
+      "SZB",
+      "TAC",
+      "DBU"
+    ],
+    "correctAnswer": "A",
+    "answer": "UBD",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing DOG to get GOD. Step 2: Compare GOD to HPE. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to CAT. Reverse: TAC. Shift +1: UBD. Final Answer: UBD.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_090",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language BIRD is written as JCES, what is the code for FISH?",
+    "options": [
+      "ITJG",
+      "JGIT",
+      "KHJU",
+      "GJTI"
+    ],
+    "correctAnswer": "B",
+    "answer": "JGIT",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word BIRD is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get JCES. Step 3: Apply to FISH. Split in half, reverse each half, then add +1. Final Answer: JGIT.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_091",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If SNAKE is coded as FLBOT, how is APPLE coded?",
+    "options": [
+      "DKOOZ",
+      "ELPPA",
+      "BQQMF",
+      "FMQQB"
+    ],
+    "correctAnswer": "D",
+    "answer": "FMQQB",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing SNAKE to get EKANS. Step 2: Compare EKANS to FLBOT. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to APPLE. Reverse: ELPPA. Shift +1: FMQQB. Final Answer: FMQQB.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_092",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language PLANE is written as MQFOB, what is the code for CLOCK?",
+    "options": [
+      "DMPDL",
+      "LDPMD",
+      "NEMEQ",
+      "MDLDP"
+    ],
+    "correctAnswer": "D",
+    "answer": "MDLDP",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word PLANE is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get MQFOB. Step 3: Apply to CLOCK. Split in half, reverse each half, then add +1. Final Answer: MDLDP.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_093",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If BAT is coded as UBC, how is CAT coded?",
+    "options": [
+      "UBD",
+      "SZB",
+      "TAC",
+      "DBU"
+    ],
+    "correctAnswer": "A",
+    "answer": "UBD",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing BAT to get TAB. Step 2: Compare TAB to UBC. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to CAT. Reverse: TAC. Shift +1: UBD. Final Answer: UBD.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_094",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language WATER is written as BXSFU, what is the code for EAGLE?",
+    "options": [
+      "CGGNI",
+      "BFFMH",
+      "FMHBF",
+      "FBHMF"
+    ],
+    "correctAnswer": "B",
+    "answer": "BFFMH",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word WATER is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get BXSFU. Step 3: Apply to EAGLE. Split in half, reverse each half, then add +1. Final Answer: BFFMH.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_095",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If EARTH is coded as IUSBF, how is SMART coded?",
+    "options": [
+      "TNBSU",
+      "SQZLR",
+      "TRAMS",
+      "USBNT"
+    ],
+    "correctAnswer": "D",
+    "answer": "USBNT",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing EARTH to get HTRAE. Step 2: Compare HTRAE to IUSBF. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to SMART. Reverse: TRAMS. Shift +1: USBNT. Final Answer: USBNT.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_096",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language MOUSE is written as PNFTV, what is the code for PLANE?",
+    "options": [
+      "FOBMQ",
+      "QMBOF",
+      "NRGPC",
+      "MQFOB"
+    ],
+    "correctAnswer": "D",
+    "answer": "MQFOB",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word MOUSE is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get PNFTV. Step 3: Apply to PLANE. Split in half, reverse each half, then add +1. Final Answer: MQFOB.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_097",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If SNAKE is coded as FLBOT, how is OCEAN coded?",
+    "options": [
+      "NAECO",
+      "PDFBO",
+      "MZDBN",
+      "OBFDP"
+    ],
+    "correctAnswer": "D",
+    "answer": "OBFDP",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing SNAKE to get EKANS. Step 2: Compare EKANS to FLBOT. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to OCEAN. Reverse: NAECO. Shift +1: OBFDP. Final Answer: OBFDP.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_098",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language SOUND is written as PTEOV, what is the code for LIGHT?",
+    "options": [
+      "KNVJI",
+      "JMUIH",
+      "MJHIU",
+      "UIHJM"
+    ],
+    "correctAnswer": "B",
+    "answer": "JMUIH",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word SOUND is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get PTEOV. Step 3: Apply to LIGHT. Split in half, reverse each half, then add +1. Final Answer: JMUIH.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_099",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If HORSE is coded as FTSPI, how is MANGO coded?",
+    "options": [
+      "PHOBN",
+      "NBOHP",
+      "OGNAM",
+      "NFMZL"
+    ],
+    "correctAnswer": "A",
+    "answer": "PHOBN",
+    "pattern": "The word is reversed, then each letter shifted by +1",
+    "explanation": "Step 1: Notice that a direct shift doesn't work. Try reversing HORSE to get ESROH. Step 2: Compare ESROH to FTSPI. Each letter is shifted +1. Rule: Reverse then +1. Step 3: Apply to MANGO. Reverse: OGNAM. Shift +1: PHOBN. Final Answer: PHOBN.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "CODING_DECODING_100",
+    "topic": "Logical Reasoning",
+    "subtopic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If in a code language ZEBRA is written as FABSC, what is the code for LOGIC?",
+    "options": [
+      "QNEKI",
+      "DJHPM",
+      "PMDJH",
+      "MPHJD"
+    ],
+    "correctAnswer": "C",
+    "answer": "PMDJH",
+    "pattern": "Word split in half, both halves reversed, then each letter shifted +1",
+    "explanation": "Step 1: The word ZEBRA is split in half. Both halves are reversed. Step 2: Then +1 shift is applied to all letters to get FABSC. Step 3: Apply to LOGIC. Split in half, reverse each half, then add +1. Final Answer: PMDJH.",
+    "shortcut": "Memorize the numerical positions of the alphabet forward (A=1...Z=26) and backward.",
+    "commonMistake": "Applying the rule in reverse or missing alternating shifts (e.g., +1, -1).",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "coding",
+      "logical reasoning",
+      "decoding",
+      "alphabet"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  }
+]
