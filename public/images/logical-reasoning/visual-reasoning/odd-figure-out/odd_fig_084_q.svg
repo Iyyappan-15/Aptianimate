@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <rect width="400" height="100" fill="#ffffff" />
+  
+    <rect x="10" y="10" width="380" height="80" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="2" rx="10"/>
+    <text x="200" y="55" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#2c3e50">Find the Odd Figure Out</text>
+  
+</svg>
