@@ -3,6 +3,32 @@ import { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { getQuestionBookmarks, removeQuestionBookmark } from '../repositories/questionBookmarkRepository';
 
+const getOptionString = (opt) => {
+  if (typeof opt === 'object' && opt !== null) return opt.text || "(Image Option)";
+  return String(opt || "");
+};
+
+const renderOption = (opt, letter) => {
+  if (typeof opt === 'object' && opt !== null) {
+    if (opt.image) return <img src={opt.image} alt={`Option ${letter}`} style={{ maxHeight:"100px", maxWidth:"100%", borderRadius:"8px", objectFit:"contain", display:"block" }} />;
+    return opt.text || JSON.stringify(opt);
+  }
+  return String(opt);
+};
+
+function resolveCorrectIndex(question) {
+  const ca = question.correctAnswer;
+  const opts = question.options || [];
+  if (typeof ca === "number") return ca;
+  if (typeof ca === "string") {
+    const letter = ca.trim().toUpperCase();
+    if (/^[A-D]$/.test(letter)) return letter.charCodeAt(0) - 65;
+    const idx = opts.indexOf(ca);
+    return idx >= 0 ? idx : 0;
+  }
+  return 0;
+}
+
 export default function SavedPage({ navigate }) {
   const { user, loading: authLoading } = useAuth();
   const [bookmarks, setBookmarks] = useState([]);
@@ -33,7 +59,7 @@ export default function SavedPage({ navigate }) {
 
   const handleSolveWithAI = (bookmark) => {
     const q = bookmark.question_data;
-    const queryText = `${q.question}\n\nOptions:\nA) ${q.options?.[0] || ''}\nB) ${q.options?.[1] || ''}\nC) ${q.options?.[2] || ''}\nD) ${q.options?.[3] || ''}\n\nExplain this step-by-step with visual details.`;
+    const queryText = `${q.question}\n\nOptions:\nA) ${getOptionString(q.options?.[0])}\nB) ${getOptionString(q.options?.[1])}\nC) ${getOptionString(q.options?.[2])}\nD) ${getOptionString(q.options?.[3])}\n\nExplain this step-by-step with visual details.`;
     navigate(`ask?q=${encodeURIComponent(queryText)}`);
   };
 
@@ -222,7 +248,8 @@ export default function SavedPage({ navigate }) {
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '20px' }}>
                         {q.options.map((opt, idx) => {
                           const letters = ['A', 'B', 'C', 'D'];
-                          const isCorrect = opt === q.correctAnswer;
+                          const correctIdx = resolveCorrectIndex(q);
+                          const isCorrect = idx === correctIdx;
                           return (
                             <div
                               key={idx}
@@ -252,7 +279,7 @@ export default function SavedPage({ navigate }) {
                                 {letters[idx]}
                               </span>
                               <span style={{ fontSize: '0.95rem', color: 'var(--text-main)', fontWeight: isCorrect ? 700 : 400 }}>
-                                {opt}
+                                {renderOption(opt, letters[idx])}
                               </span>
                               {isCorrect && (
                                 <span style={{ marginLeft: 'auto', color: '#10b981', fontWeight: 800 }}>✓ Correct</span>

@@ -62,6 +62,19 @@ function getCorrectText(question) {
   return (question.options || [])[correctIdx] || "";
 }
 
+function renderOption(opt, letter) {
+  if (typeof opt === 'object' && opt !== null) {
+    if (opt.image) return <img src={opt.image} alt={`Option ${letter}`} style={{ maxHeight:"100px", maxWidth:"100%", borderRadius:"8px", objectFit:"contain", display:"block" }} />;
+    return opt.text || JSON.stringify(opt);
+  }
+  return String(opt);
+}
+
+function getOptionString(opt) {
+  if (typeof opt === 'object' && opt !== null) return opt.text || "(Image Option)";
+  return String(opt || "");
+}
+
 function buildLessons(topic) {
   const lessons = [];
   lessons.push({ type: "intro",    heading: "What is " + topic.title + "?", body: topic.description, icon: topic.icon });
@@ -535,7 +548,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                   }}
                 >
                   <span className="opt-letter" style={{ flexShrink:0 }}>{letter}</span>
-                  <span style={{ fontSize:"1rem",fontWeight:500 }}>{opt}</span>
+                  <span style={{ fontSize:"1rem",fontWeight:500 }}>{renderOption(opt, letter)}</span>
                   {submitted && isThisCorrect && (
                     <span style={{ marginLeft:"auto",color:"var(--teal)",fontWeight:"bold",fontSize:"1.2rem" }}>✓</span>
                   )}
@@ -562,7 +575,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
               }}>
                 {isAnsweredCorrectly
                   ? "🎉 Correct! Great job."
-                  : `❌ Wrong. Correct answer: Option ${optionKeys[correctIdx]} — ${correctText}`
+                  : `❌ Wrong. Correct answer: Option ${optionKeys[correctIdx]} — ${getOptionString(correctText)}`
                 }
               </div>
 
@@ -587,7 +600,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                 <button
                   onClick={() => {
                     const opts = activeQuestion.options || [];
-                    const queryText = `${activeQuestion.question}\n\nOptions:\nA) ${opts[0]||""}\nB) ${opts[1]||""}\nC) ${opts[2]||""}\nD) ${opts[3]||""}\n\nExplain step-by-step with visual details.`;
+                    const queryText = `${activeQuestion.question}\n\nOptions:\nA) ${getOptionString(opts[0])}\nB) ${getOptionString(opts[1])}\nC) ${getOptionString(opts[2])}\nD) ${getOptionString(opts[3])}\n\nExplain step-by-step with visual details.`;
                     window.open(`#/ask?q=${encodeURIComponent(queryText)}`, "_blank");
                   }}
                   style={{
