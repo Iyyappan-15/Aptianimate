@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "ALPHANUMERIC_SERIES_001",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: A1, B3, C5, D7, ?",
+    "options": [
+      "F9",
+      "D9",
+      "E9",
+      "E10"
+    ],
+    "correctAnswer": "C",
+    "answer": "E9",
+    "pattern": "Letters jump by +1, Numbers jump by +2",
+    "explanation": "Step 1: Separate into letter and number series. Letters: A, B, C, D (+1). Numbers: 1, 3, 5, 7 (+2). Step 2: Next letter is E. Step 3: Next number is 9. Combined: E9.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_002",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B3C, D6E, F9G, H12I, ?",
+    "options": [
+      "J15L",
+      "K15K",
+      "J16K",
+      "J15K"
+    ],
+    "correctAnswer": "D",
+    "answer": "J15K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 3, 6, 9, 12 (+3 jump). Next is 15. Combined: J15K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_003",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: C3, D4, E5, F6, ?",
+    "options": [
+      "G8",
+      "H7",
+      "G7",
+      "G6"
+    ],
+    "correctAnswer": "C",
+    "answer": "G7",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: C, D, E, F. Next is G. Step 3: Its position is 7. Combined: G7.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_004",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: W6, V8, U10, T12, ?",
+    "options": [
+      "T12",
+      "S15",
+      "S14",
+      "R14"
+    ],
+    "correctAnswer": "C",
+    "answer": "S14",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: W, V, U, T (going backward). Next letter is S. Step 2: Numbers sequence: 6, 8, 10, 12 (+2 jump). Next number is 14. Combined: S14.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_005",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: E5, F8, G11, H14, ?",
+    "options": [
+      "I18",
+      "H17",
+      "I17",
+      "J17"
+    ],
+    "correctAnswer": "C",
+    "answer": "I17",
+    "pattern": "Letters jump by +1, Numbers jump by +3",
+    "explanation": "Step 1: Separate into letter and number series. Letters: E, F, G, H (+1). Numbers: 5, 8, 11, 14 (+3). Step 2: Next letter is I. Step 3: Next number is 17. Combined: I17.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_006",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B2C, D5E, F8G, H11I, ?",
+    "options": [
+      "J15K",
+      "J14K",
+      "K14K",
+      "J14L"
+    ],
+    "correctAnswer": "B",
+    "answer": "J14K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 2, 5, 8, 11 (+3 jump). Next is 14. Combined: J14K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_007",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: G7, H8, I9, J10, ?",
+    "options": [
+      "K11",
+      "K12",
+      "L11",
+      "K10"
+    ],
+    "correctAnswer": "A",
+    "answer": "K11",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: G, H, I, J. Next is K. Step 3: Its position is 11. Combined: K11.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_008",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: X14, W16, V18, U20, ?",
+    "options": [
+      "T23",
+      "U20",
+      "T22",
+      "S22"
+    ],
+    "correctAnswer": "C",
+    "answer": "T22",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: X, W, V, U (going backward). Next letter is T. Step 2: Numbers sequence: 14, 16, 18, 20 (+2 jump). Next number is 22. Combined: T22.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_009",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: D9, E13, F17, G21, ?",
+    "options": [
+      "H26",
+      "H25",
+      "I25",
+      "G25"
+    ],
+    "correctAnswer": "B",
+    "answer": "H25",
+    "pattern": "Letters jump by +1, Numbers jump by +4",
+    "explanation": "Step 1: Separate into letter and number series. Letters: D, E, F, G (+1). Numbers: 9, 13, 17, 21 (+4). Step 2: Next letter is H. Step 3: Next number is 25. Combined: H25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_010",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B6C, D9E, F12G, H15I, ?",
+    "options": [
+      "K18K",
+      "J18K",
+      "J19K",
+      "J18L"
+    ],
+    "correctAnswer": "B",
+    "answer": "J18K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 6, 9, 12, 15 (+3 jump). Next is 18. Combined: J18K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_011",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: K11, L12, M13, N14, ?",
+    "options": [
+      "O14",
+      "O15",
+      "O16",
+      "P15"
+    ],
+    "correctAnswer": "B",
+    "answer": "O15",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: K, L, M, N. Next is O. Step 3: Its position is 15. Combined: O15.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_012",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: Y2, X4, W6, V8, ?",
+    "options": [
+      "T10",
+      "U11",
+      "U10",
+      "V8"
+    ],
+    "correctAnswer": "C",
+    "answer": "U10",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: Y, X, W, V (going backward). Next letter is U. Step 2: Numbers sequence: 2, 4, 6, 8 (+2 jump). Next number is 10. Combined: U10.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_013",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: C3, D5, E7, F9, ?",
+    "options": [
+      "H11",
+      "G11",
+      "G12",
+      "F11"
+    ],
+    "correctAnswer": "B",
+    "answer": "G11",
+    "pattern": "Letters jump by +1, Numbers jump by +2",
+    "explanation": "Step 1: Separate into letter and number series. Letters: C, D, E, F (+1). Numbers: 3, 5, 7, 9 (+2). Step 2: Next letter is G. Step 3: Next number is 11. Combined: G11.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_014",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B5C, D8E, F11G, H14I, ?",
+    "options": [
+      "J18K",
+      "J17K",
+      "K17K",
+      "J17L"
+    ],
+    "correctAnswer": "B",
+    "answer": "J17K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 5, 8, 11, 14 (+3 jump). Next is 17. Combined: J17K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_015",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: O15, P16, Q17, R18, ?",
+    "options": [
+      "S20",
+      "S19",
+      "T19",
+      "S18"
+    ],
+    "correctAnswer": "B",
+    "answer": "S19",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: O, P, Q, R. Next is S. Step 3: Its position is 19. Combined: S19.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_016",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: Z10, Y12, X14, W16, ?",
+    "options": [
+      "V19",
+      "U18",
+      "W16",
+      "V18"
+    ],
+    "correctAnswer": "D",
+    "answer": "V18",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: Z, Y, X, W (going backward). Next letter is V. Step 2: Numbers sequence: 10, 12, 14, 16 (+2 jump). Next number is 18. Combined: V18.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_017",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B7, C10, D13, E16, ?",
+    "options": [
+      "F19",
+      "G19",
+      "F20",
+      "E19"
+    ],
+    "correctAnswer": "A",
+    "answer": "F19",
+    "pattern": "Letters jump by +1, Numbers jump by +3",
+    "explanation": "Step 1: Separate into letter and number series. Letters: B, C, D, E (+1). Numbers: 7, 10, 13, 16 (+3). Step 2: Next letter is F. Step 3: Next number is 19. Combined: F19.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_018",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B4C, D7E, F10G, H13I, ?",
+    "options": [
+      "K16K",
+      "J16K",
+      "J16L",
+      "J17K"
+    ],
+    "correctAnswer": "B",
+    "answer": "J16K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 4, 7, 10, 13 (+3 jump). Next is 16. Combined: J16K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_019",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: D4, E5, F6, G7, ?",
+    "options": [
+      "I8",
+      "H9",
+      "H8",
+      "H7"
+    ],
+    "correctAnswer": "C",
+    "answer": "H8",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: D, E, F, G. Next is H. Step 3: Its position is 8. Combined: H8.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_020",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: V18, U20, T22, S24, ?",
+    "options": [
+      "Q26",
+      "R26",
+      "S24",
+      "R27"
+    ],
+    "correctAnswer": "B",
+    "answer": "R26",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: V, U, T, S (going backward). Next letter is R. Step 2: Numbers sequence: 18, 20, 22, 24 (+2 jump). Next number is 26. Combined: R26.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_021",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: A1, B5, C9, D13, ?",
+    "options": [
+      "D17",
+      "E18",
+      "E17",
+      "F17"
+    ],
+    "correctAnswer": "C",
+    "answer": "E17",
+    "pattern": "Letters jump by +1, Numbers jump by +4",
+    "explanation": "Step 1: Separate into letter and number series. Letters: A, B, C, D (+1). Numbers: 1, 5, 9, 13 (+4). Step 2: Next letter is E. Step 3: Next number is 17. Combined: E17.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_022",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B3C, D6E, F9G, H12I, ?",
+    "options": [
+      "J15L",
+      "J15K",
+      "K15K",
+      "J16K"
+    ],
+    "correctAnswer": "B",
+    "answer": "J15K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 3, 6, 9, 12 (+3 jump). Next is 15. Combined: J15K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_023",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: H8, I9, J10, K11, ?",
+    "options": [
+      "L12",
+      "L11",
+      "M12",
+      "L13"
+    ],
+    "correctAnswer": "A",
+    "answer": "L12",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: H, I, J, K. Next is L. Step 3: Its position is 12. Combined: L12.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_024",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: W6, V8, U10, T12, ?",
+    "options": [
+      "T12",
+      "S14",
+      "S15",
+      "R14"
+    ],
+    "correctAnswer": "B",
+    "answer": "S14",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: W, V, U, T (going backward). Next letter is S. Step 2: Numbers sequence: 6, 8, 10, 12 (+2 jump). Next number is 14. Combined: S14.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_025",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: E5, F7, G9, H11, ?",
+    "options": [
+      "I13",
+      "H13",
+      "I14",
+      "J13"
+    ],
+    "correctAnswer": "A",
+    "answer": "I13",
+    "pattern": "Letters jump by +1, Numbers jump by +2",
+    "explanation": "Step 1: Separate into letter and number series. Letters: E, F, G, H (+1). Numbers: 5, 7, 9, 11 (+2). Step 2: Next letter is I. Step 3: Next number is 13. Combined: I13.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_026",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B2C, D5E, F8G, H11I, ?",
+    "options": [
+      "J14L",
+      "J14K",
+      "K14K",
+      "J15K"
+    ],
+    "correctAnswer": "B",
+    "answer": "J14K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 2, 5, 8, 11 (+3 jump). Next is 14. Combined: J14K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_027",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: L12, M13, N14, O15, ?",
+    "options": [
+      "P15",
+      "P16",
+      "Q16",
+      "P17"
+    ],
+    "correctAnswer": "B",
+    "answer": "P16",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: L, M, N, O. Next is P. Step 3: Its position is 16. Combined: P16.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_028",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: X14, W16, V18, U20, ?",
+    "options": [
+      "U20",
+      "S22",
+      "T22",
+      "T23"
+    ],
+    "correctAnswer": "C",
+    "answer": "T22",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: X, W, V, U (going backward). Next letter is T. Step 2: Numbers sequence: 14, 16, 18, 20 (+2 jump). Next number is 22. Combined: T22.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_029",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: D9, E12, F15, G18, ?",
+    "options": [
+      "G21",
+      "I21",
+      "H22",
+      "H21"
+    ],
+    "correctAnswer": "D",
+    "answer": "H21",
+    "pattern": "Letters jump by +1, Numbers jump by +3",
+    "explanation": "Step 1: Separate into letter and number series. Letters: D, E, F, G (+1). Numbers: 9, 12, 15, 18 (+3). Step 2: Next letter is H. Step 3: Next number is 21. Combined: H21.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_030",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B6C, D9E, F12G, H15I, ?",
+    "options": [
+      "K18K",
+      "J18K",
+      "J18L",
+      "J19K"
+    ],
+    "correctAnswer": "B",
+    "answer": "J18K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 6, 9, 12, 15 (+3 jump). Next is 18. Combined: J18K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_031",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: A1, B2, C3, D4, ?",
+    "options": [
+      "E6",
+      "E4",
+      "E5",
+      "F5"
+    ],
+    "correctAnswer": "C",
+    "answer": "E5",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: A, B, C, D. Next is E. Step 3: Its position is 5. Combined: E5.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_032",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: Y2, X4, W6, V8, ?",
+    "options": [
+      "U10",
+      "U11",
+      "T10",
+      "V8"
+    ],
+    "correctAnswer": "A",
+    "answer": "U10",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: Y, X, W, V (going backward). Next letter is U. Step 2: Numbers sequence: 2, 4, 6, 8 (+2 jump). Next number is 10. Combined: U10.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_033",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: C3, D7, E11, F15, ?",
+    "options": [
+      "G19",
+      "H19",
+      "F19",
+      "G20"
+    ],
+    "correctAnswer": "A",
+    "answer": "G19",
+    "pattern": "Letters jump by +1, Numbers jump by +4",
+    "explanation": "Step 1: Separate into letter and number series. Letters: C, D, E, F (+1). Numbers: 3, 7, 11, 15 (+4). Step 2: Next letter is G. Step 3: Next number is 19. Combined: G19.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_034",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B5C, D8E, F11G, H14I, ?",
+    "options": [
+      "K17K",
+      "J17K",
+      "J18K",
+      "J17L"
+    ],
+    "correctAnswer": "B",
+    "answer": "J17K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 5, 8, 11, 14 (+3 jump). Next is 17. Combined: J17K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_035",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: E5, F6, G7, H8, ?",
+    "options": [
+      "I10",
+      "I8",
+      "J9",
+      "I9"
+    ],
+    "correctAnswer": "D",
+    "answer": "I9",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: E, F, G, H. Next is I. Step 3: Its position is 9. Combined: I9.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_036",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: Z10, Y12, X14, W16, ?",
+    "options": [
+      "U18",
+      "W16",
+      "V18",
+      "V19"
+    ],
+    "correctAnswer": "C",
+    "answer": "V18",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: Z, Y, X, W (going backward). Next letter is V. Step 2: Numbers sequence: 10, 12, 14, 16 (+2 jump). Next number is 18. Combined: V18.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_037",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B7, C9, D11, E13, ?",
+    "options": [
+      "F15",
+      "E15",
+      "G15",
+      "F16"
+    ],
+    "correctAnswer": "A",
+    "answer": "F15",
+    "pattern": "Letters jump by +1, Numbers jump by +2",
+    "explanation": "Step 1: Separate into letter and number series. Letters: B, C, D, E (+1). Numbers: 7, 9, 11, 13 (+2). Step 2: Next letter is F. Step 3: Next number is 15. Combined: F15.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_038",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: B4C, D7E, F10G, H13I, ?",
+    "options": [
+      "J17K",
+      "K16K",
+      "J16L",
+      "J16K"
+    ],
+    "correctAnswer": "D",
+    "answer": "J16K",
+    "pattern": "First letter jumps by +2, second letter is consecutive to first, middle number jumps by +3",
+    "explanation": "Step 1: First letters are B, D, F, H (+2 jump). Next is J. Step 2: Last letters are consecutive to the first letters. Next is K. Step 3: Middle numbers are 4, 7, 10, 13 (+3 jump). Next is 16. Combined: J16K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_039",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: I9, J10, K11, L12, ?",
+    "options": [
+      "M12",
+      "N13",
+      "M14",
+      "M13"
+    ],
+    "correctAnswer": "D",
+    "answer": "M13",
+    "pattern": "The number is the alphabetical position of the letter",
+    "explanation": "Step 1: Observe that the number attached to each letter is exactly its position in the English alphabet (e.g., A=1, B=2). Step 2: The letters follow a simple consecutive sequence: I, J, K, L. Next is M. Step 3: Its position is 13. Combined: M13.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_040",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Easy",
+    "question": "Find the next term in the series: V18, U20, T22, S24, ?",
+    "options": [
+      "S24",
+      "R26",
+      "R27",
+      "Q26"
+    ],
+    "correctAnswer": "B",
+    "answer": "R26",
+    "pattern": "Letters go backwards by 1, numbers increase by 2",
+    "explanation": "Step 1: Letters sequence: V, U, T, S (going backward). Next letter is R. Step 2: Numbers sequence: 18, 20, 22, 24 (+2 jump). Next number is 26. Combined: R26.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "30 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_041",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: A1, C4, F9, J16, ?",
+    "options": [
+      "O18",
+      "O25",
+      "N25",
+      "P25"
+    ],
+    "correctAnswer": "B",
+    "answer": "O25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: A, C, F, J. The differences are +2, +3, +4. Next jump is +5. J + 5 = O. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: O25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_042",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: BC5, DE9, FG13, HI17, ?",
+    "options": [
+      "KK21",
+      "JK22",
+      "JK20",
+      "JK21"
+    ],
+    "correctAnswer": "D",
+    "answer": "JK21",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is JK. Step 2: The number attached is the sum of their alphabetical positions. For BC, 2+3=5. For JK, 10+11=21. Combined: JK21.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_043",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: C3, 4D, E5, 6F, G7, ?",
+    "options": [
+      "8H",
+      "H8",
+      "9H",
+      "8I"
+    ],
+    "correctAnswer": "A",
+    "answer": "8H",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: C, D, E, F, G (+1 jump). Next is H. Step 2: Numbers sequence: 3, 4, 5, 6, 7 (+1 jump). Next is 8. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 8H.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_044",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: D20E, E30F, F42G, G56H, ?",
+    "options": [
+      "I72I",
+      "H71I",
+      "H72I",
+      "H80I"
+    ],
+    "correctAnswer": "C",
+    "answer": "H72I",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be H_I. Step 2: The middle number is the product of their positions. For D20E, 4 * 5 = 20. For H and I, 8 * 9 = 72. Combined: H72I.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_045",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: E1, G4, J9, N16, ?",
+    "options": [
+      "S25",
+      "T25",
+      "R25",
+      "S18"
+    ],
+    "correctAnswer": "A",
+    "answer": "S25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: E, G, J, N. The differences are +2, +3, +4. Next jump is +5. N + 5 = S. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: S25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_046",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: AB3, CD7, EF11, GH15, ?",
+    "options": [
+      "IJ20",
+      "JJ19",
+      "IJ18",
+      "IJ19"
+    ],
+    "correctAnswer": "D",
+    "answer": "IJ19",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is IJ. Step 2: The number attached is the sum of their alphabetical positions. For AB, 1+2=3. For IJ, 9+10=19. Combined: IJ19.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_047",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: B7, 8C, D9, 10E, F11, ?",
+    "options": [
+      "G12",
+      "13G",
+      "12G",
+      "12H"
+    ],
+    "correctAnswer": "C",
+    "answer": "12G",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: B, C, D, E, F (+1 jump). Next is G. Step 2: Numbers sequence: 7, 8, 9, 10, 11 (+1 jump). Next is 12. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 12G.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_048",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: H72I, I90J, J110K, K132L, ?",
+    "options": [
+      "L168M",
+      "L155M",
+      "L156M",
+      "M156M"
+    ],
+    "correctAnswer": "C",
+    "answer": "L156M",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be L_M. Step 2: The middle number is the product of their positions. For H72I, 8 * 9 = 72. For L and M, 12 * 13 = 156. Combined: L156M.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_049",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: D1, F4, I9, M16, ?",
+    "options": [
+      "R18",
+      "Q25",
+      "S25",
+      "R25"
+    ],
+    "correctAnswer": "D",
+    "answer": "R25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: D, F, I, M. The differences are +2, +3, +4. Next jump is +5. M + 5 = R. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: R25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_050",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: EF11, GH15, IJ19, KL23, ?",
+    "options": [
+      "NN27",
+      "MN26",
+      "MN27",
+      "MN28"
+    ],
+    "correctAnswer": "C",
+    "answer": "MN27",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is MN. Step 2: The number attached is the sum of their alphabetical positions. For EF, 5+6=11. For MN, 13+14=27. Combined: MN27.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_051",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: A1, 2B, C3, 4D, E5, ?",
+    "options": [
+      "6F",
+      "7F",
+      "6G",
+      "F6"
+    ],
+    "correctAnswer": "A",
+    "answer": "6F",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: A, B, C, D, E (+1 jump). Next is F. Step 2: Numbers sequence: 1, 2, 3, 4, 5 (+1 jump). Next is 6. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 6F.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_052",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: B6C, C12D, D20E, E30F, ?",
+    "options": [
+      "F41G",
+      "F48G",
+      "F42G",
+      "G42G"
+    ],
+    "correctAnswer": "C",
+    "answer": "F42G",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be F_G. Step 2: The middle number is the product of their positions. For B6C, 2 * 3 = 6. For F and G, 6 * 7 = 42. Combined: F42G.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_053",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: C1, E4, H9, L16, ?",
+    "options": [
+      "Q18",
+      "P25",
+      "Q25",
+      "R25"
+    ],
+    "correctAnswer": "C",
+    "answer": "Q25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: C, E, H, L. The differences are +2, +3, +4. Next jump is +5. L + 5 = Q. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: Q25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_054",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: DE9, FG13, HI17, JK21, ?",
+    "options": [
+      "LM25",
+      "LM26",
+      "MM25",
+      "LM24"
+    ],
+    "correctAnswer": "A",
+    "answer": "LM25",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is LM. Step 2: The number attached is the sum of their alphabetical positions. For DE, 4+5=9. For LM, 12+13=25. Combined: LM25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_055",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: E5, 6F, G7, 8H, I9, ?",
+    "options": [
+      "11J",
+      "10J",
+      "J10",
+      "10K"
+    ],
+    "correctAnswer": "B",
+    "answer": "10J",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: E, F, G, H, I (+1 jump). Next is J. Step 2: Numbers sequence: 5, 6, 7, 8, 9 (+1 jump). Next is 10. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 10J.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_056",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: F42G, G56H, H72I, I90J, ?",
+    "options": [
+      "K110K",
+      "J109K",
+      "J120K",
+      "J110K"
+    ],
+    "correctAnswer": "D",
+    "answer": "J110K",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be J_K. Step 2: The middle number is the product of their positions. For F42G, 6 * 7 = 42. For J and K, 10 * 11 = 110. Combined: J110K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_057",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: B1, D4, G9, K16, ?",
+    "options": [
+      "Q25",
+      "P25",
+      "P18",
+      "O25"
+    ],
+    "correctAnswer": "B",
+    "answer": "P25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: B, D, G, K. The differences are +2, +3, +4. Next jump is +5. K + 5 = P. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: P25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_058",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: CD7, EF11, GH15, IJ19, ?",
+    "options": [
+      "KL23",
+      "KL24",
+      "LL23",
+      "KL22"
+    ],
+    "correctAnswer": "A",
+    "answer": "KL23",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is KL. Step 2: The number attached is the sum of their alphabetical positions. For CD, 3+4=7. For KL, 11+12=23. Combined: KL23.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_059",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: D9, 10E, F11, 12G, H13, ?",
+    "options": [
+      "15I",
+      "I14",
+      "14I",
+      "14J"
+    ],
+    "correctAnswer": "C",
+    "answer": "14I",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: D, E, F, G, H (+1 jump). Next is I. Step 2: Numbers sequence: 9, 10, 11, 12, 13 (+1 jump). Next is 14. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 14I.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_060",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: J110K, K132L, L156M, M182N, ?",
+    "options": [
+      "N210O",
+      "O210O",
+      "N224O",
+      "N209O"
+    ],
+    "correctAnswer": "A",
+    "answer": "N210O",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be N_O. Step 2: The middle number is the product of their positions. For J110K, 10 * 11 = 110. For N and O, 14 * 15 = 210. Combined: N210O.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_061",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: A1, C4, F9, J16, ?",
+    "options": [
+      "P25",
+      "O18",
+      "N25",
+      "O25"
+    ],
+    "correctAnswer": "D",
+    "answer": "O25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: A, C, F, J. The differences are +2, +3, +4. Next jump is +5. J + 5 = O. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: O25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_062",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: BC5, DE9, FG13, HI17, ?",
+    "options": [
+      "KK21",
+      "JK22",
+      "JK20",
+      "JK21"
+    ],
+    "correctAnswer": "D",
+    "answer": "JK21",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is JK. Step 2: The number attached is the sum of their alphabetical positions. For BC, 2+3=5. For JK, 10+11=21. Combined: JK21.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_063",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: C3, 4D, E5, 6F, G7, ?",
+    "options": [
+      "8H",
+      "H8",
+      "8I",
+      "9H"
+    ],
+    "correctAnswer": "A",
+    "answer": "8H",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: C, D, E, F, G (+1 jump). Next is H. Step 2: Numbers sequence: 3, 4, 5, 6, 7 (+1 jump). Next is 8. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 8H.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_064",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: D20E, E30F, F42G, G56H, ?",
+    "options": [
+      "H80I",
+      "H71I",
+      "H72I",
+      "I72I"
+    ],
+    "correctAnswer": "C",
+    "answer": "H72I",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be H_I. Step 2: The middle number is the product of their positions. For D20E, 4 * 5 = 20. For H and I, 8 * 9 = 72. Combined: H72I.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_065",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: E1, G4, J9, N16, ?",
+    "options": [
+      "S25",
+      "R25",
+      "S18",
+      "T25"
+    ],
+    "correctAnswer": "A",
+    "answer": "S25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: E, G, J, N. The differences are +2, +3, +4. Next jump is +5. N + 5 = S. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: S25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_066",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: AB3, CD7, EF11, GH15, ?",
+    "options": [
+      "IJ18",
+      "IJ20",
+      "JJ19",
+      "IJ19"
+    ],
+    "correctAnswer": "D",
+    "answer": "IJ19",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is IJ. Step 2: The number attached is the sum of their alphabetical positions. For AB, 1+2=3. For IJ, 9+10=19. Combined: IJ19.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_067",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: B7, 8C, D9, 10E, F11, ?",
+    "options": [
+      "G12",
+      "12G",
+      "13G",
+      "12H"
+    ],
+    "correctAnswer": "B",
+    "answer": "12G",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: B, C, D, E, F (+1 jump). Next is G. Step 2: Numbers sequence: 7, 8, 9, 10, 11 (+1 jump). Next is 12. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 12G.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_068",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: H72I, I90J, J110K, K132L, ?",
+    "options": [
+      "M156M",
+      "L168M",
+      "L156M",
+      "L155M"
+    ],
+    "correctAnswer": "C",
+    "answer": "L156M",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be L_M. Step 2: The middle number is the product of their positions. For H72I, 8 * 9 = 72. For L and M, 12 * 13 = 156. Combined: L156M.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_069",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: D1, F4, I9, M16, ?",
+    "options": [
+      "R18",
+      "Q25",
+      "R25",
+      "S25"
+    ],
+    "correctAnswer": "C",
+    "answer": "R25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: D, F, I, M. The differences are +2, +3, +4. Next jump is +5. M + 5 = R. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: R25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_070",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: EF11, GH15, IJ19, KL23, ?",
+    "options": [
+      "MN28",
+      "NN27",
+      "MN27",
+      "MN26"
+    ],
+    "correctAnswer": "C",
+    "answer": "MN27",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is MN. Step 2: The number attached is the sum of their alphabetical positions. For EF, 5+6=11. For MN, 13+14=27. Combined: MN27.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_071",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: A1, 2B, C3, 4D, E5, ?",
+    "options": [
+      "6G",
+      "F6",
+      "7F",
+      "6F"
+    ],
+    "correctAnswer": "D",
+    "answer": "6F",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: A, B, C, D, E (+1 jump). Next is F. Step 2: Numbers sequence: 1, 2, 3, 4, 5 (+1 jump). Next is 6. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 6F.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_072",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: B6C, C12D, D20E, E30F, ?",
+    "options": [
+      "F42G",
+      "G42G",
+      "F48G",
+      "F41G"
+    ],
+    "correctAnswer": "A",
+    "answer": "F42G",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be F_G. Step 2: The middle number is the product of their positions. For B6C, 2 * 3 = 6. For F and G, 6 * 7 = 42. Combined: F42G.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_073",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: C1, E4, H9, L16, ?",
+    "options": [
+      "R25",
+      "Q18",
+      "Q25",
+      "P25"
+    ],
+    "correctAnswer": "C",
+    "answer": "Q25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: C, E, H, L. The differences are +2, +3, +4. Next jump is +5. L + 5 = Q. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: Q25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_074",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: DE9, FG13, HI17, JK21, ?",
+    "options": [
+      "LM26",
+      "MM25",
+      "LM24",
+      "LM25"
+    ],
+    "correctAnswer": "D",
+    "answer": "LM25",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is LM. Step 2: The number attached is the sum of their alphabetical positions. For DE, 4+5=9. For LM, 12+13=25. Combined: LM25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_075",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: E5, 6F, G7, 8H, I9, ?",
+    "options": [
+      "11J",
+      "10J",
+      "10K",
+      "J10"
+    ],
+    "correctAnswer": "B",
+    "answer": "10J",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: E, F, G, H, I (+1 jump). Next is J. Step 2: Numbers sequence: 5, 6, 7, 8, 9 (+1 jump). Next is 10. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 10J.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_076",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: F42G, G56H, H72I, I90J, ?",
+    "options": [
+      "J109K",
+      "J120K",
+      "K110K",
+      "J110K"
+    ],
+    "correctAnswer": "D",
+    "answer": "J110K",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be J_K. Step 2: The middle number is the product of their positions. For F42G, 6 * 7 = 42. For J and K, 10 * 11 = 110. Combined: J110K.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_077",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: B1, D4, G9, K16, ?",
+    "options": [
+      "O25",
+      "P18",
+      "P25",
+      "Q25"
+    ],
+    "correctAnswer": "C",
+    "answer": "P25",
+    "pattern": "Letters jump by +2, +3, +4... Numbers are consecutive perfect squares",
+    "explanation": "Step 1: Letters: B, D, G, K. The differences are +2, +3, +4. Next jump is +5. K + 5 = P. Step 2: Numbers: 1, 4, 9, 16. These are squares of 1, 2, 3, 4. Next is 5 squared = 25. Combined: P25.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_078",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: CD7, EF11, GH15, IJ19, ?",
+    "options": [
+      "KL22",
+      "LL23",
+      "KL23",
+      "KL24"
+    ],
+    "correctAnswer": "C",
+    "answer": "KL23",
+    "pattern": "Two letters jumping by +2 pairs, the number is the sum of their alphabetical positions",
+    "explanation": "Step 1: Letters progress in pairs skipping 0 letters (AB, CD, EF...). Next pair is KL. Step 2: The number attached is the sum of their alphabetical positions. For CD, 3+4=7. For KL, 11+12=23. Combined: KL23.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_079",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: D9, 10E, F11, 12G, H13, ?",
+    "options": [
+      "14I",
+      "14J",
+      "15I",
+      "I14"
+    ],
+    "correctAnswer": "A",
+    "answer": "14I",
+    "pattern": "Letters and numbers increase by 1, but their order swaps every alternating term",
+    "explanation": "Step 1: Letters sequence: D, E, F, G, H (+1 jump). Next is I. Step 2: Numbers sequence: 9, 10, 11, 12, 13 (+1 jump). Next is 14. Step 3: Notice the pattern of Letter-Number, Number-Letter. The 6th term must follow Number-Letter order. Combined: 14I.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_080",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the series: J110K, K132L, L156M, M182N, ?",
+    "options": [
+      "O210O",
+      "N210O",
+      "N224O",
+      "N209O"
+    ],
+    "correctAnswer": "B",
+    "answer": "N210O",
+    "pattern": "Two consecutive letters with a number in between equal to the product of their alphabetical positions",
+    "explanation": "Step 1: The outer letters are consecutive (A_B, B_C, C_D). The next will be N_O. Step 2: The middle number is the product of their positions. For J110K, 10 * 11 = 110. For N and O, 14 * 15 = 210. Combined: N210O.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "45 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_081",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: A2Z, C4Y, E8X, G16W, ?",
+    "options": [
+      "I34V",
+      "H32V",
+      "I32W",
+      "I32V"
+    ],
+    "correctAnswer": "D",
+    "answer": "I32V",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: A, C, E, G (+2). Next is I. Step 2: Last letters: Z, Y, X, W (-1). Next is V. Step 3: Numbers: 2, 4, 8, 16 (x2). Next is 32. Combined: I32V.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_082",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1B, 1Y, 2C, 3X, 5D, 8W, ?",
+    "options": [
+      "13E",
+      "13V",
+      "11E",
+      "13F"
+    ],
+    "correctAnswer": "A",
+    "answer": "13E",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: B, C, D (+1). Even terms: Y, X, W (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is E. Combined: 13E.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_083",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: C4X, E8W, G16V, I32U, ?",
+    "options": [
+      "J64T",
+      "K64U",
+      "K64T",
+      "K68T"
+    ],
+    "correctAnswer": "C",
+    "answer": "K64T",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: C, E, G, I (+2). Next is K. Step 2: Last letters: X, W, V, U (-1). Next is T. Step 3: Numbers: 4, 8, 16, 32 (x2). Next is 64. Combined: K64T.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_084",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1A, 1Z, 2B, 3Y, 5C, 8X, ?",
+    "options": [
+      "13D",
+      "11D",
+      "13W",
+      "13E"
+    ],
+    "correctAnswer": "A",
+    "answer": "13D",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: A, B, C (+1). Even terms: Z, Y, X (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is D. Combined: 13D.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_085",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: E3V, G6U, I12T, K24S, ?",
+    "options": [
+      "M48R",
+      "L48R",
+      "M48S",
+      "M51R"
+    ],
+    "correctAnswer": "A",
+    "answer": "M48R",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: E, G, I, K (+2). Next is M. Step 2: Last letters: V, U, T, S (-1). Next is R. Step 3: Numbers: 3, 6, 12, 24 (x2). Next is 48. Combined: M48R.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_086",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1C, 1X, 2D, 3W, 5E, 8V, ?",
+    "options": [
+      "13F",
+      "13U",
+      "11F",
+      "13G"
+    ],
+    "correctAnswer": "A",
+    "answer": "13F",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: C, D, E (+1). Even terms: X, W, V (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is F. Combined: 13F.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_087",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: B2Y, D4X, F8W, H16V, ?",
+    "options": [
+      "J32V",
+      "J32U",
+      "I32U",
+      "J34U"
+    ],
+    "correctAnswer": "B",
+    "answer": "J32U",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: B, D, F, H (+2). Next is J. Step 2: Last letters: Y, X, W, V (-1). Next is U. Step 3: Numbers: 2, 4, 8, 16 (x2). Next is 32. Combined: J32U.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_088",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1B, 1Y, 2C, 3X, 5D, 8W, ?",
+    "options": [
+      "11E",
+      "13E",
+      "13V",
+      "13F"
+    ],
+    "correctAnswer": "B",
+    "answer": "13E",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: B, C, D (+1). Even terms: Y, X, W (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is E. Combined: 13E.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_089",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: D4W, F8V, H16U, J32T, ?",
+    "options": [
+      "K64S",
+      "L64T",
+      "L68S",
+      "L64S"
+    ],
+    "correctAnswer": "D",
+    "answer": "L64S",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: D, F, H, J (+2). Next is L. Step 2: Last letters: W, V, U, T (-1). Next is S. Step 3: Numbers: 4, 8, 16, 32 (x2). Next is 64. Combined: L64S.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_090",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1A, 1Z, 2B, 3Y, 5C, 8X, ?",
+    "options": [
+      "13E",
+      "13W",
+      "13D",
+      "11D"
+    ],
+    "correctAnswer": "C",
+    "answer": "13D",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: A, B, C (+1). Even terms: Z, Y, X (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is D. Combined: 13D.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_091",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: A3Z, C6Y, E12X, G24W, ?",
+    "options": [
+      "I51V",
+      "I48V",
+      "I48W",
+      "H48V"
+    ],
+    "correctAnswer": "B",
+    "answer": "I48V",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: A, C, E, G (+2). Next is I. Step 2: Last letters: Z, Y, X, W (-1). Next is V. Step 3: Numbers: 3, 6, 12, 24 (x2). Next is 48. Combined: I48V.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_092",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1C, 1X, 2D, 3W, 5E, 8V, ?",
+    "options": [
+      "11F",
+      "13F",
+      "13U",
+      "13G"
+    ],
+    "correctAnswer": "B",
+    "answer": "13F",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: C, D, E (+1). Even terms: X, W, V (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is F. Combined: 13F.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_093",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: C2X, E4W, G8V, I16U, ?",
+    "options": [
+      "K32U",
+      "K32T",
+      "K34T",
+      "J32T"
+    ],
+    "correctAnswer": "B",
+    "answer": "K32T",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: C, E, G, I (+2). Next is K. Step 2: Last letters: X, W, V, U (-1). Next is T. Step 3: Numbers: 2, 4, 8, 16 (x2). Next is 32. Combined: K32T.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_094",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1B, 1Y, 2C, 3X, 5D, 8W, ?",
+    "options": [
+      "11E",
+      "13V",
+      "13F",
+      "13E"
+    ],
+    "correctAnswer": "D",
+    "answer": "13E",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: B, C, D (+1). Even terms: Y, X, W (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is E. Combined: 13E.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_095",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: E4V, G8U, I16T, K32S, ?",
+    "options": [
+      "L64R",
+      "M64S",
+      "M68R",
+      "M64R"
+    ],
+    "correctAnswer": "D",
+    "answer": "M64R",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: E, G, I, K (+2). Next is M. Step 2: Last letters: V, U, T, S (-1). Next is R. Step 3: Numbers: 4, 8, 16, 32 (x2). Next is 64. Combined: M64R.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_096",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1A, 1Z, 2B, 3Y, 5C, 8X, ?",
+    "options": [
+      "13W",
+      "13D",
+      "11D",
+      "13E"
+    ],
+    "correctAnswer": "B",
+    "answer": "13D",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: A, B, C (+1). Even terms: Z, Y, X (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is D. Combined: 13D.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_097",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: B3Y, D6X, F12W, H24V, ?",
+    "options": [
+      "J48V",
+      "I48U",
+      "J48U",
+      "J51U"
+    ],
+    "correctAnswer": "C",
+    "answer": "J48U",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: B, D, F, H (+2). Next is J. Step 2: Last letters: Y, X, W, V (-1). Next is U. Step 3: Numbers: 3, 6, 12, 24 (x2). Next is 48. Combined: J48U.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_098",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1C, 1X, 2D, 3W, 5E, 8V, ?",
+    "options": [
+      "13G",
+      "11F",
+      "13F",
+      "13U"
+    ],
+    "correctAnswer": "C",
+    "answer": "13F",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: C, D, E (+1). Even terms: X, W, V (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is F. Combined: 13F.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_099",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: D2W, F4V, H8U, J16T, ?",
+    "options": [
+      "L32T",
+      "L34S",
+      "L32S",
+      "K32S"
+    ],
+    "correctAnswer": "C",
+    "answer": "L32S",
+    "pattern": "First letter +2, second letter -1, middle number multiplied by 2",
+    "explanation": "Step 1: Split into 3 independent series. First letters: D, F, H, J (+2). Next is L. Step 2: Last letters: W, V, U, T (-1). Next is S. Step 3: Numbers: 2, 4, 8, 16 (x2). Next is 32. Combined: L32S.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  },
+  {
+    "id": "ALPHANUMERIC_SERIES_100",
+    "topic": "Logical Reasoning",
+    "subtopic": "Alphanumeric Series",
+    "difficulty": "Hard",
+    "question": "Find the next term in the series: 1B, 1Y, 2C, 3X, 5D, 8W, ?",
+    "options": [
+      "13F",
+      "11E",
+      "13V",
+      "13E"
+    ],
+    "correctAnswer": "D",
+    "answer": "13E",
+    "pattern": "Numbers follow Fibonacci sequence, letters alternate between a forward and backward sequence",
+    "explanation": "Step 1: The numbers form the Fibonacci sequence: 1, 1, 2, 3, 5, 8. The next number is 5+8 = 13. Step 2: The letters alternate between two series. Odd terms: B, C, D (+1). Even terms: Y, X, W (-1). Step 3: The missing 7th term belongs to the odd series, so the next letter is E. Combined: 13E.",
+    "shortcut": "Break the alphanumeric term into two separate series (one for letters, one for numbers) and solve them independently.",
+    "commonMistake": "Trying to relate the number directly to the letter within the same term when they actually form two independent series.",
+    "estimatedTime": "90 sec",
+    "keywords": [
+      "series",
+      "logical reasoning",
+      "alphanumeric series",
+      "alphabet",
+      "numbers"
+    ],
+    "tags": [
+      "placement",
+      "logical reasoning"
+    ],
+    "visualizeAvailable": true
+  }
+]
