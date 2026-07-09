@@ -483,6 +483,17 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
             📌 {activeQuestion.subtopic || "General"}
           </div>
 
+          {/* Question Image (for Data Interpretation etc.) */}
+          {activeQuestion.image && (
+            <div style={{ marginBottom: "24px", textAlign: "center", background: "#fff", padding: "16px", borderRadius: "12px", border: "1px solid var(--border)" }}>
+              <img 
+                src={activeQuestion.image} 
+                alt="Question Chart" 
+                style={{ maxWidth: "100%", maxHeight: "350px", objectFit: "contain", borderRadius: "8px" }}
+              />
+            </div>
+          )}
+
           {/* Question Text */}
           <div className="qc-question" style={{ fontSize:"1.2rem",fontWeight:700,color:"var(--text-main)",marginBottom:"28px",lineHeight:1.6 }}>
             {activeQuestion.question}
