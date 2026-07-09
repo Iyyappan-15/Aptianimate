@@ -67,6 +67,12 @@ export function getTopicCategoryPath(topicSlug) {
     'number-series':            'logical-reasoning/series',
     'letter-series':            'logical-reasoning/series',
     'alphanumeric-series':      'logical-reasoning/series',
+
+    // ── Logical Reasoning / Logical Relations ───────────────────────────
+    'coding-decoding':          'logical-reasoning/logical-relations',
+    'blood-relations':          'logical-reasoning/logical-relations',
+    'direction-sense':          'logical-reasoning/logical-relations',
+    'ranking-ordering':         'logical-reasoning/logical-relations',
   };
 
   if (map[topicSlug]) return map[topicSlug];
