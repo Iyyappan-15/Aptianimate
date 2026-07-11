@@ -1,4 +1,4 @@
-// src/pages/TopicPage.jsx — Premium Topic Learning Experience
+﻿// src/pages/TopicPage.jsx â€” Premium Topic Learning Experience
 import { useState, useEffect, useRef } from "react";
 import { topicService } from "../services/topicService";
 import AISolver from "../components/AISolver";
@@ -26,17 +26,17 @@ const getMeta = (slug) => TOPIC_META[slug] || TOPIC_META.default;
 const DIFF_COLOR = { Easy: "#10b981", Medium: "#f59e0b", Hard: "#ef4444" };
 
 const PRACTICE_LEVELS = [
-  { id: "easy",   emoji: "🟢", label: "Easy Practice",    count: 25, color: "#10b981", desc: "Build confidence with straightforward questions" },
-  { id: "medium", emoji: "🟡", label: "Medium Practice",  count: 25, color: "#f59e0b", desc: "Standard exam-level questions with twists" },
-  { id: "hard",   emoji: "🟠", label: "Hard Practice",    count: 25, color: "#f97316", desc: "Tricky questions that trip most candidates" },
-  { id: "mixed",  emoji: "🔴", label: "Mixed Challenge",  count: 100, color: "#ef4444", desc: "All levels combined for real exam simulation" },
+  { id: "easy",   emoji: "ðŸŸ¢", label: "Easy Practice",    count: 25, color: "#10b981", desc: "Build confidence with straightforward questions" },
+  { id: "medium", emoji: "ðŸŸ¡", label: "Medium Practice",  count: 25, color: "#f59e0b", desc: "Standard exam-level questions with twists" },
+  { id: "hard",   emoji: "ðŸŸ ", label: "Hard Practice",    count: 25, color: "#f97316", desc: "Tricky questions that trip most candidates" },
+  { id: "mixed",  emoji: "ðŸ”´", label: "Mixed Challenge",  count: 100, color: "#ef4444", desc: "All levels combined for real exam simulation" },
 ];
 
-// ─── Universal answer resolver ─────────────────────────────────────────────
+// â”€â”€â”€ Universal answer resolver â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Handles 3 formats found in different JSON files:
-//   1. number  (0-3) — most generated topics (e.g. percentages, error-spotting)
-//   2. letter  (A/B/C/D) — number-series, letter-series etc.
-//   3. string  (exact text) — number-system-basics
+//   1. number  (0-3) â€” most generated topics (e.g. percentages, error-spotting)
+//   2. letter  (A/B/C/D) â€” number-series, letter-series etc.
+//   3. string  (exact text) â€” number-system-basics
 function resolveCorrectIndex(question) {
   const ca = question.correctAnswer;
   const opts = question.options || [];
@@ -89,7 +89,7 @@ function buildLessons(topic) {
 function LessonSlide({ lesson, color, topicName, onNext, isLast }) {
   const nextBtn = (
     <button onClick={onNext} style={{ marginTop: 28, padding: "14px 32px", borderRadius: 12, border: "none", background: "linear-gradient(135deg," + color + "," + color + "bb)", color: "#fff", fontWeight: 800, fontSize: "1rem", cursor: "pointer", transition: "transform .15s" }}>
-      {isLast ? "Go to Practice Mode 🎯" : "Got it! Next →"}
+      {isLast ? "Go to Practice Mode ðŸŽ¯" : "Got it! Next â†’"}
     </button>
   );
   const topBar = <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "linear-gradient(90deg," + color + "," + color + "55)" }} />;
@@ -97,10 +97,10 @@ function LessonSlide({ lesson, color, topicName, onNext, isLast }) {
 
   if (lesson.type === "intro") return <div style={card}>{topBar}<div style={{ display:"flex",alignItems:"center",gap:16,marginBottom:20 }}><span style={{ fontSize:"3rem" }}>{lesson.icon}</span><h2 style={{ fontSize:"1.6rem",fontWeight:900,color:"var(--text-main)",margin:0 }}>{lesson.heading}</h2></div><p style={{ fontSize:"1.05rem",lineHeight:1.8,color:"var(--text-sec)",borderLeft:"4px solid "+color,paddingLeft:16 }}>{lesson.body}</p>{nextBtn}</div>;
   if (lesson.type === "concept") return <div style={card}>{topBar}<div style={{ display:"flex",alignItems:"center",gap:10,marginBottom:12 }}><div style={{ width:36,height:36,borderRadius:"50%",background:color,color:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:800 }}>{lesson.index}</div><span style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px" }}>Key Concept</span></div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:16 }}>{lesson.heading}</h2><div style={{ background:color+"11",border:"1px solid "+color+"33",borderRadius:12,padding:20,fontSize:"1.05rem",color:"var(--text-main)",fontWeight:500 }}>{lesson.body}</div>{nextBtn}</div>;
-  if (lesson.type === "formula") return <div style={card}>{topBar}<div style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px",marginBottom:8 }}>📐 Formula</div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:20 }}>{lesson.heading}</h2><div style={{ background:"#0f0f1a",borderRadius:14,padding:24,textAlign:"center",marginBottom:16,border:"1px solid "+color+"44" }}><div style={{ fontSize:"1.8rem",fontWeight:900,color,fontFamily:"monospace",letterSpacing:"2px" }}>{lesson.formula}</div></div>{lesson.example&&<div style={{ background:"var(--surface2)",borderRadius:10,padding:"14px 18px",fontSize:".9rem",color:"var(--text-sec)",marginBottom:8 }}><span style={{ fontWeight:700,color }}>Example: </span>{lesson.example}</div>}{nextBtn}</div>;
-  if (lesson.type === "identify") return <div style={card}>{topBar}<div style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px",marginBottom:8 }}>🔍 Recognition</div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:20 }}>{lesson.heading}</h2><div style={{ display:"flex",flexDirection:"column",gap:10 }}>{lesson.items.map((item,i)=><div key={i} style={{ display:"flex",alignItems:"flex-start",gap:12,background:"var(--surface2)",borderRadius:10,padding:"12px 16px" }}><div style={{ width:8,height:8,borderRadius:"50%",background:color,marginTop:6,flexShrink:0 }}/><span style={{ fontSize:".95rem",color:"var(--text-main)" }}>{item}</span></div>)}</div>{nextBtn}</div>;
-  if (lesson.type === "approach") return <div style={card}>{topBar}<div style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px",marginBottom:8 }}>⚡ Speed Trick</div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:20 }}>{lesson.heading}</h2><div style={{ background:color+"11",border:"2px solid "+color+"44",borderRadius:14,padding:"20px 24px",fontSize:"1.05rem",color:"var(--text-main)",fontWeight:500,lineHeight:1.7 }}>💡 {lesson.body}</div>{nextBtn}</div>;
-  if (lesson.type === "quiz") return <div style={card}>{topBar}<div style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px",marginBottom:8 }}>🧠 Quick Check</div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:12 }}>{lesson.heading}</h2><p style={{ color:"var(--text-sec)",marginBottom:20 }}>{lesson.body}</p><AISolver topicColor={color} topicName={topicName}/><button onClick={onNext} style={{ marginTop:24,padding:"14px 32px",borderRadius:12,border:"none",background:"#10b981",color:"#fff",fontWeight:800,fontSize:"1rem",cursor:"pointer" }}>✅ Done — Start Practice</button></div>;
+  if (lesson.type === "formula") return <div style={card}>{topBar}<div style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px",marginBottom:8 }}>ðŸ“ Formula</div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:20 }}>{lesson.heading}</h2><div style={{ background:"#0f0f1a",borderRadius:14,padding:24,textAlign:"center",marginBottom:16,border:"1px solid "+color+"44" }}><div style={{ fontSize:"1.8rem",fontWeight:900,color,fontFamily:"monospace",letterSpacing:"2px" }}>{lesson.formula}</div></div>{lesson.example&&<div style={{ background:"var(--surface2)",borderRadius:10,padding:"14px 18px",fontSize:".9rem",color:"var(--text-sec)",marginBottom:8 }}><span style={{ fontWeight:700,color }}>Example: </span>{lesson.example}</div>}{nextBtn}</div>;
+  if (lesson.type === "identify") return <div style={card}>{topBar}<div style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px",marginBottom:8 }}>ðŸ” Recognition</div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:20 }}>{lesson.heading}</h2><div style={{ display:"flex",flexDirection:"column",gap:10 }}>{lesson.items.map((item,i)=><div key={i} style={{ display:"flex",alignItems:"flex-start",gap:12,background:"var(--surface2)",borderRadius:10,padding:"12px 16px" }}><div style={{ width:8,height:8,borderRadius:"50%",background:color,marginTop:6,flexShrink:0 }}/><span style={{ fontSize:".95rem",color:"var(--text-main)" }}>{item}</span></div>)}</div>{nextBtn}</div>;
+  if (lesson.type === "approach") return <div style={card}>{topBar}<div style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px",marginBottom:8 }}>âš¡ Speed Trick</div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:20 }}>{lesson.heading}</h2><div style={{ background:color+"11",border:"2px solid "+color+"44",borderRadius:14,padding:"20px 24px",fontSize:"1.05rem",color:"var(--text-main)",fontWeight:500,lineHeight:1.7 }}>ðŸ’¡ {lesson.body}</div>{nextBtn}</div>;
+  if (lesson.type === "quiz") return <div style={card}>{topBar}<div style={{ fontSize:".8rem",fontWeight:700,color,textTransform:"uppercase",letterSpacing:"2px",marginBottom:8 }}>ðŸ§  Quick Check</div><h2 style={{ fontSize:"1.4rem",fontWeight:900,color:"var(--text-main)",marginBottom:12 }}>{lesson.heading}</h2><p style={{ color:"var(--text-sec)",marginBottom:20 }}>{lesson.body}</p><AISolver topicColor={color} topicName={topicName}/><button onClick={onNext} style={{ marginTop:24,padding:"14px 32px",borderRadius:12,border:"none",background:"#10b981",color:"#fff",fontWeight:800,fontSize:"1rem",cursor:"pointer" }}>âœ… Done â€” Start Practice</button></div>;
   return null;
 }
 
@@ -180,7 +180,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     }
   };
 
-  // ─── Load questions when practice level selected ─────────────────────────
+  // â”€â”€â”€ Load questions when practice level selected â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   useEffect(() => {
     if (screen !== "practice" || !practiceLevel) return;
 
@@ -201,7 +201,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
 
     fetch(url)
       .then(res => {
-        if (!res.ok) throw new Error(`HTTP ${res.status} — ${url}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status} â€” ${url}`);
         return res.json();
       })
       .then(data => {
@@ -263,9 +263,9 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
 
   if (!topic) return (
     <div className="topic-page page">
-      <button className="topic-back-btn" onClick={() => navigate("")}>← Back</button>
+      <button className="topic-back-btn" onClick={() => navigate("")}>â† Back</button>
       <div className="topic-not-found">
-        <div style={{ fontSize: "3rem" }}>🚧</div>
+        <div style={{ fontSize: "3rem" }}>ðŸš§</div>
         <h2>{decodeURIComponent(topicName || topicSlug)}</h2>
         <p>Content is being prepared. Check back soon!</p>
         <button className="goal-btn selected" style={{ marginTop: 24 }} onClick={() => navigate("")}>Go Home</button>
@@ -277,10 +277,10 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   const progress = parseInt(localStorage.getItem("topicProgress_" + topicSlug) || "0", 10);
   const lessons = buildLessons(topic);
 
-  /* ── OVERVIEW ── */
+  /* â”€â”€ OVERVIEW â”€â”€ */
   if (screen === "overview") return (
     <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:860,margin:"0 auto",padding:"24px 16px 80px" }}>
-      <button className="topic-back-btn" onClick={() => history.back()}>← Back</button>
+      <button className="topic-back-btn" onClick={() => history.back()}>â† Back</button>
       <div style={{ background:"linear-gradient(135deg,"+color+"22,"+color+"08)",border:"1px solid "+color+"44",borderRadius:24,padding:40,marginBottom:32,position:"relative",overflow:"hidden" }}>
         <div style={{ position:"absolute",top:0,left:0,right:0,height:4,background:"linear-gradient(90deg,"+color+","+color+"55)" }}/>
         <div style={{ display:"flex",alignItems:"center",gap:20,marginBottom:24,flexWrap:"wrap" }}>
@@ -310,29 +310,29 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
         <div onClick={startLearn} style={{ background:"linear-gradient(135deg,"+color+"18,"+color+"06)",border:"2px solid "+color,borderRadius:20,padding:28,cursor:"pointer",transition:"transform .2s,box-shadow .2s",position:"relative",overflow:"hidden" }}
           onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-4px)";e.currentTarget.style.boxShadow="0 16px 40px "+color+"33";}}
           onMouseLeave={e=>{e.currentTarget.style.transform="translateY(0)";e.currentTarget.style.boxShadow="none";}}>
-          <div style={{ position:"absolute",top:14,right:14,background:color,color:"#fff",fontSize:".68rem",fontWeight:800,padding:"4px 10px",borderRadius:100,letterSpacing:"1px" }}>⭐ RECOMMENDED</div>
-          <div style={{ fontSize:"2.5rem",marginBottom:12 }}>📚</div>
+          <div style={{ position:"absolute",top:14,right:14,background:color,color:"#fff",fontSize:".68rem",fontWeight:800,padding:"4px 10px",borderRadius:100,letterSpacing:"1px" }}>â­ RECOMMENDED</div>
+          <div style={{ fontSize:"2.5rem",marginBottom:12 }}>ðŸ“š</div>
           <h3 style={{ fontSize:"1.3rem",fontWeight:900,color:"var(--text-main)",marginBottom:8 }}>Learn Mode</h3>
           <p style={{ color:"var(--text-sec)",fontSize:".9rem",lineHeight:1.6,marginBottom:16 }}>Understand every concept visually from scratch. Perfect for first-timers or thorough revision.</p>
-          {["Step-by-step visual lessons","Interactive formula animations","Memory tricks & shortcuts","Guided AI practice"].map(f=><div key={f} style={{ display:"flex",alignItems:"center",gap:8,fontSize:".85rem",color:"var(--text-sec)",marginBottom:4 }}><span style={{ color:"#10b981" }}>✓</span>{f}</div>)}
-          <div style={{ marginTop:16,fontSize:".8rem",color:"var(--text-sec)",marginBottom:16 }}>⏱ {meta.time}–{meta.time+10} mins</div>
-          <button style={{ width:"100%",padding:14,borderRadius:12,border:"none",background:"linear-gradient(135deg,"+color+","+color+"bb)",color:"#fff",fontWeight:800,fontSize:"1rem",cursor:"pointer" }}>Start Learning →</button>
+          {["Step-by-step visual lessons","Interactive formula animations","Memory tricks & shortcuts","Guided AI practice"].map(f=><div key={f} style={{ display:"flex",alignItems:"center",gap:8,fontSize:".85rem",color:"var(--text-sec)",marginBottom:4 }}><span style={{ color:"#10b981" }}>âœ“</span>{f}</div>)}
+          <div style={{ marginTop:16,fontSize:".8rem",color:"var(--text-sec)",marginBottom:16 }}>â± {meta.time}â€“{meta.time+10} mins</div>
+          <button style={{ width:"100%",padding:14,borderRadius:12,border:"none",background:"linear-gradient(135deg,"+color+","+color+"bb)",color:"#fff",fontWeight:800,fontSize:"1rem",cursor:"pointer" }}>Start Learning â†’</button>
         </div>
 
         <div onClick={startPractice} style={{ background:"var(--surface)",border:"1px solid var(--border)",borderRadius:20,padding:28,cursor:"pointer",transition:"transform .2s,box-shadow .2s" }}
           onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-4px)";e.currentTarget.style.boxShadow="0 16px 40px rgba(0,0,0,.12)";}}
           onMouseLeave={e=>{e.currentTarget.style.transform="translateY(0)";e.currentTarget.style.boxShadow="none";}}>
-          <div style={{ fontSize:"2.5rem",marginBottom:12 }}>🎯</div>
+          <div style={{ fontSize:"2.5rem",marginBottom:12 }}>ðŸŽ¯</div>
           <h3 style={{ fontSize:"1.3rem",fontWeight:900,color:"var(--text-main)",marginBottom:8 }}>Practice Mode</h3>
           <p style={{ color:"var(--text-sec)",fontSize:".9rem",lineHeight:1.6,marginBottom:16 }}>Already know the concept? Jump into questions with instant AI visual explanations.</p>
-          {["Choose difficulty level","AI animated step-by-step solutions","Accuracy & speed tracking","Shortcut methods & mistake analysis"].map(f=><div key={f} style={{ display:"flex",alignItems:"center",gap:8,fontSize:".85rem",color:"var(--text-sec)",marginBottom:4 }}><span style={{ color:"#f59e0b" }}>✓</span>{f}</div>)}
-          <button style={{ width:"100%",padding:14,borderRadius:12,border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--text-main)",fontWeight:800,fontSize:"1rem",cursor:"pointer",marginTop:32 }}>Start Practice →</button>
+          {["Choose difficulty level","AI animated step-by-step solutions","Accuracy & speed tracking","Shortcut methods & mistake analysis"].map(f=><div key={f} style={{ display:"flex",alignItems:"center",gap:8,fontSize:".85rem",color:"var(--text-sec)",marginBottom:4 }}><span style={{ color:"#f59e0b" }}>âœ“</span>{f}</div>)}
+          <button style={{ width:"100%",padding:14,borderRadius:12,border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--text-main)",fontWeight:800,fontSize:"1rem",cursor:"pointer",marginTop:32 }}>Start Practice â†’</button>
         </div>
       </div>
 
       {topic.keyFacts && topic.keyFacts.length > 0 && (
         <div style={{ background:"var(--surface)",border:"1px solid var(--border)",borderRadius:20,padding:28 }}>
-          <h3 style={{ fontSize:"1.1rem",fontWeight:800,color:"var(--text-main)",marginBottom:16 }}>📌 Topics Covered</h3>
+          <h3 style={{ fontSize:"1.1rem",fontWeight:800,color:"var(--text-main)",marginBottom:16 }}>ðŸ“Œ Topics Covered</h3>
           <div style={{ display:"flex",flexWrap:"wrap",gap:10 }}>
             {topic.keyFacts.map((f,i)=><div key={i} style={{ padding:"8px 16px",background:color+"12",border:"1px solid "+color+"33",borderRadius:100,fontSize:".85rem",color:"var(--text-main)",fontWeight:600 }}>{f.label}</div>)}
           </div>
@@ -341,7 +341,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     </div>
   );
 
-  /* ── LEARN MODE ── */
+  /* â”€â”€ LEARN MODE â”€â”€ */
   if (screen === "learn") {
     const lesson = lessons[lessonIdx];
     const isLast = lessonIdx === lessons.length - 1;
@@ -349,7 +349,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     return (
       <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
         <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24,flexWrap:"wrap",gap:12 }}>
-          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setScreen("overview")}>← Overview</button>
+          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setScreen("overview")}>â† Overview</button>
           <div style={{ display:"flex",alignItems:"center",gap:12 }}>
             <span style={{ fontSize:".85rem",color:"var(--text-sec)",fontWeight:600 }}>{lessonIdx+1} / {lessons.length}</span>
             <div style={{ width:120,height:6,background:"var(--surface2)",borderRadius:6,overflow:"hidden" }}><div style={{ width:pct+"%",height:"100%",background:color,transition:"width .4s ease" }}/></div>
@@ -358,7 +358,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
         </div>
         <div style={{ display:"flex",alignItems:"center",gap:10,marginBottom:20 }}>
           <span style={{ fontSize:"1.5rem" }}>{topic.icon}</span>
-          <span style={{ fontSize:".9rem",fontWeight:700,color:"var(--text-sec)" }}>📚 Learn Mode —</span>
+          <span style={{ fontSize:".9rem",fontWeight:700,color:"var(--text-sec)" }}>ðŸ“š Learn Mode â€”</span>
           <span style={{ fontSize:".9rem",fontWeight:700,color:"var(--text-main)" }}>{topic.title}</span>
         </div>
         <LessonSlide key={lessonIdx} lesson={lesson} color={color} topicName={topic.title} isLast={isLast} onNext={() => isLast ? finishLearn() : setLessonIdx(i => i+1)} />
@@ -369,15 +369,15 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     );
   }
 
-  /* ── PRACTICE MODE ── */
+  /* â”€â”€ PRACTICE MODE â”€â”€ */
   if (screen === "practice") {
 
     // STEP 1: Show level selection if no level chosen
     if (!practiceLevel) return (
       <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
-        <button className="topic-back-btn" onClick={() => setScreen("overview")}>← Overview</button>
+        <button className="topic-back-btn" onClick={() => setScreen("overview")}>â† Overview</button>
         <div style={{ textAlign:"center",marginBottom:32 }}>
-          <div style={{ fontSize:"3rem",marginBottom:12 }}>🎯</div>
+          <div style={{ fontSize:"3rem",marginBottom:12 }}>ðŸŽ¯</div>
           <h2 style={{ fontSize:"1.8rem",fontWeight:900,color:"var(--text-main)",marginBottom:8 }}>Practice Mode</h2>
           <p style={{ color:"var(--text-sec)" }}>Choose your practice intensity for <strong>{topic.title}</strong></p>
         </div>
@@ -401,30 +401,30 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     if (loadingQuestions) return (
       <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
         <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24 }}>
-          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
-          <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>🎯 {practiceLevel.emoji} {practiceLevel.label} · {practiceLevel.count} Questions</div>
+          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>â† Change Level</button>
+          <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>ðŸŽ¯ {practiceLevel.emoji} {practiceLevel.label} Â· {practiceLevel.count} Questions</div>
         </div>
         <div style={{ display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",minHeight:300,gap:20 }}>
           <div style={{ width:56,height:56,borderRadius:"50%",border:"4px solid "+color+"33",borderTopColor:color,animation:"spin 0.8s linear infinite" }} />
-          <p style={{ color:"var(--text-sec)",fontWeight:600,fontSize:"1rem" }}>Loading {practiceLevel.label} questions…</p>
+          <p style={{ color:"var(--text-sec)",fontWeight:600,fontSize:"1rem" }}>Loading {practiceLevel.label} questionsâ€¦</p>
         </div>
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
       </div>
     );
 
-    // STEP 3: Error state — questions couldn't load
+    // STEP 3: Error state â€” questions couldn't load
     if (errorMessage) return (
       <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
         <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24 }}>
-          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
+          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>â† Change Level</button>
         </div>
         <div style={{ textAlign:"center",padding:"60px 24px",background:"var(--surface)",border:"1px solid var(--border)",borderRadius:20 }}>
-          <div style={{ fontSize:"3rem",marginBottom:16 }}>⚠️</div>
+          <div style={{ fontSize:"3rem",marginBottom:16 }}>âš ï¸</div>
           <h3 style={{ color:"var(--text-main)",marginBottom:12 }}>Questions Unavailable</h3>
-          <p style={{ color:"var(--text-sec)",fontSize:".9rem",marginBottom:24 }}>The question bank for <strong>{topic.title}</strong> — {practiceLevel.label} could not be loaded. Please try a different level or come back later.</p>
+          <p style={{ color:"var(--text-sec)",fontSize:".9rem",marginBottom:24 }}>The question bank for <strong>{topic.title}</strong> â€” {practiceLevel.label} could not be loaded. Please try a different level or come back later.</p>
           <p style={{ color:"var(--text-sec)",fontSize:".8rem",fontFamily:"monospace",background:"var(--surface2)",padding:"8px 16px",borderRadius:8,display:"inline-block" }}>{errorMessage}</p>
           <div style={{ marginTop:24,display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap" }}>
-            <button onClick={() => setPracticeLevel(null)} style={{ padding:"12px 28px",borderRadius:12,border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--text-main)",fontWeight:700,cursor:"pointer" }}>← Try Another Level</button>
+            <button onClick={() => setPracticeLevel(null)} style={{ padding:"12px 28px",borderRadius:12,border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--text-main)",fontWeight:700,cursor:"pointer" }}>â† Try Another Level</button>
           </div>
         </div>
       </div>
@@ -437,11 +437,11 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
 
     if (!activeQuestion) return (
       <div className="topic-page page" style={{ maxWidth:760,margin:"0 auto",padding:"24px 16px 80px",textAlign:"center" }}>
-        <button className="topic-back-btn" onClick={() => setPracticeLevel(null)}>← Change Level</button>
+        <button className="topic-back-btn" onClick={() => setPracticeLevel(null)}>â† Change Level</button>
         <div style={{ padding:"60px 24px" }}>
-          <div style={{ fontSize:"3rem",marginBottom:16 }}>📭</div>
+          <div style={{ fontSize:"3rem",marginBottom:16 }}>ðŸ“­</div>
           <p style={{ color:"var(--text-sec)" }}>No questions available for this level. Try another level.</p>
-          <button onClick={() => setPracticeLevel(null)} style={{ marginTop:20,padding:"12px 28px",borderRadius:12,border:"none",background:color,color:"#fff",fontWeight:700,cursor:"pointer" }}>← Choose Another Level</button>
+          <button onClick={() => setPracticeLevel(null)} style={{ marginTop:20,padding:"12px 28px",borderRadius:12,border:"none",background:color,color:"#fff",fontWeight:700,cursor:"pointer" }}>â† Choose Another Level</button>
         </div>
       </div>
     );
@@ -455,8 +455,8 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
       <div className="topic-page page" style={{ animation:"fadeIn .4s ease",maxWidth:760,margin:"0 auto",padding:"24px 16px 80px" }}>
         {/* Top Bar */}
         <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24,flexWrap:"wrap",gap:12 }}>
-          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>← Change Level</button>
-          <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>🎯 {practiceLevel.emoji} {practiceLevel.label} · {questionsList.length} Questions</div>
+          <button className="topic-back-btn" style={{ margin:0 }} onClick={() => setPracticeLevel(null)}>â† Change Level</button>
+          <div style={{ fontSize:".9rem",color:"var(--text-sec)",fontWeight:600 }}>ðŸŽ¯ {practiceLevel.emoji} {practiceLevel.label} Â· {questionsList.length} Questions</div>
         </div>
 
         {/* Question Card */}
@@ -472,7 +472,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                 {activeQuestion.difficulty}
               </span>
               {/* Score */}
-              <span style={{ fontSize:".8rem",fontWeight:700,color:"#10b981" }}>✅ {correctCount} correct</span>
+              <span style={{ fontSize:".8rem",fontWeight:700,color:"#10b981" }}>âœ… {correctCount} correct</span>
               {/* Bookmark Button */}
               <button
                 onClick={handleToggleBookmark}
@@ -487,7 +487,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                   fontSize:"1.1rem",transition:"all 0.2s ease",
                 }}
               >
-                {bookmarkLoading ? "⏳" : isBookmarked ? "🔖" : "🏳️"}
+                {bookmarkLoading ? "â³" : isBookmarked ? "ðŸ”–" : "ðŸ³ï¸"}
               </button>
             </div>
           </div>
@@ -499,7 +499,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
 
           {/* Subtopic */}
           <div style={{ fontSize:"0.85rem",color:"var(--text-sec)",marginBottom:"8px",fontWeight:500 }}>
-            📌 {activeQuestion.subtopic || "General"}
+            ðŸ“Œ {activeQuestion.subtopic || "General"}
           </div>
 
           {/* Question Image (for Data Interpretation etc.) */}
@@ -556,10 +556,10 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                   <span className="opt-letter" style={{ flexShrink:0 }}>{letter}</span>
                   <span style={{ fontSize:"1rem",fontWeight:500 }}>{renderOption(opt, letter)}</span>
                   {submitted && isThisCorrect && (
-                    <span style={{ marginLeft:"auto",color:"var(--teal)",fontWeight:"bold",fontSize:"1.2rem" }}>✓</span>
+                    <span style={{ marginLeft:"auto",color:"var(--teal)",fontWeight:"bold",fontSize:"1.2rem" }}>âœ“</span>
                   )}
                   {submitted && isSelected && !isThisCorrect && (
-                    <span style={{ marginLeft:"auto",color:"var(--coral)",fontWeight:"bold",fontSize:"1.2rem" }}>✗</span>
+                    <span style={{ marginLeft:"auto",color:"var(--coral)",fontWeight:"bold",fontSize:"1.2rem" }}>âœ—</span>
                   )}
                 </button>
               );
@@ -580,22 +580,22 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                 display:"flex",alignItems:"center",gap:"8px"
               }}>
                 {isAnsweredCorrectly
-                  ? "🎉 Correct! Great job."
-                  : `❌ Wrong. Correct answer: Option ${optionKeys[correctIdx]} — ${getOptionString(correctText)}`
+                  ? "ðŸŽ‰ Correct! Great job."
+                  : `âŒ Wrong. Correct answer: Option ${optionKeys[correctIdx]} â€” ${getOptionString(correctText)}`
                 }
               </div>
 
               {/* Memory Trick */}
               {!isAnsweredCorrectly && activeQuestion.memoryTrick && (
                 <div style={{ background:"var(--surface2)",padding:"16px 20px",borderRadius:"12px",fontSize:"0.9rem",color:"var(--text-sec)",borderLeft:"3px solid var(--amber)" }}>
-                  💡 <strong>Memory Trick:</strong> {activeQuestion.memoryTrick}
+                  ðŸ’¡ <strong>Memory Trick:</strong> {activeQuestion.memoryTrick}
                 </div>
               )}
 
               {/* Explanation if available */}
               {activeQuestion.explanation && (
                 <div style={{ background:"var(--surface2)",padding:"16px 20px",borderRadius:"12px",fontSize:"0.9rem",color:"var(--text-sec)",borderLeft:"3px solid "+color }}>
-                  📖 <strong>Explanation:</strong> {activeQuestion.explanation}
+                  ðŸ“– <strong>Explanation:</strong> {activeQuestion.explanation}
                 </div>
               )}
 
@@ -619,7 +619,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                   onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; }}
                   onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; }}
                 >
-                  🎬 Solve Visually (AI)
+                  ðŸŽ¬ Solve Visually (AI)
                 </button>
 
                 {/* Next / Finish */}
@@ -646,7 +646,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                   onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; }}
                   onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; }}
                 >
-                  {isLastQuestion ? "🏁 Finish Practice" : "➡️ Next Question"}
+                  {isLastQuestion ? "ðŸ Finish Practice" : "âž¡ï¸ Next Question"}
                 </button>
 
               </div>
@@ -657,212 +657,128 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     );
   }
 
-  /* ── COMPLETE ── */
+  /* â”€â”€ COMPLETE â”€â”€ */
   if (screen === "complete") {
-    const accuracy = stats?.accuracy ?? 0;
-    const totalQ = stats?.totalQuestions ?? questionsList.length ?? 0;
+    const accuracy       = stats?.accuracy       ?? 0;
+    const totalQ         = stats?.totalQuestions ?? questionsList.length ?? 0;
     const correctAnswers = stats?.correctAnswers ?? 0;
-    const timeTaken = stats?.time ?? "--";
+    const timeTaken      = stats?.time           ?? "--";
 
     const isMastered = accuracy >= 75;
-    const headingText = accuracy >= 75 ? "You've Mastered This Topic!" : "Topic Completed Successfully!";
     const performanceMsg =
       accuracy >= 90 ? "Outstanding performance! You've mastered this topic with excellence."
-      : accuracy >= 75 ? "Great work! You have a strong understanding of this topic."
+      : accuracy >= 75 ? "Great job! You've shown strong understanding and completed this topic with confidence."
       : accuracy >= 50 ? "Good progress! A little more practice will make you even stronger."
       : "You've completed the topic. Review key concepts to improve mastery.";
 
-    const trophyColor = accuracy >= 75 ? "#FFD700" : accuracy >= 50 ? "#C0C0C0" : "#9b59b6";
-    const glowColor   = accuracy >= 75 ? "rgba(255,215,0,0.35)" : accuracy >= 50 ? "rgba(192,192,192,0.3)" : "rgba(155,89,182,0.3)";
+    const glowRgba = accuracy >= 75 ? "255,213,0" : accuracy >= 50 ? "160,160,220" : "171,71,188";
 
-    const TrophySVG = ({ size = 140 }) => (
-      <svg width={size} height={size} viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="tg" cx="50%" cy="40%" r="60%">
-            <stop offset="0%" stopColor={accuracy >= 75 ? "#FFEF80" : accuracy >= 50 ? "#e8e8e8" : "#c39bd3"}/>
-            <stop offset="100%" stopColor={trophyColor}/>
-          </radialGradient>
-          <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-        </defs>
-        {/* Cup body */}
-        <path d="M40 20 Q35 62 55 80 L60 85 L80 85 L85 80 Q105 62 100 20 Z" fill="url(#tg)" filter="url(#glow)"/>
-        {/* Handles */}
-        <path d="M40 30 Q22 30 22 50 Q22 68 40 68" stroke={trophyColor} strokeWidth="6" fill="none" strokeLinecap="round"/>
-        <path d="M100 30 Q118 30 118 50 Q118 68 100 68" stroke={trophyColor} strokeWidth="6" fill="none" strokeLinecap="round"/>
-        {/* Stem */}
-        <rect x="60" y="85" width="20" height="16" rx="3" fill={trophyColor}/>
-        {/* Base */}
-        <rect x="44" y="101" width="52" height="10" rx="5" fill={trophyColor}/>
-        {/* Star */}
-        <path d="M70 35 L73 45 L83 45 L75 51 L78 61 L70 55 L62 61 L65 51 L57 45 L67 45 Z" fill="#fff" opacity="0.9"/>
-        {/* Laurels left */}
-        <path d="M28 78 Q16 70 18 58" stroke="#4ade80" strokeWidth="3" fill="none" strokeLinecap="round"/>
-        <path d="M24 74 Q12 66 16 52" stroke="#4ade80" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-        <path d="M32 82 Q20 82 20 70" stroke="#4ade80" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-        {/* Laurels right */}
-        <path d="M112 78 Q124 70 122 58" stroke="#4ade80" strokeWidth="3" fill="none" strokeLinecap="round"/>
-        <path d="M116 74 Q128 66 124 52" stroke="#4ade80" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-        <path d="M108 82 Q120 82 120 70" stroke="#4ade80" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+    /* â”€â”€ Metric icon colours â”€â”€ */
+    const accColor  = accuracy >= 75 ? "#10b981" : accuracy >= 50 ? "#f59e0b" : "#6366f1";
+    const timeColor = "#6366f1";
+    const corrColor = accuracy >= 75 ? "#f59e0b" : accuracy >= 50 ? "#6366f1" : "#8b5cf6";
+
+    /* â”€â”€ Metric icon SVG components â”€â”€ */
+    const AccIcon = () => (
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="14" fill={`${accColor}22`}/>
+        <circle cx="18" cy="18" r="10" stroke={`${accColor}55`} strokeWidth="2" fill="none"/>
+        <circle cx="18" cy="18" r="5"  fill={accColor}/>
+        <circle cx="18" cy="18" r="13" stroke={accColor} strokeWidth="1.2" fill="none" strokeDasharray="3 3"/>
+        <line x1="18" y1="4"  x2="18" y2="8"  stroke={accColor} strokeWidth="2" strokeLinecap="round"/>
+        <line x1="18" y1="28" x2="18" y2="32" stroke={accColor} strokeWidth="2" strokeLinecap="round"/>
+        <line x1="4"  y1="18" x2="8"  y2="18" stroke={accColor} strokeWidth="2" strokeLinecap="round"/>
+        <line x1="28" y1="18" x2="32" y2="18" stroke={accColor} strokeWidth="2" strokeLinecap="round"/>
       </svg>
     );
-
-    const MountainSVG = () => (
-      <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" style={{ width:"100%", display:"block" }} preserveAspectRatio="xMidYMax meet">
-        <defs>
-          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ede9fe" stopOpacity="0"/>
-            <stop offset="100%" stopColor="#ddd6fe" stopOpacity="0.8"/>
-          </linearGradient>
-          <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#a78bfa"/>
-            <stop offset="100%" stopColor="#7c3aed"/>
-          </linearGradient>
-          <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#c4b5fd"/>
-            <stop offset="100%" stopColor="#8b5cf6"/>
-          </linearGradient>
-          <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ddd6fe"/>
-            <stop offset="100%" stopColor="#a78bfa"/>
-          </linearGradient>
-          <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#fde68a"/>
-            <stop offset="100%" stopColor="#fbbf24"/>
-          </linearGradient>
-        </defs>
-        <rect width="900" height="260" fill="url(#sky)"/>
-        {/* Back mountains */}
-        <polygon points="0,260 180,100 360,260" fill="url(#m3)" opacity="0.6"/>
-        <polygon points="180,260 380,80 580,260" fill="url(#m2)" opacity="0.7"/>
-        <polygon points="500,260 700,40 900,260" fill="url(#m1)"/>
-        {/* Winding path */}
-        <path d="M 200 260 Q 300 220 380 180 Q 460 140 540 100 Q 610 60 690 40" stroke="url(#path)" strokeWidth="5" fill="none" strokeLinecap="round" opacity="0.9"/>
-        {/* Summit flag */}
-        <line x1="690" y1="40" x2="690" y2="12" stroke="#f59e0b" strokeWidth="2.5" strokeLinecap="round"/>
-        <polygon points="690,12 706,19 690,26" fill="#f59e0b"/>
-        {/* Snow caps */}
-        <path d="M 670 50 Q 690 30 710 50 Q 700 45 690 42 Q 680 45 670 50 Z" fill="white" opacity="0.7"/>
+    const TimeIcon = () => (
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="20" r="12" fill={`${timeColor}1a`} stroke={timeColor} strokeWidth="2"/>
+        <path d="M14 7 L14 11 M18 6 L18 11 M22 7 L22 11" stroke={timeColor} strokeWidth="2" strokeLinecap="round"/>
+        <line x1="11" y1="9" x2="25" y2="9" stroke={timeColor} strokeWidth="2" strokeLinecap="round"/>
+        <line x1="18" y1="20" x2="18" y2="12" stroke={timeColor} strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="18" y1="20" x2="24" y2="24" stroke={timeColor} strokeWidth="2" strokeLinecap="round"/>
+        <circle cx="18" cy="20" r="2.5" fill={timeColor}/>
       </svg>
     );
-
-    const accuracyColor = accuracy >= 75 ? "#10b981" : accuracy >= 50 ? "#f59e0b" : "#6366f1";
+    const CorrIcon = () => (
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="14" fill={`${corrColor}22`} stroke={corrColor} strokeWidth="2"/>
+        <path d="M10 18 L15 23 L26 12" stroke={corrColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    );
 
     const metrics = [
-      {
-        icon: (
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-            <circle cx="14" cy="14" r="12" stroke={accuracyColor} strokeWidth="2.5" strokeDasharray={`${accuracy * 0.75} 75`} strokeLinecap="round" transform="rotate(-90 14 14)" fill="none" opacity="0.3"/>
-            <circle cx="14" cy="14" r="12" stroke={accuracyColor} strokeWidth="2.5" strokeDasharray={`${accuracy * 0.75} 75`} strokeLinecap="round" transform="rotate(-90 14 14)" fill="none"/>
-            <text x="14" y="18" textAnchor="middle" fontSize="8" fontWeight="800" fill={accuracyColor}>%</text>
-          </svg>
-        ),
-        value: `${accuracy}%`,
-        label: "Accuracy",
-        sub: accuracy >= 90 ? "Excellent mastery" : accuracy >= 75 ? "Strong understanding" : accuracy >= 50 ? "Room to improve" : "Needs more practice",
-        color: accuracyColor,
-      },
-      {
-        icon: (
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-            <circle cx="14" cy="14" r="11" stroke="#6366f1" strokeWidth="2.5" fill="none"/>
-            <line x1="14" y1="14" x2="14" y2="6" stroke="#6366f1" strokeWidth="2.5" strokeLinecap="round"/>
-            <line x1="14" y1="14" x2="19" y2="17" stroke="#6366f1" strokeWidth="2" strokeLinecap="round"/>
-            <circle cx="14" cy="14" r="2" fill="#6366f1"/>
-          </svg>
-        ),
-        value: timeTaken,
-        label: "Time Taken",
-        sub: "Efficient completion",
-        color: "#6366f1",
-      },
-      {
-        icon: (
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-            <circle cx="14" cy="14" r="12" fill={trophyColor} opacity="0.15"/>
-            <circle cx="14" cy="14" r="12" stroke={trophyColor} strokeWidth="2.5" fill="none"/>
-            <path d="M8 14 L12 18 L20 10" stroke={trophyColor} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        ),
-        value: `${correctAnswers} / ${totalQ}`,
-        label: "Correct Answers",
-        sub: correctAnswers === totalQ ? "Perfect score!" : correctAnswers >= totalQ * 0.8 ? "Excellent result" : correctAnswers >= totalQ * 0.5 ? "Solid effort" : "Keep practicing",
-        color: trophyColor === "#FFD700" ? "#d97706" : trophyColor,
-      },
+      { Icon: AccIcon,  value: `${accuracy}%`,             label: "ACCURACY",        sub: accuracy>=90?"Excellent mastery":accuracy>=75?"Strong understanding":accuracy>=50?"Room to improve":"Needs more practice", color: accColor  },
+      { Icon: TimeIcon, value: timeTaken,                  label: "TIME TAKEN",       sub: "Efficient completion",  color: timeColor },
+      { Icon: CorrIcon, value: `${correctAnswers} / ${totalQ}`, label: "CORRECT ANSWERS", sub: correctAnswers===totalQ?"Perfect score!":correctAnswers>=totalQ*0.8?"Excellent result":correctAnswers>=totalQ*0.5?"Solid effort":"Keep practicing", color: corrColor },
     ];
 
     return (
-      <div style={{ animation:"fadeIn .5s ease", maxWidth:900, margin:"0 auto", padding:"24px 16px 60px", fontFamily:"system-ui,sans-serif" }}>
-        {/* Main Card */}
-        <div style={{
-          background: "var(--surface, #fff)",
-          border: "1px solid var(--border, #e5e7eb)",
-          borderRadius: 28,
-          overflow: "hidden",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.1), 0 4px 16px rgba(0,0,0,0.06)",
-        }}>
-
-          {/* Hero Section */}
-          <div className="scorecard-hero" style={{
-            background: "linear-gradient(135deg, #f5f3ff 0%, #ede9fe 40%, #e0f2fe 100%)",
-            padding: "48px 48px 40px",
-            display: "grid",
-            gridTemplateColumns: "1fr auto",
-            gap: "32px",
-      <div style={{ animation:"fadeInUp .5s ease", maxWidth:900, margin:"0 auto", padding:"20px 16px 60px" }}>
+      <div style={{ animation:"fadeInUp .5s ease", maxWidth:920, margin:"0 auto", padding:"20px 16px 60px" }}>
         <style>{`
-          @keyframes fadeInUp { from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none} }
-          @keyframes pulse { 0%,100%{opacity:0.55;transform:rotate(45deg) scale(1)}50%{opacity:0.9;transform:rotate(45deg) scale(1.2)} }
-          @keyframes floatUp { 0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)} }
-          .sc-card{ background:#fff; border-radius:24px; overflow:hidden; box-shadow:0 24px 64px rgba(99,102,241,0.12),0 4px 16px rgba(0,0,0,0.06); }
-          [data-theme="dark"] .sc-card{ background:#1e1f2e; }
-          [data-theme="dark"] .sc-hero{ background:linear-gradient(135deg,#1e1b3a 0%,#24204a 50%,#1a2040 100%) !important; }
-          [data-theme="dark"] .sc-hero h1{ color:#f1f5f9 !important; }
-          [data-theme="dark"] .sc-hero p { color:#94a3b8 !important; }
-          [data-theme="dark"] .sc-metrics-row{ background:#181929 !important; border-color:#2d2f42 !important; }
-          [data-theme="dark"] .sc-metric-card{ border-color:#2d2f42 !important; }
-          [data-theme="dark"] .sc-badge-topic{ background:#2d2f42 !important; border-color:#3d3f55 !important; color:#e2e8f0 !important; }
-          [data-theme="dark"] .sc-cta-row{ background:#1e1f2e !important; }
-          [data-theme="dark"] .sc-cta-revisit{ background:#1e1f2e !important; color:#cbd5e1 !important; border-color:#3d3f55 !important; }
-          [data-theme="dark"] .sc-journey-label{ background:rgba(30,31,46,0.92) !important; color:#a78bfa !important; border-color:#3d3f55 !important; }
-          @media(max-width:640px){
-            .sc-hero{ padding:28px 20px 24px !important; }
-            .sc-hero-grid{ grid-template-columns:1fr !important; }
-            .sc-hero-trophy{ order:-1; margin:0 auto 12px; }
-            .sc-metrics-row{ grid-template-columns:1fr !important; }
-            .sc-metric-card{ border-right:none !important; border-bottom:1px solid #f0f0f5 !important; }
-            .sc-metric-card:last-child{ border-bottom:none !important; }
-            .sc-cta-row{ flex-direction:column !important; padding:20px 16px !important; }
+          @keyframes fadeInUp { from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none} }
+          @keyframes diamondPulse { 0%,100%{opacity:0.5;transform:rotate(45deg) scale(1)}50%{opacity:0.95;transform:rotate(45deg) scale(1.25)} }
+          @keyframes trophyFloat { 0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)} }
+          .sc-card{ background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(99,102,241,0.14),0 4px 18px rgba(0,0,0,0.07); }
+          [data-theme="dark"] .sc-card { background:#1a1b2e; }
+          [data-theme="dark"] .sc-hero { background:linear-gradient(135deg,#1e1b3a 0%,#252147 50%,#1a2040 100%) !important; }
+          [data-theme="dark"] .sc-hero h1 { color:#f1f5f9 !important; }
+          [data-theme="dark"] .sc-hero p  { color:#94a3b8 !important; }
+          [data-theme="dark"] .sc-metrics-row { background:#13141f !important; border-color:#2a2c3e !important; }
+          [data-theme="dark"] .sc-metric-card { border-color:#2a2c3e !important; }
+          [data-theme="dark"] .sc-badge-topic { background:#252640 !important; border-color:#363859 !important; color:#e2e8f0 !important; }
+          [data-theme="dark"] .sc-cta-row { background:#1a1b2e !important; border-color:#2a2c3e !important; }
+          [data-theme="dark"] .sc-cta-revisit { background:#1a1b2e !important; color:#cbd5e1 !important; border-color:#363859 !important; }
+          [data-theme="dark"] .sc-journey-label { background:rgba(26,27,46,0.92) !important; color:#a78bfa !important; border-color:#363859 !important; }
+          @media (max-width:640px) {
+            .sc-hero { padding:32px 20px 28px !important; }
+            .sc-hero-grid { grid-template-columns:1fr !important; }
+            .sc-hero-grid .sc-trophy-wrap { order:-1; margin:0 auto 20px; }
+            .sc-metrics-row { grid-template-columns:1fr !important; }
+            .sc-metric-card { border-right:none !important; border-bottom:1px solid #efeffa !important; }
+            .sc-metric-card:last-child { border-bottom:none !important; }
+            .sc-cta-row { flex-direction:column !important; padding:20px !important; }
           }
         `}</style>
 
         <div className="sc-card">
 
-          {/* ── HERO ── */}
-          <div className="sc-hero" style={{ background:"linear-gradient(135deg, #f5f3ff 0%, #ede9fe 45%, #e8f4fd 100%)", padding:"48px 52px 44px", position:"relative", overflow:"hidden" }}>
-            {/* Glow blob */}
-            <div style={{ position:"absolute", right:50, top:"50%", transform:"translateY(-50%)", width:280, height:280, borderRadius:"50%", background:`radial-gradient(circle, rgba(${glowRgba},0.16) 0%, transparent 70%)`, pointerEvents:"none" }}/>
+          {/* â•â•â•â• HERO â•â•â•â• */}
+          <div className="sc-hero" style={{
+            background: "linear-gradient(135deg, #f5f3ff 0%, #ede9fe 45%, #e8f4fd 100%)",
+            padding: "48px 52px 44px",
+            position: "relative",
+            overflow: "hidden",
+          }}>
+            {/* Radial glow behind trophy */}
+            <div style={{ position:"absolute", right:40, top:"50%", transform:"translateY(-50%)", width:300, height:300, borderRadius:"50%", background:`radial-gradient(circle, rgba(${glowRgba},0.18) 0%, transparent 68%)`, pointerEvents:"none" }}/>
 
-            {/* Floating diamonds */}
+            {/* Decorative pulsing diamonds */}
             {[
-              {top:"9%",  left:"9%",  size:10, color:"#10b981", delay:"0s"},
-              {top:"15%", left:"43%", size:8,  color:"#6366f1", delay:"0.4s"},
-              {top:"6%",  left:"67%", size:9,  color:"#f59e0b", delay:"0.8s"},
-              {top:"50%", left:"34%", size:9,  color:"#8b5cf6", delay:"0.2s"},
-              {top:"60%", left:"11%", size:7,  color:"#10b981", delay:"1.1s"},
-              {top:"68%", left:"56%", size:8,  color:"#3b82f6", delay:"0.6s"},
-            ].map((d,i) => (
-              <div key={i} style={{ position:"absolute", top:d.top, left:d.left, width:d.size, height:d.size, background:d.color, transform:"rotate(45deg)", borderRadius:2, animation:`pulse 2.8s ease-in-out ${d.delay} infinite`, opacity:0.55 }}/>
+              { top:"8%",  left:"8%",  size:9,  color:"#10b981", delay:"0s"   },
+              { top:"14%", left:"42%", size:7,  color:"#6366f1", delay:"0.5s" },
+              { top:"5%",  left:"66%", size:8,  color:"#f59e0b", delay:"0.9s" },
+              { top:"52%", left:"33%", size:8,  color:"#8b5cf6", delay:"0.25s"},
+              { top:"62%", left:"10%", size:6,  color:"#10b981", delay:"1.1s" },
+              { top:"70%", left:"57%", size:7,  color:"#3b82f6", delay:"0.65s"},
+            ].map((d, i) => (
+              <div key={i} style={{ position:"absolute", top:d.top, left:d.left, width:d.size, height:d.size, background:d.color, transform:"rotate(45deg)", borderRadius:2, animation:`diamondPulse 2.8s ease-in-out ${d.delay} infinite`, opacity:0.55, pointerEvents:"none" }}/>
             ))}
 
-            <div className="sc-hero-grid" style={{ display:"grid", gridTemplateColumns:"1fr 220px", gap:24, alignItems:"center", position:"relative", zIndex:2 }}>
-              {/* Left */}
+            {/* Two-column grid: text left, trophy right */}
+            <div className="sc-hero-grid" style={{ display:"grid", gridTemplateColumns:"1fr 240px", gap:28, alignItems:"center", position:"relative", zIndex:2 }}>
+
+              {/* Left: copy */}
               <div>
-                <div style={{ display:"inline-flex", alignItems:"center", gap:6, padding:"5px 14px", borderRadius:999, fontSize:".8rem", fontWeight:700, marginBottom:22, background:isMastered?"#dcfce7":"#dbeafe", color:isMastered?"#15803d":"#1d4ed8", border:`1px solid ${isMastered?"#86efac":"#93c5fd"}` }}>
-                  <svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill={isMastered?"#16a34a":"#2563eb"}/><path d="M3 6 L5 8 L9 4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                {/* Status pill */}
+                <div style={{ display:"inline-flex", alignItems:"center", gap:6, padding:"5px 14px", borderRadius:999, fontSize:".78rem", fontWeight:700, marginBottom:20, background:isMastered?"#dcfce7":"#dbeafe", color:isMastered?"#15803d":"#1d4ed8", border:`1px solid ${isMastered?"#86efac":"#93c5fd"}` }}>
+                  <svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill={isMastered?"#16a34a":"#2563eb"}/><path d="M3 6L5 8L9 4" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   {isMastered ? "Well Done!" : "Completed!"}
                 </div>
 
-                <h1 style={{ fontSize:"clamp(1.9rem,3.5vw,2.8rem)", fontWeight:900, lineHeight:1.12, margin:"0 0 16px", color:"#0f172a" }}>
+                {/* Headline */}
+                <h1 style={{ fontSize:"clamp(1.85rem,3.5vw,2.75rem)", fontWeight:900, lineHeight:1.12, margin:"0 0 14px", color:"#0f172a" }}>
                   {accuracy >= 75 ? (
                     <>You've <span style={{ color:"#10b981" }}>Mastered</span> This Topic!</>
                   ) : (
@@ -870,76 +786,87 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                   )}
                 </h1>
 
-                <p style={{ color:"#64748b", fontSize:".97rem", lineHeight:1.7, margin:"0 0 24px", maxWidth:420 }}>{performanceMsg}</p>
+                <p style={{ color:"#64748b", fontSize:".95rem", lineHeight:1.7, margin:"0 0 22px", maxWidth:430 }}>{performanceMsg}</p>
 
+                {/* Topic name + Completed badges */}
                 <div style={{ display:"flex", gap:10, flexWrap:"wrap" }}>
-                  <span className="sc-badge-topic" style={{ display:"inline-flex", alignItems:"center", gap:7, background:"#f1f5f9", border:"1px solid #e2e8f0", borderRadius:10, padding:"6px 14px", fontSize:".83rem", fontWeight:700, color:"#334155" }}>
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="2" stroke="#6366f1" strokeWidth="1.5"/><line x1="3" y1="4.5" x2="11" y2="4.5" stroke="#6366f1" strokeWidth="1.5" strokeLinecap="round"/><line x1="3" y1="7" x2="9" y2="7" stroke="#6366f1" strokeWidth="1.5" strokeLinecap="round"/><line x1="3" y1="9.5" x2="7" y2="9.5" stroke="#6366f1" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                  <span className="sc-badge-topic" style={{ display:"inline-flex", alignItems:"center", gap:7, background:"#f1f5f9", border:"1px solid #e2e8f0", borderRadius:10, padding:"6px 14px", fontSize:".82rem", fontWeight:700, color:"#334155" }}>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="2" stroke="#6366f1" strokeWidth="1.5"/><line x1="3" y1="4.5" x2="11" y2="4.5" stroke="#6366f1" strokeWidth="1.4" strokeLinecap="round"/><line x1="3" y1="7" x2="9" y2="7" stroke="#6366f1" strokeWidth="1.4" strokeLinecap="round"/><line x1="3" y1="9.5" x2="7" y2="9.5" stroke="#6366f1" strokeWidth="1.4" strokeLinecap="round"/></svg>
                     {topic?.title || topicName}
                   </span>
-                  <span style={{ display:"inline-flex", alignItems:"center", gap:7, background:"#dcfce7", border:"1px solid #86efac", borderRadius:10, padding:"6px 14px", fontSize:".83rem", fontWeight:700, color:"#15803d" }}>
-                    <svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" fill="#16a34a"/><path d="M3.5 6.5 L5.5 8.5 L9.5 4.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <span style={{ display:"inline-flex", alignItems:"center", gap:7, background:"#dcfce7", border:"1px solid #86efac", borderRadius:10, padding:"6px 14px", fontSize:".82rem", fontWeight:700, color:"#15803d" }}>
+                    <svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" fill="#16a34a"/><path d="M3.5 6.5L5.5 8.5L9.5 4.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     Completed
                   </span>
                 </div>
               </div>
 
-              {/* Right: Trophy */}
-              <div className="sc-hero-trophy" style={{ display:"flex", alignItems:"center", justifyContent:"center", animation:"floatUp 3.5s ease-in-out infinite" }}>
-                <Trophy />
+              {/* Right: real trophy PNG floating */}
+              <div className="sc-trophy-wrap" style={{ display:"flex", alignItems:"center", justifyContent:"center", animation:"trophyFloat 3.5s ease-in-out infinite" }}>
+                <img
+                  src="/trophy.png"
+                  alt="Achievement Trophy"
+                  style={{ width:210, height:210, objectFit:"contain", filter:`drop-shadow(0 8px 32px rgba(${glowRgba},0.45))` }}
+                />
               </div>
             </div>
           </div>
 
-          {/* ── METRICS ── */}
-          <div className="sc-metrics-row" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", background:"#fafafa", borderTop:"1px solid #f0f0f5", borderBottom:"1px solid #f0f0f5" }}>
+          {/* â•â•â•â• METRICS â•â•â•â• */}
+          <div className="sc-metrics-row" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", background:"#fafafa", borderTop:"1px solid #efeffa", borderBottom:"1px solid #efeffa" }}>
             {metrics.map((m, i) => (
-              <div key={i} className="sc-metric-card" style={{ padding:"28px 24px", borderRight:i<2?"1px solid #f0f0f5":"none", display:"flex", alignItems:"flex-start", gap:16 }}>
-                <div style={{ flexShrink:0, width:56, height:56, borderRadius:16, background:`linear-gradient(135deg,${m.color}22,${m.color}08)`, border:`1.5px solid ${m.color}30`, display:"flex", alignItems:"center", justifyContent:"center" }}>
+              <div key={i} className="sc-metric-card" style={{ padding:"26px 22px", borderRight:i<2?"1px solid #efeffa":"none", display:"flex", alignItems:"flex-start", gap:14 }}>
+                <div style={{ flexShrink:0, width:56, height:56, borderRadius:16, background:`linear-gradient(135deg,${m.color}1e,${m.color}08)`, border:`1.5px solid ${m.color}28`, display:"flex", alignItems:"center", justifyContent:"center" }}>
                   <m.Icon />
                 </div>
                 <div>
-                  <div style={{ fontSize:"1.9rem", fontWeight:900, color:m.color, lineHeight:1, letterSpacing:"-0.5px", marginBottom:4 }}>{m.value}</div>
-                  <div style={{ fontSize:".73rem", fontWeight:800, color:"#94a3b8", letterSpacing:"1.2px", marginBottom:5 }}>{m.label}</div>
-                  <div style={{ fontSize:".82rem", color:"#94a3b8", fontWeight:500 }}>{m.sub}</div>
+                  <div style={{ fontSize:"1.85rem", fontWeight:900, color:m.color, lineHeight:1, letterSpacing:"-0.5px", marginBottom:4 }}>{m.value}</div>
+                  <div style={{ fontSize:".72rem", fontWeight:800, color:"#94a3b8", letterSpacing:"1.1px", marginBottom:5 }}>{m.label}</div>
+                  <div style={{ fontSize:".81rem", color:"#94a3b8", fontWeight:500 }}>{m.sub}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* ── CTA BUTTONS ── */}
-          <div className="sc-cta-row" style={{ display:"flex", gap:14, padding:"28px 32px", background:"#fff" }}>
+          {/* â•â•â•â• CTA BUTTONS â•â•â•â• */}
+          <div className="sc-cta-row" style={{ display:"flex", gap:14, padding:"26px 32px", background:"#fff", borderTop:"1px solid #efeffa" }}>
             <button
               onClick={() => navigate("")}
-              style={{ flex:1, padding:"16px 24px", borderRadius:14, border:"none", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:10, fontWeight:800, fontSize:"1rem", color:"#fff", background:"linear-gradient(135deg,#7c3aed 0%,#4f46e5 100%)", boxShadow:"0 6px 24px rgba(124,58,237,0.38)", transition:"transform .15s,box-shadow .15s" }}
-              onMouseOver={e=>{ e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.boxShadow="0 10px 32px rgba(124,58,237,0.5)"; }}
-              onMouseOut={e=>{ e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.boxShadow="0 6px 24px rgba(124,58,237,0.38)"; }}
+              style={{ flex:1, padding:"16px 22px", borderRadius:14, border:"none", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:10, fontWeight:800, fontSize:"1rem", color:"#fff", background:"linear-gradient(135deg,#7c3aed,#4f46e5)", boxShadow:"0 6px 22px rgba(124,58,237,0.4)", transition:"transform .14s,box-shadow .14s" }}
+              onMouseOver={e=>{ e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.boxShadow="0 12px 32px rgba(124,58,237,0.52)"; }}
+              onMouseOut={e=>{  e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.boxShadow="0 6px 22px rgba(124,58,237,0.4)"; }}
             >
-              <span style={{ fontSize:"1.1rem" }}>🚀</span> Continue Your Journey <span style={{ opacity:.75 }}>→</span>
+              <span style={{ fontSize:"1.1rem" }}>ðŸš€</span> Continue Your Journey <span style={{ opacity:.75 }}>â†’</span>
             </button>
             <button
               className="sc-cta-revisit"
               onClick={() => { setScreen("overview"); setPracticeLevel(null); }}
-              style={{ flex:1, padding:"16px 24px", borderRadius:14, border:"1.5px solid #e2e8f0", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:10, fontWeight:700, fontSize:"1rem", color:"#475569", background:"#fff", transition:"transform .15s,background .15s" }}
+              style={{ flex:1, padding:"16px 22px", borderRadius:14, border:"1.5px solid #e2e8f0", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:10, fontWeight:700, fontSize:"1rem", color:"#475569", background:"#fff", transition:"transform .14s,background .14s" }}
               onMouseOver={e=>{ e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.background="#f8fafc"; }}
-              onMouseOut={e=>{ e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.background="#fff"; }}
+              onMouseOut={e=>{  e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.background="#fff"; }}
             >
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9 C3 5.7 5.7 3 9 3 C11 3 12.8 3.9 14 5.3" stroke="#6366f1" strokeWidth="2" strokeLinecap="round"/><path d="M15 9 C15 12.3 12.3 15 9 15 C7 15 5.2 14.1 4 12.7" stroke="#6366f1" strokeWidth="2" strokeLinecap="round"/><path d="M14 2 L14 6 L10 6" stroke="#6366f1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M4 16 L4 12 L8 12" stroke="#6366f1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M2 8.5C2 5.46 4.46 3 7.5 3c1.8 0 3.4.88 4.4 2.24" stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round"/><path d="M15 8.5c0 3.04-2.46 5.5-5.5 5.5-1.8 0-3.4-.88-4.4-2.24" stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round"/><path d="M13 2v4h-4M4 15v-4h4" stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
               Revisit This Topic
             </button>
           </div>
 
-          {/* ── MOUNTAIN JOURNEY ── */}
+          {/* â•â•â•â• MOUNTAIN JOURNEY â•â•â•â• */}
           <div style={{ position:"relative", overflow:"hidden", borderBottomLeftRadius:24, borderBottomRightRadius:24 }}>
-            <Mountain/>
-            <div className="sc-journey-label" style={{ position:"absolute", bottom:16, left:"50%", transform:"translateX(-50%)", background:"rgba(255,255,255,0.88)", backdropFilter:"blur(10px)", WebkitBackdropFilter:"blur(10px)", borderRadius:999, padding:"7px 22px", fontSize:".77rem", fontWeight:700, color:"#7c3aed", whiteSpace:"nowrap", border:"1px solid #ede9fe", boxShadow:"0 2px 12px rgba(124,58,237,0.15)" }}>
-              🏔️ Your Learning Journey Continues
+            <img
+              src="/mountain_journey.png"
+              alt="Learning journey mountain"
+              style={{ width:"100%", display:"block", objectFit:"cover", objectPosition:"center bottom", maxHeight:240 }}
+            />
+            <div className="sc-journey-label" style={{ position:"absolute", bottom:16, left:"50%", transform:"translateX(-50%)", background:"rgba(255,255,255,0.88)", backdropFilter:"blur(12px)", WebkitBackdropFilter:"blur(12px)", borderRadius:999, padding:"7px 22px", fontSize:".77rem", fontWeight:700, color:"#7c3aed", whiteSpace:"nowrap", border:"1px solid #ede9fe", boxShadow:"0 2px 14px rgba(124,58,237,0.18)" }}>
+              ðŸ”ï¸ Your Learning Journey Continues
             </div>
           </div>
-        </div>{/* sc-card */}
+
+        </div>{/* .sc-card */}
       </div>
     );
   }
 
   return null;
 }
+
