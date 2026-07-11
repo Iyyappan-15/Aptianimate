@@ -808,140 +808,135 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
             display: "grid",
             gridTemplateColumns: "1fr auto",
             gap: "32px",
-            alignItems: "center",
-            position: "relative",
-            overflow: "hidden",
-          }}>
-            {/* Decorative floating diamonds */}
-            {[{t:"12%",l:"18%",c:"#10b981",s:10},{t:"20%",l:"45%",c:"#6366f1",s:8},{t:"8%",l:"72%",c:"#f59e0b",s:7},{t:"55%",l:"38%",c:"#8b5cf6",s:9},{t:"65%",l:"18%",c:"#10b981",s:6},{t:"70%",l:"60%",c:"#6366f1",s:8}].map((d,i) => (
-              <div key={i} style={{ position:"absolute", top:d.t, left:d.l, width:d.s, height:d.s, background:d.c, transform:"rotate(45deg)", opacity:0.5, borderRadius:2 }} />
+      <div style={{ animation:"fadeInUp .5s ease", maxWidth:900, margin:"0 auto", padding:"20px 16px 60px" }}>
+        <style>{`
+          @keyframes fadeInUp { from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none} }
+          @keyframes pulse { 0%,100%{opacity:0.55;transform:rotate(45deg) scale(1)}50%{opacity:0.9;transform:rotate(45deg) scale(1.2)} }
+          @keyframes floatUp { 0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)} }
+          .sc-card{ background:#fff; border-radius:24px; overflow:hidden; box-shadow:0 24px 64px rgba(99,102,241,0.12),0 4px 16px rgba(0,0,0,0.06); }
+          [data-theme="dark"] .sc-card{ background:#1e1f2e; }
+          [data-theme="dark"] .sc-hero{ background:linear-gradient(135deg,#1e1b3a 0%,#24204a 50%,#1a2040 100%) !important; }
+          [data-theme="dark"] .sc-hero h1{ color:#f1f5f9 !important; }
+          [data-theme="dark"] .sc-hero p { color:#94a3b8 !important; }
+          [data-theme="dark"] .sc-metrics-row{ background:#181929 !important; border-color:#2d2f42 !important; }
+          [data-theme="dark"] .sc-metric-card{ border-color:#2d2f42 !important; }
+          [data-theme="dark"] .sc-badge-topic{ background:#2d2f42 !important; border-color:#3d3f55 !important; color:#e2e8f0 !important; }
+          [data-theme="dark"] .sc-cta-row{ background:#1e1f2e !important; }
+          [data-theme="dark"] .sc-cta-revisit{ background:#1e1f2e !important; color:#cbd5e1 !important; border-color:#3d3f55 !important; }
+          [data-theme="dark"] .sc-journey-label{ background:rgba(30,31,46,0.92) !important; color:#a78bfa !important; border-color:#3d3f55 !important; }
+          @media(max-width:640px){
+            .sc-hero{ padding:28px 20px 24px !important; }
+            .sc-hero-grid{ grid-template-columns:1fr !important; }
+            .sc-hero-trophy{ order:-1; margin:0 auto 12px; }
+            .sc-metrics-row{ grid-template-columns:1fr !important; }
+            .sc-metric-card{ border-right:none !important; border-bottom:1px solid #f0f0f5 !important; }
+            .sc-metric-card:last-child{ border-bottom:none !important; }
+            .sc-cta-row{ flex-direction:column !important; padding:20px 16px !important; }
+          }
+        `}</style>
+
+        <div className="sc-card">
+
+          {/* ── HERO ── */}
+          <div className="sc-hero" style={{ background:"linear-gradient(135deg, #f5f3ff 0%, #ede9fe 45%, #e8f4fd 100%)", padding:"48px 52px 44px", position:"relative", overflow:"hidden" }}>
+            {/* Glow blob */}
+            <div style={{ position:"absolute", right:50, top:"50%", transform:"translateY(-50%)", width:280, height:280, borderRadius:"50%", background:`radial-gradient(circle, rgba(${glowRgba},0.16) 0%, transparent 70%)`, pointerEvents:"none" }}/>
+
+            {/* Floating diamonds */}
+            {[
+              {top:"9%",  left:"9%",  size:10, color:"#10b981", delay:"0s"},
+              {top:"15%", left:"43%", size:8,  color:"#6366f1", delay:"0.4s"},
+              {top:"6%",  left:"67%", size:9,  color:"#f59e0b", delay:"0.8s"},
+              {top:"50%", left:"34%", size:9,  color:"#8b5cf6", delay:"0.2s"},
+              {top:"60%", left:"11%", size:7,  color:"#10b981", delay:"1.1s"},
+              {top:"68%", left:"56%", size:8,  color:"#3b82f6", delay:"0.6s"},
+            ].map((d,i) => (
+              <div key={i} style={{ position:"absolute", top:d.top, left:d.left, width:d.size, height:d.size, background:d.color, transform:"rotate(45deg)", borderRadius:2, animation:`pulse 2.8s ease-in-out ${d.delay} infinite`, opacity:0.55 }}/>
             ))}
 
-            {/* Left: Text */}
-            <div style={{ position: "relative", zIndex: 2 }}>
-              {/* Status badge */}
-              <div style={{ display:"inline-flex", alignItems:"center", gap:8, background:isMastered?"#dcfce7":"#dbeafe", color:isMastered?"#15803d":"#1d4ed8", borderRadius:999, padding:"5px 14px", fontSize:".8rem", fontWeight:700, marginBottom:20, border:`1px solid ${isMastered?"#86efac":"#93c5fd"}` }}>
-                <span>{isMastered ? "✅" : "✔️"}</span>
-                {isMastered ? "Well Done!" : "Completed!"}
+            <div className="sc-hero-grid" style={{ display:"grid", gridTemplateColumns:"1fr 220px", gap:24, alignItems:"center", position:"relative", zIndex:2 }}>
+              {/* Left */}
+              <div>
+                <div style={{ display:"inline-flex", alignItems:"center", gap:6, padding:"5px 14px", borderRadius:999, fontSize:".8rem", fontWeight:700, marginBottom:22, background:isMastered?"#dcfce7":"#dbeafe", color:isMastered?"#15803d":"#1d4ed8", border:`1px solid ${isMastered?"#86efac":"#93c5fd"}` }}>
+                  <svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill={isMastered?"#16a34a":"#2563eb"}/><path d="M3 6 L5 8 L9 4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  {isMastered ? "Well Done!" : "Completed!"}
+                </div>
+
+                <h1 style={{ fontSize:"clamp(1.9rem,3.5vw,2.8rem)", fontWeight:900, lineHeight:1.12, margin:"0 0 16px", color:"#0f172a" }}>
+                  {accuracy >= 75 ? (
+                    <>You've <span style={{ color:"#10b981" }}>Mastered</span> This Topic!</>
+                  ) : (
+                    <>Topic <span style={{ color:"#6366f1" }}>Completed</span> Successfully!</>
+                  )}
+                </h1>
+
+                <p style={{ color:"#64748b", fontSize:".97rem", lineHeight:1.7, margin:"0 0 24px", maxWidth:420 }}>{performanceMsg}</p>
+
+                <div style={{ display:"flex", gap:10, flexWrap:"wrap" }}>
+                  <span className="sc-badge-topic" style={{ display:"inline-flex", alignItems:"center", gap:7, background:"#f1f5f9", border:"1px solid #e2e8f0", borderRadius:10, padding:"6px 14px", fontSize:".83rem", fontWeight:700, color:"#334155" }}>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="2" stroke="#6366f1" strokeWidth="1.5"/><line x1="3" y1="4.5" x2="11" y2="4.5" stroke="#6366f1" strokeWidth="1.5" strokeLinecap="round"/><line x1="3" y1="7" x2="9" y2="7" stroke="#6366f1" strokeWidth="1.5" strokeLinecap="round"/><line x1="3" y1="9.5" x2="7" y2="9.5" stroke="#6366f1" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                    {topic?.title || topicName}
+                  </span>
+                  <span style={{ display:"inline-flex", alignItems:"center", gap:7, background:"#dcfce7", border:"1px solid #86efac", borderRadius:10, padding:"6px 14px", fontSize:".83rem", fontWeight:700, color:"#15803d" }}>
+                    <svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" fill="#16a34a"/><path d="M3.5 6.5 L5.5 8.5 L9.5 4.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    Completed
+                  </span>
+                </div>
               </div>
 
-              {/* Main heading */}
-              <h1 style={{ fontSize:"clamp(1.8rem,4vw,2.6rem)", fontWeight:900, lineHeight:1.15, margin:"0 0 14px", color:"#0f172a" }}>
-                {accuracy >= 75 ? (
-                  <>You've <span style={{ color:"#10b981" }}>Mastered</span> This Topic!</>
-                ) : (
-                  <>Topic <span style={{ color:"#6366f1" }}>Completed</span> Successfully!</>
-                )}
-              </h1>
-
-              <p style={{ color:"#64748b", fontSize:"1rem", lineHeight:1.65, margin:"0 0 20px", maxWidth:440 }}>{performanceMsg}</p>
-
-              {/* Topic + status badges */}
-              <div style={{ display:"flex", gap:10, flexWrap:"wrap", alignItems:"center" }}>
-                <span style={{ display:"inline-flex", alignItems:"center", gap:6, background:"#f1f5f9", border:"1px solid #e2e8f0", borderRadius:10, padding:"6px 14px", fontSize:".85rem", fontWeight:700, color:"#334155" }}>
-                  📘 {topic?.title || topicName}
-                </span>
-                <span style={{ display:"inline-flex", alignItems:"center", gap:6, background:"#dcfce7", border:"1px solid #86efac", borderRadius:10, padding:"6px 14px", fontSize:".85rem", fontWeight:700, color:"#15803d" }}>
-                  ✅ Completed
-                </span>
-              </div>
-            </div>
-
-            {/* Right: Trophy */}
-            <div style={{ position:"relative", zIndex:2, display:"flex", flexDirection:"column", alignItems:"center" }}>
-              <div style={{
-                width: 160, height: 160,
-                borderRadius: "50%",
-                background: `radial-gradient(circle at 40% 35%, ${glowColor}, transparent 70%)`,
-                display: "flex", alignItems: "center", justifyContent: "center",
-                filter: `drop-shadow(0 0 20px ${glowColor})`,
-              }}>
-                <TrophySVG size={130} />
+              {/* Right: Trophy */}
+              <div className="sc-hero-trophy" style={{ display:"flex", alignItems:"center", justifyContent:"center", animation:"floatUp 3.5s ease-in-out infinite" }}>
+                <Trophy />
               </div>
             </div>
           </div>
 
-          {/* Metrics Row */}
-          <div className="scorecard-metrics" style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3,1fr)",
-            borderTop: "1px solid var(--border, #e5e7eb)",
-          }}>
+          {/* ── METRICS ── */}
+          <div className="sc-metrics-row" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", background:"#fafafa", borderTop:"1px solid #f0f0f5", borderBottom:"1px solid #f0f0f5" }}>
             {metrics.map((m, i) => (
-              <div key={i} style={{
-                padding: "28px 28px",
-                borderRight: i < 2 ? "1px solid var(--border, #e5e7eb)" : "none",
-                display: "flex",
-                alignItems: "flex-start",
-                gap: 16,
-              }}>
-                <div style={{ flexShrink: 0, width:52, height:52, borderRadius:14, background:`${m.color}14`, border:`1.5px solid ${m.color}33`, display:"flex", alignItems:"center", justifyContent:"center" }}>
-                  {m.icon}
+              <div key={i} className="sc-metric-card" style={{ padding:"28px 24px", borderRight:i<2?"1px solid #f0f0f5":"none", display:"flex", alignItems:"flex-start", gap:16 }}>
+                <div style={{ flexShrink:0, width:56, height:56, borderRadius:16, background:`linear-gradient(135deg,${m.color}22,${m.color}08)`, border:`1.5px solid ${m.color}30`, display:"flex", alignItems:"center", justifyContent:"center" }}>
+                  <m.Icon />
                 </div>
                 <div>
-                  <div style={{ fontSize:"1.6rem", fontWeight:900, color:m.color, lineHeight:1, marginBottom:2 }}>{m.value}</div>
-                  <div style={{ fontSize:".8rem", fontWeight:700, color:"#64748b", textTransform:"uppercase", letterSpacing:"0.8px", marginBottom:4 }}>{m.label}</div>
+                  <div style={{ fontSize:"1.9rem", fontWeight:900, color:m.color, lineHeight:1, letterSpacing:"-0.5px", marginBottom:4 }}>{m.value}</div>
+                  <div style={{ fontSize:".73rem", fontWeight:800, color:"#94a3b8", letterSpacing:"1.2px", marginBottom:5 }}>{m.label}</div>
                   <div style={{ fontSize:".82rem", color:"#94a3b8", fontWeight:500 }}>{m.sub}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* CTA Buttons */}
-          <div className="scorecard-cta" style={{ padding:"28px 40px", display:"flex", gap:14, flexWrap:"wrap" }}>
+          {/* ── CTA BUTTONS ── */}
+          <div className="sc-cta-row" style={{ display:"flex", gap:14, padding:"28px 32px", background:"#fff" }}>
             <button
               onClick={() => navigate("")}
-              style={{
-                flex:1, minWidth:200, padding:"16px 32px", borderRadius:14, border:"none",
-                background:"linear-gradient(135deg, #7c3aed, #4f46e5)",
-                color:"#fff", fontWeight:800, fontSize:"1rem", cursor:"pointer",
-                display:"flex", alignItems:"center", justifyContent:"center", gap:10,
-                boxShadow:"0 4px 20px rgba(124,58,237,0.4)",
-                transition:"transform .15s, box-shadow .15s",
-              }}
-              onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.boxShadow="0 8px 28px rgba(124,58,237,0.5)"; }}
-              onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.boxShadow="0 4px 20px rgba(124,58,237,0.4)"; }}
+              style={{ flex:1, padding:"16px 24px", borderRadius:14, border:"none", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:10, fontWeight:800, fontSize:"1rem", color:"#fff", background:"linear-gradient(135deg,#7c3aed 0%,#4f46e5 100%)", boxShadow:"0 6px 24px rgba(124,58,237,0.38)", transition:"transform .15s,box-shadow .15s" }}
+              onMouseOver={e=>{ e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.boxShadow="0 10px 32px rgba(124,58,237,0.5)"; }}
+              onMouseOut={e=>{ e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.boxShadow="0 6px 24px rgba(124,58,237,0.38)"; }}
             >
-              <span style={{ fontSize:"1.1rem" }}>🚀</span>
-              Continue Your Journey <span style={{ fontWeight:400, opacity:.85 }}>→</span>
+              <span style={{ fontSize:"1.1rem" }}>🚀</span> Continue Your Journey <span style={{ opacity:.75 }}>→</span>
             </button>
             <button
+              className="sc-cta-revisit"
               onClick={() => { setScreen("overview"); setPracticeLevel(null); }}
-              style={{
-                flex:1, minWidth:180, padding:"16px 32px", borderRadius:14,
-                border:"1.5px solid var(--border, #e5e7eb)",
-                background:"var(--surface, #fff)", color:"#334155",
-                fontWeight:700, fontSize:"1rem", cursor:"pointer",
-                display:"flex", alignItems:"center", justifyContent:"center", gap:10,
-                transition:"transform .15s, background .15s",
-              }}
-              onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.background="#f8fafc"; }}
-              onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.background="var(--surface, #fff)"; }}
+              style={{ flex:1, padding:"16px 24px", borderRadius:14, border:"1.5px solid #e2e8f0", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:10, fontWeight:700, fontSize:"1rem", color:"#475569", background:"#fff", transition:"transform .15s,background .15s" }}
+              onMouseOver={e=>{ e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.background="#f8fafc"; }}
+              onMouseOut={e=>{ e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.background="#fff"; }}
             >
-              🔄 Revisit This Topic
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9 C3 5.7 5.7 3 9 3 C11 3 12.8 3.9 14 5.3" stroke="#6366f1" strokeWidth="2" strokeLinecap="round"/><path d="M15 9 C15 12.3 12.3 15 9 15 C7 15 5.2 14.1 4 12.7" stroke="#6366f1" strokeWidth="2" strokeLinecap="round"/><path d="M14 2 L14 6 L10 6" stroke="#6366f1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M4 16 L4 12 L8 12" stroke="#6366f1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              Revisit This Topic
             </button>
           </div>
 
-          {/* Mountain Journey */}
-          <div style={{ position:"relative", overflow:"hidden", borderTop:"1px solid var(--border, #e5e7eb)", borderBottomLeftRadius:28, borderBottomRightRadius:28 }}>
-            <MountainSVG />
-            <div style={{ position:"absolute", bottom:18, left:"50%", transform:"translateX(-50%)", background:"rgba(255,255,255,0.85)", backdropFilter:"blur(8px)", borderRadius:999, padding:"6px 20px", fontSize:".78rem", fontWeight:700, color:"#7c3aed", whiteSpace:"nowrap", border:"1px solid #ede9fe" }}>
+          {/* ── MOUNTAIN JOURNEY ── */}
+          <div style={{ position:"relative", overflow:"hidden", borderBottomLeftRadius:24, borderBottomRightRadius:24 }}>
+            <Mountain/>
+            <div className="sc-journey-label" style={{ position:"absolute", bottom:16, left:"50%", transform:"translateX(-50%)", background:"rgba(255,255,255,0.88)", backdropFilter:"blur(10px)", WebkitBackdropFilter:"blur(10px)", borderRadius:999, padding:"7px 22px", fontSize:".77rem", fontWeight:700, color:"#7c3aed", whiteSpace:"nowrap", border:"1px solid #ede9fe", boxShadow:"0 2px 12px rgba(124,58,237,0.15)" }}>
               🏔️ Your Learning Journey Continues
             </div>
           </div>
-        </div>
-
-        {/* Mobile tweaks */}
-        <style>{`
-          @keyframes fadeIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
-          @media (max-width: 640px) {
-            .scorecard-hero { grid-template-columns: 1fr !important; }
-            .scorecard-metrics { grid-template-columns: 1fr !important; }
-            .scorecard-metrics > div { border-right: none !important; border-bottom: 1px solid var(--border,#e5e7eb); }
-            .scorecard-metrics > div:last-child { border-bottom: none; }
-            .scorecard-cta { flex-direction: column !important; }
-          }
-        `}</style>
+        </div>{/* sc-card */}
       </div>
     );
   }
