@@ -244,11 +244,17 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     const actualAccuracy = questionsList.length > 0
       ? Math.round((correctCount / questionsList.length) * 100)
       : Math.floor(Math.random() * 20) + 75;
+    const actualCorrect = questionsList.length > 0 ? correctCount : Math.floor(questionsList.length * actualAccuracy / 100);
+    const totalQ = questionsList.length || practiceLevel?.count || 20;
+    const timeStr = elapsed >= 60
+      ? `${Math.floor(elapsed / 60)}h ${elapsed % 60}m`
+      : elapsed > 0 ? `${elapsed} min` : `< 1 min`;
 
     setStats({
       accuracy: actualAccuracy,
-      time: elapsed || meta.time,
-      xp: 120 + meta.concepts * 5 + correctCount * 10
+      time: timeStr,
+      correctAnswers: actualCorrect,
+      totalQuestions: totalQ,
     });
     setScreen("complete");
   };
@@ -652,26 +658,293 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   }
 
   /* ── COMPLETE ── */
-  if (screen === "complete") return (
-    <div className="topic-page page" style={{ animation:"fadeIn .5s ease",maxWidth:600,margin:"0 auto",padding:"40px 16px 80px",textAlign:"center" }}>
-      <div style={{ fontSize:"5rem",marginBottom:16 }}>🏆</div>
-      <h1 style={{ fontSize:"2rem",fontWeight:900,color:"#10b981",marginBottom:8 }}>Topic Mastered!</h1>
-      <p style={{ color:"var(--text-sec)",marginBottom:32,fontSize:"1.05rem" }}>{topic.title} — Completed</p>
-      <div style={{ display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:16,marginBottom:32 }}>
-        {[{label:"Accuracy",value:stats?.accuracy+"%",color:"#10b981",icon:"🎯"},{label:"Time Taken",value:stats?.time+" min",color:"#6366f1",icon:"⏱"},{label:"XP Earned",value:"+"+stats?.xp,color:"#f59e0b",icon:"⚡"}].map(s=>(
-          <div key={s.label} style={{ background:"var(--surface)",border:"1px solid var(--border)",borderRadius:16,padding:20 }}>
-            <div style={{ fontSize:"1.8rem",marginBottom:4 }}>{s.icon}</div>
-            <div style={{ fontSize:"1.4rem",fontWeight:900,color:s.color }}>{s.value}</div>
-            <div style={{ fontSize:".75rem",color:"var(--text-sec)",fontWeight:600 }}>{s.label}</div>
+  if (screen === "complete") {
+    const accuracy = stats?.accuracy ?? 0;
+    const totalQ = stats?.totalQuestions ?? questionsList.length ?? 0;
+    const correctAnswers = stats?.correctAnswers ?? 0;
+    const timeTaken = stats?.time ?? "--";
+
+    const isMastered = accuracy >= 75;
+    const headingText = accuracy >= 75 ? "You've Mastered This Topic!" : "Topic Completed Successfully!";
+    const performanceMsg =
+      accuracy >= 90 ? "Outstanding performance! You've mastered this topic with excellence."
+      : accuracy >= 75 ? "Great work! You have a strong understanding of this topic."
+      : accuracy >= 50 ? "Good progress! A little more practice will make you even stronger."
+      : "You've completed the topic. Review key concepts to improve mastery.";
+
+    const trophyColor = accuracy >= 75 ? "#FFD700" : accuracy >= 50 ? "#C0C0C0" : "#9b59b6";
+    const glowColor   = accuracy >= 75 ? "rgba(255,215,0,0.35)" : accuracy >= 50 ? "rgba(192,192,192,0.3)" : "rgba(155,89,182,0.3)";
+
+    const TrophySVG = ({ size = 140 }) => (
+      <svg width={size} height={size} viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="tg" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stopColor={accuracy >= 75 ? "#FFEF80" : accuracy >= 50 ? "#e8e8e8" : "#c39bd3"}/>
+            <stop offset="100%" stopColor={trophyColor}/>
+          </radialGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        {/* Cup body */}
+        <path d="M40 20 Q35 62 55 80 L60 85 L80 85 L85 80 Q105 62 100 20 Z" fill="url(#tg)" filter="url(#glow)"/>
+        {/* Handles */}
+        <path d="M40 30 Q22 30 22 50 Q22 68 40 68" stroke={trophyColor} strokeWidth="6" fill="none" strokeLinecap="round"/>
+        <path d="M100 30 Q118 30 118 50 Q118 68 100 68" stroke={trophyColor} strokeWidth="6" fill="none" strokeLinecap="round"/>
+        {/* Stem */}
+        <rect x="60" y="85" width="20" height="16" rx="3" fill={trophyColor}/>
+        {/* Base */}
+        <rect x="44" y="101" width="52" height="10" rx="5" fill={trophyColor}/>
+        {/* Star */}
+        <path d="M70 35 L73 45 L83 45 L75 51 L78 61 L70 55 L62 61 L65 51 L57 45 L67 45 Z" fill="#fff" opacity="0.9"/>
+        {/* Laurels left */}
+        <path d="M28 78 Q16 70 18 58" stroke="#4ade80" strokeWidth="3" fill="none" strokeLinecap="round"/>
+        <path d="M24 74 Q12 66 16 52" stroke="#4ade80" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+        <path d="M32 82 Q20 82 20 70" stroke="#4ade80" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+        {/* Laurels right */}
+        <path d="M112 78 Q124 70 122 58" stroke="#4ade80" strokeWidth="3" fill="none" strokeLinecap="round"/>
+        <path d="M116 74 Q128 66 124 52" stroke="#4ade80" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+        <path d="M108 82 Q120 82 120 70" stroke="#4ade80" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+      </svg>
+    );
+
+    const MountainSVG = () => (
+      <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" style={{ width:"100%", display:"block" }} preserveAspectRatio="xMidYMax meet">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#ede9fe" stopOpacity="0"/>
+            <stop offset="100%" stopColor="#ddd6fe" stopOpacity="0.8"/>
+          </linearGradient>
+          <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#a78bfa"/>
+            <stop offset="100%" stopColor="#7c3aed"/>
+          </linearGradient>
+          <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#c4b5fd"/>
+            <stop offset="100%" stopColor="#8b5cf6"/>
+          </linearGradient>
+          <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#ddd6fe"/>
+            <stop offset="100%" stopColor="#a78bfa"/>
+          </linearGradient>
+          <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#fde68a"/>
+            <stop offset="100%" stopColor="#fbbf24"/>
+          </linearGradient>
+        </defs>
+        <rect width="900" height="260" fill="url(#sky)"/>
+        {/* Back mountains */}
+        <polygon points="0,260 180,100 360,260" fill="url(#m3)" opacity="0.6"/>
+        <polygon points="180,260 380,80 580,260" fill="url(#m2)" opacity="0.7"/>
+        <polygon points="500,260 700,40 900,260" fill="url(#m1)"/>
+        {/* Winding path */}
+        <path d="M 200 260 Q 300 220 380 180 Q 460 140 540 100 Q 610 60 690 40" stroke="url(#path)" strokeWidth="5" fill="none" strokeLinecap="round" opacity="0.9"/>
+        {/* Summit flag */}
+        <line x1="690" y1="40" x2="690" y2="12" stroke="#f59e0b" strokeWidth="2.5" strokeLinecap="round"/>
+        <polygon points="690,12 706,19 690,26" fill="#f59e0b"/>
+        {/* Snow caps */}
+        <path d="M 670 50 Q 690 30 710 50 Q 700 45 690 42 Q 680 45 670 50 Z" fill="white" opacity="0.7"/>
+      </svg>
+    );
+
+    const accuracyColor = accuracy >= 75 ? "#10b981" : accuracy >= 50 ? "#f59e0b" : "#6366f1";
+
+    const metrics = [
+      {
+        icon: (
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="12" stroke={accuracyColor} strokeWidth="2.5" strokeDasharray={`${accuracy * 0.75} 75`} strokeLinecap="round" transform="rotate(-90 14 14)" fill="none" opacity="0.3"/>
+            <circle cx="14" cy="14" r="12" stroke={accuracyColor} strokeWidth="2.5" strokeDasharray={`${accuracy * 0.75} 75`} strokeLinecap="round" transform="rotate(-90 14 14)" fill="none"/>
+            <text x="14" y="18" textAnchor="middle" fontSize="8" fontWeight="800" fill={accuracyColor}>%</text>
+          </svg>
+        ),
+        value: `${accuracy}%`,
+        label: "Accuracy",
+        sub: accuracy >= 90 ? "Excellent mastery" : accuracy >= 75 ? "Strong understanding" : accuracy >= 50 ? "Room to improve" : "Needs more practice",
+        color: accuracyColor,
+      },
+      {
+        icon: (
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="11" stroke="#6366f1" strokeWidth="2.5" fill="none"/>
+            <line x1="14" y1="14" x2="14" y2="6" stroke="#6366f1" strokeWidth="2.5" strokeLinecap="round"/>
+            <line x1="14" y1="14" x2="19" y2="17" stroke="#6366f1" strokeWidth="2" strokeLinecap="round"/>
+            <circle cx="14" cy="14" r="2" fill="#6366f1"/>
+          </svg>
+        ),
+        value: timeTaken,
+        label: "Time Taken",
+        sub: "Efficient completion",
+        color: "#6366f1",
+      },
+      {
+        icon: (
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="12" fill={trophyColor} opacity="0.15"/>
+            <circle cx="14" cy="14" r="12" stroke={trophyColor} strokeWidth="2.5" fill="none"/>
+            <path d="M8 14 L12 18 L20 10" stroke={trophyColor} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        ),
+        value: `${correctAnswers} / ${totalQ}`,
+        label: "Correct Answers",
+        sub: correctAnswers === totalQ ? "Perfect score!" : correctAnswers >= totalQ * 0.8 ? "Excellent result" : correctAnswers >= totalQ * 0.5 ? "Solid effort" : "Keep practicing",
+        color: trophyColor === "#FFD700" ? "#d97706" : trophyColor,
+      },
+    ];
+
+    return (
+      <div style={{ animation:"fadeIn .5s ease", maxWidth:900, margin:"0 auto", padding:"24px 16px 60px", fontFamily:"system-ui,sans-serif" }}>
+        {/* Main Card */}
+        <div style={{
+          background: "var(--surface, #fff)",
+          border: "1px solid var(--border, #e5e7eb)",
+          borderRadius: 28,
+          overflow: "hidden",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.1), 0 4px 16px rgba(0,0,0,0.06)",
+        }}>
+
+          {/* Hero Section */}
+          <div className="scorecard-hero" style={{
+            background: "linear-gradient(135deg, #f5f3ff 0%, #ede9fe 40%, #e0f2fe 100%)",
+            padding: "48px 48px 40px",
+            display: "grid",
+            gridTemplateColumns: "1fr auto",
+            gap: "32px",
+            alignItems: "center",
+            position: "relative",
+            overflow: "hidden",
+          }}>
+            {/* Decorative floating diamonds */}
+            {[{t:"12%",l:"18%",c:"#10b981",s:10},{t:"20%",l:"45%",c:"#6366f1",s:8},{t:"8%",l:"72%",c:"#f59e0b",s:7},{t:"55%",l:"38%",c:"#8b5cf6",s:9},{t:"65%",l:"18%",c:"#10b981",s:6},{t:"70%",l:"60%",c:"#6366f1",s:8}].map((d,i) => (
+              <div key={i} style={{ position:"absolute", top:d.t, left:d.l, width:d.s, height:d.s, background:d.c, transform:"rotate(45deg)", opacity:0.5, borderRadius:2 }} />
+            ))}
+
+            {/* Left: Text */}
+            <div style={{ position: "relative", zIndex: 2 }}>
+              {/* Status badge */}
+              <div style={{ display:"inline-flex", alignItems:"center", gap:8, background:isMastered?"#dcfce7":"#dbeafe", color:isMastered?"#15803d":"#1d4ed8", borderRadius:999, padding:"5px 14px", fontSize:".8rem", fontWeight:700, marginBottom:20, border:`1px solid ${isMastered?"#86efac":"#93c5fd"}` }}>
+                <span>{isMastered ? "✅" : "✔️"}</span>
+                {isMastered ? "Well Done!" : "Completed!"}
+              </div>
+
+              {/* Main heading */}
+              <h1 style={{ fontSize:"clamp(1.8rem,4vw,2.6rem)", fontWeight:900, lineHeight:1.15, margin:"0 0 14px", color:"#0f172a" }}>
+                {accuracy >= 75 ? (
+                  <>You've <span style={{ color:"#10b981" }}>Mastered</span> This Topic!</>
+                ) : (
+                  <>Topic <span style={{ color:"#6366f1" }}>Completed</span> Successfully!</>
+                )}
+              </h1>
+
+              <p style={{ color:"#64748b", fontSize:"1rem", lineHeight:1.65, margin:"0 0 20px", maxWidth:440 }}>{performanceMsg}</p>
+
+              {/* Topic + status badges */}
+              <div style={{ display:"flex", gap:10, flexWrap:"wrap", alignItems:"center" }}>
+                <span style={{ display:"inline-flex", alignItems:"center", gap:6, background:"#f1f5f9", border:"1px solid #e2e8f0", borderRadius:10, padding:"6px 14px", fontSize:".85rem", fontWeight:700, color:"#334155" }}>
+                  📘 {topic?.title || topicName}
+                </span>
+                <span style={{ display:"inline-flex", alignItems:"center", gap:6, background:"#dcfce7", border:"1px solid #86efac", borderRadius:10, padding:"6px 14px", fontSize:".85rem", fontWeight:700, color:"#15803d" }}>
+                  ✅ Completed
+                </span>
+              </div>
+            </div>
+
+            {/* Right: Trophy */}
+            <div style={{ position:"relative", zIndex:2, display:"flex", flexDirection:"column", alignItems:"center" }}>
+              <div style={{
+                width: 160, height: 160,
+                borderRadius: "50%",
+                background: `radial-gradient(circle at 40% 35%, ${glowColor}, transparent 70%)`,
+                display: "flex", alignItems: "center", justifyContent: "center",
+                filter: `drop-shadow(0 0 20px ${glowColor})`,
+              }}>
+                <TrophySVG size={130} />
+              </div>
+            </div>
           </div>
-        ))}
+
+          {/* Metrics Row */}
+          <div className="scorecard-metrics" style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3,1fr)",
+            borderTop: "1px solid var(--border, #e5e7eb)",
+          }}>
+            {metrics.map((m, i) => (
+              <div key={i} style={{
+                padding: "28px 28px",
+                borderRight: i < 2 ? "1px solid var(--border, #e5e7eb)" : "none",
+                display: "flex",
+                alignItems: "flex-start",
+                gap: 16,
+              }}>
+                <div style={{ flexShrink: 0, width:52, height:52, borderRadius:14, background:`${m.color}14`, border:`1.5px solid ${m.color}33`, display:"flex", alignItems:"center", justifyContent:"center" }}>
+                  {m.icon}
+                </div>
+                <div>
+                  <div style={{ fontSize:"1.6rem", fontWeight:900, color:m.color, lineHeight:1, marginBottom:2 }}>{m.value}</div>
+                  <div style={{ fontSize:".8rem", fontWeight:700, color:"#64748b", textTransform:"uppercase", letterSpacing:"0.8px", marginBottom:4 }}>{m.label}</div>
+                  <div style={{ fontSize:".82rem", color:"#94a3b8", fontWeight:500 }}>{m.sub}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="scorecard-cta" style={{ padding:"28px 40px", display:"flex", gap:14, flexWrap:"wrap" }}>
+            <button
+              onClick={() => navigate("")}
+              style={{
+                flex:1, minWidth:200, padding:"16px 32px", borderRadius:14, border:"none",
+                background:"linear-gradient(135deg, #7c3aed, #4f46e5)",
+                color:"#fff", fontWeight:800, fontSize:"1rem", cursor:"pointer",
+                display:"flex", alignItems:"center", justifyContent:"center", gap:10,
+                boxShadow:"0 4px 20px rgba(124,58,237,0.4)",
+                transition:"transform .15s, box-shadow .15s",
+              }}
+              onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.boxShadow="0 8px 28px rgba(124,58,237,0.5)"; }}
+              onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.boxShadow="0 4px 20px rgba(124,58,237,0.4)"; }}
+            >
+              <span style={{ fontSize:"1.1rem" }}>🚀</span>
+              Continue Your Journey <span style={{ fontWeight:400, opacity:.85 }}>→</span>
+            </button>
+            <button
+              onClick={() => { setScreen("overview"); setPracticeLevel(null); }}
+              style={{
+                flex:1, minWidth:180, padding:"16px 32px", borderRadius:14,
+                border:"1.5px solid var(--border, #e5e7eb)",
+                background:"var(--surface, #fff)", color:"#334155",
+                fontWeight:700, fontSize:"1rem", cursor:"pointer",
+                display:"flex", alignItems:"center", justifyContent:"center", gap:10,
+                transition:"transform .15s, background .15s",
+              }}
+              onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.background="#f8fafc"; }}
+              onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.background="var(--surface, #fff)"; }}
+            >
+              🔄 Revisit This Topic
+            </button>
+          </div>
+
+          {/* Mountain Journey */}
+          <div style={{ position:"relative", overflow:"hidden", borderTop:"1px solid var(--border, #e5e7eb)", borderBottomLeftRadius:28, borderBottomRightRadius:28 }}>
+            <MountainSVG />
+            <div style={{ position:"absolute", bottom:18, left:"50%", transform:"translateX(-50%)", background:"rgba(255,255,255,0.85)", backdropFilter:"blur(8px)", borderRadius:999, padding:"6px 20px", fontSize:".78rem", fontWeight:700, color:"#7c3aed", whiteSpace:"nowrap", border:"1px solid #ede9fe" }}>
+              🏔️ Your Learning Journey Continues
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile tweaks */}
+        <style>{`
+          @keyframes fadeIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+          @media (max-width: 640px) {
+            .scorecard-hero { grid-template-columns: 1fr !important; }
+            .scorecard-metrics { grid-template-columns: 1fr !important; }
+            .scorecard-metrics > div { border-right: none !important; border-bottom: 1px solid var(--border,#e5e7eb); }
+            .scorecard-metrics > div:last-child { border-bottom: none; }
+            .scorecard-cta { flex-direction: column !important; }
+          }
+        `}</style>
       </div>
-      <div style={{ display:"flex",flexDirection:"column",gap:12 }}>
-        <button onClick={() => navigate("")} style={{ padding:"16px 32px",borderRadius:14,border:"none",background:"linear-gradient(135deg,"+color+","+color+"bb)",color:"#fff",fontWeight:800,fontSize:"1.05rem",cursor:"pointer" }}>Continue Journey →</button>
-        <button onClick={() => { setScreen("overview"); setPracticeLevel(null); }} style={{ padding:"14px 32px",borderRadius:14,border:"1px solid var(--border)",background:"var(--surface)",color:"var(--text-sec)",fontWeight:700,fontSize:".95rem",cursor:"pointer" }}>Revisit This Topic</button>
-      </div>
-    </div>
-  );
+    );
+  }
 
   return null;
 }
