@@ -791,7 +791,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
           <div className="sc-hero" style={{ background:"linear-gradient(135deg,#f5f3ff 0%,#ede9fe 45%,#e8f4fd 100%)", padding:"48px 52px 44px", position:"relative", overflow:"hidden" }}>
 
             {/* Glow blob behind trophy */}
-            <div style={{ position:"absolute", right:40, top:"50%", transform:"translateY(-50%)", width:300, height:300, borderRadius:"50%", background:"radial-gradient(circle,rgba(" + glowRgba + ",.18) 0%,transparent 68%)", pointerEvents:"none" }}/>
+            <div style={{ position:"absolute", right:10, top:"50%", transform:"translateY(-50%)", width:420, height:420, borderRadius:"50%", background:"radial-gradient(circle,rgba(" + glowRgba + ",.18) 0%,transparent 68%)", pointerEvents:"none" }}/>
 
             {/* Pulsing diamond accents */}
             {[
@@ -806,7 +806,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
             ))}
 
             {/* Two-column grid */}
-            <div className="sc-hgrid" style={{ display:"grid", gridTemplateColumns:"1fr 240px", gap:28, alignItems:"center", position:"relative", zIndex:2 }}>
+            <div className="sc-hgrid" style={{ display:"grid", gridTemplateColumns:"1fr 360px", gap:28, alignItems:"center", position:"relative", zIndex:2 }}>
 
               {/* Left: text */}
               <div>
@@ -855,7 +855,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                 <img
                   src="/trophy.png"
                   alt="Achievement Trophy"
-                  style={{ width:210, height:210, objectFit:"contain", filter:"drop-shadow(0 8px 32px rgba(" + glowRgba + ",.45))" }}
+                  style={{ width:"100%", maxWidth:360, height:"auto", maxHeight:360, objectFit:"contain", filter:"drop-shadow(0 12px 40px rgba(" + glowRgba + ",.55))", mixBlendMode: document.documentElement.getAttribute("data-theme") === "dark" ? "screen" : "multiply" }}
                 />
               </div>
             </div>
