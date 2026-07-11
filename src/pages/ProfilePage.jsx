@@ -3,9 +3,6 @@ import React, { useState, useRef } from 'react';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import { useAuth } from '../contexts/AuthContext';
-import WeeklyChart from '../components/profile/WeeklyChart';
-import ActivityHeatmap from '../components/profile/ActivityHeatmap';
-import StatsCards from '../components/profile/StatsCards';
 import { deleteAllAnalytics } from '../repositories/analyticsRepository';
 import { supabase } from '../lib/supabase';
 
@@ -526,30 +523,8 @@ export default function ProfilePage({ navigate }) {
         </div>
       </div>
 
-      {/* ── Statistics Cards ── */}
-      <Section title="Statistics" icon="📊">
-        <StatsCards />
-      </Section>
-
-      {/* ── Weekly Progress Chart ── */}
-      <Section title="Weekly Progress" icon="📈">
-        <div style={{ marginBottom: 8 }}>
-          <p style={{ margin: '0 0 16px', fontSize: '0.82rem', color: 'var(--muted)' }}>
-            Last 12 weeks — Problems solved vs. minutes practiced
-          </p>
-          <WeeklyChart />
-        </div>
-      </Section>
-
-      {/* ── Activity Heatmap ── */}
-      <Section title="Activity" icon="🗓">
-        <div style={{ overflowX: 'auto' }}>
-          <ActivityHeatmap />
-        </div>
-      </Section>
-
       {/* ── Account Settings ── */}
-      <Section title="Account Settings" icon="⚙️" isCollapsible={true} defaultOpen={false}>
+      <Section title="Account Settings" icon="⚙️" isCollapsible={false} defaultOpen={true}>
         <AccountSettings user={user} profile={profile} signOut={signOut} />
       </Section>
     </div>
