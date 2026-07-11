@@ -193,20 +193,20 @@ function App() {
                       <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => { navigate(''); setIsMobileMenuOpen(false); }}>Home</button>
                       <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => { navigate('saved'); setIsMobileMenuOpen(false); }}>Saved</button>
                       <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
-                      {/* ✨ Ask AI nav button */}
+                      {/* Ask AI nav button */}
                       <button
                         className={`nav-link ${route.startsWith('ask') ? 'active' : ''}`}
                         onClick={() => { navigate('ask'); setIsMobileMenuOpen(false); }}
                       >
-                        ✨ Ask AI
+                        Ask AI
                       </button>
 
-                      {/* ⚔️ AI Battle nav button */}
+                      {/* AI Battle nav button */}
                       <button
                         className={`nav-link ${route.startsWith('battle') ? 'active' : ''}`}
                         onClick={() => { navigate('battle'); setIsMobileMenuOpen(false); }}
                       >
-                        ⚔️ AI Battle
+                        AI Battle
                       </button>
 
                       {/* 🔐 Google Login / User Profile */}
