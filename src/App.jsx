@@ -195,18 +195,18 @@ function App() {
                       <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
                       {/* ✨ Ask AI nav button */}
                       <button
-                        className={`btn-ask-ai ${route.startsWith('ask') ? 'active' : ''}`}
+                        className={`nav-link ${route.startsWith('ask') ? 'active' : ''}`}
                         onClick={() => { navigate('ask'); setIsMobileMenuOpen(false); }}
                       >
-                        <span className="btn-icon-text">✨</span> <span className="btn-text">Ask AI</span>
+                        ✨ Ask AI
                       </button>
 
                       {/* ⚔️ AI Battle nav button */}
                       <button
-                        className={`btn-ask-ai ${route.startsWith('battle') ? 'active' : ''}`}
+                        className={`nav-link ${route.startsWith('battle') ? 'active' : ''}`}
                         onClick={() => { navigate('battle'); setIsMobileMenuOpen(false); }}
                       >
-                        <span className="btn-icon-text">⚔️</span> <span className="btn-text">AI Battle</span>
+                        ⚔️ AI Battle
                       </button>
 
                       {/* 🔐 Google Login / User Profile */}
