@@ -24,7 +24,7 @@ const generateAIProfile = (totalQuestions) => {
 };
 
 const BattlePage = ({ navigate }) => {
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const [mode, setMode] = useState(null); // 'select' | 'ai' | 'friend'
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState([]);
@@ -107,6 +107,14 @@ const BattlePage = ({ navigate }) => {
       clearTimeout(aiTimerRef.current);
     }
   };
+
+  if (authLoading) {
+    return (
+      <div style={{ padding: '60px', textAlign: 'center', color: 'var(--text-sec)' }}>
+        Loading authentication state...
+      </div>
+    );
+  }
 
   if (!user) {
     return (

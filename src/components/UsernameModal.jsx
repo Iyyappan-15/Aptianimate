@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { isUsernameAvailable, createProfile } from '../repositories/profileRepository';
 
 export default function UsernameModal() {
-  const { user, profile, refreshProfile } = useAuth();
+  const { user, profile, loading, refreshProfile } = useAuth();
   const [username, setUsername] = useState('');
   const [checking, setChecking] = useState(false);
   const [status, setStatus] = useState(null); // 'available', 'taken', 'invalid', or null
@@ -42,7 +42,7 @@ export default function UsernameModal() {
   }, [username]);
 
   // Only show for real (Google-authenticated) users without a profile yet
-  if (!user || user.is_anonymous || profile) return null;
+  if (loading || !user || user.is_anonymous || profile) return null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -53,19 +53,19 @@ BEGIN
      WHERE category = 'verbal' AND status = 'published' AND random_seed >= v_rand_v 
      ORDER BY random_seed ASC LIMIT p_verbal)
     UNION ALL
-    (SELECT id, category, topic, difficulty, question, options, estimated_time, company_tags 
+    (SELECT id, category, topic, difficulty, question, options, estimated_time, to_jsonb(company_tags) 
      FROM public.assessment_questions 
      WHERE category = 'verbal' AND status = 'published' AND random_seed < v_rand_v 
      ORDER BY random_seed ASC LIMIT p_verbal)
     LIMIT p_verbal
   ),
   tech_q AS (
-    (SELECT id, category, topic, difficulty, question, options, estimated_time, company_tags 
+    (SELECT id, category, topic, difficulty, question, options, estimated_time, to_jsonb(company_tags) 
      FROM public.assessment_questions 
      WHERE category = 'technical' AND status = 'published' AND random_seed >= v_rand_t 
      ORDER BY random_seed ASC LIMIT p_technical)
     UNION ALL
-    (SELECT id, category, topic, difficulty, question, options, estimated_time, company_tags 
+    (SELECT id, category, topic, difficulty, question, options, estimated_time, to_jsonb(company_tags) 
      FROM public.assessment_questions 
      WHERE category = 'technical' AND status = 'published' AND random_seed < v_rand_t 
      ORDER BY random_seed ASC LIMIT p_technical)

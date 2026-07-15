@@ -14,7 +14,7 @@ const LoadingSpinner = ({ text }) => (
 );
 
 const MockTestPage = ({ navigate }) => {
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const [loading, setLoading] = useState(true);
   const [loadingText, setLoadingText] = useState('Checking active sessions...');
   
@@ -180,6 +180,10 @@ const MockTestPage = ({ navigate }) => {
       }
     }
   }, [answers, isSubmitting, navigate, testSession]);
+
+  if (authLoading) {
+    return <LoadingSpinner text="Checking authentication..." />;
+  }
 
   if (!user) {
     return (
