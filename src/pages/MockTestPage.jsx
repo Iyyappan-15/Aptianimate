@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { supabase } from '../lib/supabase';
+import { useAuth } from '../contexts/AuthContext';
+import { signInWithGoogle } from '../services/authService';
 import testConfigs from '../config/testConfigs.json';
 
 // Simple loading spinner component
@@ -12,6 +14,7 @@ const LoadingSpinner = ({ text }) => (
 );
 
 const MockTestPage = ({ navigate }) => {
+  const { user } = useAuth();
   const [loading, setLoading] = useState(true);
   const [loadingText, setLoadingText] = useState('Checking active sessions...');
   
@@ -177,6 +180,24 @@ const MockTestPage = ({ navigate }) => {
       }
     }
   }, [answers, isSubmitting, navigate, testSession]);
+
+  if (!user) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '20px', color: 'var(--violet)' }}>🔒 Login Required</h1>
+        <p style={{ fontSize: '1.2rem', marginBottom: '40px', color: 'var(--muted)' }}>Please login to take a Mock Test.</p>
+        <button className="btn-primary" onClick={signInWithGoogle} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', padding: '12px 24px', background: '#fff', color: '#000' }}>
+          <svg width="18" height="18" viewBox="0 0 48 48">
+            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+            <path fill="#4285F4" d="M46.5 24c0-1.61-.15-3.16-.42-4.69H24v9.09h12.75c-.53 2.87-2.14 5.3-4.57 6.96l7.14 5.53C43.51 36.31 46.5 30.8 46.5 24z"/>
+            <path fill="#FBBC05" d="M10.54 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.98-6.19z"/>
+            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.14-5.53c-1.97 1.33-4.5 2.13-8.75 2.13-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+          </svg>
+          Google Sign In
+        </button>
+      </div>
+    );
+  }
 
   if (loading) {
     return <LoadingSpinner text={loadingText} />;
