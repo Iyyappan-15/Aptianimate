@@ -529,7 +529,9 @@ const FriendBattlePage = ({ navigate }) => {
     const { me, them, didWin, isDraw, totalQuestions } = results;
     const outcomeColor = isDraw ? '#f59e0b' : didWin ? '#10b981' : '#ef4444';
     const outcomeLabel = isDraw ? 'DRAW' : didWin ? 'VICTORY!' : 'DEFEAT';
-    const outcomeEmoji = isDraw ? '🤝' : didWin ? '🏆' : '💀';
+    const outcomeEmoji = didWin ? (
+      <img src="/trophy.png" alt="Victory Trophy" style={{ width: 140, height: 140, objectFit: 'contain', filter: 'drop-shadow(0 10px 20px rgba(16, 185, 129, 0.3))' }} />
+    ) : isDraw ? '🤝' : '💀';
     const outcomeMsg = isDraw
       ? 'Both players are equally matched — incredible!'
       : didWin

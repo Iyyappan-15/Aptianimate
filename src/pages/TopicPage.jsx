@@ -858,7 +858,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                 <img
                   src="/trophy.png"
                   alt="Achievement Trophy"
-                  style={{ width:"100%", maxWidth:360, height:"auto", maxHeight:360, objectFit:"contain", filter:"drop-shadow(0 12px 40px rgba(" + glowRgba + ",.55))", mixBlendMode: document.documentElement.getAttribute("data-theme") === "dark" ? "screen" : "multiply" }}
+                  style={{ width:"100%", maxWidth:360, height:"auto", maxHeight:360, objectFit:"contain", filter:"drop-shadow(0 12px 40px rgba(" + glowRgba + ",.55))" }}
                 />
               </div>
             </div>
