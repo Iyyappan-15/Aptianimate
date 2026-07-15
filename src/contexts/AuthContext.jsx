@@ -33,12 +33,22 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     // Offline / no Supabase config mode
     if (!supabase) {
+      console.log("[AuthContext] No supabase, setting loading false");
       setLoading(false);
       setUser(null);
       return;
     }
 
     let mounted = true;
+    console.log("[AuthContext] useEffect mounted, starting init");
+
+    // SAFETY TIMEOUT: Force loading to false after 5 seconds just in case
+    const safetyTimeout = setTimeout(() => {
+      if (mounted) {
+        console.warn("[AuthContext] SAFETY TIMEOUT REACHED! Forcing loading to false.");
+        setLoading(false);
+      }
+    }, 5000);
 
     const checkUserAndFetchProfile = async (sessionUser) => {
       if (!sessionUser) {
@@ -124,7 +134,9 @@ export const AuthProvider = ({ children }) => {
     });
 
     return () => {
+      console.log("[AuthContext] useEffect cleanup, setting mounted = false");
       mounted = false;
+      clearTimeout(safetyTimeout);
       subscription?.unsubscribe();
     };
   }, []);
