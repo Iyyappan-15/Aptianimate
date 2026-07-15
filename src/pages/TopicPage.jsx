@@ -853,21 +853,57 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                 </div>
               </div>
 
-              {/* Right: real trophy PNG */}
-              <div className="sc-twrap" style={{ display:"flex", alignItems:"center", justifyContent:"center", animation:"sc-float 3.5s ease-in-out infinite" }}>
-                <img
-                  src="/trophy.png"
-                  alt="Achievement Trophy"
-                  style={{ 
-                    width:"100%", 
-                    maxWidth:360, 
-                    height:"auto", 
-                    maxHeight:360, 
-                    objectFit:"contain", 
-                    filter:"drop-shadow(0 12px 40px rgba(" + glowRgba + ",.55)) contrast(1.05) brightness(1.02)", 
-                    mixBlendMode: "multiply"
-                  }}
-                />
+              {/* Right: Trophy Display */}
+              <div className="sc-twrap" style={{ display:"flex", alignItems:"center", justifyContent:"center" }}>
+                <div style={{
+                  position: "relative",
+                  width: "100%",
+                  maxWidth: 320,
+                  aspectRatio: "1 / 1",
+                  borderRadius: 28,
+                  background: "linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(237,233,254,0.6) 100%)",
+                  backdropFilter: "blur(12px)",
+                  border: "1.5px solid rgba(255,255,255,0.9)",
+                  boxShadow: "0 16px 56px rgba(" + glowRgba + ",.22), inset 0 1px 0 rgba(255,255,255,0.8)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  overflow: "hidden",
+                  animation: "sc-float 3.5s ease-in-out infinite",
+                }}>
+                  {/* Radial glow inside card */}
+                  <div style={{
+                    position: "absolute", inset: 0,
+                    background: "radial-gradient(circle at 50% 60%, rgba(" + glowRgba + ",.14) 0%, transparent 70%)",
+                    pointerEvents: "none",
+                  }} />
+                  {/* Sparkle dots inside card */}
+                  {[
+                    { top:"12%", left:"10%", c:"#f59e0b", s:7 },
+                    { top:"10%", right:"12%", c:"#6366f1", s:6 },
+                    { bottom:"14%", left:"14%", c:"#10b981", s:5 },
+                    { bottom:"16%", right:"10%", c:"#3b82f6", s:6 },
+                  ].map((d, i) => (
+                    <div key={i} style={{
+                      position: "absolute", top: d.top, left: d.left, right: d.right, bottom: d.bottom,
+                      width: d.s, height: d.s, borderRadius: "50%", background: d.c,
+                      opacity: 0.7, animation: `sc-diamond 2.8s ease-in-out ${i * 0.4}s infinite`,
+                    }} />
+                  ))}
+                  <img
+                    src="/trophy.png"
+                    alt="Achievement Trophy"
+                    style={{
+                      width: "78%",
+                      height: "78%",
+                      objectFit: "contain",
+                      position: "relative",
+                      zIndex: 1,
+                      filter: "drop-shadow(0 8px 24px rgba(" + glowRgba + ",.4)) drop-shadow(0 2px 6px rgba(0,0,0,.12))",
+                      mixBlendMode: "multiply",
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>{/* /hero */}
