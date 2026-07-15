@@ -1,0 +1,25 @@
+[
+  {
+    "id": "Q0018",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "Logical Arrangement (Swimmers)",
+    "difficulty": "Hard",
+    "question": "Six swimmers (Anu, Benny, Chandru, Dolly, Esha, Furpreet) finish a race under specific conditions: Benny is 3rd, Esha is 5th, Dolly is 2nd, Anu is 6th, and Furpreet is 1st. How many swimmers separate Furpreet and Benny?",
+    "options": {
+      "A": "Three",
+      "B": "None",
+      "C": "One (Dolly)",
+      "D": "Two"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 90,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

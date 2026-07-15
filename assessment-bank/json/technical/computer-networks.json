@@ -1,0 +1,80 @@
+[
+  {
+    "id": "Q0149",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "Networking Fundamentals",
+    "difficulty": "Medium",
+    "question": "Which OSI layer is responsible for routing?",
+    "options": {
+      "A": "Network layer",
+      "B": "Transport layer",
+      "C": "Application layer",
+      "D": "Data link layer"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "cisco",
+      "juniper",
+      "amazon",
+      "google",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0150",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "Networking Fundamentals",
+    "difficulty": "Medium",
+    "question": "TCP is a:",
+    "options": {
+      "A": "Connectionless protocol",
+      "B": "Connection-oriented protocol",
+      "C": "Physical layer service",
+      "D": "Application layer service"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 60,
+    "companyTags": [
+      "cisco",
+      "juniper",
+      "amazon",
+      "google",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0151",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "Networking Fundamentals",
+    "difficulty": "Easy",
+    "question": "The primary purpose of an IP address is to:",
+    "options": {
+      "A": "Store website content",
+      "B": "Identify a device on a network",
+      "C": "Speed up downloads",
+      "D": "Encrypt network traffic"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 45,
+    "companyTags": [
+      "cisco",
+      "juniper",
+      "amazon",
+      "google",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "Q0036",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "Which of the following numbers is completely divisible by 24?",
+    "options": {
+      "A": "24756",
+      "B": "64366",
+      "C": "49512",
+      "D": "56939"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0037",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "Which of the following numbers is completely divisible by 36?",
+    "options": {
+      "A": "55512",
+      "B": "63839",
+      "C": "27756",
+      "D": "72166"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0038",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "Find the largest perfect square among the given choices: a) 15129, b) 12348, c) 23716, d) 20736.",
+    "options": {
+      "A": "27273",
+      "B": "11858",
+      "C": "30831",
+      "D": "23716"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0039",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "HCF Calculation",
+    "difficulty": "Easy",
+    "question": "Find the Highest Common Factor (HCF) of 72, 288, and 1080.",
+    "options": {
+      "A": "72",
+      "B": "36",
+      "C": "83",
+      "D": "94"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0040",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "Progressions / Number Series",
+    "difficulty": "Medium",
+    "question": "Find the next term in the geometric progression: 2, 4, 8, 16, ...",
+    "options": {
+      "A": "32.0",
+      "B": "36.8",
+      "C": "41.6",
+      "D": "16"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0041",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "Find the least number which when divided by 7, 8, and 11 leaves a remainder of 6 in each case.",
+    "options": {
+      "A": "622",
+      "B": "715",
+      "C": "311",
+      "D": "809"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0042",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "Permutations (Digits)",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed by the digits 0, 2, 5, 3, 7 which are divisible by 5 and none of the digits are repeated?",
+    "options": {
+      "A": "31 (based on test platform configuration rules)",
+      "B": "28 (based on test platform configuration rules)",
+      "C": "24 (based on test platform configuration rules)",
+      "D": "12 (based on test platform configuration rules)"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

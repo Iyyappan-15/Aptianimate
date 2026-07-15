@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Q0022",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "Word Problems",
+    "difficulty": "Hard",
+    "question": "Five farmers own 7, 9, 11, 13, and 14 apple trees respectively in their orchards. The third farmer gives 1 apple each to the first and fifth farmer, and 3 apples each to the second and fourth farmer. After this distribution, every farmer has an equal number of apples. Find the original yields of the third and fourth farmers' trees respectively.",
+    "options": {
+      "A": "15 & 9",
+      "B": "14 & 11",
+      "C": "17 & 7",
+      "D": "12 & 14"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 90,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0023",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "Linear Equations",
+    "difficulty": "Easy",
+    "question": "Sathwik gets 5 marks for each correct answer and loses 2 marks for each wrong answer in a test, scoring a total of 32 marks. If he were awarded 4 marks for each correct answer and lost 1 mark for each wrong answer, he would have scored 34 marks. How many questions were there in the test?",
+    "options": {
+      "A": "34 questions",
+      "B": "13 questions",
+      "C": "30 questions",
+      "D": "26 questions"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

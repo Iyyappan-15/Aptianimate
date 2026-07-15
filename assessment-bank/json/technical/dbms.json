@@ -1,0 +1,106 @@
+[
+  {
+    "id": "Q0152",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "Database Fundamentals",
+    "difficulty": "Medium",
+    "question": "Which ACID property ensures completed transactions remain saved?",
+    "options": {
+      "A": "Durability",
+      "B": "Consistency",
+      "C": "Isolation",
+      "D": "Atomicity"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "oracle",
+      "ibm",
+      "sap",
+      "tcs",
+      "infosys",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0153",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "Database Fundamentals",
+    "difficulty": "Medium",
+    "question": "A primary key must be:",
+    "options": {
+      "A": "Duplicated",
+      "B": "Optional",
+      "C": "Text only",
+      "D": "Unique"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "oracle",
+      "ibm",
+      "sap",
+      "tcs",
+      "infosys",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0154",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "Database Fundamentals",
+    "difficulty": "Medium",
+    "question": "A foreign key is used to:",
+    "options": {
+      "A": "Index columns",
+      "B": "Encrypt data",
+      "C": "Sort rows",
+      "D": "Link tables"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "oracle",
+      "ibm",
+      "sap",
+      "tcs",
+      "infosys",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0155",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "Database Fundamentals",
+    "difficulty": "Easy",
+    "question": "Normalization is performed to:",
+    "options": {
+      "A": "Increase redundancy",
+      "B": "Slow down queries",
+      "C": "Reduce redundancy",
+      "D": "Remove primary keys"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "oracle",
+      "ibm",
+      "sap",
+      "tcs",
+      "infosys",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

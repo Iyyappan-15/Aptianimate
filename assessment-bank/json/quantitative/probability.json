@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Q0054",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "Find the probability that the two 'I's in the word UNIVERSITY come together when arranged randomly.",
+    "options": {
+      "A": "1/6",
+      "B": "3/5",
+      "C": "2/5",
+      "D": "1/5"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "amazon",
+      "google"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

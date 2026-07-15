@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Q0019",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "Hard",
+    "question": "Eight friends are sitting around a circular table facing the center. Tina is sitting second to the left of Priya. Tina's immediate neighbors are Ravi and Vijay. If Vijay is an immediate neighbor of Upasna, which pair are immediate neighbors?",
+    "options": {
+      "A": "Tina & Priya",
+      "B": "Ravi & Priya",
+      "C": "Ravi & Upasna",
+      "D": "Vijay & Priya"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 90,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "accenture",
+      "ibm"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0020",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "Four boys are sitting on a bench to be photographed. Shekar is to the left of Ramesh. Raju is between Ramesh and Manish. Manish is to the right of Raju. Who is second from the left side?",
+    "options": {
+      "A": "Manish",
+      "B": "Ramesh",
+      "C": "Raju",
+      "D": "Shekar"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "accenture",
+      "ibm"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

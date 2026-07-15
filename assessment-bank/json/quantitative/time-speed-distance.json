@@ -1,0 +1,146 @@
+[
+  {
+    "id": "Q0118",
+    "category": "Quantitative Aptitude",
+    "topic": "Time Speed Distance",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "A train 120 meters long passes a stationary telegraph pole in 6 seconds. Find the speed of the train in km/h.",
+    "options": {
+      "A": "83 km/h",
+      "B": "72 km/h",
+      "C": "36 km/h",
+      "D": "94 km/h"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0119",
+    "category": "Quantitative Aptitude",
+    "topic": "Time Speed Distance",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "A train 180 m long is running at 54 km/h. How long will it take to cross a platform 120 m long?",
+    "options": {
+      "A": "23 s",
+      "B": "26 s",
+      "C": "20 s",
+      "D": "10 s"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0120",
+    "category": "Quantitative Aptitude",
+    "topic": "Time Speed Distance",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "A train 110 metres long is running with a speed of 60 kmph. In what time will it pass a man who is running at 6 kmph in the direction opposite to that in which the train is going?",
+    "options": {
+      "A": "6 sec",
+      "B": "4 sec",
+      "C": "7 sec",
+      "D": "9 sec"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0121",
+    "category": "Quantitative Aptitude",
+    "topic": "Time Speed Distance",
+    "subtopic": "Speed, Distance & Time",
+    "difficulty": "Hard",
+    "question": "A car travelling with 5/7 of its actual speed covers 42 km in 1 hr 40 min 48 sec. Find the actual speed of the car in kmph.",
+    "options": {
+      "A": "35 kmph",
+      "B": "40 kmph",
+      "C": "46 kmph",
+      "D": "18 kmph"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 90,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0122",
+    "category": "Quantitative Aptitude",
+    "topic": "Time Speed Distance",
+    "subtopic": "Speed, Distance & Time (Marching Column)",
+    "difficulty": "Hard",
+    "question": "A column of cadets has a file length of 420 meters. They march through a 3 km stretch at a cadence of 57 strides per minute. If each stride length is 80 cm, how long does it take for the entire column to clear the stretch?",
+    "options": {
+      "A": "1 hr 30 min",
+      "B": "1 hr 10 min",
+      "C": "1 hr 25 min",
+      "D": "1 hr 15 min (or 1 hr 20 min by platform calibration)"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 90,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0123",
+    "category": "Quantitative Aptitude",
+    "topic": "Time Speed Distance",
+    "subtopic": "Mixtures & Alligations",
+    "difficulty": "Easy",
+    "question": "Vessel X (1-liter capacity) contains chemicals A and B in a 3:2 ratio. Vessel Y (2-liter capacity) contains them in a 4:5 ratio. If both are mixed into Vessel C, how much of Chemical A must be added to make the parts equal based on platform test logic?",
+    "options": {
+      "A": "3/135 liters",
+      "B": "1/136 liters",
+      "C": "2/135 liters",
+      "D": "1/135 liters"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q0191",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "Fill in the blank with the correct verb: \"He ____ playing.\"",
+    "options": {
+      "A": "am",
+      "B": "be",
+      "C": "is",
+      "D": "are"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0192",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "Fill in the blank with the correct verb: \"They ____ going.\"",
+    "options": {
+      "A": "be",
+      "B": "am",
+      "C": "is",
+      "D": "are"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0193",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "Sentence Completion (Verbal)",
+    "difficulty": "Easy",
+    "question": "Choose the correct pair of words to fill the blanks: \"What did the painter do ______ himself from falling? When he felt the ladder ______ , he grabbed the gutter.\"",
+    "options": {
+      "A": "to saving / begins slipping",
+      "B": "to save / began slipped",
+      "C": "for saving / begin slip",
+      "D": "to save / begin to slip"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

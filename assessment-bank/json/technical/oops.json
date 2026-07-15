@@ -1,0 +1,106 @@
+[
+  {
+    "id": "Q0178",
+    "category": "Technical",
+    "topic": "OOPS",
+    "subtopic": "Polymorphism",
+    "difficulty": "Easy",
+    "question": "Method overloading is an example of which type of polymorphism?",
+    "options": {
+      "A": "Operator overriding",
+      "B": "Static binding only",
+      "C": "Run-time polymorphism",
+      "D": "Compile-time polymorphism"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "microsoft",
+      "oracle",
+      "tcs",
+      "infosys",
+      "accenture",
+      "ibm"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0179",
+    "category": "Technical",
+    "topic": "OOPS",
+    "subtopic": "Encapsulation",
+    "difficulty": "Easy",
+    "question": "Which OOP principle focuses on data hiding?",
+    "options": {
+      "A": "Inheritance",
+      "B": "Abstraction",
+      "C": "Polymorphism",
+      "D": "Encapsulation"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "microsoft",
+      "oracle",
+      "tcs",
+      "infosys",
+      "accenture",
+      "ibm"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0180",
+    "category": "Technical",
+    "topic": "OOPS",
+    "subtopic": "Inheritance",
+    "difficulty": "Medium",
+    "question": "What is the main advantage of inheritance?",
+    "options": {
+      "A": "Code reuse",
+      "B": "Faster execution",
+      "C": "Memory optimization",
+      "D": "Data hiding"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "microsoft",
+      "oracle",
+      "tcs",
+      "infosys",
+      "accenture",
+      "ibm"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0181",
+    "category": "Technical",
+    "topic": "OOPS",
+    "subtopic": "Abstraction",
+    "difficulty": "Medium",
+    "question": "How does abstraction help in programming?",
+    "options": {
+      "A": "Reusing existing code",
+      "B": "Combining data and methods",
+      "C": "Hiding data using access modifiers",
+      "D": "Showing essential features only"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "microsoft",
+      "oracle",
+      "tcs",
+      "infosys",
+      "accenture",
+      "ibm"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

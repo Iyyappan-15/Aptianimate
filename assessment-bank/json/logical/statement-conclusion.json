@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Q0021",
+    "category": "Logical Reasoning",
+    "topic": "Statement Conclusion",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "Evaluate the statement sufficiency for tracking family trees.",
+    "options": {
+      "A": "Statement I alone is sufficient",
+      "B": "Both statements together are required",
+      "C": "Statement II alone is sufficient",
+      "D": "Neither statement is sufficient"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "accenture",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

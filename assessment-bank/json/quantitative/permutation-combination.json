@@ -1,0 +1,98 @@
+[
+  {
+    "id": "Q0049",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation & Combination",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "In how many ways can 3 students be selected from a group of 6 students?",
+    "options": {
+      "A": "20",
+      "B": "10",
+      "C": "23",
+      "D": "26"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "amazon",
+      "google"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0050",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation & Combination",
+    "subtopic": "Permutations with Repetition",
+    "difficulty": "Medium",
+    "question": "How many different ways can the letters of the word STASCATO be arranged if the first position is always fixed with the letter O?",
+    "options": {
+      "A": "630 ways",
+      "B": "724 ways",
+      "C": "315 ways",
+      "D": "819 ways"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "amazon",
+      "google"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0051",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation & Combination",
+    "subtopic": "Permutations (Gap Method)",
+    "difficulty": "Hard",
+    "question": "In how many ways can 5 distinct plastic mugs and 2 distinct glass mugs be arranged in a row such that the glass mugs are always separated?",
+    "options": {
+      "A": "4680 ways",
+      "B": "4140 ways",
+      "C": "1800 ways",
+      "D": "3600 ways"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 90,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "amazon",
+      "google"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0052",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation & Combination",
+    "subtopic": "Permutations & Combinations",
+    "difficulty": "Medium",
+    "question": "How many 8-digit mobile numbers can be formed if at least one of their digits is repeated and 0 can also start the mobile number?",
+    "options": {
+      "A": "10^8",
+      "B": "10P8",
+      "C": "9 × 10^7",
+      "D": "10^8 − 10P8  (100,000,000 − 1,814,400 = 98,185,600)"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "amazon",
+      "google"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

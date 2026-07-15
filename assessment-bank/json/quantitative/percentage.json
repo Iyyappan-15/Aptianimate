@@ -1,0 +1,158 @@
+[
+  {
+    "id": "Q0043",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "498 is 17% less than a certain number. Find the number.",
+    "options": {
+      "A": "780",
+      "B": "690",
+      "C": "600",
+      "D": "300"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0044",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "Easy",
+    "question": "In a marriage party, 32% are women, 54% are men, and there are 196 children. How many men are there in the marriage party?",
+    "options": {
+      "A": "869",
+      "B": "983",
+      "C": "756",
+      "D": "378"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0045",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "Profit Percentage",
+    "difficulty": "Easy",
+    "question": "A shopkeeper buys an item for Rs. 200 and sells it for Rs. 250. What is the profit percentage?",
+    "options": {
+      "A": "25%",
+      "B": "29%",
+      "C": "32%",
+      "D": "12%"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0046",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "Linear Equations",
+    "difficulty": "Medium",
+    "question": "The difference between a number and its two-fifth is 510. What is 10% of that number?",
+    "options": {
+      "A": "98",
+      "B": "42",
+      "C": "110",
+      "D": "85"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0047",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "From a salary of an officer, 10% is deducted as house rent, 15% of the rest is spent on children's education and 10% of the balance is spent on clothes. Then he is left with Rs. 4131. Find his total salary.",
+    "options": {
+      "A": "None of these (Rs. 6000)",
+      "B": "None of these (Rs. 3000)",
+      "C": "None of these (Rs. 7800)",
+      "D": "None of these (Rs. 6900)"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0048",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "Basic Percentages",
+    "difficulty": "Easy",
+    "question": "If p% of p is 36, find the value of p.",
+    "options": {
+      "A": "78",
+      "B": "60",
+      "C": "69",
+      "D": "30"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 45,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

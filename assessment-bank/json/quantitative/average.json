@@ -1,0 +1,227 @@
+[
+  {
+    "id": "Q0024",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "The mean proportion of 1.21 and 0.09 is:",
+    "options": {
+      "A": "-1.67",
+      "B": "0.33",
+      "C": "3.33",
+      "D": "1.33"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0025",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "B is twice the age of C. A is 10 years more than B. The average of their ages is 20 years. Find the age of A three years hence.",
+    "options": {
+      "A": "38 years",
+      "B": "33 years",
+      "C": "16 years",
+      "D": "43 years"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0026",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "The average age of A, B and C, 4 years ago was 48 years. The sum of the ages of A and B, 6 years from now will be 100 years. What is the present age of C?",
+    "options": {
+      "A": "88yrs",
+      "B": "34yrs",
+      "C": "78yrs",
+      "D": "68yrs"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0027",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "Ramya is three times as old as Riya. Four years hence, Ramya will be two times as old as Riya. Find the average of the present ages of Riya and Ramya.",
+    "options": {
+      "A": "8 years",
+      "B": "9 years",
+      "C": "11 years",
+      "D": "6 years"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0028",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "The average age of A, B, C and D 6 years ago was 30 years. By including E, the present average age of all of them becomes 40 years. Find the present age of E.",
+    "options": {
+      "A": "56 years",
+      "B": "28 years",
+      "C": "64 years",
+      "D": "73 years"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0029",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "Medium",
+    "question": "In a school hostel, the monthly expenditure on vegetables is Rs. 5000, on spices is Rs. 3000, and on gas services is Rs. 6500. Find the monthly average expenditure per student if there are 50 students in the hostel.",
+    "options": {
+      "A": "Rs. 334",
+      "B": "Rs. 145",
+      "C": "Rs. 377",
+      "D": "Rs. 290"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0030",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "Hard",
+    "question": "5 years ago, the average age of P, Q, R, and S was 45 years. With T joining them now, the average age of all five becomes 49 years. What is the present age of T?",
+    "options": {
+      "A": "22 years",
+      "B": "45 years",
+      "C": "52 years",
+      "D": "58 years"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 90,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0031",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "Hard",
+    "question": "The average weight of 3 students P, Q and R is 84kg. Another student S joins the group and the average becomes 80kg. If another man T whose weight is 3kg more than that of S, replaces P, then the average weight of Q, R, S and T becomes 79kg. What is the weight of P?",
+    "options": {
+      "A": "98 kg",
+      "B": "38 kg",
+      "C": "86 kg",
+      "D": "75 kg"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 90,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0032",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "Statistics (Weighted Index)",
+    "difficulty": "Medium",
+    "question": "Calculate the weighted average index number given the Index Numbers (121, 123, 125, 126, 128) and their corresponding Weights (5, 11, 10, 8, 6).",
+    "options": {
+      "A": "124.6",
+      "B": "143.29",
+      "C": "62.3",
+      "D": "161.98"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "cognizant",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

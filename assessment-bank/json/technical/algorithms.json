@@ -1,0 +1,702 @@
+[
+  {
+    "id": "Q0124",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Recursion",
+    "difficulty": "Easy",
+    "question": "What is the primary purpose of a base case in recursion?",
+    "options": {
+      "A": "Increase stack size",
+      "B": "Terminate recursion",
+      "C": "Improve time complexity",
+      "D": "Reduce memory allocation"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0125",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Searching",
+    "difficulty": "Easy",
+    "question": "What is the data requirement for performing a Binary search?",
+    "options": {
+      "A": "Sorted data",
+      "B": "Linked data only",
+      "C": "Unsorted data",
+      "D": "Duplicate-free data"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0126",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Searching",
+    "difficulty": "Easy",
+    "question": "What is the worst-case time complexity of a linear search?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n log n)",
+      "D": "O(n)"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0127",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Sorting",
+    "difficulty": "Easy",
+    "question": "What is the average time complexity of Merge Sort?",
+    "options": {
+      "A": "O(n²)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n log n)"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0128",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Sorting",
+    "difficulty": "Easy",
+    "question": "What is the worst-case time complexity of Quick Sort?",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(log n)",
+      "C": "O(n²)",
+      "D": "O(n)"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0129",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Sorting",
+    "difficulty": "Easy",
+    "question": "What is the worst-case time complexity of Bubble Sort?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n log n)",
+      "C": "O(n²)",
+      "D": "O(n)"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0130",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Graph Traversal",
+    "difficulty": "Easy",
+    "question": "Which data structure does a Depth First Search (DFS) primarily use?",
+    "options": {
+      "A": "Priority-based order",
+      "B": "Stack",
+      "C": "FIFO (First-In, First-Out)",
+      "D": "Random access order"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0131",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Graph Traversal",
+    "difficulty": "Easy",
+    "question": "Which data structure does a Breadth First Search (BFS) primarily use?",
+    "options": {
+      "A": "Queue",
+      "B": "LIFO (Last-In, First-Out)",
+      "C": "Random access order",
+      "D": "Priority-based order"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0132",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Searching",
+    "difficulty": "Easy",
+    "question": "What is the worst-case time complexity of binary search?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n log n)",
+      "C": "O(n)",
+      "D": "O(log n)"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0133",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Dynamic Programming",
+    "difficulty": "Easy",
+    "question": "Which algorithmic technique is characterized by solving overlapping subproblems and storing their results?",
+    "options": {
+      "A": "Divide and Conquer",
+      "B": "Dynamic Programming",
+      "C": "Backtracking",
+      "D": "Greedy Algorithm"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0134",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Recursion",
+    "difficulty": "Easy",
+    "question": "Which data structure is used to handle function calls in recursion?",
+    "options": {
+      "A": "Increase stack size",
+      "B": "Reduce memory allocation",
+      "C": "Stack",
+      "D": "Improve time complexity"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0135",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Searching",
+    "difficulty": "Easy",
+    "question": "Which search algorithm requires the data to be sorted?",
+    "options": {
+      "A": "Linear Search",
+      "B": "Interpolation Search",
+      "C": "Binary Search",
+      "D": "Jump Search"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0136",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Sorting",
+    "difficulty": "Easy",
+    "question": "Which of the following sorting algorithms is stable?",
+    "options": {
+      "A": "Heap Sort",
+      "B": "Selection Sort",
+      "C": "Quick Sort",
+      "D": "Merge Sort"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0137",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Complexity Analysis",
+    "difficulty": "Easy",
+    "question": "Which notation provides an upper bound on the running time of an algorithm?",
+    "options": {
+      "A": "Big Omega",
+      "B": "Big Theta",
+      "C": "Big O",
+      "D": "Little O"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0138",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Complexity Analysis",
+    "difficulty": "Easy",
+    "question": "Which complexity grows fastest as n increases?",
+    "options": {
+      "A": "O(n²)",
+      "B": "O(2^n)",
+      "C": "O(n log n)",
+      "D": "O(log n)"
+    },
+    "correctAnswer": "B",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0139",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Divide and Conquer",
+    "difficulty": "Easy",
+    "question": "Which algorithm is based on divide and conquer?",
+    "options": {
+      "A": "Bubble Sort",
+      "B": "Selection Sort",
+      "C": "Insertion Sort",
+      "D": "Merge Sort"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0140",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Graph Traversal",
+    "difficulty": "Easy",
+    "question": "Which data structure is commonly used to implement BFS?",
+    "options": {
+      "A": "Random access order",
+      "B": "LIFO (Last-In, First-Out)",
+      "C": "Priority-based order",
+      "D": "Queue"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0141",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Graph Traversal",
+    "difficulty": "Easy",
+    "question": "Which data structure is commonly used to implement DFS iteratively?",
+    "options": {
+      "A": "FIFO (First-In, First-Out)",
+      "B": "Random access order",
+      "C": "Priority-based order",
+      "D": "Stack"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0142",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Sorting",
+    "difficulty": "Medium",
+    "question": "Which sorting algorithm has the best average-case complexity among these?",
+    "options": {
+      "A": "Merge Sort",
+      "B": "Bubble Sort",
+      "C": "Insertion Sort",
+      "D": "Selection Sort"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0143",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What is the time complexity of accessing an element in an array using its index?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n log n)",
+      "D": "O(n)"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0144",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Complexity Analysis",
+    "difficulty": "Medium",
+    "question": "What does Big-O notation represent in algorithm analysis?",
+    "options": {
+      "A": "Growth rate",
+      "B": "Memory address usage",
+      "C": "Number of variables used",
+      "D": "Exact runtime in seconds"
+    },
+    "correctAnswer": "A",
+    "estimatedTime": 60,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0145",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Graph Traversal",
+    "difficulty": "Medium",
+    "question": "Which algorithm explores a graph by going as deep as possible along each branch before backtracking?",
+    "options": {
+      "A": "Dijkstra's Algorithm",
+      "B": "Bellman-Ford Algorithm",
+      "C": "Breadth-First Search",
+      "D": "Depth-First Search"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0146",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Graph Algorithms",
+    "difficulty": "Medium",
+    "question": "Which algorithm is used to find the shortest path from a single source in a weighted graph with non-negative weights?",
+    "options": {
+      "A": "Bellman-Ford Algorithm",
+      "B": "Kruskal's Algorithm",
+      "C": "Depth-First Search",
+      "D": "Dijkstra's Algorithm"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 60,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0147",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Sorting",
+    "difficulty": "Medium",
+    "question": "Which sorting algorithm repeatedly selects the minimum element from the unsorted portion and moves it to the sorted portion?",
+    "options": {
+      "A": "Merge Sort",
+      "B": "Insertion Sort",
+      "C": "Selection Sort",
+      "D": "Quick Sort"
+    },
+    "correctAnswer": "C",
+    "estimatedTime": 60,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0148",
+    "category": "Technical",
+    "topic": "Algorithms",
+    "subtopic": "Sorting",
+    "difficulty": "Easy",
+    "question": "Which sorting algorithm repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order?",
+    "options": {
+      "A": "Merge Sort",
+      "B": "Selection Sort",
+      "C": "Quick Sort",
+      "D": "Bubble Sort"
+    },
+    "correctAnswer": "D",
+    "estimatedTime": 45,
+    "companyTags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]
