@@ -44,3 +44,9 @@ export const getRandomQuestions = (config) => {
   // Final shuffle
   return selected.sort(() => Math.random() - 0.5);
 };
+
+export const getQuestionsByIds = (ids) => {
+  if (!ids || ids.length === 0) return [];
+  // Keep the same order as in ids array
+  return ids.map(id => ALL_QUESTIONS.find(q => q.id === id)).filter(Boolean);
+};

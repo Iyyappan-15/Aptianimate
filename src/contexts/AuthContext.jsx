@@ -83,22 +83,35 @@ export const AuthProvider = ({ children }) => {
           return;
         }
         // Returning Google user
-        checkUserAndFetchProfile(session.user).then(() => {
+        checkUserAndFetchProfile(session.user).finally(() => {
           if (mounted) setLoading(false);
         });
       } else {
         // No session — guest mode, no auto sign-in
         if (mounted) setLoading(false);
       }
+    }).catch(err => {
+      console.error("Unhandled error in getSession:", err);
+      if (mounted) setLoading(false);
     });
 
     // 2. Listen to auth state changes (handles Google sign-in / sign-out)
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       console.log(`onAuthStateChange event: ${event}`);
-      if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+      if (event === 'INITIAL_SESSION') {
+         // getSession handles this, but just in case:
+         if (!session) {
+            if (mounted) setLoading(false);
+         }
+      } else if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
         if (session?.user) {
-          await checkUserAndFetchProfile(session.user);
-          if (mounted) setLoading(false);
+          try {
+            await checkUserAndFetchProfile(session.user);
+          } catch (err) {
+            console.error("Error in onAuthStateChange:", err);
+          } finally {
+            if (mounted) setLoading(false);
+          }
         }
       } else if (event === 'SIGNED_OUT') {
         // After sign out, go back to pure guest mode (no user, no profile)

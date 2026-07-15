@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
+import { getRandomQuestions, getQuestionsByIds } from '../data/aiBank';
 
 const FriendBattlePage = ({ navigate }) => {
   const { user, profile } = useAuth();
@@ -44,7 +45,7 @@ const FriendBattlePage = ({ navigate }) => {
     
     battleChannel
       .on('broadcast', { event: 'progress_sync' }, (payload) => {
-        if (payload.matchId === matchId && payload.userId !== user.id) {
+        if (payload.matchId === matchId && payload.userId !== user?.id) {
           setOpponentProgress(payload.progressPercentage);
         }
       })
@@ -56,6 +57,16 @@ const FriendBattlePage = ({ navigate }) => {
       .subscribe((status) => {
         if (status === 'SUBSCRIBED') {
           console.log("Subscribed to battle-events");
+          
+          // If we just joined as a guest, we broadcast that we joined AFTER subscribing successfully!
+          if (!isHost && matchStatus === 'joining') {
+             battleChannel.send({
+                type: 'broadcast',
+                event: 'status_change',
+                payload: { matchId, newStatus: 'countdown' }
+             });
+             setMatchStatus('countdown');
+          }
         }
       });
       
@@ -64,13 +75,19 @@ const FriendBattlePage = ({ navigate }) => {
     return () => {
       supabase.removeChannel(battleChannel);
     };
-  }, [matchId, user?.id]);
+  }, [matchId, isHost, user?.id]);
 
   const createMatch = async () => {
     if (!user) return alert("Please login first");
     setMatchStatus('creating');
     try {
-      const { data, error } = await supabase.rpc('create_friendly_match', { p_config: config });
+      // Use local bank for questions to avoid DB issues
+      const selected = getRandomQuestions(config);
+      const selectedIds = selected.map(q => q.id);
+      
+      const matchConfig = { ...config, selected_ids: selectedIds };
+
+      const { data, error } = await supabase.rpc('create_friendly_match', { p_config: matchConfig });
       if (error) throw error;
       
       setRoomCode(data.join_code);
@@ -97,16 +114,22 @@ const FriendBattlePage = ({ navigate }) => {
       setMatchId(data.match_id);
       setIsHost(false);
       
-      // Tell host we joined
-      if (channel) {
-        channel.send({
-          type: 'broadcast',
-          event: 'status_change',
-          payload: { matchId: data.match_id, newStatus: 'countdown' }
-        });
+      // Safely ensure we have question_ids
+      let qIds = data?.question_ids;
+      if (!qIds || qIds.length === 0) {
+        const { data: matchData } = await supabase.from('friendly_matches').select('question_ids').eq('id', data.match_id).single();
+        qIds = matchData?.question_ids || [];
       }
-      setMatchStatus('countdown');
-      fetchQuestions(data.question_ids);
+      
+      if (qIds.length > 0) {
+        await fetchQuestions(qIds, data.match_id);
+      } else {
+        // Even if qIds is empty, we pass empty array so fallback can trigger!
+        await fetchQuestions([], data.match_id);
+      }
+      
+      // We don't set status to countdown here anymore!
+      // It is handled safely inside the useEffect's .subscribe() callback once the channel is ready!
     } catch (err) {
       console.error(err);
       alert(err.message || "Failed to join match");
@@ -114,33 +137,53 @@ const FriendBattlePage = ({ navigate }) => {
     }
   };
 
-  const fetchQuestions = async (ids) => {
+  const fetchQuestions = async (ids, matchIdForConfig) => {
     try {
-      const { data, error } = await supabase
-        .from('assessment_questions')
-        .select('*')
-        .in('id', ids);
-      if (error) throw error;
+      // We first try to load from the DB table just in case the backend successfully mapped it
+      let loadedQuestions = [];
       
-      // Order them as they were in the array
-      const ordered = ids.map(id => data.find(q => q.id === id)).filter(Boolean);
-      setQuestions(ordered);
+      if (ids && ids.length > 0) {
+        const { data, error } = await supabase
+          .from('assessment_questions')
+          .select('*')
+          .in('id', ids);
+          
+        if (!error && data && data.length > 0) {
+          loadedQuestions = ids.map(id => data.find(q => q.id === id)).filter(Boolean);
+        }
+      }
+      
+      // FALLBACK: If DB fails or returns empty (RLS or missing data), use local AI Bank!
+      if (loadedQuestions.length === 0 && matchIdForConfig) {
+         console.warn("DB questions empty, falling back to local aiBank...");
+         const { data: mData } = await supabase.from('friendly_matches').select('paper_config').eq('id', matchIdForConfig).single();
+         if (mData?.paper_config?.selected_ids) {
+            loadedQuestions = getQuestionsByIds(mData.paper_config.selected_ids);
+         } else if (ids && ids.length > 0) {
+            // Last resort: just grab local questions by the IDs if they happen to be string IDs!
+            loadedQuestions = getQuestionsByIds(ids);
+         }
+      }
+
+      if (loadedQuestions.length === 0) {
+         alert("Could not load questions! The match cannot start properly.");
+         return;
+      }
+
+      setQuestions(loadedQuestions);
     } catch (err) {
-      console.error(err);
+      console.error("fetchQuestions error:", err);
+      alert("Failed to fetch questions: " + err.message);
     }
   };
 
   useEffect(() => {
     // If we are host and status changes to countdown via broadcast, we must fetch questions too
     if (matchStatus === 'countdown' && isHost && questions.length === 0) {
-      // Wait, we need to fetch our own questions based on the question_ids we got during create!
-      // Let's refetch from the DB to be safe, or we should have saved them in state during create.
-      // We didn't save question_ids in state during create_friendly_match!
-      // Let's fetch the match from DB to get the IDs.
       const fetchHostQuestions = async () => {
         const { data: matchData } = await supabase.from('friendly_matches').select('question_ids').eq('id', matchId).single();
         if (matchData) {
-          fetchQuestions(matchData.question_ids);
+          fetchQuestions(matchData.question_ids, matchId);
         }
       };
       fetchHostQuestions();
