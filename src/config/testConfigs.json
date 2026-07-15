@@ -5,10 +5,10 @@
     "correctMarks": 1,
     "wrongMarks": 0.25,
     "categories": {
-      "quantitative": 15,
-      "logical": 15,
-      "verbal": 15,
-      "technical": 15
+      "Quantitative Aptitude": 15,
+      "Logical Reasoning": 15,
+      "Verbal Ability": 15,
+      "Technical": 15
     },
     "difficulty": {
       "easy": 40,
@@ -22,10 +22,10 @@
     "correctMarks": 1,
     "wrongMarks": 0,
     "categories": {
-      "quantitative": 20,
-      "logical": 20,
-      "verbal": 20,
-      "technical": 10
+      "Quantitative Aptitude": 20,
+      "Logical Reasoning": 20,
+      "Verbal Ability": 20,
+      "Technical": 10
     },
     "difficulty": {
       "easy": 50,
@@ -39,10 +39,10 @@
     "correctMarks": 1,
     "wrongMarks": 0,
     "categories": {
-      "quantitative": 3,
-      "logical": 3,
-      "verbal": 2,
-      "technical": 2
+      "Quantitative Aptitude": 3,
+      "Logical Reasoning": 3,
+      "Verbal Ability": 2,
+      "Technical": 2
     },
     "difficulty": {
       "easy": 30,
