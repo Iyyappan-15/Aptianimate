@@ -261,6 +261,10 @@ const FriendBattlePage = ({ navigate }) => {
         p_answers: formattedAnswers,
         p_completion_time_seconds: timeTaken,
         p_calculated_score: calculatedScore,
+        p_correct_count: correct,
+        p_incorrect_count: wrong,
+        p_skipped_count: skipped,
+        p_accuracy: questions.length > 0 ? Math.round((correct / questions.length) * 100) : 0,
       });
       if (error) throw error;
 
@@ -302,21 +306,28 @@ const FriendBattlePage = ({ navigate }) => {
     const meRow = data?.find(d => d.player_id === user.id);
     const themRow = data?.find(d => d.player_id !== user.id);
 
+    let opponentUsername = 'Opponent';
+    let opponentAvatar = null;
+    if (themRow?.player_id) {
+      const { data: oppProfile } = await supabase.from('profiles').select('username, avatar_url').eq('id', themRow.player_id).single();
+      if (oppProfile) {
+        opponentUsername = oppProfile.username || 'Opponent';
+        opponentAvatar = oppProfile.avatar_url;
+      }
+    }
+
     const myScore = localMyStats?.score ?? meRow?.score ?? 0;
     const theirScore = themRow?.score ?? null;
 
     // ── CRITICAL FIX: Trust the DB is_winner flag first ──────────────
-    // The DB RPC sets is_winner correctly for both players after both submit.
-    // Only fall back to local comparison if the DB hasn't set it yet.
     let didWin = false;
     let isDraw = false;
 
     if (meRow?.is_winner !== null && meRow?.is_winner !== undefined) {
-      // DB has the authoritative answer
       didWin = meRow.is_winner === true;
       isDraw = meRow.is_winner === false && themRow?.is_winner === false;
     } else {
-      // Fallback: calculate locally when DB data is incomplete
+      // Fallback
       if (theirScore !== null) {
         if (parseFloat(myScore) > parseFloat(theirScore)) didWin = true;
         else if (parseFloat(myScore) === parseFloat(theirScore)) {
@@ -326,7 +337,6 @@ const FriendBattlePage = ({ navigate }) => {
           else if (myTime === theirTime) isDraw = true;
         }
       } else {
-        // Opponent hasn't submitted at all — we submitted so we win by default
         didWin = localMyStats?.score != null && parseFloat(localMyStats.score) > 0;
       }
     }
@@ -334,18 +344,23 @@ const FriendBattlePage = ({ navigate }) => {
     setResults({
       me: {
         score: parseFloat(myScore).toFixed(2),
-        correct: localMyStats?.correct ?? 0,
-        wrong: localMyStats?.wrong ?? 0,
-        skipped: localMyStats?.skipped ?? 0,
+        correct: localMyStats?.correct ?? meRow?.correct_count ?? 0,
+        wrong: localMyStats?.wrong ?? meRow?.wrong_count ?? 0,
+        skipped: localMyStats?.skipped ?? meRow?.skipped_count ?? 0,
         timeTaken: localMyStats?.timeTaken ?? meRow?.completion_time ?? 0,
-        accuracy: localMyStats?.accuracy ?? 0,
+        accuracy: localMyStats?.accuracy ?? meRow?.accuracy ?? 0,
         username: profile?.username || user?.user_metadata?.full_name || 'You',
         avatar: profile?.avatar_url || user?.user_metadata?.avatar_url,
       },
       them: {
         score: theirScore !== null ? parseFloat(theirScore).toFixed(2) : '—',
+        correct: themRow?.correct_count ?? '—',
+        wrong: themRow?.wrong_count ?? '—',
+        skipped: themRow?.skipped_count ?? '—',
         timeTaken: themRow?.completion_time ?? null,
-        username: 'Opponent',
+        accuracy: themRow?.accuracy ?? '—',
+        username: opponentUsername,
+        avatar: opponentAvatar,
       },
       didWin,
       isDraw,
@@ -595,20 +610,20 @@ const FriendBattlePage = ({ navigate }) => {
               {/* Me */}
               <div style={{ textAlign: 'center' }}>
                 {me.avatar ? (
-                  <img src={me.avatar} alt="you" style={{ width: 56, height: 56, borderRadius: '50%', border: `3px solid ${outcomeColor}`, objectFit: 'cover', marginBottom: 8 }} />
+                  <img src={me.avatar} alt="you" style={{ width: 60, height: 60, borderRadius: '50%', border: `3px solid ${outcomeColor}`, objectFit: 'cover', marginBottom: 8 }} />
                 ) : (
-                  <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--violet)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', margin: '0 auto 8px', border: `3px solid ${outcomeColor}`, color: '#fff', fontWeight: 800 }}>
+                  <div style={{ width: 60, height: 60, borderRadius: '50%', background: 'var(--violet)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', margin: '0 auto 8px', border: `3px solid ${outcomeColor}`, color: '#fff', fontWeight: 800 }}>
                     {(me.username || 'Y')[0].toUpperCase()}
                   </div>
                 )}
-                <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginBottom: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                   {me.username}
                 </div>
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: 'spring', delay: 0.5 }}
-                  style={{ fontSize: '3.2rem', fontWeight: 900, color: parseFloat(me.score) >= 0 ? '#10b981' : '#ef4444', lineHeight: 1 }}
+                  style={{ fontSize: '3.5rem', fontWeight: 900, color: parseFloat(me.score) >= 0 ? '#10b981' : '#ef4444', lineHeight: 1 }}
                 >
                   {me.score}
                 </motion.div>
@@ -623,39 +638,69 @@ const FriendBattlePage = ({ navigate }) => {
 
               {/* Them */}
               <div style={{ textAlign: 'center' }}>
-                <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--border)', border: '3px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', margin: '0 auto 8px' }}>👤</div>
-                <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginBottom: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                {them.avatar ? (
+                  <img src={them.avatar} alt="opponent" style={{ width: 60, height: 60, borderRadius: '50%', border: '3px solid rgba(255,255,255,0.2)', objectFit: 'cover', marginBottom: 8 }} />
+                ) : (
+                  <div style={{ width: 60, height: 60, borderRadius: '50%', background: 'rgba(255,255,255,0.1)', border: '3px solid rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', margin: '0 auto 8px', color: '#fff' }}>
+                    {(them.username || 'O')[0].toUpperCase()}
+                  </div>
+                )}
+                <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                   {them.username}
                 </div>
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: 'spring', delay: 0.6 }}
-                  style={{ fontSize: '3.2rem', fontWeight: 900, color: them.score === '—' ? 'var(--muted)' : (parseFloat(them.score) >= 0 ? '#10b981' : '#ef4444'), lineHeight: 1 }}
+                  style={{ fontSize: '3.5rem', fontWeight: 900, color: them.score === '—' ? 'rgba(255,255,255,0.3)' : (parseFloat(them.score) >= 0 ? '#10b981' : '#ef4444'), lineHeight: 1 }}
                 >
                   {them.score}
                 </motion.div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: 4 }}>⏱ {formatTime(them.timeTaken)}</div>
+                <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)', marginTop: 4 }}>
+                  ⏱ {them.timeTaken ? formatTime(them.timeTaken) : '—:—'}
+                </div>
                 {!didWin && !isDraw && <div style={{ marginTop: 6, fontSize: '0.75rem', background: '#10b98122', color: '#10b981', border: '1px solid #10b98144', borderRadius: 20, padding: '2px 10px', display: 'inline-block', fontWeight: 700 }}>WINNER 🏆</div>}
               </div>
             </div>
           </motion.div>
 
           {/* ── Detailed Stats ────────────────────────────────── */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10, marginBottom: 14 }}>
-            {[
-              { label: 'Correct', value: `${me.correct}/${totalQuestions}`, color: '#10b981', delay: 0.4 },
-              { label: 'Wrong', value: me.wrong, color: '#ef4444', delay: 0.45 },
-              { label: 'Skipped', value: me.skipped, color: '#f59e0b', delay: 0.5 },
-              { label: 'Accuracy', value: `${me.accuracy}%`, color: 'var(--violet)', delay: 0.55 },
-            ].map(({ label, value, color, delay }) => (
-              <motion.div key={label} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}
-                style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 14, padding: '14px 8px', textAlign: 'center' }}
-              >
-                <div style={{ fontSize: '1.6rem', fontWeight: 800, color }}>{value}</div>
-                <div style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: 3, textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>{label}</div>
-              </motion.div>
-            ))}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 20 }}>
+            {/* My Stats */}
+            <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 16, padding: '16px' }}>
+              <div style={{ fontSize: '0.8rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 12, textAlign: 'center', fontWeight: 700 }}>Your Stats</div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
+                {[
+                  { label: 'Correct', value: `${me.correct}/${totalQuestions}`, color: '#10b981' },
+                  { label: 'Wrong', value: me.wrong, color: '#ef4444' },
+                  { label: 'Skipped', value: me.skipped, color: '#f59e0b' },
+                  { label: 'Accuracy', value: `${me.accuracy}%`, color: 'var(--violet)' },
+                ].map(({ label, value, color }) => (
+                  <div key={label} style={{ background: 'var(--bg)', borderRadius: 10, padding: '10px', textAlign: 'center' }}>
+                    <div style={{ fontSize: '1.4rem', fontWeight: 800, color }}>{value}</div>
+                    <div style={{ fontSize: '0.65rem', color: 'var(--muted)', marginTop: 2, textTransform: 'uppercase', fontWeight: 600 }}>{label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Their Stats */}
+            <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 16, padding: '16px' }}>
+              <div style={{ fontSize: '0.8rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 12, textAlign: 'center', fontWeight: 700 }}>{them.username}'s Stats</div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
+                {[
+                  { label: 'Correct', value: them.correct !== '—' ? `${them.correct}/${totalQuestions}` : '—', color: '#10b981' },
+                  { label: 'Wrong', value: them.wrong, color: '#ef4444' },
+                  { label: 'Skipped', value: them.skipped, color: '#f59e0b' },
+                  { label: 'Accuracy', value: them.accuracy !== '—' ? `${them.accuracy}%` : '—', color: 'var(--violet)' },
+                ].map(({ label, value, color }) => (
+                  <div key={label} style={{ background: 'var(--bg)', borderRadius: 10, padding: '10px', textAlign: 'center' }}>
+                    <div style={{ fontSize: '1.4rem', fontWeight: 800, color }}>{value}</div>
+                    <div style={{ fontSize: '0.65rem', color: 'var(--muted)', marginTop: 2, textTransform: 'uppercase', fontWeight: 600 }}>{label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* ── Score formula note ────────────────────────────── */}
