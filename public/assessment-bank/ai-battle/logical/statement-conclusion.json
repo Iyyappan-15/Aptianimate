@@ -5,7 +5,7 @@
     "topic": "Statement Conclusion",
     "subtopic": "General",
     "difficulty": "easy",
-    "question": "Evaluate the statement sufficiency for tracking family trees.",
+    "question": "Question: How is Y related to X?\\nStatement I: X is the brother of Z.\\nStatement II: Y is the father of X.",
     "options": [
       "Statement I alone is sufficient",
       "Both statements together are required",

@@ -53,6 +53,7 @@ const StatCard = ({ label, value, color, delay = 0 }) => (
 const FriendBattlePage = ({ navigate }) => {
   const { user, profile } = useAuth();
   const [matchStatus, setMatchStatus] = useState('lobby');
+  const [copyFeedback, setCopyFeedback] = useState(false);
   const [roomCode, setRoomCode] = useState('');
   const [joinInput, setJoinInput] = useState('');
   const [matchId, setMatchId] = useState(null);
@@ -301,24 +302,33 @@ const FriendBattlePage = ({ navigate }) => {
     const meRow = data?.find(d => d.player_id === user.id);
     const themRow = data?.find(d => d.player_id !== user.id);
 
-    // Build rich result object using both local calculation + DB data
     const myScore = localMyStats?.score ?? meRow?.score ?? 0;
-    const theirScore = themRow?.score ?? null; // null = they haven't finished yet
+    const theirScore = themRow?.score ?? null;
 
-    // Determine winner properly: higher score wins; if equal, shorter time wins
+    // ── CRITICAL FIX: Trust the DB is_winner flag first ──────────────
+    // The DB RPC sets is_winner correctly for both players after both submit.
+    // Only fall back to local comparison if the DB hasn't set it yet.
     let didWin = false;
     let isDraw = false;
-    if (theirScore !== null) {
-      if (myScore > theirScore) didWin = true;
-      else if (myScore === theirScore) {
-        const myTime = localMyStats?.timeTaken ?? meRow?.completion_time ?? Infinity;
-        const theirTime = themRow?.completion_time ?? Infinity;
-        if (myTime < theirTime) didWin = true;
-        else if (myTime === theirTime) isDraw = true;
-      }
+
+    if (meRow?.is_winner !== null && meRow?.is_winner !== undefined) {
+      // DB has the authoritative answer
+      didWin = meRow.is_winner === true;
+      isDraw = meRow.is_winner === false && themRow?.is_winner === false;
     } else {
-      // Opponent hasn't submitted — if match is completed we won by default
-      didWin = true;
+      // Fallback: calculate locally when DB data is incomplete
+      if (theirScore !== null) {
+        if (parseFloat(myScore) > parseFloat(theirScore)) didWin = true;
+        else if (parseFloat(myScore) === parseFloat(theirScore)) {
+          const myTime = localMyStats?.timeTaken ?? meRow?.completion_time ?? Infinity;
+          const theirTime = themRow?.completion_time ?? Infinity;
+          if (myTime < theirTime) didWin = true;
+          else if (myTime === theirTime) isDraw = true;
+        }
+      } else {
+        // Opponent hasn't submitted at all — we submitted so we win by default
+        didWin = localMyStats?.score != null && parseFloat(localMyStats.score) > 0;
+      }
     }
 
     setResults({
@@ -406,18 +416,64 @@ const FriendBattlePage = ({ navigate }) => {
   // ║                       WAITING SCREEN                            ║
   // ╚══════════════════════════════════════════════════════════════════╝
   if (matchStatus === 'waiting') {
+    const handleCopyCode = () => {
+      navigator.clipboard.writeText(roomCode).then(() => {
+        setCopyFeedback(true);
+        setTimeout(() => setCopyFeedback(false), 2000);
+      }).catch(() => {
+        // fallback for older browsers
+        const el = document.createElement('textarea');
+        el.value = roomCode;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        setCopyFeedback(true);
+        setTimeout(() => setCopyFeedback(false), 2000);
+      });
+    };
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)', textAlign: 'center', padding: 24 }}>
-        <motion.div animate={{ scale: [1, 1.05, 1] }} transition={{ repeat: Infinity, duration: 2 }} style={{ fontSize: '3rem', marginBottom: 24 }}>⏳</motion.div>
-        <h2 style={{ fontSize: '2rem', color: 'var(--violet)', marginBottom: 8 }}>Waiting for Opponent...</h2>
-        <p style={{ color: 'var(--muted)', marginBottom: 32 }}>Share this code with your friend:</p>
-        <motion.div
-          initial={{ scale: 0.8 }} animate={{ scale: 1 }}
-          style={{ fontSize: '4rem', fontWeight: 900, letterSpacing: '10px', padding: '20px 48px', background: 'var(--card-bg)', border: '2px dashed var(--violet)', borderRadius: 20, color: 'var(--violet)', marginBottom: 20 }}
-        >
-          {roomCode}
+        <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ repeat: Infinity, duration: 2.5 }} style={{ fontSize: '3rem', marginBottom: 24 }}>⏳</motion.div>
+        <h2 style={{ fontSize: '2rem', color: 'var(--violet)', marginBottom: 4, fontWeight: 900 }}>Waiting for Opponent...</h2>
+        <p style={{ color: 'var(--muted)', marginBottom: 32, fontSize: '1rem' }}>Share this code with your friend to begin the battle</p>
+
+        {/* Room Code Box */}
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} style={{ marginBottom: 16 }}>
+          <div style={{ fontSize: '4.5rem', fontWeight: 900, letterSpacing: '12px', padding: '24px 56px', background: 'var(--card-bg)', border: '2px dashed var(--violet)', borderRadius: 20, color: 'var(--violet)', marginBottom: 12, userSelect: 'all' }}>
+            {roomCode}
+          </div>
+
+          {/* Copy Button */}
+          <motion.button
+            whileTap={{ scale: 0.95 }}
+            onClick={handleCopyCode}
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              padding: '12px 28px', borderRadius: 12, fontSize: '1rem', fontWeight: 700,
+              background: copyFeedback ? '#10b981' : 'var(--violet)',
+              color: '#fff', border: 'none', cursor: 'pointer',
+              transition: 'background 0.25s, transform 0.1s',
+              boxShadow: copyFeedback ? '0 4px 20px #10b98144' : '0 4px 20px rgba(124,58,237,0.3)',
+            }}
+          >
+            {copyFeedback ? (
+              <><span style={{ fontSize: '1.1rem' }}>✅</span> Copied!</>
+            ) : (
+              <><span style={{ fontSize: '1.1rem' }}>📋</span> Copy Code</>
+            )}
+          </motion.button>
         </motion.div>
-        <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Match starts automatically when they join</p>
+
+        <p style={{ color: 'var(--muted)', fontSize: '0.85rem', marginTop: 8 }}>Match starts automatically when they join</p>
+
+        {/* Animated waiting dots */}
+        <div style={{ display: 'flex', gap: 6, marginTop: 32 }}>
+          {[0, 1, 2].map(i => (
+            <motion.div key={i} animate={{ scale: [1, 1.4, 1], opacity: [0.4, 1, 0.4] }} transition={{ repeat: Infinity, duration: 1.2, delay: i * 0.2 }}
+              style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--violet)' }} />
+          ))}
+        </div>
       </div>
     );
   }
@@ -448,26 +504,24 @@ const FriendBattlePage = ({ navigate }) => {
   }
 
   // ╔══════════════════════════════════════════════════════════════════╗
-  // ║                    PREMIUM RESULT SCREEN                        ║
+  // ║                       RESULT SCREEN                             ║
   // ╚══════════════════════════════════════════════════════════════════╝
   if (matchStatus === 'completed' && results) {
     const { me, them, didWin, isDraw, totalQuestions } = results;
     const outcomeColor = isDraw ? '#f59e0b' : didWin ? '#10b981' : '#ef4444';
-    const outcomeGradient = isDraw
-      ? 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)'
+    const outcomeLabel = isDraw ? 'DRAW' : didWin ? 'VICTORY!' : 'DEFEAT';
+    const outcomeEmoji = isDraw ? '🤝' : didWin ? '🏆' : '💀';
+    const outcomeMsg = isDraw
+      ? 'Both players are equally matched — incredible!'
       : didWin
-        ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)'
-        : 'linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%)';
+        ? 'You outperformed your opponent — outstanding!'
+        : 'Better luck next time! Keep practising to sharpen your skills.';
 
     return (
       <div style={{
         minHeight: '100vh',
-        background: isDraw
-          ? 'linear-gradient(160deg, #1c1a0a 0%, #292300 60%, #0d0d0d 100%)'
-          : didWin
-            ? 'linear-gradient(160deg, #021a0e 0%, #042c1a 60%, #0d0d0d 100%)'
-            : 'linear-gradient(160deg, #160728 0%, #2a0f54 60%, #0d0d0d 100%)',
-        color: '#fff',
+        background: 'var(--bg)',
+        color: 'var(--text)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -479,175 +533,161 @@ const FriendBattlePage = ({ navigate }) => {
         {/* Confetti on Win */}
         {didWin && <Confetti />}
 
-        {/* Background glow */}
+        {/* Background accent glow */}
         <div style={{
-          position: 'absolute', top: '20%', left: '50%', transform: 'translateX(-50%)',
-          width: 500, height: 500, borderRadius: '50%',
-          background: `radial-gradient(circle, ${outcomeColor}22 0%, transparent 70%)`,
-          pointerEvents: 'none',
+          position: 'fixed', top: 0, left: 0, right: 0, height: 6,
+          background: `linear-gradient(90deg, transparent, ${outcomeColor}, transparent)`,
+          zIndex: 20,
         }} />
 
         <motion.div
-          initial={{ scale: 0.85, opacity: 0, y: 30 }}
+          initial={{ scale: 0.9, opacity: 0, y: 30 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
-          transition={{ type: 'spring', stiffness: 120, damping: 14 }}
+          transition={{ type: 'spring', stiffness: 120, damping: 15 }}
           style={{ width: '100%', maxWidth: 680, position: 'relative', zIndex: 10 }}
         >
           {/* ── Outcome Banner ─────────────────────────────────── */}
           <motion.div
-            initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ type: 'spring', stiffness: 200, delay: 0.1 }}
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.1, type: 'spring', stiffness: 180 }}
             style={{
-              background: outcomeGradient,
+              background: 'var(--card-bg)',
               borderRadius: 24,
               padding: '32px 24px 28px',
               textAlign: 'center',
-              marginBottom: 20,
-              boxShadow: `0 20px 60px ${outcomeColor}44`,
+              marginBottom: 16,
+              border: `2px solid ${outcomeColor}55`,
+              boxShadow: `0 12px 40px ${outcomeColor}22`,
             }}
           >
-            <div style={{ fontSize: '4.5rem', lineHeight: 1, marginBottom: 8 }}>
-              {isDraw ? '🤝' : didWin ? '🏆' : '🎯'}
-            </div>
-            <h1 style={{ margin: 0, fontSize: '2.8rem', fontWeight: 900, letterSpacing: '2px', textShadow: '0 4px 12px rgba(0,0,0,0.4)' }}>
-              {isDraw ? 'IT\'S A DRAW!' : didWin ? 'VICTORY!' : 'WELL PLAYED!'}
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ type: 'spring', stiffness: 300, delay: 0.2 }}
+              style={{ fontSize: '4rem', lineHeight: 1, marginBottom: 10 }}
+            >
+              {outcomeEmoji}
+            </motion.div>
+            <h1 style={{
+              margin: '0 0 8px', fontSize: '2.6rem', fontWeight: 900,
+              letterSpacing: '3px', color: outcomeColor,
+            }}>
+              {outcomeLabel}
             </h1>
-            <p style={{ margin: '8px 0 0', fontSize: '1rem', opacity: 0.85 }}>
-              {isDraw
-                ? 'Both players are equally matched — incredible!'
-                : didWin
-                  ? 'You outperformed your opponent — outstanding!'
-                  : 'Great effort! Keep practising to improve your score.'}
-            </p>
+            <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--muted)' }}>{outcomeMsg}</p>
           </motion.div>
 
           {/* ── Score Duel ────────────────────────────────────── */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             style={{
-              background: 'rgba(255,255,255,0.06)',
-              border: '1px solid rgba(255,255,255,0.1)',
+              background: 'var(--card-bg)',
+              border: '1px solid var(--border)',
               borderRadius: 20,
-              padding: '28px 24px',
-              marginBottom: 20,
-              backdropFilter: 'blur(20px)',
+              padding: '24px 20px',
+              marginBottom: 14,
             }}
           >
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center', gap: 16 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center', gap: 12 }}>
               {/* Me */}
               <div style={{ textAlign: 'center' }}>
                 {me.avatar ? (
-                  <img src={me.avatar} alt="you" style={{ width: 60, height: 60, borderRadius: '50%', border: `3px solid ${outcomeColor}`, objectFit: 'cover', marginBottom: 8 }} />
+                  <img src={me.avatar} alt="you" style={{ width: 56, height: 56, borderRadius: '50%', border: `3px solid ${outcomeColor}`, objectFit: 'cover', marginBottom: 8 }} />
                 ) : (
-                  <div style={{ width: 60, height: 60, borderRadius: '50%', background: outcomeGradient, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', margin: '0 auto 8px', border: `3px solid ${outcomeColor}` }}>
+                  <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--violet)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', margin: '0 auto 8px', border: `3px solid ${outcomeColor}`, color: '#fff', fontWeight: 800 }}>
                     {(me.username || 'Y')[0].toUpperCase()}
                   </div>
                 )}
-                <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginBottom: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                   {me.username}
                 </div>
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: 'spring', delay: 0.5 }}
-                  style={{ fontSize: '3.5rem', fontWeight: 900, color: parseFloat(me.score) >= 0 ? '#10b981' : '#ef4444', lineHeight: 1 }}
+                  style={{ fontSize: '3.2rem', fontWeight: 900, color: parseFloat(me.score) >= 0 ? '#10b981' : '#ef4444', lineHeight: 1 }}
                 >
                   {me.score}
                 </motion.div>
-                <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)', marginTop: 4 }}>
-                  ⏱ {formatTime(me.timeTaken)}
-                </div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: 4 }}>⏱ {formatTime(me.timeTaken)}</div>
+                {didWin && <div style={{ marginTop: 6, fontSize: '0.75rem', background: '#10b98122', color: '#10b981', border: '1px solid #10b98144', borderRadius: 20, padding: '2px 10px', display: 'inline-block', fontWeight: 700 }}>WINNER 🏆</div>}
               </div>
 
               {/* VS */}
-              <div style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'rgba(255,255,255,0.3)', letterSpacing: '2px' }}>VS</div>
+              <div style={{ textAlign: 'center', padding: '0 8px' }}>
+                <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--muted)', letterSpacing: '2px', padding: '8px 12px', border: '1px solid var(--border)', borderRadius: 8 }}>VS</div>
               </div>
 
               {/* Them */}
               <div style={{ textAlign: 'center' }}>
-                <div style={{ width: 60, height: 60, borderRadius: '50%', background: 'rgba(255,255,255,0.1)', border: '3px solid rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', margin: '0 auto 8px' }}>
-                  👤
-                </div>
-                <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--border)', border: '3px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', margin: '0 auto 8px' }}>👤</div>
+                <div style={{ fontSize: '0.78rem', color: 'var(--muted)', marginBottom: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                   {them.username}
                 </div>
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: 'spring', delay: 0.6 }}
-                  style={{ fontSize: '3.5rem', fontWeight: 900, color: them.score === '—' ? 'rgba(255,255,255,0.3)' : (parseFloat(them.score) >= 0 ? '#10b981' : '#ef4444'), lineHeight: 1 }}
+                  style={{ fontSize: '3.2rem', fontWeight: 900, color: them.score === '—' ? 'var(--muted)' : (parseFloat(them.score) >= 0 ? '#10b981' : '#ef4444'), lineHeight: 1 }}
                 >
                   {them.score}
                 </motion.div>
-                <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)', marginTop: 4 }}>
-                  ⏱ {formatTime(them.timeTaken)}
-                </div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: 4 }}>⏱ {formatTime(them.timeTaken)}</div>
+                {!didWin && !isDraw && <div style={{ marginTop: 6, fontSize: '0.75rem', background: '#10b98122', color: '#10b981', border: '1px solid #10b98144', borderRadius: 20, padding: '2px 10px', display: 'inline-block', fontWeight: 700 }}>WINNER 🏆</div>}
               </div>
             </div>
           </motion.div>
 
           {/* ── Detailed Stats ────────────────────────────────── */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 20 }}>
-            <StatCard label="Correct" value={`${me.correct}/${totalQuestions}`} color="#10b981" delay={0.4} />
-            <StatCard label="Wrong" value={me.wrong} color="#ef4444" delay={0.45} />
-            <StatCard label="Skipped" value={me.skipped} color="#f59e0b" delay={0.5} />
-            <StatCard label="Accuracy" value={`${me.accuracy}%`} color="#7c3aed" delay={0.55} />
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10, marginBottom: 14 }}>
+            {[
+              { label: 'Correct', value: `${me.correct}/${totalQuestions}`, color: '#10b981', delay: 0.4 },
+              { label: 'Wrong', value: me.wrong, color: '#ef4444', delay: 0.45 },
+              { label: 'Skipped', value: me.skipped, color: '#f59e0b', delay: 0.5 },
+              { label: 'Accuracy', value: `${me.accuracy}%`, color: 'var(--violet)', delay: 0.55 },
+            ].map(({ label, value, color, delay }) => (
+              <motion.div key={label} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}
+                style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 14, padding: '14px 8px', textAlign: 'center' }}
+              >
+                <div style={{ fontSize: '1.6rem', fontWeight: 800, color }}>{value}</div>
+                <div style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: 3, textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>{label}</div>
+              </motion.div>
+            ))}
           </div>
 
-          {/* ── Score Breakdown ───────────────────────────────── */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            style={{
-              background: 'rgba(255,255,255,0.05)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              borderRadius: 16,
-              padding: '16px 24px',
-              marginBottom: 24,
-              fontSize: '0.85rem',
-              color: 'rgba(255,255,255,0.5)',
-              textAlign: 'center',
-              lineHeight: '1.8',
-            }}
+          {/* ── Score formula note ────────────────────────────── */}
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
+            style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 12, padding: '12px 20px', marginBottom: 20, fontSize: '0.82rem', color: 'var(--muted)', textAlign: 'center' }}
           >
-            Score formula: <span style={{ color: '#10b981' }}>+1 per correct</span> · <span style={{ color: '#ef4444' }}>−0.25 per wrong</span> · <span style={{ color: '#f59e0b' }}>0 for skipped</span>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            Time: <span style={{ color: 'rgba(255,255,255,0.7)' }}>{formatTime(me.timeTaken)}</span>
+            <span style={{ color: '#10b981', fontWeight: 600 }}>+1</span> correct &nbsp;·&nbsp;
+            <span style={{ color: '#ef4444', fontWeight: 600 }}>−0.25</span> wrong &nbsp;·&nbsp;
+            <span style={{ color: '#f59e0b', fontWeight: 600 }}>0</span> skipped &nbsp;&nbsp;|&nbsp;&nbsp;
+            Your time: <strong style={{ color: 'var(--text)' }}>{formatTime(me.timeTaken)}</strong>
           </motion.div>
 
           {/* ── Action Buttons ────────────────────────────────── */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }}
             style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}
           >
             <button
               onClick={() => setMatchStatus('lobby')}
               style={{
-                padding: '14px 32px', fontSize: '1rem', fontWeight: 700, borderRadius: 14,
-                background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)',
+                padding: '13px 28px', fontSize: '0.95rem', fontWeight: 700, borderRadius: 12,
+                background: 'var(--card-bg)', color: 'var(--text)', border: '1px solid var(--border)',
                 cursor: 'pointer', transition: 'all 0.2s',
               }}
-              onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.18)'}
-              onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
+              onMouseOver={e => e.currentTarget.style.borderColor = 'var(--violet)'}
+              onMouseOut={e => e.currentTarget.style.borderColor = 'var(--border)'}
             >
               🔄 Play Again
             </button>
             <button
               onClick={() => navigate('')}
-              style={{
-                padding: '14px 32px', fontSize: '1rem', fontWeight: 700, borderRadius: 14,
-                background: outcomeGradient, color: '#fff', border: 'none',
-                cursor: 'pointer', boxShadow: `0 8px 24px ${outcomeColor}55`, transition: 'all 0.2s',
-              }}
-              onMouseOver={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-              onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}
+              className="btn-primary"
+              style={{ padding: '13px 28px', fontSize: '0.95rem', fontWeight: 700, borderRadius: 12, cursor: 'pointer' }}
             >
               🏠 Return Home
             </button>
