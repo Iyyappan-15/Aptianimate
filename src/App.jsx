@@ -22,6 +22,7 @@ import UsernameModal from './components/UsernameModal';
 const MockTestPage = lazy(() => import('./pages/MockTestPage'));
 const MockTestResultsPage = lazy(() => import('./pages/MockTestResultsPage'));
 const BattlePage = lazy(() => import('./pages/BattlePage'));
+const FriendBattlePage = lazy(() => import('./pages/FriendBattlePage'));
 import { signInWithGoogle, signOut } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
 
@@ -130,6 +131,8 @@ function App() {
     pageComponent = <MockTestResultsPage testId={id} navigate={navigate} />;
   } else if (route === 'battle') {
     pageComponent = <BattlePage navigate={navigate} />;
+  } else if (route === 'battle/friend') {
+    pageComponent = <FriendBattlePage navigate={navigate} />;
   } else if (route.startsWith('ask')) {
     // Support optional ?q= pre-fill: #/ask?q=your+question
     const rawHash = window.location.hash.replace('#/', '');

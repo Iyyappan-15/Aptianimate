@@ -1,0 +1,80 @@
+[
+  {
+    "id": "Q0149",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "Networking Fundamentals",
+    "difficulty": "medium",
+    "question": "Which OSI layer is responsible for routing?",
+    "options": [
+      "Network layer",
+      "Transport layer",
+      "Application layer",
+      "Data link layer"
+    ],
+    "correct_answer": "Network layer",
+    "estimated_time": 60,
+    "company_tags": [
+      "cisco",
+      "juniper",
+      "amazon",
+      "google",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0150",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "Networking Fundamentals",
+    "difficulty": "medium",
+    "question": "TCP is a:",
+    "options": [
+      "Connectionless protocol",
+      "Connection-oriented protocol",
+      "Physical layer service",
+      "Application layer service"
+    ],
+    "correct_answer": "Connection-oriented protocol",
+    "estimated_time": 60,
+    "company_tags": [
+      "cisco",
+      "juniper",
+      "amazon",
+      "google",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0151",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "Networking Fundamentals",
+    "difficulty": "easy",
+    "question": "The primary purpose of an IP address is to:",
+    "options": [
+      "Store website content",
+      "Identify a device on a network",
+      "Speed up downloads",
+      "Encrypt network traffic"
+    ],
+    "correct_answer": "Identify a device on a network",
+    "estimated_time": 45,
+    "company_tags": [
+      "cisco",
+      "juniper",
+      "amazon",
+      "google",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

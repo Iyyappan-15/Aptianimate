@@ -5,6 +5,8 @@ import { useAuth } from '../contexts/AuthContext';
 import { signInWithGoogle } from '../services/authService';
 import testConfigs from '../config/testConfigs.json';
 
+import { getRandomQuestions } from '../data/aiBank';
+
 // Utility to generate fake AI progress
 const generateAIProfile = (totalQuestions) => {
   // Random AI Accuracy between 60% and 90%
@@ -52,17 +54,20 @@ const BattlePage = ({ navigate }) => {
   const startAIBattle = async () => {
     setLoading(true);
     try {
-      const { data, error } = await supabase.rpc('generate_mock_test', { p_config: testConfigs.aiBattle });
-      if (error) throw error;
+      const selectedQuestions = getRandomQuestions(testConfigs.aiBattle);
+      if (!selectedQuestions || selectedQuestions.length === 0) {
+        throw new Error("No questions found in local bank. Make sure the JSONs are in public/assessment-bank/ai-battle");
+      }
 
-      setQuestions(data.questions);
-      setTestSession({ test_id: data.test_id, expires_at: data.expires_at });
-      setAiProfile(generateAIProfile(data.questions.length));
+      setQuestions(selectedQuestions);
       
-      const expiresAt = new Date(data.expires_at).getTime();
-      const diff = expiresAt - new Date().getTime();
-      setTimeLeft(diff > 0 ? Math.floor(diff / 1000) : 0);
+      // Calculate local expiry
+      const durationSec = (testConfigs.aiBattle.duration || 30) * 60;
+      const expiresAt = new Date().getTime() + (durationSec * 1000);
+      setTestSession({ test_id: 'local_ai_battle', expires_at: new Date(expiresAt).toISOString() });
+      setAiProfile(generateAIProfile(selectedQuestions.length));
       
+      setTimeLeft(durationSec);
       setMode('ai');
     } catch (err) {
       console.error(err);
@@ -73,7 +78,7 @@ const BattlePage = ({ navigate }) => {
   };
 
   const startFriendBattle = () => {
-    alert("Friend Battle is coming soon! Try beating the AI for now.");
+    navigate('battle/friend');
   };
 
   // Clock Hook
@@ -128,24 +133,34 @@ const BattlePage = ({ navigate }) => {
         hasSubmittedRef.current = true;
         setIsSubmitting(true);
         try {
-          const formattedAnswers = Object.entries(playerAnswers).map(([qId, sel]) => ({
-            question_id: qId,
-            selected_option: sel
-          }));
-          const { data, error } = await supabase.rpc('submit_mock_test', {
-            p_test_id: testSession.test_id,
-            p_answers: formattedAnswers
+          // Local Grading instead of Supabase RPC!
+          let correct = 0;
+          let incorrect = 0;
+          let score = 0;
+          const correctMarks = testConfigs.aiBattle.correctMarks || 1;
+          const wrongMarks = testConfigs.aiBattle.wrongMarks || 0.25;
+          
+          Object.entries(playerAnswers).forEach(([qId, sel]) => {
+             const q = questions.find(x => x.id === qId);
+             if (q) {
+                if (sel === q.correct_answer) {
+                  correct++;
+                  score += correctMarks;
+                } else if (sel) {
+                  incorrect++;
+                  score -= wrongMarks;
+                }
+             }
           });
-          if (error) throw error;
           
           if (mounted) {
-            setPlayerRealScore(data.score);
-            setBattleResults(data);
+            setPlayerRealScore(score);
+            setBattleResults({ score, correct, incorrect, analytics: { accuracy: (correct / questions.length) * 100 } });
             setIsFinished(true);
           }
         } catch (err) {
           console.error("Failed to submit battle:", err);
-          alert("Failed to submit your battle results!");
+          alert("Failed to calculate your battle results!");
           hasSubmittedRef.current = false;
         } finally {
           if (mounted) setIsSubmitting(false);
@@ -221,11 +236,13 @@ const BattlePage = ({ navigate }) => {
           <motion.button 
             whileHover={{ scale: 1.05 }}
             onClick={startFriendBattle}
-            style={{ padding: '40px', width: '250px', background: 'var(--card-bg)', border: '2px solid var(--border)', borderRadius: '16px', cursor: 'pointer', opacity: 0.8 }}
+            style={{ padding: '40px', width: '250px', background: 'var(--card-bg)', border: '2px solid var(--border)', borderRadius: '16px', cursor: 'pointer', transition: 'border-color 0.2s' }}
+            onMouseOver={(e) => e.currentTarget.style.borderColor = '#10b981'}
+            onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--border)'}
           >
             <h2 style={{ fontSize: '2rem', margin: '0 0 16px 0' }}>👥</h2>
             <h3>Battle Friend</h3>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Invite a friend and compete in real-time. (Coming Soon)</p>
+            <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Invite a friend and compete in real-time.</p>
           </motion.button>
         </div>
         
@@ -284,9 +301,6 @@ const BattlePage = ({ navigate }) => {
           </div>
           
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
-            <button className="btn-secondary" onClick={() => navigate(`mock-test/results/${testSession.test_id}`)} style={{ padding: '14px 28px', fontSize: '1.1rem', background: 'var(--surface2)', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: '12px', cursor: 'pointer' }}>
-              View Detailed Analysis
-            </button>
             <button className="btn-primary" onClick={() => navigate('')} style={{ padding: '14px 28px', fontSize: '1.1rem', background: 'linear-gradient(135deg, var(--violet), #6d28d9)', color: '#fff', border: 'none', borderRadius: '12px', cursor: 'pointer' }}>
               Return to Lobby
             </button>

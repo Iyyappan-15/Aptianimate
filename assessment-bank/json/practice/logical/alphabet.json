@@ -1,0 +1,94 @@
+[
+  {
+    "id": "Q0001",
+    "category": "Logical Reasoning",
+    "topic": "Alphabet",
+    "subtopic": "Letter Series",
+    "difficulty": "easy",
+    "question": "Find the wrong term in the given alphabet series: CMQ, FPT, JTX, OYC, UFI",
+    "options": [
+      "UFI",
+      "FPT",
+      "CMQ",
+      "OYC"
+    ],
+    "correct_answer": "UFI",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0002",
+    "category": "Logical Reasoning",
+    "topic": "Alphabet",
+    "subtopic": "Word Alphabetical Order",
+    "difficulty": "medium",
+    "question": "Which word comes last when arranged in alphabetical order: Abandon, Accept, Accomplish, Accumulate, Actuate?",
+    "options": [
+      "Accumulate",
+      "Actuate",
+      "Abandon",
+      "Accomplish"
+    ],
+    "correct_answer": "Actuate",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0003",
+    "category": "Logical Reasoning",
+    "topic": "Alphabet",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Which letter is eighth to the right of the tenth letter to the left of the alphabet's last but one letter?",
+    "options": [
+      "V",
+      "U",
+      "X",
+      "W"
+    ],
+    "correct_answer": "W",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0004",
+    "category": "Logical Reasoning",
+    "topic": "Alphabet",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "How many such pairs of letters are there in the word \"CASTRAPHONE\" each of which has as many letters between them in the word as they have between them in the English alphabet (both forward and backward)?",
+    "options": [
+      "6",
+      "5",
+      "3",
+      "4"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

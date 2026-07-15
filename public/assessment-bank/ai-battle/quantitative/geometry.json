@@ -1,0 +1,48 @@
+[
+  {
+    "id": "Q0034",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Calculate the numerical value for the square of 12.",
+    "options": [
+      "72",
+      "187.2",
+      "144.0",
+      "165.6"
+    ],
+    "correct_answer": "144.0",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0035",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which of the following geometric figures has the greatest area? a) Circle with radius 4 b) Square with diagonal 4 c) Square with side 4 d) Triangle with base 4 and height 4",
+    "options": [
+      "Circle with radius 5",
+      "Circle with radius 2",
+      "Circle with radius 4",
+      "Circle with radius 7"
+    ],
+    "correct_answer": "Circle with radius 4",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "Q0198",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Find the closest synonym for the word BENEVOLENT.",
+    "options": [
+      "Harsh",
+      "Selfish",
+      "Cruel",
+      "Kind"
+    ],
+    "correct_answer": "Kind",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

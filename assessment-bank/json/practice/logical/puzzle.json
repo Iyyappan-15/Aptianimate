@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Q0017",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "Lexicographic Ordering",
+    "difficulty": "hard",
+    "question": "Find the next lexicographical (dictionary) permutation of the character string: bcjameflkihgd",
+    "options": [
+      "bcjamegdfhikl",
+      "bcjamegfdhikl",
+      "bcjameflkihgd",
+      "bcjamefklihgd"
+    ],
+    "correct_answer": "bcjamegdfhikl",
+    "estimated_time": 90,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "accenture",
+      "amazon"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

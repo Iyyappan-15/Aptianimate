@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q0185",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Find the correct antonym for the word Old.",
+    "options": [
+      "Young",
+      "Elderly",
+      "Ancient",
+      "Aged"
+    ],
+    "correct_answer": "Young",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "cognizant",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0186",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Find the correct antonym for the word Hot.",
+    "options": [
+      "Mild",
+      "Cold",
+      "Warm",
+      "Chilly"
+    ],
+    "correct_answer": "Cold",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "cognizant",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0187",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Find the correct antonym for the word Strong.",
+    "options": [
+      "Weak",
+      "Powerful",
+      "Tough",
+      "Sturdy"
+    ],
+    "correct_answer": "Weak",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "cognizant",
+      "wipro"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "Q0036",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which of the following numbers is completely divisible by 24?",
+    "options": [
+      "24756",
+      "64366",
+      "49512",
+      "56939"
+    ],
+    "correct_answer": "49512",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0037",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which of the following numbers is completely divisible by 36?",
+    "options": [
+      "55512",
+      "63839",
+      "27756",
+      "72166"
+    ],
+    "correct_answer": "55512",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0038",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Find the largest perfect square among the given choices: a) 15129, b) 12348, c) 23716, d) 20736.",
+    "options": [
+      "27273",
+      "11858",
+      "30831",
+      "23716"
+    ],
+    "correct_answer": "23716",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0039",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "HCF Calculation",
+    "difficulty": "easy",
+    "question": "Find the Highest Common Factor (HCF) of 72, 288, and 1080.",
+    "options": [
+      "72",
+      "36",
+      "83",
+      "94"
+    ],
+    "correct_answer": "72",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0040",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "Progressions / Number Series",
+    "difficulty": "medium",
+    "question": "Find the next term in the geometric progression: 2, 4, 8, 16, ...",
+    "options": [
+      "32.0",
+      "36.8",
+      "41.6",
+      "16"
+    ],
+    "correct_answer": "32.0",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0041",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Find the least number which when divided by 7, 8, and 11 leaves a remainder of 6 in each case.",
+    "options": [
+      "622",
+      "715",
+      "311",
+      "809"
+    ],
+    "correct_answer": "622",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0042",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "Permutations (Digits)",
+    "difficulty": "easy",
+    "question": "How many 3-digit numbers can be formed by the digits 0, 2, 5, 3, 7 which are divisible by 5 and none of the digits are repeated?",
+    "options": [
+      "31 (based on test platform configuration rules)",
+      "28 (based on test platform configuration rules)",
+      "24 (based on test platform configuration rules)",
+      "12 (based on test platform configuration rules)"
+    ],
+    "correct_answer": "24 (based on test platform configuration rules)",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

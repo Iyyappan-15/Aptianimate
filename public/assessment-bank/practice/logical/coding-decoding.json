@@ -1,0 +1,77 @@
+[
+  {
+    "id": "Q0014",
+    "category": "Logical Reasoning",
+    "topic": "Coding Decoding",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If HARYANA is coded as 8197151, then how will DELHI be coded?",
+    "options": [
+      "54398",
+      "45398",
+      "45389",
+      "43598"
+    ],
+    "correct_answer": "45389",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0015",
+    "category": "Logical Reasoning",
+    "topic": "Coding Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If EXAMPLE is coded as AXEMELP, then how will CONDITION be coded?",
+    "options": [
+      "NOCDINOIT",
+      "DONCINOTI",
+      "DNOCITOIN",
+      "DNOCINOIT"
+    ],
+    "correct_answer": "DNOCINOIT",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0016",
+    "category": "Logical Reasoning",
+    "topic": "Coding Decoding",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If FATHER is coded as 7 and DAUGHTER is coded as 9, then what is the code for DISTANT?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": "8",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

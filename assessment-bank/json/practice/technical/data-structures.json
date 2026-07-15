@@ -1,0 +1,596 @@
+[
+  {
+    "id": "Q0156",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Linked List",
+    "difficulty": "easy",
+    "question": "What is a key advantage of a linked list over an array?",
+    "options": [
+      "Contiguous memory allocation",
+      "Faster random access",
+      "Less memory usage",
+      "Dynamic size"
+    ],
+    "correct_answer": "Dynamic size",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0157",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Stack",
+    "difficulty": "easy",
+    "question": "A stack follows which data structure principle?",
+    "options": [
+      "FIFO (First-In, First-Out)",
+      "LIFO (Last-In, First-Out)",
+      "Priority-based order",
+      "Random access order"
+    ],
+    "correct_answer": "LIFO (Last-In, First-Out)",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0158",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Queue",
+    "difficulty": "easy",
+    "question": "A queue follows which data structure principle?",
+    "options": [
+      "Priority-based order",
+      "LIFO (Last-In, First-Out)",
+      "FIFO (First-In, First-Out)",
+      "Random access order"
+    ],
+    "correct_answer": "FIFO (First-In, First-Out)",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0159",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Hashing",
+    "difficulty": "easy",
+    "question": "What is the primary advantage of hashing?",
+    "options": [
+      "Maintains sorted order",
+      "Uses minimal memory always",
+      "Fast average lookup",
+      "Guaranteed worst-case O(1)"
+    ],
+    "correct_answer": "Fast average lookup",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0160",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Trees",
+    "difficulty": "easy",
+    "question": "What is the topmost node in a tree structure called?",
+    "options": [
+      "Node",
+      "Leaf",
+      "Root",
+      "Edge"
+    ],
+    "correct_answer": "Root",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0161",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Stack",
+    "difficulty": "easy",
+    "question": "Which data structure follows the LIFO principle?",
+    "options": [
+      "Stack",
+      "Priority-based order",
+      "FIFO (First-In, First-Out)",
+      "Random access order"
+    ],
+    "correct_answer": "Stack",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0162",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Queue",
+    "difficulty": "easy",
+    "question": "Which data structure operates on the FIFO principle?",
+    "options": [
+      "Random access order",
+      "Priority-based order",
+      "Queue",
+      "LIFO (Last-In, First-Out)"
+    ],
+    "correct_answer": "Queue",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0163",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Trees",
+    "difficulty": "easy",
+    "question": "Which tree traversal technique visits nodes in the order Left, Root, Right?",
+    "options": [
+      "Postorder",
+      "Inorder",
+      "Level Order",
+      "Preorder"
+    ],
+    "correct_answer": "Inorder",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0164",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Hashing",
+    "difficulty": "easy",
+    "question": "What is the average-case time complexity of a hash table lookup?",
+    "options": [
+      "O(n log n)",
+      "O(log n)",
+      "O(n)",
+      "O(1)"
+    ],
+    "correct_answer": "O(1)",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0165",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Queue",
+    "difficulty": "easy",
+    "question": "Which tree traversal technique uses a queue?",
+    "options": [
+      "Priority-based order",
+      "Random access order",
+      "LIFO (Last-In, First-Out)",
+      "Level Order"
+    ],
+    "correct_answer": "Level Order",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0166",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Hashing",
+    "difficulty": "easy",
+    "question": "Which data structure stores data in key-value pairs?",
+    "options": [
+      "Binary Search Tree",
+      "Linked List",
+      "Hash Map",
+      "Array"
+    ],
+    "correct_answer": "Hash Map",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0167",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Trees",
+    "difficulty": "easy",
+    "question": "Which algorithm is used to perform a level-order traversal of a graph?",
+    "options": [
+      "Dijkstra's Algorithm",
+      "A* Search",
+      "Depth-First Search",
+      "Breadth-First Search"
+    ],
+    "correct_answer": "Breadth-First Search",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0168",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Hashing",
+    "difficulty": "easy",
+    "question": "Which data structure provides an average lookup time of O(1) for a key?",
+    "options": [
+      "Linked List",
+      "Hash Map",
+      "Binary Search Tree",
+      "Array"
+    ],
+    "correct_answer": "Hash Map",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0169",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Binary Search Tree",
+    "difficulty": "easy",
+    "question": "Which property is true for a Binary Search Tree (BST)?",
+    "options": [
+      "Left = Root = Right",
+      "Left > Root > Right",
+      "Left < Root < Right",
+      "Right < Left < Root"
+    ],
+    "correct_answer": "Left < Root < Right",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0170",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Stack",
+    "difficulty": "easy",
+    "question": "Which data structure is used to implement the \"Undo\" feature in applications?",
+    "options": [
+      "FIFO (First-In, First-Out)",
+      "Stack",
+      "Priority-based order",
+      "Random access order"
+    ],
+    "correct_answer": "Stack",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0171",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Arrays",
+    "difficulty": "easy",
+    "question": "Which of these is a linear data structure?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(log n)",
+      "Array"
+    ],
+    "correct_answer": "Array",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0172",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Trees",
+    "difficulty": "easy",
+    "question": "What is the height of a tree with only one node?",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "Undefined"
+    ],
+    "correct_answer": "0",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0173",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Trees",
+    "difficulty": "easy",
+    "question": "Which traversal visits Root, Left, Right?",
+    "options": [
+      "Postorder",
+      "Preorder",
+      "Level Order",
+      "Inorder"
+    ],
+    "correct_answer": "Preorder",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0174",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Trees",
+    "difficulty": "easy",
+    "question": "Which traversal visits Left, Right, Root?",
+    "options": [
+      "Level Order",
+      "Preorder",
+      "Inorder",
+      "Postorder"
+    ],
+    "correct_answer": "Postorder",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0175",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Deque",
+    "difficulty": "medium",
+    "question": "Which data structure allows efficient insertion and deletion at both ends?",
+    "options": [
+      "Array",
+      "Deque",
+      "Queue",
+      "Stack"
+    ],
+    "correct_answer": "Deque",
+    "estimated_time": 60,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0176",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Binary Search Tree",
+    "difficulty": "medium",
+    "question": "In a Binary Search Tree (BST), what is the relationship of the values in the left subtree to the root?",
+    "options": [
+      "Unrelated to root",
+      "Equal to root",
+      "Smaller than root",
+      "Greater than root"
+    ],
+    "correct_answer": "Smaller than root",
+    "estimated_time": 60,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0177",
+    "category": "Technical",
+    "topic": "Data Structures",
+    "subtopic": "Heap",
+    "difficulty": "easy",
+    "question": "In a Min Heap, what does the root node store?",
+    "options": [
+      "Root's parent",
+      "Maximum element",
+      "Any random element",
+      "Minimum element"
+    ],
+    "correct_answer": "Minimum element",
+    "estimated_time": 45,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "meta",
+      "adobe",
+      "flipkart",
+      "tcs"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

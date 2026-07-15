@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q0188",
+    "category": "Verbal Ability",
+    "topic": "Grammar",
+    "subtopic": "Formal/Informal Usage",
+    "difficulty": "easy",
+    "question": "Identify the sentence that does NOT use informal language:",
+    "options": [
+      "\"We'll let you know in a couple weeks.\"",
+      "\"We'll get back to ya.\"",
+      "\"Gonna tell you soon.\"",
+      "\"We shall endeavour to inform you of the position in two weeks time.\""
+    ],
+    "correct_answer": "\"We shall endeavour to inform you of the position in two weeks time.\"",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "wipro",
+      "cognizant",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0189",
+    "category": "Verbal Ability",
+    "topic": "Grammar",
+    "subtopic": "Subject-Verb Agreement",
+    "difficulty": "easy",
+    "question": "Choose the grammatically correct sentence structure:",
+    "options": [
+      "She go to school.",
+      "She gone to school.",
+      "She going to school.",
+      "She goes to school."
+    ],
+    "correct_answer": "She goes to school.",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "wipro",
+      "cognizant",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0190",
+    "category": "Verbal Ability",
+    "topic": "Grammar",
+    "subtopic": "Pronoun Usage",
+    "difficulty": "easy",
+    "question": "Choose the grammatically correct expression for third-person singular possession:",
+    "options": [
+      "He has a car.",
+      "He having car.",
+      "He have a car.",
+      "He having a car."
+    ],
+    "correct_answer": "He has a car.",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "wipro",
+      "cognizant",
+      "accenture"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

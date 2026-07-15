@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q0191",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Fill in the blank with the correct verb: \"He ____ playing.\"",
+    "options": [
+      "am",
+      "be",
+      "is",
+      "are"
+    ],
+    "correct_answer": "is",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0192",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Fill in the blank with the correct verb: \"They ____ going.\"",
+    "options": [
+      "be",
+      "am",
+      "is",
+      "are"
+    ],
+    "correct_answer": "are",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0193",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "Sentence Completion (Verbal)",
+    "difficulty": "easy",
+    "question": "Choose the correct pair of words to fill the blanks: \"What did the painter do ______ himself from falling? When he felt the ladder ______ , he grabbed the gutter.\"",
+    "options": [
+      "to saving / begins slipping",
+      "to save / began slipped",
+      "for saving / begin slip",
+      "to save / begin to slip"
+    ],
+    "correct_answer": "to save / begin to slip",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

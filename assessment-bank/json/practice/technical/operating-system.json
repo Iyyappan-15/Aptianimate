@@ -1,0 +1,80 @@
+[
+  {
+    "id": "Q0182",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "OS Fundamentals",
+    "difficulty": "medium",
+    "question": "A process can contain multiple:",
+    "options": [
+      "Registers",
+      "Compilers",
+      "Kernels",
+      "Threads"
+    ],
+    "correct_answer": "Threads",
+    "estimated_time": 60,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "oracle",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0183",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "OS Fundamentals",
+    "difficulty": "medium",
+    "question": "Deadlock occurs when:",
+    "options": [
+      "Memory is freed automatically",
+      "Processes wait indefinitely",
+      "Processes execute faster",
+      "CPU usage drops to zero"
+    ],
+    "correct_answer": "Processes wait indefinitely",
+    "estimated_time": 60,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "oracle",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0184",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "OS Fundamentals",
+    "difficulty": "medium",
+    "question": "Virtual memory primarily:",
+    "options": [
+      "Reduces CPU usage",
+      "Compresses files",
+      "Extends logical memory",
+      "Increases disk speed"
+    ],
+    "correct_answer": "Extends logical memory",
+    "estimated_time": 60,
+    "company_tags": [
+      "google",
+      "amazon",
+      "microsoft",
+      "oracle",
+      "tcs",
+      "infosys"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]

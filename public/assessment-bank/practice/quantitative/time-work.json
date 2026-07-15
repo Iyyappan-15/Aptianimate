@@ -1,0 +1,252 @@
+[
+  {
+    "id": "Q0108",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is thrice as good a workman as Q and therefore is able to finish a job in 60 days less than Q. Working together, they can do it in how many days?",
+    "options": [
+      "22 1/2 days",
+      "21 1/2 days",
+      "23 1/2 days",
+      "24 1/2 days"
+    ],
+    "correct_answer": "22 1/2 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0109",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can finish a piece of work in 10 days and B can finish it in 20 days. Working together, how many days will they take to finish the work?",
+    "options": [
+      "6.67 days",
+      "9.67 days",
+      "4.67 days",
+      "7.67 days"
+    ],
+    "correct_answer": "6.67 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0110",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If 5 workers take 10 days to complete a certain task, how many days will it take for 10 workers to complete the same task?",
+    "options": [
+      "3 days",
+      "5 days",
+      "8 days",
+      "6 days"
+    ],
+    "correct_answer": "5 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0111",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can do a piece of work in 4 hours, B and C together can do it in 3 hours, while A and C together can do it in 2 hours. How long will B alone take to do it?",
+    "options": [
+      "10 hrs",
+      "13 hrs",
+      "12 hrs",
+      "15 hrs"
+    ],
+    "correct_answer": "12 hrs",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0112",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can do a certain work in the same time in which B and C together can do it. If A and B together could do it in 10 days and C alone in 50 days, then B alone could do it in:",
+    "options": [
+      "29 days",
+      "25 days",
+      "12 days",
+      "32 days"
+    ],
+    "correct_answer": "25 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0113",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can do a piece of work in 15 days and B in 20 days. They began together but 5 days before completion A leaves. The work was completed in:",
+    "options": [
+      "13 3/7 days",
+      "11 3/7 days",
+      "10 3/7 days",
+      "12 3/7 days"
+    ],
+    "correct_answer": "11 3/7 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0114",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "Time & Work (Efficiency)",
+    "difficulty": "medium",
+    "question": "Narendra is 25% more efficient than Amruta. If Amruta can complete a piece of work in 20 days, how many days will Narendra take?",
+    "options": [
+      "16 days",
+      "19 days",
+      "14 days",
+      "17 days"
+    ],
+    "correct_answer": "16 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0115",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "Alternate Day Work",
+    "difficulty": "medium",
+    "question": "Pawan can complete a job in 9 days and Raghav in 12 days. If they work on alternate days starting with Pawan, in how many days will the work be completed?",
+    "options": [
+      "12 1/4 days",
+      "11 1/4 days",
+      "9 1/4 days",
+      "10 1/4 days"
+    ],
+    "correct_answer": "10 1/4 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0116",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "Time & Work (Men & Women)",
+    "difficulty": "hard",
+    "question": "If 3 men or 6 women can do a piece of work in 20 days, in how many days will 12 men and 8 women do the same work?",
+    "options": [
+      "15/5 days",
+      "15/4 days",
+      "14/4 days",
+      "16/4 days"
+    ],
+    "correct_answer": "15/4 days",
+    "estimated_time": 90,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q0117",
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Work",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A and B together can complete a piece of work in a certain number of days. A alone takes 12 more days to finish it, while B alone takes 27 more days. If they finished the complete work along with C in 15 days for a total payment of Rs. 3000, find C's share.",
+    "options": [
+      "250",
+      "575",
+      "500",
+      "650"
+    ],
+    "correct_answer": "500",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  }
+]
