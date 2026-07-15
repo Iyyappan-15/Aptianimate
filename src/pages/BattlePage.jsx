@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import { signInWithGoogle } from '../services/authService';
@@ -28,16 +28,26 @@ const BattlePage = ({ navigate }) => {
   const [mode, setMode] = useState(null); // 'select' | 'ai' | 'friend'
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState([]);
+  const [testSession, setTestSession] = useState(null); // { test_id, expires_at }
   
   // Game State
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [playerScore, setPlayerScore] = useState(0);
+  const [playerAnswers, setPlayerAnswers] = useState({});
+  const [playerFinished, setPlayerFinished] = useState(false);
+  const [playerRealScore, setPlayerRealScore] = useState(0);
+  
   const [aiScore, setAiScore] = useState(0);
   const [aiCurrentQ, setAiCurrentQ] = useState(0);
+  const [aiFinished, setAiFinished] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
   const [aiProfile, setAiProfile] = useState(null);
 
+  const [timeLeft, setTimeLeft] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [battleResults, setBattleResults] = useState(null); // stores analytics after submit
+
   const aiTimerRef = useRef(null);
+  const clockRef = useRef(null);
 
   const startAIBattle = async () => {
     setLoading(true);
@@ -46,7 +56,13 @@ const BattlePage = ({ navigate }) => {
       if (error) throw error;
 
       setQuestions(data.questions);
+      setTestSession({ test_id: data.test_id, expires_at: data.expires_at });
       setAiProfile(generateAIProfile(data.questions.length));
+      
+      const expiresAt = new Date(data.expires_at).getTime();
+      const diff = expiresAt - new Date().getTime();
+      setTimeLeft(diff > 0 ? Math.floor(diff / 1000) : 0);
+      
       setMode('ai');
     } catch (err) {
       console.error(err);
@@ -60,52 +76,100 @@ const BattlePage = ({ navigate }) => {
     alert("Friend Battle is coming soon! Try beating the AI for now.");
   };
 
+  // Clock Hook
+  useEffect(() => {
+    if (mode === 'ai' && !isFinished && testSession) {
+      clockRef.current = setInterval(() => {
+        const expiresAt = new Date(testSession.expires_at).getTime();
+        const diff = expiresAt - new Date().getTime();
+        if (diff <= 0) {
+          setTimeLeft(0);
+          setPlayerFinished(true);
+          setAiFinished(true);
+        } else {
+          setTimeLeft(Math.floor(diff / 1000));
+        }
+      }, 1000);
+    }
+    return () => clearInterval(clockRef.current);
+  }, [mode, isFinished, testSession]);
+
   // AI Progression Hook
   useEffect(() => {
-    if (mode !== 'ai' || isFinished || !aiProfile) return;
+    if (mode !== 'ai' || isFinished || !aiProfile || aiFinished) return;
 
     const processAITurn = () => {
-      if (aiCurrentQ >= questions.length) return;
-
+      if (aiCurrentQ >= questions.length) {
+        setAiFinished(true);
+        return;
+      }
       const timeToWait = aiProfile.timing[aiCurrentQ] * 1000;
-      
       aiTimerRef.current = setTimeout(() => {
         const isCorrect = aiProfile.results[aiCurrentQ];
         if (isCorrect) setAiScore(prev => prev + 1);
         setAiCurrentQ(prev => prev + 1);
+        if (aiCurrentQ + 1 >= questions.length) {
+          setAiFinished(true);
+        }
       }, timeToWait);
     };
 
     processAITurn();
     return () => clearTimeout(aiTimerRef.current);
-  }, [mode, aiCurrentQ, isFinished, aiProfile, questions.length]);
+  }, [mode, aiCurrentQ, isFinished, aiProfile, questions.length, aiFinished]);
+
+  // Submission Hook (when both finished or timer ends)
+  useEffect(() => {
+    let mounted = true;
+    const submitBattle = async () => {
+      if (!isSubmitting && !isFinished && playerFinished && aiFinished && testSession) {
+        setIsSubmitting(true);
+        try {
+          const formattedAnswers = Object.entries(playerAnswers).map(([qId, sel]) => ({
+            question_id: qId,
+            selected_option: sel
+          }));
+          const { data, error } = await supabase.rpc('submit_mock_test', {
+            p_test_id: testSession.test_id,
+            p_answers: formattedAnswers
+          });
+          if (error) throw error;
+          
+          if (mounted) {
+            setPlayerRealScore(data.score);
+            setBattleResults(data);
+            setIsFinished(true);
+          }
+        } catch (err) {
+          console.error("Failed to submit battle:", err);
+          alert("Failed to submit your battle results!");
+        } finally {
+          if (mounted) setIsSubmitting(false);
+        }
+      }
+    };
+    submitBattle();
+    return () => { mounted = false; };
+  }, [playerFinished, aiFinished, isFinished, isSubmitting, playerAnswers, testSession]);
 
   const handlePlayerAnswer = (selectedOption) => {
+    if (playerFinished) return;
+    
     const currentQ = questions[currentIndex];
+    setPlayerAnswers(prev => ({ ...prev, [currentQ.id]: selectedOption }));
     
-    // In Battle Mode, since we didn't fetch correct_answer, we need to evaluate it?
-    // WAIT. If we don't have correct_answer, the player can't know if they are right immediately!
-    // But in a gamified battle, instant feedback is fun. 
-    // For V1 optimized, we'll evaluate at the end, OR we can fetch answers for battle mode specifically?
-    // If we want instant feedback, the RPC MUST return correct answers for Battle Mode.
-    // For now, let's just assume we record their answer and move to the next.
-    // We will do a local check if correct_answer exists, else we just increment and evaluate at the end.
-    
-    // If the backend didn't send correct_answer to prevent cheating, we can't show green/red instantly.
-    // Let's just store it and advance.
-    
-    // As a placeholder, we'll give a random chance if the backend didn't send it, JUST for UI feedback, 
-    // but the real score would be calculated server-side.
-    // Actually, in a real gamified app, you'd make a lightweight verification endpoint for instant feedback, 
-    // or just send the answers encrypted. Let's just advance the UI for now.
-    
-    setCurrentIndex(prev => prev + 1);
-    
-    // If it's the last question, finish
-    if (currentIndex === questions.length - 1) {
-      setIsFinished(true);
-      clearTimeout(aiTimerRef.current);
+    if (currentIndex < questions.length - 1) {
+      setCurrentIndex(prev => prev + 1);
+    } else {
+      setPlayerFinished(true);
     }
+  };
+
+  const formatTime = (secs) => {
+    if (secs === null || secs < 0) return "00:00";
+    const m = Math.floor(secs / 60).toString().padStart(2, '0');
+    const s = Math.floor(secs % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
   };
 
   if (authLoading) {
@@ -166,28 +230,64 @@ const BattlePage = ({ navigate }) => {
     );
   }
 
-  if (isFinished) {
-    // We would normally submit to backend here for real score. 
-    // Since we don't have correct_answer in frontend, we will simulate a score for demo purposes until the submit RPC is hooked up for battles.
-    const playerSimulatedScore = Math.floor(Math.random() * questions.length);
-    const didWin = playerSimulatedScore >= aiScore;
-
+  if (playerFinished && !aiFinished && !isFinished) {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)', textAlign: 'center' }}>
-        <h1 style={{ fontSize: '4rem', margin: '0 0 20px 0' }}>{didWin ? '🏆 YOU WIN!' : '💀 DEFEAT'}</h1>
-        
-        <div style={{ display: 'flex', gap: '40px', marginBottom: '40px' }}>
-          <div>
-            <h3>You</h3>
-            <div style={{ fontSize: '3rem', fontWeight: 'bold', color: didWin ? '#10b981' : 'var(--text)' }}>{playerSimulatedScore}</div>
-          </div>
-          <div>
-            <h3>AI Bot</h3>
-            <div style={{ fontSize: '3rem', fontWeight: 'bold', color: !didWin ? '#10b981' : 'var(--text)' }}>{aiScore}</div>
-          </div>
-        </div>
+        <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
+        <div style={{ width: '60px', height: '60px', border: '5px solid var(--border)', borderTop: '5px solid var(--violet)', borderRadius: '50%', animation: 'spin 1s linear infinite', marginBottom: '20px' }}></div>
+        <h2 style={{ fontSize: '2rem' }}>Waiting for AI to finish...</h2>
+        <p style={{ color: 'var(--muted)', fontSize: '1.2rem', marginTop: '10px' }}>The AI is still processing the remaining {Math.max(0, questions.length - aiCurrentQ)} questions!</p>
+        <div style={{ marginTop: '30px', fontSize: '1.5rem', fontWeight: 'bold' }}>⏱ {formatTime(timeLeft)}</div>
+      </div>
+    );
+  }
+  
+  if (isSubmitting) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)', textAlign: 'center' }}>
+        <h2 style={{ fontSize: '2rem', color: 'var(--violet)' }}>Calculating Results...</h2>
+      </div>
+    );
+  }
 
-        <button className="btn-primary" onClick={() => navigate('')}>Return to Lobby</button>
+  if (isFinished) {
+    const didWin = playerRealScore >= aiScore;
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)', textAlign: 'center', padding: '40px' }}>
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: 'spring' }} style={{ background: 'var(--card-bg)', padding: '60px', borderRadius: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.2)', width: '100%', maxWidth: '600px' }}>
+          <h1 style={{ fontSize: '3.5rem', margin: '0 0 10px 0', color: didWin ? '#10b981' : '#ef4444' }}>
+            {didWin ? '🏆 YOU WIN!' : '💀 DEFEAT'}
+          </h1>
+          <p style={{ color: 'var(--muted)', fontSize: '1.1rem', marginBottom: '40px' }}>
+            {didWin ? "Amazing job! You outsmarted the AI." : "The AI was faster this time. Keep practicing!"}
+          </p>
+          
+          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', marginBottom: '40px' }}>
+            <div style={{ flex: 1 }}>
+              <h3 style={{ color: 'var(--text-sec)', margin: '0 0 10px 0', textTransform: 'uppercase', letterSpacing: '1px' }}>You</h3>
+              <div style={{ fontSize: '4rem', fontWeight: 900, color: didWin ? '#10b981' : 'var(--text)' }}>{playerRealScore}</div>
+              <div style={{ fontSize: '0.9rem', color: 'var(--muted)' }}>Accuracy: {battleResults?.analytics?.accuracy?.toFixed(1) || 0}%</div>
+            </div>
+            
+            <div style={{ fontSize: '2rem', color: 'var(--muted)', fontWeight: 800 }}>VS</div>
+            
+            <div style={{ flex: 1 }}>
+              <h3 style={{ color: 'var(--text-sec)', margin: '0 0 10px 0', textTransform: 'uppercase', letterSpacing: '1px' }}>AI Bot</h3>
+              <div style={{ fontSize: '4rem', fontWeight: 900, color: !didWin ? '#ef4444' : 'var(--text)' }}>{aiScore}</div>
+              <div style={{ fontSize: '0.9rem', color: 'var(--muted)' }}>Accuracy: {aiProfile?.accuracy || 0}%</div>
+            </div>
+          </div>
+          
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
+            <button className="btn-secondary" onClick={() => navigate(`mock-test/results/${testSession.test_id}`)} style={{ padding: '14px 28px', fontSize: '1.1rem', background: 'var(--surface2)', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: '12px', cursor: 'pointer' }}>
+              View Detailed Analysis
+            </button>
+            <button className="btn-primary" onClick={() => navigate('')} style={{ padding: '14px 28px', fontSize: '1.1rem', background: 'linear-gradient(135deg, var(--violet), #6d28d9)', color: '#fff', border: 'none', borderRadius: '12px', cursor: 'pointer' }}>
+              Return to Lobby
+            </button>
+          </div>
+        </motion.div>
       </div>
     );
   }
@@ -200,13 +300,17 @@ const BattlePage = ({ navigate }) => {
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
       {/* BATTLE HEADER */}
       <header style={{ padding: '20px', borderBottom: '1px solid var(--border)', background: 'var(--card-bg)', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-        <h2 style={{ margin: 0, textAlign: 'center', color: 'var(--violet)' }}>AI BATTLE ARENA</h2>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h2 style={{ margin: 0, color: 'var(--violet)' }}>AI BATTLE ARENA</h2>
+          <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: timeLeft !== null && timeLeft < 60 ? '#ef4444' : 'var(--text)' }}>
+            ⏱ {formatTime(timeLeft)}
+          </div>
+        </div>
         
         {/* Progress Bars */}
         <div>
           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', marginBottom: '4px' }}>
-            <span>You ({currentIndex}/{questions.length})</span>
-            <span>Score: ?</span>
+            <span>You ({currentIndex + (playerFinished ? 1 : 0)}/{questions.length})</span>
           </div>
           <div style={{ width: '100%', height: '12px', background: 'var(--border)', borderRadius: '6px', overflow: 'hidden' }}>
             <motion.div animate={{ width: `${playerProgress}%` }} style={{ height: '100%', background: '#10b981' }} />
@@ -228,25 +332,26 @@ const BattlePage = ({ navigate }) => {
       <main style={{ flex: 1, display: 'flex', flexDirection: 'column', padding: '32px', overflowY: 'auto' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', width: '100%' }}>
           <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
-             <span style={{ padding: '4px 8px', borderRadius: '4px', background: 'var(--border)', fontSize: '0.75rem', textTransform: 'uppercase' }}>{currentQ.category}</span>
+             <span style={{ padding: '4px 8px', borderRadius: '4px', background: 'var(--border)', fontSize: '0.75rem', textTransform: 'uppercase' }}>{currentQ?.category}</span>
           </div>
           
           <h3 style={{ fontSize: '1.4rem', lineHeight: '1.6', marginBottom: '40px' }}>
-            {currentQ.question}
+            {currentQ?.question}
           </h3>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {currentQ.options.map((opt, idx) => (
+            {currentQ?.options.map((opt, idx) => (
               <button
                 key={idx}
                 onClick={() => handlePlayerAnswer(opt)}
+                disabled={playerFinished}
                 style={{
                   padding: '20px',
                   borderRadius: '12px',
                   border: '2px solid var(--border)',
                   background: 'var(--card-bg)',
                   color: 'var(--text)',
-                  cursor: 'pointer',
+                  cursor: playerFinished ? 'not-allowed' : 'pointer',
                   textAlign: 'left',
                   fontSize: '1.1rem',
                   transition: 'all 0.2s',
@@ -254,8 +359,8 @@ const BattlePage = ({ navigate }) => {
                   alignItems: 'center',
                   gap: '16px'
                 }}
-                onMouseOver={(e) => e.currentTarget.style.borderColor = 'var(--violet)'}
-                onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--border)'}
+                onMouseOver={(e) => !playerFinished && (e.currentTarget.style.borderColor = 'var(--violet)')}
+                onMouseOut={(e) => !playerFinished && (e.currentTarget.style.borderColor = 'var(--border)')}
               >
                 <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
                   {['A','B','C','D'][idx]}

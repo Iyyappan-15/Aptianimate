@@ -39,10 +39,10 @@
     "correctMarks": 1,
     "wrongMarks": 0,
     "categories": {
-      "Quantitative Aptitude": 3,
-      "Logical Reasoning": 3,
-      "Verbal Ability": 2,
-      "Technical": 2
+      "Quantitative Aptitude": 8,
+      "Logical Reasoning": 8,
+      "Verbal Ability": 7,
+      "Technical": 7
     },
     "difficulty": {
       "easy": 30,
