@@ -217,8 +217,12 @@ const FriendBattlePage = ({ navigate }) => {
   // ── Progress Sync ─────────────────────────────────────────────────────────
   useEffect(() => {
     if (matchStatus === 'playing' && channel && questions.length > 0) {
+      const percentage = ((currentIndex + (isFinished ? 1 : 0)) / questions.length) * 100;
+      // Broadcast immediately on progress change
+      channel.send({ type: 'broadcast', event: 'progress_sync', payload: { matchId, userId: user.id, progressPercentage: percentage } });
+      
+      // Also maintain a heartbeat in case packets drop
       const t = setInterval(() => {
-        const percentage = ((currentIndex + (isFinished ? 1 : 0)) / questions.length) * 100;
         channel.send({ type: 'broadcast', event: 'progress_sync', payload: { matchId, userId: user.id, progressPercentage: percentage } });
       }, 5000);
       return () => clearInterval(t);
