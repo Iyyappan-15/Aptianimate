@@ -4,14 +4,13 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Easy",
-    "setContext": "Revenue of Company X (2019–2023)",
+    "setContext": "Revenue of Company X (2019-2023)",
     "chartType": "bar",
     "chartData": {
-      "title": "Company X — Annual Revenue (₹ Crores)",
+      "title": "Company X — Annual Revenue (Crores)",
       "type": "bar",
       "xKey": "year",
       "yKeys": ["Revenue"],
-      "unit": "",
       "data": [
         { "year": "2019", "Revenue": 320 },
         { "year": "2020", "Revenue": 280 },
@@ -21,10 +20,10 @@
       ]
     },
     "question": "What was the total revenue of Company X from 2019 to 2023?",
-    "options": ["₹1,820 Cr", "₹1,890 Cr", "₹1,750 Cr", "₹1,960 Cr"],
+    "options": ["Rs.1,820 Cr", "Rs.1,890 Cr", "Rs.1,750 Cr", "Rs.1,960 Cr"],
     "correctAnswer": 1,
-    "answer": "₹1,890 Cr",
-    "explanation": "Total = 320 + 280 + 410 + 370 + 510 = ₹1,890 Crores",
+    "answer": "Rs.1,890 Cr",
+    "explanation": "Total = 320 + 280 + 410 + 370 + 510 = 1890 Crores.",
     "tags": ["DI", "bar-charts", "sum"],
     "estimatedTime": 50
   },
@@ -33,10 +32,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Easy",
-    "setContext": "Revenue of Company X (2019–2023)",
+    "setContext": "Revenue of Company X (2019-2023)",
     "chartType": "bar",
     "chartData": {
-      "title": "Company X — Annual Revenue (₹ Crores)",
+      "title": "Company X — Annual Revenue (Crores)",
       "type": "bar",
       "xKey": "year",
       "yKeys": ["Revenue"],
@@ -52,7 +51,7 @@
     "options": ["2021", "2022", "2023", "2019"],
     "correctAnswer": 2,
     "answer": "2023",
-    "explanation": "2023 had the highest revenue of ₹510 Crores, which is the tallest bar in the chart.",
+    "explanation": "2023 had the highest revenue of 510 Crores, which is the tallest bar in the chart.",
     "tags": ["DI", "bar-charts", "maximum"],
     "estimatedTime": 30
   },
@@ -61,10 +60,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "setContext": "Revenue of Company X (2019–2023)",
+    "setContext": "Revenue of Company X (2019-2023)",
     "chartType": "bar",
     "chartData": {
-      "title": "Company X — Annual Revenue (₹ Crores)",
+      "title": "Company X — Annual Revenue (Crores)",
       "type": "bar",
       "xKey": "year",
       "yKeys": ["Revenue"],
@@ -80,7 +79,7 @@
     "options": ["~36%", "~46%", "~41%", "~52%"],
     "correctAnswer": 1,
     "answer": "~46%",
-    "explanation": "% increase = ((410 − 280) / 280) × 100 = (130 / 280) × 100 ≈ 46.4%",
+    "explanation": "% increase = ((410 - 280) / 280) x 100 = (130 / 280) x 100 = 46.4%",
     "tags": ["DI", "bar-charts", "percentage-change"],
     "estimatedTime": 60
   },
@@ -89,10 +88,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "setContext": "Revenue of Company X (2019–2023)",
+    "setContext": "Revenue of Company X (2019-2023)",
     "chartType": "bar",
     "chartData": {
-      "title": "Company X — Annual Revenue (₹ Crores)",
+      "title": "Company X — Annual Revenue (Crores)",
       "type": "bar",
       "xKey": "year",
       "yKeys": ["Revenue"],
@@ -105,10 +104,10 @@
       ]
     },
     "question": "What is the average annual revenue of Company X over the five-year period?",
-    "options": ["₹360 Cr", "₹370 Cr", "₹378 Cr", "₹385 Cr"],
+    "options": ["Rs.360 Cr", "Rs.370 Cr", "Rs.378 Cr", "Rs.385 Cr"],
     "correctAnswer": 2,
-    "answer": "₹378 Cr",
-    "explanation": "Average = (320 + 280 + 410 + 370 + 510) / 5 = 1890 / 5 = ₹378 Crores",
+    "answer": "Rs.378 Cr",
+    "explanation": "Average = (320 + 280 + 410 + 370 + 510) / 5 = 1890 / 5 = 378 Crores",
     "tags": ["DI", "bar-charts", "average"],
     "estimatedTime": 50
   },
@@ -117,10 +116,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Hard",
-    "setContext": "Revenue of Company X (2019–2023)",
+    "setContext": "Revenue of Company X (2019-2023)",
     "chartType": "bar",
     "chartData": {
-      "title": "Company X — Annual Revenue (₹ Crores)",
+      "title": "Company X — Annual Revenue (Crores)",
       "type": "bar",
       "xKey": "year",
       "yKeys": ["Revenue"],
@@ -133,10 +132,10 @@
       ]
     },
     "question": "Revenue in 2022 was what percentage of the total revenue from 2021 to 2023?",
-    "options": ["28.5%", "32.2%", "29.1%", "31.4%"],
-    "correctAnswer": 2,
-    "answer": "29.1%",
-    "explanation": "2021–2023 total = 410 + 370 + 510 = 1290. Percentage = (370 / 1290) × 100 ≈ 28.68% ≈ 29.1%",
+    "options": ["~28.7%", "~32.2%", "~29.5%", "~31.4%"],
+    "correctAnswer": 0,
+    "answer": "~28.7%",
+    "explanation": "2021 to 2023 total = 410 + 370 + 510 = 1290. Percentage = (370 / 1290) x 100 = 28.68% approx 28.7%",
     "tags": ["DI", "bar-charts", "ratio", "hard"],
     "estimatedTime": 80
   },
@@ -165,7 +164,7 @@
     "options": ["2021", "2022", "2023", "Never"],
     "correctAnswer": 2,
     "answer": "2023",
-    "explanation": "In 2023, School B (340) exceeded School A (290) for the first time.",
+    "explanation": "2019: A=240, B=180. 2020: A=260, B=220. 2021: A=300, B=280. 2022: A=330, B=310. 2023: A=290, B=340. School B overtook School A for the first time in 2023.",
     "tags": ["DI", "bar-charts", "comparison"],
     "estimatedTime": 40
   },
@@ -190,10 +189,9 @@
       ]
     },
     "question": "What is the total number of students who passed from both schools combined over all 5 years?",
-    "options": ["3200", "3220", "3190", "3250"],
+    "options": ["2,700", "2,750", "2,800", "2,850"],
     "correctAnswer": 1,
-    "answer": "3220",
-    "explanation": "School A: 240+260+300+330+290 = 1420. School B: 180+220+280+310+340 = 1330. Total = 1420 + 1330 = 2750. Wait — Total = 2750. None match — recalculate: School A=1420, School B=1330. Total = 2750. Correct option: 3220 means an error in distractor. Correct answer = 2750.",
+    "answer": "2,750",
     "explanation": "School A total = 240+260+300+330+290 = 1420. School B total = 180+220+280+310+340 = 1330. Grand Total = 1420 + 1330 = 2750 students.",
     "tags": ["DI", "bar-charts", "sum"],
     "estimatedTime": 60
@@ -222,7 +220,7 @@
     "options": ["2019", "2020", "2022", "2023"],
     "correctAnswer": 0,
     "answer": "2019",
-    "explanation": "Differences: 2019→60, 2020→40, 2021→20, 2022→20, 2023→50. The highest difference was 60 in 2019.",
+    "explanation": "Differences: 2019 = 240-180 = 60, 2020 = 260-220 = 40, 2021 = 300-280 = 20, 2022 = 330-310 = 20, 2023 = 340-290 = 50. The highest difference was 60 in 2019.",
     "tags": ["DI", "bar-charts", "difference"],
     "estimatedTime": 60
   },
@@ -250,7 +248,7 @@
     "options": ["~78%", "~89%", "~85%", "~92%"],
     "correctAnswer": 1,
     "answer": "~89%",
-    "explanation": "% growth = ((340 − 180) / 180) × 100 = (160 / 180) × 100 ≈ 88.9% ≈ 89%",
+    "explanation": "% growth = ((340 - 180) / 180) x 100 = (160 / 180) x 100 = 88.9% approx 89%",
     "tags": ["DI", "bar-charts", "percentage-growth"],
     "estimatedTime": 65
   },
@@ -278,7 +276,7 @@
     "options": ["107%", "112%", "119%", "125%"],
     "correctAnswer": 0,
     "answer": "107%",
-    "explanation": "School A avg = 1420/5 = 284. School B avg = 1330/5 = 266. Ratio = (284/266) × 100 ≈ 106.8% ≈ 107%",
+    "explanation": "School A avg = 1420/5 = 284. School B avg = 1330/5 = 266. Ratio = (284/266) x 100 = 106.77% approx 107%",
     "tags": ["DI", "bar-charts", "ratio", "hard"],
     "estimatedTime": 80
   },
@@ -288,7 +286,7 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Easy",
-    "setContext": "Monthly Sales of 3 Products",
+    "setContext": "Monthly Sales of 3 Products (Q1 2024)",
     "chartType": "bar",
     "chartData": {
       "title": "Monthly Sales (Units) — Q1 2024",
@@ -314,7 +312,7 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Easy",
-    "setContext": "Monthly Sales of 3 Products",
+    "setContext": "Monthly Sales of 3 Products (Q1 2024)",
     "chartType": "bar",
     "chartData": {
       "title": "Monthly Sales (Units) — Q1 2024",
@@ -340,7 +338,7 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "setContext": "Monthly Sales of 3 Products",
+    "setContext": "Monthly Sales of 3 Products (Q1 2024)",
     "chartType": "bar",
     "chartData": {
       "title": "Monthly Sales (Units) — Q1 2024",
@@ -357,7 +355,7 @@
     "options": ["~35%", "~41%", "~45%", "~38%"],
     "correctAnswer": 2,
     "answer": "~45%",
-    "explanation": "% increase = ((450 − 310) / 310) × 100 = (140 / 310) × 100 ≈ 45.2%",
+    "explanation": "% increase = ((450 - 310) / 310) x 100 = (140 / 310) x 100 = 45.16% approx 45%",
     "tags": ["DI", "bar-charts", "percentage-change"],
     "estimatedTime": 65
   },
@@ -366,7 +364,7 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "setContext": "Monthly Sales of 3 Products",
+    "setContext": "Monthly Sales of 3 Products (Q1 2024)",
     "chartType": "bar",
     "chartData": {
       "title": "Monthly Sales (Units) — Q1 2024",
@@ -379,11 +377,11 @@
         { "month": "Mar", "Product A": 620, "Product B": 540, "Product C": 450 }
       ]
     },
-    "question": "Which product showed a consistent increase across all three months?",
-    "options": ["Product A", "Product B", "Product C", "Both B and C"],
-    "correctAnswer": 2,
-    "answer": "Product C",
-    "explanation": "Product A: 500→460→620 (dipped in Feb). Product B: 420→480→540 (consistent ↑). Product C: 310→390→450 (consistent ↑). Both B and C are consistent. But the closest single answer is Product C since it had the most consistent proportional rise.",
+    "question": "Which product(s) showed a consistent increase in sales across all three months?",
+    "options": ["Product A only", "Product B only", "Product C only", "Both Product B and Product C"],
+    "correctAnswer": 3,
+    "answer": "Both Product B and Product C",
+    "explanation": "Product A: 500 -> 460 -> 620 (dipped in Feb, NOT consistent). Product B: 420 -> 480 -> 540 (consistent increase). Product C: 310 -> 390 -> 450 (consistent increase). So both B and C showed a consistent increase.",
     "tags": ["DI", "bar-charts", "trend"],
     "estimatedTime": 60
   },
@@ -392,7 +390,7 @@
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Hard",
-    "setContext": "Monthly Sales of 3 Products",
+    "setContext": "Monthly Sales of 3 Products (Q1 2024)",
     "chartType": "bar",
     "chartData": {
       "title": "Monthly Sales (Units) — Q1 2024",
@@ -405,12 +403,11 @@
         { "month": "Mar", "Product A": 620, "Product B": 540, "Product C": 450 }
       ]
     },
-    "question": "If each unit of Product A sells for ₹150, what is the total Q1 revenue from Product A alone?",
-    "options": ["₹2,31,000", "₹2,25,000", "₹2,40,000", "₹2,15,000"],
+    "question": "If each unit of Product A sells for Rs.150, what is the total Q1 revenue from Product A alone?",
+    "options": ["Rs.2,37,000", "Rs.2,25,000", "Rs.2,40,000", "Rs.2,15,000"],
     "correctAnswer": 0,
-    "answer": "₹2,31,000",
-    "explanation": "Product A Q1 total = 500 + 460 + 620 = 1580 units. Revenue = 1580 × 150 = ₹2,37,000. Closest = ₹2,31,000 is off — correct is ₹2,37,000. Adjusting: ₹2,37,000.",
-    "explanation": "Product A total = 500 + 460 + 620 = 1580 units. Revenue = 1580 × ₹150 = ₹2,37,000",
+    "answer": "Rs.2,37,000",
+    "explanation": "Product A Q1 total = 500 + 460 + 620 = 1580 units. Revenue = 1580 x Rs.150 = Rs.2,37,000.",
     "tags": ["DI", "bar-charts", "calculation", "hard"],
     "estimatedTime": 90
   },
@@ -498,7 +495,7 @@
     "options": ["26.9%", "29.3%", "32.1%", "24.7%"],
     "correctAnswer": 1,
     "answer": "29.3%",
-    "explanation": "IT percentage = (85 / 290) × 100 ≈ 29.3%",
+    "explanation": "IT percentage = (85 / 290) x 100 = 29.31% approx 29.3%",
     "tags": ["DI", "bar-charts", "percentage"],
     "estimatedTime": 55
   },
@@ -523,11 +520,11 @@
         { "sector": "Education", "Employed": 40 }
       ]
     },
-    "question": "What is the ratio of employees in Banking to those in Retail?",
-    "options": ["31:24", "7:5", "62:48 (simplified: 31:24)", "3:2"],
+    "question": "What is the simplified ratio of employees in Banking to those in Retail?",
+    "options": ["31:24", "7:5", "4:3", "3:2"],
     "correctAnswer": 0,
     "answer": "31:24",
-    "explanation": "Banking:Retail = 62:48. HCF(62,48) = 2. Simplified = 31:24.",
+    "explanation": "Banking : Retail = 62 : 48. HCF(62, 48) = 2. Simplified = 31 : 24.",
     "tags": ["DI", "bar-charts", "ratio"],
     "estimatedTime": 50
   },
@@ -556,7 +553,7 @@
     "options": ["138K", "132K", "141K", "128K"],
     "correctAnswer": 0,
     "answer": "138K",
-    "explanation": "New IT = 85 × 1.20 = 102K. New Retail = 48 × 0.75 = 36K. Combined = 102 + 36 = 138K.",
+    "explanation": "New IT = 85 x 1.20 = 102K. New Retail = 48 x 0.75 = 36K. Combined = 102 + 36 = 138K.",
     "tags": ["DI", "bar-charts", "projection", "hard"],
     "estimatedTime": 80
   }

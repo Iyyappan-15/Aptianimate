@@ -23,7 +23,7 @@
     "options": ["720", "900", "648", "792"],
     "correctAnswer": 1,
     "answer": "900",
-    "explanation": "As shown in the chart, Dept A has 900 employees out of a total of 3600.",
+    "explanation": "Department A has 900 employees as shown directly in the pie chart.",
     "tags": ["DI", "pie-charts", "direct-read"],
     "estimatedTime": 30
   },
@@ -49,10 +49,9 @@
     },
     "question": "What is the ratio of employees in Dept C to Dept E?",
     "options": ["5:7", "3:4", "5:6", "15:22"],
-    "correctAnswer": 0,
-    "answer": "5:7",
-    "explanation": "Ratio = 540 : 792. HCF(540, 792) = 36. Simplified = 15:22. Closest simplified form: 540/792 ≈ 5:7.33. Correct exact ratio: 540:792 → divide by 72 → 7.5:11 → multiply by 2 → 15:22.",
-    "explanation": "C : E = 540 : 792. HCF = 72. Simplified = 7.5 : 11, or exact = 15 : 22. Nearest option: 5:7 (approximate). Exact = 15:22.",
+    "correctAnswer": 3,
+    "answer": "15:22",
+    "explanation": "Dept C = 540, Dept E = 792. Ratio = 540 : 792. HCF(540, 792) = 36. Simplified: 540/36 = 15, 792/36 = 22. So ratio = 15 : 22.",
     "tags": ["DI", "pie-charts", "ratio"],
     "estimatedTime": 55
   },
@@ -80,7 +79,7 @@
     "options": ["18%", "22%", "20%", "25%"],
     "correctAnswer": 2,
     "answer": "20%",
-    "explanation": "% of Dept B = (720 / 3600) × 100 = 20%",
+    "explanation": "Dept B % = (720 / 3600) x 100 = 20%",
     "tags": ["DI", "pie-charts", "percentage"],
     "estimatedTime": 35
   },
@@ -108,7 +107,7 @@
     "options": ["768", "792", "812", "742"],
     "correctAnswer": 1,
     "answer": "792",
-    "explanation": "20% of Dept B = 0.20 × 720 = 144. New Dept D = 648 + 144 = 792.",
+    "explanation": "20% of Dept B = 0.20 x 720 = 144. New Dept D = 648 + 144 = 792.",
     "tags": ["DI", "pie-charts", "calculation"],
     "estimatedTime": 60
   },
@@ -132,11 +131,11 @@
         { "name": "Dept E", "value": 792 }
       ]
     },
-    "question": "If the average salary in Dept A is ₹50,000 and in Dept B is ₹45,000, what is the total monthly salary expense for both departments combined?",
-    "options": ["₹7.74 Crore", "₹7.25 Crore", "₹7.49 Crore", "₹6.90 Crore"],
+    "question": "If the average salary in Dept A is Rs.50,000 and in Dept B is Rs.45,000, what is the total monthly salary expense for both departments combined?",
+    "options": ["Rs.7.74 Crore", "Rs.7.25 Crore", "Rs.7.49 Crore", "Rs.6.90 Crore"],
     "correctAnswer": 0,
-    "answer": "₹7.74 Crore",
-    "explanation": "Dept A expense = 900 × 50,000 = ₹4,50,00,000. Dept B expense = 720 × 45,000 = ₹3,24,00,000. Total = ₹7,74,00,000 = ₹7.74 Crore.",
+    "answer": "Rs.7.74 Crore",
+    "explanation": "Dept A expense = 900 x 50,000 = Rs.4,50,00,000. Dept B expense = 720 x 45,000 = Rs.3,24,00,000. Total = Rs.7,74,00,000 = Rs.7.74 Crore.",
     "tags": ["DI", "pie-charts", "salary-calculation", "hard"],
     "estimatedTime": 90
   },
@@ -146,10 +145,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "setContext": "Monthly Household Budget (₹60,000)",
+    "setContext": "Monthly Household Budget (Rs.60,000)",
     "chartType": "pie",
     "chartData": {
-      "title": "Monthly Household Budget — ₹60,000",
+      "title": "Monthly Household Budget — Rs.60,000",
       "type": "pie",
       "nameKey": "name",
       "valueKey": "value",
@@ -165,7 +164,7 @@
     "options": ["Food", "Savings", "Rent", "Education"],
     "correctAnswer": 2,
     "answer": "Rent",
-    "explanation": "Rent = ₹18,000 which is the highest single expenditure in the monthly budget.",
+    "explanation": "Rent = Rs.18,000 which is the highest single expenditure in the monthly budget.",
     "tags": ["DI", "pie-charts", "maximum"],
     "estimatedTime": 30
   },
@@ -174,10 +173,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "setContext": "Monthly Household Budget (₹60,000)",
+    "setContext": "Monthly Household Budget (Rs.60,000)",
     "chartType": "pie",
     "chartData": {
-      "title": "Monthly Household Budget — ₹60,000",
+      "title": "Monthly Household Budget — Rs.60,000",
       "type": "pie",
       "nameKey": "name",
       "valueKey": "value",
@@ -193,7 +192,7 @@
     "options": ["20%", "25%", "30%", "22%"],
     "correctAnswer": 1,
     "answer": "25%",
-    "explanation": "Savings % = (15000 / 60000) × 100 = 25%",
+    "explanation": "Savings % = (15000 / 60000) x 100 = 25%",
     "tags": ["DI", "pie-charts", "percentage"],
     "estimatedTime": 35
   },
@@ -202,10 +201,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "setContext": "Monthly Household Budget (₹60,000)",
+    "setContext": "Monthly Household Budget (Rs.60,000)",
     "chartType": "pie",
     "chartData": {
-      "title": "Monthly Household Budget — ₹60,000",
+      "title": "Monthly Household Budget — Rs.60,000",
       "type": "pie",
       "nameKey": "name",
       "valueKey": "value",
@@ -230,10 +229,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Medium",
-    "setContext": "Monthly Household Budget (₹60,000)",
+    "setContext": "Monthly Household Budget (Rs.60,000)",
     "chartType": "pie",
     "chartData": {
-      "title": "Monthly Household Budget — ₹60,000",
+      "title": "Monthly Household Budget — Rs.60,000",
       "type": "pie",
       "nameKey": "name",
       "valueKey": "value",
@@ -245,11 +244,11 @@
         { "name": "Savings", "value": 15000 }
       ]
     },
-    "question": "If the household's income increases by 10% next month and all spending proportions remain the same, how much will be saved?",
-    "options": ["₹16,000", "₹16,500", "₹17,200", "₹15,800"],
+    "question": "If the household income increases by 10% next month and all spending proportions remain the same, how much will be saved?",
+    "options": ["Rs.16,000", "Rs.16,500", "Rs.17,200", "Rs.15,800"],
     "correctAnswer": 1,
-    "answer": "₹16,500",
-    "explanation": "New income = 60000 × 1.10 = ₹66,000. Savings = 25% of 66,000 = ₹16,500.",
+    "answer": "Rs.16,500",
+    "explanation": "New income = 60000 x 1.10 = Rs.66,000. Savings = 25% of 66,000 = Rs.16,500.",
     "tags": ["DI", "pie-charts", "projection"],
     "estimatedTime": 65
   },
@@ -258,10 +257,10 @@
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Hard",
-    "setContext": "Monthly Household Budget (₹60,000)",
+    "setContext": "Monthly Household Budget (Rs.60,000)",
     "chartType": "pie",
     "chartData": {
-      "title": "Monthly Household Budget — ₹60,000",
+      "title": "Monthly Household Budget — Rs.60,000",
       "type": "pie",
       "nameKey": "name",
       "valueKey": "value",
@@ -277,7 +276,7 @@
     "options": ["46.7%", "52.0%", "44.4%", "48.3%"],
     "correctAnswer": 0,
     "answer": "46.7%",
-    "explanation": "Non-savings expenditure = 60000 − 15000 = ₹45,000. Food + Education = 12000 + 9000 = ₹21,000. Percentage = (21000 / 45000) × 100 = 46.67%",
+    "explanation": "Non-savings expenditure = 60000 - 15000 = Rs.45,000. Food + Education = 12000 + 9000 = Rs.21,000. Percentage = (21000 / 45000) x 100 = 46.67%",
     "tags": ["DI", "pie-charts", "ratio", "hard"],
     "estimatedTime": 80
   },
@@ -334,7 +333,7 @@
     "options": ["25%", "28%", "30%", "32%"],
     "correctAnswer": 2,
     "answer": "30%",
-    "explanation": "Samsung % = (60000 / 200000) × 100 = 30%",
+    "explanation": "Samsung % = (60000 / 200000) x 100 = 30%",
     "tags": ["DI", "pie-charts", "percentage"],
     "estimatedTime": 35
   },
@@ -386,11 +385,11 @@
         { "name": "Others", "value": 22000 }
       ]
     },
-    "question": "If each Samsung unit earns a profit of ₹8,000, what is Samsung's total profit?",
-    "options": ["₹44 Crore", "₹48 Crore", "₹52 Crore", "₹40 Crore"],
+    "question": "If each Samsung unit earns a profit of Rs.8,000, what is Samsung's total profit?",
+    "options": ["Rs.44 Crore", "Rs.48 Crore", "Rs.52 Crore", "Rs.40 Crore"],
     "correctAnswer": 1,
-    "answer": "₹48 Crore",
-    "explanation": "Total profit = 60,000 × ₹8,000 = ₹48,00,00,000 = ₹48 Crore.",
+    "answer": "Rs.48 Crore",
+    "explanation": "Total profit = 60,000 x Rs.8,000 = Rs.48,00,00,000 = Rs.48 Crore.",
     "tags": ["DI", "pie-charts", "calculation"],
     "estimatedTime": 60
   },
@@ -418,7 +417,7 @@
     "options": ["~83%", "~75%", "~90%", "~67%"],
     "correctAnswer": 0,
     "answer": "~83%",
-    "explanation": "Current gap = 60,000 − 48,000 = 12,000. New gap = 55,000 − 53,000 = 2,000. Reduction = (10,000 / 12,000) × 100 ≈ 83.3%.",
+    "explanation": "Current gap = 60,000 - 48,000 = 12,000. New Samsung = 55,000, New Apple = 53,000. New gap = 2,000. Gap reduced by 10,000. Reduction % = (10,000 / 12,000) x 100 = 83.3%.",
     "tags": ["DI", "pie-charts", "percentage-change", "hard"],
     "estimatedTime": 85
   },
@@ -475,7 +474,7 @@
     "options": ["20%", "25%", "30%", "33%"],
     "correctAnswer": 1,
     "answer": "25%",
-    "explanation": "Study % = (6 / 24) × 100 = 25%",
+    "explanation": "Study % = (6 / 24) x 100 = 25%",
     "tags": ["DI", "pie-charts", "percentage"],
     "estimatedTime": 30
   },
@@ -527,13 +526,13 @@
         { "name": "Other", "value": 5 }
       ]
     },
-    "question": "If the student increases Study time by 50% by cutting Social Media equally, how many hours will now be spent on Study?",
+    "question": "If the student cuts Social Media by 3 hours and adds it to Study, what will be the new Study hours per day?",
     "options": ["7 hrs", "8 hrs", "9 hrs", "10 hrs"],
     "correctAnswer": 2,
     "answer": "9 hrs",
-    "explanation": "50% of Study = 50% × 6 = 3 hrs added. New Study = 6 + 3 = 9 hrs.",
+    "explanation": "Current Study = 6 hrs. Added from Social Media = 3 hrs. New Study = 6 + 3 = 9 hrs.",
     "tags": ["DI", "pie-charts", "calculation"],
-    "estimatedTime": 55
+    "estimatedTime": 45
   },
   {
     "id": "DI_PIE_SET4_Q5",
@@ -555,12 +554,12 @@
         { "name": "Other", "value": 5 }
       ]
     },
-    "question": "Sleep and Other together represent what fraction of productive (non-sleep) time in a day?",
-    "options": ["5/8", "13/16", "5/6", "3/4"],
+    "question": "Sleep and Other activities together account for what fraction of the student's total day (24 hours)?",
+    "options": ["7/12", "13/24", "5/8", "11/24"],
     "correctAnswer": 1,
-    "answer": "13/16",
-    "explanation": "Productive (non-sleep) time = 24 − 8 = 16 hrs. Sleep + Other = 8 + 5 = 13. Fraction = 13/16.",
+    "answer": "13/24",
+    "explanation": "Sleep + Other = 8 + 5 = 13 hours. Fraction of total day = 13/24.",
     "tags": ["DI", "pie-charts", "fractions", "hard"],
-    "estimatedTime": 80
+    "estimatedTime": 60
   }
 ]
