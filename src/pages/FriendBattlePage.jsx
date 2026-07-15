@@ -245,10 +245,30 @@ const FriendBattlePage = ({ navigate }) => {
         selected_option: sel
       }));
       
+      // Calculate score locally since backend doesn't have the local JSON questions
+      let calculatedScore = 0;
+      let correctMarks = 1.0;
+      let wrongMarks = 0.25;
+      
+      if (config?.correctMarks) correctMarks = parseFloat(config.correctMarks);
+      if (config?.wrongMarks) wrongMarks = parseFloat(config.wrongMarks);
+      
+      Object.entries(playerAnswers).forEach(([qId, selectedOpt]) => {
+         const question = questions.find(q => q.id === qId);
+         if (question) {
+            if (selectedOpt === question.answer) {
+               calculatedScore += correctMarks;
+            } else if (selectedOpt) {
+               calculatedScore -= wrongMarks;
+            }
+         }
+      });
+      
       const { data, error } = await supabase.rpc('submit_friendly_match', { 
         p_match_id: matchId, 
         p_answers: formattedAnswers,
-        p_completion_time_seconds: timeTaken
+        p_completion_time_seconds: timeTaken,
+        p_calculated_score: calculatedScore
       });
       if (error) throw error;
       
