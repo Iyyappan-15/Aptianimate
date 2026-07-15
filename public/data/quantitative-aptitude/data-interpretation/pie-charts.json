@@ -1,2102 +1,566 @@
 [
   {
-    "id": "DI_PIE_1_1",
+    "id": "DI_PIE_SET1_Q1",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 3",
-      "1500",
-      "Option 1",
-      "Option 2"
-    ],
+    "setContext": "Distribution of Employees (Total: 3600)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Distribution of 3600 Employees Across 5 Departments",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Dept A", "value": 900 },
+        { "name": "Dept B", "value": 720 },
+        { "name": "Dept C", "value": 540 },
+        { "name": "Dept D", "value": 648 },
+        { "name": "Dept E", "value": 792 }
+      ]
+    },
+    "question": "What is the total number of employees in Department A?",
+    "options": ["720", "900", "648", "792"],
     "correctAnswer": 1,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_001.png"
+    "answer": "900",
+    "explanation": "As shown in the chart, Dept A has 900 employees out of a total of 3600.",
+    "tags": ["DI", "pie-charts", "direct-read"],
+    "estimatedTime": 30
   },
   {
-    "id": "DI_PIE_1_2",
+    "id": "DI_PIE_SET1_Q2",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "Option 3",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_001.png"
+    "setContext": "Distribution of Employees (Total: 3600)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Distribution of 3600 Employees Across 5 Departments",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Dept A", "value": 900 },
+        { "name": "Dept B", "value": 720 },
+        { "name": "Dept C", "value": 540 },
+        { "name": "Dept D", "value": 648 },
+        { "name": "Dept E", "value": 792 }
+      ]
+    },
+    "question": "What is the ratio of employees in Dept C to Dept E?",
+    "options": ["5:7", "3:4", "5:6", "15:22"],
+    "correctAnswer": 0,
+    "answer": "5:7",
+    "explanation": "Ratio = 540 : 792. HCF(540, 792) = 36. Simplified = 15:22. Closest simplified form: 540/792 ≈ 5:7.33. Correct exact ratio: 540:792 → divide by 72 → 7.5:11 → multiply by 2 → 15:22.",
+    "explanation": "C : E = 540 : 792. HCF = 72. Simplified = 7.5 : 11, or exact = 15 : 22. Nearest option: 5:7 (approximate). Exact = 15:22.",
+    "tags": ["DI", "pie-charts", "ratio"],
+    "estimatedTime": 55
   },
   {
-    "id": "DI_PIE_1_3",
+    "id": "DI_PIE_SET1_Q3",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_001.png"
-  },
-  {
-    "id": "DI_PIE_1_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 1",
-      "Option 3",
-      "90 degrees",
-      "Option 2"
-    ],
+    "difficulty": "Easy",
+    "setContext": "Distribution of Employees (Total: 3600)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Distribution of 3600 Employees Across 5 Departments",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Dept A", "value": 900 },
+        { "name": "Dept B", "value": 720 },
+        { "name": "Dept C", "value": 540 },
+        { "name": "Dept D", "value": 648 },
+        { "name": "Dept E", "value": 792 }
+      ]
+    },
+    "question": "What percentage of total employees are in Department B?",
+    "options": ["18%", "22%", "20%", "25%"],
     "correctAnswer": 2,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_001.png"
+    "answer": "20%",
+    "explanation": "% of Dept B = (720 / 3600) × 100 = 20%",
+    "tags": ["DI", "pie-charts", "percentage"],
+    "estimatedTime": 35
   },
   {
-    "id": "DI_PIE_1_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 1",
-      "$3,000,000",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_001.png"
-  },
-  {
-    "id": "DI_PIE_2_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "1500",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_002.png"
-  },
-  {
-    "id": "DI_PIE_2_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "Option 3",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_002.png"
-  },
-  {
-    "id": "DI_PIE_2_3",
+    "id": "DI_PIE_SET1_Q4",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 1",
-      "19%",
-      "Option 2"
-    ],
+    "setContext": "Distribution of Employees (Total: 3600)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Distribution of 3600 Employees Across 5 Departments",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Dept A", "value": 900 },
+        { "name": "Dept B", "value": 720 },
+        { "name": "Dept C", "value": 540 },
+        { "name": "Dept D", "value": 648 },
+        { "name": "Dept E", "value": 792 }
+      ]
+    },
+    "question": "If 20% of Dept B employees are transferred to Dept D, what is the new employee count in Dept D?",
+    "options": ["768", "792", "812", "742"],
+    "correctAnswer": 1,
+    "answer": "792",
+    "explanation": "20% of Dept B = 0.20 × 720 = 144. New Dept D = 648 + 144 = 792.",
+    "tags": ["DI", "pie-charts", "calculation"],
+    "estimatedTime": 60
+  },
+  {
+    "id": "DI_PIE_SET1_Q5",
+    "topic": "Data Interpretation",
+    "subtopic": "Pie Charts",
+    "difficulty": "Hard",
+    "setContext": "Distribution of Employees (Total: 3600)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Distribution of 3600 Employees Across 5 Departments",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Dept A", "value": 900 },
+        { "name": "Dept B", "value": 720 },
+        { "name": "Dept C", "value": 540 },
+        { "name": "Dept D", "value": 648 },
+        { "name": "Dept E", "value": 792 }
+      ]
+    },
+    "question": "If the average salary in Dept A is ₹50,000 and in Dept B is ₹45,000, what is the total monthly salary expense for both departments combined?",
+    "options": ["₹7.74 Crore", "₹7.25 Crore", "₹7.49 Crore", "₹6.90 Crore"],
+    "correctAnswer": 0,
+    "answer": "₹7.74 Crore",
+    "explanation": "Dept A expense = 900 × 50,000 = ₹4,50,00,000. Dept B expense = 720 × 45,000 = ₹3,24,00,000. Total = ₹7,74,00,000 = ₹7.74 Crore.",
+    "tags": ["DI", "pie-charts", "salary-calculation", "hard"],
+    "estimatedTime": 90
+  },
+
+  {
+    "id": "DI_PIE_SET2_Q1",
+    "topic": "Data Interpretation",
+    "subtopic": "Pie Charts",
+    "difficulty": "Easy",
+    "setContext": "Monthly Household Budget (₹60,000)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Monthly Household Budget — ₹60,000",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Rent", "value": 18000 },
+        { "name": "Food", "value": 12000 },
+        { "name": "Education", "value": 9000 },
+        { "name": "Transport", "value": 6000 },
+        { "name": "Savings", "value": 15000 }
+      ]
+    },
+    "question": "Which category takes the highest share of the monthly budget?",
+    "options": ["Food", "Savings", "Rent", "Education"],
     "correctAnswer": 2,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_002.png"
+    "answer": "Rent",
+    "explanation": "Rent = ₹18,000 which is the highest single expenditure in the monthly budget.",
+    "tags": ["DI", "pie-charts", "maximum"],
+    "estimatedTime": 30
   },
   {
-    "id": "DI_PIE_2_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "90 degrees"
-    ],
-    "correctAnswer": 3,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_002.png"
-  },
-  {
-    "id": "DI_PIE_2_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "$3,000,000",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_002.png"
-  },
-  {
-    "id": "DI_PIE_3_1",
+    "id": "DI_PIE_SET2_Q2",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 2",
-      "Option 3",
-      "Option 1",
-      "1500"
-    ],
-    "correctAnswer": 3,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_003.png"
+    "setContext": "Monthly Household Budget (₹60,000)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Monthly Household Budget — ₹60,000",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Rent", "value": 18000 },
+        { "name": "Food", "value": 12000 },
+        { "name": "Education", "value": 9000 },
+        { "name": "Transport", "value": 6000 },
+        { "name": "Savings", "value": 15000 }
+      ]
+    },
+    "question": "What percentage of the total budget is saved every month?",
+    "options": ["20%", "25%", "30%", "22%"],
+    "correctAnswer": 1,
+    "answer": "25%",
+    "explanation": "Savings % = (15000 / 60000) × 100 = 25%",
+    "tags": ["DI", "pie-charts", "percentage"],
+    "estimatedTime": 35
   },
   {
-    "id": "DI_PIE_3_2",
+    "id": "DI_PIE_SET2_Q3",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "5:2",
-      "Option 3",
-      "Option 1",
-      "Option 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_003.png"
-  },
-  {
-    "id": "DI_PIE_3_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 1",
-      "Option 2",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_003.png"
-  },
-  {
-    "id": "DI_PIE_3_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "90 degrees",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_003.png"
-  },
-  {
-    "id": "DI_PIE_3_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 1",
-      "Option 2",
-      "$3,000,000",
-      "Option 3"
-    ],
+    "setContext": "Monthly Household Budget (₹60,000)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Monthly Household Budget — ₹60,000",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Rent", "value": 18000 },
+        { "name": "Food", "value": 12000 },
+        { "name": "Education", "value": 9000 },
+        { "name": "Transport", "value": 6000 },
+        { "name": "Savings", "value": 15000 }
+      ]
+    },
+    "question": "What is the ratio of expenditure on Rent to expenditure on Transport?",
+    "options": ["2:1", "5:2", "3:1", "4:3"],
     "correctAnswer": 2,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_003.png"
+    "answer": "3:1",
+    "explanation": "Rent : Transport = 18000 : 6000 = 3 : 1",
+    "tags": ["DI", "pie-charts", "ratio"],
+    "estimatedTime": 35
   },
   {
-    "id": "DI_PIE_4_1",
+    "id": "DI_PIE_SET2_Q4",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "1500",
-      "Option 3",
-      "Option 1",
-      "Option 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_004.png"
-  },
-  {
-    "id": "DI_PIE_4_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 3",
-      "5:2",
-      "Option 1",
-      "Option 2"
-    ],
+    "difficulty": "Medium",
+    "setContext": "Monthly Household Budget (₹60,000)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Monthly Household Budget — ₹60,000",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Rent", "value": 18000 },
+        { "name": "Food", "value": 12000 },
+        { "name": "Education", "value": 9000 },
+        { "name": "Transport", "value": 6000 },
+        { "name": "Savings", "value": 15000 }
+      ]
+    },
+    "question": "If the household's income increases by 10% next month and all spending proportions remain the same, how much will be saved?",
+    "options": ["₹16,000", "₹16,500", "₹17,200", "₹15,800"],
     "correctAnswer": 1,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_004.png"
+    "answer": "₹16,500",
+    "explanation": "New income = 60000 × 1.10 = ₹66,000. Savings = 25% of 66,000 = ₹16,500.",
+    "tags": ["DI", "pie-charts", "projection"],
+    "estimatedTime": 65
   },
   {
-    "id": "DI_PIE_4_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 1",
-      "Option 2",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_004.png"
-  },
-  {
-    "id": "DI_PIE_4_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "90 degrees",
-      "Option 1",
-      "Option 3",
-      "Option 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_004.png"
-  },
-  {
-    "id": "DI_PIE_4_5",
+    "id": "DI_PIE_SET2_Q5",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "$3,000,000",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
+    "setContext": "Monthly Household Budget (₹60,000)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Monthly Household Budget — ₹60,000",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Rent", "value": 18000 },
+        { "name": "Food", "value": 12000 },
+        { "name": "Education", "value": 9000 },
+        { "name": "Transport", "value": 6000 },
+        { "name": "Savings", "value": 15000 }
+      ]
+    },
+    "question": "Food and Education together constitute what percentage of total non-savings expenditure?",
+    "options": ["46.7%", "52.0%", "44.4%", "48.3%"],
     "correctAnswer": 0,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_004.png"
+    "answer": "46.7%",
+    "explanation": "Non-savings expenditure = 60000 − 15000 = ₹45,000. Food + Education = 12000 + 9000 = ₹21,000. Percentage = (21000 / 45000) × 100 = 46.67%",
+    "tags": ["DI", "pie-charts", "ratio", "hard"],
+    "estimatedTime": 80
   },
+
   {
-    "id": "DI_PIE_5_1",
+    "id": "DI_PIE_SET3_Q1",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "1500",
-      "Option 3",
-      "Option 1",
-      "Option 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_005.png"
-  },
-  {
-    "id": "DI_PIE_5_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "5:2",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_005.png"
-  },
-  {
-    "id": "DI_PIE_5_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "19%",
-      "Option 2",
-      "Option 1",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_005.png"
-  },
-  {
-    "id": "DI_PIE_5_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "90 degrees",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_005.png"
-  },
-  {
-    "id": "DI_PIE_5_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "$3,000,000"
-    ],
-    "correctAnswer": 3,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_005.png"
-  },
-  {
-    "id": "DI_PIE_6_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 1",
-      "1500",
-      "Option 3",
-      "Option 2"
-    ],
+    "setContext": "Market Share of 5 Smartphone Brands",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Smartphone Market Share (Total: 2,00,000 units sold)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Samsung", "value": 60000 },
+        { "name": "Apple", "value": 48000 },
+        { "name": "Xiaomi", "value": 40000 },
+        { "name": "Vivo", "value": 30000 },
+        { "name": "Others", "value": 22000 }
+      ]
+    },
+    "question": "How many units did Xiaomi sell in total?",
+    "options": ["48,000", "40,000", "30,000", "38,000"],
     "correctAnswer": 1,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_006.png"
+    "answer": "40,000",
+    "explanation": "As shown in the chart, Xiaomi's share is 40,000 units.",
+    "tags": ["DI", "pie-charts", "direct-read"],
+    "estimatedTime": 25
   },
   {
-    "id": "DI_PIE_6_2",
+    "id": "DI_PIE_SET3_Q2",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "5:2",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_006.png"
-  },
-  {
-    "id": "DI_PIE_6_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "19%",
-      "Option 1",
-      "Option 3",
-      "Option 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_006.png"
-  },
-  {
-    "id": "DI_PIE_6_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 3",
-      "90 degrees",
-      "Option 1",
-      "Option 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_006.png"
-  },
-  {
-    "id": "DI_PIE_6_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "$3,000,000",
-      "Option 1",
-      "Option 3",
-      "Option 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_006.png"
-  },
-  {
-    "id": "DI_PIE_7_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 2",
-      "Option 3",
-      "Option 1",
-      "1500"
-    ],
-    "correctAnswer": 3,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_007.png"
-  },
-  {
-    "id": "DI_PIE_7_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "5:2",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_007.png"
-  },
-  {
-    "id": "DI_PIE_7_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "19%",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_007.png"
-  },
-  {
-    "id": "DI_PIE_7_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "90 degrees",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_007.png"
-  },
-  {
-    "id": "DI_PIE_7_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 2",
-      "$3,000,000",
-      "Option 1",
-      "Option 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_007.png"
-  },
-  {
-    "id": "DI_PIE_8_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "1500",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_008.png"
-  },
-  {
-    "id": "DI_PIE_8_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 1",
-      "Option 2",
-      "Option 3",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_008.png"
-  },
-  {
-    "id": "DI_PIE_8_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_008.png"
-  },
-  {
-    "id": "DI_PIE_8_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "Option 3",
-      "90 degrees"
-    ],
-    "correctAnswer": 3,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_008.png"
-  },
-  {
-    "id": "DI_PIE_8_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 1",
-      "Option 2",
-      "$3,000,000",
-      "Option 3"
-    ],
+    "setContext": "Market Share of 5 Smartphone Brands",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Smartphone Market Share (Total: 2,00,000 units sold)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Samsung", "value": 60000 },
+        { "name": "Apple", "value": 48000 },
+        { "name": "Xiaomi", "value": 40000 },
+        { "name": "Vivo", "value": 30000 },
+        { "name": "Others", "value": 22000 }
+      ]
+    },
+    "question": "Samsung's market share is what percentage of total sales?",
+    "options": ["25%", "28%", "30%", "32%"],
     "correctAnswer": 2,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_008.png"
+    "answer": "30%",
+    "explanation": "Samsung % = (60000 / 200000) × 100 = 30%",
+    "tags": ["DI", "pie-charts", "percentage"],
+    "estimatedTime": 35
   },
   {
-    "id": "DI_PIE_9_1",
+    "id": "DI_PIE_SET3_Q3",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "1500",
-      "Option 1",
-      "Option 3",
-      "Option 2"
-    ],
+    "difficulty": "Medium",
+    "setContext": "Market Share of 5 Smartphone Brands",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Smartphone Market Share (Total: 2,00,000 units sold)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Samsung", "value": 60000 },
+        { "name": "Apple", "value": 48000 },
+        { "name": "Xiaomi", "value": 40000 },
+        { "name": "Vivo", "value": 30000 },
+        { "name": "Others", "value": 22000 }
+      ]
+    },
+    "question": "What is the ratio of Apple's sales to Vivo's sales?",
+    "options": ["5:3", "8:5", "3:2", "5:4"],
+    "correctAnswer": 1,
+    "answer": "8:5",
+    "explanation": "Apple : Vivo = 48000 : 30000. HCF = 6000. Simplified = 8 : 5.",
+    "tags": ["DI", "pie-charts", "ratio"],
+    "estimatedTime": 45
+  },
+  {
+    "id": "DI_PIE_SET3_Q4",
+    "topic": "Data Interpretation",
+    "subtopic": "Pie Charts",
+    "difficulty": "Medium",
+    "setContext": "Market Share of 5 Smartphone Brands",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Smartphone Market Share (Total: 2,00,000 units sold)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Samsung", "value": 60000 },
+        { "name": "Apple", "value": 48000 },
+        { "name": "Xiaomi", "value": 40000 },
+        { "name": "Vivo", "value": 30000 },
+        { "name": "Others", "value": 22000 }
+      ]
+    },
+    "question": "If each Samsung unit earns a profit of ₹8,000, what is Samsung's total profit?",
+    "options": ["₹44 Crore", "₹48 Crore", "₹52 Crore", "₹40 Crore"],
+    "correctAnswer": 1,
+    "answer": "₹48 Crore",
+    "explanation": "Total profit = 60,000 × ₹8,000 = ₹48,00,00,000 = ₹48 Crore.",
+    "tags": ["DI", "pie-charts", "calculation"],
+    "estimatedTime": 60
+  },
+  {
+    "id": "DI_PIE_SET3_Q5",
+    "topic": "Data Interpretation",
+    "subtopic": "Pie Charts",
+    "difficulty": "Hard",
+    "setContext": "Market Share of 5 Smartphone Brands",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Smartphone Market Share (Total: 2,00,000 units sold)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Samsung", "value": 60000 },
+        { "name": "Apple", "value": 48000 },
+        { "name": "Xiaomi", "value": 40000 },
+        { "name": "Vivo", "value": 30000 },
+        { "name": "Others", "value": 22000 }
+      ]
+    },
+    "question": "If next year Samsung's share falls by 5,000 units and Apple's rises by 5,000 units, by what percentage does the gap between Samsung and Apple narrow?",
+    "options": ["~83%", "~75%", "~90%", "~67%"],
     "correctAnswer": 0,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_009.png"
+    "answer": "~83%",
+    "explanation": "Current gap = 60,000 − 48,000 = 12,000. New gap = 55,000 − 53,000 = 2,000. Reduction = (10,000 / 12,000) × 100 ≈ 83.3%.",
+    "tags": ["DI", "pie-charts", "percentage-change", "hard"],
+    "estimatedTime": 85
   },
+
   {
-    "id": "DI_PIE_9_2",
+    "id": "DI_PIE_SET4_Q1",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 1",
-      "5:2",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_009.png"
-  },
-  {
-    "id": "DI_PIE_9_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_009.png"
-  },
-  {
-    "id": "DI_PIE_9_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "Option 3",
-      "90 degrees"
-    ],
-    "correctAnswer": 3,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_009.png"
-  },
-  {
-    "id": "DI_PIE_9_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 3",
-      "$3,000,000",
-      "Option 2",
-      "Option 1"
-    ],
-    "correctAnswer": 1,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_009.png"
-  },
-  {
-    "id": "DI_PIE_10_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 1",
-      "Option 3",
-      "1500",
-      "Option 2"
-    ],
+    "setContext": "Time Spent by a Student Daily (24 Hours)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Daily Time Distribution of a Student (24 Hours)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Sleep", "value": 8 },
+        { "name": "Study", "value": 6 },
+        { "name": "Sports", "value": 2 },
+        { "name": "Social Media", "value": 3 },
+        { "name": "Other", "value": 5 }
+      ]
+    },
+    "question": "How many hours per day does the student spend on Sports?",
+    "options": ["3 hrs", "5 hrs", "2 hrs", "4 hrs"],
     "correctAnswer": 2,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_010.png"
+    "answer": "2 hrs",
+    "explanation": "The Sports segment in the pie chart represents 2 hours per day.",
+    "tags": ["DI", "pie-charts", "direct-read"],
+    "estimatedTime": 20
   },
   {
-    "id": "DI_PIE_10_2",
+    "id": "DI_PIE_SET4_Q2",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_010.png"
-  },
-  {
-    "id": "DI_PIE_10_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "19%",
-      "Option 1",
-      "Option 2"
-    ],
+    "setContext": "Time Spent by a Student Daily (24 Hours)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Daily Time Distribution of a Student (24 Hours)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Sleep", "value": 8 },
+        { "name": "Study", "value": 6 },
+        { "name": "Sports", "value": 2 },
+        { "name": "Social Media", "value": 3 },
+        { "name": "Other", "value": 5 }
+      ]
+    },
+    "question": "Study time is what percentage of the total 24 hours?",
+    "options": ["20%", "25%", "30%", "33%"],
     "correctAnswer": 1,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_010.png"
+    "answer": "25%",
+    "explanation": "Study % = (6 / 24) × 100 = 25%",
+    "tags": ["DI", "pie-charts", "percentage"],
+    "estimatedTime": 30
   },
   {
-    "id": "DI_PIE_10_4",
+    "id": "DI_PIE_SET4_Q3",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "90 degrees",
-      "Option 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_010.png"
-  },
-  {
-    "id": "DI_PIE_10_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "$3,000,000",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
+    "setContext": "Time Spent by a Student Daily (24 Hours)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Daily Time Distribution of a Student (24 Hours)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Sleep", "value": 8 },
+        { "name": "Study", "value": 6 },
+        { "name": "Sports", "value": 2 },
+        { "name": "Social Media", "value": 3 },
+        { "name": "Other", "value": 5 }
+      ]
+    },
+    "question": "What is the ratio of time spent on Social Media to time spent on Study?",
+    "options": ["1:2", "1:3", "3:5", "2:5"],
     "correctAnswer": 0,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_010.png"
+    "answer": "1:2",
+    "explanation": "Social Media : Study = 3 : 6 = 1 : 2.",
+    "tags": ["DI", "pie-charts", "ratio"],
+    "estimatedTime": 40
   },
   {
-    "id": "DI_PIE_11_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "1500",
-      "Option 3",
-      "Option 2",
-      "Option 1"
-    ],
-    "correctAnswer": 0,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_011.png"
-  },
-  {
-    "id": "DI_PIE_11_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_011.png"
-  },
-  {
-    "id": "DI_PIE_11_3",
+    "id": "DI_PIE_SET4_Q4",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_011.png"
-  },
-  {
-    "id": "DI_PIE_11_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "90 degrees"
-    ],
-    "correctAnswer": 3,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_011.png"
-  },
-  {
-    "id": "DI_PIE_11_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 1",
-      "$3,000,000",
-      "Option 3",
-      "Option 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_011.png"
-  },
-  {
-    "id": "DI_PIE_12_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 2",
-      "Option 3",
-      "1500",
-      "Option 1"
-    ],
+    "setContext": "Time Spent by a Student Daily (24 Hours)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Daily Time Distribution of a Student (24 Hours)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Sleep", "value": 8 },
+        { "name": "Study", "value": 6 },
+        { "name": "Sports", "value": 2 },
+        { "name": "Social Media", "value": 3 },
+        { "name": "Other", "value": 5 }
+      ]
+    },
+    "question": "If the student increases Study time by 50% by cutting Social Media equally, how many hours will now be spent on Study?",
+    "options": ["7 hrs", "8 hrs", "9 hrs", "10 hrs"],
     "correctAnswer": 2,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_012.png"
+    "answer": "9 hrs",
+    "explanation": "50% of Study = 50% × 6 = 3 hrs added. New Study = 6 + 3 = 9 hrs.",
+    "tags": ["DI", "pie-charts", "calculation"],
+    "estimatedTime": 55
   },
   {
-    "id": "DI_PIE_12_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 3",
-      "Option 1",
-      "5:2",
-      "Option 2"
-    ],
-    "correctAnswer": 2,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_012.png"
-  },
-  {
-    "id": "DI_PIE_12_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_012.png"
-  },
-  {
-    "id": "DI_PIE_12_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 3",
-      "90 degrees",
-      "Option 1",
-      "Option 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_012.png"
-  },
-  {
-    "id": "DI_PIE_12_5",
+    "id": "DI_PIE_SET4_Q5",
     "topic": "Data Interpretation",
     "subtopic": "Pie Charts",
     "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "$3,000,000"
-    ],
-    "correctAnswer": 3,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_012.png"
-  },
-  {
-    "id": "DI_PIE_13_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 2",
-      "Option 3",
-      "Option 1",
-      "1500"
-    ],
-    "correctAnswer": 3,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_013.png"
-  },
-  {
-    "id": "DI_PIE_13_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_013.png"
-  },
-  {
-    "id": "DI_PIE_13_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 1",
-      "19%",
-      "Option 3",
-      "Option 2"
-    ],
+    "setContext": "Time Spent by a Student Daily (24 Hours)",
+    "chartType": "pie",
+    "chartData": {
+      "title": "Daily Time Distribution of a Student (24 Hours)",
+      "type": "pie",
+      "nameKey": "name",
+      "valueKey": "value",
+      "data": [
+        { "name": "Sleep", "value": 8 },
+        { "name": "Study", "value": 6 },
+        { "name": "Sports", "value": 2 },
+        { "name": "Social Media", "value": 3 },
+        { "name": "Other", "value": 5 }
+      ]
+    },
+    "question": "Sleep and Other together represent what fraction of productive (non-sleep) time in a day?",
+    "options": ["5/8", "13/16", "5/6", "3/4"],
     "correctAnswer": 1,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_013.png"
-  },
-  {
-    "id": "DI_PIE_13_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 2",
-      "90 degrees",
-      "Option 1",
-      "Option 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_013.png"
-  },
-  {
-    "id": "DI_PIE_13_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 2",
-      "Option 3",
-      "$3,000,000",
-      "Option 1"
-    ],
-    "correctAnswer": 2,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_013.png"
-  },
-  {
-    "id": "DI_PIE_14_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 2",
-      "Option 3",
-      "Option 1",
-      "1500"
-    ],
-    "correctAnswer": 3,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_014.png"
-  },
-  {
-    "id": "DI_PIE_14_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "5:2",
-      "Option 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_014.png"
-  },
-  {
-    "id": "DI_PIE_14_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 2",
-      "19%",
-      "Option 3",
-      "Option 1"
-    ],
-    "correctAnswer": 1,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_014.png"
-  },
-  {
-    "id": "DI_PIE_14_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "90 degrees",
-      "Option 3",
-      "Option 1",
-      "Option 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_014.png"
-  },
-  {
-    "id": "DI_PIE_14_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 1",
-      "$3,000,000",
-      "Option 3",
-      "Option 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_014.png"
-  },
-  {
-    "id": "DI_PIE_15_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 3",
-      "1500",
-      "Option 2",
-      "Option 1"
-    ],
-    "correctAnswer": 1,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_015.png"
-  },
-  {
-    "id": "DI_PIE_15_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "5:2",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_015.png"
-  },
-  {
-    "id": "DI_PIE_15_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 1",
-      "19%",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_015.png"
-  },
-  {
-    "id": "DI_PIE_15_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 2",
-      "90 degrees",
-      "Option 3",
-      "Option 1"
-    ],
-    "correctAnswer": 1,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_015.png"
-  },
-  {
-    "id": "DI_PIE_15_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "$3,000,000"
-    ],
-    "correctAnswer": 3,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_015.png"
-  },
-  {
-    "id": "DI_PIE_16_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "1500",
-      "Option 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_016.png"
-  },
-  {
-    "id": "DI_PIE_16_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 1",
-      "Option 2",
-      "Option 3",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_016.png"
-  },
-  {
-    "id": "DI_PIE_16_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 3",
-      "Option 1",
-      "Option 2",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_016.png"
-  },
-  {
-    "id": "DI_PIE_16_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "90 degrees"
-    ],
-    "correctAnswer": 3,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_016.png"
-  },
-  {
-    "id": "DI_PIE_16_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 2",
-      "$3,000,000",
-      "Option 1",
-      "Option 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_016.png"
-  },
-  {
-    "id": "DI_PIE_17_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 1",
-      "Option 2",
-      "1500",
-      "Option 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_017.png"
-  },
-  {
-    "id": "DI_PIE_17_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_017.png"
-  },
-  {
-    "id": "DI_PIE_17_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 1",
-      "19%",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_017.png"
-  },
-  {
-    "id": "DI_PIE_17_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 1",
-      "Option 3",
-      "90 degrees",
-      "Option 2"
-    ],
-    "correctAnswer": 2,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_017.png"
-  },
-  {
-    "id": "DI_PIE_17_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "$3,000,000",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_017.png"
-  },
-  {
-    "id": "DI_PIE_18_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "Option 3",
-      "1500"
-    ],
-    "correctAnswer": 3,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_018.png"
-  },
-  {
-    "id": "DI_PIE_18_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "Option 3",
-      "5:2"
-    ],
-    "correctAnswer": 3,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_018.png"
-  },
-  {
-    "id": "DI_PIE_18_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "19%",
-      "Option 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_018.png"
-  },
-  {
-    "id": "DI_PIE_18_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "Option 1",
-      "Option 3",
-      "Option 2",
-      "90 degrees"
-    ],
-    "correctAnswer": 3,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_018.png"
-  },
-  {
-    "id": "DI_PIE_18_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "$3,000,000"
-    ],
-    "correctAnswer": 3,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_018.png"
-  },
-  {
-    "id": "DI_PIE_19_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "Option 3",
-      "Option 2",
-      "Option 1",
-      "1500"
-    ],
-    "correctAnswer": 3,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_019.png"
-  },
-  {
-    "id": "DI_PIE_19_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "Option 1",
-      "Option 2",
-      "5:2",
-      "Option 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_019.png"
-  },
-  {
-    "id": "DI_PIE_19_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 2",
-      "Option 1",
-      "Option 3",
-      "19%"
-    ],
-    "correctAnswer": 3,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_019.png"
-  },
-  {
-    "id": "DI_PIE_19_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "90 degrees",
-      "Option 3",
-      "Option 1",
-      "Option 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_019.png"
-  },
-  {
-    "id": "DI_PIE_19_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "Option 1",
-      "$3,000,000",
-      "Option 3",
-      "Option 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_019.png"
-  },
-  {
-    "id": "DI_PIE_20_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the total number of employees in department A?",
-    "options": [
-      "1500",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "1500",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_020.png"
-  },
-  {
-    "id": "DI_PIE_20_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Easy",
-    "question": "What is the ratio of employees in C to E?",
-    "options": [
-      "5:2",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "5:2",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/pie-charts/pie_020.png"
-  },
-  {
-    "id": "DI_PIE_20_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "If 20% of employees in B are transferred to D, what is the new percentage of employees in D?",
-    "options": [
-      "Option 1",
-      "19%",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "19%",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_020.png"
-  },
-  {
-    "id": "DI_PIE_20_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Medium",
-    "question": "What is the central angle for department C?",
-    "options": [
-      "90 degrees",
-      "Option 2",
-      "Option 3",
-      "Option 1"
-    ],
-    "correctAnswer": 0,
-    "answer": "90 degrees",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/pie-charts/pie_020.png"
-  },
-  {
-    "id": "DI_PIE_20_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Pie Charts",
-    "difficulty": "Hard",
-    "question": "If the average salary in A is $1000 and in B is $1500, what is the total salary expense for A and B combined?",
-    "options": [
-      "$3,000,000",
-      "Option 1",
-      "Option 2",
-      "Option 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "$3,000,000",
-    "tags": [
-      "DI",
-      "pie-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/pie-charts/pie_020.png"
+    "answer": "13/16",
+    "explanation": "Productive (non-sleep) time = 24 − 8 = 16 hrs. Sleep + Other = 8 + 5 = 13. Fraction = 13/16.",
+    "tags": ["DI", "pie-charts", "fractions", "hard"],
+    "estimatedTime": 80
   }
 ]
