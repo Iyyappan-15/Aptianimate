@@ -6,6 +6,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { addQuestionBookmark, removeQuestionBookmark, findQuestionBookmark } from "../repositories/questionBookmarkRepository";
 import { getTopicCategoryPath } from "../utils/categoryMapper";
 import TopicSkeleton from "../components/TopicSkeleton";
+import DataInterpretationVisualizer from "../components/DataInterpretationVisualizer";
 
 const TOPIC_META = {
   default:                  { difficulty: "Medium", time: 30, concepts: 8,  questions: 80,  desc: "Master this topic with step-by-step visual lessons and guided practice." },
@@ -502,16 +503,18 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
             📌 {activeQuestion.subtopic || "General"}
           </div>
 
-          {/* Question Image (for Data Interpretation etc.) */}
-          {activeQuestion.image && (
+          {/* Dynamic Chart / Static Image for Data Interpretation */}
+          {(activeQuestion.chartData || activeQuestion.tableData) ? (
+            <DataInterpretationVisualizer question={activeQuestion} />
+          ) : activeQuestion.image ? (
             <div style={{ marginBottom: "24px", textAlign: "center", background: "#fff", padding: "16px", borderRadius: "12px", border: "1px solid var(--border)" }}>
-              <img 
-                src={activeQuestion.image} 
-                alt="Question Chart" 
+              <img
+                src={activeQuestion.image}
+                alt="Question Chart"
                 style={{ maxWidth: "100%", maxHeight: "350px", objectFit: "contain", borderRadius: "8px" }}
               />
             </div>
-          )}
+          ) : null}
 
           {/* Question Text */}
           <div className="qc-question" style={{ fontSize:"1.2rem",fontWeight:700,color:"var(--text-main)",marginBottom:"28px",lineHeight:1.6 }}>

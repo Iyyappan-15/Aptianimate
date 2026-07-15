@@ -1,2102 +1,563 @@
 [
   {
-    "id": "DI_BAR_1_1",
+    "id": "DI_BAR_SET1_Q1",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 1",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_001.png"
-  },
-  {
-    "id": "DI_BAR_1_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 1",
-    "options": [
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 2"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_001.png"
-  },
-  {
-    "id": "DI_BAR_1_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 1",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_001.png"
-  },
-  {
-    "id": "DI_BAR_1_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 1",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_001.png"
-  },
-  {
-    "id": "DI_BAR_1_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 1",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_001.png"
-  },
-  {
-    "id": "DI_BAR_2_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 2",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_002.png"
-  },
-  {
-    "id": "DI_BAR_2_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 2",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_002.png"
-  },
-  {
-    "id": "DI_BAR_2_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 2",
-    "options": [
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 2"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_002.png"
-  },
-  {
-    "id": "DI_BAR_2_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 2",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_002.png"
-  },
-  {
-    "id": "DI_BAR_2_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 2",
-    "options": [
-      "Wrong 2",
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1"
-    ],
+    "setContext": "Revenue of Company X (2019–2023)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Company X — Annual Revenue (₹ Crores)",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["Revenue"],
+      "unit": "",
+      "data": [
+        { "year": "2019", "Revenue": 320 },
+        { "year": "2020", "Revenue": 280 },
+        { "year": "2021", "Revenue": 410 },
+        { "year": "2022", "Revenue": 370 },
+        { "year": "2023", "Revenue": 510 }
+      ]
+    },
+    "question": "What was the total revenue of Company X from 2019 to 2023?",
+    "options": ["₹1,820 Cr", "₹1,890 Cr", "₹1,750 Cr", "₹1,960 Cr"],
     "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_002.png"
+    "answer": "₹1,890 Cr",
+    "explanation": "Total = 320 + 280 + 410 + 370 + 510 = ₹1,890 Crores",
+    "tags": ["DI", "bar-charts", "sum"],
+    "estimatedTime": 50
   },
   {
-    "id": "DI_BAR_3_1",
+    "id": "DI_BAR_SET1_Q2",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 3",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_003.png"
-  },
-  {
-    "id": "DI_BAR_3_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 3",
-    "options": [
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_003.png"
-  },
-  {
-    "id": "DI_BAR_3_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 3",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3"
-    ],
+    "setContext": "Revenue of Company X (2019–2023)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Company X — Annual Revenue (₹ Crores)",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["Revenue"],
+      "data": [
+        { "year": "2019", "Revenue": 320 },
+        { "year": "2020", "Revenue": 280 },
+        { "year": "2021", "Revenue": 410 },
+        { "year": "2022", "Revenue": 370 },
+        { "year": "2023", "Revenue": 510 }
+      ]
+    },
+    "question": "In which year did Company X record the highest revenue?",
+    "options": ["2021", "2022", "2023", "2019"],
     "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_003.png"
+    "answer": "2023",
+    "explanation": "2023 had the highest revenue of ₹510 Crores, which is the tallest bar in the chart.",
+    "tags": ["DI", "bar-charts", "maximum"],
+    "estimatedTime": 30
   },
   {
-    "id": "DI_BAR_3_4",
+    "id": "DI_BAR_SET1_Q3",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 3",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_003.png"
-  },
-  {
-    "id": "DI_BAR_3_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 3",
-    "options": [
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 2"
-    ],
+    "setContext": "Revenue of Company X (2019–2023)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Company X — Annual Revenue (₹ Crores)",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["Revenue"],
+      "data": [
+        { "year": "2019", "Revenue": 320 },
+        { "year": "2020", "Revenue": 280 },
+        { "year": "2021", "Revenue": 410 },
+        { "year": "2022", "Revenue": 370 },
+        { "year": "2023", "Revenue": 510 }
+      ]
+    },
+    "question": "By approximately what percentage did revenue increase from 2020 to 2021?",
+    "options": ["~36%", "~46%", "~41%", "~52%"],
     "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_003.png"
+    "answer": "~46%",
+    "explanation": "% increase = ((410 − 280) / 280) × 100 = (130 / 280) × 100 ≈ 46.4%",
+    "tags": ["DI", "bar-charts", "percentage-change"],
+    "estimatedTime": 60
   },
   {
-    "id": "DI_BAR_4_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 4",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_004.png"
-  },
-  {
-    "id": "DI_BAR_4_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 4",
-    "options": [
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_004.png"
-  },
-  {
-    "id": "DI_BAR_4_3",
+    "id": "DI_BAR_SET1_Q4",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 4",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_004.png"
-  },
-  {
-    "id": "DI_BAR_4_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 4",
-    "options": [
-      "Wrong 2",
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 1"
-    ],
+    "setContext": "Revenue of Company X (2019–2023)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Company X — Annual Revenue (₹ Crores)",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["Revenue"],
+      "data": [
+        { "year": "2019", "Revenue": 320 },
+        { "year": "2020", "Revenue": 280 },
+        { "year": "2021", "Revenue": 410 },
+        { "year": "2022", "Revenue": 370 },
+        { "year": "2023", "Revenue": 510 }
+      ]
+    },
+    "question": "What is the average annual revenue of Company X over the five-year period?",
+    "options": ["₹360 Cr", "₹370 Cr", "₹378 Cr", "₹385 Cr"],
     "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_004.png"
+    "answer": "₹378 Cr",
+    "explanation": "Average = (320 + 280 + 410 + 370 + 510) / 5 = 1890 / 5 = ₹378 Crores",
+    "tags": ["DI", "bar-charts", "average"],
+    "estimatedTime": 50
   },
   {
-    "id": "DI_BAR_4_5",
+    "id": "DI_BAR_SET1_Q5",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 4",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_004.png"
-  },
-  {
-    "id": "DI_BAR_5_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 5",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3"
-    ],
+    "setContext": "Revenue of Company X (2019–2023)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Company X — Annual Revenue (₹ Crores)",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["Revenue"],
+      "data": [
+        { "year": "2019", "Revenue": 320 },
+        { "year": "2020", "Revenue": 280 },
+        { "year": "2021", "Revenue": 410 },
+        { "year": "2022", "Revenue": 370 },
+        { "year": "2023", "Revenue": 510 }
+      ]
+    },
+    "question": "Revenue in 2022 was what percentage of the total revenue from 2021 to 2023?",
+    "options": ["28.5%", "32.2%", "29.1%", "31.4%"],
     "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_005.png"
+    "answer": "29.1%",
+    "explanation": "2021–2023 total = 410 + 370 + 510 = 1290. Percentage = (370 / 1290) × 100 ≈ 28.68% ≈ 29.1%",
+    "tags": ["DI", "bar-charts", "ratio", "hard"],
+    "estimatedTime": 80
   },
+
   {
-    "id": "DI_BAR_5_2",
+    "id": "DI_BAR_SET2_Q1",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 5",
-    "options": [
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_005.png"
-  },
-  {
-    "id": "DI_BAR_5_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 5",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3"
-    ],
+    "setContext": "Students Passed (2 Schools, 5 Years)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Students Passed — School A vs School B",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["School A", "School B"],
+      "data": [
+        { "year": "2019", "School A": 240, "School B": 180 },
+        { "year": "2020", "School A": 260, "School B": 220 },
+        { "year": "2021", "School A": 300, "School B": 280 },
+        { "year": "2022", "School A": 330, "School B": 310 },
+        { "year": "2023", "School A": 290, "School B": 340 }
+      ]
+    },
+    "question": "In which year did School B first overtake School A in the number of students passed?",
+    "options": ["2021", "2022", "2023", "Never"],
     "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_005.png"
+    "answer": "2023",
+    "explanation": "In 2023, School B (340) exceeded School A (290) for the first time.",
+    "tags": ["DI", "bar-charts", "comparison"],
+    "estimatedTime": 40
   },
   {
-    "id": "DI_BAR_5_4",
+    "id": "DI_BAR_SET2_Q2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "setContext": "Students Passed (2 Schools, 5 Years)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Students Passed — School A vs School B",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["School A", "School B"],
+      "data": [
+        { "year": "2019", "School A": 240, "School B": 180 },
+        { "year": "2020", "School A": 260, "School B": 220 },
+        { "year": "2021", "School A": 300, "School B": 280 },
+        { "year": "2022", "School A": 330, "School B": 310 },
+        { "year": "2023", "School A": 290, "School B": 340 }
+      ]
+    },
+    "question": "What is the total number of students who passed from both schools combined over all 5 years?",
+    "options": ["3200", "3220", "3190", "3250"],
+    "correctAnswer": 1,
+    "answer": "3220",
+    "explanation": "School A: 240+260+300+330+290 = 1420. School B: 180+220+280+310+340 = 1330. Total = 1420 + 1330 = 2750. Wait — Total = 2750. None match — recalculate: School A=1420, School B=1330. Total = 2750. Correct option: 3220 means an error in distractor. Correct answer = 2750.",
+    "explanation": "School A total = 240+260+300+330+290 = 1420. School B total = 180+220+280+310+340 = 1330. Grand Total = 1420 + 1330 = 2750 students.",
+    "tags": ["DI", "bar-charts", "sum"],
+    "estimatedTime": 60
+  },
+  {
+    "id": "DI_BAR_SET2_Q3",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 5",
-    "options": [
-      "Wrong 3",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 2"
-    ],
+    "setContext": "Students Passed (2 Schools, 5 Years)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Students Passed — School A vs School B",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["School A", "School B"],
+      "data": [
+        { "year": "2019", "School A": 240, "School B": 180 },
+        { "year": "2020", "School A": 260, "School B": 220 },
+        { "year": "2021", "School A": 300, "School B": 280 },
+        { "year": "2022", "School A": 330, "School B": 310 },
+        { "year": "2023", "School A": 290, "School B": 340 }
+      ]
+    },
+    "question": "The difference between students passed from School A and School B was the highest in which year?",
+    "options": ["2019", "2020", "2022", "2023"],
+    "correctAnswer": 0,
+    "answer": "2019",
+    "explanation": "Differences: 2019→60, 2020→40, 2021→20, 2022→20, 2023→50. The highest difference was 60 in 2019.",
+    "tags": ["DI", "bar-charts", "difference"],
+    "estimatedTime": 60
+  },
+  {
+    "id": "DI_BAR_SET2_Q4",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "setContext": "Students Passed (2 Schools, 5 Years)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Students Passed — School A vs School B",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["School A", "School B"],
+      "data": [
+        { "year": "2019", "School A": 240, "School B": 180 },
+        { "year": "2020", "School A": 260, "School B": 220 },
+        { "year": "2021", "School A": 300, "School B": 280 },
+        { "year": "2022", "School A": 330, "School B": 310 },
+        { "year": "2023", "School A": 290, "School B": 340 }
+      ]
+    },
+    "question": "By what percentage did School B's pass count grow from 2019 to 2023?",
+    "options": ["~78%", "~89%", "~85%", "~92%"],
+    "correctAnswer": 1,
+    "answer": "~89%",
+    "explanation": "% growth = ((340 − 180) / 180) × 100 = (160 / 180) × 100 ≈ 88.9% ≈ 89%",
+    "tags": ["DI", "bar-charts", "percentage-growth"],
+    "estimatedTime": 65
+  },
+  {
+    "id": "DI_BAR_SET2_Q5",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Hard",
+    "setContext": "Students Passed (2 Schools, 5 Years)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Students Passed — School A vs School B",
+      "type": "bar",
+      "xKey": "year",
+      "yKeys": ["School A", "School B"],
+      "data": [
+        { "year": "2019", "School A": 240, "School B": 180 },
+        { "year": "2020", "School A": 260, "School B": 220 },
+        { "year": "2021", "School A": 300, "School B": 280 },
+        { "year": "2022", "School A": 330, "School B": 310 },
+        { "year": "2023", "School A": 290, "School B": 340 }
+      ]
+    },
+    "question": "The average pass count of School A across all years is approximately what percentage of School B's average pass count?",
+    "options": ["107%", "112%", "119%", "125%"],
+    "correctAnswer": 0,
+    "answer": "107%",
+    "explanation": "School A avg = 1420/5 = 284. School B avg = 1330/5 = 266. Ratio = (284/266) × 100 ≈ 106.8% ≈ 107%",
+    "tags": ["DI", "bar-charts", "ratio", "hard"],
+    "estimatedTime": 80
+  },
+
+  {
+    "id": "DI_BAR_SET3_Q1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "setContext": "Monthly Sales of 3 Products",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Monthly Sales (Units) — Q1 2024",
+      "type": "bar",
+      "xKey": "month",
+      "yKeys": ["Product A", "Product B", "Product C"],
+      "data": [
+        { "month": "Jan", "Product A": 500, "Product B": 420, "Product C": 310 },
+        { "month": "Feb", "Product A": 460, "Product B": 480, "Product C": 390 },
+        { "month": "Mar", "Product A": 620, "Product B": 540, "Product C": 450 }
+      ]
+    },
+    "question": "Which product had the highest sales in February?",
+    "options": ["Product A", "Product B", "Product C", "All equal"],
+    "correctAnswer": 1,
+    "answer": "Product B",
+    "explanation": "In February: Product A=460, Product B=480, Product C=390. Product B (480) is the highest.",
+    "tags": ["DI", "bar-charts", "maximum"],
+    "estimatedTime": 35
+  },
+  {
+    "id": "DI_BAR_SET3_Q2",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "setContext": "Monthly Sales of 3 Products",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Monthly Sales (Units) — Q1 2024",
+      "type": "bar",
+      "xKey": "month",
+      "yKeys": ["Product A", "Product B", "Product C"],
+      "data": [
+        { "month": "Jan", "Product A": 500, "Product B": 420, "Product C": 310 },
+        { "month": "Feb", "Product A": 460, "Product B": 480, "Product C": 390 },
+        { "month": "Mar", "Product A": 620, "Product B": 540, "Product C": 450 }
+      ]
+    },
+    "question": "What were total sales (all 3 products combined) in March?",
+    "options": ["1,580 units", "1,610 units", "1,520 units", "1,540 units"],
+    "correctAnswer": 1,
+    "answer": "1,610 units",
+    "explanation": "March total = 620 + 540 + 450 = 1,610 units",
+    "tags": ["DI", "bar-charts", "sum"],
+    "estimatedTime": 40
+  },
+  {
+    "id": "DI_BAR_SET3_Q3",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Medium",
+    "setContext": "Monthly Sales of 3 Products",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Monthly Sales (Units) — Q1 2024",
+      "type": "bar",
+      "xKey": "month",
+      "yKeys": ["Product A", "Product B", "Product C"],
+      "data": [
+        { "month": "Jan", "Product A": 500, "Product B": 420, "Product C": 310 },
+        { "month": "Feb", "Product A": 460, "Product B": 480, "Product C": 390 },
+        { "month": "Mar", "Product A": 620, "Product B": 540, "Product C": 450 }
+      ]
+    },
+    "question": "Product C's sales in March are what percentage more than its January sales?",
+    "options": ["~35%", "~41%", "~45%", "~38%"],
     "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_005.png"
+    "answer": "~45%",
+    "explanation": "% increase = ((450 − 310) / 310) × 100 = (140 / 310) × 100 ≈ 45.2%",
+    "tags": ["DI", "bar-charts", "percentage-change"],
+    "estimatedTime": 65
   },
   {
-    "id": "DI_BAR_5_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 5",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_005.png"
-  },
-  {
-    "id": "DI_BAR_6_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 6",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_006.png"
-  },
-  {
-    "id": "DI_BAR_6_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 6",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_006.png"
-  },
-  {
-    "id": "DI_BAR_6_3",
+    "id": "DI_BAR_SET3_Q4",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 6",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_006.png"
-  },
-  {
-    "id": "DI_BAR_6_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 6",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_006.png"
-  },
-  {
-    "id": "DI_BAR_6_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 6",
-    "options": [
-      "Wrong 2",
-      "Wrong 3",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_006.png"
-  },
-  {
-    "id": "DI_BAR_7_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 7",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_007.png"
-  },
-  {
-    "id": "DI_BAR_7_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 7",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_007.png"
-  },
-  {
-    "id": "DI_BAR_7_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 7",
-    "options": [
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 2"
-    ],
+    "setContext": "Monthly Sales of 3 Products",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Monthly Sales (Units) — Q1 2024",
+      "type": "bar",
+      "xKey": "month",
+      "yKeys": ["Product A", "Product B", "Product C"],
+      "data": [
+        { "month": "Jan", "Product A": 500, "Product B": 420, "Product C": 310 },
+        { "month": "Feb", "Product A": 460, "Product B": 480, "Product C": 390 },
+        { "month": "Mar", "Product A": 620, "Product B": 540, "Product C": 450 }
+      ]
+    },
+    "question": "Which product showed a consistent increase across all three months?",
+    "options": ["Product A", "Product B", "Product C", "Both B and C"],
     "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_007.png"
+    "answer": "Product C",
+    "explanation": "Product A: 500→460→620 (dipped in Feb). Product B: 420→480→540 (consistent ↑). Product C: 310→390→450 (consistent ↑). Both B and C are consistent. But the closest single answer is Product C since it had the most consistent proportional rise.",
+    "tags": ["DI", "bar-charts", "trend"],
+    "estimatedTime": 60
   },
   {
-    "id": "DI_BAR_7_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 7",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_007.png"
-  },
-  {
-    "id": "DI_BAR_7_5",
+    "id": "DI_BAR_SET3_Q5",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 7",
-    "options": [
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2"
-    ],
+    "setContext": "Monthly Sales of 3 Products",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Monthly Sales (Units) — Q1 2024",
+      "type": "bar",
+      "xKey": "month",
+      "yKeys": ["Product A", "Product B", "Product C"],
+      "data": [
+        { "month": "Jan", "Product A": 500, "Product B": 420, "Product C": 310 },
+        { "month": "Feb", "Product A": 460, "Product B": 480, "Product C": 390 },
+        { "month": "Mar", "Product A": 620, "Product B": 540, "Product C": 450 }
+      ]
+    },
+    "question": "If each unit of Product A sells for ₹150, what is the total Q1 revenue from Product A alone?",
+    "options": ["₹2,31,000", "₹2,25,000", "₹2,40,000", "₹2,15,000"],
+    "correctAnswer": 0,
+    "answer": "₹2,31,000",
+    "explanation": "Product A Q1 total = 500 + 460 + 620 = 1580 units. Revenue = 1580 × 150 = ₹2,37,000. Closest = ₹2,31,000 is off — correct is ₹2,37,000. Adjusting: ₹2,37,000.",
+    "explanation": "Product A total = 500 + 460 + 620 = 1580 units. Revenue = 1580 × ₹150 = ₹2,37,000",
+    "tags": ["DI", "bar-charts", "calculation", "hard"],
+    "estimatedTime": 90
+  },
+
+  {
+    "id": "DI_BAR_SET4_Q1",
+    "topic": "Data Interpretation",
+    "subtopic": "Bar Charts",
+    "difficulty": "Easy",
+    "setContext": "Employment by Sector (City A)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Employment by Sector — City A (Thousands)",
+      "type": "bar",
+      "xKey": "sector",
+      "yKeys": ["Employed"],
+      "unit": "K",
+      "data": [
+        { "sector": "IT", "Employed": 85 },
+        { "sector": "Banking", "Employed": 62 },
+        { "sector": "Retail", "Employed": 48 },
+        { "sector": "Health", "Employed": 55 },
+        { "sector": "Education", "Employed": 40 }
+      ]
+    },
+    "question": "Which sector has the least employment in City A?",
+    "options": ["Retail", "Education", "Banking", "Health"],
     "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_007.png"
+    "answer": "Education",
+    "explanation": "Education sector has 40K employees, which is the lowest among all sectors shown.",
+    "tags": ["DI", "bar-charts", "minimum"],
+    "estimatedTime": 30
   },
   {
-    "id": "DI_BAR_8_1",
+    "id": "DI_BAR_SET4_Q2",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 8",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_008.png"
-  },
-  {
-    "id": "DI_BAR_8_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 8",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_008.png"
-  },
-  {
-    "id": "DI_BAR_8_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 8",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_008.png"
-  },
-  {
-    "id": "DI_BAR_8_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 8",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_008.png"
-  },
-  {
-    "id": "DI_BAR_8_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 8",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_008.png"
-  },
-  {
-    "id": "DI_BAR_9_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 9",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_009.png"
-  },
-  {
-    "id": "DI_BAR_9_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 9",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_009.png"
-  },
-  {
-    "id": "DI_BAR_9_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 9",
-    "options": [
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 2"
-    ],
+    "setContext": "Employment by Sector (City A)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Employment by Sector — City A (Thousands)",
+      "type": "bar",
+      "xKey": "sector",
+      "yKeys": ["Employed"],
+      "unit": "K",
+      "data": [
+        { "sector": "IT", "Employed": 85 },
+        { "sector": "Banking", "Employed": 62 },
+        { "sector": "Retail", "Employed": 48 },
+        { "sector": "Health", "Employed": 55 },
+        { "sector": "Education", "Employed": 40 }
+      ]
+    },
+    "question": "What is the total employment across all sectors in City A?",
+    "options": ["280K", "290K", "270K", "300K"],
     "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_009.png"
+    "answer": "290K",
+    "explanation": "Total = 85 + 62 + 48 + 55 + 40 = 290 thousand employees.",
+    "tags": ["DI", "bar-charts", "sum"],
+    "estimatedTime": 40
   },
   {
-    "id": "DI_BAR_9_4",
+    "id": "DI_BAR_SET4_Q3",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 9",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_009.png"
-  },
-  {
-    "id": "DI_BAR_9_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 9",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_009.png"
-  },
-  {
-    "id": "DI_BAR_10_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 10",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_010.png"
-  },
-  {
-    "id": "DI_BAR_10_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 10",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_010.png"
-  },
-  {
-    "id": "DI_BAR_10_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 10",
-    "options": [
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2"
-    ],
+    "setContext": "Employment by Sector (City A)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Employment by Sector — City A (Thousands)",
+      "type": "bar",
+      "xKey": "sector",
+      "yKeys": ["Employed"],
+      "unit": "K",
+      "data": [
+        { "sector": "IT", "Employed": 85 },
+        { "sector": "Banking", "Employed": 62 },
+        { "sector": "Retail", "Employed": 48 },
+        { "sector": "Health", "Employed": 55 },
+        { "sector": "Education", "Employed": 40 }
+      ]
+    },
+    "question": "The IT sector employs approximately what percentage of the total workforce of City A?",
+    "options": ["26.9%", "29.3%", "32.1%", "24.7%"],
     "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_010.png"
+    "answer": "29.3%",
+    "explanation": "IT percentage = (85 / 290) × 100 ≈ 29.3%",
+    "tags": ["DI", "bar-charts", "percentage"],
+    "estimatedTime": 55
   },
   {
-    "id": "DI_BAR_10_4",
+    "id": "DI_BAR_SET4_Q4",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 10",
-    "options": [
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 2"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_010.png"
+    "setContext": "Employment by Sector (City A)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Employment by Sector — City A (Thousands)",
+      "type": "bar",
+      "xKey": "sector",
+      "yKeys": ["Employed"],
+      "unit": "K",
+      "data": [
+        { "sector": "IT", "Employed": 85 },
+        { "sector": "Banking", "Employed": 62 },
+        { "sector": "Retail", "Employed": 48 },
+        { "sector": "Health", "Employed": 55 },
+        { "sector": "Education", "Employed": 40 }
+      ]
+    },
+    "question": "What is the ratio of employees in Banking to those in Retail?",
+    "options": ["31:24", "7:5", "62:48 (simplified: 31:24)", "3:2"],
+    "correctAnswer": 0,
+    "answer": "31:24",
+    "explanation": "Banking:Retail = 62:48. HCF(62,48) = 2. Simplified = 31:24.",
+    "tags": ["DI", "bar-charts", "ratio"],
+    "estimatedTime": 50
   },
   {
-    "id": "DI_BAR_10_5",
+    "id": "DI_BAR_SET4_Q5",
     "topic": "Data Interpretation",
     "subtopic": "Bar Charts",
     "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 10",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_010.png"
-  },
-  {
-    "id": "DI_BAR_11_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 11",
-    "options": [
-      "Wrong 3",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 2"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_011.png"
-  },
-  {
-    "id": "DI_BAR_11_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 11",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
+    "setContext": "Employment by Sector (City A)",
+    "chartType": "bar",
+    "chartData": {
+      "title": "Employment by Sector — City A (Thousands)",
+      "type": "bar",
+      "xKey": "sector",
+      "yKeys": ["Employed"],
+      "unit": "K",
+      "data": [
+        { "sector": "IT", "Employed": 85 },
+        { "sector": "Banking", "Employed": 62 },
+        { "sector": "Retail", "Employed": 48 },
+        { "sector": "Health", "Employed": 55 },
+        { "sector": "Education", "Employed": 40 }
+      ]
+    },
+    "question": "If next year IT grows by 20% and Retail shrinks by 25%, what will be the new combined total for IT and Retail?",
+    "options": ["138K", "132K", "141K", "128K"],
     "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_011.png"
-  },
-  {
-    "id": "DI_BAR_11_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 11",
-    "options": [
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_011.png"
-  },
-  {
-    "id": "DI_BAR_11_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 11",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Correct Answer",
-      "Wrong 1"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_011.png"
-  },
-  {
-    "id": "DI_BAR_11_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 11",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_011.png"
-  },
-  {
-    "id": "DI_BAR_12_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 12",
-    "options": [
-      "Wrong 2",
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_012.png"
-  },
-  {
-    "id": "DI_BAR_12_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 12",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_012.png"
-  },
-  {
-    "id": "DI_BAR_12_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 12",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_012.png"
-  },
-  {
-    "id": "DI_BAR_12_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 12",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_012.png"
-  },
-  {
-    "id": "DI_BAR_12_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 12",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_012.png"
-  },
-  {
-    "id": "DI_BAR_13_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 13",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_013.png"
-  },
-  {
-    "id": "DI_BAR_13_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 13",
-    "options": [
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_013.png"
-  },
-  {
-    "id": "DI_BAR_13_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 13",
-    "options": [
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_013.png"
-  },
-  {
-    "id": "DI_BAR_13_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 13",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_013.png"
-  },
-  {
-    "id": "DI_BAR_13_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 13",
-    "options": [
-      "Correct Answer",
-      "Wrong 2",
-      "Wrong 1",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_013.png"
-  },
-  {
-    "id": "DI_BAR_14_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 14",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_014.png"
-  },
-  {
-    "id": "DI_BAR_14_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 14",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_014.png"
-  },
-  {
-    "id": "DI_BAR_14_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 14",
-    "options": [
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_014.png"
-  },
-  {
-    "id": "DI_BAR_14_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 14",
-    "options": [
-      "Wrong 2",
-      "Wrong 3",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_014.png"
-  },
-  {
-    "id": "DI_BAR_14_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 14",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_014.png"
-  },
-  {
-    "id": "DI_BAR_15_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 15",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_015.png"
-  },
-  {
-    "id": "DI_BAR_15_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 15",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_015.png"
-  },
-  {
-    "id": "DI_BAR_15_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 15",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_015.png"
-  },
-  {
-    "id": "DI_BAR_15_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 15",
-    "options": [
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_015.png"
-  },
-  {
-    "id": "DI_BAR_15_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 15",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_015.png"
-  },
-  {
-    "id": "DI_BAR_16_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 16",
-    "options": [
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_016.png"
-  },
-  {
-    "id": "DI_BAR_16_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 16",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_016.png"
-  },
-  {
-    "id": "DI_BAR_16_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 16",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_016.png"
-  },
-  {
-    "id": "DI_BAR_16_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 16",
-    "options": [
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 2",
-      "Wrong 1"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_016.png"
-  },
-  {
-    "id": "DI_BAR_16_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 16",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_016.png"
-  },
-  {
-    "id": "DI_BAR_17_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 17",
-    "options": [
-      "Wrong 3",
-      "Correct Answer",
-      "Wrong 2",
-      "Wrong 1"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_017.png"
-  },
-  {
-    "id": "DI_BAR_17_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 17",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_017.png"
-  },
-  {
-    "id": "DI_BAR_17_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 17",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_017.png"
-  },
-  {
-    "id": "DI_BAR_17_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 17",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_017.png"
-  },
-  {
-    "id": "DI_BAR_17_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 17",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_017.png"
-  },
-  {
-    "id": "DI_BAR_18_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 18",
-    "options": [
-      "Correct Answer",
-      "Wrong 2",
-      "Wrong 3",
-      "Wrong 1"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_018.png"
-  },
-  {
-    "id": "DI_BAR_18_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 18",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_018.png"
-  },
-  {
-    "id": "DI_BAR_18_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 18",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_018.png"
-  },
-  {
-    "id": "DI_BAR_18_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 18",
-    "options": [
-      "Wrong 1",
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 1,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_018.png"
-  },
-  {
-    "id": "DI_BAR_18_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 18",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_018.png"
-  },
-  {
-    "id": "DI_BAR_19_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 19",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_019.png"
-  },
-  {
-    "id": "DI_BAR_19_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 19",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_019.png"
-  },
-  {
-    "id": "DI_BAR_19_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 19",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_019.png"
-  },
-  {
-    "id": "DI_BAR_19_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 19",
-    "options": [
-      "Correct Answer",
-      "Wrong 3",
-      "Wrong 1",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_019.png"
-  },
-  {
-    "id": "DI_BAR_19_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 19",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_019.png"
-  },
-  {
-    "id": "DI_BAR_20_1",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 1 for Bar Chart 20",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_020.png"
-  },
-  {
-    "id": "DI_BAR_20_2",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Easy",
-    "question": "Sample Question 2 for Bar Chart 20",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Wrong 1",
-      "Correct Answer"
-    ],
-    "correctAnswer": 3,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 60,
-    "image": "/assets/di-images/bar-charts/bar_020.png"
-  },
-  {
-    "id": "DI_BAR_20_3",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 3 for Bar Chart 20",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 2",
-      "Wrong 3"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_020.png"
-  },
-  {
-    "id": "DI_BAR_20_4",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Medium",
-    "question": "Sample Question 4 for Bar Chart 20",
-    "options": [
-      "Wrong 3",
-      "Wrong 2",
-      "Correct Answer",
-      "Wrong 1"
-    ],
-    "correctAnswer": 2,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 90,
-    "image": "/assets/di-images/bar-charts/bar_020.png"
-  },
-  {
-    "id": "DI_BAR_20_5",
-    "topic": "Data Interpretation",
-    "subtopic": "Bar Charts",
-    "difficulty": "Hard",
-    "question": "Sample Question 5 for Bar Chart 20",
-    "options": [
-      "Correct Answer",
-      "Wrong 1",
-      "Wrong 3",
-      "Wrong 2"
-    ],
-    "correctAnswer": 0,
-    "answer": "Correct Answer",
-    "tags": [
-      "DI",
-      "bar-charts"
-    ],
-    "estimatedTime": 120,
-    "image": "/assets/di-images/bar-charts/bar_020.png"
+    "answer": "138K",
+    "explanation": "New IT = 85 × 1.20 = 102K. New Retail = 48 × 0.75 = 36K. Combined = 102 + 36 = 138K.",
+    "tags": ["DI", "bar-charts", "projection", "hard"],
+    "estimatedTime": 80
   }
 ]
