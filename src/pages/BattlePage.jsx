@@ -118,11 +118,14 @@ const BattlePage = ({ navigate }) => {
     return () => clearTimeout(aiTimerRef.current);
   }, [mode, aiCurrentQ, isFinished, aiProfile, questions.length, aiFinished]);
 
+  const hasSubmittedRef = useRef(false);
+
   // Submission Hook (when both finished or timer ends)
   useEffect(() => {
     let mounted = true;
     const submitBattle = async () => {
-      if (!isSubmitting && !isFinished && playerFinished && aiFinished && testSession) {
+      if (!isFinished && playerFinished && aiFinished && testSession && !hasSubmittedRef.current) {
+        hasSubmittedRef.current = true;
         setIsSubmitting(true);
         try {
           const formattedAnswers = Object.entries(playerAnswers).map(([qId, sel]) => ({
@@ -143,6 +146,7 @@ const BattlePage = ({ navigate }) => {
         } catch (err) {
           console.error("Failed to submit battle:", err);
           alert("Failed to submit your battle results!");
+          hasSubmittedRef.current = false;
         } finally {
           if (mounted) setIsSubmitting(false);
         }
@@ -150,7 +154,7 @@ const BattlePage = ({ navigate }) => {
     };
     submitBattle();
     return () => { mounted = false; };
-  }, [playerFinished, aiFinished, isFinished, isSubmitting, playerAnswers, testSession]);
+  }, [playerFinished, aiFinished, isFinished, playerAnswers, testSession]);
 
   const handlePlayerAnswer = (selectedOption) => {
     if (playerFinished) return;
