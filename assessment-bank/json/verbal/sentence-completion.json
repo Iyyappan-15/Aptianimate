@@ -4,17 +4,17 @@
     "category": "Verbal Ability",
     "topic": "Sentence Completion",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Fill in the blank with the correct verb: \"He ____ playing.\"",
-    "options": {
-      "A": "am",
-      "B": "be",
-      "C": "is",
-      "D": "are"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "am",
+      "be",
+      "is",
+      "are"
+    ],
+    "correct_answer": "is",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -28,17 +28,17 @@
     "category": "Verbal Ability",
     "topic": "Sentence Completion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Fill in the blank with the correct verb: \"They ____ going.\"",
-    "options": {
-      "A": "be",
-      "B": "am",
-      "C": "is",
-      "D": "are"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "be",
+      "am",
+      "is",
+      "are"
+    ],
+    "correct_answer": "are",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -52,17 +52,17 @@
     "category": "Verbal Ability",
     "topic": "Sentence Completion",
     "subtopic": "Sentence Completion (Verbal)",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Choose the correct pair of words to fill the blanks: \"What did the painter do ______ himself from falling? When he felt the ladder ______ , he grabbed the gutter.\"",
-    "options": {
-      "A": "to saving / begins slipping",
-      "B": "to save / began slipped",
-      "C": "for saving / begin slip",
-      "D": "to save / begin to slip"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "to saving / begins slipping",
+      "to save / began slipped",
+      "for saving / begin slip",
+      "to save / begin to slip"
+    ],
+    "correct_answer": "to save / begin to slip",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",

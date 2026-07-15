@@ -4,17 +4,17 @@
     "category": "Logical Reasoning",
     "topic": "Blood Relation",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Based on the family setup in Question 9, how is C related to D?",
-    "options": {
-      "A": "Sister",
-      "B": "Daughter",
-      "C": "Daughter-in-law",
-      "D": "Niece"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Sister",
+      "Daughter",
+      "Daughter-in-law",
+      "Niece"
+    ],
+    "correct_answer": "Daughter-in-law",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -28,17 +28,17 @@
     "category": "Logical Reasoning",
     "topic": "Blood Relation",
     "subtopic": "Blood Relations",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A man points to a woman and says, \"Your brother's only sister is my mother.\" How is that woman related to the maternal grandmother of that man?",
-    "options": {
-      "A": "Niece",
-      "B": "Granddaughter",
-      "C": "Daughter",
-      "D": "Sister"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Niece",
+      "Granddaughter",
+      "Daughter",
+      "Sister"
+    ],
+    "correct_answer": "Daughter",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -52,17 +52,17 @@
     "category": "Logical Reasoning",
     "topic": "Blood Relation",
     "subtopic": "Blood Relations (Family Tree)",
-    "difficulty": "Hard",
+    "difficulty": "hard",
     "question": "Veena says, \"Kavya is the sister of the son of the wife of my husband.\" How is Veena related to Kavya?",
-    "options": {
-      "A": "Aunt",
-      "B": "Stepmother",
-      "C": "Sister",
-      "D": "Mother"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 90,
-    "companyTags": [
+    "options": [
+      "Aunt",
+      "Stepmother",
+      "Sister",
+      "Mother"
+    ],
+    "correct_answer": "Mother",
+    "estimated_time": 90,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -76,17 +76,17 @@
     "category": "Logical Reasoning",
     "topic": "Blood Relation",
     "subtopic": "General",
-    "difficulty": "Hard",
+    "difficulty": "hard",
     "question": "In a family of six persons A, B, C, D, E, and F, there are two married couples. D is the grandmother of A and mother of B. C is the wife of B and mother of F. F is the granddaughter of E. How is A related to F?",
-    "options": {
-      "A": "Niece",
-      "B": "Data inadequate",
-      "C": "Cousin",
-      "D": "Sister"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 90,
-    "companyTags": [
+    "options": [
+      "Niece",
+      "Data inadequate",
+      "Cousin",
+      "Sister"
+    ],
+    "correct_answer": "Data inadequate",
+    "estimated_time": 90,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -100,17 +100,17 @@
     "category": "Logical Reasoning",
     "topic": "Blood Relation",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Given Statement I: \"Santosh and Sakshi are siblings.\" and Statement II: \"Sakshi is Sankar's daughter.\" Which statement is required to answer: \"How is Sakshi related to Sankar?\"",
-    "options": {
-      "A": "Statement II alone is sufficient",
-      "B": "Both statements together are required",
-      "C": "Statement I alone is sufficient",
-      "D": "Neither statement is sufficient"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Statement II alone is sufficient",
+      "Both statements together are required",
+      "Statement I alone is sufficient",
+      "Neither statement is sufficient"
+    ],
+    "correct_answer": "Statement II alone is sufficient",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",

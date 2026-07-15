@@ -4,17 +4,17 @@
     "category": "Logical Reasoning",
     "topic": "Clock",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Find the reflex angle between the hands of a clock at 10:25.",
-    "options": {
-      "A": "192 1/2°",
-      "B": "187 1/2°",
-      "C": "202 1/2°",
-      "D": "197 1/2°"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "192 1/2°",
+      "187 1/2°",
+      "202 1/2°",
+      "197 1/2°"
+    ],
+    "correct_answer": "197 1/2°",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro"
@@ -27,17 +27,17 @@
     "category": "Logical Reasoning",
     "topic": "Clock",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Find the reflex angle between the hands of a clock at 05:30.",
-    "options": {
-      "A": "300°",
-      "B": "330°",
-      "C": "345°",
-      "D": "315°"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "300°",
+      "330°",
+      "345°",
+      "315°"
+    ],
+    "correct_answer": "345°",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro"

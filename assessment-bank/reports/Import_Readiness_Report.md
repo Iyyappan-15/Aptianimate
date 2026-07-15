@@ -1,5 +1,5 @@
 # Import Readiness Report
-Generated: 2026-07-15T04:14:50.994Z
+Generated: 2026-07-15T04:41:12.843Z
 
 ## Overall Status: ✅ READY FOR IMPORT
 
@@ -13,9 +13,9 @@ Generated: 2026-07-15T04:14:50.994Z
 | difficulty | ✅ | ✅ |
 | question | ✅ | ✅ |
 | options | ✅ | ✅ |
-| correctAnswer | ✅ | ✅ |
-| estimatedTime | ✅ | ✅ |
-| companyTags | ✅ | ✅ |
+| correct_answer | ✅ | ✅ |
+| estimated_time | ✅ | ✅ |
+| company_tags | ✅ | ✅ |
 | status | ✅ | ✅ |
 | created_by | ✅ | ✅ |
 

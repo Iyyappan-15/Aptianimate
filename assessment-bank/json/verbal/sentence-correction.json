@@ -4,17 +4,17 @@
     "category": "Verbal Ability",
     "topic": "Sentence Correction",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Identify the correct sentence correction for: \"She do not like mangoes.\"",
-    "options": {
-      "A": "She does not like mangoes.",
-      "B": "She not like mangoes.",
-      "C": "She do not likes mangoes.",
-      "D": "She doesn't liking mangoes."
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "She does not like mangoes.",
+      "She not like mangoes.",
+      "She do not likes mangoes.",
+      "She doesn't liking mangoes."
+    ],
+    "correct_answer": "She does not like mangoes.",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "wipro",
       "cognizant",
@@ -28,17 +28,17 @@
     "category": "Verbal Ability",
     "topic": "Sentence Correction",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Identify the correct sentence from the choices. (1) The survivors live to tell the story of a world turned upside down. (2) The survivors is living to tell the story. (3) The survivors lives to tell the story. (4) The survivors live to tell the story of a world turned upside out.",
-    "options": {
-      "A": "Option 1",
-      "B": "Option 3",
-      "C": "Option 2",
-      "D": "Option 4"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Option 1",
+      "Option 3",
+      "Option 2",
+      "Option 4"
+    ],
+    "correct_answer": "Option 1",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "wipro",
       "cognizant",
@@ -52,17 +52,17 @@
     "category": "Verbal Ability",
     "topic": "Sentence Correction",
     "subtopic": "Error Detection (Verbal)",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Identify the grammatical error in the sentence: \"A high-end machine was inaugurate by the team.\"",
-    "options": {
-      "A": "\"A high-end\" (should be \"A high end\")",
-      "B": "No error",
-      "C": "\"by the team\" (should be \"by team\")",
-      "D": "\"was inaugurate\" (should be \"was inaugurated\")"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "\"A high-end\" (should be \"A high end\")",
+      "No error",
+      "\"by the team\" (should be \"by team\")",
+      "\"was inaugurate\" (should be \"was inaugurated\")"
+    ],
+    "correct_answer": "\"was inaugurate\" (should be \"was inaugurated\")",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "wipro",
       "cognizant",
@@ -76,17 +76,17 @@
     "category": "Verbal Ability",
     "topic": "Sentence Correction",
     "subtopic": "Sentence Correction (Verbal)",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Identify any error in the sentence: \"The board announced that the decision to reduce the syllabus is yet to be approved by the competent authority.\"",
-    "options": {
-      "A": "\"approved\" should be \"approve\"",
-      "B": "\"announced\" should be \"announcing\"",
-      "C": "No error",
-      "D": "\"decision\" should be \"decisions\""
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "\"approved\" should be \"approve\"",
+      "\"announced\" should be \"announcing\"",
+      "No error",
+      "\"decision\" should be \"decisions\""
+    ],
+    "correct_answer": "No error",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "wipro",
       "cognizant",

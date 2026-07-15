@@ -4,17 +4,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Simple Interest",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Find the simple interest on a principal of ₹1000 at an interest rate of 10% per year for a duration of 2 years.",
-    "options": {
-      "A": "100",
-      "B": "260",
-      "C": "230",
-      "D": "200.0"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "100",
+      "260",
+      "230",
+      "200.0"
+    ],
+    "correct_answer": "200.0",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -28,17 +28,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Simple Interest",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A sum of money is divided among A, B, and C for 2, 3, and 4 years respectively at 5% simple interest per annum such that they receive the same interest amount. What is the investment ratio of A : B : C?",
-    "options": {
-      "A": "4 : 7 : 9",
-      "B": "9 : 10 : 8",
-      "C": "6:4:3",
-      "D": "7 : 2 : 6"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "4 : 7 : 9",
+      "9 : 10 : 8",
+      "6:4:3",
+      "7 : 2 : 6"
+    ],
+    "correct_answer": "6:4:3",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -52,17 +52,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Simple Interest",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A sum of Rs. 2500 is split and lent out into two parts: one at 12% simple interest per annum and the other at 10% per annum. If the total annual interest earned is Rs. 290, find the amount lent at 10%.",
-    "options": {
-      "A": "Rs. 1150",
-      "B": "Rs. 500",
-      "C": "Rs. 1300",
-      "D": "Rs. 1000"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Rs. 1150",
+      "Rs. 500",
+      "Rs. 1300",
+      "Rs. 1000"
+    ],
+    "correct_answer": "Rs. 1000",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -76,17 +76,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Simple Interest",
     "subtopic": "General",
-    "difficulty": "Hard",
+    "difficulty": "hard",
     "question": "The difference between the simple interest on a certain sum at 10% per annum for 2 years and compound interest compounded every 6 months is Rs. 124.05. What is the principal sum?",
-    "options": {
-      "A": "Rs. 9200",
-      "B": "Rs. 4000",
-      "C": "Rs. 10400",
-      "D": "Rs. 8000"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 90,
-    "companyTags": [
+    "options": [
+      "Rs. 9200",
+      "Rs. 4000",
+      "Rs. 10400",
+      "Rs. 8000"
+    ],
+    "correct_answer": "Rs. 8000",
+    "estimated_time": 90,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -100,17 +100,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Simple Interest",
     "subtopic": "Simple Interest & Loan Balance",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "X was supposed to pay back Rs. 23,000 at the end of 3 years at 5% simple interest. He makes two periodic payments: Rs. 9,450 at the end of Year 1 and Rs. 4,400 at the end of Year 2. Find the remaining balance at the end of the third year.",
-    "options": {
-      "A": "Rs. 9,150 (on original principal) only",
-      "B": "Rs. 9,150 (on original principal) / Rs. 8,114 (on declining balance)",
-      "C": "Rs. 9,850 (on original principal) / Rs. 8,414 (on declining balance)",
-      "D": "Rs. 8,114 (on declining balance) only"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Rs. 9,150 (on original principal) only",
+      "Rs. 9,150 (on original principal) / Rs. 8,114 (on declining balance)",
+      "Rs. 9,850 (on original principal) / Rs. 8,414 (on declining balance)",
+      "Rs. 8,114 (on declining balance) only"
+    ],
+    "correct_answer": "Rs. 9,150 (on original principal) / Rs. 8,114 (on declining balance)",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",

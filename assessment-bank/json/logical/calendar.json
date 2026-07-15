@@ -4,17 +4,17 @@
     "category": "Logical Reasoning",
     "topic": "Calendar",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "On what dates of July 2025 did Friday fall?",
-    "options": {
-      "A": "5, 12, 19, 26",
-      "B": "6, 13, 20, 27",
-      "C": "3, 10, 17, 24",
-      "D": "4, 11, 18, 25"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "5, 12, 19, 26",
+      "6, 13, 20, 27",
+      "3, 10, 17, 24",
+      "4, 11, 18, 25"
+    ],
+    "correct_answer": "4, 11, 18, 25",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "accenture",
@@ -28,17 +28,17 @@
     "category": "Logical Reasoning",
     "topic": "Calendar",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "If 1st January 1996 was a Monday, how many Tuesdays were there in that year?",
-    "options": {
-      "A": "54",
-      "B": "52",
-      "C": "53",
-      "D": "51"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "54",
+      "52",
+      "53",
+      "51"
+    ],
+    "correct_answer": "53",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "accenture",

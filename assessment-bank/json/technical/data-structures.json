@@ -4,17 +4,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Linked List",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is a key advantage of a linked list over an array?",
-    "options": {
-      "A": "Contiguous memory allocation",
-      "B": "Faster random access",
-      "C": "Less memory usage",
-      "D": "Dynamic size"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Contiguous memory allocation",
+      "Faster random access",
+      "Less memory usage",
+      "Dynamic size"
+    ],
+    "correct_answer": "Dynamic size",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -31,17 +31,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "A stack follows which data structure principle?",
-    "options": {
-      "A": "FIFO (First-In, First-Out)",
-      "B": "LIFO (Last-In, First-Out)",
-      "C": "Priority-based order",
-      "D": "Random access order"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "FIFO (First-In, First-Out)",
+      "LIFO (Last-In, First-Out)",
+      "Priority-based order",
+      "Random access order"
+    ],
+    "correct_answer": "LIFO (Last-In, First-Out)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -58,17 +58,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Queue",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "A queue follows which data structure principle?",
-    "options": {
-      "A": "Priority-based order",
-      "B": "LIFO (Last-In, First-Out)",
-      "C": "FIFO (First-In, First-Out)",
-      "D": "Random access order"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Priority-based order",
+      "LIFO (Last-In, First-Out)",
+      "FIFO (First-In, First-Out)",
+      "Random access order"
+    ],
+    "correct_answer": "FIFO (First-In, First-Out)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -85,17 +85,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the primary advantage of hashing?",
-    "options": {
-      "A": "Maintains sorted order",
-      "B": "Uses minimal memory always",
-      "C": "Fast average lookup",
-      "D": "Guaranteed worst-case O(1)"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Maintains sorted order",
+      "Uses minimal memory always",
+      "Fast average lookup",
+      "Guaranteed worst-case O(1)"
+    ],
+    "correct_answer": "Fast average lookup",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -112,17 +112,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the topmost node in a tree structure called?",
-    "options": {
-      "A": "Node",
-      "B": "Leaf",
-      "C": "Root",
-      "D": "Edge"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Node",
+      "Leaf",
+      "Root",
+      "Edge"
+    ],
+    "correct_answer": "Root",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -139,17 +139,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure follows the LIFO principle?",
-    "options": {
-      "A": "Stack",
-      "B": "Priority-based order",
-      "C": "FIFO (First-In, First-Out)",
-      "D": "Random access order"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Stack",
+      "Priority-based order",
+      "FIFO (First-In, First-Out)",
+      "Random access order"
+    ],
+    "correct_answer": "Stack",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -166,17 +166,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Queue",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure operates on the FIFO principle?",
-    "options": {
-      "A": "Random access order",
-      "B": "Priority-based order",
-      "C": "Queue",
-      "D": "LIFO (Last-In, First-Out)"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Random access order",
+      "Priority-based order",
+      "Queue",
+      "LIFO (Last-In, First-Out)"
+    ],
+    "correct_answer": "Queue",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -193,17 +193,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which tree traversal technique visits nodes in the order Left, Root, Right?",
-    "options": {
-      "A": "Postorder",
-      "B": "Inorder",
-      "C": "Level Order",
-      "D": "Preorder"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Postorder",
+      "Inorder",
+      "Level Order",
+      "Preorder"
+    ],
+    "correct_answer": "Inorder",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -220,17 +220,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the average-case time complexity of a hash table lookup?",
-    "options": {
-      "A": "O(n log n)",
-      "B": "O(log n)",
-      "C": "O(n)",
-      "D": "O(1)"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "O(n log n)",
+      "O(log n)",
+      "O(n)",
+      "O(1)"
+    ],
+    "correct_answer": "O(1)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -247,17 +247,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Queue",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which tree traversal technique uses a queue?",
-    "options": {
-      "A": "Priority-based order",
-      "B": "Random access order",
-      "C": "LIFO (Last-In, First-Out)",
-      "D": "Level Order"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Priority-based order",
+      "Random access order",
+      "LIFO (Last-In, First-Out)",
+      "Level Order"
+    ],
+    "correct_answer": "Level Order",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -274,17 +274,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure stores data in key-value pairs?",
-    "options": {
-      "A": "Binary Search Tree",
-      "B": "Linked List",
-      "C": "Hash Map",
-      "D": "Array"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Binary Search Tree",
+      "Linked List",
+      "Hash Map",
+      "Array"
+    ],
+    "correct_answer": "Hash Map",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -301,17 +301,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which algorithm is used to perform a level-order traversal of a graph?",
-    "options": {
-      "A": "Dijkstra's Algorithm",
-      "B": "A* Search",
-      "C": "Depth-First Search",
-      "D": "Breadth-First Search"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Dijkstra's Algorithm",
+      "A* Search",
+      "Depth-First Search",
+      "Breadth-First Search"
+    ],
+    "correct_answer": "Breadth-First Search",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -328,17 +328,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Hashing",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure provides an average lookup time of O(1) for a key?",
-    "options": {
-      "A": "Linked List",
-      "B": "Hash Map",
-      "C": "Binary Search Tree",
-      "D": "Array"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Linked List",
+      "Hash Map",
+      "Binary Search Tree",
+      "Array"
+    ],
+    "correct_answer": "Hash Map",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -355,17 +355,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Binary Search Tree",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which property is true for a Binary Search Tree (BST)?",
-    "options": {
-      "A": "Left = Root = Right",
-      "B": "Left > Root > Right",
-      "C": "Left < Root < Right",
-      "D": "Right < Left < Root"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Left = Root = Right",
+      "Left > Root > Right",
+      "Left < Root < Right",
+      "Right < Left < Root"
+    ],
+    "correct_answer": "Left < Root < Right",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -382,17 +382,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Stack",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure is used to implement the \"Undo\" feature in applications?",
-    "options": {
-      "A": "FIFO (First-In, First-Out)",
-      "B": "Stack",
-      "C": "Priority-based order",
-      "D": "Random access order"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "FIFO (First-In, First-Out)",
+      "Stack",
+      "Priority-based order",
+      "Random access order"
+    ],
+    "correct_answer": "Stack",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -409,17 +409,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Arrays",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which of these is a linear data structure?",
-    "options": {
-      "A": "O(n)",
-      "B": "O(n log n)",
-      "C": "O(log n)",
-      "D": "Array"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(log n)",
+      "Array"
+    ],
+    "correct_answer": "Array",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -436,17 +436,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the height of a tree with only one node?",
-    "options": {
-      "A": "0",
-      "B": "-1",
-      "C": "1",
-      "D": "Undefined"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "Undefined"
+    ],
+    "correct_answer": "0",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -463,17 +463,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which traversal visits Root, Left, Right?",
-    "options": {
-      "A": "Postorder",
-      "B": "Preorder",
-      "C": "Level Order",
-      "D": "Inorder"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Postorder",
+      "Preorder",
+      "Level Order",
+      "Inorder"
+    ],
+    "correct_answer": "Preorder",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -490,17 +490,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Trees",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which traversal visits Left, Right, Root?",
-    "options": {
-      "A": "Level Order",
-      "B": "Preorder",
-      "C": "Inorder",
-      "D": "Postorder"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Level Order",
+      "Preorder",
+      "Inorder",
+      "Postorder"
+    ],
+    "correct_answer": "Postorder",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -517,17 +517,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Deque",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which data structure allows efficient insertion and deletion at both ends?",
-    "options": {
-      "A": "Array",
-      "B": "Deque",
-      "C": "Queue",
-      "D": "Stack"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Array",
+      "Deque",
+      "Queue",
+      "Stack"
+    ],
+    "correct_answer": "Deque",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -544,17 +544,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Binary Search Tree",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "In a Binary Search Tree (BST), what is the relationship of the values in the left subtree to the root?",
-    "options": {
-      "A": "Unrelated to root",
-      "B": "Equal to root",
-      "C": "Smaller than root",
-      "D": "Greater than root"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Unrelated to root",
+      "Equal to root",
+      "Smaller than root",
+      "Greater than root"
+    ],
+    "correct_answer": "Smaller than root",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -571,17 +571,17 @@
     "category": "Technical",
     "topic": "Data Structures",
     "subtopic": "Heap",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "In a Min Heap, what does the root node store?",
-    "options": {
-      "A": "Root's parent",
-      "B": "Maximum element",
-      "C": "Any random element",
-      "D": "Minimum element"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Root's parent",
+      "Maximum element",
+      "Any random element",
+      "Minimum element"
+    ],
+    "correct_answer": "Minimum element",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",

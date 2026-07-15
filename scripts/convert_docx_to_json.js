@@ -278,23 +278,29 @@ function transform(block) {
   const caLetter = block.correctAnswer.trim().charAt(0).toUpperCase();
   const topic    = block.topic;
   const diff     = block.difficulty;
+  
+  const optA = block.options.A.trim();
+  const optB = block.options.B.trim();
+  const optC = block.options.C.trim();
+  const optD = block.options.D.trim();
+
+  let correctAnsText = '';
+  if (caLetter === 'A') correctAnsText = optA;
+  else if (caLetter === 'B') correctAnsText = optB;
+  else if (caLetter === 'C') correctAnsText = optC;
+  else if (caLetter === 'D') correctAnsText = optD;
 
   return {
     id           : block.rawId,
     category     : block.category,
     topic        : topic,
     subtopic     : block.subtopic,
-    difficulty   : diff,
+    difficulty   : diff.toLowerCase(),
     question     : block.question.trim(),
-    options      : {
-      A: block.options.A.trim(),
-      B: block.options.B.trim(),
-      C: block.options.C.trim(),
-      D: block.options.D.trim(),
-    },
-    correctAnswer : caLetter,
-    estimatedTime : DIFFICULTY_TIME[diff] || 60,
-    companyTags   : COMPANY_TAGS[topic] || [],
+    options      : [optA, optB, optC, optD].filter(Boolean),
+    correct_answer: correctAnsText,
+    estimated_time : DIFFICULTY_TIME[diff] || 60,
+    company_tags   : COMPANY_TAGS[topic] || [],
     status        : 'published',
     created_by    : 'bulk_import',
   };
@@ -437,11 +443,11 @@ function generateDifficultyDist(records) {
 }
 
 function generateImportReadiness(records, validation, fileMap) {
-  const schemaFields    = ['id','category','topic','subtopic','difficulty','question','options','correctAnswer','estimatedTime','companyTags','status','created_by'];
+  const schemaFields    = ['id','category','topic','subtopic','difficulty','question','options','correct_answer','estimated_time','company_tags','status','created_by'];
   const missingFields   = schemaFields.filter(f => records[0] && records[0][f] === undefined);
-  const emptyRecords    = records.filter(r => !r.question || !r.correctAnswer || !r.options.A);
+  const emptyRecords    = records.filter(r => !r.question || !r.correct_answer || !r.options[0]);
   const invalidStatuses = records.filter(r => r.status !== 'published');
-  const noCompanyTags   = records.filter(r => r.companyTags.length === 0);
+  const noCompanyTags   = records.filter(r => !r.company_tags || r.company_tags.length === 0);
 
   const isReady = validation.errors.length === 0 && emptyRecords.length === 0 && missingFields.length === 0;
 

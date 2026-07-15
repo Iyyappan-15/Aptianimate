@@ -4,17 +4,17 @@
     "category": "Technical",
     "topic": "OOPS",
     "subtopic": "Polymorphism",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Method overloading is an example of which type of polymorphism?",
-    "options": {
-      "A": "Operator overriding",
-      "B": "Static binding only",
-      "C": "Run-time polymorphism",
-      "D": "Compile-time polymorphism"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Operator overriding",
+      "Static binding only",
+      "Run-time polymorphism",
+      "Compile-time polymorphism"
+    ],
+    "correct_answer": "Compile-time polymorphism",
+    "estimated_time": 45,
+    "company_tags": [
       "microsoft",
       "oracle",
       "tcs",
@@ -30,17 +30,17 @@
     "category": "Technical",
     "topic": "OOPS",
     "subtopic": "Encapsulation",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which OOP principle focuses on data hiding?",
-    "options": {
-      "A": "Inheritance",
-      "B": "Abstraction",
-      "C": "Polymorphism",
-      "D": "Encapsulation"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Inheritance",
+      "Abstraction",
+      "Polymorphism",
+      "Encapsulation"
+    ],
+    "correct_answer": "Encapsulation",
+    "estimated_time": 45,
+    "company_tags": [
       "microsoft",
       "oracle",
       "tcs",
@@ -56,17 +56,17 @@
     "category": "Technical",
     "topic": "OOPS",
     "subtopic": "Inheritance",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "What is the main advantage of inheritance?",
-    "options": {
-      "A": "Code reuse",
-      "B": "Faster execution",
-      "C": "Memory optimization",
-      "D": "Data hiding"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Code reuse",
+      "Faster execution",
+      "Memory optimization",
+      "Data hiding"
+    ],
+    "correct_answer": "Code reuse",
+    "estimated_time": 60,
+    "company_tags": [
       "microsoft",
       "oracle",
       "tcs",
@@ -82,17 +82,17 @@
     "category": "Technical",
     "topic": "OOPS",
     "subtopic": "Abstraction",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "How does abstraction help in programming?",
-    "options": {
-      "A": "Reusing existing code",
-      "B": "Combining data and methods",
-      "C": "Hiding data using access modifiers",
-      "D": "Showing essential features only"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Reusing existing code",
+      "Combining data and methods",
+      "Hiding data using access modifiers",
+      "Showing essential features only"
+    ],
+    "correct_answer": "Showing essential features only",
+    "estimated_time": 60,
+    "company_tags": [
       "microsoft",
       "oracle",
       "tcs",

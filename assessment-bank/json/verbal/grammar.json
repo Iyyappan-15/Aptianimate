@@ -4,17 +4,17 @@
     "category": "Verbal Ability",
     "topic": "Grammar",
     "subtopic": "Formal/Informal Usage",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Identify the sentence that does NOT use informal language:",
-    "options": {
-      "A": "\"We'll let you know in a couple weeks.\"",
-      "B": "\"We'll get back to ya.\"",
-      "C": "\"Gonna tell you soon.\"",
-      "D": "\"We shall endeavour to inform you of the position in two weeks time.\""
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "\"We'll let you know in a couple weeks.\"",
+      "\"We'll get back to ya.\"",
+      "\"Gonna tell you soon.\"",
+      "\"We shall endeavour to inform you of the position in two weeks time.\""
+    ],
+    "correct_answer": "\"We shall endeavour to inform you of the position in two weeks time.\"",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "wipro",
       "cognizant",
@@ -28,17 +28,17 @@
     "category": "Verbal Ability",
     "topic": "Grammar",
     "subtopic": "Subject-Verb Agreement",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Choose the grammatically correct sentence structure:",
-    "options": {
-      "A": "She go to school.",
-      "B": "She gone to school.",
-      "C": "She going to school.",
-      "D": "She goes to school."
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "She go to school.",
+      "She gone to school.",
+      "She going to school.",
+      "She goes to school."
+    ],
+    "correct_answer": "She goes to school.",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "wipro",
       "cognizant",
@@ -52,17 +52,17 @@
     "category": "Verbal Ability",
     "topic": "Grammar",
     "subtopic": "Pronoun Usage",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Choose the grammatically correct expression for third-person singular possession:",
-    "options": {
-      "A": "He has a car.",
-      "B": "He having car.",
-      "C": "He have a car.",
-      "D": "He having a car."
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "He has a car.",
+      "He having car.",
+      "He have a car.",
+      "He having a car."
+    ],
+    "correct_answer": "He has a car.",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "wipro",
       "cognizant",

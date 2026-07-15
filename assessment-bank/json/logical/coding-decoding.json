@@ -4,17 +4,17 @@
     "category": "Logical Reasoning",
     "topic": "Coding Decoding",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "If HARYANA is coded as 8197151, then how will DELHI be coded?",
-    "options": {
-      "A": "54398",
-      "B": "45398",
-      "C": "45389",
-      "D": "43598"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "54398",
+      "45398",
+      "45389",
+      "43598"
+    ],
+    "correct_answer": "45389",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -29,17 +29,17 @@
     "category": "Logical Reasoning",
     "topic": "Coding Decoding",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If EXAMPLE is coded as AXEMELP, then how will CONDITION be coded?",
-    "options": {
-      "A": "NOCDINOIT",
-      "B": "DONCINOTI",
-      "C": "DNOCITOIN",
-      "D": "DNOCINOIT"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "NOCDINOIT",
+      "DONCINOTI",
+      "DNOCITOIN",
+      "DNOCINOIT"
+    ],
+    "correct_answer": "DNOCINOIT",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -54,17 +54,17 @@
     "category": "Logical Reasoning",
     "topic": "Coding Decoding",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "If FATHER is coded as 7 and DAUGHTER is coded as 9, then what is the code for DISTANT?",
-    "options": {
-      "A": "6",
-      "B": "7",
-      "C": "8",
-      "D": "9"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": "8",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",

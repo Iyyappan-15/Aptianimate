@@ -4,17 +4,17 @@
     "category": "Technical",
     "topic": "DBMS",
     "subtopic": "Database Fundamentals",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which ACID property ensures completed transactions remain saved?",
-    "options": {
-      "A": "Durability",
-      "B": "Consistency",
-      "C": "Isolation",
-      "D": "Atomicity"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Durability",
+      "Consistency",
+      "Isolation",
+      "Atomicity"
+    ],
+    "correct_answer": "Durability",
+    "estimated_time": 60,
+    "company_tags": [
       "oracle",
       "ibm",
       "sap",
@@ -30,17 +30,17 @@
     "category": "Technical",
     "topic": "DBMS",
     "subtopic": "Database Fundamentals",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A primary key must be:",
-    "options": {
-      "A": "Duplicated",
-      "B": "Optional",
-      "C": "Text only",
-      "D": "Unique"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Duplicated",
+      "Optional",
+      "Text only",
+      "Unique"
+    ],
+    "correct_answer": "Unique",
+    "estimated_time": 60,
+    "company_tags": [
       "oracle",
       "ibm",
       "sap",
@@ -56,17 +56,17 @@
     "category": "Technical",
     "topic": "DBMS",
     "subtopic": "Database Fundamentals",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A foreign key is used to:",
-    "options": {
-      "A": "Index columns",
-      "B": "Encrypt data",
-      "C": "Sort rows",
-      "D": "Link tables"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Index columns",
+      "Encrypt data",
+      "Sort rows",
+      "Link tables"
+    ],
+    "correct_answer": "Link tables",
+    "estimated_time": 60,
+    "company_tags": [
       "oracle",
       "ibm",
       "sap",
@@ -82,17 +82,17 @@
     "category": "Technical",
     "topic": "DBMS",
     "subtopic": "Database Fundamentals",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Normalization is performed to:",
-    "options": {
-      "A": "Increase redundancy",
-      "B": "Slow down queries",
-      "C": "Reduce redundancy",
-      "D": "Remove primary keys"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Increase redundancy",
+      "Slow down queries",
+      "Reduce redundancy",
+      "Remove primary keys"
+    ],
+    "correct_answer": "Reduce redundancy",
+    "estimated_time": 45,
+    "company_tags": [
       "oracle",
       "ibm",
       "sap",

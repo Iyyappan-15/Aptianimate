@@ -1,5 +1,5 @@
 // src/App.jsx
-import { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, Suspense, lazy } from 'react';
 import { useAuth } from './contexts/AuthContext';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
@@ -18,6 +18,10 @@ import ProfilePage from './pages/ProfilePage';
 import SplashScreen from './components/SplashScreen';
 import DoodleOverlay from './components/DoodleOverlay';
 import UsernameModal from './components/UsernameModal';
+
+const MockTestPage = lazy(() => import('./pages/MockTestPage'));
+const MockTestResultsPage = lazy(() => import('./pages/MockTestResultsPage'));
+const BattlePage = lazy(() => import('./pages/BattlePage'));
 import { signInWithGoogle, signOut } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
 
@@ -119,6 +123,13 @@ function App() {
     pageComponent = <SavedPage navigate={navigate} />;
   } else if (route === 'progress') {
     pageComponent = <ProgressPage navigate={navigate} />;
+  } else if (route === 'mock-test') {
+    pageComponent = <MockTestPage navigate={navigate} />;
+  } else if (route.startsWith('mock-test/results/')) {
+    const id = route.split('/')[2];
+    pageComponent = <MockTestResultsPage testId={id} navigate={navigate} />;
+  } else if (route === 'battle') {
+    pageComponent = <BattlePage navigate={navigate} />;
   } else if (route.startsWith('ask')) {
     // Support optional ?q= pre-fill: #/ask?q=your+question
     const rawHash = window.location.hash.replace('#/', '');
@@ -278,7 +289,9 @@ function App() {
               </AdminRoute>
             ) : (
               <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-                {pageComponent}
+                <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', color: 'var(--text)' }}>Loading Page...</div>}>
+                  {pageComponent}
+                </Suspense>
               </main>
             )}
           </motion.div>

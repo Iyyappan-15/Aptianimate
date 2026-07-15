@@ -4,17 +4,17 @@
     "category": "Technical",
     "topic": "Operating System",
     "subtopic": "OS Fundamentals",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A process can contain multiple:",
-    "options": {
-      "A": "Registers",
-      "B": "Compilers",
-      "C": "Kernels",
-      "D": "Threads"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Registers",
+      "Compilers",
+      "Kernels",
+      "Threads"
+    ],
+    "correct_answer": "Threads",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -30,17 +30,17 @@
     "category": "Technical",
     "topic": "Operating System",
     "subtopic": "OS Fundamentals",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Deadlock occurs when:",
-    "options": {
-      "A": "Memory is freed automatically",
-      "B": "Processes wait indefinitely",
-      "C": "Processes execute faster",
-      "D": "CPU usage drops to zero"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Memory is freed automatically",
+      "Processes wait indefinitely",
+      "Processes execute faster",
+      "CPU usage drops to zero"
+    ],
+    "correct_answer": "Processes wait indefinitely",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -56,17 +56,17 @@
     "category": "Technical",
     "topic": "Operating System",
     "subtopic": "OS Fundamentals",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Virtual memory primarily:",
-    "options": {
-      "A": "Reduces CPU usage",
-      "B": "Compresses files",
-      "C": "Extends logical memory",
-      "D": "Increases disk speed"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Reduces CPU usage",
+      "Compresses files",
+      "Extends logical memory",
+      "Increases disk speed"
+    ],
+    "correct_answer": "Extends logical memory",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",

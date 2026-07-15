@@ -4,17 +4,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Pipes & Cisterns",
     "subtopic": "Pipes & Cisterns",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Two pipes can fill a tank in 20 and 24 minutes respectively, and a waste pipe can empty 3 gallons per minute. All three pipes working together can fill the tank in 15 minutes. Find the capacity of the tank.",
-    "options": {
-      "A": "138 gallons",
-      "B": "120 gallons",
-      "C": "156 gallons",
-      "D": "60 gallons"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "138 gallons",
+      "120 gallons",
+      "156 gallons",
+      "60 gallons"
+    ],
+    "correct_answer": "120 gallons",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "wipro",
       "infosys"

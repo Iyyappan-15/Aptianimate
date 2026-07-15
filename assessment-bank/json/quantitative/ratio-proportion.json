@@ -4,17 +4,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "The age of the eldest child among 5 children born at 4-year intervals, whose combined ages total 50 years, is:",
-    "options": {
-      "A": "18 years",
-      "B": "19 years",
-      "C": "21 years",
-      "D": "16 years"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "18 years",
+      "19 years",
+      "21 years",
+      "16 years"
+    ],
+    "correct_answer": "18 years",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -29,17 +29,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Two numbers are such that their sum is three times their difference. What is their ratio?",
-    "options": {
-      "A": "3 : 5",
-      "B": "6 : 4",
-      "C": "2 : 1",
-      "D": "5 : 7"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "3 : 5",
+      "6 : 4",
+      "2 : 1",
+      "5 : 7"
+    ],
+    "correct_answer": "2 : 1",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -54,17 +54,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What number must be added to each term of the ratio 7 : 11 so that it becomes equal to 3 : 4?",
-    "options": {
-      "A": "5",
-      "B": "3",
-      "C": "6",
-      "D": "8"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "5",
+      "3",
+      "6",
+      "8"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -79,17 +79,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Find the third proportional to 0.8 and 0.2.",
-    "options": {
-      "A": "-1.95",
-      "B": "0.05",
-      "C": "1.05",
-      "D": "3.05"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "-1.95",
+      "0.05",
+      "1.05",
+      "3.05"
+    ],
+    "correct_answer": "0.05",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -104,17 +104,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "A man's age after 13 years will be 4 times his age 8 years before. Find his present age.",
-    "options": {
-      "A": "13 years",
-      "B": "18 years",
-      "C": "15 years",
-      "D": "16 years"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "13 years",
+      "18 years",
+      "15 years",
+      "16 years"
+    ],
+    "correct_answer": "15 years",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -129,17 +129,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What number must be added to each term of the ratio 2 : 5 so that it may become equal to 5 : 6?",
-    "options": {
-      "A": "16",
-      "B": "13",
-      "C": "14",
-      "D": "11"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "16",
+      "13",
+      "14",
+      "11"
+    ],
+    "correct_answer": "13",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -154,17 +154,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Find the third proportional to 12 and 18.",
-    "options": {
-      "A": "31",
-      "B": "14",
-      "C": "35",
-      "D": "27"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "31",
+      "14",
+      "35",
+      "27"
+    ],
+    "correct_answer": "27",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -179,17 +179,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Divide 6200 into three parts in the ratio 1/2 : 1/3 : 1/5.",
-    "options": {
-      "A": "3900, 1600, 1800",
-      "B": "3000, 2000, 1200",
-      "C": "3450, 2600, 960",
-      "D": "1500, 2300, 1560"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "3900, 1600, 1800",
+      "3000, 2000, 1200",
+      "3450, 2600, 960",
+      "1500, 2300, 1560"
+    ],
+    "correct_answer": "3000, 2000, 1200",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -204,17 +204,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "A man's age 15 years hence will be four times his age 15 years ago. What is his present age?",
-    "options": {
-      "A": "12 years",
-      "B": "25 years",
-      "C": "32 years",
-      "D": "29 years"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "12 years",
+      "25 years",
+      "32 years",
+      "29 years"
+    ],
+    "correct_answer": "25 years",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -229,17 +229,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Fourth Proportional",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Find the fourth proportional to the numbers: 0.006, 1.2, and 6/25 (0.24).",
-    "options": {
-      "A": "48",
-      "B": "24",
-      "C": "62",
-      "D": "55"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "48",
+      "24",
+      "62",
+      "55"
+    ],
+    "correct_answer": "48",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -254,17 +254,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Arun is 2 years older than Bharat, who is twice as old as Charat. If the total of the ages of Arun, Bharat and Charat be 27, then how old is Bharat?",
-    "options": {
-      "A": "8 years",
-      "B": "10 years",
-      "C": "13 years",
-      "D": "11 years"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "8 years",
+      "10 years",
+      "13 years",
+      "11 years"
+    ],
+    "correct_answer": "10 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -279,17 +279,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If A : B = 4 : 9 and A : C = 2 : 3, then (A + B) : (A + C) is:",
-    "options": {
-      "A": "14 : 8",
-      "B": "13 : 10",
-      "C": "16 : 6",
-      "D": "11 : 13"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "14 : 8",
+      "13 : 10",
+      "16 : 6",
+      "11 : 13"
+    ],
+    "correct_answer": "13 : 10",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -304,17 +304,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The sum of the present age of Rani and her age 4 years ago is 84 years. What is the present age of Bala if the ratio of Bala's age to Rani's age after 6 years is 3 : 5?",
-    "options": {
-      "A": "28 years",
-      "B": "31 years",
-      "C": "24 years",
-      "D": "12 years"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "28 years",
+      "31 years",
+      "24 years",
+      "12 years"
+    ],
+    "correct_answer": "24 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -329,17 +329,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If X : Y = 2 : 3, then find the value of (3X + 2Y) / (9X + 5Y).",
-    "options": {
-      "A": "4/12",
-      "B": "3/11",
-      "C": "4/11",
-      "D": "5/11"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "4/12",
+      "3/11",
+      "4/11",
+      "5/11"
+    ],
+    "correct_answer": "4/11",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -354,17 +354,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A boy is 10 years older than his brother. In 4 years, he will be twice as old as his brother. Find the present age of each.",
-    "options": {
-      "A": "17, 4",
-      "B": "16, 6",
-      "C": "19, 2",
-      "D": "14, 9"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "17, 4",
+      "16, 6",
+      "19, 2",
+      "14, 9"
+    ],
+    "correct_answer": "16, 6",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -379,17 +379,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The ratio of the ages of A and B is 4 : 3. If A is 10 years older than B, find the age of A.",
-    "options": {
-      "A": "52 years",
-      "B": "46 years",
-      "C": "20 years",
-      "D": "40 years"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "52 years",
+      "46 years",
+      "20 years",
+      "40 years"
+    ],
+    "correct_answer": "40 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -404,17 +404,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The incomes of Vinay and Prakash are in the ratio of 4 : 5. If each saves ₹ 5,000 and their expenditures are in the ratio of 2 : 3, then find their respective incomes.",
-    "options": {
-      "A": "13000, 10000",
-      "B": "5000, 14375",
-      "C": "10000, 12500",
-      "D": "11500, 16250"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "13000, 10000",
+      "5000, 14375",
+      "10000, 12500",
+      "11500, 16250"
+    ],
+    "correct_answer": "10000, 12500",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -429,17 +429,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The ratio of first to second number is 2 : 3 and that of second to third is 5 : 8. Which of the following conditions is true?",
-    "options": {
-      "A": "Sum = 98; B = 30",
-      "B": "Sum = 90; B = 27",
-      "C": "Sum = 98; B = 24",
-      "D": "Sum = 104; B = 30"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Sum = 98; B = 30",
+      "Sum = 90; B = 27",
+      "Sum = 98; B = 24",
+      "Sum = 104; B = 30"
+    ],
+    "correct_answer": "Sum = 98; B = 30",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -454,17 +454,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If 18, x and 50 are in continued proportion, find the value of x.",
-    "options": {
-      "A": "15",
-      "B": "39",
-      "C": "30",
-      "D": "34"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "15",
+      "39",
+      "30",
+      "34"
+    ],
+    "correct_answer": "30",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -479,17 +479,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Two numbers are in the ratio 3 : 5. If each number is increased by 10, the ratio becomes 5 : 7. Find the smaller number.",
-    "options": {
-      "A": "13",
-      "B": "16",
-      "C": "18",
-      "D": "15"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "13",
+      "16",
+      "18",
+      "15"
+    ],
+    "correct_answer": "15",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -504,17 +504,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If the marks of candidate P and Q are in the ratio 2 : 5 and P's marks are 120, then find the marks of Q.",
-    "options": {
-      "A": "345",
-      "B": "300",
-      "C": "390",
-      "D": "150"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "345",
+      "300",
+      "390",
+      "150"
+    ],
+    "correct_answer": "300",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -529,17 +529,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The present ratio between the ages of Archana and Diksha is 4 : 3. If Archana's age after 5 years will be 25 years, then find the present age of Diksha.",
-    "options": {
-      "A": "16 years",
-      "B": "15 years",
-      "C": "13 years",
-      "D": "18 years"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "16 years",
+      "15 years",
+      "13 years",
+      "18 years"
+    ],
+    "correct_answer": "15 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -554,17 +554,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The sum of the ages of Raj, Rajesh and Ravi 8 years ago was 56 years. If their present ages are in the proportion 4 : 7 : 9, then find the present age of Ravi.",
-    "options": {
-      "A": "36 years",
-      "B": "18 years",
-      "C": "41 years",
-      "D": "47 years"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "36 years",
+      "18 years",
+      "41 years",
+      "47 years"
+    ],
+    "correct_answer": "36 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -579,17 +579,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The ratio of Suraj's age to Rohit's age is 3 : 5. If Suraj is younger than Rohit by 6 years, find the age of Rohit.",
-    "options": {
-      "A": "16 years",
-      "B": "18 years",
-      "C": "13 years",
-      "D": "15 years"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "16 years",
+      "18 years",
+      "13 years",
+      "15 years"
+    ],
+    "correct_answer": "15 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -604,17 +604,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The product of the ages of A and B is 84. If the sum of their ages is 19, find the age of the elder person.",
-    "options": {
-      "A": "13 years",
-      "B": "12 years",
-      "C": "10 years",
-      "D": "15 years"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "13 years",
+      "12 years",
+      "10 years",
+      "15 years"
+    ],
+    "correct_answer": "12 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -629,17 +629,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Kabir is 50 years old and his wife Sarah is 40 years old. How many years ago was the ratio of their ages 3 : 2?",
-    "options": {
-      "A": "23 years",
-      "B": "10 years",
-      "C": "20 years",
-      "D": "26 years"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "23 years",
+      "10 years",
+      "20 years",
+      "26 years"
+    ],
+    "correct_answer": "20 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -654,17 +654,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The ratio of Amrita's age to Amala's age is 3 : 2. Three years ago, their ratio was 5 : 3. Find the current age of Amala.",
-    "options": {
-      "A": "15",
-      "B": "13",
-      "C": "12",
-      "D": "10"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "15",
+      "13",
+      "12",
+      "10"
+    ],
+    "correct_answer": "12",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -679,17 +679,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "In a parade of school students, the number of boys and girls are in the ratio of 9 : 7 respectively and the number of students is 256. Find the number of girls.",
-    "options": {
-      "A": "129",
-      "B": "112",
-      "C": "56",
-      "D": "146"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "129",
+      "112",
+      "56",
+      "146"
+    ],
+    "correct_answer": "112",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -704,17 +704,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If the sum of age of three person is 63 years out of which one is having the age of 23 years and the ratio of remaining two is 5 : 3 then find the age of youngest person?",
-    "options": {
-      "A": "18 years",
-      "B": "13 years",
-      "C": "15 years",
-      "D": "16 years"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "18 years",
+      "13 years",
+      "15 years",
+      "16 years"
+    ],
+    "correct_answer": "15 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -729,17 +729,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If A : B = 3 : 4, B : C = 5 : 7 and C : D = 8 : 9 then A : D is equal to:",
-    "options": {
-      "A": "8 : 27",
-      "B": "11 : 24",
-      "C": "13 : 17",
-      "D": "10 : 21"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "8 : 27",
+      "11 : 24",
+      "13 : 17",
+      "10 : 21"
+    ],
+    "correct_answer": "10 : 21",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -754,17 +754,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The age of a man is 3 times of his son. Six years ago, the man was seven times old as his son was at that time. The present age of man is:",
-    "options": {
-      "A": "27 years",
-      "B": "35 years",
-      "C": "31 years",
-      "D": "14 years"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "27 years",
+      "35 years",
+      "31 years",
+      "14 years"
+    ],
+    "correct_answer": "27 years",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -779,17 +779,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If two times of A is equal to three times of B and also equal to four times of C, then A : B : C is:",
-    "options": {
-      "A": "7 : 2 : 6",
-      "B": "9 : 10 : 8",
-      "C": "6 : 4 : 3",
-      "D": "4 : 7 : 9"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "7 : 2 : 6",
+      "9 : 10 : 8",
+      "6 : 4 : 3",
+      "4 : 7 : 9"
+    ],
+    "correct_answer": "6 : 4 : 3",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -804,17 +804,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If the three numbers in the ratio 3 : 2 : 5 be such that the sum of the squares is equal to 1862 then which number is the middle one?",
-    "options": {
-      "A": "15",
-      "B": "12",
-      "C": "17",
-      "D": "14"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "15",
+      "12",
+      "17",
+      "14"
+    ],
+    "correct_answer": "14",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -829,17 +829,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The number of pupils of a class is 55. The ratio of the number of male pupils to the number of female pupils is 5 : 6. The number of female pupils is:",
-    "options": {
-      "A": "34",
-      "B": "30",
-      "C": "39",
-      "D": "15"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "34",
+      "30",
+      "39",
+      "15"
+    ],
+    "correct_answer": "30",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -854,17 +854,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The ratio of incomes of A and B is 5 : 6. If A gets ₹ 1,100 less than B, their total income (in rupees) is:",
-    "options": {
-      "A": "10, 130",
-      "B": "15, 80",
-      "C": "12,100",
-      "D": "13, 115"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "10, 130",
+      "15, 80",
+      "12,100",
+      "13, 115"
+    ],
+    "correct_answer": "12,100",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -879,17 +879,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The total age of X and Y is 15 years more than the sum of ages of Y and Z. X is how many years older than Z?",
-    "options": {
-      "A": "13",
-      "B": "15",
-      "C": "18",
-      "D": "16"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "13",
+      "15",
+      "18",
+      "16"
+    ],
+    "correct_answer": "15",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -904,17 +904,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A daughter is 10 years old now. Her mother's age is thrice her age. The father is 5 years older than the mother. What was the father's age when the daughter was born?",
-    "options": {
-      "A": "25",
-      "B": "32",
-      "C": "12",
-      "D": "29"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "25",
+      "32",
+      "12",
+      "29"
+    ],
+    "correct_answer": "25",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -929,17 +929,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A certain amount of money is divided between two friends in the ratio 4 : 7. If the second part is Rs. 6 more than the first part, find the difference in the amount divided between them.",
-    "options": {
-      "A": "Rs. 4",
-      "B": "Rs. 9",
-      "C": "Rs. 6",
-      "D": "Rs. 7"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Rs. 4",
+      "Rs. 9",
+      "Rs. 6",
+      "Rs. 7"
+    ],
+    "correct_answer": "Rs. 6",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -954,17 +954,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Three numbers are in the ratio 5 : 6 : 8. If the sum of the three numbers is 3800, find the largest number.",
-    "options": {
-      "A": "1600",
-      "B": "800",
-      "C": "1840",
-      "D": "2080"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "1600",
+      "800",
+      "1840",
+      "2080"
+    ],
+    "correct_answer": "1600",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -979,17 +979,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "The ratio of the present age of a son to his father is 1:3. Six years ago, the father's age was 5 times the son's age. What are their present ages and ratio?",
-    "options": {
-      "A": "Present ages are 18 and 36; Ratio is 1:2",
-      "B": "Present ages are 12 and 36; Ratio is 1:3",
-      "C": "Present ages are 12 and 36; Ratio is 1:2",
-      "D": "Present ages are 15 and 33; Ratio is 5:11"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Present ages are 18 and 36; Ratio is 1:2",
+      "Present ages are 12 and 36; Ratio is 1:3",
+      "Present ages are 12 and 36; Ratio is 1:2",
+      "Present ages are 15 and 33; Ratio is 5:11"
+    ],
+    "correct_answer": "Present ages are 12 and 36; Ratio is 1:3",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -1004,17 +1004,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ratio Substitution",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "If x : y = 7 : 3, find the value of the ratio (x - y) : (x + y).",
-    "options": {
-      "A": "6 : 8",
-      "B": "5 : 1",
-      "C": "3 : 3",
-      "D": "2 : 5"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "6 : 8",
+      "5 : 1",
+      "3 : 3",
+      "2 : 5"
+    ],
+    "correct_answer": "2 : 5",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -1029,17 +1029,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ratio Distribution",
-    "difficulty": "Hard",
+    "difficulty": "hard",
     "question": "A sum of money is distributed among A, B, C, and D in the ratio 4:7:9:3. If C gets Rs. 720 more than D, what is D's share?",
-    "options": {
-      "A": "Rs. 180",
-      "B": "Rs. 414",
-      "C": "Rs. 468",
-      "D": "Rs. 360"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 90,
-    "companyTags": [
+    "options": [
+      "Rs. 180",
+      "Rs. 414",
+      "Rs. 468",
+      "Rs. 360"
+    ],
+    "correct_answer": "Rs. 360",
+    "estimated_time": 90,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -1054,17 +1054,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ages",
-    "difficulty": "Hard",
+    "difficulty": "hard",
     "question": "The present ages of three brothers are in the proportion 12:14:17. The difference between the age of the elder brother and the eldest brother is 6 years. Find their age proportion after 4 years.",
-    "options": {
-      "A": "14 : 21 : 17",
-      "B": "16:18:21",
-      "C": "19 : 14 : 32",
-      "D": "17 : 16 : 27"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 90,
-    "companyTags": [
+    "options": [
+      "14 : 21 : 17",
+      "16:18:21",
+      "19 : 14 : 32",
+      "17 : 16 : 27"
+    ],
+    "correct_answer": "16:18:21",
+    "estimated_time": 90,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -1079,17 +1079,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Ratio & Proportion",
     "subtopic": "Ratio Sharing Difference",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "A sum of money is divided between X, Y, and Z. In Case 1, it is divided in the ratio 3:5:7. In Case 2, it is divided in the ratio 11:15:19. If Z gets Rs. 8,000 more in the first case than the second, find the total sum.",
-    "options": {
-      "A": "Rs. 234000",
-      "B": "Rs. 207000",
-      "C": "Rs. 90000",
-      "D": "Rs. 1,80000"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Rs. 234000",
+      "Rs. 207000",
+      "Rs. 90000",
+      "Rs. 1,80000"
+    ],
+    "correct_answer": "Rs. 1,80000",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",

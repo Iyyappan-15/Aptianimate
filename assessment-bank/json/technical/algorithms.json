@@ -4,17 +4,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Recursion",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the primary purpose of a base case in recursion?",
-    "options": {
-      "A": "Increase stack size",
-      "B": "Terminate recursion",
-      "C": "Improve time complexity",
-      "D": "Reduce memory allocation"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Increase stack size",
+      "Terminate recursion",
+      "Improve time complexity",
+      "Reduce memory allocation"
+    ],
+    "correct_answer": "Terminate recursion",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -32,17 +32,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Searching",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the data requirement for performing a Binary search?",
-    "options": {
-      "A": "Sorted data",
-      "B": "Linked data only",
-      "C": "Unsorted data",
-      "D": "Duplicate-free data"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Sorted data",
+      "Linked data only",
+      "Unsorted data",
+      "Duplicate-free data"
+    ],
+    "correct_answer": "Sorted data",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -60,17 +60,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Searching",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the worst-case time complexity of a linear search?",
-    "options": {
-      "A": "O(1)",
-      "B": "O(log n)",
-      "C": "O(n log n)",
-      "D": "O(n)"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n)"
+    ],
+    "correct_answer": "O(n)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -88,17 +88,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Sorting",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the average time complexity of Merge Sort?",
-    "options": {
-      "A": "O(n²)",
-      "B": "O(n)",
-      "C": "O(log n)",
-      "D": "O(n log n)"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "O(n²)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correct_answer": "O(n log n)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -116,17 +116,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Sorting",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the worst-case time complexity of Quick Sort?",
-    "options": {
-      "A": "O(n log n)",
-      "B": "O(log n)",
-      "C": "O(n²)",
-      "D": "O(n)"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "O(n log n)",
+      "O(log n)",
+      "O(n²)",
+      "O(n)"
+    ],
+    "correct_answer": "O(n²)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -144,17 +144,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Sorting",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the worst-case time complexity of Bubble Sort?",
-    "options": {
-      "A": "O(1)",
-      "B": "O(n log n)",
-      "C": "O(n²)",
-      "D": "O(n)"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "O(1)",
+      "O(n log n)",
+      "O(n²)",
+      "O(n)"
+    ],
+    "correct_answer": "O(n²)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -172,17 +172,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Graph Traversal",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure does a Depth First Search (DFS) primarily use?",
-    "options": {
-      "A": "Priority-based order",
-      "B": "Stack",
-      "C": "FIFO (First-In, First-Out)",
-      "D": "Random access order"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Priority-based order",
+      "Stack",
+      "FIFO (First-In, First-Out)",
+      "Random access order"
+    ],
+    "correct_answer": "Stack",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -200,17 +200,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Graph Traversal",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure does a Breadth First Search (BFS) primarily use?",
-    "options": {
-      "A": "Queue",
-      "B": "LIFO (Last-In, First-Out)",
-      "C": "Random access order",
-      "D": "Priority-based order"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Queue",
+      "LIFO (Last-In, First-Out)",
+      "Random access order",
+      "Priority-based order"
+    ],
+    "correct_answer": "Queue",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -228,17 +228,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Searching",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "What is the worst-case time complexity of binary search?",
-    "options": {
-      "A": "O(1)",
-      "B": "O(n log n)",
-      "C": "O(n)",
-      "D": "O(log n)"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "O(1)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correct_answer": "O(log n)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -256,17 +256,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Dynamic Programming",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which algorithmic technique is characterized by solving overlapping subproblems and storing their results?",
-    "options": {
-      "A": "Divide and Conquer",
-      "B": "Dynamic Programming",
-      "C": "Backtracking",
-      "D": "Greedy Algorithm"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Divide and Conquer",
+      "Dynamic Programming",
+      "Backtracking",
+      "Greedy Algorithm"
+    ],
+    "correct_answer": "Dynamic Programming",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -284,17 +284,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Recursion",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure is used to handle function calls in recursion?",
-    "options": {
-      "A": "Increase stack size",
-      "B": "Reduce memory allocation",
-      "C": "Stack",
-      "D": "Improve time complexity"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Increase stack size",
+      "Reduce memory allocation",
+      "Stack",
+      "Improve time complexity"
+    ],
+    "correct_answer": "Stack",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -312,17 +312,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Searching",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which search algorithm requires the data to be sorted?",
-    "options": {
-      "A": "Linear Search",
-      "B": "Interpolation Search",
-      "C": "Binary Search",
-      "D": "Jump Search"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Linear Search",
+      "Interpolation Search",
+      "Binary Search",
+      "Jump Search"
+    ],
+    "correct_answer": "Binary Search",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -340,17 +340,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Sorting",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which of the following sorting algorithms is stable?",
-    "options": {
-      "A": "Heap Sort",
-      "B": "Selection Sort",
-      "C": "Quick Sort",
-      "D": "Merge Sort"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Heap Sort",
+      "Selection Sort",
+      "Quick Sort",
+      "Merge Sort"
+    ],
+    "correct_answer": "Merge Sort",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -368,17 +368,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Complexity Analysis",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which notation provides an upper bound on the running time of an algorithm?",
-    "options": {
-      "A": "Big Omega",
-      "B": "Big Theta",
-      "C": "Big O",
-      "D": "Little O"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Big Omega",
+      "Big Theta",
+      "Big O",
+      "Little O"
+    ],
+    "correct_answer": "Big O",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -396,17 +396,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Complexity Analysis",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which complexity grows fastest as n increases?",
-    "options": {
-      "A": "O(n²)",
-      "B": "O(2^n)",
-      "C": "O(n log n)",
-      "D": "O(log n)"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "O(n²)",
+      "O(2^n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "correct_answer": "O(2^n)",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -424,17 +424,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Divide and Conquer",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which algorithm is based on divide and conquer?",
-    "options": {
-      "A": "Bubble Sort",
-      "B": "Selection Sort",
-      "C": "Insertion Sort",
-      "D": "Merge Sort"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Bubble Sort",
+      "Selection Sort",
+      "Insertion Sort",
+      "Merge Sort"
+    ],
+    "correct_answer": "Merge Sort",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -452,17 +452,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Graph Traversal",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure is commonly used to implement BFS?",
-    "options": {
-      "A": "Random access order",
-      "B": "LIFO (Last-In, First-Out)",
-      "C": "Priority-based order",
-      "D": "Queue"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Random access order",
+      "LIFO (Last-In, First-Out)",
+      "Priority-based order",
+      "Queue"
+    ],
+    "correct_answer": "Queue",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -480,17 +480,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Graph Traversal",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which data structure is commonly used to implement DFS iteratively?",
-    "options": {
-      "A": "FIFO (First-In, First-Out)",
-      "B": "Random access order",
-      "C": "Priority-based order",
-      "D": "Stack"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "FIFO (First-In, First-Out)",
+      "Random access order",
+      "Priority-based order",
+      "Stack"
+    ],
+    "correct_answer": "Stack",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -508,17 +508,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Sorting",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which sorting algorithm has the best average-case complexity among these?",
-    "options": {
-      "A": "Merge Sort",
-      "B": "Bubble Sort",
-      "C": "Insertion Sort",
-      "D": "Selection Sort"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Merge Sort",
+      "Bubble Sort",
+      "Insertion Sort",
+      "Selection Sort"
+    ],
+    "correct_answer": "Merge Sort",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -536,17 +536,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Complexity Analysis",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "What is the time complexity of accessing an element in an array using its index?",
-    "options": {
-      "A": "O(1)",
-      "B": "O(log n)",
-      "C": "O(n log n)",
-      "D": "O(n)"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n)"
+    ],
+    "correct_answer": "O(1)",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -564,17 +564,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Complexity Analysis",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "What does Big-O notation represent in algorithm analysis?",
-    "options": {
-      "A": "Growth rate",
-      "B": "Memory address usage",
-      "C": "Number of variables used",
-      "D": "Exact runtime in seconds"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Growth rate",
+      "Memory address usage",
+      "Number of variables used",
+      "Exact runtime in seconds"
+    ],
+    "correct_answer": "Growth rate",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -592,17 +592,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Graph Traversal",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which algorithm explores a graph by going as deep as possible along each branch before backtracking?",
-    "options": {
-      "A": "Dijkstra's Algorithm",
-      "B": "Bellman-Ford Algorithm",
-      "C": "Breadth-First Search",
-      "D": "Depth-First Search"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Dijkstra's Algorithm",
+      "Bellman-Ford Algorithm",
+      "Breadth-First Search",
+      "Depth-First Search"
+    ],
+    "correct_answer": "Depth-First Search",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -620,17 +620,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Graph Algorithms",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which algorithm is used to find the shortest path from a single source in a weighted graph with non-negative weights?",
-    "options": {
-      "A": "Bellman-Ford Algorithm",
-      "B": "Kruskal's Algorithm",
-      "C": "Depth-First Search",
-      "D": "Dijkstra's Algorithm"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Bellman-Ford Algorithm",
+      "Kruskal's Algorithm",
+      "Depth-First Search",
+      "Dijkstra's Algorithm"
+    ],
+    "correct_answer": "Dijkstra's Algorithm",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -648,17 +648,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Sorting",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which sorting algorithm repeatedly selects the minimum element from the unsorted portion and moves it to the sorted portion?",
-    "options": {
-      "A": "Merge Sort",
-      "B": "Insertion Sort",
-      "C": "Selection Sort",
-      "D": "Quick Sort"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Merge Sort",
+      "Insertion Sort",
+      "Selection Sort",
+      "Quick Sort"
+    ],
+    "correct_answer": "Selection Sort",
+    "estimated_time": 60,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",
@@ -676,17 +676,17 @@
     "category": "Technical",
     "topic": "Algorithms",
     "subtopic": "Sorting",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Which sorting algorithm repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order?",
-    "options": {
-      "A": "Merge Sort",
-      "B": "Selection Sort",
-      "C": "Quick Sort",
-      "D": "Bubble Sort"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Merge Sort",
+      "Selection Sort",
+      "Quick Sort",
+      "Bubble Sort"
+    ],
+    "correct_answer": "Bubble Sort",
+    "estimated_time": 45,
+    "company_tags": [
       "google",
       "amazon",
       "microsoft",

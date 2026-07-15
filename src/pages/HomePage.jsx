@@ -8,6 +8,7 @@ import CampusPlacementView from '../components/CampusPlacementView';
 import GovtExamView from '../components/GovtExamView';
 import AptitudeRoadmapView from '../components/AptitudeRoadmapView';
 import VisualExplanationDemo from '../components/VisualExplanationDemo';
+import MockTestsView from '../components/MockTestsView';
 
 export default function HomePage({ navigate }) {
   const [goal, setLocalGoal] = useState(getGoal());
@@ -146,6 +147,8 @@ export default function HomePage({ navigate }) {
         <GovtExamView navigate={navigate} />
       ) : goal === 'Aptitude Roadmap' ? (
         <AptitudeRoadmapView navigate={navigate} />
+      ) : goal === 'Mock Tests' ? (
+        <MockTestsView navigate={navigate} />
       ) : (
         <>
           <div className="section-header">

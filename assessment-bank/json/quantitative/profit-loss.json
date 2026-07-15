@@ -4,17 +4,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Profit & Loss",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "A and B invest Rs. 3000 and Rs. 5000 in a business. They earn Rs. 4800 as profit. What is A's share?",
-    "options": {
-      "A": "Rs. 900",
-      "B": "Rs. 2070",
-      "C": "Rs. 2340",
-      "D": "Rs. 1800"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Rs. 900",
+      "Rs. 2070",
+      "Rs. 2340",
+      "Rs. 1800"
+    ],
+    "correct_answer": "Rs. 1800",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -28,17 +28,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Profit & Loss",
     "subtopic": "Profit & Loss (Decimal Rate)",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "An item bought for Rs. 400 is sold for Rs. 360. What is the loss rate expressed as a decimal option?",
-    "options": {
-      "A": "-1.9",
-      "B": "3.1",
-      "C": "1.1",
-      "D": "0.1"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "-1.9",
+      "3.1",
+      "1.1",
+      "0.1"
+    ],
+    "correct_answer": "0.1",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -52,17 +52,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Profit & Loss",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "A vendor bought 15 oranges at Rs. 36 for 5 oranges and sold all of them at four oranges for Rs. 45. How much did the vendor earn or lose?",
-    "options": {
-      "A": "Gains Rs. 2.05 per orange",
-      "B": "Gains Rs. 5.05 per orange",
-      "C": "Gains Rs. 7.05 per orange",
-      "D": "Gains Rs. 4.05 per orange"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Gains Rs. 2.05 per orange",
+      "Gains Rs. 5.05 per orange",
+      "Gains Rs. 7.05 per orange",
+      "Gains Rs. 4.05 per orange"
+    ],
+    "correct_answer": "Gains Rs. 4.05 per orange",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -76,17 +76,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Profit & Loss",
     "subtopic": "Maximum Profit",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "If books bought at prices ranging from Rs. 200 to Rs. 350 are sold at prices ranging from Rs. 300 to Rs. 425, what is the greatest possible profit that might be made in selling eight books?",
-    "options": {
-      "A": "1800",
-      "B": "2340",
-      "C": "2070",
-      "D": "900"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "1800",
+      "2340",
+      "2070",
+      "900"
+    ],
+    "correct_answer": "1800",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",

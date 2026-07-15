@@ -1,5 +1,5 @@
 # JSON Summary Report
-Generated: 2026-07-15T04:14:50.993Z
+Generated: 2026-07-15T04:41:12.841Z
 
 ## Total Records
 **200 questions** successfully converted to JSON.
@@ -53,9 +53,9 @@ Generated: 2026-07-15T04:14:50.993Z
   "difficulty",
   "question",
   "options",
-  "correctAnswer",
-  "estimatedTime",
-  "companyTags",
+  "correct_answer",
+  "estimated_time",
+  "company_tags",
   "status",
   "created_by"
 ]

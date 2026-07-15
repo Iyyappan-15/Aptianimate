@@ -4,17 +4,17 @@
     "category": "Quantitative Aptitude",
     "topic": "Compound Interest",
     "subtopic": "Compound Interest",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "A sum of money invested at compound interest amounts to Rs. 800 in 3 years and to Rs. 840 in 4 years. The rate of interest per annum is:",
-    "options": {
-      "A": "8%",
-      "B": "6%",
-      "C": "5%",
-      "D": "3%"
-    },
-    "correctAnswer": "C",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "8%",
+      "6%",
+      "5%",
+      "3%"
+    ],
+    "correct_answer": "5%",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "sbi",

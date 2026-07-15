@@ -4,17 +4,17 @@
     "category": "Verbal Ability",
     "topic": "Vocabulary",
     "subtopic": "Spelling",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Identify the correctly spelled word among the options.",
-    "options": {
-      "A": "Succede",
-      "B": "Succeded",
-      "C": "Suceed",
-      "D": "Succeed"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Succede",
+      "Succeded",
+      "Suceed",
+      "Succeed"
+    ],
+    "correct_answer": "Succeed",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",
@@ -28,17 +28,17 @@
     "category": "Verbal Ability",
     "topic": "Vocabulary",
     "subtopic": "Analogy",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Identify the correct analogy option that shares the same relationship as Nice : Pleasant.",
-    "options": {
-      "A": "Big : Small",
-      "B": "Hate : Despise",
-      "C": "Love : Hate",
-      "D": "Happy : Sad"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Big : Small",
+      "Hate : Despise",
+      "Love : Hate",
+      "Happy : Sad"
+    ],
+    "correct_answer": "Hate : Despise",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro",

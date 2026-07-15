@@ -4,17 +4,17 @@
     "category": "Logical Reasoning",
     "topic": "Alphabet",
     "subtopic": "Letter Series",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "Find the wrong term in the given alphabet series: CMQ, FPT, JTX, OYC, UFI",
-    "options": {
-      "A": "UFI",
-      "B": "FPT",
-      "C": "CMQ",
-      "D": "OYC"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "UFI",
+      "FPT",
+      "CMQ",
+      "OYC"
+    ],
+    "correct_answer": "UFI",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro"
@@ -27,17 +27,17 @@
     "category": "Logical Reasoning",
     "topic": "Alphabet",
     "subtopic": "Word Alphabetical Order",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which word comes last when arranged in alphabetical order: Abandon, Accept, Accomplish, Accumulate, Actuate?",
-    "options": {
-      "A": "Accumulate",
-      "B": "Actuate",
-      "C": "Abandon",
-      "D": "Accomplish"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Accumulate",
+      "Actuate",
+      "Abandon",
+      "Accomplish"
+    ],
+    "correct_answer": "Actuate",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro"
@@ -50,17 +50,17 @@
     "category": "Logical Reasoning",
     "topic": "Alphabet",
     "subtopic": "General",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which letter is eighth to the right of the tenth letter to the left of the alphabet's last but one letter?",
-    "options": {
-      "A": "V",
-      "B": "U",
-      "C": "X",
-      "D": "W"
-    },
-    "correctAnswer": "D",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "V",
+      "U",
+      "X",
+      "W"
+    ],
+    "correct_answer": "W",
+    "estimated_time": 60,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro"
@@ -73,17 +73,17 @@
     "category": "Logical Reasoning",
     "topic": "Alphabet",
     "subtopic": "General",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "How many such pairs of letters are there in the word \"CASTRAPHONE\" each of which has as many letters between them in the word as they have between them in the English alphabet (both forward and backward)?",
-    "options": {
-      "A": "6",
-      "B": "5",
-      "C": "3",
-      "D": "4"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "6",
+      "5",
+      "3",
+      "4"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 45,
+    "company_tags": [
       "tcs",
       "infosys",
       "wipro"

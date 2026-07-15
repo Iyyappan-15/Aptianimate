@@ -1,0 +1,53 @@
+{
+  "defaultMockTest": {
+    "duration": 60,
+    "negativeMarking": true,
+    "correctMarks": 1,
+    "wrongMarks": 0.25,
+    "categories": {
+      "quantitative": 15,
+      "logical": 15,
+      "verbal": 15,
+      "technical": 15
+    },
+    "difficulty": {
+      "easy": 40,
+      "medium": 40,
+      "hard": 20
+    }
+  },
+  "tcsNinjaMock": {
+    "duration": 90,
+    "negativeMarking": false,
+    "correctMarks": 1,
+    "wrongMarks": 0,
+    "categories": {
+      "quantitative": 20,
+      "logical": 20,
+      "verbal": 20,
+      "technical": 10
+    },
+    "difficulty": {
+      "easy": 50,
+      "medium": 30,
+      "hard": 20
+    }
+  },
+  "aiBattle": {
+    "duration": 10,
+    "negativeMarking": false,
+    "correctMarks": 1,
+    "wrongMarks": 0,
+    "categories": {
+      "quantitative": 3,
+      "logical": 3,
+      "verbal": 2,
+      "technical": 2
+    },
+    "difficulty": {
+      "easy": 30,
+      "medium": 40,
+      "hard": 30
+    }
+  }
+}

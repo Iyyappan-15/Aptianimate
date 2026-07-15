@@ -4,17 +4,17 @@
     "category": "Technical",
     "topic": "Computer Networks",
     "subtopic": "Networking Fundamentals",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "Which OSI layer is responsible for routing?",
-    "options": {
-      "A": "Network layer",
-      "B": "Transport layer",
-      "C": "Application layer",
-      "D": "Data link layer"
-    },
-    "correctAnswer": "A",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Network layer",
+      "Transport layer",
+      "Application layer",
+      "Data link layer"
+    ],
+    "correct_answer": "Network layer",
+    "estimated_time": 60,
+    "company_tags": [
       "cisco",
       "juniper",
       "amazon",
@@ -30,17 +30,17 @@
     "category": "Technical",
     "topic": "Computer Networks",
     "subtopic": "Networking Fundamentals",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "question": "TCP is a:",
-    "options": {
-      "A": "Connectionless protocol",
-      "B": "Connection-oriented protocol",
-      "C": "Physical layer service",
-      "D": "Application layer service"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 60,
-    "companyTags": [
+    "options": [
+      "Connectionless protocol",
+      "Connection-oriented protocol",
+      "Physical layer service",
+      "Application layer service"
+    ],
+    "correct_answer": "Connection-oriented protocol",
+    "estimated_time": 60,
+    "company_tags": [
       "cisco",
       "juniper",
       "amazon",
@@ -56,17 +56,17 @@
     "category": "Technical",
     "topic": "Computer Networks",
     "subtopic": "Networking Fundamentals",
-    "difficulty": "Easy",
+    "difficulty": "easy",
     "question": "The primary purpose of an IP address is to:",
-    "options": {
-      "A": "Store website content",
-      "B": "Identify a device on a network",
-      "C": "Speed up downloads",
-      "D": "Encrypt network traffic"
-    },
-    "correctAnswer": "B",
-    "estimatedTime": 45,
-    "companyTags": [
+    "options": [
+      "Store website content",
+      "Identify a device on a network",
+      "Speed up downloads",
+      "Encrypt network traffic"
+    ],
+    "correct_answer": "Identify a device on a network",
+    "estimated_time": 45,
+    "company_tags": [
       "cisco",
       "juniper",
       "amazon",
