@@ -44,14 +44,14 @@ const FriendBattlePage = ({ navigate }) => {
     const battleChannel = supabase.channel('battle-events');
     
     battleChannel
-      .on('broadcast', { event: 'progress_sync' }, (payload) => {
-        if (payload.matchId === matchId && payload.userId !== user?.id) {
-          setOpponentProgress(payload.progressPercentage);
+      .on('broadcast', { event: 'progress_sync' }, (event) => {
+        if (event.payload.matchId === matchId && event.payload.userId !== user?.id) {
+          setOpponentProgress(event.payload.progressPercentage);
         }
       })
-      .on('broadcast', { event: 'status_change' }, (payload) => {
-        if (payload.matchId === matchId) {
-          setMatchStatus(payload.newStatus);
+      .on('broadcast', { event: 'status_change' }, (event) => {
+        if (event.payload.matchId === matchId) {
+          setMatchStatus(event.payload.newStatus);
         }
       })
       .subscribe((status) => {
