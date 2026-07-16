@@ -127,11 +127,11 @@ function App() {
   } else if (route === 'mock-test') {
     pageComponent = <MockTestPage navigate={navigate} />;
   } else if (route.startsWith('mock-test/results/')) {
-    const id = route.split('/')[2];
+    const id = route.split('/')[2].split('?')[0]; // Strip query params just in case
     pageComponent = <MockTestResultsPage testId={id} navigate={navigate} />;
   } else if (route === 'battle') {
     pageComponent = <BattlePage navigate={navigate} />;
-  } else if (route === 'battle/friend') {
+  } else if (route.startsWith('battle/friend')) {
     pageComponent = <FriendBattlePage navigate={navigate} />;
   } else if (route.startsWith('ask')) {
     // Support optional ?q= pre-fill: #/ask?q=your+question

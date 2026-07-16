@@ -80,6 +80,46 @@ const FriendBattlePage = ({ navigate }) => {
   const [isFinished, setIsFinished] = useState(false);
   const [results, setResults] = useState(null);
 
+  // ── Global Matchmaking Check ──────────────────────────────────────────────
+  useEffect(() => {
+    const checkGlobalMatch = async () => {
+      const rawHash = window.location.hash;
+      if (!rawHash.includes('?')) return;
+      const params = new URLSearchParams(rawHash.split('?')[1]);
+      const mId = params.get('match');
+      const isGlobal = params.get('global') === 'true';
+      
+      if (mId && user) {
+        try {
+          const { data: matchData, error } = await supabase.from('friendly_matches').select('*').eq('id', mId).single();
+          if (error) throw error;
+          
+          setMatchId(mId);
+          setRoomCode(matchData.join_code);
+          
+          if (matchData.host_id === user.id) {
+             setIsHost(true);
+             if (matchData.status === 'waiting_global' || isGlobal) {
+               setMatchStatus('waiting_global');
+             } else {
+               setMatchStatus('waiting');
+             }
+          } else {
+             setIsHost(false);
+             setMatchStatus('joining');
+             await fetchQuestions(matchData.question_ids, mId);
+          }
+        } catch (err) {
+          console.error(err);
+          alert('Failed to load global match');
+        }
+      }
+    };
+    if (user) {
+      checkGlobalMatch();
+    }
+  }, [user]);
+
   // ── Realtime Channel ──────────────────────────────────────────────────────
   useEffect(() => {
     if (!matchId) return;
@@ -426,6 +466,27 @@ const FriendBattlePage = ({ navigate }) => {
               {matchStatus === 'joining' ? '⏳ Joining...' : '🚀 Join Match'}
             </button>
           </motion.div>
+        </div>
+      </div>
+    );
+  }
+
+  // ╔══════════════════════════════════════════════════════════════════╗
+  // ║                   WAITING GLOBAL SCREEN                         ║
+  // ╚══════════════════════════════════════════════════════════════════╝
+  if (matchStatus === 'waiting_global') {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)', textAlign: 'center', padding: 24 }}>
+        <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ repeat: Infinity, duration: 2.5 }} style={{ fontSize: '4rem', marginBottom: 24 }}>🌍</motion.div>
+        <h2 style={{ fontSize: '2.5rem', color: '#10b981', marginBottom: 12, fontWeight: 900 }}>Searching the Globe...</h2>
+        <p style={{ color: 'var(--muted)', marginBottom: 32, fontSize: '1.1rem' }}>Looking for a worthy opponent to battle you instantly.</p>
+
+        {/* Animated waiting dots */}
+        <div style={{ display: 'flex', gap: 12, marginTop: 16 }}>
+          {[0, 1, 2].map(i => (
+            <motion.div key={i} animate={{ y: [0, -10, 0], scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }} transition={{ repeat: Infinity, duration: 1, delay: i * 0.2 }}
+              style={{ width: 16, height: 16, borderRadius: '50%', background: '#10b981' }} />
+          ))}
         </div>
       </div>
     );

@@ -199,6 +199,52 @@ const BattlePage = ({ navigate }) => {
     );
   }
 
+  const [globalSearching, setGlobalSearching] = useState(false);
+
+  const startGlobalBattle = async () => {
+    setGlobalSearching(true);
+    try {
+      // 1. Try to join an existing global match
+      const { data: matchId, error } = await supabase.rpc('join_global_match');
+      if (error) throw error;
+      
+      if (matchId) {
+        navigate(`battle/friend?match=${matchId}&global=true`);
+        return;
+      }
+
+      // 2. No match found, act as host and create a waiting match
+      // First ensure aiBank has questions loaded, or fetch randomly
+      const selectedQuestions = getRandomQuestions(testConfigs.friendBattle || { categories: {'Quantitative Aptitude': 2, 'Logical Reasoning': 2, 'Verbal Ability': 1}, difficulty: {easy: 60, medium: 40} });
+      const qIds = selectedQuestions.map(q => q.id);
+      
+      const joinCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+      
+      const { data: newMatch, error: insertError } = await supabase
+        .from('friendly_matches')
+        .insert([{
+          host_id: user.id,
+          status: 'waiting_global',
+          question_ids: qIds,
+          join_code: joinCode,
+          paper_config: testConfigs.friendBattle || {}
+        }])
+        .select()
+        .single();
+        
+      if (insertError) throw insertError;
+      
+      // Navigate to FriendBattlePage which will wait for opponent
+      navigate(`battle/friend?match=${newMatch.id}&global=true`);
+      
+    } catch (err) {
+      console.error(err);
+      alert("Failed to start global matchmaking.");
+    } finally {
+      setGlobalSearching(false);
+    }
+  };
+
   if (!user) {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
@@ -219,16 +265,30 @@ const BattlePage = ({ navigate }) => {
 
   if (mode === null) {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)', padding: '40px' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '40px', color: 'var(--violet)' }}>⚔️ Choose Your Battle</h1>
         
-        <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px', width: '100%', maxWidth: '900px' }}>
+          
+          <motion.button 
+            whileHover={{ scale: 1.05 }}
+            onClick={startGlobalBattle}
+            disabled={globalSearching}
+            style={{ padding: '40px 20px', background: 'var(--card-bg)', border: '2px solid #10b981', borderRadius: '16px', cursor: globalSearching ? 'not-allowed' : 'pointer', opacity: globalSearching ? 0.7 : 1 }}
+          >
+            <h2 style={{ fontSize: '2.5rem', margin: '0 0 16px 0' }}>🌍</h2>
+            <h3>Play Globally</h3>
+            <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>
+              {globalSearching ? 'Finding an opponent...' : 'Match instantly with another player around the world.'}
+            </p>
+          </motion.button>
+
           <motion.button 
             whileHover={{ scale: 1.05 }}
             onClick={startAIBattle}
-            style={{ padding: '40px', width: '250px', background: 'var(--card-bg)', border: '2px solid var(--violet)', borderRadius: '16px', cursor: 'pointer' }}
+            style={{ padding: '40px 20px', background: 'var(--card-bg)', border: '2px solid var(--violet)', borderRadius: '16px', cursor: 'pointer' }}
           >
-            <h2 style={{ fontSize: '2rem', margin: '0 0 16px 0' }}>🤖</h2>
+            <h2 style={{ fontSize: '2.5rem', margin: '0 0 16px 0' }}>🤖</h2>
             <h3>Battle AI</h3>
             <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Test your skills against our dynamically paced AI opponent.</p>
           </motion.button>
@@ -236,13 +296,13 @@ const BattlePage = ({ navigate }) => {
           <motion.button 
             whileHover={{ scale: 1.05 }}
             onClick={startFriendBattle}
-            style={{ padding: '40px', width: '250px', background: 'var(--card-bg)', border: '2px solid var(--border)', borderRadius: '16px', cursor: 'pointer', transition: 'border-color 0.2s' }}
+            style={{ padding: '40px 20px', background: 'var(--card-bg)', border: '2px solid var(--border)', borderRadius: '16px', cursor: 'pointer', transition: 'border-color 0.2s' }}
             onMouseOver={(e) => e.currentTarget.style.borderColor = '#10b981'}
             onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--border)'}
           >
-            <h2 style={{ fontSize: '2rem', margin: '0 0 16px 0' }}>👥</h2>
+            <h2 style={{ fontSize: '2.5rem', margin: '0 0 16px 0' }}>👥</h2>
             <h3>Battle Friend</h3>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Invite a friend and compete in real-time.</p>
+            <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Invite a friend using a private code and compete in real-time.</p>
           </motion.button>
         </div>
         
