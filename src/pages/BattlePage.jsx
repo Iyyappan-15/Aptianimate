@@ -214,32 +214,29 @@ const BattlePage = ({ navigate }) => {
       }
 
       // 2. No match found, act as host and create a waiting match
-      // First ensure aiBank has questions loaded, or fetch randomly
-      const selectedQuestions = getRandomQuestions(testConfigs.friendBattle || { categories: {'Quantitative Aptitude': 2, 'Logical Reasoning': 2, 'Verbal Ability': 1}, difficulty: {easy: 60, medium: 40} });
-      const qIds = selectedQuestions.map(q => q.id);
+      // We must use the database RPC to generate valid UUIDs for questions
+      const matchConfig = testConfigs.friendBattle || { 
+        categories: {'Quantitative Aptitude': 2, 'Logical Reasoning': 2, 'Verbal Ability': 1}, 
+        difficulty: {easy: 60, medium: 40} 
+      };
       
-      const joinCode = Math.random().toString(36).substring(2, 8).toUpperCase();
-      
-      const { data: newMatch, error: insertError } = await supabase
+      const { data: createData, error: createError } = await supabase.rpc('create_friendly_match', { p_config: matchConfig });
+      if (createError) throw createError;
+
+      // Update the match status to global
+      const { error: updateError } = await supabase
         .from('friendly_matches')
-        .insert([{
-          host_id: user.id,
-          status: 'waiting_global',
-          question_ids: qIds,
-          join_code: joinCode,
-          paper_config: testConfigs.friendBattle || {}
-        }])
-        .select()
-        .single();
+        .update({ status: 'waiting_global' })
+        .eq('id', createData.match_id);
         
-      if (insertError) throw insertError;
+      if (updateError) throw updateError;
       
       // Navigate to FriendBattlePage which will wait for opponent
-      navigate(`battle/friend?match=${newMatch.id}&global=true`);
+      navigate(`battle/friend?match=${createData.match_id}&global=true`);
       
     } catch (err) {
-      console.error(err);
-      alert("Failed to start global matchmaking.");
+      console.error("Global Matchmaking Error:", err);
+      alert(`Failed to start global matchmaking: ${err.message || JSON.stringify(err)}`);
     } finally {
       setGlobalSearching(false);
     }
