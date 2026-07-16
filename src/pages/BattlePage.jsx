@@ -268,41 +268,70 @@ const BattlePage = ({ navigate }) => {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)', padding: '40px' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '40px', color: 'var(--violet)' }}>⚔️ Choose Your Battle</h1>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px', width: '100%', maxWidth: '900px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px', width: '100%', maxWidth: '1000px', padding: '0 20px' }}>
           
           <motion.button 
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03, y: -8, boxShadow: '0 20px 40px rgba(16, 185, 129, 0.2)', borderColor: '#10b981' }}
+            whileTap={{ scale: 0.98 }}
             onClick={startGlobalBattle}
             disabled={globalSearching}
-            style={{ padding: '40px 20px', background: 'var(--card-bg)', border: '2px solid #10b981', borderRadius: '16px', cursor: globalSearching ? 'not-allowed' : 'pointer', opacity: globalSearching ? 0.7 : 1 }}
+            style={{ 
+              position: 'relative', overflow: 'hidden', padding: '48px 32px', 
+              background: 'var(--card-bg)', 
+              border: '2px solid rgba(16, 185, 129, 0.3)', borderRadius: '24px', 
+              cursor: globalSearching ? 'not-allowed' : 'pointer', opacity: globalSearching ? 0.7 : 1,
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+              display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px',
+              transition: 'border-color 0.3s ease, box-shadow 0.3s ease'
+            }}
           >
-            <h2 style={{ fontSize: '2.5rem', margin: '0 0 16px 0' }}>🌍</h2>
-            <h3>Play Globally</h3>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>
-              {globalSearching ? 'Finding an opponent...' : 'Match instantly with another player around the world.'}
+            <div style={{ fontSize: '3.5rem', filter: 'drop-shadow(0 10px 20px rgba(16,185,129,0.3))' }}>🌍</div>
+            <h3 style={{ fontSize: '1.5rem', color: '#10b981', margin: 0, fontWeight: 800 }}>Play Globally</h3>
+            <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: 0, lineHeight: 1.5 }}>
+              {globalSearching ? 'Finding an opponent...' : 'Match instantly with players worldwide for a real-time showdown.'}
             </p>
           </motion.button>
 
           <motion.button 
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03, y: -8, boxShadow: '0 20px 40px rgba(124, 58, 237, 0.2)', borderColor: 'var(--violet)' }}
+            whileTap={{ scale: 0.98 }}
             onClick={startAIBattle}
-            style={{ padding: '40px 20px', background: 'var(--card-bg)', border: '2px solid var(--violet)', borderRadius: '16px', cursor: 'pointer' }}
+            style={{ 
+              position: 'relative', overflow: 'hidden', padding: '48px 32px', 
+              background: 'var(--card-bg)', 
+              border: '2px solid rgba(124, 58, 237, 0.3)', borderRadius: '24px', 
+              cursor: 'pointer',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+              display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px',
+              transition: 'border-color 0.3s ease, box-shadow 0.3s ease'
+            }}
           >
-            <h2 style={{ fontSize: '2.5rem', margin: '0 0 16px 0' }}>🤖</h2>
-            <h3>Battle AI</h3>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Test your skills against our dynamically paced AI opponent.</p>
+            <div style={{ fontSize: '3.5rem', filter: 'drop-shadow(0 10px 20px rgba(124,58,237,0.3))' }}>🤖</div>
+            <h3 style={{ fontSize: '1.5rem', color: 'var(--violet)', margin: 0, fontWeight: 800 }}>Battle AI</h3>
+            <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: 0, lineHeight: 1.5 }}>
+              Test your skills against our dynamically paced AI opponent.
+            </p>
           </motion.button>
           
           <motion.button 
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03, y: -8, boxShadow: '0 20px 40px rgba(59, 130, 246, 0.2)', borderColor: '#3b82f6' }}
+            whileTap={{ scale: 0.98 }}
             onClick={startFriendBattle}
-            style={{ padding: '40px 20px', background: 'var(--card-bg)', border: '2px solid var(--border)', borderRadius: '16px', cursor: 'pointer', transition: 'border-color 0.2s' }}
-            onMouseOver={(e) => e.currentTarget.style.borderColor = '#10b981'}
-            onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--border)'}
+            style={{ 
+              position: 'relative', overflow: 'hidden', padding: '48px 32px', 
+              background: 'var(--card-bg)', 
+              border: '2px solid rgba(59, 130, 246, 0.3)', borderRadius: '24px', 
+              cursor: 'pointer',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+              display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px',
+              transition: 'border-color 0.3s ease, box-shadow 0.3s ease'
+            }}
           >
-            <h2 style={{ fontSize: '2.5rem', margin: '0 0 16px 0' }}>👥</h2>
-            <h3>Battle Friend</h3>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Invite a friend using a private code and compete in real-time.</p>
+            <div style={{ fontSize: '3.5rem', filter: 'drop-shadow(0 10px 20px rgba(59,130,246,0.3))' }}>👥</div>
+            <h3 style={{ fontSize: '1.5rem', color: '#3b82f6', margin: 0, fontWeight: 800 }}>Battle Friend</h3>
+            <p style={{ color: 'var(--muted)', fontSize: '0.95rem', margin: 0, lineHeight: 1.5 }}>
+              Invite a friend using a private code and compete in real-time.
+            </p>
           </motion.button>
         </div>
         
