@@ -80,6 +80,14 @@ const FriendBattlePage = ({ navigate }) => {
   const [isFinished, setIsFinished] = useState(false);
   const [results, setResults] = useState(null);
 
+  // Feature States
+  const cheatCountRef = useRef(0);
+  const [cheatWarning, setCheatWarning] = useState('');
+  const [globalSearchTimer, setGlobalSearchTimer] = useState(60);
+  const [rematchRequested, setRematchRequested] = useState(false);
+  const [opponentRematchRequested, setOpponentRematchRequested] = useState(false);
+  const [rematchCountdown, setRematchCountdown] = useState(0);
+
   // ── Global Matchmaking Check ──────────────────────────────────────────────
   useEffect(() => {
     const checkGlobalMatch = async () => {
@@ -133,6 +141,17 @@ const FriendBattlePage = ({ navigate }) => {
       .on('broadcast', { event: 'status_change' }, (event) => {
         if (event.payload.matchId === matchId) {
           setMatchStatus(event.payload.newStatus);
+        }
+      })
+      .on('broadcast', { event: 'rematch_request' }, (event) => {
+        if (event.payload.matchId === matchId && event.payload.userId !== user?.id) {
+          setOpponentRematchRequested(true);
+        }
+      })
+      .on('broadcast', { event: 'rematch_accepted' }, (event) => {
+        if (event.payload.matchId === matchId && event.payload.userId !== user?.id) {
+          window.location.hash = `/battle/friend?match=${event.payload.newMatchId}${event.payload.isGlobal ? '&global=true' : ''}`;
+          window.location.reload();
         }
       })
       .subscribe((status) => {
@@ -191,6 +210,38 @@ const FriendBattlePage = ({ navigate }) => {
       console.error(err);
       alert(err.message || 'Failed to join match');
       setMatchStatus('lobby');
+    }
+  };
+
+  // ── Rematch Logic ─────────────────────────────────────────────────────────
+  useEffect(() => {
+    if (rematchRequested && opponentRematchRequested && isHost) {
+      createRematch();
+    }
+  }, [rematchRequested, opponentRematchRequested, isHost]);
+
+  const createRematch = async () => {
+    const selected = getRandomQuestions(config);
+    const matchConfig = { ...config, selected_ids: selected.map(q => q.id) };
+    const joinCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+    const isGlobal = window.location.hash.includes('global=true');
+    
+    const { data: newMatch, error } = await supabase
+        .from('friendly_matches')
+        .insert([{
+          host_id: user.id,
+          status: isGlobal ? 'lobby' : 'waiting', // Wait, global rematch host directly to lobby since guest will join immediately
+          question_ids: selected.map(q => q.id),
+          join_code: joinCode,
+          paper_config: matchConfig
+        }])
+        .select()
+        .single();
+        
+    if (!error && channel) {
+       channel.send({ type: 'broadcast', event: 'rematch_accepted', payload: { matchId, userId: user.id, newMatchId: newMatch.id, isGlobal } });
+       window.location.hash = `/battle/friend?match=${newMatch.id}${isGlobal ? '&global=true' : ''}`;
+       window.location.reload();
     }
   };
 
@@ -258,16 +309,72 @@ const FriendBattlePage = ({ navigate }) => {
   useEffect(() => {
     if (matchStatus === 'playing' && channel && questions.length > 0) {
       const percentage = ((currentIndex + (isFinished ? 1 : 0)) / questions.length) * 100;
-      // Broadcast immediately on progress change
       channel.send({ type: 'broadcast', event: 'progress_sync', payload: { matchId, userId: user.id, progressPercentage: percentage } });
-      
-      // Also maintain a heartbeat in case packets drop
       const t = setInterval(() => {
         channel.send({ type: 'broadcast', event: 'progress_sync', payload: { matchId, userId: user.id, progressPercentage: percentage } });
       }, 5000);
       return () => clearInterval(t);
     }
   }, [matchStatus, channel, currentIndex, isFinished, questions.length, matchId, user?.id]);
+
+  // ── Anti-Cheat: Tab Visibility ─────────────────────────────────────────────
+  useEffect(() => {
+    if (matchStatus !== 'playing') return;
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        cheatCountRef.current += 1;
+        const count = cheatCountRef.current;
+        if (count === 1) {
+          // First offence: warn
+          // We use a custom in-page flag rather than alert() to avoid blocking
+          setCheatWarning('⚠️ Warning! Switching tabs is not allowed. Next violation will auto-submit.');
+          setTimeout(() => setCheatWarning(''), 5000);
+        } else {
+          // Second offence: auto-submit as forfeit
+          setCheatWarning('🚨 Cheat detected! Auto-submitting your match.');
+          setTimeout(() => { submitMatch(); }, 1500);
+        }
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, [matchStatus]);
+
+  // ── Global Matchmaking: 60s Timeout ──────────────────────────────────────
+  useEffect(() => {
+    if (matchStatus !== 'waiting_global') return;
+    setGlobalSearchTimer(60);
+    const t = setInterval(() => {
+      setGlobalSearchTimer(prev => {
+        if (prev <= 1) {
+          clearInterval(t);
+          // Cleanup the waiting match and redirect to AI battle
+          if (matchId) {
+            supabase.from('friendly_matches').delete().eq('id', matchId).then(() => {});
+          }
+          navigate('battle');
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(t);
+  }, [matchStatus, matchId]);
+
+  // ── Rematch: Start 10s countdown when results appear ──────────────────────
+  useEffect(() => {
+    if (matchStatus !== 'completed' || !results) return;
+    setRematchCountdown(10);
+    const t = setInterval(() => {
+      setRematchCountdown(prev => {
+        if (prev <= 1) { clearInterval(t); return 0; }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(t);
+  }, [matchStatus, results]);
 
   // ── Submit ────────────────────────────────────────────────────────────────
   const submitMatch = async () => {
@@ -475,19 +582,93 @@ const FriendBattlePage = ({ navigate }) => {
   // ║                   WAITING GLOBAL SCREEN                         ║
   // ╚══════════════════════════════════════════════════════════════════╝
   if (matchStatus === 'waiting_global') {
+    const cancelSearch = async () => {
+      if (matchId) {
+        await supabase.from('friendly_matches').delete().eq('id', matchId);
+      }
+      navigate('battle');
+    };
+
+    const timerColor = globalSearchTimer <= 15 ? '#ef4444' : globalSearchTimer <= 30 ? '#f59e0b' : '#10b981';
+    const circumference = 2 * Math.PI * 36;
+    const dashoffset = circumference * (1 - globalSearchTimer / 60);
+
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)', textAlign: 'center', padding: 24 }}>
-        <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ repeat: Infinity, duration: 2.5 }} style={{ fontSize: '4rem', marginBottom: 24 }}>🌍</motion.div>
-        <h2 style={{ fontSize: '2.5rem', color: '#10b981', marginBottom: 12, fontWeight: 900 }}>Searching the Globe...</h2>
-        <p style={{ color: 'var(--muted)', marginBottom: 32, fontSize: '1.1rem' }}>Looking for a worthy opponent to battle you instantly.</p>
+        {/* Animated Globe */}
+        <motion.div
+          animate={{ rotate: [0, 360] }}
+          transition={{ repeat: Infinity, duration: 8, ease: 'linear' }}
+          style={{ fontSize: '3.5rem', marginBottom: 20 }}
+        >
+          🌍
+        </motion.div>
 
-        {/* Animated waiting dots */}
-        <div style={{ display: 'flex', gap: 12, marginTop: 16 }}>
+        <h2 style={{ fontSize: '2.2rem', color: '#10b981', marginBottom: 8, fontWeight: 900 }}>Searching the Globe...</h2>
+        <p style={{ color: 'var(--muted)', marginBottom: 36, fontSize: '1rem', maxWidth: 360 }}>
+          Looking for a worthy opponent worldwide. Hang tight!
+        </p>
+
+        {/* SVG Countdown Ring */}
+        <div style={{ position: 'relative', width: 100, height: 100, marginBottom: 28 }}>
+          <svg width="100" height="100" style={{ transform: 'rotate(-90deg)' }}>
+            <circle cx="50" cy="50" r="36" fill="none" stroke="var(--border)" strokeWidth="6" />
+            <circle
+              cx="50" cy="50" r="36" fill="none"
+              stroke={timerColor}
+              strokeWidth="6"
+              strokeDasharray={circumference}
+              strokeDashoffset={dashoffset}
+              strokeLinecap="round"
+              style={{ transition: 'stroke-dashoffset 0.9s linear, stroke 0.5s' }}
+            />
+          </svg>
+          <div style={{
+            position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: '1.8rem', fontWeight: 900, color: timerColor,
+          }}>
+            {globalSearchTimer}
+          </div>
+        </div>
+
+        {/* Animated dots */}
+        <div style={{ display: 'flex', gap: 10, marginBottom: 40 }}>
           {[0, 1, 2].map(i => (
-            <motion.div key={i} animate={{ y: [0, -10, 0], scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }} transition={{ repeat: Infinity, duration: 1, delay: i * 0.2 }}
-              style={{ width: 16, height: 16, borderRadius: '50%', background: '#10b981' }} />
+            <motion.div
+              key={i}
+              animate={{ y: [0, -10, 0], scale: [1, 1.3, 1], opacity: [0.4, 1, 0.4] }}
+              transition={{ repeat: Infinity, duration: 0.9, delay: i * 0.2 }}
+              style={{ width: 12, height: 12, borderRadius: '50%', background: '#10b981' }}
+            />
           ))}
         </div>
+
+        {/* Cancel Button */}
+        <motion.button
+          whileHover={{ scale: 1.04 }}
+          whileTap={{ scale: 0.97 }}
+          onClick={cancelSearch}
+          style={{
+            padding: '13px 36px', borderRadius: 12, fontSize: '0.95rem', fontWeight: 700,
+            background: 'var(--card-bg)', color: '#ef4444',
+            border: '2px solid #ef444440', cursor: 'pointer',
+            transition: 'border-color 0.2s',
+          }}
+          onMouseOver={e => e.currentTarget.style.borderColor = '#ef4444'}
+          onMouseOut={e => e.currentTarget.style.borderColor = '#ef444440'}
+        >
+          ✕ Cancel Search
+        </motion.button>
+
+        {globalSearchTimer <= 10 && (
+          <motion.p
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            style={{ color: '#f59e0b', marginTop: 20, fontSize: '0.9rem', fontWeight: 600 }}
+          >
+            No opponent found yet. You'll be returned to the lobby in {globalSearchTimer}s.
+          </motion.p>
+        )}
       </div>
     );
   }
@@ -780,6 +961,50 @@ const FriendBattlePage = ({ navigate }) => {
             Your time: <strong style={{ color: 'var(--text)' }}>{formatTime(me.timeTaken)}</strong>
           </motion.div>
 
+          {/* ── Rematch Banner ───────────────────────────────── */}
+          {rematchCountdown > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              style={{
+                background: 'linear-gradient(135deg, rgba(124,58,237,0.12), rgba(16,185,129,0.12))',
+                border: '2px solid rgba(124,58,237,0.3)',
+                borderRadius: 16,
+                padding: '18px 24px',
+                marginBottom: 20,
+                textAlign: 'center',
+              }}
+            >
+              <div style={{ fontSize: '0.8rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8, fontWeight: 700 }}>
+                {opponentRematchRequested ? '🕹️ Opponent wants a Rematch!' : '⚔️ Rematch Available'}
+              </div>
+              {rematchRequested ? (
+                <div style={{ color: 'var(--violet)', fontWeight: 700 }}>
+                  {opponentRematchRequested ? '🚀 Starting rematch...' : `Waiting for opponent... (${rematchCountdown}s)`}
+                </div>
+              ) : (
+                <motion.button
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.97 }}
+                  onClick={() => {
+                    setRematchRequested(true);
+                    if (channel) {
+                      channel.send({ type: 'broadcast', event: 'rematch_request', payload: { matchId, userId: user.id } });
+                    }
+                  }}
+                  style={{
+                    padding: '12px 32px', borderRadius: 12, fontSize: '1rem', fontWeight: 800,
+                    background: 'linear-gradient(135deg, var(--violet), #10b981)',
+                    color: '#fff', border: 'none', cursor: 'pointer',
+                    boxShadow: '0 4px 20px rgba(124,58,237,0.35)',
+                  }}
+                >
+                  🔁 Rematch! ({rematchCountdown}s)
+                </motion.button>
+              )}
+            </motion.div>
+          )}
+
           {/* ── Action Buttons ────────────────────────────────── */}
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }}
             style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}
@@ -818,6 +1043,28 @@ const FriendBattlePage = ({ navigate }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
+      {/* Anti-Cheat Warning Banner */}
+      <AnimatePresence>
+        {cheatWarning && (
+          <motion.div
+            key="cheat-warn"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            style={{
+              position: 'fixed', top: 0, left: 0, right: 0, zIndex: 9999,
+              background: cheatWarning.includes('Cheat detected') ? '#ef4444' : '#f59e0b',
+              color: '#fff', textAlign: 'center',
+              padding: '14px 24px', fontSize: '1rem', fontWeight: 700,
+              boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+            }}
+          >
+            {cheatWarning}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Header */}
       <header style={{ padding: '16px 24px', borderBottom: '1px solid var(--border)', background: 'var(--card-bg)', flexShrink: 0 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
