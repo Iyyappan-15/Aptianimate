@@ -15,6 +15,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [profileLoading, setProfileLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const refreshProfile = async () => {
@@ -55,6 +56,7 @@ export const AuthProvider = ({ children }) => {
         if (mounted) {
           setProfile(null);
           setUser(null);
+          setProfileLoading(false);
         }
         return;
       }
@@ -70,7 +72,11 @@ export const AuthProvider = ({ children }) => {
           }
         } catch (err) {
           console.error("Error fetching profile during auth init:", err);
+        } finally {
+          if (mounted) setProfileLoading(false);
         }
+      } else {
+        if (mounted) setProfileLoading(false);
       }
     };
 
@@ -89,7 +95,7 @@ export const AuthProvider = ({ children }) => {
         if (session.user.is_anonymous) {
           // We no longer use anonymous sessions. Clear legacy sessions automatically.
           supabase.auth.signOut();
-          if (mounted) setLoading(false);
+          if (mounted) { setLoading(false); setProfileLoading(false); }
           return;
         }
         // Returning Google user
@@ -98,7 +104,7 @@ export const AuthProvider = ({ children }) => {
         });
       } else {
         // No session — guest mode, no auto sign-in
-        if (mounted) setLoading(false);
+        if (mounted) { setLoading(false); setProfileLoading(false); }
       }
     }).catch(err => {
       console.error("Unhandled error in getSession:", err);
@@ -111,9 +117,10 @@ export const AuthProvider = ({ children }) => {
       if (event === 'INITIAL_SESSION') {
          // getSession handles this, but just in case:
          if (!session) {
-            if (mounted) setLoading(false);
+            if (mounted) { setLoading(false); setProfileLoading(false); }
          }
-      } else if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+      } else if (event === 'SIGNED_IN') {
+        // Only fetch profile on a real SIGN_IN, not on token refreshes.
         if (session?.user) {
           try {
             await checkUserAndFetchProfile(session.user);
@@ -123,12 +130,17 @@ export const AuthProvider = ({ children }) => {
             if (mounted) setLoading(false);
           }
         }
+      } else if (event === 'TOKEN_REFRESHED') {
+        // Token was silently refreshed — user & profile haven't changed, do NOT re-fetch.
+        // Just ensure loading states are cleared.
+        if (mounted) { setLoading(false); setProfileLoading(false); }
       } else if (event === 'SIGNED_OUT') {
         // After sign out, go back to pure guest mode (no user, no profile)
         if (mounted) {
           setUser(null);
           setProfile(null);
           setLoading(false);
+          setProfileLoading(false);
         }
       }
     });
@@ -159,7 +171,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, profile, loading, error, refreshProfile, signOut }}>
+    <AuthContext.Provider value={{ user, profile, loading, profileLoading, error, refreshProfile, signOut }}>
       {children}
     </AuthContext.Provider>
   );

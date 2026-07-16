@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { isUsernameAvailable, createProfile } from '../repositories/profileRepository';
 
 export default function UsernameModal() {
-  const { user, profile, loading, refreshProfile } = useAuth();
+  const { user, profile, loading, profileLoading, refreshProfile } = useAuth();
   const [username, setUsername] = useState('');
   const [checking, setChecking] = useState(false);
   const [status, setStatus] = useState(null); // 'available', 'taken', 'invalid', or null
@@ -41,8 +41,10 @@ export default function UsernameModal() {
     return () => clearTimeout(timer);
   }, [username]);
 
-  // Only show for real (Google-authenticated) users without a profile yet
-  if (loading || !user || user.is_anonymous || profile) return null;
+  // Only show for real (Google-authenticated) users without a profile yet.
+  // CRITICAL: Also wait for profileLoading to finish — prevents flashing the modal
+  // during the brief window between login and profile fetch completing.
+  if (loading || profileLoading || !user || user.is_anonymous || profile) return null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
