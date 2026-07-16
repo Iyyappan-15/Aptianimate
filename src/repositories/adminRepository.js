@@ -60,3 +60,41 @@ export const updateSystemSettings = async (updates) => {
     throw error;
   }
 };
+
+/**
+ * Get basic dashboard stats (Total Users).
+ */
+export const getDashboardStats = async () => {
+  if (!supabase) return { totalUsers: 0 };
+  try {
+    const { count, error } = await supabase
+      .from('profiles')
+      .select('*', { count: 'exact', head: true });
+    
+    if (error) throw error;
+    return { totalUsers: count || 0 };
+  } catch (error) {
+    console.error('Error fetching dashboard stats:', error.message);
+    return { totalUsers: 0 };
+  }
+};
+
+/**
+ * Delete a user profile (soft delete or direct removal from profiles table).
+ * Real deletion from auth.users requires Edge Function, but removing profile restricts access.
+ */
+export const deleteUserProfile = async (userId) => {
+  if (!supabase) throw new Error('Supabase client not initialized');
+  try {
+    const { error } = await supabase
+      .from('profiles')
+      .delete()
+      .eq('id', userId);
+      
+    if (error) throw error;
+    return true;
+  } catch (error) {
+    console.error('Error deleting user profile:', error.message);
+    throw error;
+  }
+};

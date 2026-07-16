@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { getAllProfiles } from '../../repositories/adminRepository';
+import { getAllProfiles, deleteUserProfile } from '../../repositories/adminRepository';
+import { useAuth } from '../../contexts/AuthContext';
 
 export default function AdminUsers() {
+  const { user: currentUser } = useAuth();
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [deletingId, setDeletingId] = useState(null);
 
   useEffect(() => {
     let mounted = true;
@@ -15,6 +18,22 @@ export default function AdminUsers() {
     });
     return () => { mounted = false; };
   }, []);
+
+  const handleDelete = async (id, name) => {
+    if (!window.confirm(`Are you sure you want to delete the user "${name}"? This action cannot be undone.`)) {
+      return;
+    }
+    
+    setDeletingId(id);
+    try {
+      await deleteUserProfile(id);
+      setUsers(users.filter(u => u.id !== id));
+    } catch (err) {
+      alert("Failed to delete user. Please try again.");
+    } finally {
+      setDeletingId(null);
+    }
+  };
 
   return (
     <div>
@@ -35,6 +54,7 @@ export default function AdminUsers() {
                   <th style={{ padding: '16px 20px', fontWeight: 700, color: 'var(--muted)' }}>User</th>
                   <th style={{ padding: '16px 20px', fontWeight: 700, color: 'var(--muted)' }}>Role</th>
                   <th style={{ padding: '16px 20px', fontWeight: 700, color: 'var(--muted)' }}>Joined Date</th>
+                  <th style={{ padding: '16px 20px', fontWeight: 700, color: 'var(--muted)', textAlign: 'right' }}>Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -65,11 +85,30 @@ export default function AdminUsers() {
                     <td style={{ padding: '16px 20px', color: 'var(--muted)' }}>
                       {new Date(u.created_at).toLocaleDateString()}
                     </td>
+                    <td style={{ padding: '16px 20px', textAlign: 'right' }}>
+                      {u.role !== 'super_admin' && u.id !== currentUser?.id && (
+                        <button
+                          onClick={() => handleDelete(u.id, u.full_name || u.username)}
+                          disabled={deletingId === u.id}
+                          style={{
+                            padding: '6px 12px', borderRadius: '8px', border: 'none',
+                            background: 'rgba(239,68,68,0.1)', color: 'var(--coral)',
+                            fontWeight: 600, fontSize: '0.85rem', cursor: deletingId === u.id ? 'not-allowed' : 'pointer',
+                            opacity: deletingId === u.id ? 0.6 : 1,
+                            transition: 'background 0.2s'
+                          }}
+                          onMouseOver={(e) => e.currentTarget.style.background = 'rgba(239,68,68,0.2)'}
+                          onMouseOut={(e) => e.currentTarget.style.background = 'rgba(239,68,68,0.1)'}
+                        >
+                          {deletingId === u.id ? 'Deleting...' : 'Delete'}
+                        </button>
+                      )}
+                    </td>
                   </tr>
                 ))}
                 {users.length === 0 && (
                   <tr>
-                    <td colSpan="3" style={{ padding: '32px', textAlign: 'center', color: 'var(--muted)' }}>No users found.</td>
+                    <td colSpan="4" style={{ padding: '32px', textAlign: 'center', color: 'var(--muted)' }}>No users found.</td>
                   </tr>
                 )}
               </tbody>
