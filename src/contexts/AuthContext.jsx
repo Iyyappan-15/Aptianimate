@@ -13,7 +13,23 @@ const AuthContext = createContext({
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [profile, setProfile] = useState(null);
+  const [profile, setProfile] = useState(() => {
+    try {
+      const cached = localStorage.getItem('apti_profile');
+      return cached ? JSON.parse(cached) : null;
+    } catch (e) {
+      return null;
+    }
+  });
+
+  const updateProfileState = (prof) => {
+    setProfile(prof);
+    if (prof) {
+      localStorage.setItem('apti_profile', JSON.stringify(prof));
+    } else {
+      localStorage.removeItem('apti_profile');
+    }
+  };
   const [loading, setLoading] = useState(true);
   const [profileLoading, setProfileLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -22,7 +38,7 @@ export const AuthProvider = ({ children }) => {
     if (user) {
       try {
         const prof = await getProfile(user.id);
-        setProfile(prof);
+        updateProfileState(prof);
         return prof;
       } catch (err) {
         console.error("Error refreshing profile:", err);
@@ -54,7 +70,7 @@ export const AuthProvider = ({ children }) => {
     const checkUserAndFetchProfile = async (sessionUser) => {
       if (!sessionUser) {
         if (mounted) {
-          setProfile(null);
+          updateProfileState(null);
           setUser(null);
           setProfileLoading(false);
         }
@@ -68,7 +84,7 @@ export const AuthProvider = ({ children }) => {
         try {
           const prof = await getProfile(sessionUser.id);
           if (mounted) {
-            setProfile(prof);
+            updateProfileState(prof);
           }
         } catch (err) {
           console.error("Error fetching profile during auth init:", err);
@@ -138,7 +154,7 @@ export const AuthProvider = ({ children }) => {
         // After sign out, go back to pure guest mode (no user, no profile)
         if (mounted) {
           setUser(null);
-          setProfile(null);
+          updateProfileState(null);
           setLoading(false);
           setProfileLoading(false);
         }
