@@ -1,10 +1,12 @@
 // src/pages/GovtPYQPracticePage.jsx
 // ─── Premium Government PYQ – Practice Viewer ────────────────────────────────
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GOVT_PYQ_REGISTRY } from '../data/governmentRegistry';
 import Mascot from '../components/Mascot';
 import Confetti from '../components/Confetti';
+import { useAuth } from '../contexts/AuthContext';
+import { recordBulkSessions } from '../repositories/analyticsRepository';
 
 // ─── In-Memory Cache ──────────────────────────────────────────────────────────
 const setCache = new Map();
@@ -188,6 +190,8 @@ function ScoreSummary({ questions, answers, onRestart, navigate }) {
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function GovtPYQPracticePage({ examId, setId, navigate }) {
+  const { user } = useAuth();
+  const startTimeRef = useRef(Date.now());
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading]     = useState(true);
   const [error, setError]         = useState(null);
@@ -197,6 +201,7 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
   const [submitted, setSubmitted] = useState(false);
   const [result, setResult]       = useState(null);
   const [showSummary, setShowSummary] = useState(false);
+  const [sessionResults, setSessionResults] = useState([]);
   const [searchText, setSearch]   = useState('');
   const [topicFilter, setTopicFilter] = useState('All');
 
@@ -249,8 +254,17 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
 
   const goNext = useCallback(() => {
     if (current < questions.length - 1) jumpTo(current + 1);
-    else setShowSummary(true);
-  }, [current, questions.length, jumpTo]);
+    else {
+      // Save to Supabase before showing summary
+      if (user && sessionResults.length > 0) {
+        const elapsedSecs = Math.round((Date.now() - startTimeRef.current) / 1000);
+        const examLabel = exam?.name || 'Government PYQ';
+        recordBulkSessions(user.id, examLabel, elapsedSecs, sessionResults)
+          .catch(err => console.error('Failed to save PYQ progress:', err));
+      }
+      setShowSummary(true);
+    }
+  }, [current, questions.length, jumpTo, user, sessionResults, exam]);
 
   const goPrev = useCallback(() => {
     if (current > 0) jumpTo(current - 1);
@@ -268,6 +282,14 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
     setSubmitted(true);
     setResult(isNA ? null : correct ? 'correct' : 'wrong');
     setSelected(chosenLabel);
+
+    // Record result for bulk save at end of session
+    if (!isNA) {
+      setSessionResults(prev => [
+        ...prev,
+        { questionId: q.question_id || q.question?.substring(0, 50), solved: !!correct }
+      ]);
+    }
   }, [questions, current, answers]);
 
   // Loading & Error States

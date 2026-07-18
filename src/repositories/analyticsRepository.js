@@ -55,6 +55,55 @@ export const recordSession = async (userId, { questionId, topic, solved, timeSec
   return true;
 };
 
+/**
+ * Record multiple practice attempts at once and update daily_activity.
+ * This prevents slowing down Supabase with too many requests.
+ */
+export const recordBulkSessions = async (userId, topic, totalTimeSeconds, results) => {
+  if (guard('recordBulkSessions')) return null;
+  if (!results || results.length === 0) return true;
+
+  const today = new Date().toISOString().slice(0, 10);
+
+  // 1. Bulk insert raw sessions
+  const sessionsToInsert = results.map(r => ({
+    user_id: userId,
+    question_id: r.questionId || 'unknown',
+    topic: topic || null,
+    solved: !!r.solved,
+    time_seconds: 0, // Individual times not tracked in this flow
+    session_date: today,
+  }));
+
+  const { error: se } = await supabase.from('practice_sessions').insert(sessionsToInsert);
+  if (se) { console.error('recordBulkSessions insert:', se.message); return null; }
+
+  // 2. Upsert daily_activity rollup
+  const { data: existing } = await supabase
+    .from('daily_activity')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('activity_date', today)
+    .maybeSingle();
+
+  const minutes = Math.max(1, Math.round((totalTimeSeconds || 0) / 60)); // at least 1 minute if they practiced
+  const solvedCount = results.filter(r => r.solved).length;
+  const topicsSet = new Set(existing?.topics_studied || []);
+  if (topic) topicsSet.add(topic);
+
+  await supabase.from('daily_activity').upsert({
+    user_id: userId,
+    activity_date: today,
+    problems_solved: (existing?.problems_solved || 0) + solvedCount,
+    minutes_practiced: (existing?.minutes_practiced || 0) + minutes,
+    topics_studied: [...topicsSet],
+    sessions_count: (existing?.sessions_count || 0) + 1, // Count as 1 session block
+    updated_at: new Date().toISOString(),
+  }, { onConflict: 'user_id,activity_date' });
+
+  return true;
+};
+
 // ─────────────────────────────────────────────
 // Read helpers
 // ─────────────────────────────────────────────

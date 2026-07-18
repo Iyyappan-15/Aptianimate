@@ -4,6 +4,7 @@ import { topicService } from "../services/topicService";
 import AISolver from "../components/AISolver";
 import { useAuth } from "../contexts/AuthContext";
 import { addQuestionBookmark, removeQuestionBookmark, findQuestionBookmark } from "../repositories/questionBookmarkRepository";
+import { recordBulkSessions } from "../repositories/analyticsRepository";
 import { getTopicCategoryPath } from "../utils/categoryMapper";
 import TopicSkeleton from "../components/TopicSkeleton";
 import DataInterpretationVisualizer from "../components/DataInterpretationVisualizer";
@@ -124,6 +125,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   const [correctCount, setCorrectCount] = useState(0);
   const [loadingQuestions, setLoadingQuestions] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [sessionResults, setSessionResults] = useState([]);
 
   // Bookmark states
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -194,6 +196,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
     setCorrectCount(0);
     setIsBookmarked(false);
     setBookmarkId(null);
+    setSessionResults([]);
 
     const categoryPath = getTopicCategoryPath(topicSlug);
     const url = `/data/${categoryPath}/${topicSlug}.json`;
@@ -241,7 +244,8 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
   const finishLearn = () => { saveProgress(50); startPractice(); };
   const finishPractice = () => {
     saveProgress(100);
-    const elapsed = Math.round((Date.now() - startRef.current) / 60000);
+    const elapsedSecs = Math.round((Date.now() - startRef.current) / 1000);
+    const elapsed = Math.round(elapsedSecs / 60);
     const actualAccuracy = questionsList.length > 0
       ? Math.round((correctCount / questionsList.length) * 100)
       : Math.floor(Math.random() * 20) + 75;
@@ -257,6 +261,12 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
       correctAnswers: actualCorrect,
       totalQuestions: totalQ,
     });
+
+    if (user && sessionResults.length > 0) {
+      recordBulkSessions(user.id, topic.title || topicName, elapsedSecs, sessionResults)
+        .catch(err => console.error("Failed to save progress", err));
+    }
+
     setScreen("complete");
   };
 
@@ -544,9 +554,14 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                     if (!submitted) {
                       setSelectedOption(opt);
                       setSubmitted(true);
-                      if (idx === correctIdx) {
+                      const isCorrect = idx === correctIdx;
+                      if (isCorrect) {
                         setCorrectCount(prev => prev + 1);
                       }
+                      setSessionResults(prev => [
+                        ...prev,
+                        { questionId: activeQuestion.id || activeQuestion.question.substring(0, 50), solved: isCorrect }
+                      ]);
                     }
                   }}
                   disabled={submitted}

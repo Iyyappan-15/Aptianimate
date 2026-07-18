@@ -1,10 +1,12 @@
 // src/pages/GovtDailyPracticePage.jsx
 // ─── Premium Government PYQ – Daily Practice Randomizer ────────────────────────
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GOVT_PYQ_REGISTRY } from '../data/governmentRegistry';
 import Mascot from '../components/Mascot';
 import Confetti from '../components/Confetti';
+import { useAuth } from '../contexts/AuthContext';
+import { recordBulkSessions } from '../repositories/analyticsRepository';
 
 // ─── Difficulty badge ─────────────────────────────────────────────────────────
 function DiffBadge({ diff }) {
@@ -169,6 +171,8 @@ function ScoreSummary({ questions, answers, navigate }) {
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function GovtDailyPracticePage({ navigate }) {
+  const { user } = useAuth();
+  const startTimeRef = useRef(Date.now());
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading]     = useState(true);
   const [error, setError]         = useState(null);
@@ -178,6 +182,7 @@ export default function GovtDailyPracticePage({ navigate }) {
   const [submitted, setSubmitted] = useState(false);
   const [result, setResult]       = useState(null);
   const [showSummary, setShowSummary] = useState(false);
+  const [sessionResults, setSessionResults] = useState([]);
 
   useEffect(() => {
     // 1. Gather all file paths from the registry
@@ -212,8 +217,16 @@ export default function GovtDailyPracticePage({ navigate }) {
 
   const goNext = useCallback(() => {
     if (current < questions.length - 1) jumpTo(current + 1);
-    else setShowSummary(true);
-  }, [current, questions.length, jumpTo]);
+    else {
+      // Save to Supabase before showing summary
+      if (user && sessionResults.length > 0) {
+        const elapsedSecs = Math.round((Date.now() - startTimeRef.current) / 1000);
+        recordBulkSessions(user.id, 'Daily Practice – PYQ Mix', elapsedSecs, sessionResults)
+          .catch(err => console.error('Failed to save daily practice progress:', err));
+      }
+      setShowSummary(true);
+    }
+  }, [current, questions.length, jumpTo, user, sessionResults]);
 
   const goPrev = useCallback(() => {
     if (current > 0) jumpTo(current - 1);
@@ -231,6 +244,14 @@ export default function GovtDailyPracticePage({ navigate }) {
     setSubmitted(true);
     setResult(isNA ? null : correct ? 'correct' : 'wrong');
     setSelected(chosenLabel);
+
+    // Collect result for bulk save
+    if (!isNA) {
+      setSessionResults(prev => [
+        ...prev,
+        { questionId: q.question_id || q.question?.substring(0, 50), solved: !!correct }
+      ]);
+    }
   }, [questions, current, answers]);
 
   // Loading & Error States
