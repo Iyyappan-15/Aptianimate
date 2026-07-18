@@ -7,7 +7,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "A radiation of energy E falls normally on a perfectly reflecting surface. The momentum transferred to the surface is",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -43,7 +43,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "A block of mass m is connected to another block of mass M by a massless spring of spring constant k. The blocks are kept on a smooth horizontal plane. Initially, the blocks are at rest and the spring is unstretched. Then, a constant force F starts acting on the block of mass M to pull it. The force acting on block of mass m is",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -79,7 +79,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "Two beams of light having intensities I and 4I interfere to produce a fringe pattern on a screen. The phase difference between the beams is pi/2 at point A and pi at point B. Then the difference between the resultant intensities at A and B is",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -115,7 +115,7 @@
     "difficulty": "hard",
     "estimated_time": 90,
     "question": "A thin ring of 10 cm radius carries a uniformly distributed charge. The ring rotates at a constant angular speed of 40*pi rad/s about its axis, perpendicular to its plane. If the magnetic field at its center is 3.8 x 10^-9 T, then the charge carried by the ring is",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -151,7 +151,7 @@
     "difficulty": "hard",
     "estimated_time": 90,
     "question": "Two point electric charges of value q and 2q are kept at a distance d apart from each other in air. A third charge Q is to be kept along the same line in such a way that the net force acting on q and 2q is zero. The position of charge Q in terms of q and d is",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -187,7 +187,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Two identical metal plates are given positive charges q1 and q2 (< q1) respectively. If they are now brought close together to form a parallel plate capacitor with capacitance C, the potential difference between them is",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -223,7 +223,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "The emf of the cell Ag | AgCl(s) | KCl(aq) | Hg2Cl2(s) | Hg is 0.055 V at 298 K. What is the free energy change at 298 K ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -259,7 +259,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Which of the following will give molecule (II) on reaction with one molecule of PhMgBr ? [Diagram/Image Required - structure of 1,1-diphenylethanol, CH3-C(OH)(Ph)(Ph)]",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -295,7 +295,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "Which of the following compounds is enantiomeric to the molecule (I), given below ? [Diagram/Image Required - 2-chlorobutane stereo structures]",
-    "correct_answer": null,
+    "correct_answer": "Not Available",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -331,7 +331,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "From the following select the product of the reaction of phenetole with HI.",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -367,7 +367,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Which among the following actinides shows maximum number of oxidation states ?",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -403,7 +403,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "[FeF6]^3- and [Ni(H2O)6]^2+ complexes are",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -439,7 +439,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "Amniocentesis is legally permitted in India only when it is used for",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -475,7 +475,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Match the ecological relationships given in Group - I with their corresponding explanations in Group - II.\nGroup - I (Name of Interaction): a. Ammensalism  b. Commensalism  c. Mutualism  d. Parasitism\nGroup - II (Species): I. One organism is benefited and other is harmed  II. Two different species live together in close association and both are benefited  III. One organism is benefited but the other is neither harmed nor benefited  IV. One organism is inhibited but the other is not affected\nChoose the correct combination of Group - I and Group - II given below.",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -511,7 +511,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Which of the following correctly matches the meiotic stage with the chromosomal event ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -547,7 +547,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "Arrange the following taxonomic categories in ascending order (from lowest to highest rank):\nOrder - Family - Genus - Phylum - Class - Species",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -583,7 +583,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Which of the following organs is most sensitive to progesterone ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -619,7 +619,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "During agarose gel electrophoresis, DNA fragments move toward the anode. Which property of DNA is primarily responsible for its movement ?",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -655,7 +655,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "The maximum value of x(1-x)^2 occurs at x equals to",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -691,7 +691,7 @@
     "difficulty": "hard",
     "estimated_time": 90,
     "question": "The shortest distance between the line L1 : (x-1)/2 = (y+2)/3 = z/-1 and the line L2 : r = (2i - 3j + k) + mu(3i - 2j + 4k) is equal to",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -727,7 +727,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "If A is a 3 x 3 matrix such that |A| = 3, then |adj(3A^-1)| is equal to",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -763,7 +763,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Let f : R -> R be defined by f(x) = |x| + |x-1| + 2x. The number of points at which f is not differentiable is",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -799,7 +799,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "For the vectors a = i + 2j + 2k, b = 3i, if theta is the angle between a and b, then the value of cos(theta) is",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -835,7 +835,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Area bounded by y^2 = 4x and x = 4 is equal to",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -871,7 +871,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "The mean deviation (approximated to 2 decimal places) about the median for the following data set is:\n8, 15, 3, 22, 17, 9, 14, 28, 6, 11, 19",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -907,7 +907,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "A frequency distribution has class width 5 and lowest class 10 - 15. Then 6th class upper limit is",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -943,7 +943,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "A data set has mean = 40. If each value is multiplied by 1.5 and then 8 is added to each new values, then new mean is",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -979,7 +979,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "In a certain data set, the mode is 24 and the median is 26. Then the mean of this data set is",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1015,7 +1015,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "The variance of the squares of first 7 natural numbers is",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1051,7 +1051,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "A bag contains 3 red and 5 blue balls. If two balls are drawn without replacement, then probability that both balls are blue is",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1087,7 +1087,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Arrange the following major trade centres in historical progression.\na. Taxila  b. Surat  c. Pataliputra  d. Machilipatnam\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1123,7 +1123,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "The sales book records",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1159,7 +1159,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "In the context of business finance, financial risk increases when",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1195,7 +1195,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "Accrued income is shown as",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1231,7 +1231,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "Journal proper records",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1267,7 +1267,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "A tertiary industry includes",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1303,7 +1303,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "A key limitation of accounting is that",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1339,7 +1339,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "Marshalling of assets means",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1375,7 +1375,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "If the Marginal Propensity to Consume (MPC) is 0.75 and autonomous consumption is Rs. 100 crores, what will be the total consumption when national income is Rs. 800 crores ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1411,7 +1411,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "If the Average Variable Cost (AVC) curve is U-shaped, at what level of output does the Marginal Cost (MC) curve intersect the AVC curve ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1447,7 +1447,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Which of the following transactions will be included in the calculation of GDP using the expenditure method ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1483,7 +1483,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "According to the Keynesian theory, what happens when aggregate demand falls short of aggregate supply at full employment level ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1519,7 +1519,7 @@
     "difficulty": "medium",
     "estimated_time": 30,
     "question": "Which of the following is an example of a negative externality in production ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1555,7 +1555,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "If the Marginal Product (MP) of a variable factor is declining but remains positive, what can be concluded about the Total Product (TP) ?",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1591,7 +1591,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "If the reserve ratio is 20% and the initial deposit in the banking system is Rs. 10,000, what is the maximum amount of money that can be created through the money multiplier process ?",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1627,7 +1627,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "A consumer is in equilibrium when consuming two goods X and Y. If the price of good X falls while the price of good Y and the consumer's income remains constant, what will happen ?",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1663,7 +1663,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "The mean distance between the Sun and Earth in terms of light-years is",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1699,7 +1699,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Match List - I with List - II.\nList - I (Mountain Peaks): a. Saddle Peak  b. Mount Diavolo  c. Mount Koyob  d. Mount Thuiller\nList - II (Islands): I. North Andaman  II. Middle Andaman  III. South Andaman  IV. Great Nicobar\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1735,7 +1735,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Arrange the cities from East to West on the Trans-Siberian railway\na. Omsk  b. Tyumen  c. Chita  d. Kazan\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1771,7 +1771,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "_______ explains that there exist variations over the surface of the Earth in its physical as well as cultural environment.",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",

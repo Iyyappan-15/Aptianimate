@@ -7,7 +7,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Study the following arrangement carefully and answer the question given below.\n8 C M @ N & T 2 Y 6 S a Q $ 7 * W # Z 3 U E % A 4\nHow many symbols are there in the above series each of which is immediately preceded and also immediately followed by a vowel ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -43,7 +43,7 @@
     "difficulty": "easy",
     "estimated_time": 45,
     "question": "The missing term (?) in the series 0, 6, 24, 60, 120, 210, ? is",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -79,7 +79,7 @@
     "difficulty": "easy",
     "estimated_time": 45,
     "question": "Four groups of letters are given in the options below, three of them are alike in a certain way while one is different. Choose the one which is different.",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -115,7 +115,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "In a certain code language, ORGANISATION is written as CBDWLQJWYQCL and OPERATION is written as CXFBWYQCL, then how is SEPARATION coded ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -151,7 +151,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Choose the missing terms (?) in following series, out of given alternatives.\nA, B, B, D, C, F, D, H, E, ?, ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -187,7 +187,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "How many 7s immediately preceded by 6 but not immediately followed by 4 are there in the following series ?\n7 4 2 7 6 4 3 6 7 5 3 5 7 8 4 3 7 6 7 2 4 0 6 7 4 3",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -223,7 +223,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "Choose the correct alternative which will replace the question mark (?).\nPeace : Chaos :: Creation : ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -259,7 +259,7 @@
     "difficulty": "hard",
     "estimated_time": 90,
     "question": "If L denotes 'division', M denotes 'multiplication', P denotes 'addition', Q denotes 'subtraction', then which of the following statement is true ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -295,7 +295,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "Choose the correct pair from the given alternatives, in which the words bear the same relationship to each other as the words of the pair given below.\nDarkness : Lamp",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -331,7 +331,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "If RED is coded as 6720 and BLUE is coded as 723144, then how would GREEN be coded ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -367,7 +367,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Arrange the words given below in a meaningful sequence.\na. Income  b. Status  c. Education  d. Well-being  e. Job",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -403,7 +403,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "A man pointing to a photograph says, \"The lady in the photograph is my nephew's maternal grandmother.\" How is lady in the photograph related to the man's sister who has no other sister or brother ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -439,7 +439,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Study the following figure and answer the question given below.\n[Diagram/Image Required]\nRectangle -> Artists, Circle -> Players, Triangle -> Doctors\nHow many players are neither artists nor doctors ?",
-    "correct_answer": null,
+    "correct_answer": "Not Available",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -475,7 +475,7 @@
     "difficulty": "hard",
     "estimated_time": 90,
     "question": "Six flats on a floor in two rows facing North and South are alloted to P, Q, R, S, T and U. Q gets a North facing flat and is not next to S. S and U get diagonally opposite flats. R, next to U, gets a South facing flat and T gets a North facing flat. The flats of which of other pairs than SU, are diagonally opposite to each other ?",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -511,7 +511,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "A, B, C, D, E and F are six members of the family. One couple has parents and their children in the family. A is the son of C and E is the daughter of A. D is the daughter of F who is the mother of E. What relationship do D and E bear to each other ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -547,7 +547,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Given below are two statements, one is labelled as Assertion (A) and other one labelled as Reason (R).\nAssertion (A) : Legumes revive the soil fertility.\nReason (R) : Microbes in the root nodules of legumes fix the atmospheric nitrogen.\nIn light of the above statements, choose the correct answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -583,7 +583,7 @@
     "difficulty": "hard",
     "estimated_time": 90,
     "question": "In the question given below three are statements followed by three conclusions numbered I, II and III. You have to take the given statements to be true even if they seem to be at variance from the commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts.\nStatements: 1. Some pictures are frames. 2. Some frames are idols. 3. All idols are curtains.\nConclusions: I. Some curtains are pictures. II. Some curtains are frames. III. Some idols are frames.",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -619,7 +619,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Which of the following diagrams indicates the best relation between Women, Mothers and Engineers ?\n[Diagram/Image Required]",
-    "correct_answer": null,
+    "correct_answer": "Not Available",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -655,7 +655,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Given below are two statements, one is labelled as Assertion (A) and other one labelled as Reason (R).\nAssertion (A) : When lightning strikes, the sound is heard a little after the flash is seen.\nReason (R) : The velocity of light is greater than that of the sound.\nIn light of the above statements, choose the correct answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -691,7 +691,7 @@
     "difficulty": "hard",
     "estimated_time": 90,
     "question": "Four players A, B, C and D are holding 4 cards each. Each of them has an Ace, a King, a Queen and a Jack. All of them have all the suits (spades, hearts, clubs and diamonds). A has Ace of spades and Queen of diamonds. B has Ace of clubs and King of diamonds. C has Queen of clubs and King of spades. D has Jack of clubs. C has which of the following with him ?",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -727,7 +727,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "If a = sqrt(3 + sqrt(3 + sqrt(3 + .........))), a > 0, then which of the following is true ?",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -763,7 +763,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "The bar graph given below shows the sales of books (in thousand number) from six branches of a publishing company during two consecutive years 2000 and 2001. [Diagram/Image Required]\nWhat is the ratio of the total sales of branch B2 for both years to the total sales of branch B4 for both years ?",
-    "correct_answer": null,
+    "correct_answer": "Not Available",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -799,7 +799,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "After getting two successive discounts, a shirt with a list price of Rs. 1,500 is available at Rs. 1,050. If the second discount is 12.5%, then the first discount is",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -835,7 +835,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "A girl was asked to multiply a certain number by 53. She multiplied it by 35 and found her answer less than the correct answer by 1206. Find the number to be multiplied.",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -871,7 +871,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "The following line graph gives the annual percent profit earned by a Company during the period 2015-2020. [Diagram/Image Required]\nIf the income in 2018 was Rs. 264 crores, what was the expenditure in 2018 ?",
-    "correct_answer": null,
+    "correct_answer": "Not Available",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -907,7 +907,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Distance between two stations A and B is 778 km. Anamika covers the journey from A to B at 84 km/hr and returns back to A with a uniform speed of 56 km/hr. Her average speed during the whole journey is",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -943,7 +943,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "A mixture contains alcohol and water in the ratio 4 : 3. If 5 litres of water is added to the mixture, the ratio becomes 4 : 5. The quantity of alcohol in the mixture is",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -979,7 +979,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "The unit's digit in the product (3127)^173 is",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1015,7 +1015,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "Pure ghee costs Rs. 1,000 per kg. After mixing it with vegetable oil costing Rs. 500 per kg, a shopkeeper sells the mixture at the rate of Rs. 960 per kg, thereby making a profit of 20%. In what ratio does he mix the ghee and vegetable oil ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1051,7 +1051,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "If cube_root(a) + cube_root(b) = 5 and ab = 1728, then the value of cube_root(a^2) + cube_root(b^2) is",
-    "correct_answer": null,
+    "correct_answer": "Not Available",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1087,7 +1087,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Given below are two statements.\nStatement (I) : Indira Gandhi Canal, previously known as the Rajasthan Canal, is one of the largest canal systems in India.\nStatement (II) : Conceived by Kanwar Sain in 1952, the canal project was launched on 31 March, 1958.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1123,7 +1123,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Which of the following are objectives of PM-SETU Scheme ?\ni. To improve the quality of training delivery in ITIs and NSTIs.\nii. To modernise infrastructure and equipment as per industry standards.\niii. To upgrade ITIs to polytechnic colleges.\niv. To enhance the capacity of NSTIs for training of trainers.\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1159,7 +1159,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Chronologically arrange the major textual traditions of ancient India.\n1. Natyashastra of Bharata  2. Manusmriti  3. Tripitaka  4. Ashtadhyayi of Panini\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1195,7 +1195,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Match List - I with List - II.\nList - I (Family of Modern Indian Language): 1. Nisada  2. Dravida  3. Kirata  4. Aryan\nList - II (Speech Area): I. Goa  II. Arunachal Pradesh  III. Tamil Nadu  IV. Nicobar Islands\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1231,7 +1231,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Chronologically arrange the major advances in Epigraphy.\n1. First issue of Epigraphia Carnatica.  2. Decipherment of Asokan Brahmi by James Prinsep.  3. First issue of Epigraphia Indica.  4. Alexander Cunningham publishes a set of Asokan inscriptions.\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1267,7 +1267,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Given below are two statements.\nStatement (I) : Strategically and economically, the Suez Canal is one of the most important waterways in the world.\nStatement (II) : Its opening in 1879 reduced the cost of transportation and made access to the Indian market easier.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1303,7 +1303,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Given below are two statements.\nStatement (I) : National Mission for Sustainable Agriculture is to make agriculture more productive, sustainable, remunerative and climate resilient.\nStatement (II) : The Government has been promoting dairy farming in the country through the scheme such as Rashtriya Vikas Yojana.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1339,7 +1339,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "The Karve Committee (1955) is associated with",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1375,7 +1375,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "Which of the following are called Fiat Money ?\n1. Gold  2. Silver  3. Currency Notes  4. Coins\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1411,7 +1411,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Match List - I with List - II.\nList - I (Type of Rural Settlement): 1. Clustered  2. Semi-clustered  3. Hamleted  4. Dispersed\nList - II (Area/Region State/Union Territory): I. Lower Valleys of the Himalayas  II. Kerala  III. Bundelkhand Region of Central India  IV. Gujarat Plain\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "C",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1447,7 +1447,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Given below are two statements.\nStatement (I) : A sizeable portion of the undivided country's highly irrigated and fertile land went to Pakistan; this had an adverse impact upon India's output from the agriculture sector.\nStatement (II) : India's jute goods industry (in which the country had enjoyed a world monopoly so far), thus, suffered heavily for lack of raw material.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1483,7 +1483,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Match List - I with List - II.\nList - I (Provisions borrowed from Constitutions of different countries): 1. Institution of the Speaker  2. Independence of Judiciary  3. Principles of Liberty, Equality and Fraternity  4. The Idea of Residual Powers\nList - II (Countries): I. French Constitution  II. Canadian Constitution  III. British Constitution  IV. American Constitution\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1519,7 +1519,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "_______ are papers bearing the promise of a future stream of monetary returns over a certain period of time.",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1555,7 +1555,7 @@
     "difficulty": "medium",
     "estimated_time": 60,
     "question": "Chronologically arrange the major developments in Harappan Archaeology.\n1. M. S. Vats begins excavations at Harappa.  2. R. E. M. Wheeler excavates at Harappa.  3. B. B. Lal and B. K. Thapar begin excavations at Kalibangan.  4. M. R. Mughal begins explorations in Bahawalpur.\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1591,7 +1591,7 @@
     "difficulty": "hard",
     "estimated_time": 75,
     "question": "Which of the following statements are true with regard to Navaratnas and Mini-ratnas of Indian industrial sector ?\n1. In order to improve efficiency, infuse professionalism and enable them to compete more effectively in the liberalised global environment, the government chose nine PSUs and declared them as navaratnas.\n2. They were given greater managerial and operational autonomy, in taking various decisions to run the company efficiently.\n3. Scholars state that by facilitating navaratnas in their expansion and enabling them to become global players, their profits increased.\n4. Greater operational, financial and managerial autonomy was also granted to 99 other profit-making enterprises referred to as mini ratnas.\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1627,7 +1627,7 @@
     "difficulty": "medium",
     "estimated_time": 30,
     "question": "Where was the Global Partnership on AI (GPAI) Summit held in December 2023 ?",
-    "correct_answer": null,
+    "correct_answer": "D",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1663,7 +1663,7 @@
     "difficulty": "medium",
     "estimated_time": 45,
     "question": "Which of the following countries have been elected as Non-Permanent Members of the UN Security Council for two-years term by the General Assembly in 2025 ?\n1. Ecuador  2. Guyana  3. Sierra Leone  4. Switzerland\nChoose the most appropriate answer from the options given below.",
-    "correct_answer": null,
+    "correct_answer": "Not Available",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1699,7 +1699,7 @@
     "difficulty": "medium",
     "estimated_time": 30,
     "question": "Where was Keralam's first hydrogen fuel cell bus launched in 2025 ?",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1735,7 +1735,7 @@
     "difficulty": "easy",
     "estimated_time": 30,
     "question": "When was the first National Space Day celebrated in India ?",
-    "correct_answer": null,
+    "correct_answer": "A",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
@@ -1771,7 +1771,7 @@
     "difficulty": "medium",
     "estimated_time": 30,
     "question": "Where was one of the world's largest mobile phone manufacturing facilities established by Samsung in India in 2018 ?",
-    "correct_answer": null,
+    "correct_answer": "B",
     "exam_tags": [
       "State PSC",
       "Kerala PSC",
