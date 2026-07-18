@@ -43,29 +43,29 @@ function Card({ icon, title, value, description, loading, color = 'var(--violet)
 
   return (
     <div style={{
-      background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 20,
-      padding: '24px 20px', display: 'flex', flexDirection: 'column', gap: 8,
+      background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 24,
+      padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: 10,
       transition: 'transform 0.2s, box-shadow 0.2s',
       cursor: 'default',
     }}
-      onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = 'var(--shadow)'; }}
+      onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.08)'; }}
       onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
     >
       <div style={{
-        width: 44, height: 44, borderRadius: '50%', display: 'flex',
-        alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem',
+        width: 52, height: 52, borderRadius: '50%', display: 'flex',
+        alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem',
         background: `color-mix(in srgb, ${color} 15%, transparent)`,
-        marginBottom: 8,
+        marginBottom: 12,
       }}>
         {icon}
       </div>
-      <p style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>
+      <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', margin: 0 }}>
         {title}
       </p>
-      <p style={{ fontSize: '2.1rem', fontWeight: 900, color: 'var(--text)', margin: '2px 0 0 0', lineHeight: 1 }}>
+      <p style={{ fontSize: '2.8rem', fontWeight: 900, color: 'var(--text)', margin: '4px 0 0 0', lineHeight: 1 }}>
         <AnimatedNumber value={value} />{suffix}
       </p>
-      <p style={{ fontSize: '0.75rem', color: 'var(--muted2)', margin: 0 }}>{description}</p>
+      <p style={{ fontSize: '0.8rem', color: 'var(--muted2)', margin: '4px 0 0 0' }}>{description}</p>
     </div>
   );
 }
@@ -82,10 +82,10 @@ export default function StatsCards() {
   ];
 
   return (
-    <div className="profile-stats-grid" style={{
+    <div style={{
       display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))',
-      gap: 16,
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gap: 20,
     }}>
       {cards.map((card) => (
         <Card key={card.title} {...card} loading={loading} />
