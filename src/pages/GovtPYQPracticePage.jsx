@@ -412,9 +412,9 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
 
                 {/* Question Text */}
                 <div style={{
-                  fontSize: '1.25rem', fontWeight: 600, color: 'var(--text-main)',
-                  lineHeight: 1.6, marginBottom: '40px', whiteSpace: 'pre-line',
-                  letterSpacing: '-0.2px'
+                  fontSize: '1.15rem', fontWeight: 400, color: 'var(--text)',
+                  lineHeight: 1.75, marginBottom: '40px', whiteSpace: 'pre-line',
+                  letterSpacing: '0px'
                 }}>
                   {q.question}
                 </div>
