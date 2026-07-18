@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "Q00101",
+    "category": "Technical",
+    "topic": "Physics",
+    "subtopic": "Radiation Pressure",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "A radiation of energy E falls normally on a perfectly reflecting surface. The momentum transferred to the surface is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "E/c"
+      },
+      {
+        "label": "B",
+        "text": "2E/c"
+      },
+      {
+        "label": "C",
+        "text": "Ec"
+      },
+      {
+        "label": "D",
+        "text": "E/c^2"
+      }
+    ]
+  },
+  {
+    "id": "Q00102",
+    "category": "Technical",
+    "topic": "Physics",
+    "subtopic": "Newton's Laws / Springs",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "A block of mass m is connected to another block of mass M by a massless spring of spring constant k. The blocks are kept on a smooth horizontal plane. Initially, the blocks are at rest and the spring is unstretched. Then, a constant force F starts acting on the block of mass M to pull it. The force acting on block of mass m is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "(M+m)F/m"
+      },
+      {
+        "label": "B",
+        "text": "mF/M"
+      },
+      {
+        "label": "C",
+        "text": "mF/(M+m)"
+      },
+      {
+        "label": "D",
+        "text": "MF/(M+m)"
+      }
+    ]
+  },
+  {
+    "id": "Q00103",
+    "category": "Technical",
+    "topic": "Physics",
+    "subtopic": "Interference of Light",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "Two beams of light having intensities I and 4I interfere to produce a fringe pattern on a screen. The phase difference between the beams is pi/2 at point A and pi at point B. Then the difference between the resultant intensities at A and B is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "4I"
+      },
+      {
+        "label": "B",
+        "text": "2I"
+      },
+      {
+        "label": "C",
+        "text": "5I"
+      },
+      {
+        "label": "D",
+        "text": "7I"
+      }
+    ]
+  },
+  {
+    "id": "Q00104",
+    "category": "Technical",
+    "topic": "Physics",
+    "subtopic": "Magnetic Field due to Rotating Charge",
+    "difficulty": "hard",
+    "estimated_time": 90,
+    "question": "A thin ring of 10 cm radius carries a uniformly distributed charge. The ring rotates at a constant angular speed of 40*pi rad/s about its axis, perpendicular to its plane. If the magnetic field at its center is 3.8 x 10^-9 T, then the charge carried by the ring is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 x 10^-5 C"
+      },
+      {
+        "label": "B",
+        "text": "4 x 10^-5 C"
+      },
+      {
+        "label": "C",
+        "text": "7 x 10^-6 C"
+      },
+      {
+        "label": "D",
+        "text": "2 x 10^-6 C"
+      }
+    ]
+  },
+  {
+    "id": "Q00105",
+    "category": "Technical",
+    "topic": "Physics",
+    "subtopic": "Electrostatics - Null Point",
+    "difficulty": "hard",
+    "estimated_time": 90,
+    "question": "Two point electric charges of value q and 2q are kept at a distance d apart from each other in air. A third charge Q is to be kept along the same line in such a way that the net force acting on q and 2q is zero. The position of charge Q in terms of q and d is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "(sqrt2/5) d from q"
+      },
+      {
+        "label": "B",
+        "text": "(sqrt3 - 1) d from q"
+      },
+      {
+        "label": "C",
+        "text": "(sqrt2 - 1) d from q"
+      },
+      {
+        "label": "D",
+        "text": "(sqrt3/2) d from q"
+      }
+    ]
+  },
+  {
+    "id": "Q00106",
+    "category": "Technical",
+    "topic": "Physics",
+    "subtopic": "Capacitors",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Two identical metal plates are given positive charges q1 and q2 (< q1) respectively. If they are now brought close together to form a parallel plate capacitor with capacitance C, the potential difference between them is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "(q1+q2)/C"
+      },
+      {
+        "label": "B",
+        "text": "(q1+q2)/2C"
+      },
+      {
+        "label": "C",
+        "text": "(q1-q2)/C"
+      },
+      {
+        "label": "D",
+        "text": "(q1-q2)/2C"
+      }
+    ]
+  },
+  {
+    "id": "Q00107",
+    "category": "Technical",
+    "topic": "Chemistry",
+    "subtopic": "Electrochemistry - EMF and Gibbs Energy",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "The emf of the cell Ag | AgCl(s) | KCl(aq) | Hg2Cl2(s) | Hg is 0.055 V at 298 K. What is the free energy change at 298 K ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "dG = -5307 J/mol"
+      },
+      {
+        "label": "B",
+        "text": "dG = 4391 J/mol"
+      },
+      {
+        "label": "C",
+        "text": "dG = -10615 J/mol"
+      },
+      {
+        "label": "D",
+        "text": "dG = -8782 J/mol"
+      }
+    ]
+  },
+  {
+    "id": "Q00108",
+    "category": "Technical",
+    "topic": "Chemistry",
+    "subtopic": "Organic Chemistry - Grignard Reaction",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Which of the following will give molecule (II) on reaction with one molecule of PhMgBr ? [Diagram/Image Required - structure of 1,1-diphenylethanol, CH3-C(OH)(Ph)(Ph)]",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzonitrile"
+      },
+      {
+        "label": "B",
+        "text": "Acetonitrile"
+      },
+      {
+        "label": "C",
+        "text": "Acetophenone"
+      },
+      {
+        "label": "D",
+        "text": "Phenyl acetate"
+      }
+    ]
+  },
+  {
+    "id": "Q00109",
+    "category": "Technical",
+    "topic": "Chemistry",
+    "subtopic": "Stereochemistry - Enantiomers",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "Which of the following compounds is enantiomeric to the molecule (I), given below ? [Diagram/Image Required - 2-chlorobutane stereo structures]",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Option A structure"
+      },
+      {
+        "label": "B",
+        "text": "Option B structure"
+      },
+      {
+        "label": "C",
+        "text": "Option C structure"
+      },
+      {
+        "label": "D",
+        "text": "Option D structure"
+      }
+    ]
+  },
+  {
+    "id": "Q00110",
+    "category": "Technical",
+    "topic": "Chemistry",
+    "subtopic": "Organic Chemistry - Ethers",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "From the following select the product of the reaction of phenetole with HI.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Iodobenzene and ethanol"
+      },
+      {
+        "label": "B",
+        "text": "Phenol and ethyl iodide"
+      },
+      {
+        "label": "C",
+        "text": "Iodobenzene and ethyl iodide"
+      },
+      {
+        "label": "D",
+        "text": "Iodobenzene and methanol"
+      }
+    ]
+  },
+  {
+    "id": "Q00111",
+    "category": "Technical",
+    "topic": "Chemistry",
+    "subtopic": "Inorganic Chemistry - Actinides",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which among the following actinides shows maximum number of oxidation states ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Th"
+      },
+      {
+        "label": "B",
+        "text": "Pu"
+      },
+      {
+        "label": "C",
+        "text": "Md"
+      },
+      {
+        "label": "D",
+        "text": "No"
+      }
+    ]
+  },
+  {
+    "id": "Q00112",
+    "category": "Technical",
+    "topic": "Chemistry",
+    "subtopic": "Coordination Chemistry - Magnetism",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "[FeF6]^3- and [Ni(H2O)6]^2+ complexes are",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "both paramagnetic in nature"
+      },
+      {
+        "label": "B",
+        "text": "both diamagnetic in nature"
+      },
+      {
+        "label": "C",
+        "text": "diamagnetic and paramagnetic in nature, respectively"
+      },
+      {
+        "label": "D",
+        "text": "paramagnetic and diamagnetic in nature, respectively"
+      }
+    ]
+  },
+  {
+    "id": "Q00113",
+    "category": "Technical",
+    "topic": "Biology",
+    "subtopic": "Human Reproduction - Amniocentesis",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Amniocentesis is legally permitted in India only when it is used for",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Detecting congenital genetic disorders in the foetus"
+      },
+      {
+        "label": "B",
+        "text": "Determining the sex of the foetus"
+      },
+      {
+        "label": "C",
+        "text": "Increasing the chances of implantation"
+      },
+      {
+        "label": "D",
+        "text": "Selecting desired traits in the foetus"
+      }
+    ]
+  },
+  {
+    "id": "Q00114",
+    "category": "Technical",
+    "topic": "Biology",
+    "subtopic": "Ecology - Interspecific Interactions",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Match the ecological relationships given in Group - I with their corresponding explanations in Group - II.\nGroup - I (Name of Interaction): a. Ammensalism  b. Commensalism  c. Mutualism  d. Parasitism\nGroup - II (Species): I. One organism is benefited and other is harmed  II. Two different species live together in close association and both are benefited  III. One organism is benefited but the other is neither harmed nor benefited  IV. One organism is inhibited but the other is not affected\nChoose the correct combination of Group - I and Group - II given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "a-III, b-IV, c-I, d-II"
+      },
+      {
+        "label": "B",
+        "text": "a-I, b-II, c-III, d-IV"
+      },
+      {
+        "label": "C",
+        "text": "a-IV, b-III, c-II, d-I"
+      },
+      {
+        "label": "D",
+        "text": "a-II, b-I, c-IV, d-III"
+      }
+    ]
+  },
+  {
+    "id": "Q00115",
+    "category": "Technical",
+    "topic": "Biology",
+    "subtopic": "Genetics - Meiosis",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which of the following correctly matches the meiotic stage with the chromosomal event ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Diakinesis - Chiasmata become visible"
+      },
+      {
+        "label": "B",
+        "text": "Diplotene - Terminalization is complete"
+      },
+      {
+        "label": "C",
+        "text": "Pachytene - Synaptonemal complex dissolves"
+      },
+      {
+        "label": "D",
+        "text": "Leptotene - Chromosomes become gradually visible under the light microscope"
+      }
+    ]
+  },
+  {
+    "id": "Q00116",
+    "category": "Technical",
+    "topic": "Biology",
+    "subtopic": "Taxonomy - Classification Hierarchy",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Arrange the following taxonomic categories in ascending order (from lowest to highest rank):\nOrder - Family - Genus - Phylum - Class - Species",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Species -> Family -> Genus -> Order -> Class -> Phylum"
+      },
+      {
+        "label": "B",
+        "text": "Species -> Genus -> Family -> Order -> Class -> Phylum"
+      },
+      {
+        "label": "C",
+        "text": "Species -> Genus -> Order -> Family -> Class -> Phylum"
+      },
+      {
+        "label": "D",
+        "text": "Genus -> Species -> Family -> Order -> Phylum -> Class"
+      }
+    ]
+  },
+  {
+    "id": "Q00117",
+    "category": "Technical",
+    "topic": "Biology",
+    "subtopic": "Human Reproduction - Hormones",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which of the following organs is most sensitive to progesterone ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uterus"
+      },
+      {
+        "label": "B",
+        "text": "Brain"
+      },
+      {
+        "label": "C",
+        "text": "Mammary gland"
+      },
+      {
+        "label": "D",
+        "text": "Pituitary gland"
+      }
+    ]
+  },
+  {
+    "id": "Q00118",
+    "category": "Technical",
+    "topic": "Biology",
+    "subtopic": "Biotechnology - Gel Electrophoresis",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "During agarose gel electrophoresis, DNA fragments move toward the anode. Which property of DNA is primarily responsible for its movement ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "DNA is hydrophobic"
+      },
+      {
+        "label": "B",
+        "text": "DNA contains a negative charge due to its phosphate groups"
+      },
+      {
+        "label": "C",
+        "text": "DNA fragments are pulled by gravity"
+      },
+      {
+        "label": "D",
+        "text": "DNA contains ribose sugar which binds to the gel pores"
+      }
+    ]
+  },
+  {
+    "id": "Q00119",
+    "category": "Quantitative Aptitude",
+    "topic": "Calculus",
+    "subtopic": "Maxima and Minima",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "The maximum value of x(1-x)^2 occurs at x equals to",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "0"
+      },
+      {
+        "label": "C",
+        "text": "1"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ]
+  },
+  {
+    "id": "Q00120",
+    "category": "Quantitative Aptitude",
+    "topic": "3D Geometry",
+    "subtopic": "Shortest Distance Between Lines",
+    "difficulty": "hard",
+    "estimated_time": 90,
+    "question": "The shortest distance between the line L1 : (x-1)/2 = (y+2)/3 = z/-1 and the line L2 : r = (2i - 3j + k) + mu(3i - 2j + 4k) is equal to",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "8/sqrt(390)"
+      },
+      {
+        "label": "B",
+        "text": "1/sqrt(390)"
+      },
+      {
+        "label": "C",
+        "text": "8/sqrt(360)"
+      },
+      {
+        "label": "D",
+        "text": "16/sqrt(390)"
+      }
+    ]
+  },
+  {
+    "id": "Q00121",
+    "category": "Quantitative Aptitude",
+    "topic": "Matrices",
+    "subtopic": "Determinants and Adjoint",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "If A is a 3 x 3 matrix such that |A| = 3, then |adj(3A^-1)| is equal to",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "81"
+      }
+    ]
+  },
+  {
+    "id": "Q00122",
+    "category": "Quantitative Aptitude",
+    "topic": "Calculus",
+    "subtopic": "Differentiability",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Let f : R -> R be defined by f(x) = |x| + |x-1| + 2x. The number of points at which f is not differentiable is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "1"
+      },
+      {
+        "label": "B",
+        "text": "0"
+      },
+      {
+        "label": "C",
+        "text": "2"
+      },
+      {
+        "label": "D",
+        "text": "3"
+      }
+    ]
+  },
+  {
+    "id": "Q00123",
+    "category": "Quantitative Aptitude",
+    "topic": "Vectors",
+    "subtopic": "Angle Between Vectors",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "For the vectors a = i + 2j + 2k, b = 3i, if theta is the angle between a and b, then the value of cos(theta) is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "2/3"
+      },
+      {
+        "label": "B",
+        "text": "sqrt3"
+      },
+      {
+        "label": "C",
+        "text": "1/sqrt3"
+      },
+      {
+        "label": "D",
+        "text": "1/3"
+      }
+    ]
+  },
+  {
+    "id": "Q00124",
+    "category": "Quantitative Aptitude",
+    "topic": "Calculus",
+    "subtopic": "Area Under Curve",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Area bounded by y^2 = 4x and x = 4 is equal to",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "32/3"
+      },
+      {
+        "label": "B",
+        "text": "64/3"
+      },
+      {
+        "label": "C",
+        "text": "16/3"
+      },
+      {
+        "label": "D",
+        "text": "8/3"
+      }
+    ]
+  },
+  {
+    "id": "Q00125",
+    "category": "Quantitative Aptitude",
+    "topic": "Statistics",
+    "subtopic": "Mean Deviation",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "The mean deviation (approximated to 2 decimal places) about the median for the following data set is:\n8, 15, 3, 22, 17, 9, 14, 28, 6, 11, 19",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.48"
+      },
+      {
+        "label": "B",
+        "text": "5.78"
+      },
+      {
+        "label": "C",
+        "text": "5.28"
+      },
+      {
+        "label": "D",
+        "text": "5.82"
+      }
+    ]
+  },
+  {
+    "id": "Q00126",
+    "category": "Quantitative Aptitude",
+    "topic": "Statistics",
+    "subtopic": "Frequency Distribution",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "A frequency distribution has class width 5 and lowest class 10 - 15. Then 6th class upper limit is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "40"
+      },
+      {
+        "label": "B",
+        "text": "35"
+      },
+      {
+        "label": "C",
+        "text": "45"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ]
+  },
+  {
+    "id": "Q00127",
+    "category": "Quantitative Aptitude",
+    "topic": "Statistics",
+    "subtopic": "Mean Transformation",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "A data set has mean = 40. If each value is multiplied by 1.5 and then 8 is added to each new values, then new mean is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "48"
+      },
+      {
+        "label": "B",
+        "text": "68"
+      },
+      {
+        "label": "C",
+        "text": "72"
+      },
+      {
+        "label": "D",
+        "text": "52"
+      }
+    ]
+  },
+  {
+    "id": "Q00128",
+    "category": "Quantitative Aptitude",
+    "topic": "Statistics",
+    "subtopic": "Mean Median Mode Relation",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "In a certain data set, the mode is 24 and the median is 26. Then the mean of this data set is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "24"
+      },
+      {
+        "label": "C",
+        "text": "26"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ]
+  },
+  {
+    "id": "Q00129",
+    "category": "Quantitative Aptitude",
+    "topic": "Statistics",
+    "subtopic": "Variance",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "The variance of the squares of first 7 natural numbers is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "268"
+      },
+      {
+        "label": "B",
+        "text": "168"
+      },
+      {
+        "label": "C",
+        "text": "198"
+      },
+      {
+        "label": "D",
+        "text": "298"
+      }
+    ]
+  },
+  {
+    "id": "Q00130",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "Without Replacement",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "A bag contains 3 red and 5 blue balls. If two balls are drawn without replacement, then probability that both balls are blue is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "3/11"
+      },
+      {
+        "label": "B",
+        "text": "5/11"
+      },
+      {
+        "label": "C",
+        "text": "3/14"
+      },
+      {
+        "label": "D",
+        "text": "5/14"
+      }
+    ]
+  },
+  {
+    "id": "Q00131",
+    "category": "General Awareness",
+    "topic": "Indian History",
+    "subtopic": "Trade Centres",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Arrange the following major trade centres in historical progression.\na. Taxila  b. Surat  c. Pataliputra  d. Machilipatnam\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "a, c, d, b"
+      },
+      {
+        "label": "B",
+        "text": "a, b, c, d"
+      },
+      {
+        "label": "C",
+        "text": "d, c, b, a"
+      },
+      {
+        "label": "D",
+        "text": "d, a, c, b"
+      }
+    ]
+  },
+  {
+    "id": "Q00132",
+    "category": "General Awareness",
+    "topic": "Commerce & Accountancy",
+    "subtopic": "Books of Accounts",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "The sales book records",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cash sales only"
+      },
+      {
+        "label": "B",
+        "text": "All sales"
+      },
+      {
+        "label": "C",
+        "text": "Credit sales of assets"
+      },
+      {
+        "label": "D",
+        "text": "Credit sales of goods"
+      }
+    ]
+  },
+  {
+    "id": "Q00133",
+    "category": "General Awareness",
+    "topic": "Commerce & Accountancy",
+    "subtopic": "Business Finance",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "In the context of business finance, financial risk increases when",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "A firm issues additional shares of equity"
+      },
+      {
+        "label": "B",
+        "text": "A firm utilizes more retained earnings"
+      },
+      {
+        "label": "C",
+        "text": "A firm relies heavily on borrowed funds"
+      },
+      {
+        "label": "D",
+        "text": "A firm reduces its long-term assets"
+      }
+    ]
+  },
+  {
+    "id": "Q00134",
+    "category": "General Awareness",
+    "topic": "Commerce & Accountancy",
+    "subtopic": "Accrued Income",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Accrued income is shown as",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Liability"
+      },
+      {
+        "label": "B",
+        "text": "Asset"
+      },
+      {
+        "label": "C",
+        "text": "Expenses"
+      },
+      {
+        "label": "D",
+        "text": "Provision"
+      }
+    ]
+  },
+  {
+    "id": "Q00135",
+    "category": "General Awareness",
+    "topic": "Commerce & Accountancy",
+    "subtopic": "Journal Proper",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Journal proper records",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cash transactions"
+      },
+      {
+        "label": "B",
+        "text": "Credit purchases"
+      },
+      {
+        "label": "C",
+        "text": "Opening entries"
+      },
+      {
+        "label": "D",
+        "text": "Credit sales"
+      }
+    ]
+  },
+  {
+    "id": "Q00136",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "Industry Classification",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "A tertiary industry includes",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Construction"
+      },
+      {
+        "label": "B",
+        "text": "Tourism"
+      },
+      {
+        "label": "C",
+        "text": "Manufacturing"
+      },
+      {
+        "label": "D",
+        "text": "Mining"
+      }
+    ]
+  },
+  {
+    "id": "Q00137",
+    "category": "General Awareness",
+    "topic": "Commerce & Accountancy",
+    "subtopic": "Limitations of Accounting",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "A key limitation of accounting is that",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Information is sometimes shaped by personal judgment"
+      },
+      {
+        "label": "B",
+        "text": "It records only nonfinancial transactions"
+      },
+      {
+        "label": "C",
+        "text": "It is error-free"
+      },
+      {
+        "label": "D",
+        "text": "It is easy and inexpensive to maintain"
+      }
+    ]
+  },
+  {
+    "id": "Q00138",
+    "category": "General Awareness",
+    "topic": "Commerce & Accountancy",
+    "subtopic": "Marshalling of Assets",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Marshalling of assets means",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Grouping similar assets"
+      },
+      {
+        "label": "B",
+        "text": "Arranging assets in a specific order"
+      },
+      {
+        "label": "C",
+        "text": "The conversion of assets into liabilities"
+      },
+      {
+        "label": "D",
+        "text": "Asset liquidation for cash"
+      }
+    ]
+  },
+  {
+    "id": "Q00139",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "Consumption Function (MPC)",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "If the Marginal Propensity to Consume (MPC) is 0.75 and autonomous consumption is Rs. 100 crores, what will be the total consumption when national income is Rs. 800 crores ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rs. 700 crores"
+      },
+      {
+        "label": "B",
+        "text": "Rs. 600 crores"
+      },
+      {
+        "label": "C",
+        "text": "Rs. 750 crores"
+      },
+      {
+        "label": "D",
+        "text": "Rs. 800 crores"
+      }
+    ]
+  },
+  {
+    "id": "Q00140",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "Cost Curves",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "If the Average Variable Cost (AVC) curve is U-shaped, at what level of output does the Marginal Cost (MC) curve intersect the AVC curve ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "At the minimum point of AVC"
+      },
+      {
+        "label": "B",
+        "text": "At the maximum point of AVC"
+      },
+      {
+        "label": "C",
+        "text": "When AVC is declining"
+      },
+      {
+        "label": "D",
+        "text": "MC never intersects AVC"
+      }
+    ]
+  },
+  {
+    "id": "Q00141",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "GDP - Expenditure Method",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which of the following transactions will be included in the calculation of GDP using the expenditure method ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Social security payments made by the government to retired persons"
+      },
+      {
+        "label": "B",
+        "text": "Purchase of a 10-year-old car from a used car dealer"
+      },
+      {
+        "label": "C",
+        "text": "Purchase of wheat by a flour mill from farmers"
+      },
+      {
+        "label": "D",
+        "text": "Government expenditure on construction of a new highway"
+      }
+    ]
+  },
+  {
+    "id": "Q00142",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "Keynesian Theory",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "According to the Keynesian theory, what happens when aggregate demand falls short of aggregate supply at full employment level ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "No change in employment level"
+      },
+      {
+        "label": "B",
+        "text": "Inflationary gap emerges"
+      },
+      {
+        "label": "C",
+        "text": "Economy automatically returns to equilibrium"
+      },
+      {
+        "label": "D",
+        "text": "Deflationary gap emerges"
+      }
+    ]
+  },
+  {
+    "id": "Q00143",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "Externalities",
+    "difficulty": "medium",
+    "estimated_time": 30,
+    "question": "Which of the following is an example of a negative externality in production ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "A factory emitting smoke that pollutes the surrounding air"
+      },
+      {
+        "label": "B",
+        "text": "A beekeeper's bees pollinating neighboring orchards"
+      },
+      {
+        "label": "C",
+        "text": "Education increasing a person's productivity"
+      },
+      {
+        "label": "D",
+        "text": "Street lighting benefiting all residents"
+      }
+    ]
+  },
+  {
+    "id": "Q00144",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "Total and Marginal Product",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "If the Marginal Product (MP) of a variable factor is declining but remains positive, what can be concluded about the Total Product (TP) ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "TP is increasing at an increasing rate"
+      },
+      {
+        "label": "B",
+        "text": "TP is declining"
+      },
+      {
+        "label": "C",
+        "text": "TP is increasing at a decreasing rate"
+      },
+      {
+        "label": "D",
+        "text": "TP remains constant"
+      }
+    ]
+  },
+  {
+    "id": "Q00145",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "Money Multiplier",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "If the reserve ratio is 20% and the initial deposit in the banking system is Rs. 10,000, what is the maximum amount of money that can be created through the money multiplier process ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rs. 40,000"
+      },
+      {
+        "label": "B",
+        "text": "Rs. 10,000"
+      },
+      {
+        "label": "C",
+        "text": "Rs. 50,000"
+      },
+      {
+        "label": "D",
+        "text": "Rs. 2,000"
+      }
+    ]
+  },
+  {
+    "id": "Q00146",
+    "category": "General Awareness",
+    "topic": "Economics",
+    "subtopic": "Consumer Equilibrium",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "A consumer is in equilibrium when consuming two goods X and Y. If the price of good X falls while the price of good Y and the consumer's income remains constant, what will happen ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "The budget line will shift parallel outward"
+      },
+      {
+        "label": "B",
+        "text": "The consumer will buy less of good X due to the income effect"
+      },
+      {
+        "label": "C",
+        "text": "The budget line will pivot outward along the X-axis"
+      },
+      {
+        "label": "D",
+        "text": "The consumer's utility will decrease"
+      }
+    ]
+  },
+  {
+    "id": "Q00147",
+    "category": "General Awareness",
+    "topic": "Geography",
+    "subtopic": "Astronomy - Sun-Earth Distance",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "The mean distance between the Sun and Earth in terms of light-years is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "8.311 minutes"
+      },
+      {
+        "label": "B",
+        "text": "9.311 minutes"
+      },
+      {
+        "label": "C",
+        "text": "7.311 minutes"
+      },
+      {
+        "label": "D",
+        "text": "10.311 minutes"
+      }
+    ]
+  },
+  {
+    "id": "Q00148",
+    "category": "General Awareness",
+    "topic": "Indian Geography",
+    "subtopic": "Mountain Peaks and Islands",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Match List - I with List - II.\nList - I (Mountain Peaks): a. Saddle Peak  b. Mount Diavolo  c. Mount Koyob  d. Mount Thuiller\nList - II (Islands): I. North Andaman  II. Middle Andaman  III. South Andaman  IV. Great Nicobar\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "a-I, b-II, c-III, d-IV"
+      },
+      {
+        "label": "B",
+        "text": "a-II, b-I, c-III, d-IV"
+      },
+      {
+        "label": "C",
+        "text": "a-I, b-II, c-IV, d-III"
+      },
+      {
+        "label": "D",
+        "text": "a-II, b-I, c-IV, d-III"
+      }
+    ]
+  },
+  {
+    "id": "Q00149",
+    "category": "General Awareness",
+    "topic": "World Geography",
+    "subtopic": "Trans-Siberian Railway",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Arrange the cities from East to West on the Trans-Siberian railway\na. Omsk  b. Tyumen  c. Chita  d. Kazan\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "c, a, b, d"
+      },
+      {
+        "label": "B",
+        "text": "a, c, b, d"
+      },
+      {
+        "label": "C",
+        "text": "a, c, d, b"
+      },
+      {
+        "label": "D",
+        "text": "c, a, d, b"
+      }
+    ]
+  },
+  {
+    "id": "Q00150",
+    "category": "General Awareness",
+    "topic": "Geography",
+    "subtopic": "Geographical Concepts",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "_______ explains that there exist variations over the surface of the Earth in its physical as well as cultural environment.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Spatial integration"
+      },
+      {
+        "label": "B",
+        "text": "Areal differentiation"
+      },
+      {
+        "label": "C",
+        "text": "Spatial organization"
+      },
+      {
+        "label": "D",
+        "text": "Description of earth"
+      }
+    ]
+  }
+]

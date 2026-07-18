@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "Q00001",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "Symbol-Vowel Pattern",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Study the following arrangement carefully and answer the question given below.\n8 C M @ N & T 2 Y 6 S a Q $ 7 * W # Z 3 U E % A 4\nHow many symbols are there in the above series each of which is immediately preceded and also immediately followed by a vowel ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "One"
+      },
+      {
+        "label": "B",
+        "text": "Two"
+      },
+      {
+        "label": "C",
+        "text": "Three"
+      },
+      {
+        "label": "D",
+        "text": "Nil"
+      }
+    ]
+  },
+  {
+    "id": "Q00002",
+    "category": "Logical Reasoning",
+    "topic": "Number Series",
+    "subtopic": "Missing Term",
+    "difficulty": "easy",
+    "estimated_time": 45,
+    "question": "The missing term (?) in the series 0, 6, 24, 60, 120, 210, ? is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "336"
+      },
+      {
+        "label": "B",
+        "text": "240"
+      },
+      {
+        "label": "C",
+        "text": "290"
+      },
+      {
+        "label": "D",
+        "text": "504"
+      }
+    ]
+  },
+  {
+    "id": "Q00003",
+    "category": "Logical Reasoning",
+    "topic": "Classification",
+    "subtopic": "Letter Grouping",
+    "difficulty": "easy",
+    "estimated_time": 45,
+    "question": "Four groups of letters are given in the options below, three of them are alike in a certain way while one is different. Choose the one which is different.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "FGHI"
+      },
+      {
+        "label": "B",
+        "text": "SUVT"
+      },
+      {
+        "label": "C",
+        "text": "CFED"
+      },
+      {
+        "label": "D",
+        "text": "ILKJ"
+      }
+    ]
+  },
+  {
+    "id": "Q00004",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "Word Coding",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "In a certain code language, ORGANISATION is written as CBDWLQJWYQCL and OPERATION is written as CXFBWYQCL, then how is SEPARATION coded ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "JFQYWBCXQL"
+      },
+      {
+        "label": "B",
+        "text": "EJXEBEYQCL"
+      },
+      {
+        "label": "C",
+        "text": "JFXWBWYQCL"
+      },
+      {
+        "label": "D",
+        "text": "QCLYWBFXJE"
+      }
+    ]
+  },
+  {
+    "id": "Q00005",
+    "category": "Logical Reasoning",
+    "topic": "Number/Letter Series",
+    "subtopic": "Missing Terms",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Choose the missing terms (?) in following series, out of given alternatives.\nA, B, B, D, C, F, D, H, E, ?, ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "F, G"
+      },
+      {
+        "label": "B",
+        "text": "E, F"
+      },
+      {
+        "label": "C",
+        "text": "J, K"
+      },
+      {
+        "label": "D",
+        "text": "J, F"
+      }
+    ]
+  },
+  {
+    "id": "Q00006",
+    "category": "Logical Reasoning",
+    "topic": "Number Series",
+    "subtopic": "Counting Based",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "How many 7s immediately preceded by 6 but not immediately followed by 4 are there in the following series ?\n7 4 2 7 6 4 3 6 7 5 3 5 7 8 4 3 7 6 7 2 4 0 6 7 4 3",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Three"
+      },
+      {
+        "label": "B",
+        "text": "Two"
+      },
+      {
+        "label": "C",
+        "text": "Four"
+      },
+      {
+        "label": "D",
+        "text": "One"
+      }
+    ]
+  },
+  {
+    "id": "Q00007",
+    "category": "Logical Reasoning",
+    "topic": "Analogy",
+    "subtopic": "Word Analogy",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Choose the correct alternative which will replace the question mark (?).\nPeace : Chaos :: Creation : ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Manufacture"
+      },
+      {
+        "label": "B",
+        "text": "Build"
+      },
+      {
+        "label": "C",
+        "text": "Statue"
+      },
+      {
+        "label": "D",
+        "text": "Destruction"
+      }
+    ]
+  },
+  {
+    "id": "Q00008",
+    "category": "Logical Reasoning",
+    "topic": "Mathematical Operations",
+    "subtopic": "Symbol Substitution",
+    "difficulty": "hard",
+    "estimated_time": 90,
+    "question": "If L denotes 'division', M denotes 'multiplication', P denotes 'addition', Q denotes 'subtraction', then which of the following statement is true ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 M 18 Q 26 L 13 P 7 = 173/13"
+      },
+      {
+        "label": "B",
+        "text": "32 P 8 L 16 Q 4 = -3/2"
+      },
+      {
+        "label": "C",
+        "text": "11 M 34 L 17 Q 8 L 3 = 38/3"
+      },
+      {
+        "label": "D",
+        "text": "9 P 9 L 9 Q 9 M 9 = -71"
+      }
+    ]
+  },
+  {
+    "id": "Q00009",
+    "category": "Logical Reasoning",
+    "topic": "Analogy",
+    "subtopic": "Word Analogy",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Choose the correct pair from the given alternatives, in which the words bear the same relationship to each other as the words of the pair given below.\nDarkness : Lamp",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thirst : Water"
+      },
+      {
+        "label": "B",
+        "text": "Fatigue : Exercise"
+      },
+      {
+        "label": "C",
+        "text": "Medicine : Illness"
+      },
+      {
+        "label": "D",
+        "text": "Study : Classroom"
+      }
+    ]
+  },
+  {
+    "id": "Q00010",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "Letter to Number Coding",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "If RED is coded as 6720 and BLUE is coded as 723144, then how would GREEN be coded ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "1677209"
+      },
+      {
+        "label": "B",
+        "text": "1677199"
+      },
+      {
+        "label": "C",
+        "text": "16717209"
+      },
+      {
+        "label": "D",
+        "text": "9207716"
+      }
+    ]
+  },
+  {
+    "id": "Q00011",
+    "category": "Logical Reasoning",
+    "topic": "Logical Sequence of Words",
+    "subtopic": "Meaningful Order",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Arrange the words given below in a meaningful sequence.\na. Income  b. Status  c. Education  d. Well-being  e. Job",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "a, b, c, d, e"
+      },
+      {
+        "label": "B",
+        "text": "c, a, e, d, b"
+      },
+      {
+        "label": "C",
+        "text": "c, e, a, b, d"
+      },
+      {
+        "label": "D",
+        "text": "c, b, d, a, e"
+      }
+    ]
+  },
+  {
+    "id": "Q00012",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relation",
+    "subtopic": "Family Tree",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "A man pointing to a photograph says, \"The lady in the photograph is my nephew's maternal grandmother.\" How is lady in the photograph related to the man's sister who has no other sister or brother ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sister-in-law"
+      },
+      {
+        "label": "B",
+        "text": "Cousin"
+      },
+      {
+        "label": "C",
+        "text": "Mother-in-law"
+      },
+      {
+        "label": "D",
+        "text": "Mother"
+      }
+    ]
+  },
+  {
+    "id": "Q00013",
+    "category": "Logical Reasoning",
+    "topic": "Venn Diagram",
+    "subtopic": "Figure Based",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Study the following figure and answer the question given below.\n[Diagram/Image Required]\nRectangle -> Artists, Circle -> Players, Triangle -> Doctors\nHow many players are neither artists nor doctors ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "25"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ]
+  },
+  {
+    "id": "Q00014",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "Row Based",
+    "difficulty": "hard",
+    "estimated_time": 90,
+    "question": "Six flats on a floor in two rows facing North and South are alloted to P, Q, R, S, T and U. Q gets a North facing flat and is not next to S. S and U get diagonally opposite flats. R, next to U, gets a South facing flat and T gets a North facing flat. The flats of which of other pairs than SU, are diagonally opposite to each other ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "PT"
+      },
+      {
+        "label": "B",
+        "text": "QP"
+      },
+      {
+        "label": "C",
+        "text": "QR"
+      },
+      {
+        "label": "D",
+        "text": "TS"
+      }
+    ]
+  },
+  {
+    "id": "Q00015",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relation",
+    "subtopic": "Family Puzzle",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "A, B, C, D, E and F are six members of the family. One couple has parents and their children in the family. A is the son of C and E is the daughter of A. D is the daughter of F who is the mother of E. What relationship do D and E bear to each other ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mother and Son"
+      },
+      {
+        "label": "B",
+        "text": "Sister and Brother"
+      },
+      {
+        "label": "C",
+        "text": "Grandmother and Granddaughter"
+      },
+      {
+        "label": "D",
+        "text": "Sisters"
+      }
+    ]
+  },
+  {
+    "id": "Q00016",
+    "category": "General Awareness",
+    "topic": "Assertion Reason",
+    "subtopic": "Science - Agriculture",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Given below are two statements, one is labelled as Assertion (A) and other one labelled as Reason (R).\nAssertion (A) : Legumes revive the soil fertility.\nReason (R) : Microbes in the root nodules of legumes fix the atmospheric nitrogen.\nIn light of the above statements, choose the correct answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
+      },
+      {
+        "label": "B",
+        "text": "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      },
+      {
+        "label": "C",
+        "text": "(A) is true but (R) is false"
+      },
+      {
+        "label": "D",
+        "text": "(A) is false but (R) is true"
+      }
+    ]
+  },
+  {
+    "id": "Q00017",
+    "category": "Logical Reasoning",
+    "topic": "Syllogism",
+    "subtopic": "Statement-Conclusion",
+    "difficulty": "hard",
+    "estimated_time": 90,
+    "question": "In the question given below three are statements followed by three conclusions numbered I, II and III. You have to take the given statements to be true even if they seem to be at variance from the commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts.\nStatements: 1. Some pictures are frames. 2. Some frames are idols. 3. All idols are curtains.\nConclusions: I. Some curtains are pictures. II. Some curtains are frames. III. Some idols are frames.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Only II and III follow"
+      },
+      {
+        "label": "B",
+        "text": "Only I and II follow"
+      },
+      {
+        "label": "C",
+        "text": "Only I and III follow"
+      },
+      {
+        "label": "D",
+        "text": "Only I follows"
+      }
+    ]
+  },
+  {
+    "id": "Q00018",
+    "category": "Logical Reasoning",
+    "topic": "Syllogism",
+    "subtopic": "Venn Diagram",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Which of the following diagrams indicates the best relation between Women, Mothers and Engineers ?\n[Diagram/Image Required]",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Option A (two intersecting circles)"
+      },
+      {
+        "label": "B",
+        "text": "Option B (partially overlapping circles)"
+      },
+      {
+        "label": "C",
+        "text": "Option C (three separate circles)"
+      },
+      {
+        "label": "D",
+        "text": "Option D (three concentric circles)"
+      }
+    ]
+  },
+  {
+    "id": "Q00019",
+    "category": "General Awareness",
+    "topic": "Assertion Reason",
+    "subtopic": "Science - Physics",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Given below are two statements, one is labelled as Assertion (A) and other one labelled as Reason (R).\nAssertion (A) : When lightning strikes, the sound is heard a little after the flash is seen.\nReason (R) : The velocity of light is greater than that of the sound.\nIn light of the above statements, choose the correct answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
+      },
+      {
+        "label": "B",
+        "text": "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+      },
+      {
+        "label": "C",
+        "text": "(A) is true but (R) is false"
+      },
+      {
+        "label": "D",
+        "text": "(A) is false but (R) is true"
+      }
+    ]
+  },
+  {
+    "id": "Q00020",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "Cards Arrangement",
+    "difficulty": "hard",
+    "estimated_time": 90,
+    "question": "Four players A, B, C and D are holding 4 cards each. Each of them has an Ace, a King, a Queen and a Jack. All of them have all the suits (spades, hearts, clubs and diamonds). A has Ace of spades and Queen of diamonds. B has Ace of clubs and King of diamonds. C has Queen of clubs and King of spades. D has Jack of clubs. C has which of the following with him ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Jack of spades"
+      },
+      {
+        "label": "B",
+        "text": "Ace of hearts"
+      },
+      {
+        "label": "C",
+        "text": "Queen of spades"
+      },
+      {
+        "label": "D",
+        "text": "King of hearts"
+      }
+    ]
+  },
+  {
+    "id": "Q00021",
+    "category": "Quantitative Aptitude",
+    "topic": "Surds and Indices",
+    "subtopic": "Nested Radical",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "If a = sqrt(3 + sqrt(3 + sqrt(3 + .........))), a > 0, then which of the following is true ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 < a < 4"
+      },
+      {
+        "label": "B",
+        "text": "2 < a < 3"
+      },
+      {
+        "label": "C",
+        "text": "a > 3"
+      },
+      {
+        "label": "D",
+        "text": "a = 3"
+      }
+    ]
+  },
+  {
+    "id": "Q00022",
+    "category": "Data Interpretation",
+    "topic": "Bar Graph",
+    "subtopic": "Sales Comparison",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "The bar graph given below shows the sales of books (in thousand number) from six branches of a publishing company during two consecutive years 2000 and 2001. [Diagram/Image Required]\nWhat is the ratio of the total sales of branch B2 for both years to the total sales of branch B4 for both years ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 : 5"
+      },
+      {
+        "label": "B",
+        "text": "2 : 3"
+      },
+      {
+        "label": "C",
+        "text": "3 : 5"
+      },
+      {
+        "label": "D",
+        "text": "7 : 9"
+      }
+    ]
+  },
+  {
+    "id": "Q00023",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit & Loss",
+    "subtopic": "Successive Discount",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "After getting two successive discounts, a shirt with a list price of Rs. 1,500 is available at Rs. 1,050. If the second discount is 12.5%, then the first discount is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "20%"
+      },
+      {
+        "label": "B",
+        "text": "17.5%"
+      },
+      {
+        "label": "C",
+        "text": "13.75%"
+      },
+      {
+        "label": "D",
+        "text": "18%"
+      }
+    ]
+  },
+  {
+    "id": "Q00024",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "Linear Equation",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "A girl was asked to multiply a certain number by 53. She multiplied it by 35 and found her answer less than the correct answer by 1206. Find the number to be multiplied.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "67"
+      },
+      {
+        "label": "B",
+        "text": "65"
+      },
+      {
+        "label": "C",
+        "text": "76"
+      },
+      {
+        "label": "D",
+        "text": "56"
+      }
+    ]
+  },
+  {
+    "id": "Q00025",
+    "category": "Data Interpretation",
+    "topic": "Line Graph",
+    "subtopic": "Profit-Expenditure",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "The following line graph gives the annual percent profit earned by a Company during the period 2015-2020. [Diagram/Image Required]\nIf the income in 2018 was Rs. 264 crores, what was the expenditure in 2018 ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rs. 110 crores"
+      },
+      {
+        "label": "B",
+        "text": "Rs. 104 crores"
+      },
+      {
+        "label": "C",
+        "text": "Rs. 160 crores"
+      },
+      {
+        "label": "D",
+        "text": "Rs. 142 crores"
+      }
+    ]
+  },
+  {
+    "id": "Q00026",
+    "category": "Quantitative Aptitude",
+    "topic": "Time Speed & Distance",
+    "subtopic": "Average Speed",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Distance between two stations A and B is 778 km. Anamika covers the journey from A to B at 84 km/hr and returns back to A with a uniform speed of 56 km/hr. Her average speed during the whole journey is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "65.6 km/hr"
+      },
+      {
+        "label": "B",
+        "text": "72.6 km/hr"
+      },
+      {
+        "label": "C",
+        "text": "67.2 km/hr"
+      },
+      {
+        "label": "D",
+        "text": "70 km/hr"
+      }
+    ]
+  },
+  {
+    "id": "Q00027",
+    "category": "Quantitative Aptitude",
+    "topic": "Mixture & Alligation",
+    "subtopic": "Ratio of Mixture",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "A mixture contains alcohol and water in the ratio 4 : 3. If 5 litres of water is added to the mixture, the ratio becomes 4 : 5. The quantity of alcohol in the mixture is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 litres"
+      },
+      {
+        "label": "B",
+        "text": "8 litres"
+      },
+      {
+        "label": "C",
+        "text": "11.5 litres"
+      },
+      {
+        "label": "D",
+        "text": "12 litres"
+      }
+    ]
+  },
+  {
+    "id": "Q00028",
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopic": "Unit Digit",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "The unit's digit in the product (3127)^173 is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "3"
+      },
+      {
+        "label": "B",
+        "text": "1"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ]
+  },
+  {
+    "id": "Q00029",
+    "category": "Quantitative Aptitude",
+    "topic": "Mixture & Alligation",
+    "subtopic": "Cost Price Ratio",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "Pure ghee costs Rs. 1,000 per kg. After mixing it with vegetable oil costing Rs. 500 per kg, a shopkeeper sells the mixture at the rate of Rs. 960 per kg, thereby making a profit of 20%. In what ratio does he mix the ghee and vegetable oil ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 : 2"
+      },
+      {
+        "label": "B",
+        "text": "1 : 2"
+      },
+      {
+        "label": "C",
+        "text": "3 : 1"
+      },
+      {
+        "label": "D",
+        "text": "5 : 4"
+      }
+    ]
+  },
+  {
+    "id": "Q00030",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "Cube Roots",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "If cube_root(a) + cube_root(b) = 5 and ab = 1728, then the value of cube_root(a^2) + cube_root(b^2) is",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ]
+  },
+  {
+    "id": "Q00031",
+    "category": "General Awareness",
+    "topic": "History & Geography",
+    "subtopic": "Canals of India",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Given below are two statements.\nStatement (I) : Indira Gandhi Canal, previously known as the Rajasthan Canal, is one of the largest canal systems in India.\nStatement (II) : Conceived by Kanwar Sain in 1952, the canal project was launched on 31 March, 1958.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both Statement (I) and Statement (II) are false"
+      },
+      {
+        "label": "B",
+        "text": "Both Statement (I) and Statement (II) are true"
+      },
+      {
+        "label": "C",
+        "text": "Statement (I) is true but Statement (II) is false"
+      },
+      {
+        "label": "D",
+        "text": "Statement (I) is false but Statement (II) is true"
+      }
+    ]
+  },
+  {
+    "id": "Q00032",
+    "category": "General Awareness",
+    "topic": "Government Schemes",
+    "subtopic": "Skill Development",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which of the following are objectives of PM-SETU Scheme ?\ni. To improve the quality of training delivery in ITIs and NSTIs.\nii. To modernise infrastructure and equipment as per industry standards.\niii. To upgrade ITIs to polytechnic colleges.\niv. To enhance the capacity of NSTIs for training of trainers.\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Only i, iii, iv"
+      },
+      {
+        "label": "B",
+        "text": "Only i, ii, iii"
+      },
+      {
+        "label": "C",
+        "text": "Only i, ii, iv"
+      },
+      {
+        "label": "D",
+        "text": "All of the above"
+      }
+    ]
+  },
+  {
+    "id": "Q00033",
+    "category": "General Awareness",
+    "topic": "Ancient Indian History",
+    "subtopic": "Textual Traditions",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Chronologically arrange the major textual traditions of ancient India.\n1. Natyashastra of Bharata  2. Manusmriti  3. Tripitaka  4. Ashtadhyayi of Panini\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "3, 4, 2, 1"
+      },
+      {
+        "label": "B",
+        "text": "1, 2, 3, 4"
+      },
+      {
+        "label": "C",
+        "text": "4, 3, 2, 1"
+      },
+      {
+        "label": "D",
+        "text": "2, 1, 3, 4"
+      }
+    ]
+  },
+  {
+    "id": "Q00034",
+    "category": "General Awareness",
+    "topic": "Linguistics",
+    "subtopic": "Indian Languages",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Match List - I with List - II.\nList - I (Family of Modern Indian Language): 1. Nisada  2. Dravida  3. Kirata  4. Aryan\nList - II (Speech Area): I. Goa  II. Arunachal Pradesh  III. Tamil Nadu  IV. Nicobar Islands\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-I, 2-III, 3-IV, 4-II"
+      },
+      {
+        "label": "B",
+        "text": "1-IV, 2-III, 3-II, 4-I"
+      },
+      {
+        "label": "C",
+        "text": "1-I, 2-II, 3-IV, 4-III"
+      },
+      {
+        "label": "D",
+        "text": "1-IV, 2-II, 3-III, 4-I"
+      }
+    ]
+  },
+  {
+    "id": "Q00035",
+    "category": "General Awareness",
+    "topic": "Ancient Indian History",
+    "subtopic": "Epigraphy",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Chronologically arrange the major advances in Epigraphy.\n1. First issue of Epigraphia Carnatica.  2. Decipherment of Asokan Brahmi by James Prinsep.  3. First issue of Epigraphia Indica.  4. Alexander Cunningham publishes a set of Asokan inscriptions.\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "2, 4, 1, 3"
+      },
+      {
+        "label": "B",
+        "text": "1, 2, 3, 4"
+      },
+      {
+        "label": "C",
+        "text": "2, 1, 4, 3"
+      },
+      {
+        "label": "D",
+        "text": "1, 2, 4, 3"
+      }
+    ]
+  },
+  {
+    "id": "Q00036",
+    "category": "General Awareness",
+    "topic": "World Geography",
+    "subtopic": "Suez Canal",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Given below are two statements.\nStatement (I) : Strategically and economically, the Suez Canal is one of the most important waterways in the world.\nStatement (II) : Its opening in 1879 reduced the cost of transportation and made access to the Indian market easier.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both Statement (I) and Statement (II) are false"
+      },
+      {
+        "label": "B",
+        "text": "Both Statement (I) and Statement (II) are true"
+      },
+      {
+        "label": "C",
+        "text": "Statement (I) is true but Statement (II) is false"
+      },
+      {
+        "label": "D",
+        "text": "Statement (I) is false but Statement (II) is true"
+      }
+    ]
+  },
+  {
+    "id": "Q00037",
+    "category": "General Awareness",
+    "topic": "Government Schemes",
+    "subtopic": "Agriculture",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Given below are two statements.\nStatement (I) : National Mission for Sustainable Agriculture is to make agriculture more productive, sustainable, remunerative and climate resilient.\nStatement (II) : The Government has been promoting dairy farming in the country through the scheme such as Rashtriya Vikas Yojana.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both Statement (I) and Statement (II) are false"
+      },
+      {
+        "label": "B",
+        "text": "Both Statement (I) and Statement (II) are true"
+      },
+      {
+        "label": "C",
+        "text": "Statement (I) is true but Statement (II) is false"
+      },
+      {
+        "label": "D",
+        "text": "Statement (I) is false but Statement (II) is true"
+      }
+    ]
+  },
+  {
+    "id": "Q00038",
+    "category": "General Awareness",
+    "topic": "Indian Economy",
+    "subtopic": "Committees",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "The Karve Committee (1955) is associated with",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Transportation and Communication"
+      },
+      {
+        "label": "B",
+        "text": "Manufacturing Industry"
+      },
+      {
+        "label": "C",
+        "text": "Banking Sector"
+      },
+      {
+        "label": "D",
+        "text": "Village and Small Scale Industries"
+      }
+    ]
+  },
+  {
+    "id": "Q00039",
+    "category": "General Awareness",
+    "topic": "Indian Economy",
+    "subtopic": "Money",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Which of the following are called Fiat Money ?\n1. Gold  2. Silver  3. Currency Notes  4. Coins\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Only 2 and 3"
+      },
+      {
+        "label": "B",
+        "text": "Only 1 and 4"
+      },
+      {
+        "label": "C",
+        "text": "Only 3 and 4"
+      },
+      {
+        "label": "D",
+        "text": "Only 1 and 2"
+      }
+    ]
+  },
+  {
+    "id": "Q00040",
+    "category": "General Awareness",
+    "topic": "Indian Geography",
+    "subtopic": "Rural Settlements",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Match List - I with List - II.\nList - I (Type of Rural Settlement): 1. Clustered  2. Semi-clustered  3. Hamleted  4. Dispersed\nList - II (Area/Region State/Union Territory): I. Lower Valleys of the Himalayas  II. Kerala  III. Bundelkhand Region of Central India  IV. Gujarat Plain\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-I, 2-II, 3-IV, 4-III"
+      },
+      {
+        "label": "B",
+        "text": "1-I, 2-II, 3-III, 4-IV"
+      },
+      {
+        "label": "C",
+        "text": "1-III, 2-IV, 3-I, 4-II"
+      },
+      {
+        "label": "D",
+        "text": "1-III, 2-IV, 3-II, 4-I"
+      }
+    ]
+  },
+  {
+    "id": "Q00041",
+    "category": "General Awareness",
+    "topic": "Indian History",
+    "subtopic": "Partition Impact",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Given below are two statements.\nStatement (I) : A sizeable portion of the undivided country's highly irrigated and fertile land went to Pakistan; this had an adverse impact upon India's output from the agriculture sector.\nStatement (II) : India's jute goods industry (in which the country had enjoyed a world monopoly so far), thus, suffered heavily for lack of raw material.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both Statement (I) and Statement (II) are false"
+      },
+      {
+        "label": "B",
+        "text": "Both Statement (I) and Statement (II) are true"
+      },
+      {
+        "label": "C",
+        "text": "Statement (I) is true but Statement (II) is false"
+      },
+      {
+        "label": "D",
+        "text": "Statement (I) is false but Statement (II) is true"
+      }
+    ]
+  },
+  {
+    "id": "Q00042",
+    "category": "General Awareness",
+    "topic": "Indian Polity",
+    "subtopic": "Constitution Borrowings",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Match List - I with List - II.\nList - I (Provisions borrowed from Constitutions of different countries): 1. Institution of the Speaker  2. Independence of Judiciary  3. Principles of Liberty, Equality and Fraternity  4. The Idea of Residual Powers\nList - II (Countries): I. French Constitution  II. Canadian Constitution  III. British Constitution  IV. American Constitution\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-I, 2-II, 3-III, 4-IV"
+      },
+      {
+        "label": "B",
+        "text": "1-I, 2-III, 3-II, 4-IV"
+      },
+      {
+        "label": "C",
+        "text": "1-IV, 2-III, 3-I, 4-II"
+      },
+      {
+        "label": "D",
+        "text": "1-III, 2-IV, 3-I, 4-II"
+      }
+    ]
+  },
+  {
+    "id": "Q00043",
+    "category": "General Awareness",
+    "topic": "Indian Economy",
+    "subtopic": "Financial Instruments",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "_______ are papers bearing the promise of a future stream of monetary returns over a certain period of time.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bonds"
+      },
+      {
+        "label": "B",
+        "text": "Term Deposits"
+      },
+      {
+        "label": "C",
+        "text": "Mutual Funds"
+      },
+      {
+        "label": "D",
+        "text": "Time Deposits"
+      }
+    ]
+  },
+  {
+    "id": "Q00044",
+    "category": "General Awareness",
+    "topic": "Archaeology",
+    "subtopic": "Harappan Civilisation",
+    "difficulty": "medium",
+    "estimated_time": 60,
+    "question": "Chronologically arrange the major developments in Harappan Archaeology.\n1. M. S. Vats begins excavations at Harappa.  2. R. E. M. Wheeler excavates at Harappa.  3. B. B. Lal and B. K. Thapar begin excavations at Kalibangan.  4. M. R. Mughal begins explorations in Bahawalpur.\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "1, 3, 2, 4"
+      },
+      {
+        "label": "B",
+        "text": "1, 2, 3, 4"
+      },
+      {
+        "label": "C",
+        "text": "2, 1, 4, 3"
+      },
+      {
+        "label": "D",
+        "text": "3, 2, 4, 1"
+      }
+    ]
+  },
+  {
+    "id": "Q00045",
+    "category": "General Awareness",
+    "topic": "Indian Economy",
+    "subtopic": "Public Sector Undertakings",
+    "difficulty": "hard",
+    "estimated_time": 75,
+    "question": "Which of the following statements are true with regard to Navaratnas and Mini-ratnas of Indian industrial sector ?\n1. In order to improve efficiency, infuse professionalism and enable them to compete more effectively in the liberalised global environment, the government chose nine PSUs and declared them as navaratnas.\n2. They were given greater managerial and operational autonomy, in taking various decisions to run the company efficiently.\n3. Scholars state that by facilitating navaratnas in their expansion and enabling them to become global players, their profits increased.\n4. Greater operational, financial and managerial autonomy was also granted to 99 other profit-making enterprises referred to as mini ratnas.\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Only 3 and 4"
+      },
+      {
+        "label": "B",
+        "text": "Only 1 and 2"
+      },
+      {
+        "label": "C",
+        "text": "Only 1 and 4"
+      },
+      {
+        "label": "D",
+        "text": "Only 2 and 3"
+      }
+    ]
+  },
+  {
+    "id": "Q00046",
+    "category": "Current Affairs",
+    "topic": "International Summits",
+    "subtopic": "AI Governance",
+    "difficulty": "medium",
+    "estimated_time": 30,
+    "question": "Where was the Global Partnership on AI (GPAI) Summit held in December 2023 ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chennai"
+      },
+      {
+        "label": "B",
+        "text": "Kolkata"
+      },
+      {
+        "label": "C",
+        "text": "Hyderabad"
+      },
+      {
+        "label": "D",
+        "text": "Delhi"
+      }
+    ]
+  },
+  {
+    "id": "Q00047",
+    "category": "Current Affairs",
+    "topic": "International Relations",
+    "subtopic": "United Nations",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which of the following countries have been elected as Non-Permanent Members of the UN Security Council for two-years term by the General Assembly in 2025 ?\n1. Ecuador  2. Guyana  3. Sierra Leone  4. Switzerland\nChoose the most appropriate answer from the options given below.",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Only 1 and 3"
+      },
+      {
+        "label": "B",
+        "text": "Only 2 and 4"
+      },
+      {
+        "label": "C",
+        "text": "Only 1 and 4"
+      },
+      {
+        "label": "D",
+        "text": "Only 2 and 3"
+      }
+    ]
+  },
+  {
+    "id": "Q00048",
+    "category": "Current Affairs",
+    "topic": "Kerala Current Affairs",
+    "subtopic": "Green Energy",
+    "difficulty": "medium",
+    "estimated_time": 30,
+    "question": "Where was Keralam's first hydrogen fuel cell bus launched in 2025 ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thiruvananthapuram International Airport"
+      },
+      {
+        "label": "B",
+        "text": "Cochin International Airport"
+      },
+      {
+        "label": "C",
+        "text": "Kozhikode International Airport"
+      },
+      {
+        "label": "D",
+        "text": "Kannur International Airport"
+      }
+    ]
+  },
+  {
+    "id": "Q00049",
+    "category": "Current Affairs",
+    "topic": "National Days",
+    "subtopic": "Space",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "When was the first National Space Day celebrated in India ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "23 August 2024"
+      },
+      {
+        "label": "B",
+        "text": "23 April 2024"
+      },
+      {
+        "label": "C",
+        "text": "23 December 2024"
+      },
+      {
+        "label": "D",
+        "text": "23 April 2025"
+      }
+    ]
+  },
+  {
+    "id": "Q00050",
+    "category": "General Awareness",
+    "topic": "Indian Economy",
+    "subtopic": "Industry",
+    "difficulty": "medium",
+    "estimated_time": 30,
+    "question": "Where was one of the world's largest mobile phone manufacturing facilities established by Samsung in India in 2018 ?",
+    "correct_answer": null,
+    "exam_tags": [
+      "State PSC",
+      "Kerala PSC",
+      "LDC/LGS",
+      "General Recruitment"
+    ],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gurugram"
+      },
+      {
+        "label": "B",
+        "text": "Noida"
+      },
+      {
+        "label": "C",
+        "text": "Chennai"
+      },
+      {
+        "label": "D",
+        "text": "Hyderabad"
+      }
+    ]
+  }
+]

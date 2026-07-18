@@ -23,6 +23,7 @@ const MockTestPage = lazy(() => import('./pages/MockTestPage'));
 const MockTestResultsPage = lazy(() => import('./pages/MockTestResultsPage'));
 const BattlePage = lazy(() => import('./pages/BattlePage'));
 const FriendBattlePage = lazy(() => import('./pages/FriendBattlePage'));
+const GovtPYQPracticePage = lazy(() => import('./pages/GovtPYQPracticePage'));
 import { signInWithGoogle, signOut } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
 
@@ -141,6 +142,12 @@ function App() {
     pageComponent = <AskPage navigate={navigate} initialQuery={initialQuery} />;
   } else if (route === 'govt-pyq') {
     pageComponent = <GovtPYQPage navigate={navigate} />;
+  } else if (route.startsWith('govt-pyq-practice/')) {
+    const parts = route.split('/');
+    // Route: govt-pyq-practice/<examId>/<setId>
+    const examId = parts[1];
+    const setId  = parts[2];
+    pageComponent = <GovtPYQPracticePage examId={examId} setId={setId} navigate={navigate} />;
   } else if (route === 'govt-roadmaps') {
     pageComponent = <GovtRoadmapPage navigate={navigate} />;
   } else if (route === 'govt-daily') {
