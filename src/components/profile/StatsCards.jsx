@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useStatistics } from '../../hooks/useAnalytics';
 import { useStreak } from '../../hooks/useAnalytics';
-import { useBookmarks } from '../../hooks/useBookmarks';
 
 // Animated counter
 function AnimatedNumber({ value, duration = 800 }) {
@@ -74,22 +73,12 @@ function Card({ icon, title, value, description, loading, color = 'var(--violet)
 export default function StatsCards() {
   const { data: stats, loading: statsLoading } = useStatistics();
   const { currentStreak, longestStreak, loading: streakLoading } = useStreak();
-  const { bookmarks } = useBookmarks();
   const loading = statsLoading || streakLoading;
-
-  const fmt = (seconds) => {
-    if (!seconds) return '0s';
-    if (seconds < 60) return `${seconds}s`;
-    return `${Math.round(seconds / 60)}m`;
-  };
 
   const cards = [
     { icon: '✅', title: 'Problems Solved', value: stats?.totalSolved ?? 0, description: 'Total across all topics', color: '#16a34a' },
     { icon: '🔥', title: 'Current Streak', value: currentStreak, suffix: 'd', description: 'Consecutive days', color: '#dc2626' },
     { icon: '🏆', title: 'Longest Streak', value: longestStreak, suffix: 'd', description: 'Best streak ever', color: '#d97706' },
-    { icon: '📊', title: 'Avg / Day', value: stats?.avgProblemsPerDay ?? 0, description: 'Problems per active day', color: '#0d9488' },
-    { icon: '⚡', title: 'Avg Solve Time', value: stats?.avgSolveTime ? Math.round(stats.avgSolveTime / 60) : 0, suffix: 'm', description: 'Average per question', color: '#7c3aed' },
-    { icon: '💾', title: 'Bookmarks', value: bookmarks?.length ?? 0, description: 'Saved questions', color: '#d97706' },
   ];
 
   return (
