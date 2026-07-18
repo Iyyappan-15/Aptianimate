@@ -3,30 +3,31 @@ import React, { useState, useMemo } from 'react';
 import { useHeatmap, useStatistics } from '../../hooks/useAnalytics';
 
 const LEVEL_COLORS = {
-  0: 'var(--surface3)',
-  1: '#bbf7d0',
-  2: '#4ade80',
-  3: '#16a34a',
-  4: '#14532d',
+  0: '#f1f5f9', // Slate-100 for crisp empty state visibility
+  1: '#ede9fe',
+  2: '#c4b5fd',
+  3: '#8b5cf6',
+  4: '#5b21b6',
 };
 
 const LEVEL_COLORS_DARK = {
-  0: 'var(--surface3)',
-  1: '#14532d',
-  2: '#166534',
-  3: '#16a34a',
-  4: '#4ade80',
+  0: '#1e293b', // Slate-800 for dark mode empty state
+  1: '#4c1d95',
+  2: '#6d28d9',
+  3: '#8b5cf6',
+  4: '#c4b5fd',
 };
 
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const DAYS   = ['Sun','Mon','','Wed','','Fri',''];
 
 function getLevel(problems, minutes) {
-  const score = problems + Math.floor(minutes / 15);
-  if (score === 0) return 0;
-  if (score === 1) return 1;
-  if (score <= 3)  return 2;
-  if (score <= 6)  return 3;
+  if (problems === 0 && minutes === 0) return 0;
+  // If there's any activity, ensure they get at least level 1
+  const score = problems + Math.floor(minutes / 5); // 1 point per 5 mins
+  if (score <= 3) return 1;
+  if (score <= 10) return 2;
+  if (score <= 25) return 3;
   return 4;
 }
 
@@ -120,7 +121,7 @@ const SkeletonHeatmap = () => (
     {Array.from({ length: 52 }).map((_, wi) => (
       <div key={wi} style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
         {Array.from({ length: 7 }).map((_, di) => (
-          <div key={di} style={{ width: 13, height: 13, borderRadius: 3, background: 'linear-gradient(90deg,var(--surface2) 25%,var(--surface3) 50%,var(--surface2) 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.4s infinite' }} />
+          <div key={di} style={{ width: 11, height: 11, borderRadius: 2, background: 'linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.4s infinite' }} />
         ))}
       </div>
     ))}
@@ -227,9 +228,9 @@ export default function ActivityHeatmap() {
 
         <div style={{ display: 'flex', gap: 2, minWidth: 'max-content' }}>
           {/* Day labels */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginRight: 4, paddingTop: 0 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginRight: 6, paddingTop: 0 }}>
             {DAYS.map((d, i) => (
-              <div key={i} style={{ width: 18, height: 13, fontSize: '0.6rem', color: 'var(--muted2)', display: 'flex', alignItems: 'center' }}>
+              <div key={i} style={{ width: 22, height: 11, fontSize: '0.6rem', color: 'var(--muted2)', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
                 {d}
               </div>
             ))}
@@ -244,9 +245,9 @@ export default function ActivityHeatmap() {
                     key={di}
                     title={cell.inRange ? cell.date : ''}
                     style={{
-                      width: 13,
-                      height: 13,
-                      borderRadius: 3,
+                      width: 11,
+                      height: 11,
+                      borderRadius: 2,
                       background: cell.inRange ? colors[cell.level] : 'transparent',
                       cursor: cell.inRange && cell.data ? 'pointer' : 'default',
                       transition: 'transform 0.1s',
@@ -270,7 +271,7 @@ export default function ActivityHeatmap() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 10, justifyContent: 'flex-end' }}>
         <span style={{ fontSize: '0.7rem', color: 'var(--muted2)' }}>Less</span>
         {[0, 1, 2, 3, 4].map(l => (
-          <div key={l} style={{ width: 12, height: 12, borderRadius: 3, background: colors[l] }} />
+          <div key={l} style={{ width: 11, height: 11, borderRadius: 2, background: colors[l] }} />
         ))}
         <span style={{ fontSize: '0.7rem', color: 'var(--muted2)' }}>More</span>
       </div>
