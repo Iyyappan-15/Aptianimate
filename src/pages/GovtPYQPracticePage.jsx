@@ -1,24 +1,15 @@
 // src/pages/GovtPYQPracticePage.jsx
-// ─── Government PYQ – Practice Viewer ────────────────────────────────────────
-// Reuses: QuestionCard (adapted), Mascot, Confetti, HintSystem
-// New: Async JSON loading, in-memory set cache, "Not Available" handling,
-//      question navigator, score summary
-
-import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
+// ─── Premium Government PYQ – Practice Viewer ────────────────────────────────
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GOVT_PYQ_REGISTRY } from '../data/governmentRegistry';
 import Mascot from '../components/Mascot';
 import Confetti from '../components/Confetti';
 
 // ─── In-Memory Cache ──────────────────────────────────────────────────────────
-// Persists across navigations within the same session.
-// Map<setFileUrl, question[]>
 const setCache = new Map();
 
 // ─── Adapter ──────────────────────────────────────────────────────────────────
-// PYQ JSON options are [{label, text}] arrays.
-// This helper converts them to {A: text, B: text, ...} that QuestionCard uses,
-// WITHOUT modifying QuestionCard itself.
 function adaptOptions(optionsArray) {
   return Object.fromEntries(optionsArray.map(o => [o.label, o.text]));
 }
@@ -26,15 +17,16 @@ function adaptOptions(optionsArray) {
 // ─── Difficulty badge ─────────────────────────────────────────────────────────
 function DiffBadge({ diff }) {
   const map = {
-    easy:   { bg: 'rgba(16,185,129,0.12)', color: 'var(--teal)',  label: 'Easy'   },
-    medium: { bg: 'rgba(245,158,11,0.12)', color: '#f59e0b',      label: 'Medium' },
-    hard:   { bg: 'rgba(239,68,68,0.12)',  color: 'var(--coral)', label: 'Hard'   },
+    easy:   { bg: 'rgba(16,185,129,0.1)', color: '#10b981', border: 'rgba(16,185,129,0.2)', label: 'Easy'   },
+    medium: { bg: 'rgba(245,158,11,0.1)', color: '#f59e0b', border: 'rgba(245,158,11,0.2)', label: 'Medium' },
+    hard:   { bg: 'rgba(239,68,68,0.1)',  color: '#ef4444', border: 'rgba(239,68,68,0.2)',  label: 'Hard'   },
   };
   const s = map[diff?.toLowerCase()] || map.easy;
   return (
     <span style={{
-      background: s.bg, color: s.color, borderRadius: '100px',
-      padding: '3px 10px', fontSize: '0.75rem', fontWeight: 700
+      background: s.bg, color: s.color, border: `1px solid ${s.border}`,
+      borderRadius: '100px', padding: '4px 12px', fontSize: '0.72rem',
+      fontWeight: 700, letterSpacing: '0.5px', textTransform: 'uppercase'
     }}>
       {s.label}
     </span>
@@ -45,42 +37,70 @@ function DiffBadge({ diff }) {
 function QuestionPalette({ total, current, answers, onJump }) {
   return (
     <div style={{
-      background: 'var(--surface)', border: '1px solid var(--border)',
-      borderRadius: '16px', padding: '20px'
+      background: 'rgba(255, 255, 255, 0.6)',
+      backdropFilter: 'blur(20px)',
+      WebkitBackdropFilter: 'blur(20px)',
+      border: '1px solid rgba(255, 255, 255, 0.4)',
+      borderRadius: '24px', padding: '28px',
+      boxShadow: '0 8px 32px rgba(31, 38, 135, 0.05)'
     }}>
-      <div style={{ fontWeight: 700, fontSize: '0.85rem', color: 'var(--text-sec)', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+      <div style={{
+        fontWeight: 800, fontSize: '0.9rem', color: 'var(--text-main)',
+        marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px'
+      }}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
         Navigator
       </div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '8px' }}>
         {Array.from({ length: total }, (_, i) => {
           const ans = answers[i];
           let bg = 'var(--surface2)';
           let color = 'var(--text-sec)';
           let border = '1px solid var(--border)';
-          if (i === current) { bg = 'var(--violet)'; color = '#fff'; border = 'none'; }
-          else if (ans?.correct === true)  { bg = 'rgba(16,185,129,0.15)'; color = 'var(--teal)'; border = '1px solid var(--teal)'; }
-          else if (ans?.correct === false) { bg = 'rgba(239,68,68,0.12)'; color = 'var(--coral)'; border = '1px solid var(--coral)'; }
-          else if (ans?.answered)          { bg = 'rgba(245,158,11,0.12)'; color = '#f59e0b'; border = '1px solid #f59e0b'; }
+          let shadow = 'none';
+
+          if (i === current) {
+            bg = 'linear-gradient(135deg, var(--violet), #7c3aed)';
+            color = '#fff';
+            border = 'none';
+            shadow = '0 4px 12px rgba(124,58,237,0.3)';
+          } else if (ans?.correct === true) {
+            bg = 'rgba(16,185,129,0.1)'; color = '#10b981'; border = '1px solid rgba(16,185,129,0.3)';
+          } else if (ans?.correct === false) {
+            bg = 'rgba(239,68,68,0.1)'; color = '#ef4444'; border = '1px solid rgba(239,68,68,0.3)';
+          } else if (ans?.answered) {
+            bg = 'rgba(245,158,11,0.1)'; color = '#f59e0b'; border = '1px solid rgba(245,158,11,0.3)';
+          }
+
           return (
-            <button key={i} onClick={() => onJump(i)} style={{
-              width: '34px', height: '34px', borderRadius: '8px', border,
-              background: bg, color, fontWeight: 700, fontSize: '0.8rem',
-              cursor: 'pointer', transition: 'all 0.15s'
-            }}>
+            <motion.button
+              whileHover={{ y: -2, scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              key={i} onClick={() => onJump(i)}
+              style={{
+                aspectRatio: '1', borderRadius: '12px', border, background: bg,
+                color, fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                boxShadow: shadow, transition: 'all 0.2s ease'
+              }}
+            >
               {i + 1}
-            </button>
+            </motion.button>
           );
         })}
       </div>
-      <div style={{ display: 'flex', gap: '12px', marginTop: '16px', flexWrap: 'wrap' }}>
+      <div style={{
+        display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px',
+        marginTop: '24px', paddingTop: '20px', borderTop: '1px solid var(--border)'
+      }}>
         {[
-          { color: 'var(--teal)',  label: 'Correct'    },
-          { color: 'var(--coral)', label: 'Wrong'      },
-          { color: '#f59e0b',      label: 'Attempted'  },
-          { color: 'var(--border)',label: 'Unattempted'},
+          { color: '#10b981', label: 'Correct' },
+          { color: '#ef4444', label: 'Wrong' },
+          { color: '#f59e0b', label: 'Attempted' },
+          { color: 'var(--border)', label: 'Unattempted' },
         ].map(l => (
-          <div key={l.label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '0.72rem', color: 'var(--text-sec)' }}>
-            <div style={{ width: '10px', height: '10px', borderRadius: '3px', background: l.color }} />
+          <div key={l.label} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-sec)' }}>
+            <div style={{ width: '12px', height: '12px', borderRadius: '4px', background: l.color }} />
             {l.label}
           </div>
         ))}
@@ -99,57 +119,70 @@ function ScoreSummary({ questions, answers, onRestart, navigate }) {
   const percent  = scored.length > 0 ? Math.round((correct / (scored.length)) * 100) : 0;
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '40px 24px', textAlign: 'center' }}>
-      <div style={{ fontSize: '4rem', marginBottom: '16px' }}>
-        {percent >= 70 ? '🎉' : percent >= 40 ? '👍' : '📖'}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      style={{
+        maxWidth: '700px', margin: '40px auto', padding: '60px 40px',
+        background: 'var(--surface)', borderRadius: '32px',
+        boxShadow: '0 24px 80px rgba(0,0,0,0.08)',
+        border: '1px solid var(--border)', textAlign: 'center'
+      }}
+    >
+      <div style={{ fontSize: '5rem', marginBottom: '24px', filter: 'drop-shadow(0 10px 10px rgba(0,0,0,0.1))' }}>
+        {percent >= 70 ? '🏆' : percent >= 40 ? '👍' : '📚'}
       </div>
-      <h2 style={{ fontWeight: 900, fontSize: '1.8rem', margin: '0 0 6px', color: 'var(--text-main)' }}>
+      <h2 style={{ fontWeight: 900, fontSize: '2.5rem', margin: '0 0 12px', color: 'var(--text-main)', letterSpacing: '-1px' }}>
         Practice Set Complete!
       </h2>
-      <p style={{ color: 'var(--text-sec)', margin: '0 0 36px' }}>
-        Here is your result summary
+      <p style={{ color: 'var(--muted)', margin: '0 0 48px', fontSize: '1.1rem' }}>
+        You scored {percent}% on the questions you attempted.
       </p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '32px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginBottom: '48px' }}>
         {[
-          { label: 'Correct',     value: correct, color: 'var(--teal)'  },
-          { label: 'Wrong',       value: wrong,   color: 'var(--coral)' },
-          { label: 'Answer N/A',  value: na,      color: '#f59e0b'      },
-          { label: 'Unattempted', value: skipped, color: 'var(--border)'},
+          { label: 'Correct',     value: correct, color: '#10b981', bg: 'rgba(16,185,129,0.08)' },
+          { label: 'Wrong',       value: wrong,   color: '#ef4444', bg: 'rgba(239,68,68,0.08)' },
+          { label: 'Answer N/A',  value: na,      color: '#f59e0b', bg: 'rgba(245,158,11,0.08)' },
+          { label: 'Skipped',     value: skipped, color: 'var(--muted)', bg: 'var(--surface2)' },
         ].map(s => (
           <div key={s.label} style={{
-            background: 'var(--surface)', border: `1px solid var(--border)`,
-            borderRadius: '16px', padding: '20px 16px'
+            background: s.bg, borderRadius: '20px', padding: '24px 16px',
+            border: `1px solid ${s.bg.replace('0.08', '0.2')}`
           }}>
-            <div style={{ fontSize: '2rem', fontWeight: 900, color: s.color }}>{s.value}</div>
-            <div style={{ fontSize: '0.82rem', color: 'var(--text-sec)', marginTop: '4px' }}>{s.label}</div>
+            <div style={{ fontSize: '2.5rem', fontWeight: 900, color: s.color, lineHeight: 1 }}>{s.value}</div>
+            <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-sec)', marginTop: '8px', textTransform: 'uppercase' }}>{s.label}</div>
           </div>
         ))}
       </div>
 
-      <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-        <button
+      <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
+        <motion.button
+          whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}
           onClick={onRestart}
           style={{
-            padding: '12px 28px', borderRadius: '12px', border: '1px solid var(--border)',
-            background: 'var(--surface)', color: 'var(--text-main)', fontWeight: 700, cursor: 'pointer'
+            padding: '16px 32px', borderRadius: '16px', border: '1px solid var(--border)',
+            background: 'var(--surface)', color: 'var(--text-main)', fontWeight: 700,
+            fontSize: '1rem', cursor: 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'
           }}
         >
           Try Again
-        </button>
-        <button
+        </motion.button>
+        <motion.button
+          whileHover={{ y: -2, boxShadow: '0 12px 24px rgba(124,58,237,0.3)' }}
+          whileTap={{ scale: 0.98 }}
           onClick={() => navigate('govt-pyq')}
           style={{
-            padding: '12px 28px', borderRadius: '12px', border: 'none',
-            background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
-            color: '#fff', fontWeight: 700, cursor: 'pointer',
-            boxShadow: '0 4px 16px rgba(124,58,237,0.3)'
+            padding: '16px 32px', borderRadius: '16px', border: 'none',
+            background: 'linear-gradient(135deg, var(--violet), #7c3aed)',
+            color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer',
+            boxShadow: '0 8px 16px rgba(124,58,237,0.2)'
           }}
         >
-          Back to All Sets
-        </button>
+          Back to Question Banks
+        </motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -159,65 +192,44 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
   const [loading, setLoading]     = useState(true);
   const [error, setError]         = useState(null);
   const [current, setCurrent]     = useState(0);
-  const [answers, setAnswers]     = useState([]); // per-question state
+  const [answers, setAnswers]     = useState([]);
   const [selected, setSelected]   = useState(null);
   const [submitted, setSubmitted] = useState(false);
-  const [result, setResult]       = useState(null); // 'correct'|'wrong'|null
+  const [result, setResult]       = useState(null);
   const [showSummary, setShowSummary] = useState(false);
   const [searchText, setSearch]   = useState('');
   const [topicFilter, setTopicFilter] = useState('All');
 
-  // ── Find exam + set from registry ──────────────────────────────────────────
   const exam = useMemo(() => GOVT_PYQ_REGISTRY.find(e => e.id === examId), [examId]);
   const set  = useMemo(() => exam?.practiceSets.find(s => s.id === setId),  [exam, setId]);
 
-  // ── Load JSON (with cache) ──────────────────────────────────────────────────
   useEffect(() => {
     if (!set) { setError('Practice set not found.'); setLoading(false); return; }
-
-    // Check cache first
     if (setCache.has(set.file)) {
       setQuestions(setCache.get(set.file));
       setAnswers(new Array(setCache.get(set.file).length).fill(null));
       setLoading(false);
       return;
     }
-
-    fetch(set.file)
-      .then(res => {
-        if (!res.ok) throw new Error(`Failed to load: ${res.status}`);
-        return res.json();
-      })
-      .then(data => {
-        setCache.set(set.file, data); // Cache for this session
-        setQuestions(data);
-        setAnswers(new Array(data.length).fill(null));
-        setLoading(false);
-      })
-      .catch(err => {
-        setError(err.message);
-        setLoading(false);
-      });
+    fetch(set.file).then(res => {
+      if (!res.ok) throw new Error(`Failed to load: ${res.status}`);
+      return res.json();
+    }).then(data => {
+      setCache.set(set.file, data);
+      setQuestions(data);
+      setAnswers(new Array(data.length).fill(null));
+      setLoading(false);
+    }).catch(err => {
+      setError(err.message);
+      setLoading(false);
+    });
   }, [set]);
 
-  // ── Filtered question list for navigator / search ──────────────────────────
   const topics = useMemo(() => {
     const t = new Set(questions.map(q => q.topic));
     return ['All', ...Array.from(t).sort()];
   }, [questions]);
 
-  const filtered = useMemo(() => {
-    return questions.filter(q => {
-      const matchTopic = topicFilter === 'All' || q.topic === topicFilter;
-      const matchSearch = !searchText ||
-        q.question.toLowerCase().includes(searchText.toLowerCase()) ||
-        q.id.toLowerCase().includes(searchText.toLowerCase()) ||
-        q.topic.toLowerCase().includes(searchText.toLowerCase());
-      return matchTopic && matchSearch;
-    });
-  }, [questions, topicFilter, searchText]);
-
-  // ── Restart ────────────────────────────────────────────────────────────────
   const restart = useCallback(() => {
     setCurrent(0);
     setAnswers(new Array(questions.length).fill(null));
@@ -227,14 +239,13 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
     setShowSummary(false);
   }, [questions]);
 
-  // ── Navigate to a question ─────────────────────────────────────────────────
   const jumpTo = useCallback((idx) => {
     setCurrent(idx);
-    setSelected(null);
-    setSubmitted(false);
-    setResult(null);
+    setSelected(answers[idx]?.chosen || null);
+    setSubmitted(answers[idx]?.answered || false);
+    setResult(answers[idx]?.notAvailable ? null : answers[idx]?.correct ? 'correct' : answers[idx]?.correct === false ? 'wrong' : null);
     setShowSummary(false);
-  }, []);
+  }, [answers]);
 
   const goNext = useCallback(() => {
     if (current < questions.length - 1) jumpTo(current + 1);
@@ -245,318 +256,377 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
     if (current > 0) jumpTo(current - 1);
   }, [current, jumpTo]);
 
-  // ── Submit an answer ────────────────────────────────────────────────────────
   const handleSubmit = useCallback((chosenLabel) => {
     const q = questions[current];
     const isNA = !q.correct_answer;
-
     let correct = null;
-    if (!isNA) {
-      // correct_answer may be a label like "A" or the option text
-      // The JSON stores it as a label letter (A/B/C/D)
-      correct = chosenLabel === q.correct_answer;
-    }
+    if (!isNA) correct = chosenLabel === q.correct_answer;
 
     const newAnswers = [...answers];
-    newAnswers[current] = {
-      answered: true,
-      chosen: chosenLabel,
-      correct,
-      notAvailable: isNA,
-    };
+    newAnswers[current] = { answered: true, chosen: chosenLabel, correct, notAvailable: isNA };
     setAnswers(newAnswers);
     setSubmitted(true);
     setResult(isNA ? null : correct ? 'correct' : 'wrong');
     setSelected(chosenLabel);
   }, [questions, current, answers]);
 
-  // ─── Render guards ─────────────────────────────────────────────────────────
-  if (!exam || !set) {
+  // Loading & Error States
+  if (!exam || !set || error) {
     return (
-      <div className="page" style={{ textAlign: 'center', padding: '80px 24px' }}>
-        <div style={{ fontSize: '3rem', marginBottom: '16px' }}>❌</div>
-        <h2>Practice set not found.</h2>
-        <button onClick={() => navigate('govt-pyq')} style={{ marginTop: '16px', padding: '10px 24px', borderRadius: '10px', border: 'none', background: 'var(--violet)', color: '#fff', fontWeight: 700, cursor: 'pointer' }}>
-          Go Back
-        </button>
+      <div className="page" style={{ textAlign: 'center', padding: '100px 24px' }}>
+        <div style={{ fontSize: '4rem', marginBottom: '24px' }}>⚠️</div>
+        <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: '16px' }}>
+          {error || 'Practice set not found'}
+        </h2>
+        <button onClick={() => navigate('govt-pyq')} className="btn btn-primary">Go Back to Sets</button>
       </div>
     );
   }
 
   if (loading) {
     return (
-      <div className="page" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '60vh', gap: '16px' }}>
-        <div style={{ width: '40px', height: '40px', borderRadius: '50%', border: '3px solid var(--border)', borderTop: '3px solid var(--violet)', animation: 'spin 0.8s linear infinite' }} />
-        <p style={{ color: 'var(--text-sec)' }}>Loading {set.title}…</p>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="page" style={{ textAlign: 'center', padding: '80px 24px' }}>
-        <div style={{ fontSize: '3rem', marginBottom: '16px' }}>⚠️</div>
-        <h2 style={{ color: 'var(--coral)' }}>Failed to load practice set.</h2>
-        <p style={{ color: 'var(--text-sec)' }}>{error}</p>
-        <button onClick={() => navigate('govt-pyq')} style={{ marginTop: '16px', padding: '10px 24px', borderRadius: '10px', border: 'none', background: 'var(--violet)', color: '#fff', fontWeight: 700, cursor: 'pointer' }}>
-          Go Back
-        </button>
+      <div className="page" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '70vh' }}>
+        <div style={{ width: '48px', height: '48px', borderRadius: '50%', border: '4px solid var(--surface2)', borderTop: '4px solid var(--violet)', animation: 'spin 1s cubic-bezier(0.5, 0, 0.5, 1) infinite' }} />
+        <p style={{ color: 'var(--muted)', marginTop: '24px', fontWeight: 600, fontSize: '1.1rem' }}>Preparing {set.title}…</p>
       </div>
     );
   }
 
   if (showSummary) {
     return (
-      <div className="page">
+      <div className="page-wide" style={{ position: 'relative', overflow: 'hidden' }}>
+        {/* Ambient summary background */}
+        <div style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)', width: '800px', height: '800px', background: 'radial-gradient(circle, rgba(16,185,129,0.05) 0%, transparent 70%)', pointerEvents: 'none', zIndex: -1 }} />
         {answers.filter(a => a?.correct === true).length > questions.length * 0.7 && <Confetti />}
-        <ScoreSummary
-          questions={questions}
-          answers={answers}
-          onRestart={restart}
-          navigate={navigate}
-        />
+        <ScoreSummary questions={questions} answers={answers} onRestart={restart} navigate={navigate} />
       </div>
     );
   }
 
   const q = questions[current];
-  const adaptedOptions = adaptOptions(q.options);
   const isNA = !q.correct_answer;
-  const thisAnswer = answers[current];
+  const progressPercent = ((current + 1) / questions.length) * 100;
 
   return (
-    <div className="page-wide" style={{ animation: 'fadeIn 0.4s ease' }}>
-      {result === 'correct' && <Confetti />}
-      <Mascot result={result} />
-
-      {/* ── Back ────────────────────────────────────────────────────── */}
-      <div style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-        <button
-          onClick={() => navigate('govt-pyq')}
-          style={{ background: 'none', border: 'none', color: 'var(--text-sec)', display: 'inline-flex', alignItems: 'center', gap: '6px', cursor: 'pointer', padding: 0, fontWeight: 600 }}
-        >
-          ← Back to Sets
-        </button>
-        <div style={{ fontSize: '0.85rem', color: 'var(--text-sec)', fontWeight: 600 }}>
-          {exam.title} · {set.title}
-        </div>
+    <div style={{ position: 'relative', minHeight: '100vh', background: 'var(--surface2)' }}>
+      {/* ── Ambient Background Mesh ─────────────────────────────────── */}
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0, overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: '-10%', left: '-5%', width: '50vw', height: '50vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 60%)', filter: 'blur(60px)' }} />
+        <div style={{ position: 'absolute', bottom: '-10%', right: '-5%', width: '50vw', height: '50vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(124,58,237,0.05) 0%, transparent 60%)', filter: 'blur(60px)' }} />
       </div>
 
-      {/* ── Search & Filter ─────────────────────────────────────────── */}
-      <div style={{ display: 'flex', gap: '10px', marginBottom: '20px', flexWrap: 'wrap' }}>
-        <input
-          type="text"
-          placeholder="Search questions, topics, IDs..."
-          value={searchText}
-          onChange={e => setSearch(e.target.value)}
-          style={{
-            flex: 1, minWidth: '200px', padding: '10px 14px', borderRadius: '10px',
-            border: '1px solid var(--border)', background: 'var(--surface2)',
-            color: 'var(--text-main)', fontSize: '0.9rem', outline: 'none'
-          }}
-        />
-        <select
-          value={topicFilter}
-          onChange={e => setTopicFilter(e.target.value)}
-          style={{
-            padding: '10px 14px', borderRadius: '10px', border: '1px solid var(--border)',
-            background: 'var(--surface2)', color: 'var(--text-main)', fontSize: '0.9rem', cursor: 'pointer'
-          }}
-        >
-          {topics.map(t => <option key={t} value={t}>{t}</option>)}
-        </select>
-        {(searchText || topicFilter !== 'All') && (
+      <div className="page-wide" style={{ position: 'relative', zIndex: 1, padding: '24px 24px 80px' }}>
+        {result === 'correct' && <Confetti />}
+        <Mascot result={result} />
+
+        {/* ── Header Bar ────────────────────────────────────────────── */}
+        <div style={{
+          background: 'rgba(255, 255, 255, 0.7)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)',
+          border: '1px solid rgba(255, 255, 255, 0.4)', borderRadius: '24px',
+          padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          marginBottom: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)'
+        }}>
           <button
-            onClick={() => { setSearch(''); setTopicFilter('All'); }}
-            style={{ padding: '10px 14px', borderRadius: '10px', border: '1px solid var(--border)', background: 'var(--surface)', color: 'var(--text-sec)', cursor: 'pointer', fontWeight: 600 }}
+            onClick={() => navigate('govt-pyq')}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '12px', padding: '8px 16px', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.85rem', cursor: 'pointer', transition: 'all 0.2s' }}
+            onMouseOver={e => { e.currentTarget.style.borderColor = 'var(--violet)'; e.currentTarget.style.color = 'var(--violet)'; }}
+            onMouseOut={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-main)'; }}
           >
-            Clear
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Back
           </button>
-        )}
-      </div>
+          
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--text-main)', letterSpacing: '-0.3px' }}>
+              {exam.title}
+            </div>
+            <div style={{ fontSize: '0.8rem', color: 'var(--muted)', fontWeight: 500 }}>
+              {set.title}
+            </div>
+          </div>
 
-      {/* ── Main Layout ─────────────────────────────────────────────── */}
-      <div className="practice-layout">
-        {/* Left column: question viewer */}
-        <div className="flex-col gap-24">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={current}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.25 }}
-            >
-              {/* ── Meta bar ───────────────────────────────────────── */}
-              <div style={{
-                display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px',
-                alignItems: 'center'
-              }}>
-                <span style={{ fontFamily: 'monospace', fontSize: '0.8rem', color: 'var(--text-sec)', background: 'var(--surface2)', padding: '3px 8px', borderRadius: '6px' }}>
-                  {q.id}
-                </span>
-                <DiffBadge diff={q.difficulty} />
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-sec)' }}>
-                  ⏱ ~{q.estimated_time}s
-                </span>
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-sec)' }}>
-                  {q.topic}
-                </span>
-                {q.subtopic && (
-                  <span style={{ fontSize: '0.78rem', color: 'var(--text-sec)' }}>
-                    · {q.subtopic}
-                  </span>
-                )}
-              </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <div style={{ textAlign: 'right' }}>
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase' }}>Progress</div>
+              <div style={{ fontSize: '0.9rem', fontWeight: 800, color: 'var(--text-main)' }}>{current + 1} / {questions.length}</div>
+            </div>
+            {/* Circular Progress */}
+            <svg width="40" height="40" viewBox="0 0 36 36">
+              <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="var(--border)" strokeWidth="3" />
+              <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="url(#gradient)" strokeWidth="3" strokeDasharray={`${progressPercent}, 100`} style={{ transition: 'stroke-dasharray 0.5s ease' }} />
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="var(--violet)" />
+                  <stop offset="100%" stopColor="#7c3aed" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
 
-              {/* ── Question Card ───────────────────────────────────── */}
-              <div className="question-card">
-                {/* Question number + tags */}
-                <div className="qc-header">
-                  <div>
-                    <div className="qc-meta">
-                      <span className="qc-concept">Q {current + 1} / {questions.length}</span>
-                      <DiffBadge diff={q.difficulty} />
+        {/* ── Main Layout ─────────────────────────────────────────────── */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.4fr) minmax(300px, 0.6fr)', gap: '32px', alignItems: 'start' }}>
+          
+          {/* ── Left Column: Question Viewer ───────────────────────── */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={current}
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -15 }}
+                transition={{ duration: 0.3 }}
+                style={{
+                  background: 'var(--surface)', border: '1px solid var(--border)',
+                  borderRadius: '32px', padding: '40px',
+                  boxShadow: '0 12px 40px rgba(0,0,0,0.04)',
+                  position: 'relative', overflow: 'hidden'
+                }}
+              >
+                {/* Decorative top border */}
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '6px', background: 'linear-gradient(90deg, var(--violet), #10b981)' }} />
+
+                {/* Question Header */}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '24px', flexWrap: 'wrap', gap: '16px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <div style={{
+                      background: 'rgba(37,99,235,0.08)', color: 'var(--violet)',
+                      padding: '6px 14px', borderRadius: '12px', fontWeight: 800, fontSize: '0.9rem'
+                    }}>
+                      Question {current + 1}
                     </div>
+                    <DiffBadge diff={q.difficulty} />
                   </div>
-                  <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap' }}>
-                    {q.exam_tags?.slice(0, 2).map(tag => (
+                  
+                  <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                    {q.exam_tags?.map(tag => (
                       <span key={tag} style={{
-                        background: 'rgba(124,58,237,0.1)', color: 'var(--violet)',
-                        borderRadius: '100px', padding: '2px 8px', fontSize: '0.7rem', fontWeight: 700
-                      }}>{tag}</span>
+                        background: 'var(--surface2)', color: 'var(--muted)', border: '1px solid var(--border)',
+                        padding: '4px 10px', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 600
+                      }}>
+                        {tag}
+                      </span>
                     ))}
                   </div>
                 </div>
 
-                {/* Question text */}
-                <div className="qc-question" style={{ whiteSpace: 'pre-line' }}>
+                {/* Question Text */}
+                <div style={{
+                  fontSize: '1.25rem', fontWeight: 600, color: 'var(--text-main)',
+                  lineHeight: 1.6, marginBottom: '40px', whiteSpace: 'pre-line',
+                  letterSpacing: '-0.2px'
+                }}>
                   {q.question}
                 </div>
 
-                {/* Options */}
-                <div className="options-grid">
+                {/* Options Grid */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   {q.options.map(opt => {
-                    let cls = 'option-btn';
-                    if (submitted) {
-                      if (!isNA && opt.label === q.correct_answer)               cls = 'option-btn correct';
-                      else if (opt.label === selected && opt.label !== q.correct_answer) cls = 'option-btn wrong';
-                    } else if (selected === opt.label) {
-                      cls = 'option-btn selected';
+                    const isSelected = selected === opt.label;
+                    let isCorrect = false;
+                    let isWrong = false;
+                    
+                    if (submitted && !isNA) {
+                      isCorrect = opt.label === q.correct_answer;
+                      isWrong = isSelected && opt.label !== q.correct_answer;
                     }
+
+                    // Styling logic
+                    let bg = 'var(--surface)';
+                    let border = '1px solid var(--border)';
+                    let textColor = 'var(--text-main)';
+                    let iconBg = 'var(--surface2)';
+                    let iconColor = 'var(--muted)';
+                    
+                    if (isCorrect) {
+                      bg = 'rgba(16,185,129,0.05)'; border = '2px solid #10b981'; textColor = '#059669'; iconBg = '#10b981'; iconColor = '#fff';
+                    } else if (isWrong) {
+                      bg = 'rgba(239,68,68,0.05)'; border = '2px solid #ef4444'; textColor = '#dc2626'; iconBg = '#ef4444'; iconColor = '#fff';
+                    } else if (isSelected) {
+                      bg = 'rgba(37,99,235,0.04)'; border = '2px solid var(--violet)'; textColor = 'var(--violet)'; iconBg = 'var(--violet)'; iconColor = '#fff';
+                    }
+
                     return (
-                      <button
+                      <motion.button
                         key={opt.label}
-                        className={cls}
+                        whileHover={!submitted ? { y: -2, boxShadow: '0 6px 16px rgba(0,0,0,0.04)' } : {}}
+                        whileTap={!submitted ? { scale: 0.98 } : {}}
                         onClick={() => !submitted && setSelected(opt.label)}
                         disabled={submitted}
+                        style={{
+                          width: '100%', padding: '16px 20px', borderRadius: '16px',
+                          background: bg, border, display: 'flex', alignItems: 'center', gap: '16px',
+                          cursor: submitted ? 'default' : 'pointer', transition: 'all 0.2s ease',
+                          textAlign: 'left'
+                        }}
                       >
-                        <span className="opt-letter">{opt.label}</span>
-                        <span>{opt.text}</span>
-                        {submitted && !isNA && opt.label === q.correct_answer && (
-                          <span style={{ marginLeft: 'auto', color: 'var(--teal)' }}>✓</span>
+                        <div style={{
+                          width: '32px', height: '32px', borderRadius: '10px', flexShrink: 0,
+                          background: iconBg, color: iconColor, display: 'flex', alignItems: 'center',
+                          justifyContent: 'center', fontWeight: 800, fontSize: '0.9rem',
+                          transition: 'all 0.2s ease'
+                        }}>
+                          {opt.label}
+                        </div>
+                        <span style={{ fontSize: '1.05rem', fontWeight: 500, color: textColor, lineHeight: 1.5, flex: 1 }}>
+                          {opt.text}
+                        </span>
+                        
+                        {/* Status Icons */}
+                        {isCorrect && (
+                          <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} style={{ color: '#10b981', display: 'flex' }}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                          </motion.div>
                         )}
-                        {submitted && opt.label === selected && opt.label !== q.correct_answer && (
-                          <span style={{ marginLeft: 'auto', color: 'var(--coral)' }}>✗</span>
+                        {isWrong && (
+                          <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} style={{ color: '#ef4444', display: 'flex' }}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                          </motion.div>
                         )}
-                      </button>
+                      </motion.button>
                     );
                   })}
                 </div>
 
-                {/* Actions */}
-                <div className="qc-actions">
+                {/* Actions / Feedback Area */}
+                <div style={{ marginTop: '32px' }}>
                   {!submitted ? (
-                    <button
-                      className="btn btn-primary"
+                    <motion.button
+                      whileHover={selected ? { y: -2, boxShadow: '0 8px 24px rgba(37,99,235,0.25)' } : {}}
+                      whileTap={selected ? { scale: 0.98 } : {}}
                       onClick={() => selected && handleSubmit(selected)}
                       disabled={!selected}
+                      style={{
+                        width: '100%', padding: '18px', borderRadius: '16px', border: 'none',
+                        background: selected ? 'linear-gradient(135deg, var(--violet), #7c3aed)' : 'var(--surface2)',
+                        color: selected ? '#fff' : 'var(--muted)', fontWeight: 800, fontSize: '1.05rem',
+                        cursor: selected ? 'pointer' : 'not-allowed', transition: 'all 0.3s ease',
+                      }}
                     >
                       Submit Answer
-                    </button>
+                    </motion.button>
                   ) : (
-                    <div style={{
-                      padding: '12px 16px', borderRadius: 'var(--radius-sm)', fontSize: '0.875rem',
-                      fontWeight: 600, animation: 'slideDown 0.3s ease',
-                      ...(isNA
-                        ? { background: 'rgba(245,158,11,0.1)', border: '1px solid #f59e0b', color: '#f59e0b' }
-                        : result === 'correct'
-                        ? { background: 'rgba(29,158,117,0.1)', border: '1px solid var(--teal)', color: 'var(--teal)' }
-                        : { background: 'rgba(216,90,48,0.1)',  border: '1px solid var(--coral)', color: 'var(--coral)' }
-                      )
-                    }}>
-                      {isNA
-                        ? '📋 The official answer for this question is currently unavailable.'
-                        : result === 'correct'
-                        ? '🎉 Correct!'
-                        : `❌ Incorrect. Correct answer: ${q.correct_answer}`
-                      }
-                    </div>
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+                      style={{
+                        padding: '20px', borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '16px',
+                        ...(isNA
+                          ? { background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.2)' }
+                          : result === 'correct'
+                          ? { background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }
+                          : { background: 'rgba(239,68,68,0.1)',  border: '1px solid rgba(239,68,68,0.2)' }
+                        )
+                      }}
+                    >
+                      <div style={{ fontSize: '1.8rem' }}>
+                        {isNA ? '⚠️' : result === 'correct' ? '🎉' : '💡'}
+                      </div>
+                      <div>
+                        <div style={{
+                          fontWeight: 800, fontSize: '1.05rem', marginBottom: '4px',
+                          color: isNA ? '#d97706' : result === 'correct' ? '#059669' : '#dc2626'
+                        }}>
+                          {isNA ? 'Official Answer Unavailable' : result === 'correct' ? 'Excellent Work!' : 'Not quite right.'}
+                        </div>
+                        <div style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 500 }}>
+                          {isNA 
+                            ? 'The official answer key for this question was not provided or was challenged.' 
+                            : result === 'wrong' 
+                            ? <span>The correct answer is Option <strong style={{color: '#dc2626'}}>{q.correct_answer}</strong>.</span> 
+                            : 'You selected the correct answer.'}
+                        </div>
+                      </div>
+                    </motion.div>
                   )}
                 </div>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* ── Bottom Navigation Bar ─────────────────────────────── */}
+            <div style={{
+              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+              background: 'var(--surface)', padding: '16px 24px', borderRadius: '20px',
+              border: '1px solid var(--border)', boxShadow: '0 4px 20px rgba(0,0,0,0.02)'
+            }}>
+              <motion.button
+                whileHover={current > 0 ? { x: -4 } : {}}
+                onClick={goPrev} disabled={current === 0}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: '8px', padding: '12px 20px',
+                  borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--surface)',
+                  color: 'var(--text-main)', fontWeight: 700, fontSize: '0.9rem',
+                  cursor: current === 0 ? 'not-allowed' : 'pointer', opacity: current === 0 ? 0.5 : 1
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+                Previous
+              </motion.button>
+
+              <motion.button
+                whileHover={{ x: 4, boxShadow: '0 8px 20px rgba(124,58,237,0.25)' }}
+                whileTap={{ scale: 0.98 }}
+                onClick={goNext}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: '8px', padding: '12px 24px',
+                  borderRadius: '12px', border: 'none', background: 'linear-gradient(135deg, var(--violet), #7c3aed)',
+                  color: '#fff', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer',
+                  boxShadow: '0 4px 12px rgba(124,58,237,0.2)'
+                }}
+              >
+                {current === questions.length - 1 ? 'Finish Practice' : 'Next Question'}
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </motion.button>
+            </div>
+          </div>
+
+          {/* ── Right Column: Info & Navigator ─────────────────────── */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            
+            {/* Info Card */}
+            <div style={{
+              background: 'rgba(255, 255, 255, 0.6)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)',
+              border: '1px solid rgba(255, 255, 255, 0.4)', borderRadius: '24px', padding: '28px',
+              boxShadow: '0 8px 32px rgba(31, 38, 135, 0.05)'
+            }}>
+              <div style={{
+                fontWeight: 800, fontSize: '0.9rem', color: 'var(--text-main)',
+                marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px'
+              }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                Question Details
               </div>
-
-              {/* ── Navigation Controls ─────────────────────────────── */}
-              <div style={{ display: 'flex', gap: '10px', marginTop: '16px', justifyContent: 'space-between' }}>
-                <button
-                  onClick={goPrev}
-                  disabled={current === 0}
-                  style={{
-                    padding: '10px 22px', borderRadius: '10px', border: '1px solid var(--border)',
-                    background: 'var(--surface)', color: 'var(--text-main)', fontWeight: 700,
-                    cursor: current === 0 ? 'not-allowed' : 'pointer', opacity: current === 0 ? 0.5 : 1
-                  }}
-                >
-                  ← Previous
-                </button>
-
-                <div style={{ fontSize: '0.85rem', color: 'var(--text-sec)', display: 'flex', alignItems: 'center' }}>
-                  {current + 1} / {questions.length}
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Category</div>
+                  <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-main)' }}>{q.category}</div>
                 </div>
-
-                <button
-                  onClick={goNext}
-                  style={{
-                    padding: '10px 22px', borderRadius: '10px', border: 'none',
-                    background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
-                    color: '#fff', fontWeight: 700, cursor: 'pointer',
-                    boxShadow: '0 4px 14px rgba(124,58,237,0.3)'
-                  }}
-                >
-                  {current === questions.length - 1 ? 'Finish Set ✓' : 'Next →'}
-                </button>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        {/* Right column: navigator */}
-        <div className="flex-col gap-24">
-          <QuestionPalette
-            total={questions.length}
-            current={current}
-            answers={answers}
-            onJump={jumpTo}
-          />
-
-          {/* Category legend */}
-          <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '16px', padding: '20px' }}>
-            <div style={{ fontWeight: 700, fontSize: '0.85rem', color: 'var(--text-sec)', marginBottom: '10px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-              Question Info
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.82rem' }}>
-              <div><span style={{ color: 'var(--text-sec)' }}>Category: </span><strong>{q.category}</strong></div>
-              <div><span style={{ color: 'var(--text-sec)' }}>Topic: </span><strong>{q.topic}</strong></div>
-              <div><span style={{ color: 'var(--text-sec)' }}>Subtopic: </span><strong>{q.subtopic}</strong></div>
-              <div><span style={{ color: 'var(--text-sec)' }}>Est. Time: </span><strong>{q.estimated_time}s</strong></div>
-              <div style={{ marginTop: '6px', display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
-                {q.exam_tags?.map(tag => (
-                  <span key={tag} style={{ background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '100px', padding: '2px 8px', fontSize: '0.7rem', color: 'var(--text-sec)', fontWeight: 600 }}>
-                    {tag}
-                  </span>
-                ))}
+                <div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Topic</div>
+                  <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-main)' }}>{q.topic}</div>
+                </div>
+                {q.subtopic && (
+                  <div>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Subtopic</div>
+                    <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-main)' }}>{q.subtopic}</div>
+                  </div>
+                )}
+                <div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', marginBottom: '4px' }}>Est. Time</div>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '8px', padding: '6px 12px', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                    ⏱ {q.estimated_time} seconds
+                  </div>
+                </div>
               </div>
             </div>
+
+            <QuestionPalette
+              total={questions.length}
+              current={current}
+              answers={answers}
+              onJump={jumpTo}
+            />
+
           </div>
         </div>
       </div>
