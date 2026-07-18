@@ -1,4 +1,4 @@
-﻿// src/components/GovtExamView.jsx
+// src/components/GovtExamView.jsx
 import { useState } from 'react';
 import { GOVT_EXAM_SYLLABUS } from '../data/govtExamSyllabus';
 import { topicToSlug } from '../data/topicContent';
@@ -41,7 +41,7 @@ export default function GovtExamView({ navigate }) {
           <div style={{ fontSize: '2rem' }}>⚡</div>
           <div>
             <div style={{ fontWeight: '800', color: 'var(--text-main)', marginBottom: '4px' }}>Daily Practice</div>
-            <div style={{ fontSize: '0.85rem', color: 'var(--text-sec)' }}>15 fresh questions mixed daily.</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--text-sec)' }}>20 fresh questions mixed daily.</div>
           </div>
         </div>
 
