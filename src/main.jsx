@@ -7,7 +7,7 @@ import ErrorBoundary from './components/ErrorBoundary.jsx'
 
 // --- OAUTH POPUP CALLBACK HANDLER ---
 // If this window was opened as a popup by our authService and Google redirected here
-// with an id_token in the URL hash, send it back to the main window and close immediately.
+// with an id_token in the URL hash, send it back to the main window and wait for it to close us.
 if (window.opener && window.location.hash.includes('id_token=')) {
   const params = new URLSearchParams(window.location.hash.substring(1));
   const idToken = params.get('id_token');
@@ -19,8 +19,9 @@ if (window.opener && window.location.hash.includes('id_token=')) {
     window.opener.postMessage({ type: 'GOOGLE_AUTH_ERROR', error }, window.location.origin);
   }
   
-  // Close the popup window
-  window.close();
+  // Give the opener time to receive the message and close this window, 
+  // but close it as a fallback just in case.
+  setTimeout(() => window.close(), 3000);
 }
 // ------------------------------------
 
