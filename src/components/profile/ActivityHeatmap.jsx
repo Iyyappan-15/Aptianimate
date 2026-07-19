@@ -1,21 +1,21 @@
 // src/components/profile/ActivityHeatmap.jsx
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { useHeatmap, useStatistics } from '../../hooks/useAnalytics';
 
 const LEVEL_COLORS = {
   0: '#f1f5f9', // Slate-100 for crisp empty state visibility
-  1: '#ede9fe',
-  2: '#c4b5fd',
-  3: '#8b5cf6',
-  4: '#5b21b6',
+  1: '#d1fae5', // emerald-100
+  2: '#6ee7b7', // emerald-300
+  3: '#10b981', // emerald-500
+  4: '#047857', // emerald-700
 };
 
 const LEVEL_COLORS_DARK = {
   0: '#1e293b', // Slate-800 for dark mode empty state
-  1: '#4c1d95',
-  2: '#6d28d9',
-  3: '#8b5cf6',
-  4: '#c4b5fd',
+  1: '#064e3b', // emerald-900
+  2: '#047857', // emerald-700
+  3: '#10b981', // emerald-500
+  4: '#34d399', // emerald-400
 };
 
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -32,9 +32,12 @@ function getLevel(problems, minutes) {
 }
 
 function buildGrid(rawData) {
-  // Map raw data to date-keyed map
+  // Map raw data to date-keyed map safely ignoring time
   const map = {};
-  rawData.forEach(row => { map[row.activity_date] = row; });
+  rawData.forEach(row => { 
+    const dStr = row.activity_date.includes('T') ? row.activity_date.split('T')[0] : row.activity_date;
+    map[dStr] = row; 
+  });
 
   // Build 365-day grid starting from 52 weeks ago (Sunday)
   const today = new Date();
@@ -53,7 +56,7 @@ function buildGrid(rawData) {
   const cursor = new Date(start);
 
   while (cursor <= today || week.length > 0) {
-    const dateStr = cursor.toISOString().slice(0, 10);
+    const dateStr = new Date(cursor.getTime() - cursor.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
     const row = map[dateStr];
     const inRange = cursor >= start && cursor <= today;
 
@@ -117,11 +120,11 @@ const Tooltip = ({ cell, rect }) => {
 };
 
 const SkeletonHeatmap = () => (
-  <div style={{ display: 'flex', gap: 3, flexWrap: 'wrap' }}>
+  <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
     {Array.from({ length: 52 }).map((_, wi) => (
-      <div key={wi} style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+      <div key={wi} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
         {Array.from({ length: 7 }).map((_, di) => (
-          <div key={di} style={{ width: 11, height: 11, borderRadius: 2, background: 'linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.4s infinite' }} />
+          <div key={di} style={{ width: 15, height: 15, borderRadius: 3, background: 'linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.4s infinite' }} />
         ))}
       </div>
     ))}
@@ -142,6 +145,7 @@ export default function ActivityHeatmap() {
   const { data, loading, error } = useHeatmap();
   const { data: stats } = useStatistics();
   const [tooltip, setTooltip] = useState({ cell: null, rect: null });
+  const scrollRef = useRef(null);
 
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
   const colors = isDark ? LEVEL_COLORS_DARK : LEVEL_COLORS;
@@ -150,6 +154,12 @@ export default function ActivityHeatmap() {
     if (!data) return { weeks: [], monthLabels: [] };
     return buildGrid(data);
   }, [data]);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft = scrollRef.current.scrollWidth;
+    }
+  }, [weeks]);
 
   if (loading) return <SkeletonHeatmap />;
   if (error) return <div style={{ color: 'var(--coral)', fontSize: '0.85rem' }}>⚠️ {error}</div>;
@@ -206,16 +216,16 @@ export default function ActivityHeatmap() {
       </div>
 
       {/* Heatmap: scrollable on mobile */}
-      <div style={{ width: '100%', overflowX: 'auto', WebkitOverflowScrolling: 'touch', paddingBottom: 8 }}>
+      <div ref={scrollRef} style={{ width: '100%', overflowX: 'auto', WebkitOverflowScrolling: 'touch', paddingBottom: 8, scrollBehavior: 'smooth' }}>
         {/* Month labels */}
-        <div style={{ display: 'flex', gap: 3, marginBottom: 4, marginLeft: 22, position: 'relative', height: 16, minWidth: 'max-content' }}>
+        <div style={{ display: 'flex', gap: 4, marginBottom: 6, marginLeft: 28, position: 'relative', height: 16, minWidth: 'max-content' }}>
         {monthLabels.map(({ col, label }) => (
           <span
             key={`${col}-${label}`}
             style={{
               position: 'absolute',
-              left: col * 16,
-              fontSize: '0.65rem',
+              left: col * 19, // 15px cell + 4px gap
+              fontSize: '0.75rem',
               color: 'var(--muted)',
               fontWeight: 600,
               whiteSpace: 'nowrap',
@@ -226,28 +236,28 @@ export default function ActivityHeatmap() {
         ))}
       </div>
 
-        <div style={{ display: 'flex', gap: 2, minWidth: 'max-content' }}>
+        <div style={{ display: 'flex', gap: 4, minWidth: 'max-content' }}>
           {/* Day labels */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginRight: 6, paddingTop: 0 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginRight: 8, paddingTop: 0 }}>
             {DAYS.map((d, i) => (
-              <div key={i} style={{ width: 22, height: 11, fontSize: '0.6rem', color: 'var(--muted2)', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+              <div key={i} style={{ width: 26, height: 15, fontSize: '0.65rem', color: 'var(--muted2)', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
                 {d}
               </div>
             ))}
           </div>
 
           {/* Grid */}
-          <div style={{ display: 'flex', gap: 3, paddingBottom: 4 }}>
+          <div style={{ display: 'flex', gap: 4, paddingBottom: 6 }}>
             {weeks.map((week, wi) => (
-              <div key={wi} style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div key={wi} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
                 {week.map((cell, di) => (
                   <div
                     key={di}
                     title={cell.inRange ? cell.date : ''}
                     style={{
-                      width: 11,
-                      height: 11,
-                      borderRadius: 2,
+                      width: 15,
+                      height: 15,
+                      borderRadius: 3,
                       background: cell.inRange ? colors[cell.level] : 'transparent',
                       cursor: cell.inRange && cell.data ? 'pointer' : 'default',
                       transition: 'transform 0.1s',
@@ -268,12 +278,12 @@ export default function ActivityHeatmap() {
       </div> {/* end scrollable wrapper */}
 
       {/* Legend */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 10, justifyContent: 'flex-end' }}>
-        <span style={{ fontSize: '0.7rem', color: 'var(--muted2)' }}>Less</span>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 16, justifyContent: 'flex-end' }}>
+        <span style={{ fontSize: '0.75rem', color: 'var(--muted2)' }}>Less</span>
         {[0, 1, 2, 3, 4].map(l => (
-          <div key={l} style={{ width: 11, height: 11, borderRadius: 2, background: colors[l] }} />
+          <div key={l} style={{ width: 15, height: 15, borderRadius: 3, background: colors[l] }} />
         ))}
-        <span style={{ fontSize: '0.7rem', color: 'var(--muted2)' }}>More</span>
+        <span style={{ fontSize: '0.75rem', color: 'var(--muted2)' }}>More</span>
       </div>
 
       {tooltip.cell && <Tooltip cell={tooltip.cell} rect={tooltip.rect} />}
