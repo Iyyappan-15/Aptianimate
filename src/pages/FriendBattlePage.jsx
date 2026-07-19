@@ -805,7 +805,7 @@ const FriendBattlePage = ({ navigate }) => {
         : 'Better luck next time. Keep practising!';
 
     const outcomeIcon = didWin ? (
-      <img src="/trophy.png" alt="Victory Trophy" style={{ width: 72, height: 72, objectFit: 'contain' }} />
+      <img src="/trophy.png" alt="Victory Trophy" style={{ width: 120, height: 120, objectFit: 'contain' }} />
     ) : isDraw ? (
       <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke={outcomeColor} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M11 17a4 4 0 0 0 4-4V5H7v8a4 4 0 0 0 4 4z" />
