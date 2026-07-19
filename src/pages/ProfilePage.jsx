@@ -447,12 +447,12 @@ function AccountSettings({ user, profile, signOut }) {
             <p className="setting-desc">Found a bug? Let us know!</p>
           </div>
         </div>
-        <a 
-          href={`mailto:studyprojects2005@gmail.com?subject=AptiAnimate Issue Report&body=Please describe your issue below:%0D%0A%0D%0A------------------------%0D%0AUsername: @${profile?.username || 'Unknown'}%0D%0AIssue Details:%0D%0A`}
+        <button 
+          onClick={() => navigate('report-issue')}
           style={{ ...btnSm('var(--violet)', false), textDecoration: 'none' }}
         >
           Report
-        </a>
+        </button>
       </div>
 
       {/* ── Logout ── */}
