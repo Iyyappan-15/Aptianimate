@@ -544,14 +544,28 @@ const FriendBattlePage = ({ navigate }) => {
   if (matchStatus === 'lobby' || matchStatus === 'creating' || matchStatus === 'joining') {
     return (
       <div style={{ minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
-        <motion.h1 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} style={{ fontSize: '2.8rem', marginBottom: 8, color: 'var(--violet)', fontWeight: 900 }}>
-          👥 Friend Battle
-        </motion.h1>
+        <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '8px' }}>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--violet)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ filter: 'drop-shadow(0 4px 12px rgba(124,58,237,0.4))' }}>
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          <h1 style={{ fontSize: '2.8rem', margin: 0, color: 'var(--violet)', fontWeight: 900 }}>
+            Friend Battle
+          </h1>
+        </motion.div>
         <p style={{ color: 'var(--muted)', marginBottom: 40, fontSize: '1.1rem' }}>Compete in real-time with a friend</p>
         <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
           {/* Create Room */}
           <motion.div whileHover={{ y: -4 }} style={{ padding: 40, width: 300, background: 'var(--card-bg)', border: '2px solid var(--violet)', borderRadius: 20, boxShadow: '0 8px 32px rgba(124,58,237,0.15)' }}>
-            <div style={{ fontSize: '2.5rem', marginBottom: 12 }}>🏟️</div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(124, 58, 237, 0.1)', color: 'var(--violet)', marginBottom: '16px' }}>
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <line x1="12" y1="8" x2="12" y2="16" />
+                <line x1="8" y1="12" x2="16" y2="12" />
+              </svg>
+            </div>
             <h2 style={{ margin: '0 0 8px', color: 'var(--violet)' }}>Create Room</h2>
             <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 24px' }}>Generate a code and invite a friend to battle.</p>
             <button className="btn-primary" onClick={createMatch} disabled={matchStatus !== 'lobby'} style={{ width: '100%', padding: 14, borderRadius: 12, fontSize: '1rem', fontWeight: 700 }}>
@@ -561,7 +575,11 @@ const FriendBattlePage = ({ navigate }) => {
 
           {/* Join Room */}
           <motion.div whileHover={{ y: -4 }} style={{ padding: 40, width: 300, background: 'var(--card-bg)', border: '2px solid var(--border)', borderRadius: 20 }}>
-            <div style={{ fontSize: '2.5rem', marginBottom: 12 }}>🔑</div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(245, 158, 11, 0.1)', color: '#f59e0b', marginBottom: '16px' }}>
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" />
+              </svg>
+            </div>
             <h2 style={{ margin: '0 0 8px' }}>Join Room</h2>
             <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 16px' }}>Enter the 5-character code from your friend.</p>
             <input
@@ -743,9 +761,18 @@ const FriendBattlePage = ({ navigate }) => {
   if (matchStatus === 'countdown') {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg)', color: 'var(--text)', textAlign: 'center' }}>
-        <motion.h1 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 200 }} style={{ fontSize: '8rem', lineHeight: 1, color: 'var(--violet)' }}>
-          ⚔️
-        </motion.h1>
+        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 200 }} style={{ marginBottom: '16px' }}>
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="var(--violet)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ filter: 'drop-shadow(0 10px 25px rgba(124,58,237,0.5))' }}>
+            <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
+            <line x1="13" y1="19" x2="19" y2="13" />
+            <line x1="16" y1="16" x2="20" y2="20" />
+            <line x1="19" y1="21" x2="21" y2="19" />
+            <polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5" />
+            <line x1="5" y1="14" x2="9" y2="18" />
+            <line x1="7" y1="17" x2="4" y2="20" />
+            <line x1="3" y1="19" x2="5" y2="21" />
+          </svg>
+        </motion.div>
         <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ fontSize: '2.5rem', marginTop: 16 }}>
           Battle Starting...
         </motion.h2>
