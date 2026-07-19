@@ -797,10 +797,15 @@ const FriendBattlePage = ({ navigate }) => {
   if (matchStatus === 'completed' && results) {
     const { me, them, didWin, isDraw, totalQuestions } = results;
     const outcomeColor = isDraw ? '#f59e0b' : didWin ? '#10b981' : '#ef4444';
+    const outcomeGlow = isDraw ? 'rgba(245, 158, 11, 0.4)' : didWin ? 'rgba(16, 185, 129, 0.4)' : 'rgba(239, 68, 68, 0.4)';
     const outcomeLabel = isDraw ? 'DRAW' : didWin ? 'VICTORY!' : 'DEFEAT';
     const outcomeEmoji = didWin ? (
-      <img src="/trophy.png" alt="Victory Trophy" style={{ width: 140, height: 140, objectFit: 'contain', filter: 'drop-shadow(0 10px 20px rgba(16, 185, 129, 0.3))' }} />
-    ) : isDraw ? '🤝' : '💀';
+      <img src="/trophy.png" alt="Victory Trophy" style={{ width: 160, height: 160, objectFit: 'contain', filter: `drop-shadow(0 0 30px ${outcomeColor})` }} />
+    ) : isDraw ? (
+      <div style={{ fontSize: '7rem', filter: `drop-shadow(0 0 30px ${outcomeColor})` }}>🤝</div>
+    ) : (
+      <div style={{ fontSize: '7rem', filter: `drop-shadow(0 0 30px ${outcomeColor})` }}>💀</div>
+    );
     const outcomeMsg = isDraw
       ? 'Both players are equally matched — incredible!'
       : didWin
@@ -810,8 +815,8 @@ const FriendBattlePage = ({ navigate }) => {
     return (
       <div style={{
         minHeight: '100vh',
-        background: 'var(--bg)',
-        color: 'var(--text)',
+        background: 'radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%)',
+        color: '#fff',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -823,18 +828,22 @@ const FriendBattlePage = ({ navigate }) => {
         {/* Confetti on Win */}
         {didWin && <Confetti />}
 
-        {/* Background accent glow */}
-        <div style={{
-          position: 'fixed', top: 0, left: 0, right: 0, height: 6,
-          background: `linear-gradient(90deg, transparent, ${outcomeColor}, transparent)`,
-          zIndex: 20,
-        }} />
+        {/* Dynamic Background Glow */}
+        <motion.div
+          animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
+          transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
+          style={{
+            position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)',
+            width: '60vw', height: '60vw', background: `radial-gradient(circle, ${outcomeGlow} 0%, transparent 70%)`,
+            zIndex: 1, pointerEvents: 'none', filter: 'blur(60px)'
+          }}
+        />
 
         <motion.div
-          initial={{ scale: 0.9, opacity: 0, y: 30 }}
+          initial={{ scale: 0.9, opacity: 0, y: 50 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
-          transition={{ type: 'spring', stiffness: 120, damping: 15 }}
-          style={{ width: '100%', maxWidth: 680, position: 'relative', zIndex: 10 }}
+          transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+          style={{ width: '100%', maxWidth: 720, position: 'relative', zIndex: 10 }}
         >
           {/* ── Outcome Banner ─────────────────────────────────── */}
           <motion.div
@@ -842,219 +851,216 @@ const FriendBattlePage = ({ navigate }) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1, type: 'spring', stiffness: 180 }}
             style={{
-              background: 'var(--card-bg)',
-              borderRadius: 24,
-              padding: '32px 24px 28px',
               textAlign: 'center',
-              marginBottom: 16,
-              border: `2px solid ${outcomeColor}55`,
-              boxShadow: `0 12px 40px ${outcomeColor}22`,
+              marginBottom: 32,
             }}
           >
             <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: 'spring', stiffness: 300, delay: 0.2 }}
-              style={{ fontSize: '4rem', lineHeight: 1, marginBottom: 10 }}
+              initial={{ scale: 0, rotate: -20 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={{ type: 'spring', stiffness: 200, delay: 0.3 }}
+              style={{ display: 'inline-block', marginBottom: 16 }}
             >
-              {outcomeEmoji}
+              <motion.div animate={{ y: [-10, 10, -10] }} transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}>
+                {outcomeEmoji}
+              </motion.div>
             </motion.div>
             <h1 style={{
-              margin: '0 0 8px', fontSize: '2.6rem', fontWeight: 900,
-              letterSpacing: '3px', color: outcomeColor,
+              margin: '0 0 12px', fontSize: '4rem', fontWeight: 900,
+              letterSpacing: '6px', color: outcomeColor,
+              textTransform: 'uppercase', textShadow: `0 0 20px ${outcomeGlow}, 0 0 40px ${outcomeGlow}`
             }}>
               {outcomeLabel}
             </h1>
-            <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--muted)' }}>{outcomeMsg}</p>
+            <p style={{ margin: 0, fontSize: '1.2rem', color: 'rgba(255,255,255,0.7)', fontWeight: 500, letterSpacing: '1px' }}>{outcomeMsg}</p>
           </motion.div>
 
           {/* ── Score Duel ────────────────────────────────────── */}
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.4, type: 'spring' }}
             style={{
-              background: 'var(--card-bg)',
-              border: '1px solid var(--border)',
-              borderRadius: 20,
-              padding: '24px 20px',
-              marginBottom: 14,
+              background: 'rgba(15, 15, 26, 0.6)',
+              backdropFilter: 'blur(20px)',
+              border: `1px solid rgba(255, 255, 255, 0.1)`,
+              borderRadius: 24,
+              padding: '32px 24px',
+              marginBottom: 24,
+              boxShadow: '0 20px 40px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)'
             }}
           >
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center', gap: 12 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               {/* Me */}
-              <div style={{ textAlign: 'center' }}>
-                {me.avatar ? (
-                  <img src={me.avatar} alt="you" style={{ width: 60, height: 60, borderRadius: '50%', border: `3px solid ${outcomeColor}`, objectFit: 'cover', marginBottom: 8 }} />
-                ) : (
-                  <div style={{ width: 60, height: 60, borderRadius: '50%', background: 'var(--violet)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', margin: '0 auto 8px', border: `3px solid ${outcomeColor}`, color: '#fff', fontWeight: 800 }}>
-                    {(me.username || 'Y')[0].toUpperCase()}
-                  </div>
-                )}
-                <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+              <div style={{ flex: 1, textAlign: 'center' }}>
+                <div style={{ position: 'relative', display: 'inline-block', marginBottom: 16 }}>
+                  {me.avatar ? (
+                    <img src={me.avatar} alt="you" style={{ width: 80, height: 80, borderRadius: '50%', border: `4px solid ${didWin ? '#10b981' : 'rgba(255,255,255,0.2)'}`, objectFit: 'cover', boxShadow: didWin ? `0 0 20px ${outcomeGlow}` : 'none' }} />
+                  ) : (
+                    <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'var(--violet)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', border: `4px solid ${didWin ? '#10b981' : 'rgba(255,255,255,0.2)'}`, color: '#fff', fontWeight: 800, boxShadow: didWin ? `0 0 20px ${outcomeGlow}` : 'none' }}>
+                      {(me.username || 'Y')[0].toUpperCase()}
+                    </div>
+                  )}
+                  {didWin && <div style={{ position: 'absolute', bottom: -10, left: '50%', transform: 'translateX(-50%)', background: '#10b981', color: '#fff', fontSize: '0.7rem', fontWeight: 900, padding: '4px 12px', borderRadius: 12, letterSpacing: '1px', boxShadow: '0 4px 10px rgba(16,185,129,0.5)' }}>WINNER</div>}
+                </div>
+                <div style={{ fontSize: '1.1rem', color: '#fff', marginBottom: 8, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>
                   {me.username}
                 </div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', delay: 0.5 }}
-                  style={{ fontSize: '3.5rem', fontWeight: 900, color: parseFloat(me.score) >= 0 ? '#10b981' : '#ef4444', lineHeight: 1 }}
-                >
+                <div style={{ fontSize: '4.5rem', fontWeight: 900, color: didWin ? '#10b981' : '#fff', lineHeight: 1, textShadow: didWin ? `0 0 20px ${outcomeGlow}` : 'none' }}>
                   {me.score}
-                </motion.div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: 4 }}>⏱ {formatTime(me.timeTaken)}</div>
-                {didWin && <div style={{ marginTop: 6, fontSize: '0.75rem', background: '#10b98122', color: '#10b981', border: '1px solid #10b98144', borderRadius: 20, padding: '2px 10px', display: 'inline-block', fontWeight: 700 }}>WINNER 🏆</div>}
+                </div>
+                <div style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.5)', marginTop: 8, fontWeight: 600 }}>⏱ {formatTime(me.timeTaken)}</div>
               </div>
 
               {/* VS */}
-              <div style={{ textAlign: 'center', padding: '0 8px' }}>
-                <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--muted)', letterSpacing: '2px', padding: '8px 12px', border: '1px solid var(--border)', borderRadius: 8 }}>VS</div>
+              <div style={{ padding: '0 20px' }}>
+                <div style={{ fontSize: '2rem', fontWeight: 900, color: 'rgba(255,255,255,0.2)', fontStyle: 'italic', textShadow: '0 4px 10px rgba(0,0,0,0.5)' }}>VS</div>
               </div>
 
               {/* Them */}
-              <div style={{ textAlign: 'center' }}>
-                {them.avatar ? (
-                  <img src={them.avatar} alt="opponent" style={{ width: 60, height: 60, borderRadius: '50%', border: '3px solid rgba(255,255,255,0.2)', objectFit: 'cover', marginBottom: 8 }} />
-                ) : (
-                  <div style={{ width: 60, height: 60, borderRadius: '50%', background: 'rgba(255,255,255,0.1)', border: '3px solid rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', margin: '0 auto 8px', color: '#fff' }}>
-                    {(them.username || 'O')[0].toUpperCase()}
-                  </div>
-                )}
-                <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+              <div style={{ flex: 1, textAlign: 'center' }}>
+                <div style={{ position: 'relative', display: 'inline-block', marginBottom: 16 }}>
+                  {them.avatar ? (
+                    <img src={them.avatar} alt="opponent" style={{ width: 80, height: 80, borderRadius: '50%', border: `4px solid ${!didWin && !isDraw ? '#10b981' : 'rgba(255,255,255,0.2)'}`, objectFit: 'cover', boxShadow: !didWin && !isDraw ? '0 0 20px rgba(16,185,129,0.4)' : 'none' }} />
+                  ) : (
+                    <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'rgba(255,255,255,0.1)', border: `4px solid ${!didWin && !isDraw ? '#10b981' : 'rgba(255,255,255,0.2)'}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', color: '#fff', fontWeight: 800, boxShadow: !didWin && !isDraw ? '0 0 20px rgba(16,185,129,0.4)' : 'none' }}>
+                      {(them.username || 'O')[0].toUpperCase()}
+                    </div>
+                  )}
+                  {!didWin && !isDraw && <div style={{ position: 'absolute', bottom: -10, left: '50%', transform: 'translateX(-50%)', background: '#10b981', color: '#fff', fontSize: '0.7rem', fontWeight: 900, padding: '4px 12px', borderRadius: 12, letterSpacing: '1px', boxShadow: '0 4px 10px rgba(16,185,129,0.5)' }}>WINNER</div>}
+                </div>
+                <div style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.7)', marginBottom: 8, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>
                   {them.username}
                 </div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', delay: 0.6 }}
-                  style={{ fontSize: '3.5rem', fontWeight: 900, color: them.score === '—' ? 'rgba(255,255,255,0.3)' : (parseFloat(them.score) >= 0 ? '#10b981' : '#ef4444'), lineHeight: 1 }}
-                >
+                <div style={{ fontSize: '4.5rem', fontWeight: 900, color: them.score === '—' ? 'rgba(255,255,255,0.2)' : (!didWin && !isDraw ? '#10b981' : '#fff'), lineHeight: 1, textShadow: !didWin && !isDraw ? '0 0 20px rgba(16,185,129,0.4)' : 'none' }}>
                   {them.score}
-                </motion.div>
-                <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)', marginTop: 4 }}>
+                </div>
+                <div style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.5)', marginTop: 8, fontWeight: 600 }}>
                   ⏱ {them.timeTaken ? formatTime(them.timeTaken) : '—:—'}
                 </div>
-                {!didWin && !isDraw && <div style={{ marginTop: 6, fontSize: '0.75rem', background: '#10b98122', color: '#10b981', border: '1px solid #10b98144', borderRadius: 20, padding: '2px 10px', display: 'inline-block', fontWeight: 700 }}>WINNER 🏆</div>}
               </div>
             </div>
           </motion.div>
 
           {/* ── Detailed Stats ────────────────────────────────── */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 20 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 32 }}
+          >
             {/* My Stats */}
-            <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 16, padding: '16px' }}>
-              <div style={{ fontSize: '0.8rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 12, textAlign: 'center', fontWeight: 700 }}>Your Stats</div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
+            <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 20, padding: '20px' }}>
+              <div style={{ fontSize: '0.85rem', color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 16, textAlign: 'center', fontWeight: 800 }}>Your Combat Stats</div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 }}>
                 {[
                   { label: 'Correct', value: `${me.correct}/${totalQuestions}`, color: '#10b981' },
                   { label: 'Wrong', value: me.wrong, color: '#ef4444' },
                   { label: 'Skipped', value: me.skipped, color: '#f59e0b' },
-                  { label: 'Accuracy', value: `${me.accuracy}%`, color: 'var(--violet)' },
+                  { label: 'Accuracy', value: `${me.accuracy}%`, color: '#a78bfa' },
                 ].map(({ label, value, color }) => (
-                  <div key={label} style={{ background: 'var(--bg)', borderRadius: 10, padding: '10px', textAlign: 'center' }}>
-                    <div style={{ fontSize: '1.4rem', fontWeight: 800, color }}>{value}</div>
-                    <div style={{ fontSize: '0.65rem', color: 'var(--muted)', marginTop: 2, textTransform: 'uppercase', fontWeight: 600 }}>{label}</div>
+                  <div key={label} style={{ background: 'rgba(0,0,0,0.2)', borderRadius: 12, padding: '12px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.05)' }}>
+                    <div style={{ fontSize: '1.5rem', fontWeight: 900, color, textShadow: `0 2px 10px ${color}40` }}>{value}</div>
+                    <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginTop: 4, textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>{label}</div>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Their Stats */}
-            <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 16, padding: '16px' }}>
-              <div style={{ fontSize: '0.8rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 12, textAlign: 'center', fontWeight: 700 }}>{them.username}'s Stats</div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
+            <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 20, padding: '20px' }}>
+              <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 16, textAlign: 'center', fontWeight: 800 }}>{them.username}'s Stats</div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 }}>
                 {[
                   { label: 'Correct', value: them.correct !== '—' ? `${them.correct}/${totalQuestions}` : '—', color: '#10b981' },
                   { label: 'Wrong', value: them.wrong, color: '#ef4444' },
                   { label: 'Skipped', value: them.skipped, color: '#f59e0b' },
-                  { label: 'Accuracy', value: them.accuracy !== '—' ? `${them.accuracy}%` : '—', color: 'var(--violet)' },
+                  { label: 'Accuracy', value: them.accuracy !== '—' ? `${them.accuracy}%` : '—', color: 'rgba(255,255,255,0.7)' },
                 ].map(({ label, value, color }) => (
-                  <div key={label} style={{ background: 'var(--bg)', borderRadius: 10, padding: '10px', textAlign: 'center' }}>
-                    <div style={{ fontSize: '1.4rem', fontWeight: 800, color }}>{value}</div>
-                    <div style={{ fontSize: '0.65rem', color: 'var(--muted)', marginTop: 2, textTransform: 'uppercase', fontWeight: 600 }}>{label}</div>
+                  <div key={label} style={{ background: 'rgba(0,0,0,0.2)', borderRadius: 12, padding: '12px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.05)' }}>
+                    <div style={{ fontSize: '1.5rem', fontWeight: 900, color: value === '—' ? 'rgba(255,255,255,0.2)' : color, textShadow: value === '—' ? 'none' : `0 2px 10px ${color}40` }}>{value}</div>
+                    <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', marginTop: 4, textTransform: 'uppercase', fontWeight: 700, letterSpacing: '1px' }}>{label}</div>
                   </div>
                 ))}
               </div>
             </div>
-          </div>
-
-          {/* ── Score formula note ────────────────────────────── */}
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
-            style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', borderRadius: 12, padding: '12px 20px', marginBottom: 20, fontSize: '0.82rem', color: 'var(--muted)', textAlign: 'center' }}
-          >
-            <span style={{ color: '#10b981', fontWeight: 600 }}>+1</span> correct &nbsp;·&nbsp;
-            <span style={{ color: '#ef4444', fontWeight: 600 }}>−0.25</span> wrong &nbsp;·&nbsp;
-            <span style={{ color: '#f59e0b', fontWeight: 600 }}>0</span> skipped &nbsp;&nbsp;|&nbsp;&nbsp;
-            Your time: <strong style={{ color: 'var(--text)' }}>{formatTime(me.timeTaken)}</strong>
           </motion.div>
 
           {/* ── Rematch Banner ───────────────────────────────── */}
-          {rematchCountdown > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              style={{
-                background: 'linear-gradient(135deg, rgba(124,58,237,0.12), rgba(16,185,129,0.12))',
-                border: '2px solid rgba(124,58,237,0.3)',
-                borderRadius: 16,
-                padding: '18px 24px',
-                marginBottom: 20,
-                textAlign: 'center',
-              }}
-            >
-              <div style={{ fontSize: '0.8rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8, fontWeight: 700 }}>
-                {opponentRematchRequested ? '🕹️ Opponent wants a Rematch!' : '⚔️ Rematch Available'}
-              </div>
-              {rematchRequested ? (
-                <div style={{ color: 'var(--violet)', fontWeight: 700 }}>
-                  {opponentRematchRequested ? '🚀 Starting rematch...' : `Waiting for opponent... (${rematchCountdown}s)`}
+          <AnimatePresence>
+            {rematchCountdown > 0 && (
+              <motion.div
+                initial={{ opacity: 0, height: 0, scale: 0.9 }}
+                animate={{ opacity: 1, height: 'auto', scale: 1 }}
+                exit={{ opacity: 0, height: 0, scale: 0.9 }}
+                style={{
+                  background: 'rgba(124,58,237,0.15)',
+                  border: '1px solid rgba(124,58,237,0.4)',
+                  borderRadius: 20,
+                  padding: '24px',
+                  marginBottom: 32,
+                  textAlign: 'center',
+                  boxShadow: '0 10px 30px rgba(124,58,237,0.2)'
+                }}
+              >
+                <div style={{ fontSize: '0.9rem', color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 12, fontWeight: 800 }}>
+                  {opponentRematchRequested ? '🔥 CHALLENGER REQUESTS A REMATCH!' : '⚔️ READY FOR ROUND 2?'}
                 </div>
-              ) : (
-                <motion.button
-                  whileHover={{ scale: 1.04 }}
-                  whileTap={{ scale: 0.97 }}
-                  onClick={() => {
-                    setRematchRequested(true);
-                    if (channel) {
-                      channel.send({ type: 'broadcast', event: 'rematch_request', payload: { matchId, userId: user.id } });
-                    }
-                  }}
-                  style={{
-                    padding: '12px 32px', borderRadius: 12, fontSize: '1rem', fontWeight: 800,
-                    background: 'linear-gradient(135deg, var(--violet), #10b981)',
-                    color: '#fff', border: 'none', cursor: 'pointer',
-                    boxShadow: '0 4px 20px rgba(124,58,237,0.35)',
-                  }}
-                >
-                  🔁 Rematch! ({rematchCountdown}s)
-                </motion.button>
-              )}
-            </motion.div>
-          )}
+                {rematchRequested ? (
+                  <div style={{ color: '#fff', fontWeight: 800, fontSize: '1.2rem', textShadow: '0 2px 10px rgba(255,255,255,0.3)' }}>
+                    {opponentRematchRequested ? '🚀 PREPARE FOR BATTLE...' : `WAITING FOR OPPONENT... ${rematchCountdown}s`}
+                  </div>
+                ) : (
+                  <motion.button
+                    whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(124,58,237,0.6)' }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => {
+                      setRematchRequested(true);
+                      if (channel) {
+                        channel.send({ type: 'broadcast', event: 'rematch_request', payload: { matchId, userId: user.id } });
+                      }
+                    }}
+                    style={{
+                      padding: '16px 48px', borderRadius: 16, fontSize: '1.2rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '2px',
+                      background: 'linear-gradient(135deg, #7c3aed, #f43f5e)',
+                      color: '#fff', border: 'none', cursor: 'pointer',
+                      boxShadow: '0 10px 20px rgba(124,58,237,0.4)',
+                    }}
+                  >
+                    ACCEPT REMATCH ({rematchCountdown})
+                  </motion.button>
+                )}
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           {/* ── Action Buttons ────────────────────────────────── */}
-          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }}
-            style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }}
+            style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}
           >
-            <button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setMatchStatus('lobby')}
               style={{
-                padding: '13px 28px', fontSize: '0.95rem', fontWeight: 700, borderRadius: 12,
-                background: 'var(--card-bg)', color: 'var(--text)', border: '1px solid var(--border)',
-                cursor: 'pointer', transition: 'all 0.2s',
+                padding: '14px 32px', fontSize: '1rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px', borderRadius: 14,
+                background: 'rgba(255,255,255,0.05)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)',
+                cursor: 'pointer', backdropFilter: 'blur(10px)',
               }}
-              onMouseOver={e => e.currentTarget.style.borderColor = 'var(--violet)'}
-              onMouseOut={e => e.currentTarget.style.borderColor = 'var(--border)'}
             >
-              🔄 Play Again
-            </button>
-            <button
+              LOBBY
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05, background: 'rgba(255,255,255,1)' }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => navigate('')}
-              className="btn-primary"
-              style={{ padding: '13px 28px', fontSize: '0.95rem', fontWeight: 700, borderRadius: 12, cursor: 'pointer' }}
+              style={{
+                padding: '14px 32px', fontSize: '1rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '1px', borderRadius: 14,
+                background: 'rgba(255,255,255,0.9)', color: '#0f0f1a', border: 'none', cursor: 'pointer'
+              }}
             >
-              🏠 Return Home
-            </button>
+              HOME
+            </motion.button>
           </motion.div>
         </motion.div>
       </div>
