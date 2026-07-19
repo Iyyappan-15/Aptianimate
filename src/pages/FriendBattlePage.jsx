@@ -848,6 +848,9 @@ const FriendBattlePage = ({ navigate }) => {
             marginBottom: 32,
             paddingBottom: 28,
             borderBottom: '1px solid var(--border)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}>
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
@@ -1116,7 +1119,18 @@ const FriendBattlePage = ({ navigate }) => {
       {/* Question Area */}
       <main style={{ flex: 1, overflowY: 'auto', padding: '28px 24px' }}>
         <div style={{ maxWidth: 760, margin: '0 auto' }}>
-          {currentQ ? (
+          {/* If player finished all questions, show a waiting spinner (not "Loading") */}
+          {isFinished || !currentQ ? (
+            <div style={{ textAlign: 'center', marginTop: 80, color: 'var(--muted)' }}>
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ repeat: Infinity, duration: 1, ease: 'linear' }}
+                style={{ width: 48, height: 48, border: '4px solid var(--border)', borderTop: '4px solid var(--violet)', borderRadius: '50%', margin: '0 auto 20px' }}
+              />
+              <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text)', marginBottom: 6 }}>Waiting for opponent...</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>You’ve answered all questions. Hang tight!</div>
+            </div>
+          ) : (
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -1175,11 +1189,6 @@ const FriendBattlePage = ({ navigate }) => {
                 </div>
               </motion.div>
             </AnimatePresence>
-          ) : (
-            <div style={{ textAlign: 'center', marginTop: 80, color: 'var(--muted)' }}>
-              <div style={{ fontSize: '2rem', marginBottom: 12 }}>⏳</div>
-              Loading questions...
-            </div>
           )}
         </div>
       </main>
