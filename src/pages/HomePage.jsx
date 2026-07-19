@@ -11,7 +11,11 @@ import VisualExplanationDemo from '../components/VisualExplanationDemo';
 import MockTestsView from '../components/MockTestsView';
 
 export default function HomePage({ navigate }) {
-  const [goal, setLocalGoal] = useState(getGoal());
+  const [goal, setLocalGoal] = useState(() => {
+    const saved = getGoal();
+    // Default to 'Campus Placements' for first-time visitors
+    return saved || 'Campus Placements';
+  });
   const [lastSession, setLocalLastSession] = useState(null);
   const [stats, setLocalStats] = useState(null);
   

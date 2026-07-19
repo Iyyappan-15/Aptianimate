@@ -94,7 +94,11 @@ function App() {
   }, []);
 
   const navigate = (path) => {
-    window.location.hash = `/${path}`;
+    if (path === -1) {
+      window.history.back();
+    } else {
+      window.location.hash = `/${path}`;
+    }
   };
 
   const handleSplashComplete = useCallback(() => {
