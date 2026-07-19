@@ -165,7 +165,7 @@ const handleTokenExchange = async (idToken, nonce, setLoadingState, resolve, rej
     console.error("Token Exchange Failed:", err);
     logAuthEvent('Token Exchange Failed', { error: err.message });
     setLoadingState(null);
-    reject(new Error("Failed to create session with Supabase."));
+    reject(new Error(`Supabase Error: ${err.message}`));
   }
 };
 

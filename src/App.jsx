@@ -244,8 +244,8 @@ function App() {
                             try {
                               await signInWithGoogle(setLoginMessage);
                             } catch (e) {
-                              // If it fails, reset message
                               setLoginMessage(null);
+                              alert("Login Failed: " + e.message);
                             }
                           }}
                         >
