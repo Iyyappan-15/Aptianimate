@@ -1,5 +1,15 @@
 import { supabase } from '../lib/supabase';
 
+// SHA-256 hash a string using the browser's built-in Web Crypto API
+const sha256 = async (plain) => {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(plain);
+  const hash = await crypto.subtle.digest('SHA-256', data);
+  return Array.from(new Uint8Array(hash))
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('');
+};
+
 // Load the Google Identity Services script dynamically
 const loadGoogleScript = () => {
   return new Promise((resolve) => {
@@ -53,14 +63,19 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
   // Ensure GIS is loaded (needed for One Tap fallback)
   await loadGoogleScript();
 
-  return new Promise((resolve, reject) => {
+  // SHA-256 hash the nonce BEFORE sending it to Google.
+  // Google embeds SHA256(rawNonce) in the token. Supabase receives rawNonce,
+  // hashes it internally, and the two hashes will match correctly.
+
+  return new Promise(async (resolve, reject) => {
     
     // 1. ATTEMPT POPUP LOGIN FIRST
     const redirectUri = window.location.origin; // We will handle the callback on the homepage
-    // Create a plain nonce
+    // rawNonce → passed to Supabase. hashedNonce → embedded in Google OAuth URL.
     const rawNonce = Math.random().toString(36).substring(2) + Date.now().toString(36);
+    const hashedNonce = await sha256(rawNonce);
     
-    const oauthUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=id_token&scope=email%20profile&nonce=${rawNonce}&prompt=select_account`;
+    const oauthUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=id_token&scope=email%20profile&nonce=${hashedNonce}&prompt=select_account`;
 
     const popup = openCenteredPopup(oauthUrl, 'Google Login', 500, 600);
 
