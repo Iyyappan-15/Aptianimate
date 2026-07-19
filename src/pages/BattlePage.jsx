@@ -215,18 +215,24 @@ const BattlePage = ({ navigate }) => {
 
       // 2. No match found, act as host and create a waiting match
       // We must use the database RPC to generate valid UUIDs for questions
-      const matchConfig = testConfigs.friendBattle || { 
+      const baseConfig = testConfigs.friendBattle || { 
         categories: {'Quantitative Aptitude': 2, 'Logical Reasoning': 2, 'Verbal Ability': 1}, 
         difficulty: {easy: 60, medium: 40} 
       };
       
+      const selected = getRandomQuestions(baseConfig);
+      const matchConfig = { ...baseConfig, selected_ids: selected.map(q => q.id) };
+      
       const { data: createData, error: createError } = await supabase.rpc('create_friendly_match', { p_config: matchConfig });
       if (createError) throw createError;
 
-      // Update the match status to global
+      // Update the match status to global and save question_ids directly if the RPC doesn't map it automatically
       const { error: updateError } = await supabase
         .from('friendly_matches')
-        .update({ status: 'waiting_global' })
+        .update({ 
+           status: 'waiting_global',
+           question_ids: matchConfig.selected_ids
+        })
         .eq('id', createData.match_id);
         
       if (updateError) throw updateError;
