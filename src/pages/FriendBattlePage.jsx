@@ -806,13 +806,12 @@ const FriendBattlePage = ({ navigate }) => {
 
     const outcomeIcon = didWin ? (
       <img src="/trophy.png" alt="Victory Trophy" style={{ 
-        width: 320, 
-        height: 320, 
-        objectFit: 'cover', 
-        margin: '-50px 0 -50px 0', 
+        width: 240, 
+        height: 240, 
+        objectFit: 'contain',
         display: 'block',
-        WebkitMaskImage: 'radial-gradient(circle, black 50%, transparent 70%)',
-        maskImage: 'radial-gradient(circle, black 50%, transparent 70%)'
+        margin: '0 auto',
+        filter: 'drop-shadow(0 12px 32px rgba(16, 185, 129, 0.3))'
       }} />
     ) : isDraw ? (
       <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke={outcomeColor} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">

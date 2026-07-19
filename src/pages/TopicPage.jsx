@@ -909,13 +909,12 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                     src="/trophy.png"
                     alt="Achievement Trophy"
                     style={{
-                      width: "78%",
-                      height: "78%",
+                      width: "85%",
+                      height: "85%",
                       objectFit: "contain",
                       position: "relative",
                       zIndex: 1,
-                      filter: "drop-shadow(0 8px 24px rgba(" + glowRgba + ",.4)) drop-shadow(0 2px 6px rgba(0,0,0,.12))",
-                      mixBlendMode: "multiply",
+                      filter: "drop-shadow(0 8px 24px rgba(" + glowRgba + ",.4)) drop-shadow(0 2px 6px rgba(0,0,0,.12))"
                     }}
                   />
                 </div>
