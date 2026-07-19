@@ -226,13 +226,10 @@ const BattlePage = ({ navigate }) => {
       const { data: createData, error: createError } = await supabase.rpc('create_friendly_match', { p_config: matchConfig });
       if (createError) throw createError;
 
-      // Update the match status to global and save question_ids directly if the RPC doesn't map it automatically
+      // Update the match status to global
       const { error: updateError } = await supabase
         .from('friendly_matches')
-        .update({ 
-           status: 'waiting_global',
-           question_ids: matchConfig.selected_ids
-        })
+        .update({ status: 'waiting_global' })
         .eq('id', createData.match_id);
         
       if (updateError) throw updateError;
