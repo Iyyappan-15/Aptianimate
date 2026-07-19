@@ -124,7 +124,7 @@ const SkeletonHeatmap = () => (
     {Array.from({ length: 52 }).map((_, wi) => (
       <div key={wi} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
         {Array.from({ length: 7 }).map((_, di) => (
-          <div key={di} style={{ width: 15, height: 15, borderRadius: 3, background: 'linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.4s infinite' }} />
+          <div key={di} style={{ width: 15, height: 15, borderRadius: 3, boxSizing: 'border-box', border: '1px solid var(--border)', background: 'linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%)', backgroundSize: '200% 100%', animation: 'shimmer 1.4s infinite' }} />
         ))}
       </div>
     ))}
@@ -149,6 +149,7 @@ export default function ActivityHeatmap() {
 
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
   const colors = isDark ? LEVEL_COLORS_DARK : LEVEL_COLORS;
+  const cellBorder = isDark ? '1px solid rgba(255, 255, 255, 0.04)' : '1px solid rgba(0, 0, 0, 0.08)';
 
   const { weeks, monthLabels } = useMemo(() => {
     if (!data) return { weeks: [], monthLabels: [] };
@@ -258,6 +259,8 @@ export default function ActivityHeatmap() {
                       width: 15,
                       height: 15,
                       borderRadius: 3,
+                      boxSizing: 'border-box',
+                      border: cell.inRange ? cellBorder : 'none',
                       background: cell.inRange ? colors[cell.level] : 'transparent',
                       cursor: cell.inRange && cell.data ? 'pointer' : 'default',
                       transition: 'transform 0.1s',
@@ -281,7 +284,7 @@ export default function ActivityHeatmap() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 16, justifyContent: 'flex-end' }}>
         <span style={{ fontSize: '0.75rem', color: 'var(--muted2)' }}>Less</span>
         {[0, 1, 2, 3, 4].map(l => (
-          <div key={l} style={{ width: 15, height: 15, borderRadius: 3, background: colors[l] }} />
+          <div key={l} style={{ width: 15, height: 15, borderRadius: 3, boxSizing: 'border-box', border: cellBorder, background: colors[l] }} />
         ))}
         <span style={{ fontSize: '0.75rem', color: 'var(--muted2)' }}>More</span>
       </div>
