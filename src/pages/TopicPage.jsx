@@ -906,7 +906,7 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                     }} />
                   ))}
                   <img
-                    src="/trophy.png?v=4"
+                    src="/trophy.png?v=5"
                     alt="Achievement Trophy"
                     style={{
                       width: "85%",

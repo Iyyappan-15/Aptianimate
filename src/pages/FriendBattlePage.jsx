@@ -806,7 +806,7 @@ const FriendBattlePage = ({ navigate }) => {
 
     const outcomeIcon = didWin ? (
       <img
-        src="/trophy.png?v=4"
+        src="/trophy.png?v=5"
         alt="Victory Trophy"
         style={{
           width: 280,
