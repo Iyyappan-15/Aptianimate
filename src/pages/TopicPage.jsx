@@ -906,15 +906,14 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                     }} />
                   ))}
                   <img
-                    src="/trophy.png?v=3"
+                    src="/trophy.png?v=4"
                     alt="Achievement Trophy"
                     style={{
                       width: "85%",
                       height: "85%",
                       objectFit: "contain",
                       position: "relative",
-                      zIndex: 1,
-                      filter: "drop-shadow(0 8px 32px rgba(245,158,11,.5)) drop-shadow(0 2px 8px rgba(0,0,0,.25))"
+                      zIndex: 1
                     }}
                   />
                 </div>

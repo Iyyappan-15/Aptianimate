@@ -806,15 +806,14 @@ const FriendBattlePage = ({ navigate }) => {
 
     const outcomeIcon = didWin ? (
       <img
-        src="/trophy.png?v=3"
+        src="/trophy.png?v=4"
         alt="Victory Trophy"
         style={{
           width: 280,
           height: 280,
           objectFit: 'contain',
           display: 'block',
-          margin: '0 auto',
-          filter: 'drop-shadow(0 8px 32px rgba(245, 158, 11, 0.5)) drop-shadow(0 2px 8px rgba(0,0,0,0.25))'
+          margin: '0 auto'
         }}
       />
     ) : isDraw ? (
