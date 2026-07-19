@@ -57,9 +57,10 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
     
     // 1. ATTEMPT POPUP LOGIN FIRST
     const redirectUri = window.location.origin; // We will handle the callback on the homepage
-    const nonce = Math.random().toString(36).substring(2) + Date.now().toString(36);
+    // Create a plain nonce
+    const rawNonce = Math.random().toString(36).substring(2) + Date.now().toString(36);
     
-    const oauthUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=id_token&scope=email%20profile&nonce=${nonce}&prompt=select_account`;
+    const oauthUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=id_token&scope=email%20profile&nonce=${rawNonce}&prompt=select_account`;
 
     const popup = openCenteredPopup(oauthUrl, 'Google Login', 500, 600);
 
@@ -74,7 +75,7 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
         callback: async (response) => {
           if (response.credential) {
             logAuthEvent('One Tap Success');
-            await handleTokenExchange(response.credential, setLoadingState, resolve, reject);
+            await handleTokenExchange(response.credential, rawNonce, setLoadingState, resolve, reject);
           } else {
             logAuthEvent('One Tap Failed');
             setLoadingState(null);
@@ -82,7 +83,8 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
           }
         },
         auto_select: false,
-        cancel_on_tap_outside: false
+        cancel_on_tap_outside: false,
+        nonce: rawNonce
       });
 
       google.accounts.id.prompt((notification) => {
@@ -112,7 +114,7 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
         popup.close();
         
         logAuthEvent('Popup Success');
-        await handleTokenExchange(event.data.id_token, setLoadingState, resolve, reject);
+        await handleTokenExchange(event.data.id_token, rawNonce, setLoadingState, resolve, reject);
       }
       
       if (event.data && event.data.type === 'GOOGLE_AUTH_ERROR') {
@@ -143,7 +145,7 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
 /**
  * Exchanges the Google ID Token with Supabase
  */
-const handleTokenExchange = async (idToken, setLoadingState, resolve, reject) => {
+const handleTokenExchange = async (idToken, nonce, setLoadingState, resolve, reject) => {
   try {
     setLoadingState('Creating Session...');
     logAuthEvent('Token Exchange Started');
@@ -151,6 +153,7 @@ const handleTokenExchange = async (idToken, setLoadingState, resolve, reject) =>
     const { data, error } = await supabase.auth.signInWithIdToken({
       provider: 'google',
       token: idToken,
+      nonce: nonce
     });
 
     if (error) throw error;
