@@ -363,10 +363,10 @@ const FriendBattlePage = ({ navigate }) => {
     return () => clearInterval(t);
   }, [matchStatus, matchId]);
 
-  // ── Rematch: Start 10s countdown when results appear ──────────────────────
+  // ── Rematch: Start 25s countdown when results appear ──────────────────────
   useEffect(() => {
     if (matchStatus !== 'completed' || !results) return;
-    setRematchCountdown(10);
+    setRematchCountdown(25);
     const t = setInterval(() => {
       setRematchCountdown(prev => {
         if (prev <= 1) { clearInterval(t); return 0; }
@@ -805,7 +805,7 @@ const FriendBattlePage = ({ navigate }) => {
         : 'Better luck next time. Keep practising!';
 
     const outcomeIcon = didWin ? (
-      <img src="/trophy.png" alt="Victory Trophy" style={{ width: 120, height: 120, objectFit: 'contain' }} />
+      <img src="/trophy.png" alt="Victory Trophy" style={{ width: 220, height: 220, objectFit: 'contain' }} />
     ) : isDraw ? (
       <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke={outcomeColor} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M11 17a4 4 0 0 0 4-4V5H7v8a4 4 0 0 0 4 4z" />
