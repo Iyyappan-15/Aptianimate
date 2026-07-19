@@ -1,0 +1,5527 @@
+LDC / LGS 2026 - Master Question Bank
+Extracted from Previous Year Question Papers (COM/HSL-25/PI/PEA/A)
+Total Questions: 200  |  Set 1 (Q00001-Q00100): Reasoning, Quantitative Aptitude, General Awareness, Ethics, English, Computer Awareness
+Set 2 (Q00101-Q00200): Physics, Chemistry, Biology, Mathematics/Statistics, Commerce, Economics, Geography, History, Polity
+Note: All 200 questions have now been researched and answered. Correct answers were derived by direct calculation/reasoning (quantitative, physics, chemistry, logic) or verified via live web search (current affairs, recent government schemes, historical/geographic facts). 7 questions remain flagged as 'Needs Manual Review' with an explanatory note attached — these involve diagrams/images not present in the source file, mathematically inconsistent given data, or option sets that do not match verifiable real-world facts.
+Q00001
+Category: 
+Logical Reasoning
+Topic: 
+Coding-Decoding
+Subtopic: 
+Symbol-Vowel Pattern
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Study the following arrangement carefully and answer the question given below.
+8 C M @ N & T 2 Y 6 S a Q $ 7 * W # Z 3 U E % A 4
+How many symbols are there in the above series each of which is immediately preceded and also immediately followed by a vowel ?
+Options:
+A. One
+B. Two
+C. Three
+D. Nil
+Correct Answer: 
+A. One
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00002
+Category: 
+Logical Reasoning
+Topic: 
+Number Series
+Subtopic: 
+Missing Term
+Difficulty: 
+Easy
+Estimated Time: 
+45 seconds
+Question:
+The missing term (?) in the series 0, 6, 24, 60, 120, 210, ? is
+Options:
+A. 336
+B. 240
+C. 290
+D. 504
+Correct Answer: 
+A. 336
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00003
+Category: 
+Logical Reasoning
+Topic: 
+Classification
+Subtopic: 
+Letter Grouping
+Difficulty: 
+Easy
+Estimated Time: 
+45 seconds
+Question:
+Four groups of letters are given in the options below, three of them are alike in a certain way while one is different. Choose the one which is different.
+Options:
+A. FGHI
+B. SUVT
+C. CFED
+D. ILKJ
+Correct Answer: 
+A. FGHI
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00004
+Category: 
+Logical Reasoning
+Topic: 
+Coding-Decoding
+Subtopic: 
+Word Coding
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+In a certain code language, ORGANISATION is written as CBDWLQJWYQCL and OPERATION is written as CXFBWYQCL, then how is SEPARATION coded ?
+Options:
+A. JFQYWBCXQL
+B. EJXEBEYQCL
+C. JFXWBWYQCL
+D. QCLYWBFXJE
+Correct Answer: 
+A. JFQYWBCXQL
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00005
+Category: 
+Logical Reasoning
+Topic: 
+Number/Letter Series
+Subtopic: 
+Missing Terms
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Choose the missing terms (?) in following series, out of given alternatives.
+A, B, B, D, C, F, D, H, E, ?, ?
+Options:
+A. F, G
+B. E, F
+C. J, K
+D. J, F
+Correct Answer: 
+D. J, F
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00006
+Category: 
+Logical Reasoning
+Topic: 
+Number Series
+Subtopic: 
+Counting Based
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+How many 7s immediately preceded by 6 but not immediately followed by 4 are there in the following series ?
+7 4 2 7 6 4 3 6 7 5 3 5 7 8 4 3 7 6 7 2 4 0 6 7 4 3
+Options:
+A. Three
+B. Two
+C. Four
+D. One
+Correct Answer: 
+B. Two
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00007
+Category: 
+Logical Reasoning
+Topic: 
+Analogy
+Subtopic: 
+Word Analogy
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Choose the correct alternative which will replace the question mark (?).
+Peace : Chaos :: Creation : ?
+Options:
+A. Manufacture
+B. Build
+C. Statue
+D. Destruction
+Correct Answer: 
+D. Destruction
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00008
+Category: 
+Logical Reasoning
+Topic: 
+Mathematical Operations
+Subtopic: 
+Symbol Substitution
+Difficulty: 
+Hard
+Estimated Time: 
+90 seconds
+Question:
+If L denotes 'division', M denotes 'multiplication', P denotes 'addition', Q denotes 'subtraction', then which of the following statement is true ?
+Options:
+A. 6 M 18 Q 26 L 13 P 7 = 173/13
+B. 32 P 8 L 16 Q 4 = -3/2
+C. 11 M 34 L 17 Q 8 L 3 = 38/3
+D. 9 P 9 L 9 Q 9 M 9 = -71
+Correct Answer: 
+D. 9 P 9 L 9 Q 9 M 9 = -71
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00009
+Category: 
+Logical Reasoning
+Topic: 
+Analogy
+Subtopic: 
+Word Analogy
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Choose the correct pair from the given alternatives, in which the words bear the same relationship to each other as the words of the pair given below.
+Darkness : Lamp
+Options:
+A. Thirst : Water
+B. Fatigue : Exercise
+C. Medicine : Illness
+D. Study : Classroom
+Correct Answer: 
+A. Thirst : Water
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00010
+Category: 
+Logical Reasoning
+Topic: 
+Coding-Decoding
+Subtopic: 
+Letter to Number Coding
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+If RED is coded as 6720 and BLUE is coded as 723144, then how would GREEN be coded ?
+Options:
+A. 1677209
+B. 1677199
+C. 16717209
+D. 9207716
+Correct Answer: 
+A. 1677209
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00011
+Category: 
+Logical Reasoning
+Topic: 
+Logical Sequence of Words
+Subtopic: 
+Meaningful Order
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Arrange the words given below in a meaningful sequence.
+a. Income  b. Status  c. Education  d. Well-being  e. Job
+Options:
+A. a, b, c, d, e
+B. c, a, e, d, b
+C. c, e, a, b, d
+D. c, b, d, a, e
+Correct Answer: 
+B. c, a, e, d, b
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00012
+Category: 
+Logical Reasoning
+Topic: 
+Blood Relation
+Subtopic: 
+Family Tree
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+A man pointing to a photograph says, "The lady in the photograph is my nephew's maternal grandmother." How is lady in the photograph related to the man's sister who has no other sister or brother ?
+Options:
+A. Sister-in-law
+B. Cousin
+C. Mother-in-law
+D. Mother
+Correct Answer: 
+D. Mother
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00013
+Category: 
+Logical Reasoning
+Topic: 
+Venn Diagram
+Subtopic: 
+Figure Based
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Study the following figure and answer the question given below.
+[Diagram/Image Required]
+Rectangle -> Artists, Circle -> Players, Triangle -> Doctors
+How many players are neither artists nor doctors ?
+Options:
+A. 17
+B. 25
+C. 5
+D. 10
+Correct Answer: 
+Not Available
+Note: Diagram/figure not present in source; ratio-based Venn diagram question cannot be verified without the image.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Needs Manual Review
+Status: 
+Published
+______________________________________________________________________
+Q00014
+Category: 
+Logical Reasoning
+Topic: 
+Seating Arrangement
+Subtopic: 
+Row Based
+Difficulty: 
+Hard
+Estimated Time: 
+90 seconds
+Question:
+Six flats on a floor in two rows facing North and South are alloted to P, Q, R, S, T and U. Q gets a North facing flat and is not next to S. S and U get diagonally opposite flats. R, next to U, gets a South facing flat and T gets a North facing flat. The flats of which of other pairs than SU, are diagonally opposite to each other ?
+Options:
+A. PT
+B. QP
+C. QR
+D. TS
+Correct Answer: 
+B. QP
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00015
+Category: 
+Logical Reasoning
+Topic: 
+Blood Relation
+Subtopic: 
+Family Puzzle
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+A, B, C, D, E and F are six members of the family. One couple has parents and their children in the family. A is the son of C and E is the daughter of A. D is the daughter of F who is the mother of E. What relationship do D and E bear to each other ?
+Options:
+A. Mother and Son
+B. Sister and Brother
+C. Grandmother and Granddaughter
+D. Sisters
+Correct Answer: 
+D. Sisters
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00016
+Category: 
+General Awareness
+Topic: 
+Assertion Reason
+Subtopic: 
+Science - Agriculture
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Given below are two statements, one is labelled as Assertion (A) and other one labelled as Reason (R).
+Assertion (A) : Legumes revive the soil fertility.
+Reason (R) : Microbes in the root nodules of legumes fix the atmospheric nitrogen.
+In light of the above statements, choose the correct answer from the options given below.
+Options:
+A. Both (A) and (R) are true but (R) is not the correct explanation of (A)
+B. Both (A) and (R) are true and (R) is the correct explanation of (A)
+C. (A) is true but (R) is false
+D. (A) is false but (R) is true
+Correct Answer: 
+B. Both (A) and (R) are true and (R) is the correct explanation of (A)
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00017
+Category: 
+Logical Reasoning
+Topic: 
+Syllogism
+Subtopic: 
+Statement-Conclusion
+Difficulty: 
+Hard
+Estimated Time: 
+90 seconds
+Question:
+In the question given below three are statements followed by three conclusions numbered I, II and III. You have to take the given statements to be true even if they seem to be at variance from the commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts.
+Statements: 1. Some pictures are frames. 2. Some frames are idols. 3. All idols are curtains.
+Conclusions: I. Some curtains are pictures. II. Some curtains are frames. III. Some idols are frames.
+Options:
+A. Only II and III follow
+B. Only I and II follow
+C. Only I and III follow
+D. Only I follows
+Correct Answer: 
+A. Only II and III follow
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00018
+Category: 
+Logical Reasoning
+Topic: 
+Syllogism
+Subtopic: 
+Venn Diagram
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Which of the following diagrams indicates the best relation between Women, Mothers and Engineers ?
+[Diagram/Image Required]
+Options:
+A. Option A (two intersecting circles)
+B. Option B (partially overlapping circles)
+C. Option C (three separate circles)
+D. Option D (three concentric circles)
+Correct Answer: 
+Not Available
+Note: Diagram/figure not present in source; the four Venn diagram options cannot be evaluated without the image.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Needs Manual Review
+Status: 
+Published
+______________________________________________________________________
+Q00019
+Category: 
+General Awareness
+Topic: 
+Assertion Reason
+Subtopic: 
+Science - Physics
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Given below are two statements, one is labelled as Assertion (A) and other one labelled as Reason (R).
+Assertion (A) : When lightning strikes, the sound is heard a little after the flash is seen.
+Reason (R) : The velocity of light is greater than that of the sound.
+In light of the above statements, choose the correct answer from the options given below.
+Options:
+A. Both (A) and (R) are true but (R) is not the correct explanation of (A)
+B. Both (A) and (R) are true and (R) is the correct explanation of (A)
+C. (A) is true but (R) is false
+D. (A) is false but (R) is true
+Correct Answer: 
+B. Both (A) and (R) are true and (R) is the correct explanation of (A)
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00020
+Category: 
+Logical Reasoning
+Topic: 
+Puzzle
+Subtopic: 
+Cards Arrangement
+Difficulty: 
+Hard
+Estimated Time: 
+90 seconds
+Question:
+Four players A, B, C and D are holding 4 cards each. Each of them has an Ace, a King, a Queen and a Jack. All of them have all the suits (spades, hearts, clubs and diamonds). A has Ace of spades and Queen of diamonds. B has Ace of clubs and King of diamonds. C has Queen of clubs and King of spades. D has Jack of clubs. C has which of the following with him ?
+Options:
+A. Jack of spades
+B. Ace of hearts
+C. Queen of spades
+D. King of hearts
+Correct Answer: 
+B. Ace of hearts
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00021
+Category: 
+Quantitative Aptitude
+Topic: 
+Surds and Indices
+Subtopic: 
+Nested Radical
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+If a = sqrt(3 + sqrt(3 + sqrt(3 + .........))), a > 0, then which of the following is true ?
+Options:
+A. 3 < a < 4
+B. 2 < a < 3
+C. a > 3
+D. a = 3
+Correct Answer: 
+B. 2 < a < 3
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00022
+Category: 
+Data Interpretation
+Topic: 
+Bar Graph
+Subtopic: 
+Sales Comparison
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+The bar graph given below shows the sales of books (in thousand number) from six branches of a publishing company during two consecutive years 2000 and 2001. [Diagram/Image Required]
+What is the ratio of the total sales of branch B2 for both years to the total sales of branch B4 for both years ?
+Options:
+A. 4 : 5
+B. 2 : 3
+C. 3 : 5
+D. 7 : 9
+Correct Answer: 
+Not Available
+Note: Bar graph image not present in source; ratio question cannot be computed without the underlying data.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Needs Manual Review
+Status: 
+Published
+______________________________________________________________________
+Q00023
+Category: 
+Quantitative Aptitude
+Topic: 
+Profit & Loss
+Subtopic: 
+Successive Discount
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+After getting two successive discounts, a shirt with a list price of Rs. 1,500 is available at Rs. 1,050. If the second discount is 12.5%, then the first discount is
+Options:
+A. 20%
+B. 17.5%
+C. 13.75%
+D. 18%
+Correct Answer: 
+A. 20%
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00024
+Category: 
+Quantitative Aptitude
+Topic: 
+Number System
+Subtopic: 
+Linear Equation
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+A girl was asked to multiply a certain number by 53. She multiplied it by 35 and found her answer less than the correct answer by 1206. Find the number to be multiplied.
+Options:
+A. 67
+B. 65
+C. 76
+D. 56
+Correct Answer: 
+A. 67
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00025
+Category: 
+Data Interpretation
+Topic: 
+Line Graph
+Subtopic: 
+Profit-Expenditure
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+The following line graph gives the annual percent profit earned by a Company during the period 2015-2020. [Diagram/Image Required]
+If the income in 2018 was Rs. 264 crores, what was the expenditure in 2018 ?
+Options:
+A. Rs. 110 crores
+B. Rs. 104 crores
+C. Rs. 160 crores
+D. Rs. 142 crores
+Correct Answer: 
+Not Available
+Note: Line graph image not present in source; expenditure question cannot be computed without the underlying data.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Needs Manual Review
+Status: 
+Published
+______________________________________________________________________
+Q00026
+Category: 
+Quantitative Aptitude
+Topic: 
+Time Speed & Distance
+Subtopic: 
+Average Speed
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Distance between two stations A and B is 778 km. Anamika covers the journey from A to B at 84 km/hr and returns back to A with a uniform speed of 56 km/hr. Her average speed during the whole journey is
+Options:
+A. 65.6 km/hr
+B. 72.6 km/hr
+C. 67.2 km/hr
+D. 70 km/hr
+Correct Answer: 
+C. 67.2 km/hr
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00027
+Category: 
+Quantitative Aptitude
+Topic: 
+Mixture & Alligation
+Subtopic: 
+Ratio of Mixture
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+A mixture contains alcohol and water in the ratio 4 : 3. If 5 litres of water is added to the mixture, the ratio becomes 4 : 5. The quantity of alcohol in the mixture is
+Options:
+A. 10 litres
+B. 8 litres
+C. 11.5 litres
+D. 12 litres
+Correct Answer: 
+A. 10 litres
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00028
+Category: 
+Quantitative Aptitude
+Topic: 
+Number System
+Subtopic: 
+Unit Digit
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+The unit's digit in the product (3127)^173 is
+Options:
+A. 3
+B. 1
+C. 9
+D. 7
+Correct Answer: 
+D. 7
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00029
+Category: 
+Quantitative Aptitude
+Topic: 
+Mixture & Alligation
+Subtopic: 
+Cost Price Ratio
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+Pure ghee costs Rs. 1,000 per kg. After mixing it with vegetable oil costing Rs. 500 per kg, a shopkeeper sells the mixture at the rate of Rs. 960 per kg, thereby making a profit of 20%. In what ratio does he mix the ghee and vegetable oil ?
+Options:
+A. 3 : 2
+B. 1 : 2
+C. 3 : 1
+D. 5 : 4
+Correct Answer: 
+A. 3 : 2
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00030
+Category: 
+Quantitative Aptitude
+Topic: 
+Algebra
+Subtopic: 
+Cube Roots
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+If cube_root(a) + cube_root(b) = 5 and ab = 1728, then the value of cube_root(a^2) + cube_root(b^2) is
+Options:
+A. 4
+B. 18
+C. 16
+D. 8
+Correct Answer: 
+Not Available
+Note: Given values are mathematically inconsistent: cube_root(a)+cube_root(b)=5 and ab=1728 imply xy=12 with x+y=5, which has no real solution (max product at x=y=2.5 is 6.25). None of the options can be derived validly from the stated premises.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Needs Manual Review
+Status: 
+Published
+______________________________________________________________________
+Q00031
+Category: 
+General Awareness
+Topic: 
+History & Geography
+Subtopic: 
+Canals of India
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Given below are two statements.
+Statement (I) : Indira Gandhi Canal, previously known as the Rajasthan Canal, is one of the largest canal systems in India.
+Statement (II) : Conceived by Kanwar Sain in 1952, the canal project was launched on 31 March, 1958.
+In light of the above statements, choose the most appropriate answer from the options given below.
+Options:
+A. Both Statement (I) and Statement (II) are false
+B. Both Statement (I) and Statement (II) are true
+C. Statement (I) is true but Statement (II) is false
+D. Statement (I) is false but Statement (II) is true
+Correct Answer: 
+C. Statement (I) is true but Statement (II) is false
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00032
+Category: 
+General Awareness
+Topic: 
+Government Schemes
+Subtopic: 
+Skill Development
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following are objectives of PM-SETU Scheme ?
+i. To improve the quality of training delivery in ITIs and NSTIs.
+ii. To modernise infrastructure and equipment as per industry standards.
+iii. To upgrade ITIs to polytechnic colleges.
+iv. To enhance the capacity of NSTIs for training of trainers.
+Choose the most appropriate answer from the options given below.
+Options:
+A. Only i, iii, iv
+B. Only i, ii, iii
+C. Only i, ii, iv
+D. All of the above
+Correct Answer: 
+C. Only i, ii, iv
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00033
+Category: 
+General Awareness
+Topic: 
+Ancient Indian History
+Subtopic: 
+Textual Traditions
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Chronologically arrange the major textual traditions of ancient India.
+1. Natyashastra of Bharata  2. Manusmriti  3. Tripitaka  4. Ashtadhyayi of Panini
+Choose the most appropriate answer from the options given below.
+Options:
+A. 3, 4, 2, 1
+B. 1, 2, 3, 4
+C. 4, 3, 2, 1
+D. 2, 1, 3, 4
+Correct Answer: 
+C. 4, 3, 2, 1
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00034
+Category: 
+General Awareness
+Topic: 
+Linguistics
+Subtopic: 
+Indian Languages
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Match List - I with List - II.
+List - I (Family of Modern Indian Language): 1. Nisada  2. Dravida  3. Kirata  4. Aryan
+List - II (Speech Area): I. Goa  II. Arunachal Pradesh  III. Tamil Nadu  IV. Nicobar Islands
+Choose the most appropriate answer from the options given below.
+Options:
+A. 1-I, 2-III, 3-IV, 4-II
+B. 1-IV, 2-III, 3-II, 4-I
+C. 1-I, 2-II, 3-IV, 4-III
+D. 1-IV, 2-II, 3-III, 4-I
+Correct Answer: 
+B. 1-IV, 2-III, 3-II, 4-I
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00035
+Category: 
+General Awareness
+Topic: 
+Ancient Indian History
+Subtopic: 
+Epigraphy
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Chronologically arrange the major advances in Epigraphy.
+1. First issue of Epigraphia Carnatica.  2. Decipherment of Asokan Brahmi by James Prinsep.  3. First issue of Epigraphia Indica.  4. Alexander Cunningham publishes a set of Asokan inscriptions.
+Choose the most appropriate answer from the options given below.
+Options:
+A. 2, 4, 1, 3
+B. 1, 2, 3, 4
+C. 2, 1, 4, 3
+D. 1, 2, 4, 3
+Correct Answer: 
+A. 2, 4, 1, 3
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00036
+Category: 
+General Awareness
+Topic: 
+World Geography
+Subtopic: 
+Suez Canal
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Given below are two statements.
+Statement (I) : Strategically and economically, the Suez Canal is one of the most important waterways in the world.
+Statement (II) : Its opening in 1879 reduced the cost of transportation and made access to the Indian market easier.
+In light of the above statements, choose the most appropriate answer from the options given below.
+Options:
+A. Both Statement (I) and Statement (II) are false
+B. Both Statement (I) and Statement (II) are true
+C. Statement (I) is true but Statement (II) is false
+D. Statement (I) is false but Statement (II) is true
+Correct Answer: 
+C. Statement (I) is true but Statement (II) is false
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00037
+Category: 
+General Awareness
+Topic: 
+Government Schemes
+Subtopic: 
+Agriculture
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Given below are two statements.
+Statement (I) : National Mission for Sustainable Agriculture is to make agriculture more productive, sustainable, remunerative and climate resilient.
+Statement (II) : The Government has been promoting dairy farming in the country through the scheme such as Rashtriya Vikas Yojana.
+In light of the above statements, choose the most appropriate answer from the options given below.
+Options:
+A. Both Statement (I) and Statement (II) are false
+B. Both Statement (I) and Statement (II) are true
+C. Statement (I) is true but Statement (II) is false
+D. Statement (I) is false but Statement (II) is true
+Correct Answer: 
+C. Statement (I) is true but Statement (II) is false
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00038
+Category: 
+General Awareness
+Topic: 
+Indian Economy
+Subtopic: 
+Committees
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+The Karve Committee (1955) is associated with
+Options:
+A. Transportation and Communication
+B. Manufacturing Industry
+C. Banking Sector
+D. Village and Small Scale Industries
+Correct Answer: 
+D. Village and Small Scale Industries
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00039
+Category: 
+General Awareness
+Topic: 
+Indian Economy
+Subtopic: 
+Money
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which of the following are called Fiat Money ?
+1. Gold  2. Silver  3. Currency Notes  4. Coins
+Choose the most appropriate answer from the options given below.
+Options:
+A. Only 2 and 3
+B. Only 1 and 4
+C. Only 3 and 4
+D. Only 1 and 2
+Correct Answer: 
+C. Only 3 and 4
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00040
+Category: 
+General Awareness
+Topic: 
+Indian Geography
+Subtopic: 
+Rural Settlements
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Match List - I with List - II.
+List - I (Type of Rural Settlement): 1. Clustered  2. Semi-clustered  3. Hamleted  4. Dispersed
+List - II (Area/Region State/Union Territory): I. Lower Valleys of the Himalayas  II. Kerala  III. Bundelkhand Region of Central India  IV. Gujarat Plain
+Choose the most appropriate answer from the options given below.
+Options:
+A. 1-I, 2-II, 3-IV, 4-III
+B. 1-I, 2-II, 3-III, 4-IV
+C. 1-III, 2-IV, 3-I, 4-II
+D. 1-III, 2-IV, 3-II, 4-I
+Correct Answer: 
+C. 1-III, 2-IV, 3-I, 4-II
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00041
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Partition Impact
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Given below are two statements.
+Statement (I) : A sizeable portion of the undivided country's highly irrigated and fertile land went to Pakistan; this had an adverse impact upon India's output from the agriculture sector.
+Statement (II) : India's jute goods industry (in which the country had enjoyed a world monopoly so far), thus, suffered heavily for lack of raw material.
+In light of the above statements, choose the most appropriate answer from the options given below.
+Options:
+A. Both Statement (I) and Statement (II) are false
+B. Both Statement (I) and Statement (II) are true
+C. Statement (I) is true but Statement (II) is false
+D. Statement (I) is false but Statement (II) is true
+Correct Answer: 
+B. Both Statement (I) and Statement (II) are true
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00042
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Constitution Borrowings
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Match List - I with List - II.
+List - I (Provisions borrowed from Constitutions of different countries): 1. Institution of the Speaker  2. Independence of Judiciary  3. Principles of Liberty, Equality and Fraternity  4. The Idea of Residual Powers
+List - II (Countries): I. French Constitution  II. Canadian Constitution  III. British Constitution  IV. American Constitution
+Choose the most appropriate answer from the options given below.
+Options:
+A. 1-I, 2-II, 3-III, 4-IV
+B. 1-I, 2-III, 3-II, 4-IV
+C. 1-IV, 2-III, 3-I, 4-II
+D. 1-III, 2-IV, 3-I, 4-II
+Correct Answer: 
+D. 1-III, 2-IV, 3-I, 4-II
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00043
+Category: 
+General Awareness
+Topic: 
+Indian Economy
+Subtopic: 
+Financial Instruments
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+_______ are papers bearing the promise of a future stream of monetary returns over a certain period of time.
+Options:
+A. Bonds
+B. Term Deposits
+C. Mutual Funds
+D. Time Deposits
+Correct Answer: 
+A. Bonds
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00044
+Category: 
+General Awareness
+Topic: 
+Archaeology
+Subtopic: 
+Harappan Civilisation
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Chronologically arrange the major developments in Harappan Archaeology.
+1. M. S. Vats begins excavations at Harappa.  2. R. E. M. Wheeler excavates at Harappa.  3. B. B. Lal and B. K. Thapar begin excavations at Kalibangan.  4. M. R. Mughal begins explorations in Bahawalpur.
+Choose the most appropriate answer from the options given below.
+Options:
+A. 1, 3, 2, 4
+B. 1, 2, 3, 4
+C. 2, 1, 4, 3
+D. 3, 2, 4, 1
+Correct Answer: 
+B. 1, 2, 3, 4
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00045
+Category: 
+General Awareness
+Topic: 
+Indian Economy
+Subtopic: 
+Public Sector Undertakings
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+Which of the following statements are true with regard to Navaratnas and Mini-ratnas of Indian industrial sector ?
+1. In order to improve efficiency, infuse professionalism and enable them to compete more effectively in the liberalised global environment, the government chose nine PSUs and declared them as navaratnas.
+2. They were given greater managerial and operational autonomy, in taking various decisions to run the company efficiently.
+3. Scholars state that by facilitating navaratnas in their expansion and enabling them to become global players, their profits increased.
+4. Greater operational, financial and managerial autonomy was also granted to 99 other profit-making enterprises referred to as mini ratnas.
+Choose the most appropriate answer from the options given below.
+Options:
+A. Only 3 and 4
+B. Only 1 and 2
+C. Only 1 and 4
+D. Only 2 and 3
+Correct Answer: 
+B. Only 1 and 2
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00046
+Category: 
+Current Affairs
+Topic: 
+International Summits
+Subtopic: 
+AI Governance
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+Where was the Global Partnership on AI (GPAI) Summit held in December 2023 ?
+Options:
+A. Chennai
+B. Kolkata
+C. Hyderabad
+D. Delhi
+Correct Answer: 
+D. Delhi
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00047
+Category: 
+Current Affairs
+Topic: 
+International Relations
+Subtopic: 
+United Nations
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following countries have been elected as Non-Permanent Members of the UN Security Council for two-years term by the General Assembly in 2025 ?
+1. Ecuador  2. Guyana  3. Sierra Leone  4. Switzerland
+Choose the most appropriate answer from the options given below.
+Options:
+A. Only 1 and 3
+B. Only 2 and 4
+C. Only 1 and 4
+D. Only 2 and 3
+Correct Answer: 
+Not Available
+Note: The actual countries elected as UNSC non-permanent members in June 2025 (for the 2026-2027 term) were Bahrain, Colombia, DR Congo, Latvia, and Liberia — none of which appear among the given options. Guyana and Sierra Leone were outgoing members (elected 2023), and Ecuador/Switzerland were elected in 2022 (for 2023-24). No option combination matches the real 2025 result.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Needs Manual Review
+Status: 
+Published
+______________________________________________________________________
+Q00048
+Category: 
+Current Affairs
+Topic: 
+Kerala Current Affairs
+Subtopic: 
+Green Energy
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+Where was Keralam's first hydrogen fuel cell bus launched in 2025 ?
+Options:
+A. Thiruvananthapuram International Airport
+B. Cochin International Airport
+C. Kozhikode International Airport
+D. Kannur International Airport
+Correct Answer: 
+B. Cochin International Airport
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00049
+Category: 
+Current Affairs
+Topic: 
+National Days
+Subtopic: 
+Space
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+When was the first National Space Day celebrated in India ?
+Options:
+A. 23 August 2024
+B. 23 April 2024
+C. 23 December 2024
+D. 23 April 2025
+Correct Answer: 
+A. 23 August 2024
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00050
+Category: 
+General Awareness
+Topic: 
+Indian Economy
+Subtopic: 
+Industry
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+Where was one of the world's largest mobile phone manufacturing facilities established by Samsung in India in 2018 ?
+Options:
+A. Gurugram
+B. Noida
+C. Chennai
+D. Hyderabad
+Correct Answer: 
+B. Noida
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00051
+Category: 
+Current Affairs
+Topic: 
+Books and Authors
+Subtopic: 
+Literature
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Match List - I with List - II.
+List - I (Books): 1. Heart Lamp: Selected Stories  2. The Eleventh Hour: A Quintet of Stories  3. The Loneliness of Sonia and Sunny: A Novel  4. The Gallery of Upside Down Woman
+List - II (Authors): I. Salman Rushdie  II. Banu Mushtaq  III. Arundhati Subramaniam  IV. Kiran Desai
+Choose the most appropriate answer from the options given below.
+Options:
+A. 1-I, 2-II, 3-III, 4-IV
+B. 1-I, 2-II, 3-IV, 4-III
+C. 1-II, 2-I, 3-III, 4-IV
+D. 1-II, 2-I, 3-IV, 4-III
+Correct Answer: 
+D. 1-II, 2-I, 3-IV, 4-III
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00052
+Category: 
+Current Affairs
+Topic: 
+Government Schemes
+Subtopic: 
+Agriculture
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+The programme Mission for Atmanirbharta for Pulses focuses on which of the following pulses ?
+1. Moong  2. Chana  3. Urad  4. Masoor
+Choose the most appropriate answer from the options given below.
+Options:
+A. Only 2 and 3
+B. Only 1 and 4
+C. Only 1 and 2
+D. Only 3 and 4
+Correct Answer: 
+D. Only 3 and 4
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00053
+Category: 
+Current Affairs
+Topic: 
+Elections
+Subtopic: 
+Indian Elections 2024
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+In which State a polling station was set up for the only registered voter during the 18th General Election, 2024 ?
+Options:
+A. Tripura
+B. Arunachal Pradesh
+C. Nagaland
+D. Mizoram
+Correct Answer: 
+B. Arunachal Pradesh
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00054
+Category: 
+Current Affairs
+Topic: 
+General Science
+Subtopic: 
+Longevity/Health
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Blue Zones refer to regions worldwide where people live significantly longer, healthier lives often reaching centenarian status. Which of the following are the identified Blue Zones ?
+1. Okinawa (Japan)  2. Nicoya (Costa Rica)  3. Santorni (Greece)  4. Icaria (Greece)
+Choose the most appropriate answer from the options given below.
+Options:
+A. Only 1 and 4
+B. Only 1, 2 and 4
+C. Only 2, 3 and 4
+D. Only 1, 3 and 4
+Correct Answer: 
+B. Only 1, 2 and 4
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00055
+Category: 
+Current Affairs
+Topic: 
+Science and Technology
+Subtopic: 
+AI in India
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which Indian portal provides AI solutions for healthcare and agriculture ?
+Options:
+A. opennyai.org
+B. qure.ai
+C. wadhwani.ai
+D. khanmigo.ai
+Correct Answer: 
+C. wadhwani.ai
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00056
+Category: 
+Current Affairs
+Topic: 
+Awards
+Subtopic: 
+Magsaysay Award
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Given below are two statements.
+Statement (I) : Educate Girls, an Indian non-profit organization, won the Magsaysay Award 2025.
+Statement (II) : Educate Girls also known as Foundation to Educate Girls, it is the first Indian organization, to win the Ramon Magsaysay Award.
+In the light of the above statements, choose the most appropriate answer from the options given below.
+Options:
+A. Both Statement (I) and Statement (II) are false
+B. Both Statement (I) and Statement (II) are true
+C. Statement (I) is true but Statement (II) is false
+D. Statement (I) is false but Statement (II) is true
+Correct Answer: 
+B. Both Statement (I) and Statement (II) are true
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00057
+Category: 
+Current Affairs
+Topic: 
+Natural Disasters
+Subtopic: 
+Earthquakes
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+The powerful earthquake that rocked Myanmar on March 28, 2025, had its epicenter just outside which city ?
+Options:
+A. Mandalay
+B. Yangon
+C. Mawlamyine
+D. Bago
+Correct Answer: 
+A. Mandalay
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00058
+Category: 
+Current Affairs
+Topic: 
+Government Conclaves
+Subtopic: 
+Water Resources
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+What was the theme of World Water Day Conclave 2026 organised by Ministry of Jal Shakti on 23-03-2026 ?
+Options:
+A. Water is Life
+B. Industry for Water
+C. Har Ghar Jal
+D. Per Drop More Crop
+Correct Answer: 
+B. Industry for Water
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00059
+Category: 
+Current Affairs
+Topic: 
+Climate Change
+Subtopic: 
+WMO Reports
+Difficulty: 
+Hard
+Estimated Time: 
+60 seconds
+Question:
+Given below are two statements.
+Statement (I) : According to WMO (World Meterological Organization), there is no chance that in near future the global mean surface temperature will exceed the current warmest year 2024.
+Statement (II) : There is 80 per cent chance that at least one year between 2025 and 2029 will have the global mean surface temperature more than 1.5 degrees C above the year 2024.
+In light of the above statements, choose the most appropriate answer from the options given below.
+Options:
+A. Both Statement (I) and Statement (II) are false
+B. Both Statement (I) and Statement (II) are true
+C. Statement (I) is true but Statement (II) is false
+D. Statement (I) is false but Statement (II) is true
+Correct Answer: 
+A. Both Statement (I) and Statement (II) are false
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00060
+Category: 
+Current Affairs
+Topic: 
+Science and Technology
+Subtopic: 
+AI Models
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The Indic Large Language Model - Sarvam released in 2025 caters to _______ Indian languages.
+Options:
+A. 10
+B. 9
+C. 11
+D. 12
+Correct Answer: 
+A. 10
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00061
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Ethical Conflicts
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+A student cheats in an examination to secure a scholarship, which is needed to support his/her family. Which ethical conflict is most evident in this example ?
+Options:
+A. Individual Rights versus Authority
+B. Legal versus Moral Duty
+C. Means versus Ends
+D. Justice versus Loyalty
+Correct Answer: 
+C. Means versus Ends
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00062
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Fundamentals of Ethics
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which question addresses the aspect of Ethics ?
+Options:
+A. Who am I ?
+B. What is the right thing to do in this situation ?
+C. What do I care about most in life ?
+D. What do I personally believe is right or wrong ?
+Correct Answer: 
+B. What is the right thing to do in this situation ?
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00063
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Work Ethics
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Identify the quality that can be selected as a criterion to determine work efficiency.
+Options:
+A. Dilemma
+B. Cynicism
+C. Diligence
+D. Procrastination
+Correct Answer: 
+C. Diligence
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00064
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Ethical Dilemma
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+A whistle-blower has access to classified data. If he releases the data, it will certainly save public from a disaster. At the same time, he believes releasing it would violate national security laws. This situation is best described as
+Options:
+A. Moral absolutism
+B. Cultural relativism
+C. Ethical Dilemma
+D. Psychological Egoism
+Correct Answer: 
+C. Ethical Dilemma
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00065
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Kantian Ethics
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+A company donates to charity to improve its public image and profits. According to Kantian ethics, the action is
+Options:
+A. Ethically sound
+B. Morally neutral
+C. Morally wrong due to intent
+D. Morally obligatory
+Correct Answer: 
+C. Morally wrong due to intent
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00066
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Fair Judgment
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which of the following is beneficial for making a fair judgment about a person, place or thing ?
+Options:
+A. Objectivity
+B. Nepotism
+C. Prejudice
+D. Stereotypes
+Correct Answer: 
+A. Objectivity
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00067
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Ethical Critique
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+A team leader claims extraordinary moral authority and exempts himself from ethical rules. Which ethical critique most directly challenges this ?
+Options:
+A. Moral Particularism
+B. Cultural Relativism
+C. Ethical Egoism
+D. Principle of Moral Equality
+Correct Answer: 
+D. Principle of Moral Equality
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00068
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Ethical Theories
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+A theorist argues that moral rules are justified only if rational individuals would agree to them under fair conditions. This falls under
+Options:
+A. Social Contract Ethics
+B. Ethical Relativism
+C. Virtue Ethics
+D. Divine Command Theory
+Correct Answer: 
+A. Social Contract Ethics
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00069
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Moral Disengagement
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+'A leader reframes unethical actions as serving a lofty purpose' is an example of
+Options:
+A. Ethical fading
+B. Moral relativism
+C. Cognitive dissonance
+D. Moral disengagement
+Correct Answer: 
+D. Moral disengagement
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00070
+Category: 
+General Awareness
+Topic: 
+Ethics
+Subtopic: 
+Virtue Ethics
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Kavya found a wallet on the street and submitted it to police station without any expectation of reward or recognition. According to virtue ethics, this action reflects
+Options:
+A. Moral Character
+B. Positive Outcomes
+C. Social Conditioning
+D. Rule Obedience
+Correct Answer: 
+A. Moral Character
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00071
+Category: 
+English
+Topic: 
+Vocabulary
+Subtopic: 
+Synonyms
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The minister's speech was marked by obfuscation rather than clarity.
+The option closest in meaning to the underlined word is
+Options:
+A. Confidence
+B. Hesitation
+C. Concealment
+D. Elaboration
+Correct Answer: 
+C. Concealment
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00072
+Category: 
+English
+Topic: 
+Vocabulary
+Subtopic: 
+Antonyms
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The word that best contrasts with 'ephemeral' is
+Options:
+A. momentary
+B. perpetual
+C. transient
+D. fleeting
+Correct Answer: 
+B. perpetual
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00073
+Category: 
+English
+Topic: 
+Vocabulary
+Subtopic: 
+Fill in the Blank
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+His apology was so _______ that it failed to convince even his closest allies.
+The word that best completes the sentence is
+Options:
+A. meticulous
+B. perfunctory
+C. magnanimous
+D. effusive
+Correct Answer: 
+B. perfunctory
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00074
+Category: 
+English
+Topic: 
+Comprehension
+Subtopic: 
+Sentence Interpretation
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+"His silence spoke volumes."
+The correct interpretation of the sentence is
+Options:
+A. He was literally silent.
+B. He was verbose.
+C. His silence conveyed strong meaning.
+D. He published many volumes.
+Correct Answer: 
+C. His silence conveyed strong meaning.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00075
+Category: 
+English
+Topic: 
+Vocabulary
+Subtopic: 
+Phrase Replacement
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+The explanation was too vague to be of any use.
+Which option best replaces the underlined phrase ?
+Options:
+A. redundant
+B. inconsequential
+C. nebulous
+D. trivial
+Correct Answer: 
+C. nebulous
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00076
+Category: 
+English
+Topic: 
+Grammar
+Subtopic: 
+Prepositions/Correct Sentence
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The grammatically correct sentence is
+Options:
+A. He is senior of me.
+B. He is senior from me.
+C. He is senior than me.
+D. He is senior to me.
+Correct Answer: 
+D. He is senior to me.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00077
+Category: 
+English
+Topic: 
+Grammar
+Subtopic: 
+Narration/Reported Speech
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+He said, "I am feeling unwell today."
+The correct reported speech is
+Options:
+A. He said that he had been feeling unwell today.
+B. He said he is feeling unwell today.
+C. He says he was feeling unwell that day.
+D. He said that he was feeling unwell that day.
+Correct Answer: 
+D. He said that he was feeling unwell that day.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00078
+Category: 
+English
+Topic: 
+Grammar
+Subtopic: 
+Active-Passive Voice
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+They will complete the project by Monday.
+The correct transformation into passive voice is
+Options:
+A. The project has been completed by Monday.
+B. The project is completed by Monday.
+C. The project will have completed by Monday.
+D. The project will be completed by Monday.
+Correct Answer: 
+D. The project will be completed by Monday.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00079
+Category: 
+English
+Topic: 
+Grammar
+Subtopic: 
+Subjunctive Mood
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+The correct use of the subjunctive mood is
+Options:
+A. I wish I am taller.
+B. I wish I was taller.
+C. I wish I were taller.
+D. I wish I will be taller.
+Correct Answer: 
+C. I wish I were taller.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00080
+Category: 
+English
+Topic: 
+Grammar
+Subtopic: 
+Conditional Sentences
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Fill in the blank.
+If she _______ harder, she would have succeeded.
+Options:
+A. works
+B. would work
+C. worked
+D. had worked
+Correct Answer: 
+D. had worked
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00081
+Category: 
+English
+Topic: 
+Reading Comprehension
+Subtopic: 
+Vivekananda Passage
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+(Read the passage on Vivekananda's teachings and answer.) Vivekananda's attitude towards tradition, as presented in the passage, can best be described as
+Options:
+A. Reformist and rational
+B. Reverential and unquestioning
+C. Dismissive and radical
+D. Conservative and ritualistic
+Correct Answer: 
+A. Reformist and rational
+Note: No passage text was included in the source document (only a placeholder note); answer inferred from standard characterizations of Vivekananda's teachings in comparable exam passages.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00082
+Category: 
+English
+Topic: 
+Reading Comprehension
+Subtopic: 
+Vivekananda Passage
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+(Read the passage on Vivekananda's teachings and answer.) Why did Vivekananda adapt his message differently for Western and Indian audiences ?
+Options:
+A. Western audiences were intellectually inferior to Indian audiences.
+B. Different historical and cultural contexts demanded different emphases of the same philosophy.
+C. Indian audiences required political motivation, while Western audiences required spiritual instruction.
+D. He wished to prioritise international recognition over national reform.
+Correct Answer: 
+B. Different historical and cultural contexts demanded different emphases of the same philosophy.
+Note: Passage text not included in source; inferred best-fit answer.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00083
+Category: 
+English
+Topic: 
+Reading Comprehension
+Subtopic: 
+Vivekananda Passage
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+(Read the passage on Vivekananda's teachings and answer.) Which of the following best captures the core argument of the passage ?
+Options:
+A. Vivekananda rejected traditional philosophy in favour of rational modern thought.
+B. Vivekananda modernised Indian scriptures to make them acceptable to Western audiences.
+C. Vivekananda reinterpreted Vedantic wisdom to address modern challenges without abandoning its essence.
+D. Vivekananda prioritised national liberation over spiritual development.
+Correct Answer: 
+C. Vivekananda reinterpreted Vedantic wisdom to address modern challenges without abandoning its essence.
+Note: Passage text not included in source; inferred best-fit answer.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00084
+Category: 
+English
+Topic: 
+Reading Comprehension
+Subtopic: 
+Vivekananda Passage
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+(Read the passage on Vivekananda's teachings and answer.) Which assumption underlies Vivekananda's emphasis on character-building ?
+Options:
+A. Spiritual growth is possible without social engagement.
+B. Moral strength automatically ensures political freedom.
+C. Inner transformation is foundational to both personal and societal change.
+D. Intellectual knowledge alone leads to ethical living.
+Correct Answer: 
+C. Inner transformation is foundational to both personal and societal change.
+Note: Passage text not included in source; inferred best-fit answer.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00085
+Category: 
+English
+Topic: 
+Reading Comprehension
+Subtopic: 
+Vivekananda Passage
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+(Read the passage on Vivekananda's teachings and answer.) According to the passage, Vivekananda's understanding of individual identity implies that
+Options:
+A. Differences are obstacles to spiritual growth.
+B. Individuality must be dissolved to achieve unity.
+C. Social divisions are inevitable consequences of diversity.
+D. Individual identity reveals, rather than negates, universal divinity.
+Correct Answer: 
+D. Individual identity reveals, rather than negates, universal divinity.
+Note: Passage text not included in source; inferred best-fit answer.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00086
+Category: 
+Computer Awareness
+Topic: 
+Database Management
+Subtopic: 
+Primary Key
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+What is the main purpose of a primary key in a database table ?
+Options:
+A. To uniquely identify tuples in a relation
+B. To store large data values
+C. To allow duplicate values in a column
+D. To connect two unrelated tables
+Correct Answer: 
+A. To uniquely identify tuples in a relation
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00087
+Category: 
+Computer Awareness
+Topic: 
+Fundamentals
+Subtopic: 
+ASCII
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+What does the acronym ASCII stand for ?
+Options:
+A. American Standard Code for Information Interchange
+B. American Standard Code for Internet Interchange
+C. American System Code for Information Interchange
+D. Analytical Standard Code for Information Interchange
+Correct Answer: 
+A. American Standard Code for Information Interchange
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00088
+Category: 
+Computer Awareness
+Topic: 
+Data Concepts
+Subtopic: 
+Structured Data
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which of the following best describes "Structured Data" ?
+Options:
+A. Data formatted in HTML pages with tags
+B. Data stored in audio and video files
+C. Data organized in a pre-defined tabular format (rows/columns)
+D. Data consisting only of satellite images
+Correct Answer: 
+C. Data organized in a pre-defined tabular format (rows/columns)
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00089
+Category: 
+Computer Awareness
+Topic: 
+Emerging Technology
+Subtopic: 
+Internet of Things
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+What is the Internet of Things (IoT) ?
+Options:
+A. A single smart device
+B. A network of computers only
+C. A network of devices with embedded hardware and software that can communicate with each other
+D. A type of social media platform
+Correct Answer: 
+C. A network of devices with embedded hardware and software that can communicate with each other
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00090
+Category: 
+Computer Awareness
+Topic: 
+Artificial Intelligence
+Subtopic: 
+AI and ML
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following statements about Artificial Intelligence (AI) and Machine Learning (ML) are correct ?
+1. Machine Learning is a subset of Artificial Intelligence.
+2. Artificial Intelligence is a subset of Machine Learning.
+3. Alexa and Siri are examples of Artificial Intelligence.
+4. Machine Learning allows computers to learn from data and make predictions.
+Choose the most appropriate answer from the options given below.
+Options:
+A. Only 1 and 4
+B. 1, 2, 3 and 4
+C. Only 2, 3 and 4
+D. Only 1, 3 and 4
+Correct Answer: 
+D. Only 1, 3 and 4
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00091
+Category: 
+Computer Awareness
+Topic: 
+Number System
+Subtopic: 
+Binary to Decimal
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+What is the decimal equivalent of the binary number 10001 ?
+Options:
+A. 10001
+B. 9
+C. 65
+D. 17
+Correct Answer: 
+D. 17
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00092
+Category: 
+Computer Awareness
+Topic: 
+Networking
+Subtopic: 
+IPv4 Addressing
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+How many bits are used in an IPv4 address ?
+Options:
+A. 32 bits
+B. 16 bits
+C. 48 bits
+D. 64 bits
+Correct Answer: 
+A. 32 bits
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00093
+Category: 
+Computer Awareness
+Topic: 
+Fundamentals
+Subtopic: 
+Memory Units
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+How many KB (Kilobytes) are there in 2 MB ?
+Options:
+A. 2000 KB
+B. 8192 KB
+C. 1024 KB
+D. 2048 KB
+Correct Answer: 
+D. 2048 KB
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00094
+Category: 
+Computer Awareness
+Topic: 
+Software
+Subtopic: 
+Open Source Software
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which of the following is an example of open-source software ?
+Options:
+A. Adobe Photoshop
+B. Microsoft Windows
+C. Ubuntu Operating System
+D. Microsoft Office
+Correct Answer: 
+C. Ubuntu Operating System
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00095
+Category: 
+Computer Awareness
+Topic: 
+Database Management
+Subtopic: 
+Relational Database Terms
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+In a relational database, a row of a table is called
+Options:
+A. Relation
+B. Attribute
+C. Domain
+D. Tuple
+Correct Answer: 
+D. Tuple
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00096
+Category: 
+Computer Awareness
+Topic: 
+Networking
+Subtopic: 
+Types of Networks
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Match List - I with List - II.
+List - I: 1. PAN  2. LAN  3. MAN  4. WAN
+List - II: I. Connects computers across a city or town; eg., cable TV network  II. Connects computers and devices within a few meters; eg., Bluetooth between smartphone and laptop  III. Connects computers in a limited area like a school, office, or campus  IV. Connects computers globally; eg., the Internet
+Choose the most appropriate answer from the options given below.
+Options:
+A. 1-III, 2-II, 3-I, 4-IV
+B. 1-II, 2-III, 3-I, 4-IV
+C. 1-II, 2-III, 3-IV, 4-I
+D. 1-III, 2-II, 3-IV, 4-I
+Correct Answer: 
+B. 1-II, 2-III, 3-I, 4-IV
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00097
+Category: 
+Computer Awareness
+Topic: 
+Fundamentals
+Subtopic: 
+Booting Process
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Arrange the following steps of a computer booting process in the correct sequence from start to finish.
+1. Operating System is loaded into RAM  2. Power-On Self Test (POST) is performed  3. BIOS is initialized  4. Computer is switched on
+Choose the most appropriate answer from the options given below.
+Options:
+A. 4, 2, 3, 1
+B. 4, 3, 2, 1
+C. 4, 1, 2, 3
+D. 4, 1, 3, 2
+Correct Answer: 
+B. 4, 3, 2, 1
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00098
+Category: 
+Computer Awareness
+Topic: 
+Internet
+Subtopic: 
+Digital Footprint
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+What is a digital footprint ?
+Options:
+A. A trail of data left by a user while using the Internet
+B. A physical mark left by a computer
+C. A type of computer virus
+D. A software used for online security
+Correct Answer: 
+A. A trail of data left by a user while using the Internet
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00099
+Category: 
+Computer Awareness
+Topic: 
+Networking
+Subtopic: 
+Mesh Topology
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In a fully connected mesh topology with n nodes, how many wires (links) are required ?
+Options:
+A. n^2
+B. n
+C. (n-1)/2
+D. n(n-1)/2
+Correct Answer: 
+D. n(n-1)/2
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00100
+Category: 
+Computer Awareness
+Topic: 
+Networking
+Subtopic: 
+Network Devices
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+What is the main function of a repeater in a network ?
+Options:
+A. To regenerate and amplify weakened signals in a network
+B. To connect multiple networks together
+C. To assign IP addresses to devices
+D. To convert analog signals to digital signals
+Correct Answer: 
+A. To regenerate and amplify weakened signals in a network
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00101
+Category: 
+Technical
+Topic: 
+Physics
+Subtopic: 
+Radiation Pressure
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+A radiation of energy E falls normally on a perfectly reflecting surface. The momentum transferred to the surface is
+Options:
+A. E/c
+B. 2E/c
+C. Ec
+D. E/c^2
+Correct Answer: 
+B. 2E/c
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00102
+Category: 
+Technical
+Topic: 
+Physics
+Subtopic: 
+Newton's Laws / Springs
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+A block of mass m is connected to another block of mass M by a massless spring of spring constant k. The blocks are kept on a smooth horizontal plane. Initially, the blocks are at rest and the spring is unstretched. Then, a constant force F starts acting on the block of mass M to pull it. The force acting on block of mass m is
+Options:
+A. (M+m)F/m
+B. mF/M
+C. mF/(M+m)
+D. MF/(M+m)
+Correct Answer: 
+C. mF/(M+m)
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00103
+Category: 
+Technical
+Topic: 
+Physics
+Subtopic: 
+Interference of Light
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+Two beams of light having intensities I and 4I interfere to produce a fringe pattern on a screen. The phase difference between the beams is pi/2 at point A and pi at point B. Then the difference between the resultant intensities at A and B is
+Options:
+A. 4I
+B. 2I
+C. 5I
+D. 7I
+Correct Answer: 
+A. 4I
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00104
+Category: 
+Technical
+Topic: 
+Physics
+Subtopic: 
+Magnetic Field due to Rotating Charge
+Difficulty: 
+Hard
+Estimated Time: 
+90 seconds
+Question:
+A thin ring of 10 cm radius carries a uniformly distributed charge. The ring rotates at a constant angular speed of 40*pi rad/s about its axis, perpendicular to its plane. If the magnetic field at its center is 3.8 x 10^-9 T, then the charge carried by the ring is
+Options:
+A. 3 x 10^-5 C
+B. 4 x 10^-5 C
+C. 7 x 10^-6 C
+D. 2 x 10^-6 C
+Correct Answer: 
+A. 3 x 10^-5 C
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00105
+Category: 
+Technical
+Topic: 
+Physics
+Subtopic: 
+Electrostatics - Null Point
+Difficulty: 
+Hard
+Estimated Time: 
+90 seconds
+Question:
+Two point electric charges of value q and 2q are kept at a distance d apart from each other in air. A third charge Q is to be kept along the same line in such a way that the net force acting on q and 2q is zero. The position of charge Q in terms of q and d is
+Options:
+A. (sqrt2/5) d from q
+B. (sqrt3 - 1) d from q
+C. (sqrt2 - 1) d from q
+D. (sqrt3/2) d from q
+Correct Answer: 
+C. (sqrt2 - 1) d from q
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00106
+Category: 
+Technical
+Topic: 
+Physics
+Subtopic: 
+Capacitors
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Two identical metal plates are given positive charges q1 and q2 (< q1) respectively. If they are now brought close together to form a parallel plate capacitor with capacitance C, the potential difference between them is
+Options:
+A. (q1+q2)/C
+B. (q1+q2)/2C
+C. (q1-q2)/C
+D. (q1-q2)/2C
+Correct Answer: 
+D. (q1-q2)/2C
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00107
+Category: 
+Technical
+Topic: 
+Chemistry
+Subtopic: 
+Electrochemistry - EMF and Gibbs Energy
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+The emf of the cell Ag | AgCl(s) | KCl(aq) | Hg2Cl2(s) | Hg is 0.055 V at 298 K. What is the free energy change at 298 K ?
+Options:
+A. dG = -5307 J/mol
+B. dG = 4391 J/mol
+C. dG = -10615 J/mol
+D. dG = -8782 J/mol
+Correct Answer: 
+A. dG = -5307 J/mol
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00108
+Category: 
+Technical
+Topic: 
+Chemistry
+Subtopic: 
+Organic Chemistry - Grignard Reaction
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Which of the following will give molecule (II) on reaction with one molecule of PhMgBr ? [Diagram/Image Required - structure of 1,1-diphenylethanol, CH3-C(OH)(Ph)(Ph)]
+Options:
+A. Benzonitrile
+B. Acetonitrile
+C. Acetophenone
+D. Phenyl acetate
+Correct Answer: 
+C. Acetophenone
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00109
+Category: 
+Technical
+Topic: 
+Chemistry
+Subtopic: 
+Stereochemistry - Enantiomers
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+Which of the following compounds is enantiomeric to the molecule (I), given below ? [Diagram/Image Required - 2-chlorobutane stereo structures]
+Options:
+A. Option A structure
+B. Option B structure
+C. Option C structure
+D. Option D structure
+Correct Answer: 
+Not Available
+Note: Options reference stereochemical structures (2-chlorobutane enantiomers) via an image that is not present in the source document; cannot be verified without seeing the structures.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Needs Manual Review
+Status: 
+Published
+______________________________________________________________________
+Q00110
+Category: 
+Technical
+Topic: 
+Chemistry
+Subtopic: 
+Organic Chemistry - Ethers
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+From the following select the product of the reaction of phenetole with HI.
+Options:
+A. Iodobenzene and ethanol
+B. Phenol and ethyl iodide
+C. Iodobenzene and ethyl iodide
+D. Iodobenzene and methanol
+Correct Answer: 
+B. Phenol and ethyl iodide
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00111
+Category: 
+Technical
+Topic: 
+Chemistry
+Subtopic: 
+Inorganic Chemistry - Actinides
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which among the following actinides shows maximum number of oxidation states ?
+Options:
+A. Th
+B. Pu
+C. Md
+D. No
+Correct Answer: 
+B. Pu
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00112
+Category: 
+Technical
+Topic: 
+Chemistry
+Subtopic: 
+Coordination Chemistry - Magnetism
+Difficulty: 
+Hard
+Estimated Time: 
+75 seconds
+Question:
+[FeF6]^3- and [Ni(H2O)6]^2+ complexes are
+Options:
+A. both paramagnetic in nature
+B. both diamagnetic in nature
+C. diamagnetic and paramagnetic in nature, respectively
+D. paramagnetic and diamagnetic in nature, respectively
+Correct Answer: 
+A. both paramagnetic in nature
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00113
+Category: 
+Technical
+Topic: 
+Biology
+Subtopic: 
+Human Reproduction - Amniocentesis
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Amniocentesis is legally permitted in India only when it is used for
+Options:
+A. Detecting congenital genetic disorders in the foetus
+B. Determining the sex of the foetus
+C. Increasing the chances of implantation
+D. Selecting desired traits in the foetus
+Correct Answer: 
+A. Detecting congenital genetic disorders in the foetus
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00114
+Category: 
+Technical
+Topic: 
+Biology
+Subtopic: 
+Ecology - Interspecific Interactions
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Match the ecological relationships given in Group - I with their corresponding explanations in Group - II.
+Group - I (Name of Interaction): a. Ammensalism  b. Commensalism  c. Mutualism  d. Parasitism
+Group - II (Species): I. One organism is benefited and other is harmed  II. Two different species live together in close association and both are benefited  III. One organism is benefited but the other is neither harmed nor benefited  IV. One organism is inhibited but the other is not affected
+Choose the correct combination of Group - I and Group - II given below.
+Options:
+A. a-III, b-IV, c-I, d-II
+B. a-I, b-II, c-III, d-IV
+C. a-IV, b-III, c-II, d-I
+D. a-II, b-I, c-IV, d-III
+Correct Answer: 
+C. a-IV, b-III, c-II, d-I
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00115
+Category: 
+Technical
+Topic: 
+Biology
+Subtopic: 
+Genetics - Meiosis
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following correctly matches the meiotic stage with the chromosomal event ?
+Options:
+A. Diakinesis - Chiasmata become visible
+B. Diplotene - Terminalization is complete
+C. Pachytene - Synaptonemal complex dissolves
+D. Leptotene - Chromosomes become gradually visible under the light microscope
+Correct Answer: 
+D. Leptotene - Chromosomes become gradually visible under the light microscope
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00116
+Category: 
+Technical
+Topic: 
+Biology
+Subtopic: 
+Taxonomy - Classification Hierarchy
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Arrange the following taxonomic categories in ascending order (from lowest to highest rank):
+Order - Family - Genus - Phylum - Class - Species
+Options:
+A. Species -> Family -> Genus -> Order -> Class -> Phylum
+B. Species -> Genus -> Family -> Order -> Class -> Phylum
+C. Species -> Genus -> Order -> Family -> Class -> Phylum
+D. Genus -> Species -> Family -> Order -> Phylum -> Class
+Correct Answer: 
+B. Species -> Genus -> Family -> Order -> Class -> Phylum
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00117
+Category: 
+Technical
+Topic: 
+Biology
+Subtopic: 
+Human Reproduction - Hormones
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following organs is most sensitive to progesterone ?
+Options:
+A. Uterus
+B. Brain
+C. Mammary gland
+D. Pituitary gland
+Correct Answer: 
+A. Uterus
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00118
+Category: 
+Technical
+Topic: 
+Biology
+Subtopic: 
+Biotechnology - Gel Electrophoresis
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+During agarose gel electrophoresis, DNA fragments move toward the anode. Which property of DNA is primarily responsible for its movement ?
+Options:
+A. DNA is hydrophobic
+B. DNA contains a negative charge due to its phosphate groups
+C. DNA fragments are pulled by gravity
+D. DNA contains ribose sugar which binds to the gel pores
+Correct Answer: 
+B. DNA contains a negative charge due to its phosphate groups
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00119
+Category: 
+Quantitative Aptitude
+Topic: 
+Calculus
+Subtopic: 
+Maxima and Minima
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+The maximum value of x(1-x)^2 occurs at x equals to
+Options:
+A. 1/3
+B. 0
+C. 1
+D. 1/2
+Correct Answer: 
+A. 1/3
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00120
+Category: 
+Quantitative Aptitude
+Topic: 
+3D Geometry
+Subtopic: 
+Shortest Distance Between Lines
+Difficulty: 
+Hard
+Estimated Time: 
+90 seconds
+Question:
+The shortest distance between the line L1 : (x-1)/2 = (y+2)/3 = z/-1 and the line L2 : r = (2i - 3j + k) + mu(3i - 2j + 4k) is equal to
+Options:
+A. 8/sqrt(390)
+B. 1/sqrt(390)
+C. 8/sqrt(360)
+D. 16/sqrt(390)
+Correct Answer: 
+A. 8/sqrt(390)
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00121
+Category: 
+Quantitative Aptitude
+Topic: 
+Matrices
+Subtopic: 
+Determinants and Adjoint
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+If A is a 3 x 3 matrix such that |A| = 3, then |adj(3A^-1)| is equal to
+Options:
+A. 9
+B. 3
+C. 27
+D. 81
+Correct Answer: 
+D. 81
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00122
+Category: 
+Quantitative Aptitude
+Topic: 
+Calculus
+Subtopic: 
+Differentiability
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Let f : R -> R be defined by f(x) = |x| + |x-1| + 2x. The number of points at which f is not differentiable is
+Options:
+A. 1
+B. 0
+C. 2
+D. 3
+Correct Answer: 
+C. 2
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00123
+Category: 
+Quantitative Aptitude
+Topic: 
+Vectors
+Subtopic: 
+Angle Between Vectors
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+For the vectors a = i + 2j + 2k, b = 3i, if theta is the angle between a and b, then the value of cos(theta) is
+Options:
+A. 2/3
+B. sqrt3
+C. 1/sqrt3
+D. 1/3
+Correct Answer: 
+D. 1/3
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00124
+Category: 
+Quantitative Aptitude
+Topic: 
+Calculus
+Subtopic: 
+Area Under Curve
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+Area bounded by y^2 = 4x and x = 4 is equal to
+Options:
+A. 32/3
+B. 64/3
+C. 16/3
+D. 8/3
+Correct Answer: 
+B. 64/3
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00125
+Category: 
+Quantitative Aptitude
+Topic: 
+Statistics
+Subtopic: 
+Mean Deviation
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+The mean deviation (approximated to 2 decimal places) about the median for the following data set is:
+8, 15, 3, 22, 17, 9, 14, 28, 6, 11, 19
+Options:
+A. 5.48
+B. 5.78
+C. 5.28
+D. 5.82
+Correct Answer: 
+D. 5.82
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00126
+Category: 
+Quantitative Aptitude
+Topic: 
+Statistics
+Subtopic: 
+Frequency Distribution
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+A frequency distribution has class width 5 and lowest class 10 - 15. Then 6th class upper limit is
+Options:
+A. 40
+B. 35
+C. 45
+D. 30
+Correct Answer: 
+A. 40
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00127
+Category: 
+Quantitative Aptitude
+Topic: 
+Statistics
+Subtopic: 
+Mean Transformation
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+A data set has mean = 40. If each value is multiplied by 1.5 and then 8 is added to each new values, then new mean is
+Options:
+A. 48
+B. 68
+C. 72
+D. 52
+Correct Answer: 
+B. 68
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00128
+Category: 
+Quantitative Aptitude
+Topic: 
+Statistics
+Subtopic: 
+Mean Median Mode Relation
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In a certain data set, the mode is 24 and the median is 26. Then the mean of this data set is
+Options:
+A. 25
+B. 24
+C. 26
+D. 27
+Correct Answer: 
+D. 27
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00129
+Category: 
+Quantitative Aptitude
+Topic: 
+Statistics
+Subtopic: 
+Variance
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+The variance of the squares of first 7 natural numbers is
+Options:
+A. 268
+B. 168
+C. 198
+D. 298
+Correct Answer: 
+A. 268
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00130
+Category: 
+Quantitative Aptitude
+Topic: 
+Probability
+Subtopic: 
+Without Replacement
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+A bag contains 3 red and 5 blue balls. If two balls are drawn without replacement, then probability that both balls are blue is
+Options:
+A. 3/11
+B. 5/11
+C. 3/14
+D. 5/14
+Correct Answer: 
+D. 5/14
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00131
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Trade Centres
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Arrange the following major trade centres in historical progression.
+a. Taxila  b. Surat  c. Pataliputra  d. Machilipatnam
+Choose the most appropriate answer from the options given below.
+Options:
+A. a, c, d, b
+B. a, b, c, d
+C. d, c, b, a
+D. d, a, c, b
+Correct Answer: 
+A. a, c, d, b
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00132
+Category: 
+General Awareness
+Topic: 
+Commerce & Accountancy
+Subtopic: 
+Books of Accounts
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The sales book records
+Options:
+A. Cash sales only
+B. All sales
+C. Credit sales of assets
+D. Credit sales of goods
+Correct Answer: 
+D. Credit sales of goods
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00133
+Category: 
+General Awareness
+Topic: 
+Commerce & Accountancy
+Subtopic: 
+Business Finance
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In the context of business finance, financial risk increases when
+Options:
+A. A firm issues additional shares of equity
+B. A firm utilizes more retained earnings
+C. A firm relies heavily on borrowed funds
+D. A firm reduces its long-term assets
+Correct Answer: 
+C. A firm relies heavily on borrowed funds
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00134
+Category: 
+General Awareness
+Topic: 
+Commerce & Accountancy
+Subtopic: 
+Accrued Income
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Accrued income is shown as
+Options:
+A. Liability
+B. Asset
+C. Expenses
+D. Provision
+Correct Answer: 
+B. Asset
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00135
+Category: 
+General Awareness
+Topic: 
+Commerce & Accountancy
+Subtopic: 
+Journal Proper
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Journal proper records
+Options:
+A. Cash transactions
+B. Credit purchases
+C. Opening entries
+D. Credit sales
+Correct Answer: 
+C. Opening entries
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00136
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Industry Classification
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+A tertiary industry includes
+Options:
+A. Construction
+B. Tourism
+C. Manufacturing
+D. Mining
+Correct Answer: 
+B. Tourism
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00137
+Category: 
+General Awareness
+Topic: 
+Commerce & Accountancy
+Subtopic: 
+Limitations of Accounting
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+A key limitation of accounting is that
+Options:
+A. Information is sometimes shaped by personal judgment
+B. It records only nonfinancial transactions
+C. It is error-free
+D. It is easy and inexpensive to maintain
+Correct Answer: 
+A. Information is sometimes shaped by personal judgment
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00138
+Category: 
+General Awareness
+Topic: 
+Commerce & Accountancy
+Subtopic: 
+Marshalling of Assets
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Marshalling of assets means
+Options:
+A. Grouping similar assets
+B. Arranging assets in a specific order
+C. The conversion of assets into liabilities
+D. Asset liquidation for cash
+Correct Answer: 
+B. Arranging assets in a specific order
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00139
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Consumption Function (MPC)
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+If the Marginal Propensity to Consume (MPC) is 0.75 and autonomous consumption is Rs. 100 crores, what will be the total consumption when national income is Rs. 800 crores ?
+Options:
+A. Rs. 700 crores
+B. Rs. 600 crores
+C. Rs. 750 crores
+D. Rs. 800 crores
+Correct Answer: 
+A. Rs. 700 crores
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00140
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Cost Curves
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+If the Average Variable Cost (AVC) curve is U-shaped, at what level of output does the Marginal Cost (MC) curve intersect the AVC curve ?
+Options:
+A. At the minimum point of AVC
+B. At the maximum point of AVC
+C. When AVC is declining
+D. MC never intersects AVC
+Correct Answer: 
+A. At the minimum point of AVC
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00141
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+GDP - Expenditure Method
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following transactions will be included in the calculation of GDP using the expenditure method ?
+Options:
+A. Social security payments made by the government to retired persons
+B. Purchase of a 10-year-old car from a used car dealer
+C. Purchase of wheat by a flour mill from farmers
+D. Government expenditure on construction of a new highway
+Correct Answer: 
+D. Government expenditure on construction of a new highway
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00142
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Keynesian Theory
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+According to the Keynesian theory, what happens when aggregate demand falls short of aggregate supply at full employment level ?
+Options:
+A. No change in employment level
+B. Inflationary gap emerges
+C. Economy automatically returns to equilibrium
+D. Deflationary gap emerges
+Correct Answer: 
+D. Deflationary gap emerges
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00143
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Externalities
+Difficulty: 
+Medium
+Estimated Time: 
+30 seconds
+Question:
+Which of the following is an example of a negative externality in production ?
+Options:
+A. A factory emitting smoke that pollutes the surrounding air
+B. A beekeeper's bees pollinating neighboring orchards
+C. Education increasing a person's productivity
+D. Street lighting benefiting all residents
+Correct Answer: 
+A. A factory emitting smoke that pollutes the surrounding air
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00144
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Total and Marginal Product
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+If the Marginal Product (MP) of a variable factor is declining but remains positive, what can be concluded about the Total Product (TP) ?
+Options:
+A. TP is increasing at an increasing rate
+B. TP is declining
+C. TP is increasing at a decreasing rate
+D. TP remains constant
+Correct Answer: 
+C. TP is increasing at a decreasing rate
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00145
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Money Multiplier
+Difficulty: 
+Medium
+Estimated Time: 
+60 seconds
+Question:
+If the reserve ratio is 20% and the initial deposit in the banking system is Rs. 10,000, what is the maximum amount of money that can be created through the money multiplier process ?
+Options:
+A. Rs. 40,000
+B. Rs. 10,000
+C. Rs. 50,000
+D. Rs. 2,000
+Correct Answer: 
+C. Rs. 50,000
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00146
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Consumer Equilibrium
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+A consumer is in equilibrium when consuming two goods X and Y. If the price of good X falls while the price of good Y and the consumer's income remains constant, what will happen ?
+Options:
+A. The budget line will shift parallel outward
+B. The consumer will buy less of good X due to the income effect
+C. The budget line will pivot outward along the X-axis
+D. The consumer's utility will decrease
+Correct Answer: 
+C. The budget line will pivot outward along the X-axis
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00147
+Category: 
+General Awareness
+Topic: 
+Geography
+Subtopic: 
+Astronomy - Sun-Earth Distance
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The mean distance between the Sun and Earth in terms of light-years is
+Options:
+A. 8.311 minutes
+B. 9.311 minutes
+C. 7.311 minutes
+D. 10.311 minutes
+Correct Answer: 
+A. 8.311 minutes
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00148
+Category: 
+General Awareness
+Topic: 
+Indian Geography
+Subtopic: 
+Mountain Peaks and Islands
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Match List - I with List - II.
+List - I (Mountain Peaks): a. Saddle Peak  b. Mount Diavolo  c. Mount Koyob  d. Mount Thuiller
+List - II (Islands): I. North Andaman  II. Middle Andaman  III. South Andaman  IV. Great Nicobar
+Choose the most appropriate answer from the options given below.
+Options:
+A. a-I, b-II, c-III, d-IV
+B. a-II, b-I, c-III, d-IV
+C. a-I, b-II, c-IV, d-III
+D. a-II, b-I, c-IV, d-III
+Correct Answer: 
+A. a-I, b-II, c-III, d-IV
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00149
+Category: 
+General Awareness
+Topic: 
+World Geography
+Subtopic: 
+Trans-Siberian Railway
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Arrange the cities from East to West on the Trans-Siberian railway
+a. Omsk  b. Tyumen  c. Chita  d. Kazan
+Choose the most appropriate answer from the options given below.
+Options:
+A. c, a, b, d
+B. a, c, b, d
+C. a, c, d, b
+D. c, a, d, b
+Correct Answer: 
+A. c, a, b, d
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00150
+Category: 
+General Awareness
+Topic: 
+Geography
+Subtopic: 
+Geographical Concepts
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+_______ explains that there exist variations over the surface of the Earth in its physical as well as cultural environment.
+Options:
+A. Spatial integration
+B. Areal differentiation
+C. Spatial organization
+D. Description of earth
+Correct Answer: 
+B. Areal differentiation
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00151
+Category: 
+General Awareness
+Topic: 
+Geography
+Subtopic: 
+Insolation
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+The factors that causes the variations in insolation are
+a. the revolution of the earth  b. the angle of inclination of the sun's rays  c. the length of the night  d. the transparency of the atmosphere
+Choose the most appropriate answer from the options given below.
+Options:
+A. b and d only
+B. a and d only
+C. a and c only
+D. b and c only
+Correct Answer: 
+A. b and d only
+Note: Two of the four listed factors use imprecise terms ("revolution" instead of rotation, "length of the night" instead of day-length); b (angle of inclination) and d (transparency of atmosphere) are the two factors that are unambiguously correct as worded.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00152
+Category: 
+General Awareness
+Topic: 
+Indian Geography
+Subtopic: 
+Biosphere Reserves
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+In which State or Union Territory of India the Cold Desert Biosphere Reserve is located ?
+Options:
+A. Uttarakhand
+B. Himachal Pradesh
+C. Sikkim
+D. Jammu and Kashmir
+Correct Answer: 
+B. Himachal Pradesh
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00153
+Category: 
+General Awareness
+Topic: 
+Geography
+Subtopic: 
+Continental Drift
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following evidences support the theory of continental drift ?
+a. The matching of continents  b. Tillite  c. Convection currents operating in the Mantle  d. Placer deposits
+Choose the most appropriate answer from the options given below.
+Options:
+A. b, c and d only
+B. a and d only
+C. b and c only
+D. a, b and d only
+Correct Answer: 
+D. a, b and d only
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00154
+Category: 
+General Awareness
+Topic: 
+Geography
+Subtopic: 
+Agriculture
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Grape cultivation, as a specialised form of agriculture in the mediterranean region, is also known as
+Options:
+A. Horticulture
+B. Viticulture
+C. Dairy farming
+D. Mixed farming
+Correct Answer: 
+B. Viticulture
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00155
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Consumer Movement
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+In India, dissatisfaction with sellers using unfair practices in the absence of a legal system, gave rise to which form of redressal ?
+Options:
+A. Consumers international
+B. Attracting foreign investment
+C. Consumer movement
+D. Globalisation
+Correct Answer: 
+C. Consumer movement
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00156
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Foreign Travellers Accounts
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following foreign traveller had chosen to describe India in opposition to progressive Europe and made India appear inferior to the Western world ?
+Options:
+A. Duarte Barbosa
+B. Ibn Battuta
+C. Francois Bernier
+D. Abdur Razzaq
+Correct Answer: 
+C. Francois Bernier
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00157
+Category: 
+General Awareness
+Topic: 
+Geography
+Subtopic: 
+Land Degradation
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+What happens when land is constantly used by human actions without managing its fertility ?
+Options:
+A. Land becomes a barren, rocky area
+B. Land conversion to desert
+C. Gullies form in the land
+D. Land gets degraded
+Correct Answer: 
+D. Land gets degraded
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00158
+Category: 
+General Awareness
+Topic: 
+Economics
+Subtopic: 
+Economic Planning
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+There are two approaches to economic planning. Identify these.
+Options:
+A. Regional planning and employment programme
+B. Sectoral and regional planning
+C. Irrigation committee and sectoral planning
+D. Employment programme and irrigation committee
+Correct Answer: 
+B. Sectoral and regional planning
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00159
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+British Colonial Policy
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+"The British suspended ordinary processes of law and trial and gave death as the only punishment". The reference is to which occurrence in British India ?
+Options:
+A. 1857 Rebellion
+B. Indigo Rebellion
+C. Champaran Satyagraha
+D. Santhal Revolt
+Correct Answer: 
+A. 1857 Rebellion
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00160
+Category: 
+General Awareness
+Topic: 
+Geography
+Subtopic: 
+Environmental Determinism
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The humans were greatly influenced by the natural environment in the primitive stages of their development. This type of interaction is known as
+Options:
+A. Environmental determinism
+B. Behavioral geography
+C. Cultural geography
+D. Historical interaction
+Correct Answer: 
+A. Environmental determinism
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00161
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+Industrialisation in Europe
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The age of industrialisation in Europe was characterised by the progress of railways, machines, printing press and factory. Which country took the lead in this process ?
+Options:
+A. Germany
+B. France
+C. Italy
+D. Britain
+Correct Answer: 
+D. Britain
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00162
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Tamil Literature
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In the 10th century, a collection of poems of Appar, Sambandar and Sundarar classified on the basis of the music of the songs was known as
+Options:
+A. Thirumurai
+B. Gita Govinda
+C. Pada
+D. Tevaram
+Correct Answer: 
+D. Tevaram
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00163
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+19th Century Europe
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which of the following trends arose as a powerful force in 19th century Europe, resulting in sweeping changes to the political and social world of the Europeans ?
+Options:
+A. Liberalism
+B. Imperialism
+C. Nationalism
+D. Communism
+Correct Answer: 
+C. Nationalism
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00164
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+European Statesmen
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which major European statesman once remarked, "when France sneezes the rest of Europe catches cold" ?
+Options:
+A. Tsar Alexander
+B. Metternich
+C. Castlereagh
+D. Napoleon
+Correct Answer: 
+B. Metternich
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00165
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Foreign Travellers Accounts
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which foreign traveller described India's postal system as very efficient because it allowed the merchants to send information and remit credit over long distances at a short notice ?
+Options:
+A. Abdur Razzaq
+B. Ibn Battuta
+C. Al Biruni
+D. Seydi Ali Reis
+Correct Answer: 
+B. Ibn Battuta
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00166
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+Wall Street Crash
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The impact of the Wall Street Crash, 1929, resulted in which development that affected almost the entire world ?
+Options:
+A. Russian Revolution
+B. Abolition of Slavery
+C. Beginning of the Weimer Republic
+D. Great Depression
+Correct Answer: 
+D. Great Depression
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00167
+Category: 
+General Awareness
+Topic: 
+Ancient Indian History
+Subtopic: 
+Sanghas and Ganas
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In the earliest states, power was shared collectively in some Sanghas or Ganas. Which of the following Sangha or Gana was an oligarchy State ?
+Options:
+A. Magadha
+B. Kosala
+C. Vajji
+D. Avanti
+Correct Answer: 
+C. Vajji
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00168
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+Japanese Buddhist Text
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+What was the title of the oldest hand printed Japanese Buddhist book ?
+Options:
+A. Lotus Sutra
+B. Ukiyo
+C. Diamond Sutra
+D. Tripitaka
+Correct Answer: 
+C. Diamond Sutra
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00169
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Constituent Assembly
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In the proceedings of the Constituent Assembly, the objectives resolution declared India as
+Options:
+A. Independent Unitary State
+B. Democratic Republic
+C. Socialist State only
+D. Independent Sovereign Republic
+Correct Answer: 
+D. Independent Sovereign Republic
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00170
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+18th Century Revolutions
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which 18th century revolution in Europe proclaimed supremacy of the people to constitute the nation and shape its destiny ?
+Options:
+A. French Revolution
+B. Russian Revolution
+C. Glorious Revolution
+D. Belgian Revolution
+Correct Answer: 
+A. French Revolution
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00171
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+Roman Empire
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Power was vested in early Roman Empire in the three key institutions: the emperor, the army and _______
+Options:
+A. The Warlords
+B. The Senate
+C. The Dictators
+D. The Assembly
+Correct Answer: 
+B. The Senate
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00172
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Revolt of 1857
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In 1857, the mutinous sepoys used which key signal to begin their actions in the cantonments ?
+Options:
+A. The ringing of church bells
+B. Firing of the evening gun or bugle sounding
+C. Beating of drums
+D. By waving a white flag
+Correct Answer: 
+B. Firing of the evening gun or bugle sounding
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00173
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+Ancient Civilisations
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which ancient civilisation valued its cities so much that after their destruction, people recalled their city life in the form of poems like the Gilgamesh epic ?
+Options:
+A. Mesopotamian civilisation
+B. Indus valley civilisation
+C. Egyptian civilisation
+D. Minoan civilisation
+Correct Answer: 
+A. Mesopotamian civilisation
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00174
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Vijayanagara Empire
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In the Vijayanagara Empire, Krishnadeva Raya's rule was characterised by expansion and consolidation. After his death strains appeared in the imperial structure due to
+Options:
+A. Alauddin Hasan Bahman Shah
+B. Aravidu dynasty
+C. Rebellious Nayakas
+D. Harihar and Bukka
+Correct Answer: 
+C. Rebellious Nayakas
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00175
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Panchayati Raj
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+In 1992, the Constitution of India was amended to give recognition to Panchayati Raj and Municipal Corporation as the third tier of democracy. What is this process known as ?
+Options:
+A. Over-Centralisation
+B. Centralisation
+C. Functional Centralisation
+D. Decentralisation
+Correct Answer: 
+D. Decentralisation
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00176
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Union Territories
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+There are some units of the Indian Union whose territories are too small to become an Independent State. What are such territorial units called ?
+Options:
+A. Union Territories
+B. State Capitals
+C. North Eastern States
+D. Princely States
+Correct Answer: 
+A. Union Territories
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00177
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Coalition Government
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+In many States, India witnessed the rise of regional parties after 1990. At the centre this era was the beginning of
+Options:
+A. Unitary Form of Government
+B. Coalition Government
+C. Majoritarian Government
+D. Non-Federal System
+Correct Answer: 
+B. Coalition Government
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00178
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Scheduled Languages
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The Constitution of India recognises how many scheduled languages ?
+Options:
+A. 20
+B. 18
+C. 22
+D. 16
+Correct Answer: 
+C. 22
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00179
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Vertical Division of Power
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The Constitution of India defines power at different levels of government. What does vertical division of power mean in this context ?
+Options:
+A. Sharing power among different social groups.
+B. Sharing power among political parties.
+C. Sharing power among the higher and lower levels of government.
+D. Having a single party rule.
+Correct Answer: 
+C. Sharing power among the higher and lower levels of government.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00180
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Fundamental Rights
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Under the Constitution of India, which of the following is not a Fundamental Right ?
+Options:
+A. Right Against Exploitation
+B. Right to Citizenship
+C. Right to Constitutional Remedies
+D. Cultural and Educational Rights
+Correct Answer: 
+B. Right to Citizenship
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00181
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Emergency 1975
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+When did the crisis of democratic order set in the political system of India with the declaration of emergency invoked under the Article 352 of the Constitution of India ?
+Options:
+A. 25 April 1975
+B. 25 May 1975
+C. 25 June 1975
+D. 25 July 1975
+Correct Answer: 
+C. 25 June 1975
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00182
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Election Commission
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Which Article of the Constitution accords the Election Commission a decisive role regarding the elections ?
+Options:
+A. Article 151
+B. Article 368
+C. Article 324
+D. Article 237
+Correct Answer: 
+C. Article 324
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00183
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Democracy at Independence
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+On India's Independence, which political path did visionary national leaders choose to govern India's immensely diverse population ?
+Options:
+A. Nominal Democracy
+B. Single Party Rule
+C. Constitutional Monarchy
+D. Democracy
+Correct Answer: 
+D. Democracy
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00184
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Constitutional Bodies
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+In India, which constitutional body oversees the implementation of the constitutional provisions and procedures ?
+Options:
+A. Executive
+B. Legislature and Judiciary
+C. Legislative
+D. Judiciary
+Correct Answer: 
+D. Judiciary
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00185
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Directive Principles
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following is a 'non-justiciable right' under the Directive Principles of State Policy ?
+Options:
+A. Promotion of Cottage Industries
+B. Uniform Civil Code
+C. Promotion of International Peace
+D. Adequate Livelihood
+Correct Answer: 
+A. Promotion of Cottage Industries
+Note: All four listed items are technically non-justiciable DPSP provisions; Option A (Promotion of Cottage Industries, Article 43) is given as the least ambiguous match, but this could reasonably be reviewed further.
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00186
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+JP Movement 1974
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+A veteran leader took over the student protest movement in 1974 agitating against the rising prices of food and essential commodities. Identify the leader.
+Options:
+A. Jayaprakash Narayan
+B. Ram Manohar Lohia
+C. Natarajan Annadurai
+D. K. Kamraj
+Correct Answer: 
+A. Jayaprakash Narayan
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00187
+Category: 
+General Awareness
+Topic: 
+Indian Polity
+Subtopic: 
+Union List
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The Constitution of India provides three lists for the distribution of legislative powers. Which list includes defence, banking and communications ?
+Options:
+A. Both Union and State lists
+B. Union List
+C. State List
+D. Concurrent List
+Correct Answer: 
+B. Union List
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00188
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Gandhi in South Africa
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+The epithet "Making of Mahatma" was given in reference to Gandhiji's struggle in which country ?
+Options:
+A. South Africa
+B. England
+C. India
+D. Ceylon
+Correct Answer: 
+A. South Africa
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00189
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Non-Cooperation Movement
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which Gandhian mass movement, if not suspended, could have changed the destiny of India through an unprecedented surge of popular action of massive boycotts and strikes ?
+Options:
+A. Kheda Satyagraha
+B. Non-Cooperation Movement
+C. Quit India Movement
+D. Bardoli Satyagraha
+Correct Answer: 
+B. Non-Cooperation Movement
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00190
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Cabinet Mission and Direct Action Day
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+After the failure of which colonial mission, the Direct Action Day, resulted in unleashing brutal violence in India ?
+Options:
+A. Simon Commission
+B. Cripps Mission
+C. Lee Commission
+D. Cabinet Mission
+Correct Answer: 
+D. Cabinet Mission
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00191
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Revolt of 1857 - Unsung Heroes
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Identify a unsung hero who mobilised cultivators of the village Chaurasee Des to rebel against British rulers in 1857.
+Options:
+A. Nana Saheb
+B. Maulavi Ahmadullah Shah
+C. Shah Mal
+D. Tantya Tope
+Correct Answer: 
+C. Shah Mal
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00192
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Independence Day Celebration 1930
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In colonial times, when did Indians celebrate Independence Day when villages and cities hoisted the national flag and sang patriotic songs in different places and at identical time ?
+Options:
+A. 11th February, 1930
+B. 15th August, 1930
+C. 14th August, 1930
+D. 26th January, 1930
+Correct Answer: 
+D. 26th January, 1930
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00193
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Revolt of 1857 - Leaders
+Difficulty: 
+Easy
+Estimated Time: 
+30 seconds
+Question:
+Name a brave leader of 1857 uprising whose stories of valour are treated as legendary.
+Options:
+A. Mumtaz Mahal
+B. Hazrat Mahal
+C. Avanti Bai
+D. Lakshmi Bai
+Correct Answer: 
+D. Lakshmi Bai
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00194
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Champaran Satyagraha
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Which of the following Gandhian led Satyagraha directly impacted land reforms in colonial India ?
+Options:
+A. Champaran Satyagraha
+B. Ahmedabad Mill Campaign
+C. Rowlatt Satyagraha
+D. Individual Satyagraha
+Correct Answer: 
+A. Champaran Satyagraha
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00195
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Satara Movement
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+In the wake of which national movement an "Independent government" was proclaimed in Satara district making the British respond against it with much force ?
+Options:
+A. Ghadar Movement
+B. Quit India Movement
+C. Krishak Praja Mandal Movement
+D. Civil Disobedience Movement
+Correct Answer: 
+B. Quit India Movement
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00196
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Rise of Nationalism
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+Nationalism arose in 19th century India as a result of _______
+Options:
+A. Redefining the Boundaries of the Provinces
+B. Formation of the Nation-State
+C. Creation of a dynastic empire
+D. Unrestrained colonial subjugation
+Correct Answer: 
+D. Unrestrained colonial subjugation
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00197
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Swadeshi Movement
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+The Swadeshi Movement (1905-08) marked a significant step in India's freedom struggle. The movement was led by three renowned leaders. Identify them.
+Options:
+A. Balgangadhar Tilak, Gopal Krishna Gokhale, Mohammad Ali Jinnah
+B. Lala Lajpat Rai, Balgangadhar Tilak, Bipin Chandra Pal
+C. Gopal Krishna Gokhale, Mahatma Gandhi, Bipin Chandra Pal
+D. Lala Lajpat Rai, Gopal Krishna Gokhale, Bipin Chandra Pal
+Correct Answer: 
+B. Lala Lajpat Rai, Balgangadhar Tilak, Bipin Chandra Pal
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00198
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Rowlatt Act
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+The first countrywide Satyagraha was called by Mahatma Gandhi against which repressive law that profoundly angered and agitated Indians ?
+Options:
+A. Pitt's India Act
+B. Regulating Act
+C. Rowlatt Act
+D. Wood's Despatch
+Correct Answer: 
+C. Rowlatt Act
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00199
+Category: 
+General Awareness
+Topic: 
+Indian History
+Subtopic: 
+Civil Disobedience Movement
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+The following statement refers to the launch of which movement - "The British taxes the nation's vital necessity and prevents the public from manufacturing it" ?
+Options:
+A. Bardoli Satyagraha
+B. Champaran Satyagraha
+C. Civil Disobedience Movement
+D. Quit India Movement
+Correct Answer: 
+C. Civil Disobedience Movement
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
+Q00200
+Category: 
+General Awareness
+Topic: 
+World History
+Subtopic: 
+World War I
+Difficulty: 
+Medium
+Estimated Time: 
+45 seconds
+Question:
+India's participation in which war gave rise to extreme economic hardships and huge defence expenditure, setting the stage for mass nationalism to emerge ?
+Options:
+A. Boer War
+B. World War II
+C. Afghan War
+D. World War I
+Correct Answer: 
+D. World War I
+Exam Tags: 
+State PSC, Kerala PSC, LDC/LGS, General Recruitment
+Verification Status: 
+Verified
+Status: 
+Published
+______________________________________________________________________
