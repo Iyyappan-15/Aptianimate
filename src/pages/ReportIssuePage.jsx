@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
-import { useNavigate } from 'react-router-dom';
 
-export default function ReportIssuePage() {
-  const navigate = useNavigate();
+export default function ReportIssuePage({ navigate }) {
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(null);
   
