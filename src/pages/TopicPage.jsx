@@ -905,16 +905,18 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                       opacity: 0.7, animation: `sc-diamond 2.8s ease-in-out ${i * 0.4}s infinite`,
                     }} />
                   ))}
-                  <img
+                  <motion.img
                     src="/trophy.png"
                     alt="Achievement Trophy"
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ repeat: Infinity, duration: 3.5, ease: 'easeInOut' }}
                     style={{
                       width: "85%",
                       height: "85%",
                       objectFit: "contain",
                       position: "relative",
                       zIndex: 1,
-                      filter: "drop-shadow(0 8px 24px rgba(" + glowRgba + ",.4)) drop-shadow(0 2px 6px rgba(0,0,0,.12))"
+                      filter: "drop-shadow(0 16px 32px rgba(" + glowRgba + ",.5)) drop-shadow(0 4px 8px rgba(0,0,0,.2))"
                     }}
                   />
                 </div>
