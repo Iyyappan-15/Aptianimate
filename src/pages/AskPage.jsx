@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { parseUserQuestion } from "../api/groqApi";
 import AnimationPlayer from "../components/AnimationPlayer";
+import AIThinkingLoader from "../components/AIThinkingLoader";
 
 const HISTORY_KEY = "ask_ai_history";
 const MAX_HISTORY = 8;
@@ -173,15 +174,7 @@ export default function AskPage({ navigate, initialQuery = "" }) {
 
       {/* Loading */}
       {state === STATES.LOADING && (
-        <div style={{ textAlign: "center", padding: "48px 24px", marginBottom: "32px" }}>
-          <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginBottom: "20px" }}>
-            {[0,1,2].map(i => <div key={i} style={{ width: "12px", height: "12px", borderRadius: "50%", background: "var(--violet)", animation: `askBounce 1.2s ease-in-out ${i * 0.2}s infinite` }} />)}
-          </div>
-          <p style={{ color: "var(--text-sec)", fontSize: "1.05rem", fontWeight: "600", margin: "0 0 8px" }}>🧠 AI is solving this visually...</p>
-          <div style={{ maxWidth: "480px", margin: "0 auto", padding: "10px 16px", background: "var(--surface2)", borderRadius: "10px", color: "var(--text-muted)", fontSize: "0.9rem", fontStyle: "italic" }}>
-            "{question.length > 110 ? question.slice(0, 110) + "..." : question}"
-          </div>
-        </div>
+        <AIThinkingLoader question={question} />
       )}
 
       {/* Result */}
