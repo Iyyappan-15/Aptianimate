@@ -39,12 +39,10 @@ function DiffBadge({ diff }) {
 function QuestionPalette({ total, current, answers, onJump }) {
   return (
     <div style={{
-      background: 'rgba(255, 255, 255, 0.6)',
-      backdropFilter: 'blur(20px)',
-      WebkitBackdropFilter: 'blur(20px)',
-      border: '1px solid rgba(255, 255, 255, 0.4)',
+      background: 'var(--surface)',
+      border: '1px solid var(--border)',
       borderRadius: '24px', padding: '28px',
-      boxShadow: '0 8px 32px rgba(31, 38, 135, 0.05)'
+      boxShadow: '0 8px 32px rgba(0,0,0,0.08)'
     }}>
       <div style={{
         fontWeight: 800, fontSize: '0.9rem', color: 'var(--text-main)',
@@ -343,10 +341,10 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
 
         {/* ── Header Bar ────────────────────────────────────────────── */}
         <div style={{
-          background: 'rgba(255, 255, 255, 0.7)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)',
-          border: '1px solid rgba(255, 255, 255, 0.4)', borderRadius: '24px',
+          background: 'var(--surface)', border: '1px solid var(--border)',
+          borderRadius: '24px',
           padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          marginBottom: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)'
+          marginBottom: '32px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'
         }}>
           <button
             onClick={() => navigate('govt-pyq')}
