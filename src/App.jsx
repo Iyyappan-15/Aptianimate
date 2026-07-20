@@ -15,7 +15,6 @@ import GovtPYQPage from './pages/GovtPYQPage';
 import GovtRoadmapPage from './pages/GovtRoadmapPage';
 import GovtDailyPracticePage from './pages/GovtDailyPracticePage';
 import ProfilePage from './pages/ProfilePage';
-import ReportIssuePage from './pages/ReportIssuePage';
 import SplashScreen from './components/SplashScreen';
 import DoodleOverlay from './components/DoodleOverlay';
 import UsernameModal from './components/UsernameModal';
@@ -161,8 +160,6 @@ function App() {
     pageComponent = <GovtDailyPracticePage navigate={navigate} />;
   } else if (route === 'profile') {
     pageComponent = <ProfilePage navigate={navigate} />;
-  } else if (route === 'report-issue') {
-    pageComponent = <ReportIssuePage navigate={navigate} />;
   } else if (route === 'admin') {
     pageComponent = <AdminDashboard />;
   } else if (route === 'admin/users') {

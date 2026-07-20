@@ -64,6 +64,14 @@ function AccountSettings({ user, profile, signOut }) {
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [showExportOptions, setShowExportOptions] = useState(false);
 
+  // Report an Issue inline form state
+  const [showReportForm, setShowReportForm] = useState(false);
+  const [reportCategory, setReportCategory] = useState('UI Bug');
+  const [reportDesc, setReportDesc] = useState('');
+  const [reportSending, setReportSending] = useState(false);
+  const [reportSent, setReportSent] = useState(false);
+  const [reportError, setReportError] = useState('');
+
   // Edit profile states
   const [editingUsername, setEditingUsername] = useState(false);
   const [editingDisplayName, setEditingDisplayName] = useState(false);
@@ -439,20 +447,125 @@ function AccountSettings({ user, profile, signOut }) {
       </div>
 
       {/* ── Report an Issue ── */}
-      <div className="setting-row">
-        <div className="setting-info">
-          <div className="setting-icon" style={{ background: 'var(--surface2)' }}>🐞</div>
-          <div>
-            <p className="setting-title">Report an Issue</p>
-            <p className="setting-desc">Found a bug? Let us know!</p>
+      <div className="setting-row" style={{ flexDirection: 'column', alignItems: 'stretch', gap: 0 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div className="setting-info">
+            <div className="setting-icon" style={{ background: 'var(--surface2)' }}>🐞</div>
+            <div>
+              <p className="setting-title">Report an Issue</p>
+              <p className="setting-desc">Found a bug? Let us know!</p>
+            </div>
           </div>
+          {!showReportForm && !reportSent && (
+            <button
+              onClick={() => { setShowReportForm(true); setReportSent(false); setReportError(''); }}
+              style={btnSm('var(--violet)', false)}
+            >
+              Report
+            </button>
+          )}
+          {reportSent && (
+            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#16a34a' }}>✅ Sent!</span>
+          )}
         </div>
-        <button 
-          onClick={() => navigate('report-issue')}
-          style={{ ...btnSm('var(--violet)', false), textDecoration: 'none' }}
-        >
-          Report
-        </button>
+
+        {showReportForm && !reportSent && (
+          <div style={{
+            marginTop: '14px', padding: '16px', borderRadius: '14px',
+            background: 'var(--surface2)', border: '1px solid var(--border)',
+            display: 'flex', flexDirection: 'column', gap: '12px'
+          }}>
+            {/* Category */}
+            <div>
+              <label style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--muted)', display: 'block', marginBottom: '6px' }}>Issue Category</label>
+              <select
+                value={reportCategory}
+                onChange={e => setReportCategory(e.target.value)}
+                style={{ width: '100%', padding: '8px 12px', borderRadius: '10px', border: '1px solid var(--border)', background: 'var(--bg)', color: 'var(--text)', fontWeight: 600 }}
+              >
+                <option value="UI Bug">UI or Visual Bug</option>
+                <option value="Performance">Performance / Lag</option>
+                <option value="Question Error">⚠️ Question Error (Wrong answer/typo)</option>
+                <option value="Feature Request">Feature Request</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            {/* Description textarea */}
+            <div>
+              <label style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--muted)', display: 'block', marginBottom: '6px' }}>Describe the issue</label>
+              <textarea
+                value={reportDesc}
+                onChange={e => setReportDesc(e.target.value)}
+                placeholder="What happened? What did you expect? Be as detailed as you like..."
+                rows={4}
+                style={{
+                  width: '100%', padding: '10px 12px', borderRadius: '10px',
+                  border: '1px solid var(--border)', background: 'var(--bg)',
+                  color: 'var(--text)', fontSize: '0.9rem', lineHeight: 1.6,
+                  resize: 'vertical', boxSizing: 'border-box'
+                }}
+              />
+            </div>
+
+            {reportError && (
+              <div style={{ fontSize: '0.82rem', color: 'var(--coral)', fontWeight: 600 }}>⚠️ {reportError}</div>
+            )}
+
+            {/* Actions */}
+            <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end' }}>
+              <button
+                onClick={() => { setShowReportForm(false); setReportDesc(''); setReportError(''); }}
+                style={btnSm('var(--muted)')}
+              >
+                Cancel
+              </button>
+              <button
+                disabled={reportSending || !reportDesc.trim()}
+                onClick={async () => {
+                  if (!reportDesc.trim()) return;
+                  setReportSending(true);
+                  setReportError('');
+                  try {
+                    const deviceInfo = {
+                      userAgent: navigator.userAgent,
+                      screenWidth: window.innerWidth,
+                      screenHeight: window.innerHeight,
+                      platform: navigator.platform
+                    };
+                    const { error } = await supabase.from('bug_reports').insert([{
+                      user_id: user?.id || null,
+                      username: profile?.username || '',
+                      email: user?.email || '',
+                      category: reportCategory,
+                      description: reportDesc.trim(),
+                      device_info: deviceInfo,
+                      status: 'open',
+                      page_url: window.location.href,
+                    }]);
+                    if (error) throw error;
+                    setReportSent(true);
+                    setShowReportForm(false);
+                    setReportDesc('');
+                    // Reset sent badge after 4 seconds
+                    setTimeout(() => setReportSent(false), 4000);
+                  } catch (e) {
+                    setReportError(e.message || 'Failed to send. Try again.');
+                  } finally {
+                    setReportSending(false);
+                  }
+                }}
+                style={{
+                  ...btnSm('var(--violet)', true),
+                  opacity: (reportSending || !reportDesc.trim()) ? 0.6 : 1,
+                  cursor: (reportSending || !reportDesc.trim()) ? 'not-allowed' : 'pointer'
+                }}
+              >
+                {reportSending ? 'Sending…' : '📨 Send Report'}
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* ── Logout ── */}
