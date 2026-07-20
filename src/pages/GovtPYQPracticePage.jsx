@@ -528,37 +528,60 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
                       Submit Answer
                     </motion.button>
                   ) : (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
-                      style={{
-                        padding: '20px', borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '16px',
-                        ...(isNA
-                          ? { background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.2)' }
-                          : result === 'correct'
-                          ? { background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }
-                          : { background: 'rgba(239,68,68,0.1)',  border: '1px solid rgba(239,68,68,0.2)' }
-                        )
-                      }}
-                    >
-                      <div style={{ fontSize: '1.8rem' }}>
-                        {isNA ? '⚠️' : result === 'correct' ? '🎉' : '💡'}
-                      </div>
-                      <div>
-                        <div style={{
-                          fontWeight: 800, fontSize: '1.05rem', marginBottom: '4px',
-                          color: isNA ? '#d97706' : result === 'correct' ? '#059669' : '#dc2626'
-                        }}>
-                          {isNA ? 'Official Answer Unavailable' : result === 'correct' ? 'Excellent Work!' : 'Not quite right.'}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+                        style={{
+                          padding: '20px', borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '16px',
+                          ...(isNA
+                            ? { background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.2)' }
+                            : result === 'correct'
+                            ? { background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }
+                            : { background: 'rgba(239,68,68,0.1)',  border: '1px solid rgba(239,68,68,0.2)' }
+                          )
+                        }}
+                      >
+                        <div style={{ fontSize: '1.8rem' }}>
+                          {isNA ? '⚠️' : result === 'correct' ? '🎉' : '💡'}
                         </div>
-                        <div style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 500 }}>
-                          {isNA 
-                            ? 'The official answer key for this question was not provided or was challenged.' 
-                            : result === 'wrong' 
-                            ? <span>The correct answer is Option <strong style={{color: '#dc2626'}}>{q.correct_answer}</strong>.</span> 
-                            : 'You selected the correct answer.'}
+                        <div>
+                          <div style={{
+                            fontWeight: 800, fontSize: '1.05rem', marginBottom: '4px',
+                            color: isNA ? '#d97706' : result === 'correct' ? '#059669' : '#dc2626'
+                          }}>
+                            {isNA ? 'Official Answer Unavailable' : result === 'correct' ? 'Excellent Work!' : 'Not quite right.'}
+                          </div>
+                          <div style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 500 }}>
+                            {isNA 
+                              ? 'The official answer key for this question was not provided or was challenged.' 
+                              : result === 'wrong' 
+                              ? <span>The correct answer is Option <strong style={{color: '#dc2626'}}>{q.correct_answer}</strong>.</span> 
+                              : 'You selected the correct answer.'}
+                          </div>
                         </div>
-                      </div>
-                    </motion.div>
+                      </motion.div>
+                      
+                      {/* AI Visual Explainer */}
+                      <motion.button
+                        initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
+                        onClick={() => {
+                          const opts = q.options || [];
+                          const queryText = `${q.question}\n\nOptions:\n${opts.map(o => o.label + ') ' + o.text).join('\n')}\n\nExplain step-by-step with visual details.`;
+                          window.open(`#/ask?q=${encodeURIComponent(queryText)}`, "_blank");
+                        }}
+                        style={{
+                          width: '100%', padding: '16px', borderRadius: '16px', border: 'none',
+                          background: `linear-gradient(135deg, var(--violet), #8b5cf6)`,
+                          color: "#fff", fontWeight: 800, fontSize: "1rem", cursor: "pointer",
+                          display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px",
+                          boxShadow: `0 4px 14px rgba(139, 92, 246, 0.3)`, transition: "transform 0.15s, box-shadow 0.15s"
+                        }}
+                        onMouseOver={e => { e.currentTarget.style.transform="translateY(-2px)"; }}
+                        onMouseOut={e => { e.currentTarget.style.transform="translateY(0)"; }}
+                      >
+                        🎬 Solve Visually (AI)
+                      </motion.button>
+                    </div>
                   )}
                 </div>
               </motion.div>
