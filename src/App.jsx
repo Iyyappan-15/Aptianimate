@@ -33,6 +33,7 @@ import AdminRoute from './components/admin/AdminRoute';
 import AdminLayout from './components/admin/AdminLayout';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminUsers from './pages/admin/AdminUsers';
+import AdminBugReports from './pages/admin/AdminBugReports';
 import AdminSettings from './pages/admin/AdminSettings';
 import AdminProfile from './pages/admin/AdminProfile';
 
@@ -166,6 +167,8 @@ function App() {
     pageComponent = <AdminDashboard />;
   } else if (route === 'admin/users') {
     pageComponent = <AdminUsers />;
+  } else if (route === 'admin/bug-reports') {
+    pageComponent = <AdminBugReports />;
   } else if (route === 'admin/settings') {
     pageComponent = <AdminSettings />;
   } else if (route === 'admin/profile') {

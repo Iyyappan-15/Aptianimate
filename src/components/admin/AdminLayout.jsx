@@ -2,10 +2,11 @@ import React from 'react';
 
 export default function AdminLayout({ children, currentRoute, navigate, theme, toggleTheme }) {
   const navItems = [
-    { label: 'Dashboard', path: 'admin' },
+    { label: 'Dashboard',    path: 'admin' },
     { label: 'User Analytics', path: 'admin/users' },
-    { label: 'Settings', path: 'admin/settings' },
-    { label: 'Profile', path: 'admin/profile' },
+    { label: '🐛 Bug Reports', path: 'admin/bug-reports' },
+    { label: 'Settings',     path: 'admin/settings' },
+    { label: 'Profile',      path: 'admin/profile' },
   ];
 
   return (
