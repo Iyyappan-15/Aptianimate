@@ -8,6 +8,11 @@ export default defineConfig({
     port: 3000,
     strictPort: true, // Fail if port 3000 is already in use, to avoid confusing silent fallbacks
   },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/tests/setup.js',
+  },
   build: {
     chunkSizeWarningLimit: 600,
     rollupOptions: {
