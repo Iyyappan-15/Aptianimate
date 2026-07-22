@@ -67,13 +67,14 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
   // Google embeds SHA256(rawNonce) in the token. Supabase receives rawNonce,
   // hashes it internally, and the two hashes will match correctly.
 
-  return new Promise(async (resolve, reject) => {
+  const rawNonce = Math.random().toString(36).substring(2) + Date.now().toString(36);
+  const hashedNonce = await sha256(rawNonce);
+
+  return new Promise((resolve, reject) => {
     
     // 1. ATTEMPT POPUP LOGIN FIRST
     const redirectUri = window.location.origin; // We will handle the callback on the homepage
     // rawNonce → passed to Supabase. hashedNonce → embedded in Google OAuth URL.
-    const rawNonce = Math.random().toString(36).substring(2) + Date.now().toString(36);
-    const hashedNonce = await sha256(rawNonce);
     
     const oauthUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=id_token&scope=email%20profile&nonce=${hashedNonce}&prompt=select_account`;
 
