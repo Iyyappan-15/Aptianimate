@@ -5,8 +5,16 @@
 -- Add role column to profiles if it doesn't exist
 ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS role TEXT DEFAULT 'user';
 
--- Drop policy if it already exists to prevent errors on re-runs
-DROP POLICY IF EXISTS "Admins can update any profile" ON public.profiles;
+-- Re-create user update policy with role immutability check
+DROP POLICY IF EXISTS "Users can update their own profile" ON public.profiles;
+
+CREATE POLICY "Users can update their own profile" ON public.profiles 
+  FOR UPDATE 
+  USING (auth.uid() = id)
+  WITH CHECK (
+    auth.uid() = id 
+    AND role = (SELECT p.role FROM public.profiles p WHERE p.id = auth.uid())
+  );
 
 -- Create policy allowing admins to update profiles (requires role column)
 CREATE POLICY "Admins can update any profile" ON public.profiles 

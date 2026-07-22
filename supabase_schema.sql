@@ -86,7 +86,12 @@ CREATE POLICY "Profiles are publicly viewable" ON public.profiles
 CREATE POLICY "Users can create their own profile" ON public.profiles 
   FOR INSERT WITH CHECK (auth.uid() = id);
 CREATE POLICY "Users can update their own profile" ON public.profiles 
-  FOR UPDATE USING (auth.uid() = id);
+  FOR UPDATE 
+  USING (auth.uid() = id)
+  WITH CHECK (
+    auth.uid() = id 
+    AND role = (SELECT p.role FROM public.profiles p WHERE p.id = auth.uid())
+  );
 
 -- Bookmarks Policies
 CREATE POLICY "Users can view their own bookmarks" ON public.bookmarks 
