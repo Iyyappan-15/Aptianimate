@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { supabase } from '../../lib/supabase';
 
 const CATEGORY_COLORS = {
@@ -24,11 +24,7 @@ export default function AdminBugReports() {
   const [expandedId, setExpandedId]     = useState(null);
   const [updatingId, setUpdatingId]     = useState(null);
 
-  useEffect(() => {
-    fetchReports();
-  }, []);
-
-  const fetchReports = async () => {
+  const fetchReports = useCallback(async () => {
     setLoading(true);
     const { data, error } = await supabase
       .from('bug_reports')
@@ -36,7 +32,11 @@ export default function AdminBugReports() {
       .order('created_at', { ascending: false });
     if (!error) setReports(data || []);
     setLoading(false);
-  };
+  }, []);
+
+  useEffect(() => {
+    fetchReports();
+  }, [fetchReports]);
 
   const updateStatus = async (id, newStatus) => {
     setUpdatingId(id);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useAdmin } from '../../hooks/useAdmin';
 import { getDashboardStats } from '../../repositories/adminRepository';
 

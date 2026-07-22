@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getSystemSettings, updateSystemSettings } from '../../repositories/adminRepository';
 
 export default function AdminSettings() {

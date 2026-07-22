@@ -106,6 +106,23 @@ function LessonSlide({ lesson, color, topicName, onNext, isLast }) {
   return null;
 }
 
+const RevisitIcon = () => (
+  <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+    <path d="M2 8.5C2 5.46 4.46 3 7.5 3c1.8 0 3.4.88 4.4 2.24" stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round"/>
+    <path d="M15 8.5c0 3.04-2.46 5.5-5.5 5.5-1.8 0-3.4-.88-4.4-2.24" stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round"/>
+    <path d="M13 2v4h-4M4 15v-4h4" stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const RocketIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+    <path d="M9 2C9 2 13 3 14 8C14 12 11 15 9 16C7 15 4 12 4 8C5 3 9 2 9 2Z" fill="white" opacity="0.9"/>
+    <circle cx="9" cy="8" r="2" fill="#7c3aed"/>
+    <path d="M7 13L5 17L9 15L13 17L11 13" fill="white" opacity="0.7"/>
+  </svg>
+);
+
+
 export default function TopicPage({ topicSlug, topicName, navigate }) {
   const { user } = useAuth();
   const [topic, setTopic] = useState(null);
@@ -724,24 +741,6 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
         <circle cx="18" cy="18" r="14" fill={corrColor + "22"} stroke={corrColor} strokeWidth="2"/>
         <path d="M10 18 L15 23 L26 12" stroke={corrColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    );
-
-    /* SVG icon for the "Revisit" button arrow */
-    const RevisitIcon = () => (
-      <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
-        <path d="M2 8.5C2 5.46 4.46 3 7.5 3c1.8 0 3.4.88 4.4 2.24"  stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round"/>
-        <path d="M15 8.5c0 3.04-2.46 5.5-5.5 5.5-1.8 0-3.4-.88-4.4-2.24" stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round"/>
-        <path d="M13 2v4h-4M4 15v-4h4" stroke="#6366f1" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    );
-
-    /* SVG icon for the "Continue" button */
-    const RocketIcon = () => (
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <path d="M9 2C9 2 13 3 14 8C14 12 11 15 9 16C7 15 4 12 4 8C5 3 9 2 9 2Z" fill="white" opacity="0.9"/>
-        <circle cx="9" cy="8" r="2" fill="#7c3aed"/>
-        <path d="M7 13L5 17L9 15L13 17L11 13" fill="white" opacity="0.7"/>
       </svg>
     );
 
