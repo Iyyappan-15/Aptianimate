@@ -5,36 +5,39 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
 import logoImg from './assets/logo.png';
 import HomePage from './pages/HomePage';
-import CategoryPage from './pages/CategoryPage';
-import PracticePage from './pages/PracticePage';
-import SavedPage from './pages/SavedPage';
-import ProgressPage from './pages/ProgressPage';
-import TopicPage from './pages/TopicPage';
-import AskPage from './pages/AskPage';
-import GovtPYQPage from './pages/GovtPYQPage';
-import GovtRoadmapPage from './pages/GovtRoadmapPage';
-import GovtDailyPracticePage from './pages/GovtDailyPracticePage';
-import ProfilePage from './pages/ProfilePage';
 import SplashScreen from './components/SplashScreen';
 import DoodleOverlay from './components/DoodleOverlay';
 import UsernameModal from './components/UsernameModal';
 
+// Lazy-loaded pages
+const CategoryPage = lazy(() => import('./pages/CategoryPage'));
+const PracticePage = lazy(() => import('./pages/PracticePage'));
+const SavedPage = lazy(() => import('./pages/SavedPage'));
+const ProgressPage = lazy(() => import('./pages/ProgressPage'));
+const TopicPage = lazy(() => import('./pages/TopicPage'));
+const AskPage = lazy(() => import('./pages/AskPage'));
+const GovtPYQPage = lazy(() => import('./pages/GovtPYQPage'));
+const GovtRoadmapPage = lazy(() => import('./pages/GovtRoadmapPage'));
+const GovtDailyPracticePage = lazy(() => import('./pages/GovtDailyPracticePage'));
+const ProfilePage = lazy(() => import('./pages/ProfilePage'));
 const MockTestPage = lazy(() => import('./pages/MockTestPage'));
 const MockTestResultsPage = lazy(() => import('./pages/MockTestResultsPage'));
 const BattlePage = lazy(() => import('./pages/BattlePage'));
 const FriendBattlePage = lazy(() => import('./pages/FriendBattlePage'));
 const GovtPYQPracticePage = lazy(() => import('./pages/GovtPYQPracticePage'));
+
 import { signInWithGoogle, signOut } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
 
-// Admin Components
+// Admin Components (Lazy loaded)
 import AdminRoute from './components/admin/AdminRoute';
 import AdminLayout from './components/admin/AdminLayout';
-import AdminDashboard from './pages/admin/AdminDashboard';
-import AdminUsers from './pages/admin/AdminUsers';
-import AdminBugReports from './pages/admin/AdminBugReports';
-import AdminSettings from './pages/admin/AdminSettings';
-import AdminProfile from './pages/admin/AdminProfile';
+const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard'));
+const AdminUsers = lazy(() => import('./pages/admin/AdminUsers'));
+const AdminBugReports = lazy(() => import('./pages/admin/AdminBugReports'));
+const AdminSettings = lazy(() => import('./pages/admin/AdminSettings'));
+const AdminProfile = lazy(() => import('./pages/admin/AdminProfile'));
+
 
 function App() {
   const [route, setRoute] = useState(window.location.hash.replace('#/', '') || '');

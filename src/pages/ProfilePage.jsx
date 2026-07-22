@@ -1,7 +1,5 @@
 // src/pages/ProfilePage.jsx
 import React, { useState, useRef } from 'react';
-import jsPDF from 'jspdf';
-import 'jspdf-autotable';
 import { useAuth } from '../contexts/AuthContext';
 import { deleteAllAnalytics } from '../repositories/analyticsRepository';
 import { supabase } from '../lib/supabase';
@@ -209,6 +207,8 @@ function AccountSettings({ user, profile, signOut }) {
   const handleExportPDF = async () => {
     try {
       if (supabase) {
+        const { default: jsPDF } = await import('jspdf');
+        await import('jspdf-autotable');
         const { data } = await supabase
           .from('daily_activity')
           .select('*')
