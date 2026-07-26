@@ -9,6 +9,7 @@ import GovtExamView from '../components/GovtExamView';
 import AptitudeRoadmapView from '../components/AptitudeRoadmapView';
 import VisualExplanationDemo from '../components/VisualExplanationDemo';
 import MockTestsView from '../components/MockTestsView';
+import TechnicalInterviewPrepView from '../components/TechnicalInterviewPrepView';
 
 export default function HomePage({ navigate }) {
   const [goal, setLocalGoal] = useState(() => {
@@ -153,6 +154,8 @@ export default function HomePage({ navigate }) {
         <AptitudeRoadmapView navigate={navigate} />
       ) : goal === 'Mock Tests' ? (
         <MockTestsView navigate={navigate} />
+      ) : goal === 'Technical Interview Prep' ? (
+        <TechnicalInterviewPrepView navigate={navigate} />
       ) : (
         <>
           <div className="section-header">

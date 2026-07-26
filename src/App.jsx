@@ -25,6 +25,7 @@ const MockTestResultsPage = lazy(() => import('./pages/MockTestResultsPage'));
 const BattlePage = lazy(() => import('./pages/BattlePage'));
 const FriendBattlePage = lazy(() => import('./pages/FriendBattlePage'));
 const GovtPYQPracticePage = lazy(() => import('./pages/GovtPYQPracticePage'));
+const TechnicalInterviewTopicPage = lazy(() => import('./pages/TechnicalInterviewTopicPage'));
 
 import { signInWithGoogle } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
@@ -130,6 +131,10 @@ function App() {
     const slug = parts[1];
     const name = parts.slice(2).join('/');
     pageComponent = <TopicPage topicSlug={slug} topicName={decodeURIComponent(name)} navigate={navigate} />;
+  } else if (route.startsWith('interview-topic/')) {
+    const parts = route.split('/');
+    const slug = parts[1];
+    pageComponent = <TechnicalInterviewTopicPage topicSlug={slug} navigate={navigate} />;
   } else if (route === 'saved') {
     pageComponent = <SavedPage navigate={navigate} />;
   } else if (route === 'progress') {
