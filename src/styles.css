@@ -159,11 +159,11 @@ img, svg { display: block; }
   transform: translateY(-1px);
 }
 .goal-btn.selected {
-  background: linear-gradient(135deg, var(--violet) 0%, #7c3aed 50%, var(--teal) 100%);
-  border-color: transparent;
-  color: #fff;
+  background: color-mix(in srgb, var(--violet) 12%, var(--surface));
+  border-color: var(--violet);
+  color: var(--text);
   font-weight: 700;
-  box-shadow: 0 4px 16px color-mix(in srgb, var(--violet) 40%, transparent);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--violet) 20%, transparent);
   transform: translateY(-1px);
 }
 
@@ -1195,11 +1195,11 @@ img, svg { display: block; }
   color: var(--text);
 }
 .cp-tab.active {
-  border-color: transparent;
-  background: var(--tab-color, var(--violet));
-  color: #fff;
+  border-color: var(--tab-color, var(--violet));
+  background: color-mix(in srgb, var(--tab-color, var(--violet)) 15%, transparent);
+  color: var(--text);
   font-weight: 700;
-  box-shadow: 0 4px 16px color-mix(in srgb, var(--tab-color, var(--violet)) 40%, transparent);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--tab-color, var(--violet)) 25%, transparent);
   transform: translateY(-1px);
 }
 .cp-tab-icon { font-size: 1.1rem; }
