@@ -636,9 +636,9 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
             
             {/* Info Card */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.6)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.4)', borderRadius: '24px', padding: '28px',
-              boxShadow: '0 8px 32px rgba(31, 38, 135, 0.05)'
+              background: 'var(--surface)', border: '1px solid var(--border)',
+              borderRadius: '24px', padding: '28px',
+              boxShadow: 'var(--shadow)'
             }}>
               <div style={{
                 fontWeight: 800, fontSize: '0.9rem', color: 'var(--text-main)',
