@@ -155,16 +155,13 @@ img, svg { display: block; }
 .goal-btn:hover {
   border-color: var(--violet);
   color: var(--text);
-  background: color-mix(in srgb, var(--violet) 8%, var(--surface));
-  transform: translateY(-1px);
+  background: var(--surface);
 }
 .goal-btn.selected {
-  background: color-mix(in srgb, var(--violet) 12%, var(--surface));
+  background: var(--surface);
   border-color: var(--violet);
   color: var(--text);
   font-weight: 700;
-  box-shadow: 0 4px 16px color-mix(in srgb, var(--violet) 20%, transparent);
-  transform: translateY(-1px);
 }
 
 /* â”€â”€ Section Headers â”€â”€ */
@@ -268,27 +265,20 @@ img, svg { display: block; }
   transform: translateX(2px);
 }
 .option-btn.selected {
-  border-color: transparent;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--violet) 16%, var(--surface2)) 0%, color-mix(in srgb, var(--teal) 8%, var(--surface2)) 100%);
-  outline: 2px solid var(--violet);
-  outline-offset: -2px;
+  border-color: var(--violet);
+  background: var(--surface);
   color: var(--text);
   font-weight: 600;
-  box-shadow: 0 2px 12px color-mix(in srgb, var(--violet) 20%, transparent);
 }
 .option-btn.correct {
-  border-color: transparent;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--teal) 20%, var(--surface2)) 0%, color-mix(in srgb, var(--teal) 8%, var(--surface2)) 100%);
-  outline: 2px solid var(--teal);
-  outline-offset: -2px;
+  border-color: var(--teal);
+  background: var(--surface);
   color: var(--text);
   font-weight: 600;
 }
 .option-btn.wrong {
-  border-color: transparent;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--coral) 18%, var(--surface2)) 0%, color-mix(in srgb, var(--coral) 6%, var(--surface2)) 100%);
-  outline: 2px solid var(--coral);
-  outline-offset: -2px;
+  border-color: var(--coral);
+  background: var(--surface);
   color: var(--text);
   font-weight: 600;
 }
@@ -301,10 +291,9 @@ img, svg { display: block; }
   border: 1px solid var(--border);
 }
 .option-btn.selected .opt-letter {
-  background: linear-gradient(135deg, var(--violet), #7c3aed);
+  background: var(--violet);
   color: #fff;
   border-color: transparent;
-  box-shadow: 0 2px 8px color-mix(in srgb, var(--violet) 40%, transparent);
 }
 .option-btn.correct .opt-letter { background: var(--teal); color: #fff; border-color: transparent; }
 .option-btn.wrong .opt-letter { background: var(--coral); color: #fff; border-color: transparent; }
@@ -542,13 +531,13 @@ img, svg { display: block; }
 .quiz-opt:hover:not(:disabled) { border-color: var(--violet); }
 .quiz-opt.correct {
   border-color: var(--teal);
-  background: linear-gradient(135deg, rgba(20,184,166,0.18) 0%, rgba(20,184,166,0.07) 100%);
+  background: var(--surface);
   color: var(--text);
   font-weight: 600;
 }
 .quiz-opt.wrong {
   border-color: var(--coral);
-  background: linear-gradient(135deg, rgba(239,68,68,0.18) 0%, rgba(239,68,68,0.07) 100%);
+  background: var(--surface);
   color: var(--text);
   font-weight: 600;
 }
@@ -1196,11 +1185,9 @@ img, svg { display: block; }
 }
 .cp-tab.active {
   border-color: var(--tab-color, var(--violet));
-  background: color-mix(in srgb, var(--tab-color, var(--violet)) 15%, transparent);
+  background: var(--surface);
   color: var(--text);
   font-weight: 700;
-  box-shadow: 0 4px 16px color-mix(in srgb, var(--tab-color, var(--violet)) 25%, transparent);
-  transform: translateY(-1px);
 }
 .cp-tab-icon { font-size: 1.1rem; }
 .cp-tab-label { white-space: nowrap; }
