@@ -17,7 +17,7 @@ export default function HomePage({ navigate }) {
     return saved || 'Campus Placements';
   });
   const [lastSession, setLocalLastSession] = useState(null);
-  const [stats, setLocalStats] = useState(null);
+  const [_stats, setLocalStats] = useState(null);
   
   // Search State
   const [searchQuery, setSearchQuery] = useState('');
@@ -47,7 +47,7 @@ export default function HomePage({ navigate }) {
     }
     const query = searchQuery.toLowerCase();
     const results = Object.entries(TOPIC_CONTENT)
-      .filter(([slug, content]) => content.title.toLowerCase().includes(query))
+      .filter(([_slug, content]) => content.title.toLowerCase().includes(query))
       .map(([slug, content]) => ({ slug, title: content.title, icon: content.icon }))
       .slice(0, 5); // Max 5 results
     setSearchResults(results);

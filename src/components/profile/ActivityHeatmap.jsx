@@ -1,5 +1,5 @@
-// src/components/profile/ActivityHeatmap.jsx
-import React, { useState, useMemo, useRef, useEffect } from 'react';
+﻿// src/components/profile/ActivityHeatmap.jsx
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { useHeatmap, useStatistics } from '../../hooks/useAnalytics';
 
 const LEVEL_COLORS = {

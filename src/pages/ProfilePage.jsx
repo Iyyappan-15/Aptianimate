@@ -1,5 +1,5 @@
 // src/pages/ProfilePage.jsx
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { deleteAllAnalytics } from '../repositories/analyticsRepository';
 import { supabase } from '../lib/supabase';
@@ -56,7 +56,7 @@ function Section({ title, icon, children, isCollapsible = false, defaultOpen = t
 
 // ─── Account Settings ─────────────────────────────────────────────────────
 function AccountSettings({ user, profile, signOut }) {
-  const [resetting, setResetting] = useState(false);
+  const [_resetting, setResetting] = useState(false);
   const [resettingProgress, setResettingProgress] = useState(false);
   const [confirmReset, setConfirmReset] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);

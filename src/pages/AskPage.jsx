@@ -17,7 +17,7 @@ function saveToHistory(q) {
   localStorage.setItem(HISTORY_KEY, JSON.stringify([q, ...existing].slice(0, MAX_HISTORY)));
 }
 
-export default function AskPage({ navigate, initialQuery = "" }) {
+export default function AskPage({ navigate: _navigate, initialQuery = "" }) {
   const [question, setQuestion] = useState(initialQuery);
   const [state, setState] = useState(STATES.IDLE);
   const [result, setResult] = useState(null);
@@ -29,11 +29,6 @@ export default function AskPage({ navigate, initialQuery = "" }) {
   const [selectedImage, setSelectedImage] = useState(null); // base64 string
   const textareaRef = useRef(null);
   const fileInputRef = useRef(null);
-
-  useEffect(() => {
-    if (initialQuery && initialQuery.trim()) handleSubmit(null, initialQuery.trim());
-    else setTimeout(() => textareaRef.current?.focus(), 300);
-  }, []); // eslint-disable-line
 
   const handleSubmit = async (e, overrideQ) => {
     if (e) e.preventDefault();
@@ -58,6 +53,12 @@ export default function AskPage({ navigate, initialQuery = "" }) {
       setState(STATES.ERROR);
     }
   };
+
+  useEffect(() => {
+    if (initialQuery && initialQuery.trim()) handleSubmit(null, initialQuery.trim());
+    else setTimeout(() => textareaRef.current?.focus(), 300);
+  }, []); // eslint-disable-line
+
 
   const handleReset = () => {
     setState(STATES.IDLE); setResult(null); setErrorMsg("");

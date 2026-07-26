@@ -4,7 +4,7 @@ import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GOVT_PYQ_REGISTRY } from '../data/governmentRegistry';
 
-const DIFF_COLORS = {
+const _DIFF_COLORS = {
   easy:   '#10b981',
   medium: '#f59e0b',
   hard:   '#ef4444',

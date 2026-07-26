@@ -1,7 +1,6 @@
-import React from 'react';
 import { useAdmin } from '../../hooks/useAdmin';
 
-export default function AdminRoute({ children, navigate }) {
+export default function AdminRoute({ children, navigate: _navigate }) {
   const { isAdmin, loading } = useAdmin();
 
   if (loading) {

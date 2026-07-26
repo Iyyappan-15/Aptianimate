@@ -1,4 +1,3 @@
-import React from 'react';
 
 export default function AdminLayout({ children, currentRoute, navigate, theme, toggleTheme }) {
   const navItems = [

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
@@ -30,7 +30,8 @@ const Confetti = () => (
 );
 
 // ─── Stat Card ─────────────────────────────────────────────────────────────
-const StatCard = ({ label, value, color, delay = 0 }) => (
+// StatCard is defined for potential reuse
+const _StatCard = ({ label, value, color, delay = 0 }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
@@ -60,7 +61,7 @@ const FriendBattlePage = ({ navigate }) => {
   const [isHost, setIsHost] = useState(false);
   const [channel, setChannel] = useState(null);
 
-  const [config, setConfig] = useState({
+  const [config, _setConfig] = useState({
     categories: {
       'Quantitative Aptitude': 10,
       'Logical Reasoning': 10,
@@ -73,7 +74,7 @@ const FriendBattlePage = ({ navigate }) => {
 
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [playerProgress, setPlayerProgress] = useState(0);
+  const [_playerProgress, _setPlayerProgress] = useState(0);
   const [opponentProgress, setOpponentProgress] = useState(0);
   const [timeLeft, setTimeLeft] = useState(null);
   const [playerAnswers, setPlayerAnswers] = useState({});
@@ -87,6 +88,34 @@ const FriendBattlePage = ({ navigate }) => {
   const [rematchRequested, setRematchRequested] = useState(false);
   const [opponentRematchRequested, setOpponentRematchRequested] = useState(false);
   const [rematchCountdown, setRematchCountdown] = useState(0);
+
+  // ── Fetch questions helper (declared before effects that call it) ───────────
+  const fetchQuestions = async (ids, matchIdForConfig) => {
+    try {
+      let loadedQuestions = [];
+      if (ids && ids.length > 0) {
+        const { data, error } = await supabase.from('assessment_questions').select('*').in('id', ids);
+        if (!error && data && data.length > 0) {
+          loadedQuestions = ids.map(id => data.find(q => q.id === id)).filter(Boolean);
+        }
+      }
+      if (loadedQuestions.length === 0 && matchIdForConfig) {
+        const { data: mData } = await supabase.from('friendly_matches').select('paper_config').eq('id', matchIdForConfig).single();
+        if (mData?.paper_config?.selected_ids) {
+          loadedQuestions = getQuestionsByIds(mData.paper_config.selected_ids);
+        } else if (ids && ids.length > 0) {
+          loadedQuestions = getQuestionsByIds(ids);
+        }
+      }
+      if (loadedQuestions.length === 0) {
+        alert('Could not load questions!');
+        return;
+      }
+      setQuestions(loadedQuestions);
+    } catch (err) {
+      console.error('fetchQuestions error:', err);
+    }
+  };
 
   // ── Global Matchmaking Check ──────────────────────────────────────────────
   useEffect(() => {
@@ -245,32 +274,6 @@ const FriendBattlePage = ({ navigate }) => {
     }
   };
 
-  const fetchQuestions = async (ids, matchIdForConfig) => {
-    try {
-      let loadedQuestions = [];
-      if (ids && ids.length > 0) {
-        const { data, error } = await supabase.from('assessment_questions').select('*').in('id', ids);
-        if (!error && data && data.length > 0) {
-          loadedQuestions = ids.map(id => data.find(q => q.id === id)).filter(Boolean);
-        }
-      }
-      if (loadedQuestions.length === 0 && matchIdForConfig) {
-        const { data: mData } = await supabase.from('friendly_matches').select('paper_config').eq('id', matchIdForConfig).single();
-        if (mData?.paper_config?.selected_ids) {
-          loadedQuestions = getQuestionsByIds(mData.paper_config.selected_ids);
-        } else if (ids && ids.length > 0) {
-          loadedQuestions = getQuestionsByIds(ids);
-        }
-      }
-      if (loadedQuestions.length === 0) {
-        alert('Could not load questions!');
-        return;
-      }
-      setQuestions(loadedQuestions);
-    } catch (err) {
-      console.error('fetchQuestions error:', err);
-    }
-  };
 
   // ── Countdown + Host fetch ────────────────────────────────────────────────
   useEffect(() => {
@@ -291,6 +294,7 @@ const FriendBattlePage = ({ navigate }) => {
       return () => clearInterval(t);
     }
   }, [matchStatus, config.duration, isHost, matchId, questions.length]);
+
 
   // ── Timer ─────────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -407,7 +411,7 @@ const FriendBattlePage = ({ navigate }) => {
         }
       });
 
-      const { data, error } = await supabase.rpc('submit_friendly_match', {
+      const { data: _data, error } = await supabase.rpc('submit_friendly_match', {
         p_match_id: matchId,
         p_answers: formattedAnswers,
         p_completion_time_seconds: timeTaken,

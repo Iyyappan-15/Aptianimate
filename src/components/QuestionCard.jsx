@@ -1,5 +1,5 @@
 // src/components/QuestionCard.jsx
-import { useState } from 'react';
+
 import BookmarkButton from './BookmarkButton';
 
 export default function QuestionCard({

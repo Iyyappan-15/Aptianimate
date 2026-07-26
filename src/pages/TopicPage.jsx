@@ -54,12 +54,12 @@ function resolveCorrectIndex(question) {
   return 0;
 }
 
-function isAnswerCorrect(question, selectedOption) {
+function _isAnswerCorrect(question, selectedOption) {
   const correctIdx = resolveCorrectIndex(question);
   return selectedOption === (question.options || [])[correctIdx];
 }
 
-function getCorrectText(question) {
+function _getCorrectText(question) {
   const correctIdx = resolveCorrectIndex(question);
   return (question.options || [])[correctIdx] || "";
 }
@@ -236,7 +236,6 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
         // Filter by difficulty
         let filtered = qs;
         if (practiceLevel.id !== "mixed") {
-          const diffName = practiceLevel.id.charAt(0).toUpperCase() + practiceLevel.id.slice(1);
           const byDiff = qs.filter(q => (q.difficulty || "").toLowerCase() === practiceLevel.id);
           filtered = byDiff.length > 0 ? byDiff : qs; // graceful fallback to all
         }

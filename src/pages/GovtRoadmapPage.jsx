@@ -1,7 +1,7 @@
-﻿// src/pages/GovtRoadmapPage.jsx
+// src/pages/GovtRoadmapPage.jsx
 import { useState } from 'react';
 
-export default function GovtRoadmapPage({ navigate }) {
+export default function GovtRoadmapPage({ navigate: _navigate }) {
   const [activePlan, setActivePlan] = useState('ssc');
 
   const plans = {

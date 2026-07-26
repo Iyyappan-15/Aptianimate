@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // ==========================================
@@ -702,7 +702,7 @@ export function PieEngine({ step, isActive }) {
   const C = 2 * Math.PI * 40; // r=40
   
   let cumulative = 0;
-  const chartData = slices.map((slice, i) => {
+  const chartData = slices.map((slice, _i) => {
     const percent = (slice.val || 0) / total;
     const length = percent * C;
     const offset = cumulative;

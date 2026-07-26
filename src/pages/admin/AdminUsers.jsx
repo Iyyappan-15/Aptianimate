@@ -28,7 +28,7 @@ export default function AdminUsers() {
     try {
       await deleteUserProfile(id);
       setUsers(users.filter(u => u.id !== id));
-    } catch (err) {
+    } catch {
       alert("Failed to delete user. Please try again.");
     } finally {
       setDeletingId(null);

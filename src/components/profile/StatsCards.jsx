@@ -1,5 +1,5 @@
-// src/components/profile/StatsCards.jsx
-import React, { useState, useEffect, useRef } from 'react';
+﻿// src/components/profile/StatsCards.jsx
+import { useState, useEffect, useRef } from 'react';
 import { useStatistics } from '../../hooks/useAnalytics';
 import { useStreak } from '../../hooks/useAnalytics';
 

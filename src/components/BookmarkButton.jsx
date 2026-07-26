@@ -1,5 +1,5 @@
 // src/components/BookmarkButton.jsx
-import { useState, useEffect } from 'react';
+
 import { useBookmarks } from '../hooks/useBookmarks';
 
 export default function BookmarkButton({ questionId }) {

@@ -1,5 +1,5 @@
 // src/components/profile/WeeklyChart.jsx
-import React, { useState } from 'react';
+
 import {
   ResponsiveContainer, LineChart, Line, XAxis, YAxis,
   CartesianGrid, Tooltip, Legend,

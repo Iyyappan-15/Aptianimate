@@ -1,6 +1,6 @@
 // src/components/DataInterpretationVisualizer.jsx
 // Dynamic, interactive chart renderer for Data Interpretation questions
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
   LineChart, Line, PieChart, Pie, Cell, Sector
@@ -13,10 +13,8 @@ const CHART_COLORS = [
 ];
 
 const DARK_BG = '#0f0f1a';
-const CARD_BG = 'var(--surface)';
-const BORDER = 'var(--border)';
 const TEXT_MAIN = 'var(--text-main)';
-const TEXT_SEC = 'var(--text-sec)';
+
 
 // ── Custom Tooltip ─────────────────────────────────────────────────────────────
 const CustomTooltip = ({ active, payload, label, unit = '' }) => {
@@ -41,7 +39,7 @@ const CustomTooltip = ({ active, payload, label, unit = '' }) => {
 };
 
 // ── Bar Chart Renderer ─────────────────────────────────────────────────────────
-function DynamicBarChart({ chartData, chartConfig }) {
+function DynamicBarChart({ chartData, chartConfig: _chartConfig }) {
   const { data, title, xKey, yKeys, unit = '', stacked = false } = chartData;
   const bars = yKeys || (data[0] ? Object.keys(data[0]).filter(k => k !== xKey) : []);
 
@@ -161,7 +159,7 @@ const renderActiveShape = (props) => {
 };
 
 function DynamicPieChart({ chartData }) {
-  const { data, title, nameKey = 'name', valueKey = 'value', unit = '' } = chartData;
+  const { data, title, nameKey = 'name', valueKey = 'value', unit: _unit = '' } = chartData;
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (

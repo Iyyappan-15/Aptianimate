@@ -12,7 +12,7 @@ import { recordBulkSessions } from '../repositories/analyticsRepository';
 const setCache = new Map();
 
 // ─── Adapter ──────────────────────────────────────────────────────────────────
-function adaptOptions(optionsArray) {
+function _adaptOptions(optionsArray) {
   return Object.fromEntries(optionsArray.map(o => [o.label, o.text]));
 }
 
@@ -110,7 +110,7 @@ function QuestionPalette({ total, current, answers, onJump }) {
 }
 
 // ─── Score Summary ────────────────────────────────────────────────────────────
-function ScoreSummary({ questions, answers, onRestart, navigate }) {
+function ScoreSummary({ questions: _questions, answers, onRestart, navigate }) {
   const scored   = answers.filter(a => a?.correct !== null && a !== undefined);
   const correct  = answers.filter(a => a?.correct === true).length;
   const wrong    = answers.filter(a => a?.correct === false).length;
@@ -200,8 +200,8 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
   const [result, setResult]       = useState(null);
   const [showSummary, setShowSummary] = useState(false);
   const [sessionResults, setSessionResults] = useState([]);
-  const [searchText, setSearch]   = useState('');
-  const [topicFilter, setTopicFilter] = useState('All');
+  const [_searchText, _setSearch]   = useState('');
+  const [_topicFilter, _setTopicFilter] = useState('All');
 
   const exam = useMemo(() => GOVT_PYQ_REGISTRY.find(e => e.id === examId), [examId]);
   const set  = useMemo(() => exam?.practiceSets.find(s => s.id === setId),  [exam, setId]);
@@ -228,7 +228,7 @@ export default function GovtPYQPracticePage({ examId, setId, navigate }) {
     });
   }, [set]);
 
-  const topics = useMemo(() => {
+  const _topics = useMemo(() => {
     const t = new Set(questions.map(q => q.topic));
     return ['All', ...Array.from(t).sort()];
   }, [questions]);

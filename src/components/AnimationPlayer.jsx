@@ -71,7 +71,7 @@ export default function AnimationPlayer({ animationScript, conceptSummary, formu
     setTimeout(() => setIsPlaying(true), 100);
   };
 
-  const step = steps[currentStep];
+  const _step = steps[currentStep];
   const progress = steps.length > 1 ? (currentStep / (steps.length - 1)) * 100 : 0;
 
   if (!steps.length) {

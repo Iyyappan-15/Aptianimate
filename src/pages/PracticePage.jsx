@@ -1,6 +1,6 @@
 // src/pages/PracticePage.jsx
 import { useEffect, useState } from 'react';
-import { QUESTIONS, CATEGORIES } from '../data/questionBank';
+import { QUESTIONS } from '../data/questionBank';
 import { recordAnswer, isAnswered } from '../utils/localStorage';
 import QuestionCard from '../components/QuestionCard';
 import HintSystem from '../components/HintSystem';
@@ -24,7 +24,7 @@ export default function PracticePage({ questionId, navigate }) {
       try {
         const temp = localStorage.getItem('temp_custom_q');
         if (temp) q = JSON.parse(temp);
-      } catch (e) { }
+      } catch { /* ignore */ }
     }
     
     if (!q) {

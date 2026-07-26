@@ -1467,30 +1467,6 @@ export const TOPIC_CONTENT = {
     ],
   },
 
-  'cloze-test': {
-    title: 'Cloze Test',
-    icon: '📘',
-    color: '#10b981',
-    tagline: 'Master the concepts of Cloze Test.',
-    description: `This section covers the core concepts, common question patterns, and fast-solving techniques for Cloze Test. Understanding this topic is crucial for maximizing your score in the Verbal Ability section.`,
-    keyFacts: [
-      { label: 'Basic Concept', value: 'Understand the fundamental definitions and rules.' },
-      { label: 'Common Trap', value: 'Watch out for units or wording designed to confuse you.' },
-    ],
-    formulas: [
-      { title: 'Standard Formula', formula: 'Result = (Given Data) - Concept', example: 'Apply the formula directly to the given numbers.' },
-    ],
-    identify: [
-      'Look for keywords specific to Cloze Test.',
-      'Identify the given values and what needs to be found.',
-    ],
-    approach: [
-      { step: '1', tip: 'Read the question carefully and note down the given data.' },
-      { step: '2', tip: 'Recall the relevant formula or shortcut method.' },
-      { step: '3', tip: 'Perform the calculation, ensuring units are consistent.' },
-      { step: '4', tip: 'Verify if the answer makes logical sense.' },
-    ],
-  },
 
   // ════════════════════════════════════════
   //  GOVERNMENT EXAMS — EXCLUSIVE TOPICS

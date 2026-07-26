@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
-import { motion } from 'framer-motion';
+
 
 const MockTestResultsPage = ({ testId, navigate }) => {
   const [result, setResult] = useState(null);
@@ -71,7 +71,7 @@ const MockTestResultsPage = ({ testId, navigate }) => {
     );
   }
 
-  const { analytics, score, correct_count, incorrect_count, unanswered_count, total_questions } = result;
+  const { analytics, score, correct_count, incorrect_count, unanswered_count, total_questions: _total_questions } = result;
   const detailed = analytics?.detailed_results || [];
 
   return (

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { useProgress } from '../../hooks/useProgress';
 
@@ -15,24 +14,20 @@ export default function TopicRadarChart() {
 
   // Format data for Recharts
   // progressData is an array like [{ topic_name: 'Decimal Fractions', completion_percentage: 80, ... }]
-  let chartData = [];
-  
-  if (progressData && progressData.length > 0) {
-    chartData = progressData.map(item => ({
-      subject: item.topic_name,
-      A: item.completion_percentage || 0,
-      fullMark: 100,
-    }));
-  } else {
-    // Dummy data if they haven't started yet
-    chartData = [
-      { subject: 'Algebra', A: 0, fullMark: 100 },
-      { subject: 'Geometry', A: 0, fullMark: 100 },
-      { subject: 'Fractions', A: 0, fullMark: 100 },
-      { subject: 'Ratios', A: 0, fullMark: 100 },
-      { subject: 'Time & Work', A: 0, fullMark: 100 },
-    ];
-  }
+  let chartData = (progressData && progressData.length > 0)
+    ? progressData.map(item => ({
+        subject: item.topic_name,
+        A: item.completion_percentage || 0,
+        fullMark: 100,
+      }))
+    : [
+        { subject: 'Algebra', A: 0, fullMark: 100 },
+        { subject: 'Geometry', A: 0, fullMark: 100 },
+        { subject: 'Fractions', A: 0, fullMark: 100 },
+        { subject: 'Ratios', A: 0, fullMark: 100 },
+        { subject: 'Time & Work', A: 0, fullMark: 100 },
+      ];
+
 
   // We only want to show up to maybe 8 topics on the radar to keep it clean.
   // We'll take the 8 most recently interacted, or just slice.

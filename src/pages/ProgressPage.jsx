@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import { useAuth } from '../contexts/AuthContext';
 import WeeklyChart from '../components/profile/WeeklyChart';
 import ActivityHeatmap from '../components/profile/ActivityHeatmap';

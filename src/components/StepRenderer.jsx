@@ -2,7 +2,7 @@
 // Renders each animation visual_type as a distinct animated component
 
 import { useEffect, useState, useRef } from 'react';
-import { describeArc, CHART_COLORS } from '../utils/animationHelpers';
+// import { describeArc, CHART_COLORS } from '../utils/animationHelpers';
 import { GridEngine, NodeEngine, AxisEngine, BarEngine, EntityEngine, PieEngine, DirectionEngine } from './SuperEngines';
 
 export default function StepRenderer({ step, isActive }) {
@@ -444,7 +444,7 @@ function NumberMorph({ step, isActive }) {
 }
 
 // ─── STORY SCENE ─────────────────────────────────────────────────────────────
-function StoryScene({ step, isActive }) {
+function _StoryScene({ step, isActive }) {
   const scenes = {
     car_highway: <CarHighwayScene isActive={isActive} />,
     two_trains: <TwoTrainsScene isActive={isActive} />,
@@ -561,7 +561,7 @@ function AlligationScene({ isActive }) {
   );
 }
 
-function GenericScene({ step, isActive }) {
+function GenericScene({ step, isActive: _isActive }) {
   return (
     <div style={{ textAlign: 'center', padding: 20 }}>
       <div style={{ fontSize: 48, marginBottom: 12 }}>🎯</div>
@@ -571,7 +571,7 @@ function GenericScene({ step, isActive }) {
 }
 
 // ─── MOTION GRAPHIC ───────────────────────────────────────────────────────────
-function MotionGraphic({ step, isActive }) {
+function _MotionGraphic({ step, isActive }) {
   const scenes = {
     alligation_cross: <AlligationScene isActive={isActive} />,
     family_tree: <FamilyTreeScene step={step} isActive={isActive} />,
@@ -598,226 +598,6 @@ function MotionGraphic({ step, isActive }) {
           )}
         </g>
       </svg>
-    </div>
-  );
-}
-
-// ─── WORD HIGHLIGHT ───────────────────────────────────────────────────────────
-function WordHighlight({ step, isActive }) {
-  const [phase, setPhase] = useState(0);
-  const timerRef = useRef(null);
-
-  useEffect(() => {
-    setPhase(0);
-    if (!isActive) return;
-    timerRef.current = setTimeout(() => setPhase(1), 300);
-    const t2 = setTimeout(() => setPhase(2), 1200);
-    const t3 = setTimeout(() => setPhase(3), 2200);
-    return () => { clearTimeout(timerRef.current); clearTimeout(t2); clearTimeout(t3); };
-  }, [isActive, step]);
-
-  return (
-    <div className="sr-word">
-      {phase >= 1 && (
-        <div className="word-main">{step.word || step.explanation?.split(' ')[0]}</div>
-      )}
-      {phase >= 2 && step.definition && (
-        <div className="word-definition" style={{ animation: 'slideDown 0.4s ease' }}>
-          {step.definition}
-        </div>
-      )}
-      {phase >= 3 && step.synonyms?.length > 0 && (
-        <div style={{ animation: 'slideUp 0.4s ease' }}>
-          <div style={{ fontSize: '0.7rem', color: 'var(--muted)', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-            Synonyms
-          </div>
-          <div className="word-synonyms">
-            {step.synonyms.map((s, i) => (
-              <span key={i} className="word-syn" style={{ animationDelay: `${i * 0.1}s`, animation: 'popIn 0.4s ease both' }}>{s}</span>
-            ))}
-          </div>
-        </div>
-      )}
-      {phase >= 3 && step.memory_tip && (
-        <div style={{
-          marginTop: 14, fontSize: '0.78rem', color: 'var(--amber)',
-          padding: '8px 12px', background: 'rgba(245,158,11,0.08)',
-          borderRadius: 'var(--radius-sm)', maxWidth: 360, margin: '14px auto 0',
-          animation: 'fadeIn 0.5s ease both'
-        }}>
-          💡 {step.memory_tip}
-        </div>
-      )}
-    </div>
-  );
-}
-
-// ─── PATTERN REVEAL ───────────────────────────────────────────────────────────
-function PatternReveal({ step, isActive }) {
-  const [revealed, setRevealed] = useState([]);
-  const timerRef = useRef(null);
-  const pattern = step.pattern || [];
-  const differences = step.differences || [];
-
-  useEffect(() => {
-    setRevealed([]);
-    if (!isActive || !pattern.length) return;
-    let i = 0;
-    const revealNext = () => {
-      if (i < pattern.length) {
-        const idx = i;
-        setRevealed(prev => [...prev, idx]);
-        i++;
-        timerRef.current = setTimeout(revealNext, 550);
-      }
-    };
-    timerRef.current = setTimeout(revealNext, 300);
-    return () => clearTimeout(timerRef.current);
-  }, [isActive, step]);
-
-  const cols = Math.min(pattern.length, 6);
-
-  return (
-    <div className="sr-pattern">
-      <div className="pattern-grid" style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}>
-        {pattern.map((val, i) => {
-          const isAnswer = val === '?' && revealed.includes(i);
-          const isSpecialAnswer = typeof val === 'string' && val !== '?' && revealed.includes(i) && i === pattern.length - 1;
-          return (
-            <div
-              key={i}
-              className={`pattern-cell ${revealed.includes(i) ? (val === '?' ? 'answer-cell' : 'revealed') : ''} ${isSpecialAnswer ? 'answer-cell' : ''}`}
-              style={{ transition: `all 0.4s ease ${i * 0.05}s` }}
-            >
-              {revealed.includes(i) ? (val === '?' ? (differences[i] || '✓') : val) : '?'}
-            </div>
-          );
-        })}
-      </div>
-      {differences.length > 0 && revealed.length > 0 && (
-        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center', marginTop: 8 }}>
-          {differences.slice(0, revealed.length - 1).map((d, i) => (
-            <span key={i} style={{
-              padding: '2px 10px', borderRadius: 'var(--radius-pill)',
-              background: 'rgba(59,130,246,0.12)', color: 'var(--violet)',
-              fontSize: '0.75rem', fontWeight: 700,
-              animation: 'popIn 0.3s ease both', animationDelay: `${i * 0.1}s`
-            }}>
-              {d}
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
-
-// ─── BAR RACE ─────────────────────────────────────────────────────────────────
-function BarRace({ step, isActive }) {
-  const [visible, setVisible] = useState(0);
-  const data = step.data || [
-    { label: 'A', value: 80 }, { label: 'B', value: 60 },
-    { label: 'C', value: 90 }, { label: 'D', value: 70 }
-  ];
-  const max = Math.max(...data.map(d => d.value));
-
-  useEffect(() => {
-    setVisible(0);
-    if (!isActive) return;
-    let i = 1;
-    const t = setInterval(() => {
-      setVisible(i);
-      i++;
-      if (i > data.length) clearInterval(t);
-    }, 500);
-    return () => clearInterval(t);
-  }, [isActive, step]);
-
-  return (
-    <div className="sr-bar" style={{ width: '100%', padding: '0 8px' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-        {data.map((item, i) => (
-          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div style={{ width: 28, fontSize: '0.8rem', fontWeight: 700, color: 'var(--muted)', flexShrink: 0 }}>{item.label}</div>
-            <div style={{ flex: 1, height: 28, background: 'var(--surface2)', borderRadius: 4, overflow: 'hidden' }}>
-              <div style={{
-                height: '100%', width: i < visible ? `${(item.value / max) * 100}%` : '0%',
-                background: CHART_COLORS[i % CHART_COLORS.length],
-                borderRadius: 4,
-                transition: 'width 0.6s cubic-bezier(0.4,0,0.2,1)',
-                display: 'flex', alignItems: 'center', paddingLeft: 8
-              }}>
-                {i < visible && (
-                  <span style={{ color: 'white', fontSize: '0.72rem', fontWeight: 700, whiteSpace: 'nowrap' }}>
-                    {item.value}
-                  </span>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// ─── PIE BUILD ────────────────────────────────────────────────────────────────
-function PieBuild({ step, isActive }) {
-  const [visibleSlices, setVisibleSlices] = useState(0);
-  const data = step.data || [
-    { label: 'Part A', value: 40 }, { label: 'Part B', value: 35 }, { label: 'Part C', value: 25 }
-  ];
-  const total = data.reduce((s, d) => s + d.value, 0);
-
-  useEffect(() => {
-    setVisibleSlices(0);
-    if (!isActive) return;
-    let i = 1;
-    const t = setInterval(() => {
-      setVisibleSlices(i);
-      i++;
-      if (i > data.length) clearInterval(t);
-    }, 600);
-    return () => clearInterval(t);
-  }, [isActive, step]);
-
-  let cumulative = -90;
-  const cx = 80, cy = 80, r = 70;
-
-  return (
-    <div className="sr-pie">
-      <svg width="160" height="160" viewBox="0 0 160 160">
-        {data.map((item, i) => {
-          const angle = (item.value / total) * 360;
-          const start = cumulative;
-          cumulative += angle;
-          if (i >= visibleSlices) return null;
-          return (
-            <path
-              key={i}
-              d={describeArc(cx, cy, r, start, start + angle - 1)}
-              fill={CHART_COLORS[i % CHART_COLORS.length]}
-              opacity="0.85"
-              style={{ animation: 'popIn 0.4s ease both' }}
-            />
-          );
-        })}
-        <circle cx={cx} cy={cy} r={r * 0.45} fill="var(--surface2)" />
-        <text x={cx} y={cy + 4} textAnchor="middle" fill="var(--text)" fontSize="12" fontWeight="700">
-          {visibleSlices}/{data.length}
-        </text>
-      </svg>
-      <div className="pie-legend">
-        {data.slice(0, visibleSlices).map((item, i) => (
-          <div key={i} className="pie-legend-item" style={{ animation: 'slideDown 0.3s ease both' }}>
-            <div className="pie-legend-dot" style={{ background: CHART_COLORS[i % CHART_COLORS.length] }} />
-            <span>{item.label}</span>
-            <span style={{ color: 'var(--muted)', marginLeft: 4 }}>
-              {Math.round((item.value / total) * 100)}%
-            </span>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

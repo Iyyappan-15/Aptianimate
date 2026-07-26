@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, { useState, useEffect, useCallback, Suspense, lazy } from 'react';
+import { useState, useEffect, useCallback, Suspense, lazy } from 'react';
 import { useAuth } from './contexts/AuthContext';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
@@ -26,7 +26,7 @@ const BattlePage = lazy(() => import('./pages/BattlePage'));
 const FriendBattlePage = lazy(() => import('./pages/FriendBattlePage'));
 const GovtPYQPracticePage = lazy(() => import('./pages/GovtPYQPracticePage'));
 
-import { signInWithGoogle, signOut } from './services/authService';
+import { signInWithGoogle } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
 
 // Admin Components (Lazy loaded)
@@ -84,6 +84,14 @@ function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  const navigate = (path) => {
+    if (path === -1) {
+      window.history.back();
+    } else {
+      window.location.hash = `/${path}`;
+    }
+  };
+
   // Ctrl+K global shortcut → navigate to Ask AI page
   useEffect(() => {
     const handler = (e) => {
@@ -94,15 +102,7 @@ function App() {
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, []);
-
-  const navigate = (path) => {
-    if (path === -1) {
-      window.history.back();
-    } else {
-      window.location.hash = `/${path}`;
-    }
-  };
+  }, [navigate]);
 
   const handleSplashComplete = useCallback(() => {
     sessionStorage.setItem('splash_seen', 'true');

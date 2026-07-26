@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import { signInWithGoogle } from '../services/authService';
@@ -155,7 +155,7 @@ const MockTestPage = ({ navigate }) => {
     }));
 
     try {
-      const { data, error } = await supabase.rpc('submit_mock_test', {
+      const { error } = await supabase.rpc('submit_mock_test', {
         p_test_id: testSession.test_id,
         p_answers: formattedAnswers
       });

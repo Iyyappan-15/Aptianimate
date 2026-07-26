@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import { getProfile } from '../repositories/profileRepository';
 import { supabase } from '../lib/supabase';
 
@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
     try {
       const cached = localStorage.getItem('apti_profile');
       return cached ? JSON.parse(cached) : null;
-    } catch (e) {
+    } catch {
       return null;
     }
   });

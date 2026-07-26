@@ -1,4 +1,3 @@
-import React from 'react';
 import './TopicSkeleton.css';
 
 export default function TopicSkeleton() {

@@ -5,7 +5,7 @@
 //  Zero API calls — 100% client-side HTML5 Canvas.
 // ─────────────────────────────────────────────────────────────────
 
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const STROKE_SIZES = [
   { label: 'S', width: 2 },

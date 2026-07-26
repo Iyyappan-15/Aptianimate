@@ -1,6 +1,6 @@
 // src/pages/GovtDailyPracticePage.jsx
 // ─── Premium Government PYQ – Daily Practice Randomizer ────────────────────────
-import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GOVT_PYQ_REGISTRY } from '../data/governmentRegistry';
 import Mascot from '../components/Mascot';
@@ -104,7 +104,7 @@ function QuestionPalette({ total, current, answers, onJump }) {
 }
 
 // ─── Score Summary ────────────────────────────────────────────────────────────
-function ScoreSummary({ questions, answers, navigate }) {
+function ScoreSummary({ questions: _questions, answers, navigate }) {
   const scored   = answers.filter(a => a?.correct !== null && a !== undefined);
   const correct  = answers.filter(a => a?.correct === true).length;
   const wrong    = answers.filter(a => a?.correct === false).length;
@@ -201,7 +201,7 @@ export default function GovtDailyPracticePage({ navigate }) {
         setAnswers(new Array(selectedQuestions.length).fill(null));
         setLoading(false);
       })
-      .catch(err => {
+      .catch(_err => {
         setError('Failed to load random questions.');
         setLoading(false);
       });
