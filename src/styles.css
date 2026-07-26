@@ -23,6 +23,7 @@
   --amber-dim: #b45309;
   
   --text: #111827;
+  --text-main: var(--text);
   --muted: #4b5563;
   --muted2: #9ca3af;
   
@@ -53,6 +54,7 @@
   --amber-dim: #d97706;
   
   --text: #f3f4f6;
+  --text-main: var(--text);
   --muted: #9ca3af;
   --muted2: #6b7280;
   
