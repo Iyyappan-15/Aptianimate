@@ -52,11 +52,16 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
   logAuthEvent('Login Started');
   setLoadingState('Connecting...');
 
+  // 1. ATTEMPT POPUP LOGIN FIRST
+  // Open popup synchronously to avoid popup blockers triggered by async delays
+  const popup = openCenteredPopup('', 'Google Login', 500, 600);
+
   const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
   if (!clientId) {
     console.error("Missing VITE_GOOGLE_CLIENT_ID");
     alert("Authentication configuration is missing.");
     setLoadingState(null);
+    if (popup) popup.close();
     return;
   }
 
@@ -66,20 +71,11 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
   // SHA-256 hash the nonce BEFORE sending it to Google.
   // Google embeds SHA256(rawNonce) in the token. Supabase receives rawNonce,
   // hashes it internally, and the two hashes will match correctly.
-
   const rawNonce = Math.random().toString(36).substring(2) + Date.now().toString(36);
   const hashedNonce = await sha256(rawNonce);
 
   return new Promise((resolve, reject) => {
     
-    // 1. ATTEMPT POPUP LOGIN FIRST
-    const redirectUri = window.location.origin; // We will handle the callback on the homepage
-    // rawNonce → passed to Supabase. hashedNonce → embedded in Google OAuth URL.
-    
-    const oauthUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=id_token&scope=email%20profile&nonce=${hashedNonce}&prompt=select_account`;
-
-    const popup = openCenteredPopup(oauthUrl, 'Google Login', 500, 600);
-
     if (!popup || popup.closed || typeof popup.closed === 'undefined') {
       // POPUP BLOCKED -> FALLBACK TO ONE TAP
       logAuthEvent('Popup Blocked');
@@ -119,6 +115,11 @@ export const signInWithGoogle = async (setLoadingState = () => {}) => {
     // POPUP OPENED SUCCESSFULLY
     logAuthEvent('Popup Opened');
     setLoadingState('Authenticating...');
+
+    // Set the popup URL now that we have all async data
+    const redirectUri = window.location.origin;
+    const oauthUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=id_token&scope=email%20profile&nonce=${hashedNonce}&prompt=select_account`;
+    popup.location.href = oauthUrl;
 
     // Listen for the postMessage from the popup
     const messageListener = async (event) => {
