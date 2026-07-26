@@ -65,28 +65,6 @@ export default class ErrorBoundary extends React.Component {
           position: 'relative',
           overflow: 'hidden'
         }}>
-          {/* Decorative glowing gradient radial spheres behind card */}
-          <div style={{
-            position: 'absolute',
-            top: '15%',
-            left: '15%',
-            width: '350px',
-            height: '350px',
-            background: 'radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, rgba(99, 102, 241, 0) 70%)',
-            zIndex: 0,
-            pointerEvents: 'none'
-          }} />
-          <div style={{
-            position: 'absolute',
-            bottom: '15%',
-            right: '15%',
-            width: '350px',
-            height: '350px',
-            background: 'radial-gradient(circle, rgba(244, 63, 94, 0.05) 0%, rgba(244, 63, 94, 0) 70%)',
-            zIndex: 0,
-            pointerEvents: 'none'
-          }} />
-
           <div style={{
             position: 'relative',
             zIndex: 1,
@@ -99,7 +77,7 @@ export default class ErrorBoundary extends React.Component {
             width: '100%',
             boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
           }}>
-            {/* Visual: Glowing 3D Wireframe Hexagonal Crystal */}
+            {/* Visual: Floating 3D Wireframe Hexagonal Crystal */}
             <div style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -110,14 +88,6 @@ export default class ErrorBoundary extends React.Component {
               animation: 'floatY 4s ease-in-out infinite'
             }}>
               <svg width="80" height="80" viewBox="0 0 80 80">
-                <defs>
-                  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="var(--violet, #818cf8)" stopOpacity="0.5"/>
-                    <stop offset="100%" stopColor="var(--violet, #818cf8)" stopOpacity="0"/>
-                  </radialGradient>
-                </defs>
-                {/* Floating Core Glow */}
-                <circle cx="40" cy="40" r="28" fill="url(#coreGlow)" />
                 {/* Wireframe isometric polygon */}
                 <polygon points="40,10 68,26 68,54 40,70 12,54 12,26" fill="none" stroke="var(--violet, #6366f1)" strokeWidth="2" strokeLinejoin="round" />
                 <polygon points="40,24 60,35 60,55 40,66 20,55 20,35" fill="none" stroke="var(--primary, #4f46e5)" strokeWidth="1.5" strokeLinejoin="round" opacity="0.7" />
@@ -179,15 +149,15 @@ export default class ErrorBoundary extends React.Component {
                   fontSize: '0.95rem',
                   cursor: 'pointer',
                   transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
-                  boxShadow: '0 4px 18px 0 rgba(99, 102, 241, 0.35)'
+                  boxShadow: 'var(--shadow)'
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 8px 24px 0 rgba(99, 102, 241, 0.5)';
+                  e.currentTarget.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
                 }}
                 onMouseOut={(e) => {
                   e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 18px 0 rgba(99, 102, 241, 0.35)';
+                  e.currentTarget.style.boxShadow = 'var(--shadow)';
                 }}
               >
                 Restore Session
