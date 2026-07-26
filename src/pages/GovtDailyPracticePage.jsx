@@ -423,11 +423,20 @@ export default function GovtDailyPracticePage({ navigate }) {
                     let iconColor = 'var(--muted)';
                     
                     if (isCorrect) {
-                      bg = 'rgba(16,185,129,0.05)'; border = '2px solid #10b981'; textColor = '#059669'; iconBg = '#10b981'; iconColor = '#fff';
+                      bg = 'linear-gradient(135deg, rgba(16,185,129,0.15) 0%, rgba(16,185,129,0.06) 100%)';
+                      border = '2px solid #10b981';
+                      textColor = 'var(--text)';
+                      iconBg = '#10b981'; iconColor = '#fff';
                     } else if (isWrong) {
-                      bg = 'rgba(239,68,68,0.05)'; border = '2px solid #ef4444'; textColor = '#dc2626'; iconBg = '#ef4444'; iconColor = '#fff';
+                      bg = 'linear-gradient(135deg, rgba(239,68,68,0.15) 0%, rgba(239,68,68,0.06) 100%)';
+                      border = '2px solid #ef4444';
+                      textColor = 'var(--text)';
+                      iconBg = '#ef4444'; iconColor = '#fff';
                     } else if (isSelected) {
-                      bg = 'rgba(16,185,129,0.04)'; border = '2px solid #10b981'; textColor = '#059669'; iconBg = '#10b981'; iconColor = '#fff';
+                      bg = 'linear-gradient(135deg, rgba(99,102,241,0.14) 0%, rgba(20,184,166,0.08) 100%)';
+                      border = '2px solid var(--violet)';
+                      textColor = 'var(--text)';
+                      iconBg = 'linear-gradient(135deg, var(--violet), #7c3aed)'; iconColor = '#fff';
                     }
 
                     return (

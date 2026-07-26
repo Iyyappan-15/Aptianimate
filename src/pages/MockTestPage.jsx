@@ -296,22 +296,29 @@ const MockTestPage = ({ navigate }) => {
                     alignItems: 'center',
                     gap: '12px',
                     padding: '16px 20px',
-                    borderRadius: '8px',
-                    border: `2px solid ${isSelected ? 'var(--violet)' : 'var(--border)'}`,
-                    background: isSelected ? 'var(--violet-light, rgba(139, 92, 246, 0.1))' : 'var(--card-bg)',
+                    borderRadius: '12px',
+                    border: isSelected ? '2px solid var(--violet)' : '1.5px solid var(--border)',
+                    background: isSelected
+                      ? 'linear-gradient(135deg, rgba(99,102,241,0.14) 0%, rgba(20,184,166,0.08) 100%)'
+                      : 'var(--surface2)',
                     color: 'var(--text)',
                     cursor: isSubmitting ? 'not-allowed' : 'pointer',
                     textAlign: 'left',
-                    transition: 'all 0.2s',
-                    fontSize: '1.05rem'
+                    transition: 'all 0.2s cubic-bezier(0.4,0,0.2,1)',
+                    fontSize: '1.05rem',
+                    fontWeight: isSelected ? 600 : 500,
+                    boxShadow: isSelected ? '0 2px 12px rgba(99,102,241,0.18)' : 'none',
+                    transform: isSelected ? 'translateX(2px)' : 'none',
                   }}
                 >
                   <div style={{
-                    width: '24px', height: '24px', borderRadius: '50%',
-                    border: `2px solid ${isSelected ? 'var(--violet)' : 'var(--muted)'}`,
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
+                    width: '24px', height: '24px', borderRadius: '50%', flexShrink: 0,
+                    border: isSelected ? 'none' : '2px solid var(--border)',
+                    background: isSelected ? 'linear-gradient(135deg, var(--violet), #7c3aed)' : 'var(--surface3)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    boxShadow: isSelected ? '0 2px 8px rgba(99,102,241,0.4)' : 'none',
                   }}>
-                    {isSelected && <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: 'var(--violet)' }} />}
+                    {isSelected && <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#fff' }} />}
                   </div>
                   {opt}
                 </button>

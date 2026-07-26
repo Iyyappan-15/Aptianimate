@@ -147,12 +147,25 @@ img, svg { display: block; }
 .goal-selector { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
 .goal-btn {
   padding: 10px 22px; border-radius: var(--radius-pill);
-  border: 1px solid var(--border); background: var(--surface);
+  border: 1.5px solid var(--border); background: var(--surface);
   font-size: 0.9rem; font-weight: 600; color: var(--muted);
-  transition: all var(--transition);
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
 }
-.goal-btn:hover { border-color: var(--violet); color: var(--text); }
-.goal-btn.selected { border-color: var(--violet); background: var(--surface2); color: var(--violet); }
+.goal-btn:hover {
+  border-color: var(--violet);
+  color: var(--text);
+  background: color-mix(in srgb, var(--violet) 8%, var(--surface));
+  transform: translateY(-1px);
+}
+.goal-btn.selected {
+  background: linear-gradient(135deg, var(--violet) 0%, #7c3aed 50%, var(--teal) 100%);
+  border-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--violet) 40%, transparent);
+  transform: translateY(-1px);
+}
 
 /* â”€â”€ Section Headers â”€â”€ */
 .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
@@ -243,25 +256,58 @@ img, svg { display: block; }
 .options-grid { display: flex; flex-direction: column; gap: 8px; }
 .option-btn {
   width: 100%; padding: 13px 16px; border-radius: var(--radius-sm);
-  background: var(--surface2); border: 1px solid var(--border);
+  background: var(--surface2); border: 1.5px solid var(--border);
   color: var(--text); font-size: 0.9rem; font-weight: 500;
   text-align: left; display: flex; align-items: center; gap: 12px;
-  transition: all var(--transition);
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
 }
-.option-btn:hover:not(:disabled) { border-color: var(--violet); background: var(--surface3); }
-.option-btn.selected { border-color: var(--violet); background: var(--surface); border-width: 2px; }
-.option-btn.correct { border-color: var(--teal); background: var(--surface); color: var(--teal); border-width: 2px; }
-.option-btn.wrong { border-color: var(--coral); background: var(--surface); color: var(--coral); border-width: 2px; }
-.option-btn:disabled { cursor: default; opacity: 0.7; }
+.option-btn:hover:not(:disabled) {
+  border-color: var(--violet);
+  background: color-mix(in srgb, var(--violet) 6%, var(--surface2));
+  transform: translateX(2px);
+}
+.option-btn.selected {
+  border-color: transparent;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--violet) 16%, var(--surface2)) 0%, color-mix(in srgb, var(--teal) 8%, var(--surface2)) 100%);
+  outline: 2px solid var(--violet);
+  outline-offset: -2px;
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--violet) 20%, transparent);
+}
+.option-btn.correct {
+  border-color: transparent;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--teal) 20%, var(--surface2)) 0%, color-mix(in srgb, var(--teal) 8%, var(--surface2)) 100%);
+  outline: 2px solid var(--teal);
+  outline-offset: -2px;
+  color: var(--text);
+  font-weight: 600;
+}
+.option-btn.wrong {
+  border-color: transparent;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--coral) 18%, var(--surface2)) 0%, color-mix(in srgb, var(--coral) 6%, var(--surface2)) 100%);
+  outline: 2px solid var(--coral);
+  outline-offset: -2px;
+  color: var(--text);
+  font-weight: 600;
+}
+.option-btn:disabled { cursor: default; opacity: 0.8; }
 .opt-letter {
-  width: 26px; height: 26px; border-radius: 6px; flex-shrink: 0;
+  width: 28px; height: 28px; border-radius: 8px; flex-shrink: 0;
   background: var(--surface3); display: flex; align-items: center; justify-content: center;
   font-size: 0.75rem; font-weight: 700; color: var(--muted);
-  transition: all var(--transition);
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  border: 1px solid var(--border);
 }
-.option-btn.selected .opt-letter { background: var(--violet); color: #fff; }
-.option-btn.correct .opt-letter { background: var(--teal); color: #fff; }
-.option-btn.wrong .opt-letter { background: var(--coral); color: #fff; }
+.option-btn.selected .opt-letter {
+  background: linear-gradient(135deg, var(--violet), #7c3aed);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--violet) 40%, transparent);
+}
+.option-btn.correct .opt-letter { background: var(--teal); color: #fff; border-color: transparent; }
+.option-btn.wrong .opt-letter { background: var(--coral); color: #fff; border-color: transparent; }
 .qc-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
 /* â”€â”€ Buttons â”€â”€ */
@@ -494,8 +540,18 @@ img, svg { display: block; }
   transition: all var(--transition);
 }
 .quiz-opt:hover:not(:disabled) { border-color: var(--violet); }
-.quiz-opt.correct { border-color: var(--teal); background: rgba(29,158,117,0.1); color: var(--teal); }
-.quiz-opt.wrong { border-color: var(--coral); background: rgba(216,90,48,0.1); color: var(--coral); }
+.quiz-opt.correct {
+  border-color: var(--teal);
+  background: linear-gradient(135deg, rgba(20,184,166,0.18) 0%, rgba(20,184,166,0.07) 100%);
+  color: var(--text);
+  font-weight: 600;
+}
+.quiz-opt.wrong {
+  border-color: var(--coral);
+  background: linear-gradient(135deg, rgba(239,68,68,0.18) 0%, rgba(239,68,68,0.07) 100%);
+  color: var(--text);
+  font-weight: 600;
+}
 .quiz-feedback {
   padding: 10px 14px; border-radius: var(--radius-sm);
   font-size: 0.85rem; font-weight: 600; text-align: center;
@@ -1139,9 +1195,12 @@ img, svg { display: block; }
   color: var(--text);
 }
 .cp-tab.active {
-  border-color: var(--tab-color, var(--violet));
-  background: color-mix(in srgb, var(--tab-color, var(--violet)) 12%, transparent);
-  color: var(--tab-color, var(--violet));
+  border-color: transparent;
+  background: var(--tab-color, var(--violet));
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--tab-color, var(--violet)) 40%, transparent);
+  transform: translateY(-1px);
 }
 .cp-tab-icon { font-size: 1.1rem; }
 .cp-tab-label { white-space: nowrap; }
