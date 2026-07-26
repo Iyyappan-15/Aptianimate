@@ -1,5 +1,6 @@
 
 import { useAuth } from '../contexts/AuthContext';
+import AuthPrompt from '../components/AuthPrompt';
 import WeeklyChart from '../components/profile/WeeklyChart';
 import ActivityHeatmap from '../components/profile/ActivityHeatmap';
 import StatsCards from '../components/profile/StatsCards';
@@ -36,16 +37,10 @@ export default function ProgressPage({ navigate }) {
 
   if (!user || !profile) {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '60vh', gap: 16 }}>
-        <div style={{ fontSize: '3rem' }}>🔒</div>
-        <p style={{ color: 'var(--muted)', fontWeight: 600 }}>Please log in to view your progress dashboard.</p>
-        <button 
-          onClick={() => navigate('home')}
-          style={{ padding: '10px 20px', borderRadius: 12, border: 'none', background: 'var(--violet)', color: '#fff', fontWeight: 700, cursor: 'pointer' }}
-        >
-          Go to Home
-        </button>
-      </div>
+      <AuthPrompt 
+        title="Login Required" 
+        message="Please log in to view your progress dashboard and track your learning journey." 
+      />
     );
   }
 
