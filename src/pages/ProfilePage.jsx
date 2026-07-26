@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { deleteAllAnalytics } from '../repositories/analyticsRepository';
 import { supabase } from '../lib/supabase';
+import AuthPrompt from '../components/AuthPrompt';
 
 // ─── Section Wrapper ───────────────────────────────────────────────────────
 function Section({ title, icon, children, isCollapsible = false, defaultOpen = true }) {
@@ -612,10 +613,10 @@ export default function ProfilePage({ navigate }) {
 
   if (!user || !profile) {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '60vh', gap: 16 }}>
-        <div style={{ fontSize: '3rem' }}>🔒</div>
-        <p style={{ color: 'var(--muted)', fontWeight: 600 }}>Please log in to view your profile.</p>
-      </div>
+      <AuthPrompt 
+        title="Login Required" 
+        message="Please log in to view your profile." 
+      />
     );
   }
 
