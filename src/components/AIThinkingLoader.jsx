@@ -32,14 +32,13 @@ const STATUS_MESSAGES = [
 function AnimatedBrain() {
   return (
     <div style={{ position: 'relative', width: '120px', height: '120px', margin: '0 auto 8px' }}>
-      {/* Outer glow ring */}
+      {/* Outer ring */}
       <div style={{
-        position: 'absolute', inset: '-8px',
+        position: 'absolute', inset: '-6px',
         borderRadius: '50%',
         background: 'conic-gradient(from 0deg, var(--violet), #7c3aed, #10b981, var(--violet))',
         animation: 'brainRingSpin 3s linear infinite',
-        opacity: 0.4,
-        filter: 'blur(4px)',
+        opacity: 0.7,
       }} />
       {/* Inner circle */}
       <div style={{

@@ -250,7 +250,7 @@ function ExamCard({ exam, index, onSelect }) {
         boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
         transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
       }}
-      onMouseOver={e => { e.currentTarget.style.boxShadow = '0 16px 48px rgba(37,99,235,0.18)'; e.currentTarget.style.borderColor = 'var(--violet)'; }}
+      onMouseOver={e => { e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.15)'; e.currentTarget.style.borderColor = 'var(--violet)'; }}
       onMouseOut={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)'; e.currentTarget.style.borderColor = 'var(--border)'; }}
     >
       {/* Gradient top strip */}
@@ -263,7 +263,7 @@ function ExamCard({ exam, index, onSelect }) {
           background: grad, display: 'flex', alignItems: 'center',
           justifyContent: 'center', fontSize: '1.6rem',
           marginBottom: '20px',
-          boxShadow: '0 8px 24px rgba(37,99,235,0.25)',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
         }}>
           {exam.icon}
         </div>
@@ -315,10 +315,10 @@ function ExamCard({ exam, index, onSelect }) {
 
 // ── Set Card ──────────────────────────────────────────────────────────────────
 const SET_ACCENTS = [
-  { color: '#2563eb', bg: 'rgba(37,99,235,0.08)', glow: 'rgba(37,99,235,0.25)' },
-  { color: '#7c3aed', bg: 'rgba(124,58,237,0.08)', glow: 'rgba(124,58,237,0.25)' },
-  { color: '#0d9488', bg: 'rgba(13,148,136,0.08)', glow: 'rgba(13,148,136,0.25)' },
-  { color: '#d97706', bg: 'rgba(217,119,6,0.08)', glow: 'rgba(217,119,6,0.25)' },
+  { color: '#2563eb', bg: 'rgba(37,99,235,0.08)' },
+  { color: '#7c3aed', bg: 'rgba(124,58,237,0.08)' },
+  { color: '#0d9488', bg: 'rgba(13,148,136,0.08)' },
+  { color: '#d97706', bg: 'rgba(217,119,6,0.08)' },
 ];
 
 function SetCard({ set, index, questionsPerSet, onSelect, isHovered, onHover, onLeave }) {
@@ -335,7 +335,7 @@ function SetCard({ set, index, questionsPerSet, onSelect, isHovered, onHover, on
         border: `1.5px solid ${isHovered ? accent.color : 'var(--border)'}`,
         borderRadius: '18px', padding: '24px 22px', cursor: 'pointer',
         transition: 'all 0.25s ease',
-        boxShadow: isHovered ? `0 12px 36px ${accent.glow}` : '0 2px 12px rgba(0,0,0,0.05)',
+        boxShadow: isHovered ? '0 12px 28px rgba(0,0,0,0.15)' : '0 2px 12px rgba(0,0,0,0.05)',
       }}
     >
       {/* Set number badge */}
@@ -348,7 +348,7 @@ function SetCard({ set, index, questionsPerSet, onSelect, isHovered, onHover, on
         fontWeight: 900, fontSize: '1.1rem',
         transition: 'all 0.25s ease',
         marginBottom: '16px',
-        boxShadow: isHovered ? `0 4px 16px ${accent.glow}` : 'none',
+        boxShadow: 'none',
       }}>
         {index}
       </div>

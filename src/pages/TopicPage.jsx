@@ -705,9 +705,6 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
       : accuracy >= 50 ? "Good progress! A little more practice will make you even stronger."
       : "You have completed the topic. Review key concepts to improve mastery.";
 
-    /* glow colour for the trophy drop-shadow */
-    const glowRgba = accuracy >= 75 ? "255,213,0" : accuracy >= 50 ? "160,160,220" : "171,71,188";
-
     /* metric colours */
     const accColor  = accuracy >= 75 ? "#10b981" : accuracy >= 50 ? "#f59e0b" : "#6366f1";
     const timeColor = "#6366f1";
@@ -806,9 +803,6 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
           {/* ════ HERO ════ */}
           <div className="sc-hero" style={{ background:"linear-gradient(135deg,#f5f3ff 0%,#ede9fe 45%,#e8f4fd 100%)", padding:"48px 52px 44px", position:"relative", overflow:"hidden" }}>
 
-            {/* Glow blob behind trophy */}
-            <div style={{ position:"absolute", right:10, top:"50%", transform:"translateY(-50%)", width:420, height:420, borderRadius:"50%", background:"radial-gradient(circle,rgba(" + glowRgba + ",.18) 0%,transparent 68%)", pointerEvents:"none" }}/>
-
             {/* Pulsing diamond accents */}
             {[
               { top:"8%",  left:"8%",  s:9,  c:"#10b981", d:"0s"    },
@@ -877,19 +871,13 @@ export default function TopicPage({ topicSlug, topicName, navigate }) {
                   background: "linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(237,233,254,0.6) 100%)",
                   backdropFilter: "blur(12px)",
                   border: "1.5px solid rgba(255,255,255,0.9)",
-                  boxShadow: "0 16px 56px rgba(" + glowRgba + ",.22), inset 0 1px 0 rgba(255,255,255,0.8)",
+                  boxShadow: "0 16px 40px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   overflow: "hidden",
                   animation: "sc-float 3.5s ease-in-out infinite",
                 }}>
-                  {/* Radial glow inside card */}
-                  <div style={{
-                    position: "absolute", inset: 0,
-                    background: "radial-gradient(circle at 50% 60%, rgba(" + glowRgba + ",.14) 0%, transparent 70%)",
-                    pointerEvents: "none",
-                  }} />
                   {/* Sparkle dots inside card */}
                   {[
                     { top:"12%", left:"10%", c:"#f59e0b", s:7 },
