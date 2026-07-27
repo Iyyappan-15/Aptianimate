@@ -827,7 +827,831 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
     },
     "interviewerExpectation": "The interviewer expects the candidate to identify when greedy algorithms are correct versus when DP is required, using concrete problem examples.",
     "tags": ["Greedy Algorithms", "Dynamic Programming", "Optimization", "Interview"],
-    "relatedTopics": ["Knapsack Problem", "Huffman Coding", "Optimal Substructure"],
     "references": ["CLRS - Introduction to Algorithms"]
+  },
+  {
+    "id": "db-001",
+    "category": "Database",
+    "topic": "ACID Properties",
+    "difficulty": "Medium",
+    "question": "What are ACID properties in databases?",
+    "shortAnswer": "Atomicity, Consistency, Isolation, Durability — guarantee reliable transaction processing.",
+    "detailedAnswer": "Atomicity ensures a transaction is all-or-nothing, either every operation succeeds or all are rolled back using undo logs. Consistency ensures a transaction moves the database from one valid state to another, respecting all constraints.\n\nIsolation ensures concurrent transactions behave as if executed sequentially. Durability ensures committed data survives crashes, achieved via Write-Ahead Logging, where changes are logged to disk before being applied.",
+    "keyPoints": [
+      "Atomicity: BEGIN → operations → COMMIT or ROLLBACK",
+      "Isolation levels: Read Uncommitted → Read Committed → Repeatable Read → Serializable",
+      "BASE (NoSQL alternative): Basically Available, Soft state, Eventually consistent"
+    ],
+    "commonMistakes": [
+      "Confusing ACID consistency with CAP theorem consistency",
+      "Not knowing WAL is the mechanism behind durability",
+      "Mixing up isolation level ordering"
+    ],
+    "followUpQuestions": [
+      "What is Write-Ahead Logging?",
+      "How does isolation level affect performance?",
+      "How does ACID compare to BASE in NoSQL systems?"
+    ],
+    "realWorldExample": "A bank transfer transaction must debit one account and credit another atomically — if either step fails, the whole transaction rolls back.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "BEGIN TRANSACTION;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain each ACID property with a concrete example, especially in the context of transactions.",
+    "tags": ["ACID", "Transactions", "Database", "Interview"],
+    "relatedTopics": ["Isolation Levels", "Write-Ahead Logging", "BASE"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-002",
+    "category": "Database",
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "question": "Explain Normalization: 1NF, 2NF, 3NF, BCNF.",
+    "shortAnswer": "1NF: atomic values. 2NF: no partial dependency. 3NF: no transitive dependency. BCNF: every determinant is a superkey.",
+    "detailedAnswer": "1NF requires atomic, indivisible column values with no repeating groups. 2NF, relevant for composite keys, requires every non-key attribute to depend on the entire primary key, not just part of it.\n\n3NF requires non-key attributes to depend only on the primary key, not on other non-key attributes, avoiding transitive dependency. BCNF is a stricter version where for every functional dependency X→Y, X must be a candidate key.",
+    "keyPoints": [
+      "1NF violation: storing \"phone1, phone2\" in a single column",
+      "3NF violation: Employee → Department → DepartmentManager (transitive dependency)",
+      "Denormalization: intentional redundancy for read performance in OLAP systems"
+    ],
+    "commonMistakes": [
+      "Confusing partial dependency (2NF) with transitive dependency (3NF)",
+      "Assuming higher normal forms are always better regardless of read performance",
+      "Not identifying determinants correctly for BCNF"
+    ],
+    "followUpQuestions": [
+      "What is a transitive dependency?",
+      "Why would you denormalize a database?",
+      "Can you give an example that satisfies 3NF but violates BCNF?"
+    ],
+    "realWorldExample": "Splitting a single 'Orders' table containing customer, product, and order details into separate normalized tables to avoid data redundancy.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE TABLE Customers (customer_id INT PRIMARY KEY, customer_name VARCHAR(50));\nCREATE TABLE Products (product_id INT PRIMARY KEY, product_name VARCHAR(50));\nCREATE TABLE Orders (order_id INT PRIMARY KEY, customer_id INT, product_id INT);"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish each normal form with a concrete violation example and explain why normalization reduces redundancy.",
+    "tags": ["Normalization", "1NF", "2NF", "3NF", "BCNF", "Interview"],
+    "relatedTopics": ["Functional Dependency", "Denormalization", "Database Design"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-003",
+    "category": "Database",
+    "topic": "SQL Joins",
+    "difficulty": "Easy",
+    "question": "What are the types of SQL Joins? Explain with examples.",
+    "shortAnswer": "INNER: matching rows only. LEFT: all left + matched right. RIGHT: opposite. FULL OUTER: all rows from both. CROSS: Cartesian product.",
+    "detailedAnswer": "INNER JOIN returns only rows with matches in both tables. LEFT JOIN returns all rows from the left table, with NULLs for non-matching right-table columns.\n\nFULL OUTER JOIN returns all rows from both tables, though MySQL needs a UNION workaround since it lacks native support. CROSS JOIN produces every combination of rows, resulting in n×m rows. SELF JOIN joins a table to itself using aliases, commonly used for hierarchical data like employee-manager relationships.",
+    "keyPoints": [
+      "INNER JOIN: most restrictive, only true matches",
+      "LEFT JOIN: all customers, including those with zero orders",
+      "SELF JOIN: employee reports-to manager within the same table"
+    ],
+    "commonMistakes": [
+      "Confusing LEFT JOIN and RIGHT JOIN direction",
+      "Forgetting MySQL lacks native FULL OUTER JOIN",
+      "Using CROSS JOIN unintentionally, causing a row-count explosion"
+    ],
+    "followUpQuestions": [
+      "How would you implement a FULL OUTER JOIN in MySQL?",
+      "What is a self join used for?",
+      "What happens with a CROSS JOIN between two large tables?"
+    ],
+    "realWorldExample": "Listing all customers along with their orders (if any) using a LEFT JOIN between Customers and Orders tables.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "SELECT c.name, o.order_id\nFROM Customers c\nLEFT JOIN Orders o ON c.customer_id = o.customer_id;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain each join type with a clear example and identify when NULLs appear in results.",
+    "tags": ["SQL", "Joins", "Interview"],
+    "relatedTopics": ["Subqueries", "Set Operations", "Query Optimization"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-004",
+    "category": "Database",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "question": "What is Indexing? Types of indexes and when to use each?",
+    "shortAnswer": "Index is a data structure (usually B+ tree) that speeds up SELECT queries by avoiding full table scans — at the cost of slower writes.",
+    "detailedAnswer": "A Clustered Index determines the physical storage order of rows; a table can have only one, usually built on the primary key. A Non-Clustered (Secondary) Index is a separate structure with pointers to rows, and multiple are allowed per table.\n\nA Composite Index covers multiple columns, and the leftmost prefix rule determines which query patterns can use it. A Full-Text Index supports text search patterns like LIKE '%word%'.",
+    "keyPoints": [
+      "Composite index (a,b,c): usable for queries on (a), (a,b), (a,b,c) — not (b,c) alone",
+      "Never over-index — each index adds write overhead and storage cost",
+      "EXPLAIN/EXPLAIN ANALYZE: check whether a query uses an index or does a full scan"
+    ],
+    "commonMistakes": [
+      "Creating too many indexes, hurting write performance",
+      "Not understanding the leftmost prefix rule for composite indexes",
+      "Assuming indexes always speed up every kind of query"
+    ],
+    "followUpQuestions": [
+      "What is the leftmost prefix rule?",
+      "How does a clustered index differ from a non-clustered index?",
+      "How would you use EXPLAIN to debug a slow query?"
+    ],
+    "realWorldExample": "Adding an index on the 'email' column of a Users table to speed up login lookups.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE INDEX idx_users_email ON Users(email);\n\nEXPLAIN SELECT * FROM Users WHERE email = 'a@b.com';"
+    },
+    "interviewerExpectation": "The interviewer expects understanding of index structures, trade-offs between read speed and write cost, and the leftmost prefix rule.",
+    "tags": ["Indexing", "B+ Tree", "SQL", "Interview"],
+    "relatedTopics": ["Query Optimization", "Clustered Index", "Composite Index"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-005",
+    "category": "Database",
+    "topic": "DELETE vs TRUNCATE vs DROP",
+    "difficulty": "Easy",
+    "question": "What is the difference between DELETE, TRUNCATE, and DROP?",
+    "shortAnswer": "DELETE: conditional row removal, logged, rollbackable. TRUNCATE: removes all rows fast, minimal logging. DROP: removes the entire table structure.",
+    "detailedAnswer": "DELETE is a DML command that removes rows matching a WHERE clause, fires triggers per row, is fully logged, and is rollbackable within a transaction.\n\nTRUNCATE is a DDL command that deallocates all data pages at once, uses minimal logging, cannot use a WHERE clause, resets AUTO_INCREMENT, and is much faster for large tables. DROP removes the table entirely, including schema, data, indexes, constraints, and permissions.",
+    "keyPoints": [
+      "DELETE: slow for large tables but supports conditional removal + rollback",
+      "TRUNCATE: fast, resets identity counter, no per-row trigger firing",
+      "PostgreSQL: TRUNCATE is transactional (rollbackable); MySQL's is not"
+    ],
+    "commonMistakes": [
+      "Using TRUNCATE expecting WHERE clause support",
+      "Assuming TRUNCATE is always rollbackable across all databases",
+      "Confusing DROP (removes structure) with DELETE/TRUNCATE (remove data only)"
+    ],
+    "followUpQuestions": [
+      "Is TRUNCATE rollbackable in PostgreSQL vs MySQL?",
+      "Why is TRUNCATE faster than DELETE?",
+      "What happens to auto-increment values after TRUNCATE?"
+    ],
+    "realWorldExample": "Clearing all temporary session data at the start of a batch job using TRUNCATE instead of a slower DELETE.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "DELETE FROM Orders WHERE status = 'cancelled';\nTRUNCATE TABLE TempSessions;\nDROP TABLE OldLogs;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to identify DML vs DDL classification and know rollback and logging behavior differences.",
+    "tags": ["SQL", "DELETE", "TRUNCATE", "DROP", "Interview"],
+    "relatedTopics": ["DDL", "DML", "Transactions"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-006",
+    "category": "Database",
+    "topic": "SQL vs NoSQL",
+    "difficulty": "Medium",
+    "question": "What is SQL vs NoSQL? When would you choose each?",
+    "shortAnswer": "SQL: relational, fixed schema, ACID, complex joins. NoSQL: flexible schema, horizontal scale, eventual consistency.",
+    "detailedAnswer": "SQL databases like MySQL, PostgreSQL, and Oracle use structured tables and guarantee ACID properties, making them best suited for financial systems and relational data with complex reporting needs.\n\nNoSQL includes Document stores like MongoDB with a JSON-like flexible schema, Key-Value stores like Redis for caching and sessions, Column-Family stores like Cassandra for massive write throughput and time-series data, and Graph databases like Neo4j for relationship-heavy data such as social networks.",
+    "keyPoints": [
+      "SQL: banking, ERP, CRM — structured data, strong consistency",
+      "MongoDB: product catalogs, CMS — flexible, evolving schema",
+      "Cassandra: IoT sensor data, logs — high write throughput at scale"
+    ],
+    "commonMistakes": [
+      "Assuming NoSQL always means 'no schema at all'",
+      "Choosing NoSQL just for scale without considering consistency needs",
+      "Not knowing different NoSQL categories serve different use cases"
+    ],
+    "followUpQuestions": [
+      "What is the CAP theorem and how does it relate to NoSQL?",
+      "When would you choose a graph database like Neo4j?",
+      "How does eventual consistency differ from strong consistency?"
+    ],
+    "realWorldExample": "An e-commerce product catalog with varying attributes per category is often stored in MongoDB (NoSQL) rather than a rigid SQL schema.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to match database type to use case based on schema flexibility, consistency, and scale requirements.",
+    "tags": ["SQL", "NoSQL", "Databases", "Interview"],
+    "relatedTopics": ["CAP Theorem", "MongoDB", "Cassandra"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-007",
+    "category": "Database",
+    "topic": "Isolation Levels and Anomalies",
+    "difficulty": "Hard",
+    "question": "What are database Transactions, Isolation Levels, and their anomalies?",
+    "shortAnswer": "Isolation levels from weakest to strongest: Read Uncommitted, Read Committed, Repeatable Read, Serializable.",
+    "detailedAnswer": "Read Uncommitted allows dirty reads, meaning it can read uncommitted data from another transaction, making it the fastest but least safe. Read Committed only reads committed data and is the default in PostgreSQL and Oracle.\n\nRepeatable Read guarantees the same value on repeated reads within a transaction and is the default in MySQL InnoDB. Serializable is the strongest, making transactions behave as if executed one at a time, preventing phantom reads too, but it is the slowest due to heavy locking.",
+    "keyPoints": [
+      "Dirty Read: blocked from Read Committed level upward",
+      "Phantom Read: blocked only by Serializable",
+      "Higher isolation = more locking = lower concurrency/throughput"
+    ],
+    "commonMistakes": [
+      "Confusing dirty read, non-repeatable read, and phantom read anomalies",
+      "Assuming Serializable is always the best default choice",
+      "Not knowing which anomaly each isolation level prevents"
+    ],
+    "followUpQuestions": [
+      "What is a phantom read and which isolation level prevents it?",
+      "What is the trade-off between isolation level and performance?",
+      "How does MVCC help with isolation without heavy locking?"
+    ],
+    "realWorldExample": "A banking system uses Serializable isolation for fund transfers to avoid any anomalies, despite the performance cost.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;\nBEGIN;\n-- transaction operations\nCOMMIT;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to map each isolation level to the anomalies it prevents and discuss performance trade-offs.",
+    "tags": ["Transactions", "Isolation Levels", "Database", "Interview"],
+    "relatedTopics": ["ACID", "MVCC", "Concurrency Control"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-008",
+    "category": "Database",
+    "topic": "Primary Key vs Foreign Key vs Candidate Key",
+    "difficulty": "Easy",
+    "question": "What is a Primary Key vs a Foreign Key vs a Candidate Key?",
+    "shortAnswer": "Primary Key uniquely identifies each row in a table. Foreign Key references a Primary Key in another table, enforcing referential integrity. Candidate Key is any column (or set) that could serve as the Primary Key.",
+    "detailedAnswer": "A Candidate Key is a minimal set of columns that uniquely identifies a row; a table can have multiple candidate keys, but only one is chosen as the Primary Key, with the rest becoming Alternate Keys. A Primary Key cannot contain NULL values and must be unique.\n\nA Foreign Key establishes a link between two tables, ensuring that a value in the child table must exist in the parent table's referenced column, which prevents orphaned records and enforces referential integrity.",
+    "keyPoints": [
+      "Primary Key: NOT NULL + UNIQUE, one per table (can be composite)",
+      "Foreign Key: enforces referential integrity between parent and child tables",
+      "ON DELETE CASCADE: automatically deletes child rows when the parent row is deleted"
+    ],
+    "commonMistakes": [
+      "Assuming a table can have only one candidate key",
+      "Forgetting a primary key cannot contain NULL values",
+      "Not understanding foreign keys enforce referential integrity, not just references"
+    ],
+    "followUpQuestions": [
+      "What is the difference between a candidate key and an alternate key?",
+      "What happens if you try to insert a foreign key value with no matching parent row?",
+      "What are the different ON DELETE actions for foreign keys?"
+    ],
+    "realWorldExample": "An Orders table has a foreign key referencing the customer_id primary key in the Customers table, preventing orders from referencing non-existent customers.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE TABLE Orders (\n  order_id INT PRIMARY KEY,\n  customer_id INT,\n  FOREIGN KEY (customer_id) REFERENCES Customers(customer_id) ON DELETE CASCADE\n);"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish primary, foreign, and candidate keys and explain referential integrity enforcement.",
+    "tags": ["Primary Key", "Foreign Key", "Candidate Key", "Database", "Interview"],
+    "relatedTopics": ["Referential Integrity", "Composite Key", "Surrogate Key"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-009",
+    "category": "Database",
+    "topic": "Aggregate Functions, GROUP BY, HAVING",
+    "difficulty": "Medium",
+    "question": "What are Aggregate Functions? Explain GROUP BY and HAVING.",
+    "shortAnswer": "Aggregate functions (COUNT, SUM, AVG, MIN, MAX) compute a single value from multiple rows. GROUP BY groups rows sharing a value; HAVING filters groups (unlike WHERE, which filters individual rows).",
+    "detailedAnswer": "Aggregate functions operate on a set of rows and return one summary value, such as SUM(salary) across all employees. GROUP BY splits rows into groups based on one or more columns, applying the aggregate function separately to each group, such as total salary per department.\n\nWHERE filters rows before grouping, while HAVING filters groups after aggregation. An aggregate function cannot be used in a WHERE clause, which is exactly why HAVING exists.",
+    "keyPoints": [
+      "WHERE: filters individual rows, evaluated before GROUP BY",
+      "HAVING: filters aggregated groups, evaluated after GROUP BY",
+      "Example: SELECT dept, COUNT(*) FROM employees GROUP BY dept HAVING COUNT(*) > 5"
+    ],
+    "commonMistakes": [
+      "Using an aggregate function inside a WHERE clause instead of HAVING",
+      "Forgetting to include non-aggregated columns in GROUP BY",
+      "Confusing the order of execution: WHERE before GROUP BY, HAVING after"
+    ],
+    "followUpQuestions": [
+      "Why can't you use an aggregate function in a WHERE clause?",
+      "What columns must appear in a GROUP BY clause?",
+      "Can you combine WHERE and HAVING in the same query?"
+    ],
+    "realWorldExample": "Finding departments with more than 5 employees uses GROUP BY department combined with HAVING COUNT(*) > 5.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "SELECT dept, COUNT(*) AS emp_count\nFROM employees\nGROUP BY dept\nHAVING COUNT(*) > 5;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish WHERE from HAVING based on execution order and correctly use aggregate functions with GROUP BY.",
+    "tags": ["Aggregate Functions", "GROUP BY", "HAVING", "SQL", "Interview"],
+    "relatedTopics": ["SQL Joins", "Query Optimization", "Views"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-010",
+    "category": "Database",
+    "topic": "SQL Views",
+    "difficulty": "Medium",
+    "question": "What is a View in SQL? What are its advantages and limitations?",
+    "shortAnswer": "A View is a virtual table based on the result of a stored SQL query — it doesn't store data itself but presents data dynamically from underlying tables.",
+    "detailedAnswer": "Views simplify complex queries by encapsulating them behind a simple table-like interface, provide a security layer by exposing only specific columns or rows to certain users without direct table access, and offer logical data independence since the underlying table structure can change without breaking application queries, as long as the view definition is updated.\n\nLimitations include that views built on complex joins or aggregations are often not directly updatable, and querying a view re-executes the underlying query each time unless it is materialized.",
+    "keyPoints": [
+      "Simple views (single table, no aggregation) are usually updatable",
+      "Materialized View: physically stores the result, refreshed periodically — faster reads, stale data risk",
+      "Security use case: expose a view with salary column omitted to non-HR users"
+    ],
+    "commonMistakes": [
+      "Assuming all views are updatable regardless of complexity",
+      "Confusing a regular view with a materialized view",
+      "Forgetting a view re-executes its query on every access"
+    ],
+    "followUpQuestions": [
+      "What makes a view non-updatable?",
+      "How does a materialized view differ from a regular view?",
+      "How can views be used for security purposes?"
+    ],
+    "realWorldExample": "An HR system creates a view exposing only employee names and departments, omitting salary, for use by non-HR staff.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE VIEW EmployeePublic AS\nSELECT employee_id, name, department\nFROM Employees;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain views' role in abstraction and security, and know their update and performance limitations.",
+    "tags": ["SQL View", "Materialized View", "Database", "Interview"],
+    "relatedTopics": ["Materialized View", "Query Optimization", "Security"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-011",
+    "category": "Database",
+    "topic": "Clustered vs Non-Clustered Index",
+    "difficulty": "Hard",
+    "question": "What is the difference between a Clustered Index and Non-Clustered Index in more depth?",
+    "shortAnswer": "Clustered Index determines the actual physical order of data on disk (one per table). Non-Clustered Index is a separate structure with pointers back to the actual rows (multiple allowed).",
+    "detailedAnswer": "Because a clustered index dictates physical row order, a table can only have one clustered index, usually built automatically on the primary key. Range queries such as BETWEEN or ORDER BY on a clustered index column are very fast since matching rows are physically adjacent.\n\nA non-clustered index is stored separately from the actual table data, containing the indexed column value plus a pointer, or row locator, to the actual row. Querying via a non-clustered index requires an extra lookup step, called a bookmark lookup, to fetch the full row unless the query is a covering query where all needed columns are already in the index itself.",
+    "keyPoints": [
+      "Clustered: physically reorders the table, one per table, fast range scans",
+      "Non-clustered: separate structure + pointer, multiple per table",
+      "Covering index: includes all columns needed by a query, avoiding the extra lookup"
+    ],
+    "commonMistakes": [
+      "Assuming a table can have multiple clustered indexes",
+      "Not understanding the bookmark lookup cost of non-clustered indexes",
+      "Forgetting covering indexes avoid the extra lookup step"
+    ],
+    "followUpQuestions": [
+      "What is a bookmark lookup and when does it occur?",
+      "How does a covering index improve query performance?",
+      "Why can a table have only one clustered index?"
+    ],
+    "realWorldExample": "A primary key column automatically becomes the clustered index in many databases, physically sorting rows by that key.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "-- Covering index example\nCREATE INDEX idx_covering ON Orders(customer_id, order_date, total);"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the physical storage implications of clustered indexes and the bookmark lookup cost of non-clustered indexes.",
+    "tags": ["Clustered Index", "Non-Clustered Index", "Database", "Interview"],
+    "relatedTopics": ["Indexing", "Query Optimization", "Covering Index"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-012",
+    "category": "Database",
+    "topic": "Normalization vs Denormalization",
+    "difficulty": "Medium",
+    "question": "What is Database Normalization vs Denormalization? When would you denormalize?",
+    "shortAnswer": "Normalization reduces redundancy for data integrity. Denormalization intentionally introduces redundancy to improve read performance.",
+    "detailedAnswer": "A fully normalized schema minimizes update anomalies, since data is changed in one place only, but can require many JOINs for common queries, which becomes expensive at scale.\n\nDenormalization pre-joins or duplicates data to avoid expensive runtime joins, commonly used in read-heavy analytics and reporting systems like data warehouses and OLAP cubes, where read speed matters more than write efficiency or storage space. The trade-off is that denormalized data risks inconsistency if not carefully maintained, since the same fact stored in multiple places must be updated everywhere.",
+    "keyPoints": [
+      "Normalized: OLTP systems (transactional, frequent writes, data integrity critical)",
+      "Denormalized: OLAP systems (analytics, read-heavy, fewer writes)",
+      "Common denormalization: storing a calculated total instead of recalculating via JOIN + SUM every read"
+    ],
+    "commonMistakes": [
+      "Denormalizing an OLTP system where write consistency matters most",
+      "Not accounting for the maintenance overhead of denormalized redundant data",
+      "Assuming normalization is always the correct default regardless of workload"
+    ],
+    "followUpQuestions": [
+      "What is an update anomaly and how does normalization prevent it?",
+      "When is denormalization the right architectural choice?",
+      "How do you keep denormalized data consistent over time?"
+    ],
+    "realWorldExample": "An analytics dashboard stores a precomputed 'total_revenue' column instead of recalculating it via a JOIN and SUM on every page load.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to weigh read performance against data integrity and correctly map normalized/denormalized schemas to OLTP/OLAP use cases.",
+    "tags": ["Normalization", "Denormalization", "OLTP", "OLAP", "Interview"],
+    "relatedTopics": ["OLTP vs OLAP", "Data Warehousing", "Database Design"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-013",
+    "category": "Database",
+    "topic": "Stored Procedures",
+    "difficulty": "Medium",
+    "question": "What is a Stored Procedure? Advantages and disadvantages?",
+    "shortAnswer": "A Stored Procedure is a precompiled set of SQL statements stored in the database, callable by name with parameters.",
+    "detailedAnswer": "Stored procedures execute on the database server itself, reducing network round-trips by sending one call instead of multiple queries, improving performance since the execution plan is precompiled and not repeatedly parsed, and centralizing business logic so multiple applications can reuse the same procedure consistently.\n\nDisadvantages include being harder to version control and test compared to application code, tying business logic to a specific database vendor and reducing portability, and making debugging and horizontal scaling of application logic more difficult since logic lives in the database layer.",
+    "keyPoints": [
+      "Reduces network round trips: one call instead of multiple round-trip queries",
+      "Precompiled: execution plan cached, faster repeated execution",
+      "Downside: vendor lock-in, harder to unit test than application-layer code"
+    ],
+    "commonMistakes": [
+      "Overusing stored procedures for logic better suited to the application layer",
+      "Not considering vendor lock-in when relying heavily on stored procedures",
+      "Assuming stored procedures are always faster regardless of query complexity"
+    ],
+    "followUpQuestions": [
+      "Why are stored procedures harder to test than application code?",
+      "How does precompilation improve stored procedure performance?",
+      "What is the vendor lock-in risk of relying on stored procedures?"
+    ],
+    "realWorldExample": "A banking application uses a stored procedure to process a fund transfer, centralizing the debit/credit logic in the database for consistency across multiple client applications.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE PROCEDURE TransferFunds(IN from_id INT, IN to_id INT, IN amount DECIMAL)\nBEGIN\n  UPDATE accounts SET balance = balance - amount WHERE id = from_id;\n  UPDATE accounts SET balance = balance + amount WHERE id = to_id;\nEND;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to weigh performance and consistency benefits against portability and testability drawbacks.",
+    "tags": ["Stored Procedure", "Database", "Interview"],
+    "relatedTopics": ["Triggers", "Query Optimization", "Database Design"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-014",
+    "category": "Database",
+    "topic": "Deadlocks in Databases",
+    "difficulty": "Medium",
+    "question": "What is a Deadlock in databases? How is it detected and resolved?",
+    "shortAnswer": "A deadlock occurs when two or more transactions block each other, each waiting for a lock the other holds — neither can proceed.",
+    "detailedAnswer": "Transaction A locks Row 1 and waits for Row 2, while Transaction B locks Row 2 and waits for Row 1 — both wait forever. Databases detect this by building a wait-for graph and looking for cycles, or by using a timeout mechanism where a lock not acquired within a set time is assumed to indicate deadlock.\n\nOnce detected, the database automatically kills one transaction, often the one with the least work done, referred to as the victim, and rolls it back, allowing the other to proceed. Applications should catch this error and retry the failed transaction.",
+    "keyPoints": [
+      "Prevention: always acquire locks in a consistent order across all transactions",
+      "Detection: wait-for graph cycle detection, or lock timeout",
+      "Application responsibility: catch deadlock errors and retry the transaction"
+    ],
+    "commonMistakes": [
+      "Not designing applications to catch and retry deadlock errors",
+      "Acquiring locks in inconsistent order across different transactions",
+      "Confusing database-level deadlocks with application-level race conditions"
+    ],
+    "followUpQuestions": [
+      "How does consistent lock ordering prevent deadlocks?",
+      "What is a wait-for graph and how is it used for detection?",
+      "How should an application handle a deadlock error from the database?"
+    ],
+    "realWorldExample": "Two concurrent bank transfer transactions locking accounts in opposite order can deadlock, requiring the database to abort one and retry.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the wait-for-graph detection mechanism and describe prevention via consistent lock ordering.",
+    "tags": ["Deadlock", "Transactions", "Database", "Interview"],
+    "relatedTopics": ["Locking", "Isolation Levels", "Concurrency Control"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-015",
+    "category": "Database",
+    "topic": "OLTP vs OLAP",
+    "difficulty": "Medium",
+    "question": "What is the difference between OLTP and OLAP?",
+    "shortAnswer": "OLTP (Online Transaction Processing): fast, small, frequent read/write transactions — powers applications. OLAP (Online Analytical Processing): complex queries over large historical datasets — powers analytics/reporting.",
+    "detailedAnswer": "OLTP systems, typical of application databases, handle a high volume of short, simple transactions like inserting an order or updating a user profile, and are optimized for write speed while being normalized to prevent update anomalies.\n\nOLAP systems handle complex analytical queries over huge historical datasets, including aggregations, trends, and multi-dimensional analysis. They are optimized for read speed on large scans, often denormalized using star or snowflake schemas, and use columnar storage to speed up aggregate queries across millions of rows.",
+    "keyPoints": [
+      "OLTP: normalized schema, row-based storage, MySQL/PostgreSQL for apps",
+      "OLAP: denormalized star schema, columnar storage, Snowflake/BigQuery/Redshift",
+      "ETL pipelines move data from OLTP systems into OLAP data warehouses"
+    ],
+    "commonMistakes": [
+      "Using a normalized OLTP schema for analytical reporting queries",
+      "Not knowing columnar storage speeds up OLAP aggregate queries",
+      "Confusing star schema (OLAP) with relational schema (OLTP)"
+    ],
+    "followUpQuestions": [
+      "What is a star schema and why is it used in OLAP?",
+      "How does an ETL pipeline move data from OLTP to OLAP systems?",
+      "Why is columnar storage better suited for analytical queries?"
+    ],
+    "realWorldExample": "An e-commerce app uses PostgreSQL (OLTP) for order processing, while nightly ETL jobs load data into a Redshift data warehouse (OLAP) for sales reporting.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish OLTP and OLAP by workload pattern, schema design, and storage format.",
+    "tags": ["OLTP", "OLAP", "Data Warehouse", "Database", "Interview"],
+    "relatedTopics": ["Normalization vs Denormalization", "ETL", "Star Schema"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-016",
+    "category": "Database",
+    "topic": "Composite Key vs Surrogate Key",
+    "difficulty": "Medium",
+    "question": "What is a Composite Key and a Surrogate Key?",
+    "shortAnswer": "Composite Key: primary key made of multiple columns combined. Surrogate Key: an artificial, meaningless unique identifier (usually auto-increment or UUID) with no business meaning.",
+    "detailedAnswer": "A Composite Key is used when no single column uniquely identifies a row, but a combination does, such as (student_id, course_id) in an enrollment table, since each student-course pair is unique even though a student can take many courses and a course can have many students.\n\nA Surrogate Key is an artificially generated identifier, such as an auto-increment integer or UUID, used instead of a natural or composite key, even when a natural key exists. This insulates the schema from changes to business logic, such as if a supposedly 'unique' email later turns out not to be unique.",
+    "keyPoints": [
+      "Composite key example: (order_id, product_id) in an order_items table",
+      "Surrogate key: auto-increment id column, decoupled from business meaning",
+      "UUID vs auto-increment: UUIDs avoid collision across distributed systems but are larger and less index-friendly"
+    ],
+    "commonMistakes": [
+      "Using a natural key that later turns out not to be unique",
+      "Not considering UUID's larger size and indexing cost trade-off",
+      "Confusing a composite key with a compound foreign key"
+    ],
+    "followUpQuestions": [
+      "Why are surrogate keys often preferred over natural keys?",
+      "What are the trade-offs between UUID and auto-increment surrogate keys?",
+      "When would a composite key be the right design choice?"
+    ],
+    "realWorldExample": "A distributed system spanning multiple database shards uses UUIDs as surrogate keys to avoid ID collisions across shards.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE TABLE Enrollment (\n  student_id INT,\n  course_id INT,\n  PRIMARY KEY (student_id, course_id)\n);"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish composite and surrogate keys and discuss trade-offs between natural and artificial identifiers.",
+    "tags": ["Composite Key", "Surrogate Key", "Database", "Interview"],
+    "relatedTopics": ["Primary Key", "Foreign Key", "UUID"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-017",
+    "category": "Database",
+    "topic": "Database Replication",
+    "difficulty": "Medium",
+    "question": "What is Database Replication? Explain Master-Slave (Primary-Replica) replication.",
+    "shortAnswer": "Replication copies data from one database (primary/master) to one or more copies (replicas/slaves) for read scaling and high availability.",
+    "detailedAnswer": "In Primary-Replica replication, all writes go to the primary database, which streams its changes via a binary log or write-ahead log to one or more replicas that apply the same changes to stay in sync. Read queries can be distributed across replicas to scale read throughput, while writes remain centralized on the primary to avoid conflicts.\n\nReplication can be synchronous, where the primary waits for replica confirmation before committing, offering stronger consistency but higher latency, or asynchronous, where the primary commits immediately and replicas catch up shortly after, offering lower latency with a small risk of data loss on primary failure.",
+    "keyPoints": [
+      "Synchronous replication: stronger consistency, higher write latency",
+      "Asynchronous replication: faster writes, small replication lag risk",
+      "Failover: if primary fails, a replica is promoted to become the new primary"
+    ],
+    "commonMistakes": [
+      "Assuming replication automatically scales write throughput (it only scales reads)",
+      "Not accounting for replication lag risk with asynchronous replication",
+      "Confusing replication with sharding"
+    ],
+    "followUpQuestions": [
+      "What happens during a failover event?",
+      "What is the trade-off between synchronous and asynchronous replication?",
+      "How does replication differ from sharding?"
+    ],
+    "realWorldExample": "A high-traffic web application routes read queries to multiple read replicas while sending all writes to a single primary database.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the read-scaling purpose of replication and the consistency-latency trade-off between sync and async modes.",
+    "tags": ["Replication", "High Availability", "Database", "Interview"],
+    "relatedTopics": ["Sharding", "Failover", "High Availability"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-018",
+    "category": "Database",
+    "topic": "Query Optimization and Execution Plans",
+    "difficulty": "Hard",
+    "question": "What is Query Optimization? What is an Execution Plan?",
+    "shortAnswer": "Query optimization is the process the database engine uses to determine the most efficient way to execute a SQL query. An Execution Plan shows the actual steps chosen.",
+    "detailedAnswer": "The Query Optimizer analyzes possible ways to execute a query, including which indexes to use, join order, and join algorithm, estimating the cost of each approach using statistics about table sizes and data distribution, then picks the cheapest plan.\n\nRunning EXPLAIN, or EXPLAIN ANALYZE for actual runtime statistics, shows this chosen plan, revealing whether an index was used, how many rows were scanned, and what join algorithm was applied, such as nested loop, hash join, or merge join. Developers use this to identify slow queries doing full table scans and add appropriate indexes.",
+    "keyPoints": [
+      "EXPLAIN: shows the planned execution strategy without running the query",
+      "EXPLAIN ANALYZE: actually runs the query and shows real timing/row counts",
+      "Seq Scan (full table scan) in the plan often signals a missing index"
+    ],
+    "commonMistakes": [
+      "Not using EXPLAIN to diagnose slow queries before adding indexes blindly",
+      "Confusing EXPLAIN (estimated plan) with EXPLAIN ANALYZE (actual execution)",
+      "Ignoring join algorithm choice when reading an execution plan"
+    ],
+    "followUpQuestions": [
+      "What does a Seq Scan in an execution plan usually indicate?",
+      "What is the difference between EXPLAIN and EXPLAIN ANALYZE?",
+      "How does the optimizer decide between a nested loop and a hash join?"
+    ],
+    "realWorldExample": "A developer runs EXPLAIN ANALYZE on a slow-running report query and discovers a full table scan, prompting them to add a missing index.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain how the optimizer chooses a plan and how to interpret EXPLAIN output to diagnose performance issues.",
+    "tags": ["Query Optimization", "Execution Plan", "Database", "Interview"],
+    "relatedTopics": ["Indexing", "Joins", "Database Performance"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-019",
+    "category": "Database",
+    "topic": "Sharding vs Partitioning",
+    "difficulty": "Hard",
+    "question": "What is Database Sharding and how is it different from Partitioning?",
+    "shortAnswer": "Sharding distributes data across multiple separate database instances/servers. Partitioning divides a table into smaller pieces within the SAME database instance.",
+    "detailedAnswer": "Partitioning splits a large table into smaller physical pieces based on a key, such as by date range or region, while remaining part of the same database server; queries can be optimized to scan only the relevant partition through partition pruning.\n\nSharding takes this further by distributing partitions across entirely separate database servers or instances, used when a single server's storage or throughput capacity is exceeded. Sharding introduces additional complexity, including cross-shard joins, transactions spanning shards, and rebalancing when adding new shards.",
+    "keyPoints": [
+      "Partitioning: same server, improves query performance via pruning",
+      "Sharding: multiple servers, improves scalability of storage AND throughput",
+      "Both use a similar key strategy: range-based, hash-based, or list-based"
+    ],
+    "commonMistakes": [
+      "Confusing partitioning (single server) with sharding (multiple servers)",
+      "Not accounting for cross-shard join complexity when designing a sharded system",
+      "Assuming partitioning alone solves throughput scaling limits"
+    ],
+    "followUpQuestions": [
+      "What is partition pruning and how does it improve performance?",
+      "What challenges does sharding introduce for cross-shard transactions?",
+      "How would you rebalance data when adding a new shard?"
+    ],
+    "realWorldExample": "A large table of sales data is partitioned by year within a single database, while a multi-tenant SaaS application shards its entire database by tenant ID across multiple servers.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer explains sharding from partitioning by scope (multiple servers vs single server) and discusses added complexity of sharding.",
+    "tags": ["Sharding", "Partitioning", "Database", "Interview"],
+    "relatedTopics": ["Replication", "Horizontal Scaling", "Consistent Hashing"],
+    "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+  },
+  {
+    "id": "db-020",
+    "category": "Database",
+    "topic": "N+1 Query Problem",
+    "difficulty": "Medium",
+    "question": "What is the N+1 Query Problem? How do you fix it?",
+    "shortAnswer": "The N+1 problem occurs when fetching a list of N parent records triggers one additional query PER record to fetch related child data — resulting in N+1 total queries instead of 2.",
+    "detailedAnswer": "For example, fetching 100 blog posts and then looping through each post to fetch its author with a separate query results in 1 query for posts plus 100 queries for authors, totaling 101 queries, when it could have been done in as few as 2, or even 1 with a JOIN. This commonly happens with ORMs that lazy-load related data by default.\n\nFixes include using a JOIN to fetch related data in one query, using eager loading such as .include() or .select_related() in Django or JOIN FETCH in JPA, or using a DataLoader pattern that batches and caches lookups in GraphQL resolvers.",
+    "keyPoints": [
+      "Symptom: application makes way more DB queries than expected under load",
+      "Fix: eager loading, explicit JOINs, or batching with a DataLoader",
+      "Detection: enable query logging and count queries per request in development"
+    ],
+    "commonMistakes": [
+      "Not noticing lazy-loading defaults in ORMs causing excessive queries",
+      "Fixing N+1 by adding more indexes instead of restructuring the query pattern",
+      "Not using query logging to detect the N+1 pattern during development"
+    ],
+    "followUpQuestions": [
+      "How does eager loading solve the N+1 problem in an ORM?",
+      "What is a DataLoader and how does it help with N+1 in GraphQL?",
+      "How would you detect an N+1 problem in a production application?"
+    ],
+    "realWorldExample": "A blog application listing 100 posts triggers 100 separate queries to fetch each post's author, which is fixed by eager loading the author relationship in a single query.",
+    "codeExample": {
+      "language": "Python",
+      "code": "# Django example: fixing N+1 with select_related\nposts = Post.objects.select_related('author').all()"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to recognize the N+1 pattern's cause in ORMs and describe eager loading or batching as the fix.",
+    "tags": ["N+1 Problem", "ORM", "Query Optimization", "Interview"],
+    "relatedTopics": ["Eager Loading", "DataLoader", "ORM"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-021",
+    "category": "Database",
+    "topic": "SQL Triggers",
+    "difficulty": "Medium",
+    "question": "What is a Trigger in SQL? Give a use case.",
+    "shortAnswer": "A Trigger is a stored procedure that automatically executes in response to a specific event (INSERT, UPDATE, DELETE) on a table.",
+    "detailedAnswer": "Triggers run automatically, either before or after the triggering event, without being explicitly called by the application. Common use cases include maintaining an audit log by automatically logging every change to a sensitive table, enforcing complex business rules that can't be expressed via simple constraints, and automatically updating a denormalized summary column, such as updating a total_orders count on a customer row whenever a new order is inserted.\n\nOveruse of triggers can make application behavior hard to trace, since logic runs invisibly at the database layer.",
+    "keyPoints": [
+      "BEFORE trigger: can modify the incoming data before it's saved",
+      "AFTER trigger: runs after the change is committed — good for logging/auditing",
+      "Downside: hidden logic that's easy to forget exists, harder to debug"
+    ],
+    "commonMistakes": [
+      "Overusing triggers, making application behavior hard to trace",
+      "Confusing BEFORE and AFTER trigger timing and their appropriate use cases",
+      "Forgetting triggers can cause unexpected cascading side effects"
+    ],
+    "followUpQuestions": [
+      "What is the difference between a BEFORE and AFTER trigger?",
+      "Why can excessive trigger use make debugging harder?",
+      "How would you use a trigger to maintain an audit log?"
+    ],
+    "realWorldExample": "An AFTER INSERT trigger on an Orders table automatically increments a total_orders counter on the corresponding Customer row.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE TRIGGER update_order_count\nAFTER INSERT ON Orders\nFOR EACH ROW\nBEGIN\n  UPDATE Customers SET total_orders = total_orders + 1 WHERE customer_id = NEW.customer_id;\nEND;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain trigger timing (BEFORE/AFTER) and give a practical use case like auditing or denormalized column maintenance.",
+    "tags": ["Trigger", "Database", "Interview"],
+    "relatedTopics": ["Stored Procedure", "Audit Logging", "Denormalization"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-022",
+    "category": "Database",
+    "topic": "Connection Pooling",
+    "difficulty": "Medium",
+    "question": "What is Connection Pooling? Why is it important for database performance?",
+    "shortAnswer": "Connection Pooling maintains a set of pre-established, reusable database connections instead of opening/closing a new connection for every request.",
+    "detailedAnswer": "Creating a new database connection is expensive, involving a TCP handshake, authentication, and session setup, which can take tens of milliseconds. Under high traffic, opening and closing a connection per request would overwhelm the database and add significant latency.\n\nA connection pool, such as PgBouncer for PostgreSQL or one built into most ORMs and frameworks, maintains a fixed number of open connections; when the application needs to query the database, it borrows a connection from the pool, uses it, and returns it, avoiding the overhead of establishing a new connection each time.",
+    "keyPoints": [
+      "Reduces connection setup overhead (TCP handshake, auth) per request",
+      "Pool size must be tuned: too small = requests wait, too large = database resource exhaustion",
+      "PgBouncer, HikariCP (Java), SQLAlchemy pool — common connection pooling tools"
+    ],
+    "commonMistakes": [
+      "Setting the connection pool size too small, causing request queuing",
+      "Setting the pool size too large, exhausting database resources",
+      "Not using connection pooling at all under high-traffic conditions"
+    ],
+    "followUpQuestions": [
+      "How would you determine the right connection pool size?",
+      "What happens if a connection pool is exhausted?",
+      "What are some common connection pooling tools?"
+    ],
+    "realWorldExample": "A high-traffic web application uses PgBouncer in front of PostgreSQL to manage a fixed pool of database connections across many application server instances.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain why connection setup is expensive and how pooling mitigates that cost, along with sizing trade-offs.",
+    "tags": ["Connection Pooling", "Database Performance", "Interview"],
+    "relatedTopics": ["Database Performance", "Scalability", "PgBouncer"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-023",
+    "category": "Database",
+    "topic": "UNION vs UNION ALL",
+    "difficulty": "Easy",
+    "question": "What is the difference between UNION and UNION ALL?",
+    "shortAnswer": "UNION combines results from two queries and removes duplicate rows. UNION ALL combines results and keeps all rows, including duplicates — faster since it skips deduplication.",
+    "detailedAnswer": "Both UNION and UNION ALL require the combined queries to have the same number of columns with compatible data types. UNION performs an implicit sort or hash operation to identify and remove duplicate rows across the combined result sets, which adds computational overhead.\n\nUNION ALL simply concatenates all rows from both queries without checking for duplicates, making it significantly faster, and it should always be preferred when there are no duplicates or duplicates don't matter.",
+    "keyPoints": [
+      "UNION: removes duplicates, slower (extra sort/dedup step)",
+      "UNION ALL: keeps all rows including duplicates, faster",
+      "Prefer UNION ALL unless deduplication is explicitly required"
+    ],
+    "commonMistakes": [
+      "Using UNION by default without considering the performance cost of deduplication",
+      "Assuming UNION and UNION ALL always return the same number of rows",
+      "Combining queries with mismatched column counts or types"
+    ],
+    "followUpQuestions": [
+      "Why is UNION ALL generally faster than UNION?",
+      "What happens if the combined queries have different column counts?",
+      "When would you specifically need UNION instead of UNION ALL?"
+    ],
+    "realWorldExample": "Combining results from two regional sales tables where duplicates are impossible uses UNION ALL for better performance instead of UNION.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "SELECT name FROM CustomersUS\nUNION ALL\nSELECT name FROM CustomersEU;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the deduplication overhead of UNION and recommend UNION ALL when duplicates aren't a concern.",
+    "tags": ["UNION", "UNION ALL", "SQL", "Interview"],
+    "relatedTopics": ["Set Operations", "Query Optimization", "SQL Joins"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-024",
+    "category": "Database",
+    "topic": "Materialized View vs Regular View",
+    "difficulty": "Medium",
+    "question": "What is a Materialized View? How is it different from a Regular View?",
+    "shortAnswer": "A Regular View re-executes its underlying query every time it's accessed. A Materialized View physically stores the query result and must be manually or periodically refreshed.",
+    "detailedAnswer": "A regular view is essentially a saved SQL query that always reflects the current live data, but every access re-runs the full underlying query, making it no faster than running the query directly.\n\nA materialized view executes the query once and stores the actual result set as physical data, similar to a table, so subsequent reads are very fast since no recomputation happens. The trade-off is staleness: the materialized view's data becomes outdated as underlying tables change and must be explicitly refreshed, such as with REFRESH MATERIALIZED VIEW in PostgreSQL, either manually, on a schedule, or via triggers.",
+    "keyPoints": [
+      "Regular view: always current, but slow (recomputes every access)",
+      "Materialized view: fast reads, but data can be stale until refreshed",
+      "Use case: expensive aggregation queries for dashboards refreshed hourly"
+    ],
+    "commonMistakes": [
+      "Assuming a materialized view is always up to date",
+      "Forgetting to schedule refreshes for a materialized view",
+      "Using a regular view for a performance-critical expensive aggregation"
+    ],
+    "followUpQuestions": [
+      "How would you refresh a materialized view in PostgreSQL?",
+      "What are the trade-offs of staleness vs read performance?",
+      "When would you choose a materialized view over a regular view?"
+    ],
+    "realWorldExample": "A sales dashboard uses a materialized view refreshed hourly to quickly display aggregated revenue metrics without recomputing expensive joins on every page load.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE MATERIALIZED VIEW SalesSummary AS\nSELECT region, SUM(amount) AS total_sales\nFROM Sales\nGROUP BY region;\n\nREFRESH MATERIALIZED VIEW SalesSummary;"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the staleness vs performance trade-off between regular and materialized views.",
+    "tags": ["Materialized View", "SQL View", "Database", "Interview"],
+    "relatedTopics": ["Query Optimization", "Data Warehousing", "Views"],
+    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "db-025",
+    "category": "Database",
+    "topic": "Referential Integrity",
+    "difficulty": "Medium",
+    "question": "What is Referential Integrity? How is it enforced in SQL databases?",
+    "shortAnswer": "Referential Integrity ensures that a foreign key value in one table always corresponds to an existing primary key value in the referenced table — no \"orphaned\" references.",
+    "detailedAnswer": "Referential integrity is enforced automatically by the database via FOREIGN KEY constraints. Attempting to insert a child row referencing a non-existent parent row is rejected, and attempting to delete a parent row that still has child rows referencing it is either rejected or handled via a defined action.\n\nDefined actions include ON DELETE CASCADE, which automatically deletes matching child rows, ON DELETE SET NULL, which sets the foreign key column to NULL in child rows, or ON DELETE RESTRICT, the default, which blocks the deletion. Referential integrity prevents data inconsistency bugs, such as an order referencing a customer that no longer exists.",
+    "keyPoints": [
+      "FOREIGN KEY constraint: database rejects invalid references at write time",
+      "ON DELETE CASCADE: dangerous if used carelessly — can delete more than intended",
+      "ON DELETE RESTRICT (default): safest, blocks deletion if dependent rows exist"
+    ],
+    "commonMistakes": [
+      "Using ON DELETE CASCADE carelessly, causing unintended data loss",
+      "Not enforcing foreign key constraints, allowing orphaned records",
+      "Confusing ON DELETE SET NULL with ON DELETE CASCADE behavior"
+    ],
+    "followUpQuestions": [
+      "What is the difference between ON DELETE CASCADE and ON DELETE SET NULL?",
+      "Why is ON DELETE RESTRICT considered the safest default?",
+      "What happens if you try to insert a foreign key referencing a non-existent row?"
+    ],
+    "realWorldExample": "An e-commerce database prevents an Orders table from referencing a deleted Customer by enforcing a foreign key constraint with ON DELETE RESTRICT.",
+    "codeExample": {
+      "language": "SQL",
+      "code": "CREATE TABLE Orders (\n  order_id INT PRIMARY KEY,\n  customer_id INT,\n  FOREIGN KEY (customer_id) REFERENCES Customers(customer_id) ON DELETE RESTRICT\n);"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain how foreign key constraints enforce referential integrity and describe the different ON DELETE actions.",
+    "tags": ["Referential Integrity", "Foreign Key", "Database", "Interview"],
+    "relatedTopics": ["Primary Key", "Foreign Key", "Constraints"],
+    "references": ["Database System Concepts - Silberschatz"]
   }
 ];
