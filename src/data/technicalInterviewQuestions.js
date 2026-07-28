@@ -3300,5 +3300,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
     "tags": ["CDN", "Networking", "Performance", "Interview"],
     "relatedTopics": ["DNS", "Latency", "DDoS Protection"],
     "references": ["Computer Networking - Kurose & Ross"]
+  },
+  {
+    "id": "co-001",
+    "category": "Computer Organization",
+    "topic": "RISC vs CISC",
+    "difficulty": "Medium",
+    "question": "What is the difference between RISC and CISC architecture?",
+    "shortAnswer": "RISC: small set of simple, fixed-length instructions, mostly one clock cycle each. CISC: large set of complex, variable-length instructions.",
+    "detailedAnswer": "RISC processors, such as ARM, MIPS, and RISC-V, use a small, optimized instruction set where each instruction typically executes in a single clock cycle. This simplicity enables efficient pipelining and lower power consumption, which is why ARM dominates mobile devices. Complex operations require chaining multiple simple instructions together.\n\nCISC processors, like x86/x86-64, support complex instructions that perform multi-step operations in variable clock cycles, reducing instruction count per program but complicating the hardware. Modern x86 CPUs internally translate CISC instructions into RISC-like micro-operations for execution.",
+    "keyPoints": [
+      "RISC: fixed-length instructions, more instructions per program, power-efficient",
+      "CISC: variable-length instructions, fewer instructions per program, complex hardware",
+      "ARM (RISC) dominates mobile/embedded; x86 (CISC) dominates desktop/server"
+    ],
+    "commonMistakes": [
+      "Assuming CISC processors don't internally use RISC-like micro-operations",
+      "Not knowing why ARM dominates power-constrained mobile devices",
+      "Confusing instruction count per program with instruction complexity"
+    ],
+    "followUpQuestions": [
+      "Why does modern x86 translate CISC instructions into micro-operations?",
+      "Why is RISC generally more power-efficient than CISC?",
+      "What are some real-world examples of RISC and CISC processors?"
+    ],
+    "realWorldExample": "Apple's transition to ARM-based (RISC) Apple Silicon chips for MacBooks improved battery life significantly compared to previous Intel (CISC) chips.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the trade-offs in instruction complexity and connect them to real-world power/performance implications.",
+    "tags": ["RISC", "CISC", "Computer Organization", "Interview"],
+    "relatedTopics": ["Instruction Set Architecture", "Pipelining", "Microarchitecture"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-002",
+    "category": "Computer Organization",
+    "topic": "CPU Pipelining",
+    "difficulty": "Medium",
+    "question": "What is Pipelining in CPU architecture?",
+    "shortAnswer": "Pipelining overlaps execution of multiple instructions by breaking processing into stages (fetch, decode, execute, memory, write-back), so several instructions are in-flight simultaneously.",
+    "detailedAnswer": "Without pipelining, a CPU fully completes one instruction before starting the next, leaving different hardware units idle most of the time. Pipelining divides instruction execution into stages, so while one instruction is decoding, the next is already being fetched, like an assembly line, dramatically increasing throughput without needing a faster clock.\n\nComplications include Structural Hazards, which are resource conflicts, Data Hazards, which occur when an instruction depends on a still-in-flight result, and Control Hazards, where branch instructions create uncertainty about what to fetch next.",
+    "keyPoints": [
+      "Classic 5-stage pipeline: Fetch, Decode, Execute, Memory Access, Write Back",
+      "Data Hazard: solved by forwarding/bypassing or pipeline stalling",
+      "Branch prediction: guesses branch outcome to avoid control hazard stalls"
+    ],
+    "commonMistakes": [
+      "Confusing pipelining (overlapping stages) with superscalar execution (parallel instructions)",
+      "Not knowing the three hazard types: structural, data, and control",
+      "Assuming pipelining always increases clock speed rather than throughput"
+    ],
+    "followUpQuestions": [
+      "What is the difference between a data hazard and a control hazard?",
+      "How does forwarding/bypassing solve data hazards?",
+      "How does branch prediction help mitigate control hazards?"
+    ],
+    "realWorldExample": "Modern CPUs use deep pipelines with many stages to maximize instruction throughput, similar to a factory assembly line processing multiple items simultaneously.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the 5-stage pipeline concept and identify the three types of pipeline hazards.",
+    "tags": ["Pipelining", "CPU Architecture", "Computer Organization", "Interview"],
+    "relatedTopics": ["Branch Prediction", "Superscalar Architecture", "Instruction-Level Parallelism"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-003",
+    "category": "Computer Organization",
+    "topic": "Cache Memory Hierarchy",
+    "difficulty": "Medium",
+    "question": "What is Cache Memory? Explain the three levels (L1, L2, L3).",
+    "shortAnswer": "Cache is small, extremely fast memory between the CPU and RAM, exploiting locality to reduce average memory access time. L1 is smallest/fastest, L3 is largest/slowest of the caches.",
+    "detailedAnswer": "Main memory, or RAM, is far slower than the CPU, so cache exploits temporal locality, where recently accessed data will likely be accessed again, and spatial locality, where nearby addresses are likely accessed soon.\n\nL1 is smallest, at 32-64KB, fastest, private per core, and split into instruction and data caches. L2 is larger, at 256KB-1MB, slightly slower, and usually private per core. L3 is largest, at several MB, shared across all cores, and slower than L1/L2 but far faster than RAM. The CPU checks L1, then L2, then L3, then RAM in order, with each miss costing significantly more time.",
+    "keyPoints": [
+      "Cache hit: found in cache — fast. Cache miss: must go deeper — slow",
+      "Temporal locality: loop variables accessed repeatedly benefit from caching",
+      "Spatial locality: array traversal benefits since nearby elements get cached together"
+    ],
+    "commonMistakes": [
+      "Confusing temporal locality with spatial locality",
+      "Not knowing L1 is typically split into instruction and data caches",
+      "Assuming L3 cache is as fast as L1 since both are 'cache'"
+    ],
+    "followUpQuestions": [
+      "What is the difference between temporal and spatial locality?",
+      "Why is L3 cache shared while L1 and L2 are typically private per core?",
+      "How does a cache miss affect overall CPU performance?"
+    ],
+    "realWorldExample": "A loop iterating over an array benefits from spatial locality since nearby array elements get loaded into cache together, reducing memory access time.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the locality principles behind caching and describe the size/speed trade-offs across L1, L2, and L3.",
+    "tags": ["Cache Memory", "CPU Architecture", "Computer Organization", "Interview"],
+    "relatedTopics": ["Cache Mapping", "SRAM vs DRAM", "Memory Hierarchy"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-004",
+    "category": "Computer Organization",
+    "topic": "Von Neumann vs Harvard Architecture",
+    "difficulty": "Medium",
+    "question": "What is the Von Neumann Architecture? How does it differ from Harvard Architecture?",
+    "shortAnswer": "Von Neumann: shared memory for both instructions and data (one bus). Harvard: separate memory and buses for instructions and data, allowing simultaneous access.",
+    "detailedAnswer": "In Von Neumann architecture, both program instructions and data reside in the same memory space and are accessed via the same bus, which is simpler and cheaper to build but creates the Von Neumann bottleneck, since the CPU can't fetch an instruction and access data simultaneously as they compete for the same bus. Most general-purpose computers use this design.\n\nHarvard architecture uses physically separate memory and buses for instructions and data, allowing simultaneous instruction fetch and data access, which is faster for specific workloads and commonly used in microcontrollers and DSPs where predictable, fast performance matters more than flexibility.",
+    "keyPoints": [
+      "Von Neumann bottleneck: single shared bus limits simultaneous instruction fetch + data access",
+      "Harvard architecture: separate paths — common in embedded systems and DSPs",
+      "Modern CPUs use a \"Modified Harvard\" approach: separate L1 instruction/data caches, unified main memory"
+    ],
+    "commonMistakes": [
+      "Assuming all modern CPUs are purely Von Neumann without any Harvard elements",
+      "Not knowing the term \"Von Neumann bottleneck\" refers to the shared bus limitation",
+      "Confusing Harvard architecture's separate buses with simple cache separation"
+    ],
+    "followUpQuestions": [
+      "What is a \"Modified Harvard\" architecture and why do modern CPUs use it?",
+      "Why is Harvard architecture common in DSPs and microcontrollers?",
+      "How does the Von Neumann bottleneck limit CPU performance?"
+    ],
+    "realWorldExample": "Most general-purpose PCs and servers use a Von Neumann-based design, while many embedded microcontrollers used in appliances use Harvard architecture for predictable timing.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the Von Neumann bottleneck and identify when Harvard architecture's separation is advantageous.",
+    "tags": ["Von Neumann", "Harvard Architecture", "Computer Organization", "Interview"],
+    "relatedTopics": ["Bus Architecture", "Cache Memory", "Microcontrollers"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-005",
+    "category": "Computer Organization",
+    "topic": "Instruction Set Architecture",
+    "difficulty": "Medium",
+    "question": "What is an Instruction Set Architecture (ISA)?",
+    "shortAnswer": "ISA is the interface/contract between software and hardware — it defines the set of instructions, registers, addressing modes, and data types a processor understands and can execute.",
+    "detailedAnswer": "The ISA is an abstraction layer that allows software, such as compilers and operating systems, to be written without needing to know the exact physical circuit implementation of the processor. Any processor implementing the same ISA, such as x86-64, can run the same compiled binary regardless of the specific internal microarchitecture, which can differ significantly between vendors like Intel and AMD.\n\nThis separation of ISA, the 'what', from microarchitecture, the 'how', is what allows continuous hardware innovation, such as new pipeline designs, more cores, and better branch prediction, without breaking compatibility with existing compiled software.",
+    "keyPoints": [
+      "ISA defines: instruction set, registers, addressing modes, data types",
+      "Common ISAs: x86-64 (desktop/server), ARM (mobile/embedded), RISC-V (open-source, growing)",
+      "Microarchitecture is the specific hardware implementation of an ISA — can vary between vendors/generations"
+    ],
+    "commonMistakes": [
+      "Confusing ISA (the software-facing contract) with microarchitecture (the hardware implementation)",
+      "Assuming all processors implementing the same ISA have identical internal designs",
+      "Not knowing ISA compatibility is what enables software portability across CPU generations"
+    ],
+    "followUpQuestions": [
+      "How does the ISA/microarchitecture separation enable hardware innovation without breaking software?",
+      "What are some examples of different ISAs in use today?",
+      "Why can Intel and AMD both implement x86-64 differently?"
+    ],
+    "realWorldExample": "A compiled x86-64 program can run on both an Intel and an AMD processor without modification, since both implement the same x86-64 ISA despite having different internal microarchitectures.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish ISA from microarchitecture and explain why this separation enables software compatibility.",
+    "tags": ["ISA", "Microarchitecture", "Computer Organization", "Interview"],
+    "relatedTopics": ["RISC vs CISC", "Compiler", "Microarchitecture"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-006",
+    "category": "Computer Organization",
+    "topic": "Register vs RAM",
+    "difficulty": "Easy",
+    "question": "What is the difference between a Register and RAM?",
+    "shortAnswer": "Registers are extremely small, extremely fast storage locations built directly into the CPU. RAM is larger, slower memory external to the CPU core.",
+    "detailedAnswer": "Registers hold data the CPU is actively working with right now, such as operands for the current instruction or intermediate calculation results, and are accessed in a single clock cycle since they're physically part of the CPU itself. There are typically only a handful to a few dozen general-purpose registers, such as 16 in x86-64.\n\nRAM holds the much larger working set of a running program, including variables, objects, and the call stack, but requires multiple clock cycles to access due to physical distance and the need to traverse the memory bus. The memory hierarchy, from registers to cache to RAM to disk, trades off capacity against speed at each level.",
+    "keyPoints": [
+      "Registers: fastest, smallest (bytes to a few dozen bytes total), part of the CPU itself",
+      "RAM: much larger (GBs), but orders of magnitude slower to access than registers",
+      "Compilers try to keep frequently-used variables in registers via \"register allocation\""
+    ],
+    "commonMistakes": [
+      "Assuming registers and cache are the same thing",
+      "Not knowing the typical count of general-purpose registers in modern architectures",
+      "Confusing register access speed with cache access speed"
+    ],
+    "followUpQuestions": [
+      "What is register allocation and why is it important for compilers?",
+      "What happens when there aren't enough registers for all active variables?",
+      "How does the memory hierarchy trade off speed and capacity?"
+    ],
+    "realWorldExample": "A compiler keeps a loop counter variable in a register throughout a tight loop to avoid the overhead of repeatedly accessing slower RAM.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the speed and capacity trade-off between registers and RAM within the memory hierarchy.",
+    "tags": ["Register", "RAM", "Computer Organization", "Interview"],
+    "relatedTopics": ["Register Allocation", "Memory Hierarchy", "Cache Memory"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-007",
+    "category": "Computer Organization",
+    "topic": "Interrupts",
+    "difficulty": "Medium",
+    "question": "What is an Interrupt? Explain the difference between Hardware and Software Interrupts.",
+    "shortAnswer": "An interrupt is a signal that pauses the CPU's current execution to handle a more urgent event, then resumes where it left off. Hardware interrupts come from external devices; software interrupts are triggered by executing instructions.",
+    "detailedAnswer": "A hardware interrupt is generated by external devices, such as a keyboard press, network packet arrival, or disk I/O completion, signaling that they need CPU attention. The CPU finishes its current instruction, saves its state, jumps to an Interrupt Service Routine to handle the event, then restores state and resumes the interrupted program.\n\nA software interrupt is deliberately triggered by executing a specific instruction in a program, like the int instruction on x86 or a system call trap, used to request OS services or signal exceptions like division by zero. Interrupts are what allow a CPU to remain responsive to real-time events without constantly polling every device.",
+    "keyPoints": [
+      "Interrupt Service Routine (ISR): the handler code that responds to a specific interrupt",
+      "Interrupt Vector Table: maps each interrupt type to its corresponding ISR address",
+      "Polling (the alternative): CPU repeatedly checks device status — wasteful compared to interrupts"
+    ],
+    "commonMistakes": [
+      "Confusing hardware interrupts (external devices) with software interrupts (triggered by instructions)",
+      "Not knowing the Interrupt Vector Table maps interrupt types to handler addresses",
+      "Assuming polling is more efficient than interrupt-driven I/O"
+    ],
+    "followUpQuestions": [
+      "What is an Interrupt Service Routine and how is it invoked?",
+      "Why are interrupts more efficient than polling for device communication?",
+      "What is an example of a software interrupt used to request OS services?"
+    ],
+    "realWorldExample": "When a user presses a key, the keyboard controller generates a hardware interrupt that pauses the current program to process the keystroke immediately.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish hardware and software interrupts and explain the role of the Interrupt Service Routine.",
+    "tags": ["Interrupt", "Hardware Interrupt", "Software Interrupt", "Computer Organization", "Interview"],
+    "relatedTopics": ["System Calls", "Polling", "Interrupt Vector Table"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-008",
+    "category": "Computer Organization",
+    "topic": "Multiprocessor vs Multicore",
+    "difficulty": "Medium",
+    "question": "What is the difference between a Multiprocessor and a Multicore system?",
+    "shortAnswer": "Multiprocessor: multiple separate physical CPU chips in one system. Multicore: multiple independent processing cores within a SINGLE CPU chip.",
+    "detailedAnswer": "A multiprocessor system has multiple distinct CPU chips, each potentially with its own cache hierarchy, connected via a shared bus or interconnect. This was historically used in high-end servers before multicore CPUs became mainstream, and communication between chips has higher latency than within a chip.\n\nA multicore system integrates multiple processing cores onto a single physical chip, sharing some cache levels, often L3, and the same memory controller. Communication between cores is much faster due to physical proximity and shared on-chip resources. Modern systems often combine both, using multiple multicore CPU chips in one server.",
+    "keyPoints": [
+      "Multicore: cores on one chip, faster inter-core communication, often shares L3 cache",
+      "Multiprocessor: separate physical chips, historically used before multicore was viable",
+      "Modern high-end servers combine both: multiple multicore CPUs per motherboard"
+    ],
+    "commonMistakes": [
+      "Assuming multiprocessor and multicore are interchangeable terms",
+      "Not knowing modern servers often combine both approaches",
+      "Forgetting inter-chip communication has higher latency than inter-core communication"
+    ],
+    "followUpQuestions": [
+      "Why is inter-core communication faster than inter-chip communication?",
+      "How do modern servers combine multiprocessor and multicore designs?",
+      "What cache levels are typically shared in a multicore system?"
+    ],
+    "realWorldExample": "A high-end server might have two physical CPU sockets (multiprocessor), each containing a 16-core chip (multicore), for a total of 32 cores.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish physical chip count from core count and explain the communication latency implications.",
+    "tags": ["Multiprocessor", "Multicore", "Computer Organization", "Interview"],
+    "relatedTopics": ["Cache Memory", "Parallel Computing", "Amdahl's Law"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-009",
+    "category": "Computer Organization",
+    "topic": "Instruction-Level Parallelism and Superscalar Architecture",
+    "difficulty": "Hard",
+    "question": "What is Instruction-Level Parallelism (ILP)? Explain Superscalar Architecture.",
+    "shortAnswer": "ILP is the ability to execute multiple instructions simultaneously within a single CPU core. Superscalar architecture achieves this by having multiple execution units that can process independent instructions in parallel during the same clock cycle.",
+    "detailedAnswer": "Even within a single core, not every instruction depends on the immediately preceding one. A superscalar processor can identify independent instructions via hardware instruction scheduling and dispatch multiple of them to different execution units, such as a separate integer ALU, floating-point unit, and load/store unit, simultaneously within one clock cycle, rather than strictly one instruction per cycle.\n\nThis is different from pipelining, which overlaps different stages of different instructions; superscalar execution overlaps the same stage for multiple independent instructions. Out-of-order execution further extends this by reordering instructions at runtime, while preserving correct final results, to maximize the use of available execution units when the program's original order has dependencies blocking parallel execution.",
+    "keyPoints": [
+      "Superscalar: multiple execution units process independent instructions in the same cycle",
+      "Out-of-order execution: CPU reorders instructions internally to avoid stalling on dependencies",
+      "Different from pipelining: pipelining overlaps stages, superscalar overlaps entire instructions"
+    ],
+    "commonMistakes": [
+      "Confusing superscalar execution with pipelining",
+      "Not knowing out-of-order execution preserves correct final results despite reordering",
+      "Assuming ILP requires multiple cores rather than multiple execution units in one core"
+    ],
+    "followUpQuestions": [
+      "How does superscalar architecture differ from pipelining?",
+      "What is out-of-order execution and why is it used?",
+      "What limits the amount of ILP a processor can exploit?"
+    ],
+    "realWorldExample": "Modern x86 CPUs use superscalar architecture with multiple execution units, allowing them to execute several independent instructions, like an integer addition and a floating-point multiplication, in the same clock cycle.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish superscalar execution from pipelining and explain the role of out-of-order execution.",
+    "tags": ["ILP", "Superscalar", "Out-of-Order Execution", "Computer Organization", "Interview"],
+    "relatedTopics": ["Pipelining", "Branch Prediction", "Multicore"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-010",
+    "category": "Computer Organization",
+    "topic": "Big Endian vs Little Endian",
+    "difficulty": "Medium",
+    "question": "What is the difference between Big Endian and Little Endian byte ordering?",
+    "shortAnswer": "Big Endian stores the most significant byte at the lowest memory address. Little Endian stores the least significant byte at the lowest memory address.",
+    "detailedAnswer": "When storing a multi-byte value, such as a 4-byte integer, in memory, there are two conventions for byte order. Big Endian stores bytes in the order a human would naturally read them, most significant byte first, and is used by network protocols, since network byte order is always big-endian, and some architectures like older Motorola/SPARC.\n\nLittle Endian stores the least significant byte first, and is used by x86/x86-64 and most modern consumer hardware, chosen partly because certain arithmetic operations can be marginally simpler at the hardware level. This matters directly when transferring binary data between systems with different endianness, since the data must be explicitly converted or bugs arise from misinterpreted values.",
+    "keyPoints": [
+      "Big Endian: 0x12345678 stored as 12 34 56 78 (most significant byte first)",
+      "Little Endian: same value stored as 78 56 34 12 (least significant byte first)",
+      "Network byte order is always Big Endian — hosts must convert (htons/ntohs functions in C)"
+    ],
+    "commonMistakes": [
+      "Assuming all systems use the same byte ordering by default",
+      "Forgetting network protocols always use big-endian byte order",
+      "Not converting between byte orders when exchanging binary data across systems"
+    ],
+    "followUpQuestions": [
+      "Why does network byte order always use Big Endian?",
+      "What functions are used in C to convert between host and network byte order?",
+      "What bugs can arise from mismatched endianness between systems?"
+    ],
+    "realWorldExample": "A network application running on a little-endian x86 machine must convert integers to big-endian network byte order using htons() before sending them over a socket.",
+    "codeExample": {
+      "language": "C",
+      "code": "#include <arpa/inet.h>\n\nuint16_t port = 8080;\nuint16_t network_order_port = htons(port);  // convert to big-endian for network transmission"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain both byte ordering conventions and why conversion matters for cross-system data exchange.",
+    "tags": ["Big Endian", "Little Endian", "Byte Ordering", "Computer Organization", "Interview"],
+    "relatedTopics": ["Network Byte Order", "Binary Data", "System Architecture"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-011",
+    "category": "Computer Organization",
+    "topic": "Bus Architecture",
+    "difficulty": "Medium",
+    "question": "What is a Bus in computer architecture? Explain Address Bus, Data Bus, and Control Bus.",
+    "shortAnswer": "A bus is a shared communication pathway connecting CPU, memory, and I/O devices. Address Bus carries memory addresses. Data Bus carries actual data. Control Bus carries control signals coordinating operations.",
+    "detailedAnswer": "The Address Bus is unidirectional, from CPU to memory, carrying the address of the memory location being accessed. Its width, or number of bits, determines the maximum addressable memory, such as a 32-bit address bus addressing up to 4GB.\n\nThe Data Bus is bidirectional, actually carrying the data being read from or written to memory, and its width determines how many bits can be transferred in one operation, such as a 64-bit data bus transferring 8 bytes at once. The Control Bus carries signals like Read/Write indicators, clock signals, and interrupt requests, coordinating the timing and nature of operations happening on the other two buses.",
+    "keyPoints": [
+      "Address bus width determines the maximum addressable memory space (2^n addresses)",
+      "Data bus width determines how much data transfers per memory operation",
+      "Control bus: carries Read/Write signals, clock pulses, interrupt requests"
+    ],
+    "commonMistakes": [
+      "Confusing the roles of the address bus and data bus",
+      "Not calculating maximum addressable memory correctly from address bus width",
+      "Forgetting the control bus coordinates timing rather than carrying addresses or data"
+    ],
+    "followUpQuestions": [
+      "How would you calculate the maximum addressable memory from a given address bus width?",
+      "Why is the data bus bidirectional while the address bus is unidirectional?",
+      "What kinds of signals travel on the control bus?"
+    ],
+    "realWorldExample": "A 32-bit address bus limits a system to addressing 4GB of memory, which historically constrained 32-bit operating systems even with more physical RAM installed.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the distinct roles of the three bus types and connect address bus width to addressable memory capacity.",
+    "tags": ["Bus Architecture", "Address Bus", "Data Bus", "Computer Organization", "Interview"],
+    "relatedTopics": ["Memory Addressing", "CPU Architecture", "DMA"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-012",
+    "category": "Computer Organization",
+    "topic": "Direct Memory Access (DMA)",
+    "difficulty": "Medium",
+    "question": "What is Direct Memory Access (DMA)? Why is it used?",
+    "shortAnswer": "DMA allows peripheral devices (disk, network card) to transfer data directly to/from memory WITHOUT involving the CPU for every single byte, freeing the CPU to do other work.",
+    "detailedAnswer": "Without DMA, transferring a large file from disk to memory would require the CPU to execute a read instruction for every single byte or word, an enormous waste of CPU cycles for what is fundamentally a mechanical data-copying task.\n\nWith DMA, the CPU simply configures a DMA controller with the source, destination, and size of the transfer, then continues executing other instructions while the DMA controller independently manages the entire transfer, accessing memory directly. Once the transfer completes, the DMA controller signals the CPU via an interrupt, dramatically improving overall system throughput for I/O-heavy operations.",
+    "keyPoints": [
+      "CPU only sets up the transfer parameters, then is free to do other work during the transfer",
+      "DMA controller signals completion via an interrupt",
+      "Critical for high-throughput I/O: disk transfers, network cards, sound cards, graphics cards"
+    ],
+    "commonMistakes": [
+      "Assuming the CPU is involved in every byte of a DMA transfer",
+      "Not knowing DMA completion is signaled via an interrupt",
+      "Confusing DMA with regular memory-mapped I/O"
+    ],
+    "followUpQuestions": [
+      "How does the DMA controller signal the CPU when a transfer completes?",
+      "What kinds of I/O operations benefit most from DMA?",
+      "What would happen to system performance without DMA for disk transfers?"
+    ],
+    "realWorldExample": "A graphics card uses DMA to transfer large textures directly into video memory without requiring the CPU to copy each byte individually.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain how DMA frees the CPU from per-byte transfer overhead and improves I/O throughput.",
+    "tags": ["DMA", "I/O", "Computer Organization", "Interview"],
+    "relatedTopics": ["Bus Architecture", "Interrupts", "Memory-Mapped I/O"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-013",
+    "category": "Computer Organization",
+    "topic": "Microprogramming vs Hardwired Control",
+    "difficulty": "Hard",
+    "question": "What is Microprogramming vs Hardwired Control?",
+    "shortAnswer": "Hardwired Control implements the control logic directly in physical circuitry (fast, but inflexible). Microprogramming implements control logic as a stored \"microprogram\" that's interpreted, making it flexible and easier to modify/debug.",
+    "detailedAnswer": "In hardwired control, each control signal is generated by a fixed combination of logic gates wired specifically for that purpose, which is extremely fast since there's no interpretation overhead, but modifying the instruction set requires physically redesigning the circuit, making it inflexible and error-prone to change or debug.\n\nIn microprogrammed control, each machine instruction is broken down into a sequence of simpler micro-instructions stored in a special control memory, and a micro-sequencer reads and executes these one at a time to implement the full instruction. This is slower due to the extra interpretation layer, but far more flexible, since adding new instructions or fixing bugs is a matter of updating the microprogram rather than redesigning hardware.",
+    "keyPoints": [
+      "Hardwired: faster execution, but inflexible — changes require redesigning circuits",
+      "Microprogrammed: slower (interpretation overhead), but flexible — changes are just data updates",
+      "Modern CPUs (x86) use a hybrid: hardwired for common cases, microcode for complex instructions"
+    ],
+    "commonMistakes": [
+      "Assuming modern CPUs use purely one approach rather than a hybrid",
+      "Not understanding why CISC processors historically favored microprogramming",
+      "Confusing microcode with the ISA itself"
+    ],
+    "followUpQuestions": [
+      "Why did CISC processors historically favor microprogrammed control?",
+      "How do modern x86 CPUs combine hardwired and microprogrammed control?",
+      "What is the trade-off between flexibility and speed in these two approaches?"
+    ],
+    "realWorldExample": "Intel and AMD processors can fix certain CPU bugs via microcode updates delivered through BIOS/OS updates, without needing to physically replace the chip, illustrating the flexibility of microprogrammed control.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the speed vs flexibility trade-off and recognize that modern CPUs use a hybrid approach.",
+    "tags": ["Microprogramming", "Hardwired Control", "Control Unit", "Computer Organization", "Interview"],
+    "relatedTopics": ["Control Unit", "ISA", "CISC"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-014",
+    "category": "Computer Organization",
+    "topic": "Volatile vs Non-Volatile Memory",
+    "difficulty": "Easy",
+    "question": "What is the difference between Volatile and Non-Volatile Memory?",
+    "shortAnswer": "Volatile memory loses its stored data when power is removed (RAM). Non-Volatile memory retains data even without power (SSD, HDD, ROM, Flash).",
+    "detailedAnswer": "Volatile memory, such as DRAM/RAM, requires continuous power to maintain its stored state. DRAM specifically needs to be periodically refreshed, or rewritten, even while powered, since the tiny capacitors storing each bit naturally leak charge over time. This is acceptable because RAM only holds temporary working data during active program execution.\n\nNon-Volatile memory, such as SSDs, HDDs, ROM, Flash memory, and EEPROM, retains its data indefinitely without power, which is essential for permanent storage of the operating system, files, and firmware that must survive a power cycle. There's a fundamental trade-off: volatile memory is much faster to read/write than non-volatile storage.",
+    "keyPoints": [
+      "Volatile (RAM): fast, but loses data on power loss — used for active working memory",
+      "Non-Volatile (SSD/HDD/Flash): retains data without power, but slower — used for persistent storage",
+      "DRAM requires periodic refresh cycles even while powered, unlike SRAM (used in CPU cache)"
+    ],
+    "commonMistakes": [
+      "Assuming all types of RAM are equally volatile in the same way",
+      "Not knowing DRAM requires periodic refresh even while powered",
+      "Confusing SRAM's non-refresh behavior with volatility status (SRAM is still volatile)"
+    ],
+    "followUpQuestions": [
+      "Why does DRAM need periodic refresh cycles?",
+      "Why is volatile memory used for active working data despite the risk of data loss?",
+      "What are some examples of non-volatile memory beyond SSDs and HDDs?"
+    ],
+    "realWorldExample": "When a computer loses power unexpectedly, unsaved data in RAM is lost, while files already saved to the SSD remain intact.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the power-dependency trade-off and identify why RAM's volatility is an acceptable design choice.",
+    "tags": ["Volatile Memory", "Non-Volatile Memory", "Computer Organization", "Interview"],
+    "relatedTopics": ["SRAM vs DRAM", "Memory Hierarchy", "Storage"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-015",
+    "category": "Computer Organization",
+    "topic": "Register File",
+    "difficulty": "Medium",
+    "question": "What is a Register File? Why does CPU design use general-purpose registers?",
+    "shortAnswer": "A Register File is a small, extremely fast array of storage locations within the CPU, used to hold operands and intermediate results during instruction execution.",
+    "detailedAnswer": "General-purpose registers give the CPU somewhere to hold values it's actively computing with, without needing to constantly access slower memory for every intermediate step. Since register access takes a single clock cycle, compared to multiple cycles for even cached memory access, compilers aggressively try to keep frequently-used variables in registers, a process called register allocation, rather than repeatedly reading and writing memory.\n\nThe number of available registers is a key architectural constraint; x86-64 has 16 general-purpose registers, while some RISC architectures provide more, such as 32 in typical ARM/MIPS designs, to reduce the frequency of register spilling, which is temporarily moving values to memory when there aren't enough registers to hold everything needed simultaneously.",
+    "keyPoints": [
+      "Register access: single clock cycle — dramatically faster than any memory access",
+      "Register spilling: when there aren't enough registers, values must temporarily go to memory (slower)",
+      "Register allocation: a key compiler optimization deciding which variables live in registers vs memory"
+    ],
+    "commonMistakes": [
+      "Not understanding register spilling occurs when the compiler runs out of available registers",
+      "Assuming all architectures have the same number of general-purpose registers",
+      "Confusing register allocation with memory allocation"
+    ],
+    "followUpQuestions": [
+      "What is register spilling and when does it occur?",
+      "Why do RISC architectures typically provide more registers than CISC architectures?",
+      "How does the compiler decide which variables to keep in registers?"
+    ],
+    "realWorldExample": "A compiler optimizing a tight loop keeps the loop counter in a register throughout the loop's execution to avoid repeated slower memory accesses.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain why registers are faster than memory and describe register allocation and spilling.",
+    "tags": ["Register File", "Register Allocation", "Computer Organization", "Interview"],
+    "relatedTopics": ["Register vs RAM", "Compiler", "RISC vs CISC"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-016",
+    "category": "Computer Organization",
+    "topic": "Amdahl's Law",
+    "difficulty": "Hard",
+    "question": "What is Amdahl's Law? Why does it matter for parallel computing?",
+    "shortAnswer": "Amdahl's Law calculates the theoretical maximum speedup achievable by parallelizing a task, showing that the speedup is fundamentally limited by the portion of the task that MUST remain sequential.",
+    "detailedAnswer": "Amdahl's Law states that Speedup equals 1 divided by ((1-P) plus P/N), where P is the proportion of the task that can be parallelized and N is the number of processors. This reveals a critical insight: even with infinite processors, if 10% of a task is inherently sequential, the maximum possible speedup is only 10x, no matter how many cores are used.\n\nThis has huge practical implications for system design: before investing in massive parallelization, such as adding more CPU cores or distributing across more servers, engineers must first identify and minimize the sequential bottleneck portion of their workload, since that's what ultimately caps achievable performance gains.",
+    "keyPoints": [
+      "Formula: Speedup = 1 / ((1-P) + P/N) where P = parallelizable fraction, N = number of processors",
+      "Even with infinite cores, speedup is capped by the sequential (non-parallelizable) portion",
+      "Practical implication: identify and minimize the sequential bottleneck BEFORE adding more parallelism"
+    ],
+    "commonMistakes": [
+      "Assuming adding more processors always yields proportional speedup",
+      "Not identifying the sequential bottleneck before investing in parallelization",
+      "Misapplying the formula by confusing P (parallelizable fraction) with N (processor count)"
+    ],
+    "followUpQuestions": [
+      "What happens to speedup as N approaches infinity in Amdahl's Law?",
+      "How would you identify the sequential bottleneck in a real workload?",
+      "What is the practical implication of Amdahl's Law for scaling cloud infrastructure?"
+    ],
+    "realWorldExample": "A data processing pipeline where 20% of the work is an inherently sequential aggregation step will never achieve more than a 5x speedup, regardless of how many additional servers process the parallelizable 80%.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to state the formula correctly and explain the practical implication of the sequential bottleneck limiting speedup.",
+    "tags": ["Amdahl's Law", "Parallel Computing", "Computer Organization", "Interview"],
+    "relatedTopics": ["Multicore", "Instruction-Level Parallelism", "Scalability"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-017",
+    "category": "Computer Organization",
+    "topic": "SRAM vs DRAM",
+    "difficulty": "Medium",
+    "question": "What is the difference between SRAM and DRAM?",
+    "shortAnswer": "SRAM (Static RAM): faster, more expensive, doesn't need periodic refresh — used for CPU cache. DRAM (Dynamic RAM): slower, cheaper, needs periodic refresh — used for main memory.",
+    "detailedAnswer": "SRAM stores each bit using a flip-flop circuit, typically 6 transistors, that holds its state as long as power is applied, without needing to be refreshed. This makes it faster but also physically larger and more expensive per bit, which is why it's used in small quantities for CPU cache where speed is paramount.\n\nDRAM stores each bit as a charge in a tiny capacitor, using 1 transistor plus 1 capacitor per bit, making it much more compact and cheaper per bit, but the capacitor's charge naturally leaks over time, requiring periodic refresh cycles to prevent data loss even while powered. This refresh overhead and simpler storage mechanism make DRAM slower than SRAM, which is why it's used for larger-capacity main memory rather than cache.",
+    "keyPoints": [
+      "SRAM: 6 transistors/bit, no refresh needed, fast but expensive — used for cache",
+      "DRAM: 1 transistor + 1 capacitor/bit, needs periodic refresh, cheaper but slower — used for RAM",
+      "Refresh overhead is exactly why DRAM access is slower and more complex than SRAM"
+    ],
+    "commonMistakes": [
+      "Confusing SRAM (cache) with DRAM (main memory) use cases",
+      "Not knowing DRAM requires periodic refresh cycles due to capacitor charge leakage",
+      "Assuming SRAM is cheaper than DRAM (it's actually more expensive per bit)"
+    ],
+    "followUpQuestions": [
+      "Why does DRAM's capacitor-based storage require periodic refresh?",
+      "Why is SRAM more expensive per bit than DRAM?",
+      "Why is SRAM used for cache while DRAM is used for main memory?"
+    ],
+    "realWorldExample": "A CPU's L1/L2/L3 cache is built with SRAM for speed, while the much larger system RAM is built with cheaper DRAM.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the transistor-count and refresh-cycle differences that drive SRAM's speed advantage and cost disadvantage over DRAM.",
+    "tags": ["SRAM", "DRAM", "Cache Memory", "Computer Organization", "Interview"],
+    "relatedTopics": ["Cache Memory", "Volatile Memory", "Memory Hierarchy"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-018",
+    "category": "Computer Organization",
+    "topic": "Branch Prediction",
+    "difficulty": "Hard",
+    "question": "What is Branch Prediction? Why is it necessary in pipelined processors?",
+    "shortAnswer": "Branch Prediction guesses the outcome of a conditional branch instruction (if/else, loop condition) BEFORE it's actually resolved, allowing the pipeline to keep fetching instructions speculatively instead of stalling.",
+    "detailedAnswer": "In a pipelined CPU, when the processor encounters a conditional branch instruction, it doesn't know which instruction to fetch next until the branch condition is actually evaluated several stages later. Without prediction, the pipeline would have to stall completely until the branch resolves, wasting many clock cycles, a situation called a control hazard.\n\nBranch prediction uses heuristics or historical patterns, such as assuming a branch taken the last 10 times will be taken again, to guess the outcome and speculatively continue fetching and executing instructions down the predicted path. If the prediction is correct, no time is lost; if incorrect, a misprediction, the speculatively executed instructions must be discarded in a pipeline flush and execution restarts from the correct path, a costly penalty that motivates modern CPUs to invest heavily in sophisticated branch predictors achieving 95%+ accuracy.",
+    "keyPoints": [
+      "Control hazard: pipeline doesn't know which instruction to fetch next until branch resolves",
+      "Correct prediction: no performance penalty, pipeline stays full",
+      "Misprediction: pipeline flush required — all speculatively executed work is discarded, costly penalty"
+    ],
+    "commonMistakes": [
+      "Assuming branch prediction eliminates control hazards entirely rather than mitigating them",
+      "Not knowing a misprediction requires a costly pipeline flush",
+      "Underestimating how high modern branch predictor accuracy typically is"
+    ],
+    "followUpQuestions": [
+      "What happens to the pipeline when a branch is mispredicted?",
+      "How do modern CPUs achieve high branch prediction accuracy?",
+      "Why is branch prediction more critical in deeper pipelines?"
+    ],
+    "realWorldExample": "A tight loop that runs thousands of iterations benefits greatly from branch prediction, since the predictor quickly learns the loop's branch is almost always taken until the final iteration.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the control hazard problem and describe the cost of a misprediction versus a correct prediction.",
+    "tags": ["Branch Prediction", "Pipelining", "Control Hazard", "Computer Organization", "Interview"],
+    "relatedTopics": ["Pipelining", "Superscalar Architecture", "Out-of-Order Execution"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-019",
+    "category": "Computer Organization",
+    "topic": "Fetch-Decode-Execute Cycle",
+    "difficulty": "Easy",
+    "question": "What is the Fetch-Decode-Execute Cycle?",
+    "shortAnswer": "The basic cycle every CPU instruction goes through: Fetch (retrieve instruction from memory), Decode (interpret what the instruction means), Execute (perform the actual operation).",
+    "detailedAnswer": "In the Fetch stage, the CPU uses the Program Counter to retrieve the next instruction from memory into the Instruction Register, then increments the Program Counter to point to the following instruction. In the Decode stage, the Control Unit interprets the fetched instruction's opcode, determining what operation to perform and which registers or memory locations are involved.\n\nIn the Execute stage, the ALU or other relevant hardware unit actually performs the specified operation, such as addition, memory load, or branch, and results are written back to a register or memory. This cycle repeats continuously for every single instruction; in a non-pipelined CPU it happens sequentially one instruction at a time, while pipelined CPUs overlap these stages across multiple instructions simultaneously.",
+    "keyPoints": [
+      "Program Counter (PC): tracks the memory address of the next instruction to fetch",
+      "Instruction Register: holds the currently fetched instruction awaiting decode/execute",
+      "This basic cycle is the foundation that pipelining builds upon by overlapping the stages"
+    ],
+    "commonMistakes": [
+      "Forgetting the Program Counter is incremented during the Fetch stage",
+      "Confusing the roles of the Control Unit (decode) and ALU (execute)",
+      "Not connecting this basic cycle to how pipelining overlaps its stages"
+    ],
+    "followUpQuestions": [
+      "What is the role of the Program Counter in this cycle?",
+      "How does pipelining build upon the basic Fetch-Decode-Execute cycle?",
+      "What happens during the Decode stage specifically?"
+    ],
+    "realWorldExample": "Every single machine instruction a CPU runs, from a simple addition to a complex branch, goes through this fundamental three-stage cycle.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to describe each of the three stages accurately and connect this cycle to the foundation of pipelining.",
+    "tags": ["Fetch-Decode-Execute", "CPU Cycle", "Computer Organization", "Interview"],
+    "relatedTopics": ["Pipelining", "Control Unit", "Program Counter"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-020",
+    "category": "Computer Organization",
+    "topic": "Cache Mapping",
+    "difficulty": "Hard",
+    "question": "What is Cache Mapping? Explain Direct-Mapped, Fully Associative, and Set-Associative caching.",
+    "shortAnswer": "Cache Mapping determines WHERE in the cache a specific memory block can be placed. Direct-Mapped: each block maps to exactly one cache location. Fully Associative: a block can go anywhere. Set-Associative: a middle ground — a block maps to a specific set, but can go anywhere within that set.",
+    "detailedAnswer": "Direct-Mapped caching uses a simple formula, memory address modulo the number of cache lines, to determine the exact single cache location for any given memory block. This is fast and simple to implement, but suffers from conflict misses if two frequently-used blocks happen to map to the same cache line, forcing repeated evictions even if other cache space is free.\n\nFully Associative caching allows any memory block to be placed in any cache line, eliminating conflict misses entirely, but requires checking every single cache line to determine a hit or miss, making it slower and more hardware-expensive, especially for large caches. N-way Set-Associative caching is the practical middle ground used in real CPUs: the cache is divided into sets, each memory block maps to a specific set like direct-mapped, but within that set it can occupy any of N available lines like fully associative on a smaller scale.",
+    "keyPoints": [
+      "Direct-mapped: fast, simple, but prone to conflict misses",
+      "Fully associative: no conflict misses, but expensive/slow to search (checks every line)",
+      "N-way Set-associative: practical middle ground used in real CPU cache designs (e.g., 8-way L2 cache)"
+    ],
+    "commonMistakes": [
+      "Confusing conflict misses (direct-mapped) with capacity misses (any cache type)",
+      "Assuming fully associative caching is always the best choice despite its search cost",
+      "Not knowing set-associative caching is what real CPUs typically use in practice"
+    ],
+    "followUpQuestions": [
+      "What is a conflict miss and why does direct-mapped caching suffer from it?",
+      "Why do real CPUs typically use N-way set-associative caching instead of fully associative?",
+      "How does the number of ways in a set-associative cache affect performance and cost?"
+    ],
+    "realWorldExample": "A typical L2 cache in a modern CPU might be organized as an 8-way set-associative cache, balancing search speed against conflict miss avoidance.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain all three mapping strategies and articulate the trade-off between conflict misses and search complexity.",
+    "tags": ["Cache Mapping", "Direct-Mapped", "Set-Associative", "Computer Organization", "Interview"],
+    "relatedTopics": ["Cache Memory", "SRAM vs DRAM", "Memory Hierarchy"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-021",
+    "category": "Computer Organization",
+    "topic": "Compiler vs Assembler",
+    "difficulty": "Medium",
+    "question": "What is the difference between a Compiler and an Assembler in the context of computer architecture?",
+    "shortAnswer": "A Compiler translates high-level source code (C, Java) into assembly or machine code. An Assembler translates human-readable assembly language into actual machine code (binary instructions the CPU executes).",
+    "detailedAnswer": "A compiler performs a much more complex, multi-stage translation: parsing high-level syntax, performing type checking and optimization, and eventually generating either assembly code or directly machine code. This involves significant abstraction, since high-level constructs like loops, function calls, and objects don't have a one-to-one correspondence with individual machine instructions.\n\nAn assembler performs a much more direct, largely one-to-one translation, where each assembly language mnemonic, like MOV, ADD, or JMP, corresponds directly to a specific binary opcode the CPU understands, with the assembler mainly resolving symbolic labels and addresses into actual numeric addresses. In a typical toolchain, source code goes through a compiler to become assembly code, then an assembler to become machine code, then a linker to produce the final executable.",
+    "keyPoints": [
+      "Compiler: high-level language → assembly/machine code, involves significant abstraction/optimization",
+      "Assembler: assembly language → machine code, largely a direct 1-to-1 mnemonic translation",
+      "Full toolchain: source → compiler → assembler → linker → executable machine code"
+    ],
+    "commonMistakes": [
+      "Confusing the abstraction levels between compilers and assemblers",
+      "Not knowing the full toolchain sequence: compiler → assembler → linker",
+      "Assuming assemblers perform optimization like compilers do"
+    ],
+    "followUpQuestions": [
+      "What is the role of a linker in the compilation toolchain?",
+      "Why does a compiler involve more abstraction than an assembler?",
+      "What does an assembler do with symbolic labels in assembly code?"
+    ],
+    "realWorldExample": "A C program is first translated by a compiler like GCC into assembly code, which is then converted by an assembler into an object file, and finally linked into an executable.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to describe the full toolchain from source code to executable and distinguish the compiler's abstraction from the assembler's direct translation.",
+    "tags": ["Compiler", "Assembler", "Toolchain", "Computer Organization", "Interview"],
+    "relatedTopics": ["ISA", "Linker", "Machine Code"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-022",
+    "category": "Computer Organization",
+    "topic": "Flynn's Taxonomy",
+    "difficulty": "Hard",
+    "question": "What is a Flynn's Taxonomy? Explain SISD, SIMD, MISD, MIMD.",
+    "shortAnswer": "Flynn's Taxonomy classifies computer architectures based on the number of concurrent Instruction streams and Data streams. SISD: single instruction, single data (traditional single-core). SIMD: single instruction, multiple data (GPUs, vector processors). MIMD: multiple instructions, multiple data (multicore/multiprocessor systems).",
+    "detailedAnswer": "SISD, Single Instruction Single Data, describes a traditional sequential processor executing one instruction on one piece of data at a time, the classic Von Neumann model for a single core. SIMD, Single Instruction Multiple Data, applies the same instruction simultaneously across multiple data elements, ideal for operations like adding two large arrays element-wise, extensively used in GPUs and CPU vector extensions like SSE and AVX.\n\nMISD, Multiple Instructions Single Data, is rare in practice, mostly theoretical or used in specialized fault-tolerant systems. MIMD, Multiple Instructions Multiple Data, describes genuinely independent processors executing different instructions on different data simultaneously, describing essentially all modern multicore CPUs and distributed or cluster computing systems.",
+    "keyPoints": [
+      "SISD: traditional single-core sequential execution (classic Von Neumann)",
+      "SIMD: same operation across multiple data points simultaneously — GPUs, AVX/SSE instructions",
+      "MIMD: fully independent parallel execution — modern multicore CPUs, computing clusters"
+    ],
+    "commonMistakes": [
+      "Confusing SIMD (same instruction, multiple data) with MIMD (different instructions, different data)",
+      "Not knowing MISD is largely theoretical with few practical applications",
+      "Assuming all parallel architectures fall under MIMD"
+    ],
+    "followUpQuestions": [
+      "Why are GPUs classified as SIMD architectures?",
+      "What real-world systems fall under the MIMD category?",
+      "Why is MISD rarely used in practice?"
+    ],
+    "realWorldExample": "A GPU rendering a frame applies the same shader instruction to thousands of pixels simultaneously, exemplifying SIMD architecture.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to correctly classify each category and provide real-world examples, especially for SIMD and MIMD.",
+    "tags": ["Flynn's Taxonomy", "SIMD", "MIMD", "Computer Organization", "Interview"],
+    "relatedTopics": ["Parallel Computing", "GPU Architecture", "Multicore"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-023",
+    "category": "Computer Organization",
+    "topic": "Control Unit",
+    "difficulty": "Medium",
+    "question": "What is the role of the Control Unit in a CPU?",
+    "shortAnswer": "The Control Unit orchestrates and coordinates all CPU operations — it decodes instructions and generates the control signals that direct the ALU, registers, and memory to perform the correct operation in the correct sequence.",
+    "detailedAnswer": "The Control Unit doesn't perform actual computations itself, since that's the ALU's job. Instead, it acts as the CPU's conductor, interpreting each fetched instruction's opcode and generating the precise timing and control signals needed to execute it correctly: which registers to read from, when to enable the ALU and what operation it should perform, when to write results back, when to access memory, and when to update the program counter.\n\nIt essentially translates the high-level intent of an instruction into the exact sequence of low-level micro-operations and signal timings needed to make the physical hardware components work together correctly to achieve that result.",
+    "keyPoints": [
+      "Doesn't perform computation itself — generates control signals directing other components",
+      "Coordinates: register reads/writes, ALU operation selection, memory access timing, PC updates",
+      "Can be implemented as hardwired logic (fast) or microprogrammed (flexible)"
+    ],
+    "commonMistakes": [
+      "Assuming the Control Unit performs arithmetic operations itself",
+      "Confusing the Control Unit's role with the ALU's role",
+      "Not knowing the Control Unit can be implemented as either hardwired or microprogrammed"
+    ],
+    "followUpQuestions": [
+      "How does the Control Unit differ from the ALU in terms of function?",
+      "What control signals does the Control Unit typically generate?",
+      "How does the Control Unit's implementation relate to hardwired vs microprogrammed control?"
+    ],
+    "realWorldExample": "When executing an 'ADD R1, R2, R3' instruction, the Control Unit generates the signals telling the ALU to perform addition and directing the result to be written back to register R1.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the Control Unit's coordination role from the ALU's computational role.",
+    "tags": ["Control Unit", "CPU Architecture", "Computer Organization", "Interview"],
+    "relatedTopics": ["Fetch-Decode-Execute Cycle", "Microprogramming", "ALU"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-024",
+    "category": "Computer Organization",
+    "topic": "Memory-Mapped I/O vs Port-Mapped I/O",
+    "difficulty": "Medium",
+    "question": "What is Memory-Mapped I/O vs Port-Mapped I/O?",
+    "shortAnswer": "Memory-Mapped I/O: device registers share the same address space as regular memory, accessed with normal memory instructions. Port-Mapped I/O: devices use a completely separate address space, requiring special I/O instructions.",
+    "detailedAnswer": "With Memory-Mapped I/O, specific memory addresses are reserved to represent device registers, such as writing to a particular address sending a byte to a serial port. The CPU uses the exact same instructions, like MOV, LOAD, and STORE, to communicate with devices as it does for regular RAM, simplifying the instruction set.\n\nWith Port-Mapped I/O, used historically in x86, devices exist in a completely separate address space accessed via dedicated special instructions like IN and OUT, keeping the memory address space entirely reserved for actual RAM but requiring the CPU to support distinct instruction types just for I/O. Modern systems predominantly use memory-mapped I/O due to its simplicity and flexibility, though x86 retains legacy port-mapped I/O support for backward compatibility.",
+    "keyPoints": [
+      "Memory-mapped I/O: devices share memory address space, accessed via normal load/store instructions",
+      "Port-mapped I/O: separate address space, requires dedicated IN/OUT instructions (legacy x86)",
+      "Modern systems favor memory-mapped I/O for simplicity — any instruction touching memory can touch a device"
+    ],
+    "commonMistakes": [
+      "Assuming port-mapped I/O is still the primary method used in modern systems",
+      "Confusing memory-mapped I/O's shared address space with regular RAM access",
+      "Not knowing x86 retains legacy port-mapped I/O for backward compatibility"
+    ],
+    "followUpQuestions": [
+      "Why do modern systems favor memory-mapped I/O over port-mapped I/O?",
+      "What instructions does x86 use for port-mapped I/O?",
+      "What are the trade-offs of reserving part of the address space for devices in memory-mapped I/O?"
+    ],
+    "realWorldExample": "A modern graphics card's control registers are typically accessed via memory-mapped I/O, allowing the CPU to use standard load/store instructions to communicate with it.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the address space distinction and identify why modern systems favor memory-mapped I/O.",
+    "tags": ["Memory-Mapped I/O", "Port-Mapped I/O", "Computer Organization", "Interview"],
+    "relatedTopics": ["Bus Architecture", "DMA", "I/O Systems"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
+  },
+  {
+    "id": "co-025",
+    "category": "Computer Organization",
+    "topic": "Clock Speed and Performance",
+    "difficulty": "Medium",
+    "question": "What is Clock Speed? Why doesn't higher clock speed always mean better performance?",
+    "shortAnswer": "Clock Speed (measured in GHz) is the rate at which the CPU's internal clock oscillates, determining how many basic operation cycles occur per second — but actual performance also depends on instructions-per-cycle (IPC), core count, and workload characteristics.",
+    "detailedAnswer": "A higher clock speed means the CPU can potentially execute more cycles per second, but this doesn't directly translate to proportionally better real-world performance. Different CPU architectures achieve different amounts of actual work per clock cycle, known as Instructions Per Cycle or IPC, so a 3GHz CPU with higher IPC can outperform a 4GHz CPU with lower IPC.\n\nSingle-threaded clock speed also doesn't help with workloads that can utilize multiple cores in parallel, and higher clock speeds generate more heat and consume more power, eventually hitting physical and thermal limits. This is exactly why the industry pivoted toward adding more cores rather than just chasing ever-higher single-core clock speeds after the mid-2000s 'megahertz race' ended.",
+    "keyPoints": [
+      "IPC (Instructions Per Cycle): how much actual work happens per clock cycle — varies by architecture",
+      "Total performance ≈ Clock Speed × IPC × (parallelizable work × core count, when applicable)",
+      "Thermal/power limits are why the industry shifted from \"megahertz race\" to multicore designs post-2005"
+    ],
+    "commonMistakes": [
+      "Comparing CPUs purely by GHz number without considering IPC differences",
+      "Not knowing thermal and power limits drove the shift toward multicore designs",
+      "Assuming single-core clock speed benefits all types of workloads equally"
+    ],
+    "followUpQuestions": [
+      "What is IPC and why does it matter alongside clock speed?",
+      "Why did the industry shift from chasing higher clock speeds to adding more cores?",
+      "How would you compare two CPUs with different clock speeds and architectures?"
+    ],
+    "realWorldExample": "A modern 3GHz CPU with an improved architecture can outperform an older 4GHz CPU due to higher instructions-per-cycle efficiency, illustrating why clock speed alone is misleading.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain IPC's role alongside clock speed and describe why the industry shifted toward multicore designs.",
+    "tags": ["Clock Speed", "IPC", "CPU Performance", "Computer Organization", "Interview"],
+    "relatedTopics": ["Multicore", "Amdahl's Law", "Pipelining"],
+    "references": ["Computer Organization and Design - Patterson & Hennessy"]
   }
 ];
