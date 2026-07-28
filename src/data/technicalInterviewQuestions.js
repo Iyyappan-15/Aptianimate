@@ -2475,5 +2475,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
     "tags": ["Bootloader", "Boot Process", "Operating Systems", "Interview"],
     "relatedTopics": ["BIOS/UEFI", "Kernel Initialization", "GRUB"],
     "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "cn-001",
+    "category": "Computer Networks",
+    "topic": "OSI Model",
+    "difficulty": "Easy",
+    "question": "What are the 7 layers of the OSI Model and their functions?",
+    "shortAnswer": "Physical, Data Link, Network, Transport, Session, Presentation, Application.",
+    "detailedAnswer": "Layer 7, Application, handles user-facing protocols like HTTP, FTP, and DNS. Layer 6, Presentation, handles data formatting and encryption. Layer 5, Session, manages sessions between applications.\n\nLayer 4, Transport, handles end-to-end delivery and ports via TCP/UDP. Layer 3, Network, handles logical addressing and routing via IP. Layer 2, Data Link, handles framing and MAC addresses via Ethernet. Layer 1, Physical, handles raw bit transmission over cables, fiber, or radio. The practical TCP/IP model collapses this into 4 layers.",
+    "keyPoints": [
+      "Layer 4 adds port numbers — identifies which application receives the data",
+      "Layer 3 adds IP addresses — identifies which host across networks",
+      "Layer 2 adds MAC addresses — identifies which device on the local segment"
+    ],
+    "commonMistakes": [
+      "Mixing up the order of layers",
+      "Confusing OSI's 7 layers with TCP/IP's 4 layers",
+      "Not knowing which protocols belong to which layer"
+    ],
+    "followUpQuestions": [
+      "How does the TCP/IP model map to the OSI model?",
+      "Which layer does a router operate at?",
+      "What layer does a switch operate at?"
+    ],
+    "realWorldExample": "When browsing a website, HTTP operates at the Application layer while TCP/IP handles Transport and Network layer delivery.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to name all seven layers in order with a relevant protocol or function example for each.",
+    "tags": ["OSI Model", "Networking", "Interview"],
+    "relatedTopics": ["TCP/IP Model", "Routing", "Ethernet"],
+    "references": ["RFC 1122", "Computer Networking - Kurose & Ross"]
+  },
+  {
+    "id": "cn-002",
+    "category": "Computer Networks",
+    "topic": "TCP vs UDP",
+    "difficulty": "Medium",
+    "question": "What is the difference between TCP and UDP?",
+    "shortAnswer": "TCP: connection-oriented, reliable, ordered, slower. UDP: connectionless, unreliable, fast — used for streaming/gaming/DNS.",
+    "detailedAnswer": "TCP establishes a connection via a 3-way handshake, guarantees delivery through acknowledgements and retransmission, maintains ordering via sequence numbers, and performs congestion control.\n\nUDP simply sends datagrams with no handshake, acknowledgement, or ordering, leaving the application to handle reliability if needed. UDP is preferred where low latency matters more than guaranteed delivery.",
+    "keyPoints": [
+      "TCP: 3-way handshake → data transfer → 4-way FIN teardown",
+      "UDP: no connection state — cheap to handle millions of \"connections\"",
+      "QUIC (HTTP/3): UDP + reliability + multiplexing + fast connection setup"
+    ],
+    "commonMistakes": [
+      "Assuming UDP is always unreliable and unusable for critical apps",
+      "Forgetting TCP's overhead comes from handshake and acknowledgements",
+      "Not knowing DNS primarily uses UDP"
+    ],
+    "followUpQuestions": [
+      "Why does DNS use UDP instead of TCP?",
+      "What is the 3-way handshake process in TCP?",
+      "How does QUIC combine benefits of TCP and UDP?"
+    ],
+    "realWorldExample": "Video calls and online gaming use UDP for low latency, while file downloads use TCP for guaranteed delivery.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the reliability and speed trade-off and map protocols to appropriate real-world use cases.",
+    "tags": ["TCP", "UDP", "Networking", "Interview"],
+    "relatedTopics": ["3-Way Handshake", "DNS", "QUIC"],
+    "references": ["RFC 793", "RFC 768"]
+  },
+  {
+    "id": "cn-003",
+    "category": "Computer Networks",
+    "topic": "DNS Resolution",
+    "difficulty": "Medium",
+    "question": "How does DNS resolution work step by step?",
+    "shortAnswer": "DNS resolves domain names to IP addresses via a hierarchy: local cache → resolver → root → TLD → authoritative nameserver.",
+    "detailedAnswer": "The browser first checks its own cache, then the OS checks the local hosts file, then queries a recursive resolver, typically provided by the ISP or a public service like 8.8.8.8.\n\nThe resolver queries a Root Nameserver for the .com TLD server, then queries that TLD server for the domain's authoritative nameserver, then queries that nameserver for the actual record. The result is cached for the record's TTL and returned. DNS primarily uses UDP port 53.",
+    "keyPoints": [
+      "A record: hostname → IPv4 | AAAA record: hostname → IPv6",
+      "CNAME: alias pointing to another hostname",
+      "Low TTL = faster propagation of changes but more repeated DNS queries"
+    ],
+    "commonMistakes": [
+      "Confusing DNS with DHCP",
+      "Forgetting recursive resolver's role between client and root servers",
+      "Not knowing DNS primarily uses UDP, not TCP"
+    ],
+    "followUpQuestions": [
+      "What is the difference between Recursive and Iterative lookup?",
+      "Why does DNS use UDP instead of TCP?",
+      "What is a CNAME record used for?"
+    ],
+    "realWorldExample": "Typing www.example.com in a browser triggers a DNS lookup chain that resolves to the server's IP address before the HTTP request is sent.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects understanding of the DNS resolution hierarchy, caching, recursive lookup, and common DNS record types.",
+    "tags": ["DNS", "Networking", "Interview"],
+    "relatedTopics": ["HTTP", "TCP/IP", "OSI Model"],
+    "references": ["RFC 1034", "RFC 1035"]
+  },
+  {
+    "id": "cn-004",
+    "category": "Computer Networks",
+    "topic": "TCP Handshake and Termination",
+    "difficulty": "Medium",
+    "question": "Explain the TCP 3-Way Handshake and 4-Way Termination.",
+    "shortAnswer": "Handshake: SYN → SYN-ACK → ACK (opens connection). Termination: FIN → ACK → FIN → ACK (both sides close independently).",
+    "detailedAnswer": "The client sends a SYN packet with its Initial Sequence Number; the server responds with SYN-ACK containing its own ISN; the client sends ACK, and the connection is established.\n\nSince TCP is full-duplex, termination requires each direction to close independently via FIN/ACK exchanges. The TIME_WAIT state, lasting roughly 60-120 seconds after termination, ensures delayed packets don't confuse a future connection reusing the same port.",
+    "keyPoints": [
+      "SYN Flood attack: many SYNs sent, handshake never completed, exhausts server backlog",
+      "SYN cookies: mitigate SYN flood by embedding state in the sequence number itself",
+      "TIME_WAIT: prevents delayed duplicate packets from corrupting a new connection"
+    ],
+    "commonMistakes": [
+      "Forgetting termination requires 4 steps, not 3",
+      "Not knowing what TIME_WAIT state protects against",
+      "Confusing handshake sequence numbers with actual data"
+    ],
+    "followUpQuestions": [
+      "What is a SYN flood attack and how is it mitigated?",
+      "Why does TCP use a 4-way termination instead of 3-way?",
+      "What happens during the TIME_WAIT state?"
+    ],
+    "realWorldExample": "Every time a browser opens a new HTTPS connection to a server, it first performs a TCP 3-way handshake before any data is exchanged.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to describe the handshake and termination sequences accurately and explain the purpose of TIME_WAIT.",
+    "tags": ["TCP", "Handshake", "Networking", "Interview"],
+    "relatedTopics": ["UDP", "SYN Flood", "Sequence Numbers"],
+    "references": ["RFC 793"]
+  },
+  {
+    "id": "cn-005",
+    "category": "Computer Networks",
+    "topic": "NAT",
+    "difficulty": "Medium",
+    "question": "What is NAT? How does it work and what problems does it cause?",
+    "shortAnswer": "NAT translates many private IP addresses to one public IP using port numbers.",
+    "detailedAnswer": "Private ranges such as 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 aren't routable on the public internet. NAT, typically implemented via Port Address Translation, maps many private IP:port pairs to a single public IP with different ports, maintaining a translation table for both directions.\n\nProblems caused by NAT include breaking true end-to-end connectivity and complicating peer-to-peer connections, requiring workarounds like STUN and TURN, which are used in WebRTC.",
+    "keyPoints": [
+      "PAT: many-to-one NAT that distinguishes sessions using port numbers",
+      "Static NAT: one private IP permanently mapped to one public IP (used for servers)",
+      "STUN: lets a client discover its own public IP:port as seen from outside the NAT"
+    ],
+    "commonMistakes": [
+      "Assuming NAT and firewall are the same thing",
+      "Not knowing NAT breaks true end-to-end connectivity",
+      "Forgetting private IP ranges are non-routable on the internet"
+    ],
+    "followUpQuestions": [
+      "What is the difference between Static NAT and PAT?",
+      "How do STUN and TURN help with NAT traversal?",
+      "Why does NAT complicate peer-to-peer connections?"
+    ],
+    "realWorldExample": "A home router uses NAT to let multiple devices share a single public IP address provided by the ISP.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain NAT's translation mechanism and articulate the connectivity issues it introduces.",
+    "tags": ["NAT", "Networking", "Interview"],
+    "relatedTopics": ["PAT", "STUN", "TURN", "WebRTC"],
+    "references": ["RFC 3022"]
+  },
+  {
+    "id": "cn-006",
+    "category": "Computer Networks",
+    "topic": "HTTPS and TLS",
+    "difficulty": "Hard",
+    "question": "What is HTTP/HTTPS? How does TLS encryption work?",
+    "shortAnswer": "HTTP: plaintext protocol. HTTPS = HTTP + TLS encryption, combining asymmetric key exchange with fast symmetric bulk encryption.",
+    "detailedAnswer": "In the TLS 1.3 handshake, the client sends a Client Hello listing supported cipher suites; the server responds with a Server Hello and its certificate, which the client verifies against trusted Certificate Authorities.\n\nAn ECDHE key exchange derives a shared secret without ever transmitting it directly, and both sides compute session keys used for fast AES encryption of all subsequent traffic. TLS 1.3 achieves this handshake in just one round trip.",
+    "keyPoints": [
+      "Asymmetric crypto (RSA/ECDHE): slow, used only for the initial key exchange",
+      "Symmetric crypto (AES): fast, used for encrypting the actual bulk data",
+      "HSTS header: forces the browser to always use HTTPS for that domain going forward"
+    ],
+    "commonMistakes": [
+      "Assuming TLS uses only asymmetric encryption for all data",
+      "Confusing certificate verification with encryption itself",
+      "Not knowing TLS 1.3 reduced handshake to 1-RTT"
+    ],
+    "followUpQuestions": [
+      "What is the difference between symmetric and asymmetric encryption?",
+      "How does a browser verify a certificate is trustworthy?",
+      "What does HSTS protect against?"
+    ],
+    "realWorldExample": "When visiting a banking website, the padlock icon indicates a completed TLS handshake securing all data exchanged with the server.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the handshake sequence and distinguish asymmetric key exchange from symmetric bulk encryption.",
+    "tags": ["HTTPS", "TLS", "Encryption", "Interview"],
+    "relatedTopics": ["HTTP", "Certificates", "HSTS"],
+    "references": ["RFC 8446"]
+  },
+  {
+    "id": "cn-007",
+    "category": "Computer Networks",
+    "topic": "Router vs Switch vs Hub",
+    "difficulty": "Easy",
+    "question": "What is the difference between a Router, Switch, and Hub?",
+    "shortAnswer": "Hub: broadcasts to all ports (Layer 1). Switch: forwards to a specific MAC address (Layer 2). Router: routes between networks using IP (Layer 3).",
+    "detailedAnswer": "A hub blindly repeats signals to every connected port, is obsolete, and creates a single collision domain. A switch learns which MAC address lives on which port and forwards frames only to the correct destination port, eliminating collisions and giving each port its own collision domain.\n\nA router connects entirely different IP subnets, using routing tables to forward packets toward their destination, and typically also performs NAT, DHCP, and firewall functions in consumer devices.",
+    "keyPoints": [
+      "Switch: builds and maintains a MAC address table (CAM table)",
+      "Router: acts as the default gateway for devices on the local network",
+      "ARP: maps an IP address to a MAC address on the local network segment"
+    ],
+    "commonMistakes": [
+      "Confusing switch (Layer 2) with router (Layer 3) functions",
+      "Assuming hubs are still commonly used in modern networks",
+      "Not knowing ARP resolves IP to MAC addresses"
+    ],
+    "followUpQuestions": [
+      "What is ARP and how does it work?",
+      "Why do switches reduce collisions compared to hubs?",
+      "What functions does a home router typically combine?"
+    ],
+    "realWorldExample": "A home Wi-Fi router combines routing, NAT, DHCP, and often switch functionality in a single consumer device.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to map each device to its correct OSI layer and describe its forwarding behavior.",
+    "tags": ["Router", "Switch", "Hub", "Networking", "Interview"],
+    "relatedTopics": ["OSI Model", "ARP", "NAT"],
+    "references": ["Computer Networking - Kurose & Ross"]
+  },
+  {
+    "id": "cn-008",
+    "category": "Computer Networks",
+    "topic": "DHCP",
+    "difficulty": "Medium",
+    "question": "What is DHCP? How does it work?",
+    "shortAnswer": "DHCP automatically assigns IP addresses to devices on a network via the DORA process — Discover, Offer, Request, Acknowledge.",
+    "detailedAnswer": "A new device broadcasts a DHCPDISCOVER message; the DHCP server responds with a DHCPOFFER containing an available IP address; the client broadcasts a DHCPREQUEST accepting that offer; the server confirms with a DHCPACK, finalizing the lease for a set duration such as 24 hours.\n\nThe client must renew the lease before it expires or risk losing the address. DHCP also delivers other configuration details, such as default gateway, subnet mask, and DNS server addresses.",
+    "keyPoints": [
+      "DORA: Discover → Offer → Request → Acknowledge",
+      "DHCP lease: a temporary IP assignment that must be renewed before expiry",
+      "APIPA (169.254.x.x): self-assigned address used when no DHCP server responds"
+    ],
+    "commonMistakes": [
+      "Confusing DHCP with DNS",
+      "Not knowing the full DORA sequence",
+      "Forgetting DHCP also configures gateway, subnet mask, and DNS servers"
+    ],
+    "followUpQuestions": [
+      "What happens if a DHCP lease expires without renewal?",
+      "What is APIPA and when does it get used?",
+      "What other configuration besides an IP address does DHCP provide?"
+    ],
+    "realWorldExample": "When a laptop connects to a new Wi-Fi network, DHCP automatically assigns it an IP address without manual configuration.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to walk through the DORA process accurately and know what configuration DHCP provides beyond the IP address.",
+    "tags": ["DHCP", "Networking", "Interview"],
+    "relatedTopics": ["IP Addressing", "DNS", "Subnetting"],
+    "references": ["RFC 2131"]
+  },
+  {
+    "id": "cn-009",
+    "category": "Computer Networks",
+    "topic": "IPv4 vs IPv6",
+    "difficulty": "Medium",
+    "question": "What is the difference between IPv4 and IPv6?",
+    "shortAnswer": "IPv4: 32-bit addresses (~4.3 billion total), dotted-decimal notation. IPv6: 128-bit addresses (virtually unlimited), hexadecimal notation — designed to solve IPv4 address exhaustion.",
+    "detailedAnswer": "IPv4 addresses, such as 192.168.1.1, are running out globally, which is why NAT became widespread as a workaround. IPv6 addresses, such as 2001:0db8::1, use 128 bits, providing an astronomically larger address space, enough for every device on Earth to have multiple globally unique addresses without needing NAT.\n\nIPv6 also simplifies header processing with a fixed header size and no built-in fragmentation at routers, has built-in support for auto-configuration via SLAAC, and mandates IPsec support, though adoption has been slow due to IPv4's entrenched infrastructure.",
+    "keyPoints": [
+      "IPv4: 32-bit, ~4.3 billion addresses, requires NAT due to scarcity",
+      "IPv6: 128-bit, virtually unlimited addresses, no NAT typically needed",
+      "Dual-stack: many networks run both IPv4 and IPv6 simultaneously during the transition"
+    ],
+    "commonMistakes": [
+      "Assuming IPv6 adoption is complete when many networks still rely on IPv4/NAT",
+      "Not knowing IPv6 has built-in auto-configuration via SLAAC",
+      "Confusing IPv6's simplified header with IPv4's fragmentation-heavy design"
+    ],
+    "followUpQuestions": [
+      "Why has IPv6 adoption been slow despite solving address exhaustion?",
+      "What is SLAAC and how does it work?",
+      "What is dual-stack networking?"
+    ],
+    "realWorldExample": "Most home ISPs still primarily assign IPv4 addresses behind NAT, while major cloud providers and mobile carriers increasingly support native IPv6.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the address exhaustion problem IPv6 solves and describe key structural differences from IPv4.",
+    "tags": ["IPv4", "IPv6", "Networking", "Interview"],
+    "relatedTopics": ["NAT", "Subnetting", "SLAAC"],
+    "references": ["RFC 791", "RFC 8200"]
+  },
+  {
+    "id": "cn-010",
+    "category": "Computer Networks",
+    "topic": "Subnetting",
+    "difficulty": "Medium",
+    "question": "What is a Subnet Mask? Explain Subnetting.",
+    "shortAnswer": "A subnet mask divides an IP address into a network portion and a host portion, determining which devices belong to the same local network.",
+    "detailedAnswer": "An IP address like 192.168.1.10 combined with a subnet mask like 255.255.255.0, or /24 in CIDR notation, tells the system that the first 24 bits identify the network and the remaining 8 bits identify the specific host on that network.\n\nSubnetting divides a larger network into smaller sub-networks, useful for organizing departments, limiting broadcast domain size, and improving security by isolating traffic. CIDR notation replaced the older rigid Class A/B/C system, allowing flexible-size network allocations.",
+    "keyPoints": [
+      "/24 = 255.255.255.0 = 256 addresses (254 usable after network/broadcast reserved)",
+      "CIDR notation: /x indicates how many leading bits define the network portion",
+      "Subnetting reduces broadcast domain size and improves network organization/security"
+    ],
+    "commonMistakes": [
+      "Forgetting to reserve the network and broadcast addresses when counting usable hosts",
+      "Confusing CIDR notation with the older Class A/B/C system",
+      "Miscalculating subnet ranges when subnetting a larger network"
+    ],
+    "followUpQuestions": [
+      "How would you calculate the number of usable hosts in a /26 subnet?",
+      "Why did CIDR replace the older Class A/B/C addressing system?",
+      "How does subnetting improve network security?"
+    ],
+    "realWorldExample": "A company divides its office network into separate subnets for different departments to limit broadcast traffic and isolate sensitive systems.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the network/host split and correctly compute subnet sizes using CIDR notation.",
+    "tags": ["Subnetting", "CIDR", "Networking", "Interview"],
+    "relatedTopics": ["IPv4", "Subnet Mask", "Routing"],
+    "references": ["RFC 4632"]
+  },
+  {
+    "id": "cn-011",
+    "category": "Computer Networks",
+    "topic": "ARP",
+    "difficulty": "Medium",
+    "question": "What is ARP (Address Resolution Protocol)?",
+    "shortAnswer": "ARP maps an IP address to a MAC address on the local network, enabling devices to communicate at the Data Link layer.",
+    "detailedAnswer": "When a device wants to send data to another device on the same local network, it knows the destination's IP address but needs the corresponding MAC address to construct the Ethernet frame. The device broadcasts an ARP Request asking who has a given IP address, and the device owning that IP responds with an ARP Reply containing its MAC address.\n\nThis mapping is cached temporarily in the ARP table to avoid repeating the broadcast for every packet. ARP Spoofing is a common attack where a malicious device sends fake ARP replies to intercept traffic meant for another host, enabling a man-in-the-middle attack.",
+    "keyPoints": [
+      "ARP Request: broadcast to the entire local network asking \"who has this IP?\"",
+      "ARP Reply: unicast response containing the requested device's MAC address",
+      "ARP Spoofing: attacker sends forged replies to redirect traffic — a common MITM technique"
+    ],
+    "commonMistakes": [
+      "Assuming ARP works across different network segments",
+      "Not knowing ARP responses are cached temporarily",
+      "Underestimating ARP spoofing as a MITM attack vector"
+    ],
+    "followUpQuestions": [
+      "How does ARP spoofing enable a man-in-the-middle attack?",
+      "Why is the ARP table cached temporarily rather than permanently?",
+      "What defenses exist against ARP spoofing?"
+    ],
+    "realWorldExample": "When a laptop sends its first packet to a printer on the same LAN, it first sends an ARP request to learn the printer's MAC address.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the ARP request/reply cycle and describe ARP spoofing as a security concern.",
+    "tags": ["ARP", "Networking", "Interview"],
+    "relatedTopics": ["MAC Address", "Man-in-the-Middle", "Local Network"],
+    "references": ["RFC 826"]
+  },
+  {
+    "id": "cn-012",
+    "category": "Computer Networks",
+    "topic": "Unicast vs Multicast vs Broadcast",
+    "difficulty": "Medium",
+    "question": "What is the difference between Unicast, Multicast, and Broadcast?",
+    "shortAnswer": "Unicast: one sender to one specific receiver. Multicast: one sender to a specific group of interested receivers. Broadcast: one sender to ALL devices on the network.",
+    "detailedAnswer": "Unicast is the standard one-to-one communication used for most web browsing and typical application traffic, making it the most efficient option for single-recipient scenarios.\n\nMulticast delivers data to a specific subscribed group of receivers simultaneously, such as IPTV streaming or video conferencing, and is more efficient than sending N separate unicast streams since the network only duplicates data at branch points. Broadcast sends to every device on the local network, such as ARP requests or DHCP discovery, and is necessary for certain protocols but wasteful if overused since every device must process the packet.",
+    "keyPoints": [
+      "Unicast: standard 1-to-1 communication (most web traffic)",
+      "Multicast: 1-to-many, only to devices that explicitly subscribed to the group",
+      "Broadcast: 1-to-all on the local network segment — used sparingly (ARP, DHCP)"
+    ],
+    "commonMistakes": [
+      "Confusing multicast (subscribed group) with broadcast (everyone)",
+      "Overusing broadcast traffic, wasting bandwidth and processing on unrelated devices",
+      "Not knowing multicast requires explicit subscription"
+    ],
+    "followUpQuestions": [
+      "How is multicast more efficient than sending multiple unicast streams?",
+      "Why do routers separate broadcast domains?",
+      "What protocols commonly rely on broadcast?"
+    ],
+    "realWorldExample": "A live video conference uses multicast-like distribution to efficiently send the same stream to multiple subscribed participants.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the three delivery modes with appropriate real-world use cases.",
+    "tags": ["Unicast", "Multicast", "Broadcast", "Networking", "Interview"],
+    "relatedTopics": ["IP Addressing", "Broadcast Domain", "Routing"],
+    "references": ["RFC 1112"]
+  },
+  {
+    "id": "cn-013",
+    "category": "Computer Networks",
+    "topic": "VPN",
+    "difficulty": "Medium",
+    "question": "What is a VPN (Virtual Private Network)? How does it work?",
+    "shortAnswer": "A VPN creates an encrypted tunnel between a device and a remote server, making traffic appear to originate from the VPN server and protecting it from interception on untrusted networks.",
+    "detailedAnswer": "When connected to a VPN, all or selected network traffic from the device is encrypted and encapsulated, then sent to a VPN server, which decrypts it and forwards it to the actual destination on the device's behalf — the destination sees the VPN server's IP, not the original device's IP.\n\nThis provides privacy, since a local network snooper only sees encrypted traffic to the VPN server, security on untrusted networks like public WiFi, and the ability to access geo-restricted content or a private corporate network remotely. Common protocols include OpenVPN, WireGuard, which is newer and faster, and IPsec.",
+    "keyPoints": [
+      "Encrypts traffic between device and VPN server, hiding content from local network observers",
+      "Masks the original IP address — destination sees the VPN server's IP instead",
+      "WireGuard: modern protocol, simpler codebase, generally faster than older OpenVPN/IPsec"
+    ],
+    "commonMistakes": [
+      "Assuming a VPN provides complete anonymity rather than just IP masking and encryption",
+      "Not knowing the destination sees the VPN server's IP, not the original device's",
+      "Confusing VPN encryption with end-to-end encryption to the final destination"
+    ],
+    "followUpQuestions": [
+      "How does WireGuard differ from older VPN protocols like OpenVPN?",
+      "Does a VPN protect traffic between the VPN server and the final destination?",
+      "Why would a company use a VPN for remote employee access?"
+    ],
+    "realWorldExample": "A remote employee uses a corporate VPN to securely access internal company resources as if they were physically on the office network.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the tunneling and IP-masking mechanism and identify appropriate real-world VPN use cases.",
+    "tags": ["VPN", "Networking", "Security", "Interview"],
+    "relatedTopics": ["Encryption", "TLS", "WireGuard"],
+    "references": ["RFC 4301"]
+  },
+  {
+    "id": "cn-014",
+    "category": "Computer Networks",
+    "topic": "Bandwidth vs Latency vs Throughput",
+    "difficulty": "Medium",
+    "question": "What is Bandwidth vs Latency vs Throughput?",
+    "shortAnswer": "Bandwidth: maximum theoretical data rate a connection can support. Latency: time delay for a packet to travel from source to destination. Throughput: actual achieved data rate in practice.",
+    "detailedAnswer": "Bandwidth is the theoretical maximum capacity of a link, measured in bits per second, such as a '100 Mbps connection'. Latency is the time delay before data begins to arrive, often measured via round-trip time using ping; high latency makes a connection feel laggy even with high bandwidth, which is common with satellite internet.\n\nThroughput is what is actually achieved in real-world usage, which is always less than or equal to bandwidth due to overhead, congestion, packet loss, and protocol inefficiencies. A common analogy: bandwidth is the width of a pipe, latency is how long it takes water to first reach the end, and throughput is how much water actually flows through per second in practice.",
+    "keyPoints": [
+      "High bandwidth + high latency: large capacity but slow to start (e.g., satellite internet)",
+      "Low latency matters most for real-time applications (gaming, video calls)",
+      "Throughput is always constrained by the weakest link in the entire network path"
+    ],
+    "commonMistakes": [
+      "Confusing bandwidth (theoretical max) with throughput (actual achieved rate)",
+      "Assuming high bandwidth automatically means low latency",
+      "Not knowing throughput is bounded by the weakest link in the network path"
+    ],
+    "followUpQuestions": [
+      "Why can a high-bandwidth connection still feel slow?",
+      "What factors cause throughput to be lower than bandwidth?",
+      "Why is low latency more critical than high bandwidth for gaming?"
+    ],
+    "realWorldExample": "Satellite internet often has high bandwidth but high latency due to the long physical distance signals must travel, making it feel slow for real-time applications despite fast download speeds.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish these three related but distinct networking metrics with a practical analogy or example.",
+    "tags": ["Bandwidth", "Latency", "Throughput", "Networking", "Interview"],
+    "relatedTopics": ["Network Congestion", "QoS", "TCP"],
+    "references": ["Computer Networking - Kurose & Ross"]
+  },
+  {
+    "id": "cn-015",
+    "category": "Computer Networks",
+    "topic": "TCP Congestion Control",
+    "difficulty": "Hard",
+    "question": "What is Network Congestion? How does TCP Congestion Control work?",
+    "shortAnswer": "Network Congestion occurs when too much data is sent through a network path, exceeding its capacity and causing packet loss/delay. TCP handles this via algorithms like Slow Start and Congestion Avoidance.",
+    "detailedAnswer": "TCP starts a new connection conservatively with Slow Start, where the congestion window begins small and doubles with each successful round trip until it reaches a threshold or packet loss is detected as a strong congestion signal.\n\nOnce past the threshold, TCP switches to Congestion Avoidance, growing the window more slowly, linearly by one per round trip, to probe for available bandwidth without overwhelming the network. On packet loss, TCP drastically reduces its window through multiplicative decrease and restarts the process. This overall pattern is called AIMD, Additive Increase Multiplicative Decrease, producing the characteristic sawtooth throughput graph.",
+    "keyPoints": [
+      "Slow Start: congestion window doubles each RTT until a threshold or loss occurs",
+      "Congestion Avoidance: window grows linearly (+1 per RTT) after the threshold",
+      "AIMD (Additive Increase, Multiplicative Decrease): the core fairness-promoting congestion control strategy"
+    ],
+    "commonMistakes": [
+      "Confusing Slow Start's exponential growth with Congestion Avoidance's linear growth",
+      "Not knowing packet loss triggers a multiplicative decrease in the window size",
+      "Assuming TCP maintains a constant, unchanging congestion window"
+    ],
+    "followUpQuestions": [
+      "Why does TCP use exponential growth in Slow Start but linear growth in Congestion Avoidance?",
+      "What triggers the transition from Slow Start to Congestion Avoidance?",
+      "Why is AIMD considered fair among competing TCP connections?"
+    ],
+    "realWorldExample": "During a video call over a congested network, TCP-based file transfers on the same connection automatically slow down due to congestion control, indirectly helping preserve bandwidth for real-time traffic.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain Slow Start, Congestion Avoidance, and the AIMD pattern with the resulting sawtooth behavior.",
+    "tags": ["TCP", "Congestion Control", "Networking", "Interview"],
+    "relatedTopics": ["TCP", "AIMD", "Network Congestion"],
+    "references": ["RFC 5681"]
+  },
+  {
+    "id": "cn-016",
+    "category": "Computer Networks",
+    "topic": "Firewall vs Proxy Server",
+    "difficulty": "Medium",
+    "question": "What is the difference between a Firewall and a Proxy Server?",
+    "shortAnswer": "A Firewall filters traffic based on rules (IP, port, protocol) to block/allow connections. A Proxy Server acts as an intermediary, forwarding requests on behalf of a client (or protecting a server from direct exposure).",
+    "detailedAnswer": "A firewall inspects incoming and outgoing packets against a defined rule set, such as allowing port 443 or blocking port 23, and simply permits or denies traffic without modifying or forwarding the actual content.\n\nA Forward Proxy sits in front of clients, forwarding their requests to external servers, used for content filtering, caching, or hiding the client's real IP from the destination. A Reverse Proxy sits in front of servers, receiving client requests and forwarding them to the appropriate backend server, used for load balancing, SSL termination, and hiding backend server details — Nginx and Cloudflare commonly serve this role.",
+    "keyPoints": [
+      "Firewall: allow/deny decision based on rules — doesn't route or modify traffic itself",
+      "Forward Proxy: represents the CLIENT (hides the client's identity from the destination)",
+      "Reverse Proxy: represents the SERVER (hides backend details, does load balancing/SSL termination)"
+    ],
+    "commonMistakes": [
+      "Confusing forward proxy (represents client) with reverse proxy (represents server)",
+      "Assuming a firewall forwards or modifies traffic like a proxy does",
+      "Not knowing reverse proxies are commonly used for load balancing and SSL termination"
+    ],
+    "followUpQuestions": [
+      "What is the difference between a forward proxy and a reverse proxy?",
+      "How does a reverse proxy assist with SSL termination?",
+      "Can a firewall and proxy server be used together?"
+    ],
+    "realWorldExample": "Nginx is commonly deployed as a reverse proxy in front of backend application servers to handle load balancing and SSL termination.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish firewalls from proxies and further distinguish forward proxies from reverse proxies.",
+    "tags": ["Firewall", "Proxy Server", "Networking", "Interview"],
+    "relatedTopics": ["Load Balancing", "SSL Termination", "Network Security"],
+    "references": ["Computer Networking - Kurose & Ross"]
+  },
+  {
+    "id": "cn-017",
+    "category": "Computer Networks",
+    "topic": "Collision Domain vs Broadcast Domain",
+    "difficulty": "Medium",
+    "question": "What is a Collision Domain vs a Broadcast Domain?",
+    "shortAnswer": "Collision Domain: a network segment where data packets can collide with one another (relevant to hubs/shared media). Broadcast Domain: a network segment where a broadcast frame reaches every device.",
+    "detailedAnswer": "A collision domain is a segment of network where multiple devices share the same transmission medium, risking simultaneous transmissions colliding and corrupting data — hubs create one large collision domain across all connected ports, while switches give each port its own collision domain, essentially eliminating collisions in modern switched networks.\n\nA broadcast domain is a larger logical boundary encompassing all devices that receive a broadcast frame sent by any device within that domain. Switches do not separate broadcast domains, since a broadcast still reaches every device on the switch, but routers do separate broadcast domains, since a broadcast doesn't cross into a different subnet without special configuration.",
+    "keyPoints": [
+      "Hub: one collision domain across all ports (obsolete technology)",
+      "Switch: one collision domain PER port, but still one broadcast domain overall",
+      "Router: separates broadcast domains — broadcasts don't cross into a different subnet"
+    ],
+    "commonMistakes": [
+      "Assuming switches separate broadcast domains (they don't, only routers do)",
+      "Confusing collision domain scope with broadcast domain scope",
+      "Not knowing modern switches essentially eliminate collisions per port"
+    ],
+    "followUpQuestions": [
+      "Why don't switches separate broadcast domains?",
+      "How does VLAN configuration relate to broadcast domains?",
+      "Why are collisions largely a non-issue in modern switched networks?"
+    ],
+    "realWorldExample": "A company uses VLANs on switches to logically separate broadcast domains for different departments without needing separate physical routers for each.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to correctly identify that switches separate collision domains but not broadcast domains, while routers separate both.",
+    "tags": ["Collision Domain", "Broadcast Domain", "Networking", "Interview"],
+    "relatedTopics": ["Switch", "Router", "VLAN"],
+    "references": ["Computer Networking - Kurose & Ross"]
+  },
+  {
+    "id": "cn-018",
+    "category": "Computer Networks",
+    "topic": "Port Forwarding",
+    "difficulty": "Medium",
+    "question": "What is Port Forwarding? Give a practical use case.",
+    "shortAnswer": "Port Forwarding configures a router/NAT device to redirect incoming traffic on a specific external port to a specific internal device and port, enabling external access to a service running behind NAT.",
+    "detailedAnswer": "Since NAT hides all internal devices behind a single public IP, external connections normally cannot reach any specific internal device directly. Port forwarding creates an explicit rule stating that incoming traffic on a specific public port should be forwarded to a specific internal device and port.\n\nThis is commonly used to host a personal web server, a game server, or a home security camera system that needs to be accessible from outside the local network, without requiring a full VPN setup or a public IP for every device.",
+    "keyPoints": [
+      "Solves the NAT problem of external devices being unable to initiate connections inward",
+      "Common use: hosting a Minecraft server, home security camera access, self-hosted web app",
+      "Security risk: forwarding a port exposes that specific service directly to the internet"
+    ],
+    "commonMistakes": [
+      "Forwarding ports without considering the security exposure it creates",
+      "Not understanding port forwarding is necessary because NAT hides internal devices",
+      "Confusing port forwarding with a VPN as an equivalent remote access solution"
+    ],
+    "followUpQuestions": [
+      "What security risks does port forwarding introduce?",
+      "How does port forwarding solve the problem that NAT creates?",
+      "How does port forwarding differ from setting up a VPN for remote access?"
+    ],
+    "realWorldExample": "A user hosting a personal Minecraft server configures port forwarding on their home router to let friends connect from outside the local network.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain why port forwarding is needed under NAT and describe a practical use case along with its security trade-off.",
+    "tags": ["Port Forwarding", "NAT", "Networking", "Interview"],
+    "relatedTopics": ["NAT", "Firewall", "Home Networking"],
+    "references": ["RFC 3022"]
+  },
+  {
+    "id": "cn-019",
+    "category": "Computer Networks",
+    "topic": "HTTP/1.1 vs HTTP/2 vs HTTP/3",
+    "difficulty": "Hard",
+    "question": "What is the difference between HTTP/1.1, HTTP/2, and HTTP/3?",
+    "shortAnswer": "HTTP/1.1: text-based, one request per connection at a time (head-of-line blocking). HTTP/2: binary, multiplexed over a single TCP connection. HTTP/3: runs over QUIC/UDP instead of TCP, eliminating TCP-level head-of-line blocking.",
+    "detailedAnswer": "HTTP/1.1 sends requests as plain text and, without pipelining tricks, effectively processes one request per connection at a time, so browsers work around this by opening multiple parallel TCP connections, typically 6 per domain, which is inefficient.\n\nHTTP/2 introduces binary framing and multiplexing, allowing multiple requests and responses to be interleaved over a single TCP connection simultaneously, along with header compression via HPACK and server push. However, since it still runs over TCP, a single lost packet blocks all multiplexed streams until retransmission, known as TCP-level head-of-line blocking. HTTP/3 solves this by running over QUIC, built on UDP, instead of TCP, so each stream is independent at the transport level and a lost packet only affects its own stream.",
+    "keyPoints": [
+      "HTTP/1.1: text-based, needs multiple parallel TCP connections to be efficient",
+      "HTTP/2: binary, multiplexed over one TCP connection, but still has TCP-level HOL blocking",
+      "HTTP/3: QUIC/UDP-based, eliminates TCP-level head-of-line blocking, faster connection setup"
+    ],
+    "commonMistakes": [
+      "Assuming HTTP/2's multiplexing fully solves head-of-line blocking (TCP-level blocking remains)",
+      "Not knowing HTTP/3 runs over UDP via QUIC instead of TCP",
+      "Confusing HTTP/2's binary framing with HTTP/3's transport-level changes"
+    ],
+    "followUpQuestions": [
+      "What is TCP-level head-of-line blocking and why does HTTP/2 still suffer from it?",
+      "How does QUIC eliminate head-of-line blocking in HTTP/3?",
+      "What is HPACK and how does it improve HTTP/2 performance?"
+    ],
+    "realWorldExample": "Major websites like Google and Facebook use HTTP/3 over QUIC to improve page load performance, especially on unreliable mobile networks.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the progressive improvements across versions and specifically why HTTP/3 eliminates TCP-level head-of-line blocking.",
+    "tags": ["HTTP/1.1", "HTTP/2", "HTTP/3", "QUIC", "Networking", "Interview"],
+    "relatedTopics": ["TCP", "QUIC", "HTTP"],
+    "references": ["RFC 9114", "RFC 7540"]
+  },
+  {
+    "id": "cn-020",
+    "category": "Computer Networks",
+    "topic": "MAC Address vs IP Address",
+    "difficulty": "Easy",
+    "question": "What is a MAC Address? How is it different from an IP Address?",
+    "shortAnswer": "MAC Address: a physical, hardware-burned 48-bit address identifying a network interface at Layer 2. IP Address: a logical address identifying a device's location at Layer 3, which can change.",
+    "detailedAnswer": "A MAC address is permanently burned into a network interface card by the manufacturer, though it can be spoofed in software, uniquely identifying that specific hardware device on a local network segment. It doesn't change when a device moves to a different network.\n\nAn IP address is a logical address assigned based on the network a device is currently connected to, changing as a device moves between networks, and is used for routing data across the internet between different networks, whereas MAC addresses only matter for delivery within a single local network segment.",
+    "keyPoints": [
+      "MAC address: physical/hardware, 48-bit (e.g., 00:1A:2B:3C:4D:5E), doesn't change with network",
+      "IP address: logical, changes based on network location, used for internet-wide routing",
+      "Data delivery uses BOTH: IP address gets you to the right network, MAC gets you to the right device on it"
+    ],
+    "commonMistakes": [
+      "Assuming MAC addresses change when a device moves to a new network",
+      "Confusing the roles of MAC (local delivery) and IP (internet-wide routing)",
+      "Not knowing MAC addresses can be spoofed despite being hardware-burned"
+    ],
+    "followUpQuestions": [
+      "Why does data delivery require both an IP address and a MAC address?",
+      "Can a MAC address be changed or spoofed?",
+      "How does ARP connect IP addresses to MAC addresses?"
+    ],
+    "realWorldExample": "When a laptop connects to different Wi-Fi networks throughout the day, its IP address changes each time, but its MAC address remains the same.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish physical hardware addressing from logical network addressing and explain why both are needed.",
+    "tags": ["MAC Address", "IP Address", "Networking", "Interview"],
+    "relatedTopics": ["ARP", "OSI Model", "Subnetting"],
+    "references": ["IEEE 802.3"]
+  },
+  {
+    "id": "cn-021",
+    "category": "Computer Networks",
+    "topic": "Proxy ARP",
+    "difficulty": "Hard",
+    "question": "What is a Proxy ARP and how does it relate to network segmentation?",
+    "shortAnswer": "Proxy ARP allows a router to answer ARP requests on behalf of devices on a different network segment, making it appear as though those remote devices are on the same local network.",
+    "detailedAnswer": "Normally, ARP requests only work within a single local network segment, so a device cannot get an ARP response for an IP address on a different subnet. Proxy ARP configures a router to intercept ARP requests for IP addresses on another connected network and respond with its own MAC address, effectively acting as a relay.\n\nDevices on one segment believe they're talking directly to a device on another segment, when actually all traffic is routed through the proxy-ARP-enabled router. This is a legacy technique, mostly superseded by proper subnetting and routing configuration, but still occasionally used for specific network migration or compatibility scenarios.",
+    "keyPoints": [
+      "Router answers ARP requests on behalf of devices on a different subnet",
+      "Makes remote devices appear to be on the same local segment (illusion of flat network)",
+      "Largely a legacy technique — proper routing/subnetting is now the standard approach"
+    ],
+    "commonMistakes": [
+      "Assuming Proxy ARP is a modern, commonly used technique rather than a legacy one",
+      "Not understanding that Proxy ARP creates an illusion of a flat network across subnets",
+      "Confusing Proxy ARP with standard ARP behavior within a single subnet"
+    ],
+    "followUpQuestions": [
+      "Why has Proxy ARP largely been replaced by proper routing configuration?",
+      "In what migration scenarios might Proxy ARP still be used today?",
+      "How does Proxy ARP create the illusion of a flat network?"
+    ],
+    "realWorldExample": "During a legacy network migration, Proxy ARP might be temporarily used to let devices on an old subnet communicate with devices on a newly separated subnet without immediate reconfiguration.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain how Proxy ARP relays ARP requests across subnets and recognize it as a largely legacy technique.",
+    "tags": ["Proxy ARP", "ARP", "Networking", "Interview"],
+    "relatedTopics": ["ARP", "Subnetting", "Routing"],
+    "references": ["RFC 1027"]
+  },
+  {
+    "id": "cn-022",
+    "category": "Computer Networks",
+    "topic": "Circuit Switching vs Packet Switching",
+    "difficulty": "Medium",
+    "question": "What is the difference between Circuit Switching and Packet Switching?",
+    "shortAnswer": "Circuit Switching: a dedicated communication path is reserved for the entire duration of a call (traditional telephone networks). Packet Switching: data is broken into packets, each routed independently, sharing network resources dynamically (used by the internet).",
+    "detailedAnswer": "Circuit switching reserves a fixed, dedicated path between sender and receiver for the entire session, as in classic landline phone calls, guaranteeing consistent bandwidth and latency once established, but wasting capacity during silent or idle periods since the reserved circuit sits unused, and setup takes time before communication can even begin.\n\nPacket switching breaks data into discrete packets, each independently routed through the network, potentially via different paths, and reassembled at the destination. This is a much more efficient use of shared network capacity since resources are only consumed when actual data is being sent, but it introduces variable latency, or jitter, since packets can take different paths and arrive out of order.",
+    "keyPoints": [
+      "Circuit switching: dedicated path, consistent quality, wastes capacity during idle periods",
+      "Packet switching: shared/dynamic paths, efficient resource use, variable latency (jitter)",
+      "The internet is fundamentally packet-switched; traditional telephone networks were circuit-switched"
+    ],
+    "commonMistakes": [
+      "Confusing circuit switching's dedicated path with packet switching's shared resources",
+      "Not knowing packet switching can introduce jitter due to variable packet paths",
+      "Assuming modern telephone networks are still purely circuit-switched"
+    ],
+    "followUpQuestions": [
+      "Why does circuit switching waste capacity during idle periods?",
+      "What causes jitter in packet-switched networks?",
+      "Why is the internet designed as a packet-switched network rather than circuit-switched?"
+    ],
+    "realWorldExample": "Traditional landline phone calls used circuit switching with a dedicated line, while modern VoIP calls use packet switching, sending voice data as packets over the internet.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the resource allocation difference and trade-offs between consistent quality and efficient resource use.",
+    "tags": ["Circuit Switching", "Packet Switching", "Networking", "Interview"],
+    "relatedTopics": ["TCP/IP", "Jitter", "Network Architecture"],
+    "references": ["Computer Networking - Kurose & Ross"]
+  },
+  {
+    "id": "cn-023",
+    "category": "Computer Networks",
+    "topic": "Man-in-the-Middle Attack",
+    "difficulty": "Hard",
+    "question": "What is a Man-in-the-Middle (MITM) Attack? How is it prevented?",
+    "shortAnswer": "A MITM attack occurs when an attacker secretly intercepts and potentially alters communication between two parties who believe they're communicating directly with each other.",
+    "detailedAnswer": "An attacker positions themselves between the victim and the intended destination, for example via ARP spoofing on a local network, a malicious WiFi hotspot, or DNS spoofing, intercepting traffic in transit. They can passively eavesdrop on unencrypted data or actively modify it before forwarding it along.\n\nPrevention primarily relies on strong end-to-end encryption: TLS/HTTPS ensures that even if an attacker intercepts traffic, they cannot read or modify it without detection, since certificate validation would fail if they tried to substitute their own fake certificate. Additional protections include HSTS, which forces HTTPS and prevents downgrade attacks, certificate pinning, where mobile apps verify the exact expected certificate, and VPNs on untrusted networks.",
+    "keyPoints": [
+      "Common vectors: ARP spoofing, rogue WiFi hotspots, DNS spoofing",
+      "TLS/HTTPS: the primary defense — encryption + certificate validation detects tampering",
+      "Certificate pinning: app hardcodes the expected certificate, rejecting even valid-but-unexpected certs"
+    ],
+    "commonMistakes": [
+      "Assuming HTTPS alone is sufficient without considering certificate validation failures",
+      "Not knowing certificate pinning provides stronger protection than standard CA trust",
+      "Underestimating public WiFi as a common MITM attack vector"
+    ],
+    "followUpQuestions": [
+      "How does TLS certificate validation detect a MITM attempt?",
+      "What is certificate pinning and why is it stronger than standard TLS validation?",
+      "How does ARP spoofing enable a MITM attack on a local network?"
+    ],
+    "realWorldExample": "An attacker sets up a rogue WiFi hotspot at a coffee shop to intercept unencrypted traffic from unsuspecting users connecting to it.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to identify common MITM attack vectors and explain how TLS/HTTPS with certificate validation defends against them.",
+    "tags": ["Man-in-the-Middle", "MITM", "Security", "Networking", "Interview"],
+    "relatedTopics": ["TLS", "ARP Spoofing", "Certificate Pinning"],
+    "references": ["RFC 8446", "OWASP Top Ten"]
+  },
+  {
+    "id": "cn-024",
+    "category": "Computer Networks",
+    "topic": "Quality of Service (QoS)",
+    "difficulty": "Medium",
+    "question": "What is Quality of Service (QoS) in networking?",
+    "shortAnswer": "QoS refers to techniques that prioritize certain types of network traffic over others, ensuring critical applications (video calls, VoIP) get sufficient bandwidth and low latency even when the network is congested.",
+    "detailedAnswer": "Not all traffic has the same requirements; a video call is extremely sensitive to latency and jitter since delayed audio is unusable, while a large file download can tolerate delays without any noticeable problem.\n\nQoS mechanisms classify and prioritize traffic, such as using DSCP markings in the IP header, so routers and switches can make intelligent decisions about which packets to forward first during congestion, which to delay, and which to drop if necessary. This is critical in corporate networks running VoIP alongside regular data traffic, and increasingly relevant for home networks running video conferencing, gaming, and streaming simultaneously.",
+    "keyPoints": [
+      "DSCP (Differentiated Services Code Point): marks packets with a priority class in the IP header",
+      "Critical for time-sensitive traffic: VoIP, video conferencing, real-time gaming",
+      "Without QoS, a large download can starve a video call of bandwidth on a congested link"
+    ],
+    "commonMistakes": [
+      "Assuming all network traffic should be treated with equal priority",
+      "Not knowing DSCP is the mechanism used to mark packet priority",
+      "Underestimating how a large download can starve latency-sensitive traffic without QoS"
+    ],
+    "followUpQuestions": [
+      "What is DSCP and how does it mark packet priority?",
+      "Why is QoS especially important for VoIP traffic?",
+      "How would you configure QoS on a home router for video conferencing?"
+    ],
+    "realWorldExample": "A corporate network configures QoS to prioritize VoIP call traffic over regular file downloads, ensuring calls remain clear even during high network usage.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain traffic prioritization mechanisms like DSCP and identify why certain traffic types need QoS protection.",
+    "tags": ["QoS", "DSCP", "Networking", "Interview"],
+    "relatedTopics": ["VoIP", "Network Congestion", "Bandwidth"],
+    "references": ["RFC 2474"]
+  },
+  {
+    "id": "cn-025",
+    "category": "Computer Networks",
+    "topic": "CDN (Content Delivery Network)",
+    "difficulty": "Medium",
+    "question": "What is a CDN (Content Delivery Network)? How does it improve performance?",
+    "shortAnswer": "A CDN is a geographically distributed network of servers that cache and serve content from locations physically close to end users, reducing latency and offloading traffic from the origin server.",
+    "detailedAnswer": "Instead of every user request traveling all the way to a single origin server, which could be on the other side of the world, a CDN caches static and sometimes dynamic content across many edge servers distributed globally.\n\nWhen a user requests content, DNS-based or Anycast routing directs them to the nearest edge server, which serves the cached content directly, dramatically reducing latency, reducing load on the origin server since most requests never reach it, and improving resilience since distributed infrastructure can better absorb traffic spikes and partial outages. CDNs also often provide additional benefits like DDoS protection, SSL termination at the edge, and image or video optimization on the fly.",
+    "keyPoints": [
+      "Reduces latency by serving content from a server physically close to the user",
+      "Offloads traffic from the origin server — most requests are served entirely from cache",
+      "Examples: Cloudflare, Akamai, AWS CloudFront — also commonly provide DDoS protection"
+    ],
+    "commonMistakes": [
+      "Assuming CDNs only cache static content, ignoring dynamic content acceleration features",
+      "Not knowing CDNs also commonly provide DDoS protection and SSL termination",
+      "Underestimating how much origin server load is reduced by CDN caching"
+    ],
+    "followUpQuestions": [
+      "How does a CDN route a user to the nearest edge server?",
+      "What additional security benefits do CDNs commonly provide?",
+      "How does a CDN handle dynamic, non-cacheable content?"
+    ],
+    "realWorldExample": "A global e-commerce site uses Cloudflare as a CDN to serve product images from edge locations near each user, significantly reducing page load times worldwide.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the latency-reduction and origin-offloading benefits of CDNs and name common real-world providers.",
+    "tags": ["CDN", "Networking", "Performance", "Interview"],
+    "relatedTopics": ["DNS", "Latency", "DDoS Protection"],
+    "references": ["Computer Networking - Kurose & Ross"]
   }
 ];
