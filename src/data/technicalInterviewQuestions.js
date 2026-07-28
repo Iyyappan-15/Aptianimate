@@ -4125,5 +4125,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
     "tags": ["Clock Speed", "IPC", "CPU Performance", "Computer Organization", "Interview"],
     "relatedTopics": ["Multicore", "Amdahl's Law", "Pipelining"],
     "references": ["Computer Organization and Design - Patterson & Hennessy"]
-  }
+  },
+{
+  "id": "ood-001",
+  "category": "Object-Oriented Design",
+  "topic": "Four Pillars of OOP",
+  "difficulty": "Easy",
+  "question": "What are the four pillars of Object-Oriented Programming?",
+  "shortAnswer": "Encapsulation, Abstraction, Inheritance, Polymorphism.",
+  "detailedAnswer": "Encapsulation bundles data and behavior together, restricting direct access to internal state via private fields and public methods. Abstraction exposes only necessary details, hiding implementation via interfaces or abstract classes.\n\nInheritance lets a child class reuse a parent's fields and methods, representing an is-a relationship. Polymorphism allows the same interface to behave differently based on the actual object type at runtime.",
+  "keyPoints": [
+    "Encapsulation: private fields + public interface = controlled access",
+    "Inheritance: Dog extends Animal — Dog IS-AN Animal",
+    "Composition over inheritance is often more flexible than a strict \"is-a\" hierarchy"
+  ],
+  "commonMistakes": [
+    "Confusing abstraction with encapsulation",
+    "Overusing inheritance where composition would be more flexible",
+    "Not distinguishing compile-time and runtime polymorphism"
+  ],
+  "followUpQuestions": [
+    "How is encapsulation different from abstraction?",
+    "What is the difference between overloading and overriding?",
+    "Why is composition often preferred over inheritance?"
+  ],
+  "realWorldExample": "A car's steering wheel is an abstraction — the driver doesn't need to know the internal mechanics to operate it.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Animal {\n    void speak() { System.out.println(\"Some sound\"); }\n}\n\nclass Dog extends Animal {\n    @Override\n    void speak() { System.out.println(\"Bark\"); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to define all four pillars clearly with simple examples distinguishing each concept.",
+  "tags": ["OOP", "Encapsulation", "Abstraction", "Inheritance", "Polymorphism", "Interview"],
+  "relatedTopics": ["SOLID Principles", "Composition", "Design Patterns"],
+  "references": ["Head First Object-Oriented Analysis and Design"]
+},
+{
+  "id": "ood-002",
+  "category": "Object-Oriented Design",
+  "topic": "Abstract Class vs Interface",
+  "difficulty": "Medium",
+  "question": "What is the difference between an Abstract Class and an Interface?",
+  "shortAnswer": "Abstract class: partial implementation, single inheritance, can have state. Interface: pure contract, multiple implementation, traditionally no state.",
+  "detailedAnswer": "Abstract classes can contain both abstract and concrete methods, along with instance variables representing state, but a class can extend only one abstract class due to single inheritance.\n\nInterfaces traditionally contain only abstract method declarations with no implementation, but a class can implement multiple interfaces, enabling multiple inheritance of behavior. Since Java 8, interfaces can also include default methods with implementations, blurring the line somewhat.",
+  "keyPoints": [
+    "Abstract class: \"kind of a\" relationship — shared code/state among related subclasses",
+    "Interface: \"capability\" — Dog IMPLEMENTS Swimmable, Trainable",
+    "Prefer interface when unsure — more flexible, easier to mock in tests"
+  ],
+  "commonMistakes": [
+    "Assuming interfaces can never have implementation (ignoring default methods)",
+    "Using abstract classes when multiple inheritance of behavior is needed",
+    "Confusing 'is-a' abstract class relationship with 'capability' interface relationship"
+  ],
+  "followUpQuestions": [
+    "Can an interface have method implementations in modern Java?",
+    "When would you choose an abstract class over an interface?",
+    "How do interfaces support multiple inheritance of behavior?"
+  ],
+  "realWorldExample": "A Duck class might extend an abstract Bird class while also implementing a Swimmable interface to represent shared capability across unrelated classes.",
+  "codeExample": {
+    "language": "Java",
+    "code": "abstract class Bird {\n    abstract void fly();\n}\n\ninterface Swimmable {\n    void swim();\n}\n\nclass Duck extends Bird implements Swimmable {\n    void fly() { System.out.println(\"Duck flying\"); }\n    public void swim() { System.out.println(\"Duck swimming\"); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain both constructs' capabilities and give a scenario-based justification for choosing one over the other.",
+  "tags": ["Abstract Class", "Interface", "OOP", "Interview"],
+  "relatedTopics": ["Multiple Inheritance", "Polymorphism", "Design Patterns"],
+  "references": ["Effective Java - Joshua Bloch"]
+},
+{
+  "id": "ood-003",
+  "category": "Object-Oriented Design",
+  "topic": "Compile-time vs Runtime Polymorphism",
+  "difficulty": "Medium",
+  "question": "What is Polymorphism? Explain compile-time vs runtime polymorphism.",
+  "shortAnswer": "Compile-time: method overloading (resolved at compile time). Runtime: method overriding (resolved at runtime via dynamic dispatch).",
+  "detailedAnswer": "Overloading involves multiple methods with the same name but different parameters within the same class; it is resolved by the compiler based on the method signature at the call site.\n\nOverriding involves a subclass redefining a parent method with the identical signature; it is resolved at runtime based on the actual object's type, using dynamic dispatch, implemented via vtables in C++ and similar mechanisms in Java and Python.",
+  "keyPoints": [
+    "Overloading: same class, different parameter signatures",
+    "Overriding: child redefines parent method, identical signature, runtime resolution",
+    "Duck typing (Python): if an object has the method, call it — no explicit type check needed"
+  ],
+  "commonMistakes": [
+    "Confusing overloading (compile-time) with overriding (runtime)",
+    "Assuming return type alone can differentiate overloaded methods",
+    "Not understanding dynamic dispatch mechanics"
+  ],
+  "followUpQuestions": [
+    "How does dynamic dispatch work internally?",
+    "What is duck typing and how does it relate to polymorphism?",
+    "Can you overload methods by return type alone?"
+  ],
+  "realWorldExample": "A shape drawing application calls draw() on different shape objects (Circle, Square) and each executes its own overridden logic at runtime.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Shape {\n    void draw() { System.out.println(\"Drawing shape\"); }\n}\n\nclass Circle extends Shape {\n    @Override\n    void draw() { System.out.println(\"Drawing circle\"); }\n}\n\nShape s = new Circle();\ns.draw(); // Runtime polymorphism: prints 'Drawing circle'"
+  },
+  "interviewerExpectation": "The interviewer expects a clear distinction between overloading and overriding with correct resolution timing (compile-time vs runtime).",
+  "tags": ["Polymorphism", "Overloading", "Overriding", "OOP", "Interview"],
+  "relatedTopics": ["Dynamic Dispatch", "Duck Typing", "Inheritance"],
+  "references": ["Head First Object-Oriented Analysis and Design"]
+},
+{
+  "id": "ood-004",
+  "category": "Object-Oriented Design",
+  "topic": "SOLID Principles",
+  "difficulty": "Hard",
+  "question": "Explain SOLID Principles with examples.",
+  "shortAnswer": "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion.",
+  "detailedAnswer": "Single Responsibility means a class should have only one reason to change. Open/Closed means classes should be open for extension but closed for modification, typically achieved via abstraction.\n\nLiskov Substitution means subclasses must be usable in place of their parent class without breaking correctness. Interface Segregation means clients shouldn't be forced to implement methods they don't use, favoring smaller, focused interfaces. Dependency Inversion means high-level modules should depend on abstractions rather than concrete implementations, often achieved through dependency injection.",
+  "keyPoints": [
+    "S: separate UserService (auth logic) from UserRepository (DB access)",
+    "L: Square overriding Rectangle's setWidth to also change height can break LSP",
+    "D: OrderService depends on a PaymentGateway interface, not a concrete StripePayment class"
+  ],
+  "commonMistakes": [
+    "Confusing Open/Closed with simply adding more code without abstraction",
+    "Not recognizing Liskov Substitution violations in class hierarchies",
+    "Depending directly on concrete classes instead of abstractions"
+  ],
+  "followUpQuestions": [
+    "Can you give an example of a Liskov Substitution violation?",
+    "How does Dependency Inversion relate to dependency injection frameworks?",
+    "Why is Interface Segregation important in large codebases?"
+  ],
+  "realWorldExample": "An OrderService class depends on a PaymentGateway interface rather than a specific StripePayment class, allowing payment providers to be swapped without modifying OrderService.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface PaymentGateway {\n    void pay(double amount);\n}\n\nclass StripePayment implements PaymentGateway {\n    public void pay(double amount) { System.out.println(\"Paid via Stripe: \" + amount); }\n}\n\nclass OrderService {\n    private PaymentGateway gateway;\n    OrderService(PaymentGateway gateway) { this.gateway = gateway; }\n    void checkout(double amount) { gateway.pay(amount); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain all five principles with concrete class-design examples, especially Liskov Substitution and Dependency Inversion.",
+  "tags": ["SOLID", "OOP", "Design Principles", "Interview"],
+  "relatedTopics": ["Design Patterns", "Dependency Injection", "Abstraction"],
+  "references": ["Agile Software Development - Robert C. Martin"]
+},
+{
+  "id": "ood-005",
+  "category": "Object-Oriented Design",
+  "topic": "Design Patterns (Singleton, Factory, Observer)",
+  "difficulty": "Hard",
+  "question": "What are Design Patterns? Explain Singleton, Factory, and Observer.",
+  "shortAnswer": "Reusable OOP solutions to common problems. Singleton: one instance. Factory: object creation. Observer: event notification.",
+  "detailedAnswer": "Singleton ensures only one instance of a class exists globally, commonly used for configuration managers or connection pools; its drawback is introducing global state, which can make testing harder.\n\nFactory Method defines an interface for creating objects, letting subclasses decide which concrete class to instantiate, decoupling object creation from usage. Observer defines a one-to-many dependency where, when a subject changes state, all registered observers are notified automatically — commonly used in event systems and the MVC pattern.",
+  "keyPoints": [
+    "Singleton: private constructor + static getInstance()",
+    "Factory: ShapeFactory.create('circle') returns a Circle instance",
+    "Observer: EventEmitter in Node.js, @EventListener in Spring"
+  ],
+  "commonMistakes": [
+    "Overusing Singleton, leading to hidden global state and testing issues",
+    "Not decoupling creation logic properly in Factory pattern",
+    "Forgetting to unsubscribe observers, causing memory leaks"
+  ],
+  "followUpQuestions": [
+    "What are the drawbacks of the Singleton pattern?",
+    "How does the Observer pattern relate to the pub-sub model?",
+    "What's the difference between Factory Method and Abstract Factory?"
+  ],
+  "realWorldExample": "Node.js's EventEmitter implements the Observer pattern, allowing multiple listeners to react to a single emitted event.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Singleton {\n    private static Singleton instance;\n    private Singleton() {}\n    public static Singleton getInstance() {\n        if (instance == null) instance = new Singleton();\n        return instance;\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the intent behind each pattern and recognize common pitfalls like Singleton's global state issue.",
+  "tags": ["Design Patterns", "Singleton", "Factory", "Observer", "Interview"],
+  "relatedTopics": ["SOLID Principles", "Event-Driven Architecture", "MVC"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "ood-006",
+  "category": "Object-Oriented Design",
+  "topic": "Composition vs Inheritance",
+  "difficulty": "Medium",
+  "question": "What is the difference between Composition and Inheritance? Why prefer Composition?",
+  "shortAnswer": "Inheritance: \"is-a\" tight coupling. Composition: \"has-a\" loose coupling — generally preferred.",
+  "detailedAnswer": "Inheritance creates a tight coupling between parent and child classes, where changes to the parent class can unintentionally break child classes, a problem known as the Fragile Base Class Problem. Deep inheritance hierarchies become unmaintainable over time.\n\nComposition assembles objects from other objects, referred to as a 'has-a' relationship, allowing implementations to be swapped at runtime without exposing internal details. 'Favour composition over inheritance' is a well-known principle from the Gang of Four design patterns book.",
+  "keyPoints": [
+    "Inheritance: rigid hierarchy, deep chains become unmaintainable",
+    "Composition: Car HAS-A Engine — swap implementations at runtime",
+    "Decorator pattern: uses composition to add behavior without subclassing"
+  ],
+  "commonMistakes": [
+    "Overusing deep inheritance hierarchies leading to fragile code",
+    "Not recognizing when composition offers more flexibility",
+    "Confusing 'is-a' and 'has-a' relationships when designing classes"
+  ],
+  "followUpQuestions": [
+    "What is the Fragile Base Class Problem?",
+    "How does the Decorator pattern use composition?",
+    "When would inheritance still be the right choice over composition?"
+  ],
+  "realWorldExample": "A Car class 'has-a' Engine object rather than 'being' an Engine, allowing different engine types to be swapped without changing the Car class.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Engine {\n    void start() { System.out.println(\"Engine starting\"); }\n}\n\nclass Car {\n    private Engine engine;\n    Car(Engine engine) { this.engine = engine; }\n    void start() { engine.start(); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to justify why composition is often preferred, citing coupling and flexibility trade-offs.",
+  "tags": ["Composition", "Inheritance", "OOP", "Interview"],
+  "relatedTopics": ["Decorator Pattern", "SOLID Principles", "Design Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "ood-007",
+  "category": "Object-Oriented Design",
+  "topic": "Method Overloading",
+  "difficulty": "Easy",
+  "question": "What is Method Overloading? What are its rules?",
+  "shortAnswer": "Method Overloading allows multiple methods with the same name in a class, differing in parameter type, number, or order — resolved at compile time based on the arguments passed.",
+  "detailedAnswer": "Overloading enables a more intuitive API, such as a print() method that works whether an int, a String, or a custom object is passed, without needing differently-named methods for each. The compiler determines which overload to call based on the number and types of arguments at the call site, a process known as static or early binding.\n\nMethods must differ in their parameter list, whether by type, number, or order; differing only in return type is not sufficient to overload. Return type can differ, but only in conjunction with a parameter list difference.",
+  "keyPoints": [
+    "Resolved at compile time based on the exact arguments passed (static binding)",
+    "Must differ in parameter type, count, or order — return type alone is insufficient",
+    "Python doesn't support true overloading — uses default arguments or *args/**kwargs instead"
+  ],
+  "commonMistakes": [
+    "Assuming return type alone can differentiate two overloaded methods",
+    "Trying to overload methods in Python expecting Java-like behavior",
+    "Confusing overloading with overriding"
+  ],
+  "followUpQuestions": [
+    "Why isn't differing return type alone sufficient for overloading?",
+    "How does Python handle the lack of true method overloading?",
+    "What is static binding and how does it relate to overloading?"
+  ],
+  "realWorldExample": "A Math library might overload an add() method to accept two integers, two doubles, or two custom Vector objects, each resolved based on the argument types passed.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Calculator {\n    int add(int a, int b) { return a + b; }\n    double add(double a, double b) { return a + b; }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the compile-time resolution mechanism and correctly state the overloading rules.",
+  "tags": ["Method Overloading", "OOP", "Interview"],
+  "relatedTopics": ["Method Overriding", "Static Binding", "Polymorphism"],
+  "references": ["Effective Java - Joshua Bloch"]
+},
+{
+  "id": "ood-008",
+  "category": "Object-Oriented Design",
+  "topic": "Method Overriding",
+  "difficulty": "Medium",
+  "question": "What is Method Overriding? What are the rules and restrictions?",
+  "shortAnswer": "Method Overriding lets a subclass provide its own implementation of a method already defined in its parent class, with the exact same signature — resolved at runtime based on the actual object type.",
+  "detailedAnswer": "Overriding is the mechanism behind runtime polymorphism; the JVM or interpreter determines which version to call based on the object's actual type, not the reference type used to call it.\n\nThe method signature must match exactly, the access modifier in the overriding method cannot be more restrictive than the parent's, and a static, final, or private method cannot be overridden, since static methods are resolved at compile time via the reference type rather than at runtime.",
+  "keyPoints": [
+    "Signature must match exactly; access modifier can be same or less restrictive, never more",
+    "final methods cannot be overridden (explicitly prevents subclass modification)",
+    "static methods are NOT overridden — they're \"hidden,\" resolved by reference type at compile time"
+  ],
+  "commonMistakes": [
+    "Attempting to override a static or final method",
+    "Making the overriding method's access modifier more restrictive than the parent's",
+    "Confusing static method hiding with true overriding"
+  ],
+  "followUpQuestions": [
+    "Why can't static methods be overridden?",
+    "What happens if you try to make an overriding method's access more restrictive?",
+    "How is method hiding different from method overriding?"
+  ],
+  "realWorldExample": "A payment processing base class defines a process() method that each subclass, like CreditCardPayment and PayPalPayment, overrides with its own implementation.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Animal {\n    public void speak() { System.out.println(\"Some sound\"); }\n}\n\nclass Cat extends Animal {\n    @Override\n    public void speak() { System.out.println(\"Meow\"); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly state the rules around signature matching, access modifiers, and which method types cannot be overridden.",
+  "tags": ["Method Overriding", "Polymorphism", "OOP", "Interview"],
+  "relatedTopics": ["Method Overloading", "Dynamic Binding", "Inheritance"],
+  "references": ["Effective Java - Joshua Bloch"]
+},
+{
+  "id": "ood-009",
+  "category": "Object-Oriented Design",
+  "topic": "Liskov Substitution Principle",
+  "difficulty": "Hard",
+  "question": "What is the Liskov Substitution Principle (LSP)? Give a concrete violation example.",
+  "shortAnswer": "LSP states that objects of a subclass must be substitutable for objects of the parent class without altering the correctness of the program.",
+  "detailedAnswer": "LSP requires that a subclass honor the contract, or expected behavior, of its parent class, not just match its method signatures. The classic violation example is Square extending Rectangle, where Rectangle has independent setWidth() and setHeight() operations.\n\nIf Square overrides setWidth() to also change height, to maintain the square property, then code expecting setWidth(5) to change only the width breaks silently when given a Square instead of a Rectangle. Even though Square 'is-a' Rectangle geometrically, it violates the behavioral contract the parent class established, demonstrating that inheritance should model behavioral substitutability, not just real-world categorization.",
+  "keyPoints": [
+    "LSP violation isn't about the type hierarchy being \"wrong\" geometrically — it's about broken behavioral contracts",
+    "Symptom of violation: client code needs instanceof checks to handle a subclass differently — a design smell",
+    "Fix: don't force an inheritance relationship when behavioral contracts genuinely differ"
+  ],
+  "commonMistakes": [
+    "Assuming a geometrically valid 'is-a' relationship automatically satisfies LSP",
+    "Not recognizing instanceof checks in client code as a design smell indicating LSP violation",
+    "Forcing inheritance when composition would better model the relationship"
+  ],
+  "followUpQuestions": [
+    "Why does the Square-Rectangle example violate LSP despite being geometrically valid?",
+    "What design smell indicates an LSP violation in client code?",
+    "How would you redesign the Square-Rectangle example to avoid this violation?"
+  ],
+  "realWorldExample": "A ReadOnlyList subclass that throws exceptions when add() is called, inherited from a mutable List class, violates LSP since callers expecting a List can't safely call add() on it.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain LSP in terms of behavioral contracts, not just type hierarchy, using the Square-Rectangle example.",
+  "tags": ["Liskov Substitution Principle", "LSP", "SOLID", "OOP", "Interview"],
+  "relatedTopics": ["SOLID Principles", "Inheritance", "Design Smells"],
+  "references": ["Agile Software Development - Robert C. Martin"]
+},
+{
+  "id": "ood-010",
+  "category": "Object-Oriented Design",
+  "topic": "Constructor Overloading and Copy Constructor",
+  "difficulty": "Medium",
+  "question": "What is Constructor Overloading? What is a Copy Constructor?",
+  "shortAnswer": "Constructor Overloading provides multiple constructors with different parameter lists for flexible object creation. A Copy Constructor creates a new object as a copy of an existing object of the same class.",
+  "detailedAnswer": "Constructor overloading allows a class to be instantiated in multiple ways, such as a default constructor setting values to the origin, a constructor accepting specific coordinates, or a copy constructor accepting another instance of the same class.\n\nThe copy constructor specifically takes an existing object of the same class and initializes the new object's fields by copying from it. This is critical to get right for classes containing reference types or pointers, since a naive shallow copy, which copies just the reference, can cause both objects to share the same underlying mutable data, leading to unexpected bugs when one is modified.",
+  "keyPoints": [
+    "Constructor overloading: multiple ways to instantiate, differing by parameter list",
+    "Copy constructor: Point(const Point& other) in C++, or manual implementation in Java/Python",
+    "Shallow copy vs Deep copy: shallow copies references (shared mutable state risk); deep copy duplicates nested objects entirely"
+  ],
+  "commonMistakes": [
+    "Implementing a shallow copy when a deep copy is actually needed for mutable reference fields",
+    "Not providing a copy constructor for classes containing mutable reference types",
+    "Confusing constructor overloading with method overloading rules"
+  ],
+  "followUpQuestions": [
+    "What is the difference between a shallow copy and a deep copy?",
+    "Why is a naive copy constructor dangerous for classes with reference fields?",
+    "How would you implement a deep copy constructor in Java?"
+  ],
+  "realWorldExample": "Copying a Person object that contains a mutable Address object requires a deep copy constructor to avoid both Person instances sharing the same Address reference.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Point {\n    int x, y;\n    Point(int x, int y) { this.x = x; this.y = y; }\n    Point(Point other) { this.x = other.x; this.y = other.y; } // copy constructor\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain constructor overloading and the shallow vs deep copy distinction for the copy constructor.",
+  "tags": ["Constructor Overloading", "Copy Constructor", "OOP", "Interview"],
+  "relatedTopics": ["Method Overloading", "Shallow Copy", "Deep Copy"],
+  "references": ["Effective Java - Joshua Bloch"]
+},
+{
+  "id": "ood-011",
+  "category": "Object-Oriented Design",
+  "topic": "is-a vs has-a Relationships",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between \"has-a\" and \"is-a\" Relationships?",
+  "shortAnswer": "\"is-a\" describes inheritance (a Dog IS-A Animal). \"has-a\" describes composition/aggregation (a Car HAS-A Engine).",
+  "detailedAnswer": "The 'is-a' relationship implies substitutability, meaning anywhere an Animal is expected, a Dog should work correctly per the Liskov Substitution Principle. This is modeled via inheritance or interface implementation.\n\nThe 'has-a' relationship implies ownership or containment, such as a Car containing an Engine as one of its components, but a Car is not a type of Engine. This is modeled via composition, where the contained object's lifecycle is tied to the container, or aggregation, where the contained object can exist independently.",
+  "keyPoints": [
+    "is-a: models substitutability, implemented via inheritance/interfaces",
+    "has-a: models containment/ownership, implemented via composition/aggregation",
+    "Common mistake: using inheritance purely for code reuse when there's no true \"is-a\" relationship"
+  ],
+  "commonMistakes": [
+    "Using inheritance purely for code reuse without a genuine 'is-a' relationship",
+    "Confusing 'has-a' composition with 'has-a' aggregation lifecycles",
+    "Forcing an inheritance hierarchy when a 'has-a' relationship would be more appropriate"
+  ],
+  "followUpQuestions": [
+    "What is a common example of misusing inheritance instead of composition?",
+    "How does the Liskov Substitution Principle relate to the 'is-a' relationship?",
+    "How would you decide between 'is-a' and 'has-a' when designing a new class?"
+  ],
+  "realWorldExample": "A Stack implemented by extending a Vector class in early Java design is a commonly cited misuse of 'is-a' where 'has-a' composition would have been more appropriate.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the two relationship types and identify the common anti-pattern of misusing inheritance for code reuse.",
+  "tags": ["is-a", "has-a", "Inheritance", "Composition", "OOP", "Interview"],
+  "relatedTopics": ["Composition vs Inheritance", "Aggregation", "Liskov Substitution Principle"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "ood-012",
+  "category": "Object-Oriented Design",
+  "topic": "Aggregation vs Composition",
+  "difficulty": "Medium",
+  "question": "What is the difference between Aggregation and Composition?",
+  "shortAnswer": "Composition: the contained object's lifecycle is tightly bound to the container — it can't exist independently. Aggregation: a weaker \"has-a\" relationship where the contained object CAN exist independently of the container.",
+  "detailedAnswer": "In composition, if the container object is destroyed, the contained object is destroyed too. For example, a House has a Room; if the House object is destroyed, its Room objects have no independent existence and are destroyed as well, representing strong, exclusive ownership.\n\nIn aggregation, the contained object has an independent lifecycle. For example, a University has a Student, but if the University object is destroyed or deallocated, the Student objects continue to exist independently, representing a weaker, shared or non-exclusive ownership relationship.",
+  "keyPoints": [
+    "Composition: strong ownership — contained object dies when the container dies (House/Room)",
+    "Aggregation: weak ownership — contained object can outlive the container (University/Student)",
+    "Both are forms of \"has-a,\" differing only in the strength/exclusivity of the ownership"
+  ],
+  "commonMistakes": [
+    "Using composition when the contained object should genuinely have an independent lifecycle",
+    "Confusing aggregation's weak ownership with composition's strong ownership",
+    "Not modeling the correct lifecycle dependency in class diagrams"
+  ],
+  "followUpQuestions": [
+    "Can you give another real-world example of aggregation versus composition?",
+    "How would you represent composition versus aggregation in a UML class diagram?",
+    "What happens to contained objects when the container is destroyed in each case?"
+  ],
+  "realWorldExample": "A University 'has' Students (aggregation, since students can exist independently), while a House 'has' Rooms (composition, since rooms cease to exist without the house).",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the lifecycle dependency between composition and aggregation with clear examples.",
+  "tags": ["Aggregation", "Composition", "OOP", "Interview"],
+  "relatedTopics": ["is-a vs has-a", "UML Class Diagram", "Association"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "ood-013",
+  "category": "Object-Oriented Design",
+  "topic": "Dependency Injection",
+  "difficulty": "Medium",
+  "question": "What is Dependency Injection? Why is it useful?",
+  "shortAnswer": "Dependency Injection is a design technique where an object's dependencies are provided (injected) from outside, rather than the object creating them itself internally.",
+  "detailedAnswer": "Without DI, a class might directly instantiate its dependencies inside its constructor, tightly coupling it to a specific implementation and making it impossible to substitute a different or mock implementation without modifying the class's source code.\n\nWith DI, dependencies are passed in from outside, via constructor, setter, or a DI framework, so the class depends only on an abstraction, and any concrete implementation, whether a real dependency, a mock for tests, or a different vendor, can be substituted freely. This directly implements the Dependency Inversion Principle and dramatically improves testability.",
+  "keyPoints": [
+    "Constructor injection: dependencies passed as constructor parameters — most common and preferred form",
+    "Directly enables the Dependency Inversion Principle (high-level modules depend on abstractions)",
+    "Critical for unit testing: inject a mock dependency instead of the real one to isolate the test"
+  ],
+  "commonMistakes": [
+    "Instantiating dependencies directly inside a class constructor, tightly coupling implementations",
+    "Not recognizing DI's direct connection to the Dependency Inversion Principle",
+    "Overcomplicating simple classes with unnecessary DI frameworks"
+  ],
+  "followUpQuestions": [
+    "How does Dependency Injection improve unit testability?",
+    "What are the different forms of dependency injection (constructor, setter, field)?",
+    "How does DI relate to the Dependency Inversion Principle in SOLID?"
+  ],
+  "realWorldExample": "A unit test injects a mock Database implementation into OrderService instead of a real database connection, isolating the test from external dependencies.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface Database {\n    void save(String data);\n}\n\nclass OrderService {\n    private Database db;\n    OrderService(Database db) { this.db = db; } // constructor injection\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how DI decouples classes from concrete dependencies and improves testability.",
+  "tags": ["Dependency Injection", "SOLID", "OOP", "Interview"],
+  "relatedTopics": ["Dependency Inversion Principle", "Unit Testing", "SOLID Principles"],
+  "references": ["Agile Software Development - Robert C. Martin"]
+},
+{
+  "id": "ood-014",
+  "category": "Object-Oriented Design",
+  "topic": "Decorator Design Pattern",
+  "difficulty": "Hard",
+  "question": "What is the Decorator Design Pattern?",
+  "shortAnswer": "The Decorator Pattern dynamically adds new behavior/responsibilities to an object at runtime, without modifying its class or affecting other instances of the same class.",
+  "detailedAnswer": "Instead of creating a rigid inheritance hierarchy to cover every possible combination of features, which explodes combinatorially, the Decorator pattern wraps the base object with decorator objects that implement the same interface and add extra behavior before or after delegating to the wrapped object.\n\nEach decorator can be layered, building up combined behavior dynamically at runtime entirely through composition, avoiding the combinatorial subclass explosion. Java's I/O streams are a classic real-world example of this pattern.",
+  "keyPoints": [
+    "Avoids \"subclass explosion\" from trying to cover every feature combination via inheritance",
+    "Decorators implement the same interface as the object they wrap, so they're interchangeable",
+    "Real-world example: Java I/O stream wrapping — BufferedReader wraps FileReader wraps..."
+  ],
+  "commonMistakes": [
+    "Confusing Decorator (adds behavior, same interface) with Adapter (changes the interface)",
+    "Using inheritance to cover every feature combination instead of layering decorators",
+    "Not implementing the same interface as the wrapped object, breaking interchangeability"
+  ],
+  "followUpQuestions": [
+    "How does the Decorator pattern differ from the Adapter pattern?",
+    "How does Java's I/O stream design exemplify the Decorator pattern?",
+    "What problem does the Decorator pattern solve compared to a rigid inheritance hierarchy?"
+  ],
+  "realWorldExample": "Java's BufferedReader(new FileReader(\"file.txt\")) wraps a FileReader with buffering behavior, exemplifying the Decorator pattern.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface Coffee { double cost(); }\n\nclass BasicCoffee implements Coffee {\n    public double cost() { return 2.0; }\n}\n\nclass MilkDecorator implements Coffee {\n    private Coffee coffee;\n    MilkDecorator(Coffee coffee) { this.coffee = coffee; }\n    public double cost() { return coffee.cost() + 0.5; }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how decorators avoid subclass explosion and distinguish this pattern from Adapter.",
+  "tags": ["Decorator Pattern", "Design Patterns", "OOP", "Interview"],
+  "relatedTopics": ["Adapter Pattern", "Composition", "Design Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "ood-015",
+  "category": "Object-Oriented Design",
+  "topic": "Static vs Dynamic Binding",
+  "difficulty": "Hard",
+  "question": "What is the Difference Between Static Binding and Dynamic Binding?",
+  "shortAnswer": "Static (early) Binding: the method to call is determined at compile time. Dynamic (late) Binding: the method to call is determined at runtime, based on the actual object type.",
+  "detailedAnswer": "Static binding applies to overloaded methods, static methods, and private methods, since the compiler has enough information at compile time to definitively determine exactly which method implementation will be called, independent of runtime object state.\n\nDynamic binding applies to overridden, or virtual, methods; the compiler only knows the reference type at compile time, but the actual method invoked depends on the object's actual runtime type, resolved via a virtual method table lookup during execution. This is the fundamental mechanism that makes runtime polymorphism possible.",
+  "keyPoints": [
+    "Static binding: overloaded, static, private, and final methods — resolved at compile time",
+    "Dynamic binding: overridden (virtual) methods — resolved at runtime via vtable lookup",
+    "Dynamic binding is the underlying mechanism enabling runtime polymorphism to work correctly"
+  ],
+  "commonMistakes": [
+    "Assuming static methods participate in dynamic binding like overridden methods",
+    "Confusing the reference type with the actual runtime object type",
+    "Not knowing vtable lookup is the mechanism behind dynamic binding"
+  ],
+  "followUpQuestions": [
+    "Why are static methods resolved via static binding rather than dynamic binding?",
+    "What is a vtable and how does it enable dynamic binding?",
+    "How does the reference type differ from the actual object type in dynamic binding?"
+  ],
+  "realWorldExample": "Calling a method through a parent class reference pointing to a child object invokes the child's overridden version due to dynamic binding, even though the reference type is the parent.",
+  "codeExample": {
+    "language": "Java",
+    "code": "Animal a = new Dog(); // reference type Animal, actual type Dog\na.speak(); // dynamic binding calls Dog's speak() at runtime"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly classify which method types use static vs dynamic binding and explain the vtable mechanism.",
+  "tags": ["Static Binding", "Dynamic Binding", "Polymorphism", "OOP", "Interview"],
+  "relatedTopics": ["Method Overriding", "Method Overloading", "Polymorphism"],
+  "references": ["Effective Java - Joshua Bloch"]
+},
+{
+  "id": "ood-016",
+  "category": "Object-Oriented Design",
+  "topic": "Observer Design Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Observer Design Pattern in more depth? What problem does it solve?",
+  "shortAnswer": "Observer Pattern defines a one-to-many dependency between objects, so that when one object (Subject) changes state, all its dependents (Observers) are automatically notified and updated.",
+  "detailedAnswer": "This pattern decouples the Subject from its Observers; the Subject only knows it has a list of Observer objects implementing a common interface, typically an update() method, and doesn't need to know anything about their concrete types or what they actually do in response. New observer types can be added without modifying the Subject's code at all, adhering to the Open/Closed Principle.\n\nReal-world applications include GUI event handling, the classic MVC pattern where the View observes the Model, and reactive programming libraries. A common pitfall is the 'lapsed listener' memory leak, where forgetting to unsubscribe an observer keeps it, and anything it references, alive indefinitely.",
+  "keyPoints": [
+    "Subject maintains a list of Observers, notifying all of them on state change via a common interface",
+    "Decouples subject from observers — new observer types added without modifying the subject",
+    "Common pitfall: \"lapsed listener\" — forgetting to unsubscribe causes memory leaks"
+  ],
+  "commonMistakes": [
+    "Forgetting to unsubscribe observers, causing memory leaks (lapsed listener problem)",
+    "Tightly coupling the Subject to specific Observer implementations",
+    "Not using a common interface for all observers, breaking extensibility"
+  ],
+  "followUpQuestions": [
+    "What is the 'lapsed listener' problem and how would you prevent it?",
+    "How does the Observer pattern relate to the MVC architectural pattern?",
+    "How does Observer differ from the Publish-Subscribe pattern?"
+  ],
+  "realWorldExample": "In the MVC pattern, a View observes a Model and automatically re-renders whenever the Model's state changes, notifying all registered Views.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface Observer { void update(String event); }\n\nclass Subject {\n    private List<Observer> observers = new ArrayList<>();\n    void subscribe(Observer o) { observers.add(o); }\n    void notifyAll(String event) {\n        for (Observer o : observers) o.update(event);\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the decoupling benefit and identify the lapsed listener memory leak pitfall.",
+  "tags": ["Observer Pattern", "Design Patterns", "OOP", "Interview"],
+  "relatedTopics": ["MVC", "Event-Driven Architecture", "Design Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "ood-017",
+  "category": "Object-Oriented Design",
+  "topic": "Builder Design Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Builder Design Pattern? When should you use it?",
+  "shortAnswer": "The Builder Pattern constructs a complex object step-by-step, separating the construction process from the final representation — useful when an object has many optional parameters.",
+  "detailedAnswer": "When a class has many optional fields, using a constructor with many parameters becomes unwieldy and error-prone, since it's easy to mix up parameter order, especially with several parameters of the same type.\n\nThe Builder pattern uses a separate Builder object with fluent, chainable setter-like methods, each returning the builder itself, allowing readable, self-documenting object construction where only the desired fields need to be specified, and the final build() call assembles the actual immutable object. This is especially valuable for objects intended to be immutable once created, since it avoids needing a public setter for every field just to support construction.",
+  "keyPoints": [
+    "Solves the \"telescoping constructor\" anti-pattern — too many constructor overloads for optional parameters",
+    "Fluent interface: chained method calls, each returning the builder itself for readability",
+    "Common in test code: building complex test fixture objects with only the relevant fields set explicitly"
+  ],
+  "commonMistakes": [
+    "Using a long telescoping constructor instead of a Builder for classes with many optional fields",
+    "Not making the builder methods return the builder itself, breaking the fluent chaining",
+    "Forgetting the build() call is what assembles the final immutable object"
+  ],
+  "followUpQuestions": [
+    "What is the \"telescoping constructor\" anti-pattern the Builder solves?",
+    "Why is the Builder pattern especially useful for immutable objects?",
+    "How is a fluent interface implemented in the Builder pattern?"
+  ],
+  "realWorldExample": "A test suite uses a Builder to construct complex test fixture objects, setting only the fields relevant to each specific test case.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Person {\n    private final String name;\n    private final int age;\n\n    private Person(Builder b) { this.name = b.name; this.age = b.age; }\n\n    static class Builder {\n        private String name;\n        private int age;\n        Builder setName(String name) { this.name = name; return this; }\n        Builder setAge(int age) { this.age = age; return this; }\n        Person build() { return new Person(this); }\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the telescoping constructor problem the Builder solves and describe the fluent interface pattern.",
+  "tags": ["Builder Pattern", "Design Patterns", "OOP", "Interview"],
+  "relatedTopics": ["Immutability", "Fluent Interface", "Design Patterns"],
+  "references": ["Effective Java - Joshua Bloch"]
+},
+{
+  "id": "ood-018",
+  "category": "Object-Oriented Design",
+  "topic": "UML Class Diagrams",
+  "difficulty": "Medium",
+  "question": "What is a Class Diagram in UML? What are the main relationship types shown?",
+  "shortAnswer": "A UML Class Diagram visually represents a system's classes, their attributes, methods, and the relationships between them (inheritance, association, aggregation, composition, dependency).",
+  "detailedAnswer": "Class diagrams show each class as a box divided into three sections: class name, attributes with visibility markers, and methods. Relationships between classes are shown with different arrow or line styles.\n\nInheritance uses a hollow triangle arrow pointing to the parent, Interface Implementation uses a dashed line with a hollow triangle, Association uses a plain line for a general 'uses' relationship, Aggregation uses a line with a hollow diamond at the container end representing weak ownership, Composition uses a line with a filled diamond representing strong ownership, and Dependency uses a dashed arrow for one class temporarily using another.",
+  "keyPoints": [
+    "Visibility markers: + public, - private, # protected, ~ package-private",
+    "Hollow triangle = inheritance/implementation; filled diamond = composition; hollow diamond = aggregation",
+    "Multiplicity notation (1, 0..1, *, 1..*) indicates how many instances participate in a relationship"
+  ],
+  "commonMistakes": [
+    "Confusing the hollow diamond (aggregation) with the filled diamond (composition) notation",
+    "Not knowing what visibility markers like + and - represent",
+    "Forgetting multiplicity notation indicates cardinality between related classes"
+  ],
+  "followUpQuestions": [
+    "What is the difference between the hollow and filled diamond notations?",
+    "How would you represent an interface implementation in a class diagram?",
+    "What does multiplicity notation like 1..* mean in a relationship?"
+  ],
+  "realWorldExample": "A software architecture team uses a UML class diagram during a design review to communicate how the Order, Customer, and Product classes relate to each other before writing any code.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly identify the notation for each relationship type and explain visibility markers.",
+  "tags": ["UML", "Class Diagram", "OOP", "Interview"],
+  "relatedTopics": ["Association", "Aggregation", "Composition"],
+  "references": ["UML Distilled - Martin Fowler"]
+},
+{
+  "id": "ood-019",
+  "category": "Object-Oriented Design",
+  "topic": "Encapsulation vs Data Hiding",
+  "difficulty": "Medium",
+  "question": "What is Encapsulation vs Data Hiding? Are they the same thing?",
+  "shortAnswer": "They're closely related but distinct: Encapsulation is the broader concept of bundling data and methods together into a single unit. Data Hiding specifically refers to restricting direct external access to an object's internal state.",
+  "detailedAnswer": "Encapsulation is fundamentally about combining related data and the operations that act on that data into one cohesive unit, a class, which is a structural or organizational concept. Data Hiding is a specific technique used to achieve better encapsulation, by making fields private and only exposing controlled access through public methods, preventing external code from directly manipulating internal state in ways that could leave the object in an invalid state.\n\nSome argue encapsulation can technically exist without full data hiding, such as a class with public fields still being structurally 'encapsulated' though poorly, but in practice the two concepts are used together and often conflated in casual discussion.",
+  "keyPoints": [
+    "Encapsulation: bundling data + behavior together into a cohesive unit — structural concept",
+    "Data hiding: the technique of restricting direct access via private fields + controlled public methods",
+    "In practice, strong encapsulation almost always implies proper data hiding is also being used"
+  ],
+  "commonMistakes": [
+    "Treating encapsulation and data hiding as entirely unrelated concepts",
+    "Assuming a class with public fields has no encapsulation at all",
+    "Not recognizing data hiding as a technique used to achieve stronger encapsulation"
+  ],
+  "followUpQuestions": [
+    "Can a class be encapsulated without practicing data hiding?",
+    "Why is data hiding considered a technique rather than a standalone concept?",
+    "How do getters and setters relate to data hiding?"
+  ],
+  "realWorldExample": "A BankAccount class bundles balance data with deposit() and withdraw() methods (encapsulation), while making the balance field private (data hiding) to prevent direct external modification.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class BankAccount {\n    private double balance; // data hiding\n\n    public void deposit(double amount) {\n        if (amount > 0) balance += amount;\n    }\n\n    public double getBalance() { return balance; }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the structural vs technique distinction between encapsulation and data hiding, even if the two are often used interchangeably.",
+  "tags": ["Encapsulation", "Data Hiding", "OOP", "Interview"],
+  "relatedTopics": ["Abstraction", "Access Modifiers", "OOP Pillars"],
+  "references": ["Head First Object-Oriented Analysis and Design"]
+},
+{
+  "id": "ood-020",
+  "category": "Object-Oriented Design",
+  "topic": "Strategy Design Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Strategy Design Pattern?",
+  "shortAnswer": "Strategy Pattern defines a family of interchangeable algorithms, encapsulates each one, and lets the algorithm be selected/swapped at runtime without changing the client code.",
+  "detailedAnswer": "Instead of a long if-else or switch statement choosing behavior, such as different sorting algorithms, payment methods, or validation rules, the Strategy Pattern extracts each algorithm into its own class implementing a common interface.\n\nThe client holds a reference to the interface and can swap the actual strategy object at runtime. This follows the Open/Closed Principle, since adding a new strategy means adding a new class rather than modifying existing conditional logic.",
+  "keyPoints": [
+    "Client holds a Strategy interface reference, not a concrete implementation directly",
+    "Adding new behavior = new class, existing code untouched (Open/Closed Principle)",
+    "Java's Comparator interface is a real-world example of the Strategy Pattern in the standard library"
+  ],
+  "commonMistakes": [
+    "Using long if-else chains instead of extracting algorithms into Strategy classes",
+    "Not adhering to the Open/Closed Principle when adding new strategies",
+    "Confusing Strategy with State pattern, which changes behavior based on internal state transitions"
+  ],
+  "followUpQuestions": [
+    "How does the Strategy pattern relate to the Open/Closed Principle?",
+    "How is the Comparator interface in Java an example of Strategy?",
+    "What's the difference between Strategy and State design patterns?"
+  ],
+  "realWorldExample": "Java's Comparator interface lets developers pass different sorting strategies to Collections.sort() without modifying the sort algorithm itself.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface PaymentStrategy { void pay(double amount); }\n\nclass CreditCardStrategy implements PaymentStrategy {\n    public void pay(double amount) { System.out.println(\"Paid via credit card\"); }\n}\n\nclass PayPalStrategy implements PaymentStrategy {\n    public void pay(double amount) { System.out.println(\"Paid via PayPal\"); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how Strategy replaces conditional logic with interchangeable classes and adheres to the Open/Closed Principle.",
+  "tags": ["Strategy Pattern", "Design Patterns", "OOP", "Interview"],
+  "relatedTopics": ["SOLID Principles", "State Pattern", "Design Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "ood-021",
+  "category": "Object-Oriented Design",
+  "topic": "Association vs Aggregation vs Composition",
+  "difficulty": "Hard",
+  "question": "What is the difference between Association, Aggregation, and Composition (as a comparison of all three)?",
+  "shortAnswer": "Association: general relationship, \"uses-a\" — two independent classes reference each other. Aggregation: weak \"has-a\" — contained object can exist independently. Composition: strong \"has-a\" — contained object's lifecycle is bound to the container.",
+  "detailedAnswer": "Association is the most general relationship; two classes are related and interact, but neither owns the other, such as a Teacher teaching a Student, where both exist entirely independently of this relationship.\n\nAggregation is a specialized association implying 'has-a' with independent lifecycles, such as a University having Students who exist outside the University context. Composition is the strongest form, 'has-a' with a tightly bound lifecycle, such as a Car having an Engine that has no independent existence separate from its Car in this model.",
+  "keyPoints": [
+    "Association: loosest — independent classes simply interact/reference each other",
+    "Aggregation: \"has-a\" with independent lifecycles (whole-part, but part survives without whole)",
+    "Composition: \"has-a\" with dependent lifecycles (whole-part, part dies with the whole)"
+  ],
+  "commonMistakes": [
+    "Confusing Association's general interaction with Aggregation's specific 'has-a' ownership",
+    "Not placing the three relationships correctly on the loose-to-strong spectrum",
+    "Using composition when the relationship is actually a looser association"
+  ],
+  "followUpQuestions": [
+    "Where does Association sit relative to Aggregation and Composition in terms of coupling strength?",
+    "Can you give an example of a pure Association that isn't Aggregation or Composition?",
+    "How would you decide which of the three relationships best models a given class pair?"
+  ],
+  "realWorldExample": "A Teacher and Student have an Association (they interact but neither owns the other), a University and Student have Aggregation, and a Car and Engine have Composition.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to place all three relationships correctly on the spectrum from loosest to strongest coupling with distinct examples for each.",
+  "tags": ["Association", "Aggregation", "Composition", "OOP", "Interview"],
+  "relatedTopics": ["UML Class Diagram", "is-a vs has-a", "Object Relationships"],
+  "references": ["UML Distilled - Martin Fowler"]
+},
+{
+  "id": "ood-022",
+  "category": "Object-Oriented Design",
+  "topic": "Cohesion and Coupling",
+  "difficulty": "Medium",
+  "question": "What is Cohesion and Coupling? Why do we want High Cohesion and Low Coupling?",
+  "shortAnswer": "Cohesion measures how closely related and focused a single module/class's responsibilities are. Coupling measures how dependent modules/classes are on each other. Good design aims for HIGH cohesion and LOW coupling.",
+  "detailedAnswer": "High Cohesion means a class has a single, well-defined, focused purpose, with all its methods and data working together toward that one responsibility, directly related to the Single Responsibility Principle. Low cohesion, where a class does many unrelated things, makes code harder to understand, test, and maintain.\n\nLow Coupling means classes or modules have minimal knowledge of and dependency on each other's internal details, so changes to one class are unlikely to ripple out and break unrelated classes. High coupling, where classes are tightly intertwined and directly access each other's internals, makes the system fragile and hard to modify safely.",
+  "keyPoints": [
+    "High cohesion: a class does ONE thing well — related methods/data grouped together logically",
+    "Low coupling: classes interact through minimal, well-defined interfaces — not internal details",
+    "Dependency Injection and programming to interfaces are primary techniques for reducing coupling"
+  ],
+  "commonMistakes": [
+    "Designing classes with low cohesion that handle many unrelated responsibilities",
+    "Allowing classes to access each other's internal details directly, increasing coupling",
+    "Not recognizing Dependency Injection as a technique for reducing coupling"
+  ],
+  "followUpQuestions": [
+    "How does the Single Responsibility Principle relate to cohesion?",
+    "What techniques help reduce coupling between classes?",
+    "Can you give an example of a low-cohesion class and how you'd refactor it?"
+  ],
+  "realWorldExample": "A well-designed UserService handles only user-related logic (high cohesion) and depends on a Database interface rather than a specific database implementation (low coupling).",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain both concepts and articulate why high cohesion and low coupling together produce more maintainable systems.",
+  "tags": ["Cohesion", "Coupling", "OOP", "Software Design", "Interview"],
+  "relatedTopics": ["SOLID Principles", "Dependency Injection", "Single Responsibility Principle"],
+  "references": ["Agile Software Development - Robert C. Martin"]
+},
+{
+  "id": "ood-023",
+  "category": "Object-Oriented Design",
+  "topic": "Adapter Design Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Adapter Design Pattern? Give a real-world use case.",
+  "shortAnswer": "The Adapter Pattern converts the interface of one class into another interface that a client expects, allowing incompatible interfaces to work together without modifying either existing class.",
+  "detailedAnswer": "This pattern is used when integrating an existing class, often third-party or legacy code that can't be modified, whose interface doesn't match what the client code expects. The Adapter wraps the incompatible class and translates calls from the expected interface into calls the wrapped class actually understands, acting as a bridge or translator between the two.\n\nA real-world example: an application expects a PaymentProcessor interface with a pay(amount) method, but a third-party payment library exposes submitTransaction(cents, currency). A PaymentAdapter implementing PaymentProcessor would internally call the third-party library's actual method, converting parameters and behavior as needed.",
+  "keyPoints": [
+    "Solves the problem of integrating incompatible interfaces WITHOUT modifying either existing class",
+    "Common real-world use: wrapping a third-party/legacy library to match your application's expected interface",
+    "Different from Decorator: Adapter changes the INTERFACE, Decorator adds behavior while keeping the SAME interface"
+  ],
+  "commonMistakes": [
+    "Confusing Adapter (changes interface) with Decorator (keeps same interface, adds behavior)",
+    "Modifying the third-party or legacy class directly instead of wrapping it with an adapter",
+    "Not recognizing when an adapter is needed versus simply refactoring the client code"
+  ],
+  "followUpQuestions": [
+    "How does Adapter differ from Decorator?",
+    "What's a real-world scenario where you'd need to write an adapter?",
+    "Why is modifying the third-party library directly not a good solution?"
+  ],
+  "realWorldExample": "An application integrating an old XML-based payment library writes an adapter to expose it through a modern JSON-based PaymentProcessor interface expected by the rest of the codebase.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface PaymentProcessor { void pay(double amount); }\n\nclass ThirdPartyPaymentLibrary {\n    void submitTransaction(int cents, String currency) { /* ... */ }\n}\n\nclass PaymentAdapter implements PaymentProcessor {\n    private ThirdPartyPaymentLibrary library = new ThirdPartyPaymentLibrary();\n    public void pay(double amount) {\n        library.submitTransaction((int)(amount * 100), \"USD\");\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the interface-translation purpose of Adapter and distinguish it clearly from Decorator.",
+  "tags": ["Adapter Pattern", "Design Patterns", "OOP", "Interview"],
+  "relatedTopics": ["Decorator Pattern", "Design Patterns", "Legacy Integration"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "ood-024",
+  "category": "Object-Oriented Design",
+  "topic": "Abstraction vs Encapsulation",
+  "difficulty": "Medium",
+  "question": "What is Abstraction? How is it different from Encapsulation?",
+  "shortAnswer": "Abstraction hides implementation COMPLEXITY, focusing on WHAT an object does. Encapsulation hides implementation DATA, focusing on protecting HOW it's done — they're complementary but distinct concepts.",
+  "detailedAnswer": "Abstraction is about managing complexity at the design level, deciding what details are relevant to expose to a user of a class versus what internal complexity should be hidden away, such as a List interface exposing add(), remove(), and get() without the caller needing to know whether it's implemented as an ArrayList or LinkedList internally.\n\nEncapsulation is more specifically about protecting an object's internal state from being directly and uncontrollably accessed or modified from outside, using access modifiers to enforce that state changes only happen through defined, validated methods. Abstraction is a design-level concept, while encapsulation is an implementation-level technique, though abstraction is often achieved partly through encapsulation.",
+  "keyPoints": [
+    "Abstraction: design-level — deciding what complexity to hide from the API consumer (the \"what\")",
+    "Encapsulation: implementation-level — protecting internal state via access control (the \"how\")",
+    "Interfaces/abstract classes primarily achieve abstraction; private fields + getters/setters achieve encapsulation"
+  ],
+  "commonMistakes": [
+    "Treating abstraction and encapsulation as fully synonymous concepts",
+    "Confusing which mechanism (interfaces vs private fields) primarily achieves each concept",
+    "Not recognizing abstraction as a design-level decision versus encapsulation as an implementation technique"
+  ],
+  "followUpQuestions": [
+    "How does an interface achieve abstraction without necessarily involving encapsulation?",
+    "Can you give an example where abstraction and encapsulation work together?",
+    "Why is abstraction considered a design-level concept while encapsulation is implementation-level?"
+  ],
+  "realWorldExample": "The List interface in Java achieves abstraction by exposing add(), remove(), and get() without revealing whether the underlying implementation is an ArrayList or LinkedList.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the design-level (what) versus implementation-level (how) nature of abstraction and encapsulation.",
+  "tags": ["Abstraction", "Encapsulation", "OOP", "Interview"],
+  "relatedTopics": ["Interfaces", "Data Hiding", "OOP Pillars"],
+  "references": ["Head First Object-Oriented Analysis and Design"]
+},
+{
+  "id": "ood-025",
+  "category": "Object-Oriented Design",
+  "topic": "Class vs Object",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between a Class and an Object?",
+  "shortAnswer": "A Class is a blueprint/template defining the structure (fields) and behavior (methods) that objects of that type will have. An Object is a concrete instance of a class, with actual values stored in memory.",
+  "detailedAnswer": "A class exists only as a definition or template at the code level; it doesn't consume memory for instance data until objects are actually created from it, though the class metadata itself does exist in memory once loaded. An object is a specific instantiation of a class, created via a constructor call, occupying actual memory and holding concrete values for each of the fields the class defines.\n\nMultiple objects can be created from the same class, each with independent field values but sharing the same defined structure and behavior. The relationship is often explained via analogy: a class is like an architectural blueprint for a house, while each object is an actual physical house built from that blueprint.",
+  "keyPoints": [
+    "Class: compile-time definition/blueprint — no memory allocated for instance data until objects exist",
+    "Object: runtime instance — actual memory allocated, holds concrete field values",
+    "Multiple objects from the same class share structure/behavior but have independent state"
+  ],
+  "commonMistakes": [
+    "Assuming a class itself consumes memory for instance data before any objects are created",
+    "Confusing the class blueprint with a specific object instance",
+    "Not recognizing that multiple objects from the same class maintain independent state"
+  ],
+  "followUpQuestions": [
+    "Does a class consume any memory before objects are created from it?",
+    "How does the blueprint analogy help explain the class-object relationship?",
+    "Can two objects of the same class have different field values?"
+  ],
+  "realWorldExample": "A Car class defines fields like color and speed, while myCar = new Car() creates an actual object with specific values, such as color = 'red' and speed = 0.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Car {\n    String color;\n    int speed;\n}\n\nCar myCar = new Car(); // object instance\nmyCar.color = \"red\";"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the compile-time blueprint (class) from the runtime instance (object) using a concrete example.",
+  "tags": ["Class", "Object", "OOP", "Interview"],
+  "relatedTopics": ["Constructors", "Instance Variables", "OOP Basics"],
+  "references": ["Head First Object-Oriented Analysis and Design"]
+}
 ];
