@@ -76,8 +76,8 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     icon: '📐',
     color: '#10b981', // Emerald
     order: 7,
-    questionCount: 0,
-    comingSoon: true
+    questionCount: 25,
+    comingSoon: false
   },
   {
     id: 'patterns',
