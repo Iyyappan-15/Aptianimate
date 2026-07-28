@@ -54,8 +54,8 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     icon: '🌐',
     color: '#3b82f6', // Blue
     order: 5,
-    questionCount: 0,
-    comingSoon: true
+    questionCount: 25,
+    comingSoon: false
   },
   {
     id: 'co',
