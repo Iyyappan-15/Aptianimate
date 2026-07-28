@@ -28,3 +28,8 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Agent directories and files
+.agents/
+skills-lock.json
+
