@@ -1650,8 +1650,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
       "code": "CREATE TABLE Orders (\n  order_id INT PRIMARY KEY,\n  customer_id INT,\n  FOREIGN KEY (customer_id) REFERENCES Customers(customer_id) ON DELETE RESTRICT\n);"
     },
     "interviewerExpectation": "The interviewer expects the candidate to explain how foreign key constraints enforce referential integrity and describe the different ON DELETE actions.",
-    "tags": ["Referential Integrity", "Foreign Key", "Database", "Interview"],
-    "relatedTopics": ["Primary Key", "Foreign Key", "Constraints"],
-    "references": ["Database System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-001",
+    "category": "Operating Systems",
+    "topic": "Process vs Thread",
+    "difficulty": "Easy",
+    "question": "What is the difference between a Process and a Thread?",
+    "shortAnswer": "Process: isolated program with own memory space. Thread: lightweight unit within a process, shares memory with siblings.",
+    "detailedAnswer": "A process is an independent program in execution with its own virtual address space, code, data, heap, and stack, isolated for protection and expensive to create.\n\nA thread runs within a process and shares its address space and global variables with sibling threads, making thread creation 10-100x cheaper than process creation. In Python, the GIL prevents true CPU parallelism for threads, so multiprocessing is used for CPU-bound work.",
+    "keyPoints": [
+      "Process: own memory, expensive context switch, more secure",
+      "Thread: shared memory, cheap context switch, risk of race conditions",
+      "Process states: New, Ready, Running, Waiting/Blocked, Terminated"
+    ],
+    "commonMistakes": [
+      "Assuming threads always improve performance regardless of workload type",
+      "Forgetting shared memory in threads can cause race conditions",
+      "Not knowing Python's GIL limits true threading parallelism"
+    ],
+    "followUpQuestions": [
+      "What is the Global Interpreter Lock in Python?",
+      "How do race conditions occur between threads?",
+      "What are the different process states?"
+    ],
+    "realWorldExample": "A web browser runs each tab as a separate process for isolation, while rendering within a tab may use multiple threads.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects clear distinction between memory isolation, cost of creation, and concurrency implications of processes vs threads.",
+    "tags": ["Process", "Thread", "Operating Systems", "Interview"],
+    "relatedTopics": ["Concurrency", "Multithreading", "GIL"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-002",
+    "category": "Operating Systems",
+    "topic": "Deadlock Conditions",
+    "difficulty": "Medium",
+    "question": "What are the four necessary conditions for Deadlock?",
+    "shortAnswer": "Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait — all four must hold simultaneously.",
+    "detailedAnswer": "Mutual Exclusion means at least one resource is non-sharable. Hold and Wait means a process holds a resource while waiting for another. No Preemption means resources can't be forcibly taken away.\n\nCircular Wait means a cycle exists in the resource-request chain, where P1 waits for P2, P2 waits for P3, and so on until Pn waits for P1. Removing any one of these four conditions prevents deadlock entirely.",
+    "keyPoints": [
+      "Prevention: impose ordering on resource acquisition (breaks circular wait)",
+      "Avoidance: Banker's Algorithm checks safe state before granting a resource",
+      "Detection: search for a cycle in the Resource Allocation Graph"
+    ],
+    "commonMistakes": [
+      "Naming only three of the four necessary conditions",
+      "Confusing deadlock prevention with deadlock avoidance",
+      "Not knowing removing any single condition prevents deadlock"
+    ],
+    "followUpQuestions": [
+      "How does the Banker's Algorithm work?",
+      "What is a Resource Allocation Graph?",
+      "How would you recover a system from deadlock?"
+    ],
+    "realWorldExample": "Two database transactions each locking a row the other needs, causing both to wait indefinitely.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to list all four necessary conditions accurately and describe prevention, avoidance, and detection strategies.",
+    "tags": ["Deadlock", "Operating Systems", "Interview"],
+    "relatedTopics": ["Banker's Algorithm", "Resource Allocation Graph", "Concurrency"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-003",
+    "category": "Operating Systems",
+    "topic": "Virtual Memory and Paging",
+    "difficulty": "Medium",
+    "question": "What is Virtual Memory and how does Paging work?",
+    "shortAnswer": "Virtual memory abstracts physical RAM, giving each process a large address space. Paging divides it into fixed-size pages mapped to physical frames.",
+    "detailedAnswer": "Virtual memory lets processes use more address space than physical RAM by using disk, known as swap, as an extension. Paging divides virtual space into fixed-size pages, commonly 4KB, and the page table maps each virtual page number to a physical frame number.\n\nIf a page isn't in RAM, a page fault occurs: the OS suspends the process, loads the page from disk, updates the page table, and resumes. The Translation Lookaside Buffer caches recent translations to speed up address resolution.",
+    "keyPoints": [
+      "TLB: hardware cache for page table entries, avoids slow memory lookup",
+      "Page replacement algorithms: LRU, FIFO, Optimal (Belady's), Clock",
+      "Thrashing: too many processes → constant page faults → CPU utilisation collapses"
+    ],
+    "commonMistakes": [
+      "Confusing paging with segmentation",
+      "Forgetting the role of the TLB in speeding up translation",
+      "Not understanding what triggers a page fault"
+    ],
+    "followUpQuestions": [
+      "What page replacement algorithms do you know?",
+      "What is a TLB miss?",
+      "How is thrashing related to paging?"
+    ],
+    "realWorldExample": "A computer running many large applications simultaneously relies on paging and swap space to avoid running out of RAM.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects understanding of address translation, page faults, and the role of the TLB in virtual memory systems.",
+    "tags": ["Virtual Memory", "Paging", "Operating Systems", "Interview"],
+    "relatedTopics": ["TLB", "Page Replacement", "Thrashing"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-004",
+    "category": "Operating Systems",
+    "topic": "Mutex vs Semaphore",
+    "difficulty": "Medium",
+    "question": "What is the difference between Mutex and Semaphore?",
+    "shortAnswer": "Mutex: binary lock with ownership (only locker can unlock). Semaphore: counter-based signal, allows N concurrent accesses.",
+    "detailedAnswer": "A mutex ensures only one thread enters a critical section at a time, and only the thread that locked it can unlock it, enforcing ownership.\n\nA semaphore is a counter-based signalling mechanism; a binary semaphore resembles a mutex but lacks ownership, while a counting semaphore allows up to N concurrent accesses, such as a pool of 5 database connections. Semaphores are typically used for signalling between threads in patterns like producer-consumer.",
+    "keyPoints": [
+      "Mutex: ownership enforced — only the locking thread can unlock",
+      "Counting semaphore: limits concurrent access to a resource pool",
+      "Condition variable: used WITH a mutex to wait on complex conditions"
+    ],
+    "commonMistakes": [
+      "Using mutex and binary semaphore interchangeably without noting ownership difference",
+      "Forgetting semaphores can allow more than one thread through",
+      "Not understanding condition variables need a paired mutex"
+    ],
+    "followUpQuestions": [
+      "Can a semaphore be unlocked by a different thread than the one that locked it?",
+      "What is a condition variable used for?",
+      "How would you implement a connection pool using a semaphore?"
+    ],
+    "realWorldExample": "A database connection pool uses a counting semaphore to limit the number of simultaneous connections to N.",
+    "codeExample": {
+      "language": "Python",
+      "code": "import threading\n\nsem = threading.Semaphore(3)  # allow 3 concurrent accesses\n\ndef access_resource():\n    with sem:\n        print('Accessing shared resource')"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to distinguish ownership (mutex) from counting-based access (semaphore) with practical examples.",
+    "tags": ["Mutex", "Semaphore", "Concurrency", "Interview"],
+    "relatedTopics": ["Critical Section", "Condition Variables", "Thread Synchronization"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-005",
+    "category": "Operating Systems",
+    "topic": "CPU Scheduling",
+    "difficulty": "Medium",
+    "question": "What are CPU Scheduling Algorithms? Compare Round Robin vs SJF.",
+    "shortAnswer": "FCFS, SJF, Round Robin, Priority Scheduling — each balances throughput, fairness, and response time differently.",
+    "detailedAnswer": "FCFS is simple but suffers from the convoy effect, where short jobs get stuck behind long ones. SJF gives optimal average waiting time but requires knowing burst time in advance; its preemptive version is SRTF.\n\nRound Robin gives each process a fixed time quantum, then preempts and cycles to the next process, making it fair and widely used for time-sharing systems. Priority Scheduling runs the highest-priority process first, with starvation fixed via aging, which gradually raises the priority of waiting processes.",
+    "keyPoints": [
+      "Round Robin: small quantum = better response time but more context-switch overhead",
+      "Priority scheduling: starvation risk without aging",
+      "Linux CFS (Completely Fair Scheduler): O(log n) via a red-black tree"
+    ],
+    "commonMistakes": [
+      "Not knowing SJF requires burst time prediction",
+      "Forgetting Round Robin's quantum size trade-off",
+      "Confusing preemptive and non-preemptive scheduling variants"
+    ],
+    "followUpQuestions": [
+      "What is the convoy effect in FCFS?",
+      "How does aging prevent starvation in priority scheduling?",
+      "What scheduler does the Linux kernel use?"
+    ],
+    "realWorldExample": "Time-sharing operating systems use Round Robin scheduling to give each user process a fair CPU slice.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects comparison of scheduling algorithms across fairness, throughput, and response time with real trade-offs.",
+    "tags": ["CPU Scheduling", "Round Robin", "SJF", "Interview"],
+    "relatedTopics": ["Process States", "Starvation", "Linux CFS"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-006",
+    "category": "Operating Systems",
+    "topic": "Context Switching",
+    "difficulty": "Medium",
+    "question": "What is Context Switching? Why is it expensive?",
+    "shortAnswer": "Context switch saves the current process/thread's state and loads the next one's. Expensive mainly due to cache and TLB invalidation, not just the save/restore itself.",
+    "detailedAnswer": "When the OS switches the CPU between processes, it saves the current process's context, including the program counter, registers, stack pointer, and page table pointer, into its Process Control Block, then restores the next process's context.\n\nThe direct save/restore is fast, taking microseconds, but the larger cost comes from cache and TLB invalidation, since the new process's memory access patterns are different, causing cache misses until the CPU warms up for the new process. Thread switches within the same process are cheaper since the address space, and hence TLB entries, doesn't need to be flushed.",
+    "keyPoints": [
+      "PCB stores: registers, program counter, stack pointer, page table, open files",
+      "Thread switch: cheaper — shares address space, no TLB flush needed",
+      "Process switch: full TLB/cache invalidation on most architectures"
+    ],
+    "commonMistakes": [
+      "Assuming the save/restore step itself is the main cost of context switching",
+      "Not distinguishing thread switch cost from process switch cost",
+      "Forgetting cache warm-up time contributes significantly to switch overhead"
+    ],
+    "followUpQuestions": [
+      "Why is a thread switch cheaper than a process switch?",
+      "What information is stored in a Process Control Block?",
+      "How does TLB invalidation affect performance after a context switch?"
+    ],
+    "realWorldExample": "A server handling many concurrent processes experiences overhead from frequent context switches, motivating the use of lightweight threads or async I/O instead.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to identify cache/TLB invalidation, not just save/restore, as the primary cost of context switching.",
+    "tags": ["Context Switching", "Process Control Block", "Operating Systems", "Interview"],
+    "relatedTopics": ["Process vs Thread", "TLB", "CPU Scheduling"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-007",
+    "category": "Operating Systems",
+    "topic": "Critical Section Problem",
+    "difficulty": "Medium",
+    "question": "What is the Critical Section Problem?",
+    "shortAnswer": "The critical section is code accessing shared data. A valid solution must guarantee Mutual Exclusion, Progress, and Bounded Waiting.",
+    "detailedAnswer": "When multiple processes or threads access shared data without coordination, race conditions occur, where the final result depends on unpredictable execution order.\n\nA correct solution must ensure Mutual Exclusion, where only one process is in the critical section at a time, Progress, where if no process is currently in the critical section, one of the waiting processes must be allowed to enter without indefinite postponement, and Bounded Waiting, where a limit exists on how many times other processes can enter before a waiting process gets its turn, preventing starvation.",
+    "keyPoints": [
+      "Race condition: outcome depends on timing/order of thread execution — must be avoided",
+      "Peterson's Algorithm: classic software-only solution for two processes",
+      "Test-and-Set / Compare-and-Swap: hardware-level atomic instructions used for real locks"
+    ],
+    "commonMistakes": [
+      "Forgetting Progress and Bounded Waiting as requirements beyond just Mutual Exclusion",
+      "Not knowing hardware-level atomic instructions like Compare-and-Swap are used for real locks",
+      "Confusing race conditions with deadlocks"
+    ],
+    "followUpQuestions": [
+      "What is Peterson's Algorithm and how does it work?",
+      "How do Test-and-Set and Compare-and-Swap enable real-world locks?",
+      "What is the difference between Progress and Bounded Waiting requirements?"
+    ],
+    "realWorldExample": "Two threads incrementing a shared counter without synchronization can produce an incorrect final count due to a race condition in the critical section.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to name and explain all three requirements: Mutual Exclusion, Progress, and Bounded Waiting.",
+    "tags": ["Critical Section", "Race Condition", "Operating Systems", "Interview"],
+    "relatedTopics": ["Mutex", "Semaphore", "Race Condition"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-008",
+    "category": "Operating Systems",
+    "topic": "Inter-Process Communication",
+    "difficulty": "Medium",
+    "question": "What is Inter-Process Communication (IPC)?",
+    "shortAnswer": "IPC allows isolated processes to exchange data and synchronise: pipes, message queues, shared memory, sockets, signals.",
+    "detailedAnswer": "Pipes provide a unidirectional byte stream between related processes, such as parent-child, while Named Pipes, or FIFOs, extend this to unrelated processes. Shared Memory maps a memory region into multiple processes' address spaces, making it the fastest IPC mechanism but requiring explicit synchronisation via a mutex or semaphore to avoid race conditions.\n\nMessage Queues send structured, prioritised messages asynchronously. Sockets work across machines over a network. Signals are lightweight asynchronous notifications, such as SIGKILL or SIGTERM.",
+    "keyPoints": [
+      "Shared memory: fastest, but needs mutex/semaphore for synchronisation",
+      "Message queue: decoupled, asynchronous, supports message priorities",
+      "Socket: most flexible — works across a network, basis of client-server programming"
+    ],
+    "commonMistakes": [
+      "Forgetting shared memory requires manual synchronization",
+      "Confusing pipes with named pipes in terms of process relatedness",
+      "Not knowing signals are lightweight and asynchronous, unlike other IPC forms"
+    ],
+    "followUpQuestions": [
+      "How do pipes differ from named pipes (FIFOs)?",
+      "When would you choose sockets over shared memory?",
+      "How are signals used in IPC?"
+    ],
+    "realWorldExample": "A producer-consumer application uses shared memory with a semaphore to safely pass data between two processes.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects understanding of trade-offs between speed and safety across different IPC mechanisms.",
+    "tags": ["IPC", "Shared Memory", "Message Passing", "Interview"],
+    "relatedTopics": ["Pipes", "Sockets", "Synchronization"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-009",
+    "category": "Operating Systems",
+    "topic": "Thrashing",
+    "difficulty": "Medium",
+    "question": "What is Thrashing? How is it prevented?",
+    "shortAnswer": "Thrashing is when the OS spends more time swapping pages than executing processes. Prevented via the Working Set Model or by reducing the degree of multiprogramming.",
+    "detailedAnswer": "Thrashing occurs when too many active processes' combined working sets exceed available RAM, causing the OS to constantly evict pages that are needed again almost immediately, resulting in continuous page faults.\n\nCPU utilisation collapses toward zero because processes spend nearly all their time waiting for pages rather than executing. Prevention strategies include the Working Set Model, which keeps each process's actively-used pages resident in RAM and suspends processes if there isn't enough RAM for everyone's working set, or simply reducing the number of concurrently running processes.",
+    "keyPoints": [
+      "Symptom: CPU appears busy but is actually stuck doing page I/O, not real work",
+      "Working set: the set of pages a process referenced in the last d time units",
+      "Prevention: limit concurrent processes, add RAM, or use faster swap storage (SSD)"
+    ],
+    "commonMistakes": [
+      "Confusing thrashing with normal paging activity",
+      "Not connecting thrashing to over-committed multiprogramming",
+      "Forgetting the working set model as a prevention strategy"
+    ],
+    "followUpQuestions": [
+      "What is the Working Set Model?",
+      "How does the OS detect thrashing?",
+      "What is the relationship between degree of multiprogramming and thrashing?"
+    ],
+    "realWorldExample": "A computer with insufficient RAM running too many heavy applications simultaneously slows to a crawl due to thrashing.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to connect thrashing to memory over-commitment and describe practical prevention methods.",
+    "tags": ["Thrashing", "Memory Management", "Operating Systems", "Interview"],
+    "relatedTopics": ["Virtual Memory", "Working Set Model", "Page Replacement"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-010",
+    "category": "Operating Systems",
+    "topic": "Paging vs Segmentation",
+    "difficulty": "Medium",
+    "question": "What is the difference between Paging and Segmentation?",
+    "shortAnswer": "Paging: fixed-size physical division (avoids external fragmentation). Segmentation: variable-size logical division (matches program structure, but causes external fragmentation).",
+    "detailedAnswer": "Paging splits both virtual and physical memory into equal-size fixed blocks called pages and frames, which is simple and avoids external fragmentation, though it causes slight internal fragmentation on the last page.\n\nSegmentation divides a program into logical units, such as code, data, and stack segments, of variable size, reflecting the program's actual structure. This is more intuitive but suffers external fragmentation as segments of different sizes are allocated and freed over time, leaving unusable gaps. Most modern systems, such as x86-64, use paging almost exclusively, with segmentation largely vestigial.",
+    "keyPoints": [
+      "Paging: no external fragmentation, small internal fragmentation",
+      "Segmentation: matches logical program structure, but external fragmentation over time",
+      "Paged Segmentation: combines both — each segment is itself divided into pages"
+    ],
+    "commonMistakes": [
+      "Confusing internal and external fragmentation",
+      "Assuming segmentation is obsolete rather than combined with paging",
+      "Not knowing which fragmentation type each method causes"
+    ],
+    "followUpQuestions": [
+      "What is internal vs external fragmentation?",
+      "How do modern systems combine paging and segmentation?",
+      "Why do modern x86-64 systems favor paging?"
+    ],
+    "realWorldExample": "Compilers organize a program's memory into logical segments (code, data, stack), while the OS still manages physical memory using paging underneath.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects a clear distinction between logical (segmentation) and physical (paging) memory division and their fragmentation trade-offs.",
+    "tags": ["Paging", "Segmentation", "Memory Management", "Interview"],
+    "relatedTopics": ["Virtual Memory", "Fragmentation", "Address Translation"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-011",
+    "category": "Operating Systems",
+    "topic": "Producer-Consumer Problem",
+    "difficulty": "Hard",
+    "question": "What is a Semaphore's Producer-Consumer Problem? How is it solved?",
+    "shortAnswer": "The Producer-Consumer problem coordinates a producer adding items to a shared buffer and a consumer removing them, ensuring the buffer neither overflows nor underflows. Solved using two counting semaphores plus a mutex.",
+    "detailedAnswer": "A bounded buffer of size N is shared between a producer, which adds items, and a consumer, which removes them. Without synchronisation, the producer could add to a full buffer or the consumer could remove from an empty one, and simultaneous access could corrupt the buffer's internal state.\n\nThe solution uses an 'empty' semaphore initialized to N to track available empty slots, a 'full' semaphore initialized to 0 to track filled slots, and a mutex to protect the buffer index during actual insert and remove operations. The producer waits on 'empty' before adding and signals 'full' after; the consumer does the reverse.",
+    "keyPoints": [
+      "Bounded buffer: fixed-size circular queue shared between producer and consumer",
+      "Two semaphores (empty, full) track available space; mutex protects the buffer itself",
+      "Classic textbook synchronisation problem, frequently asked to test semaphore understanding"
+    ],
+    "commonMistakes": [
+      "Using only a mutex without the empty/full semaphores, allowing overflow or underflow",
+      "Forgetting to protect the buffer index itself with a mutex",
+      "Confusing the roles of the 'empty' and 'full' semaphores"
+    ],
+    "followUpQuestions": [
+      "Why are two semaphores needed instead of just one?",
+      "What would happen if the mutex were removed from this solution?",
+      "How would you extend this to multiple producers and consumers?"
+    ],
+    "realWorldExample": "A message queue system like RabbitMQ conceptually solves a producer-consumer problem, ensuring producers don't overwhelm consumers and consumers don't read from an empty queue.",
+    "codeExample": {
+      "language": "Python",
+      "code": "import threading\n\nempty = threading.Semaphore(5)\nfull = threading.Semaphore(0)\nmutex = threading.Lock()\nbuffer = []\n\ndef producer(item):\n    empty.acquire()\n    with mutex:\n        buffer.append(item)\n    full.release()\n\ndef consumer():\n    full.acquire()\n    with mutex:\n        item = buffer.pop(0)\n    empty.release()\n    return item"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the roles of the empty/full semaphores and mutex and why all three are necessary.",
+    "tags": ["Producer-Consumer", "Semaphore", "Synchronization", "Interview"],
+    "relatedTopics": ["Mutex", "Bounded Buffer", "Thread Synchronization"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-012",
+    "category": "Operating Systems",
+    "topic": "Belady's Anomaly",
+    "difficulty": "Hard",
+    "question": "What is Belady's Anomaly?",
+    "shortAnswer": "Belady's Anomaly is a counter-intuitive phenomenon where increasing the number of page frames INCREASES the number of page faults, using the FIFO page replacement algorithm.",
+    "detailedAnswer": "Intuitively, more available RAM in the form of more frames should always reduce or maintain the same number of page faults, but with FIFO specifically, certain reference strings actually produce more page faults with more frames.\n\nThis anomaly does not occur with algorithms belonging to the class of stack algorithms, like LRU and Optimal, which guarantee that increasing frames never increases faults. Belady's Anomaly is a key reason LRU is generally preferred over FIFO in real systems despite FIFO's simplicity.",
+    "keyPoints": [
+      "Only occurs with FIFO (and similar non-stack algorithms), not LRU or Optimal",
+      "Demonstrates that 'more memory' isn't always intuitively better under naive algorithms",
+      "Practical implication: motivates the use of stack-based replacement algorithms like LRU"
+    ],
+    "commonMistakes": [
+      "Assuming more memory always reduces page faults regardless of algorithm",
+      "Not knowing Belady's Anomaly is specific to FIFO and similar non-stack algorithms",
+      "Confusing stack algorithms (LRU, Optimal) with non-stack algorithms (FIFO)"
+    ],
+    "followUpQuestions": [
+      "Why doesn't Belady's Anomaly occur with LRU?",
+      "What defines a 'stack algorithm' in page replacement?",
+      "What practical lesson does Belady's Anomaly teach about algorithm design?"
+    ],
+    "realWorldExample": "A system administrator adding more RAM to a server running a FIFO-based caching algorithm might unexpectedly see worse cache performance, illustrating Belady's Anomaly.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the counter-intuitive nature of this anomaly and why it's specific to FIFO, not stack algorithms.",
+    "tags": ["Belady's Anomaly", "Page Replacement", "Operating Systems", "Interview"],
+    "relatedTopics": ["Page Replacement", "LRU", "FIFO"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-013",
+    "category": "Operating Systems",
+    "topic": "System Calls",
+    "difficulty": "Medium",
+    "question": "What is a System Call? How does it differ from a normal function call?",
+    "shortAnswer": "A system call is a request from a user program to the OS kernel for a privileged operation (file I/O, process creation, network access) — it requires a context switch from user mode to kernel mode.",
+    "detailedAnswer": "Regular function calls execute entirely within the user program's own address space and privilege level. A system call, such as read(), write(), or fork(), requires switching from unprivileged user mode to privileged kernel mode, because only the kernel has direct access to hardware resources like disks, network interfaces, and memory management.\n\nThis mode switch, triggered via a trap or interrupt instruction, has overhead beyond a normal function call, but it's necessary because letting arbitrary user programs directly manipulate hardware would be catastrophic for security and stability.",
+    "keyPoints": [
+      "User mode: restricted, no direct hardware access",
+      "Kernel mode: privileged, full hardware access — system calls trigger this switch",
+      "Examples: fork() (create process), read()/write() (file I/O), mmap() (memory mapping)"
+    ],
+    "commonMistakes": [
+      "Assuming system calls have the same overhead as regular function calls",
+      "Not knowing the mode switch is triggered via a trap/interrupt instruction",
+      "Forgetting why direct hardware access is restricted to kernel mode"
+    ],
+    "followUpQuestions": [
+      "Why is the user-to-kernel mode switch necessary for system calls?",
+      "What are some common examples of system calls?",
+      "What happens if a user program tries to access hardware directly?"
+    ],
+    "realWorldExample": "When a program reads a file using read(), it triggers a system call that switches to kernel mode to access the disk hardware.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the user-mode to kernel-mode transition and why it's necessary for privileged operations.",
+    "tags": ["System Call", "Kernel Mode", "Operating Systems", "Interview"],
+    "relatedTopics": ["User Mode", "Kernel Mode", "Interrupts"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-014",
+    "category": "Operating Systems",
+    "topic": "Preemptive vs Non-Preemptive Scheduling",
+    "difficulty": "Medium",
+    "question": "What is the difference between Preemptive and Non-Preemptive Scheduling?",
+    "shortAnswer": "Preemptive scheduling can forcibly interrupt a running process to give the CPU to another. Non-preemptive scheduling lets a process run to completion or until it voluntarily yields.",
+    "detailedAnswer": "In non-preemptive scheduling, once a process starts executing, it holds the CPU until it finishes or voluntarily blocks, such as for I/O, which is simpler to implement but risks a single long-running process starving others, making it poor for interactive or time-sharing systems.\n\nIn preemptive scheduling, the OS can interrupt a running process, usually via a timer interrupt, and switch to another, which is necessary for responsive time-sharing and real-time systems but requires careful synchronisation to avoid race conditions when preemption happens mid-critical-section.",
+    "keyPoints": [
+      "Non-preemptive: FCFS, non-preemptive SJF — simple but risk of starvation",
+      "Preemptive: Round Robin, SRTF, most modern OS schedulers",
+      "Preemption requires careful locking to avoid corrupting shared data mid-operation"
+    ],
+    "commonMistakes": [
+      "Assuming all modern schedulers are non-preemptive",
+      "Not accounting for race condition risks when preemption occurs mid-critical-section",
+      "Confusing FCFS (non-preemptive) with Round Robin (preemptive)"
+    ],
+    "followUpQuestions": [
+      "Why is preemptive scheduling necessary for time-sharing systems?",
+      "What risks does preemption introduce for shared data access?",
+      "Can you give an example of a non-preemptive scheduling algorithm?"
+    ],
+    "realWorldExample": "A modern desktop OS uses preemptive scheduling via timer interrupts to ensure no single application can monopolize the CPU indefinitely.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the trade-off between simplicity (non-preemptive) and responsiveness (preemptive) with synchronization considerations.",
+    "tags": ["Preemptive Scheduling", "Non-Preemptive Scheduling", "CPU Scheduling", "Interview"],
+    "relatedTopics": ["CPU Scheduling", "Context Switching", "Race Condition"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-015",
+    "category": "Operating Systems",
+    "topic": "Zombie and Orphan Processes",
+    "difficulty": "Medium",
+    "question": "What is a Zombie Process and an Orphan Process?",
+    "shortAnswer": "Zombie: a child process that has finished but whose exit status hasn't been read by the parent yet. Orphan: a process whose parent terminated before it did.",
+    "detailedAnswer": "When a child process finishes execution, it doesn't disappear immediately; it becomes a zombie, retaining a minimal entry in the process table, just the PID and exit status, until the parent calls wait() to reap it and read the exit status. If the parent never calls wait(), the zombie lingers, consuming a process table slot though no CPU or memory beyond that.\n\nAn orphan process is one whose parent has already terminated; the OS automatically re-parents it to the init or systemd process (PID 1), which periodically reaps any zombies among its adopted children.",
+    "keyPoints": [
+      "Zombie: uses minimal resources (just a process table entry), but too many indicate a bug",
+      "Orphan: automatically adopted by init/systemd (PID 1) upon parent's termination",
+      "Fix for zombie accumulation: parent must call wait()/waitpid() properly"
+    ],
+    "commonMistakes": [
+      "Confusing zombie processes (finished, unreaped) with orphan processes (parent terminated first)",
+      "Not knowing PID 1 automatically adopts orphaned processes",
+      "Forgetting that too many zombies indicate a parent process bug, not a system-wide crash risk"
+    ],
+    "followUpQuestions": [
+      "How would you fix an accumulation of zombie processes?",
+      "What process adopts an orphan process and why?",
+      "What resources does a zombie process actually consume?"
+    ],
+    "realWorldExample": "A poorly written server application that forks child processes without calling wait() can accumulate zombie processes over time, eventually exhausting the process table.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish zombie and orphan processes and explain the fix for zombie accumulation.",
+    "tags": ["Zombie Process", "Orphan Process", "Operating Systems", "Interview"],
+    "relatedTopics": ["Process States", "Process Control Block", "fork()"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-016",
+    "category": "Operating Systems",
+    "topic": "Banker's Algorithm",
+    "difficulty": "Hard",
+    "question": "What is the Banker's Algorithm? How does it prevent Deadlock?",
+    "shortAnswer": "Banker's Algorithm is a deadlock AVOIDANCE algorithm that only grants a resource request if the system remains in a \"safe state\" afterward — meaning all processes can still eventually complete.",
+    "detailedAnswer": "Before granting a resource request, the Banker's Algorithm simulates the allocation and checks if there exists at least one safe sequence in which all processes could complete without deadlocking, assuming each process eventually releases resources after getting its maximum need met.\n\nIf such a sequence exists, the request is granted; otherwise, the process must wait even if resources are currently available. This requires the OS to know each process's maximum future resource need in advance, which is a significant practical limitation that limits real-world usage mostly to controlled or theoretical systems.",
+    "keyPoints": [
+      "Requires advance knowledge of each process's maximum resource need — impractical for general OS",
+      "Safe state: a state where SOME sequence exists letting all processes finish",
+      "Named \"Banker's\" because it mirrors how a bank should never lend beyond what it can safely recover"
+    ],
+    "commonMistakes": [
+      "Assuming Banker's Algorithm detects deadlock rather than avoiding it",
+      "Not knowing it requires advance knowledge of maximum resource needs",
+      "Confusing 'safe state' with 'deadlock-free forever' rather than 'a safe sequence currently exists'"
+    ],
+    "followUpQuestions": [
+      "What is a 'safe state' in the context of the Banker's Algorithm?",
+      "Why is the Banker's Algorithm impractical for general-purpose operating systems?",
+      "How does this differ from deadlock detection?"
+    ],
+    "realWorldExample": "The Banker's Algorithm concept is largely theoretical in modern OS but conceptually mirrors resource allocation checks in some embedded or real-time systems with known resource bounds.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the safe-state check mechanism and articulate the practical limitation of requiring advance knowledge of maximum needs.",
+    "tags": ["Banker's Algorithm", "Deadlock Avoidance", "Operating Systems", "Interview"],
+    "relatedTopics": ["Deadlock", "Resource Allocation Graph", "Safe State"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-017",
+    "category": "Operating Systems",
+    "topic": "Internal vs External Fragmentation",
+    "difficulty": "Medium",
+    "question": "What is Fragmentation? Explain Internal vs External Fragmentation.",
+    "shortAnswer": "Fragmentation is wasted memory. Internal Fragmentation: wasted space WITHIN an allocated block. External Fragmentation: wasted space BETWEEN allocated blocks (free but unusable).",
+    "detailedAnswer": "Internal fragmentation happens when a fixed-size allocation unit, like a page, is larger than what's actually needed; for example, a process needing 4097 bytes gets two 4KB pages, wasting 4095 bytes within the allocated space.\n\nExternal fragmentation happens with variable-size allocation, like segmentation or a naive heap allocator; over time, freed blocks of various sizes scattered throughout memory can't be used for a new large allocation, even though total free memory is sufficient, because no single contiguous block is big enough.",
+    "keyPoints": [
+      "Internal: fixed-size allocation (paging) — small waste per allocation, predictable",
+      "External: variable-size allocation (segmentation, heap) — unpredictable, can grow over time",
+      "Compaction: solution for external fragmentation — relocate processes to consolidate free space"
+    ],
+    "commonMistakes": [
+      "Confusing internal fragmentation (paging) with external fragmentation (segmentation/heap)",
+      "Not knowing compaction is the solution for external fragmentation",
+      "Assuming fixed-size allocation eliminates all fragmentation"
+    ],
+    "followUpQuestions": [
+      "What is compaction and how does it solve external fragmentation?",
+      "Why does paging avoid external fragmentation but not internal fragmentation?",
+      "Can external fragmentation occur in a paged memory system?"
+    ],
+    "realWorldExample": "A heap allocator managing many small and large object allocations over time can suffer external fragmentation, where free memory exists but no contiguous block is large enough for a new allocation.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish internal and external fragmentation with concrete examples of when each occurs.",
+    "tags": ["Fragmentation", "Memory Management", "Operating Systems", "Interview"],
+    "relatedTopics": ["Paging", "Segmentation", "Memory Allocation"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-018",
+    "category": "Operating Systems",
+    "topic": "Spinlock vs Mutex",
+    "difficulty": "Hard",
+    "question": "What is the difference between Spinlock and Mutex?",
+    "shortAnswer": "Spinlock: thread busy-waits (loops checking the lock) — wastes CPU but avoids context-switch overhead. Mutex: thread is put to sleep and woken later — saves CPU but has context-switch overhead.",
+    "detailedAnswer": "A spinlock continuously polls the lock in a tight loop until it becomes available, wasting CPU cycles while waiting but avoiding the overhead of a context switch. Spinlocks are efficient only when the expected wait time is very short, shorter than the cost of a context switch, and are commonly used inside OS kernels for very brief critical sections, especially on multiprocessor systems where the lock holder is actively running on another core.\n\nA mutex, when it can't acquire the lock, puts the calling thread to sleep, removed from the CPU run queue, and wakes it via an OS notification once the lock is released, which is better for longer wait times.",
+    "keyPoints": [
+      "Spinlock: good for very short critical sections on multiprocessor systems",
+      "Mutex: good for longer waits — avoids wasting CPU cycles busy-waiting",
+      "Spinlocks are rarely appropriate in user-space application code — mostly a kernel-level tool"
+    ],
+    "commonMistakes": [
+      "Using a spinlock for long critical sections, wasting significant CPU time",
+      "Using spinlocks in user-space application code where mutexes are more appropriate",
+      "Not knowing spinlocks are most beneficial on multiprocessor systems"
+    ],
+    "followUpQuestions": [
+      "Why are spinlocks mostly used in kernel-level code rather than user-space?",
+      "When would a spinlock outperform a mutex?",
+      "What happens if a spinlock is used on a single-core system?"
+    ],
+    "realWorldExample": "The Linux kernel uses spinlocks for very short critical sections, such as updating a small shared data structure, to avoid the overhead of a full context switch.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the busy-wait vs sleep trade-off and identify appropriate use cases for each.",
+    "tags": ["Spinlock", "Mutex", "Synchronization", "Interview"],
+    "relatedTopics": ["Critical Section", "Context Switching", "Kernel Programming"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-019",
+    "category": "Operating Systems",
+    "topic": "Demand Paging",
+    "difficulty": "Medium",
+    "question": "What is Demand Paging? How does it improve memory efficiency?",
+    "shortAnswer": "Demand Paging loads a page into memory ONLY when it's actually accessed (referenced), rather than loading the entire process into RAM upfront.",
+    "detailedAnswer": "Instead of loading a process's entire memory footprint into RAM at startup, which wastes memory on code or data that may never be used, like error-handling paths, demand paging starts a process with none or very few pages loaded, and pages are brought in from disk one at a time as they're actually referenced, triggering a page fault the first time each page is touched.\n\nThis dramatically improves memory efficiency, since only actively-used pages consume RAM, and reduces startup time, since there's no need to wait for the entire program to load before execution begins. The trade-off is the initial page fault overhead for each newly-touched page.",
+    "keyPoints": [
+      "Lazy loading of pages — only what's actually used consumes RAM",
+      "Faster process startup: doesn't wait to load the entire executable",
+      "Pure demand paging: a process starts with ZERO pages loaded, all faulted in on first access"
+    ],
+    "commonMistakes": [
+      "Assuming a process loads all its pages into RAM at startup",
+      "Not accounting for the initial page fault overhead for each newly-touched page",
+      "Confusing demand paging with prefetching strategies"
+    ],
+    "followUpQuestions": [
+      "What is 'pure' demand paging?",
+      "How does demand paging reduce process startup time?",
+      "What is the trade-off of demand paging in terms of page fault overhead?"
+    ],
+    "realWorldExample": "A large application with many rarely-used features, such as an image editor's advanced filters, only loads the code pages for features actually used during a session thanks to demand paging.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the lazy-loading mechanism and articulate the trade-off between startup speed and per-page fault overhead.",
+    "tags": ["Demand Paging", "Virtual Memory", "Operating Systems", "Interview"],
+    "relatedTopics": ["Virtual Memory", "Page Fault", "Paging"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-020",
+    "category": "Operating Systems",
+    "topic": "Monolithic Kernel vs Microkernel",
+    "difficulty": "Hard",
+    "question": "What is the difference between a Monolithic Kernel and a Microkernel?",
+    "shortAnswer": "Monolithic Kernel: all OS services (file system, device drivers, networking) run in kernel space as one large program. Microkernel: only essential services run in kernel space; the rest run as user-space processes.",
+    "detailedAnswer": "A monolithic kernel, such as Linux or traditional Unix, bundles device drivers, file systems, and networking directly into the kernel, making it fast since everything runs in privileged mode with direct function calls and no message-passing overhead, but a bug in any driver can crash the entire OS since it all shares kernel-space memory.\n\nA microkernel, such as Minix or QNX, keeps the kernel minimal, handling only essential things like basic IPC, scheduling, and memory management, while device drivers and file systems run as separate user-space processes communicating via message passing. This improves stability and security since a crashing driver doesn't take down the whole system, at the cost of performance overhead from message-passing between components.",
+    "keyPoints": [
+      "Monolithic: faster (direct calls), but a driver bug can crash the entire system",
+      "Microkernel: more stable/secure (isolated components), but message-passing adds overhead",
+      "Hybrid kernel (Windows NT, macOS XNU): a practical middle ground combining both approaches"
+    ],
+    "commonMistakes": [
+      "Assuming microkernels are always superior due to better stability, ignoring performance overhead",
+      "Not knowing hybrid kernels exist as a practical middle ground",
+      "Confusing monolithic kernel's speed advantage with inherent instability"
+    ],
+    "followUpQuestions": [
+      "What is a hybrid kernel and how does it combine both approaches?",
+      "Why does a microkernel offer better stability despite lower performance?",
+      "What real-world operating systems use monolithic vs microkernel designs?"
+    ],
+    "realWorldExample": "Linux uses a monolithic kernel design for performance, while QNX, used in some embedded and automotive systems, uses a microkernel for reliability.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to weigh performance against stability trade-offs and name real-world examples of each kernel design.",
+    "tags": ["Monolithic Kernel", "Microkernel", "Operating Systems", "Interview"],
+    "relatedTopics": ["Kernel Architecture", "IPC", "Hybrid Kernel"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-021",
+    "category": "Operating Systems",
+    "topic": "Race Condition",
+    "difficulty": "Medium",
+    "question": "What is a Race Condition? Give a practical example.",
+    "shortAnswer": "A race condition occurs when the correctness of a program depends on the unpredictable timing/interleaving of concurrent operations on shared data.",
+    "detailedAnswer": "Consider two threads both executing balance = balance + 100 on a shared bank account variable. This operation is not atomic; it involves reading the current balance, adding 100, then writing back.\n\nIf both threads read the balance simultaneously, say both read 500, each computes 600 and writes it back, so the final balance is 600 instead of the correct 700, with one +100 update lost. This is a classic race condition, solved by wrapping the read-modify-write sequence in a mutex or lock, ensuring only one thread executes it at a time, or by using atomic operations provided by the hardware or language.",
+    "keyPoints": [
+      "Root cause: a non-atomic read-modify-write sequence on shared data",
+      "Fix: mutex/lock around the critical section, or use hardware-level atomic operations",
+      "Hard to debug: race conditions are timing-dependent and may not reproduce consistently"
+    ],
+    "commonMistakes": [
+      "Assuming simple operations like += are atomic by default",
+      "Not using a mutex or atomic operation to protect the read-modify-write sequence",
+      "Underestimating how difficult race conditions are to reproduce and debug"
+    ],
+    "followUpQuestions": [
+      "Why is balance = balance + 100 not atomic?",
+      "How would you fix this race condition using a mutex?",
+      "Why are race conditions hard to reproduce and debug?"
+    ],
+    "realWorldExample": "Two threads simultaneously updating a shared bank account balance without synchronization can lose one of the updates due to a race condition.",
+    "codeExample": {
+      "language": "Python",
+      "code": "import threading\n\nbalance = 500\nlock = threading.Lock()\n\ndef deposit(amount):\n    global balance\n    with lock:\n        balance += amount  # protected from race condition"
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the non-atomic read-modify-write root cause and describe mutex-based or atomic operation fixes.",
+    "tags": ["Race Condition", "Concurrency", "Operating Systems", "Interview"],
+    "relatedTopics": ["Critical Section", "Mutex", "Atomic Operations"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-022",
+    "category": "Operating Systems",
+    "topic": "Working Set Model",
+    "difficulty": "Hard",
+    "question": "What is the Working Set Model in memory management?",
+    "shortAnswer": "The Working Set Model tracks the set of pages a process has actively referenced within a recent time window — and ensures those pages remain resident in RAM to avoid thrashing.",
+    "detailedAnswer": "The Working Set W(t, Δ) is defined as the set of pages referenced by a process in the time interval [t-Δ, t], where Δ is the working set window size. The core idea, based on the Principle of Locality, is that a process's memory access pattern isn't uniformly random; it clusters around a subset of pages at any given time.\n\nThe OS uses this to decide how many frames to allocate to each process: if a process's working set doesn't fit in its allocated frames, it will fault frequently, approaching thrashing, so the OS can then either give it more frames or suspend it entirely if system-wide memory is insufficient for everyone's working sets.",
+    "keyPoints": [
+      "Based on the Principle of Locality — programs access a clustered subset of memory at any time",
+      "Window size Δ: too small misses relevant pages, too large includes stale/unnecessary pages",
+      "Directly informs decisions to prevent thrashing at the system level"
+    ],
+    "commonMistakes": [
+      "Not connecting the working set model to the Principle of Locality",
+      "Choosing an inappropriate window size Δ that either misses or over-includes pages",
+      "Confusing the working set model with a specific page replacement algorithm"
+    ],
+    "followUpQuestions": [
+      "What is the Principle of Locality and why does it matter here?",
+      "How does the window size Δ affect the working set model's accuracy?",
+      "How does the working set model help prevent thrashing?"
+    ],
+    "realWorldExample": "An OS monitoring a process's working set may decide to suspend it temporarily if system-wide memory can't accommodate all active processes' working sets simultaneously.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the Principle of Locality connection and how the working set informs frame allocation decisions.",
+    "tags": ["Working Set Model", "Memory Management", "Operating Systems", "Interview"],
+    "relatedTopics": ["Thrashing", "Principle of Locality", "Page Replacement"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-023",
+    "category": "Operating Systems",
+    "topic": "Logical vs Physical Address",
+    "difficulty": "Medium",
+    "question": "What is the difference between Logical Address and Physical Address?",
+    "shortAnswer": "Logical (Virtual) Address is generated by the CPU during program execution, referring to a location in the process's virtual address space. Physical Address is the actual location in RAM, after translation by the MMU.",
+    "detailedAnswer": "A program never directly accesses physical RAM; it operates entirely in terms of logical addresses within its own isolated virtual address space, unaware of where its data actually resides in physical memory.\n\nThe Memory Management Unit, a hardware component, translates each logical address into a physical address at runtime using the process's page table, where the logical address consists of a page number and offset, and the physical address consists of a frame number and the same offset. This translation layer enables memory protection, so processes can't accidentally or maliciously access each other's memory, and enables virtual memory features like paging and swapping to work transparently.",
+    "keyPoints": [
+      "Logical address: what the CPU/program \"sees\" — relative to the process's virtual space",
+      "Physical address: the actual RAM location, resolved by the MMU via the page table",
+      "This indirection enables process isolation, memory protection, and virtual memory"
+    ],
+    "commonMistakes": [
+      "Assuming a program directly accesses physical memory",
+      "Not knowing the MMU is the hardware component performing address translation",
+      "Confusing the offset component of an address with the page/frame number"
+    ],
+    "followUpQuestions": [
+      "What hardware component performs logical-to-physical address translation?",
+      "How does this translation enable memory protection between processes?",
+      "What are the components of a logical address (page number and offset)?"
+    ],
+    "realWorldExample": "Two processes can both use the same logical address, such as 0x1000, but the MMU translates each to a different physical RAM location, keeping them isolated.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to explain the role of the MMU in translation and how this indirection enables process isolation.",
+    "tags": ["Logical Address", "Physical Address", "MMU", "Operating Systems", "Interview"],
+    "relatedTopics": ["Virtual Memory", "Paging", "Memory Protection"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-024",
+    "category": "Operating Systems",
+    "topic": "Disk Scheduling",
+    "difficulty": "Medium",
+    "question": "What is Disk Scheduling? Explain FCFS, SSTF, and SCAN algorithms.",
+    "shortAnswer": "Disk Scheduling determines the order in which pending disk I/O requests are serviced, to minimize seek time (physical head movement).",
+    "detailedAnswer": "FCFS services requests in arrival order, which is simple and fair but can cause excessive head movement and poor performance if requests are scattered across the disk. SSTF always services the request closest to the current head position, minimizing average seek time but risking starvation for requests far from frequently-accessed regions.\n\nSCAN, also called the Elevator Algorithm, moves the disk head in one direction, servicing all requests along the way, then reverses direction at the end, avoiding starvation while remaining reasonably efficient. C-SCAN is a variant that only services requests in one direction, then jumps back to the start without servicing on the return trip, giving more uniform wait times.",
+    "keyPoints": [
+      "FCFS: fair but can cause excessive head movement (poor for scattered requests)",
+      "SSTF: minimizes seek time but risks starving far-away requests",
+      "SCAN/C-SCAN: bounds worst-case wait time, avoids starvation, used in real systems"
+    ],
+    "commonMistakes": [
+      "Assuming SSTF is always the best choice despite its starvation risk",
+      "Confusing SCAN with C-SCAN's return-trip behavior",
+      "Not knowing FCFS can cause excessive head movement with scattered requests"
+    ],
+    "followUpQuestions": [
+      "Why does SSTF risk starvation for some requests?",
+      "How does C-SCAN differ from SCAN?",
+      "Which disk scheduling algorithm would you choose for a real-time system and why?"
+    ],
+    "realWorldExample": "A database server handling many concurrent disk I/O requests uses a SCAN-based algorithm to minimize head movement while avoiding starvation of any single request.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to compare FCFS, SSTF, and SCAN in terms of fairness, efficiency, and starvation risk.",
+    "tags": ["Disk Scheduling", "SCAN", "SSTF", "Operating Systems", "Interview"],
+    "relatedTopics": ["I/O Management", "Starvation", "SCAN Algorithm"],
+    "references": ["Operating System Concepts - Silberschatz"]
+  },
+  {
+    "id": "os-025",
+    "category": "Operating Systems",
+    "topic": "Bootloader and Boot Process",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the Bootloader and the Boot Process?",
+    "shortAnswer": "The Bootloader is a small program that runs when a computer powers on, responsible for loading the operating system kernel into memory and transferring control to it.",
+    "detailedAnswer": "When a computer powers on, the firmware, either BIOS or UEFI, performs a Power-On Self-Test, then locates and executes the bootloader stored in a designated boot sector or EFI partition for UEFI systems.\n\nThe bootloader's job is to locate the OS kernel image on disk, load it into memory, set up minimal initial conditions like a basic memory map, and then jump execution to the kernel's entry point, at which point the kernel takes over and initializes the rest of the system, including device drivers, file systems, and the init process. GRUB for Linux and Windows Boot Manager are common real-world bootloaders; multi-boot systems let the bootloader present a menu to choose between multiple installed operating systems.",
+    "keyPoints": [
+      "BIOS/UEFI: firmware that runs first, performs hardware checks, then hands off to the bootloader",
+      "Bootloader (GRUB, Windows Boot Manager): loads the OS kernel into memory",
+      "After kernel loads: it initializes drivers, mounts the root filesystem, and starts the init/systemd process"
+    ],
+    "commonMistakes": [
+      "Confusing the firmware (BIOS/UEFI) with the bootloader itself",
+      "Not knowing the bootloader's role ends once the kernel takes over",
+      "Forgetting multi-boot systems rely on the bootloader to present an OS selection menu"
+    ],
+    "followUpQuestions": [
+      "What is the difference between BIOS and UEFI firmware?",
+      "What happens immediately after the kernel takes control from the bootloader?",
+      "How does a multi-boot system work at the bootloader level?"
+    ],
+    "realWorldExample": "A dual-boot computer running both Linux and Windows uses GRUB as the bootloader to let the user choose which OS to start at power-on.",
+    "codeExample": {
+      "language": "",
+      "code": ""
+    },
+    "interviewerExpectation": "The interviewer expects the candidate to describe the full boot sequence from firmware to bootloader to kernel initialization.",
+    "tags": ["Bootloader", "Boot Process", "Operating Systems", "Interview"],
+    "relatedTopics": ["BIOS/UEFI", "Kernel Initialization", "GRUB"],
+    "references": ["Operating System Concepts - Silberschatz"]
   }
 ];
