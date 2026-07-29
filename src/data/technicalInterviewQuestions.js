@@ -5775,5 +5775,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["Pattern Overuse", "YAGNI", "Design Patterns", "Interview"],
   "relatedTopics": ["Over-Engineering", "SOLID Principles", "Software Design"],
   "references": ["Agile Software Development - Robert C. Martin"]
+  },
+{
+  "id": "sysd-001",
+  "category": "System Design",
+  "topic": "Horizontal vs Vertical Scaling",
+  "difficulty": "Medium",
+  "question": "What is Horizontal vs Vertical Scaling? When should you use each?",
+  "shortAnswer": "Vertical: add more power (CPU/RAM) to a single machine. Horizontal: add more machines. Horizontal scales better for high availability and extreme load.",
+  "detailedAnswer": "Vertical scaling upgrades a single server, requiring no architectural changes, but has a hard ceiling defined by the biggest machine available and creates a single point of failure.\n\nHorizontal scaling distributes load across many machines, requiring a load balancer and typically a stateless application design, but is theoretically unlimited and fault-tolerant, since one server failing doesn't take down the whole system.",
+  "keyPoints": [
+    "Vertical: simple, no code changes, but expensive at the top end and risky (single point of failure)",
+    "Horizontal: requires load balancer + stateless design, but scales indefinitely and tolerates failures",
+    "Databases: vertical = bigger instance; horizontal = sharding + read replicas"
+  ],
+  "commonMistakes": [
+    "Assuming vertical scaling has no practical limits",
+    "Forgetting horizontal scaling requires stateless application design",
+    "Not considering cost differences between the two approaches"
+  ],
+  "followUpQuestions": [
+    "What makes an application 'stateless' for horizontal scaling?",
+    "How does sharding relate to horizontal database scaling?",
+    "What are the trade-offs of vertical scaling at the database layer?"
+  ],
+  "realWorldExample": "A web application behind a load balancer scales horizontally by adding more server instances during high-traffic events like sales.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain trade-offs and identify when each scaling approach is appropriate.",
+  "tags": ["Scaling", "System Design", "Interview"],
+  "relatedTopics": ["Load Balancing", "Sharding", "Stateless Design"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-002",
+  "category": "System Design",
+  "topic": "Load Balancing",
+  "difficulty": "Medium",
+  "question": "What is Load Balancing? Explain common algorithms.",
+  "shortAnswer": "A load balancer distributes incoming requests across multiple servers using algorithms like Round Robin, Least Connections, and IP Hash.",
+  "detailedAnswer": "Round Robin distributes requests sequentially, assuming equal server capacity, while Weighted Round Robin sends more traffic to more powerful servers. Least Connections routes to whichever server currently has the fewest active connections, which is better for requests of variable duration.\n\nIP Hash routes based on a hash of the client's IP, giving consistent session affinity without needing shared session storage. Health checks continuously monitor backend servers, automatically removing unresponsive ones from rotation.",
+  "keyPoints": [
+    "L4 load balancer: routes by IP/port only, fast, no content inspection",
+    "L7 load balancer: inspects HTTP content, can route /api vs /images differently",
+    "Sticky sessions: IP Hash or cookie-based routing keeps a client on the same server"
+  ],
+  "commonMistakes": [
+    "Assuming Round Robin works well with unequal server capacities",
+    "Confusing L4 and L7 load balancing capabilities",
+    "Forgetting health checks are needed to remove failed servers"
+  ],
+  "followUpQuestions": [
+    "What is the difference between L4 and L7 load balancing?",
+    "How does IP Hash provide session affinity?",
+    "What happens when a health check fails for a server?"
+  ],
+  "realWorldExample": "An e-commerce site uses an L7 load balancer like AWS ALB to route API requests and static asset requests to different backend services.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish L4 vs L7 balancing and describe trade-offs of common algorithms.",
+  "tags": ["Load Balancing", "System Design", "Interview"],
+  "relatedTopics": ["Horizontal Scaling", "Health Checks", "Session Affinity"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-003",
+  "category": "System Design",
+  "topic": "Caching",
+  "difficulty": "Medium",
+  "question": "What is Caching? Explain caching strategies and eviction policies.",
+  "shortAnswer": "Caching stores frequently accessed data in fast memory to reduce latency and backend load. Strategies: Cache-Aside, Write-Through, Write-Back. Eviction: LRU, LFU, TTL.",
+  "detailedAnswer": "Cache-Aside, or lazy loading, checks the cache first and on a miss loads from the database and populates the cache, making it the simplest and most common strategy. Write-Through writes to both cache and database simultaneously, always consistent but with slower writes.\n\nWrite-Back writes to cache only, flushing to the database asynchronously later, giving fast writes but risking data loss if the cache fails before flushing. LRU is the most common eviction policy, discarding the item that hasn't been accessed for the longest time when the cache is full.",
+  "keyPoints": [
+    "Cache hit ratio: 80%+ is generally considered meaningful for real benefit",
+    "Cache stampede: many simultaneous misses overwhelm the DB — mitigate with a mutex/lock on miss",
+    "Cache invalidation: widely considered one of the hardest problems in computer science"
+  ],
+  "commonMistakes": [
+    "Not handling cache invalidation properly, leading to stale data",
+    "Ignoring cache stampede risk during simultaneous cache misses",
+    "Confusing Write-Through with Write-Back consistency guarantees"
+  ],
+  "followUpQuestions": [
+    "What is a cache stampede and how do you prevent it?",
+    "How does Write-Back risk data loss compared to Write-Through?",
+    "What eviction policy would you choose for a frequently changing dataset?"
+  ],
+  "realWorldExample": "A news website uses Cache-Aside with Redis to serve frequently accessed articles quickly while falling back to the database on cache misses.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to compare caching strategies and eviction policies with awareness of consistency trade-offs.",
+  "tags": ["Caching", "System Design", "Interview"],
+  "relatedTopics": ["Redis", "Cache Invalidation", "LRU"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-004",
+  "category": "System Design",
+  "topic": "CAP Theorem",
+  "difficulty": "Hard",
+  "question": "What is the CAP Theorem?",
+  "shortAnswer": "A distributed system experiencing a network partition can guarantee only 2 of Consistency, Availability, Partition Tolerance — in practice, choose CP or AP.",
+  "detailedAnswer": "Since network partitions are unavoidable in any real distributed system, the practical trade-off is between Consistency, where every read returns the latest write or an error, and Availability, where every request gets a response, possibly with stale data.\n\nCP systems, such as MongoDB in strong-consistency mode, HBase, and Zookeeper, sacrifice availability during a partition to guarantee correctness, which is critical for banking or inventory. AP systems, such as Cassandra and DynamoDB, sacrifice strict consistency to remain available, which is acceptable for social feeds or shopping carts where slightly stale data is tolerable.",
+  "keyPoints": [
+    "CP: banking, inventory — correctness matters more than availability",
+    "AP: social feeds, shopping carts — availability matters more, eventual consistency is fine",
+    "PACELC extends CAP: even without a partition, there's a latency vs consistency tradeoff"
+  ],
+  "commonMistakes": [
+    "Assuming a system can achieve all three of CAP simultaneously",
+    "Not knowing partition tolerance is essentially mandatory in real distributed systems",
+    "Confusing CAP consistency with ACID consistency"
+  ],
+  "followUpQuestions": [
+    "What is the PACELC theorem and how does it extend CAP?",
+    "Can you give an example of a CP system and an AP system?",
+    "How does eventual consistency work in AP systems?"
+  ],
+  "realWorldExample": "Cassandra is designed as an AP system, prioritizing availability and partition tolerance over strict consistency, making it suitable for large-scale write-heavy workloads.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the practical CP vs AP trade-off and map real systems to each category.",
+  "tags": ["CAP Theorem", "Distributed Systems", "System Design", "Interview"],
+  "relatedTopics": ["PACELC", "Eventual Consistency", "Distributed Databases"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-005",
+  "category": "System Design",
+  "topic": "Database Sharding vs Replication",
+  "difficulty": "Hard",
+  "question": "What is Database Sharding? How does it differ from Replication?",
+  "shortAnswer": "Sharding partitions DIFFERENT data across multiple database instances. Replication copies the SAME data to multiple instances.",
+  "detailedAnswer": "Replication is used for read scaling and high availability, since every replica holds an identical copy of the data, allowing reads to be distributed and one replica to take over if another fails.\n\nSharding distributes write load by splitting data across shards, either range-based, such as user IDs 1-1M on shard 1, or hash-based, using hash(id) % num_shards. Consistent hashing minimizes data movement when shards are added or removed. Cross-shard joins and distributed transactions are the main challenges introduced by sharding.",
+  "keyPoints": [
+    "Range-based sharding: good for range queries, risks uneven \"hot spot\" load",
+    "Hash-based sharding: even distribution, but range queries must scan all shards",
+    "Consistent hashing: minimizes data reshuffling when scaling the shard count up or down"
+  ],
+  "commonMistakes": [
+    "Confusing sharding with replication purpose",
+    "Not accounting for hot spots in range-based sharding",
+    "Ignoring the cost of cross-shard joins in system design"
+  ],
+  "followUpQuestions": [
+    "What is consistent hashing and why is it used in sharding?",
+    "How would you handle a cross-shard join efficiently?",
+    "When would you combine sharding with replication?"
+  ],
+  "realWorldExample": "A large social media platform shards user data by user ID hash across multiple database clusters to distribute write load evenly.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish sharding from replication and discuss trade-offs of sharding strategies.",
+  "tags": ["Sharding", "Replication", "System Design", "Interview"],
+  "relatedTopics": ["Consistent Hashing", "Horizontal Scaling", "Distributed Databases"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-006",
+  "category": "System Design",
+  "topic": "URL Shortener Design",
+  "difficulty": "Hard",
+  "question": "How would you design a URL Shortener (like bit.ly)?",
+  "shortAnswer": "Generate a 7-character code (base62 of an auto-increment ID), store the mapping in a DB, and redirect on lookup — scale with a cache and DB sharding.",
+  "detailedAnswer": "Converting an auto-increment ID to base62 gives roughly 3.5 trillion unique combinations for a 7-character code. The mapping between short code and long URL is stored in a database.\n\nOn redirect, the system checks a Redis cache first, since hot URLs follow a Zipf distribution where a small fraction get most traffic, falling back to the database on a cache miss and then populating the cache. The database can be sharded by the first character of the short code as traffic grows. A 301 permanent redirect is used if browser caching to reduce server load is desired, or a 302 temporary redirect if accurate click analytics on every visit are needed.",
+  "keyPoints": [
+    "301: browser caches the redirect, fewer server hits but worse analytics",
+    "302: every click hits the server, better for accurate analytics",
+    "Custom aliases: check uniqueness against the DB before allowing a premium custom short code"
+  ],
+  "commonMistakes": [
+    "Choosing 301 redirects when accurate analytics are required",
+    "Not considering caching for read-heavy redirect traffic",
+    "Ignoring collision handling in short code generation"
+  ],
+  "followUpQuestions": [
+    "How would you handle expiring or deleting short URLs?",
+    "What is the difference between a 301 and 302 redirect in this context?",
+    "How would you shard the database for this system?"
+  ],
+  "realWorldExample": "Services like bit.ly and tinyurl.com use similar base62 encoding schemes to generate short, unique URLs.",
+  "codeExample": {
+    "language": "Python",
+    "code": "import string\n\nBASE62 = string.digits + string.ascii_letters\n\ndef encode(num):\n    if num == 0:\n        return BASE62[0]\n    chars = []\n    while num:\n        num, rem = divmod(num, 62)\n        chars.append(BASE62[rem])\n    return ''.join(reversed(chars))"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to cover encoding scheme, storage, caching, redirect type trade-offs, and scaling strategy.",
+  "tags": ["URL Shortener", "System Design", "Interview"],
+  "relatedTopics": ["Caching", "Sharding", "Base62 Encoding"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-007",
+  "category": "System Design",
+  "topic": "Rate Limiter Design",
+  "difficulty": "Hard",
+  "question": "How would you design a Rate Limiter for an API?",
+  "shortAnswer": "Track request counts per user/IP within a time window using algorithms like Token Bucket, Sliding Window, or Fixed Window — typically backed by Redis for distributed systems.",
+  "detailedAnswer": "Fixed Window Counter resets a counter every fixed interval, which is simple but allows a burst of 2x the limit right at the window boundary. Sliding Window Log tracks exact timestamps of every request, giving precise limiting but consuming more memory.\n\nToken Bucket adds tokens to a bucket at a steady rate, with each request consuming a token and requests rejected when the bucket is empty, allowing short bursts while enforcing a steady average rate. For a distributed system with multiple API server instances, the counter state must live in a shared store like Redis using INCR plus EXPIRE, rather than in-memory per server, or different servers would enforce inconsistent limits.",
+  "keyPoints": [
+    "Token Bucket: allows short bursts while maintaining a steady average rate — most commonly used",
+    "Fixed Window: simple but has a boundary-burst problem (2x limit possible at window edges)",
+    "Distributed rate limiting requires a shared store (Redis) — in-memory counters don't work across instances"
+  ],
+  "commonMistakes": [
+    "Using in-memory counters in a distributed multi-server setup",
+    "Not accounting for the boundary-burst problem in Fixed Window counters",
+    "Choosing Sliding Window Log without considering its memory cost at scale"
+  ],
+  "followUpQuestions": [
+    "Why does Fixed Window Counter allow a boundary burst?",
+    "How does Token Bucket allow short bursts while enforcing an average rate?",
+    "Why must distributed rate limiting use a shared store like Redis?"
+  ],
+  "realWorldExample": "API gateway uses Redis-backed Token Bucket rate limiting to allow short traffic bursts from a client while still enforcing an average request rate limit.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to compare rate limiting algorithms and explain why distributed systems need a shared state store.",
+  "tags": ["Rate Limiter", "System Design", "Interview"],
+  "relatedTopics": ["Redis", "Token Bucket", "API Design"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-008",
+  "category": "System Design",
+  "topic": "Notification System Design",
+  "difficulty": "Hard",
+  "question": "How would you design a Notification System (push, email, SMS)?",
+  "shortAnswer": "Use a message queue to decouple notification generation from delivery, with separate consumer workers per channel (email, SMS, push), supporting retries and user preferences.",
+  "detailedAnswer": "When an event triggers a notification, the triggering service publishes an event to a message queue rather than directly calling email or SMS APIs synchronously, decoupling the triggering service from delivery concerns and absorbing traffic spikes.\n\nSeparate consumer services subscribe to the queue for each channel type, each calling the appropriate third-party provider. A user preferences service checks opt-in or opt-out settings before sending. Failed deliveries go to a retry queue with exponential backoff, then a dead-letter queue after repeated failures for manual investigation.",
+  "keyPoints": [
+    "Message queue decouples the triggering event from actual delivery — improves resilience and scalability",
+    "Separate consumer per channel: independent scaling and failure isolation between email/SMS/push",
+    "Idempotency keys prevent duplicate notifications if a message is processed more than once"
+  ],
+  "commonMistakes": [
+    "Calling third-party notification APIs synchronously from the triggering service",
+    "Not implementing a dead-letter queue for repeatedly failing notifications",
+    "Forgetting idempotency keys, risking duplicate notifications on retry"
+  ],
+  "followUpQuestions": [
+    "Why is a dead-letter queue useful for failed notifications?",
+    "How would you prevent duplicate notifications on message reprocessing?",
+    "Why should each channel have its own consumer service?"
+  ],
+  "realWorldExample": "An e-commerce platform publishes an 'order shipped' event to a queue, and separate consumers send an email confirmation and a push notification independently.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain decoupling via message queue and describe retry/failure handling for reliability.",
+  "tags": ["Notification System", "Message Queue", "System Design", "Interview"],
+  "relatedTopics": ["Message Queue", "Idempotency", "Retry Strategies"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-009",
+  "category": "System Design",
+  "topic": "CDN (Content Delivery Network)",
+  "difficulty": "Medium",
+  "question": "What is a Content Delivery Network (CDN)? How does it improve performance?",
+  "shortAnswer": "A CDN is a geographically distributed network of edge servers caching content close to users, reducing latency and offloading the origin server.",
+  "detailedAnswer": "Instead of every request traveling to a single origin server, potentially across the world, a CDN caches content across globally distributed edge locations. DNS-based or Anycast routing directs each user to the nearest edge server, which serves cached content directly, dramatically cutting latency and taking most traffic load off the origin.\n\nCDNs also commonly provide DDoS protection, SSL termination at the edge, and on-the-fly image or video optimization.",
+  "keyPoints": [
+    "Reduces latency by physical proximity — content is served from a nearby edge server",
+    "Offloads the origin server — most requests never actually reach it",
+    "Cache-Control headers and TTLs determine how long edge servers keep content before re-fetching"
+  ],
+  "commonMistakes": [
+    "Assuming CDNs only cache static content, ignoring dynamic content acceleration features",
+    "Not configuring appropriate Cache-Control headers, causing stale or unnecessarily fresh content",
+    "Underestimating how much origin server load is reduced by CDN caching"
+  ],
+  "followUpQuestions": [
+    "How do Cache-Control headers determine CDN caching behavior?",
+    "What additional security benefits do CDNs commonly provide?",
+    "How does a CDN route a user to the nearest edge server?"
+  ],
+  "realWorldExample": "A global e-commerce site uses Cloudflare as a CDN to serve product images from edge locations near each user, significantly reducing page load times worldwide.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the latency-reduction and origin-offloading benefits of CDNs and name common real-world providers.",
+  "tags": ["CDN", "System Design", "Performance", "Interview"],
+  "relatedTopics": ["DNS", "Latency", "Caching"],
+  "references": ["Computer Networking - Kurose & Ross"]
+},
+{
+  "id": "sysd-010",
+  "category": "System Design",
+  "topic": "Chat/Messaging Application Design",
+  "difficulty": "Hard",
+  "question": "How would you design a Chat/Messaging Application (like WhatsApp)?",
+  "shortAnswer": "Use WebSocket connections for real-time delivery, a message queue for reliability, and a database optimized for fast writes with delivery/read receipt tracking.",
+  "detailedAnswer": "Each connected client maintains a persistent WebSocket connection to a chat server. When a message is sent, it's written to a durable message store first, ensuring no message loss even if delivery fails, then the system checks if the recipient is currently connected; if so, it pushes via WebSocket immediately, otherwise it queues for delivery on reconnect and optionally triggers a push notification.\n\nFor group chats, the message is fanned out to all connected members' WebSocket connections. Delivery and read receipts are tracked as separate status updates per message per recipient. At scale, WebSocket connections are distributed across many chat server instances, requiring a pub-sub layer to route messages to whichever server instance holds the recipient's connection.",
+  "keyPoints": [
+    "Persist message to durable storage FIRST, then attempt real-time delivery — never lose a message",
+    "Offline users: queue the message and/or trigger a push notification for later delivery",
+    "Multi-server WebSocket routing requires pub-sub (Redis/Kafka) to find which server holds a given user's connection"
+  ],
+  "commonMistakes": [
+    "Attempting real-time delivery before persisting the message, risking message loss",
+    "Not accounting for pub-sub routing needed across multiple chat server instances",
+    "Forgetting to handle offline users with queuing and push notifications"
+  ],
+  "followUpQuestions": [
+    "Why must the message be persisted before attempting delivery?",
+    "How does pub-sub help route messages across multiple chat server instances?",
+    "How would you handle fan-out for large group chats efficiently?"
+  ],
+  "realWorldExample": "WhatsApp persists every message to durable storage before attempting real-time WebSocket delivery, ensuring no message is lost even during connectivity issues.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to cover message durability, real-time delivery via WebSocket, offline handling, and multi-server routing.",
+  "tags": ["Chat Application", "WebSocket", "System Design", "Interview"],
+  "relatedTopics": ["Pub-Sub", "Message Queue", "Real-time Communication"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-011",
+  "category": "System Design",
+  "topic": "Kafka vs RabbitMQ",
+  "difficulty": "Medium",
+  "question": "What is a Message Queue? Compare Kafka and RabbitMQ.",
+  "shortAnswer": "A message queue decouples producers from consumers for async processing. Kafka: append-only log, high throughput, replay-capable. RabbitMQ: traditional queue, flexible routing, ack-based delivery.",
+  "detailedAnswer": "Kafka stores messages as an append-only, partitioned log retained for a configurable period, or forever; consumers track their own offset, so multiple consumer groups can independently replay the same messages, and Kafka is optimized for very high throughput event streaming.\n\nRabbitMQ is a traditional message broker where messages are typically consumed and removed from the queue, supports complex routing rules through direct, topic, and fanout exchanges, per-message acknowledgement with automatic redelivery on failure, and is generally simpler to reason about for classic task-queue use cases.",
+  "keyPoints": [
+    "Kafka: best for event streaming, replay capability, extremely high throughput",
+    "RabbitMQ: best for traditional task queues, complex routing, per-message reliability guarantees",
+    "Dead Letter Queue (both support): captures messages that fail processing after repeated retries"
+  ],
+  "commonMistakes": [
+    "Choosing RabbitMQ for high-throughput event streaming where Kafka would be better suited",
+    "Not knowing Kafka retains messages allowing replay, unlike traditional queues",
+    "Confusing Kafka's log-based model with RabbitMQ's queue-based model"
+  ],
+  "followUpQuestions": [
+    "Why would you choose Kafka over RabbitMQ for event streaming?",
+    "How does RabbitMQ's routing flexibility differ from Kafka's partitioned log model?",
+    "What is a Dead Letter Queue used for?"
+  ],
+  "realWorldExample": "A large e-commerce platform uses Kafka for high-throughput clickstream event processing, while using RabbitMQ for reliable background job processing like sending order confirmation emails.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain decoupling benefits and compare at least two message queue technologies.",
+  "tags": ["Message Queue", "Kafka", "RabbitMQ", "System Design", "Interview"],
+  "relatedTopics": ["Asynchronous Processing", "Event-Driven Architecture", "Fault Tolerance"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-012",
+  "category": "System Design",
+  "topic": "Distributed File Storage System",
+  "difficulty": "Hard",
+  "question": "How would you design a Distributed File Storage System (like Google Drive or Dropbox)?",
+  "shortAnswer": "Split large files into chunks, store chunks across multiple storage nodes with replication, and maintain metadata (file→chunk mapping) in a separate fast metadata service.",
+  "detailedAnswer": "Large files are split into fixed-size chunks rather than stored as single monolithic files, enabling parallel upload/download, efficient delta-sync where only changed chunks are re-uploaded, and deduplication where identical chunks across different files or users are stored only once.\n\nEach chunk is replicated across multiple storage nodes, typically 3 replicas, for durability and availability. A separate metadata service tracks which chunks belong to which file, their order, and their storage node locations, and must be highly available and fast, often using a distributed database. Client-side, a sync engine watches for local file changes and uploads only the changed chunks using content hashing to detect what actually changed.",
+  "keyPoints": [
+    "Chunking enables parallel transfer, delta-sync (upload only changed parts), and deduplication",
+    "Chunk replication (typically 3x) across different physical nodes/racks for durability",
+    "Metadata service is separate from actual chunk storage — must be fast and highly available"
+  ],
+  "commonMistakes": [
+    "Storing files monolithically instead of chunking, missing delta-sync and dedup benefits",
+    "Not separating the metadata service from chunk storage",
+    "Underestimating replication needs for chunk durability"
+  ],
+  "followUpQuestions": [
+    "How does content hashing enable deduplication?",
+    "Why is the metadata service kept separate from chunk storage?",
+    "How does chunking enable efficient delta-sync?"
+  ],
+  "realWorldExample": "Dropbox splits files into 4MB blocks, uploading only changed blocks when a file is modified, and deduplicating identical blocks across different users' files.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain chunking, replication, and the separation of metadata from actual storage.",
+  "tags": ["Distributed File Storage", "System Design", "Interview"],
+  "relatedTopics": ["Replication", "Deduplication", "Metadata Service"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-013",
+  "category": "System Design",
+  "topic": "Web Crawler Design",
+  "difficulty": "Hard",
+  "question": "How would you design a Web Crawler?",
+  "shortAnswer": "Use a URL frontier (priority queue) to manage URLs to visit, a distributed fetcher pool, and a deduplication mechanism to avoid re-crawling the same content.",
+  "detailedAnswer": "The URL Frontier maintains the queue of URLs pending a crawl, prioritized by factors like page importance, crawl freshness needs, and politeness, which rate-limits requests per domain to avoid overwhelming any single site.\n\nA pool of distributed fetcher workers pulls URLs from the frontier, downloads content, and extracts new links to feed back into the frontier. A deduplication layer, often using a Bloom filter for memory efficiency, prevents re-crawling URLs already visited or already queued. Politeness policies, such as respecting robots.txt and limiting request rate per domain, are essential to avoid being blocked.",
+  "keyPoints": [
+    "Bloom filter: memory-efficient probabilistic structure to check \"have I seen this URL before?\"",
+    "Politeness policy: rate-limit requests per domain, respect robots.txt to avoid overwhelming sites",
+    "URL frontier prioritization: balance between crawling new content and refreshing already-indexed pages"
+  ],
+  "commonMistakes": [
+    "Not implementing politeness policies, risking being blocked by crawled sites",
+    "Using exact-match deduplication instead of a memory-efficient Bloom filter at scale",
+    "Not prioritizing the URL frontier, treating all URLs with equal importance"
+  ],
+  "followUpQuestions": [
+    "How does a Bloom filter help with deduplication at scale?",
+    "Why is politeness important when designing a web crawler?",
+    "How would you prioritize URLs in the frontier?"
+  ],
+  "realWorldExample": "A search engine's crawler uses a Bloom filter to efficiently check whether a URL has already been visited before adding it to the crawl queue.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe the frontier, fetcher pool, deduplication, and politeness policies of a scalable web crawler.",
+  "tags": ["Web Crawler", "System Design", "Interview"],
+  "relatedTopics": ["Bloom Filter", "URL Frontier", "Distributed Systems"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-014",
+  "category": "System Design",
+  "topic": "Distributed Unique ID Generator",
+  "difficulty": "Hard",
+  "question": "How would you design a Distributed Unique ID Generator (like Twitter's Snowflake)?",
+  "shortAnswer": "Generate IDs combining a timestamp, a machine/worker ID, and a sequence number — ensuring uniqueness across distributed machines without a central coordinator.",
+  "detailedAnswer": "A centralized auto-increment counter becomes a bottleneck and single point of failure at scale. Twitter's Snowflake approach generates 64-bit IDs composed of a timestamp, representing milliseconds since a custom epoch to ensure rough time-ordering of IDs, a machine or worker ID identifying which server generated it to avoid collisions between machines, and a sequence number incrementing for multiple IDs generated within the same millisecond on the same machine.\n\nThis allows any server to generate globally unique, roughly time-sortable IDs completely independently, with no coordination or network calls needed between machines.",
+  "keyPoints": [
+    "Combines timestamp + machine ID + sequence number into one 64-bit value",
+    "No central coordinator needed — each machine generates IDs completely independently",
+    "IDs are roughly time-sortable (since timestamp is the most significant bits) — useful for pagination/ordering"
+  ],
+  "commonMistakes": [
+    "Using a centralized auto-increment counter, creating a bottleneck at scale",
+    "Not including a machine ID, risking collisions between different servers",
+    "Forgetting the sequence number, causing ID collisions within the same millisecond"
+  ],
+  "followUpQuestions": [
+    "Why does a centralized ID generator become a bottleneck at scale?",
+    "How does the timestamp component enable rough time-sortability?",
+    "What happens if two machines generate IDs at the exact same millisecond?"
+  ],
+  "realWorldExample": "Twitter's Snowflake ID generator produces unique, roughly time-sortable IDs for tweets across thousands of distributed servers without any central coordination.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the three components of a Snowflake-style ID and why they eliminate the need for central coordination.",
+  "tags": ["Distributed ID Generation", "Snowflake", "System Design", "Interview"],
+  "relatedTopics": ["Distributed Systems", "Sharding", "Sequence Generation"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-015",
+  "category": "System Design",
+  "topic": "Database Connection Pooling at Scale",
+  "difficulty": "Medium",
+  "question": "What is Database Connection Pooling and Why Does It Matter at Scale?",
+  "shortAnswer": "Connection pooling maintains a set of reusable, pre-established database connections instead of opening a new one for every request — critical for handling high request volume without overwhelming the database.",
+  "detailedAnswer": "Establishing a new database connection is expensive, involving a TCP handshake, authentication, and session setup; under high traffic, opening and closing per request would add significant latency and could exhaust the database's maximum connection limit.\n\nA connection pool maintains a fixed number of pre-established connections; application code borrows one, uses it, and returns it to the pool. Pool size must be carefully tuned: too small causes requests to queue and wait, while too large can overwhelm the database server's own resource limits since each connection consumes database-side memory.",
+  "keyPoints": [
+    "Reduces per-request connection setup overhead (TCP handshake + auth)",
+    "Pool size tuning is critical: too small = request queuing, too large = database resource exhaustion",
+    "PgBouncer, HikariCP: widely used connection pooling tools for PostgreSQL and Java applications respectively"
+  ],
+  "commonMistakes": [
+    "Setting the connection pool size too small, causing request queuing",
+    "Setting the pool size too large, exhausting database resources",
+    "Not using connection pooling at all under high-traffic conditions"
+  ],
+  "followUpQuestions": [
+    "How would you determine the right connection pool size?",
+    "What happens if a connection pool is exhausted?",
+    "What are some common connection pooling tools?"
+  ],
+  "realWorldExample": "A high-traffic web application uses PgBouncer in front of PostgreSQL to manage a fixed pool of database connections across many application server instances.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why connection setup is expensive and how pooling mitigates that cost, along with sizing trade-offs.",
+  "tags": ["Connection Pooling", "Database Performance", "System Design", "Interview"],
+  "relatedTopics": ["Database Performance", "Scalability", "PgBouncer"],
+  "references": ["Database System Concepts - Silberschatz"]
+},
+{
+  "id": "sysd-016",
+  "category": "System Design",
+  "topic": "Idempotency in Payment Systems",
+  "difficulty": "Hard",
+  "question": "How would you handle Idempotency in a Payment/Order Processing System?",
+  "shortAnswer": "Require clients to send a unique Idempotency-Key with each request; the server stores the result of the first request against that key and returns the cached result for any retry with the same key, without re-executing the operation.",
+  "detailedAnswer": "In distributed systems, network failures make it impossible for a client to always know whether a request actually succeeded server-side before the response was lost, and the natural retry instinct risks duplicate execution, such as double-charging a customer.\n\nThe client generates a unique key per logical operation, not per HTTP attempt, reused across retries of that same attempt. The server checks if it has already processed that key: if yes, it immediately returns the previously stored result without re-executing anything; if no, it processes the request normally and stores the result against that key before responding, making the endpoint safe to retry any number of times.",
+  "keyPoints": [
+    "Idempotency-Key: generated once per logical operation, reused across retries of that same attempt",
+    "Server must store (key → result) mapping, typically with an expiry (e.g., 24 hours) to bound storage growth",
+    "Stripe, PayPal, and most payment APIs mandate this pattern for their charge/payment endpoints"
+  ],
+  "commonMistakes": [
+    "Generating a new idempotency key per HTTP attempt instead of per logical operation",
+    "Not expiring stored idempotency key results, causing unbounded storage growth",
+    "Assuming retries are automatically safe without implementing this pattern"
+  ],
+  "followUpQuestions": [
+    "Why must the idempotency key be per logical operation, not per HTTP attempt?",
+    "How would you bound the storage growth of idempotency key mappings?",
+    "What happens if two requests with the same idempotency key arrive simultaneously?"
+  ],
+  "realWorldExample": "Stripe's payment API requires an idempotency key on charge requests so that network retries don't accidentally charge a customer multiple times.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why idempotency matters for retries and describe the Idempotency-Key pattern for non-idempotent operations.",
+  "tags": ["Idempotency", "Payment Systems", "System Design", "Interview"],
+  "relatedTopics": ["API Design", "Distributed Systems", "Retry Strategies"],
+  "references": ["Stripe API Documentation"]
+},
+{
+  "id": "sysd-017",
+  "category": "System Design",
+  "topic": "Database Replication Lag",
+  "difficulty": "Hard",
+  "question": "What is Database Replication Lag? How does it affect application design?",
+  "shortAnswer": "Replication lag is the delay between a write on the primary database and that write becoming visible on read replicas — it can cause a user to not see their own just-made change if reads go to a lagging replica.",
+  "detailedAnswer": "In a Primary-Replica setup with asynchronous replication, common for performance, writes commit immediately on the primary, and replicas apply the same changes shortly after, but 'shortly after' can range from milliseconds to seconds under heavy load.\n\nThis creates a classic UX bug: a user updates their profile, the write goes to the primary, but an immediately following GET request happens to be routed to a lagging replica, showing stale data as though the update failed. Solutions include a 'read-your-writes' consistency pattern, routing a user's own reads to the primary for a short window after they write, or routing all reads immediately after a write operation to the primary rather than a replica.",
+  "keyPoints": [
+    "Async replication trades consistency for write performance — lag is the direct cost of that tradeoff",
+    "\"Read-your-writes\" pattern: route the writing user's subsequent reads to the primary temporarily",
+    "Monitoring replication lag is a standard production metric — alerting if lag exceeds an acceptable threshold"
+  ],
+  "commonMistakes": [
+    "Routing all reads to replicas without considering read-your-writes UX issues",
+    "Not monitoring replication lag as a production metric",
+    "Assuming asynchronous replication guarantees immediate consistency"
+  ],
+  "followUpQuestions": [
+    "How would you implement 'read-your-writes' consistency?",
+    "What causes replication lag to increase under heavy load?",
+    "Why is monitoring replication lag important in production?"
+  ],
+  "realWorldExample": "A social media app routes a user's own profile reads to the primary database for a few seconds after they update their profile, avoiding the appearance of a failed update due to replication lag.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the cause of replication lag and describe the read-your-writes mitigation pattern.",
+  "tags": ["Replication Lag", "Database Replication", "System Design", "Interview"],
+  "relatedTopics": ["Eventual Consistency", "Replication", "Read-Your-Writes"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-018",
+  "category": "System Design",
+  "topic": "Trending Topics / Top K Design",
+  "difficulty": "Hard",
+  "question": "How would you design a \"Trending Topics\" or \"Top K\" feature (like Twitter Trends)?",
+  "shortAnswer": "Use a sliding time window with approximate counting structures (like Count-Min Sketch) combined with a min-heap to efficiently track the top K most frequent items without storing exact counts for everything.",
+  "detailedAnswer": "Tracking exact counts for every possible topic or hashtag over a rolling time window at massive scale would require enormous memory. A Count-Min Sketch is a probabilistic data structure that approximates frequency counts using a small, fixed amount of memory, trading a small amount of accuracy for massive memory savings compared to exact counting.\n\nCombined with a min-heap tracking the current top K candidates, the system can efficiently maintain an approximate top trending list in real time without needing to store or scan every single distinct topic ever mentioned. Time-windowing, only counting recent events and decaying older ones, keeps the trending concept relevant to what's happening now.",
+  "keyPoints": [
+    "Count-Min Sketch: probabilistic frequency counter, fixed memory, occasional overestimation but never underestimation",
+    "Min-heap of size K: efficiently maintains the current top K candidates as counts are updated",
+    "Sliding/decaying time window ensures \"trending\" reflects recent activity, not stale historical totals"
+  ],
+  "commonMistakes": [
+    "Trying to track exact counts for every topic at scale, exhausting memory",
+    "Not implementing a decaying time window, causing stale historical totals to dominate",
+    "Confusing Count-Min Sketch's overestimation bias with random error"
+  ],
+  "followUpQuestions": [
+    "Why does Count-Min Sketch only overestimate, never underestimate?",
+    "How does the min-heap efficiently maintain the top K candidates?",
+    "Why is a sliding time window important for a trending feature?"
+  ],
+  "realWorldExample": "Twitter's Trending Topics feature uses approximate counting structures to efficiently surface the most-mentioned hashtags in near real-time across millions of tweets.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why exact counting is infeasible at scale and describe the Count-Min Sketch plus min-heap approach.",
+  "tags": ["Trending Topics", "Count-Min Sketch", "System Design", "Interview"],
+  "relatedTopics": ["Min-Heap", "Approximate Algorithms", "Time-Windowing"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-019",
+  "category": "System Design",
+  "topic": "Consistent Hashing",
+  "difficulty": "Hard",
+  "question": "What is Consistent Hashing? Why is it used in distributed systems?",
+  "shortAnswer": "Consistent Hashing maps both data and servers onto a conceptual \"ring\" using a hash function, so that adding or removing a server only requires reassigning a small fraction of the data, rather than reshuffling everything.",
+  "detailedAnswer": "With naive hashing, using hash(key) mod num_servers, adding or removing even one server changes the modulus, causing almost all keys to be remapped to different servers, which is catastrophic for a cache or distributed database.\n\nConsistent hashing places both servers and data keys onto a fixed circular hash space, the ring, with each key assigned to the next server found by moving clockwise from the key's position. When a server is added or removed, only the keys that fall between it and its neighboring server on the ring need to move; everything else stays put. Virtual nodes, where each physical server is represented multiple times on the ring, improve load distribution evenness.",
+  "keyPoints": [
+    "Naive hashing (mod N): adding/removing a server remaps almost ALL keys — very disruptive",
+    "Consistent hashing: only keys near the changed server on the ring need to move — minimal disruption",
+    "Virtual nodes: each physical server appears multiple times on the ring, improving load balance evenness"
+  ],
+  "commonMistakes": [
+    "Using naive modulus-based hashing in a system where servers scale up or down",
+    "Not using virtual nodes, leading to uneven load distribution across physical servers",
+    "Assuming consistent hashing eliminates all data movement rather than just minimizing it"
+  ],
+  "followUpQuestions": [
+    "Why does naive hashing cause almost all keys to remap when a server is added?",
+    "What role do virtual nodes play in consistent hashing?",
+    "How does consistent hashing minimize data movement compared to naive hashing?"
+  ],
+  "realWorldExample": "Redis Cluster and Amazon DynamoDB both use consistent hashing to distribute keys across nodes while minimizing data movement when the cluster scales.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the ring concept and articulate why consistent hashing minimizes data movement compared to naive hashing.",
+  "tags": ["Consistent Hashing", "System Design", "Interview"],
+  "relatedTopics": ["Sharding", "Distributed Cache", "Load Balancing"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-020",
+  "category": "System Design",
+  "topic": "Distributed Lock Design",
+  "difficulty": "Hard",
+  "question": "How would you design a Distributed Lock (for coordinating access across multiple servers)?",
+  "shortAnswer": "Use a shared, external coordination service (Redis with SET NX + expiry, or Zookeeper/etcd) to ensure only one server/process can hold the lock at a time, with a timeout to prevent permanent deadlock if the lock holder crashes.",
+  "detailedAnswer": "In a single-machine application, a regular mutex works fine, but across multiple servers or processes, an in-memory lock is meaningless since each server has its own separate memory space. A distributed lock requires an external, shared source of truth.\n\nA common simple implementation uses Redis's SET lock_key unique_value NX EX 30, atomically setting the key only if it doesn't already exist with a 30-second expiry; if the process holding the lock crashes without releasing it, the expiry ensures automatic release rather than permanent deadlock. More robust implementations, such as the Redlock algorithm or using Zookeeper/etcd, address edge cases like clock drift and network partitions that a naive single-Redis-instance approach can be vulnerable to.",
+  "keyPoints": [
+    "Redis SET NX EX: atomic \"set if not exists\" with automatic expiry, a common simple implementation",
+    "Expiry/TTL is critical: prevents permanent deadlock if the lock-holding process crashes without releasing it",
+    "Zookeeper/etcd: provide stronger consistency guarantees than a single Redis instance, at higher operational complexity"
+  ],
+  "commonMistakes": [
+    "Implementing a distributed lock without an expiry, risking permanent deadlock on crash",
+    "Assuming a single Redis instance provides the same guarantees as Zookeeper/etcd",
+    "Not accounting for clock drift or network partition edge cases in a naive implementation"
+  ],
+  "followUpQuestions": [
+    "Why is a TTL/expiry critical for a distributed lock implementation?",
+    "What edge cases does the Redlock algorithm address that a naive Redis lock doesn't?",
+    "When would you choose Zookeeper/etcd over Redis for distributed locking?"
+  ],
+  "realWorldExample": "A distributed job scheduler uses a Redis-based lock to ensure only one server instance executes a scheduled cron job at a time, even when running across multiple replicas.",
+  "codeExample": {
+    "language": "",
+    "code": "SET lock:job1 \"worker-42\" NX EX 30"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the need for an external coordination service and the critical role of expiry in preventing deadlock.",
+  "tags": ["Distributed Lock", "Redis", "System Design", "Interview"],
+  "relatedTopics": ["Zookeeper", "Redlock", "Distributed Coordination"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-021",
+  "category": "System Design",
+  "topic": "Synchronous vs Asynchronous Communication",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Synchronous and Asynchronous Communication in Microservices?",
+  "shortAnswer": "Synchronous: caller waits for an immediate response (REST/gRPC calls). Asynchronous: caller sends a message/event and continues without waiting (message queues, event streaming).",
+  "detailedAnswer": "Synchronous communication is simple to reason about and gives immediate feedback, but creates tight temporal coupling; if the called service is slow or down, the calling service is blocked or fails too, and this can cascade across a chain of dependent services.\n\nAsynchronous communication decouples services in time; the caller publishes a message and moves on immediately, and the receiving service processes it whenever it's able to, improving resilience to downstream slowness or outages, at the cost of added complexity such as eventual consistency and harder debugging of a request's full lifecycle across services.",
+  "keyPoints": [
+    "Synchronous: simple, immediate results, but creates tight coupling and cascading failure risk",
+    "Asynchronous: resilient to downstream slowness, but adds complexity (eventual consistency, harder tracing)",
+    "Most real systems use BOTH strategically — sync for user-facing requests needing immediate results, async for background work"
+  ],
+  "commonMistakes": [
+    "Using synchronous calls for background tasks that don't require an immediate response",
+    "Not accounting for cascading failure risk in a chain of synchronous service calls",
+    "Assuming asynchronous communication eliminates all coupling rather than just temporal coupling"
+  ],
+  "followUpQuestions": [
+    "How can a slow downstream service cause a cascading failure in synchronous communication?",
+    "What complexity does asynchronous communication introduce for debugging?",
+    "How would you decide when to use synchronous versus asynchronous communication?"
+  ],
+  "realWorldExample": "An e-commerce checkout flow uses synchronous calls for immediate payment confirmation, while using asynchronous messaging for background tasks like sending order confirmation emails.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the coupling and resilience trade-offs and identify appropriate use cases for each communication style.",
+  "tags": ["Synchronous Communication", "Asynchronous Communication", "Microservices", "System Design", "Interview"],
+  "relatedTopics": ["Message Queue", "Microservices", "Circuit Breaker"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-022",
+  "category": "System Design",
+  "topic": "Autocomplete/Typeahead Design",
+  "difficulty": "Medium",
+  "question": "How would you design an Autocomplete/Typeahead Search Feature?",
+  "shortAnswer": "Use a Trie data structure (or a pre-built index) to store search terms, ranked by popularity, with results served from an in-memory cache for very low latency.",
+  "detailedAnswer": "A Trie efficiently stores all possible search terms or phrases, allowing fast prefix-based lookup, so typing a partial word quickly retrieves all terms starting with that prefix. Each node or terminal can store a popularity score based on historical search frequency, so results are returned ranked by relevance rather than just alphabetically.\n\nFor scale, the Trie or a similar precomputed index is often built offline or periodically from search log analysis and then loaded into a fast in-memory cache serving suggestions with very low latency, since autocomplete must feel instantaneous. Client-side debouncing, waiting briefly after the last keystroke before firing a request, reduces unnecessary backend load.",
+  "keyPoints": [
+    "Trie: efficient prefix-based lookup structure, natural fit for autocomplete's \"starts with X\" queries",
+    "Popularity ranking: results ordered by historical search frequency, not just alphabetically",
+    "Client-side debouncing: delays firing requests until the user briefly pauses typing, reducing backend load"
+  ],
+  "commonMistakes": [
+    "Not debouncing client-side requests, overwhelming the backend with excessive calls",
+    "Ranking results alphabetically instead of by popularity",
+    "Rebuilding the Trie synchronously on every search rather than periodically offline"
+  ],
+  "followUpQuestions": [
+    "How does client-side debouncing reduce backend load?",
+    "How would you keep the popularity ranking data fresh over time?",
+    "Why is a Trie a natural fit for prefix-based autocomplete queries?"
+  ],
+  "realWorldExample": "Google's search autocomplete uses a precomputed, popularity-ranked index built from search log analysis, served from an in-memory cache for near-instant suggestions.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the Trie's role, popularity ranking, and client-side optimizations like debouncing.",
+  "tags": ["Autocomplete", "Trie", "System Design", "Interview"],
+  "relatedTopics": ["Trie", "Caching", "Search Systems"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-023",
+  "category": "System Design",
+  "topic": "Consistency Trade-offs Per Feature",
+  "difficulty": "Hard",
+  "question": "What is Database Read Replica Lag Tolerance vs Strong Consistency Trade-off in System Design Interviews?",
+  "shortAnswer": "Deciding whether a feature can tolerate eventual consistency (reading from replicas, faster/cheaper) or requires strong consistency (reading from the primary, slower but always accurate) is a core system design decision made per use case, not system-wide.",
+  "detailedAnswer": "Not every read in a system needs the same consistency guarantee; a smart system design distinguishes between different types of reads based on their actual requirements. A user's own profile page after they just updated it might need strong consistency to avoid a confusing UX, while a public analytics dashboard showing aggregate statistics can comfortably tolerate several seconds of staleness from a replica.\n\nExplicitly identifying which parts of a system genuinely need strong consistency, routing only those specific reads to the primary, versus which can safely use replicas for better scalability, is a hallmark of mature system design thinking in interviews.",
+  "keyPoints": [
+    "Not every read needs the same consistency level — this decision should be made per-feature, not system-wide",
+    "Strong consistency reads: route to primary (slower, more resource-constrained, but always accurate)",
+    "Eventually-consistent reads: route to replicas (faster, more scalable, acceptable staleness for the use case)"
+  ],
+  "commonMistakes": [
+    "Applying the same consistency level to all reads system-wide instead of per-feature",
+    "Routing all reads to replicas without considering UX impact for user-specific data",
+    "Not distinguishing between features that genuinely need strong consistency and those that don't"
+  ],
+  "followUpQuestions": [
+    "Can you give an example of a feature that needs strong consistency versus one that doesn't?",
+    "How would you route reads differently based on their consistency requirements?",
+    "Why is this decision considered a hallmark of mature system design thinking?"
+  ],
+  "realWorldExample": "A social media platform routes a user's own post updates to the primary for strong consistency, while routing public follower-count displays to replicas since slight staleness is acceptable.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to demonstrate per-feature consistency reasoning rather than applying a single system-wide consistency policy.",
+  "tags": ["Consistency Trade-offs", "Read Replicas", "System Design", "Interview"],
+  "relatedTopics": ["Replication Lag", "Read-Your-Writes", "CAP Theorem"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "sysd-024",
+  "category": "System Design",
+  "topic": "Distributed Cache Design",
+  "difficulty": "Hard",
+  "question": "How would you design a Distributed Cache (like Redis Cluster) that Scales Beyond a Single Machine's Memory?",
+  "shortAnswer": "Partition (shard) the cache's keyspace across multiple nodes using consistent hashing, with each node handling only a subset of keys — clients or a proxy layer route requests to the correct node.",
+  "detailedAnswer": "A single cache server's memory eventually becomes a bottleneck. A distributed cache shards its keyspace across multiple nodes, typically using consistent hashing so that adding or removing nodes doesn't require reshuffling the entire keyspace.\n\nClients, or a proxy layer sitting in front of the cluster, compute which node owns a given key and route requests directly there. Replication can be added per-shard for fault tolerance, so if a node holding certain keys goes down, a replica can take over without losing that portion of the cache. Redis Cluster implements this natively, splitting the keyspace into 16,384 hash slots distributed across nodes.",
+  "keyPoints": [
+    "Consistent hashing shards the keyspace, minimizing data movement when nodes are added/removed",
+    "Per-shard replication provides fault tolerance without needing to replicate the ENTIRE dataset on every node",
+    "Redis Cluster: production example using 16,384 hash slots distributed and rebalanced across cluster nodes"
+  ],
+  "commonMistakes": [
+    "Replicating the entire dataset on every node instead of sharding for scalability",
+    "Not using consistent hashing, causing massive data movement when nodes change",
+    "Assuming a single node's memory can scale indefinitely without partitioning"
+  ],
+  "followUpQuestions": [
+    "How does Redis Cluster use hash slots for sharding?",
+    "Why is per-shard replication preferred over full dataset replication?",
+    "How does consistent hashing minimize disruption when scaling the cluster?"
+  ],
+  "realWorldExample": "Redis Cluster distributes its 16,384 hash slots across multiple nodes, allowing the cache to scale beyond a single machine's memory while minimizing data movement when nodes are added.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain keyspace sharding via consistent hashing and describe per-shard replication for fault tolerance.",
+  "tags": ["Distributed Cache", "Redis Cluster", "System Design", "Interview"],
+  "relatedTopics": ["Consistent Hashing", "Replication", "Caching"],
+  "references": ["Redis Documentation - redis.io"]
+},
+{
+  "id": "sysd-025",
+  "category": "System Design",
+  "topic": "Circuit Breaker Pattern",
+  "difficulty": "Hard",
+  "question": "What is the Circuit Breaker Pattern in Distributed Systems? Why is it necessary?",
+  "shortAnswer": "A Circuit Breaker monitors calls to a downstream service and \"trips open\" after repeated failures, immediately failing subsequent calls without even attempting them — preventing cascading failures and giving the struggling service time to recover.",
+  "detailedAnswer": "Without a circuit breaker, if a downstream service becomes slow or unresponsive, calling services keep sending requests, each waiting for a timeout, which can exhaust the calling service's own thread pool or connection resources, causing it to become unresponsive too, with the failure cascading upstream.\n\nA circuit breaker tracks the failure rate of calls to a specific downstream dependency; once failures exceed a threshold, it trips to an OPEN state, immediately failing or returning a fallback response for all further calls without actually attempting them, for a cooldown period. After the cooldown, the breaker moves to a HALF-OPEN state, cautiously allowing a few test requests through to check if the downstream service has recovered before fully closing the circuit again.",
+  "keyPoints": [
+    "CLOSED state: normal operation, requests pass through and failures are being tracked",
+    "OPEN state: after too many failures, all calls immediately fail/fallback without even attempting the real call",
+    "HALF-OPEN state: after a cooldown, cautiously tests a few requests to check if the dependency has recovered"
+  ],
+  "commonMistakes": [
+    "Not implementing a circuit breaker, allowing cascading failures across a service chain",
+    "Confusing the three states: CLOSED, OPEN, and HALF-OPEN",
+    "Not providing a fallback response when the circuit is OPEN"
+  ],
+  "followUpQuestions": [
+    "What happens during the HALF-OPEN state?",
+    "How does a circuit breaker prevent cascading failures?",
+    "What is a fallback response and why is it useful when the circuit is open?"
+  ],
+  "realWorldExample": "Netflix's Hystrix library implements the Circuit Breaker pattern to prevent a single slow microservice from cascading failures across their entire distributed system.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain all three circuit breaker states and describe how the pattern prevents cascading failures.",
+  "tags": ["Circuit Breaker", "System Design", "Microservices", "Interview"],
+  "relatedTopics": ["Cascading Failures", "Microservices", "Resilience Patterns"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
 }
 ];

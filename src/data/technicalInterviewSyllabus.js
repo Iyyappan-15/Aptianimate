@@ -98,8 +98,8 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     icon: '🏗️',
     color: '#ef4444', // Red
     order: 9,
-    questionCount: 0,
-    comingSoon: true
+    questionCount: 25,
+    comingSoon: false
   },
   {
     id: 'git',
