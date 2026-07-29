@@ -4950,5 +4950,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["Class", "Object", "OOP", "Interview"],
   "relatedTopics": ["Constructors", "Instance Variables", "OOP Basics"],
   "references": ["Head First Object-Oriented Analysis and Design"]
+  },
+{
+  "id": "dp-001",
+  "category": "Design Patterns",
+  "topic": "Gang of Four Pattern Categories",
+  "difficulty": "Easy",
+  "question": "What are Design Patterns? What are the three main categories (Gang of Four)?",
+  "shortAnswer": "Design Patterns are reusable, proven solutions to common software design problems. GoF categorizes them into Creational, Structural, and Behavioral.",
+  "detailedAnswer": "The Gang of Four book, published in 1994, formalized 23 classic design patterns into three categories. Creational patterns deal with object creation mechanisms, such as Singleton, Factory, Builder, Prototype, and Abstract Factory, trying to create objects in a way suited to the situation.\n\nStructural patterns deal with object composition and relationships, such as Adapter, Decorator, Facade, Composite, Proxy, and Bridge, forming larger structures from individual objects or classes. Behavioral patterns deal with communication and responsibility distribution between objects, such as Observer, Strategy, Command, State, Template Method, Iterator, and Chain of Responsibility.",
+  "keyPoints": [
+    "Creational: HOW objects are created (Singleton, Factory, Builder)",
+    "Structural: HOW objects/classes are composed into larger structures (Adapter, Facade, Proxy)",
+    "Behavioral: HOW objects communicate and distribute responsibility (Observer, Strategy, Command)"
+  ],
+  "commonMistakes": [
+    "Misclassifying a pattern into the wrong category",
+    "Not knowing the origin of the term 'Gang of Four'",
+    "Assuming all 23 GoF patterns are equally commonly used today"
+  ],
+  "followUpQuestions": [
+    "Can you name a pattern from each of the three categories?",
+    "Why are Creational patterns considered separate from Structural patterns?",
+    "Which category would the Observer pattern fall under and why?"
+  ],
+  "realWorldExample": "A framework like Spring uses Creational patterns (Factory, Singleton) for bean management, Structural patterns (Proxy) for AOP, and Behavioral patterns (Observer) for event handling.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly categorize patterns and explain the distinguishing focus of each category.",
+  "tags": ["Design Patterns", "Gang of Four", "Interview"],
+  "relatedTopics": ["Creational Patterns", "Structural Patterns", "Behavioral Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-002",
+  "category": "Design Patterns",
+  "topic": "Singleton Pattern Deep Dive",
+  "difficulty": "Medium",
+  "question": "What is the Singleton Pattern? What are its criticisms and modern alternatives?",
+  "shortAnswer": "Singleton ensures only one instance of a class exists globally with a single access point. Criticized for introducing global state and hurting testability.",
+  "detailedAnswer": "The implementation uses a private constructor plus a static method, typically getInstance(), that creates the instance only on first call and returns the same instance thereafter. In multithreaded environments, this requires careful handling, such as double-checked locking or eager initialization, to avoid race conditions creating multiple instances.\n\nCriticisms include introducing hidden global state, since any code anywhere can access or modify it, making unit testing difficult because a mock instance can't easily be substituted, and potentially hiding poor architecture, since excessive singletons often indicate insufficient dependency injection. A modern alternative is to use Dependency Injection to provide a single shared instance explicitly, rather than relying on a global static accessor.",
+  "keyPoints": [
+    "Double-checked locking: thread-safe lazy initialization without locking on every access",
+    "Testability problem: hard-coded getInstance() calls can't be swapped for a mock in tests",
+    "Modern preference: DI containers manage single-instance (\"singleton-scoped\") objects explicitly"
+  ],
+  "commonMistakes": [
+    "Implementing Singleton without thread safety considerations in multithreaded environments",
+    "Overusing Singleton where dependency injection would be more testable",
+    "Not recognizing hard-coded static access as a testability anti-pattern"
+  ],
+  "followUpQuestions": [
+    "How does double-checked locking work for thread-safe Singleton initialization?",
+    "Why do DI containers make Singleton usage more testable?",
+    "What are the risks of using Singleton for shared mutable state?"
+  ],
+  "realWorldExample": "A DI framework like Spring manages 'singleton-scoped' beans explicitly through configuration rather than relying on a static getInstance() method.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Singleton {\n    private static volatile Singleton instance;\n    private Singleton() {}\n    public static Singleton getInstance() {\n        if (instance == null) {\n            synchronized (Singleton.class) {\n                if (instance == null) instance = new Singleton();\n            }\n        }\n        return instance;\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain thread-safe implementation and articulate the testability criticisms with a modern DI-based alternative.",
+  "tags": ["Singleton", "Design Patterns", "Interview"],
+  "relatedTopics": ["Dependency Injection", "Thread Safety", "Global State"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-003",
+  "category": "Design Patterns",
+  "topic": "Factory Method vs Abstract Factory",
+  "difficulty": "Medium",
+  "question": "What is the Factory Method Pattern vs the Abstract Factory Pattern?",
+  "shortAnswer": "Factory Method creates ONE type of object, letting a subclass or parameter decide the concrete class. Abstract Factory creates FAMILIES of related objects that must be used together.",
+  "detailedAnswer": "Factory Method defines a single creation method, such as ShapeFactory.create(\"circle\") returning a Circle. Abstract Factory operates one level higher, providing an interface for creating multiple related products consistently, such as a UIFactory producing a matching Button, Checkbox, and ScrollBar.\n\nThis ensures all created components belong to the same visual theme, such as a 'Windows' style or 'Mac' style, preventing accidentally mixing incompatible components from different families. Abstract Factory typically uses multiple Factory Methods internally to produce each family member.",
+  "keyPoints": [
+    "Factory Method: ONE product type, decided by a parameter or overriding subclass",
+    "Abstract Factory: FAMILIES of related products, ensures consistency across them",
+    "Abstract Factory typically uses multiple Factory Methods internally to produce each family member"
+  ],
+  "commonMistakes": [
+    "Confusing Factory Method's single-product focus with Abstract Factory's family-of-products focus",
+    "Not recognizing Abstract Factory's role in preventing mismatched component families",
+    "Assuming the two patterns are interchangeable"
+  ],
+  "followUpQuestions": [
+    "How does Abstract Factory prevent mixing incompatible components?",
+    "Can you give an example where Factory Method would be sufficient without Abstract Factory?",
+    "How does Abstract Factory typically use Factory Methods internally?"
+  ],
+  "realWorldExample": "A cross-platform UI toolkit uses an Abstract Factory to ensure that when a 'Mac' theme is selected, all generated buttons, checkboxes, and scrollbars consistently use Mac-style rendering.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface UIFactory {\n    Button createButton();\n    Checkbox createCheckbox();\n}\n\nclass MacUIFactory implements UIFactory {\n    public Button createButton() { return new MacButton(); }\n    public Checkbox createCheckbox() { return new MacCheckbox(); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish single-product creation from family-of-products creation with a concrete UI or similar example.",
+  "tags": ["Factory Method", "Abstract Factory", "Design Patterns", "Interview"],
+  "relatedTopics": ["Creational Patterns", "Builder Pattern", "Prototype Pattern"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-004",
+  "category": "Design Patterns",
+  "topic": "Prototype Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Prototype Design Pattern?",
+  "shortAnswer": "The Prototype Pattern creates new objects by cloning an existing object (a \"prototype\") rather than instantiating a class from scratch.",
+  "detailedAnswer": "This is useful when object creation is expensive, such as involving a costly database query or complex computation to set up initial state. Instead of repeating that expensive setup for every new object, a fully-configured prototype is created once and then cloned whenever a new similar object is needed, only modifying the specific fields that differ.\n\nMost languages provide built-in support, such as Java's Cloneable interface, Python's copy.deepcopy(), and JavaScript's Object.create(). A critical detail is correctly distinguishing between shallow copy, where nested objects share the same mutable state, and deep copy, where nested objects are recursively copied and fully independent.",
+  "keyPoints": [
+    "Useful when object creation is expensive — clone a pre-configured template instead",
+    "Shallow clone: nested objects/references are shared between original and clone (risk of unintended mutation)",
+    "Deep clone: nested objects are fully duplicated — original and clone are completely independent"
+  ],
+  "commonMistakes": [
+    "Using a shallow clone when nested mutable state should be fully independent",
+    "Not knowing built-in language support like Java's Cloneable or Python's deepcopy",
+    "Confusing Prototype with Builder, which constructs rather than clones"
+  ],
+  "followUpQuestions": [
+    "What is the difference between shallow and deep cloning?",
+    "When is Prototype preferable to simply calling a constructor?",
+    "What built-in language mechanisms support the Prototype pattern?"
+  ],
+  "realWorldExample": "A game engine clones a pre-configured 'enemy template' object thousands of times to spawn enemies, rather than reconstructing each enemy's complex initial state from scratch.",
+  "codeExample": {
+    "language": "Python",
+    "code": "import copy\n\nclass Enemy:\n    def __init__(self, health, weapon):\n        self.health = health\n        self.weapon = weapon\n\ntemplate = Enemy(100, ['sword'])\nclone = copy.deepcopy(template)"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain when cloning is preferable to fresh instantiation and clarify shallow vs deep copy risks.",
+  "tags": ["Prototype Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Shallow Copy", "Deep Copy", "Creational Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-005",
+  "category": "Design Patterns",
+  "topic": "Facade Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Facade Design Pattern?",
+  "shortAnswer": "The Facade Pattern provides a simplified, unified interface to a complex subsystem of multiple classes, hiding the underlying complexity from the client.",
+  "detailedAnswer": "A complex system might involve coordinating many classes with intricate interdependencies, such as starting a computer involving the CPU, memory, hard drive, and BIOS all in a specific sequence. Instead of forcing every client to understand and correctly orchestrate all these subsystems directly, a Facade class exposes a single simple method that internally handles all the necessary coordination behind the scenes.\n\nThis reduces coupling between client code and the complex subsystem's internal details, and makes the subsystem easier to use correctly, though it doesn't prevent advanced users from bypassing the facade and accessing subsystem classes directly if needed.",
+  "keyPoints": [
+    "Simplifies client interaction with a complex multi-class subsystem via one unified interface",
+    "Reduces coupling: client depends only on the Facade, not on every internal subsystem class",
+    "Doesn't hide the subsystem entirely — advanced clients can still access underlying classes directly if needed"
+  ],
+  "commonMistakes": [
+    "Assuming the Facade completely hides the subsystem from all possible access",
+    "Confusing Facade's simplification purpose with Adapter's compatibility purpose",
+    "Overloading the Facade itself with business logic instead of just coordination"
+  ],
+  "followUpQuestions": [
+    "How does Facade reduce coupling between client and subsystem?",
+    "Can advanced users bypass a Facade to access subsystem classes directly?",
+    "How does Facade differ in intent from Adapter?"
+  ],
+  "realWorldExample": "A computer.start() method acts as a Facade, internally coordinating the CPU, memory, and BIOS in the correct sequence without the caller needing to understand each step.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class Computer {\n    private CPU cpu = new CPU();\n    private Memory memory = new Memory();\n    private HardDrive hardDrive = new HardDrive();\n\n    void start() {\n        cpu.freeze();\n        memory.load();\n        cpu.jump();\n        cpu.execute();\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how Facade simplifies interaction with a complex subsystem and reduces client coupling.",
+  "tags": ["Facade Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Adapter Pattern", "Structural Patterns", "Coupling"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-006",
+  "category": "Design Patterns",
+  "topic": "Proxy Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Proxy Design Pattern? Name its common variants.",
+  "shortAnswer": "The Proxy Pattern provides a substitute/placeholder object that controls access to another (real) object, adding a layer of control without the client knowing the difference.",
+  "detailedAnswer": "A proxy implements the same interface as the real object it represents, so clients interact with it exactly as if it were the real thing, but the proxy can add behavior before or after delegating to the real object.\n\nCommon variants include Virtual Proxy, which delays creation of an expensive object until it's actually needed for lazy loading; Protection Proxy, which adds access control checks before allowing the real operation; Remote Proxy, which represents an object living on a different machine or process, handling network communication transparently; and Caching Proxy, which stores results of expensive operations, returning cached results for repeated identical requests.",
+  "keyPoints": [
+    "Virtual Proxy: lazy-loads an expensive resource only when actually accessed",
+    "Protection Proxy: adds authorization checks before allowing access to the real object",
+    "Remote Proxy: hides network communication details, making a remote object appear local"
+  ],
+  "commonMistakes": [
+    "Confusing Proxy's access-control focus with Decorator's behavior-adding focus",
+    "Not knowing the distinct purposes of Virtual, Protection, and Remote proxy variants",
+    "Assuming a proxy always adds significant overhead when it can also improve performance via caching"
+  ],
+  "followUpQuestions": [
+    "How does a Virtual Proxy implement lazy loading?",
+    "What's the difference between Proxy and Decorator?",
+    "How does a Remote Proxy make a networked object appear local?"
+  ],
+  "realWorldExample": "An ORM's lazy-loaded relationship, such as a User.posts collection, uses a Virtual Proxy that only queries the database for posts when they're actually accessed.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface Image { void display(); }\n\nclass RealImage implements Image {\n    RealImage(String file) { loadFromDisk(file); } // expensive\n    public void display() { System.out.println(\"Displaying\"); }\n    private void loadFromDisk(String file) {}\n}\n\nclass ProxyImage implements Image {\n    private RealImage realImage;\n    private String file;\n    ProxyImage(String file) { this.file = file; }\n    public void display() {\n        if (realImage == null) realImage = new RealImage(file); // lazy load\n        realImage.display();\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the general proxy mechanism and describe at least two of the common variants with examples.",
+  "tags": ["Proxy Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Decorator Pattern", "Lazy Loading", "Structural Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-007",
+  "category": "Design Patterns",
+  "topic": "Command Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Command Design Pattern?",
+  "shortAnswer": "The Command Pattern encapsulates a request/action as an object, allowing you to parameterize clients with different requests, queue them, log them, and support undo operations.",
+  "detailedAnswer": "Instead of directly calling a method to perform an action, the Command pattern wraps the action and all information needed to perform it into a standalone Command object implementing a common interface, typically with an execute() method and often undo().\n\nThis decouples the object that invokes an operation, the invoker such as a button, from the object that actually knows how to perform it, the receiver. The invoker just calls command.execute() without needing to know any details about what actually happens. This enables queuing commands for batch execution, logging commands for auditing, and implementing undo/redo by storing a history of executed commands and reversing them.",
+  "keyPoints": [
+    "Decouples the invoker (what triggers an action) from the receiver (what actually performs it)",
+    "Enables undo/redo: store a history of Command objects, call undo() to reverse the most recent one",
+    "Real-world example: GUI button click handlers, transaction/macro recording systems"
+  ],
+  "commonMistakes": [
+    "Not decoupling the invoker from the receiver, tightly coupling button clicks to specific actions",
+    "Forgetting to implement undo() alongside execute() when undo/redo is required",
+    "Confusing Command with Strategy, which focuses on algorithm selection rather than action encapsulation"
+  ],
+  "followUpQuestions": [
+    "How does Command enable undo/redo functionality?",
+    "How does Command decouple the invoker from the receiver?",
+    "What's the difference between Command and Strategy?"
+  ],
+  "realWorldExample": "A text editor's undo feature stores a history of executed Command objects, calling undo() on the most recent one to reverse the last action.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface Command { void execute(); void undo(); }\n\nclass AddTextCommand implements Command {\n    private Document doc;\n    private String text;\n    public void execute() { doc.append(text); }\n    public void undo() { doc.removeLast(text.length()); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the invoker-receiver decoupling and describe how the pattern enables undo/redo.",
+  "tags": ["Command Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Undo/Redo", "Behavioral Patterns", "Strategy Pattern"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-008",
+  "category": "Design Patterns",
+  "topic": "State Pattern",
+  "difficulty": "Medium",
+  "question": "What is the State Design Pattern?",
+  "shortAnswer": "The State Pattern allows an object to change its behavior when its internal state changes, appearing as though the object changed its class — implemented by delegating behavior to separate State objects.",
+  "detailedAnswer": "Instead of using a large conditional checking the current state variable throughout many methods to determine behavior, which becomes unwieldy as states and transitions grow, the State pattern extracts each state into its own class implementing a common State interface.\n\nThe context object holds a reference to its current State object and delegates behavior-dependent method calls to it. Transitioning states means simply swapping which State object the context currently references. A classic example is a TrafficLight context delegating its next() behavior to whichever state object it currently holds, and each state object knowing which state to transition to next.",
+  "keyPoints": [
+    "Eliminates large state-checking conditionals scattered across many methods",
+    "Each state's behavior and transition logic is encapsulated in its own dedicated class",
+    "Classic example: a document workflow (Draft → Review → Approved → Published) states"
+  ],
+  "commonMistakes": [
+    "Using large if-else chains to check state instead of extracting State classes",
+    "Confusing State pattern with Strategy pattern (structurally similar but different intent)",
+    "Not encapsulating transition logic within each state object"
+  ],
+  "followUpQuestions": [
+    "How does State pattern eliminate large conditional statements?",
+    "What is the key intent difference between State and Strategy?",
+    "How does a state object trigger its own transition to the next state?"
+  ],
+  "realWorldExample": "A document workflow system uses State pattern to transition a document through Draft, Review, Approved, and Published states, each with its own allowed actions.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface State { void next(TrafficLight light); }\n\nclass RedState implements State {\n    public void next(TrafficLight light) { light.setState(new GreenState()); }\n}\n\nclass TrafficLight {\n    private State state = new RedState();\n    void setState(State state) { this.state = state; }\n    void next() { state.next(this); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how state-specific behavior is encapsulated and describe how transitions occur.",
+  "tags": ["State Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Strategy Pattern", "Behavioral Patterns", "State Machines"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-009",
+  "category": "Design Patterns",
+  "topic": "Template Method Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Template Method Design Pattern?",
+  "shortAnswer": "Template Method defines the overall skeleton/algorithm structure in a base class, deferring specific steps to subclasses — the algorithm's shape stays fixed, but individual steps can vary.",
+  "detailedAnswer": "A base class defines a method, the template method, often marked final to prevent subclasses from changing the overall flow, that calls a fixed sequence of steps. Some steps are implemented directly in the base class as shared, common logic, while others are abstract methods that subclasses must implement, representing the varying, customizable parts.\n\nThis ensures the overall algorithm structure remains consistent across all subclasses while allowing specific steps to be customized. For example, a DataProcessor base class might define process() as readData, validateData, transformData, saveData, where readData and saveData are shared while validateData and transformData are abstract for subclasses like CSVProcessor and JSONProcessor to implement.",
+  "keyPoints": [
+    "The overall algorithm sequence is fixed in the base class (often marked final)",
+    "Subclasses override only specific \"hook\" steps, not the entire algorithm flow",
+    "Different from Strategy Pattern: Template Method uses inheritance; Strategy uses composition"
+  ],
+  "commonMistakes": [
+    "Confusing Template Method (inheritance-based) with Strategy (composition-based)",
+    "Not marking the template method final, allowing subclasses to override the overall flow",
+    "Implementing too many steps as abstract when they could be shared in the base class"
+  ],
+  "followUpQuestions": [
+    "How does Template Method differ from Strategy despite both varying behavior?",
+    "Why might the template method itself be marked final?",
+    "What are 'hook' methods in the context of Template Method?"
+  ],
+  "realWorldExample": "A data processing pipeline defines a fixed sequence of read, validate, transform, and save steps in a base class, while CSVProcessor and JSONProcessor subclasses implement only the format-specific validate and transform steps.",
+  "codeExample": {
+    "language": "Java",
+    "code": "abstract class DataProcessor {\n    final void process() {\n        readData();\n        validateData();\n        transformData();\n        saveData();\n    }\n    void readData() { /* shared */ }\n    void saveData() { /* shared */ }\n    abstract void validateData();\n    abstract void transformData();\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the fixed-skeleton concept and distinguish this inheritance-based pattern from the composition-based Strategy pattern.",
+  "tags": ["Template Method", "Design Patterns", "Interview"],
+  "relatedTopics": ["Strategy Pattern", "Inheritance", "Behavioral Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-010",
+  "category": "Design Patterns",
+  "topic": "Iterator Pattern",
+  "difficulty": "Easy",
+  "question": "What is the Iterator Design Pattern?",
+  "shortAnswer": "The Iterator Pattern provides a standard way to sequentially access elements of a collection without exposing its underlying internal representation (array, linked list, tree, etc.).",
+  "detailedAnswer": "Different collection types have completely different internal structures and traversal mechanics; without a standard iteration interface, client code would need to know the specific internal structure of whatever collection it's working with.\n\nThe Iterator pattern defines a common interface, typically hasNext() and next(), that any collection can implement, allowing client code to iterate through any collection type uniformly without caring how it's actually structured internally. Java's Iterator interface, Python's iterator protocol, and JavaScript's iterables are all direct implementations of this pattern baked into the language itself.",
+  "keyPoints": [
+    "Decouples traversal logic from the collection's internal structure — client code stays generic",
+    "Standard interface: typically hasNext() + next(), or a similar pull-based mechanism",
+    "Built directly into most modern languages: Python's iterator protocol, Java's Iterable/Iterator, JS's Symbol.iterator"
+  ],
+  "commonMistakes": [
+    "Exposing a collection's internal structure directly instead of using a standard iterator interface",
+    "Not knowing modern languages have this pattern built directly into their syntax",
+    "Assuming Iterator only applies to simple linear collections rather than trees or graphs"
+  ],
+  "followUpQuestions": [
+    "How is the Iterator pattern built into Python's for loop syntax?",
+    "Why does the Iterator pattern decouple traversal from internal structure?",
+    "Can the Iterator pattern be applied to non-linear structures like trees?"
+  ],
+  "realWorldExample": "Python's for item in my_list: loop uses the built-in iterator protocol, an implementation of the Iterator pattern, to traverse any iterable object uniformly.",
+  "codeExample": {
+    "language": "Python",
+    "code": "class Counter:\n    def __init__(self, limit):\n        self.limit = limit\n        self.current = 0\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.current >= self.limit:\n            raise StopIteration\n        self.current += 1\n        return self.current"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how the Iterator pattern decouples traversal logic and recognize its native support in modern languages.",
+  "tags": ["Iterator Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Collections", "Behavioral Patterns", "Traversal"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-011",
+  "category": "Design Patterns",
+  "topic": "Chain of Responsibility Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Chain of Responsibility Design Pattern?",
+  "shortAnswer": "Chain of Responsibility passes a request along a chain of potential handlers until one of them handles it (or the chain ends without handling), decoupling the sender from knowing exactly which handler will process it.",
+  "detailedAnswer": "Each handler in the chain holds a reference to the next handler. When a request arrives, each handler decides either to process it, optionally stopping the chain there, or to pass it along to the next handler in the chain.\n\nThis is extremely common in middleware architectures, where an HTTP request passes through a chain of middleware, such as authentication, logging, and rate limiting, before reaching the actual route handler, each deciding independently whether to handle, reject, or pass the request forward. This decouples the sender from needing to know the exact handler responsible, and new handlers can be inserted into the chain without modifying existing ones.",
+  "keyPoints": [
+    "Each handler decide independently: process the request, pass it forward, or both",
+    "Classic real-world example: Express.js/middleware chains, exception handling hierarchies",
+    "Decouples request sender from the specific handler ultimately responsible for processing it"
+  ],
+  "commonMistakes": [
+    "Hardcoding the specific handler responsible instead of allowing the chain to decide dynamically",
+    "Forgetting to pass the request forward when a handler doesn't fully process it",
+    "Confusing this pattern with simple sequential function calls without independent handler decisions"
+  ],
+  "followUpQuestions": [
+    "How does middleware in a web framework implement Chain of Responsibility?",
+    "What happens if no handler in the chain processes the request?",
+    "How does this pattern allow new handlers to be added without modifying existing ones?"
+  ],
+  "realWorldExample": "Express.js middleware chains, such as authentication → logging → rate limiting → route handler, are a real-world implementation of Chain of Responsibility.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function authMiddleware(req, next) {\n    if (!req.user) return res.status(401).send();\n    next();\n}\n\nfunction loggingMiddleware(req, next) {\n    console.log(req.path);\n    next();\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the handler-chain mechanism and identify middleware as a real-world example.",
+  "tags": ["Chain of Responsibility", "Design Patterns", "Interview"],
+  "relatedTopics": ["Middleware", "Behavioral Patterns", "Decoupling"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-012",
+  "category": "Design Patterns",
+  "topic": "Composite Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Composite Design Pattern?",
+  "shortAnswer": "The Composite Pattern lets you treat individual objects and compositions (groups) of objects uniformly through a common interface, typically to represent tree/hierarchical structures.",
+  "detailedAnswer": "This pattern is designed for part-whole hierarchies, such as a file system where a Folder can contain both individual Files and other Folders. Both File and Folder implement a common interface, such as getSize() or render(), so client code can call the same method on either a single file or an entire nested folder structure without special-case logic to distinguish leaf from composite.\n\nA Folder's getSize() implementation simply sums the sizes of all its children, recursively calling their own getSize() whether they're Files or nested Folders, making this recursive uniform treatment what makes tree-structured data elegant to work with using this pattern.",
+  "keyPoints": [
+    "Uniformly treats individual objects (leaves) and groups of objects (composites) via a shared interface",
+    "Ideal for tree/hierarchical structures — file systems, UI component trees, organizational charts",
+    "Enables simple recursive operations (like summing sizes) without special-casing leaf vs. composite nodes"
+  ],
+  "commonMistakes": [
+    "Special-casing leaf and composite nodes instead of treating them uniformly through the common interface",
+    "Not implementing recursive delegation correctly in the composite's methods",
+    "Confusing Composite with Decorator, which wraps a single object rather than modeling a tree"
+  ],
+  "followUpQuestions": [
+    "How does the Composite pattern avoid special-casing leaf vs composite nodes?",
+    "What real-world hierarchical structures benefit from the Composite pattern?",
+    "How does recursion play a role in Composite's implementation?"
+  ],
+  "realWorldExample": "A file system's Folder.getSize() method recursively sums the sizes of all contained Files and nested Folders using the Composite pattern.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface FileSystemItem { int getSize(); }\n\nclass File implements FileSystemItem {\n    private int size;\n    public int getSize() { return size; }\n}\n\nclass Folder implements FileSystemItem {\n    private List<FileSystemItem> children = new ArrayList<>();\n    public int getSize() {\n        return children.stream().mapToInt(FileSystemItem::getSize).sum();\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the uniform leaf/composite treatment and connect it to tree-structured data like file systems.",
+  "tags": ["Composite Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Tree Structures", "Structural Patterns", "Recursion"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-013",
+  "category": "Design Patterns",
+  "topic": "Bridge Pattern",
+  "difficulty": "Hard",
+  "question": "What is the Bridge Design Pattern?",
+  "shortAnswer": "The Bridge Pattern decouples an abstraction from its implementation so that the two can vary and evolve independently, avoiding a combinatorial explosion of subclasses.",
+  "detailedAnswer": "Consider a Shape hierarchy that also needs to support multiple rendering methods; a naive inheritance approach would require a subclass for every combination, which explodes combinatorially as more shapes or renderers are added.\n\nThe Bridge pattern separates these into two independent hierarchies: the Shape abstraction holds a reference to a Renderer implementation using composition rather than inheritance, and Circle delegates the actual drawing work to whatever Renderer it's given. This means adding a new Shape or a new Renderer only requires one new class, not a combinatorial multiplication of classes for every possible pairing.",
+  "keyPoints": [
+    "Solves the combinatorial explosion problem when two independent dimensions of variation exist",
+    "Uses composition (a reference to an implementation) instead of inheritance to connect the two hierarchies",
+    "Different from Adapter: Bridge is designed upfront for two dimensions; Adapter retrofits an existing incompatible interface"
+  ],
+  "commonMistakes": [
+    "Using inheritance to cover every combination instead of composition, causing subclass explosion",
+    "Confusing Bridge (designed upfront) with Adapter (retrofitted for compatibility)",
+    "Not separating the two independent dimensions cleanly"
+  ],
+  "followUpQuestions": [
+    "How does Bridge prevent combinatorial subclass explosion?",
+    "How is Bridge different from Adapter in terms of when it's applied?",
+    "Can you give an example with two independent dimensions of variation?"
+  ],
+  "realWorldExample": "A cross-platform GUI library uses Bridge to separate Window abstractions from platform-specific WindowImpl implementations, avoiding a subclass for every OS-and-widget combination.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface Renderer { void renderCircle(float radius); }\n\nabstract class Shape {\n    protected Renderer renderer;\n    Shape(Renderer renderer) { this.renderer = renderer; }\n    abstract void draw();\n}\n\nclass Circle extends Shape {\n    Circle(Renderer renderer) { super(renderer); }\n    void draw() { renderer.renderCircle(5.0f); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the two-hierarchy separation and how it prevents combinatorial subclass explosion.",
+  "tags": ["Bridge Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Adapter Pattern", "Structural Patterns", "Composition"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-014",
+  "category": "Design Patterns",
+  "topic": "Facade vs Adapter",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between the Facade Pattern and the Adapter Pattern?",
+  "shortAnswer": "Facade simplifies an interface to a complex subsystem (many classes → one simple interface). Adapter converts one specific incompatible interface into another expected interface (interface translation).",
+  "detailedAnswer": "Though both patterns provide a layer between the client and something else, their intent is different. Facade's purpose is simplification, reducing the complexity of interacting with a subsystem that has many classes and intricate coordination requirements, presenting one clean, simple interface.\n\nAdapter's purpose is compatibility and translation, taking an existing interface that doesn't match what a client expects and wrapping it so it does match, without changing the underlying class. A useful mental distinction: a Facade would be introduced even if there were no compatibility problem at all, purely to reduce complexity, whereas an Adapter is introduced specifically because of an interface mismatch that needs bridging.",
+  "keyPoints": [
+    "Facade: reduces complexity — simplifies interaction with MANY classes into one clean interface",
+    "Adapter: solves incompatibility — translates ONE mismatched interface into the expected one",
+    "Facade is introduced for simplicity even without a mismatch; Adapter exists specifically BECAUSE of a mismatch"
+  ],
+  "commonMistakes": [
+    "Confusing simplification (Facade) with interface translation (Adapter)",
+    "Assuming both patterns solve the same problem just with different names",
+    "Not recognizing Facade can be introduced without any interface mismatch"
+  ],
+  "followUpQuestions": [
+    "Would you use a Facade even if there were no interface incompatibility? Why?",
+    "How would you decide between Facade and Adapter for a given design problem?",
+    "Can a system use both Facade and Adapter together?"
+  ],
+  "realWorldExample": "A payment system uses an Adapter to translate a third-party library's mismatched interface, and separately uses a Facade to simplify the overall checkout process across multiple internal services.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly articulate the difference in intent: simplification versus compatibility translation.",
+  "tags": ["Facade Pattern", "Adapter Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Structural Patterns", "Coupling", "Legacy Integration"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-015",
+  "category": "Design Patterns",
+  "topic": "Flyweight Pattern",
+  "difficulty": "Hard",
+  "question": "What is the Flyweight Design Pattern?",
+  "shortAnswer": "The Flyweight Pattern minimizes memory usage by sharing common (intrinsic) data across many similar objects, storing only the unique (extrinsic) data separately per object instance.",
+  "detailedAnswer": "When an application needs to create a huge number of similar objects, such as rendering millions of individual character glyphs in a text editor or trees in a forest simulation, creating a fully independent object for each instance would consume excessive memory, especially if much of each object's data is actually identical across instances.\n\nThe Flyweight pattern separates data into intrinsic state, which is shared, immutable, and common across many instances, stored once in a shared Flyweight object, and extrinsic state, which is unique per instance and passed in from outside at the point of use rather than stored in each object.",
+  "keyPoints": [
+    "Intrinsic state: shared, immutable data stored ONCE and reused across many object instances",
+    "Extrinsic state: unique per-instance data, passed in externally rather than stored redundantly",
+    "Classic use case: text editors rendering characters, game engines rendering thousands of similar entities"
+  ],
+  "commonMistakes": [
+    "Storing extrinsic (per-instance) data inside the shared Flyweight object, defeating the memory savings",
+    "Not correctly identifying which data is truly shared (intrinsic) versus unique (extrinsic)",
+    "Overusing Flyweight for cases where memory savings aren't actually significant"
+  ],
+  "followUpQuestions": [
+    "How do you correctly identify intrinsic versus extrinsic state for a given use case?",
+    "What happens if extrinsic state is mistakenly stored inside the Flyweight object?",
+    "What are some real-world scenarios where Flyweight provides significant memory savings?"
+  ],
+  "realWorldExample": "A text editor stores one shared Flyweight object per character glyph, such as the letter 'A', reusing it for every occurrence on the page, while storing each occurrence's specific X,Y position externally.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class CharacterFlyweight {\n    private final char symbol; // intrinsic\n    CharacterFlyweight(char symbol) { this.symbol = symbol; }\n    void render(int x, int y) { /* uses extrinsic x, y passed in */ }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly distinguish intrinsic from extrinsic state and explain how this separation saves memory.",
+  "tags": ["Flyweight Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Memory Optimization", "Structural Patterns", "Object Pooling"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-016",
+  "category": "Design Patterns",
+  "topic": "Mediator Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Mediator Design Pattern?",
+  "shortAnswer": "The Mediator Pattern centralizes complex communication and control logic between a group of related objects into a single mediator object, so objects no longer communicate directly with each other.",
+  "detailedAnswer": "Without a mediator, if many objects need to interact with each other, each object would need direct references to every other object it communicates with, creating a tangled web of many-to-many dependencies that becomes very difficult to understand, modify, or reason about as the system grows.\n\nThe Mediator pattern introduces a central coordinator object; all individual objects, called colleagues, communicate only with the mediator, not directly with each other, and the mediator contains the logic for how their interactions should be orchestrated. This transforms a many-to-many dependency web into a simpler many-to-one relationship. A classic example is an air traffic control tower, where planes communicate through the tower rather than directly with each other.",
+  "keyPoints": [
+    "Transforms tangled many-to-many object dependencies into a simpler many-to-one (mediator) relationship",
+    "Colleague objects don't need direct references to each other — only to the shared mediator",
+    "Classic real-world example: chat room server (mediates messages between users, users don't message each other directly)"
+  ],
+  "commonMistakes": [
+    "Allowing colleague objects to still hold direct references to each other, defeating the pattern's purpose",
+    "Overloading the mediator with too much unrelated logic, turning it into a God Object",
+    "Not recognizing this pattern as a solution to the many-to-many dependency problem"
+  ],
+  "followUpQuestions": [
+    "How does Mediator transform many-to-many dependencies into many-to-one?",
+    "What risk does an overloaded Mediator introduce?",
+    "How is a chat room server an example of the Mediator pattern?"
+  ],
+  "realWorldExample": "A chat room server acts as a mediator, routing messages between users so that individual users never need direct references to each other.",
+  "codeExample": {
+    "language": "Java",
+    "code": "class ChatMediator {\n    void sendMessage(String message, User sender) {\n        for (User user : users) {\n            if (user != sender) user.receive(message);\n        }\n    }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how Mediator simplifies dependency structure and identify a real-world example.",
+  "tags": ["Mediator Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Behavioral Patterns", "Coupling", "Observer Pattern"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-017",
+  "category": "Design Patterns",
+  "topic": "Strategy vs State Pattern",
+  "difficulty": "Hard",
+  "question": "What is the Difference Between the Strategy Pattern and the State Pattern? (They look structurally similar)",
+  "shortAnswer": "Both use composition with interchangeable objects implementing a common interface, but Strategy is about choosing an ALGORITHM explicitly (client decides), while State is about an object's behavior changing automatically as its INTERNAL state transitions.",
+  "detailedAnswer": "Structurally, Strategy and State look nearly identical; both involve a context object holding a reference to an interface implementation that can be swapped. The key distinction is intent and who controls the swapping.\n\nWith Strategy, the client explicitly chooses and sets which strategy to use, and it typically doesn't change on its own during the object's lifetime, such as choosing which sorting algorithm to use being a one-time client decision. With State, the state objects themselves typically trigger transitions to the next state as part of their own logic, such as a TrafficLight in RedState internally deciding to transition itself to GreenState after a timer, without external client intervention.",
+  "keyPoints": [
+    "Strategy: client explicitly selects/swaps the algorithm — the client is in control",
+    "State: the state object itself typically triggers the transition — internal, autonomous control",
+    "Structurally nearly identical, but the INTENT and WHO drives the change differs significantly"
+  ],
+  "commonMistakes": [
+    "Assuming Strategy and State are the same pattern just with different names",
+    "Not identifying who controls the swap (client vs the object itself) as the key distinguishing factor",
+    "Confusing which pattern applies to a scenario based on structure alone rather than intent"
+  ],
+  "followUpQuestions": [
+    "Who typically triggers the swap in Strategy versus State?",
+    "Can you give an example where the same structure would be Strategy in one context and State in another?",
+    "Why do Strategy and State look structurally so similar despite different intents?"
+  ],
+  "realWorldExample": "Choosing a sorting Comparator is Strategy (client decides), while a TrafficLight automatically transitioning from Red to Green to Yellow is State (self-triggered).",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to articulate the intent-based distinction (who controls the swap) rather than just the structural similarity.",
+  "tags": ["Strategy Pattern", "State Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Behavioral Patterns", "Composition", "State Machines"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-018",
+  "category": "Design Patterns",
+  "topic": "Visitor Pattern",
+  "difficulty": "Hard",
+  "question": "What is the Visitor Design Pattern?",
+  "shortAnswer": "The Visitor Pattern lets you add new operations to a group of related classes WITHOUT modifying those classes, by separating the operation logic into a separate \"Visitor\" object.",
+  "detailedAnswer": "Consider a hierarchy of shape classes where you need to add a new operation, such as calculating area or exporting to XML; normally you'd add a new method to each class, but if you don't own the classes or want to avoid modifying them repeatedly, the Visitor pattern lets you define the operation externally.\n\nEach shape class implements a single accept(visitor) method that calls back the appropriate visit(this) method on the visitor, a technique called double dispatch. New operations are added by creating new Visitor classes without touching the existing shape classes. The tradeoff is that adding a new shape class requires updating every existing Visitor, so this pattern works best when the class hierarchy is stable but new operations are frequently added.",
+  "keyPoints": [
+    "Enables adding new operations without modifying the existing class hierarchy — good when classes are stable",
+    "Uses \"double dispatch\": accept(visitor) calls back visitor.visit(this) to resolve the correct overload",
+    "Tradeoff: adding a NEW element class requires updating every existing visitor implementation"
+  ],
+  "commonMistakes": [
+    "Using Visitor when the class hierarchy changes frequently, causing constant visitor updates",
+    "Not implementing double dispatch correctly, leading to incorrect method resolution",
+    "Confusing Visitor's operation-adding purpose with Strategy's algorithm-swapping purpose"
+  ],
+  "followUpQuestions": [
+    "What is double dispatch and why does Visitor need it?",
+    "What is the tradeoff of using Visitor when the class hierarchy is unstable?",
+    "How would you add a new operation to a class hierarchy using Visitor?"
+  ],
+  "realWorldExample": "A compiler's Abstract Syntax Tree uses the Visitor pattern to add new operations, like type checking or code generation, without modifying each AST node class.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface Visitor { void visit(Circle c); void visit(Square s); }\n\ninterface Shape { void accept(Visitor v); }\n\nclass Circle implements Shape {\n    public void accept(Visitor v) { v.visit(this); }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain double dispatch and the trade-off between stable class hierarchies and frequently added operations.",
+  "tags": ["Visitor Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Double Dispatch", "Behavioral Patterns", "Composite Pattern"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-019",
+  "category": "Design Patterns",
+  "topic": "God Object Anti-Pattern",
+  "difficulty": "Medium",
+  "question": "What is a \"God Object\" Anti-Pattern? Why is it problematic?",
+  "shortAnswer": "A God Object is a class that has taken on far too many responsibilities, knowing about and controlling too much of the system — the opposite of good, focused object-oriented design.",
+  "detailedAnswer": "A God Object typically starts small and grows over time as developers keep adding 'just one more thing' to an already-central class, rather than creating new, focused classes for new responsibilities. It severely violates the Single Responsibility Principle, becomes extremely difficult to understand, and is nearly impossible to test in isolation due to too many interdependent responsibilities.\n\nIt also creates a single point of failure and bottleneck for changes, since many unrelated features all touch the same massive class, causing frequent merge conflicts and unintended side effects between unrelated features. Refactoring away from a God Object typically involves identifying distinct responsibilities within it and extracting them into separate, focused classes.",
+  "keyPoints": [
+    "Violates Single Responsibility Principle severely — does far too many unrelated things",
+    "Symptoms: thousands of lines, dozens of unrelated methods, everyone on the team touches it constantly",
+    "Refactoring approach: identify distinct responsibilities and extract them into separate, focused classes"
+  ],
+  "commonMistakes": [
+    "Continuing to add responsibilities to an already-central class instead of extracting new classes",
+    "Not recognizing frequent merge conflicts on one class as a symptom of a God Object",
+    "Attempting to refactor a God Object all at once instead of incrementally extracting responsibilities"
+  ],
+  "followUpQuestions": [
+    "What are the symptoms that indicate a class has become a God Object?",
+    "How would you approach refactoring a God Object incrementally?",
+    "How does the Single Responsibility Principle relate to preventing God Objects?"
+  ],
+  "realWorldExample": "A legacy 'UserManager' class that handles authentication, email sending, logging, and database access is a classic God Object that becomes a bottleneck for the entire team.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the symptoms and consequences of a God Object and describe an incremental refactoring approach.",
+  "tags": ["God Object", "Anti-Pattern", "OOP", "Interview"],
+  "relatedTopics": ["Single Responsibility Principle", "Refactoring", "Cohesion and Coupling"],
+  "references": ["Agile Software Development - Robert C. Martin"]
+},
+{
+  "id": "dp-020",
+  "category": "Design Patterns",
+  "topic": "Pattern vs Anti-Pattern",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between a \"Pattern\" and an \"Anti-Pattern\"?",
+  "shortAnswer": "A Pattern is a proven, beneficial solution to a recurring design problem. An Anti-Pattern is a common but counterproductive \"solution\" that looks tempting but leads to worse outcomes.",
+  "detailedAnswer": "Design Patterns emerge from observing that experienced developers repeatedly arrive at similar, effective solutions to similar categories of problems, and are documented as reusable, generally beneficial templates.\n\nAnti-Patterns, conversely, document common mistakes and their negative consequences; they recur frequently across many codebases and developers, but represent poor practices that seem like reasonable solutions in the moment but lead to technical debt, maintenance difficulty, or bugs over time. Common anti-patterns include God Object, Spaghetti Code, Golden Hammer, and Premature Optimization.",
+  "keyPoints": [
+    "Patterns: proven, beneficial solutions worth reusing across similar problems",
+    "Anti-patterns: common but counterproductive \"solutions\" that create long-term problems",
+    "Recognizing anti-patterns in your own code is as valuable a skill as knowing the proper patterns"
+  ],
+  "commonMistakes": [
+    "Not recognizing anti-patterns as also being recurring, just harmful rather than beneficial",
+    "Assuming any recurring code structure is automatically a beneficial pattern",
+    "Overlooking common anti-patterns like Golden Hammer in one's own code"
+  ],
+  "followUpQuestions": [
+    "Can you name a few common anti-patterns besides God Object?",
+    "What is the 'Golden Hammer' anti-pattern?",
+    "Why is recognizing anti-patterns as valuable a skill as knowing design patterns?"
+  ],
+  "realWorldExample": "A team that always reaches for microservices regardless of project size, even for a small internal tool, exhibits the 'Golden Hammer' anti-pattern.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish patterns from anti-patterns by outcome, not just recurrence, and name common anti-patterns.",
+  "tags": ["Anti-Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["God Object", "Premature Optimization", "Software Design"],
+  "references": ["AntiPatterns - Brown, Malveau, McCormick, Mowbray"]
+},
+{
+  "id": "dp-021",
+  "category": "Design Patterns",
+  "topic": "Repository Pattern",
+  "difficulty": "Medium",
+  "question": "What is the Repository Design Pattern?",
+  "shortAnswer": "The Repository Pattern abstracts data access logic behind a collection-like interface, decoupling business logic from the specific details of how/where data is actually persisted (SQL database, API, in-memory, etc.).",
+  "detailedAnswer": "Instead of business logic code directly writing SQL queries or calling a specific ORM throughout the application, a Repository provides simple, domain-focused methods like findById(id), save(user), and findByEmail(email); the actual implementation detail, such as which database, ORM, or query syntax, is hidden entirely behind this interface.\n\nThis provides significant benefits: business logic becomes testable using an in-memory fake Repository implementation instead of a real database, and switching the underlying data source, such as migrating from MySQL to PostgreSQL, only requires changing the Repository's internal implementation, not any of the business logic that depends on it.",
+  "keyPoints": [
+    "Decouples business logic from specific data access technology (SQL, ORM, external API)",
+    "Enables easy testing: swap in an in-memory fake Repository instead of hitting a real database",
+    "Common in Domain-Driven Design (DDD) and Clean Architecture as a core structural pattern"
+  ],
+  "commonMistakes": [
+    "Writing SQL queries directly in business logic instead of behind a Repository abstraction",
+    "Not testing business logic with an in-memory fake Repository, relying on a real database instead",
+    "Leaking database-specific concepts (like query builders) through the Repository interface"
+  ],
+  "followUpQuestions": [
+    "How does the Repository pattern improve testability?",
+    "What would migrating a data source look like with and without a Repository?",
+    "How does Repository relate to Domain-Driven Design?"
+  ],
+  "realWorldExample": "A test suite injects an in-memory fake UserRepository implementation to test business logic without needing a real database connection.",
+  "codeExample": {
+    "language": "Java",
+    "code": "interface UserRepository {\n    User findById(int id);\n    void save(User user);\n}\n\nclass SqlUserRepository implements UserRepository {\n    public User findById(int id) { /* SQL query */ return null; }\n    public void save(User user) { /* SQL insert */ }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how Repository decouples business logic from data access technology and improves testability.",
+  "tags": ["Repository Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Domain-Driven Design", "Testability", "Data Access"],
+  "references": ["Patterns of Enterprise Application Architecture - Martin Fowler"]
+},
+{
+  "id": "dp-022",
+  "category": "Design Patterns",
+  "topic": "MVC Architectural Pattern",
+  "difficulty": "Medium",
+  "question": "What is the MVC (Model-View-Controller) Architectural Pattern?",
+  "shortAnswer": "MVC separates an application into three interconnected components: Model (data and business logic), View (UI presentation), and Controller (handles input, coordinates Model and View).",
+  "detailedAnswer": "The Model represents the application's core data and business rules, completely independent of how that data is displayed or how user input is handled; it has no knowledge of any View. The View is responsible purely for presentation, rendering the current state of the Model in a specific format, and should contain minimal to no business logic.\n\nThe Controller receives user input or requests, invokes appropriate operations on the Model to fulfill that request, and then selects or prepares the appropriate View to render the result. This separation allows the same Model to be displayed via multiple different Views without duplicating business logic, and allows the View's presentation to be changed without touching business rules.",
+  "keyPoints": [
+    "Model: data + business logic, has no knowledge of Views — the \"source of truth\"",
+    "View: pure presentation logic — renders the Model's current state, minimal business logic",
+    "Controller: receives input, orchestrates Model updates, selects the appropriate View to render"
+  ],
+  "commonMistakes": [
+    "Placing business logic inside the View instead of the Model",
+    "Allowing the Model to have direct knowledge of or dependency on the View",
+    "Overloading the Controller with business logic that belongs in the Model"
+  ],
+  "followUpQuestions": [
+    "Why should the Model have no knowledge of the View?",
+    "How does MVC allow the same Model to power multiple different Views?",
+    "What responsibilities should NOT live in the Controller?"
+  ],
+  "realWorldExample": "A web application's Model represents order data, the View renders it as an HTML page or JSON API response, and the Controller handles the incoming HTTP request and selects which View to render.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly define the responsibility of each MVC component and explain the benefit of separating them.",
+  "tags": ["MVC", "Architectural Pattern", "Design Patterns", "Interview"],
+  "relatedTopics": ["Observer Pattern", "Separation of Concerns", "Web Architecture"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-023",
+  "category": "Design Patterns",
+  "topic": "Structural vs Behavioral Patterns",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Structural and Behavioral Design Patterns (as a category comparison)?",
+  "shortAnswer": "Structural patterns focus on how classes/objects are COMPOSED into larger structures. Behavioral patterns focus on how objects COMMUNICATE and distribute responsibility for a task.",
+  "detailedAnswer": "Structural patterns are concerned with the static relationships and composition between classes, such as how do you combine individual pieces into a larger, functioning whole, exemplified by Composite building tree structures, Decorator wrapping objects to add behavior, Facade simplifying access to a subsystem, and Adapter making incompatible interfaces work together.\n\nBehavioral patterns are concerned with the dynamic interactions and responsibility distribution, such as how objects collaborate and communicate to accomplish a task at runtime, exemplified by Observer notifying dependents of changes, Strategy swapping algorithms, Command encapsulating requests, and Chain of Responsibility passing a request through handlers.",
+  "keyPoints": [
+    "Structural: static composition — \"how do these pieces fit together into a larger structure?\"",
+    "Behavioral: dynamic interaction — \"how do these objects communicate and collaborate at runtime?\"",
+    "Quickly categorizing a design problem this way helps narrow down which family of patterns might apply"
+  ],
+  "commonMistakes": [
+    "Misclassifying a pattern's category based on surface-level similarity rather than its actual focus",
+    "Not using the structural-vs-behavioral distinction to narrow down candidate patterns during design",
+    "Confusing static composition concerns with dynamic runtime interaction concerns"
+  ],
+  "followUpQuestions": [
+    "Can you classify Adapter and Observer into their correct categories and explain why?",
+    "How does this categorical distinction help during system design discussions?",
+    "What's an example of a pattern that has elements of both categories?"
+  ],
+  "realWorldExample": "When designing a notification system, recognizing the problem is about runtime communication (Behavioral) rather than static composition (Structural) points toward using Observer rather than Composite.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the static-vs-dynamic distinction and correctly classify example patterns into each category.",
+  "tags": ["Structural Patterns", "Behavioral Patterns", "Design Patterns", "Interview"],
+  "relatedTopics": ["Creational Patterns", "Gang of Four", "Design Patterns"],
+  "references": ["Design Patterns - Gang of Four"]
+},
+{
+  "id": "dp-024",
+  "category": "Design Patterns",
+  "topic": "Dependency Inversion in Design Patterns",
+  "difficulty": "Hard",
+  "question": "What is Dependency Inversion and How Does It Relate to Design Patterns Broadly?",
+  "shortAnswer": "Dependency Inversion (the \"D\" in SOLID) states that high-level modules should depend on abstractions, not concrete low-level implementations — and it's the underlying principle that makes MANY design patterns work.",
+  "detailedAnswer": "Many of the most important design patterns, including Strategy, Observer, Factory, and Dependency Injection itself, fundamentally rely on this principle. They all work by having a client or context depend on an interface or abstract type, rather than a specific concrete class, allowing the actual implementation to be swapped, extended, or mocked without modifying the dependent code.\n\nThis is why understanding Dependency Inversion deeply is arguably more valuable than memorizing individual pattern names; most patterns are really just different specific applications of this one foundational idea, programming to an interface rather than an implementation, applied to different structural problems like object creation, algorithm selection, notification, and request handling.",
+  "keyPoints": [
+    "Most design patterns are specific applications of the broader \"program to an interface\" principle",
+    "Understanding WHY a pattern uses an interface/abstraction is more valuable than memorizing its structure",
+    "This is why Dependency Inversion is often called the most foundational of the five SOLID principles"
+  ],
+  "commonMistakes": [
+    "Memorizing pattern structures without understanding the underlying interface-based principle",
+    "Not recognizing Dependency Inversion as the common thread across many different patterns",
+    "Confusing Dependency Inversion with Dependency Injection (DI is one technique implementing the principle)"
+  ],
+  "followUpQuestions": [
+    "How does Strategy pattern specifically implement Dependency Inversion?",
+    "What is the difference between Dependency Inversion (the principle) and Dependency Injection (a technique)?",
+    "Why is understanding the underlying principle more valuable than memorizing pattern structures?"
+  ],
+  "realWorldExample": "A payment system depending on a PaymentGateway interface rather than a specific StripePayment class demonstrates Dependency Inversion, which underlies the Strategy pattern used here.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to connect Dependency Inversion as the foundational principle underlying multiple design patterns, not just define it in isolation.",
+  "tags": ["Dependency Inversion", "SOLID", "Design Patterns", "Interview"],
+  "relatedTopics": ["Strategy Pattern", "Dependency Injection", "SOLID Principles"],
+  "references": ["Agile Software Development - Robert C. Martin"]
+},
+{
+  "id": "dp-025",
+  "category": "Design Patterns",
+  "topic": "Pattern Overuse",
+  "difficulty": "Medium",
+  "question": "When Should You AVOID Using a Design Pattern? What is \"Pattern Overuse\"?",
+  "shortAnswer": "Design patterns should solve an ACTUAL recurring problem you're facing — applying a pattern speculatively, for problems you don't currently have, adds unnecessary complexity without corresponding benefit.",
+  "detailedAnswer": "A common mistake, especially among developers newly learning design patterns, is over-engineering: applying elaborate patterns like Abstract Factory, Visitor, or full Strategy hierarchies to simple problems that don't actually need that flexibility, resulting in more files, more indirection, and more cognitive overhead than the problem genuinely warrants.\n\nThis violates the YAGNI principle, 'You Aren't Gonna Need It', adding abstraction or flexibility for hypothetical future requirements that may never materialize, at the real cost of making the current code harder to understand and navigate. The pragmatic guideline is to start with the simplest solution that solves the actual problem at hand, introducing a formal design pattern only when genuine recurring complexity or a concrete need for flexibility emerges.",
+  "keyPoints": [
+    "YAGNI principle: don't add flexibility/abstraction for hypothetical future needs that may never arise",
+    "Overuse symptom: simple problems solved with unnecessarily elaborate multi-class pattern structures",
+    "Pragmatic guideline: start simple, refactor TOWARD a pattern only when genuine recurring complexity emerges"
+  ],
+  "commonMistakes": [
+    "Applying elaborate patterns speculatively for hypothetical future requirements",
+    "Not recognizing when a simple function or class would suffice instead of a formal pattern",
+    "Ignoring the YAGNI principle when introducing unnecessary abstraction"
+  ],
+  "followUpQuestions": [
+    "What is the YAGNI principle and how does it relate to pattern overuse?",
+    "Can you give an example of a simple problem over-engineered with an unnecessary pattern?",
+    "How would you know when it's actually time to introduce a formal design pattern?"
+  ],
+  "realWorldExample": "A developer building a simple script to process one file format introduces a full Abstract Factory and Strategy hierarchy anticipating future formats that may never be added, adding unnecessary complexity.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to articulate the YAGNI principle and describe practical signs of over-engineering with design patterns.",
+  "tags": ["Pattern Overuse", "YAGNI", "Design Patterns", "Interview"],
+  "relatedTopics": ["Over-Engineering", "SOLID Principles", "Software Design"],
+  "references": ["Agile Software Development - Robert C. Martin"]
 }
 ];
