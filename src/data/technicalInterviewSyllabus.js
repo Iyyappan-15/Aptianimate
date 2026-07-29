@@ -109,8 +109,8 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     icon: '🐙',
     color: '#f97316', // Orange
     order: 10,
-    questionCount: 0,
-    comingSoon: true
+    questionCount: 25,
+    comingSoon: false
   },
   {
     id: 'linux',

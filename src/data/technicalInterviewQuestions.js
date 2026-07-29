@@ -6600,5 +6600,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["Circuit Breaker", "System Design", "Microservices", "Interview"],
   "relatedTopics": ["Cascading Failures", "Microservices", "Resilience Patterns"],
   "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "git-001",
+  "category": "Git & GitHub",
+  "topic": "Git Merge vs Rebase",
+  "difficulty": "Medium",
+  "question": "What is the difference between Git Merge and Git Rebase?",
+  "shortAnswer": "Merge creates a new commit combining two branch histories, preserving both. Rebase replays commits from one branch onto another, creating a linear history.",
+  "detailedAnswer": "git merge takes the divergent history of two branches and creates a new merge commit with two parents, preserving the exact true history of what happened, but can create a cluttered graph with many merge commits over time.\n\ngit rebase takes the commits from the current branch and reapplies them one by one on top of the target branch, producing a clean, linear history, but it rewrites commit hashes, which is dangerous on shared or public branches. The golden rule is to rebase local or private branches, and merge for public or shared integration.",
+  "keyPoints": [
+    "Merge: safe, preserves true history, non-destructive",
+    "Rebase: clean linear history, but rewrites commit SHAs",
+    "Never rebase a branch others have already pulled from — it will diverge and cause conflicts for them"
+  ],
+  "commonMistakes": [
+    "Rebasing a branch that others have already pulled from",
+    "Assuming rebase and merge produce identical commit histories",
+    "Forgetting rebase rewrites commit hashes, breaking shared references"
+  ],
+  "followUpQuestions": [
+    "Why is rebasing shared branches considered dangerous?",
+    "How do you resolve conflicts during a rebase?",
+    "What is an interactive rebase used for?"
+  ],
+  "realWorldExample": "A developer rebases their local feature branch onto main before opening a pull request to keep the commit history clean.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "# Merge\ngit checkout main\ngit merge feature-branch\n\n# Rebase\ngit checkout feature-branch\ngit rebase main"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the history difference between merge and rebase and know the golden rule about shared branches.",
+  "tags": ["Git", "Merge", "Rebase", "Version Control", "Interview"],
+  "relatedTopics": ["Git Fetch", "Merge Conflicts", "Version Control"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-002",
+  "category": "Git & GitHub",
+  "topic": "Git Fetch vs Pull",
+  "difficulty": "Easy",
+  "question": "What is the difference between Git Fetch and Git Pull?",
+  "shortAnswer": "Fetch downloads changes from remote without merging. Pull = fetch + merge (or rebase) into your current branch automatically.",
+  "detailedAnswer": "git fetch downloads all new commits, branches, and tags from the remote into local remote-tracking branches, such as origin/main, without touching the working branch, making it safe and allowing changes to be reviewed before integrating.\n\ngit pull is fetch followed automatically by merge, or rebase with git pull --rebase, directly updating the current branch, which can surprise you with unexpected merge conflicts if you weren't anticipating incoming changes.",
+  "keyPoints": [
+    "Fetch: safe, non-destructive, just downloads — nothing changes in your working branch",
+    "Pull: fetch + auto-merge — can introduce surprise conflicts",
+    "git pull --rebase: fetch + rebase instead of merge, keeping history linear"
+  ],
+  "commonMistakes": [
+    "Using git pull without reviewing incoming changes first",
+    "Not knowing pull is essentially fetch plus an automatic merge",
+    "Forgetting --rebase option changes pull's integration strategy"
+  ],
+  "followUpQuestions": [
+    "What does git pull --rebase do differently from a regular pull?",
+    "Why might fetching before pulling be a safer workflow?",
+    "How do remote-tracking branches work with fetch?"
+  ],
+  "realWorldExample": "A developer runs git fetch to review incoming teammate changes before deciding to merge or rebase them into their local branch.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git fetch origin\ngit diff main origin/main\ngit merge origin/main"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain that pull is fetch plus merge/rebase, and to describe the safety benefit of fetching first.",
+  "tags": ["Git", "Fetch", "Pull", "Version Control", "Interview"],
+  "relatedTopics": ["Git Merge", "Git Rebase", "Remote Repositories"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-003",
+  "category": "Git & GitHub",
+  "topic": "Merge Conflicts",
+  "difficulty": "Easy",
+  "question": "What is a Merge Conflict? How do you resolve it?",
+  "shortAnswer": "A merge conflict occurs when Git cannot automatically reconcile changes made to the same lines of a file on two branches — requires manual resolution.",
+  "detailedAnswer": "Git can auto-merge changes to different parts of a file, but if the same lines were changed differently on both branches, Git marks the file with conflict markers, such as <<<<<<< HEAD, =======, and >>>>>>> branch-name, and pauses the merge.\n\nThe developer manually edits the file to decide the correct final content, removes the conflict markers, then runs git add on the resolved file and git commit to complete the merge.",
+  "keyPoints": [
+    "Conflict markers: <<<<<<< HEAD (your changes) vs >>>>>>> branch (their changes)",
+    "Resolution: edit the file manually, remove markers, git add, then git commit",
+    "git status shows which files still have unresolved conflicts"
+  ],
+  "commonMistakes": [
+    "Forgetting to remove conflict markers before committing",
+    "Not running git add after resolving conflicts",
+    "Assuming Git can auto-resolve conflicts on the same lines"
+  ],
+  "followUpQuestions": [
+    "What tools can help visually resolve merge conflicts?",
+    "How would you abort a merge if conflicts are too complex to resolve?",
+    "What does git status show during an unresolved conflict?"
+  ],
+  "realWorldExample": "Two developers editing the same line of a config file on different branches will trigger a merge conflict when merging.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git merge feature-branch\n# CONFLICT (content): Merge conflict in file.txt\n# Manually edit file.txt to resolve, then:\ngit add file.txt\ngit commit"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain conflict markers and the exact steps to resolve and complete a conflicted merge.",
+  "tags": ["Git", "Merge Conflict", "Version Control", "Interview"],
+  "relatedTopics": ["Git Merge", "Git Rebase", "Git Status"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-004",
+  "category": "Git & GitHub",
+  "topic": "git stash",
+  "difficulty": "Easy",
+  "question": "What is git stash? When would you use it?",
+  "shortAnswer": "git stash temporarily saves your uncommitted changes (both staged and unstaged) so you can switch branches or pull cleanly, then restore them later.",
+  "detailedAnswer": "If there are work-in-progress changes but a branch switch is urgently needed, such as to fix a critical bug on another branch, without committing incomplete work, git stash saves those changes to a hidden stack and reverts the working directory to match the last commit, allowing free branch switching.\n\nLater, git stash pop reapplies the most recent stash and removes it from the stash list, while git stash apply reapplies it without removing it from the stack, which is useful for applying the same stash to multiple branches.",
+  "keyPoints": [
+    "git stash: saves current changes, reverts working directory to the last commit",
+    "git stash pop: reapplies AND removes the most recent stash from the stack",
+    "git stash list: shows all currently stashed change sets, since multiple stashes can coexist"
+  ],
+  "commonMistakes": [
+    "Forgetting stashed changes exist and losing track of them",
+    "Confusing git stash pop (removes from stack) with git stash apply (keeps in stack)",
+    "Not naming stashes when managing multiple concurrent stashes"
+  ],
+  "followUpQuestions": [
+    "What is the difference between git stash pop and git stash apply?",
+    "How would you apply a specific stash if multiple exist?",
+    "Can stashed changes be lost, and how would you recover them?"
+  ],
+  "realWorldExample": "A developer stashes in-progress feature work to quickly switch branches and fix an urgent production bug, then pops the stash to resume work afterward.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git stash\ngit checkout hotfix-branch\n# ... fix bug ...\ngit checkout feature-branch\ngit stash pop"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the save-and-restore workflow and distinguish pop from apply.",
+  "tags": ["Git", "Stash", "Version Control", "Interview"],
+  "relatedTopics": ["Git Branch", "Git Checkout", "Working Directory"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-005",
+  "category": "Git & GitHub",
+  "topic": "Git Reset vs Revert",
+  "difficulty": "Medium",
+  "question": "What is the difference between git reset and git revert?",
+  "shortAnswer": "git reset moves the branch pointer backward, potentially discarding commits entirely (dangerous on shared branches). git revert creates a NEW commit that undoes a previous commit's changes, preserving history.",
+  "detailedAnswer": "git reset --hard <commit> moves the current branch pointer to a specified commit and discards all commits after it, and optionally working directory changes too, rewriting history, which is dangerous if those commits have already been pushed and pulled by others.\n\ngit revert <commit> doesn't touch existing history at all; instead it creates a brand new commit that applies the inverse of the specified commit's changes, safely undoing it while preserving the full historical record, making it the safe choice for undoing changes on shared or public branches.",
+  "keyPoints": [
+    "git reset --soft: moves branch pointer, keeps changes staged",
+    "git reset --hard: moves branch pointer, discards changes entirely — dangerous, can lose work",
+    "git revert: always safe for shared branches — adds a new \"undo\" commit instead of rewriting history"
+  ],
+  "commonMistakes": [
+    "Using git reset --hard on a shared branch that others have already pulled",
+    "Confusing reset --soft with reset --hard behavior",
+    "Not knowing revert is the safer choice for shared branch history"
+  ],
+  "followUpQuestions": [
+    "What is the difference between reset --soft, --mixed, and --hard?",
+    "Why is revert preferred over reset on shared branches?",
+    "How would you undo a public commit safely?"
+  ],
+  "realWorldExample": "A team reverts a bad commit already pushed to main using git revert, adding a new commit that undoes the change rather than rewriting shared history.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git revert abc1234\n\n# vs (dangerous on shared branches)\ngit reset --hard abc1234"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the history-rewriting risk of reset versus the safety of revert on shared branches.",
+  "tags": ["Git", "Reset", "Revert", "Version Control", "Interview"],
+  "relatedTopics": ["Git Merge", "Git History", "Force Push"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-006",
+  "category": "Git & GitHub",
+  "topic": "Git Branching",
+  "difficulty": "Easy",
+  "question": "What is a Git Branch? Why is branching important in collaborative development?",
+  "shortAnswer": "A branch is a movable pointer to a specific commit, allowing independent lines of development without affecting the main codebase until changes are ready to merge.",
+  "detailedAnswer": "Branching allows multiple developers, or a single developer working on multiple features, to work in complete isolation; changes on a feature branch don't affect main until explicitly merged, and multiple branches can evolve simultaneously without interfering with each other.\n\nCommon branching strategies include Git Flow, with separate develop, feature, release, and hotfix branches and defined merge rules, GitHub Flow, a simpler approach where main is always deployable and feature branches merge directly via pull requests, and Trunk-Based Development, with very short-lived branches and frequent merges to main, often paired with feature flags.",
+  "keyPoints": [
+    "A branch is just a lightweight pointer to a commit — extremely cheap to create in Git",
+    "Git Flow: structured, multiple long-lived branch types — good for scheduled releases",
+    "GitHub Flow / Trunk-Based: simpler, frequent merges — good for continuous deployment"
+  ],
+  "commonMistakes": [
+    "Assuming branches are expensive or heavyweight to create",
+    "Not choosing a branching strategy suited to the team's release cadence",
+    "Confusing Git Flow's long-lived branches with GitHub Flow's simpler model"
+  ],
+  "followUpQuestions": [
+    "What is the difference between Git Flow and GitHub Flow?",
+    "Why is Trunk-Based Development often paired with feature flags?",
+    "How cheap is it to create a new branch in Git?"
+  ],
+  "realWorldExample": "A team practicing GitHub Flow keeps main always deployable, merging short-lived feature branches directly via reviewed pull requests.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git checkout -b feature/new-login\n# ... make changes ...\ngit push origin feature/new-login"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain branch isolation benefits and compare at least two branching strategies.",
+  "tags": ["Git", "Branching", "Version Control", "Interview"],
+  "relatedTopics": ["Git Flow", "GitHub Flow", "Trunk-Based Development"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-007",
+  "category": "Git & GitHub",
+  "topic": "Pull Requests",
+  "difficulty": "Easy",
+  "question": "What is a Pull Request (PR)? What is its purpose beyond just merging code?",
+  "shortAnswer": "A Pull Request is a request to merge changes from one branch into another, serving as a formal checkpoint for code review, automated testing, and team discussion before code enters the main codebase.",
+  "detailedAnswer": "Beyond the mechanical act of merging, a PR provides a structured space for code review, where teammates examine the diff, leave inline comments, and request changes, automated CI checks that run tests, linters, and build verification before allowing merge, documentation of why a change was made through the PR description and discussion thread, and a natural gate preventing broken or unreviewed code from reaching the main branch.\n\nMost teams enforce branch protection rules requiring at least one approval and passing CI checks before a PR can be merged.",
+  "keyPoints": [
+    "Code review: catches bugs, enforces style consistency, and shares knowledge across the team",
+    "CI integration: automated tests/linters run on every PR before merge is even allowed",
+    "Branch protection rules: enforce required approvals and passing checks before merging to main"
+  ],
+  "commonMistakes": [
+    "Treating PRs as purely mechanical merges without valuing the review process",
+    "Not enforcing branch protection rules requiring approvals and passing checks",
+    "Writing PR descriptions that don't explain the reasoning behind the change"
+  ],
+  "followUpQuestions": [
+    "What are branch protection rules and why are they useful?",
+    "How does CI integration with PRs prevent broken code from merging?",
+    "What makes a good PR description?"
+  ],
+  "realWorldExample": "A team requires at least one approval and passing CI checks via branch protection rules before any PR can be merged into main.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the PR's role beyond merging, especially code review and CI gating.",
+  "tags": ["Git", "GitHub", "Pull Request", "Interview"],
+  "relatedTopics": ["Code Review", "CI/CD", "Branch Protection"],
+  "references": ["GitHub Docs - docs.github.com"]
+},
+{
+  "id": "git-008",
+  "category": "Git & GitHub",
+  "topic": ".gitignore",
+  "difficulty": "Easy",
+  "question": "What is .gitignore? Why is it important?",
+  "shortAnswer": ".gitignore specifies files and directories that Git should NOT track — used for build artifacts, dependencies, secrets, and OS/editor-specific files that shouldn't be in version control.",
+  "detailedAnswer": "Without .gitignore, developers would accidentally commit things like node_modules, compiled build output, IDE configuration files, OS-generated files, and critically, secrets like .env files containing API keys and passwords.\n\nOnce a file matching a .gitignore pattern is added, Git simply won't track changes to it going forward. An important caveat is that if a file was already committed before being added to .gitignore, it will continue being tracked; you must explicitly run git rm --cached <file> to stop tracking it.",
+  "keyPoints": [
+    "Prevents committing large regeneratable folders (node_modules, build/, dist/) and IDE-specific files",
+    "Critical for security: keeps .env files and credentials out of version control",
+    "Already-tracked files aren't automatically ignored — requires git rm --cached to untrack them first"
+  ],
+  "commonMistakes": [
+    "Adding a file to .gitignore after it's already been committed, expecting it to stop being tracked automatically",
+    "Forgetting to gitignore secrets like .env files, exposing credentials",
+    "Committing large regeneratable folders like node_modules"
+  ],
+  "followUpQuestions": [
+    "How would you stop tracking a file that was already committed before being added to .gitignore?",
+    "What security risks does forgetting to gitignore secrets create?",
+    "What are common patterns typically included in a .gitignore file?"
+  ],
+  "realWorldExample": "A team adds .env to .gitignore to prevent API keys and database credentials from ever being committed to the shared repository.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "# .gitignore\nnode_modules/\n.env\ndist/\n.DS_Store\n\n# Untrack an already-committed file\ngit rm --cached secrets.env"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain .gitignore's purpose and the caveat about already-tracked files.",
+  "tags": ["Git", "gitignore", "Version Control", "Interview"],
+  "relatedTopics": ["Secrets Management", "Repository Hygiene", "Git Rm"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-009",
+  "category": "Git & GitHub",
+  "topic": "git clone vs git init",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between git clone and git init?",
+  "shortAnswer": "git init creates a brand new, empty Git repository in an existing directory. git clone copies an EXISTING remote repository (including its full history) to your local machine.",
+  "detailedAnswer": "git init is used when starting a completely new project; it initializes a .git folder in the current directory, turning it into a Git repository with no commits yet and no connection to any remote.\n\ngit clone <url> is used when starting work on a project that already exists remotely; it downloads the entire repository, including all branches and the full commit history, and automatically sets up the origin remote pointing back to the source, allowing immediate push and pull.",
+  "keyPoints": [
+    "git init: for starting a brand new project from scratch, no remote connection yet",
+    "git clone: for obtaining a copy of an EXISTING remote repository, with full history included",
+    "Cloning automatically configures the origin remote — no manual git remote add needed afterward"
+  ],
+  "commonMistakes": [
+    "Using git init when the intent is to obtain an existing remote repository",
+    "Not knowing git clone automatically configures the origin remote",
+    "Forgetting git init creates no remote connection by default"
+  ],
+  "followUpQuestions": [
+    "What remote is automatically configured after cloning?",
+    "How would you connect a git init'd repository to a remote afterward?",
+    "Does git clone download the full commit history?"
+  ],
+  "realWorldExample": "A developer joining a new team runs git clone to get a full local copy of the company's existing GitHub repository.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git init\n\n# vs\ngit clone https://github.com/user/repo.git"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish starting fresh from obtaining an existing repository.",
+  "tags": ["Git", "Clone", "Init", "Version Control", "Interview"],
+  "relatedTopics": ["Remote Repositories", "Git Basics", "Origin"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-010",
+  "category": "Git & GitHub",
+  "topic": "Detached HEAD State",
+  "difficulty": "Medium",
+  "question": "What is a Detached HEAD state in Git? How do you get out of it safely?",
+  "shortAnswer": "A Detached HEAD occurs when you check out a specific commit (rather than a branch) directly — any new commits made in this state aren't attached to any branch and can be lost if you switch away without saving them.",
+  "detailedAnswer": "Normally, HEAD points to a branch name like main, which in turn points to the latest commit on that branch; as commits are made, both HEAD and the branch pointer move forward together. If a specific commit hash is checked out directly instead of a branch name, HEAD now points directly to that commit, detached from any branch.\n\nIf new commits are made in this state and then another branch is checked out, those new commits become unreachable, or orphaned, and are eventually garbage collected, unless a new branch was explicitly created to save them first.",
+  "keyPoints": [
+    "Occurs when checking out a specific commit hash or tag directly, instead of a branch name",
+    "Commits made in this state are NOT attached to any branch — at risk of being lost",
+    "Safe recovery: git checkout -b <new-branch-name> immediately, to save the work onto a real branch"
+  ],
+  "commonMistakes": [
+    "Making commits in detached HEAD state without creating a branch to save them",
+    "Not recognizing the detached HEAD warning message from Git",
+    "Assuming commits made in detached HEAD are automatically safe"
+  ],
+  "followUpQuestions": [
+    "How would you recover commits made accidentally in a detached HEAD state?",
+    "Why does checking out a specific commit put you in detached HEAD?",
+    "What happens to orphaned commits eventually?"
+  ],
+  "realWorldExample": "A developer checks out an old commit to inspect historical code, makes an accidental commit, and creates a new branch immediately to preserve that work before switching away.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git checkout a1b2c3d\n# HEAD is now detached\ngit checkout -b recovered-work"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain what triggers detached HEAD and describe the safe recovery step of creating a new branch.",
+  "tags": ["Git", "Detached HEAD", "Version Control", "Interview"],
+  "relatedTopics": ["Git Checkout", "Git Branch", "Garbage Collection"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-011",
+  "category": "Git & GitHub",
+  "topic": "git cherry-pick",
+  "difficulty": "Medium",
+  "question": "What is git cherry-pick? Give a practical use case.",
+  "shortAnswer": "git cherry-pick applies the changes from a specific, individual commit (from any branch) onto your current branch, without merging the entire branch.",
+  "detailedAnswer": "Sometimes only one specific bug fix commit is needed from another branch, without pulling in all the other unrelated commits that branch might have. git cherry-pick <commit-hash> takes that single commit's changes and applies them as a new commit on the current branch.\n\nA common real-world use case is when a critical hotfix was made and committed directly on a release branch, and that exact same fix needs to be applied to the main or develop branch too, without merging the entire release branch's other in-progress changes.",
+  "keyPoints": [
+    "Applies a single, specific commit's changes onto the current branch — not an entire branch's history",
+    "Common use case: porting a hotfix from a release branch back into the main development branch",
+    "Can cause conflicts if the target branch has diverged significantly from where the commit originated"
+  ],
+  "commonMistakes": [
+    "Cherry-picking a commit that depends on other commits not yet present, causing incomplete changes",
+    "Not resolving conflicts correctly when the target branch has diverged",
+    "Using cherry-pick when a full merge would be more appropriate"
+  ],
+  "followUpQuestions": [
+    "What happens if a cherry-picked commit conflicts with the target branch?",
+    "When would cherry-pick be preferable to a full merge?",
+    "Can you cherry-pick multiple commits at once?"
+  ],
+  "realWorldExample": "A critical security fix committed directly on a release branch is cherry-picked into the main development branch without merging the entire release branch.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git checkout main\ngit cherry-pick a1b2c3d"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain single-commit porting and describe a realistic hotfix scenario.",
+  "tags": ["Git", "Cherry-pick", "Version Control", "Interview"],
+  "relatedTopics": ["Git Merge", "Hotfix Branches", "Git Rebase"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-012",
+  "category": "Git & GitHub",
+  "topic": "git checkout vs git switch/restore",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between git checkout and git switch/git restore?",
+  "shortAnswer": "git checkout is an older, overloaded command doing multiple different things (switching branches, restoring files). git switch and git restore are newer, more focused commands introduced to reduce this confusion.",
+  "detailedAnswer": "git checkout historically served several very different purposes depending on its arguments: git checkout <branch> switches branches, git checkout <commit> -- <file> restores a specific file from a specific commit, and git checkout <commit> puts you in a detached HEAD state. This overloading made the command's behavior unpredictable and confusing, especially for beginners.\n\nGit 2.23+ introduced git switch, exclusively for switching or creating branches, and git restore, exclusively for restoring files in the working directory or staging area, as clearer, more focused replacements, though git checkout still works and remains widely used.",
+  "keyPoints": [
+    "git checkout: legacy, overloaded command — does branch switching AND file restoration depending on syntax",
+    "git switch <branch>: modern, dedicated command purely for switching (or creating, with -c) branches",
+    "git restore <file>: modern, dedicated command purely for discarding changes to a file"
+  ],
+  "commonMistakes": [
+    "Confusing checkout's file-restoration behavior with its branch-switching behavior",
+    "Not knowing the newer switch/restore commands exist as clearer alternatives",
+    "Using outdated syntax when the newer commands would be clearer"
+  ],
+  "followUpQuestions": [
+    "Why did Git introduce switch and restore as separate commands?",
+    "How would you create and switch to a new branch using git switch?",
+    "How would you discard changes to a file using git restore?"
+  ],
+  "realWorldExample": "A developer uses git switch feature-branch to switch branches and git restore file.txt to discard local changes, avoiding the ambiguity of the older git checkout syntax.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git switch feature-branch\ngit switch -c new-feature\ngit restore file.txt"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the overloading problem with checkout and describe the more focused modern alternatives.",
+  "tags": ["Git", "Checkout", "Switch", "Restore", "Interview"],
+  "relatedTopics": ["Git Branch", "Detached HEAD", "Working Directory"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-013",
+  "category": "Git & GitHub",
+  "topic": "Git Tags",
+  "difficulty": "Easy",
+  "question": "What is a Git Tag? What is the difference between a Lightweight and an Annotated tag?",
+  "shortAnswer": "A Tag marks a specific commit as significant (typically a release point). Lightweight tags are just a name pointing to a commit. Annotated tags are full objects with metadata (author, date, message, optional GPG signature).",
+  "detailedAnswer": "Tags are commonly used to mark release versions so specific points in history can be easily referenced or checked out later, independent of ongoing branch activity. A Lightweight tag is essentially just a named pointer to a commit, similar to a branch but that never moves, with minimal metadata.\n\nAn Annotated tag is stored as a full Git object containing the tagger's name, email, date, a message, and can be GPG-signed for cryptographic verification of authenticity, making it recommended for actual releases since it carries meaningful, permanent metadata.",
+  "keyPoints": [
+    "Lightweight tag: just a pointer to a commit, minimal metadata — quick, informal markers",
+    "Annotated tag: full object with tagger info, message, date, optional GPG signature — recommended for releases",
+    "git push --tags: tags aren't pushed to remote automatically with a normal git push — must be explicit"
+  ],
+  "commonMistakes": [
+    "Assuming tags are automatically pushed with a regular git push",
+    "Using lightweight tags for official releases instead of annotated tags",
+    "Confusing tags with branches, which move as new commits are added"
+  ],
+  "followUpQuestions": [
+    "Why are annotated tags recommended over lightweight tags for releases?",
+    "How would you push tags to a remote repository?",
+    "Can a tag be GPG-signed and why would that matter?"
+  ],
+  "realWorldExample": "A project tags its v2.0.0 release with an annotated tag including release notes, while using lightweight tags for informal internal checkpoints.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git tag v1.0.0  # lightweight\ngit tag -a v1.0.0 -m \"Release message\"  # annotated\ngit push --tags"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish lightweight from annotated tags and recommend annotated tags for real releases.",
+  "tags": ["Git", "Tags", "Version Control", "Interview"],
+  "relatedTopics": ["Releases", "Semantic Versioning", "Git Push"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-014",
+  "category": "Git & GitHub",
+  "topic": "Git Submodules",
+  "difficulty": "Medium",
+  "question": "What is a Git Submodule? What problem does it solve?",
+  "shortAnswer": "A Git Submodule allows you to embed one Git repository as a subdirectory inside another, keeping the embedded repository's own independent history and commits.",
+  "detailedAnswer": "When a project depends on another separate project or library that is itself under active Git version control, rather than a published package via npm or pip, submodules let you include it as a subdirectory while keeping it linked to its own separate remote repository. The parent repository stores only a reference, a specific commit hash, to the submodule, not its actual full content.\n\nThis lets a team pin the exact version of a dependency being used, while still being able to independently update or pull the submodule's own changes when desired. Submodules have a reputation for being somewhat awkward in practice, so many teams prefer standard package managers when the dependency doesn't strictly require this level of Git-level integration.",
+  "keyPoints": [
+    "Embeds a separate Git repository as a subdirectory, pinned to a specific commit",
+    "Parent repo stores only a REFERENCE (commit hash) to the submodule, not its full content directly",
+    "git submodule update --init --recursive: commonly needed after cloning a repo that has submodules"
+  ],
+  "commonMistakes": [
+    "Forgetting to run git submodule update --init --recursive after cloning",
+    "Getting confused by detached-HEAD states within the submodule",
+    "Using submodules when a standard package manager would be simpler"
+  ],
+  "followUpQuestions": [
+    "Why must you run git submodule update after cloning a repo with submodules?",
+    "What are the common pain points of working with submodules?",
+    "When would you prefer a package manager over a submodule?"
+  ],
+  "realWorldExample": "A project embeds a shared internal UI library as a Git submodule, pinning to a specific commit while allowing independent updates when needed.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git submodule add https://github.com/user/lib.git libs/lib\ngit submodule update --init --recursive"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how submodules pin dependency versions and note their practical awkwardness.",
+  "tags": ["Git", "Submodules", "Version Control", "Interview"],
+  "relatedTopics": ["Package Managers", "Dependency Management", "Git Clone"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-015",
+  "category": "Git & GitHub",
+  "topic": "git blame",
+  "difficulty": "Easy",
+  "question": "What is git blame? What is it used for?",
+  "shortAnswer": "git blame <file> shows, line by line, which commit and author last modified each line of a file — useful for understanding the history and reasoning behind specific code.",
+  "detailedAnswer": "When investigating a bug or trying to understand why a particular piece of code exists in its current form, git blame annotates every line of a file with the commit hash, author, and date of the last change to that specific line, allowing you to trace back to the original commit and its message or PR discussion for context.\n\nThis is invaluable for debugging, such as finding when a bug was introduced, and for understanding legacy code without needing to ask the original author directly, who may have left the team.",
+  "keyPoints": [
+    "Shows the LAST commit/author responsible for each individual line in a file",
+    "Extremely useful for tracing when/why a specific piece of code was introduced",
+    "git log -p <file>: complementary command showing the full history of changes to a file over time"
+  ],
+  "commonMistakes": [
+    "Assuming git blame shows the full history rather than just the last modifying commit per line",
+    "Not using git log -p as a complementary tool for deeper history",
+    "Overlooking that blame output can be misleading after large-scale reformatting commits"
+  ],
+  "followUpQuestions": [
+    "How does git log -p complement git blame?",
+    "What happens to blame results after a large reformatting commit?",
+    "How would you trace the full history of changes to a single line?"
+  ],
+  "realWorldExample": "A developer uses git blame to trace which commit introduced a suspicious line of code, then reads that commit's message for context on why it was written that way.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git blame src/app.py"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how blame attributes lines to commits and its use in debugging and understanding legacy code.",
+  "tags": ["Git", "Blame", "Version Control", "Interview"],
+  "relatedTopics": ["Git Log", "Debugging", "Code History"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-016",
+  "category": "Git & GitHub",
+  "topic": "Git vs GitHub",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between Git and GitHub?",
+  "shortAnswer": "Git is the underlying distributed version control SYSTEM/tool itself. GitHub is a cloud-based HOSTING PLATFORM built around Git, adding collaboration features (PRs, issues, Actions, project boards).",
+  "detailedAnswer": "Git is a command-line tool and underlying protocol for tracking changes to files and coordinating work between multiple people; it can be used entirely locally, or with any remote server, and doesn't require GitHub at all.\n\nGitHub is a company and platform that hosts Git repositories in the cloud and layers on significant additional collaboration tooling: Pull Requests for code review, Issues for tracking bugs and tasks, GitHub Actions for CI/CD automation, project boards for task management, and social or discovery features. Competitors to GitHub built on the same underlying Git technology include GitLab and Bitbucket.",
+  "keyPoints": [
+    "Git: the version control tool/protocol itself — works with or without any hosting platform",
+    "GitHub: a specific hosting platform + collaboration layer built on top of Git",
+    "Alternatives to GitHub: GitLab, Bitbucket — all use the same core Git technology underneath"
+  ],
+  "commonMistakes": [
+    "Using 'Git' and 'GitHub' interchangeably as if they were the same thing",
+    "Assuming Git requires GitHub or an internet connection to function",
+    "Not knowing GitLab and Bitbucket are Git-based alternatives to GitHub"
+  ],
+  "followUpQuestions": [
+    "Can Git be used entirely without GitHub? How?",
+    "What are some alternatives to GitHub?",
+    "What collaboration features does GitHub add on top of Git?"
+  ],
+  "realWorldExample": "A developer can use Git entirely locally for personal version control without ever pushing to GitHub, GitLab, or any remote hosting service.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the underlying tool (Git) from the hosting platform (GitHub).",
+  "tags": ["Git", "GitHub", "Version Control", "Interview"],
+  "relatedTopics": ["GitLab", "Bitbucket", "Version Control Systems"],
+  "references": ["GitHub Docs - docs.github.com"]
+},
+{
+  "id": "git-017",
+  "category": "Git & GitHub",
+  "topic": "GitHub Fork vs Branch",
+  "difficulty": "Easy",
+  "question": "What is a GitHub Fork? How is it different from a Branch?",
+  "shortAnswer": "A Fork creates a completely separate COPY of an entire repository under your own GitHub account. A Branch is a pointer within the SAME repository.",
+  "detailedAnswer": "Forking is typically used when write access to the original repository isn't available, such as contributing to an open-source project you don't own; a separate independent copy is created under your own account, changes are made there, and a Pull Request is submitted from your fork back to the original repository for maintainers to review and merge.\n\nA branch, by contrast, exists within a single repository that you already have write access to, used for organizing parallel lines of development within a team that shares the same repo directly.",
+  "keyPoints": [
+    "Fork: separate full copy under your own account — typically for contributing to repos you don't own",
+    "Branch: a pointer within the same shared repository — typically for team members with direct write access",
+    "Open-source contribution workflow: fork → clone your fork → branch → commit → push → PR back to original"
+  ],
+  "commonMistakes": [
+    "Forking when direct branch access on the original repository is already available",
+    "Confusing a fork's independent copy with a simple branch within the same repo",
+    "Forgetting to submit a PR back to the original repository after making changes on a fork"
+  ],
+  "followUpQuestions": [
+    "What is the typical open-source contribution workflow using a fork?",
+    "Why would you use a branch instead of a fork within a team repository?",
+    "Can you sync a fork with the original repository's latest changes?"
+  ],
+  "realWorldExample": "A developer without write access to a popular open-source project forks it, makes changes on a branch in their fork, and submits a Pull Request back to the original project.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "# After forking on GitHub:\ngit clone https://github.com/yourname/repo.git\ngit checkout -b my-fix\n# ... make changes, commit, push ...\n# Open PR from yourname/repo:my-fix to original/repo:main"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish a full independent copy (fork) from a pointer within a shared repository (branch).",
+  "tags": ["Git", "GitHub", "Fork", "Branch", "Interview"],
+  "relatedTopics": ["Pull Request", "Open Source Contribution", "Git Branch"],
+  "references": ["GitHub Docs - docs.github.com"]
+},
+{
+  "id": "git-018",
+  "category": "Git & GitHub",
+  "topic": "git log",
+  "difficulty": "Easy",
+  "question": "What is git log? What are some useful flags/options?",
+  "shortAnswer": "git log displays the commit history of the current branch, with many optional flags to customize the output format and filter results.",
+  "detailedAnswer": "By default, git log shows each commit's full hash, author, date, and message in a verbose format. Useful variations include --oneline, which condenses each commit to a single line for a quick overview, --graph, which visually draws the branch and merge structure using ASCII art, --author=\"name\", which filters to commits by a specific person, -p or --patch, which shows the actual diff content of each commit, and --since=\"2 weeks ago\", which filters by date range.\n\nA commonly memorized combination is git log --oneline --graph --all, which gives a compact visual overview of the entire repository's branch structure.",
+  "keyPoints": [
+    "--oneline: condensed single-line-per-commit format for quick scanning",
+    "--graph --all: ASCII visualization of branch structure across ALL branches, not just the current one",
+    "-p: shows the actual code diff for each commit, useful for detailed history investigation"
+  ],
+  "commonMistakes": [
+    "Not knowing --graph --all gives a full visual overview across all branches",
+    "Using verbose default log output when --oneline would be more efficient for scanning",
+    "Forgetting -p shows actual diffs, not just commit messages"
+  ],
+  "followUpQuestions": [
+    "How would you filter commit history by a specific author?",
+    "What does the --graph flag visually represent?",
+    "How would you view the actual code changes for each commit in the log?"
+  ],
+  "realWorldExample": "A developer runs git log --oneline --graph --all to quickly visualize the branch structure and recent commit history of a repository.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git log --oneline --graph --all\ngit log --author=\"Jane\" --since=\"2 weeks ago\""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to know several practical git log flags and their use cases.",
+  "tags": ["Git", "Log", "Version Control", "Interview"],
+  "relatedTopics": ["Git Blame", "Commit History", "Git Diff"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-019",
+  "category": "Git & GitHub",
+  "topic": "Force Push",
+  "difficulty": "Medium",
+  "question": "What is a Force Push (git push --force)? Why is it dangerous?",
+  "shortAnswer": "A force push overwrites the remote branch's history with your local history, even if they've diverged — it can permanently destroy commits that other collaborators have already pulled and built upon.",
+  "detailedAnswer": "Normally, Git refuses a push if the local branch and the remote branch have diverged, since someone else may have pushed commits not present locally; this safety check prevents accidentally overwriting others' work.\n\ngit push --force bypasses this check entirely, forcibly making the remote match the local history exactly and discarding any remote commits not present locally. This is catastrophic if others have already pulled and built on top of the discarded commits. git push --force-with-lease is a safer alternative, only force-pushing if the remote hasn't changed since the last fetch, failing safely if someone else pushed in the meantime.",
+  "keyPoints": [
+    "Regular git push fails safely if local and remote have diverged — a protective check",
+    "--force bypasses this check entirely, potentially destroying others' already-pushed work",
+    "--force-with-lease: safer alternative — fails if the remote has unexpected new commits since your last fetch"
+  ],
+  "commonMistakes": [
+    "Using git push --force on a shared branch without coordinating with the team",
+    "Not knowing --force-with-lease exists as a safer alternative",
+    "Force-pushing to overwrite mistakes instead of using revert on shared history"
+  ],
+  "followUpQuestions": [
+    "How does --force-with-lease differ from a plain --force push?",
+    "What should you do if teammates have already pulled commits you're about to force-push over?",
+    "When might a force push be acceptable to use?"
+  ],
+  "realWorldExample": "After an interactive rebase to clean up local commit history, a developer uses git push --force-with-lease to safely update their own private feature branch on the remote.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git push --force-with-lease origin feature-branch"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the danger of overwriting shared history and recommend --force-with-lease as a safer alternative.",
+  "tags": ["Git", "Force Push", "Version Control", "Interview"],
+  "relatedTopics": ["Git Rebase", "Git Reset", "Shared Branches"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-020",
+  "category": "Git & GitHub",
+  "topic": "README.md",
+  "difficulty": "Easy",
+  "question": "What is the Purpose of a README.md File in a Repository?",
+  "shortAnswer": "A README is the first document visitors see when viewing a repository — it explains what the project does, how to install/run it, and how to contribute, serving as the project's front door.",
+  "detailedAnswer": "A well-written README typically includes a clear project description and purpose, installation and setup instructions, usage examples, contribution guidelines, license information, and often badges showing build status or test coverage.\n\nGitHub automatically renders a repository's README.md on the main repository page using Markdown formatting, making it the primary way both potential users and potential contributors understand what a project is and how to get started with it.",
+  "keyPoints": [
+    "Automatically rendered by GitHub/GitLab on the repository's main page — the first thing visitors see",
+    "Should cover: what it does, how to install/run it, how to contribute, and licensing",
+    "A strong README is often the single biggest factor in whether an open-source project gets adopted/contributed to"
+  ],
+  "commonMistakes": [
+    "Omitting installation or usage instructions from the README",
+    "Not keeping the README updated as the project evolves",
+    "Assuming a good codebase alone is enough without documentation"
+  ],
+  "followUpQuestions": [
+    "What key sections should a strong README include?",
+    "How does a README impact open-source project adoption?",
+    "What format does GitHub use to render README files?"
+  ],
+  "realWorldExample": "A popular open-source library's high adoption rate is partly attributed to its clear, well-organized README with installation instructions and usage examples.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe the README's role as documentation and its impact on project adoption.",
+  "tags": ["Git", "GitHub", "README", "Documentation", "Interview"],
+  "relatedTopics": ["CONTRIBUTING.md", "Open Source", "Documentation"],
+  "references": ["GitHub Docs - docs.github.com"]
+},
+{
+  "id": "git-021",
+  "category": "Git & GitHub",
+  "topic": "Git Hooks",
+  "difficulty": "Medium",
+  "question": "What is a Git Hook? Give a practical example.",
+  "shortAnswer": "A Git Hook is a script that automatically runs at specific points in the Git workflow (before a commit, after a commit, before a push, etc.), used to enforce checks or automate tasks.",
+  "detailedAnswer": "Hooks live in the .git/hooks/ directory, and Git automatically executes the corresponding script when the associated event occurs, if the script exists and is executable. A pre-commit hook can automatically run linters or formatters and reject the commit entirely if code style violations are found, catching issues before they even enter version control.\n\nA pre-push hook could run the full test suite, blocking a push if any tests fail. Since hooks live locally by default and aren't version-controlled with the rest of the repo, teams often use tools like Husky for Node.js projects to manage and share hook configurations consistently across the whole team.",
+  "keyPoints": [
+    "Pre-commit hook: commonly runs linters/formatters, can reject the commit if checks fail",
+    "Pre-push hook: commonly runs the test suite, blocking the push if tests fail",
+    "Husky (and similar tools): manage hooks as shareable, version-controlled configuration across a team"
+  ],
+  "commonMistakes": [
+    "Assuming hooks are automatically shared with the team without a tool like Husky",
+    "Not making the hook script executable, causing it to silently not run",
+    "Overloading hooks with slow checks that frustrate the development workflow"
+  ],
+  "followUpQuestions": [
+    "Why aren't Git hooks version-controlled by default, and how does Husky solve this?",
+    "What's an example of a pre-push hook use case?",
+    "What happens if a hook script isn't executable?"
+  ],
+  "realWorldExample": "A team uses Husky to share a pre-commit hook that automatically runs ESLint and Prettier, rejecting commits that fail style checks.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "#!/bin/sh\n# .git/hooks/pre-commit\nnpm run lint || exit 1"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the hook mechanism and give a practical pre-commit or pre-push example.",
+  "tags": ["Git", "Git Hooks", "Version Control", "Interview"],
+  "relatedTopics": ["Husky", "CI/CD", "Linting"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-022",
+  "category": "Git & GitHub",
+  "topic": "git add . vs git add -A",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between git add . and git add -A?",
+  "shortAnswer": "git add . stages new and modified files in the current directory and subdirectories, but historically excluded DELETED files in some Git versions. git add -A stages ALL changes across the entire repository, including deletions, regardless of current directory.",
+  "detailedAnswer": "In modern Git (2.x+), git add . and git add -A behave almost identically when run from the repository root, both staging new, modified, and deleted files. The subtle difference that still matters is that git add . only operates on the current directory and its subdirectories, while git add -A always operates on the entire repository regardless of the current working directory location.\n\nIn much older Git versions, git add . didn't stage deletions at all, requiring git add -A or git add -u specifically to catch deleted files, a legacy distinction that occasionally still causes confusion in older tutorials.",
+  "keyPoints": [
+    "Modern Git: both stage new/modified/deleted files when run from the repo root — nearly identical",
+    "Key difference: git add . is scoped to the current directory; git add -A always covers the whole repo",
+    "git add -u: stages only modifications and deletions to ALREADY-tracked files, ignoring new untracked files"
+  ],
+  "commonMistakes": [
+    "Assuming git add . always covers the entire repository regardless of current directory",
+    "Not knowing git add -u only affects already-tracked files",
+    "Relying on outdated tutorials describing pre-2.x Git behavior"
+  ],
+  "followUpQuestions": [
+    "What does git add -u do differently from git add -A?",
+    "In what scenario does the scoping difference between . and -A actually matter?",
+    "Why did older Git versions treat git add . differently regarding deletions?"
+  ],
+  "realWorldExample": "A developer working inside a subdirectory runs git add . expecting to stage all repo changes, but it only stages changes within that subdirectory, unlike git add -A.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git add .   # scoped to current directory\ngit add -A  # covers entire repository"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the current-directory scoping difference and mention the legacy deletion-staging distinction.",
+  "tags": ["Git", "Add", "Staging", "Version Control", "Interview"],
+  "relatedTopics": ["Git Status", "Staging Area", "Git Commit"],
+  "references": ["Pro Git Book - git-scm.com"]
+},
+{
+  "id": "git-023",
+  "category": "Git & GitHub",
+  "topic": "Squash Merge",
+  "difficulty": "Medium",
+  "question": "What is a \"Squash\" Merge? When would you use it?",
+  "shortAnswer": "A Squash Merge combines all commits from a feature branch into a SINGLE commit on the target branch, discarding the individual intermediate commit history.",
+  "detailedAnswer": "A feature branch often accumulates many small, messy work-in-progress commits, such as fix typo or wip, that are useful during active development but add noise to the main branch's permanent history.\n\nSquash merging condenses all of those commits into one clean, well-described commit when merging into main; the main branch's history stays clean and readable, one commit per feature or PR, while the original messy commit-by-commit history can still often be found on the original feature branch or in the closed PR itself on GitHub. This is a popular default strategy for teams that value a clean, linear main branch history above preserving every granular intermediate step.",
+  "keyPoints": [
+    "Condenses an entire feature branch's commits into ONE clean commit on the target branch",
+    "Keeps main branch history readable — one commit per feature/PR rather than dozens of WIP commits",
+    "Original granular history is typically still viewable in the closed PR itself, even if squashed on merge"
+  ],
+  "commonMistakes": [
+    "Assuming the original commit history is completely lost after a squash merge (it's still visible in the PR)",
+    "Squash merging when preserving granular history is actually important for the project",
+    "Not writing a clean, descriptive squash commit message summarizing the whole feature"
+  ],
+  "followUpQuestions": [
+    "Where can you still find the original granular commit history after a squash merge?",
+    "When might squash merging not be the right choice?",
+    "How does squash merging keep the main branch history clean?"
+  ],
+  "realWorldExample": "A team squash merges every feature PR into main, resulting in one clean commit per feature while the detailed commit-by-commit history remains visible in the closed PR on GitHub.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "git merge --squash feature-branch\ngit commit -m \"Add user authentication feature\""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how squash merging keeps main branch history clean while preserving detailed history elsewhere.",
+  "tags": ["Git", "Squash Merge", "Version Control", "Interview"],
+  "relatedTopics": ["Pull Request", "Git Merge", "Commit History"],
+  "references": ["GitHub Docs - docs.github.com"]
+},
+{
+  "id": "git-024",
+  "category": "Git & GitHub",
+  "topic": "CONTRIBUTING.md",
+  "difficulty": "Easy",
+  "question": "What is the Purpose of a CONTRIBUTING.md File?",
+  "shortAnswer": "A CONTRIBUTING.md file provides guidelines for external contributors on how to properly submit changes to a project — coding standards, PR process, testing requirements, and communication norms.",
+  "detailedAnswer": "Especially important for open-source projects with many potential external contributors, this document typically covers how to set up the local development environment, coding style and linting requirements, how to write and run tests, the expected PR submission process including branch naming conventions and commit message format, and community conduct expectations.\n\nHaving this documented explicitly reduces friction and back-and-forth for both new contributors, who know exactly what's expected upfront, and maintainers, who spend less time repeatedly explaining the same process to each new contributor.",
+  "keyPoints": [
+    "Reduces friction for new contributors by clearly documenting expectations upfront",
+    "Typically covers: dev environment setup, coding standards, testing requirements, PR process",
+    "Complements (but is distinct from) a CODE_OF_CONDUCT.md, which specifically covers community behavior norms"
+  ],
+  "commonMistakes": [
+    "Confusing CONTRIBUTING.md with CODE_OF_CONDUCT.md, which covers behavior rather than process",
+    "Not documenting the expected PR process, leading to inconsistent contributions",
+    "Omitting dev environment setup instructions, increasing friction for new contributors"
+  ],
+  "followUpQuestions": [
+    "How does CONTRIBUTING.md differ from CODE_OF_CONDUCT.md?",
+    "What are the key sections a good CONTRIBUTING.md should include?",
+    "How does this document reduce maintainer workload?"
+  ],
+  "realWorldExample": "A popular open-source project's CONTRIBUTING.md clearly documents branch naming conventions and commit message format, reducing back-and-forth during PR reviews.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe the document's role in reducing contributor friction and distinguish it from CODE_OF_CONDUCT.md.",
+  "tags": ["Git", "GitHub", "CONTRIBUTING.md", "Open Source", "Interview"],
+  "relatedTopics": ["README.md", "Open Source Contribution", "Code of Conduct"],
+  "references": ["GitHub Docs - docs.github.com"]
+},
+{
+  "id": "git-025",
+  "category": "Git & GitHub",
+  "topic": "GitHub Actions",
+  "difficulty": "Medium",
+  "question": "What is GitHub Actions? How does it relate to CI/CD?",
+  "shortAnswer": "GitHub Actions is GitHub's built-in automation/CI-CD platform, allowing you to define workflows (in YAML) that automatically run in response to repository events like pushes, pull requests, or scheduled times.",
+  "detailedAnswer": "A workflow file, stored in .github/workflows/, defines a series of jobs and steps to execute automatically when triggered, such as installing dependencies, running the linter, running the test suite, and reporting status back to the PR on every pull request.\n\nEach job runs in a fresh, isolated virtual machine or container, and GitHub provides a marketplace of reusable pre-built Actions for common tasks like deploying to AWS or publishing to npm that can be composed together rather than writing everything from scratch. This directly implements Continuous Integration and can be extended to Continuous Deployment, all within the same platform hosting the code itself.",
+  "keyPoints": [
+    "Workflow files (YAML) live in .github/workflows/, triggered by events like push, PR, or a schedule (cron)",
+    "Each job runs in an isolated, fresh virtual machine/container — reproducible, clean environment every time",
+    "Marketplace of reusable Actions: pre-built steps for common tasks (deploy, publish, notify) that can be composed together"
+  ],
+  "commonMistakes": [
+    "Not knowing workflow files must be placed in .github/workflows/",
+    "Assuming jobs share state between isolated virtual machine runs",
+    "Writing custom scripts for tasks that have well-maintained Actions already available in the marketplace"
+  ],
+  "followUpQuestions": [
+    "What events can trigger a GitHub Actions workflow?",
+    "How does the marketplace of reusable Actions simplify workflow creation?",
+    "How would you extend a CI workflow into a CD pipeline using GitHub Actions?"
+  ],
+  "realWorldExample": "A repository's GitHub Actions workflow automatically runs the test suite and linter on every pull request, blocking merge if any checks fail.",
+  "codeExample": {
+    "language": "YAML",
+    "code": "name: CI\non: [push, pull_request]\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - run: npm install\n      - run: npm test"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the workflow-trigger-job model and connect it to CI/CD concepts.",
+  "tags": ["Git", "GitHub Actions", "CI/CD", "Interview"],
+  "relatedTopics": ["CI/CD", "Automation", "Pull Request"],
+  "references": ["GitHub Docs - docs.github.com"]
 }
 ];
