@@ -9076,5 +9076,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["API-First Design", "Code-First Design", "API Design", "Interview"],
   "relatedTopics": ["OpenAPI", "API Mocking", "Contract Testing"],
   "references": ["OpenAPI Specification - swagger.io"]
+},
+{
+  "id": "js-001",
+  "category": "JavaScript",
+  "topic": "var, let, const",
+  "difficulty": "Easy",
+  "question": "What is the difference between var, let, and const?",
+  "shortAnswer": "var: function-scoped, hoisted with undefined, can be redeclared. let: block-scoped, hoisted but in a temporal dead zone, reassignable. const: block-scoped, must be initialized, cannot be reassigned.",
+  "detailedAnswer": "var is function-scoped rather than block-scoped; a var declared inside an if block is accessible outside it, frequently causing bugs. It's hoisted to the top of its function scope and initialized with undefined.\n\nlet is block-scoped, respecting curly-brace boundaries, and stays in a temporal dead zone until its declaration line, throwing a ReferenceError if accessed earlier. const behaves like let for scoping, but the binding cannot be reassigned; this doesn't make the value immutable, since mutating an array or object's contents remains valid.",
+  "keyPoints": [
+    "var: function-scoped, hoisted with undefined — avoid using it in modern JS",
+    "let: block-scoped, temporal dead zone, reassignable",
+    "const: block-scoped, cannot reassign the binding, but objects/arrays remain mutable"
+  ],
+  "commonMistakes": [
+    "Assuming const makes an object's contents immutable",
+    "Using var in modern code and encountering unexpected function-scope leakage",
+    "Accessing a let/const variable before its declaration, triggering a ReferenceError"
+  ],
+  "followUpQuestions": [
+    "Why does accessing a let variable before its declaration throw an error, but var doesn't?",
+    "Can you push to a const array? Why or why not?",
+    "What bugs can arise from var's function-scoping behavior?"
+  ],
+  "realWorldExample": "A developer uses const for array and object references throughout a codebase to prevent accidental reassignment, while still mutating their contents as needed.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const arr = [1, 2];\narr.push(3); // valid, mutates the array\n// arr = [4, 5]; // TypeError: Assignment to constant variable"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain scoping differences and clarify that const prevents reassignment, not mutation.",
+  "tags": ["JavaScript", "var", "let", "const", "Interview"],
+  "relatedTopics": ["Hoisting", "Scope", "Temporal Dead Zone"],
+  "references": ["MDN Web Docs - JavaScript"]
+},
+{
+  "id": "js-002",
+  "category": "JavaScript",
+  "topic": "Event Loop",
+  "difficulty": "Hard",
+  "question": "Explain the JavaScript Event Loop. How does asynchronous code work in a single-threaded language?",
+  "shortAnswer": "JavaScript is single-threaded, but the Event Loop enables non-blocking async behavior by delegating time-consuming tasks to Web APIs/Node APIs and processing their callbacks later via a Call Stack, Callback Queue, and Microtask Queue.",
+  "detailedAnswer": "JavaScript has one Call Stack, executing one thing at a time. Async operations like setTimeout or fetch are handled by Web APIs in the browser, or libuv in Node.js, outside the main thread. Once complete, callbacks are placed in either the Macrotask Queue for things like setTimeout and I/O, or the Microtask Queue for Promises.\n\nThe Event Loop checks whether the Call Stack is empty; if so, it fully drains the Microtask Queue first, then takes one task from the Macrotask Queue, and repeats. This is why Promise callbacks always run before setTimeout callbacks, even with a 0ms delay.",
+  "keyPoints": [
+    "Call Stack: executes synchronous code, one frame at a time",
+    "Microtask Queue (Promises): fully drained before the next macrotask",
+    "Macrotask Queue (setTimeout, setInterval): one task processed per event loop tick"
+  ],
+  "commonMistakes": [
+    "Assuming setTimeout(fn, 0) runs immediately or before Promise callbacks",
+    "Not knowing the microtask queue is fully drained before any macrotask runs",
+    "Confusing the Call Stack with the task queues"
+  ],
+  "followUpQuestions": [
+    "Why does a Promise callback run before a setTimeout(fn, 0) callback?",
+    "What's the difference between the Microtask Queue and Macrotask Queue?",
+    "How does Node.js's libuv relate to the browser's Web APIs in this model?"
+  ],
+  "realWorldExample": "A developer debugging unexpected execution order discovers that Promise .then() callbacks always execute before a setTimeout(fn, 0) callback due to microtask queue priority.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "console.log('1');\nsetTimeout(() => console.log('2'), 0);\nPromise.resolve().then(() => console.log('3'));\nconsole.log('4');\n// Output: 1, 4, 3, 2"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the Call Stack, Microtask Queue, and Macrotask Queue relationship and predict execution order correctly.",
+  "tags": ["JavaScript", "Event Loop", "Asynchronous", "Interview"],
+  "relatedTopics": ["Promises", "async/await", "setTimeout"],
+  "references": ["MDN Web Docs - Event Loop"]
+},
+{
+  "id": "js-003",
+  "category": "JavaScript",
+  "topic": "Closures",
+  "difficulty": "Medium",
+  "question": "What is a Closure in JavaScript? Give a practical use case.",
+  "shortAnswer": "A closure is a function that retains access to variables from its outer (enclosing) scope even after that outer function has finished executing.",
+  "detailedAnswer": "When a function is defined inside another function, it forms a closure over the outer function's variables; the inner function remembers its creation environment, keeping those variables alive even after the outer function returns.\n\nClosures are used for data privacy, creating variables accessible only via returned functions, function factories that generate customized functions, and maintaining state in callbacks such as counters in event handlers. It's also the mechanism behind React's useState hook internally.",
+  "keyPoints": [
+    "Practical use: function makeCounter() { let count = 0; return () => ++count; } — count stays private and persistent",
+    "Data privacy: closures simulated private variables before class private fields (#field) existed",
+    "Common trap: closures in loops with var (all callbacks share the same variable) vs let (each iteration gets its own binding)"
+  ],
+  "commonMistakes": [
+    "Using var in a loop expecting each closure to capture its own iteration value",
+    "Not understanding closures keep outer variables alive beyond the outer function's execution",
+    "Confusing closures with simple function scope"
+  ],
+  "followUpQuestions": [
+    "Why does using var in a loop with closures cause all callbacks to share the same final value?",
+    "How does React's useState rely on closures internally?",
+    "How would you implement a private counter using a closure?"
+  ],
+  "realWorldExample": "A counter function returns an incrementing function that retains access to a private count variable, never exposing it directly to external code.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function makeCounter() {\n  let count = 0;\n  return () => ++count;\n}\n\nconst counter = makeCounter();\ncounter(); // 1\ncounter(); // 2"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how closures retain outer scope variables and give a practical use case like private state.",
+  "tags": ["JavaScript", "Closures", "Interview"],
+  "relatedTopics": ["Scope", "Higher-Order Functions", "Currying"],
+  "references": ["MDN Web Docs - Closures"]
+},
+{
+  "id": "js-004",
+  "category": "JavaScript",
+  "topic": "== vs ===",
+  "difficulty": "Easy",
+  "question": "What is the difference between == and === in JavaScript?",
+  "shortAnswer": "== (loose equality) compares values after type coercion. === (strict equality) compares both value AND type, with no coercion.",
+  "detailedAnswer": "== attempts to convert operands to the same type before comparing, following complex coercion rules, which can cause surprising, hard-to-debug behavior.\n\n=== compares both value and type without conversion. Best practice, enforced by most linters, is to always use === and !== unless there's a specific, well-understood reason to rely on coercion.",
+  "keyPoints": [
+    "\"5\" == 5 → true (coercion) | \"5\" === 5 → false (strict)",
+    "null == undefined → true | null === undefined → false",
+    "Always prefer ===/!== in production code to avoid coercion bugs"
+  ],
+  "commonMistakes": [
+    "Using == and encountering unexpected coercion-based bugs",
+    "Assuming null == undefined implies null === undefined",
+    "Not enabling linter rules that enforce strict equality"
+  ],
+  "followUpQuestions": [
+    "Why does null == undefined evaluate to true?",
+    "Can you give an example where == produces a surprising result?",
+    "Why do most linters enforce === over ==?"
+  ],
+  "realWorldExample": "A linter configuration enforces === across a codebase to prevent subtle coercion bugs like \"0\" == false unexpectedly evaluating to true.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "\"5\" == 5;   // true\n\"5\" === 5;  // false\nnull == undefined;  // true\nnull === undefined; // false"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain coercion behavior and recommend strict equality as best practice.",
+  "tags": ["JavaScript", "Equality", "Type Coercion", "Interview"],
+  "relatedTopics": ["Type Coercion", "null vs undefined", "JavaScript Basics"],
+  "references": ["MDN Web Docs - Equality Comparisons"]
+},
+{
+  "id": "js-005",
+  "category": "JavaScript",
+  "topic": "Hoisting",
+  "difficulty": "Medium",
+  "question": "What is Hoisting in JavaScript?",
+  "shortAnswer": "Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope during compilation, before code actually executes.",
+  "detailedAnswer": "Function declarations are fully hoisted, meaning both the name and body are available before their line in the code, so they can be called before they're defined in the source. var declarations are hoisted but only the declaration, not the assignment; the variable exists as undefined until its actual assignment line executes.\n\nlet and const are technically hoisted too, but remain in the temporal dead zone, inaccessible until their declaration line is reached, throwing a ReferenceError if accessed earlier, unlike var which just silently returns undefined.",
+  "keyPoints": [
+    "Function declarations: fully hoisted (name + body) — safe to call before their definition line",
+    "var: hoisted as undefined — accessible before assignment, but value isn't set yet",
+    "let/const: hoisted but in the temporal dead zone — throws ReferenceError if accessed before declaration"
+  ],
+  "commonMistakes": [
+    "Assuming let/const are not hoisted at all rather than being in a temporal dead zone",
+    "Confusing function declaration hoisting with function expression hoisting (expressions are not fully hoisted)",
+    "Relying on calling a function before its declaration when it's actually a function expression"
+  ],
+  "followUpQuestions": [
+    "Why can you call a function declaration before its line in the code, but not a function expression?",
+    "What is the temporal dead zone?",
+    "What value does a var variable have before its assignment line executes?"
+  ],
+  "realWorldExample": "A developer calling a function before its declaration in the file relies on function declaration hoisting, which works correctly since both name and body are hoisted.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "console.log(foo()); // works due to hoisting\nfunction foo() { return 'hello'; }\n\nconsole.log(x); // undefined, not an error\nvar x = 5;"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish hoisting behavior across function declarations, var, let, and const.",
+  "tags": ["JavaScript", "Hoisting", "Interview"],
+  "relatedTopics": ["var, let, const", "Temporal Dead Zone", "Scope"],
+  "references": ["MDN Web Docs - Hoisting"]
+},
+{
+  "id": "js-006",
+  "category": "JavaScript",
+  "topic": "this Keyword",
+  "difficulty": "Medium",
+  "question": "What is the this keyword in JavaScript? How does its value get determined?",
+  "shortAnswer": "this refers to the context a function is executed in — its value is determined by HOW a function is CALLED, not where it's defined (except for arrow functions, which inherit this from their enclosing scope).",
+  "detailedAnswer": "In a regular method call, this refers to the object the method was called on. In a standalone function call, this is undefined in strict mode, or the global object in non-strict mode. With call(), apply(), or bind(), this can be explicitly set to any object. In a constructor call using new, this refers to the newly created instance.\n\nArrow functions are special; they don't have their own this at all, but lexically inherit this from the enclosing scope at the time they're defined, not called, which is why arrow functions are commonly preferred for callbacks inside class methods, avoiding the classic 'this is undefined inside a callback' bug.",
+  "keyPoints": [
+    "Regular function: this depends entirely on HOW it's called (method call, standalone call, new, etc.)",
+    "Arrow function: this is lexically inherited from the enclosing scope — never changes regardless of how it's called",
+    "call()/apply()/bind(): explicitly set what this should be for a given function invocation"
+  ],
+  "commonMistakes": [
+    "Using a regular function for a callback expecting this to refer to the enclosing class instance",
+    "Assuming this is determined by where a function is defined rather than how it's called",
+    "Confusing call() and apply()'s argument-passing syntax"
+  ],
+  "followUpQuestions": [
+    "Why do arrow functions avoid the classic 'this is undefined inside a callback' bug?",
+    "What is the difference between call(), apply(), and bind()?",
+    "What does this refer to inside a constructor function called with new?"
+  ],
+  "realWorldExample": "A React class component uses an arrow function for an event handler to ensure this correctly refers to the component instance, rather than binding it manually in the constructor.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "class Counter {\n  count = 0;\n  increment = () => { this.count++; }; // arrow function preserves 'this'\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how this is determined by call-site for regular functions versus lexical binding for arrow functions.",
+  "tags": ["JavaScript", "this", "Interview"],
+  "relatedTopics": ["Arrow Functions", "call/apply/bind", "Closures"],
+  "references": ["MDN Web Docs - this"]
+},
+{
+  "id": "js-007",
+  "category": "JavaScript",
+  "topic": "null vs undefined",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between null and undefined?",
+  "shortAnswer": "undefined means a variable has been declared but not yet assigned a value. null is an explicit assignment representing \"intentionally no value.\"",
+  "detailedAnswer": "undefined is JavaScript's default value for uninitialized variables, missing function arguments, and accessing non-existent object properties, representing the absence of a value that the language itself assigns automatically.\n\nnull must be explicitly assigned by the developer to represent 'this variable intentionally has no value right now,' a deliberate statement of emptiness rather than an accidental omission. typeof undefined is \"undefined\", while typeof null is famously \"object\", a long-standing JS quirk. Using ==, null == undefined is true; using ===, they are not equal.",
+  "keyPoints": [
+    "undefined: the language's default for \"not yet assigned\" — automatic, not explicitly set by the developer",
+    "null: explicit developer assignment meaning \"intentionally empty\" — a deliberate statement",
+    "typeof null returns \"object\" — a widely-known historical quirk/bug in JavaScript that can never be fixed now"
+  ],
+  "commonMistakes": [
+    "Assuming typeof null returns \"null\" instead of \"object\"",
+    "Using == instead of === when specifically checking for null or undefined",
+    "Not distinguishing between an automatically undefined value and a deliberately assigned null"
+  ],
+  "followUpQuestions": [
+    "Why does typeof null return \"object\"?",
+    "When would you deliberately assign null instead of leaving a variable undefined?",
+    "What is the result of null === undefined?"
+  ],
+  "realWorldExample": "An API response deliberately sets a field to null to indicate 'no value exists' while a variable that was never assigned remains undefined by default.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "let a;\nconsole.log(a); // undefined\n\nlet b = null;\nconsole.log(b); // null\n\nconsole.log(null == undefined);  // true\nconsole.log(null === undefined); // false"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the automatic (undefined) versus deliberate (null) nature of these two values.",
+  "tags": ["JavaScript", "null", "undefined", "Interview"],
+  "relatedTopics": ["Type Coercion", "== vs ===", "Optional Chaining"],
+  "references": ["MDN Web Docs - null and undefined"]
+},
+{
+  "id": "js-008",
+  "category": "JavaScript",
+  "topic": "Promises",
+  "difficulty": "Medium",
+  "question": "What are Promises in JavaScript? Explain .then(), .catch(), and .finally().",
+  "shortAnswer": "A Promise represents the eventual result of an asynchronous operation — it can be Pending, Fulfilled, or Rejected. .then() handles success, .catch() handles errors, .finally() runs regardless of outcome.",
+  "detailedAnswer": "A Promise starts in a pending state, and eventually transitions to either fulfilled, meaning the async operation succeeded with a resulting value, or rejected, meaning it failed with an error reason. Once settled, a Promise's state can never change again.\n\n.then(onFulfilled, onRejected) registers callbacks for success or failure; chaining multiple .then() calls creates a pipeline where each returns a new Promise. .catch() is essentially syntactic sugar for .then(null, onRejected), specifically handling errors from anywhere earlier in the chain. .finally() runs a cleanup callback regardless of whether the promise fulfilled or rejected.",
+  "keyPoints": [
+    "Three states: pending → fulfilled (resolved) OR rejected — once settled, state is permanent",
+    ".catch(): catches errors/rejections from anywhere earlier in the .then() chain, not just the immediately preceding step",
+    "async/await is syntactic sugar built on top of Promises, making async code read more like synchronous code"
+  ],
+  "commonMistakes": [
+    "Assuming .catch() only catches errors from the immediately preceding .then()",
+    "Forgetting .finally() runs regardless of success or failure",
+    "Not understanding a Promise's state is permanent once settled"
+  ],
+  "followUpQuestions": [
+    "Why is .catch() considered syntactic sugar for .then(null, onRejected)?",
+    "What happens if you don't attach a .catch() to a rejected Promise?",
+    "How does .finally() differ in purpose from .then() and .catch()?"
+  ],
+  "realWorldExample": "A fetch request chains .then() to process the response, .catch() to handle network errors, and .finally() to hide a loading spinner regardless of outcome.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "fetch('/api/data')\n  .then(res => res.json())\n  .then(data => console.log(data))\n  .catch(err => console.error(err))\n  .finally(() => hideSpinner());"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the three Promise states and the roles of .then(), .catch(), and .finally().",
+  "tags": ["JavaScript", "Promises", "Async", "Interview"],
+  "relatedTopics": ["async/await", "Event Loop", "Error Handling"],
+  "references": ["MDN Web Docs - Promise"]
+},
+{
+  "id": "js-009",
+  "category": "JavaScript",
+  "topic": "async/await vs Promises",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between async/await and raw Promises with .then()?",
+  "shortAnswer": "async/await is syntactic sugar built on top of Promises, allowing asynchronous code to be written and read in a more sequential, synchronous-looking style — while functionally accomplishing the exact same thing underneath.",
+  "detailedAnswer": "A function marked async implicitly returns a Promise. Inside it, await pauses execution of that function, without blocking the rest of the application or event loop, until the awaited Promise settles, then either returns its resolved value or throws its rejection reason as a catchable exception.\n\nThis allows using standard try/catch blocks for error handling instead of .catch() chains, and avoids the visually nested callback pyramid or long .then().then().then() chains that raw Promise usage can produce for sequential async operations.",
+  "keyPoints": [
+    "async function: implicitly returns a Promise, allows using await inside its body",
+    "await: pauses that function's execution until the Promise settles, without blocking the whole application",
+    "Enables standard try/catch for async error handling, instead of chained .catch() calls"
+  ],
+  "commonMistakes": [
+    "Assuming await blocks the entire application rather than just the async function itself",
+    "Forgetting to wrap awaited code in try/catch for proper error handling",
+    "Using await sequentially for independent operations that could run in parallel with Promise.all"
+  ],
+  "followUpQuestions": [
+    "Does await block the entire JavaScript runtime, or just the async function it's inside?",
+    "How would you run multiple independent async operations in parallel using async/await?",
+    "Why might raw Promise chaining still be preferable in some scenarios?"
+  ],
+  "realWorldExample": "A developer refactors a long .then().then().then() chain into a cleaner async/await function with try/catch error handling, improving readability.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "async function getData() {\n  try {\n    const res = await fetch('/api/data');\n    const data = await res.json();\n    return data;\n  } catch (err) {\n    console.error(err);\n  }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain that async/await is syntactic sugar over Promises and describe its readability benefits.",
+  "tags": ["JavaScript", "async/await", "Promises", "Interview"],
+  "relatedTopics": ["Promises", "Event Loop", "Error Handling"],
+  "references": ["MDN Web Docs - async function"]
+},
+{
+  "id": "js-010",
+  "category": "JavaScript",
+  "topic": "Event Delegation",
+  "difficulty": "Medium",
+  "question": "What is Event Delegation in JavaScript? Why is it useful?",
+  "shortAnswer": "Event Delegation attaches a single event listener to a PARENT element instead of individual listeners to many child elements, leveraging event bubbling to handle events for all current AND future children efficiently.",
+  "detailedAnswer": "Attaching a separate click listener to every single item in a long, dynamically-changing list is inefficient and error-prone, since newly added items wouldn't automatically have a listener unless one is attached every time.\n\nEvent delegation instead attaches one listener to a stable parent container; since events naturally bubble up through the DOM tree from the actual clicked element to its ancestors, the parent's single listener can inspect event.target to determine which specific child was actually clicked, and respond accordingly. This automatically works for children added to the DOM later, without needing any additional listener setup.",
+  "keyPoints": [
+    "Relies on event bubbling: events propagate upward from the target element through its ancestors",
+    "event.target: identifies the actual element that was originally clicked/interacted with",
+    "Automatically handles dynamically added children — no need to re-attach listeners when new elements appear"
+  ],
+  "commonMistakes": [
+    "Attaching individual listeners to every child element instead of delegating to a parent",
+    "Not using event.target to correctly identify which child triggered the event",
+    "Forgetting delegation relies on event bubbling, which doesn't work for non-bubbling events"
+  ],
+  "followUpQuestions": [
+    "How does event.target differ from event.currentTarget in a delegated handler?",
+    "Why does event delegation automatically work for dynamically added elements?",
+    "Are there events that don't bubble, and how would that affect delegation?"
+  ],
+  "realWorldExample": "A dynamic todo list attaches a single click listener to its parent <ul> element, using event.target to determine which specific <li> item was clicked, even for items added after page load.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "document.querySelector('#todo-list').addEventListener('click', (e) => {\n  if (e.target.tagName === 'LI') {\n    console.log('Clicked:', e.target.textContent);\n  }\n});"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain event bubbling and describe how delegation efficiently handles dynamic children.",
+  "tags": ["JavaScript", "Event Delegation", "DOM", "Interview"],
+  "relatedTopics": ["Event Bubbling", "DOM Events", "Performance"],
+  "references": ["MDN Web Docs - Event Delegation"]
+},
+{
+  "id": "js-011",
+  "category": "JavaScript",
+  "topic": "map, filter, reduce",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between map(), filter(), and reduce() array methods?",
+  "shortAnswer": "map() transforms each element, returning a new array of the SAME length. filter() selects elements matching a condition, returning a new (possibly shorter) array. reduce() combines all elements into a SINGLE accumulated value.",
+  "detailedAnswer": "array.map(fn) calls fn on every element and collects the return values into a brand new array, always the same length as the original, used purely for transformation. array.filter(fn) calls fn on every element, keeping only those for which fn returns true, resulting in an array the same length or shorter, used for selection.\n\narray.reduce(fn, initialValue) processes elements one by one, accumulating a single result value across the entire array, the most flexible and powerful of the three, since map and filter can theoretically both be implemented in terms of reduce.",
+  "keyPoints": [
+    "map: transformation, always returns an array of the SAME length as the original",
+    "filter: selection, returns an array of the same length or shorter, based on a boolean condition",
+    "reduce: accumulation, returns a single value (which could itself be a number, object, or even array)"
+  ],
+  "commonMistakes": [
+    "Using map() when filter() or reduce() would be semantically clearer",
+    "Forgetting to provide an initial value to reduce(), causing unexpected behavior on empty arrays",
+    "Confusing filter()'s boolean-returning callback with map()'s value-returning callback"
+  ],
+  "followUpQuestions": [
+    "How would you implement filter() using reduce()?",
+    "What happens if you call reduce() on an empty array without an initial value?",
+    "When would you chain map(), filter(), and reduce() together?"
+  ],
+  "realWorldExample": "An e-commerce app uses filter() to select in-stock products, map() to extract their prices, and reduce() to calculate the total cart value.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const total = products\n  .filter(p => p.inStock)\n  .map(p => p.price)\n  .reduce((sum, price) => sum + price, 0);"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly distinguish transformation, selection, and accumulation, and describe how these methods chain together.",
+  "tags": ["JavaScript", "Array Methods", "map", "filter", "reduce", "Interview"],
+  "relatedTopics": ["Higher-Order Functions", "Functional Programming", "forEach"],
+  "references": ["MDN Web Docs - Array.prototype.reduce"]
+},
+{
+  "id": "js-012",
+  "category": "JavaScript",
+  "topic": "Prototypal Inheritance",
+  "difficulty": "Medium",
+  "question": "What is Prototypal Inheritance in JavaScript?",
+  "shortAnswer": "JavaScript objects can inherit properties and methods directly from other objects via a \"prototype chain,\" rather than through classical class-based inheritance (though ES6 class syntax provides a familiar-looking layer on top).",
+  "detailedAnswer": "Every JavaScript object has an internal link to another object called its prototype; when you access a property or method on an object that doesn't exist directly on that object itself, JavaScript automatically looks up the prototype chain until it finds the property or reaches the end.\n\nObject.create(proto) explicitly creates a new object with a specified prototype. ES6 class syntax is essentially syntactic sugar over this same underlying prototypal mechanism; it doesn't introduce a fundamentally different inheritance model, just a more familiar, class-like syntax for developers coming from classical OOP languages.",
+  "keyPoints": [
+    "Every object has an internal prototype link — property lookups automatically traverse this chain if not found directly",
+    "Object.create(proto): explicitly creates a new object with a specified object as its prototype",
+    "ES6 class/extends: syntactic sugar over the SAME underlying prototype chain mechanism, not a different system"
+  ],
+  "commonMistakes": [
+    "Assuming ES6 class introduces a fundamentally different inheritance model rather than sugar over prototypes",
+    "Not understanding property lookup traverses the prototype chain when not found on the object directly",
+    "Confusing Object.create with Object.assign"
+  ],
+  "followUpQuestions": [
+    "How does ES6 class syntax relate to the underlying prototype chain?",
+    "What happens when you access a property that doesn't exist on an object or anywhere in its prototype chain?",
+    "How would you create an object with a specific prototype using Object.create?"
+  ],
+  "realWorldExample": "A Dog object's prototype chain includes an Animal object, so calling dog.eat() works even if eat() is only defined on Animal.prototype.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const animal = { eat() { console.log('eating'); } };\nconst dog = Object.create(animal);\ndog.eat(); // 'eating' — found via prototype chain"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the prototype chain mechanism and clarify that ES6 class is sugar over it.",
+  "tags": ["JavaScript", "Prototypal Inheritance", "Interview"],
+  "relatedTopics": ["ES6 Classes", "Object.create", "OOP"],
+  "references": ["MDN Web Docs - Inheritance and the prototype chain"]
+},
+{
+  "id": "js-013",
+  "category": "JavaScript",
+  "topic": "Spread vs Rest",
+  "difficulty": "Medium",
+  "question": "What is the Spread Operator (...) vs the Rest Parameter — how do they differ despite the same syntax?",
+  "shortAnswer": "They use identical syntax (...) but serve opposite purposes depending on context: Spread EXPANDS an iterable into individual elements. Rest COLLECTS multiple individual elements/arguments into a single array.",
+  "detailedAnswer": "Spread is used when you want to unpack an array or object into individual pieces, such as merging two arrays by spreading each one's elements into a new array literal, spreading an array into individual arguments for a function expecting separate parameters, or merging two objects' properties.\n\nRest is used in the opposite direction, collecting an indefinite number of remaining function arguments or destructured elements into a single array, allowing a function to accept any number of arguments all collected into one parameter.",
+  "keyPoints": [
+    "Spread: expands/unpacks an iterable into individual elements — [...arr], {...obj}, fn(...args)",
+    "Rest: collects multiple individual values into a single array — function fn(...args) {}",
+    "Same ... syntax, opposite direction — context (which side of an assignment/parameter list) determines which one applies"
+  ],
+  "commonMistakes": [
+    "Confusing spread and rest since they share identical syntax",
+    "Not knowing rest parameters must be the last parameter in a function signature",
+    "Using spread when destructuring is actually needed, or vice versa"
+  ],
+  "followUpQuestions": [
+    "Why must a rest parameter always be the last parameter in a function's signature?",
+    "How would you merge two objects using the spread operator?",
+    "Can you give an example distinguishing spread from rest in the same line of code?"
+  ],
+  "realWorldExample": "A sum function uses a rest parameter to accept any number of arguments, while Math.max uses the spread operator to expand an array into individual arguments.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function sum(...numbers) { // rest\n  return numbers.reduce((a, b) => a + b, 0);\n}\n\nconst nums = [1, 2, 3];\nMath.max(...nums); // spread"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the expand (spread) versus collect (rest) directions despite identical syntax.",
+  "tags": ["JavaScript", "Spread Operator", "Rest Parameter", "Interview"],
+  "relatedTopics": ["Destructuring", "Function Parameters", "Array Methods"],
+  "references": ["MDN Web Docs - Spread syntax"]
+},
+{
+  "id": "js-014",
+  "category": "JavaScript",
+  "topic": "Shallow vs Deep Copy",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Shallow Copy and Deep Copy in JavaScript?",
+  "shortAnswer": "A Shallow Copy duplicates only the top-level properties — nested objects/arrays are still SHARED (same reference) between the original and the copy. A Deep Copy recursively duplicates everything, including all nested structures, making the copy fully independent.",
+  "detailedAnswer": "Spread syntax or Object.assign create a shallow copy; if the original object has a nested object as a property, that nested object is not duplicated, and both the original and the copy point to the exact same nested object in memory, so mutating it through either reference affects both.\n\nA deep copy requires recursively copying every level. structuredClone(obj) is the modern, built-in, widely supported way to create a fully independent deep copy, while the older JSON.parse(JSON.stringify(obj)) trick loses functions, undefined values, and Date objects, converting them incorrectly.",
+  "keyPoints": [
+    "Shallow copy: top-level properties duplicated, but nested objects/arrays remain SHARED references",
+    "structuredClone(obj): modern built-in method for a proper, fully-independent deep copy",
+    "JSON.parse(JSON.stringify(obj)): older deep-copy trick, but loses functions/undefined/Date objects incorrectly"
+  ],
+  "commonMistakes": [
+    "Assuming a spread copy fully duplicates nested objects",
+    "Using JSON.parse(JSON.stringify()) on objects containing functions or Date instances",
+    "Not knowing structuredClone exists as a modern built-in deep copy method"
+  ],
+  "followUpQuestions": [
+    "Why does JSON.parse(JSON.stringify(obj)) lose functions and Date objects?",
+    "How does structuredClone differ from the JSON trick for deep copying?",
+    "What bug can arise from mutating a nested object after a shallow copy?"
+  ],
+  "realWorldExample": "A developer discovers a bug where mutating a nested object in a 'copied' state object also changes the original, due to using a shallow spread copy instead of a deep clone.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const original = { a: 1, nested: { b: 2 } };\nconst shallow = { ...original };\nshallow.nested.b = 99;\nconsole.log(original.nested.b); // 99 — shared reference!\n\nconst deep = structuredClone(original);\ndeep.nested.b = 100;\nconsole.log(original.nested.b); // still 99"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the reference-sharing issue with shallow copies and know structuredClone as the modern deep-copy solution.",
+  "tags": ["JavaScript", "Shallow Copy", "Deep Copy", "Interview"],
+  "relatedTopics": ["Object.assign", "Spread Operator", "structuredClone"],
+  "references": ["MDN Web Docs - structuredClone"]
+},
+{
+  "id": "js-015",
+  "category": "JavaScript",
+  "topic": "Higher-Order Functions",
+  "difficulty": "Medium",
+  "question": "What is a Higher-Order Function in JavaScript?",
+  "shortAnswer": "A Higher-Order Function is a function that either accepts another function as an argument, returns a function as its result, or both — treating functions as \"first-class citizens\" that can be passed around like any other value.",
+  "detailedAnswer": "JavaScript functions are first-class values; they can be assigned to variables, passed as arguments, and returned from other functions, just like numbers or strings. map, filter, and reduce are all higher-order functions since they accept a callback function as an argument.\n\nFunctions that return other functions, function factories, are also higher-order; for example, a multiplier function returns a new customized function each time it's called with a different factor. This concept is foundational to functional programming patterns in JavaScript.",
+  "keyPoints": [
+    "\"First-class functions\": functions can be stored in variables, passed as arguments, returned from other functions",
+    "Array methods (map, filter, reduce, forEach) are all classic examples of higher-order functions",
+    "Function factories (functions that return customized functions) are another common higher-order function pattern"
+  ],
+  "commonMistakes": [
+    "Not recognizing built-in array methods as examples of higher-order functions",
+    "Confusing higher-order functions with recursive functions",
+    "Not understanding function factories as a higher-order function pattern"
+  ],
+  "followUpQuestions": [
+    "Why are map, filter, and reduce considered higher-order functions?",
+    "Can you write a function factory that returns a customized function?",
+    "What does it mean for functions to be 'first-class citizens' in JavaScript?"
+  ],
+  "realWorldExample": "A function factory generates specialized discount calculators, each pre-configured with a specific discount rate, by returning a new function from an outer function.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function multiplier(factor) {\n  return (x) => x * factor;\n}\n\nconst double = multiplier(2);\ndouble(5); // 10"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to define higher-order functions and identify common examples like map/filter/reduce and function factories.",
+  "tags": ["JavaScript", "Higher-Order Functions", "Interview"],
+  "relatedTopics": ["map, filter, reduce", "Closures", "Currying"],
+  "references": ["MDN Web Docs - Functions"]
+},
+{
+  "id": "js-016",
+  "category": "JavaScript",
+  "topic": "Debouncing and Throttling",
+  "difficulty": "Medium",
+  "question": "What is Debouncing and Throttling? What is the practical difference?",
+  "shortAnswer": "Debouncing delays executing a function until AFTER a specified period of inactivity has passed since the last call. Throttling ensures a function executes AT MOST once per specified time interval, regardless of how many times it's triggered.",
+  "detailedAnswer": "Debouncing is ideal for search-box autocomplete; rather than firing an API call on every keystroke, it waits until the user has paused typing for a set duration before actually firing the request, resetting the timer on every new keystroke.\n\nThrottling is ideal for scroll or resize event handlers, which can fire dozens of times per second; the handler runs at most once per fixed interval regardless of how rapidly the underlying event fires, ensuring consistent, predictable execution frequency.",
+  "keyPoints": [
+    "Debounce: waits for a pause in activity before executing — good for search input, form validation",
+    "Throttle: executes at a fixed maximum rate regardless of trigger frequency — good for scroll/resize handlers",
+    "Both prevent excessive function calls, but solve different problems (waiting for quiet vs limiting execution rate)"
+  ],
+  "commonMistakes": [
+    "Using throttling when debouncing would be more appropriate for search input",
+    "Not resetting the debounce timer correctly on each new event",
+    "Confusing the two techniques' underlying goals"
+  ],
+  "followUpQuestions": [
+    "How would you implement a debounce function from scratch?",
+    "Why is throttling preferred over debouncing for scroll event handlers?",
+    "What would happen if you used debouncing instead of throttling for a scroll handler?"
+  ],
+  "realWorldExample": "A search autocomplete feature debounces the API call until the user pauses typing for 300ms, while an infinite-scroll feature throttles its scroll handler to check position at most once every 200ms.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function debounce(fn, delay) {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the wait-for-pause behavior of debounce from the fixed-rate limiting of throttle.",
+  "tags": ["JavaScript", "Debounce", "Throttle", "Interview"],
+  "relatedTopics": ["Event Handling", "Performance Optimization", "setTimeout"],
+  "references": ["MDN Web Docs - setTimeout"]
+},
+{
+  "id": "js-017",
+  "category": "JavaScript",
+  "topic": "Optional Chaining and Nullish Coalescing",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between null-checking with Optional Chaining (?.) and the Nullish Coalescing Operator (??)?",
+  "shortAnswer": "Optional Chaining (?.) safely accesses a nested property, short-circuiting to undefined if any part of the chain is null/undefined, instead of throwing an error. Nullish Coalescing (??) provides a default value specifically when the left side is null or undefined (NOT for other falsy values like 0 or \"\").",
+  "detailedAnswer": "user?.address?.city safely attempts to access city, returning undefined immediately if user or user.address happens to be null or undefined at any point, instead of throwing a runtime error that would otherwise crash the application.\n\nvalue ?? \"default\" returns \"default\" only if value is specifically null or undefined; critically, this is different from the older || operator, which would also incorrectly override other legitimately falsy values like 0, an empty string, or false, even when those values were intentionally set and valid.",
+  "keyPoints": [
+    "?. (optional chaining): short-circuits to undefined safely, avoiding a runtime error when accessing nested properties",
+    "?? (nullish coalescing): defaults ONLY for null/undefined, unlike || which incorrectly also overrides 0, \"\", false",
+    "Commonly combined: user?.settings?.theme ?? \"light\" — safe access with a correct, non-overzealous default"
+  ],
+  "commonMistakes": [
+    "Using || instead of ?? and accidentally overriding valid falsy values like 0 or an empty string",
+    "Assuming optional chaining prevents all errors rather than just property access errors",
+    "Not combining ?. and ?? together for both safe access and correct defaulting"
+  ],
+  "followUpQuestions": [
+    "Why is ?? preferred over || for setting default values?",
+    "What does user?.address?.city return if address is null?",
+    "Can optional chaining be used to safely call a method that might not exist?"
+  ],
+  "realWorldExample": "A settings panel uses user?.settings?.theme ?? \"light\" to safely access a nested theme preference and fall back to a light theme default only if the value is truly null or undefined, not if it's an intentional falsy value.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const city = user?.address?.city;\nconst theme = user?.settings?.theme ?? 'light';\n\nconst count = 0;\nconsole.log(count || 10); // 10 (wrong, overrides valid 0)\nconsole.log(count ?? 10); // 0 (correct)"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain both operators and specifically why ?? fixes the falsy-value bug present in ||.",
+  "tags": ["JavaScript", "Optional Chaining", "Nullish Coalescing", "Interview"],
+  "relatedTopics": ["null vs undefined", "Logical Operators", "ES2020 Features"],
+  "references": ["MDN Web Docs - Optional chaining"]
+},
+{
+  "id": "js-018",
+  "category": "JavaScript",
+  "topic": "forEach vs map",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between forEach() and map()?",
+  "shortAnswer": "forEach() executes a function for each element but returns undefined — used purely for side effects. map() executes a function for each element AND returns a new array containing the transformed results.",
+  "detailedAnswer": "forEach() is designed for performing an action on each element without caring about a return value, such as logging each item or updating the DOM; its return value is always undefined, and it cannot be meaningfully chained with further array methods.\n\nmap() is specifically designed for transformation, expecting a value to be returned for each element, collecting those return values into a brand new array that can be further chained with additional array methods.",
+  "keyPoints": [
+    "forEach(): for side effects only, always returns undefined, cannot be chained meaningfully",
+    "map(): for transformation, returns a new array, CAN be chained with other array methods",
+    "Using map() when you don't need the returned array (ignoring it) is a common code smell — use forEach() instead"
+  ],
+  "commonMistakes": [
+    "Using map() purely for side effects and discarding its returned array",
+    "Trying to chain further array methods off of forEach()'s undefined return value",
+    "Confusing forEach()'s lack of return with map()'s transformation purpose"
+  ],
+  "followUpQuestions": [
+    "Why is it considered a code smell to use map() when you don't need the returned array?",
+    "Can forEach() be chained with .filter() afterward?",
+    "When would you choose forEach() over map()?"
+  ],
+  "realWorldExample": "A developer uses forEach() to log each item in an array for debugging, but uses map() to transform an array of user objects into an array of just their names.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "arr.forEach(item => console.log(item)); // side effect, no return\nconst names = users.map(user => user.name); // transformation, new array"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish side-effect usage (forEach) from transformation usage (map) with correct return-value understanding.",
+  "tags": ["JavaScript", "forEach", "map", "Interview"],
+  "relatedTopics": ["map, filter, reduce", "Array Methods", "Functional Programming"],
+  "references": ["MDN Web Docs - Array.prototype.forEach"]
+},
+{
+  "id": "js-019",
+  "category": "JavaScript",
+  "topic": "CommonJS vs ES Modules",
+  "difficulty": "Medium",
+  "question": "What is the Module System in JavaScript? Compare CommonJS and ES Modules.",
+  "shortAnswer": "CommonJS (require/module.exports) is Node.js's original, synchronous module system. ES Modules (import/export) is the official, standardized JavaScript module system, supporting static analysis and asynchronous loading, now used in both browsers and modern Node.js.",
+  "detailedAnswer": "CommonJS loads modules synchronously at runtime; requiring a module immediately executes and returns the module's exports, which works fine in Node.js but is unsuitable for browsers where network-loaded files would need to block execution.\n\nES Modules use static import/export syntax that can be analyzed at build time before actually running the code, enabling tree-shaking where bundlers can strip out unused exports, and native asynchronous loading support in browsers. Modern Node.js supports both systems, and ES Modules is now the standardized, forward-looking system for both browser and server-side JavaScript.",
+  "keyPoints": [
+    "CommonJS: require()/module.exports, synchronous, Node.js's original module system",
+    "ES Modules: import/export, static structure enables tree-shaking, natively supported in modern browsers",
+    "Tree-shaking: bundlers can eliminate unused exported code, reducing final bundle size — only possible with ESM's static structure"
+  ],
+  "commonMistakes": [
+    "Assuming CommonJS supports tree-shaking the way ES Modules do",
+    "Mixing require() and import syntax inconsistently in the same project without proper configuration",
+    "Not knowing modern Node.js requires .mjs or \"type\": \"module\" to use ES Modules"
+  ],
+  "followUpQuestions": [
+    "Why does ES Modules' static structure enable tree-shaking while CommonJS doesn't?",
+    "How does modern Node.js distinguish between CommonJS and ES Module files?",
+    "Why is CommonJS's synchronous loading unsuitable for browsers?"
+  ],
+  "realWorldExample": "A modern web application bundler uses ES Modules' static import/export structure to tree-shake unused code, significantly reducing the final production bundle size.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "// CommonJS\nconst fs = require('fs');\nmodule.exports = myFunction;\n\n// ES Modules\nimport fs from 'fs';\nexport default myFunction;"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the synchronous-vs-static distinction and describe tree-shaking as a key ESM benefit.",
+  "tags": ["JavaScript", "CommonJS", "ES Modules", "Interview"],
+  "relatedTopics": ["Node.js", "Bundlers", "Tree-Shaking"],
+  "references": ["MDN Web Docs - JavaScript modules"]
+},
+{
+  "id": "js-020",
+  "category": "JavaScript",
+  "topic": "Generator Functions",
+  "difficulty": "Hard",
+  "question": "What is a JavaScript Generator Function? What does yield do?",
+  "shortAnswer": "A Generator Function (declared with function*) can PAUSE its execution at any yield statement and later RESUME from exactly where it left off, producing a sequence of values over multiple separate calls rather than all at once.",
+  "detailedAnswer": "Calling a generator function doesn't immediately execute its body; instead, it returns a special Generator/Iterator object. Each call to .next() on this object resumes execution from wherever it last paused, runs until the next yield statement, returns that yielded value wrapped as {value, done}, and pauses again.\n\nThis enables lazy evaluation, generating values one at a time only when actually needed, which is memory-efficient for potentially large or even infinite sequences. Generators are directly usable with for...of loops since they implement the iterable protocol.",
+  "keyPoints": [
+    "function* name() { yield value; }: defines a generator; calling it returns an iterator, doesn't run the body immediately",
+    ".next(): resumes execution until the next yield, returning {value, done} and pausing again",
+    "Enables lazy, on-demand value generation — useful for large/infinite sequences without computing everything upfront"
+  ],
+  "commonMistakes": [
+    "Assuming calling a generator function immediately executes its body",
+    "Not knowing generators implement the iterable protocol and work with for...of",
+    "Confusing the returned {value, done} object with just the raw value"
+  ],
+  "followUpQuestions": [
+    "Why doesn't calling a generator function immediately run its body?",
+    "How would you use a generator to produce an infinite sequence lazily?",
+    "How do generators relate to the iterable protocol and for...of loops?"
+  ],
+  "realWorldExample": "A generator function lazily produces an infinite sequence of Fibonacci numbers, computing only as many values as are actually consumed by the calling code.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function* fibonacci() {\n  let [a, b] = [0, 1];\n  while (true) {\n    yield a;\n    [a, b] = [b, a + b];\n  }\n}\n\nconst gen = fibonacci();\ngen.next().value; // 0\ngen.next().value; // 1"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the pause-resume mechanism of yield and describe use cases like lazy or infinite sequences.",
+  "tags": ["JavaScript", "Generators", "yield", "Interview"],
+  "relatedTopics": ["Iterators", "for...of", "Lazy Evaluation"],
+  "references": ["MDN Web Docs - function*"]
+},
+{
+  "id": "js-021",
+  "category": "JavaScript",
+  "topic": "Object.freeze vs const",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Object.freeze() and const for Immutability?",
+  "shortAnswer": "const only prevents REASSIGNING the variable binding itself — the object it points to can still be mutated freely. Object.freeze() actually prevents modification of the object's own properties (though only shallowly, not nested objects).",
+  "detailedAnswer": "const obj = {a: 1} prevents reassigning the variable to a new object, but mutating the existing object's property works completely fine, since const says nothing about the object's internal mutability, only about the variable binding.\n\nObject.freeze(obj) genuinely prevents adding, removing, or modifying the object's own properties, silently failing in non-strict mode or throwing a TypeError in strict mode. Critically, Object.freeze() is shallow; if obj has a nested object as a property, that nested object is not frozen and remains fully mutable, requiring a recursive deep freeze implementation for full immutability.",
+  "keyPoints": [
+    "const: prevents variable REASSIGNMENT only — the object's properties remain fully mutable",
+    "Object.freeze(): prevents modifying the object's OWN properties — but only shallowly, one level deep",
+    "Nested objects inside a frozen object are NOT automatically frozen — a recursive deep-freeze is needed for full immutability"
+  ],
+  "commonMistakes": [
+    "Assuming const makes an object's properties immutable",
+    "Assuming Object.freeze() deeply freezes nested objects automatically",
+    "Not checking whether the code runs in strict mode when relying on freeze failures to throw errors"
+  ],
+  "followUpQuestions": [
+    "How would you implement a recursive deep freeze?",
+    "Does Object.freeze() throw an error or silently fail when modification is attempted?",
+    "Why doesn't const prevent mutation of an object's properties?"
+  ],
+  "realWorldExample": "A configuration object is frozen with Object.freeze() to prevent accidental modification at the top level, but a nested settings object within it remains mutable unless deep-frozen recursively.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const obj = Object.freeze({ a: 1, nested: { b: 2 } });\nobj.a = 2; // fails silently or throws in strict mode\nobj.nested.b = 3; // succeeds! nested object is NOT frozen"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish variable-binding immutability (const) from object-property immutability (Object.freeze) and note the shallow limitation.",
+  "tags": ["JavaScript", "Object.freeze", "const", "Immutability", "Interview"],
+  "relatedTopics": ["Shallow vs Deep Copy", "var, let, const", "Strict Mode"],
+  "references": ["MDN Web Docs - Object.freeze"]
+},
+{
+  "id": "js-022",
+  "category": "JavaScript",
+  "topic": "Currying",
+  "difficulty": "Medium",
+  "question": "What is Currying in JavaScript? Give a practical example.",
+  "shortAnswer": "Currying transforms a function that takes multiple arguments into a sequence of functions, each taking a SINGLE argument, returning a new function until all arguments have been provided.",
+  "detailedAnswer": "A regular function add(a, b, c) takes all three arguments at once. A curried version instead takes them one at a time; calling it with the first argument returns a new function expecting the second, and so on until the final call returns the actual result.\n\nThis is practically useful for creating specialized, partially-applied functions, such as a reusable function pre-configured with a specific tax rate that can then be applied to many different prices without repeating the tax rate argument every time. Libraries like Lodash provide a curry() utility to automatically convert any regular multi-argument function into its curried equivalent.",
+  "keyPoints": [
+    "Transforms fn(a, b, c) into fn(a)(b)(c) — each call takes one argument and returns a new function",
+    "Practical use: creating specialized, pre-configured functions by \"locking in\" some arguments early (partial application)",
+    "Closures are the underlying mechanism that makes currying possible — each returned function \"remembers\" prior arguments"
+  ],
+  "commonMistakes": [
+    "Confusing currying with simple partial application without understanding the single-argument-at-a-time chain",
+    "Not recognizing closures as the mechanism enabling currying",
+    "Overusing currying in contexts where it adds unnecessary complexity"
+  ],
+  "followUpQuestions": [
+    "How do closures enable currying to work?",
+    "What is the practical benefit of a curried function over a regular multi-argument one?",
+    "How would you write a generic curry() utility function?"
+  ],
+  "realWorldExample": "A tax calculation function is curried to create a reusable addTax function pre-configured with a specific tax rate, applied to many different prices.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const curriedAdd = (a) => (b) => (c) => a + b + c;\ncurriedAdd(1)(2)(3); // 6\n\nconst addTax = (rate) => (price) => price + price * rate;\nconst addSalesTax = addTax(0.08);\naddSalesTax(100); // 108"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the one-argument-at-a-time transformation and describe closures as the underlying mechanism.",
+  "tags": ["JavaScript", "Currying", "Closures", "Interview"],
+  "relatedTopics": ["Higher-Order Functions", "Closures", "Functional Programming"],
+  "references": ["MDN Web Docs - Closures"]
+},
+{
+  "id": "js-023",
+  "category": "JavaScript",
+  "topic": "slice vs splice",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between Array.prototype.slice() and Array.prototype.splice()?",
+  "shortAnswer": "slice() returns a NEW array containing a portion of the original, WITHOUT modifying the original array. splice() MODIFIES the original array in place (adding/removing elements), and returns the removed elements.",
+  "detailedAnswer": "array.slice(start, end) is non-destructive; it returns a shallow copy of a portion of the array from start up to but not including end, leaving the original array completely untouched, commonly used to safely extract a sub-array or create a shallow copy of an entire array.\n\narray.splice(start, deleteCount, ...itemsToInsert) is destructive; it directly mutates the original array by removing deleteCount elements starting at start, optionally inserting new items at that position, and returns an array of whatever elements were actually removed.",
+  "keyPoints": [
+    "slice(): non-destructive, returns a NEW array, original is unchanged — good for safe copying/extraction",
+    "splice(): destructive, MUTATES the original array directly, returns the removed elements — good for in-place edits",
+    "Easy to confuse due to similar names — slice = \"give me a copy of a piece,\" splice = \"cut/insert directly into this array\""
+  ],
+  "commonMistakes": [
+    "Confusing slice() and splice() due to their similar names",
+    "Expecting slice() to modify the original array",
+    "Not realizing splice() returns the removed elements, not the modified array"
+  ],
+  "followUpQuestions": [
+    "How would you use splice() to insert an element without removing any?",
+    "What does slice() return if called with no arguments?",
+    "Why is slice() considered safer to use than splice() in functional programming contexts?"
+  ],
+  "realWorldExample": "A React application avoids using splice() directly on state arrays since it mutates in place, preferring slice() to create a new array for immutable state updates.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const arr = [1, 2, 3, 4, 5];\nconst copy = arr.slice(1, 3); // [2, 3], arr unchanged\n\nconst removed = arr.splice(1, 2); // removes [2, 3], arr is now [1, 4, 5]"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish non-destructive slice() from destructive splice() with correct syntax.",
+  "tags": ["JavaScript", "slice", "splice", "Array Methods", "Interview"],
+  "relatedTopics": ["Shallow vs Deep Copy", "Immutability", "Array Methods"],
+  "references": ["MDN Web Docs - Array.prototype.splice"]
+},
+{
+  "id": "js-024",
+  "category": "JavaScript",
+  "topic": "Set and Map",
+  "difficulty": "Medium",
+  "question": "What is the JavaScript Set and Map object? How are they different from arrays and plain objects?",
+  "shortAnswer": "Set stores a collection of UNIQUE values (no duplicates allowed, automatically enforced). Map stores key-value pairs where keys can be ANY type (not just strings, unlike plain objects), and it maintains insertion order.",
+  "detailedAnswer": "A Set automatically de-duplicates; attempting to add a value that already exists is silently ignored, making it ideal for quickly removing duplicates from an array or efficiently checking membership with O(1) average performance versus an array's O(n) includes check.\n\nA Map is similar to a plain object for storing key-value pairs, but keys can be objects, functions, or any value type, it maintains a reliable insertion order when iterated, provides a direct .size property, and avoids accidental collisions with inherited prototype properties that plain objects can sometimes suffer from.",
+  "keyPoints": [
+    "Set: automatically enforces uniqueness — ideal for deduplication and fast membership checks",
+    "Map: keys can be ANY type (objects, functions, etc.), unlike plain objects which coerce keys to strings",
+    "Both provide .size directly and guarantee reliable iteration order, unlike plain objects/arrays in certain edge cases"
+  ],
+  "commonMistakes": [
+    "Using a plain object as a Map substitute when non-string keys are needed",
+    "Not knowing Set automatically silently ignores duplicate additions",
+    "Using Object.keys(obj).length instead of a Map's direct .size property"
+  ],
+  "followUpQuestions": [
+    "Why would you use a Map instead of a plain object for key-value storage?",
+    "How would you deduplicate an array using a Set?",
+    "What is the time complexity of checking membership in a Set versus an array?"
+  ],
+  "realWorldExample": "A caching layer uses a Map with object keys to associate metadata with specific object instances, something a plain object couldn't do since its keys are coerced to strings.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const unique = [...new Set([1, 2, 2, 3])]; // [1, 2, 3]\n\nconst map = new Map();\nconst key = {};\nmap.set(key, 'value');\nmap.get(key); // 'value'"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain Set's uniqueness enforcement and Map's flexible key types compared to plain objects.",
+  "tags": ["JavaScript", "Set", "Map", "Interview"],
+  "relatedTopics": ["Data Structures", "Arrays", "Objects"],
+  "references": ["MDN Web Docs - Map", "MDN Web Docs - Set"]
+},
+{
+  "id": "js-025",
+  "category": "JavaScript",
+  "topic": "Strict Mode",
+  "difficulty": "Easy",
+  "question": "What is \"Strict Mode\" ('use strict') in JavaScript? Why is it recommended?",
+  "shortAnswer": "Strict Mode is an opt-in restricted variant of JavaScript that catches common mistakes by throwing errors for previously \"silently allowed\" bad practices, making debugging easier and code more predictable/secure.",
+  "detailedAnswer": "Adding 'use strict' at the top of a file or function enables several important safety changes: assigning to an undeclared variable throws a ReferenceError instead of silently creating an accidental global variable, assigning to a read-only or non-existent property throws a TypeError instead of silently failing, this inside a regular standalone function call is undefined instead of defaulting to the global object, and duplicate function parameter names are disallowed.\n\nES6 modules and classes are automatically in strict mode by default without needing the explicit directive, which is one reason modern JavaScript codebases using modules and classes are inherently safer than older, non-strict scripts.",
+  "keyPoints": [
+    "Catches common mistakes as explicit errors instead of allowing silent, hard-to-debug failures",
+    "Undeclared variable assignment throws a ReferenceError instead of silently creating an accidental global",
+    "ES6 modules and class bodies are automatically strict mode by default — no explicit directive needed"
+  ],
+  "commonMistakes": [
+    "Assuming all JavaScript code runs in strict mode by default outside of modules/classes",
+    "Not knowing accidental global variable creation is prevented specifically by strict mode",
+    "Forgetting duplicate function parameter names are disallowed in strict mode"
+  ],
+  "followUpQuestions": [
+    "Why do ES6 modules automatically run in strict mode without an explicit directive?",
+    "What happens to 'this' inside a standalone function call in strict mode versus non-strict mode?",
+    "What error does strict mode throw for an undeclared variable assignment?"
+  ],
+  "realWorldExample": "A developer forgets to declare a variable with let, and in strict mode this immediately throws a ReferenceError instead of silently creating a global variable that could cause bugs elsewhere.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "'use strict';\nx = 10; // ReferenceError: x is not defined"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe strict mode's safety benefits and know that ES6 modules/classes enable it automatically.",
+  "tags": ["JavaScript", "Strict Mode", "Interview"],
+  "relatedTopics": ["ES6 Modules", "this Keyword", "Error Handling"],
+  "references": ["MDN Web Docs - Strict mode"]
 }
 ];
