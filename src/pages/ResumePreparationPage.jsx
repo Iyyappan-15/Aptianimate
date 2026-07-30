@@ -325,8 +325,8 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
     const matchesSection = selectedSection === 'All' || q.section === selectedSection;
     const matchesSearch = searchQuery === '' || 
       q.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      q.topic.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      q.tags.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
+      (q.tags || []).some(t => t.toLowerCase().includes(searchQuery.toLowerCase())) ||
+      (q.section || '').toLowerCase().includes(searchQuery.toLowerCase());
     return matchesSection && matchesSearch;
   });
 
