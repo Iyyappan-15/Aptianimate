@@ -9901,5 +9901,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["JavaScript", "Strict Mode", "Interview"],
   "relatedTopics": ["ES6 Modules", "this Keyword", "Error Handling"],
   "references": ["MDN Web Docs - Strict mode"]
+},
+{
+  "id": "react-001",
+  "category": "React",
+  "topic": "Virtual DOM",
+  "difficulty": "Medium",
+  "question": "What is the Virtual DOM? How does React use it to improve performance?",
+  "shortAnswer": "The Virtual DOM is a lightweight JavaScript representation of the actual DOM. React diffs the new virtual tree against the previous one, computing the minimal set of real DOM changes needed (reconciliation), instead of re-rendering everything.",
+  "detailedAnswer": "Directly manipulating the real browser DOM is slow, since every change can trigger layout recalculation and repainting. React maintains a Virtual DOM as a lightweight in-memory object tree mirroring the UI.\n\nWhen state changes, React builds a new Virtual DOM tree and compares it against the previous one through diffing, computing the minimal set of actual DOM operations needed. React's diffing algorithm assumes elements of different types produce different subtrees, skipping deep comparison there, and uses the key prop to efficiently match list items across renders.",
+  "keyPoints": [
+    "Diffing compares old vs new Virtual DOM tree, computes minimal real DOM updates",
+    "key prop: helps React identify which list items changed/moved — never use array index as key if the list can reorder",
+    "Reconciliation: the process of applying the computed minimal changes to the actual DOM"
+  ],
+  "commonMistakes": [
+    "Using array index as the key prop for a list that can be reordered or filtered",
+    "Assuming the Virtual DOM makes all rendering free regardless of component size or complexity",
+    "Not knowing React skips deep diffing when element types change at the same position"
+  ],
+  "followUpQuestions": [
+    "Why does React skip diffing children when an element's type changes?",
+    "What problems can arise from using array index as a key?",
+    "What is reconciliation and how does it relate to diffing?"
+  ],
+  "realWorldExample": "A todo list re-renders only the specific added or removed item's DOM node instead of rebuilding the entire list, thanks to React's diffing algorithm and stable keys.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "{todos.map(todo => (\n  <TodoItem key={todo.id} text={todo.text} />\n))}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the diffing process and the importance of stable keys for list reconciliation.",
+  "tags": ["React", "Virtual DOM", "Reconciliation", "Interview"],
+  "relatedTopics": ["React.memo", "key Prop", "Reconciliation"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-002",
+  "category": "React",
+  "topic": "useState vs useEffect",
+  "difficulty": "Easy",
+  "question": "What is the difference between useState and useEffect? When does useEffect run?",
+  "shortAnswer": "useState manages component state that persists across renders and triggers a re-render when updated. useEffect runs side effects after the component renders.",
+  "detailedAnswer": "useState(initialValue) returns a state variable and setter; calling the setter triggers a re-render with the new value, and React preserves this state across renders.\n\nuseEffect(callback, dependencyArray) runs the callback after the browser has painted, used for fetching data, subscriptions, or manual DOM manipulation. The dependency array controls timing: an empty array runs once after mount, an array with a value re-runs when that value changes, and omitting the array entirely runs after every render. Returning a cleanup function runs before unmount or before the effect re-runs.",
+  "keyPoints": [
+    "useState: synchronous state, triggers re-render, preserved across renders",
+    "useEffect(fn, []): runs once after mount — good for initial data fetching",
+    "Cleanup function: return () => { clearInterval(id) } — prevents memory leaks on unmount"
+  ],
+  "commonMistakes": [
+    "Omitting the dependency array when a specific re-run condition is actually needed",
+    "Forgetting to return a cleanup function for subscriptions or timers, causing memory leaks",
+    "Confusing useState's synchronous re-render trigger with useEffect's post-render timing"
+  ],
+  "followUpQuestions": [
+    "What happens if you omit the dependency array entirely in useEffect?",
+    "Why is a cleanup function important in useEffect?",
+    "How would you fetch data once when a component mounts?"
+  ],
+  "realWorldExample": "A component uses useState to track a counter's value and useEffect with an empty dependency array to fetch initial data once when the component mounts.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "const [count, setCount] = useState(0);\n\nuseEffect(() => {\n  const id = setInterval(() => setCount(c => c + 1), 1000);\n  return () => clearInterval(id); // cleanup\n}, []);"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain useState's re-render trigger and useEffect's timing controlled by the dependency array.",
+  "tags": ["React", "useState", "useEffect", "Hooks", "Interview"],
+  "relatedTopics": ["Component Lifecycle", "Custom Hooks", "useLayoutEffect"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-003",
+  "category": "React",
+  "topic": "Prop Drilling and Context API",
+  "difficulty": "Medium",
+  "question": "What is Prop Drilling? How do Context API and state management libraries solve it?",
+  "shortAnswer": "Prop Drilling is passing data through many nested components that don't need it, just to reach a deeply nested child that does. Context API and libraries like Redux avoid this by providing direct access to shared state from any component.",
+  "detailedAnswer": "In a deeply nested tree, if a top-level component holds data needed several levels deep, that data must be threaded as props through every intermediate component, coupling them unnecessarily.\n\nReact's Context API solves this via createContext() and useContext(), allowing any descendant to subscribe directly without manual prop threading. For moderate global state such as theme, user, or language, Context is sufficient. For complex, frequently-updated state, dedicated libraries like Redux, Zustand, or Recoil offer better performance and debugging tools.",
+  "keyPoints": [
+    "Prop drilling: passing props through 3+ intermediate components that don't use them",
+    "Context API: createContext() + useContext() — avoids drilling for moderate-complexity state",
+    "Redux/Zustand: better for complex, frequently-updated global state with many consumers"
+  ],
+  "commonMistakes": [
+    "Using Context for frequently-updating, granular state, causing unnecessary re-renders across all consumers",
+    "Threading props through many components instead of using Context for genuinely global data",
+    "Reaching for a heavy state library like Redux for simple, infrequently-changing shared state"
+  ],
+  "followUpQuestions": [
+    "Why is Context not ideal for frequently-updating state?",
+    "When would you choose Redux over Context API?",
+    "How does useContext eliminate the need for prop drilling?"
+  ],
+  "realWorldExample": "A theme setting is shared across an entire app using Context API, avoiding the need to pass it as a prop through every intermediate component.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "const ThemeContext = createContext('light');\n\nfunction App() {\n  return (\n    <ThemeContext.Provider value=\"dark\">\n      <Toolbar />\n    </ThemeContext.Provider>\n  );\n}\n\nfunction Button() {\n  const theme = useContext(ThemeContext);\n  return <button className={theme}>Click</button>;\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the prop drilling problem and describe when Context versus a dedicated state library is appropriate.",
+  "tags": ["React", "Prop Drilling", "Context API", "Interview"],
+  "relatedTopics": ["useContext", "Redux", "State Management"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-004",
+  "category": "React",
+  "topic": "Controlled vs Uncontrolled Components",
+  "difficulty": "Medium",
+  "question": "What is the difference between Controlled and Uncontrolled Components in React?",
+  "shortAnswer": "Controlled: form input value is driven by React state, updated via onChange. Uncontrolled: form input manages its own internal DOM state, accessed via a ref when needed.",
+  "detailedAnswer": "A controlled component's input means React state is the single source of truth; every keystroke updates state, which re-renders and sets the input's displayed value, giving full programmatic control such as validation on every change or real-time formatting.\n\nAn uncontrolled component lets the DOM manage its own value internally, only reading the current value when actually needed via a ref, avoiding a re-render on every keystroke. Controlled components are React's recommended default for most cases, while uncontrolled components can offer a slight performance benefit for very large forms or non-React integration.",
+  "keyPoints": [
+    "Controlled: React state is the source of truth, re-renders on every change, enables real-time validation",
+    "Uncontrolled: DOM manages its own state internally, accessed via ref only when needed",
+    "File inputs (<input type=\"file\">) are ALWAYS uncontrolled — browsers don't allow programmatically setting their value"
+  ],
+  "commonMistakes": [
+    "Mixing controlled and uncontrolled patterns on the same input, causing React warnings",
+    "Assuming file inputs can be made controlled like text inputs",
+    "Overusing controlled components for very large forms where performance becomes a concern"
+  ],
+  "followUpQuestions": [
+    "Why can't a file input be a controlled component?",
+    "What warning does React give when switching between controlled and uncontrolled?",
+    "When might an uncontrolled component be preferable?"
+  ],
+  "realWorldExample": "A search input is controlled to enable real-time filtering as the user types, while a large multi-field form uses uncontrolled inputs with refs to avoid re-rendering on every keystroke.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "// Controlled\nconst [value, setValue] = useState('');\n<input value={value} onChange={e => setValue(e.target.value)} />\n\n// Uncontrolled\nconst inputRef = useRef();\n<input ref={inputRef} defaultValue=\"initial\" />"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish React-state-driven inputs from DOM-managed inputs and identify file inputs as always uncontrolled.",
+  "tags": ["React", "Controlled Components", "Uncontrolled Components", "Interview"],
+  "relatedTopics": ["useRef", "Forms", "useState"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-005",
+  "category": "React",
+  "topic": "useMemo vs useCallback",
+  "difficulty": "Medium",
+  "question": "What is useMemo and useCallback? How do they differ?",
+  "shortAnswer": "useMemo memoizes (caches) a computed VALUE, recalculating only when its dependencies change. useCallback memoizes a FUNCTION reference itself, preventing it from being recreated on every render.",
+  "detailedAnswer": "useMemo caches the result of a calculation, only re-running it when its dependencies change, useful for avoiding expensive recomputation on every render such as filtering or sorting a large list.\n\nuseCallback caches the function itself rather than its result, useful when passing a callback as a prop to a memoized child component, since without useCallback a new function reference is created on every parent render, causing the memoized child to still re-render unnecessarily since its prop reference technically changed.",
+  "keyPoints": [
+    "useMemo: caches a computed VALUE — avoids expensive recalculation",
+    "useCallback: caches a FUNCTION REFERENCE — avoids unnecessary re-renders of memoized children receiving it as a prop",
+    "Both should only be added when there's a measured performance problem — premature use adds complexity without benefit"
+  ],
+  "commonMistakes": [
+    "Using useMemo or useCallback prematurely without a measured performance problem",
+    "Forgetting useCallback is needed alongside React.memo to actually prevent unnecessary child re-renders",
+    "Confusing useMemo's cached value with useCallback's cached function reference"
+  ],
+  "followUpQuestions": [
+    "Why does useCallback need to be paired with React.memo to have any effect?",
+    "When would premature use of useMemo actually hurt performance?",
+    "Can you give an example where useMemo prevents expensive recomputation?"
+  ],
+  "realWorldExample": "A component memoizes an expensive sorted list computation with useMemo and wraps a click handler with useCallback so a memoized child component doesn't re-render unnecessarily.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "const sortedList = useMemo(() => list.sort(comparator), [list]);\nconst handleClick = useCallback(() => doSomething(id), [id]);"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish caching a value from caching a function reference and know when each is genuinely needed.",
+  "tags": ["React", "useMemo", "useCallback", "Performance", "Interview"],
+  "relatedTopics": ["React.memo", "Hooks", "Performance Optimization"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-006",
+  "category": "React",
+  "topic": "Reconciliation and Diffing Heuristics",
+  "difficulty": "Hard",
+  "question": "What is React Reconciliation and the Diffing Algorithm's Key Heuristics?",
+  "shortAnswer": "Reconciliation is React's process of comparing the new Virtual DOM tree against the previous one to compute the minimal real DOM update — using two key heuristics to make this fast: different element types produce different trees, and key props identify stable list items.",
+  "detailedAnswer": "A naive tree-diffing algorithm comparing two arbitrary trees has O(n³) complexity, impractical for UI updates that need to happen many times per second. React's heuristic diffing achieves O(n) by assuming two elements of different types produce fundamentally different trees, so React doesn't try to diff their children at all, tearing down the old subtree and building the new one from scratch.\n\nFor lists of children, the key prop lets React match up which specific child in the new list corresponds to which child in the old list, even if their order changed, avoiding unnecessary unmount/remount of items that just moved position.",
+  "keyPoints": [
+    "O(n) heuristic diffing instead of a naive O(n³) general tree-diff algorithm",
+    "Different element types at the same position: entire subtree is torn down and rebuilt, no attempt to diff children",
+    "key prop on list items: allows React to correctly match moved/reordered items instead of treating them as new"
+  ],
+  "commonMistakes": [
+    "Assuming React performs a full general tree-diff rather than using heuristics",
+    "Not understanding why changing an element's type causes a full subtree rebuild",
+    "Using unstable keys, defeating the purpose of the list-matching heuristic"
+  ],
+  "followUpQuestions": [
+    "Why does React tear down and rebuild an entire subtree when an element's type changes?",
+    "How does the key prop reduce the complexity of diffing lists?",
+    "What would the complexity be without these heuristics?"
+  ],
+  "realWorldExample": "Changing a component's root element from a <div> to a <span> causes React to discard and rebuild the entire subtree rather than attempting to diff its children.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain both heuristics and why they reduce diffing complexity from O(n³) to O(n).",
+  "tags": ["React", "Reconciliation", "Diffing Algorithm", "Interview"],
+  "relatedTopics": ["Virtual DOM", "key Prop", "Performance"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-007",
+  "category": "React",
+  "topic": "Rules of Hooks",
+  "difficulty": "Medium",
+  "question": "What are React Hooks Rules? Why must Hooks be called in the same order every render?",
+  "shortAnswer": "Hooks must be called (1) only at the top level of a component (never inside loops, conditions, or nested functions), and (2) only from React function components or custom hooks — because React relies on the CALL ORDER to correctly associate each hook with its corresponding internal state.",
+  "detailedAnswer": "React doesn't identify hooks by name; internally, it maintains an ordered list of hook state for each component instance, matching each useState or useEffect call to its corresponding stored state purely based on the order in which hooks are called during rendering.\n\nIf a hook call is conditionally skipped on some renders but not others, the order shifts, and React would incorrectly associate the wrong state with the wrong hook call, causing subtle, hard-to-debug bugs. This is why hooks must always be called unconditionally, in the exact same order, on every single render of a given component.",
+  "keyPoints": [
+    "React tracks hooks by CALL ORDER internally, not by variable name or any other identifier",
+    "Conditionally calling a hook (inside an if/loop) shifts the order on some renders, causing state to become mismatched",
+    "ESLint's eslint-plugin-react-hooks automatically catches and warns about violations of this rule during development"
+  ],
+  "commonMistakes": [
+    "Calling a hook conditionally inside an if statement or loop",
+    "Calling hooks inside regular JavaScript functions rather than React components or custom hooks",
+    "Not using eslint-plugin-react-hooks to catch violations automatically"
+  ],
+  "followUpQuestions": [
+    "Why does conditionally calling a hook cause state mismatches?",
+    "How does ESLint help catch violations of the rules of hooks?",
+    "Can hooks be called inside regular JavaScript utility functions?"
+  ],
+  "realWorldExample": "A developer accidentally wraps a useState call inside an if statement, causing React to mismatch state between renders, which eslint-plugin-react-hooks flags as a rule violation.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "// WRONG\nif (condition) {\n  const [state, setState] = useState(0);\n}\n\n// CORRECT\nconst [state, setState] = useState(0);\nif (condition) {\n  // use state here\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why call order matters for React's internal hook tracking and describe the tooling that enforces this rule.",
+  "tags": ["React", "Hooks", "Rules of Hooks", "Interview"],
+  "relatedTopics": ["useState", "useEffect", "Custom Hooks"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-008",
+  "category": "React",
+  "topic": "useRef vs useState",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between useRef and useState?",
+  "shortAnswer": "useState triggers a re-render whenever its value is updated. useRef stores a mutable value that PERSISTS across renders WITHOUT triggering any re-render when it changes.",
+  "detailedAnswer": "useRef() returns a mutable object with a current property that persists for the entire lifetime of the component instance; updating ref.current does not cause a re-render, unlike calling a useState setter.\n\nThis makes useRef ideal for directly accessing or manipulating a DOM element, storing a mutable value that needs to persist across renders but shouldn't trigger a re-render when it changes such as a timer ID, and avoiding the stale closure problem in certain effect callbacks.",
+  "keyPoints": [
+    "useState: updating the value triggers a re-render — used for anything that should visually update the UI",
+    "useRef: updating .current does NOT trigger a re-render — used for DOM access or non-visual persistent values",
+    "Common use case: inputRef.current.focus() to imperatively focus an input element from JavaScript code"
+  ],
+  "commonMistakes": [
+    "Using useState for values that don't need to trigger a re-render, causing unnecessary renders",
+    "Expecting a ref update to cause the UI to visually update",
+    "Not knowing useRef persists across renders unlike a regular variable declared in the component body"
+  ],
+  "followUpQuestions": [
+    "Why doesn't updating ref.current trigger a re-render?",
+    "How would you use useRef to store a previous prop value for comparison?",
+    "What is a practical use case for useRef beyond DOM access?"
+  ],
+  "realWorldExample": "A component uses useRef to store an interval ID for later cleanup with clearInterval, since the ID itself doesn't need to trigger any visual update.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "const inputRef = useRef(null);\n\nfunction focusInput() {\n  inputRef.current.focus();\n}\n\nreturn <input ref={inputRef} />;"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the re-render trigger difference and identify appropriate use cases for useRef.",
+  "tags": ["React", "useRef", "useState", "Hooks", "Interview"],
+  "relatedTopics": ["DOM Manipulation", "useState", "useEffect"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-009",
+  "category": "React",
+  "topic": "React.memo",
+  "difficulty": "Medium",
+  "question": "What is React.memo? When should you use it?",
+  "shortAnswer": "React.memo() is a higher-order component that wraps a component, causing it to SKIP re-rendering if its props haven't changed (using a shallow comparison) — a performance optimization for expensive components.",
+  "detailedAnswer": "By default, when a parent component re-renders, all of its child components re-render too, even if a specific child's props didn't actually change; normally this is fine, but for genuinely expensive components this can cause a noticeable performance issue.\n\nReact.memo(MyComponent) wraps a component so React performs a shallow comparison of its previous props versus new props before re-rendering; if all props are shallowly equal, React skips re-rendering that component entirely. Critically, this only helps if props are actually stable; passing a new inline function or object as a prop on every parent render defeats the memoization entirely, requiring useCallback or useMemo on the parent side to stabilize those prop values.",
+  "keyPoints": [
+    "Wraps a component, skipping re-render if props are shallowly equal to the previous render's props",
+    "Only useful for genuinely expensive components — adds its own small overhead, unnecessary for cheap/simple components",
+    "Commonly needs to be paired with useCallback/useMemo on the PARENT to actually keep prop references stable"
+  ],
+  "commonMistakes": [
+    "Wrapping cheap, simple components in React.memo unnecessarily",
+    "Passing new inline functions or objects as props, defeating the memoization",
+    "Not pairing React.memo with useCallback/useMemo on the parent to stabilize prop references"
+  ],
+  "followUpQuestions": [
+    "Why does passing an inline function as a prop defeat React.memo?",
+    "What kind of components benefit most from React.memo?",
+    "How does shallow comparison work for object and function props?"
+  ],
+  "realWorldExample": "An expensive chart component wrapped in React.memo skips re-rendering when its parent re-renders for unrelated reasons, as long as its data prop reference stays stable via useMemo.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "const ExpensiveChart = React.memo(function Chart({ data }) {\n  // expensive rendering logic\n  return <canvas />;\n});"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain shallow prop comparison and the common pitfall of unstable prop references defeating memoization.",
+  "tags": ["React", "React.memo", "Performance", "Interview"],
+  "relatedTopics": ["useCallback", "useMemo", "Virtual DOM"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-010",
+  "category": "React",
+  "topic": "Component Lifecycle and Hooks",
+  "difficulty": "Medium",
+  "question": "What is the React Component Lifecycle (in Class Components)? How do Hooks replicate this in Function Components?",
+  "shortAnswer": "Class components have lifecycle methods: componentDidMount (after first render), componentDidUpdate (after subsequent renders), componentWillUnmount (before removal). useEffect with different dependency arrays replicates all three in function components.",
+  "detailedAnswer": "In class components, componentDidMount() runs once, immediately after the component is first rendered to the DOM, ideal for initial data fetching or subscriptions. componentDidUpdate(prevProps, prevState) runs after every subsequent re-render, used to respond to specific prop or state changes. componentWillUnmount() runs just before the component is removed from the DOM, used for cleanup.\n\nIn function components, useEffect(fn, []) with an empty array replicates componentDidMount, useEffect(fn, [dep]) replicates a targeted version of componentDidUpdate, and the cleanup function returned from useEffect replicates componentWillUnmount.",
+  "keyPoints": [
+    "componentDidMount ≈ useEffect(fn, []) — runs once after initial mount only",
+    "componentDidUpdate ≈ useEffect(fn, [specificDep]) — runs when specific dependencies change",
+    "componentWillUnmount ≈ the cleanup function returned FROM inside useEffect"
+  ],
+  "commonMistakes": [
+    "Assuming useEffect without a dependency array behaves like componentDidMount",
+    "Forgetting to return a cleanup function to replicate componentWillUnmount",
+    "Not knowing a single useEffect can conceptually cover multiple lifecycle phases depending on its dependency array"
+  ],
+  "followUpQuestions": [
+    "How would you replicate componentDidUpdate for a specific prop using useEffect?",
+    "What happens if you forget to return a cleanup function from useEffect?",
+    "Can a single useEffect call replicate all three lifecycle methods at once?"
+  ],
+  "realWorldExample": "A function component uses useEffect(fn, []) to fetch data once on mount, mirroring the componentDidMount behavior of an equivalent class component.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "useEffect(() => {\n  fetchData();\n  return () => cleanup(); // componentWillUnmount equivalent\n}, []); // componentDidMount equivalent"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to map each class lifecycle method to its useEffect equivalent with correct dependency array usage.",
+  "tags": ["React", "Component Lifecycle", "useEffect", "Interview"],
+  "relatedTopics": ["Class Components", "useState", "Hooks"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-011",
+  "category": "React",
+  "topic": "State vs Props",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between State and Props in React?",
+  "shortAnswer": "Props are data passed INTO a component from its parent — read-only from the receiving component's perspective. State is data managed INTERNALLY within a component, which the component itself can update.",
+  "detailedAnswer": "Props flow in one direction, from parent to child, and a component should never attempt to modify its own received props directly. If a child needs to trigger a change, the parent typically passes down a callback function as a prop, which the child calls to request the parent update its own state, which then flows back down as new props.\n\nState, by contrast, is private and fully controlled by the component that declares it, and only that component can update it, triggering a re-render of that component and its children.",
+  "keyPoints": [
+    "Props: passed from parent to child, read-only from the child's perspective, flows top-down",
+    "State: internal to a component, mutable via its own setter functions, triggers re-renders when updated",
+    "Data flow pattern: state lives in a parent, passed down as props, changes requested via callback props passed down too"
+  ],
+  "commonMistakes": [
+    "Attempting to directly mutate a component's received props",
+    "Confusing which component should 'own' a piece of state versus receiving it as a prop",
+    "Not passing a callback prop down when a child needs to request a state change"
+  ],
+  "followUpQuestions": [
+    "Why should a component never directly mutate its own props?",
+    "How does a child component request a change to state it doesn't own?",
+    "What is React's unidirectional data flow model?"
+  ],
+  "realWorldExample": "A parent component owns the state for a shopping cart's item count, passing it down as a prop to a display component and a callback prop to an 'add item' button component.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "function Parent() {\n  const [count, setCount] = useState(0);\n  return <Child count={count} onIncrement={() => setCount(count + 1)} />;\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the top-down flow of props and the internal ownership of state, along with the callback pattern for requesting changes.",
+  "tags": ["React", "State", "Props", "Interview"],
+  "relatedTopics": ["Lifting State Up", "useState", "Unidirectional Data Flow"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-012",
+  "category": "React",
+  "topic": "Lifting State Up",
+  "difficulty": "Medium",
+  "question": "What is Lifting State Up in React?",
+  "shortAnswer": "\"Lifting State Up\" means moving state from a child component to its closest common ancestor, when multiple sibling components need to share and stay synchronized with the same data.",
+  "detailedAnswer": "If two sibling components both need access to the same piece of state, and that state currently lives inside just one of them, there's no direct way for the other sibling to access or influence it, since siblings can't communicate directly in React's unidirectional data flow model.\n\nThe solution is to move that state up to their closest shared parent component, which then passes the current value down to both children as props, and passes down an update-callback function as a prop to whichever child needs to trigger changes to that shared state, keeping a single, unambiguous source of truth.",
+  "keyPoints": [
+    "Used when sibling components need to share and stay synchronized with the same piece of state",
+    "The shared state moves to their closest common ancestor, which passes it down to both as props",
+    "Maintains React's unidirectional data flow — siblings never communicate directly with each other"
+  ],
+  "commonMistakes": [
+    "Trying to have sibling components communicate directly without lifting shared state to a common parent",
+    "Duplicating state across multiple sibling components instead of establishing a single source of truth",
+    "Not passing down both the value and an update callback to the components that need them"
+  ],
+  "followUpQuestions": [
+    "Why can't sibling components communicate directly in React?",
+    "How would you decide which ancestor is the correct place to lift state to?",
+    "What downsides can arise from lifting state too far up the component tree?"
+  ],
+  "realWorldExample": "A filter input and a results list are both children of a shared parent, which lifts the search term state up so both siblings can read and update it consistently.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "function Parent() {\n  const [searchTerm, setSearchTerm] = useState('');\n  return (\n    <>\n      <FilterInput value={searchTerm} onChange={setSearchTerm} />\n      <ResultsList term={searchTerm} />\n    </>\n  );\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why sibling components can't communicate directly and describe the common-ancestor solution.",
+  "tags": ["React", "Lifting State Up", "State", "Interview"],
+  "relatedTopics": ["State vs Props", "Unidirectional Data Flow", "Component Composition"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-013",
+  "category": "React",
+  "topic": "React Fragments",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between a React Fragment (<>...</>) and a <div> wrapper?",
+  "shortAnswer": "A Fragment groups multiple children together WITHOUT adding any extra node to the actual rendered DOM — a <div> wrapper DOES add an extra, visible DOM element.",
+  "detailedAnswer": "React components must return a single root element; if multiple sibling elements need to be returned, wrapping them in a <div> adds an unwanted extra DOM node that can break valid HTML structure and can also interfere with CSS layout systems like Flexbox or Grid.\n\nReact.Fragment, or the shorthand <>...</>, groups multiple children together at the JSX level without producing any corresponding node in the actual rendered DOM output, solving both the single root element requirement and avoiding unwanted extra markup.",
+  "keyPoints": [
+    "Solves React's \"must return a single root element\" requirement without adding unwanted extra DOM nodes",
+    "Shorthand <>...</> syntax doesn't support a key prop; the full <React.Fragment key={...}> syntax is needed when keys are required (e.g., in a list)",
+    "Prevents breaking valid HTML nesting rules (e.g., avoiding an invalid <div> between <table> and <tr>)"
+  ],
+  "commonMistakes": [
+    "Using a <div> wrapper unnecessarily, breaking valid HTML nesting rules like table structure",
+    "Trying to pass a key prop to the shorthand <>...</> syntax instead of using React.Fragment",
+    "Forgetting a component must still return a single root element even without a Fragment"
+  ],
+  "followUpQuestions": [
+    "Why can't the shorthand fragment syntax accept a key prop?",
+    "What HTML nesting rule violations does a Fragment help avoid?",
+    "How would you return multiple <td> elements from a component without adding an extra DOM node?"
+  ],
+  "realWorldExample": "A component returning multiple <td> cells for a table row uses a Fragment instead of a <div>, avoiding invalid HTML since a <div> can't be a direct child of a <table>.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "function Row() {\n  return (\n    <>\n      <td>Cell 1</td>\n      <td>Cell 2</td>\n    </>\n  );\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how Fragments avoid extra DOM nodes and know when the full React.Fragment syntax with a key is needed.",
+  "tags": ["React", "Fragment", "JSX", "Interview"],
+  "relatedTopics": ["JSX", "key Prop", "Component Composition"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-014",
+  "category": "React",
+  "topic": "Custom Hooks",
+  "difficulty": "Medium",
+  "question": "What is a Custom Hook in React? Give an example use case.",
+  "shortAnswer": "A Custom Hook is a reusable JavaScript function (conventionally prefixed with use) that encapsulates and reuses stateful logic across multiple components, built by combining React's built-in hooks.",
+  "detailedAnswer": "If multiple components need the same piece of stateful logic, such as tracking window width or managing form field validation, duplicating that useState/useEffect logic in every component is repetitive and error-prone.\n\nA custom hook extracts this logic into a standalone function; any component can now simply call the custom hook to get this reusable behavior, without needing to know or duplicate the underlying implementation details. Each component calling the same custom hook gets its own independent state, since hooks aren't shared or global by default.",
+  "keyPoints": [
+    "Naming convention: must start with use (e.g., useWindowWidth) — this signals to React and linters that hook rules apply",
+    "Composes React's built-in hooks (useState, useEffect, etc.) internally to build genuinely reusable, shareable logic",
+    "Each component calling the same custom hook gets its OWN independent state — hooks aren't shared/global by default"
+  ],
+  "commonMistakes": [
+    "Not prefixing a custom hook with 'use', preventing linters from enforcing the rules of hooks",
+    "Assuming a custom hook shares state globally across all components that call it",
+    "Duplicating stateful logic across components instead of extracting it into a custom hook"
+  ],
+  "followUpQuestions": [
+    "Why must a custom hook be prefixed with 'use'?",
+    "Does calling the same custom hook in two components share state between them?",
+    "What built-in hooks would you compose to build a useFetch custom hook?"
+  ],
+  "realWorldExample": "A useWindowWidth custom hook tracks the browser window's width and is reused across multiple components without duplicating the resize event listener logic.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "function useWindowWidth() {\n  const [width, setWidth] = useState(window.innerWidth);\n  useEffect(() => {\n    const handler = () => setWidth(window.innerWidth);\n    window.addEventListener('resize', handler);\n    return () => window.removeEventListener('resize', handler);\n  }, []);\n  return width;\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how custom hooks extract reusable stateful logic and note the naming convention requirement.",
+  "tags": ["React", "Custom Hooks", "Interview"],
+  "relatedTopics": ["useState", "useEffect", "Rules of Hooks"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-015",
+  "category": "React",
+  "topic": "React.StrictMode",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between React.StrictMode and normal rendering?",
+  "shortAnswer": "React.StrictMode is a development-only tool that intentionally double-invokes certain functions (component render, some lifecycle/effect functions) to help detect side effects and other bugs that would otherwise only surface unpredictably in production.",
+  "detailedAnswer": "Wrapping part of an app in React.StrictMode doesn't render any visible UI itself; it activates additional development-only checks and warnings, deliberately double-invoking component render functions and certain effect setups/cleanups to help surface accidental impure logic.\n\nIf double-invoking causes a visible bug, that reveals code relying on unsafe side effects that could cause subtle production bugs under React's concurrent rendering features. It also warns about usage of deprecated or legacy APIs. Critically, StrictMode's extra double-invocations only happen in development builds, with zero effect or overhead in production builds.",
+  "keyPoints": [
+    "Development-only tool — has zero effect and adds zero overhead in production builds",
+    "Deliberately double-invokes render functions and certain effects to surface accidental impure/unsafe side effects",
+    "Helps prepare codebases for React's concurrent rendering features, which assume components render as pure functions"
+  ],
+  "commonMistakes": [
+    "Assuming StrictMode's double-invocations happen in production builds",
+    "Not recognizing a bug revealed by double-invocation as an actual impurity in the component's render logic",
+    "Removing StrictMode instead of fixing the underlying side effect it exposes"
+  ],
+  "followUpQuestions": [
+    "Why does StrictMode's double-invocation have zero effect in production?",
+    "What kind of side effect would StrictMode's double-invocation reveal?",
+    "How does StrictMode relate to React's concurrent rendering features?"
+  ],
+  "realWorldExample": "A developer discovers a component mutating an external variable during render when StrictMode's double-invocation causes the value to be incremented twice unexpectedly.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "<React.StrictMode>\n  <App />\n</React.StrictMode>"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain StrictMode's development-only double-invocation purpose and its role in surfacing impure render logic.",
+  "tags": ["React", "StrictMode", "Interview"],
+  "relatedTopics": ["Concurrent Rendering", "Pure Functions", "useEffect"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-016",
+  "category": "React",
+  "topic": "React Router and Client-Side Routing",
+  "difficulty": "Medium",
+  "question": "What is React Router? How does Client-Side Routing Work?",
+  "shortAnswer": "React Router is a library enabling navigation between different \"pages\"/views within a single-page application (SPA), WITHOUT triggering a full browser page reload — by intercepting URL changes and rendering different components accordingly.",
+  "detailedAnswer": "In a traditional multi-page website, clicking a link triggers a full browser navigation, requesting an entirely new HTML document from the server and resetting all JavaScript state. In a Single-Page Application, this is undesirable, since the goal is the illusion of navigating between pages while staying within the same loaded JavaScript application.\n\nReact Router intercepts link clicks and URL changes, using the browser's History API to update the URL bar without an actual page reload, then renders whichever React component corresponds to the new current URL path, preserving application state while providing standard, bookmarkable URLs.",
+  "keyPoints": [
+    "Uses the browser's History API (pushState/popstate) to change the URL without triggering an actual page reload",
+    "Maps URL paths to specific React components to render — <Route path=\"/users/:id\" element={<UserProfile />} />",
+    "Preserves SPA benefits (fast navigation, no full reload) while still providing standard, bookmarkable/shareable URLs"
+  ],
+  "commonMistakes": [
+    "Using regular <a> tags instead of React Router's Link component, causing full page reloads",
+    "Not understanding the History API is what enables URL changes without a reload",
+    "Assuming client-side routing eliminates the need for server-side route configuration entirely"
+  ],
+  "followUpQuestions": [
+    "Why does using a regular <a> tag instead of React Router's Link cause a full page reload?",
+    "How does the browser's History API enable client-side routing?",
+    "What server-side configuration is typically needed to support client-side routing on refresh?"
+  ],
+  "realWorldExample": "A single-page e-commerce app uses React Router to navigate between product listing and detail pages instantly, without a full page reload, while still supporting bookmarkable URLs.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "<Routes>\n  <Route path=\"/\" element={<Home />} />\n  <Route path=\"/users/:id\" element={<UserProfile />} />\n</Routes>"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how the History API enables SPA navigation without full page reloads.",
+  "tags": ["React", "React Router", "Client-Side Routing", "Interview"],
+  "relatedTopics": ["SPA", "History API", "SSR"],
+  "references": ["React Router Documentation - reactrouter.com"]
+},
+{
+  "id": "react-017",
+  "category": "React",
+  "topic": "key Prop in Lists",
+  "difficulty": "Medium",
+  "question": "What is the Purpose of the key Prop When Rendering Lists in React?",
+  "shortAnswer": "The key prop gives React a stable, unique identity for each item in a list, allowing it to correctly track which items were added, removed, or reordered between renders — instead of naively assuming order-based identity.",
+  "detailedAnswer": "When rendering a dynamic list, React needs some way to match up items between the old rendered list and the new rendered list to determine the minimal set of actual changes needed. Without a proper key, or using the array index as a key, if items are reordered, inserted, or removed from the middle of the list, React can misidentify which DOM elements correspond to which data items.\n\nThis leads to visible bugs such as the wrong item being highlighted or form input values appearing on the wrong row, and unnecessary re-renders of items that didn't actually change, just moved position. Using a genuinely stable, unique identifier as the key ensures React can correctly track each item's true identity across reorders.",
+  "keyPoints": [
+    "Helps React correctly match list items between renders, even when items are reordered, added, or removed",
+    "Using array INDEX as key is problematic if the list can be reordered/filtered — causes subtle bugs with component state",
+    "Should be a genuinely stable, unique identifier (like a database ID), not derived from the item's current position"
+  ],
+  "commonMistakes": [
+    "Using the array index as a key for a list that can be reordered or filtered",
+    "Not providing a key at all when rendering a mapped list, causing React warnings",
+    "Assuming the key prop only affects performance rather than also affecting correctness"
+  ],
+  "followUpQuestions": [
+    "What specific bugs can occur from using array index as a key on a reorderable list?",
+    "Why is a database ID preferred over an array index as a key?",
+    "What warning does React give when a key is missing from a list?"
+  ],
+  "realWorldExample": "A todo list app uses each todo's unique database ID as the key, preventing input values or checked states from getting mismatched when items are reordered or deleted.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "{todos.map(todo => (\n  <TodoItem key={todo.id} todo={todo} />\n))}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why stable, unique keys matter for correctness, not just performance, especially for reorderable lists.",
+  "tags": ["React", "key Prop", "Lists", "Interview"],
+  "relatedTopics": ["Virtual DOM", "Reconciliation", "Diffing Algorithm"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-018",
+  "category": "React",
+  "topic": "Server-Side Rendering",
+  "difficulty": "Hard",
+  "question": "What is Server-Side Rendering (SSR) in React? How is it different from Client-Side Rendering (CSR)?",
+  "shortAnswer": "SSR renders the initial React component tree into HTML on the SERVER, sending fully-formed HTML to the browser (faster initial paint, better SEO). CSR sends a mostly-empty HTML shell, and JavaScript renders everything in the BROWSER after it loads.",
+  "detailedAnswer": "In pure Client-Side Rendering, the server sends a nearly empty HTML file with a root div and a link to a JavaScript bundle; the browser must download, parse, and execute that entire bundle before anything is actually rendered, meaning users see a blank page for a noticeable period, and search engine crawlers that don't fully execute JavaScript may see an essentially empty page.\n\nServer-Side Rendering runs the React rendering logic on the server for the initial page load, sending back fully-formed HTML that the browser can display immediately, dramatically improving perceived load speed and SEO, after which React hydrates the static HTML on the client, attaching event listeners and making it fully interactive.",
+  "keyPoints": [
+    "CSR: initial HTML is nearly empty, JavaScript renders everything client-side after downloading/executing — slower first paint",
+    "SSR: server sends fully-formed HTML immediately, faster perceived load and better SEO, then JS \"hydrates\" it to become interactive",
+    "Next.js: the most popular React framework providing built-in SSR, Static Generation, and related rendering strategies"
+  ],
+  "commonMistakes": [
+    "Assuming SSR eliminates the need for client-side JavaScript entirely (hydration still requires it)",
+    "Not understanding why CSR harms SEO for crawlers that don't fully execute JavaScript",
+    "Confusing SSR with Static Site Generation, which pre-renders at build time rather than per-request"
+  ],
+  "followUpQuestions": [
+    "What is hydration, and why is it necessary after SSR sends HTML?",
+    "How does SSR improve SEO compared to CSR?",
+    "What's the difference between SSR and Static Site Generation?"
+  ],
+  "realWorldExample": "A Next.js e-commerce site uses SSR to serve fully-rendered product pages immediately for fast initial load and better search engine indexing, then hydrates the page for interactivity.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the initial-load and SEO trade-offs between SSR and CSR and describe the hydration process.",
+  "tags": ["React", "SSR", "CSR", "Next.js", "Interview"],
+  "relatedTopics": ["Next.js", "Hydration", "SEO"],
+  "references": ["Next.js Documentation - nextjs.org"]
+},
+{
+  "id": "react-019",
+  "category": "React",
+  "topic": "React Portals",
+  "difficulty": "Medium",
+  "question": "What are React Portals? Give a practical use case.",
+  "shortAnswer": "A React Portal lets you render a component's children into a DOM node that exists OUTSIDE the normal parent-child DOM hierarchy, while still maintaining the normal React component tree relationship (context, event bubbling) logically.",
+  "detailedAnswer": "ReactDOM.createPortal(children, domNode) renders children into a specified DOM node anywhere in the actual document, rather than as a nested child of the calling component's normal DOM position.\n\nThis is essential for UI elements like modals, tooltips, and dropdown menus that need to visually break out of their parent's DOM structure to avoid being clipped by a parent's overflow:hidden or affected by its z-index or positioning context. React still treats the portal content as a logical child for purposes of context propagation and event bubbling, even though the actual DOM structure is physically different.",
+  "keyPoints": [
+    "Solves CSS clipping/stacking issues for modals, tooltips, dropdowns that need to visually escape a parent's constraints",
+    "ReactDOM.createPortal(children, domNode): renders into a different physical DOM location, outside normal nesting",
+    "Events still bubble through the REACT component tree logically, even though the actual DOM structure is physically different"
+  ],
+  "commonMistakes": [
+    "Assuming events don't bubble properly through a portal since it's physically outside the DOM hierarchy",
+    "Not using a portal for a modal, resulting in clipping issues from a parent's overflow:hidden",
+    "Confusing the portal's logical React tree position with its physical DOM position"
+  ],
+  "followUpQuestions": [
+    "Why do events still bubble through the React tree even though the DOM structure differs for a portal?",
+    "What CSS issues does a portal solve for modals and tooltips?",
+    "How would you create a portal that renders into document.body?"
+  ],
+  "realWorldExample": "A modal dialog is rendered via a portal directly into document.body, avoiding clipping issues from an ancestor's overflow:hidden CSS rule.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "function Modal({ children }) {\n  return ReactDOM.createPortal(\n    children,\n    document.getElementById('modal-root')\n  );\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the DOM-versus-React-tree distinction and give a practical use case like modals.",
+  "tags": ["React", "Portals", "Interview"],
+  "relatedTopics": ["Modals", "Event Bubbling", "DOM"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-020",
+  "category": "React",
+  "topic": "useEffect vs useLayoutEffect",
+  "difficulty": "Hard",
+  "question": "What is the Difference Between useEffect and useLayoutEffect?",
+  "shortAnswer": "useEffect runs ASYNCHRONOUSLY, after the browser has already painted the screen. useLayoutEffect runs SYNCHRONOUSLY, immediately after DOM mutations but BEFORE the browser paints — blocking visual updates until it completes.",
+  "detailedAnswer": "useEffect is the standard choice for most side effects, running after the browser has already visually painted the updated DOM, meaning there can be a brief flicker if the effect itself needs to make further DOM changes that visually matter.\n\nuseLayoutEffect runs synchronously after React has updated the DOM but before the browser actually paints anything to the screen, specifically needed when you must read layout information and then synchronously make further DOM changes based on that measurement, ensuring the user never sees a visual flicker, at the cost of potentially blocking the browser from painting if the layout effect is slow.",
+  "keyPoints": [
+    "useEffect: async, runs after the browser paints — the default choice for the vast majority of side effects",
+    "useLayoutEffect: sync, runs before the browser paints — needed specifically to avoid visual flicker from layout measurements",
+    "Overusing useLayoutEffect can hurt performance, since it BLOCKS the browser from painting until it completes"
+  ],
+  "commonMistakes": [
+    "Using useLayoutEffect by default instead of useEffect, unnecessarily blocking painting",
+    "Not recognizing a visual flicker bug as a sign useLayoutEffect might be needed instead of useEffect",
+    "Performing slow operations inside useLayoutEffect, hurting perceived performance"
+  ],
+  "followUpQuestions": [
+    "What kind of bug would indicate you need useLayoutEffect instead of useEffect?",
+    "Why can overusing useLayoutEffect hurt performance?",
+    "Can you give an example where useLayoutEffect is genuinely necessary?"
+  ],
+  "realWorldExample": "A tooltip component uses useLayoutEffect to measure its target element's position and synchronously reposition itself before the browser paints, avoiding a visible flicker.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "useLayoutEffect(() => {\n  const rect = elementRef.current.getBoundingClientRect();\n  setPosition(rect.top);\n}, []);"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the timing difference relative to browser painting and identify when useLayoutEffect is genuinely necessary.",
+  "tags": ["React", "useEffect", "useLayoutEffect", "Interview"],
+  "relatedTopics": ["useEffect", "DOM Manipulation", "Performance"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-021",
+  "category": "React",
+  "topic": "Code Splitting and React.lazy",
+  "difficulty": "Medium",
+  "question": "What is Code Splitting in React? How does React.lazy() help?",
+  "shortAnswer": "Code Splitting breaks a large JavaScript bundle into smaller chunks that are loaded ON DEMAND, rather than all upfront — reducing the initial load time of an application. React.lazy() combined with <Suspense> provides a built-in way to lazily load React components.",
+  "detailedAnswer": "Without code splitting, a large application's entire JavaScript bundle, including code for pages or features a user might never even visit, must be downloaded and parsed before the app becomes interactive.\n\nReact.lazy(() => import('./MyComponent')) defers loading a component's code until it's actually needed, splitting it into a separate chunk fetched on demand via a dynamic import. This must be wrapped in a Suspense boundary with a fallback prop, which displays fallback UI while the lazy component's chunk is still being fetched, then renders the actual component once loading completes.",
+  "keyPoints": [
+    "Reduces initial bundle size and load time by deferring code for not-yet-needed features/routes",
+    "React.lazy(() => import('./Component')): defines a component that's loaded on-demand via a separate chunk",
+    "Must be wrapped in <Suspense fallback={...}> to specify what to show while the lazy chunk is being fetched"
+  ],
+  "commonMistakes": [
+    "Forgetting to wrap a lazy component in a Suspense boundary",
+    "Code-splitting every small component unnecessarily, adding excessive network requests",
+    "Not applying code splitting at route boundaries where it provides the most benefit"
+  ],
+  "followUpQuestions": [
+    "What happens if a React.lazy component isn't wrapped in Suspense?",
+    "Where in an application does code splitting typically provide the most benefit?",
+    "How does React.lazy relate to dynamic import()?"
+  ],
+  "realWorldExample": "A large web app code-splits each route so users only download the JavaScript for the page they're currently visiting, reducing initial load time significantly.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "const Dashboard = React.lazy(() => import('./Dashboard'));\n\n<Suspense fallback={<Loading />}>\n  <Dashboard />\n</Suspense>"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how React.lazy defers loading and why Suspense is required alongside it.",
+  "tags": ["React", "Code Splitting", "React.lazy", "Suspense", "Interview"],
+  "relatedTopics": ["Suspense", "Performance", "Bundling"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-022",
+  "category": "React",
+  "topic": "Component Composition vs Inheritance",
+  "difficulty": "Medium",
+  "question": "What is the React Component Composition Pattern (children prop)? How does it differ from Inheritance?",
+  "shortAnswer": "Composition uses the children prop (or other similar \"render prop\" patterns) to build flexible, reusable component structures by NESTING components inside each other, rather than using class-based inheritance to share/extend behavior — React's official documentation explicitly recommends composition over inheritance.",
+  "detailedAnswer": "Rather than creating a class hierarchy to customize a generic component's behavior for specific use cases, React strongly favors composition; a generic component accepts and simply renders whatever is passed as its children, allowing any content to be placed inside it without the component needing to know anything specific about what it contains.\n\nThis pattern extends further with named slot props for more complex composition needs beyond simple nesting. This approach tends to produce more flexible, loosely-coupled, and easily-testable component structures compared to deep inheritance hierarchies.",
+  "keyPoints": [
+    "children prop: the most basic and common composition pattern — a component renders whatever is nested inside it",
+    "React's official docs explicitly state: \"we haven't found any use case where inheritance is better than composition\"",
+    "More flexible than inheritance: components can be composed in many different combinations without rigid class hierarchies"
+  ],
+  "commonMistakes": [
+    "Attempting to build a class-based inheritance hierarchy for component customization instead of using composition",
+    "Not leveraging named slot props for more complex composition needs beyond simple children",
+    "Assuming composition and inheritance offer equivalent flexibility"
+  ],
+  "followUpQuestions": [
+    "Why does React officially recommend composition over inheritance?",
+    "What is a 'slot' prop pattern and how does it extend basic composition?",
+    "Can you give an example where inheritance would create unnecessary rigidity compared to composition?"
+  ],
+  "realWorldExample": "A generic Card component accepts arbitrary children content, letting different parts of an app place completely different content inside the same reusable Card structure.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "function Card({ children }) {\n  return <div className=\"card\">{children}</div>;\n}\n\n<Card><h2>Title</h2><p>Body text</p></Card>"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the children-based composition pattern and cite React's explicit preference over inheritance.",
+  "tags": ["React", "Composition", "children Prop", "Interview"],
+  "relatedTopics": ["Render Props", "Custom Hooks", "Higher-Order Components"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-023",
+  "category": "React",
+  "topic": "Context API Performance",
+  "difficulty": "Hard",
+  "question": "What is the Difference Between useContext performance impact vs a dedicated state management library — why can Context be problematic for frequently-changing state?",
+  "shortAnswer": "Every component consuming a Context via useContext re-renders whenever ANY part of that context's value changes — even if the specific piece of data that particular component actually uses didn't change — making Context a poor fit for frequently-updating, large, or granular state.",
+  "detailedAnswer": "Unlike dedicated state management libraries that typically allow components to subscribe to and re-render based on only specific slices of the overall state via selector functions, React's Context API re-renders every consuming component whenever the entire context value object changes, regardless of whether that specific component cares about the particular piece of data that changed.\n\nIf a context holds multiple pieces of data and one updates frequently, every component consuming that context will unnecessarily re-render on every update. This makes Context best suited for genuinely infrequently-changing, relatively small pieces of global state, while frequently-updating or large/complex state generally benefits from a dedicated state management library.",
+  "keyPoints": [
+    "Context re-renders ALL consumers on ANY change to the context value — no built-in granular subscription like Redux selectors offer",
+    "Best suited for infrequently-changing global data (theme, auth user) — poor fit for frequently-updating state (real-time data)",
+    "Splitting a large context into several smaller, more focused contexts is a common mitigation strategy for this limitation"
+  ],
+  "commonMistakes": [
+    "Using a single large Context for frequently-changing, unrelated pieces of state",
+    "Not splitting a large context into smaller, more focused contexts to mitigate unnecessary re-renders",
+    "Assuming Context has the same granular subscription capabilities as Redux selectors"
+  ],
+  "followUpQuestions": [
+    "How would splitting a large context into smaller contexts mitigate the re-render problem?",
+    "What granular subscription mechanism do libraries like Redux offer that Context lacks?",
+    "When would Context still be an appropriate choice despite this limitation?"
+  ],
+  "realWorldExample": "A large app splits a single AppContext holding user, theme, and notifications into three separate contexts, so a theme-consuming component no longer re-renders on every notification update.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why Context lacks granular subscriptions and describe splitting contexts as a mitigation strategy.",
+  "tags": ["React", "Context API", "Performance", "Interview"],
+  "relatedTopics": ["Redux", "useContext", "State Management"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-024",
+  "category": "React",
+  "topic": "PropTypes vs TypeScript",
+  "difficulty": "Medium",
+  "question": "What is the Purpose of PropTypes (or TypeScript) in React? Why is Type Checking Important for Components?",
+  "shortAnswer": "PropTypes (a runtime library) and TypeScript (a compile-time static type system) both help catch bugs by ensuring components receive props of the EXPECTED type and shape, providing clear documentation of a component's expected interface, and catching mismatches before they cause confusing runtime errors deep in the render logic.",
+  "detailedAnswer": "Without type checking, passing the wrong type of prop to a component often doesn't fail immediately or obviously; it might silently produce a subtly broken UI or throw a confusing error deep inside the component's internal logic, far from the actual root cause.\n\nPropTypes performs runtime validation in development builds, stripped out in production, logging a console warning if a prop doesn't match its declared type. TypeScript instead performs compile-time static type checking, catching type mismatches immediately before the code is even run, and additionally provides much richer IDE autocomplete and refactoring support, which is why most modern, larger-scale React codebases have shifted toward TypeScript over PropTypes.",
+  "keyPoints": [
+    "PropTypes: runtime validation, development-only warnings, lightweight but only catches issues actually exercised at runtime",
+    "TypeScript: compile-time static type checking, catches mismatches before code even runs, richer IDE tooling support",
+    "Most modern larger React codebases favor TypeScript over PropTypes for its stronger, earlier guarantees and tooling benefits"
+  ],
+  "commonMistakes": [
+    "Relying only on PropTypes for large codebases where compile-time TypeScript checking would catch more issues earlier",
+    "Not knowing PropTypes warnings are stripped out in production builds",
+    "Assuming PropTypes catches issues even when the specific code path isn't exercised at runtime"
+  ],
+  "followUpQuestions": [
+    "Why does TypeScript catch more issues earlier than PropTypes?",
+    "What happens to PropTypes warnings in a production build?",
+    "Why have most modern React codebases shifted toward TypeScript?"
+  ],
+  "realWorldExample": "A large React codebase migrates from PropTypes to TypeScript to catch prop type mismatches at compile time rather than relying on runtime warnings during development testing.",
+  "codeExample": {
+    "language": "TypeScript",
+    "code": "interface ButtonProps {\n  label: string;\n  onClick: () => void;\n}\n\nfunction Button({ label, onClick }: ButtonProps) {\n  return <button onClick={onClick}>{label}</button>;\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to contrast runtime (PropTypes) versus compile-time (TypeScript) type checking and explain the shift toward TypeScript.",
+  "tags": ["React", "PropTypes", "TypeScript", "Interview"],
+  "relatedTopics": ["TypeScript", "Component Props", "Static Typing"],
+  "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "react-025",
+  "category": "React",
+  "topic": "Render Props Pattern",
+  "difficulty": "Hard",
+  "question": "What is the React \"Render Props\" Pattern? How does it Compare to Custom Hooks for Sharing Logic?",
+  "shortAnswer": "The Render Props pattern shares reusable logic between components by passing a FUNCTION as a prop (typically named render or as the children prop itself), which the receiving component calls to determine what to render — largely superseded by Custom Hooks in modern React for sharing STATEFUL logic specifically.",
+  "detailedAnswer": "Before Hooks existed, sharing reusable stateful logic between components was primarily done via Render Props or the very similar Higher-Order Component pattern; a component manages the actual tracking logic internally, then calls the passed render function with its current internal state, letting the caller decide exactly what UI to render with that data.\n\nCustom Hooks now provide a generally simpler, more composable way to achieve the same goal without the extra component nesting, or wrapper hell, that Render Props and HOCs tend to produce, which is why Hooks are now the strongly preferred approach in modern React code, though Render Props still occasionally appear in some library APIs.",
+  "keyPoints": [
+    "Historically used to share reusable stateful logic before Hooks existed — passes a function as a prop to control rendering",
+    "Tends to create deeply nested \"wrapper hell\" in component trees when multiple render props/HOCs are combined",
+    "Custom Hooks now provide a flatter, simpler, more composable modern alternative for sharing the same kind of stateful logic"
+  ],
+  "commonMistakes": [
+    "Using Render Props in new code when a Custom Hook would be simpler and flatter",
+    "Combining multiple Render Props/HOCs and creating deeply nested 'wrapper hell'",
+    "Not recognizing Custom Hooks as the modern preferred replacement for this pattern"
+  ],
+  "followUpQuestions": [
+    "Why do Custom Hooks avoid the 'wrapper hell' problem that Render Props can create?",
+    "In what scenarios might Render Props still be used in modern library APIs?",
+    "How would you convert a Render Props component into an equivalent Custom Hook?"
+  ],
+  "realWorldExample": "A legacy MouseTracker component using the Render Props pattern is refactored into a useMousePosition custom hook, flattening the component tree and simplifying reuse across multiple components.",
+  "codeExample": {
+    "language": "JSX",
+    "code": "// Render Props (legacy)\n<MouseTracker render={(position) => <Cursor position={position} />} />\n\n// Custom Hook (modern)\nfunction Cursor() {\n  const position = useMousePosition();\n  return <div style={{ left: position.x, top: position.y }} />;\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the historical Render Props pattern and describe why Custom Hooks have largely superseded it for sharing stateful logic.",
+  "tags": ["React", "Render Props", "Custom Hooks", "Interview"],
+  "relatedTopics": ["Higher-Order Components", "Custom Hooks", "Component Composition"],
+  "references": ["React Documentation - react.dev"]
 }
 ];

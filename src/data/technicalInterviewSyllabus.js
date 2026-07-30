@@ -153,8 +153,8 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     icon: '⚛️',
     color: '#06b6d4', // Cyan
     order: 14,
-    questionCount: 0,
-    comingSoon: true
+    questionCount: 25,
+    comingSoon: false
   },
   {
     id: 'nodejs',
