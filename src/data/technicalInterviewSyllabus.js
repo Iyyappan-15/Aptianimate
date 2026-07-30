@@ -120,8 +120,8 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     icon: '🐧',
     color: '#111827', // Dark Grey
     order: 11,
-    questionCount: 0,
-    comingSoon: true
+    questionCount: 25,
+    comingSoon: false
   },
   {
     id: 'apis',
