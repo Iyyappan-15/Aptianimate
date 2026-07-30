@@ -187,7 +187,7 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     color: '#3b82f6', // Blue
     order: 17,
     questionCount: 0,
-    comingSoon: true
+    comingSoon: false
   },
   {
     id: 'advanced',

@@ -56,3 +56,44 @@ export async function parseUserQuestion(questionText, imageBase64 = null) {
 
   return data.data;
 }
+
+/**
+ * Send extracted resume text to the backend proxy for analysis and interview prep question generation.
+ * 
+ * @param {string} resumeText - Raw text extracted from the user's resume
+ * @returns {Promise<Object>} Analyzed resume report data and generated questions
+ */
+export async function analyzeUserResume(resumeText) {
+  if (!resumeText || !resumeText.trim()) {
+    throw new Error('Please select a valid resume file to extract text.');
+  }
+
+  const payload = {
+    text: resumeText.trim()
+  };
+
+  let response;
+  try {
+    response = await fetch(`${API_BASE_URL}/api/analyze-resume`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+  } catch {
+    throw new Error('Could not connect to the server. Please check your internet connection.');
+  }
+
+  let data;
+  try {
+    data = await response.json();
+  } catch {
+    throw new Error('Server returned an unexpected response. Please try again.');
+  }
+
+  if (!response.ok || !data.success) {
+    throw new Error(data?.error || `Server error (${response.status}). Please try again.`);
+  }
+
+  return data.data;
+}
+

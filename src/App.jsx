@@ -26,6 +26,7 @@ const BattlePage = lazy(() => import('./pages/BattlePage'));
 const FriendBattlePage = lazy(() => import('./pages/FriendBattlePage'));
 const GovtPYQPracticePage = lazy(() => import('./pages/GovtPYQPracticePage'));
 const TechnicalInterviewTopicPage = lazy(() => import('./pages/TechnicalInterviewTopicPage'));
+const ResumePreparationPage = lazy(() => import('./pages/ResumePreparationPage'));
 
 import { signInWithGoogle } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
@@ -131,6 +132,8 @@ function App() {
     const slug = parts[1];
     const name = parts.slice(2).join('/');
     pageComponent = <TopicPage topicSlug={slug} topicName={decodeURIComponent(name)} navigate={navigate} />;
+  } else if (route === 'interview-topic/resume-preparation') {
+    pageComponent = <ResumePreparationPage navigate={navigate} />;
   } else if (route.startsWith('interview-topic/')) {
     const parts = route.split('/');
     const slug = parts[1];
