@@ -10726,5 +10726,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["React", "Render Props", "Custom Hooks", "Interview"],
   "relatedTopics": ["Higher-Order Components", "Custom Hooks", "Component Composition"],
   "references": ["React Documentation - react.dev"]
+},
+{
+  "id": "node-001",
+  "category": "Node.js",
+  "topic": "Event Loop and Concurrency",
+  "difficulty": "Hard",
+  "question": "What is the Node.js Event Loop? How does Node.js handle concurrency despite being single-threaded?",
+  "shortAnswer": "Node.js runs JavaScript on a single thread but achieves high concurrency by offloading I/O operations to the underlying system (via libuv's thread pool or OS async APIs), processing results via callbacks/promises through the event loop.",
+  "detailedAnswer": "Node.js uses libuv, a C library providing an event loop and a thread pool, default size 4, for operations that can't be done asynchronously at the OS level, such as some file system operations, DNS lookups, and CPU-intensive crypto. Network I/O typically uses OS-level async mechanisms without the thread pool at all.\n\nThis means Node.js handles thousands of concurrent connections with a single thread because it's never blocked waiting; while one request's DB query is pending, Node processes other requests. The event loop has distinct phases: Timers, Pending Callbacks, Poll, Check, Close Callbacks.",
+  "keyPoints": [
+    "Non-blocking I/O: Node delegates I/O to OS/libuv, continues processing other requests meanwhile",
+    "Thread pool (libuv, default 4 threads): used for fs operations, DNS, some crypto operations",
+    "CPU-intensive synchronous code (large loops, heavy computation) BLOCKS the event loop — avoid in Node"
+  ],
+  "commonMistakes": [
+    "Running CPU-intensive synchronous code that blocks the entire event loop",
+    "Assuming Node.js is multithreaded because it handles many concurrent connections",
+    "Not knowing libuv's thread pool has a default size of 4"
+  ],
+  "followUpQuestions": [
+    "What are the distinct phases of the Node.js event loop?",
+    "Why does CPU-intensive synchronous code block all other requests in Node.js?",
+    "What is the difference between the thread pool and OS-level async I/O mechanisms?"
+  ],
+  "realWorldExample": "A Node.js API server handles thousands of concurrent database-querying requests efficiently since each query is non-blocking, but a single heavy synchronous computation would freeze all of them simultaneously.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how non-blocking I/O and libuv enable concurrency on a single thread, and identify what can block the event loop.",
+  "tags": ["Node.js", "Event Loop", "Concurrency", "Interview"],
+  "relatedTopics": ["libuv", "Worker Threads", "Streams"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-002",
+  "category": "Node.js",
+  "topic": "Express Middleware",
+  "difficulty": "Medium",
+  "question": "What is Middleware in Express.js? Explain the request-response cycle.",
+  "shortAnswer": "Middleware is a function with access to the request, response, and next() — it can execute code, modify req/res, end the request, or pass control to the next middleware.",
+  "detailedAnswer": "Every incoming request passes through a chain of middleware functions before reaching the final route handler. Each middleware has the signature (req, res, next) => {}; it can read or modify the request, read or modify the response, end the cycle by sending a response, or call next() to pass control forward.\n\nIf next() is never called and no response is sent, the request hangs forever. Common middleware includes express.json() for parsing JSON bodies, cors(), custom auth middleware verifying a JWT, and error-handling middleware with 4 parameters.",
+  "keyPoints": [
+    "Middleware order matters: app.use(auth) must come before app.use(protectedRoutes)",
+    "next(): passes control to next middleware — forgetting it hangs the request indefinitely",
+    "Error-handling middleware: 4 parameters (err, req, res, next), placed last in the chain"
+  ],
+  "commonMistakes": [
+    "Forgetting to call next(), causing the request to hang indefinitely",
+    "Placing authentication middleware after the routes it's supposed to protect",
+    "Confusing regular middleware's 3-parameter signature with error-handling middleware's 4-parameter signature"
+  ],
+  "followUpQuestions": [
+    "What happens if a middleware never calls next() and never sends a response?",
+    "Why does middleware order matter in Express?",
+    "How does Express distinguish error-handling middleware from regular middleware?"
+  ],
+  "realWorldExample": "An Express app chains authentication middleware, request logging middleware, and body-parsing middleware before reaching the actual route handler for a protected API endpoint.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "app.use((req, res, next) => {\n  console.log(`${req.method} ${req.url}`);\n  next();\n});\n\napp.use(authMiddleware);\napp.get('/profile', getProfileHandler);"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the middleware chain, the role of next(), and the importance of middleware ordering.",
+  "tags": ["Node.js", "Express", "Middleware", "Interview"],
+  "relatedTopics": ["Error Handling", "Authentication", "REST API"],
+  "references": ["Express.js Documentation - expressjs.com"]
+},
+{
+  "id": "node-003",
+  "category": "Node.js",
+  "topic": "process.nextTick vs setImmediate vs setTimeout",
+  "difficulty": "Hard",
+  "question": "What is the Difference Between process.nextTick(), setImmediate(), and setTimeout(fn, 0)?",
+  "shortAnswer": "process.nextTick() runs BEFORE the event loop continues to the next phase (highest priority). setImmediate() runs in the \"check\" phase of the event loop. setTimeout(fn, 0) runs in the \"timers\" phase, with actual execution depending on the loop's current phase.",
+  "detailedAnswer": "process.nextTick(callback) queues a callback to run immediately after the current operation completes, before the event loop proceeds to any further phase, giving it the highest priority of the three; excessive use can actually starve the event loop of ever reaching I/O callbacks.\n\nsetImmediate(callback) queues a callback specifically for the check phase, which runs after the poll phase completes in that loop iteration. setTimeout(callback, 0) schedules for the timers phase; its exact ordering relative to setImmediate when called from the main module is not perfectly guaranteed, but inside an I/O callback, setImmediate is always guaranteed to execute before setTimeout(fn, 0).",
+  "keyPoints": [
+    "process.nextTick(): highest priority, runs before the event loop continues at all — risk of starving I/O if overused",
+    "setImmediate(): runs in the \"check\" phase, guaranteed to run before timers when called from within an I/O callback",
+    "setTimeout(fn, 0): runs in the \"timers\" phase — minimum delay is never truly 0ms in practice"
+  ],
+  "commonMistakes": [
+    "Overusing process.nextTick(), starving the event loop from reaching I/O callbacks",
+    "Assuming setTimeout(fn, 0) and setImmediate() always execute in a guaranteed order from the main module",
+    "Not knowing setImmediate always runs before setTimeout(fn, 0) inside an I/O callback specifically"
+  ],
+  "followUpQuestions": [
+    "Why can excessive process.nextTick() usage starve the event loop?",
+    "Why is the ordering of setImmediate and setTimeout(fn, 0) guaranteed inside an I/O callback but not from the main module?",
+    "What event loop phase does setImmediate run in?"
+  ],
+  "realWorldExample": "A developer uses setImmediate() inside a file read callback to defer execution to the next event loop iteration, guaranteed to run before any setTimeout(fn, 0) scheduled at the same point.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "process.nextTick(() => console.log('nextTick'));\nsetImmediate(() => console.log('immediate'));\nsetTimeout(() => console.log('timeout'), 0);"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly rank the priority of these three scheduling mechanisms and know their respective event loop phases.",
+  "tags": ["Node.js", "Event Loop", "process.nextTick", "setImmediate", "Interview"],
+  "relatedTopics": ["Event Loop", "Microtasks", "Timers"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-004",
+  "category": "Node.js",
+  "topic": "require vs import",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between require() and import in Node.js?",
+  "shortAnswer": "require() is CommonJS's synchronous module loading mechanism, Node's original system. import is the ES Modules syntax, statically analyzable and now natively supported in modern Node.js.",
+  "detailedAnswer": "require('module') executes synchronously at the exact point it's called, immediately returning the module's module.exports; this works because Node.js modules are typically loaded from the local filesystem, so synchronous blocking is acceptable performance-wise.\n\nimport statements are statically structured, must appear at the top of a file, and cannot be conditional; this allows tooling to perform static analysis, tree-shaking, and enables ESM's native support for asynchronous module loading. Modern Node.js supports both, distinguished by file extension or the \"type\": \"module\" field in package.json.",
+  "keyPoints": [
+    "require(): synchronous, can be called conditionally/anywhere in code, Node's original module system",
+    "import: static structure only (top-level, non-conditional), enables tree-shaking and static analysis",
+    "File-based distinction: .cjs = CommonJS, .mjs = ES Modules, or set globally via \"type\" in package.json"
+  ],
+  "commonMistakes": [
+    "Trying to use import conditionally inside an if statement",
+    "Not configuring \"type\": \"module\" or using .mjs when attempting to use import syntax in Node.js",
+    "Assuming require() and import can be freely mixed without any configuration"
+  ],
+  "followUpQuestions": [
+    "Why must import statements appear only at the top level of a file?",
+    "How does Node.js distinguish between CommonJS and ES Module files?",
+    "Why does import enable tree-shaking while require() doesn't?"
+  ],
+  "realWorldExample": "A modern Node.js project sets \"type\": \"module\" in package.json to use import/export syntax throughout, aligning with browser-based ES Module conventions.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "// CommonJS\nconst fs = require('fs');\n\n// ES Modules\nimport fs from 'fs';"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the synchronous-versus-static distinction and know how Node.js distinguishes the two module systems.",
+  "tags": ["Node.js", "require", "import", "Modules", "Interview"],
+  "relatedTopics": ["CommonJS", "ES Modules", "Tree-Shaking"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-005",
+  "category": "Node.js",
+  "topic": "Node.js Streams",
+  "difficulty": "Medium",
+  "question": "What is a Node.js Stream? Explain the four types.",
+  "shortAnswer": "Streams process data piece-by-piece (in chunks) rather than loading an entire dataset into memory at once — critical for handling large files/data efficiently. Four types: Readable, Writable, Duplex, Transform.",
+  "detailedAnswer": "Readable streams represent a source of data being read incrementally, such as fs.createReadStream() reading a large file in chunks instead of loading the whole file into memory. Writable streams represent a destination data can be written to incrementally.\n\nDuplex streams are both readable and writable simultaneously, like a TCP socket. Transform streams are a special type of Duplex stream where the output is computed from the input, such as a gzip compression stream. Streams can be chained together via .pipe(), letting data flow through a processing pipeline without ever needing to be fully buffered in memory.",
+  "keyPoints": [
+    "Readable: source of incremental data (file reads, HTTP request body)",
+    "Writable: destination for incremental data (file writes, HTTP response)",
+    ".pipe(): chains streams together, automatically handling backpressure — critical for processing large files/data efficiently"
+  ],
+  "commonMistakes": [
+    "Using fs.readFile() to load an entire large file into memory instead of a Readable stream",
+    "Confusing Duplex streams with Transform streams",
+    "Not using .pipe() and manually handling backpressure incorrectly"
+  ],
+  "followUpQuestions": [
+    "Why is a Transform stream considered a specialized type of Duplex stream?",
+    "How does .pipe() simplify working with streams compared to manual event handling?",
+    "What is an example of a Duplex stream?"
+  ],
+  "realWorldExample": "A file upload server pipes an incoming HTTP request's Readable stream directly into a gzip Transform stream and then into a Writable file stream, processing large files without loading them entirely into memory.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const fs = require('fs');\nconst zlib = require('zlib');\n\nfs.createReadStream('input.txt')\n  .pipe(zlib.createGzip())\n  .pipe(fs.createWriteStream('input.txt.gz'));"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe all four stream types and explain how .pipe() enables memory-efficient data processing.",
+  "tags": ["Node.js", "Streams", "Interview"],
+  "relatedTopics": ["Backpressure", "Buffer", "fs Module"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-006",
+  "category": "Node.js",
+  "topic": "Backpressure",
+  "difficulty": "Hard",
+  "question": "What is Backpressure in Node.js Streams? Why does it matter?",
+  "shortAnswer": "Backpressure occurs when a Writable stream can't process incoming data as fast as a Readable stream is producing it — without proper handling, this causes uncontrolled memory growth as unconsumed data buffers up.",
+  "detailedAnswer": "If you read from a very fast source and write to a much slower destination, naively pushing data as fast as it's read would cause the writable side's internal buffer to grow unboundedly, potentially exhausting available memory.\n\nNode's .pipe() method automatically handles backpressure correctly; it pauses the readable stream when the writable stream's internal buffer is full, signaled by write() returning false, and resumes reading only once the writable stream emits a 'drain' event indicating it's ready for more data. Manually implementing stream piping without respecting this signal is a common source of memory-related bugs.",
+  "keyPoints": [
+    "Occurs when a fast producer overwhelms a slower consumer, risking unbounded memory growth from buffered data",
+    ".pipe() automatically handles backpressure correctly — a strong reason to prefer it over manual data/write event handling",
+    "write() returning false signals the writable buffer is full; the 'drain' event signals it's ready to receive more"
+  ],
+  "commonMistakes": [
+    "Manually handling stream data without respecting the write() false / 'drain' event backpressure signal",
+    "Assuming .pipe() requires manual backpressure handling when it already handles it automatically",
+    "Not recognizing unbounded memory growth as a symptom of unhandled backpressure"
+  ],
+  "followUpQuestions": [
+    "How does .pipe() automatically handle backpressure?",
+    "What does write() returning false signal, and how should it be handled?",
+    "What memory bug could arise from ignoring backpressure in manual stream handling?"
+  ],
+  "realWorldExample": "A file processing pipeline reading from a fast local disk and writing to a slower network destination relies on .pipe()'s automatic backpressure handling to avoid exhausting server memory.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "readableStream.pipe(writableStream); // backpressure handled automatically"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the producer-consumer speed mismatch and describe how .pipe() manages it via the drain event.",
+  "tags": ["Node.js", "Backpressure", "Streams", "Interview"],
+  "relatedTopics": ["Streams", "Buffer", "Memory Management"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-007",
+  "category": "Node.js",
+  "topic": "npm vs npx, dependencies vs devDependencies",
+  "difficulty": "Easy",
+  "question": "What is npm vs npx? What is the difference between dependencies and devDependencies?",
+  "shortAnswer": "npm installs packages. npx executes a package's binary directly, without requiring a permanent global install. dependencies are needed at runtime in production; devDependencies are only needed during development (testing, building, linting).",
+  "detailedAnswer": "npm install <package> adds a package to node_modules and records it in package.json. npx <command> executes a package's CLI tool directly; if it's not already installed locally, npx temporarily downloads and runs it without permanently installing it.\n\ndependencies in package.json are packages the application code actually imports and needs to run in production. devDependencies are tools only needed during development, such as Jest for testing or ESLint for linting; running npm install with a production flag skips installing devDependencies entirely, keeping production deployments leaner.",
+  "keyPoints": [
+    "npx: runs a package's binary directly, temporarily if not already installed — avoids permanent global installs",
+    "dependencies: required at runtime in production (the actual application code needs them to function)",
+    "devDependencies: only needed during development/build/test — excluded from production installs to reduce deployment size"
+  ],
+  "commonMistakes": [
+    "Placing a runtime-required package in devDependencies, breaking production deployments",
+    "Installing one-off CLI tools globally with npm install -g instead of using npx",
+    "Not excluding devDependencies from production installs, bloating deployment size"
+  ],
+  "followUpQuestions": [
+    "Why is npx useful for one-off CLI tool usage?",
+    "What happens if a runtime-required package is mistakenly listed under devDependencies?",
+    "How would you install only production dependencies during deployment?"
+  ],
+  "realWorldExample": "A developer runs npx create-react-app my-app to scaffold a new project without permanently installing create-react-app globally.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "npx create-react-app my-app\nnpm install --production"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish npm's install action from npx's execute action, and correctly classify runtime versus development-only packages.",
+  "tags": ["Node.js", "npm", "npx", "Interview"],
+  "relatedTopics": ["package.json", "package-lock.json", "Deployment"],
+  "references": ["npm Documentation - docs.npmjs.com"]
+},
+{
+  "id": "node-008",
+  "category": "Node.js",
+  "topic": "package-lock.json",
+  "difficulty": "Medium",
+  "question": "What is package-lock.json? Why is it important?",
+  "shortAnswer": "package-lock.json records the EXACT versions of every installed package (including nested dependencies) at the moment of installation, ensuring reproducible, identical installs across different machines and times.",
+  "detailedAnswer": "package.json typically specifies version ranges for dependencies, meaning two different npm install runs could technically install slightly different actual versions if a new compatible release was published in between, potentially introducing subtle bugs or behavior differences between environments.\n\npackage-lock.json locks down the exact resolved version of every single package, including deeply nested transitive dependencies, that was actually installed, and should always be committed to version control. Running npm ci in CI/CD pipelines specifically uses this lock file to guarantee a byte-for-byte reproducible install, failing explicitly if the lock file and package.json are out of sync.",
+  "keyPoints": [
+    "Locks exact versions of ALL dependencies (including nested/transitive ones), not just the direct top-level ones",
+    "Should always be committed to version control — ensures reproducible installs across all machines/environments",
+    "npm ci: uses the lock file strictly for CI/CD pipelines, faster and stricter than npm install, fails if out of sync"
+  ],
+  "commonMistakes": [
+    "Adding package-lock.json to .gitignore instead of committing it",
+    "Using npm install instead of npm ci in CI/CD pipelines, losing strict reproducibility guarantees",
+    "Not understanding version ranges in package.json can resolve to different versions over time"
+  ],
+  "followUpQuestions": [
+    "Why does npm ci fail if package-lock.json and package.json are out of sync?",
+    "What problem does the lock file solve that plain version ranges in package.json don't?",
+    "Why is npm ci generally preferred in CI/CD pipelines over npm install?"
+  ],
+  "realWorldExample": "A CI/CD pipeline uses npm ci instead of npm install to guarantee the exact same dependency versions are installed on every build, avoiding subtle version-drift bugs.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "npm ci"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why exact version locking matters and describe npm ci's role in CI/CD reproducibility.",
+  "tags": ["Node.js", "package-lock.json", "npm", "Interview"],
+  "relatedTopics": ["npm", "CI/CD", "Dependency Management"],
+  "references": ["npm Documentation - docs.npmjs.com"]
+},
+{
+  "id": "node-009",
+  "category": "Node.js",
+  "topic": "Cluster Module",
+  "difficulty": "Hard",
+  "question": "What is the Cluster Module in Node.js? Why is it needed?",
+  "shortAnswer": "The Cluster module allows a Node.js application to spawn multiple worker processes (typically one per CPU core), each running an independent instance of the application, to utilize multi-core systems — since a single Node.js process runs on only ONE CPU core by default.",
+  "detailedAnswer": "Node.js's single-threaded event loop, while excellent at handling many concurrent I/O-bound operations, means a single Node process can only ever use one CPU core, leaving most available compute capacity unused on a modern multi-core server unless explicitly addressed.\n\nThe cluster module lets a master process fork multiple worker processes, typically matching the number of available CPU cores, each running its own independent instance of the Node.js event loop, with incoming connections automatically load-balanced across these workers. Each worker is a fully separate OS process with its own memory space, so shared state needs an external store like Redis rather than in-process memory.",
+  "keyPoints": [
+    "A single Node.js process uses only ONE CPU core by default — cluster module utilizes multi-core servers fully",
+    "Master process forks multiple worker processes, load-balancing incoming connections across them automatically",
+    "Workers are separate OS processes with independent memory — shared state needs an external store (Redis), not in-memory"
+  ],
+  "commonMistakes": [
+    "Storing shared session state in-process memory when using cluster, causing inconsistency across workers",
+    "Not knowing a single Node process only uses one CPU core by default",
+    "Confusing cluster's process-based workers with worker_threads' thread-based workers"
+  ],
+  "followUpQuestions": [
+    "Why must shared state use an external store like Redis when using the cluster module?",
+    "How does the master process load-balance connections across workers?",
+    "What is the difference between cluster and worker_threads?"
+  ],
+  "realWorldExample": "A production Node.js API uses the cluster module to spawn one worker per CPU core on an 8-core server, fully utilizing available hardware instead of running on a single core.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const cluster = require('cluster');\nconst os = require('os');\n\nif (cluster.isPrimary) {\n  for (let i = 0; i < os.cpus().length; i++) cluster.fork();\n} else {\n  require('./app.js');\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why the cluster module is needed for multi-core utilization and note the separate-memory implication for shared state.",
+  "tags": ["Node.js", "Cluster Module", "Multi-core", "Interview"],
+  "relatedTopics": ["Worker Threads", "PM2", "Load Balancing"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-010",
+  "category": "Node.js",
+  "topic": "exports vs module.exports",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between exports and module.exports in CommonJS?",
+  "shortAnswer": "module.exports is the ACTUAL object returned by require() — exports is simply a convenient reference/alias to module.exports initially, but REASSIGNING exports directly breaks that link.",
+  "detailedAnswer": "Node.js internally wraps every module in a function that provides exports, require, module, __filename, and __dirname as parameters, where exports starts out as a shorthand reference pointing to the same object as module.exports.\n\nAdding properties via exports.foo = 'bar' works correctly, since it mutates the same underlying object that module.exports also points to. However, directly reassigning exports = someNewObject only changes what the local exports variable points to within that module's scope, and does not change what module.exports actually returns, silently breaking the export. To export a completely new object, you must explicitly reassign module.exports = newObject.",
+  "keyPoints": [
+    "exports starts as a reference to the same object as module.exports — but they can become disconnected",
+    "exports.foo = 'bar': works correctly, mutates the shared underlying object",
+    "exports = {...}: BREAKS the link — always use module.exports = {...} to export a completely new object/value"
+  ],
+  "commonMistakes": [
+    "Directly reassigning exports = {...} expecting it to change what require() returns",
+    "Not understanding exports and module.exports start as the same object but can diverge",
+    "Mixing exports.foo = ... and module.exports = ... inconsistently in the same file"
+  ],
+  "followUpQuestions": [
+    "Why does reassigning exports directly break the export?",
+    "How would you correctly export a completely new object from a module?",
+    "What does exports point to when a module first starts executing?"
+  ],
+  "realWorldExample": "A beginner accidentally writes exports = myFunction expecting to export a single function, but the module still exports an empty object since only module.exports = myFunction would have worked.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "exports.foo = 'bar'; // works\nmodule.exports = { foo: 'bar' }; // works, exports the whole object\nexports = { foo: 'bar' }; // BROKEN — doesn't affect what require() returns"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the reference relationship and identify direct reassignment of exports as a common bug source.",
+  "tags": ["Node.js", "CommonJS", "exports", "module.exports", "Interview"],
+  "relatedTopics": ["require vs import", "CommonJS", "Modules"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-011",
+  "category": "Node.js",
+  "topic": "dotenv and Environment Variables",
+  "difficulty": "Easy",
+  "question": "What is dotenv and Environment Variable Management in Node.js?",
+  "shortAnswer": "dotenv is a widely-used npm package that loads environment variables from a .env file into process.env, enabling configuration (API keys, database URLs, secrets) to be kept out of source code and version control.",
+  "detailedAnswer": "Hardcoding sensitive configuration directly in source code is a serious security risk, and hardcoding environment-specific values makes code inflexible across different deployment environments.\n\nThe dotenv package reads a .env file, which should always be added to .gitignore, and populates process.env with its key-value pairs at application startup, making them accessible via process.env.DATABASE_URL throughout the codebase. In production deployments, environment variables are typically set directly through the hosting platform's configuration, and dotenv gracefully has no effect if no .env file is present.",
+  "keyPoints": [
+    "Loads key-value pairs from a .env file into process.env, keeping secrets out of source code and version control",
+    ".env file should ALWAYS be added to .gitignore — never commit actual secrets/credentials to version control",
+    "Production deployments typically set environment variables directly via the hosting platform, not an actual .env file"
+  ],
+  "commonMistakes": [
+    "Committing a .env file containing real secrets to version control",
+    "Hardcoding sensitive configuration directly in source code instead of using environment variables",
+    "Forgetting dotenv is unnecessary in production where environment variables are typically set by the hosting platform"
+  ],
+  "followUpQuestions": [
+    "Why should .env files always be added to .gitignore?",
+    "How are environment variables typically set in a production deployment instead of a .env file?",
+    "What happens if dotenv is used but no .env file exists?"
+  ],
+  "realWorldExample": "A developer stores a database connection string in a local .env file, loaded via dotenv, keeping the actual credentials out of the committed source code.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "require('dotenv').config();\nconst dbUrl = process.env.DATABASE_URL;"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how dotenv keeps secrets out of source control and describe production environment variable practices.",
+  "tags": ["Node.js", "dotenv", "Environment Variables", "Interview"],
+  "relatedTopics": ["NODE_ENV", "Security", "Configuration"],
+  "references": ["dotenv npm Documentation - npmjs.com"]
+},
+{
+  "id": "node-012",
+  "category": "Node.js",
+  "topic": "Express Error-Handling Middleware",
+  "difficulty": "Medium",
+  "question": "What is Express.js Error Handling? How do you create a custom Error-Handling Middleware?",
+  "shortAnswer": "Express identifies error-handling middleware specifically by its FOUR parameters (err, req, res, next) — placed at the end of the middleware chain, it catches errors passed via next(err) from anywhere earlier in the request-handling pipeline.",
+  "detailedAnswer": "For synchronous code inside a regular route handler, simply throwing an error is automatically caught by Express and routed to the nearest error-handling middleware. For asynchronous code, errors must be explicitly passed to next(err), since Express cannot automatically catch async errors that aren't explicitly forwarded this way.\n\nA custom error-handling middleware is defined with exactly four parameters, and Express specifically recognizes it as an error handler due to having 4 parameters versus 3 for regular middleware, placing it at the end of the middleware stack so it can catch errors from anything defined before it.",
+  "keyPoints": [
+    "Error-handling middleware has exactly 4 parameters (err, req, res, next) — this parameter count is how Express identifies it",
+    "Async code MUST explicitly call next(err) to forward errors — Express doesn't automatically catch async/Promise rejections",
+    "Must be defined LAST in the middleware chain, after all routes and regular middleware, to properly catch their errors"
+  ],
+  "commonMistakes": [
+    "Defining error-handling middleware before regular routes instead of after",
+    "Forgetting async errors must be explicitly forwarded with next(err)",
+    "Writing error-handling middleware with the wrong number of parameters, preventing Express from recognizing it"
+  ],
+  "followUpQuestions": [
+    "How does Express distinguish error-handling middleware from regular middleware?",
+    "Why must error-handling middleware be placed last in the chain?",
+    "What happens to a thrown error inside a synchronous route handler versus an async one?"
+  ],
+  "realWorldExample": "An Express app defines a single error-handling middleware at the end of its middleware stack to catch and format all errors consistently as JSON responses.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "app.use((err, req, res, next) => {\n  res.status(500).json({ error: err.message });\n});"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the 4-parameter signature and the placement requirement at the end of the middleware chain.",
+  "tags": ["Node.js", "Express", "Error Handling", "Interview"],
+  "relatedTopics": ["Middleware", "async/await Error Handling", "REST API"],
+  "references": ["Express.js Documentation - expressjs.com"]
+},
+{
+  "id": "node-013",
+  "category": "Node.js",
+  "topic": "async/await Error Handling in Express",
+  "difficulty": "Medium",
+  "question": "What is the Purpose of async/await Error Handling with try/catch in Express Route Handlers?",
+  "shortAnswer": "Since Express doesn't automatically catch errors thrown inside async route handlers (unlike synchronous throws), developers must explicitly wrap async logic in try/catch and manually call next(err) in the catch block — or use a wrapper utility to avoid this repetitive boilerplate.",
+  "detailedAnswer": "In an async route handler, if an awaited call rejects, that rejection becomes an unhandled promise rejection that Express does not automatically catch and route to error-handling middleware, unlike synchronous throws which Express does catch automatically; the request would simply hang or crash the process.\n\nThe correct pattern wraps the logic in a try/catch block, explicitly forwarding any caught error to Express's error-handling middleware via next(err). Many teams use a small wrapper utility, or the express-async-errors package, to automatically apply this pattern to every async route handler, avoiding writing this boilerplate manually.",
+  "keyPoints": [
+    "Express does NOT automatically catch rejected promises/thrown errors inside async route handlers — a common gotcha",
+    "Correct manual pattern: wrap the async logic in try/catch, explicitly call next(err) inside the catch block",
+    "Wrapper utilities/packages (express-async-errors) can automate this pattern, avoiding repetitive boilerplate in every route"
+  ],
+  "commonMistakes": [
+    "Forgetting to wrap async route logic in try/catch, leaving unhandled promise rejections",
+    "Assuming Express automatically catches async errors the same way it catches synchronous throws",
+    "Not using a wrapper utility to reduce repetitive try/catch/next(err) boilerplate across many routes"
+  ],
+  "followUpQuestions": [
+    "Why doesn't Express automatically catch errors thrown inside an async route handler?",
+    "What happens to a request if an async route handler's rejected promise is never caught?",
+    "How does express-async-errors simplify this pattern?"
+  ],
+  "realWorldExample": "A developer wraps every async route handler in a try/catch block that forwards errors to next(err), or adopts express-async-errors to automate this across the entire application.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "app.get('/users', async (req, res, next) => {\n  try {\n    const users = await db.getUsers();\n    res.json(users);\n  } catch (err) {\n    next(err);\n  }\n});"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why async errors need explicit forwarding and describe the try/catch/next(err) pattern.",
+  "tags": ["Node.js", "Express", "async/await", "Error Handling", "Interview"],
+  "relatedTopics": ["Express Error-Handling Middleware", "Promises", "async/await"],
+  "references": ["Express.js Documentation - expressjs.com"]
+},
+{
+  "id": "node-014",
+  "category": "Node.js",
+  "topic": "fs.readFile vs fs.readFileSync",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between fs.readFile() and fs.readFileSync()?",
+  "shortAnswer": "fs.readFile() is asynchronous — it doesn't block the event loop, using a callback (or returning a Promise with fs.promises.readFile) once the read completes. fs.readFileSync() is synchronous — it BLOCKS the entire event loop until the read completes.",
+  "detailedAnswer": "fs.readFile(path, callback) initiates a file read operation and immediately returns, allowing the event loop to continue processing other requests while the disk I/O happens in the background via libuv's thread pool; once the read completes, the provided callback is invoked with the result.\n\nfs.readFileSync(path) blocks the entire single-threaded event loop until the file read completes; during this time, the Node.js process cannot handle any other requests, making it fundamentally unsuitable for use inside a server's request-handling code, though acceptable for simple one-off scripts or application startup.",
+  "keyPoints": [
+    "Async (fs.readFile): non-blocking, doesn't halt the event loop, appropriate for use inside server request handlers",
+    "Sync (fs.readFileSync): blocks the ENTIRE event loop — using this inside a request handler would freeze the whole server",
+    "Sync versions are acceptable for one-off scripts, CLI tools, or startup/config loading — never inside active server request handling"
+  ],
+  "commonMistakes": [
+    "Using fs.readFileSync() inside an active server request handler, freezing the entire server for other users",
+    "Assuming sync methods are always wrong when they're fine for startup/config loading",
+    "Not knowing fs.promises.readFile provides a Promise-based async alternative"
+  ],
+  "followUpQuestions": [
+    "Why is fs.readFileSync() dangerous to use inside a server's request handler?",
+    "When would a synchronous file read actually be acceptable?",
+    "What does fs.promises.readFile provide compared to the callback-based fs.readFile?"
+  ],
+  "realWorldExample": "A Node.js server uses fs.readFile() asynchronously to serve file contents to concurrent requests without blocking other users, while a startup script uses fs.readFileSync() to load a configuration file once before the server starts.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "fs.readFile('data.txt', 'utf8', (err, data) => {\n  console.log(data); // non-blocking\n});\n\nconst config = fs.readFileSync('config.json', 'utf8'); // blocking, OK at startup"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the blocking-versus-non-blocking distinction and identify appropriate contexts for each.",
+  "tags": ["Node.js", "fs Module", "Blocking I/O", "Interview"],
+  "relatedTopics": ["Event Loop", "Streams", "Promises"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-015",
+  "category": "Node.js",
+  "topic": "Callback Hell and Promises",
+  "difficulty": "Medium",
+  "question": "What is a Promise-based API vs Callback-based API in Node.js? What is \"Callback Hell\"?",
+  "shortAnswer": "Callback Hell refers to deeply nested, hard-to-read code that results from chaining many sequential asynchronous callback-based operations. Promises (and async/await) solve this by flattening the structure into more linear, readable code.",
+  "detailedAnswer": "Node's original async APIs commonly used the error-first callback pattern. When multiple such operations must happen sequentially, each depending on the previous one's result, the natural approach is nesting each subsequent call inside the previous one's callback, quickly producing deeply indented, pyramid-of-doom code that's difficult to read and handle errors correctly for.\n\nPromises restructure this into a flatter .then().then().then() chain, and async/await flattens it even further into code that reads almost exactly like standard synchronous, sequential code. Most modern Node.js APIs now offer Promise-based versions alongside the original callback-based ones.",
+  "keyPoints": [
+    "\"Callback Hell\": deeply nested, hard-to-read code from chaining sequential callback-based async operations",
+    "Promises flatten this into .then().then() chains; async/await flattens it further into synchronous-looking code",
+    "Most core Node.js APIs now offer Promise-based versions (e.g., fs.promises) alongside the original callback style"
+  ],
+  "commonMistakes": [
+    "Nesting many sequential callback-based operations instead of using Promises or async/await",
+    "Not knowing most core Node.js modules offer Promise-based equivalents like fs.promises",
+    "Making each nested callback level's error handling inconsistent"
+  ],
+  "followUpQuestions": [
+    "How does async/await further flatten Promise chains compared to .then()?",
+    "What is the error-first callback pattern?",
+    "Can you give an example of Promise-based versus callback-based fs APIs?"
+  ],
+  "realWorldExample": "A legacy Node.js codebase with deeply nested fs.readFile callbacks is refactored to use fs.promises with async/await, dramatically improving readability.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "// Callback Hell\nfs.readFile('a.txt', (err, a) => {\n  fs.readFile('b.txt', (err, b) => {\n    fs.readFile('c.txt', (err, c) => {\n      // deeply nested\n    });\n  });\n});\n\n// async/await\nconst a = await fs.promises.readFile('a.txt');\nconst b = await fs.promises.readFile('b.txt');\nconst c = await fs.promises.readFile('c.txt');"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe the callback pyramid problem and explain how Promises and async/await resolve it.",
+  "tags": ["Node.js", "Callback Hell", "Promises", "Interview"],
+  "relatedTopics": ["async/await", "Promises", "Error-First Callbacks"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-016",
+  "category": "Node.js",
+  "topic": "PM2 Process Manager",
+  "difficulty": "Medium",
+  "question": "What is the Purpose of PM2 or Similar Process Managers in Node.js Production Deployments?",
+  "shortAnswer": "PM2 is a production process manager that keeps a Node.js application running continuously — automatically restarting it if it crashes, managing multiple instances/clustering, log management, and zero-downtime reloads.",
+  "detailedAnswer": "Running node app.js directly in production is fragile; if the process crashes due to an unhandled error, it simply stays down until someone manually notices and restarts it, with no built-in load balancing across multiple CPU cores or convenient log aggregation.\n\nPM2 wraps the application, automatically restarting it immediately if it crashes, with configurable restart limits to prevent infinite crash-restart loops. It can automatically spawn and load-balance across multiple instances, provides centralized log file management, and supports zero-downtime reloads, restarting instances one at a time during deployment.",
+  "keyPoints": [
+    "Auto-restarts the application immediately if it crashes — critical for production reliability without manual intervention",
+    "Can automatically manage multiple clustered instances across CPU cores, without manually implementing the cluster module directly",
+    "Zero-downtime reloads: restarts instances one at a time during deployment, keeping the application continuously available"
+  ],
+  "commonMistakes": [
+    "Running node app.js directly in production without a process manager",
+    "Not configuring restart limits, allowing an infinite crash-restart loop from a persistently broken deployment",
+    "Confusing PM2's production-oriented crash recovery with nodemon's development-oriented file-watching"
+  ],
+  "followUpQuestions": [
+    "Why is running node app.js directly considered fragile in production?",
+    "How does PM2 achieve zero-downtime reloads during a deployment?",
+    "How does PM2 relate to the cluster module?"
+  ],
+  "realWorldExample": "A production deployment uses PM2 to run a Node.js API across all available CPU cores, automatically restarting any worker that crashes without any manual intervention.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "pm2 start app.js -i max\npm2 reload app.js"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain PM2's crash recovery, clustering, and zero-downtime reload benefits for production reliability.",
+  "tags": ["Node.js", "PM2", "Process Management", "Interview"],
+  "relatedTopics": ["Cluster Module", "Deployment", "NODE_ENV"],
+  "references": ["PM2 Documentation - pm2.keymetrics.io"]
+},
+{
+  "id": "node-017",
+  "category": "Node.js",
+  "topic": "http Module vs Express.js",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between http module and Express.js? Why use a Framework at all?",
+  "shortAnswer": "Node's built-in http module provides only the low-level, raw building blocks for handling HTTP requests/responses. Express.js is a framework built ON TOP of it, providing routing, middleware, and many convenience features that would otherwise need to be manually implemented.",
+  "detailedAnswer": "Using the raw http module directly, you'd need to manually parse the request URL to determine routing, manually parse the request body, manually set response headers and status codes for every response, and manually build any concept of reusable middleware.\n\nExpress.js provides a clean, declarative routing API, a rich middleware ecosystem for body parsing, CORS, authentication, and logging, and numerous convenience methods like res.json() and res.status(), dramatically reducing boilerplate for typical web application development, while still ultimately using the http module internally under the hood.",
+  "keyPoints": [
+    "http module: low-level, raw building blocks — everything (routing, parsing, etc.) must be manually implemented",
+    "Express.js: high-level framework built on TOP of http, providing routing, middleware, and many convenience methods",
+    "Express dramatically reduces boilerplate for typical web/API development, at the cost of a small additional abstraction layer"
+  ],
+  "commonMistakes": [
+    "Manually reimplementing routing and body parsing when the raw http module would need this, unlike Express",
+    "Assuming Express replaces the http module rather than building on top of it",
+    "Underestimating how much boilerplate the raw http module requires for typical web applications"
+  ],
+  "followUpQuestions": [
+    "What does Express provide that the raw http module doesn't?",
+    "Why would you still choose the raw http module over Express for certain use cases?",
+    "How does Express's routing API compare to manually parsing URLs with the http module?"
+  ],
+  "realWorldExample": "A developer building a simple API quickly reaches for Express to get routing, JSON body parsing, and middleware support out of the box, rather than manually implementing these with the raw http module.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "// Raw http module\nconst http = require('http');\nhttp.createServer((req, res) => {\n  if (req.url === '/users') { /* manual routing */ }\n}).listen(3000);\n\n// Express\nconst express = require('express');\nconst app = express();\napp.get('/users', (req, res) => res.json([]));"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain what Express abstracts away from the raw http module and articulate the boilerplate-reduction trade-off.",
+  "tags": ["Node.js", "http Module", "Express", "Interview"],
+  "relatedTopics": ["Middleware", "REST API", "Routing"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-018",
+  "category": "Node.js",
+  "topic": "Worker Threads",
+  "difficulty": "Hard",
+  "question": "What is Node.js's Single-Threaded Nature — and How Do Worker Threads Address CPU-Bound Tasks?",
+  "shortAnswer": "Node.js's main JavaScript execution is single-threaded, making genuinely CPU-intensive synchronous work (heavy computation, large loops) BLOCK the entire event loop. The worker_threads module allows running JavaScript in genuinely separate threads for such CPU-bound tasks, without blocking the main event loop.",
+  "detailedAnswer": "Node.js excels at I/O-bound concurrency precisely because I/O operations are offloaded and non-blocking, but any genuinely CPU-intensive synchronous JavaScript code runs entirely on the same single main thread as the event loop itself, completely blocking it from processing anything else until that computation finishes.\n\nThe worker_threads module, built into Node.js since v10.5+, allows spawning genuinely separate OS-level threads, each running their own independent JavaScript engine instance, specifically for offloading such CPU-bound work. Communication between the main thread and workers happens via message passing, since threads don't share memory directly by default, though SharedArrayBuffer allows explicit shared memory when needed.",
+  "keyPoints": [
+    "CPU-intensive synchronous code blocks the ENTIRE event loop — including unrelated, otherwise-fast requests from other users",
+    "worker_threads: spawns genuinely separate threads specifically for offloading CPU-bound work, without blocking the main thread",
+    "Communication between main thread and workers happens via message passing — threads don't share memory by default"
+  ],
+  "commonMistakes": [
+    "Running CPU-intensive computation directly on the main thread, blocking all other requests",
+    "Assuming worker threads share memory by default without using SharedArrayBuffer",
+    "Confusing worker_threads with the cluster module's separate-process model"
+  ],
+  "followUpQuestions": [
+    "How does communication between the main thread and a worker thread work?",
+    "What is SharedArrayBuffer and when would you use it with worker threads?",
+    "How does worker_threads differ from the cluster module?"
+  ],
+  "realWorldExample": "An image processing server offloads CPU-intensive image resizing to a worker thread pool, keeping the main event loop free to handle incoming HTTP requests without delay.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const { Worker } = require('worker_threads');\nconst worker = new Worker('./heavy-task.js');\nworker.on('message', (result) => console.log(result));"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why CPU-bound work blocks the event loop and describe how worker_threads solves this via separate threads.",
+  "tags": ["Node.js", "Worker Threads", "CPU-Bound Tasks", "Interview"],
+  "relatedTopics": ["Event Loop", "Cluster Module", "child_process"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-019",
+  "category": "Node.js",
+  "topic": "NODE_ENV",
+  "difficulty": "Easy",
+  "question": "What is the Purpose of .env Files and NODE_ENV? How Does It Affect Application Behavior?",
+  "shortAnswer": "NODE_ENV is a widely-adopted convention environment variable indicating the current running environment (development, production, test) — many libraries and frameworks (including Express itself) check this value to enable/disable certain behaviors automatically (like verbose error messages, caching, or logging levels).",
+  "detailedAnswer": "Setting NODE_ENV=production before starting a Node.js application signals to the application and many third-party libraries that it's running in a live production context, causing various automatic optimizations: Express disables detailed error stack traces in HTTP responses, many templating engines enable view caching, and various libraries adjust logging verbosity accordingly.\n\nForgetting to properly set NODE_ENV=production in an actual production deployment is a surprisingly common mistake that can leave debugging information exposed and leave performance optimizations disabled unnecessarily.",
+  "keyPoints": [
+    "NODE_ENV=production: widely-checked convention that many frameworks/libraries use to enable production-appropriate behavior",
+    "Express specifically: disables verbose error details in responses, and enables view template caching, when set to production",
+    "A commonly forgotten but important step in production deployments — failing to set it can leave debug info exposed and optimizations off"
+  ],
+  "commonMistakes": [
+    "Forgetting to set NODE_ENV=production in an actual production deployment",
+    "Assuming NODE_ENV has no impact on library behavior beyond a naming convention",
+    "Not knowing Express specifically disables verbose error stack traces based on NODE_ENV"
+  ],
+  "followUpQuestions": [
+    "What specific behaviors does Express change based on NODE_ENV?",
+    "What security risk arises from forgetting to set NODE_ENV=production?",
+    "How would you set NODE_ENV when starting a Node.js application?"
+  ],
+  "realWorldExample": "A production deployment forgets to set NODE_ENV=production, accidentally leaving detailed error stack traces exposed to end users in HTTP responses, a security oversight.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "NODE_ENV=production node app.js"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain NODE_ENV's role as a widely-checked convention and give a specific Express behavior it affects.",
+  "tags": ["Node.js", "NODE_ENV", "Environment Variables", "Interview"],
+  "relatedTopics": ["dotenv", "Express", "Deployment"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-020",
+  "category": "Node.js",
+  "topic": "Node.js REPL",
+  "difficulty": "Easy",
+  "question": "What is REPL in the context of Node.js?",
+  "shortAnswer": "REPL (Read-Eval-Print Loop) is Node.js's interactive command-line environment, accessed by simply typing node with no arguments — allowing you to type and immediately execute JavaScript code line by line, seeing results instantly.",
+  "detailedAnswer": "Running node without specifying a script file drops you into an interactive shell where you can type any JavaScript expression or statement, press Enter, and immediately see the evaluated result, useful for quickly testing a small snippet of logic or exploring an unfamiliar API interactively.\n\nThe REPL maintains state across commands within a single session, and provides some built-in dot-prefixed commands for controlling the session itself, such as .help, .exit, and .clear.",
+  "keyPoints": [
+    "Accessed by running node with no script file argument — drops into an interactive JavaScript execution shell",
+    "Maintains state across commands within a session — variables declared remain available for subsequent lines",
+    "Useful for quick experimentation, testing small snippets, and exploring unfamiliar APIs interactively without a full script file"
+  ],
+  "commonMistakes": [
+    "Not knowing REPL state persists across commands within the same session",
+    "Confusing the REPL with running an actual script file",
+    "Not knowing about built-in dot commands like .exit or .clear"
+  ],
+  "followUpQuestions": [
+    "Does the REPL retain variable state between commands?",
+    "What are some built-in dot commands available in the REPL?",
+    "When might you use the REPL over writing a full script?"
+  ],
+  "realWorldExample": "A developer quickly tests a regex pattern or a small array transformation using the Node.js REPL before committing it to actual application code.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "$ node\n> const x = 5;\n> x * 2\n10"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe the REPL's interactive nature and its use for quick experimentation.",
+  "tags": ["Node.js", "REPL", "Interview"],
+  "relatedTopics": ["Node.js CLI", "Debugging", "JavaScript Basics"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-021",
+  "category": "Node.js",
+  "topic": "child_process: spawn, exec, fork",
+  "difficulty": "Hard",
+  "question": "What is the Difference Between spawn(), exec(), and fork() in Node.js's child_process module?",
+  "shortAnswer": "spawn() launches a new process and streams its output incrementally (good for large output, long-running processes). exec() launches a process and buffers its ENTIRE output in memory, returning it all at once (good for smaller, one-shot commands). fork() is specifically for spawning new NODE.JS processes, with a built-in message-passing communication channel.",
+  "detailedAnswer": "spawn(command, args) launches an external command and returns Readable streams for its stdout/stderr, allowing output to be processed incrementally as it's produced, ideal for long-running processes or large output, since it's never fully buffered in memory.\n\nexec(command, callback) similarly launches a process but buffers its entire output into memory, invoking the callback only once the process fully completes, simpler for quick one-shot commands but risking out-of-memory issues if output is unexpectedly large. fork(modulePath) is a specialized variant specifically for spawning another Node.js process, automatically setting up an IPC channel allowing structured message exchange via .send()/on('message').",
+  "keyPoints": [
+    "spawn(): streams output incrementally — good for large output or long-running external processes",
+    "exec(): buffers entire output in memory, simpler API — good for smaller, quick one-shot external commands",
+    "fork(): specifically spawns another Node.js process, with a built-in IPC message-passing channel — good for CPU-heavy work offloading"
+  ],
+  "commonMistakes": [
+    "Using exec() for a command with potentially large output, risking memory exhaustion",
+    "Using fork() for non-Node.js executables, which it's not designed for",
+    "Not leveraging fork()'s built-in IPC channel and instead trying to implement custom communication"
+  ],
+  "followUpQuestions": [
+    "Why is exec() risky for commands with unexpectedly large output?",
+    "What makes fork() specifically suited for spawning other Node.js processes?",
+    "How would you choose between spawn() and exec() for a given command?"
+  ],
+  "realWorldExample": "A build tool uses spawn() to stream the output of a long-running compilation process in real time, while a quick git status check uses exec() since its output is small and predictable.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const { spawn, fork } = require('child_process');\n\nconst child = spawn('ls', ['-la']);\nchild.stdout.on('data', (data) => console.log(data.toString()));\n\nconst worker = fork('./worker.js');\nworker.send({ task: 'process' });\nworker.on('message', (result) => console.log(result));"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish streaming versus buffered output and identify fork()'s specific role for Node.js-to-Node.js IPC.",
+  "tags": ["Node.js", "child_process", "spawn", "exec", "fork", "Interview"],
+  "relatedTopics": ["Worker Threads", "IPC", "Streams"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-022",
+  "category": "Node.js",
+  "topic": "Helmet Security Middleware",
+  "difficulty": "Medium",
+  "question": "What is the Purpose of helmet and Common Security Middleware in Express.js Applications?",
+  "shortAnswer": "helmet is a popular Express middleware that automatically sets various HTTP security headers (like Content-Security-Policy, X-Frame-Options, Strict-Transport-Security) to protect against common web vulnerabilities, with sensible defaults requiring minimal configuration.",
+  "detailedAnswer": "By default, Express doesn't automatically set many important security-related HTTP headers, leaving applications potentially vulnerable to certain classes of common attacks unless developers remember to manually configure each header individually.\n\napp.use(helmet()) applies a curated collection of security-focused HTTP headers with one line: X-Content-Type-Options prevents MIME-type sniffing attacks, X-Frame-Options prevents clickjacking, Strict-Transport-Security forces HTTPS for future requests, and a configurable Content-Security-Policy restricts which sources scripts/styles/resources can be loaded from. While helmet significantly improves baseline security posture, it's not a complete security solution on its own.",
+  "keyPoints": [
+    "Sets multiple security-related HTTP response headers automatically with sensible, curated defaults via one line",
+    "Protects against common attack classes: clickjacking (X-Frame-Options), MIME-sniffing, and helps mitigate certain XSS vectors (CSP)",
+    "Improves baseline security posture quickly, but is NOT a complete substitute for proper input validation and other security practices"
+  ],
+  "commonMistakes": [
+    "Assuming helmet alone provides complete application security without input validation and other practices",
+    "Not configuring Content-Security-Policy appropriately for the specific application's needs",
+    "Forgetting to add helmet, leaving the application vulnerable to clickjacking and MIME-sniffing attacks"
+  ],
+  "followUpQuestions": [
+    "What does the X-Frame-Options header protect against?",
+    "Why isn't helmet considered a complete security solution on its own?",
+    "How does Content-Security-Policy help mitigate XSS attacks?"
+  ],
+  "realWorldExample": "An Express application adds app.use(helmet()) as one of its first middleware calls, immediately gaining protection against clickjacking, MIME-sniffing, and enforcing HTTPS via HSTS.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const helmet = require('helmet');\napp.use(helmet());"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to name specific security headers helmet sets and articulate that it's a baseline, not a complete, security solution.",
+  "tags": ["Node.js", "Express", "helmet", "Security", "Interview"],
+  "relatedTopics": ["Web Security", "XSS", "HTTP Headers"],
+  "references": ["Helmet.js Documentation - helmetjs.github.io"]
+},
+{
+  "id": "node-023",
+  "category": "Node.js",
+  "topic": "Buffer vs Stream",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Buffer and Stream in Node.js?",
+  "shortAnswer": "A Buffer holds a FIXED chunk of binary data entirely in memory at once. A Stream processes data incrementally, in smaller chunks over time, without needing the entire dataset in memory simultaneously.",
+  "detailedAnswer": "A Buffer is Node.js's mechanism for handling raw binary data, representing a fixed-length chunk of memory holding binary data, commonly encountered when reading a file's entire contents at once or when working with network protocols directly.\n\nStreams, by contrast, represent data flowing incrementally over time, in a sequence of smaller Buffer chunks, rather than the entire dataset existing in memory at any single moment, which enables Node.js to efficiently process files or network data far larger than available RAM. In practice, the data events received from a Stream typically are Buffer objects; the two concepts work together.",
+  "keyPoints": [
+    "Buffer: represents a complete, fixed chunk of binary data held in memory all at once",
+    "Stream: represents data flowing incrementally over time, in smaller chunks, without requiring the full dataset in memory simultaneously",
+    "These concepts work together in practice: the individual data chunks emitted by a Stream are typically Buffer objects themselves"
+  ],
+  "commonMistakes": [
+    "Loading an entire large file into a Buffer via readFileSync instead of streaming it in chunks",
+    "Confusing Buffer and Stream as competing concepts rather than complementary ones",
+    "Not knowing Stream data events typically emit Buffer chunks"
+  ],
+  "followUpQuestions": [
+    "How do Buffers and Streams work together in practice?",
+    "Why would you choose a Stream over a Buffer for processing a very large file?",
+    "What method reads an entire file into a single Buffer?"
+  ],
+  "realWorldExample": "A video streaming server processes large video files as a Stream of Buffer chunks rather than loading the entire file into a single Buffer, avoiding excessive memory usage.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "fs.createReadStream('video.mp4').on('data', (chunk) => {\n  console.log(chunk instanceof Buffer); // true\n});"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the fixed-in-memory nature of Buffers versus the incremental nature of Streams and note how they work together.",
+  "tags": ["Node.js", "Buffer", "Streams", "Interview"],
+  "relatedTopics": ["Streams", "Binary Data", "Memory Management"],
+  "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "node-024",
+  "category": "Node.js",
+  "topic": "nodemon",
+  "difficulty": "Easy",
+  "question": "What is the Purpose of nodemon During Development?",
+  "shortAnswer": "nodemon is a development utility that automatically restarts a Node.js application whenever it detects changes to source files, eliminating the need to manually stop and restart the server after every code change during development.",
+  "detailedAnswer": "Without nodemon, a typical development workflow requires manually killing the running Node process and re-running node app.js after every single code change, a repetitive, easy-to-forget interruption to development flow.\n\nnodemon app.js watches the project's files for changes and automatically restarts the process the moment a relevant file is saved. It's exclusively a development tool; production deployments should never actually use nodemon itself, instead relying on proper process managers like PM2, which offer production-appropriate crash recovery rather than file-watching restart behavior.",
+  "keyPoints": [
+    "Automatically restarts the Node.js process whenever source files change, eliminating manual restart during development",
+    "Used as a development-only drop-in replacement for the node command — significantly speeds up the development feedback loop",
+    "Should NEVER be used in production — production deployments use process managers like PM2 for crash recovery instead"
+  ],
+  "commonMistakes": [
+    "Using nodemon in a production deployment instead of a proper process manager like PM2",
+    "Manually restarting the server after every change instead of using nodemon during development",
+    "Confusing nodemon's file-watching restart behavior with PM2's crash-recovery restart behavior"
+  ],
+  "followUpQuestions": [
+    "Why should nodemon never be used in a production deployment?",
+    "How does nodemon differ from PM2 in purpose?",
+    "What triggers nodemon to restart the application?"
+  ],
+  "realWorldExample": "A developer runs nodemon app.js during local development so the server automatically restarts every time they save a code change, without manually stopping and restarting it.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "nodemon app.js"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain nodemon's development-only file-watching restart behavior and why it shouldn't be used in production.",
+  "tags": ["Node.js", "nodemon", "Development Tools", "Interview"],
+  "relatedTopics": ["PM2", "Development Workflow", "Node.js CLI"],
+  "references": ["nodemon Documentation - npmjs.com"]
+},
+{
+  "id": "node-025",
+  "category": "Node.js",
+  "topic": "Monolithic vs Microservices Node.js Architecture",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Monolithic and Microservices Node.js Backend Architecture — and How Does This Relate to Node's Specific Strengths?",
+  "shortAnswer": "Node.js's lightweight process footprint, fast startup time, and natural fit for I/O-heavy, JSON-based communication make it particularly well-suited to microservices architectures, though it's equally capable of powering traditional monolithic backends for smaller/simpler applications.",
+  "detailedAnswer": "A monolithic Node.js backend bundles all application functionality into a single deployable Express application, simpler to develop, test, and deploy initially, avoiding the operational complexity of managing many separate deployed services.\n\nA microservices architecture instead splits functionality into many small, independently deployable Node.js services, communicating with each other over the network. Node.js is particularly well-suited to this pattern due to its fast process startup time, lightweight memory footprint, and its natural, first-class handling of JSON. The choice between the two is generally driven more by team size and organizational structure than any inherent Node.js-specific limitation.",
+  "keyPoints": [
+    "Node.js's fast startup and lightweight process footprint make it well-suited for running many small, independent microservices",
+    "First-class native JSON handling aligns naturally with typical REST API and inter-service communication patterns",
+    "Monolith vs microservices choice is generally driven by team size/organizational structure/complexity, not a Node-specific limitation"
+  ],
+  "commonMistakes": [
+    "Choosing microservices prematurely for a small team or simple application, adding unnecessary operational complexity",
+    "Assuming Node.js is unsuitable for monolithic architectures",
+    "Not recognizing Node's fast startup and JSON handling as specific strengths for microservices"
+  ],
+  "followUpQuestions": [
+    "Why is Node.js's fast startup time particularly beneficial for microservices?",
+    "What organizational factors typically drive the choice between monolith and microservices?",
+    "Is Node.js equally capable of powering a traditional monolithic backend?"
+  ],
+  "realWorldExample": "A growing e-commerce company starts with a monolithic Node.js/Express backend and gradually splits it into microservices as the team and traffic scale, leveraging Node's fast startup time for spinning up new service instances.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain Node's specific strengths for microservices while acknowledging monolith vs microservices is primarily an organizational decision.",
+  "tags": ["Node.js", "Microservices", "Monolithic Architecture", "Interview"],
+  "relatedTopics": ["System Design", "Cluster Module", "REST API"],
+  "references": ["Node.js Documentation - nodejs.org"]
 }
 ];
