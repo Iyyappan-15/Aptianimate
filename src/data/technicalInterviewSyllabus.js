@@ -182,11 +182,12 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     id: 'resume',
     title: 'Resume Preparation',
     slug: 'resume-preparation',
-    description: 'Structuring, highlighting impact, technical skills layout, and portfolio creation.',
+    description: 'Upload your resume and prepare with AI-powered personalized interview questions, a readiness score, strengths, and weaknesses.',
     icon: '📄',
     color: '#3b82f6', // Blue
     order: 17,
     questionCount: 0,
+    isResumeTool: true,
     comingSoon: false
   },
   {

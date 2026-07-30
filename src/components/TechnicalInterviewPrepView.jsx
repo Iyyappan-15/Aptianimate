@@ -101,7 +101,7 @@ export default function TechnicalInterviewPrepView({ navigate }) {
                 borderRadius: '8px',
                 border: '1px solid var(--border)'
               }}>
-                {topic.questionCount} Questions
+                {topic.comingSoon ? 'Coming Soon' : topic.isResumeTool ? 'Upload & Prepare' : `${topic.questionCount} Questions`}
               </span>
 
               <span style={{
@@ -112,7 +112,7 @@ export default function TechnicalInterviewPrepView({ navigate }) {
                 alignItems: 'center',
                 gap: '4px'
               }}>
-                Explore
+                {topic.isResumeTool ? 'Prepare' : 'Explore'}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </span>
             </div>
