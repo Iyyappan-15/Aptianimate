@@ -164,8 +164,8 @@ export const TECHNICAL_INTERVIEW_SYLLABUS = [
     icon: '🟢',
     color: '#22c55e', // Green
     order: 15,
-    questionCount: 0,
-    comingSoon: true
+    questionCount: 25,
+    comingSoon: false
   },
   {
     id: 'hr',
