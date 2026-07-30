@@ -8251,5 +8251,1655 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["Linux", "apt", "Package Management", "Interview"],
   "relatedTopics": ["apt vs yum vs dpkg", "System Administration", "Debian"],
   "references": ["Debian Documentation - debian.org"]
+},
+{
+  "id": "api-001",
+  "category": "APIs",
+  "topic": "REST API Principles",
+  "difficulty": "Medium",
+  "question": "What are REST API principles? What HTTP methods are used for CRUD operations?",
+  "shortAnswer": "REST: Stateless, Client-Server, Uniform Interface, Cacheable, Layered System. Methods: GET (read), POST (create), PUT (full update), PATCH (partial update), DELETE (remove).",
+  "detailedAnswer": "REST is an architectural style, not a strict protocol. Stateless means each request contains all information needed, since the server holds no client session state between requests. Uniform Interface means consistent, predictable URL naming using nouns representing resources rather than verbs, along with standard HTTP methods for CRUD operations.\n\nGET is idempotent and safe, never used for mutations. POST creates a new resource and is not idempotent by default. PUT fully replaces a resource. PATCH updates only specific fields. DELETE removes a resource and is idempotent, since deleting an already-deleted resource still returns success.",
+  "keyPoints": [
+    "Resource-based URLs: /users/{id}/orders, never /getUserOrders?id=123",
+    "GET: cacheable by default, never used for anything that changes state",
+    "PATCH: sends only the changed fields, not the entire resource representation"
+  ],
+  "commonMistakes": [
+    "Using GET for operations that mutate data",
+    "Confusing PUT (full replace) with PATCH (partial update)",
+    "Using verbs in URLs instead of noun-based resource naming"
+  ],
+  "followUpQuestions": [
+    "What does idempotent mean in the context of HTTP methods?",
+    "Why is statelessness important for RESTful APIs?",
+    "How would you design idempotency for a POST request?"
+  ],
+  "realWorldExample": "A typical REST API for a blog uses GET /posts to list posts, POST /posts to create one, and DELETE /posts/{id} to remove one.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain REST constraints and correctly map HTTP methods to CRUD operations with idempotency awareness.",
+  "tags": ["REST", "API", "HTTP Methods", "Interview"],
+  "relatedTopics": ["GraphQL", "HTTP Status Codes", "API Design"],
+  "references": ["RFC 7231"]
+},
+{
+  "id": "api-002",
+  "category": "APIs",
+  "topic": "PUT vs PATCH",
+  "difficulty": "Easy",
+  "question": "What is the difference between PUT and PATCH?",
+  "shortAnswer": "PUT replaces the ENTIRE resource with the data sent. PATCH updates only the SPECIFIC fields included in the request, leaving everything else unchanged.",
+  "detailedAnswer": "If a user resource has fields name, email, and age, a PUT request must include all three fields; any field omitted is typically interpreted as being cleared or reset, since PUT is meant to be a full replacement.\n\nA PATCH request can send just the age field, updating only that one field while leaving the rest completely untouched. Both are technically idempotent when implemented correctly, but PATCH requires more careful server-side implementation to correctly merge partial updates.",
+  "keyPoints": [
+    "PUT: send the COMPLETE resource representation — missing fields may be reset",
+    "PATCH: send ONLY the fields that changed — other fields remain untouched",
+    "Both should be idempotent — repeating the same request produces the same final state"
+  ],
+  "commonMistakes": [
+    "Sending a partial payload with PUT expecting only those fields to update",
+    "Assuming PATCH is never idempotent",
+    "Not implementing correct field merging logic on the server for PATCH"
+  ],
+  "followUpQuestions": [
+    "Why must PUT include the complete resource representation?",
+    "How would a server correctly merge a PATCH request's partial fields?",
+    "Are PUT and PATCH always idempotent in practice?"
+  ],
+  "realWorldExample": "Updating just a user's age uses PATCH /users/123 with {\"age\": 26}, while replacing the entire user profile uses PUT /users/123 with the full object.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "PATCH /users/123\nContent-Type: application/json\n\n{\"age\": 26}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish full replacement from partial update and note idempotency for both.",
+  "tags": ["PUT", "PATCH", "REST", "API", "Interview"],
+  "relatedTopics": ["REST API Principles", "Idempotency", "HTTP Methods"],
+  "references": ["RFC 7231", "RFC 5789"]
+},
+{
+  "id": "api-003",
+  "category": "APIs",
+  "topic": "API Versioning",
+  "difficulty": "Medium",
+  "question": "What is API Versioning? What are the common strategies?",
+  "shortAnswer": "API Versioning allows an API to evolve without breaking existing clients, by supporting multiple versions simultaneously. Common strategies: URL path versioning, header versioning, and query parameter versioning.",
+  "detailedAnswer": "URL Path Versioning, such as /api/v1/users versus /api/v2/users, is the most common and visible approach, simple to understand and test, but pollutes the URL and technically means the resource has a different identity per version.\n\nHeader Versioning keeps URLs clean and is considered more RESTfully pure since the resource identity stays the same, but is less discoverable and harder to test casually. Query Parameter Versioning is simple but less commonly recommended since versioning is more of a routing concern than a query filter. Whichever strategy is chosen, maintaining backward compatibility and clearly deprecating old versions is critical.",
+  "keyPoints": [
+    "URL path versioning: most common, visible, easy to test directly in a browser",
+    "Header versioning: cleaner URLs, but less discoverable and harder to test casually",
+    "Always provide a deprecation timeline/notice before actually removing an old API version"
+  ],
+  "commonMistakes": [
+    "Removing an old API version without a deprecation notice",
+    "Choosing query parameter versioning when it doesn't fit the routing model well",
+    "Not considering discoverability trade-offs between URL and header versioning"
+  ],
+  "followUpQuestions": [
+    "Why is header versioning considered more RESTfully pure?",
+    "What is the trade-off of URL path versioning?",
+    "How would you communicate an API deprecation to consumers?"
+  ],
+  "realWorldExample": "Stripe uses a date-based header versioning system, letting developers pin their integration to a specific API version via a request header.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to compare versioning strategies and stress the importance of backward compatibility and deprecation communication.",
+  "tags": ["API Versioning", "REST", "Interview"],
+  "relatedTopics": ["API Deprecation", "Backward Compatibility", "REST API Design"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-004",
+  "category": "APIs",
+  "topic": "Authentication vs Authorization",
+  "difficulty": "Easy",
+  "question": "What is the difference between Authentication and Authorization in the context of APIs?",
+  "shortAnswer": "Authentication verifies WHO you are (identity). Authorization determines WHAT you're allowed to do (permissions) — authentication always happens first, authorization second.",
+  "detailedAnswer": "Authentication is the process of confirming a client's identity, typically via credentials, an API key, or a token that proves the caller is who they claim to be. Authorization happens after successful authentication, determining what specific actions or resources the now-verified identity is permitted to access.\n\nHTTP status codes reflect this distinction precisely: 401 Unauthorized actually means not authenticated despite the confusing name, while 403 Forbidden means authenticated but not authorized for this specific action.",
+  "keyPoints": [
+    "Authentication: \"who are you?\" — verified via credentials, API keys, or tokens",
+    "Authorization: \"what are you allowed to do?\" — checked after successful authentication",
+    "401 = authentication failure (despite the name). 403 = authorization failure (identity confirmed, access denied)"
+  ],
+  "commonMistakes": [
+    "Using 401 when the user is authenticated but lacks permission (should be 403)",
+    "Confusing authentication and authorization as the same concept",
+    "Not implementing authorization checks after authentication succeeds"
+  ],
+  "followUpQuestions": [
+    "Why does 401 mean 'not authenticated' despite its name?",
+    "Can a request be authenticated but still fail authorization?",
+    "How would you implement role-based authorization after authentication?"
+  ],
+  "realWorldExample": "A logged-in regular user (authenticated) attempting to access an admin-only endpoint receives a 403 Forbidden, since they lack authorization despite being authenticated.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly distinguish 401 from 403 and explain the sequential relationship between authentication and authorization.",
+  "tags": ["Authentication", "Authorization", "API Security", "Interview"],
+  "relatedTopics": ["JWT", "OAuth", "HTTP Status Codes"],
+  "references": ["RFC 7235"]
+},
+{
+  "id": "api-005",
+  "category": "APIs",
+  "topic": "API Gateway",
+  "difficulty": "Medium",
+  "question": "What is an API Gateway? What functions does it typically provide?",
+  "shortAnswer": "An API Gateway is a single entry point that sits in front of backend services, handling cross-cutting concerns like routing, authentication, rate limiting, and request/response transformation.",
+  "detailedAnswer": "In a microservices architecture, clients shouldn't need to know about or directly call dozens of individual backend services; an API Gateway provides one unified entry point that routes each incoming request to the appropriate backend service internally.\n\nBeyond routing, gateways commonly handle authentication and authorization, centralizing this logic instead of duplicating it in every microservice, rate limiting to protect backend services from being overwhelmed, request/response transformation, centralized logging and monitoring, and SSL termination.",
+  "keyPoints": [
+    "Single entry point: clients interact with one gateway, not dozens of individual microservices directly",
+    "Centralizes cross-cutting concerns: auth, rate limiting, logging — avoids duplicating this logic per service",
+    "Popular tools: Kong, AWS API Gateway, Nginx (as a gateway), Apigee, Azure API Management"
+  ],
+  "commonMistakes": [
+    "Duplicating authentication logic across every individual microservice instead of centralizing it",
+    "Not using the gateway for rate limiting, leaving backend services exposed to overload",
+    "Confusing an API Gateway with a simple reverse proxy without cross-cutting concern handling"
+  ],
+  "followUpQuestions": [
+    "How does an API Gateway centralize authentication for microservices?",
+    "What is the difference between an API Gateway and a simple load balancer?",
+    "What are some popular API Gateway implementations?"
+  ],
+  "realWorldExample": "Kong or AWS API Gateway sits in front of a company's microservices, handling authentication, rate limiting, and routing for all incoming client requests.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the gateway's role in centralizing cross-cutting concerns for microservices architectures.",
+  "tags": ["API Gateway", "Microservices", "Interview"],
+  "relatedTopics": ["Rate Limiting", "Load Balancing", "Microservices"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "api-006",
+  "category": "APIs",
+  "topic": "API Rate Limiting",
+  "difficulty": "Medium",
+  "question": "What is API Rate Limiting? What HTTP status code and headers are typically used?",
+  "shortAnswer": "Rate Limiting restricts how many requests a client can make within a given time window, protecting the API from abuse/overload. Status code 429 Too Many Requests is returned when the limit is exceeded, often with a Retry-After header.",
+  "detailedAnswer": "Without rate limiting, a single client, malicious or simply buggy, could send an overwhelming number of requests, degrading service for all other users or even crashing the backend entirely.\n\nWhen a client exceeds their allotted limit, the server responds with HTTP 429 Too Many Requests, ideally including a Retry-After header indicating how long to wait before trying again, and often custom headers like X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset giving the client visibility into their current quota status even on successful requests.",
+  "keyPoints": [
+    "429 Too Many Requests: the standard status code when a client exceeds their rate limit",
+    "Retry-After header: tells the client exactly how long to wait before retrying",
+    "X-RateLimit-* headers: give visibility into current quota/remaining requests, even on successful calls"
+  ],
+  "commonMistakes": [
+    "Not including a Retry-After header, leaving clients guessing when to retry",
+    "Omitting X-RateLimit headers, preventing clients from proactively throttling themselves",
+    "Returning an incorrect status code like 403 instead of 429"
+  ],
+  "followUpQuestions": [
+    "What should a well-behaved client do upon receiving a 429 response?",
+    "How do X-RateLimit headers help clients avoid hitting the limit?",
+    "What's the difference between Retry-After and X-RateLimit-Reset?"
+  ],
+  "realWorldExample": "Twitter's API returns a 429 status with a Retry-After header when a client exceeds their allotted request quota within a time window.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "HTTP/1.1 429 Too Many Requests\nRetry-After: 60\nX-RateLimit-Limit: 100\nX-RateLimit-Remaining: 0"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly name the 429 status code and describe the purpose of Retry-After and rate-limit visibility headers.",
+  "tags": ["Rate Limiting", "API", "Interview"],
+  "relatedTopics": ["Token Bucket", "API Gateway", "429 Status Code"],
+  "references": ["RFC 6585"]
+},
+{
+  "id": "api-007",
+  "category": "APIs",
+  "topic": "Pagination Strategies",
+  "difficulty": "Medium",
+  "question": "What is Pagination in APIs? Compare Offset-based vs Cursor-based pagination.",
+  "shortAnswer": "Pagination breaks large result sets into smaller pages. Offset-based uses a page number/offset (simple, but can skip/duplicate items if data changes between requests). Cursor-based uses a pointer to a specific item (more consistent, better for large/frequently-changing datasets).",
+  "detailedAnswer": "Offset-based pagination is simple to implement and understand, allowing users to jump directly to any specific page, but if items are inserted or deleted between page requests, users can see duplicate items or skip items entirely, a classic issue when browsing a live, frequently-updated feed.\n\nCursor-based pagination uses a reference point, the cursor, typically an ID or timestamp, rather than a numeric position; subsequent requests fetch items strictly after that cursor, remaining consistent even as new items are added elsewhere in the dataset, though it doesn't allow jumping directly to an arbitrary page number.",
+  "keyPoints": [
+    "Offset-based: simple, allows jumping to any page, but inconsistent if data changes between requests",
+    "Cursor-based: consistent even with frequent inserts/deletes, but can't jump to an arbitrary page number",
+    "Cursor-based is strongly preferred for infinite-scroll feeds and large, actively-changing datasets"
+  ],
+  "commonMistakes": [
+    "Using offset-based pagination for a rapidly-changing, live feed, causing duplicate or skipped items",
+    "Assuming cursor-based pagination allows jumping to an arbitrary page number",
+    "Not choosing pagination strategy based on the actual use case (browsing vs infinite scroll)"
+  ],
+  "followUpQuestions": [
+    "Why does offset-based pagination risk skipping or duplicating items?",
+    "Why can't cursor-based pagination jump to an arbitrary page?",
+    "When would you choose offset-based over cursor-based pagination?"
+  ],
+  "realWorldExample": "Twitter's timeline API uses cursor-based pagination to ensure a consistent feed even as new tweets are posted while a user scrolls.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to compare consistency and usability trade-offs and recommend cursor-based pagination for changing datasets.",
+  "tags": ["Pagination", "API Design", "Interview"],
+  "relatedTopics": ["REST API Design", "GraphQL", "Database Queries"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-008",
+  "category": "APIs",
+  "topic": "API Documentation and OpenAPI/Swagger",
+  "difficulty": "Easy",
+  "question": "What is API Documentation? What is OpenAPI/Swagger?",
+  "shortAnswer": "API Documentation describes how to use an API — available endpoints, request/response formats, authentication requirements. OpenAPI (formerly Swagger) is a standardized specification format for describing REST APIs in a machine-readable way.",
+  "detailedAnswer": "Good API documentation is essential for both external developers integrating with an API and internal teams maintaining it, covering every endpoint, expected request parameters, possible response formats and status codes, authentication requirements, and ideally runnable examples.\n\nOpenAPI specifications are written in YAML or JSON following a standardized schema, describing an API's structure in a machine-readable format. This enables powerful tooling: automatically generating interactive documentation, auto-generating client SDKs in multiple languages, and auto-generating server-side boilerplate or validation logic directly from the specification.",
+  "keyPoints": [
+    "OpenAPI (formerly Swagger): a standardized, machine-readable format (YAML/JSON) for describing REST APIs",
+    "Enables auto-generated interactive docs (Swagger UI), client SDKs, and server-side validation/stubs",
+    "Machine-readable specs reduce the risk of documentation drifting out of sync with actual API behavior"
+  ],
+  "commonMistakes": [
+    "Maintaining hand-written docs separately from the actual API, causing drift",
+    "Not leveraging OpenAPI's tooling for auto-generated client SDKs",
+    "Confusing OpenAPI (the spec format) with Swagger UI (a specific tool built on it)"
+  ],
+  "followUpQuestions": [
+    "How does an OpenAPI spec reduce documentation drift?",
+    "What tooling can be generated from an OpenAPI specification?",
+    "What's the relationship between OpenAPI and Swagger?"
+  ],
+  "realWorldExample": "A payment API publishes an OpenAPI spec that auto-generates interactive Swagger UI documentation and client SDKs for multiple programming languages.",
+  "codeExample": {
+    "language": "YAML",
+    "code": "paths:\n  /users/{id}:\n    get:\n      summary: Get a user by ID\n      responses:\n        '200':\n          description: Success"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the value of machine-readable API specs and describe common tooling they enable.",
+  "tags": ["API Documentation", "OpenAPI", "Swagger", "Interview"],
+  "relatedTopics": ["API-First Design", "Contract Testing", "API Mocking"],
+  "references": ["OpenAPI Specification - swagger.io"]
+},
+{
+  "id": "api-009",
+  "category": "APIs",
+  "topic": "CORS",
+  "difficulty": "Medium",
+  "question": "What is CORS? Why do browsers enforce it?",
+  "shortAnswer": "CORS (Cross-Origin Resource Sharing) is a browser security mechanism that restricts web pages from making requests to a different domain than the one that served the page, unless the server explicitly allows it.",
+  "detailedAnswer": "The Same-Origin Policy prevents a malicious script running on one domain from silently reading sensitive responses from another domain on a user's behalf. CORS relaxes this restriction in a controlled way using server-provided headers.\n\nSimple requests are sent directly, and the browser checks if the response includes an Access-Control-Allow-Origin header permitting the requesting origin. More complex requests trigger a preflight OPTIONS request first, where the browser asks the server for permission before sending the actual request. Critically, CORS is enforced entirely by the browser; server-to-server requests, curl, and tools like Postman are completely unaffected.",
+  "keyPoints": [
+    "Same-Origin Policy is the underlying browser security model that CORS selectively relaxes",
+    "Preflight OPTIONS request: sent automatically by the browser before \"complex\" requests to check permissions",
+    "CORS is a BROWSER-ONLY restriction — server-to-server calls and tools like curl/Postman ignore it entirely"
+  ],
+  "commonMistakes": [
+    "Assuming CORS protects server-to-server communication (it only applies to browsers)",
+    "Not understanding why a preflight OPTIONS request is triggered for complex requests",
+    "Confusing CORS errors with authentication or network errors"
+  ],
+  "followUpQuestions": [
+    "Why does CORS not affect server-to-server requests or tools like curl?",
+    "What triggers a preflight OPTIONS request?",
+    "How does the Access-Control-Allow-Origin header work?"
+  ],
+  "realWorldExample": "A frontend hosted on app.example.com making a request to api.example.com must have CORS headers configured on the API server to allow the browser request to succeed.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "Access-Control-Allow-Origin: https://app.example.com\nAccess-Control-Allow-Methods: GET, POST, PUT, DELETE"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the Same-Origin Policy, preflight requests, and that CORS is a browser-only restriction.",
+  "tags": ["CORS", "Browser Security", "API", "Interview"],
+  "relatedTopics": ["Same-Origin Policy", "HTTP Headers", "Web Security"],
+  "references": ["MDN Web Docs - CORS"]
+},
+{
+  "id": "api-010",
+  "category": "APIs",
+  "topic": "Webhooks",
+  "difficulty": "Medium",
+  "question": "What is Webhook? How is it different from a regular API call/polling?",
+  "shortAnswer": "A Webhook is a \"reverse API\" — instead of your application repeatedly asking a service \"has anything happened yet?\" (polling), the service proactively sends an HTTP request to YOUR server the moment an event actually occurs.",
+  "detailedAnswer": "With traditional polling, an application repeatedly calls an API at fixed intervals checking for new data, which wastes resources on both sides since most checks return nothing new, and introduces a delay up to the polling interval before an event is learned about.\n\nWith a webhook, a URL endpoint is registered on your server with the external service; when a relevant event occurs, that service immediately sends an HTTP POST request to your registered URL containing the event data, giving near-instant notification with zero wasted checking requests. Webhooks require your endpoint to be publicly reachable, and robust implementations must handle retries, verify request authenticity via a signature, and process events idempotently.",
+  "keyPoints": [
+    "Polling: your app repeatedly asks \"anything new?\" — wastes resources, introduces notification delay",
+    "Webhook: the external service proactively notifies YOU the instant an event occurs — near-instant, efficient",
+    "Webhook endpoints must verify request authenticity (via signature headers) to prevent spoofed/fake events"
+  ],
+  "commonMistakes": [
+    "Not verifying webhook signature headers, allowing spoofed events to be processed",
+    "Assuming webhook delivery is always exactly-once rather than potentially duplicated",
+    "Using polling for events where near-instant notification is actually needed"
+  ],
+  "followUpQuestions": [
+    "How would you verify the authenticity of an incoming webhook request?",
+    "Why must webhook event processing be idempotent?",
+    "What are the trade-offs of polling versus webhooks?"
+  ],
+  "realWorldExample": "Stripe sends a webhook to a merchant's server the instant a payment completes, rather than the merchant repeatedly polling Stripe's API to check payment status.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the push-versus-pull distinction and describe webhook reliability considerations like signature verification.",
+  "tags": ["Webhooks", "API", "Interview"],
+  "relatedTopics": ["Polling", "Idempotency", "Event-Driven Architecture"],
+  "references": ["Stripe API Documentation"]
+},
+{
+  "id": "api-011",
+  "category": "APIs",
+  "topic": "SOAP vs REST",
+  "difficulty": "Medium",
+  "question": "What is the difference between SOAP and REST?",
+  "shortAnswer": "SOAP is a strict, XML-based protocol with a formal contract (WSDL) and built-in standards for security/transactions. REST is a flexible architectural style, typically using JSON, with no enforced formal contract.",
+  "detailedAnswer": "SOAP uses XML exclusively for message format and follows a strict, formally-defined contract described in a WSDL file that precisely specifies every operation and data type, providing strong tooling support for auto-generating client code and built-in standards for transactions and formal security, making it historically popular in enterprise and financial systems.\n\nREST is more of a flexible architectural style than a strict protocol, typically uses JSON which is lighter weight than XML, has no mandatory formal contract, and generally has lower overhead and a gentler learning curve, which is why REST became the dominant choice for public web APIs and most modern application development.",
+  "keyPoints": [
+    "SOAP: strict XML protocol, formal WSDL contract, heavier overhead — common in legacy enterprise/financial systems",
+    "REST: flexible architectural style, typically JSON, lighter weight — dominant choice for modern web APIs",
+    "SOAP has built-in standards for transactions/security (WS-*); REST relies on HTTPS + application-level conventions"
+  ],
+  "commonMistakes": [
+    "Assuming SOAP is entirely obsolete rather than still used in specific enterprise contexts",
+    "Not knowing WSDL is SOAP's formal contract mechanism",
+    "Confusing REST's flexibility with a lack of any structure at all"
+  ],
+  "followUpQuestions": [
+    "Why is SOAP still used in some enterprise and financial systems?",
+    "What is a WSDL file and what role does it play?",
+    "Why did REST become the dominant choice for public web APIs?"
+  ],
+  "realWorldExample": "Many legacy banking systems still use SOAP-based web services for their formal contracts and built-in transaction support, while most modern public APIs use REST.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to compare the strict-contract nature of SOAP with REST's flexibility and explain why REST dominates modern development.",
+  "tags": ["SOAP", "REST", "API", "Interview"],
+  "relatedTopics": ["WSDL", "XML", "API Design"],
+  "references": ["W3C SOAP Specification"]
+},
+{
+  "id": "api-012",
+  "category": "APIs",
+  "topic": "API Key vs OAuth Token",
+  "difficulty": "Medium",
+  "question": "What is an API Key? How is it different from OAuth tokens?",
+  "shortAnswer": "An API Key is a simple, static string identifying and authenticating a specific application/client. OAuth tokens are more sophisticated, typically short-lived, and can represent delegated USER permission rather than just application identity.",
+  "detailedAnswer": "An API key is a single, usually long-lived, static secret string passed with each request that identifies which application or developer is making the call, primarily used for simple authentication and usage tracking or billing, but it doesn't inherently represent any specific user's permission, and if leaked, remains valid indefinitely until manually revoked.\n\nOAuth access tokens are typically short-lived, obtained through a more complex flow involving explicit user consent, and represent a specific scope of delegated permission on behalf of an actual user. A compromised OAuth token has much more limited blast radius due to its short lifespan and scoped permissions.",
+  "keyPoints": [
+    "API Key: simple, static, long-lived — identifies the calling application, not a specific user",
+    "OAuth token: short-lived, scoped, represents delegated permission on behalf of a specific user",
+    "API keys are simpler to implement but riskier if leaked (no expiry); OAuth tokens limit damage via short expiry"
+  ],
+  "commonMistakes": [
+    "Using a long-lived API key where scoped, short-lived OAuth tokens would be more appropriate",
+    "Not rotating API keys periodically since they don't expire automatically",
+    "Confusing API keys (application identity) with OAuth tokens (delegated user permission)"
+  ],
+  "followUpQuestions": [
+    "Why does a compromised OAuth token have a smaller blast radius than a leaked API key?",
+    "When would you choose an API key over OAuth?",
+    "How does OAuth's scope mechanism limit what a token can access?"
+  ],
+  "realWorldExample": "A weather app uses a simple API key to authenticate with a weather data provider, while a third-party app using 'Sign in with Google' uses OAuth tokens scoped to specific permitted actions.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the lifespan and scope differences between API keys and OAuth tokens and their respective risk profiles.",
+  "tags": ["API Key", "OAuth", "Authentication", "Interview"],
+  "relatedTopics": ["JWT", "OAuth 2.0", "Authentication"],
+  "references": ["RFC 6749"]
+},
+{
+  "id": "api-013",
+  "category": "APIs",
+  "topic": "HATEOAS",
+  "difficulty": "Hard",
+  "question": "What is HATEOAS? Is it commonly used in practice?",
+  "shortAnswer": "HATEOAS (Hypermedia as the Engine of Application State) is a REST constraint where API responses include links to related actions/resources, letting clients navigate the API dynamically rather than hardcoding URLs.",
+  "detailedAnswer": "In a fully HATEOAS-compliant API, a response for an order might include not just the order data but also links to related actions, such as canceling or tracking the order; the client discovers available next actions dynamically from the response itself, similar to how a human navigates a website by clicking links.\n\nIn theory, this makes an API more self-descriptive and resilient to URL structure changes. In practice, despite being part of Roy Fielding's original REST definition, HATEOAS is rarely fully implemented in most real-world RESTful APIs, since most APIs described as REST are actually closer to RPC-over-HTTP with resource-oriented URLs.",
+  "keyPoints": [
+    "Responses include hypermedia links to related actions, letting clients navigate dynamically",
+    "Part of Fielding's original strict REST definition, but rarely fully implemented in real-world APIs",
+    "Most \"RESTful\" APIs today are technically closer to RPC-over-HTTP than true HATEOAS-compliant REST"
+  ],
+  "commonMistakes": [
+    "Assuming most 'RESTful' APIs today are fully HATEOAS-compliant",
+    "Confusing HATEOAS with simple resource-oriented URL design",
+    "Not recognizing HATEOAS's resilience benefit to URL structure changes"
+  ],
+  "followUpQuestions": [
+    "Why is HATEOAS rarely fully implemented despite being part of the original REST definition?",
+    "What resilience benefit does HATEOAS theoretically provide?",
+    "What does a HATEOAS-compliant response typically include?"
+  ],
+  "realWorldExample": "A hypothetical HATEOAS-compliant order API response includes links like {\"cancel\": \"/orders/123/cancel\"}, letting the client discover available actions without hardcoding URLs.",
+  "codeExample": {
+    "language": "JSON",
+    "code": "{\n  \"order_id\": 123,\n  \"status\": \"shipped\",\n  \"links\": {\n    \"track\": \"/orders/123/tracking\",\n    \"cancel\": \"/orders/123/cancel\"\n  }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the hypermedia-driven navigation concept and acknowledge its rarity in real-world implementation.",
+  "tags": ["HATEOAS", "REST", "API Design", "Interview"],
+  "relatedTopics": ["Richardson Maturity Model", "REST API Principles", "Hypermedia"],
+  "references": ["Roy Fielding's REST Dissertation"]
+},
+{
+  "id": "api-014",
+  "category": "APIs",
+  "topic": "Throttling vs Rate Limiting",
+  "difficulty": "Medium",
+  "question": "What is API Throttling vs Rate Limiting — are they the same thing?",
+  "shortAnswer": "They're closely related and often used interchangeably, but Rate Limiting typically means outright REJECTING requests once a limit is exceeded, while Throttling can mean SLOWING DOWN (delaying) requests rather than rejecting them entirely.",
+  "detailedAnswer": "Rate limiting enforces a hard cap; once a client exceeds their allowed request count within a time window, further requests are immediately rejected with a 429 status until the window resets.\n\nThrottling is sometimes used to describe a softer approach, where rather than outright rejecting excess requests, the system might deliberately slow down responses once usage approaches a limit, naturally reducing the client's effective request rate without hard failures, or dynamically adjust the allowed rate based on overall system load. In casual industry usage, however, these two terms are frequently used interchangeably.",
+  "keyPoints": [
+    "Rate limiting: typically means hard rejection (429) once a threshold is exceeded within a time window",
+    "Throttling: can imply gradually slowing down responses rather than outright rejecting them",
+    "In casual usage, both terms are frequently used interchangeably to mean \"controlling request volume\""
+  ],
+  "commonMistakes": [
+    "Assuming rate limiting and throttling always mean exactly the same thing in formal documentation",
+    "Not recognizing throttling can imply delaying rather than rejecting requests",
+    "Overanalyzing the distinction in casual conversation where they're used interchangeably"
+  ],
+  "followUpQuestions": [
+    "How might a system implement throttling as delayed responses rather than rejection?",
+    "In what context does the distinction between throttling and rate limiting actually matter?",
+    "What status code is typically associated with hard rate limiting?"
+  ],
+  "realWorldExample": "A cloud API might throttle a client's requests by adding artificial latency as they approach their quota, rather than immediately rejecting requests with a 429.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the subtle distinction while acknowledging the terms are often used interchangeably in practice.",
+  "tags": ["Throttling", "Rate Limiting", "API", "Interview"],
+  "relatedTopics": ["API Rate Limiting", "429 Status Code", "Token Bucket"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-015",
+  "category": "APIs",
+  "topic": "Idempotent HTTP Methods",
+  "difficulty": "Medium",
+  "question": "What is an Idempotent API operation? Which HTTP methods are idempotent?",
+  "shortAnswer": "An idempotent operation produces the SAME result no matter how many times it's executed. GET, PUT, and DELETE are idempotent by HTTP specification. POST is NOT idempotent by default.",
+  "detailedAnswer": "This matters critically for safe retries in distributed systems; if a client isn't sure whether a request succeeded due to a network timeout, it's generally safe to automatically retry an idempotent request since repeating it causes no additional harm.\n\nGET is naturally idempotent since reading the same thing repeatedly doesn't change anything. PUT is idempotent since replacing a resource with the same data multiple times leaves it in the same final state. DELETE is considered idempotent since deleting an already-deleted resource still results in the same end state. POST is explicitly not idempotent, since calling it twice typically creates two separate resources, which is why safe retry of POST requests requires an explicit Idempotency-Key mechanism.",
+  "keyPoints": [
+    "GET, PUT, DELETE: idempotent by HTTP spec — safe to automatically retry without side effects",
+    "POST: NOT idempotent by default — retrying can create duplicate resources unless an Idempotency-Key is used",
+    "Idempotency is what makes automatic retry logic in distributed systems safe rather than dangerous"
+  ],
+  "commonMistakes": [
+    "Assuming POST is idempotent by default",
+    "Automatically retrying non-idempotent requests without an idempotency mechanism",
+    "Confusing idempotency with the request simply succeeding"
+  ],
+  "followUpQuestions": [
+    "Why is POST not idempotent by default?",
+    "How does an Idempotency-Key make POST requests safe to retry?",
+    "Why is idempotency important for distributed system reliability?"
+  ],
+  "realWorldExample": "A payment API requires an Idempotency-Key header on POST requests so that a network retry doesn't accidentally charge a customer twice.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly classify HTTP methods by idempotency and explain the retry-safety implications.",
+  "tags": ["Idempotency", "HTTP Methods", "API", "Interview"],
+  "relatedTopics": ["Idempotency-Key", "Distributed Systems", "REST API Design"],
+  "references": ["RFC 7231"]
+},
+{
+  "id": "api-016",
+  "category": "APIs",
+  "topic": "API Mocking",
+  "difficulty": "Easy",
+  "question": "What is API Mocking? Why is it useful during development?",
+  "shortAnswer": "API Mocking creates a fake, simulated version of an API that returns predictable, hardcoded (or rule-based) responses — allowing frontend/client development to proceed independently, before the real backend API is fully built.",
+  "detailedAnswer": "In many projects, frontend and backend teams work in parallel; if the frontend team must wait for the actual backend API to be fully implemented before starting, valuable development time is lost to this artificial dependency.\n\nAPI mocking tools let frontend developers agree on an API contract, often via an OpenAPI spec, upfront, then work against a mock server that returns realistic, contract-compliant sample responses, enabling fully parallel development. Mocking is also essential for unit and integration testing, allowing tests to run quickly and deterministically without depending on a real, potentially slow or unreliable, external backend or third-party service.",
+  "keyPoints": [
+    "Enables parallel frontend/backend development — frontend doesn't need to wait for the real API to be finished",
+    "Common tools: Mockoon, WireMock, json-server, Postman's built-in mock server feature",
+    "Essential for fast, deterministic unit/integration tests that don't depend on slow or unreliable real services"
+  ],
+  "commonMistakes": [
+    "Forcing frontend teams to wait for full backend implementation instead of using mocks",
+    "Not keeping mock responses in sync with the agreed API contract",
+    "Testing against slow or unreliable real services instead of mocks in unit tests"
+  ],
+  "followUpQuestions": [
+    "How does an OpenAPI spec help coordinate mock server responses with the real API?",
+    "What tools are commonly used for API mocking?",
+    "Why is mocking essential for deterministic unit tests?"
+  ],
+  "realWorldExample": "A frontend team builds and tests their UI against a json-server mock API defined from an agreed OpenAPI spec, before the backend team finishes the real implementation.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how mocking enables parallel development and improves test reliability.",
+  "tags": ["API Mocking", "Testing", "Interview"],
+  "relatedTopics": ["OpenAPI", "API-First Design", "Unit Testing"],
+  "references": ["OpenAPI Specification - swagger.io"]
+},
+{
+  "id": "api-017",
+  "category": "APIs",
+  "topic": "GraphQL N+1 Problem",
+  "difficulty": "Hard",
+  "question": "What is GraphQL's N+1 Query Problem? How is it solved?",
+  "shortAnswer": "The N+1 problem occurs when fetching N parent records triggers one ADDITIONAL database query PER record to fetch related data — resulting in N+1 total queries instead of just 2. Solved using a DataLoader that batches and caches requests.",
+  "detailedAnswer": "Consider a GraphQL query fetching 50 blog posts along with each post's author; a naive resolver implementation might fetch the 50 posts in one query, then for each post individually query the database for its author, totaling 51 queries when this could have been done in just 2.\n\nA DataLoader solves this by batching: instead of immediately executing each individual author lookup, it collects all the requested author IDs within the same execution tick, then makes one batched database query fetching all needed authors at once, then distributes the results back to each individual resolver call. It also caches results within a single request, preventing the same author from being fetched multiple times.",
+  "keyPoints": [
+    "Naive resolver: 1 query for parents + N queries for each parent's related data = N+1 total queries",
+    "DataLoader: collects all pending requests within a tick, executes ONE batched query instead of N individual ones",
+    "Also provides per-request caching — the same entity requested multiple times is only fetched from the DB once"
+  ],
+  "commonMistakes": [
+    "Not using a DataLoader, resulting in excessive per-record database queries",
+    "Assuming GraphQL automatically batches resolver calls without additional tooling",
+    "Not leveraging DataLoader's per-request caching to avoid redundant fetches"
+  ],
+  "followUpQuestions": [
+    "How does DataLoader batch requests within a single execution tick?",
+    "Why does DataLoader also provide caching benefits?",
+    "How would you detect an N+1 problem in a GraphQL resolver?"
+  ],
+  "realWorldExample": "A GraphQL API fetching a list of blog posts with their authors uses a DataLoader to batch all author lookups into a single database query instead of one query per post.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const authorLoader = new DataLoader(async (ids) => {\n  const authors = await db.query('SELECT * FROM authors WHERE id IN (?)', [ids]);\n  return ids.map(id => authors.find(a => a.id === id));\n});"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the N+1 query pattern and describe how DataLoader batches and caches to solve it.",
+  "tags": ["GraphQL", "N+1 Problem", "DataLoader", "Interview"],
+  "relatedTopics": ["GraphQL", "Database Optimization", "N+1 Query Problem"],
+  "references": ["GraphQL Specification - graphql.org"]
+},
+{
+  "id": "api-018",
+  "category": "APIs",
+  "topic": "API Contract Testing",
+  "difficulty": "Hard",
+  "question": "What is API Contract Testing? Why is it important in microservices?",
+  "shortAnswer": "Contract Testing verifies that a service (provider) and its consumers agree on the expected request/response format — catching breaking changes BEFORE they reach production, without requiring full end-to-end integration tests.",
+  "detailedAnswer": "In a microservices architecture, one service might depend on another's API; traditional end-to-end integration tests, spinning up both real services together, are slow, flaky, and don't scale well as the number of interdependent services grows.\n\nContract testing takes a different approach: the consumer defines a contract describing exactly what it expects from calls to the provider, specific request format and expected response shape, and this contract is then verified independently against the actual provider in its own test suite, without needing both services running simultaneously. If the provider's team makes a change that would break this agreed contract, their own test suite fails immediately, catching the breaking change before it's deployed.",
+  "keyPoints": [
+    "Consumer defines an expected contract; provider independently verifies it can satisfy that exact contract",
+    "Catches breaking API changes early, without needing slow, flaky full end-to-end integration tests",
+    "Pact is the most widely used contract testing framework, particularly popular in microservices architectures"
+  ],
+  "commonMistakes": [
+    "Relying solely on slow, flaky end-to-end integration tests instead of contract testing",
+    "Not updating the consumer-defined contract when consumer expectations change",
+    "Assuming contract testing replaces the need for any integration testing at all"
+  ],
+  "followUpQuestions": [
+    "How does contract testing avoid the need for full end-to-end integration tests?",
+    "What is Pact and how is it used for contract testing?",
+    "What happens when a provider's change would break an existing contract?"
+  ],
+  "realWorldExample": "A team uses Pact to define a contract from a frontend service's expectations of a backend API, catching breaking changes in the backend's own CI pipeline before deployment.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how contract testing decouples consumer and provider verification while catching breaking changes early.",
+  "tags": ["Contract Testing", "Microservices", "Pact", "Interview"],
+  "relatedTopics": ["Microservices", "Integration Testing", "API Design"],
+  "references": ["Pact Documentation - pact.io"]
+},
+{
+  "id": "api-019",
+  "category": "APIs",
+  "topic": "Synchronous vs Asynchronous APIs",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between a Synchronous API and an Asynchronous API?",
+  "shortAnswer": "A Synchronous API returns a response immediately once processing completes — the client waits/blocks for the result. An Asynchronous API immediately acknowledges the request and processes it in the background, notifying the client later (via polling, webhook, or callback) when actually complete.",
+  "detailedAnswer": "Synchronous APIs work well for operations that complete quickly, typically under a few seconds, where the client makes a request and receives the actual result in the same HTTP response.\n\nFor long-running operations, such as video processing or generating a large report, holding an HTTP connection open for minutes is impractical and unreliable; an asynchronous API instead immediately returns a request-accepted response, often with a job or task ID and HTTP 202 Accepted, while the actual processing happens in the background. The client later checks status via polling or receives a webhook notification once processing genuinely completes.",
+  "keyPoints": [
+    "Synchronous: client waits for the immediate result — simple, but impractical for genuinely long operations",
+    "Asynchronous: immediately acknowledges (202 Accepted), processes in background, notifies later",
+    "Async pattern typically returns a job/task ID immediately, used to poll status or match an eventual webhook callback"
+  ],
+  "commonMistakes": [
+    "Using a synchronous API design for genuinely long-running operations, causing timeouts",
+    "Not returning a job/task ID for asynchronous operations, leaving clients unable to check status",
+    "Confusing 202 Accepted with 200 OK for asynchronous responses"
+  ],
+  "followUpQuestions": [
+    "Why is 202 Accepted the appropriate status code for an asynchronous request?",
+    "How would a client check on the status of an asynchronous job?",
+    "What are the trade-offs of polling versus webhook notification for async completion?"
+  ],
+  "realWorldExample": "A video transcoding API immediately returns a job ID with 202 Accepted, and the client polls a status endpoint or receives a webhook once transcoding completes.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain when each API style is appropriate and describe the job-ID-based async pattern.",
+  "tags": ["Synchronous API", "Asynchronous API", "Interview"],
+  "relatedTopics": ["Webhooks", "Polling", "202 Accepted"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-020",
+  "category": "APIs",
+  "topic": "API Deprecation",
+  "difficulty": "Medium",
+  "question": "What is API Deprecation? What is the recommended process for deprecating an endpoint?",
+  "shortAnswer": "API Deprecation is the process of phasing out an old API version/endpoint in favor of a newer one, while giving existing consumers sufficient time and clear communication to migrate before it's actually removed.",
+  "detailedAnswer": "Abruptly removing an API endpoint without warning breaks every client still depending on it. A responsible deprecation process typically involves clearly documenting the deprecation and the recommended replacement or migration path, adding a Deprecation or Sunset HTTP header to responses from the deprecated endpoint, and providing a generous, clearly-communicated timeline before actual removal, often 6-12 months for public APIs with many external consumers.\n\nMonitoring actual usage of the deprecated endpoint helps understand migration progress and proactively reach out to remaining heavy users before the final cutoff date.",
+  "keyPoints": [
+    "Never remove an API abruptly without warning — this breaks every client still depending on it",
+    "Deprecation/Sunset HTTP headers: standardized way to signal an endpoint's planned removal to tooling/developers",
+    "Generous timeline + proactive monitoring of remaining usage helps ensure a smooth, non-disruptive migration"
+  ],
+  "commonMistakes": [
+    "Removing an endpoint abruptly without prior notice or a deprecation timeline",
+    "Not using Deprecation/Sunset headers to signal upcoming removal to tooling",
+    "Failing to monitor and reach out to remaining heavy users before cutoff"
+  ],
+  "followUpQuestions": [
+    "What is the purpose of the Sunset HTTP header?",
+    "How would you monitor migration progress for a deprecated endpoint?",
+    "What timeline is typically recommended for public API deprecation?"
+  ],
+  "realWorldExample": "Stripe announces API version deprecations with clear documentation, a Sunset header, and a generous 12-month migration window before removal.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "Deprecation: true\nSunset: Sat, 31 Dec 2026 23:59:59 GMT"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe a responsible deprecation process including communication, headers, and a migration timeline.",
+  "tags": ["API Deprecation", "API Design", "Interview"],
+  "relatedTopics": ["API Versioning", "Backward Compatibility", "HTTP Headers"],
+  "references": ["RFC 8594"]
+},
+{
+  "id": "api-021",
+  "category": "APIs",
+  "topic": "Richardson Maturity Model",
+  "difficulty": "Hard",
+  "question": "What is the Richardson Maturity Model for REST APIs?",
+  "shortAnswer": "The Richardson Maturity Model classifies REST API design into 4 levels (0-3), based on how fully they embrace true REST principles — from basic RPC-over-HTTP (Level 0) to full HATEOAS compliance (Level 3).",
+  "detailedAnswer": "Level 0 uses a single URL endpoint handling everything via POST, essentially RPC-style calls tunneled through HTTP, barely using HTTP semantics at all. Level 1 introduces multiple distinct URLs representing different resources, but still primarily uses only one HTTP method for all operations on each resource.\n\nLevel 2 properly uses distinct HTTP methods matching their intended semantics for each resource and correctly uses HTTP status codes; this is where most real-world APIs described as RESTful actually sit. Level 3 adds HATEOAS, where responses include hypermedia links guiding clients to related actions, representing full compliance with the original REST definition, but is rarely fully achieved in practice.",
+  "keyPoints": [
+    "Level 0: single endpoint, RPC-style, minimal HTTP semantics used (essentially SOAP-like)",
+    "Level 2: proper use of distinct HTTP methods + status codes — where most real \"RESTful\" APIs actually sit",
+    "Level 3: full HATEOAS with hypermedia links — theoretically \"true REST,\" but rarely fully implemented in practice"
+  ],
+  "commonMistakes": [
+    "Assuming most real-world 'RESTful' APIs reach Level 3",
+    "Confusing Level 1 (multiple URLs, single method) with Level 2 (multiple methods matching semantics)",
+    "Not knowing where Level 2 sits as the practical sweet spot for most APIs"
+  ],
+  "followUpQuestions": [
+    "What distinguishes Level 1 from Level 2 in the model?",
+    "Why do most real-world APIs stop at Level 2 rather than reaching Level 3?",
+    "How would you assess where a given API falls on this model?"
+  ],
+  "realWorldExample": "Most public REST APIs, including many popular SaaS APIs, sit at Level 2 of the Richardson Maturity Model, using proper HTTP methods and status codes but without HATEOAS.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe all four levels and correctly identify where most real-world APIs typically sit.",
+  "tags": ["Richardson Maturity Model", "REST", "HATEOAS", "Interview"],
+  "relatedTopics": ["HATEOAS", "REST API Principles", "API Design"],
+  "references": ["Martin Fowler - Richardson Maturity Model"]
+},
+{
+  "id": "api-022",
+  "category": "APIs",
+  "topic": "API Caching Headers",
+  "difficulty": "Medium",
+  "question": "What is API Caching? Which HTTP headers control caching behavior?",
+  "shortAnswer": "API Caching stores responses so repeated identical requests can be served faster without hitting the backend again. Controlled via headers: Cache-Control, ETag, and Last-Modified.",
+  "detailedAnswer": "Cache-Control: max-age=3600 tells clients or intermediary caches, like a CDN, that a response can be reused for up to 3600 seconds without re-requesting it. ETag provides a unique fingerprint of the current response content; on a subsequent request, the client sends If-None-Match with that etag, and if the content hasn't changed, the server responds with a lightweight 304 Not Modified instead of resending the full response.\n\nLast-Modified works similarly but uses a timestamp instead of a content hash, paired with the If-Modified-Since request header. Together, these headers let APIs balance performance with correctness.",
+  "keyPoints": [
+    "Cache-Control: max-age=X: tells caches how long a response can be reused without re-validating",
+    "ETag + If-None-Match: content-hash-based validation, returns lightweight 304 if unchanged",
+    "304 Not Modified: confirms cached content is still valid, without resending the full response body"
+  ],
+  "commonMistakes": [
+    "Not setting Cache-Control headers, missing out on caching benefits entirely",
+    "Confusing ETag validation with Cache-Control's time-based expiry",
+    "Not returning 304 Not Modified when content matches the client's ETag"
+  ],
+  "followUpQuestions": [
+    "How does ETag-based validation differ from Cache-Control's max-age?",
+    "What does a 304 Not Modified response save compared to a full 200 response?",
+    "How does Last-Modified differ from ETag?"
+  ],
+  "realWorldExample": "A CDN caches API responses using Cache-Control: max-age=3600, and clients revalidate stale content using ETag headers, receiving a 304 if nothing changed.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "Cache-Control: max-age=3600\nETag: \"33a64df551\"\n\n# Subsequent request\nIf-None-Match: \"33a64df551\""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the roles of Cache-Control, ETag, and Last-Modified in balancing performance and correctness.",
+  "tags": ["API Caching", "HTTP Headers", "Interview"],
+  "relatedTopics": ["CDN", "HTTP Caching", "304 Not Modified"],
+  "references": ["RFC 7234"]
+},
+{
+  "id": "api-023",
+  "category": "APIs",
+  "topic": "Chatty API Anti-Pattern",
+  "difficulty": "Medium",
+  "question": "What is a \"Chatty API\" anti-pattern? How is it avoided?",
+  "shortAnswer": "A \"Chatty API\" requires a client to make MANY separate API calls to accomplish a single logical task — causing excessive network round-trips, latency, and poor mobile/slow-network performance.",
+  "detailedAnswer": "This commonly happens with overly granular, strictly resource-per-endpoint REST design; for example, displaying a user's profile page showing their info, recent orders, and notification count might naively require three separate calls. Each round-trip adds latency, especially painful on slow mobile networks, and this problem compounds badly on more complex pages needing many related pieces of data.\n\nSolutions include designing composite or aggregate endpoints specifically tailored to common client needs, returning everything needed in one call, or adopting GraphQL, which inherently solves this by letting the client specify exactly which related data it needs in a single query.",
+  "keyPoints": [
+    "Symptom: a single UI screen/task requires many sequential API calls, adding significant cumulative latency",
+    "Fix 1: design composite/aggregate endpoints tailored to specific client screens or use cases",
+    "Fix 2: adopt GraphQL, which inherently avoids this by letting clients fetch related data in one query"
+  ],
+  "commonMistakes": [
+    "Designing overly granular, resource-per-endpoint APIs without considering client screen needs",
+    "Not measuring cumulative latency impact of multiple sequential API calls",
+    "Assuming GraphQL is the only solution when composite REST endpoints can also work"
+  ],
+  "followUpQuestions": [
+    "How would you design a composite endpoint to reduce API chattiness?",
+    "How does GraphQL inherently solve the chatty API problem?",
+    "Why is chattiness especially problematic on mobile networks?"
+  ],
+  "realWorldExample": "A mobile app's profile screen calls a single composite GET /users/123/dashboard endpoint instead of three separate calls for user info, orders, and notifications, reducing round-trip latency.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to identify the symptom of excessive round-trips and describe composite endpoints or GraphQL as solutions.",
+  "tags": ["Chatty API", "API Design", "GraphQL", "Interview"],
+  "relatedTopics": ["GraphQL", "REST API Design", "Latency"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-024",
+  "category": "APIs",
+  "topic": "Public vs Private vs Partner API",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between a Public API, Private API, and Partner API?",
+  "shortAnswer": "Public API: open for any external developer to use (often with registration/API key). Private (Internal) API: used only within the organization, not exposed externally. Partner API: shared with specific, pre-approved external business partners, not the general public.",
+  "detailedAnswer": "A Public API is designed for broad external consumption, typically requiring developer registration and an API key, with comprehensive public documentation, and often has usage tiers or pricing.\n\nA Private or Internal API is used exclusively by an organization's own internal teams or services, never exposed to the public internet, often with less rigorous documentation since the consumers are internal engineering teams. A Partner API sits in between, shared selectively with specific approved business partners under a formal business agreement, not openly available to just anyone who signs up.",
+  "keyPoints": [
+    "Public API: open registration, broad external developer audience, comprehensive public docs (Stripe, Twitter)",
+    "Private API: internal-only, never exposed externally, typically less formal documentation needs",
+    "Partner API: selectively shared with specific approved business partners under a formal agreement"
+  ],
+  "commonMistakes": [
+    "Confusing a Partner API with a fully Public API open to anyone",
+    "Assuming Private APIs need the same rigorous public-facing documentation as Public APIs",
+    "Not distinguishing the access control models between the three API types"
+  ],
+  "followUpQuestions": [
+    "What documentation differences typically exist between public and private APIs?",
+    "Can you give an example of a Partner API use case?",
+    "Why might a company choose a Partner API over a fully Public API?"
+  ],
+  "realWorldExample": "Stripe's API is a Public API open to any registered developer, a company's internal microservices form Private APIs, and a shipping company's integration with a specific retail partner is a Partner API.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the three API access models and give real-world examples of each.",
+  "tags": ["Public API", "Private API", "Partner API", "Interview"],
+  "relatedTopics": ["API Design", "API Documentation", "API Gateway"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-025",
+  "category": "APIs",
+  "topic": "API-First vs Code-First Design",
+  "difficulty": "Medium",
+  "question": "What is API-First Design? How is it different from Code-First Design?",
+  "shortAnswer": "API-First Design means designing and agreeing on the API contract/specification BEFORE writing any implementation code. Code-First means writing the implementation first, then generating documentation/specs FROM the resulting code.",
+  "detailedAnswer": "In API-First development, teams collaboratively design the OpenAPI specification upfront, defining endpoints, request/response schemas, and behavior, and get stakeholder agreement before any backend implementation begins. This approach forces more thoughtful upfront design, enables parallel frontend/backend development from day one, and tends to produce more consistent, well-thought-out APIs.\n\nIn Code-First development, developers write the actual implementation code first, and documentation or specs are generated afterward, often automatically via annotations in the code. This is faster to get something working initially, but can lead to less consistent API design since decisions are made incrementally during implementation.",
+  "keyPoints": [
+    "API-First: design the contract/spec first, implementation follows — enables true parallel frontend/backend work",
+    "Code-First: implementation first, documentation generated afterward — faster initial progress, less upfront consistency",
+    "API-First is increasingly preferred for public/partner APIs where contract stability and consumer experience matter most"
+  ],
+  "commonMistakes": [
+    "Choosing Code-First for a public API where contract stability matters most",
+    "Not involving frontend stakeholders early when following API-First",
+    "Assuming Code-First always produces worse APIs regardless of context"
+  ],
+  "followUpQuestions": [
+    "Why does API-First enable true parallel frontend and backend development?",
+    "When might Code-First be a reasonable choice despite its trade-offs?",
+    "How does API-First relate to contract testing and mocking?"
+  ],
+  "realWorldExample": "A company building a public payment API uses API-First design, finalizing the OpenAPI spec with stakeholder review before any backend code is written, ensuring contract stability for external developers.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the sequencing difference and articulate why API-First suits public/partner APIs better.",
+  "tags": ["API-First Design", "Code-First Design", "API Design", "Interview"],
+  "relatedTopics": ["OpenAPI", "API Mocking", "Contract Testing"],
+  "references": ["OpenAPI Specification - swagger.io"]
+},
+{
+  "id": "js-001",
+  "category": "JavaScript",
+  "topic": "var, let, const",
+  "difficulty": "Easy",
+  "question": "What is the difference between var, let, and const?",
+  "shortAnswer": "var: function-scoped, hoisted with undefined, can be redeclared. let: block-scoped, hoisted but in a temporal dead zone, reassignable. const: block-scoped, must be initialized, cannot be reassigned.",
+  "detailedAnswer": "var is function-scoped rather than block-scoped; a var declared inside an if block is accessible outside it, frequently causing bugs. It's hoisted to the top of its function scope and initialized with undefined.\n\nlet is block-scoped, respecting curly-brace boundaries, and stays in a temporal dead zone until its declaration line, throwing a ReferenceError if accessed earlier. const behaves like let for scoping, but the binding cannot be reassigned; this doesn't make the value immutable, since mutating an array or object's contents remains valid.",
+  "keyPoints": [
+    "var: function-scoped, hoisted with undefined — avoid using it in modern JS",
+    "let: block-scoped, temporal dead zone, reassignable",
+    "const: block-scoped, cannot reassign the binding, but objects/arrays remain mutable"
+  ],
+  "commonMistakes": [
+    "Assuming const makes an object's contents immutable",
+    "Using var in modern code and encountering unexpected function-scope leakage",
+    "Accessing a let/const variable before its declaration, triggering a ReferenceError"
+  ],
+  "followUpQuestions": [
+    "Why does accessing a let variable before its declaration throw an error, but var doesn't?",
+    "Can you push to a const array? Why or why not?",
+    "What bugs can arise from var's function-scoping behavior?"
+  ],
+  "realWorldExample": "A developer uses const for array and object references throughout a codebase to prevent accidental reassignment, while still mutating their contents as needed.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const arr = [1, 2];\narr.push(3); // valid, mutates the array\n// arr = [4, 5]; // TypeError: Assignment to constant variable"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain scoping differences and clarify that const prevents reassignment, not mutation.",
+  "tags": ["JavaScript", "var", "let", "const", "Interview"],
+  "relatedTopics": ["Hoisting", "Scope", "Temporal Dead Zone"],
+  "references": ["MDN Web Docs - JavaScript"]
+},
+{
+  "id": "js-002",
+  "category": "JavaScript",
+  "topic": "Event Loop",
+  "difficulty": "Hard",
+  "question": "Explain the JavaScript Event Loop. How does asynchronous code work in a single-threaded language?",
+  "shortAnswer": "JavaScript is single-threaded, but the Event Loop enables non-blocking async behavior by delegating time-consuming tasks to Web APIs/Node APIs and processing their callbacks later via a Call Stack, Callback Queue, and Microtask Queue.",
+  "detailedAnswer": "JavaScript has one Call Stack, executing one thing at a time. Async operations like setTimeout or fetch are handled by Web APIs in the browser, or libuv in Node.js, outside the main thread. Once complete, callbacks are placed in either the Macrotask Queue for things like setTimeout and I/O, or the Microtask Queue for Promises.\n\nThe Event Loop checks whether the Call Stack is empty; if so, it fully drains the Microtask Queue first, then takes one task from the Macrotask Queue, and repeats. This is why Promise callbacks always run before setTimeout callbacks, even with a 0ms delay.",
+  "keyPoints": [
+    "Call Stack: executes synchronous code, one frame at a time",
+    "Microtask Queue (Promises): fully drained before the next macrotask",
+    "Macrotask Queue (setTimeout, setInterval): one task processed per event loop tick"
+  ],
+  "commonMistakes": [
+    "Assuming setTimeout(fn, 0) runs immediately or before Promise callbacks",
+    "Not knowing the microtask queue is fully drained before any macrotask runs",
+    "Confusing the Call Stack with the task queues"
+  ],
+  "followUpQuestions": [
+    "Why does a Promise callback run before a setTimeout(fn, 0) callback?",
+    "What's the difference between the Microtask Queue and Macrotask Queue?",
+    "How does Node.js's libuv relate to the browser's Web APIs in this model?"
+  ],
+  "realWorldExample": "A developer debugging unexpected execution order discovers that Promise .then() callbacks always execute before a setTimeout(fn, 0) callback due to microtask queue priority.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "console.log('1');\nsetTimeout(() => console.log('2'), 0);\nPromise.resolve().then(() => console.log('3'));\nconsole.log('4');\n// Output: 1, 4, 3, 2"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the Call Stack, Microtask Queue, and Macrotask Queue relationship and predict execution order correctly.",
+  "tags": ["JavaScript", "Event Loop", "Asynchronous", "Interview"],
+  "relatedTopics": ["Promises", "async/await", "setTimeout"],
+  "references": ["MDN Web Docs - Event Loop"]
+},
+{
+  "id": "js-003",
+  "category": "JavaScript",
+  "topic": "Closures",
+  "difficulty": "Medium",
+  "question": "What is a Closure in JavaScript? Give a practical use case.",
+  "shortAnswer": "A closure is a function that retains access to variables from its outer (enclosing) scope even after that outer function has finished executing.",
+  "detailedAnswer": "When a function is defined inside another function, it forms a closure over the outer function's variables; the inner function remembers its creation environment, keeping those variables alive even after the outer function returns.\n\nClosures are used for data privacy, creating variables accessible only via returned functions, function factories that generate customized functions, and maintaining state in callbacks such as counters in event handlers. It's also the mechanism behind React's useState hook internally.",
+  "keyPoints": [
+    "Practical use: function makeCounter() { let count = 0; return () => ++count; } — count stays private and persistent",
+    "Data privacy: closures simulated private variables before class private fields (#field) existed",
+    "Common trap: closures in loops with var (all callbacks share the same variable) vs let (each iteration gets its own binding)"
+  ],
+  "commonMistakes": [
+    "Using var in a loop expecting each closure to capture its own iteration value",
+    "Not understanding closures keep outer variables alive beyond the outer function's execution",
+    "Confusing closures with simple function scope"
+  ],
+  "followUpQuestions": [
+    "Why does using var in a loop with closures cause all callbacks to share the same final value?",
+    "How does React's useState rely on closures internally?",
+    "How would you implement a private counter using a closure?"
+  ],
+  "realWorldExample": "A counter function returns an incrementing function that retains access to a private count variable, never exposing it directly to external code.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function makeCounter() {\n  let count = 0;\n  return () => ++count;\n}\n\nconst counter = makeCounter();\ncounter(); // 1\ncounter(); // 2"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how closures retain outer scope variables and give a practical use case like private state.",
+  "tags": ["JavaScript", "Closures", "Interview"],
+  "relatedTopics": ["Scope", "Higher-Order Functions", "Currying"],
+  "references": ["MDN Web Docs - Closures"]
+},
+{
+  "id": "js-004",
+  "category": "JavaScript",
+  "topic": "== vs ===",
+  "difficulty": "Easy",
+  "question": "What is the difference between == and === in JavaScript?",
+  "shortAnswer": "== (loose equality) compares values after type coercion. === (strict equality) compares both value AND type, with no coercion.",
+  "detailedAnswer": "== attempts to convert operands to the same type before comparing, following complex coercion rules, which can cause surprising, hard-to-debug behavior.\n\n=== compares both value and type without conversion. Best practice, enforced by most linters, is to always use === and !== unless there's a specific, well-understood reason to rely on coercion.",
+  "keyPoints": [
+    "\"5\" == 5 → true (coercion) | \"5\" === 5 → false (strict)",
+    "null == undefined → true | null === undefined → false",
+    "Always prefer ===/!== in production code to avoid coercion bugs"
+  ],
+  "commonMistakes": [
+    "Using == and encountering unexpected coercion-based bugs",
+    "Assuming null == undefined implies null === undefined",
+    "Not enabling linter rules that enforce strict equality"
+  ],
+  "followUpQuestions": [
+    "Why does null == undefined evaluate to true?",
+    "Can you give an example where == produces a surprising result?",
+    "Why do most linters enforce === over ==?"
+  ],
+  "realWorldExample": "A linter configuration enforces === across a codebase to prevent subtle coercion bugs like \"0\" == false unexpectedly evaluating to true.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "\"5\" == 5;   // true\n\"5\" === 5;  // false\nnull == undefined;  // true\nnull === undefined; // false"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain coercion behavior and recommend strict equality as best practice.",
+  "tags": ["JavaScript", "Equality", "Type Coercion", "Interview"],
+  "relatedTopics": ["Type Coercion", "null vs undefined", "JavaScript Basics"],
+  "references": ["MDN Web Docs - Equality Comparisons"]
+},
+{
+  "id": "js-005",
+  "category": "JavaScript",
+  "topic": "Hoisting",
+  "difficulty": "Medium",
+  "question": "What is Hoisting in JavaScript?",
+  "shortAnswer": "Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope during compilation, before code actually executes.",
+  "detailedAnswer": "Function declarations are fully hoisted, meaning both the name and body are available before their line in the code, so they can be called before they're defined in the source. var declarations are hoisted but only the declaration, not the assignment; the variable exists as undefined until its actual assignment line executes.\n\nlet and const are technically hoisted too, but remain in the temporal dead zone, inaccessible until their declaration line is reached, throwing a ReferenceError if accessed earlier, unlike var which just silently returns undefined.",
+  "keyPoints": [
+    "Function declarations: fully hoisted (name + body) — safe to call before their definition line",
+    "var: hoisted as undefined — accessible before assignment, but value isn't set yet",
+    "let/const: hoisted but in the temporal dead zone — throws ReferenceError if accessed before declaration"
+  ],
+  "commonMistakes": [
+    "Assuming let/const are not hoisted at all rather than being in a temporal dead zone",
+    "Confusing function declaration hoisting with function expression hoisting (expressions are not fully hoisted)",
+    "Relying on calling a function before its declaration when it's actually a function expression"
+  ],
+  "followUpQuestions": [
+    "Why can you call a function declaration before its line in the code, but not a function expression?",
+    "What is the temporal dead zone?",
+    "What value does a var variable have before its assignment line executes?"
+  ],
+  "realWorldExample": "A developer calling a function before its declaration in the file relies on function declaration hoisting, which works correctly since both name and body are hoisted.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "console.log(foo()); // works due to hoisting\nfunction foo() { return 'hello'; }\n\nconsole.log(x); // undefined, not an error\nvar x = 5;"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish hoisting behavior across function declarations, var, let, and const.",
+  "tags": ["JavaScript", "Hoisting", "Interview"],
+  "relatedTopics": ["var, let, const", "Temporal Dead Zone", "Scope"],
+  "references": ["MDN Web Docs - Hoisting"]
+},
+{
+  "id": "js-006",
+  "category": "JavaScript",
+  "topic": "this Keyword",
+  "difficulty": "Medium",
+  "question": "What is the this keyword in JavaScript? How does its value get determined?",
+  "shortAnswer": "this refers to the context a function is executed in — its value is determined by HOW a function is CALLED, not where it's defined (except for arrow functions, which inherit this from their enclosing scope).",
+  "detailedAnswer": "In a regular method call, this refers to the object the method was called on. In a standalone function call, this is undefined in strict mode, or the global object in non-strict mode. With call(), apply(), or bind(), this can be explicitly set to any object. In a constructor call using new, this refers to the newly created instance.\n\nArrow functions are special; they don't have their own this at all, but lexically inherit this from the enclosing scope at the time they're defined, not called, which is why arrow functions are commonly preferred for callbacks inside class methods, avoiding the classic 'this is undefined inside a callback' bug.",
+  "keyPoints": [
+    "Regular function: this depends entirely on HOW it's called (method call, standalone call, new, etc.)",
+    "Arrow function: this is lexically inherited from the enclosing scope — never changes regardless of how it's called",
+    "call()/apply()/bind(): explicitly set what this should be for a given function invocation"
+  ],
+  "commonMistakes": [
+    "Using a regular function for a callback expecting this to refer to the enclosing class instance",
+    "Assuming this is determined by where a function is defined rather than how it's called",
+    "Confusing call() and apply()'s argument-passing syntax"
+  ],
+  "followUpQuestions": [
+    "Why do arrow functions avoid the classic 'this is undefined inside a callback' bug?",
+    "What is the difference between call(), apply(), and bind()?",
+    "What does this refer to inside a constructor function called with new?"
+  ],
+  "realWorldExample": "A React class component uses an arrow function for an event handler to ensure this correctly refers to the component instance, rather than binding it manually in the constructor.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "class Counter {\n  count = 0;\n  increment = () => { this.count++; }; // arrow function preserves 'this'\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how this is determined by call-site for regular functions versus lexical binding for arrow functions.",
+  "tags": ["JavaScript", "this", "Interview"],
+  "relatedTopics": ["Arrow Functions", "call/apply/bind", "Closures"],
+  "references": ["MDN Web Docs - this"]
+},
+{
+  "id": "js-007",
+  "category": "JavaScript",
+  "topic": "null vs undefined",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between null and undefined?",
+  "shortAnswer": "undefined means a variable has been declared but not yet assigned a value. null is an explicit assignment representing \"intentionally no value.\"",
+  "detailedAnswer": "undefined is JavaScript's default value for uninitialized variables, missing function arguments, and accessing non-existent object properties, representing the absence of a value that the language itself assigns automatically.\n\nnull must be explicitly assigned by the developer to represent 'this variable intentionally has no value right now,' a deliberate statement of emptiness rather than an accidental omission. typeof undefined is \"undefined\", while typeof null is famously \"object\", a long-standing JS quirk. Using ==, null == undefined is true; using ===, they are not equal.",
+  "keyPoints": [
+    "undefined: the language's default for \"not yet assigned\" — automatic, not explicitly set by the developer",
+    "null: explicit developer assignment meaning \"intentionally empty\" — a deliberate statement",
+    "typeof null returns \"object\" — a widely-known historical quirk/bug in JavaScript that can never be fixed now"
+  ],
+  "commonMistakes": [
+    "Assuming typeof null returns \"null\" instead of \"object\"",
+    "Using == instead of === when specifically checking for null or undefined",
+    "Not distinguishing between an automatically undefined value and a deliberately assigned null"
+  ],
+  "followUpQuestions": [
+    "Why does typeof null return \"object\"?",
+    "When would you deliberately assign null instead of leaving a variable undefined?",
+    "What is the result of null === undefined?"
+  ],
+  "realWorldExample": "An API response deliberately sets a field to null to indicate 'no value exists' while a variable that was never assigned remains undefined by default.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "let a;\nconsole.log(a); // undefined\n\nlet b = null;\nconsole.log(b); // null\n\nconsole.log(null == undefined);  // true\nconsole.log(null === undefined); // false"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the automatic (undefined) versus deliberate (null) nature of these two values.",
+  "tags": ["JavaScript", "null", "undefined", "Interview"],
+  "relatedTopics": ["Type Coercion", "== vs ===", "Optional Chaining"],
+  "references": ["MDN Web Docs - null and undefined"]
+},
+{
+  "id": "js-008",
+  "category": "JavaScript",
+  "topic": "Promises",
+  "difficulty": "Medium",
+  "question": "What are Promises in JavaScript? Explain .then(), .catch(), and .finally().",
+  "shortAnswer": "A Promise represents the eventual result of an asynchronous operation — it can be Pending, Fulfilled, or Rejected. .then() handles success, .catch() handles errors, .finally() runs regardless of outcome.",
+  "detailedAnswer": "A Promise starts in a pending state, and eventually transitions to either fulfilled, meaning the async operation succeeded with a resulting value, or rejected, meaning it failed with an error reason. Once settled, a Promise's state can never change again.\n\n.then(onFulfilled, onRejected) registers callbacks for success or failure; chaining multiple .then() calls creates a pipeline where each returns a new Promise. .catch() is essentially syntactic sugar for .then(null, onRejected), specifically handling errors from anywhere earlier in the chain. .finally() runs a cleanup callback regardless of whether the promise fulfilled or rejected.",
+  "keyPoints": [
+    "Three states: pending → fulfilled (resolved) OR rejected — once settled, state is permanent",
+    ".catch(): catches errors/rejections from anywhere earlier in the .then() chain, not just the immediately preceding step",
+    "async/await is syntactic sugar built on top of Promises, making async code read more like synchronous code"
+  ],
+  "commonMistakes": [
+    "Assuming .catch() only catches errors from the immediately preceding .then()",
+    "Forgetting .finally() runs regardless of success or failure",
+    "Not understanding a Promise's state is permanent once settled"
+  ],
+  "followUpQuestions": [
+    "Why is .catch() considered syntactic sugar for .then(null, onRejected)?",
+    "What happens if you don't attach a .catch() to a rejected Promise?",
+    "How does .finally() differ in purpose from .then() and .catch()?"
+  ],
+  "realWorldExample": "A fetch request chains .then() to process the response, .catch() to handle network errors, and .finally() to hide a loading spinner regardless of outcome.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "fetch('/api/data')\n  .then(res => res.json())\n  .then(data => console.log(data))\n  .catch(err => console.error(err))\n  .finally(() => hideSpinner());"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the three Promise states and the roles of .then(), .catch(), and .finally().",
+  "tags": ["JavaScript", "Promises", "Async", "Interview"],
+  "relatedTopics": ["async/await", "Event Loop", "Error Handling"],
+  "references": ["MDN Web Docs - Promise"]
+},
+{
+  "id": "js-009",
+  "category": "JavaScript",
+  "topic": "async/await vs Promises",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between async/await and raw Promises with .then()?",
+  "shortAnswer": "async/await is syntactic sugar built on top of Promises, allowing asynchronous code to be written and read in a more sequential, synchronous-looking style — while functionally accomplishing the exact same thing underneath.",
+  "detailedAnswer": "A function marked async implicitly returns a Promise. Inside it, await pauses execution of that function, without blocking the rest of the application or event loop, until the awaited Promise settles, then either returns its resolved value or throws its rejection reason as a catchable exception.\n\nThis allows using standard try/catch blocks for error handling instead of .catch() chains, and avoids the visually nested callback pyramid or long .then().then().then() chains that raw Promise usage can produce for sequential async operations.",
+  "keyPoints": [
+    "async function: implicitly returns a Promise, allows using await inside its body",
+    "await: pauses that function's execution until the Promise settles, without blocking the whole application",
+    "Enables standard try/catch for async error handling, instead of chained .catch() calls"
+  ],
+  "commonMistakes": [
+    "Assuming await blocks the entire application rather than just the async function itself",
+    "Forgetting to wrap awaited code in try/catch for proper error handling",
+    "Using await sequentially for independent operations that could run in parallel with Promise.all"
+  ],
+  "followUpQuestions": [
+    "Does await block the entire JavaScript runtime, or just the async function it's inside?",
+    "How would you run multiple independent async operations in parallel using async/await?",
+    "Why might raw Promise chaining still be preferable in some scenarios?"
+  ],
+  "realWorldExample": "A developer refactors a long .then().then().then() chain into a cleaner async/await function with try/catch error handling, improving readability.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "async function getData() {\n  try {\n    const res = await fetch('/api/data');\n    const data = await res.json();\n    return data;\n  } catch (err) {\n    console.error(err);\n  }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain that async/await is syntactic sugar over Promises and describe its readability benefits.",
+  "tags": ["JavaScript", "async/await", "Promises", "Interview"],
+  "relatedTopics": ["Promises", "Event Loop", "Error Handling"],
+  "references": ["MDN Web Docs - async function"]
+},
+{
+  "id": "js-010",
+  "category": "JavaScript",
+  "topic": "Event Delegation",
+  "difficulty": "Medium",
+  "question": "What is Event Delegation in JavaScript? Why is it useful?",
+  "shortAnswer": "Event Delegation attaches a single event listener to a PARENT element instead of individual listeners to many child elements, leveraging event bubbling to handle events for all current AND future children efficiently.",
+  "detailedAnswer": "Attaching a separate click listener to every single item in a long, dynamically-changing list is inefficient and error-prone, since newly added items wouldn't automatically have a listener unless one is attached every time.\n\nEvent delegation instead attaches one listener to a stable parent container; since events naturally bubble up through the DOM tree from the actual clicked element to its ancestors, the parent's single listener can inspect event.target to determine which specific child was actually clicked, and respond accordingly. This automatically works for children added to the DOM later, without needing any additional listener setup.",
+  "keyPoints": [
+    "Relies on event bubbling: events propagate upward from the target element through its ancestors",
+    "event.target: identifies the actual element that was originally clicked/interacted with",
+    "Automatically handles dynamically added children — no need to re-attach listeners when new elements appear"
+  ],
+  "commonMistakes": [
+    "Attaching individual listeners to every child element instead of delegating to a parent",
+    "Not using event.target to correctly identify which child triggered the event",
+    "Forgetting delegation relies on event bubbling, which doesn't work for non-bubbling events"
+  ],
+  "followUpQuestions": [
+    "How does event.target differ from event.currentTarget in a delegated handler?",
+    "Why does event delegation automatically work for dynamically added elements?",
+    "Are there events that don't bubble, and how would that affect delegation?"
+  ],
+  "realWorldExample": "A dynamic todo list attaches a single click listener to its parent <ul> element, using event.target to determine which specific <li> item was clicked, even for items added after page load.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "document.querySelector('#todo-list').addEventListener('click', (e) => {\n  if (e.target.tagName === 'LI') {\n    console.log('Clicked:', e.target.textContent);\n  }\n});"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain event bubbling and describe how delegation efficiently handles dynamic children.",
+  "tags": ["JavaScript", "Event Delegation", "DOM", "Interview"],
+  "relatedTopics": ["Event Bubbling", "DOM Events", "Performance"],
+  "references": ["MDN Web Docs - Event Delegation"]
+},
+{
+  "id": "js-011",
+  "category": "JavaScript",
+  "topic": "map, filter, reduce",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between map(), filter(), and reduce() array methods?",
+  "shortAnswer": "map() transforms each element, returning a new array of the SAME length. filter() selects elements matching a condition, returning a new (possibly shorter) array. reduce() combines all elements into a SINGLE accumulated value.",
+  "detailedAnswer": "array.map(fn) calls fn on every element and collects the return values into a brand new array, always the same length as the original, used purely for transformation. array.filter(fn) calls fn on every element, keeping only those for which fn returns true, resulting in an array the same length or shorter, used for selection.\n\narray.reduce(fn, initialValue) processes elements one by one, accumulating a single result value across the entire array, the most flexible and powerful of the three, since map and filter can theoretically both be implemented in terms of reduce.",
+  "keyPoints": [
+    "map: transformation, always returns an array of the SAME length as the original",
+    "filter: selection, returns an array of the same length or shorter, based on a boolean condition",
+    "reduce: accumulation, returns a single value (which could itself be a number, object, or even array)"
+  ],
+  "commonMistakes": [
+    "Using map() when filter() or reduce() would be semantically clearer",
+    "Forgetting to provide an initial value to reduce(), causing unexpected behavior on empty arrays",
+    "Confusing filter()'s boolean-returning callback with map()'s value-returning callback"
+  ],
+  "followUpQuestions": [
+    "How would you implement filter() using reduce()?",
+    "What happens if you call reduce() on an empty array without an initial value?",
+    "When would you chain map(), filter(), and reduce() together?"
+  ],
+  "realWorldExample": "An e-commerce app uses filter() to select in-stock products, map() to extract their prices, and reduce() to calculate the total cart value.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const total = products\n  .filter(p => p.inStock)\n  .map(p => p.price)\n  .reduce((sum, price) => sum + price, 0);"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly distinguish transformation, selection, and accumulation, and describe how these methods chain together.",
+  "tags": ["JavaScript", "Array Methods", "map", "filter", "reduce", "Interview"],
+  "relatedTopics": ["Higher-Order Functions", "Functional Programming", "forEach"],
+  "references": ["MDN Web Docs - Array.prototype.reduce"]
+},
+{
+  "id": "js-012",
+  "category": "JavaScript",
+  "topic": "Prototypal Inheritance",
+  "difficulty": "Medium",
+  "question": "What is Prototypal Inheritance in JavaScript?",
+  "shortAnswer": "JavaScript objects can inherit properties and methods directly from other objects via a \"prototype chain,\" rather than through classical class-based inheritance (though ES6 class syntax provides a familiar-looking layer on top).",
+  "detailedAnswer": "Every JavaScript object has an internal link to another object called its prototype; when you access a property or method on an object that doesn't exist directly on that object itself, JavaScript automatically looks up the prototype chain until it finds the property or reaches the end.\n\nObject.create(proto) explicitly creates a new object with a specified prototype. ES6 class syntax is essentially syntactic sugar over this same underlying prototypal mechanism; it doesn't introduce a fundamentally different inheritance model, just a more familiar, class-like syntax for developers coming from classical OOP languages.",
+  "keyPoints": [
+    "Every object has an internal prototype link — property lookups automatically traverse this chain if not found directly",
+    "Object.create(proto): explicitly creates a new object with a specified object as its prototype",
+    "ES6 class/extends: syntactic sugar over the SAME underlying prototype chain mechanism, not a different system"
+  ],
+  "commonMistakes": [
+    "Assuming ES6 class introduces a fundamentally different inheritance model rather than sugar over prototypes",
+    "Not understanding property lookup traverses the prototype chain when not found on the object directly",
+    "Confusing Object.create with Object.assign"
+  ],
+  "followUpQuestions": [
+    "How does ES6 class syntax relate to the underlying prototype chain?",
+    "What happens when you access a property that doesn't exist on an object or anywhere in its prototype chain?",
+    "How would you create an object with a specific prototype using Object.create?"
+  ],
+  "realWorldExample": "A Dog object's prototype chain includes an Animal object, so calling dog.eat() works even if eat() is only defined on Animal.prototype.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const animal = { eat() { console.log('eating'); } };\nconst dog = Object.create(animal);\ndog.eat(); // 'eating' — found via prototype chain"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the prototype chain mechanism and clarify that ES6 class is sugar over it.",
+  "tags": ["JavaScript", "Prototypal Inheritance", "Interview"],
+  "relatedTopics": ["ES6 Classes", "Object.create", "OOP"],
+  "references": ["MDN Web Docs - Inheritance and the prototype chain"]
+},
+{
+  "id": "js-013",
+  "category": "JavaScript",
+  "topic": "Spread vs Rest",
+  "difficulty": "Medium",
+  "question": "What is the Spread Operator (...) vs the Rest Parameter — how do they differ despite the same syntax?",
+  "shortAnswer": "They use identical syntax (...) but serve opposite purposes depending on context: Spread EXPANDS an iterable into individual elements. Rest COLLECTS multiple individual elements/arguments into a single array.",
+  "detailedAnswer": "Spread is used when you want to unpack an array or object into individual pieces, such as merging two arrays by spreading each one's elements into a new array literal, spreading an array into individual arguments for a function expecting separate parameters, or merging two objects' properties.\n\nRest is used in the opposite direction, collecting an indefinite number of remaining function arguments or destructured elements into a single array, allowing a function to accept any number of arguments all collected into one parameter.",
+  "keyPoints": [
+    "Spread: expands/unpacks an iterable into individual elements — [...arr], {...obj}, fn(...args)",
+    "Rest: collects multiple individual values into a single array — function fn(...args) {}",
+    "Same ... syntax, opposite direction — context (which side of an assignment/parameter list) determines which one applies"
+  ],
+  "commonMistakes": [
+    "Confusing spread and rest since they share identical syntax",
+    "Not knowing rest parameters must be the last parameter in a function signature",
+    "Using spread when destructuring is actually needed, or vice versa"
+  ],
+  "followUpQuestions": [
+    "Why must a rest parameter always be the last parameter in a function's signature?",
+    "How would you merge two objects using the spread operator?",
+    "Can you give an example distinguishing spread from rest in the same line of code?"
+  ],
+  "realWorldExample": "A sum function uses a rest parameter to accept any number of arguments, while Math.max uses the spread operator to expand an array into individual arguments.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function sum(...numbers) { // rest\n  return numbers.reduce((a, b) => a + b, 0);\n}\n\nconst nums = [1, 2, 3];\nMath.max(...nums); // spread"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the expand (spread) versus collect (rest) directions despite identical syntax.",
+  "tags": ["JavaScript", "Spread Operator", "Rest Parameter", "Interview"],
+  "relatedTopics": ["Destructuring", "Function Parameters", "Array Methods"],
+  "references": ["MDN Web Docs - Spread syntax"]
+},
+{
+  "id": "js-014",
+  "category": "JavaScript",
+  "topic": "Shallow vs Deep Copy",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Shallow Copy and Deep Copy in JavaScript?",
+  "shortAnswer": "A Shallow Copy duplicates only the top-level properties — nested objects/arrays are still SHARED (same reference) between the original and the copy. A Deep Copy recursively duplicates everything, including all nested structures, making the copy fully independent.",
+  "detailedAnswer": "Spread syntax or Object.assign create a shallow copy; if the original object has a nested object as a property, that nested object is not duplicated, and both the original and the copy point to the exact same nested object in memory, so mutating it through either reference affects both.\n\nA deep copy requires recursively copying every level. structuredClone(obj) is the modern, built-in, widely supported way to create a fully independent deep copy, while the older JSON.parse(JSON.stringify(obj)) trick loses functions, undefined values, and Date objects, converting them incorrectly.",
+  "keyPoints": [
+    "Shallow copy: top-level properties duplicated, but nested objects/arrays remain SHARED references",
+    "structuredClone(obj): modern built-in method for a proper, fully-independent deep copy",
+    "JSON.parse(JSON.stringify(obj)): older deep-copy trick, but loses functions/undefined/Date objects incorrectly"
+  ],
+  "commonMistakes": [
+    "Assuming a spread copy fully duplicates nested objects",
+    "Using JSON.parse(JSON.stringify()) on objects containing functions or Date instances",
+    "Not knowing structuredClone exists as a modern built-in deep copy method"
+  ],
+  "followUpQuestions": [
+    "Why does JSON.parse(JSON.stringify(obj)) lose functions and Date objects?",
+    "How does structuredClone differ from the JSON trick for deep copying?",
+    "What bug can arise from mutating a nested object after a shallow copy?"
+  ],
+  "realWorldExample": "A developer discovers a bug where mutating a nested object in a 'copied' state object also changes the original, due to using a shallow spread copy instead of a deep clone.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const original = { a: 1, nested: { b: 2 } };\nconst shallow = { ...original };\nshallow.nested.b = 99;\nconsole.log(original.nested.b); // 99 — shared reference!\n\nconst deep = structuredClone(original);\ndeep.nested.b = 100;\nconsole.log(original.nested.b); // still 99"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the reference-sharing issue with shallow copies and know structuredClone as the modern deep-copy solution.",
+  "tags": ["JavaScript", "Shallow Copy", "Deep Copy", "Interview"],
+  "relatedTopics": ["Object.assign", "Spread Operator", "structuredClone"],
+  "references": ["MDN Web Docs - structuredClone"]
+},
+{
+  "id": "js-015",
+  "category": "JavaScript",
+  "topic": "Higher-Order Functions",
+  "difficulty": "Medium",
+  "question": "What is a Higher-Order Function in JavaScript?",
+  "shortAnswer": "A Higher-Order Function is a function that either accepts another function as an argument, returns a function as its result, or both — treating functions as \"first-class citizens\" that can be passed around like any other value.",
+  "detailedAnswer": "JavaScript functions are first-class values; they can be assigned to variables, passed as arguments, and returned from other functions, just like numbers or strings. map, filter, and reduce are all higher-order functions since they accept a callback function as an argument.\n\nFunctions that return other functions, function factories, are also higher-order; for example, a multiplier function returns a new customized function each time it's called with a different factor. This concept is foundational to functional programming patterns in JavaScript.",
+  "keyPoints": [
+    "\"First-class functions\": functions can be stored in variables, passed as arguments, returned from other functions",
+    "Array methods (map, filter, reduce, forEach) are all classic examples of higher-order functions",
+    "Function factories (functions that return customized functions) are another common higher-order function pattern"
+  ],
+  "commonMistakes": [
+    "Not recognizing built-in array methods as examples of higher-order functions",
+    "Confusing higher-order functions with recursive functions",
+    "Not understanding function factories as a higher-order function pattern"
+  ],
+  "followUpQuestions": [
+    "Why are map, filter, and reduce considered higher-order functions?",
+    "Can you write a function factory that returns a customized function?",
+    "What does it mean for functions to be 'first-class citizens' in JavaScript?"
+  ],
+  "realWorldExample": "A function factory generates specialized discount calculators, each pre-configured with a specific discount rate, by returning a new function from an outer function.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function multiplier(factor) {\n  return (x) => x * factor;\n}\n\nconst double = multiplier(2);\ndouble(5); // 10"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to define higher-order functions and identify common examples like map/filter/reduce and function factories.",
+  "tags": ["JavaScript", "Higher-Order Functions", "Interview"],
+  "relatedTopics": ["map, filter, reduce", "Closures", "Currying"],
+  "references": ["MDN Web Docs - Functions"]
+},
+{
+  "id": "js-016",
+  "category": "JavaScript",
+  "topic": "Debouncing and Throttling",
+  "difficulty": "Medium",
+  "question": "What is Debouncing and Throttling? What is the practical difference?",
+  "shortAnswer": "Debouncing delays executing a function until AFTER a specified period of inactivity has passed since the last call. Throttling ensures a function executes AT MOST once per specified time interval, regardless of how many times it's triggered.",
+  "detailedAnswer": "Debouncing is ideal for search-box autocomplete; rather than firing an API call on every keystroke, it waits until the user has paused typing for a set duration before actually firing the request, resetting the timer on every new keystroke.\n\nThrottling is ideal for scroll or resize event handlers, which can fire dozens of times per second; the handler runs at most once per fixed interval regardless of how rapidly the underlying event fires, ensuring consistent, predictable execution frequency.",
+  "keyPoints": [
+    "Debounce: waits for a pause in activity before executing — good for search input, form validation",
+    "Throttle: executes at a fixed maximum rate regardless of trigger frequency — good for scroll/resize handlers",
+    "Both prevent excessive function calls, but solve different problems (waiting for quiet vs limiting execution rate)"
+  ],
+  "commonMistakes": [
+    "Using throttling when debouncing would be more appropriate for search input",
+    "Not resetting the debounce timer correctly on each new event",
+    "Confusing the two techniques' underlying goals"
+  ],
+  "followUpQuestions": [
+    "How would you implement a debounce function from scratch?",
+    "Why is throttling preferred over debouncing for scroll event handlers?",
+    "What would happen if you used debouncing instead of throttling for a scroll handler?"
+  ],
+  "realWorldExample": "A search autocomplete feature debounces the API call until the user pauses typing for 300ms, while an infinite-scroll feature throttles its scroll handler to check position at most once every 200ms.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function debounce(fn, delay) {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the wait-for-pause behavior of debounce from the fixed-rate limiting of throttle.",
+  "tags": ["JavaScript", "Debounce", "Throttle", "Interview"],
+  "relatedTopics": ["Event Handling", "Performance Optimization", "setTimeout"],
+  "references": ["MDN Web Docs - setTimeout"]
+},
+{
+  "id": "js-017",
+  "category": "JavaScript",
+  "topic": "Optional Chaining and Nullish Coalescing",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between null-checking with Optional Chaining (?.) and the Nullish Coalescing Operator (??)?",
+  "shortAnswer": "Optional Chaining (?.) safely accesses a nested property, short-circuiting to undefined if any part of the chain is null/undefined, instead of throwing an error. Nullish Coalescing (??) provides a default value specifically when the left side is null or undefined (NOT for other falsy values like 0 or \"\").",
+  "detailedAnswer": "user?.address?.city safely attempts to access city, returning undefined immediately if user or user.address happens to be null or undefined at any point, instead of throwing a runtime error that would otherwise crash the application.\n\nvalue ?? \"default\" returns \"default\" only if value is specifically null or undefined; critically, this is different from the older || operator, which would also incorrectly override other legitimately falsy values like 0, an empty string, or false, even when those values were intentionally set and valid.",
+  "keyPoints": [
+    "?. (optional chaining): short-circuits to undefined safely, avoiding a runtime error when accessing nested properties",
+    "?? (nullish coalescing): defaults ONLY for null/undefined, unlike || which incorrectly also overrides 0, \"\", false",
+    "Commonly combined: user?.settings?.theme ?? \"light\" — safe access with a correct, non-overzealous default"
+  ],
+  "commonMistakes": [
+    "Using || instead of ?? and accidentally overriding valid falsy values like 0 or an empty string",
+    "Assuming optional chaining prevents all errors rather than just property access errors",
+    "Not combining ?. and ?? together for both safe access and correct defaulting"
+  ],
+  "followUpQuestions": [
+    "Why is ?? preferred over || for setting default values?",
+    "What does user?.address?.city return if address is null?",
+    "Can optional chaining be used to safely call a method that might not exist?"
+  ],
+  "realWorldExample": "A settings panel uses user?.settings?.theme ?? \"light\" to safely access a nested theme preference and fall back to a light theme default only if the value is truly null or undefined, not if it's an intentional falsy value.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const city = user?.address?.city;\nconst theme = user?.settings?.theme ?? 'light';\n\nconst count = 0;\nconsole.log(count || 10); // 10 (wrong, overrides valid 0)\nconsole.log(count ?? 10); // 0 (correct)"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain both operators and specifically why ?? fixes the falsy-value bug present in ||.",
+  "tags": ["JavaScript", "Optional Chaining", "Nullish Coalescing", "Interview"],
+  "relatedTopics": ["null vs undefined", "Logical Operators", "ES2020 Features"],
+  "references": ["MDN Web Docs - Optional chaining"]
+},
+{
+  "id": "js-018",
+  "category": "JavaScript",
+  "topic": "forEach vs map",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between forEach() and map()?",
+  "shortAnswer": "forEach() executes a function for each element but returns undefined — used purely for side effects. map() executes a function for each element AND returns a new array containing the transformed results.",
+  "detailedAnswer": "forEach() is designed for performing an action on each element without caring about a return value, such as logging each item or updating the DOM; its return value is always undefined, and it cannot be meaningfully chained with further array methods.\n\nmap() is specifically designed for transformation, expecting a value to be returned for each element, collecting those return values into a brand new array that can be further chained with additional array methods.",
+  "keyPoints": [
+    "forEach(): for side effects only, always returns undefined, cannot be chained meaningfully",
+    "map(): for transformation, returns a new array, CAN be chained with other array methods",
+    "Using map() when you don't need the returned array (ignoring it) is a common code smell — use forEach() instead"
+  ],
+  "commonMistakes": [
+    "Using map() purely for side effects and discarding its returned array",
+    "Trying to chain further array methods off of forEach()'s undefined return value",
+    "Confusing forEach()'s lack of return with map()'s transformation purpose"
+  ],
+  "followUpQuestions": [
+    "Why is it considered a code smell to use map() when you don't need the returned array?",
+    "Can forEach() be chained with .filter() afterward?",
+    "When would you choose forEach() over map()?"
+  ],
+  "realWorldExample": "A developer uses forEach() to log each item in an array for debugging, but uses map() to transform an array of user objects into an array of just their names.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "arr.forEach(item => console.log(item)); // side effect, no return\nconst names = users.map(user => user.name); // transformation, new array"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish side-effect usage (forEach) from transformation usage (map) with correct return-value understanding.",
+  "tags": ["JavaScript", "forEach", "map", "Interview"],
+  "relatedTopics": ["map, filter, reduce", "Array Methods", "Functional Programming"],
+  "references": ["MDN Web Docs - Array.prototype.forEach"]
+},
+{
+  "id": "js-019",
+  "category": "JavaScript",
+  "topic": "CommonJS vs ES Modules",
+  "difficulty": "Medium",
+  "question": "What is the Module System in JavaScript? Compare CommonJS and ES Modules.",
+  "shortAnswer": "CommonJS (require/module.exports) is Node.js's original, synchronous module system. ES Modules (import/export) is the official, standardized JavaScript module system, supporting static analysis and asynchronous loading, now used in both browsers and modern Node.js.",
+  "detailedAnswer": "CommonJS loads modules synchronously at runtime; requiring a module immediately executes and returns the module's exports, which works fine in Node.js but is unsuitable for browsers where network-loaded files would need to block execution.\n\nES Modules use static import/export syntax that can be analyzed at build time before actually running the code, enabling tree-shaking where bundlers can strip out unused exports, and native asynchronous loading support in browsers. Modern Node.js supports both systems, and ES Modules is now the standardized, forward-looking system for both browser and server-side JavaScript.",
+  "keyPoints": [
+    "CommonJS: require()/module.exports, synchronous, Node.js's original module system",
+    "ES Modules: import/export, static structure enables tree-shaking, natively supported in modern browsers",
+    "Tree-shaking: bundlers can eliminate unused exported code, reducing final bundle size — only possible with ESM's static structure"
+  ],
+  "commonMistakes": [
+    "Assuming CommonJS supports tree-shaking the way ES Modules do",
+    "Mixing require() and import syntax inconsistently in the same project without proper configuration",
+    "Not knowing modern Node.js requires .mjs or \"type\": \"module\" to use ES Modules"
+  ],
+  "followUpQuestions": [
+    "Why does ES Modules' static structure enable tree-shaking while CommonJS doesn't?",
+    "How does modern Node.js distinguish between CommonJS and ES Module files?",
+    "Why is CommonJS's synchronous loading unsuitable for browsers?"
+  ],
+  "realWorldExample": "A modern web application bundler uses ES Modules' static import/export structure to tree-shake unused code, significantly reducing the final production bundle size.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "// CommonJS\nconst fs = require('fs');\nmodule.exports = myFunction;\n\n// ES Modules\nimport fs from 'fs';\nexport default myFunction;"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the synchronous-vs-static distinction and describe tree-shaking as a key ESM benefit.",
+  "tags": ["JavaScript", "CommonJS", "ES Modules", "Interview"],
+  "relatedTopics": ["Node.js", "Bundlers", "Tree-Shaking"],
+  "references": ["MDN Web Docs - JavaScript modules"]
+},
+{
+  "id": "js-020",
+  "category": "JavaScript",
+  "topic": "Generator Functions",
+  "difficulty": "Hard",
+  "question": "What is a JavaScript Generator Function? What does yield do?",
+  "shortAnswer": "A Generator Function (declared with function*) can PAUSE its execution at any yield statement and later RESUME from exactly where it left off, producing a sequence of values over multiple separate calls rather than all at once.",
+  "detailedAnswer": "Calling a generator function doesn't immediately execute its body; instead, it returns a special Generator/Iterator object. Each call to .next() on this object resumes execution from wherever it last paused, runs until the next yield statement, returns that yielded value wrapped as {value, done}, and pauses again.\n\nThis enables lazy evaluation, generating values one at a time only when actually needed, which is memory-efficient for potentially large or even infinite sequences. Generators are directly usable with for...of loops since they implement the iterable protocol.",
+  "keyPoints": [
+    "function* name() { yield value; }: defines a generator; calling it returns an iterator, doesn't run the body immediately",
+    ".next(): resumes execution until the next yield, returning {value, done} and pausing again",
+    "Enables lazy, on-demand value generation — useful for large/infinite sequences without computing everything upfront"
+  ],
+  "commonMistakes": [
+    "Assuming calling a generator function immediately executes its body",
+    "Not knowing generators implement the iterable protocol and work with for...of",
+    "Confusing the returned {value, done} object with just the raw value"
+  ],
+  "followUpQuestions": [
+    "Why doesn't calling a generator function immediately run its body?",
+    "How would you use a generator to produce an infinite sequence lazily?",
+    "How do generators relate to the iterable protocol and for...of loops?"
+  ],
+  "realWorldExample": "A generator function lazily produces an infinite sequence of Fibonacci numbers, computing only as many values as are actually consumed by the calling code.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "function* fibonacci() {\n  let [a, b] = [0, 1];\n  while (true) {\n    yield a;\n    [a, b] = [b, a + b];\n  }\n}\n\nconst gen = fibonacci();\ngen.next().value; // 0\ngen.next().value; // 1"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the pause-resume mechanism of yield and describe use cases like lazy or infinite sequences.",
+  "tags": ["JavaScript", "Generators", "yield", "Interview"],
+  "relatedTopics": ["Iterators", "for...of", "Lazy Evaluation"],
+  "references": ["MDN Web Docs - function*"]
+},
+{
+  "id": "js-021",
+  "category": "JavaScript",
+  "topic": "Object.freeze vs const",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Object.freeze() and const for Immutability?",
+  "shortAnswer": "const only prevents REASSIGNING the variable binding itself — the object it points to can still be mutated freely. Object.freeze() actually prevents modification of the object's own properties (though only shallowly, not nested objects).",
+  "detailedAnswer": "const obj = {a: 1} prevents reassigning the variable to a new object, but mutating the existing object's property works completely fine, since const says nothing about the object's internal mutability, only about the variable binding.\n\nObject.freeze(obj) genuinely prevents adding, removing, or modifying the object's own properties, silently failing in non-strict mode or throwing a TypeError in strict mode. Critically, Object.freeze() is shallow; if obj has a nested object as a property, that nested object is not frozen and remains fully mutable, requiring a recursive deep freeze implementation for full immutability.",
+  "keyPoints": [
+    "const: prevents variable REASSIGNMENT only — the object's properties remain fully mutable",
+    "Object.freeze(): prevents modifying the object's OWN properties — but only shallowly, one level deep",
+    "Nested objects inside a frozen object are NOT automatically frozen — a recursive deep-freeze is needed for full immutability"
+  ],
+  "commonMistakes": [
+    "Assuming const makes an object's properties immutable",
+    "Assuming Object.freeze() deeply freezes nested objects automatically",
+    "Not checking whether the code runs in strict mode when relying on freeze failures to throw errors"
+  ],
+  "followUpQuestions": [
+    "How would you implement a recursive deep freeze?",
+    "Does Object.freeze() throw an error or silently fail when modification is attempted?",
+    "Why doesn't const prevent mutation of an object's properties?"
+  ],
+  "realWorldExample": "A configuration object is frozen with Object.freeze() to prevent accidental modification at the top level, but a nested settings object within it remains mutable unless deep-frozen recursively.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const obj = Object.freeze({ a: 1, nested: { b: 2 } });\nobj.a = 2; // fails silently or throws in strict mode\nobj.nested.b = 3; // succeeds! nested object is NOT frozen"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish variable-binding immutability (const) from object-property immutability (Object.freeze) and note the shallow limitation.",
+  "tags": ["JavaScript", "Object.freeze", "const", "Immutability", "Interview"],
+  "relatedTopics": ["Shallow vs Deep Copy", "var, let, const", "Strict Mode"],
+  "references": ["MDN Web Docs - Object.freeze"]
+},
+{
+  "id": "js-022",
+  "category": "JavaScript",
+  "topic": "Currying",
+  "difficulty": "Medium",
+  "question": "What is Currying in JavaScript? Give a practical example.",
+  "shortAnswer": "Currying transforms a function that takes multiple arguments into a sequence of functions, each taking a SINGLE argument, returning a new function until all arguments have been provided.",
+  "detailedAnswer": "A regular function add(a, b, c) takes all three arguments at once. A curried version instead takes them one at a time; calling it with the first argument returns a new function expecting the second, and so on until the final call returns the actual result.\n\nThis is practically useful for creating specialized, partially-applied functions, such as a reusable function pre-configured with a specific tax rate that can then be applied to many different prices without repeating the tax rate argument every time. Libraries like Lodash provide a curry() utility to automatically convert any regular multi-argument function into its curried equivalent.",
+  "keyPoints": [
+    "Transforms fn(a, b, c) into fn(a)(b)(c) — each call takes one argument and returns a new function",
+    "Practical use: creating specialized, pre-configured functions by \"locking in\" some arguments early (partial application)",
+    "Closures are the underlying mechanism that makes currying possible — each returned function \"remembers\" prior arguments"
+  ],
+  "commonMistakes": [
+    "Confusing currying with simple partial application without understanding the single-argument-at-a-time chain",
+    "Not recognizing closures as the mechanism enabling currying",
+    "Overusing currying in contexts where it adds unnecessary complexity"
+  ],
+  "followUpQuestions": [
+    "How do closures enable currying to work?",
+    "What is the practical benefit of a curried function over a regular multi-argument one?",
+    "How would you write a generic curry() utility function?"
+  ],
+  "realWorldExample": "A tax calculation function is curried to create a reusable addTax function pre-configured with a specific tax rate, applied to many different prices.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const curriedAdd = (a) => (b) => (c) => a + b + c;\ncurriedAdd(1)(2)(3); // 6\n\nconst addTax = (rate) => (price) => price + price * rate;\nconst addSalesTax = addTax(0.08);\naddSalesTax(100); // 108"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the one-argument-at-a-time transformation and describe closures as the underlying mechanism.",
+  "tags": ["JavaScript", "Currying", "Closures", "Interview"],
+  "relatedTopics": ["Higher-Order Functions", "Closures", "Functional Programming"],
+  "references": ["MDN Web Docs - Closures"]
+},
+{
+  "id": "js-023",
+  "category": "JavaScript",
+  "topic": "slice vs splice",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between Array.prototype.slice() and Array.prototype.splice()?",
+  "shortAnswer": "slice() returns a NEW array containing a portion of the original, WITHOUT modifying the original array. splice() MODIFIES the original array in place (adding/removing elements), and returns the removed elements.",
+  "detailedAnswer": "array.slice(start, end) is non-destructive; it returns a shallow copy of a portion of the array from start up to but not including end, leaving the original array completely untouched, commonly used to safely extract a sub-array or create a shallow copy of an entire array.\n\narray.splice(start, deleteCount, ...itemsToInsert) is destructive; it directly mutates the original array by removing deleteCount elements starting at start, optionally inserting new items at that position, and returns an array of whatever elements were actually removed.",
+  "keyPoints": [
+    "slice(): non-destructive, returns a NEW array, original is unchanged — good for safe copying/extraction",
+    "splice(): destructive, MUTATES the original array directly, returns the removed elements — good for in-place edits",
+    "Easy to confuse due to similar names — slice = \"give me a copy of a piece,\" splice = \"cut/insert directly into this array\""
+  ],
+  "commonMistakes": [
+    "Confusing slice() and splice() due to their similar names",
+    "Expecting slice() to modify the original array",
+    "Not realizing splice() returns the removed elements, not the modified array"
+  ],
+  "followUpQuestions": [
+    "How would you use splice() to insert an element without removing any?",
+    "What does slice() return if called with no arguments?",
+    "Why is slice() considered safer to use than splice() in functional programming contexts?"
+  ],
+  "realWorldExample": "A React application avoids using splice() directly on state arrays since it mutates in place, preferring slice() to create a new array for immutable state updates.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const arr = [1, 2, 3, 4, 5];\nconst copy = arr.slice(1, 3); // [2, 3], arr unchanged\n\nconst removed = arr.splice(1, 2); // removes [2, 3], arr is now [1, 4, 5]"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish non-destructive slice() from destructive splice() with correct syntax.",
+  "tags": ["JavaScript", "slice", "splice", "Array Methods", "Interview"],
+  "relatedTopics": ["Shallow vs Deep Copy", "Immutability", "Array Methods"],
+  "references": ["MDN Web Docs - Array.prototype.splice"]
+},
+{
+  "id": "js-024",
+  "category": "JavaScript",
+  "topic": "Set and Map",
+  "difficulty": "Medium",
+  "question": "What is the JavaScript Set and Map object? How are they different from arrays and plain objects?",
+  "shortAnswer": "Set stores a collection of UNIQUE values (no duplicates allowed, automatically enforced). Map stores key-value pairs where keys can be ANY type (not just strings, unlike plain objects), and it maintains insertion order.",
+  "detailedAnswer": "A Set automatically de-duplicates; attempting to add a value that already exists is silently ignored, making it ideal for quickly removing duplicates from an array or efficiently checking membership with O(1) average performance versus an array's O(n) includes check.\n\nA Map is similar to a plain object for storing key-value pairs, but keys can be objects, functions, or any value type, it maintains a reliable insertion order when iterated, provides a direct .size property, and avoids accidental collisions with inherited prototype properties that plain objects can sometimes suffer from.",
+  "keyPoints": [
+    "Set: automatically enforces uniqueness — ideal for deduplication and fast membership checks",
+    "Map: keys can be ANY type (objects, functions, etc.), unlike plain objects which coerce keys to strings",
+    "Both provide .size directly and guarantee reliable iteration order, unlike plain objects/arrays in certain edge cases"
+  ],
+  "commonMistakes": [
+    "Using a plain object as a Map substitute when non-string keys are needed",
+    "Not knowing Set automatically silently ignores duplicate additions",
+    "Using Object.keys(obj).length instead of a Map's direct .size property"
+  ],
+  "followUpQuestions": [
+    "Why would you use a Map instead of a plain object for key-value storage?",
+    "How would you deduplicate an array using a Set?",
+    "What is the time complexity of checking membership in a Set versus an array?"
+  ],
+  "realWorldExample": "A caching layer uses a Map with object keys to associate metadata with specific object instances, something a plain object couldn't do since its keys are coerced to strings.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const unique = [...new Set([1, 2, 2, 3])]; // [1, 2, 3]\n\nconst map = new Map();\nconst key = {};\nmap.set(key, 'value');\nmap.get(key); // 'value'"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain Set's uniqueness enforcement and Map's flexible key types compared to plain objects.",
+  "tags": ["JavaScript", "Set", "Map", "Interview"],
+  "relatedTopics": ["Data Structures", "Arrays", "Objects"],
+  "references": ["MDN Web Docs - Map", "MDN Web Docs - Set"]
+},
+{
+  "id": "js-025",
+  "category": "JavaScript",
+  "topic": "Strict Mode",
+  "difficulty": "Easy",
+  "question": "What is \"Strict Mode\" ('use strict') in JavaScript? Why is it recommended?",
+  "shortAnswer": "Strict Mode is an opt-in restricted variant of JavaScript that catches common mistakes by throwing errors for previously \"silently allowed\" bad practices, making debugging easier and code more predictable/secure.",
+  "detailedAnswer": "Adding 'use strict' at the top of a file or function enables several important safety changes: assigning to an undeclared variable throws a ReferenceError instead of silently creating an accidental global variable, assigning to a read-only or non-existent property throws a TypeError instead of silently failing, this inside a regular standalone function call is undefined instead of defaulting to the global object, and duplicate function parameter names are disallowed.\n\nES6 modules and classes are automatically in strict mode by default without needing the explicit directive, which is one reason modern JavaScript codebases using modules and classes are inherently safer than older, non-strict scripts.",
+  "keyPoints": [
+    "Catches common mistakes as explicit errors instead of allowing silent, hard-to-debug failures",
+    "Undeclared variable assignment throws a ReferenceError instead of silently creating an accidental global",
+    "ES6 modules and class bodies are automatically strict mode by default — no explicit directive needed"
+  ],
+  "commonMistakes": [
+    "Assuming all JavaScript code runs in strict mode by default outside of modules/classes",
+    "Not knowing accidental global variable creation is prevented specifically by strict mode",
+    "Forgetting duplicate function parameter names are disallowed in strict mode"
+  ],
+  "followUpQuestions": [
+    "Why do ES6 modules automatically run in strict mode without an explicit directive?",
+    "What happens to 'this' inside a standalone function call in strict mode versus non-strict mode?",
+    "What error does strict mode throw for an undeclared variable assignment?"
+  ],
+  "realWorldExample": "A developer forgets to declare a variable with let, and in strict mode this immediately throws a ReferenceError instead of silently creating a global variable that could cause bugs elsewhere.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "'use strict';\nx = 10; // ReferenceError: x is not defined"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe strict mode's safety benefits and know that ES6 modules/classes enable it automatically.",
+  "tags": ["JavaScript", "Strict Mode", "Interview"],
+  "relatedTopics": ["ES6 Modules", "this Keyword", "Error Handling"],
+  "references": ["MDN Web Docs - Strict mode"]
 }
 ];
