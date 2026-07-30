@@ -7425,5 +7425,831 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["Git", "GitHub Actions", "CI/CD", "Interview"],
   "relatedTopics": ["CI/CD", "Automation", "Pull Request"],
   "references": ["GitHub Docs - docs.github.com"]
+},
+{
+  "id": "linux-001",
+  "category": "Linux",
+  "topic": "File Permissions",
+  "difficulty": "Easy",
+  "question": "What is the difference between chmod 755 and chmod 644? Explain Linux file permissions.",
+  "shortAnswer": "Linux permissions use 3 digits for owner, group, others — each digit sums Read(4), Write(2), Execute(1). 755 = rwxr-xr-x. 644 = rw-r--r--.",
+  "detailedAnswer": "Every Linux file has three permission sets: Owner, Group, and Others, each with Read (4), Write (2), and Execute (1) permissions that sum together.\n\n755 means the owner has full access, since 7 equals read+write+execute, while group and others have read+execute (5), typical for scripts and directories, where execute on a directory means being able to enter or traverse it. 644 means the owner has read+write (6), while group and others have read-only (4), typical for regular data files.",
+  "keyPoints": [
+    "4 = read, 2 = write, 1 = execute — sum them for each permission set",
+    "755: full access for owner, read+execute for group/others (scripts, directories)",
+    "644: read+write for owner, read-only for group/others (regular files, config files)"
+  ],
+  "commonMistakes": [
+    "Confusing what execute permission means on a directory versus a file",
+    "Setting overly permissive permissions like 777 unnecessarily",
+    "Forgetting the three permission sets apply separately to owner, group, and others"
+  ],
+  "followUpQuestions": [
+    "What does execute permission mean when applied to a directory?",
+    "How would you set permissions so only the owner can read and write a file?",
+    "What is the difference between chmod's numeric and symbolic modes?"
+  ],
+  "realWorldExample": "A deployment script is set to 755 so it can be executed by anyone, while a configuration file containing sensitive settings is set to 600 so only the owner can read or write it.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "chmod 755 deploy.sh\nchmod 644 config.txt"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly decode the numeric permission digits and give appropriate real-world use cases.",
+  "tags": ["Linux", "chmod", "File Permissions", "Interview"],
+  "relatedTopics": ["File System Hierarchy", "sudo", "Users and Groups"],
+  "references": ["Linux man pages - chmod(1)"]
+},
+{
+  "id": "linux-002",
+  "category": "Linux",
+  "topic": "Processes and Daemons",
+  "difficulty": "Medium",
+  "question": "What is the difference between a Process and a Daemon in Linux? What is a Zombie Process?",
+  "shortAnswer": "A regular process is tied to a terminal/session. A Daemon runs in the background, detached from any terminal. A Zombie Process has finished but still has a process table entry.",
+  "detailedAnswer": "A Daemon, often ending in 'd' such as sshd, httpd, or crond, is a background process running independently of any controlling terminal, typically started at boot to provide a continuous service.\n\nA Zombie Process occurs when a child has finished executing but its parent hasn't yet read its exit status via wait(), so the process entry lingers in the process table until reaped. An Orphan Process is one whose parent terminated first; it's automatically adopted by init or systemd (PID 1).",
+  "keyPoints": [
+    "Daemon: background service, no controlling terminal, often auto-started at boot",
+    "Zombie: child finished, but parent hasn't called wait() to read exit status",
+    "Orphan: parent died first — automatically re-parented to init (PID 1)"
+  ],
+  "commonMistakes": [
+    "Confusing zombie processes with orphan processes",
+    "Assuming zombies consume significant system resources beyond a process table slot",
+    "Not knowing daemons are typically started at boot and run independently of any terminal"
+  ],
+  "followUpQuestions": [
+    "How would you clean up accumulated zombie processes?",
+    "What process adopts an orphaned process?",
+    "What are some common examples of Linux daemons?"
+  ],
+  "realWorldExample": "The sshd daemon runs continuously in the background, accepting incoming SSH connections without being tied to any user's terminal session.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish daemons from regular processes and explain the zombie/orphan process lifecycle.",
+  "tags": ["Linux", "Process", "Daemon", "Interview"],
+  "relatedTopics": ["Process Management", "systemd", "ps aux"],
+  "references": ["Linux man pages - wait(2)"]
+},
+{
+  "id": "linux-003",
+  "category": "Linux",
+  "topic": "grep, awk, sed",
+  "difficulty": "Medium",
+  "question": "What is the difference between grep, awk, and sed?",
+  "shortAnswer": "grep: search/filter lines matching a pattern. sed: stream editor for find-and-replace/text transformation. awk: full pattern-scanning language for structured/columnar text.",
+  "detailedAnswer": "grep \"ERROR\" app.log finds all error lines. sed 's/foo/bar/g' file.txt replaces all occurrences of 'foo' with 'bar' as text streams through.\n\nawk '{print $1, $3}' file.txt prints the 1st and 3rd whitespace-separated columns of every line, and supports variables, conditionals, and loops for more complex processing. These tools are commonly combined in pipelines, such as counting unique IPs that got 404 errors from an access log.",
+  "keyPoints": [
+    "grep: filtering — \"find me lines that match this pattern\"",
+    "sed: transformation — \"replace this text with that text\"",
+    "awk: structured processing — \"extract and compute over columns\""
+  ],
+  "commonMistakes": [
+    "Using grep when column-based extraction (awk) is actually needed",
+    "Forgetting sed operates on a stream rather than modifying files by default (needs -i for in-place)",
+    "Not knowing awk supports variables, conditionals, and loops for more complex logic"
+  ],
+  "followUpQuestions": [
+    "How would you count occurrences of a pattern using these tools combined?",
+    "How does sed's -i flag change its behavior?",
+    "What kind of processing is awk uniquely suited for compared to grep and sed?"
+  ],
+  "realWorldExample": "A sysadmin pipes cat access.log | grep \"404\" | awk '{print $1}' | sort | uniq -c to count unique IPs that triggered 404 errors.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "cat access.log | grep \"404\" | awk '{print $1}' | sort | uniq -c"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the primary purpose of each tool and demonstrate how they combine in pipelines.",
+  "tags": ["Linux", "grep", "awk", "sed", "Interview"],
+  "relatedTopics": ["Shell Pipelines", "Text Processing", "Regular Expressions"],
+  "references": ["Linux man pages - grep(1), sed(1), awk(1)"]
+},
+{
+  "id": "linux-004",
+  "category": "Linux",
+  "topic": "Hard Links vs Soft Links",
+  "difficulty": "Medium",
+  "question": "What are Hard Links and Soft (Symbolic) Links? What's the difference?",
+  "shortAnswer": "A Hard Link is another directory entry pointing to the SAME underlying data (inode) as the original file. A Soft Link is a separate file that just contains a PATH pointing to the original file.",
+  "detailedAnswer": "A hard link creates a new filename that points to the exact same inode, the actual data on disk, as the original; both names are equally real, and the underlying data is only truly deleted once all hard links to it are removed. Hard links cannot span across different filesystems or partitions and cannot link to directories.\n\nA symbolic link is a completely separate small file that simply stores the path string to the target; if the original file is deleted or moved, the symlink becomes broken, or dangling, pointing to nothing. Symlinks can span filesystems and can link to directories.",
+  "keyPoints": [
+    "Hard link: same inode, same data — deleting the \"original\" doesn't affect a hard link, data persists",
+    "Soft link: stores just a path — becomes broken/dangling if the target is deleted or moved",
+    "Hard links: same filesystem only, no directories. Soft links: cross-filesystem OK, directories OK"
+  ],
+  "commonMistakes": [
+    "Assuming deleting the original file breaks a hard link (it doesn't, since data persists via the inode)",
+    "Trying to create a hard link across different filesystems",
+    "Not knowing symlinks can become dangling when the target is moved or deleted"
+  ],
+  "followUpQuestions": [
+    "Why can't hard links span different filesystems?",
+    "What happens to a symlink when its target file is deleted?",
+    "Why can't hard links point to directories?"
+  ],
+  "realWorldExample": "A system administrator creates a symlink for a frequently accessed config file so it can be referenced from multiple locations, while a hard link ensures a critical file's data survives even if one of its directory entries is removed.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "ln original.txt hardlink.txt\nln -s original.txt symlink.txt"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the inode-based nature of hard links versus the path-based nature of symlinks.",
+  "tags": ["Linux", "Hard Link", "Symbolic Link", "Interview"],
+  "relatedTopics": ["Inodes", "File System", "ln command"],
+  "references": ["Linux man pages - ln(1)"]
+},
+{
+  "id": "linux-005",
+  "category": "Linux",
+  "topic": "File System Hierarchy",
+  "difficulty": "Medium",
+  "question": "What is the Linux File System Hierarchy? Explain key directories (/etc, /var, /usr, /bin).",
+  "shortAnswer": "Linux follows the Filesystem Hierarchy Standard (FHS) — /etc holds configuration files, /var holds variable/changing data (logs), /usr holds user programs/libraries, /bin holds essential executable binaries.",
+  "detailedAnswer": "/etc contains system-wide configuration files, such as network settings and service configs, mostly plain text edited by admins. /var contains data that changes frequently during system operation, such as logs, mail spools, and cached data.\n\n/usr contains the majority of user-installed programs, libraries, and documentation, historically meaning 'Unix System Resources.' /bin, often symlinked to /usr/bin on modern systems, holds essential command binaries needed even in single-user or recovery mode. /home holds individual users' personal directories.",
+  "keyPoints": [
+    "/etc: configuration files — mostly plain text, admin-edited",
+    "/var: variable data — logs, caches, anything that changes during normal operation",
+    "/bin, /sbin: essential executables needed for basic system operation, even in recovery mode"
+  ],
+  "commonMistakes": [
+    "Confusing /etc (configuration) with /var (variable runtime data)",
+    "Not knowing why /bin needs to remain available even in recovery mode",
+    "Storing changing runtime data in /usr instead of /var"
+  ],
+  "followUpQuestions": [
+    "Why must /bin remain functional even in single-user/recovery mode?",
+    "What kind of data would you expect to find in /var/log?",
+    "How does /usr differ conceptually from /bin?"
+  ],
+  "realWorldExample": "A sysadmin checks /var/log/syslog for recent system errors while /etc/nginx/nginx.conf holds the web server's configuration.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly describe the purpose of each key directory in the Linux filesystem hierarchy.",
+  "tags": ["Linux", "File System Hierarchy", "Interview"],
+  "relatedTopics": ["Linux Basics", "System Administration", "File Permissions"],
+  "references": ["Filesystem Hierarchy Standard - refspecs.linuxfoundation.org"]
+},
+{
+  "id": "linux-006",
+  "category": "Linux",
+  "topic": "kill vs kill -9 vs killall",
+  "difficulty": "Medium",
+  "question": "What is the difference between kill, kill -9, and killall?",
+  "shortAnswer": "kill sends a termination signal (default SIGTERM, graceful) to a process by PID. kill -9 sends SIGKILL, an immediate forceful termination that cannot be caught/ignored. killall kills all processes matching a NAME rather than a specific PID.",
+  "detailedAnswer": "kill <PID> sends SIGTERM by default, a polite request asking the process to terminate gracefully, allowing it to clean up resources, save state, or close file handles before exiting; a well-behaved program can intercept this signal to perform cleanup.\n\nkill -9 <PID> sends SIGKILL, which cannot be caught, blocked, or ignored by the process; the kernel terminates it immediately and unconditionally, useful for genuinely stuck processes but risks leaving resources in an inconsistent state since no cleanup occurs. killall <process-name> sends a signal to all processes matching that name, rather than requiring a specific PID lookup first.",
+  "keyPoints": [
+    "SIGTERM (default, signal 15): graceful request — process can catch it and clean up before exiting",
+    "SIGKILL (signal 9): immediate, forceful, uncatchable — use only when SIGTERM doesn't work",
+    "killall: targets by process NAME, killing all matching instances at once — kill requires a specific PID"
+  ],
+  "commonMistakes": [
+    "Using kill -9 as the default instead of trying SIGTERM first",
+    "Not knowing SIGKILL can leave resources in an inconsistent state due to no cleanup",
+    "Confusing killall with kill by assuming both require a PID"
+  ],
+  "referencesCheck": [],
+  "followUpQuestions": [
+    "Why should SIGTERM be tried before SIGKILL?",
+    "What risks does SIGKILL introduce by skipping cleanup?",
+    "How does killall differ from pkill?"
+  ],
+  "realWorldExample": "A sysadmin first tries kill <PID> to gracefully stop an unresponsive service, only resorting to kill -9 if the process still refuses to terminate.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "kill 1234\nkill -9 1234\nkillall nginx"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the graceful-versus-forceful distinction between SIGTERM and SIGKILL and describe killall's name-based targeting.",
+  "tags": ["Linux", "kill", "Signals", "Interview"],
+  "relatedTopics": ["Process Management", "ps aux", "Signals"],
+  "references": ["Linux man pages - kill(1), signal(7)"]
+},
+{
+  "id": "linux-007",
+  "category": "Linux",
+  "topic": "Environment Variables",
+  "difficulty": "Easy",
+  "question": "What are Environment Variables in Linux? How do you set them permanently vs temporarily?",
+  "shortAnswer": "Environment variables are key-value pairs available to processes running in a shell session, used for configuration (PATH, HOME, custom app settings). Temporary: export VAR=value. Permanent: added to shell config files like .bashrc or .profile.",
+  "detailedAnswer": "export MY_VAR=\"value\" sets a variable for the current shell session and any child processes spawned from it, but this is lost once the terminal session closes.\n\nTo make it permanent across sessions, the export line is added to a shell startup file: .bashrc, which runs for every new interactive bash shell, .bash_profile or .profile, which runs for login shells specifically, or system-wide /etc/environment for all users. echo $VAR_NAME displays a variable's current value, while env or printenv lists all currently set environment variables.",
+  "keyPoints": [
+    "export VAR=value: sets for the current session only, lost when the terminal closes",
+    "Add to ~/.bashrc (interactive shells) or ~/.profile (login shells) for persistence across sessions",
+    "PATH: the most commonly referenced environment variable — determines where the shell looks for executables"
+  ],
+  "commonMistakes": [
+    "Expecting a temporary export to persist across terminal sessions without adding it to a config file",
+    "Confusing .bashrc (interactive shells) with .profile (login shells)",
+    "Not reloading the shell config after editing it (forgetting to source the file)"
+  ],
+  "followUpQuestions": [
+    "How would you make an environment variable available system-wide for all users?",
+    "What's the difference between .bashrc and .bash_profile?",
+    "How would you view all currently set environment variables?"
+  ],
+  "realWorldExample": "A developer adds an API key as an environment variable in ~/.bashrc so it's automatically available in every new terminal session without re-exporting it manually.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "export API_KEY=\"abc123\"\necho 'export API_KEY=\"abc123\"' >> ~/.bashrc\nsource ~/.bashrc"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the temporary-versus-permanent distinction and know which config files to use for persistence.",
+  "tags": ["Linux", "Environment Variables", "Interview"],
+  "relatedTopics": ["Shell Configuration", "PATH", "Bash"],
+  "references": ["Bash Reference Manual - gnu.org"]
+},
+{
+  "id": "linux-008",
+  "category": "Linux",
+  "topic": "Shell Redirection and Pipes",
+  "difficulty": "Easy",
+  "question": "What is the difference between >, >>, and | in Linux shell?",
+  "shortAnswer": "> redirects output to a file, OVERWRITING it. >> redirects output to a file, APPENDING to existing content. | (pipe) sends the output of one command as the INPUT to another command.",
+  "detailedAnswer": "echo \"hello\" > file.txt writes 'hello' to file.txt, completely replacing any existing content, which is dangerous if used carelessly on an important file. echo \"world\" >> file.txt adds 'world' as a new line at the end of file.txt, preserving what was already there.\n\ncat file.txt | grep \"error\" takes the output of cat file.txt and feeds it directly as the input to grep, allowing commands to be chained together to build powerful multi-step data processing pipelines without needing intermediate temporary files.",
+  "keyPoints": [
+    "&gt;: overwrite redirect — completely replaces the file's existing content",
+    "&gt;&gt;: append redirect — adds to the end, preserving existing content",
+    "|: pipes output of one command directly into another — enables chaining commands into pipelines"
+  ],
+  "commonMistakes": [
+    "Accidentally using > instead of >> and overwriting important file content",
+    "Not understanding that pipes chain the stdout of one command to the stdin of the next",
+    "Forgetting redirection happens before the command executes in shell parsing order"
+  ],
+  "followUpQuestions": [
+    "What happens if you accidentally use > instead of >> on a log file?",
+    "How would you redirect both stdout and stderr to the same file?",
+    "Can you chain multiple pipes together in one command?"
+  ],
+  "realWorldExample": "A log rotation script uses >> to append new entries to a log file, while a data pipeline uses | to chain grep, awk, and sort together.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "echo \"hello\" > file.txt\necho \"world\" >> file.txt\ncat file.txt | grep \"error\""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish overwrite, append, and piping behavior with correct syntax.",
+  "tags": ["Linux", "Shell Redirection", "Pipes", "Interview"],
+  "relatedTopics": ["File Descriptors", "Bash", "Shell Scripting"],
+  "references": ["Bash Reference Manual - gnu.org"]
+},
+{
+  "id": "linux-009",
+  "category": "Linux",
+  "topic": "cron",
+  "difficulty": "Medium",
+  "question": "What is cron? How do you schedule a recurring task?",
+  "shortAnswer": "cron is a time-based job scheduler in Linux that runs commands/scripts automatically at specified intervals, configured via \"crontab\" entries.",
+  "detailedAnswer": "A crontab entry follows a specific 5-field time format, minute, hour, day-of-month, month, and day-of-week, followed by the command to execute; for example, a schedule running at minute 0, hour 2, every day would run a backup script every day at 2:00 AM.\n\ncrontab -e opens the current user's crontab for editing, while crontab -l lists current scheduled jobs. Cron is widely used for automated backups, log rotation, sending scheduled reports, and periodic cleanup tasks.",
+  "keyPoints": [
+    "Format: minute hour day-of-month month day-of-week command (5 fields + the command itself)",
+    "* in each field means \"every\" — e.g., * * * * * alone runs the command every single minute",
+    "crontab -e: edit your scheduled jobs. crontab -l: list current scheduled jobs"
+  ],
+  "commonMistakes": [
+    "Getting the field order wrong (minute, hour, day-of-month, month, day-of-week)",
+    "Forgetting cron jobs run with a different environment than an interactive shell (PATH issues)",
+    "Not testing the exact command syntax before scheduling it in crontab"
+  ],
+  "followUpQuestions": [
+    "How would you schedule a job to run every Monday at 9 AM?",
+    "Why might a script that works interactively fail when run via cron?",
+    "How would you view currently scheduled cron jobs?"
+  ],
+  "realWorldExample": "A sysadmin schedules a nightly backup script using cron with the entry '0 2 * * * /path/to/backup.sh', running it automatically every day at 2:00 AM.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "# crontab -e\n0 2 * * * /path/to/backup.sh"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly explain the 5-field cron format and describe crontab management commands.",
+  "tags": ["Linux", "cron", "Scheduling", "Interview"],
+  "relatedTopics": ["systemd Timers", "Shell Scripting", "Automation"],
+  "references": ["Linux man pages - crontab(5)"]
+},
+{
+  "id": "linux-010",
+  "category": "Linux",
+  "topic": "su vs sudo",
+  "difficulty": "Easy",
+  "question": "What is the difference between su and sudo?",
+  "shortAnswer": "su switches to another user entirely (typically root), requiring THAT user's password, and stays in that user context until you exit. sudo runs a SINGLE command with elevated (root) privileges, requiring YOUR OWN password, then returns to your normal user.",
+  "detailedAnswer": "su starts an entirely new shell session as the target user, commonly root, requiring the target user's password; you remain logged in as that user for every subsequent command until you explicitly exit that shell, which is powerful but risky since it's easy to forget you're operating with elevated privileges.\n\nsudo <command> executes just one specific command with root privileges, requiring only your own account password assuming your account is configured with sudo access in /etc/sudoers, then immediately returns you to your normal, unprivileged user context. Modern best practice favors sudo, since privilege elevation is explicit and scoped to individual commands.",
+  "keyPoints": [
+    "su: switches to and remains as another user (typically root) until you explicitly exit",
+    "sudo: elevates privileges for ONE command only, using YOUR OWN password, then returns to normal",
+    "Modern best practice favors sudo — scoped, explicit, and logged per-command elevation rather than a persistent root shell"
+  ],
+  "commonMistakes": [
+    "Using su and forgetting you're still operating as root for subsequent commands",
+    "Not knowing sudo access must be configured in /etc/sudoers",
+    "Assuming su and sudo require the same password (su requires the target user's password)"
+  ],
+  "followUpQuestions": [
+    "Why is sudo generally considered safer than su for modern systems?",
+    "What file configures which users have sudo access?",
+    "What password does sudo require compared to su?"
+  ],
+  "realWorldExample": "A developer uses sudo apt install to install a package with elevated privileges for just that one command, rather than switching entirely to a root shell with su.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "sudo apt update\nsu -"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the scope difference (persistent user switch vs single-command elevation) and recommend sudo as the safer modern practice.",
+  "tags": ["Linux", "su", "sudo", "Interview"],
+  "relatedTopics": ["File Permissions", "System Administration", "sudoers"],
+  "references": ["Linux man pages - su(1), sudo(8)"]
+},
+{
+  "id": "linux-011",
+  "category": "Linux",
+  "topic": "Shell Scripts and Shebang",
+  "difficulty": "Easy",
+  "question": "What is a Shell Script? What is the \"shebang\" line at the top of a script?",
+  "shortAnswer": "A shell script is a text file containing a sequence of shell commands, executed as a program. The shebang line (#!/bin/bash) at the very top tells the OS which interpreter should run the script.",
+  "detailedAnswer": "A shell script automates a sequence of commands that would otherwise need to be typed manually, one at a time, useful for repetitive tasks like deployment steps, backups, and environment setup.\n\nThe shebang line, starting with #! followed by a path, is technically a special comment that the kernel reads first when the script is executed directly; it tells the OS exactly which interpreter binary should be used to run the rest of the file's contents, allowing a script to be executed directly rather than needing to explicitly type the interpreter name every time.",
+  "keyPoints": [
+    "Shebang line must be the very first line of the file, starting with #!",
+    "#!/usr/bin/env bash is often preferred over a hardcoded #!/bin/bash — more portable across systems",
+    "Script needs execute permission (chmod +x script.sh) to be run directly as ./script.sh"
+  ],
+  "commonMistakes": [
+    "Forgetting to make the script executable with chmod +x before running it directly",
+    "Placing the shebang line anywhere other than the very first line",
+    "Hardcoding an interpreter path that may not exist on all systems instead of using env"
+  ],
+  "followUpQuestions": [
+    "Why is #!/usr/bin/env bash often preferred over a hardcoded path?",
+    "What happens if a script lacks a shebang line?",
+    "How would you make a script executable?"
+  ],
+  "realWorldExample": "A deployment script starts with #!/bin/bash and is made executable with chmod +x deploy.sh, allowing it to be run directly as ./deploy.sh.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "#!/bin/bash\necho \"Deploying application...\"\nchmod +x deploy.sh"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the shebang's role in interpreter selection and describe the executable permission requirement.",
+  "tags": ["Linux", "Shell Script", "Shebang", "Interview"],
+  "relatedTopics": ["Bash", "chmod", "Automation"],
+  "references": ["Bash Reference Manual - gnu.org"]
+},
+{
+  "id": "linux-012",
+  "category": "Linux",
+  "topic": "Symlink Removal Behavior",
+  "difficulty": "Medium",
+  "question": "What is the difference between a Soft Link and a Symbolic Link vs Directory Symlinks — and what happens on rm?",
+  "shortAnswer": "\"Soft link\" and \"symbolic link\" are the same thing — different names for the identical concept. Removing (rm) a symlink only deletes the link itself, never the actual target file/data.",
+  "detailedAnswer": "This is a common point of confusion for beginners: 'soft link' and 'symbolic link,' often abbreviated 'symlink,' are exactly the same concept, just referred to by different names interchangeably, as opposed to a 'hard link,' which is a genuinely different mechanism.\n\nWhen you rm a symlink, you're only deleting that small file containing the path reference; the actual target file or data it was pointing to remains completely untouched and intact. This is different from deleting the actual target file itself, which would leave any symlinks pointing to it broken or dangling, still existing as files but pointing to nothing valid.",
+  "keyPoints": [
+    "\"Soft link\" = \"symbolic link\" = \"symlink\" — all the same term, no functional difference",
+    "rm symlink_name: deletes only the link itself, target data is completely unaffected",
+    "Deleting the TARGET (not the link) leaves any symlinks pointing to it broken/dangling"
+  ],
+  "commonMistakes": [
+    "Assuming removing a symlink also deletes the target file's actual data",
+    "Confusing 'soft link' and 'symbolic link' as different concepts rather than the same thing",
+    "Not recognizing a broken symlink when the target has been deleted"
+  ],
+  "followUpQuestions": [
+    "How would you identify a broken symlink on the filesystem?",
+    "What happens if you rm the target file instead of the symlink?",
+    "Is there any functional difference between 'soft link' and 'symbolic link'?"
+  ],
+  "realWorldExample": "A developer removes a symlink pointing to a shared config file with rm, leaving the actual config file completely intact for other symlinks or direct references.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "rm symlink_name  # only removes the link, not the target"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clarify the terminology equivalence and correctly describe rm's effect on a symlink versus its target.",
+  "tags": ["Linux", "Symbolic Link", "rm", "Interview"],
+  "relatedTopics": ["Hard Links", "File System", "ln command"],
+  "references": ["Linux man pages - ln(1), rm(1)"]
+},
+{
+  "id": "linux-013",
+  "category": "Linux",
+  "topic": "top and htop",
+  "difficulty": "Easy",
+  "question": "What is top / htop? What key metrics do they show?",
+  "shortAnswer": "top (and the more user-friendly htop) provide a real-time, continuously updating view of system resource usage — CPU, memory, running processes, and their resource consumption.",
+  "detailedAnswer": "top displays a live-updating table showing overall CPU usage percentage broken down by user, system, and idle time, memory usage including total, used, free, and cached, and a list of running processes sorted by resource consumption, showing each process's PID, user, CPU%, memory%, and command.\n\nhtop is a more visually polished, interactive alternative, offering color-coded bars for CPU and memory usage per core, easier process filtering and sorting via keyboard shortcuts, and the ability to directly kill processes from within the interface without needing to note down a PID separately.",
+  "keyPoints": [
+    "Shows real-time CPU%, memory usage, and per-process resource consumption, continuously updating",
+    "Sort by CPU (P), memory (M), or other columns to quickly identify resource-hogging processes",
+    "htop: more user-friendly, color-coded, interactive alternative to the classic top command"
+  ],
+  "commonMistakes": [
+    "Not knowing how to sort processes by CPU or memory usage within top",
+    "Confusing top's default sort order with a fixed, unchangeable view",
+    "Overlooking htop's ability to kill processes directly from its interface"
+  ],
+  "followUpQuestions": [
+    "How would you sort processes by memory usage in top?",
+    "What advantages does htop offer over the classic top command?",
+    "What does the STAT column in top/ps output represent?"
+  ],
+  "realWorldExample": "A sysadmin runs htop to quickly identify a runaway process consuming excessive CPU on a slow-responding server.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "top\nhtop"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe the key metrics shown and identify htop as a more user-friendly alternative to top.",
+  "tags": ["Linux", "top", "htop", "Interview"],
+  "relatedTopics": ["ps aux", "Process Management", "System Monitoring"],
+  "references": ["Linux man pages - top(1), htop(1)"]
+},
+{
+  "id": "linux-014",
+  "category": "Linux",
+  "topic": "apt vs yum vs dpkg",
+  "difficulty": "Medium",
+  "question": "What is the difference between apt, yum, and dpkg?",
+  "shortAnswer": "dpkg is a low-level package MANAGER for Debian-based systems, installing individual .deb files directly. apt is a high-level tool built on top of dpkg that ALSO handles dependency resolution and downloading from repositories. yum is the equivalent high-level package manager for RPM-based systems (RedHat/CentOS/Fedora).",
+  "detailedAnswer": "dpkg -i package.deb installs a specific, already-downloaded .deb package file directly, but it does not automatically resolve or download any dependencies that package might need, leaving that entirely up to the user.\n\napt install package-name is the high-level tool most users actually interact with directly; it searches configured software repositories, automatically resolves and downloads any required dependencies, and internally uses dpkg to perform the actual low-level installation. yum, or its modern replacement dnf, serves the same high-level role as apt, but for RPM-based distributions like RedHat, CentOS, and Fedora, working with .rpm package files instead of .deb.",
+  "keyPoints": [
+    "dpkg: low-level, installs a specific .deb file directly, no automatic dependency resolution",
+    "apt: high-level, resolves dependencies automatically, fetches from configured repositories — used on Debian/Ubuntu",
+    "yum/dnf: the RPM-based equivalent of apt — used on RedHat/CentOS/Fedora systems"
+  ],
+  "commonMistakes": [
+    "Using dpkg directly and expecting automatic dependency resolution",
+    "Confusing apt (Debian-based) with yum (RPM-based) package management ecosystems",
+    "Not knowing apt internally uses dpkg for the actual installation step"
+  ],
+  "followUpQuestions": [
+    "Why would dpkg fail to install a package that apt would succeed at?",
+    "What is the RPM-based equivalent of apt?",
+    "How does apt resolve dependencies automatically?"
+  ],
+  "realWorldExample": "A sysadmin uses apt install nginx on Ubuntu, which automatically resolves and installs all of nginx's dependencies, rather than manually installing individual .deb files with dpkg.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "apt install nginx\ndpkg -i package.deb\nyum install httpd"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the low-level versus high-level relationship between dpkg and apt, and identify yum as the RPM equivalent.",
+  "tags": ["Linux", "apt", "yum", "dpkg", "Interview"],
+  "relatedTopics": ["Package Management", "Debian", "RedHat"],
+  "references": ["Debian Documentation - debian.org"]
+},
+{
+  "id": "linux-015",
+  "category": "Linux",
+  "topic": "SSH Public-Key Authentication",
+  "difficulty": "Medium",
+  "question": "What is SSH? How does public-key authentication work?",
+  "shortAnswer": "SSH (Secure Shell) provides an encrypted channel for remotely accessing and controlling another machine. Public-key authentication lets you log in using a cryptographic key pair instead of a password.",
+  "detailedAnswer": "A key pair is generated locally using ssh-keygen: a private key kept secret, never shared, and ideally password-protected, and a public key safe to share freely. The public key is copied to the ~/.ssh/authorized_keys file on the remote server you want to access.\n\nWhen connecting, the SSH client proves possession of the matching private key through a cryptographic challenge-response process; the server never sees or needs the private key itself, only proof that the client possesses it. This is generally considered more secure than password authentication, since it's immune to brute-force password guessing and enables convenient passwordless login for automated scripts.",
+  "keyPoints": [
+    "Key pair: private key (secret, stays on your machine) + public key (shared, copied to servers you access)",
+    "Public key goes into the remote server's ~/.ssh/authorized_keys file to grant access",
+    "More secure than password auth — immune to brute-force guessing, and enables passwordless automated access"
+  ],
+  "commonMistakes": [
+    "Sharing the private key instead of the public key",
+    "Not securing the private key with a passphrase",
+    "Forgetting to add the public key to the correct ~/.ssh/authorized_keys file on the remote server"
+  ],
+  "followUpQuestions": [
+    "Why is public-key authentication considered more secure than password authentication?",
+    "What file on the remote server stores authorized public keys?",
+    "How does the challenge-response process prove private key possession without transmitting it?"
+  ],
+  "realWorldExample": "A CI/CD pipeline uses SSH public-key authentication to deploy code to a production server without requiring a manually entered password.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "ssh-keygen -t ed25519\nssh-copy-id user@remote-server"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the key pair mechanism and the challenge-response process that avoids transmitting the private key.",
+  "tags": ["Linux", "SSH", "Public-Key Authentication", "Interview"],
+  "relatedTopics": ["Encryption", "Security", "Remote Access"],
+  "references": ["OpenSSH Documentation - openssh.com"]
+},
+{
+  "id": "linux-016",
+  "category": "Linux",
+  "topic": "Absolute vs Relative Paths",
+  "difficulty": "Easy",
+  "question": "What is a Symbolic vs Absolute vs Relative Path in Linux?",
+  "shortAnswer": "Absolute path: starts from the root /, always fully specifies the location regardless of current directory. Relative path: specified relative to your CURRENT working directory, changes meaning depending on where you are.",
+  "detailedAnswer": "An absolute path always refers to the exact same location on the filesystem no matter what your current working directory happens to be; it's unambiguous and portable across different starting contexts, which is useful in scripts that might be run from any directory.\n\nA relative path is interpreted relative to wherever you currently are, where . refers to the current directory and .. refers to the parent directory. Relative paths are more convenient for everyday interactive use but can behave unexpectedly in scripts if the script is run from an unanticipated working directory.",
+  "keyPoints": [
+    "Absolute path: starts with /, unambiguous regardless of current location — best for scripts",
+    "Relative path: interpreted based on current working directory — . = here, .. = parent directory",
+    "pwd: prints your current absolute working directory path, useful for orienting yourself"
+  ],
+  "commonMistakes": [
+    "Using relative paths in scripts that might run from an unpredictable working directory",
+    "Confusing . (current directory) with .. (parent directory)",
+    "Not using pwd to confirm the current location before running a relative-path command"
+  ],
+  "followUpQuestions": [
+    "Why are absolute paths generally preferred in scripts?",
+    "How would you determine your current working directory?",
+    "What does .. refer to in a relative path?"
+  ],
+  "realWorldExample": "A cron job script uses absolute paths for all file references since it may be run from an unpredictable working directory, unlike interactive terminal use where relative paths are more convenient.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "cd /home/user/documents\ncat ../notes.txt   # relative path\ncat /home/user/notes.txt  # absolute path"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why absolute paths are safer in scripts and correctly describe relative path notation.",
+  "tags": ["Linux", "File Paths", "Interview"],
+  "relatedTopics": ["Shell Scripting", "File System Hierarchy", "pwd"],
+  "references": ["Linux man pages - path_resolution(7)"]
+},
+{
+  "id": "linux-017",
+  "category": "Linux",
+  "topic": "find command",
+  "difficulty": "Medium",
+  "question": "What is find command used for? Give practical examples.",
+  "shortAnswer": "find searches the filesystem for files/directories matching specified criteria (name, size, modification time, permissions) and can execute actions on the matched results.",
+  "detailedAnswer": "find /path -name \"*.log\" searches recursively starting from /path for any file matching the pattern *.log. find . -mtime -7 finds files modified within the last 7 days, and find . -size +100M finds files larger than 100MB.\n\nCombined with the -exec flag, find can perform an action on every matched result, such as finding and deleting every temporary file matching a pattern, where {} is replaced by each matched filename. This makes find extremely powerful for bulk file management, cleanup scripts, and locating specific files across large directory trees.",
+  "keyPoints": [
+    "-name: search by filename pattern (supports wildcards like *)",
+    "-mtime, -size: filter by modification time or file size respectively",
+    "-exec <command> {} \\;: execute a command on each matched result — powerful for bulk operations"
+  ],
+  "commonMistakes": [
+    "Forgetting to escape the semicolon in -exec (needs \\; or +)",
+    "Not testing a find command without -delete or -exec first to preview matches",
+    "Confusing -mtime's sign convention (negative means 'within the last N days')"
+  ],
+  "followUpQuestions": [
+    "How would you preview which files would be affected before running a destructive -exec command?",
+    "What's the difference between using -exec ... \\; and -exec ... +?",
+    "How would you find files larger than a certain size modified in the last week?"
+  ],
+  "realWorldExample": "A cleanup script uses find . -name \"*.tmp\" -exec rm {} \\; to locate and delete all temporary files across a directory tree.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "find . -name \"*.log\"\nfind . -mtime -7\nfind . -name \"*.tmp\" -exec rm {} \\;"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to demonstrate practical find usage including filtering criteria and the -exec flag.",
+  "tags": ["Linux", "find", "Interview"],
+  "relatedTopics": ["Shell Scripting", "File Management", "grep"],
+  "references": ["Linux man pages - find(1)"]
+},
+{
+  "id": "linux-018",
+  "category": "Linux",
+  "topic": "/etc/passwd vs /etc/shadow",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between /etc/passwd and /etc/shadow?",
+  "shortAnswer": "/etc/passwd stores basic user account information (username, UID, home directory, default shell) and is readable by everyone. /etc/shadow stores actual (hashed) password data and is readable only by root, for security.",
+  "detailedAnswer": "Historically, /etc/passwd used to store password hashes directly, but since this file needs to be world-readable, as many system utilities need to look up basic account info like usernames and UIDs, storing password hashes there made them vulnerable to offline brute-force cracking by any local user.\n\n/etc/shadow was introduced to separate the sensitive password hash data into a file with strict permissions readable only by root, while /etc/passwd retains only non-sensitive account metadata plus a placeholder in the field where the password hash used to be, indicating the real hash is in /etc/shadow.",
+  "keyPoints": [
+    "/etc/passwd: world-readable, contains username, UID, GID, home dir, default shell — no sensitive data",
+    "/etc/shadow: root-only readable, contains the actual hashed password and password aging/expiry policy",
+    "The x placeholder in /etc/passwd's password field signals \"actual hash lives in /etc/shadow instead\""
+  ],
+  "commonMistakes": [
+    "Assuming /etc/passwd still stores actual password hashes",
+    "Not knowing why /etc/passwd must remain world-readable",
+    "Confusing the x placeholder as meaning the account has no password"
+  ],
+  "followUpQuestions": [
+    "Why does /etc/passwd need to remain world-readable?",
+    "What does the 'x' in the password field of /etc/passwd indicate?",
+    "What additional information beyond the password hash does /etc/shadow store?"
+  ],
+  "realWorldExample": "A security audit checks /etc/shadow's permissions to ensure only root can read the file, protecting hashed passwords from being accessed by regular users.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "cat /etc/passwd | grep username\nsudo cat /etc/shadow | grep username"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain why password hashes were moved to a separate, more restricted file for security reasons.",
+  "tags": ["Linux", "passwd", "shadow", "Security", "Interview"],
+  "relatedTopics": ["File Permissions", "User Management", "Security"],
+  "references": ["Linux man pages - passwd(5), shadow(5)"]
+},
+{
+  "id": "linux-019",
+  "category": "Linux",
+  "topic": "File Descriptors",
+  "difficulty": "Medium",
+  "question": "What are File Descriptors in Linux? What are 0, 1, and 2?",
+  "shortAnswer": "A File Descriptor is a numeric handle the OS uses to reference an open file/stream. 0 = standard input (stdin), 1 = standard output (stdout), 2 = standard error (stderr) — always open by default for every process.",
+  "detailedAnswer": "Every process automatically starts with these three file descriptors open: 0 (stdin) reads input, typically from the keyboard or terminal unless redirected; 1 (stdout) writes normal program output, typically displayed on the terminal; 2 (stderr) writes error messages, also typically displayed on the terminal by default, but kept separate from stdout specifically so error output can be redirected independently.\n\nThis separation is why a pattern like command > output.txt 2>&1 is common; it redirects stdout to a file, then redirects stderr to wherever stdout is now pointing, capturing both regular output and errors together in the same file.",
+  "keyPoints": [
+    "0 = stdin, 1 = stdout, 2 = stderr — always open by default, no explicit setup required",
+    "stdout and stderr are separate streams even though both display on the terminal by default",
+    "2>&1: redirects stderr to wherever stdout is currently pointing — commonly used to capture both in one file"
+  ],
+  "commonMistakes": [
+    "Confusing the order of 2>&1 with 1>&2, causing incorrect redirection",
+    "Not knowing stdout and stderr are separate streams despite both appearing on the terminal",
+    "Assuming a redirection captures errors without explicitly redirecting stderr"
+  ],
+  "followUpQuestions": [
+    "Why does command > output.txt 2>&1 need to be in that specific order?",
+    "How would you redirect only stderr to a file, leaving stdout on the terminal?",
+    "What happens to stdin if you don't redirect it?"
+  ],
+  "realWorldExample": "A deployment script redirects both stdout and stderr to a log file using command > deploy.log 2>&1 to capture all output for later debugging.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "command > output.log 2>&1"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly identify the three default file descriptors and explain the 2>&1 redirection pattern.",
+  "tags": ["Linux", "File Descriptors", "stdin", "stdout", "stderr", "Interview"],
+  "relatedTopics": ["Shell Redirection", "Bash", "Process I/O"],
+  "references": ["Bash Reference Manual - gnu.org"]
+},
+{
+  "id": "linux-020",
+  "category": "Linux",
+  "topic": "Runlevels and systemctl",
+  "difficulty": "Medium",
+  "question": "What is a Runlevel / systemd Target? What is systemctl used for?",
+  "shortAnswer": "A Runlevel (older SysV init systems) or systemd Target (modern systems) defines a specific system state (single-user mode, multi-user with networking, GUI mode, etc.). systemctl is the primary command for managing services under systemd.",
+  "detailedAnswer": "Older Linux systems used numbered runlevels, such as 0 for halt, 1 for single-user or rescue mode, 3 for multi-user with networking and no GUI, 5 for multi-user with GUI, and 6 for reboot, to define which services should be running at a given system state.\n\nModern systems predominantly use systemd, which replaces this with named targets like multi-user.target and graphical.target, offering more flexibility. systemctl is the primary tool for interacting with systemd: start, stop, and restart control a specific service's running state, while enable and disable configure whether it starts automatically at boot, and status shows current status and recent log output.",
+  "keyPoints": [
+    "Older SysV: numbered runlevels (0-6). Modern systemd: named targets (multi-user.target, graphical.target)",
+    "systemctl start/stop/restart <service>: immediately control a running service's state",
+    "systemctl enable/disable <service>: controls whether the service auto-starts at boot, independent of current state"
+  ],
+  "commonMistakes": [
+    "Confusing systemctl start (immediate action) with systemctl enable (boot-time configuration)",
+    "Not knowing modern systems use named targets instead of numbered runlevels",
+    "Assuming stopping a service also disables it from starting at next boot"
+  ],
+  "followUpQuestions": [
+    "What is the difference between systemctl start and systemctl enable?",
+    "What named target roughly corresponds to the old runlevel 5?",
+    "How would you check a service's current status and recent logs?"
+  ],
+  "realWorldExample": "A sysadmin uses systemctl enable nginx to ensure the web server starts automatically at boot, and systemctl status nginx to check its current running state.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "systemctl start nginx\nsystemctl enable nginx\nsystemctl status nginx"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish immediate service control from boot-time configuration and know both legacy and modern terminology.",
+  "tags": ["Linux", "systemctl", "systemd", "Runlevel", "Interview"],
+  "relatedTopics": ["Daemons", "Boot Process", "Service Management"],
+  "references": ["systemd Documentation - freedesktop.org"]
+},
+{
+  "id": "linux-021",
+  "category": "Linux",
+  "topic": "wget vs curl",
+  "difficulty": "Easy",
+  "question": "What is the difference between wget and curl?",
+  "shortAnswer": "Both download content from URLs via the command line, but curl is a more general-purpose tool supporting many protocols and use cases (including sending data, custom headers, testing APIs), while wget is more specialized specifically for reliably downloading files, including recursive website mirroring.",
+  "detailedAnswer": "curl is extremely versatile; beyond simple downloads, it's commonly used for testing and interacting with APIs, sending custom HTTP methods, headers, and request bodies, supports a huge range of protocols, and by default prints output to stdout rather than saving to a file.\n\nwget is more narrowly focused on robust file downloading; it has excellent built-in support for resuming interrupted downloads, recursive downloading for mirroring an entire website's linked pages, and by default saves the downloaded content directly to a file matching the URL's filename.",
+  "keyPoints": [
+    "curl: general-purpose — API testing, custom headers/methods, many protocols, outputs to stdout by default",
+    "wget: specialized for robust downloading — resume support, recursive site mirroring, saves to file by default",
+    "Practical rule of thumb: curl for interacting with APIs, wget for straightforwardly downloading files"
+  ],
+  "commonMistakes": [
+    "Using curl without -o and being surprised output goes to stdout instead of a file",
+    "Assuming wget can easily send custom HTTP methods and headers like curl",
+    "Not leveraging wget's resume support for large or unreliable downloads"
+  ],
+  "followUpQuestions": [
+    "How would you save curl's output to a file instead of printing to stdout?",
+    "Why is wget better suited for mirroring an entire website?",
+    "How would you send a custom header using curl?"
+  ],
+  "realWorldExample": "A developer uses curl to test a REST API with custom headers, while a sysadmin uses wget to download and resume a large file over an unreliable connection.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "curl -X POST -H \"Content-Type: application/json\" -d '{}' https://api.example.com\nwget https://example.com/file.zip"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish curl's general-purpose API usage from wget's specialized file-downloading focus.",
+  "tags": ["Linux", "wget", "curl", "Interview"],
+  "relatedTopics": ["HTTP", "APIs", "Command Line Tools"],
+  "references": ["Linux man pages - curl(1), wget(1)"]
+},
+{
+  "id": "linux-022",
+  "category": "Linux",
+  "topic": "df vs du",
+  "difficulty": "Easy",
+  "question": "What is df vs du? What do they measure?",
+  "shortAnswer": "df (disk free) shows overall disk space usage per MOUNTED FILESYSTEM/partition. du (disk usage) shows how much space specific FILES or DIRECTORIES are actually consuming.",
+  "detailedAnswer": "df -h gives a high-level summary of each mounted filesystem, including total size, used space, available space, and percentage used, answering how full the disk or partition is overall.\n\ndu -sh /path/to/directory recursively calculates the total size consumed by a specific directory and its contents, answering how much space that particular folder is actually taking up. These commands can sometimes show apparently conflicting numbers if files are deleted while still held open by a running process, since the disk space isn't actually freed until the process closes the file handle.",
+  "keyPoints": [
+    "df -h: filesystem-level view — overall disk/partition usage, human-readable sizes with -h",
+    "du -sh <path>: directory/file-level view — summarized total size of a specific location",
+    "Discrepancies can occur if a deleted file is still held open by a running process (space not yet actually freed)"
+  ],
+  "commonMistakes": [
+    "Confusing df (filesystem-wide) with du (specific directory/file) scope",
+    "Not accounting for open-but-deleted files causing df/du discrepancies",
+    "Forgetting the -h flag for human-readable sizes"
+  ],
+  "followUpQuestions": [
+    "Why might df show a disk as full while du can't find where the space is being used?",
+    "How would you find the largest directories consuming space using du?",
+    "What does the -h flag do for both commands?"
+  ],
+  "realWorldExample": "A sysadmin notices df shows a disk nearly full, but du can't account for all the space, indicating a deleted log file is still held open by a running process.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "df -h\ndu -sh /var/log"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish filesystem-level usage (df) from directory-level usage (du) and explain the open-file discrepancy scenario.",
+  "tags": ["Linux", "df", "du", "Interview"],
+  "relatedTopics": ["File System", "Disk Management", "System Monitoring"],
+  "references": ["Linux man pages - df(1), du(1)"]
+},
+{
+  "id": "linux-023",
+  "category": "Linux",
+  "topic": "nice and renice",
+  "difficulty": "Medium",
+  "question": "What is the purpose of the nice and renice commands?",
+  "shortAnswer": "nice starts a new process with a specified priority level, and renice adjusts the priority of an already-running process — controlling how much CPU scheduling preference it receives relative to other processes.",
+  "detailedAnswer": "Linux process priority, or niceness, ranges from -20, the highest priority with the most CPU preference, to +19, the lowest priority, most willing to yield CPU to others; the name 'nice' reflects that a higher value means the process is being more nice to other processes by yielding CPU time more readily.\n\nnice -n 10 command starts a new process with a niceness of 10, lower priority than default. renice -n 5 -p <PID> changes the priority of an already-running process identified by its PID. Regular non-root users can only increase niceness, lowering their own process's priority; only root can decrease niceness, raising a process's priority above default.",
+  "keyPoints": [
+    "Niceness range: -20 (highest priority) to +19 (lowest priority) — default is typically 0",
+    "nice -n <value> command: start a new process with a specified priority level",
+    "Regular users can only lower their own process's priority (increase niceness) — only root can raise it"
+  ],
+  "commonMistakes": [
+    "Assuming a regular user can decrease niceness (raise priority) without root privileges",
+    "Confusing lower niceness values with lower priority (lower niceness actually means higher priority)",
+    "Using renice on the wrong PID without verifying it first"
+  ],
+  "followUpQuestions": [
+    "Why can only root decrease a process's niceness value?",
+    "What is the default niceness value for a new process?",
+    "How would you lower the priority of an already-running CPU-intensive process?"
+  ],
+  "realWorldExample": "A sysadmin uses nice -n 15 to start a low-priority background compression job so it doesn't compete for CPU with more important interactive processes.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "nice -n 15 tar -czf backup.tar.gz /data\nrenice -n 5 -p 1234"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly explain the niceness scale and the root-versus-regular-user privilege distinction.",
+  "tags": ["Linux", "nice", "renice", "Process Priority", "Interview"],
+  "relatedTopics": ["CPU Scheduling", "Process Management", "ps aux"],
+  "references": ["Linux man pages - nice(1), renice(1)"]
+},
+{
+  "id": "linux-024",
+  "category": "Linux",
+  "topic": "ps aux",
+  "difficulty": "Easy",
+  "question": "What is ps aux? What do the columns mean?",
+  "shortAnswer": "ps aux lists ALL currently running processes on the system with detailed information — user, PID, CPU/memory usage, status, and the command that started each process.",
+  "detailedAnswer": "The flags combine: a shows processes for all users, not just the current one; u displays user-oriented output format with additional detail columns; x includes processes not attached to a controlling terminal, like daemons or background services.\n\nKey columns in the output include USER (who owns the process), PID (unique process identifier), %CPU and %MEM (current resource usage), STAT (process status codes like R for running, S for sleeping, Z for zombie), and COMMAND (the actual command that started it). This is frequently piped into grep to find a specific process.",
+  "keyPoints": [
+    "a: all users' processes. u: detailed user-oriented format. x: include processes without a terminal",
+    "STAT column codes: R (running), S (sleeping), Z (zombie), D (uninterruptible sleep, usually waiting on I/O)",
+    "Commonly piped with grep: ps aux | grep <name> to quickly find a specific process by name"
+  ],
+  "commonMistakes": [
+    "Not knowing what each STAT code (R, S, Z, D) represents",
+    "Confusing the a, u, and x flags' individual meanings",
+    "Forgetting ps aux without grep filtering can produce overwhelming output on busy systems"
+  ],
+  "followUpQuestions": [
+    "What does the Z status code indicate in the STAT column?",
+    "How would you find all processes related to a specific application using ps aux?",
+    "What's the difference between the a and x flags?"
+  ],
+  "realWorldExample": "A sysadmin runs ps aux | grep nginx to quickly find all processes related to the nginx web server and check their resource usage.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "ps aux | grep nginx"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the flag meanings and correctly interpret key output columns like STAT.",
+  "tags": ["Linux", "ps aux", "Process Management", "Interview"],
+  "relatedTopics": ["top", "Process States", "grep"],
+  "references": ["Linux man pages - ps(1)"]
+},
+{
+  "id": "linux-025",
+  "category": "Linux",
+  "topic": "apt update vs apt upgrade",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between a Package Manager's \"Update\" and \"Upgrade\" commands (e.g., apt update vs apt upgrade)?",
+  "shortAnswer": "apt update refreshes the LOCAL LIST of available packages and their versions from configured repositories — it does NOT actually install/upgrade anything. apt upgrade actually installs newer versions of already-installed packages, based on that refreshed list.",
+  "detailedAnswer": "apt update contacts the configured software repositories, defined in /etc/apt/sources.list, and downloads the current index of available packages and their latest version numbers, storing this metadata locally; this is purely an information-refresh step, and no actual software on the system changes as a result.\n\napt upgrade then uses that freshly refreshed metadata to compare against what's currently installed, and downloads and installs newer versions of any already-installed packages that have updates available. This two-step separation is easy for beginners to misunderstand; running apt upgrade without first running apt update will only upgrade based on potentially stale metadata.",
+  "keyPoints": [
+    "apt update: refreshes the local package list/metadata only — no actual software changes on the system",
+    "apt upgrade: installs newer versions of currently-installed packages, based on that refreshed metadata",
+    "Correct order matters: always apt update first, THEN apt upgrade, or upgrades may use stale version info"
+  ],
+  "commonMistakes": [
+    "Running apt upgrade without first running apt update, missing newly available updates",
+    "Assuming apt update itself installs or changes any software",
+    "Not knowing where the repository sources are configured (/etc/apt/sources.list)"
+  ],
+  "followUpQuestions": [
+    "What would happen if you ran apt upgrade without first running apt update?",
+    "Where are the repository sources configured for apt?",
+    "Does apt update change any installed software on the system?"
+  ],
+  "realWorldExample": "A sysadmin runs apt update && apt upgrade to first refresh the package index and then install all available updates for installed packages.",
+  "codeExample": {
+    "language": "Bash",
+    "code": "sudo apt update\nsudo apt upgrade"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the metadata-refresh step from the actual package installation step and know the correct order.",
+  "tags": ["Linux", "apt", "Package Management", "Interview"],
+  "relatedTopics": ["apt vs yum vs dpkg", "System Administration", "Debian"],
+  "references": ["Debian Documentation - debian.org"]
 }
 ];
