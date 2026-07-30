@@ -11551,5 +11551,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["Node.js", "Microservices", "Monolithic Architecture", "Interview"],
   "relatedTopics": ["System Design", "Cluster Module", "REST API"],
   "references": ["Node.js Documentation - nodejs.org"]
+},
+{
+  "id": "hr-001",
+  "category": "HR Interview",
+  "topic": "Tell Me About Yourself",
+  "difficulty": "Easy",
+  "question": "\"Tell me about yourself.\" How should a fresher structure this answer?",
+  "shortAnswer": "Use a Present → Past → Future structure: current status (education/skills), relevant past experience/projects, and future goals aligned with the role — keep it under 90 seconds.",
+  "detailedAnswer": "This is almost always the opening question, meant to see how you communicate and whether your background fits the role, not to hear your full life story. The structure works in three parts: Present, stating your current status such as being a final-year CS student specializing in a particular area; Past, mentioning one or two relevant achievements like a standout project, internship, or directly relevant skill rather than listing everything on your resume; and Future, connecting your goals to what this specific role or company offers.\n\nAvoid reciting your resume line by line, including unrelated personal details, going over 90 seconds, or sounding memorized.",
+  "keyPoints": [
+    "Present-Past-Future structure keeps the answer organized and concise",
+    "Tailor the \"past\" section to highlight what's relevant to THIS specific role",
+    "Practice out loud, but avoid sounding like a memorized script"
+  ],
+  "commonMistakes": [
+    "Reciting the entire resume line by line instead of highlighting relevant pieces",
+    "Including unrelated personal details that don't serve the answer's purpose",
+    "Sounding overly memorized or scripted rather than natural"
+  ],
+  "followUpQuestions": [
+    "What is your most significant project and why?",
+    "Why did you choose this field of study?",
+    "What are you most proud of in your academic career?"
+  ],
+  "realWorldExample": "A candidate opens with their current final-year status, highlights a machine learning project relevant to the applied role, then connects their interest in applied AI to the company's specific product focus.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a concise, well-organized answer that demonstrates communication skill and relevance to the role, not a full biography.",
+  "tags": ["HR Interview", "Tell Me About Yourself", "Fresher", "Interview"],
+  "relatedTopics": ["Why Should We Hire You", "Elevator Pitch", "Interview Preparation"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-002",
+  "category": "HR Interview",
+  "topic": "Biggest Weakness",
+  "difficulty": "Medium",
+  "question": "\"What is your biggest weakness?\" How do you answer this without sounding fake or damaging?",
+  "shortAnswer": "Choose a genuine, moderate weakness unrelated to core job requirements, then show concrete steps you've taken to actively improve it — avoid clichés like \"I'm a perfectionist.\"",
+  "detailedAnswer": "Interviewers ask this to assess self-awareness and growth mindset, not to disqualify you for having flaws. The worst answers are fake weaknesses disguised as strengths, such as claiming you work too hard, or weaknesses that are core requirements for the role.\n\nA strong answer picks a real, moderate weakness, explains the concrete impact it had, and describes specific actions taken to improve, such as a course, actively seeking feedback, or adopting a checklist or process, along with evidence of progress. This shows self-awareness and growth together.",
+  "keyPoints": [
+    "Avoid disguised-strength clichés: \"I work too hard,\" \"I'm too much of a perfectionist\"",
+    "Pick something real but not disqualifying for the specific role",
+    "Structure: weakness → impact → concrete steps taken → evidence of improvement"
+  ],
+  "commonMistakes": [
+    "Giving a disguised-strength answer like 'I work too hard'",
+    "Choosing a weakness that's actually a core requirement of the role",
+    "Not providing concrete evidence of active improvement"
+  ],
+  "followUpQuestions": [
+    "How have you specifically worked to improve this weakness?",
+    "Can you give an example of when this weakness affected your work?",
+    "What feedback have you received from others about this?"
+  ],
+  "realWorldExample": "A candidate admits to historically underestimating task timelines, then describes adopting a habit of breaking tasks into smaller milestones with buffer time, citing improved on-time delivery since.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects genuine self-awareness paired with concrete evidence of active self-improvement, not a rehearsed non-answer.",
+  "tags": ["HR Interview", "Weakness", "Self-Awareness", "Interview"],
+  "relatedTopics": ["Strengths", "Growth Mindset", "STAR Method"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-003",
+  "category": "HR Interview",
+  "topic": "Why Should We Hire You",
+  "difficulty": "Medium",
+  "question": "\"Why should we hire you?\" How do you make this answer stand out?",
+  "shortAnswer": "Connect your specific, unique skills/experiences directly to the company's actual needs — not generic claims like \"I'm hardworking,\" which every candidate says.",
+  "detailedAnswer": "This question rewards specificity over generic self-praise. Instead of claiming to be a fast learner and team player, which says nothing distinguishing, identify two or three concrete things you offer that directly map to what the role needs, such as a specific technical skill matching their stack, a project demonstrating exactly the kind of problem they're hiring to solve, or a unique combination of skills that's genuinely less common.\n\nResearching the company and role beforehand ensures your answer references their actual context rather than a generic template that could apply to any company.",
+  "keyPoints": [
+    "Avoid generic claims (\"hardworking,\" \"team player\") that every candidate says without differentiation",
+    "Cite 1-2 SPECIFIC skills/projects that map directly to what THIS role actually needs",
+    "Research the company beforehand — a tailored answer signals genuine interest, not a copy-pasted response"
+  ],
+  "commonMistakes": [
+    "Using generic, undifferentiated claims like 'hardworking' or 'team player'",
+    "Not researching the company enough to tailor the answer to their specific needs",
+    "Failing to cite concrete evidence for the claimed skills"
+  ],
+  "followUpQuestions": [
+    "What specific skill do you think sets you apart from other candidates?",
+    "How does your background align with what this team needs?",
+    "Can you give an example of applying that specific skill?"
+  ],
+  "realWorldExample": "A candidate highlights their specific experience with the exact database optimization techniques the company's job posting mentions needing, backed by a concrete capstone project.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a specific, well-researched answer connecting the candidate's unique strengths directly to the role's actual needs.",
+  "tags": ["HR Interview", "Why Hire You", "Interview"],
+  "relatedTopics": ["Strengths", "Company Research", "Value Proposition"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-004",
+  "category": "HR Interview",
+  "topic": "Five Year Plan",
+  "difficulty": "Medium",
+  "question": "\"Where do you see yourself in 5 years?\" What is the interviewer actually trying to learn?",
+  "shortAnswer": "The interviewer wants to know if your career trajectory aligns with what the company can realistically offer, and whether you're likely to stay and grow with them rather than leave quickly.",
+  "detailedAnswer": "Avoid two extremes: being too vague, which signals lack of direction, or being unrealistically specific in a way that doesn't fit the role, such as wanting to be CTO for an entry-level position, which signals impatience or misaligned expectations.\n\nA strong answer shows genuine ambition balanced with realistic progression: growing technical expertise in a specific direction relevant to the role, potentially taking on more responsibility over time, and explicitly connecting this growth to what this company could plausibly offer, showing you've thought about a genuine future with them rather than using this as a stepping stone.",
+  "keyPoints": [
+    "Avoid extremes: neither vague/directionless nor unrealistically ambitious for the specific role level",
+    "Show a growth trajectory that plausibly fits within what THIS company could realistically offer",
+    "Signals to the interviewer whether you're likely to stay and grow, versus quickly leaving for elsewhere"
+  ],
+  "commonMistakes": [
+    "Giving a vague, directionless answer like 'wherever life takes me'",
+    "Naming an unrealistically senior title for the entry-level role being offered",
+    "Not connecting career goals to what the specific company can plausibly provide"
+  ],
+  "followUpQuestions": [
+    "What kind of skills do you hope to develop in the next few years?",
+    "What does career growth look like to you?",
+    "How do you see this role fitting into your longer-term goals?"
+  ],
+  "realWorldExample": "A candidate describes wanting to deepen their backend engineering expertise and eventually mentor junior engineers, explicitly connecting this to the company's stated engineering growth track.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a realistic, role-appropriate growth trajectory that suggests genuine intent to stay and grow with the company.",
+  "tags": ["HR Interview", "Career Goals", "Interview"],
+  "relatedTopics": ["Why This Company", "Career Trajectory", "Retention"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-005",
+  "category": "HR Interview",
+  "topic": "Why This Company",
+  "difficulty": "Medium",
+  "question": "\"Why do you want to work for our company?\" How do you avoid a generic answer?",
+  "shortAnswer": "Research something SPECIFIC about the company — a recent product launch, their engineering culture, a technology they use, or their mission — and connect it genuinely to your own interests/values, rather than giving a generic answer that could apply to any company.",
+  "detailedAnswer": "A weak answer, such as praising the company as great with good growth opportunities, could be copy-pasted into any interview, signaling a lack of real research and possibly genuine interest.\n\nA strong answer references something specific, such as a particular product or technology the company has built, their specific engineering culture or values, or a mission or problem space they're tackling, and explains why that specifically appeals to the candidate personally. This requires actually researching the company beforehand rather than winging it.",
+  "keyPoints": [
+    "Research something SPECIFIC about the company beforehand — a product, technology, culture element, or mission",
+    "Explain WHY that specific thing genuinely appeals to YOU, connecting it to your own interests/values",
+    "A generic answer that could apply to any company signals a lack of genuine research/interest to the interviewer"
+  ],
+  "commonMistakes": [
+    "Giving a generic answer that could apply to any company",
+    "Not researching the company's actual products, culture, or mission beforehand",
+    "Failing to explain a personal connection to what was researched"
+  ],
+  "followUpQuestions": [
+    "What specifically about our product or mission excites you?",
+    "How did you learn about our company?",
+    "What do you know about our engineering culture?"
+  ],
+  "realWorldExample": "A candidate mentions the company's recent open-source contribution to a tool they've personally used, connecting it to their own value of contributing to accessible technology.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a specific, well-researched answer that demonstrates genuine interest beyond a generic template response.",
+  "tags": ["HR Interview", "Why This Company", "Interview"],
+  "relatedTopics": ["Company Research", "Motivation", "Culture Fit"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-006",
+  "category": "HR Interview",
+  "topic": "STAR Method",
+  "difficulty": "Medium",
+  "question": "How do you handle behavioral questions using the STAR method?",
+  "shortAnswer": "STAR structures a behavioral answer as: Situation (context), Task (what needed to be done), Action (what YOU specifically did), Result (the outcome, ideally quantified).",
+  "detailedAnswer": "Behavioral questions are best answered with a concrete, specific real example rather than a vague generalization. Situation briefly sets the context in one or two sentences, describing the project or circumstances. Task describes what specifically needed to be accomplished or what challenge existed.\n\nAction is the meat of the answer, describing what you specifically did rather than what the team did in general, including your reasoning process. Result describes the outcome, ideally with a concrete, quantified result and what you learned from the experience.",
+  "keyPoints": [
+    "Situation: brief context-setting, don't over-explain background details",
+    "Action: the most important part — focus on what YOU specifically did, not the team in general",
+    "Result: quantify the outcome where possible, and mention what you learned from the experience"
+  ],
+  "commonMistakes": [
+    "Spending too much time on Situation and not enough on Action",
+    "Describing what 'we' did as a team instead of your individual contribution",
+    "Not quantifying the result or omitting what was learned"
+  ],
+  "followUpQuestions": [
+    "Can you give an example of a project where you used this structure?",
+    "What was the measurable impact of your action?",
+    "What would you do differently if faced with the same situation again?"
+  ],
+  "realWorldExample": "A candidate describes a situation where a team project was behind schedule, the task of reorganizing the sprint plan, the specific action of proposing a revised timeline with parallelized work, and the quantified result of shipping only 2 days late instead of 2 weeks.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a clearly structured answer with strong emphasis on the candidate's individual actions and a measurable result.",
+  "tags": ["HR Interview", "STAR Method", "Behavioral Questions", "Interview"],
+  "relatedTopics": ["Failure Question", "Conflict Resolution", "Behavioral Interviewing"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-007",
+  "category": "HR Interview",
+  "topic": "Failure Question",
+  "difficulty": "Medium",
+  "question": "How should you answer \"Tell me about a time you failed\" or \"Tell me about a mistake you made\"?",
+  "shortAnswer": "Choose a genuine failure with real consequences, take clear ownership without excessive self-blame or blaming others, and emphasize the concrete lesson learned and how you've applied it since.",
+  "detailedAnswer": "Avoid two common mistakes: choosing a fake failure that's actually a disguised strength, similar to the weakness question trap, or choosing something so minor it doesn't demonstrate genuine reflection.\n\nPick a real failure with actual stakes, such as a project that went wrong due to a decision you made or a deadline missed due to poor planning. Take clear personal ownership, avoid blaming circumstances or teammates excessively, briefly explain what happened, and spend most of your answer on what you learned and how you've concretely changed your approach since.",
+  "keyPoints": [
+    "Choose a real failure with genuine consequences, not a disguised strength or something trivially minor",
+    "Take clear personal ownership — avoid excessive blame-shifting to circumstances or other people",
+    "Spend most of the answer on the LESSON learned and how you've concretely applied it since — this is what matters most"
+  ],
+  "commonMistakes": [
+    "Choosing a disguised-strength 'failure' rather than a genuine one",
+    "Excessively blaming circumstances or other people instead of taking ownership",
+    "Not spending enough time on the lesson learned and subsequent behavior change"
+  ],
+  "followUpQuestions": [
+    "How did you communicate this failure to your team or manager?",
+    "What would you do differently if faced with the same situation now?",
+    "How has this experience changed your approach to similar situations?"
+  ],
+  "realWorldExample": "A candidate describes underestimating a project's complexity, missing a deadline as a result, taking ownership of the poor initial planning, and describing how they now use a formal estimation checklist for every subsequent project.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects genuine self-reflection and evidence of concrete behavioral change following a real mistake.",
+  "tags": ["HR Interview", "Failure", "Self-Reflection", "Interview"],
+  "relatedTopics": ["STAR Method", "Weakness", "Growth Mindset"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-008",
+  "category": "HR Interview",
+  "topic": "Salary Expectations",
+  "difficulty": "Medium",
+  "question": "How do you answer salary expectation questions?",
+  "shortAnswer": "Research the market rate for the role/location/experience level beforehand, give a well-reasoned range rather than a single fixed number, and remain open to discussion rather than being rigidly fixed.",
+  "detailedAnswer": "Going in completely unprepared, either giving an unrealistically low number that undersells yourself or an unresearched high number disconnected from market reality, weakens your negotiating position.\n\nResearch typical compensation for the specific role, company size, location, and experience level beforehand using sites like Glassdoor, LinkedIn Salary, or Levels.fyi for tech roles. Providing a range rather than a single fixed number gives negotiating flexibility on both sides. If pressed for a single number, you can also reasonably ask about the company's budgeted range first before committing to your own figure.",
+  "keyPoints": [
+    "Research market rate beforehand using sites like Glassdoor, LinkedIn Salary, or Levels.fyi for tech-specific roles",
+    "Provide a well-reasoned RANGE rather than a single fixed number — gives negotiating flexibility on both sides",
+    "It's reasonable to ask about the company's budgeted range for the role first, before committing to your own number"
+  ],
+  "commonMistakes": [
+    "Giving an unresearched number, either too low or too high",
+    "Providing a single rigid figure instead of a reasoned range",
+    "Not knowing how to redirect the question to learn the company's budgeted range first"
+  ],
+  "followUpQuestions": [
+    "What is your current or most recent compensation?",
+    "Is your expectation negotiable?",
+    "What factors are most important to you beyond base salary?"
+  ],
+  "realWorldExample": "A candidate researches typical entry-level salary ranges for the role and location on Levels.fyi, then presents a well-reasoned range while remaining open to discussing the full compensation package.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects an informed, flexible answer that reflects market research rather than an arbitrary number.",
+  "tags": ["HR Interview", "Salary Negotiation", "Interview"],
+  "relatedTopics": ["Compensation", "First Job Salary", "Negotiation"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-009",
+  "category": "HR Interview",
+  "topic": "Questions for the Interviewer",
+  "difficulty": "Easy",
+  "question": "How do you answer \"Do you have any questions for us?\" at the end of an interview?",
+  "shortAnswer": "ALWAYS have genuine, thoughtful questions prepared — asking nothing signals a lack of real interest, while asking generic/easily-Googled questions signals you haven't done basic research.",
+  "detailedAnswer": "This is a genuine opportunity to evaluate the company and role while demonstrating engagement and critical thinking. Strong questions to ask include the team's specific technical challenges, what a typical day or sprint looks like, how success is measured for this position, or genuine questions about engineering culture and practices.\n\nAvoid questions easily answered by a quick look at the company website, and avoid leading with purely compensation or benefits questions at this stage, which are better saved for a later conversation once mutual interest is established.",
+  "keyPoints": [
+    "ALWAYS prepare genuine questions — asking nothing at all signals a lack of real interest in the role/company",
+    "Good questions: team's current challenges, what success looks like in this role, engineering culture/practices",
+    "Avoid: questions easily answered by the company website, and avoid leading with compensation/benefits questions here"
+  ],
+  "commonMistakes": [
+    "Saying you have no questions, signaling a lack of engagement",
+    "Asking a question easily answered by the company website",
+    "Leading with compensation questions before mutual interest is established"
+  ],
+  "followUpQuestions": [
+    "What questions have you found most useful to ask in past interviews?",
+    "What would you want to know about the team's day-to-day work?",
+    "How do you decide what to ask based on the interviewer's role?"
+  ],
+  "realWorldExample": "A candidate asks the interviewer about the team's biggest current technical challenge and how success is measured for someone in this role during their first six months.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects thoughtful, specific questions that demonstrate genuine engagement and prior research.",
+  "tags": ["HR Interview", "Questions to Ask", "Interview"],
+  "relatedTopics": ["Company Research", "Closing Statement", "Engagement"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-010",
+  "category": "HR Interview",
+  "topic": "First Job Salary Expectations",
+  "difficulty": "Medium",
+  "question": "How do you handle the question \"What are your salary/compensation expectations if this is your first job\"?",
+  "shortAnswer": "For a first job, express flexibility and emphasize learning/growth opportunity over a rigid number, while still showing you've done basic research on typical entry-level compensation for the role/location.",
+  "detailedAnswer": "Without prior salary history to anchor against, freshers have somewhat less negotiating leverage, but should still avoid appearing completely uninformed or willing to accept literally anything.\n\nA reasonable approach acknowledges being early in your career and valuing the learning opportunity and growth potential highly, while still referencing that you've researched typical entry-level compensation for similar roles in that location or industry, and expressing openness to discuss based on the complete package rather than just base salary alone.",
+  "keyPoints": [
+    "Acknowledge you're early-career and value learning/growth opportunity, while still showing you've done basic research",
+    "Avoid appearing willing to accept literally any offer — this can undervalue yourself and signal desperation",
+    "Frame your consideration around the COMPLETE package (learning, mentorship, growth), not just the base salary number alone"
+  ],
+  "commonMistakes": [
+    "Appearing willing to accept any offer, undervaluing yourself",
+    "Not researching typical entry-level compensation at all",
+    "Focusing solely on base salary rather than the complete package"
+  ],
+  "followUpQuestions": [
+    "What have you found to be typical for entry-level roles in this field?",
+    "What matters most to you beyond salary in your first job?",
+    "Are you open to discussing the full compensation package?"
+  ],
+  "realWorldExample": "A fresher expresses openness to the company's standard entry-level range while noting research showing typical compensation for similar roles in the region, emphasizing interest in mentorship and growth.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a balanced answer showing flexibility appropriate for entry-level status combined with basic informed research.",
+  "tags": ["HR Interview", "Salary Negotiation", "Fresher", "Interview"],
+  "relatedTopics": ["Salary Expectations", "Compensation", "First Job"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-011",
+  "category": "HR Interview",
+  "topic": "Resume Gaps",
+  "difficulty": "Medium",
+  "question": "How should you handle a question about a gap in your resume or education?",
+  "shortAnswer": "Be honest and direct about the reason for the gap, briefly explain it without excessive apology or over-justification, and pivot quickly to what you did during that time or what you learned/gained from the experience.",
+  "detailedAnswer": "Gaps such as a semester off or delayed graduation are common and generally not disqualifying on their own; what matters is how confidently and honestly you address them. Being evasive or seeming embarrassed can make interviewers more suspicious than the gap itself would warrant.\n\nGive a brief, honest, factual explanation without over-explaining or over-apologizing, then quickly pivot the conversation toward what you accomplished or learned during that period, or simply move forward confidently.",
+  "keyPoints": [
+    "Be honest and direct — avoid seeming evasive or overly embarrassed, which raises more suspicion than the gap itself",
+    "Give a brief, factual explanation without excessive apology or over-justification",
+    "Pivot quickly to what you did/learned during that time, or simply move the conversation forward confidently"
+  ],
+  "commonMistakes": [
+    "Being evasive or visibly embarrassed about the gap",
+    "Over-apologizing or over-justifying the reason for the gap",
+    "Failing to pivot toward what was accomplished or learned during that time"
+  ],
+  "followUpQuestions": [
+    "What did you focus on during that time?",
+    "How did that experience shape your current goals?",
+    "Are you fully caught up and ready to start now?"
+  ],
+  "realWorldExample": "A candidate explains a semester gap due to family circumstances briefly and factually, then pivots to describe an independent project they completed during that time.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a confident, honest, and brief explanation followed by a pivot to positive accomplishments.",
+  "tags": ["HR Interview", "Resume Gap", "Interview"],
+  "relatedTopics": ["Honesty", "Career Transitions", "Confidence"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-012",
+  "category": "HR Interview",
+  "topic": "Working Under Pressure",
+  "difficulty": "Medium",
+  "question": "How do you answer \"Describe your ideal work environment\" or \"How do you handle working under pressure/deadlines\"?",
+  "shortAnswer": "Give a genuine, specific answer backed by a real example — vague platitudes (\"I work well under pressure\") without supporting evidence are unconvincing; concrete strategies and examples are far more credible.",
+  "detailedAnswer": "For 'ideal work environment,' avoid an overly narrow or rigid answer that might disqualify you from the actual role or culture being offered; instead describe genuinely valued elements like a collaborative team or clear expectations, while showing flexibility.\n\nFor handling pressure or deadlines, don't just claim you handle it well; give a specific example demonstrating an actual strategy you use, such as breaking large tasks into smaller milestones or proactively communicating realistic timelines, backed by a real situation where you successfully applied it.",
+  "keyPoints": [
+    "Avoid vague platitudes without supporting evidence — \"I work well under pressure\" alone is unconvincing on its own",
+    "Back up claims with a SPECIFIC real example demonstrating an actual strategy you genuinely use",
+    "For \"ideal environment\" questions, show some flexibility rather than an overly rigid/narrow answer that might not fit the actual role"
+  ],
+  "commonMistakes": [
+    "Giving a vague claim without any supporting example",
+    "Describing an overly rigid ideal environment that might not match the actual role",
+    "Not demonstrating a concrete, repeatable strategy for handling pressure"
+  ],
+  "followUpQuestions": [
+    "Can you walk me through a specific time you applied that strategy?",
+    "What do you do when priorities conflict under a tight deadline?",
+    "How flexible are you if the actual work environment differs from your ideal?"
+  ],
+  "realWorldExample": "A candidate describes breaking a tight capstone project deadline into weekly milestones and proactively communicating progress with their team, resulting in on-time delivery despite scope changes.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a specific, evidence-backed answer rather than an unsupported general claim.",
+  "tags": ["HR Interview", "Working Under Pressure", "Interview"],
+  "relatedTopics": ["STAR Method", "Time Management", "Prioritization"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-013",
+  "category": "HR Interview",
+  "topic": "Handling Conflict",
+  "difficulty": "Medium",
+  "question": "How do you answer questions about handling conflict with a teammate or manager?",
+  "shortAnswer": "Describe a genuine conflict, focus on how you approached it professionally and constructively (direct communication, seeking to understand the other perspective, finding common ground), and emphasize a positive or at least professionally-handled resolution.",
+  "detailedAnswer": "Interviewers want to see emotional maturity and professional conflict-resolution skills, not conflict-avoidance or aggressive confrontation. Using the STAR method, briefly set up the situation and disagreement, then focus heavily on the action: how you approached the conversation privately and directly rather than escalating publicly, your effort to genuinely understand the other person's perspective before pushing your own, and how you worked toward a resolution.\n\nAvoid badmouthing the specific person involved, even indirectly, focusing instead on the professional handling of the situation.",
+  "keyPoints": [
+    "Focus on professional, direct, private communication as your approach — not public escalation or avoidance",
+    "Show genuine effort to understand the OTHER person's perspective before pushing your own viewpoint",
+    "Never badmouth the specific individual involved, even indirectly — keep the focus on the situation and your professional handling of it"
+  ],
+  "commonMistakes": [
+    "Badmouthing the other person involved in the conflict",
+    "Escalating the conflict publicly instead of addressing it privately and directly",
+    "Not demonstrating genuine effort to understand the other perspective"
+  ],
+  "followUpQuestions": [
+    "How did you approach the initial conversation with the other person?",
+    "What was the outcome of the conflict?",
+    "What would you do differently if the same conflict arose again?"
+  ],
+  "realWorldExample": "A candidate describes a disagreement over technical approach with a teammate, resolving it through a private conversation to understand their reasoning, ultimately reaching a data-driven compromise.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a professionally handled example demonstrating emotional maturity and constructive resolution, without disparaging anyone.",
+  "tags": ["HR Interview", "Conflict Resolution", "Interview"],
+  "relatedTopics": ["STAR Method", "Emotional Intelligence", "Teamwork"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-014",
+  "category": "HR Interview",
+  "topic": "Learning Quickly",
+  "difficulty": "Medium",
+  "question": "What is a good approach to answering \"Tell me about a time you had to learn something quickly\"?",
+  "shortAnswer": "Describe a genuine situation demonstrating your specific learning STRATEGY (not just \"I read documentation\") and connect it to a concrete, successful outcome — this question tests adaptability, a highly valued trait in fast-moving tech roles.",
+  "detailedAnswer": "This question is particularly relevant in tech, where technologies and requirements change rapidly, and being able to quickly ramp up on unfamiliar tools or domains is a genuinely valuable skill.\n\nA strong answer describes a specific situation, such as a new framework needed for a project, and importantly focuses on the actual learning strategy: how you broke down the learning process, what resources you used and why, how you validated your understanding, and how quickly you became genuinely productive, concluding with the concrete successful outcome this enabled.",
+  "keyPoints": [
+    "Choose a specific, genuine situation — not a vague generalization about being \"a fast learner\" without evidence",
+    "Focus on your actual learning STRATEGY (how you approached it), not just the fact that you eventually learned it",
+    "Connect it to a concrete positive outcome — what you were then able to accomplish because of that quick learning"
+  ],
+  "commonMistakes": [
+    "Giving a vague claim about being 'a fast learner' without a specific example",
+    "Not describing the actual learning strategy or process used",
+    "Failing to connect the learning to a concrete positive outcome"
+  ],
+  "followUpQuestions": [
+    "How did you validate that you truly understood the new material?",
+    "What resources did you find most helpful during that learning process?",
+    "How long did it take before you felt genuinely productive?"
+  ],
+  "realWorldExample": "A candidate describes learning a new backend framework within a week for a hackathon by building small test projects daily, validating understanding through incremental features, and ultimately shipping a working prototype.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a specific example demonstrating a deliberate, effective learning strategy and a successful outcome.",
+  "tags": ["HR Interview", "Learning Agility", "Interview"],
+  "relatedTopics": ["Adaptability", "STAR Method", "Growth Mindset"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-015",
+  "category": "HR Interview",
+  "topic": "Other Offers",
+  "difficulty": "Medium",
+  "question": "How should you handle being asked \"Do you have any offers from other companies?\" or \"Are you interviewing elsewhere?\"",
+  "shortAnswer": "Be honest but strategic — you don't need to disclose every detail, but outright lying is risky; a brief, honest acknowledgment without oversharing specifics is generally the safest approach.",
+  "detailedAnswer": "This question can be used to gauge your market demand or to understand their competitive timeline pressure to make a decision. You're not obligated to share exact company names, offer amounts, or timelines if you'd prefer not to.\n\nA general, honest acknowledgment such as being currently in the interview process with a couple of other companies is generally sufficient without oversharing competitively sensitive details. Outright lying about offers you don't have is risky and can backfire if discovered, potentially damaging trust in the relationship before it's even begun.",
+  "keyPoints": [
+    "Honest, brief acknowledgment without necessarily sharing exact company names, offer amounts, or precise timelines",
+    "Avoid outright lying about having offers you don't actually have — risky if discovered, damages trust",
+    "Can be used naturally to politely convey your own timeline/urgency if you do have a genuine competing deadline"
+  ],
+  "commonMistakes": [
+    "Lying about having offers to create false urgency",
+    "Oversharing sensitive details like exact offer amounts or company names",
+    "Refusing to answer at all, which can seem evasive"
+  ],
+  "followUpQuestions": [
+    "What timeline are you working with for other decisions?",
+    "What factors matter most to you when comparing offers?",
+    "Would you accept an offer from us if extended?"
+  ],
+  "realWorldExample": "A candidate honestly states they are in the interview process with a couple of other companies without naming them, while noting they are genuinely most interested in this particular opportunity.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects an honest, professionally measured answer that doesn't overshare or fabricate details.",
+  "tags": ["HR Interview", "Other Offers", "Interview"],
+  "relatedTopics": ["Salary Negotiation", "Timeline", "Honesty"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-016",
+  "category": "HR Interview",
+  "topic": "What Motivates You",
+  "difficulty": "Easy",
+  "question": "What is the best way to answer \"What motivates you?\"",
+  "shortAnswer": "Give a genuine, specific answer connected to your actual experiences (solving hard problems, learning new things, seeing your work have real impact) rather than a generic, forgettable answer like \"money\" or \"success.\"",
+  "detailedAnswer": "This question probes what genuinely drives your work ethic and engagement, which interviewers use to gauge fit with the actual day-to-day realities of the role. Avoid purely extrinsic, forgettable answers like money or promotions as your primary stated motivator.\n\nStronger answers reference genuine intrinsic motivators connected to real past experiences, such as the satisfaction of solving a genuinely hard technical problem or seeing users benefit from something you built, ideally backed by a brief, specific example illustrating this from your own past experience.",
+  "keyPoints": [
+    "Avoid purely extrinsic, generic answers (money, promotions) as your PRIMARY stated motivator",
+    "Connect your answer to genuine intrinsic motivators, backed by a specific example from your actual past experience",
+    "Shows the interviewer how you're likely to actually engage with day-to-day realities of the role, not just abstract preferences"
+  ],
+  "commonMistakes": [
+    "Leading with purely extrinsic motivators like money as the primary driver",
+    "Giving a generic answer without a specific supporting example",
+    "Not connecting the motivator to the actual day-to-day realities of the role"
+  ],
+  "followUpQuestions": [
+    "Can you give a specific example of when this motivation drove you to excel?",
+    "How does this motivation align with the daily work of this role?",
+    "What kind of projects energize you the most?"
+  ],
+  "realWorldExample": "A candidate describes being motivated by the satisfaction of debugging a particularly tricky production issue and seeing the direct positive impact on users, citing a specific project example.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a genuine, specific intrinsic motivator that suggests strong alignment with the daily realities of the role.",
+  "tags": ["HR Interview", "Motivation", "Interview"],
+  "relatedTopics": ["Strengths", "Career Goals", "Engagement"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-017",
+  "category": "HR Interview",
+  "topic": "Strengths",
+  "difficulty": "Easy",
+  "question": "How do you answer \"What are your strengths?\" in a way that's genuinely convincing rather than generic?",
+  "shortAnswer": "Choose 2-3 strengths that are genuinely relevant to the specific role, and back each one with a brief, concrete example — simply listing adjectives without evidence is unconvincing.",
+  "detailedAnswer": "Similarly to the weakness question, generic strength claims without supporting evidence are easily forgotten and don't differentiate you from other candidates making the same generic claims.\n\nChoose strengths that are genuinely relevant to what this specific role actually needs, informed by carefully reviewing the job description, and for each one, briefly illustrate it with a real, specific example demonstrating that strength in action, transforming an abstract claim into concrete, memorable evidence.",
+  "keyPoints": [
+    "Choose strengths genuinely relevant to what THIS specific role needs, informed by carefully reviewing the job description",
+    "Back each claimed strength with a brief, CONCRETE example — unsupported adjectives alone are unconvincing and forgettable",
+    "2-3 well-illustrated strengths are more memorable and convincing than a long list of unsupported generic claims"
+  ],
+  "commonMistakes": [
+    "Listing generic adjectives without any supporting evidence",
+    "Choosing strengths unrelated to what the specific role actually needs",
+    "Listing too many strengths superficially instead of a few well-illustrated ones"
+  ],
+  "followUpQuestions": [
+    "Can you give a specific example demonstrating that strength?",
+    "How has this strength contributed to a project's success?",
+    "How do you know this is genuinely one of your strengths?"
+  ],
+  "realWorldExample": "A candidate cites strong debugging skills, illustrating it with a specific example of tracing and fixing a subtle race condition bug during a team project.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a small number of role-relevant strengths, each backed by a concrete, memorable example.",
+  "tags": ["HR Interview", "Strengths", "Interview"],
+  "relatedTopics": ["Weakness", "Why Should We Hire You", "STAR Method"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-018",
+  "category": "HR Interview",
+  "topic": "Answering Unfamiliar Scenarios",
+  "difficulty": "Medium",
+  "question": "How should you respond if asked a question you genuinely don't know the answer to during an HR/behavioral round?",
+  "shortAnswer": "Be honest that you don't have direct experience with that specific scenario, but pivot to how you WOULD approach it or a related/analogous experience you do have — never fabricate an experience you don't actually have.",
+  "detailedAnswer": "Occasionally a behavioral question asks about a specific scenario you genuinely haven't experienced, such as formally managing a team. Fabricating a fake example is risky, since follow-up questions probing for specific details can easily expose an invented story, seriously damaging trust.\n\nInstead, honestly acknowledge you haven't had that exact experience, then pivot constructively: describe how you would approach such a situation, or offer a genuinely related or analogous experience that demonstrates similar underlying skills.",
+  "keyPoints": [
+    "Never fabricate an experience you don't actually have — follow-up questions can easily expose an invented story",
+    "Honestly acknowledge the gap, then pivot to how you WOULD approach it, or a genuinely related/analogous experience",
+    "Demonstrating honest, thoughtful reasoning is valued more highly than a suspiciously \"perfect\" but potentially fabricated answer"
+  ],
+  "commonMistakes": [
+    "Fabricating a fake experience to answer the question",
+    "Simply saying 'I don't know' without pivoting to a related experience",
+    "Getting flustered instead of confidently reframing the answer"
+  ],
+  "followUpQuestions": [
+    "Have you had a similar experience in a different context?",
+    "How would you approach this situation if you encountered it?",
+    "What underlying skills would you draw on for this scenario?"
+  ],
+  "realWorldExample": "A candidate without formal management experience honestly notes this, then describes informally leading a project team during a hackathon, demonstrating similar coordination and delegation skills.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects honest acknowledgment of a gap combined with thoughtful reasoning or an analogous example, rather than a fabricated story.",
+  "tags": ["HR Interview", "Honesty", "Interview"],
+  "relatedTopics": ["STAR Method", "Transferable Skills", "Behavioral Questions"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-019",
+  "category": "HR Interview",
+  "topic": "Leaving a Previous Job",
+  "difficulty": "Medium",
+  "question": "What is the appropriate way to discuss why you're leaving a previous internship/job (if applicable)?",
+  "shortAnswer": "Stay professional and forward-focused — briefly and neutrally explain the reason without badmouthing the previous employer, and pivot toward what you're seeking in this NEW opportunity.",
+  "detailedAnswer": "Badmouthing a previous employer or manager, even if your complaints were genuinely justified, raises a red flag for interviewers, since it makes them wonder how you might similarly describe them to a future interviewer if things don't work out.\n\nKeep the explanation brief, factual, and neutral, such as the contract ending or seeking better growth opportunities, without dwelling on negative details or assigning blame. Spend more of your answer time on the positive framing of what you're specifically seeking in this new opportunity.",
+  "keyPoints": [
+    "Never badmouth a previous employer/manager, even if genuinely justified — raises a red flag about how you might describe THEM similarly later",
+    "Keep the explanation brief, factual, and neutral, without dwelling extensively on negative details or assigning blame",
+    "Spend more time on the POSITIVE framing: what specifically draws you toward THIS new opportunity"
+  ],
+  "commonMistakes": [
+    "Badmouthing a previous employer or manager, even indirectly",
+    "Dwelling extensively on negative details about the departure",
+    "Not pivoting enough toward positive framing of the new opportunity"
+  ],
+  "followUpQuestions": [
+    "What are you specifically looking for in your next role?",
+    "What did you learn from your previous internship/job?",
+    "Would you consider returning to that company in the future?"
+  ],
+  "realWorldExample": "A candidate briefly notes their previous internship contract concluded as scheduled, then pivots to explaining their enthusiasm for the growth opportunities this new role specifically offers.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a brief, neutral, professional explanation followed by positive forward-looking framing.",
+  "tags": ["HR Interview", "Leaving a Job", "Interview"],
+  "relatedTopics": ["Professionalism", "Career Transitions", "Why This Company"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-020",
+  "category": "HR Interview",
+  "topic": "Hypothetical Scenario Questions",
+  "difficulty": "Medium",
+  "question": "How do you handle a \"case study\" or hypothetical scenario question in an HR round (e.g., \"How would you handle an unhappy client/user\")?",
+  "shortAnswer": "Structure your answer logically — acknowledge the concern, ask clarifying questions to understand the root issue, propose a reasonable solution approach, and follow up to confirm resolution — demonstrating structured problem-solving rather than a vague, unstructured response.",
+  "detailedAnswer": "Hypothetical scenario questions test your problem-solving approach and communication style, not necessarily a single correct answer. A strong response demonstrates a clear, logical structure: first acknowledging the person's concern genuinely to show empathy, second asking clarifying questions to understand the actual root cause, third proposing a reasonable, specific approach, and fourth mentioning following up afterward to confirm the resolution worked.\n\nThis structured approach demonstrates calm, methodical thinking under a stressful hypothetical scenario.",
+  "keyPoints": [
+    "Structure demonstrates logical, calm problem-solving: acknowledge → clarify → propose solution → follow up",
+    "Show genuine empathy for the hypothetical person's frustration before jumping straight to solutions",
+    "Avoid vague, unstructured answers (\"I'd just fix it\") — specificity in your proposed approach is more convincing"
+  ],
+  "commonMistakes": [
+    "Jumping straight to a solution without acknowledging the concern or clarifying the root cause",
+    "Giving a vague answer like 'I'd just fix it' without specifics",
+    "Forgetting to mention following up to confirm the resolution actually worked"
+  ],
+  "followUpQuestions": [
+    "How would you handle it if the initial solution didn't resolve the issue?",
+    "How do you balance empathy with efficiency in these situations?",
+    "Can you give a real example where you applied a similar structured approach?"
+  ],
+  "realWorldExample": "A candidate describes how they would acknowledge a frustrated user's concern, ask clarifying questions to pinpoint the actual bug, propose a specific fix timeline, and follow up afterward to confirm satisfaction.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a logically structured, empathetic response demonstrating calm and methodical problem-solving.",
+  "tags": ["HR Interview", "Hypothetical Scenarios", "Interview"],
+  "relatedTopics": ["Problem Solving", "Customer Service", "Communication Skills"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-021",
+  "category": "HR Interview",
+  "topic": "Company Research",
+  "difficulty": "Easy",
+  "question": "What should you know and be prepared to discuss about the company before any HR interview?",
+  "shortAnswer": "Research the company's core products/services, recent news or major announcements, company culture/values, and the specific team/role you're interviewing for — enough to speak intelligently and ask informed questions.",
+  "detailedAnswer": "Walking into an interview without basic company research is one of the most common and easily avoidable mistakes, signaling a lack of genuine interest. Minimum preparation includes understanding what the company actually does or sells, any significant recent news such as funding rounds or product launches, their stated mission or values, and specifics about the role or team.\n\nThis research directly informs your answers to why-this-company questions and equips you to ask genuinely informed, specific questions.",
+  "keyPoints": [
+    "Minimum baseline: what the company does, recent significant news, stated mission/values, specifics of the role/team",
+    "Directly informs your answers to \"why this company\" and enables genuinely informed questions at the end",
+    "Lack of basic research is one of the most common, easily avoidable mistakes that undermines an otherwise strong candidacy"
+  ],
+  "commonMistakes": [
+    "Not researching the company's basic products or services before the interview",
+    "Being unaware of significant recent company news",
+    "Not reviewing the specific job description or team details"
+  ],
+  "followUpQuestions": [
+    "What do you know about our recent product launches?",
+    "What appeals to you about our company culture?",
+    "What have you learned about this specific team's work?"
+  ],
+  "realWorldExample": "A candidate mentions the company's recent funding announcement and connects it to the growth opportunities they're excited about in the specific role.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to demonstrate basic, genuine research about the company and role.",
+  "tags": ["HR Interview", "Company Research", "Interview"],
+  "relatedTopics": ["Why This Company", "Questions for Interviewer", "Preparation"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-022",
+  "category": "HR Interview",
+  "topic": "Notice Period and Joining Date",
+  "difficulty": "Easy",
+  "question": "How do you handle being asked \"What is your expected joining date/notice period?\"",
+  "shortAnswer": "Be accurate and realistic about your actual availability — for freshers, this is usually straightforward (immediately available, or after a specific known exam/graduation date); avoid overpromising an unrealistic timeline just to seem more appealing.",
+  "detailedAnswer": "For students and freshers, this question is usually simple to answer factually, such as stating you can join immediately or after final exams on a specific known date.\n\nThe key mistake to avoid is overpromising an unrealistic date just to seem more eager or available, which can create problems later if you can't actually honor that commitment. Being straightforward and realistic about genuine constraints is viewed favorably, signaling reliability and honest communication.",
+  "keyPoints": [
+    "For freshers, this is usually a straightforward factual answer based on your actual academic/personal timeline",
+    "Avoid overpromising an unrealistic availability date just to appear more eager — can create problems if you can't honor it",
+    "Being straightforward about genuine constraints (exams, prior commitments) signals reliability, not weakness"
+  ],
+  "commonMistakes": [
+    "Overpromising an unrealistic joining date to appear more eager",
+    "Being vague about actual availability instead of giving a specific date",
+    "Not accounting for genuine known constraints like final exams"
+  ],
+  "followUpQuestions": [
+    "Is there any flexibility in that timeline if needed?",
+    "What commitments do you need to complete before joining?",
+    "Would you be able to start part-time before your official start date?"
+  ],
+  "realWorldExample": "A final-year student clearly states they have exams until a specific date and can join shortly after, rather than falsely claiming immediate availability.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a realistic, factual answer that reflects genuine reliability rather than false eagerness.",
+  "tags": ["HR Interview", "Notice Period", "Fresher", "Interview"],
+  "relatedTopics": ["Salary Expectations", "Reliability", "Onboarding"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-023",
+  "category": "HR Interview",
+  "topic": "Lack of Professional Experience",
+  "difficulty": "Medium",
+  "question": "What is the best approach if you don't have direct professional/internship experience relevant to the specific role?",
+  "shortAnswer": "Emphasize TRANSFERABLE skills from academic projects, coursework, personal projects, hackathons, or extracurricular activities — genuinely connecting them to what the role actually requires, rather than apologizing for lacking formal experience.",
+  "detailedAnswer": "Especially for entry-level or fresher roles, most candidates genuinely lack extensive formal professional experience, and interviewers know and expect this, so there's no need to apologize for it.\n\nInstead, actively reframe relevant academic projects, personal side-projects, open-source contributions, hackathon participation, or leadership in college clubs as demonstrating the same underlying skills the role actually requires, explicitly drawing the connection for the interviewer. Confidence in presenting these experiences as genuinely valuable makes a significant difference.",
+  "keyPoints": [
+    "No need to apologize for lacking formal professional experience — expected and understood for entry-level/fresher roles",
+    "Explicitly reframe academic projects, personal projects, hackathons as demonstrating the SAME underlying skills the role needs",
+    "Present these experiences with confidence, not apologetically as \"just\" academic work — this significantly affects how convincing they are"
+  ],
+  "commonMistakes": [
+    "Apologizing for lacking formal professional experience",
+    "Not explicitly connecting academic or personal projects to the skills the role requires",
+    "Presenting relevant experiences apologetically as 'just' academic work"
+  ],
+  "followUpQuestions": [
+    "Can you walk me through a specific project that demonstrates a relevant skill?",
+    "How did your coursework or personal projects prepare you for this role?",
+    "What did you learn from leading a college club or hackathon team?"
+  ],
+  "realWorldExample": "A candidate confidently frames their capstone database optimization project as directly demonstrating the same problem-solving and performance-tuning skills the role requires, without apologizing for lacking a formal internship in that area.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects confident reframing of academic and personal experience as directly relevant, transferable evidence of capability.",
+  "tags": ["HR Interview", "Transferable Skills", "Fresher", "Interview"],
+  "relatedTopics": ["Why Should We Hire You", "Strengths", "Projects"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-024",
+  "category": "HR Interview",
+  "topic": "Discussing Weak GPA",
+  "difficulty": "Medium",
+  "question": "How should you handle a question about your GPA/academic performance if it's not particularly strong?",
+  "shortAnswer": "Be honest about the number if directly asked, briefly provide context if genuinely relevant (without excessive excuse-making), and pivot toward evidence of your actual capability through projects, skills, or specific coursework performance that better demonstrates your abilities.",
+  "detailedAnswer": "If your overall GPA isn't particularly impressive but doesn't disqualify you from the role's stated eligibility criteria, avoid either lying about it or dwelling extensively on excuses.\n\nBe straightforwardly honest if directly asked the number, offer brief genuine context if truly relevant without sounding like excuses, and then pivot confidently toward more compelling evidence of your actual technical capability, such as specific strong project work or relevant certifications, which for most technical roles is generally considered more predictive of on-the-job performance than an overall GPA number alone.",
+  "keyPoints": [
+    "Be honest about the actual number if directly asked — don't lie, as this can be verified and severely damages trust if discovered",
+    "Brief, genuine context is fine if truly relevant, but avoid sounding like you're making excessive excuses",
+    "Pivot confidently toward stronger evidence of capability (projects, specific skills, relevant coursework) — often more predictive than GPA alone"
+  ],
+  "commonMistakes": [
+    "Lying about the actual GPA number, which can be verified",
+    "Dwelling excessively on excuses rather than briefly providing genuine context",
+    "Not pivoting to stronger evidence of capability like projects or specific skills"
+  ],
+  "followUpQuestions": [
+    "What subjects or projects did you perform particularly well in?",
+    "Was there a specific factor that affected your overall GPA?",
+    "How do you demonstrate your technical capability beyond your GPA?"
+  ],
+  "realWorldExample": "A candidate honestly shares their GPA, briefly notes they balanced significant extracurricular leadership responsibilities, and pivots to highlighting a strong capstone project that demonstrates their actual technical capability.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects honesty about the GPA combined with a confident pivot to stronger, more predictive evidence of capability.",
+  "tags": ["HR Interview", "GPA", "Interview"],
+  "relatedTopics": ["Strengths", "Transferable Skills", "Academic Performance"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "hr-025",
+  "category": "HR Interview",
+  "topic": "Closing the Interview",
+  "difficulty": "Easy",
+  "question": "What is a good closing statement or final impression to leave at the end of an HR interview?",
+  "shortAnswer": "Briefly reiterate your genuine enthusiasm for the specific role/company, thank the interviewer for their time, and confirm next steps/timeline if not already clearly communicated — leaving a warm, professional, memorable final impression.",
+  "detailedAnswer": "The very end of an interview is a final opportunity to reinforce a positive impression before the interviewer moves on to evaluate other candidates. A strong closing briefly and genuinely restates enthusiasm for the specific role and company, referencing something specific discussed during the conversation if natural.\n\nSincerely thank the interviewer for their time and the insights they shared, and if not already stated, politely ask about the expected timeline for next steps, showing continued genuine interest and proactive engagement.",
+  "keyPoints": [
+    "Briefly, genuinely restate enthusiasm for the specific role/company — reference something specific from the conversation if natural",
+    "Sincerely thank the interviewer for their time and the insights shared, not just a generic \"thanks for the opportunity\"",
+    "Politely confirm the expected next-steps timeline if not already clear — shows continued engagement, sets realistic follow-up expectations"
+  ],
+  "commonMistakes": [
+    "Giving a purely generic 'thanks for the opportunity' without specific reference to the conversation",
+    "Not asking about the next steps timeline, leaving uncertainty",
+    "Failing to genuinely restate enthusiasm for the specific role and company"
+  ],
+  "followUpQuestions": [
+    "What did you find most interesting about our conversation today?",
+    "When can you expect to hear back about next steps?",
+    "Is there anything else you'd like to share before we wrap up?"
+  ],
+  "realWorldExample": "A candidate thanks the interviewer for sharing insights about the team's engineering practices, reiterates genuine excitement about the role, and politely asks about the expected timeline for next steps.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects a warm, specific, and professional closing that reinforces genuine interest and leaves a memorable final impression.",
+  "tags": ["HR Interview", "Closing Statement", "Interview"],
+  "relatedTopics": ["Questions for Interviewer", "Follow-Up", "Professionalism"],
+  "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
 }
 ];
