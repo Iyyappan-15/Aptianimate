@@ -8251,5 +8251,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["Linux", "apt", "Package Management", "Interview"],
   "relatedTopics": ["apt vs yum vs dpkg", "System Administration", "Debian"],
   "references": ["Debian Documentation - debian.org"]
+},
+{
+  "id": "api-001",
+  "category": "APIs",
+  "topic": "REST API Principles",
+  "difficulty": "Medium",
+  "question": "What are REST API principles? What HTTP methods are used for CRUD operations?",
+  "shortAnswer": "REST: Stateless, Client-Server, Uniform Interface, Cacheable, Layered System. Methods: GET (read), POST (create), PUT (full update), PATCH (partial update), DELETE (remove).",
+  "detailedAnswer": "REST is an architectural style, not a strict protocol. Stateless means each request contains all information needed, since the server holds no client session state between requests. Uniform Interface means consistent, predictable URL naming using nouns representing resources rather than verbs, along with standard HTTP methods for CRUD operations.\n\nGET is idempotent and safe, never used for mutations. POST creates a new resource and is not idempotent by default. PUT fully replaces a resource. PATCH updates only specific fields. DELETE removes a resource and is idempotent, since deleting an already-deleted resource still returns success.",
+  "keyPoints": [
+    "Resource-based URLs: /users/{id}/orders, never /getUserOrders?id=123",
+    "GET: cacheable by default, never used for anything that changes state",
+    "PATCH: sends only the changed fields, not the entire resource representation"
+  ],
+  "commonMistakes": [
+    "Using GET for operations that mutate data",
+    "Confusing PUT (full replace) with PATCH (partial update)",
+    "Using verbs in URLs instead of noun-based resource naming"
+  ],
+  "followUpQuestions": [
+    "What does idempotent mean in the context of HTTP methods?",
+    "Why is statelessness important for RESTful APIs?",
+    "How would you design idempotency for a POST request?"
+  ],
+  "realWorldExample": "A typical REST API for a blog uses GET /posts to list posts, POST /posts to create one, and DELETE /posts/{id} to remove one.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain REST constraints and correctly map HTTP methods to CRUD operations with idempotency awareness.",
+  "tags": ["REST", "API", "HTTP Methods", "Interview"],
+  "relatedTopics": ["GraphQL", "HTTP Status Codes", "API Design"],
+  "references": ["RFC 7231"]
+},
+{
+  "id": "api-002",
+  "category": "APIs",
+  "topic": "PUT vs PATCH",
+  "difficulty": "Easy",
+  "question": "What is the difference between PUT and PATCH?",
+  "shortAnswer": "PUT replaces the ENTIRE resource with the data sent. PATCH updates only the SPECIFIC fields included in the request, leaving everything else unchanged.",
+  "detailedAnswer": "If a user resource has fields name, email, and age, a PUT request must include all three fields; any field omitted is typically interpreted as being cleared or reset, since PUT is meant to be a full replacement.\n\nA PATCH request can send just the age field, updating only that one field while leaving the rest completely untouched. Both are technically idempotent when implemented correctly, but PATCH requires more careful server-side implementation to correctly merge partial updates.",
+  "keyPoints": [
+    "PUT: send the COMPLETE resource representation — missing fields may be reset",
+    "PATCH: send ONLY the fields that changed — other fields remain untouched",
+    "Both should be idempotent — repeating the same request produces the same final state"
+  ],
+  "commonMistakes": [
+    "Sending a partial payload with PUT expecting only those fields to update",
+    "Assuming PATCH is never idempotent",
+    "Not implementing correct field merging logic on the server for PATCH"
+  ],
+  "followUpQuestions": [
+    "Why must PUT include the complete resource representation?",
+    "How would a server correctly merge a PATCH request's partial fields?",
+    "Are PUT and PATCH always idempotent in practice?"
+  ],
+  "realWorldExample": "Updating just a user's age uses PATCH /users/123 with {\"age\": 26}, while replacing the entire user profile uses PUT /users/123 with the full object.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "PATCH /users/123\nContent-Type: application/json\n\n{\"age\": 26}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish full replacement from partial update and note idempotency for both.",
+  "tags": ["PUT", "PATCH", "REST", "API", "Interview"],
+  "relatedTopics": ["REST API Principles", "Idempotency", "HTTP Methods"],
+  "references": ["RFC 7231", "RFC 5789"]
+},
+{
+  "id": "api-003",
+  "category": "APIs",
+  "topic": "API Versioning",
+  "difficulty": "Medium",
+  "question": "What is API Versioning? What are the common strategies?",
+  "shortAnswer": "API Versioning allows an API to evolve without breaking existing clients, by supporting multiple versions simultaneously. Common strategies: URL path versioning, header versioning, and query parameter versioning.",
+  "detailedAnswer": "URL Path Versioning, such as /api/v1/users versus /api/v2/users, is the most common and visible approach, simple to understand and test, but pollutes the URL and technically means the resource has a different identity per version.\n\nHeader Versioning keeps URLs clean and is considered more RESTfully pure since the resource identity stays the same, but is less discoverable and harder to test casually. Query Parameter Versioning is simple but less commonly recommended since versioning is more of a routing concern than a query filter. Whichever strategy is chosen, maintaining backward compatibility and clearly deprecating old versions is critical.",
+  "keyPoints": [
+    "URL path versioning: most common, visible, easy to test directly in a browser",
+    "Header versioning: cleaner URLs, but less discoverable and harder to test casually",
+    "Always provide a deprecation timeline/notice before actually removing an old API version"
+  ],
+  "commonMistakes": [
+    "Removing an old API version without a deprecation notice",
+    "Choosing query parameter versioning when it doesn't fit the routing model well",
+    "Not considering discoverability trade-offs between URL and header versioning"
+  ],
+  "followUpQuestions": [
+    "Why is header versioning considered more RESTfully pure?",
+    "What is the trade-off of URL path versioning?",
+    "How would you communicate an API deprecation to consumers?"
+  ],
+  "realWorldExample": "Stripe uses a date-based header versioning system, letting developers pin their integration to a specific API version via a request header.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to compare versioning strategies and stress the importance of backward compatibility and deprecation communication.",
+  "tags": ["API Versioning", "REST", "Interview"],
+  "relatedTopics": ["API Deprecation", "Backward Compatibility", "REST API Design"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-004",
+  "category": "APIs",
+  "topic": "Authentication vs Authorization",
+  "difficulty": "Easy",
+  "question": "What is the difference between Authentication and Authorization in the context of APIs?",
+  "shortAnswer": "Authentication verifies WHO you are (identity). Authorization determines WHAT you're allowed to do (permissions) — authentication always happens first, authorization second.",
+  "detailedAnswer": "Authentication is the process of confirming a client's identity, typically via credentials, an API key, or a token that proves the caller is who they claim to be. Authorization happens after successful authentication, determining what specific actions or resources the now-verified identity is permitted to access.\n\nHTTP status codes reflect this distinction precisely: 401 Unauthorized actually means not authenticated despite the confusing name, while 403 Forbidden means authenticated but not authorized for this specific action.",
+  "keyPoints": [
+    "Authentication: \"who are you?\" — verified via credentials, API keys, or tokens",
+    "Authorization: \"what are you allowed to do?\" — checked after successful authentication",
+    "401 = authentication failure (despite the name). 403 = authorization failure (identity confirmed, access denied)"
+  ],
+  "commonMistakes": [
+    "Using 401 when the user is authenticated but lacks permission (should be 403)",
+    "Confusing authentication and authorization as the same concept",
+    "Not implementing authorization checks after authentication succeeds"
+  ],
+  "followUpQuestions": [
+    "Why does 401 mean 'not authenticated' despite its name?",
+    "Can a request be authenticated but still fail authorization?",
+    "How would you implement role-based authorization after authentication?"
+  ],
+  "realWorldExample": "A logged-in regular user (authenticated) attempting to access an admin-only endpoint receives a 403 Forbidden, since they lack authorization despite being authenticated.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly distinguish 401 from 403 and explain the sequential relationship between authentication and authorization.",
+  "tags": ["Authentication", "Authorization", "API Security", "Interview"],
+  "relatedTopics": ["JWT", "OAuth", "HTTP Status Codes"],
+  "references": ["RFC 7235"]
+},
+{
+  "id": "api-005",
+  "category": "APIs",
+  "topic": "API Gateway",
+  "difficulty": "Medium",
+  "question": "What is an API Gateway? What functions does it typically provide?",
+  "shortAnswer": "An API Gateway is a single entry point that sits in front of backend services, handling cross-cutting concerns like routing, authentication, rate limiting, and request/response transformation.",
+  "detailedAnswer": "In a microservices architecture, clients shouldn't need to know about or directly call dozens of individual backend services; an API Gateway provides one unified entry point that routes each incoming request to the appropriate backend service internally.\n\nBeyond routing, gateways commonly handle authentication and authorization, centralizing this logic instead of duplicating it in every microservice, rate limiting to protect backend services from being overwhelmed, request/response transformation, centralized logging and monitoring, and SSL termination.",
+  "keyPoints": [
+    "Single entry point: clients interact with one gateway, not dozens of individual microservices directly",
+    "Centralizes cross-cutting concerns: auth, rate limiting, logging — avoids duplicating this logic per service",
+    "Popular tools: Kong, AWS API Gateway, Nginx (as a gateway), Apigee, Azure API Management"
+  ],
+  "commonMistakes": [
+    "Duplicating authentication logic across every individual microservice instead of centralizing it",
+    "Not using the gateway for rate limiting, leaving backend services exposed to overload",
+    "Confusing an API Gateway with a simple reverse proxy without cross-cutting concern handling"
+  ],
+  "followUpQuestions": [
+    "How does an API Gateway centralize authentication for microservices?",
+    "What is the difference between an API Gateway and a simple load balancer?",
+    "What are some popular API Gateway implementations?"
+  ],
+  "realWorldExample": "Kong or AWS API Gateway sits in front of a company's microservices, handling authentication, rate limiting, and routing for all incoming client requests.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the gateway's role in centralizing cross-cutting concerns for microservices architectures.",
+  "tags": ["API Gateway", "Microservices", "Interview"],
+  "relatedTopics": ["Rate Limiting", "Load Balancing", "Microservices"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "api-006",
+  "category": "APIs",
+  "topic": "API Rate Limiting",
+  "difficulty": "Medium",
+  "question": "What is API Rate Limiting? What HTTP status code and headers are typically used?",
+  "shortAnswer": "Rate Limiting restricts how many requests a client can make within a given time window, protecting the API from abuse/overload. Status code 429 Too Many Requests is returned when the limit is exceeded, often with a Retry-After header.",
+  "detailedAnswer": "Without rate limiting, a single client, malicious or simply buggy, could send an overwhelming number of requests, degrading service for all other users or even crashing the backend entirely.\n\nWhen a client exceeds their allotted limit, the server responds with HTTP 429 Too Many Requests, ideally including a Retry-After header indicating how long to wait before trying again, and often custom headers like X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset giving the client visibility into their current quota status even on successful requests.",
+  "keyPoints": [
+    "429 Too Many Requests: the standard status code when a client exceeds their rate limit",
+    "Retry-After header: tells the client exactly how long to wait before retrying",
+    "X-RateLimit-* headers: give visibility into current quota/remaining requests, even on successful calls"
+  ],
+  "commonMistakes": [
+    "Not including a Retry-After header, leaving clients guessing when to retry",
+    "Omitting X-RateLimit headers, preventing clients from proactively throttling themselves",
+    "Returning an incorrect status code like 403 instead of 429"
+  ],
+  "followUpQuestions": [
+    "What should a well-behaved client do upon receiving a 429 response?",
+    "How do X-RateLimit headers help clients avoid hitting the limit?",
+    "What's the difference between Retry-After and X-RateLimit-Reset?"
+  ],
+  "realWorldExample": "Twitter's API returns a 429 status with a Retry-After header when a client exceeds their allotted request quota within a time window.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "HTTP/1.1 429 Too Many Requests\nRetry-After: 60\nX-RateLimit-Limit: 100\nX-RateLimit-Remaining: 0"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly name the 429 status code and describe the purpose of Retry-After and rate-limit visibility headers.",
+  "tags": ["Rate Limiting", "API", "Interview"],
+  "relatedTopics": ["Token Bucket", "API Gateway", "429 Status Code"],
+  "references": ["RFC 6585"]
+},
+{
+  "id": "api-007",
+  "category": "APIs",
+  "topic": "Pagination Strategies",
+  "difficulty": "Medium",
+  "question": "What is Pagination in APIs? Compare Offset-based vs Cursor-based pagination.",
+  "shortAnswer": "Pagination breaks large result sets into smaller pages. Offset-based uses a page number/offset (simple, but can skip/duplicate items if data changes between requests). Cursor-based uses a pointer to a specific item (more consistent, better for large/frequently-changing datasets).",
+  "detailedAnswer": "Offset-based pagination is simple to implement and understand, allowing users to jump directly to any specific page, but if items are inserted or deleted between page requests, users can see duplicate items or skip items entirely, a classic issue when browsing a live, frequently-updated feed.\n\nCursor-based pagination uses a reference point, the cursor, typically an ID or timestamp, rather than a numeric position; subsequent requests fetch items strictly after that cursor, remaining consistent even as new items are added elsewhere in the dataset, though it doesn't allow jumping directly to an arbitrary page number.",
+  "keyPoints": [
+    "Offset-based: simple, allows jumping to any page, but inconsistent if data changes between requests",
+    "Cursor-based: consistent even with frequent inserts/deletes, but can't jump to an arbitrary page number",
+    "Cursor-based is strongly preferred for infinite-scroll feeds and large, actively-changing datasets"
+  ],
+  "commonMistakes": [
+    "Using offset-based pagination for a rapidly-changing, live feed, causing duplicate or skipped items",
+    "Assuming cursor-based pagination allows jumping to an arbitrary page number",
+    "Not choosing pagination strategy based on the actual use case (browsing vs infinite scroll)"
+  ],
+  "followUpQuestions": [
+    "Why does offset-based pagination risk skipping or duplicating items?",
+    "Why can't cursor-based pagination jump to an arbitrary page?",
+    "When would you choose offset-based over cursor-based pagination?"
+  ],
+  "realWorldExample": "Twitter's timeline API uses cursor-based pagination to ensure a consistent feed even as new tweets are posted while a user scrolls.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to compare consistency and usability trade-offs and recommend cursor-based pagination for changing datasets.",
+  "tags": ["Pagination", "API Design", "Interview"],
+  "relatedTopics": ["REST API Design", "GraphQL", "Database Queries"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-008",
+  "category": "APIs",
+  "topic": "API Documentation and OpenAPI/Swagger",
+  "difficulty": "Easy",
+  "question": "What is API Documentation? What is OpenAPI/Swagger?",
+  "shortAnswer": "API Documentation describes how to use an API — available endpoints, request/response formats, authentication requirements. OpenAPI (formerly Swagger) is a standardized specification format for describing REST APIs in a machine-readable way.",
+  "detailedAnswer": "Good API documentation is essential for both external developers integrating with an API and internal teams maintaining it, covering every endpoint, expected request parameters, possible response formats and status codes, authentication requirements, and ideally runnable examples.\n\nOpenAPI specifications are written in YAML or JSON following a standardized schema, describing an API's structure in a machine-readable format. This enables powerful tooling: automatically generating interactive documentation, auto-generating client SDKs in multiple languages, and auto-generating server-side boilerplate or validation logic directly from the specification.",
+  "keyPoints": [
+    "OpenAPI (formerly Swagger): a standardized, machine-readable format (YAML/JSON) for describing REST APIs",
+    "Enables auto-generated interactive docs (Swagger UI), client SDKs, and server-side validation/stubs",
+    "Machine-readable specs reduce the risk of documentation drifting out of sync with actual API behavior"
+  ],
+  "commonMistakes": [
+    "Maintaining hand-written docs separately from the actual API, causing drift",
+    "Not leveraging OpenAPI's tooling for auto-generated client SDKs",
+    "Confusing OpenAPI (the spec format) with Swagger UI (a specific tool built on it)"
+  ],
+  "followUpQuestions": [
+    "How does an OpenAPI spec reduce documentation drift?",
+    "What tooling can be generated from an OpenAPI specification?",
+    "What's the relationship between OpenAPI and Swagger?"
+  ],
+  "realWorldExample": "A payment API publishes an OpenAPI spec that auto-generates interactive Swagger UI documentation and client SDKs for multiple programming languages.",
+  "codeExample": {
+    "language": "YAML",
+    "code": "paths:\n  /users/{id}:\n    get:\n      summary: Get a user by ID\n      responses:\n        '200':\n          description: Success"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the value of machine-readable API specs and describe common tooling they enable.",
+  "tags": ["API Documentation", "OpenAPI", "Swagger", "Interview"],
+  "relatedTopics": ["API-First Design", "Contract Testing", "API Mocking"],
+  "references": ["OpenAPI Specification - swagger.io"]
+},
+{
+  "id": "api-009",
+  "category": "APIs",
+  "topic": "CORS",
+  "difficulty": "Medium",
+  "question": "What is CORS? Why do browsers enforce it?",
+  "shortAnswer": "CORS (Cross-Origin Resource Sharing) is a browser security mechanism that restricts web pages from making requests to a different domain than the one that served the page, unless the server explicitly allows it.",
+  "detailedAnswer": "The Same-Origin Policy prevents a malicious script running on one domain from silently reading sensitive responses from another domain on a user's behalf. CORS relaxes this restriction in a controlled way using server-provided headers.\n\nSimple requests are sent directly, and the browser checks if the response includes an Access-Control-Allow-Origin header permitting the requesting origin. More complex requests trigger a preflight OPTIONS request first, where the browser asks the server for permission before sending the actual request. Critically, CORS is enforced entirely by the browser; server-to-server requests, curl, and tools like Postman are completely unaffected.",
+  "keyPoints": [
+    "Same-Origin Policy is the underlying browser security model that CORS selectively relaxes",
+    "Preflight OPTIONS request: sent automatically by the browser before \"complex\" requests to check permissions",
+    "CORS is a BROWSER-ONLY restriction — server-to-server calls and tools like curl/Postman ignore it entirely"
+  ],
+  "commonMistakes": [
+    "Assuming CORS protects server-to-server communication (it only applies to browsers)",
+    "Not understanding why a preflight OPTIONS request is triggered for complex requests",
+    "Confusing CORS errors with authentication or network errors"
+  ],
+  "followUpQuestions": [
+    "Why does CORS not affect server-to-server requests or tools like curl?",
+    "What triggers a preflight OPTIONS request?",
+    "How does the Access-Control-Allow-Origin header work?"
+  ],
+  "realWorldExample": "A frontend hosted on app.example.com making a request to api.example.com must have CORS headers configured on the API server to allow the browser request to succeed.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "Access-Control-Allow-Origin: https://app.example.com\nAccess-Control-Allow-Methods: GET, POST, PUT, DELETE"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the Same-Origin Policy, preflight requests, and that CORS is a browser-only restriction.",
+  "tags": ["CORS", "Browser Security", "API", "Interview"],
+  "relatedTopics": ["Same-Origin Policy", "HTTP Headers", "Web Security"],
+  "references": ["MDN Web Docs - CORS"]
+},
+{
+  "id": "api-010",
+  "category": "APIs",
+  "topic": "Webhooks",
+  "difficulty": "Medium",
+  "question": "What is Webhook? How is it different from a regular API call/polling?",
+  "shortAnswer": "A Webhook is a \"reverse API\" — instead of your application repeatedly asking a service \"has anything happened yet?\" (polling), the service proactively sends an HTTP request to YOUR server the moment an event actually occurs.",
+  "detailedAnswer": "With traditional polling, an application repeatedly calls an API at fixed intervals checking for new data, which wastes resources on both sides since most checks return nothing new, and introduces a delay up to the polling interval before an event is learned about.\n\nWith a webhook, a URL endpoint is registered on your server with the external service; when a relevant event occurs, that service immediately sends an HTTP POST request to your registered URL containing the event data, giving near-instant notification with zero wasted checking requests. Webhooks require your endpoint to be publicly reachable, and robust implementations must handle retries, verify request authenticity via a signature, and process events idempotently.",
+  "keyPoints": [
+    "Polling: your app repeatedly asks \"anything new?\" — wastes resources, introduces notification delay",
+    "Webhook: the external service proactively notifies YOU the instant an event occurs — near-instant, efficient",
+    "Webhook endpoints must verify request authenticity (via signature headers) to prevent spoofed/fake events"
+  ],
+  "commonMistakes": [
+    "Not verifying webhook signature headers, allowing spoofed events to be processed",
+    "Assuming webhook delivery is always exactly-once rather than potentially duplicated",
+    "Using polling for events where near-instant notification is actually needed"
+  ],
+  "followUpQuestions": [
+    "How would you verify the authenticity of an incoming webhook request?",
+    "Why must webhook event processing be idempotent?",
+    "What are the trade-offs of polling versus webhooks?"
+  ],
+  "realWorldExample": "Stripe sends a webhook to a merchant's server the instant a payment completes, rather than the merchant repeatedly polling Stripe's API to check payment status.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the push-versus-pull distinction and describe webhook reliability considerations like signature verification.",
+  "tags": ["Webhooks", "API", "Interview"],
+  "relatedTopics": ["Polling", "Idempotency", "Event-Driven Architecture"],
+  "references": ["Stripe API Documentation"]
+},
+{
+  "id": "api-011",
+  "category": "APIs",
+  "topic": "SOAP vs REST",
+  "difficulty": "Medium",
+  "question": "What is the difference between SOAP and REST?",
+  "shortAnswer": "SOAP is a strict, XML-based protocol with a formal contract (WSDL) and built-in standards for security/transactions. REST is a flexible architectural style, typically using JSON, with no enforced formal contract.",
+  "detailedAnswer": "SOAP uses XML exclusively for message format and follows a strict, formally-defined contract described in a WSDL file that precisely specifies every operation and data type, providing strong tooling support for auto-generating client code and built-in standards for transactions and formal security, making it historically popular in enterprise and financial systems.\n\nREST is more of a flexible architectural style than a strict protocol, typically uses JSON which is lighter weight than XML, has no mandatory formal contract, and generally has lower overhead and a gentler learning curve, which is why REST became the dominant choice for public web APIs and most modern application development.",
+  "keyPoints": [
+    "SOAP: strict XML protocol, formal WSDL contract, heavier overhead — common in legacy enterprise/financial systems",
+    "REST: flexible architectural style, typically JSON, lighter weight — dominant choice for modern web APIs",
+    "SOAP has built-in standards for transactions/security (WS-*); REST relies on HTTPS + application-level conventions"
+  ],
+  "commonMistakes": [
+    "Assuming SOAP is entirely obsolete rather than still used in specific enterprise contexts",
+    "Not knowing WSDL is SOAP's formal contract mechanism",
+    "Confusing REST's flexibility with a lack of any structure at all"
+  ],
+  "followUpQuestions": [
+    "Why is SOAP still used in some enterprise and financial systems?",
+    "What is a WSDL file and what role does it play?",
+    "Why did REST become the dominant choice for public web APIs?"
+  ],
+  "realWorldExample": "Many legacy banking systems still use SOAP-based web services for their formal contracts and built-in transaction support, while most modern public APIs use REST.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to compare the strict-contract nature of SOAP with REST's flexibility and explain why REST dominates modern development.",
+  "tags": ["SOAP", "REST", "API", "Interview"],
+  "relatedTopics": ["WSDL", "XML", "API Design"],
+  "references": ["W3C SOAP Specification"]
+},
+{
+  "id": "api-012",
+  "category": "APIs",
+  "topic": "API Key vs OAuth Token",
+  "difficulty": "Medium",
+  "question": "What is an API Key? How is it different from OAuth tokens?",
+  "shortAnswer": "An API Key is a simple, static string identifying and authenticating a specific application/client. OAuth tokens are more sophisticated, typically short-lived, and can represent delegated USER permission rather than just application identity.",
+  "detailedAnswer": "An API key is a single, usually long-lived, static secret string passed with each request that identifies which application or developer is making the call, primarily used for simple authentication and usage tracking or billing, but it doesn't inherently represent any specific user's permission, and if leaked, remains valid indefinitely until manually revoked.\n\nOAuth access tokens are typically short-lived, obtained through a more complex flow involving explicit user consent, and represent a specific scope of delegated permission on behalf of an actual user. A compromised OAuth token has much more limited blast radius due to its short lifespan and scoped permissions.",
+  "keyPoints": [
+    "API Key: simple, static, long-lived — identifies the calling application, not a specific user",
+    "OAuth token: short-lived, scoped, represents delegated permission on behalf of a specific user",
+    "API keys are simpler to implement but riskier if leaked (no expiry); OAuth tokens limit damage via short expiry"
+  ],
+  "commonMistakes": [
+    "Using a long-lived API key where scoped, short-lived OAuth tokens would be more appropriate",
+    "Not rotating API keys periodically since they don't expire automatically",
+    "Confusing API keys (application identity) with OAuth tokens (delegated user permission)"
+  ],
+  "followUpQuestions": [
+    "Why does a compromised OAuth token have a smaller blast radius than a leaked API key?",
+    "When would you choose an API key over OAuth?",
+    "How does OAuth's scope mechanism limit what a token can access?"
+  ],
+  "realWorldExample": "A weather app uses a simple API key to authenticate with a weather data provider, while a third-party app using 'Sign in with Google' uses OAuth tokens scoped to specific permitted actions.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the lifespan and scope differences between API keys and OAuth tokens and their respective risk profiles.",
+  "tags": ["API Key", "OAuth", "Authentication", "Interview"],
+  "relatedTopics": ["JWT", "OAuth 2.0", "Authentication"],
+  "references": ["RFC 6749"]
+},
+{
+  "id": "api-013",
+  "category": "APIs",
+  "topic": "HATEOAS",
+  "difficulty": "Hard",
+  "question": "What is HATEOAS? Is it commonly used in practice?",
+  "shortAnswer": "HATEOAS (Hypermedia as the Engine of Application State) is a REST constraint where API responses include links to related actions/resources, letting clients navigate the API dynamically rather than hardcoding URLs.",
+  "detailedAnswer": "In a fully HATEOAS-compliant API, a response for an order might include not just the order data but also links to related actions, such as canceling or tracking the order; the client discovers available next actions dynamically from the response itself, similar to how a human navigates a website by clicking links.\n\nIn theory, this makes an API more self-descriptive and resilient to URL structure changes. In practice, despite being part of Roy Fielding's original REST definition, HATEOAS is rarely fully implemented in most real-world RESTful APIs, since most APIs described as REST are actually closer to RPC-over-HTTP with resource-oriented URLs.",
+  "keyPoints": [
+    "Responses include hypermedia links to related actions, letting clients navigate dynamically",
+    "Part of Fielding's original strict REST definition, but rarely fully implemented in real-world APIs",
+    "Most \"RESTful\" APIs today are technically closer to RPC-over-HTTP than true HATEOAS-compliant REST"
+  ],
+  "commonMistakes": [
+    "Assuming most 'RESTful' APIs today are fully HATEOAS-compliant",
+    "Confusing HATEOAS with simple resource-oriented URL design",
+    "Not recognizing HATEOAS's resilience benefit to URL structure changes"
+  ],
+  "followUpQuestions": [
+    "Why is HATEOAS rarely fully implemented despite being part of the original REST definition?",
+    "What resilience benefit does HATEOAS theoretically provide?",
+    "What does a HATEOAS-compliant response typically include?"
+  ],
+  "realWorldExample": "A hypothetical HATEOAS-compliant order API response includes links like {\"cancel\": \"/orders/123/cancel\"}, letting the client discover available actions without hardcoding URLs.",
+  "codeExample": {
+    "language": "JSON",
+    "code": "{\n  \"order_id\": 123,\n  \"status\": \"shipped\",\n  \"links\": {\n    \"track\": \"/orders/123/tracking\",\n    \"cancel\": \"/orders/123/cancel\"\n  }\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the hypermedia-driven navigation concept and acknowledge its rarity in real-world implementation.",
+  "tags": ["HATEOAS", "REST", "API Design", "Interview"],
+  "relatedTopics": ["Richardson Maturity Model", "REST API Principles", "Hypermedia"],
+  "references": ["Roy Fielding's REST Dissertation"]
+},
+{
+  "id": "api-014",
+  "category": "APIs",
+  "topic": "Throttling vs Rate Limiting",
+  "difficulty": "Medium",
+  "question": "What is API Throttling vs Rate Limiting — are they the same thing?",
+  "shortAnswer": "They're closely related and often used interchangeably, but Rate Limiting typically means outright REJECTING requests once a limit is exceeded, while Throttling can mean SLOWING DOWN (delaying) requests rather than rejecting them entirely.",
+  "detailedAnswer": "Rate limiting enforces a hard cap; once a client exceeds their allowed request count within a time window, further requests are immediately rejected with a 429 status until the window resets.\n\nThrottling is sometimes used to describe a softer approach, where rather than outright rejecting excess requests, the system might deliberately slow down responses once usage approaches a limit, naturally reducing the client's effective request rate without hard failures, or dynamically adjust the allowed rate based on overall system load. In casual industry usage, however, these two terms are frequently used interchangeably.",
+  "keyPoints": [
+    "Rate limiting: typically means hard rejection (429) once a threshold is exceeded within a time window",
+    "Throttling: can imply gradually slowing down responses rather than outright rejecting them",
+    "In casual usage, both terms are frequently used interchangeably to mean \"controlling request volume\""
+  ],
+  "commonMistakes": [
+    "Assuming rate limiting and throttling always mean exactly the same thing in formal documentation",
+    "Not recognizing throttling can imply delaying rather than rejecting requests",
+    "Overanalyzing the distinction in casual conversation where they're used interchangeably"
+  ],
+  "followUpQuestions": [
+    "How might a system implement throttling as delayed responses rather than rejection?",
+    "In what context does the distinction between throttling and rate limiting actually matter?",
+    "What status code is typically associated with hard rate limiting?"
+  ],
+  "realWorldExample": "A cloud API might throttle a client's requests by adding artificial latency as they approach their quota, rather than immediately rejecting requests with a 429.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the subtle distinction while acknowledging the terms are often used interchangeably in practice.",
+  "tags": ["Throttling", "Rate Limiting", "API", "Interview"],
+  "relatedTopics": ["API Rate Limiting", "429 Status Code", "Token Bucket"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-015",
+  "category": "APIs",
+  "topic": "Idempotent HTTP Methods",
+  "difficulty": "Medium",
+  "question": "What is an Idempotent API operation? Which HTTP methods are idempotent?",
+  "shortAnswer": "An idempotent operation produces the SAME result no matter how many times it's executed. GET, PUT, and DELETE are idempotent by HTTP specification. POST is NOT idempotent by default.",
+  "detailedAnswer": "This matters critically for safe retries in distributed systems; if a client isn't sure whether a request succeeded due to a network timeout, it's generally safe to automatically retry an idempotent request since repeating it causes no additional harm.\n\nGET is naturally idempotent since reading the same thing repeatedly doesn't change anything. PUT is idempotent since replacing a resource with the same data multiple times leaves it in the same final state. DELETE is considered idempotent since deleting an already-deleted resource still results in the same end state. POST is explicitly not idempotent, since calling it twice typically creates two separate resources, which is why safe retry of POST requests requires an explicit Idempotency-Key mechanism.",
+  "keyPoints": [
+    "GET, PUT, DELETE: idempotent by HTTP spec — safe to automatically retry without side effects",
+    "POST: NOT idempotent by default — retrying can create duplicate resources unless an Idempotency-Key is used",
+    "Idempotency is what makes automatic retry logic in distributed systems safe rather than dangerous"
+  ],
+  "commonMistakes": [
+    "Assuming POST is idempotent by default",
+    "Automatically retrying non-idempotent requests without an idempotency mechanism",
+    "Confusing idempotency with the request simply succeeding"
+  ],
+  "followUpQuestions": [
+    "Why is POST not idempotent by default?",
+    "How does an Idempotency-Key make POST requests safe to retry?",
+    "Why is idempotency important for distributed system reliability?"
+  ],
+  "realWorldExample": "A payment API requires an Idempotency-Key header on POST requests so that a network retry doesn't accidentally charge a customer twice.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly classify HTTP methods by idempotency and explain the retry-safety implications.",
+  "tags": ["Idempotency", "HTTP Methods", "API", "Interview"],
+  "relatedTopics": ["Idempotency-Key", "Distributed Systems", "REST API Design"],
+  "references": ["RFC 7231"]
+},
+{
+  "id": "api-016",
+  "category": "APIs",
+  "topic": "API Mocking",
+  "difficulty": "Easy",
+  "question": "What is API Mocking? Why is it useful during development?",
+  "shortAnswer": "API Mocking creates a fake, simulated version of an API that returns predictable, hardcoded (or rule-based) responses — allowing frontend/client development to proceed independently, before the real backend API is fully built.",
+  "detailedAnswer": "In many projects, frontend and backend teams work in parallel; if the frontend team must wait for the actual backend API to be fully implemented before starting, valuable development time is lost to this artificial dependency.\n\nAPI mocking tools let frontend developers agree on an API contract, often via an OpenAPI spec, upfront, then work against a mock server that returns realistic, contract-compliant sample responses, enabling fully parallel development. Mocking is also essential for unit and integration testing, allowing tests to run quickly and deterministically without depending on a real, potentially slow or unreliable, external backend or third-party service.",
+  "keyPoints": [
+    "Enables parallel frontend/backend development — frontend doesn't need to wait for the real API to be finished",
+    "Common tools: Mockoon, WireMock, json-server, Postman's built-in mock server feature",
+    "Essential for fast, deterministic unit/integration tests that don't depend on slow or unreliable real services"
+  ],
+  "commonMistakes": [
+    "Forcing frontend teams to wait for full backend implementation instead of using mocks",
+    "Not keeping mock responses in sync with the agreed API contract",
+    "Testing against slow or unreliable real services instead of mocks in unit tests"
+  ],
+  "followUpQuestions": [
+    "How does an OpenAPI spec help coordinate mock server responses with the real API?",
+    "What tools are commonly used for API mocking?",
+    "Why is mocking essential for deterministic unit tests?"
+  ],
+  "realWorldExample": "A frontend team builds and tests their UI against a json-server mock API defined from an agreed OpenAPI spec, before the backend team finishes the real implementation.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how mocking enables parallel development and improves test reliability.",
+  "tags": ["API Mocking", "Testing", "Interview"],
+  "relatedTopics": ["OpenAPI", "API-First Design", "Unit Testing"],
+  "references": ["OpenAPI Specification - swagger.io"]
+},
+{
+  "id": "api-017",
+  "category": "APIs",
+  "topic": "GraphQL N+1 Problem",
+  "difficulty": "Hard",
+  "question": "What is GraphQL's N+1 Query Problem? How is it solved?",
+  "shortAnswer": "The N+1 problem occurs when fetching N parent records triggers one ADDITIONAL database query PER record to fetch related data — resulting in N+1 total queries instead of just 2. Solved using a DataLoader that batches and caches requests.",
+  "detailedAnswer": "Consider a GraphQL query fetching 50 blog posts along with each post's author; a naive resolver implementation might fetch the 50 posts in one query, then for each post individually query the database for its author, totaling 51 queries when this could have been done in just 2.\n\nA DataLoader solves this by batching: instead of immediately executing each individual author lookup, it collects all the requested author IDs within the same execution tick, then makes one batched database query fetching all needed authors at once, then distributes the results back to each individual resolver call. It also caches results within a single request, preventing the same author from being fetched multiple times.",
+  "keyPoints": [
+    "Naive resolver: 1 query for parents + N queries for each parent's related data = N+1 total queries",
+    "DataLoader: collects all pending requests within a tick, executes ONE batched query instead of N individual ones",
+    "Also provides per-request caching — the same entity requested multiple times is only fetched from the DB once"
+  ],
+  "commonMistakes": [
+    "Not using a DataLoader, resulting in excessive per-record database queries",
+    "Assuming GraphQL automatically batches resolver calls without additional tooling",
+    "Not leveraging DataLoader's per-request caching to avoid redundant fetches"
+  ],
+  "followUpQuestions": [
+    "How does DataLoader batch requests within a single execution tick?",
+    "Why does DataLoader also provide caching benefits?",
+    "How would you detect an N+1 problem in a GraphQL resolver?"
+  ],
+  "realWorldExample": "A GraphQL API fetching a list of blog posts with their authors uses a DataLoader to batch all author lookups into a single database query instead of one query per post.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "const authorLoader = new DataLoader(async (ids) => {\n  const authors = await db.query('SELECT * FROM authors WHERE id IN (?)', [ids]);\n  return ids.map(id => authors.find(a => a.id === id));\n});"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the N+1 query pattern and describe how DataLoader batches and caches to solve it.",
+  "tags": ["GraphQL", "N+1 Problem", "DataLoader", "Interview"],
+  "relatedTopics": ["GraphQL", "Database Optimization", "N+1 Query Problem"],
+  "references": ["GraphQL Specification - graphql.org"]
+},
+{
+  "id": "api-018",
+  "category": "APIs",
+  "topic": "API Contract Testing",
+  "difficulty": "Hard",
+  "question": "What is API Contract Testing? Why is it important in microservices?",
+  "shortAnswer": "Contract Testing verifies that a service (provider) and its consumers agree on the expected request/response format — catching breaking changes BEFORE they reach production, without requiring full end-to-end integration tests.",
+  "detailedAnswer": "In a microservices architecture, one service might depend on another's API; traditional end-to-end integration tests, spinning up both real services together, are slow, flaky, and don't scale well as the number of interdependent services grows.\n\nContract testing takes a different approach: the consumer defines a contract describing exactly what it expects from calls to the provider, specific request format and expected response shape, and this contract is then verified independently against the actual provider in its own test suite, without needing both services running simultaneously. If the provider's team makes a change that would break this agreed contract, their own test suite fails immediately, catching the breaking change before it's deployed.",
+  "keyPoints": [
+    "Consumer defines an expected contract; provider independently verifies it can satisfy that exact contract",
+    "Catches breaking API changes early, without needing slow, flaky full end-to-end integration tests",
+    "Pact is the most widely used contract testing framework, particularly popular in microservices architectures"
+  ],
+  "commonMistakes": [
+    "Relying solely on slow, flaky end-to-end integration tests instead of contract testing",
+    "Not updating the consumer-defined contract when consumer expectations change",
+    "Assuming contract testing replaces the need for any integration testing at all"
+  ],
+  "followUpQuestions": [
+    "How does contract testing avoid the need for full end-to-end integration tests?",
+    "What is Pact and how is it used for contract testing?",
+    "What happens when a provider's change would break an existing contract?"
+  ],
+  "realWorldExample": "A team uses Pact to define a contract from a frontend service's expectations of a backend API, catching breaking changes in the backend's own CI pipeline before deployment.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how contract testing decouples consumer and provider verification while catching breaking changes early.",
+  "tags": ["Contract Testing", "Microservices", "Pact", "Interview"],
+  "relatedTopics": ["Microservices", "Integration Testing", "API Design"],
+  "references": ["Pact Documentation - pact.io"]
+},
+{
+  "id": "api-019",
+  "category": "APIs",
+  "topic": "Synchronous vs Asynchronous APIs",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between a Synchronous API and an Asynchronous API?",
+  "shortAnswer": "A Synchronous API returns a response immediately once processing completes — the client waits/blocks for the result. An Asynchronous API immediately acknowledges the request and processes it in the background, notifying the client later (via polling, webhook, or callback) when actually complete.",
+  "detailedAnswer": "Synchronous APIs work well for operations that complete quickly, typically under a few seconds, where the client makes a request and receives the actual result in the same HTTP response.\n\nFor long-running operations, such as video processing or generating a large report, holding an HTTP connection open for minutes is impractical and unreliable; an asynchronous API instead immediately returns a request-accepted response, often with a job or task ID and HTTP 202 Accepted, while the actual processing happens in the background. The client later checks status via polling or receives a webhook notification once processing genuinely completes.",
+  "keyPoints": [
+    "Synchronous: client waits for the immediate result — simple, but impractical for genuinely long operations",
+    "Asynchronous: immediately acknowledges (202 Accepted), processes in background, notifies later",
+    "Async pattern typically returns a job/task ID immediately, used to poll status or match an eventual webhook callback"
+  ],
+  "commonMistakes": [
+    "Using a synchronous API design for genuinely long-running operations, causing timeouts",
+    "Not returning a job/task ID for asynchronous operations, leaving clients unable to check status",
+    "Confusing 202 Accepted with 200 OK for asynchronous responses"
+  ],
+  "followUpQuestions": [
+    "Why is 202 Accepted the appropriate status code for an asynchronous request?",
+    "How would a client check on the status of an asynchronous job?",
+    "What are the trade-offs of polling versus webhook notification for async completion?"
+  ],
+  "realWorldExample": "A video transcoding API immediately returns a job ID with 202 Accepted, and the client polls a status endpoint or receives a webhook once transcoding completes.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain when each API style is appropriate and describe the job-ID-based async pattern.",
+  "tags": ["Synchronous API", "Asynchronous API", "Interview"],
+  "relatedTopics": ["Webhooks", "Polling", "202 Accepted"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-020",
+  "category": "APIs",
+  "topic": "API Deprecation",
+  "difficulty": "Medium",
+  "question": "What is API Deprecation? What is the recommended process for deprecating an endpoint?",
+  "shortAnswer": "API Deprecation is the process of phasing out an old API version/endpoint in favor of a newer one, while giving existing consumers sufficient time and clear communication to migrate before it's actually removed.",
+  "detailedAnswer": "Abruptly removing an API endpoint without warning breaks every client still depending on it. A responsible deprecation process typically involves clearly documenting the deprecation and the recommended replacement or migration path, adding a Deprecation or Sunset HTTP header to responses from the deprecated endpoint, and providing a generous, clearly-communicated timeline before actual removal, often 6-12 months for public APIs with many external consumers.\n\nMonitoring actual usage of the deprecated endpoint helps understand migration progress and proactively reach out to remaining heavy users before the final cutoff date.",
+  "keyPoints": [
+    "Never remove an API abruptly without warning — this breaks every client still depending on it",
+    "Deprecation/Sunset HTTP headers: standardized way to signal an endpoint's planned removal to tooling/developers",
+    "Generous timeline + proactive monitoring of remaining usage helps ensure a smooth, non-disruptive migration"
+  ],
+  "commonMistakes": [
+    "Removing an endpoint abruptly without prior notice or a deprecation timeline",
+    "Not using Deprecation/Sunset headers to signal upcoming removal to tooling",
+    "Failing to monitor and reach out to remaining heavy users before cutoff"
+  ],
+  "followUpQuestions": [
+    "What is the purpose of the Sunset HTTP header?",
+    "How would you monitor migration progress for a deprecated endpoint?",
+    "What timeline is typically recommended for public API deprecation?"
+  ],
+  "realWorldExample": "Stripe announces API version deprecations with clear documentation, a Sunset header, and a generous 12-month migration window before removal.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "Deprecation: true\nSunset: Sat, 31 Dec 2026 23:59:59 GMT"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe a responsible deprecation process including communication, headers, and a migration timeline.",
+  "tags": ["API Deprecation", "API Design", "Interview"],
+  "relatedTopics": ["API Versioning", "Backward Compatibility", "HTTP Headers"],
+  "references": ["RFC 8594"]
+},
+{
+  "id": "api-021",
+  "category": "APIs",
+  "topic": "Richardson Maturity Model",
+  "difficulty": "Hard",
+  "question": "What is the Richardson Maturity Model for REST APIs?",
+  "shortAnswer": "The Richardson Maturity Model classifies REST API design into 4 levels (0-3), based on how fully they embrace true REST principles — from basic RPC-over-HTTP (Level 0) to full HATEOAS compliance (Level 3).",
+  "detailedAnswer": "Level 0 uses a single URL endpoint handling everything via POST, essentially RPC-style calls tunneled through HTTP, barely using HTTP semantics at all. Level 1 introduces multiple distinct URLs representing different resources, but still primarily uses only one HTTP method for all operations on each resource.\n\nLevel 2 properly uses distinct HTTP methods matching their intended semantics for each resource and correctly uses HTTP status codes; this is where most real-world APIs described as RESTful actually sit. Level 3 adds HATEOAS, where responses include hypermedia links guiding clients to related actions, representing full compliance with the original REST definition, but is rarely fully achieved in practice.",
+  "keyPoints": [
+    "Level 0: single endpoint, RPC-style, minimal HTTP semantics used (essentially SOAP-like)",
+    "Level 2: proper use of distinct HTTP methods + status codes — where most real \"RESTful\" APIs actually sit",
+    "Level 3: full HATEOAS with hypermedia links — theoretically \"true REST,\" but rarely fully implemented in practice"
+  ],
+  "commonMistakes": [
+    "Assuming most real-world 'RESTful' APIs reach Level 3",
+    "Confusing Level 1 (multiple URLs, single method) with Level 2 (multiple methods matching semantics)",
+    "Not knowing where Level 2 sits as the practical sweet spot for most APIs"
+  ],
+  "followUpQuestions": [
+    "What distinguishes Level 1 from Level 2 in the model?",
+    "Why do most real-world APIs stop at Level 2 rather than reaching Level 3?",
+    "How would you assess where a given API falls on this model?"
+  ],
+  "realWorldExample": "Most public REST APIs, including many popular SaaS APIs, sit at Level 2 of the Richardson Maturity Model, using proper HTTP methods and status codes but without HATEOAS.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe all four levels and correctly identify where most real-world APIs typically sit.",
+  "tags": ["Richardson Maturity Model", "REST", "HATEOAS", "Interview"],
+  "relatedTopics": ["HATEOAS", "REST API Principles", "API Design"],
+  "references": ["Martin Fowler - Richardson Maturity Model"]
+},
+{
+  "id": "api-022",
+  "category": "APIs",
+  "topic": "API Caching Headers",
+  "difficulty": "Medium",
+  "question": "What is API Caching? Which HTTP headers control caching behavior?",
+  "shortAnswer": "API Caching stores responses so repeated identical requests can be served faster without hitting the backend again. Controlled via headers: Cache-Control, ETag, and Last-Modified.",
+  "detailedAnswer": "Cache-Control: max-age=3600 tells clients or intermediary caches, like a CDN, that a response can be reused for up to 3600 seconds without re-requesting it. ETag provides a unique fingerprint of the current response content; on a subsequent request, the client sends If-None-Match with that etag, and if the content hasn't changed, the server responds with a lightweight 304 Not Modified instead of resending the full response.\n\nLast-Modified works similarly but uses a timestamp instead of a content hash, paired with the If-Modified-Since request header. Together, these headers let APIs balance performance with correctness.",
+  "keyPoints": [
+    "Cache-Control: max-age=X: tells caches how long a response can be reused without re-validating",
+    "ETag + If-None-Match: content-hash-based validation, returns lightweight 304 if unchanged",
+    "304 Not Modified: confirms cached content is still valid, without resending the full response body"
+  ],
+  "commonMistakes": [
+    "Not setting Cache-Control headers, missing out on caching benefits entirely",
+    "Confusing ETag validation with Cache-Control's time-based expiry",
+    "Not returning 304 Not Modified when content matches the client's ETag"
+  ],
+  "followUpQuestions": [
+    "How does ETag-based validation differ from Cache-Control's max-age?",
+    "What does a 304 Not Modified response save compared to a full 200 response?",
+    "How does Last-Modified differ from ETag?"
+  ],
+  "realWorldExample": "A CDN caches API responses using Cache-Control: max-age=3600, and clients revalidate stale content using ETag headers, receiving a 304 if nothing changed.",
+  "codeExample": {
+    "language": "HTTP",
+    "code": "Cache-Control: max-age=3600\nETag: \"33a64df551\"\n\n# Subsequent request\nIf-None-Match: \"33a64df551\""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the roles of Cache-Control, ETag, and Last-Modified in balancing performance and correctness.",
+  "tags": ["API Caching", "HTTP Headers", "Interview"],
+  "relatedTopics": ["CDN", "HTTP Caching", "304 Not Modified"],
+  "references": ["RFC 7234"]
+},
+{
+  "id": "api-023",
+  "category": "APIs",
+  "topic": "Chatty API Anti-Pattern",
+  "difficulty": "Medium",
+  "question": "What is a \"Chatty API\" anti-pattern? How is it avoided?",
+  "shortAnswer": "A \"Chatty API\" requires a client to make MANY separate API calls to accomplish a single logical task — causing excessive network round-trips, latency, and poor mobile/slow-network performance.",
+  "detailedAnswer": "This commonly happens with overly granular, strictly resource-per-endpoint REST design; for example, displaying a user's profile page showing their info, recent orders, and notification count might naively require three separate calls. Each round-trip adds latency, especially painful on slow mobile networks, and this problem compounds badly on more complex pages needing many related pieces of data.\n\nSolutions include designing composite or aggregate endpoints specifically tailored to common client needs, returning everything needed in one call, or adopting GraphQL, which inherently solves this by letting the client specify exactly which related data it needs in a single query.",
+  "keyPoints": [
+    "Symptom: a single UI screen/task requires many sequential API calls, adding significant cumulative latency",
+    "Fix 1: design composite/aggregate endpoints tailored to specific client screens or use cases",
+    "Fix 2: adopt GraphQL, which inherently avoids this by letting clients fetch related data in one query"
+  ],
+  "commonMistakes": [
+    "Designing overly granular, resource-per-endpoint APIs without considering client screen needs",
+    "Not measuring cumulative latency impact of multiple sequential API calls",
+    "Assuming GraphQL is the only solution when composite REST endpoints can also work"
+  ],
+  "followUpQuestions": [
+    "How would you design a composite endpoint to reduce API chattiness?",
+    "How does GraphQL inherently solve the chatty API problem?",
+    "Why is chattiness especially problematic on mobile networks?"
+  ],
+  "realWorldExample": "A mobile app's profile screen calls a single composite GET /users/123/dashboard endpoint instead of three separate calls for user info, orders, and notifications, reducing round-trip latency.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to identify the symptom of excessive round-trips and describe composite endpoints or GraphQL as solutions.",
+  "tags": ["Chatty API", "API Design", "GraphQL", "Interview"],
+  "relatedTopics": ["GraphQL", "REST API Design", "Latency"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-024",
+  "category": "APIs",
+  "topic": "Public vs Private vs Partner API",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between a Public API, Private API, and Partner API?",
+  "shortAnswer": "Public API: open for any external developer to use (often with registration/API key). Private (Internal) API: used only within the organization, not exposed externally. Partner API: shared with specific, pre-approved external business partners, not the general public.",
+  "detailedAnswer": "A Public API is designed for broad external consumption, typically requiring developer registration and an API key, with comprehensive public documentation, and often has usage tiers or pricing.\n\nA Private or Internal API is used exclusively by an organization's own internal teams or services, never exposed to the public internet, often with less rigorous documentation since the consumers are internal engineering teams. A Partner API sits in between, shared selectively with specific approved business partners under a formal business agreement, not openly available to just anyone who signs up.",
+  "keyPoints": [
+    "Public API: open registration, broad external developer audience, comprehensive public docs (Stripe, Twitter)",
+    "Private API: internal-only, never exposed externally, typically less formal documentation needs",
+    "Partner API: selectively shared with specific approved business partners under a formal agreement"
+  ],
+  "commonMistakes": [
+    "Confusing a Partner API with a fully Public API open to anyone",
+    "Assuming Private APIs need the same rigorous public-facing documentation as Public APIs",
+    "Not distinguishing the access control models between the three API types"
+  ],
+  "followUpQuestions": [
+    "What documentation differences typically exist between public and private APIs?",
+    "Can you give an example of a Partner API use case?",
+    "Why might a company choose a Partner API over a fully Public API?"
+  ],
+  "realWorldExample": "Stripe's API is a Public API open to any registered developer, a company's internal microservices form Private APIs, and a shipping company's integration with a specific retail partner is a Partner API.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the three API access models and give real-world examples of each.",
+  "tags": ["Public API", "Private API", "Partner API", "Interview"],
+  "relatedTopics": ["API Design", "API Documentation", "API Gateway"],
+  "references": ["REST API Design Rulebook - Mark Masse"]
+},
+{
+  "id": "api-025",
+  "category": "APIs",
+  "topic": "API-First vs Code-First Design",
+  "difficulty": "Medium",
+  "question": "What is API-First Design? How is it different from Code-First Design?",
+  "shortAnswer": "API-First Design means designing and agreeing on the API contract/specification BEFORE writing any implementation code. Code-First means writing the implementation first, then generating documentation/specs FROM the resulting code.",
+  "detailedAnswer": "In API-First development, teams collaboratively design the OpenAPI specification upfront, defining endpoints, request/response schemas, and behavior, and get stakeholder agreement before any backend implementation begins. This approach forces more thoughtful upfront design, enables parallel frontend/backend development from day one, and tends to produce more consistent, well-thought-out APIs.\n\nIn Code-First development, developers write the actual implementation code first, and documentation or specs are generated afterward, often automatically via annotations in the code. This is faster to get something working initially, but can lead to less consistent API design since decisions are made incrementally during implementation.",
+  "keyPoints": [
+    "API-First: design the contract/spec first, implementation follows — enables true parallel frontend/backend work",
+    "Code-First: implementation first, documentation generated afterward — faster initial progress, less upfront consistency",
+    "API-First is increasingly preferred for public/partner APIs where contract stability and consumer experience matter most"
+  ],
+  "commonMistakes": [
+    "Choosing Code-First for a public API where contract stability matters most",
+    "Not involving frontend stakeholders early when following API-First",
+    "Assuming Code-First always produces worse APIs regardless of context"
+  ],
+  "followUpQuestions": [
+    "Why does API-First enable true parallel frontend and backend development?",
+    "When might Code-First be a reasonable choice despite its trade-offs?",
+    "How does API-First relate to contract testing and mocking?"
+  ],
+  "realWorldExample": "A company building a public payment API uses API-First design, finalizing the OpenAPI spec with stakeholder review before any backend code is written, ensuring contract stability for external developers.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the sequencing difference and articulate why API-First suits public/partner APIs better.",
+  "tags": ["API-First Design", "Code-First Design", "API Design", "Interview"],
+  "relatedTopics": ["OpenAPI", "API Mocking", "Contract Testing"],
+  "references": ["OpenAPI Specification - swagger.io"]
 }
 ];
