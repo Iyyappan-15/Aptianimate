@@ -13202,4 +13202,1105 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "relatedTopics": ["Refactoring", "Software Design", "Engineering Management"],
   "references": ["Ward Cunningham - The WyCash Portfolio Management System"]
 }
+,
+{
+  "id": "prog-001",
+  "category": "Programming",
+  "topic": "Pass by Value vs Pass by Reference",
+  "difficulty": "Medium",
+  "question": "What is the difference between Pass by Value and Pass by Reference?",
+  "shortAnswer": "Pass by Value copies the actual data into the function — changes don't affect the original. Pass by Reference passes the memory address — changes DO affect the original.",
+  "detailedAnswer": "In pass by value, the function receives a copy of the variable; modifying the parameter inside has no effect on the caller's original. In pass by reference, the function receives a reference to the original variable, so modifications directly affect the caller's data.\n\nC++ supports both explicitly. Java and Python always pass object references by value; reassigning the parameter doesn't affect the caller, but mutating the object it points to, such as appending to a list, does.",
+  "keyPoints": [
+    "C: pass by value by default; use pointers (*) to simulate pass by reference",
+    "Java: object references passed by value — mutate the object, but reassignment doesn't propagate back",
+    "Python: mutable objects (list, dict) reflect changes; immutable objects (int, str) don't"
+  ],
+  "commonMistakes": [
+    "Assuming Java passes objects by reference rather than passing references by value",
+    "Confusing reassignment inside a function with mutation of the object's contents",
+    "Not distinguishing mutable versus immutable objects in Python when predicting behavior"
+  ],
+  "followUpQuestions": [
+    "Why is Java sometimes described as 'pass by value of the reference'?",
+    "What happens if you reassign a parameter inside a Python function versus mutating it?",
+    "How would you simulate pass by reference in C?"
+  ],
+  "realWorldExample": "A function that appends to a list parameter in Python affects the caller's original list, but reassigning that parameter to a brand new list does not.",
+  "codeExample": {
+    "language": "Python",
+    "code": "def modify(lst):\n    lst.append(4)  # affects the original\n    lst = [9, 9, 9]  # does NOT affect the original\n\nmy_list = [1, 2, 3]\nmodify(my_list)\nprint(my_list)  # [1, 2, 3, 4]"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the copy-versus-reference distinction and correctly predict behavior across languages.",
+  "tags": [
+    "Pass by Value",
+    "Pass by Reference",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Pointers",
+    "Value Types vs Reference Types",
+    "Mutability"
+  ],
+  "references": [
+    "Structure and Interpretation of Computer Programs"
+  ]
+},
+{
+  "id": "prog-002",
+  "category": "Programming",
+  "topic": "Stack vs Heap Memory",
+  "difficulty": "Medium",
+  "question": "What is the difference between Stack Memory and Heap Memory?",
+  "shortAnswer": "Stack: fast, automatically managed, stores local variables and function call info, limited size. Heap: slower, manually/GC-managed, stores dynamically allocated objects, much larger.",
+  "detailedAnswer": "The Stack grows and shrinks automatically as functions are called and return; each call gets a stack frame holding local variables and the return address. It's very fast but limited in size, typically 1-8MB per thread, so deep recursion causes stack overflow.\n\nThe Heap holds dynamically allocated memory that persists until explicitly freed in C/C++ or garbage collected in Java/Python; it's slower due to fragmentation and pointer indirection, but much larger.",
+  "keyPoints": [
+    "Stack: LIFO, automatic cleanup on function return, fast",
+    "Heap: manual (C/C++) or garbage-collected (Java/Python), larger, slower",
+    "Stack overflow: deep/infinite recursion exhausts stack space"
+  ],
+  "commonMistakes": [
+    "Assuming heap allocation is always slower with no practical benefit over stack",
+    "Not knowing stack size is limited, unlike the much larger heap",
+    "Confusing stack overflow with heap-related memory issues like memory leaks"
+  ],
+  "followUpQuestions": [
+    "What causes a stack overflow and how would you prevent it?",
+    "Why is heap allocation generally slower than stack allocation?",
+    "What determines whether a variable is allocated on the stack or heap?"
+  ],
+  "realWorldExample": "A deeply recursive function without a proper base case exhausts the stack's limited memory, causing a stack overflow crash.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the automatic-versus-manual management distinction and the size/speed trade-offs.",
+  "tags": [
+    "Stack Memory",
+    "Heap Memory",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Recursion",
+    "Memory Leak",
+    "Pointers"
+  ],
+  "references": [
+    "Computer Systems: A Programmer's Perspective"
+  ]
+},
+{
+  "id": "prog-003",
+  "category": "Programming",
+  "topic": "Checked vs Unchecked Exceptions",
+  "difficulty": "Medium",
+  "question": "What are Exceptions? Explain Checked vs Unchecked Exceptions.",
+  "shortAnswer": "An exception is a runtime event disrupting normal program flow. Checked exceptions must be declared/handled at compile time; unchecked exceptions are not enforced by the compiler.",
+  "detailedAnswer": "Exceptions represent error conditions that interrupt normal execution. The try-catch-finally block handles them: code that might fail goes in try, error handling in catch, and cleanup in finally, which always runs.\n\nChecked exceptions in Java, such as IOException, must be caught or declared with throws. Unchecked exceptions, such as RuntimeException subclasses like NullPointerException, aren't checked at compile time and typically represent bugs rather than recoverable conditions. Python and JavaScript don't distinguish checked versus unchecked at all.",
+  "keyPoints": [
+    "try-catch-finally: finally block always executes, even if an exception occurs or a return happens",
+    "Checked (Java only): IOException, SQLException — must handle or declare",
+    "Best practice: catch specific exceptions, never use a bare except: or catch (Exception e)"
+  ],
+  "commonMistakes": [
+    "Using a bare except or catching the generic Exception type instead of specific exceptions",
+    "Assuming checked exceptions exist in languages other than Java",
+    "Forgetting the finally block always executes even when a return statement is hit"
+  ],
+  "followUpQuestions": [
+    "Why does the finally block always execute even after a return statement?",
+    "What is the risk of catching a bare Exception instead of a specific type?",
+    "Why don't Python and JavaScript distinguish checked from unchecked exceptions?"
+  ],
+  "realWorldExample": "A file-reading operation in Java must either catch IOException or declare it with throws, since it's a checked exception the compiler enforces.",
+  "codeExample": {
+    "language": "Java",
+    "code": "try {\n    readFile();\n} catch (IOException e) {\n    System.out.println(\"Error reading file\");\n} finally {\n    closeResources();\n}"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain checked versus unchecked exceptions and describe proper try-catch-finally usage.",
+  "tags": [
+    "Exceptions",
+    "Error Handling",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Compile-Time vs Run-Time Errors",
+    "Java",
+    "Error Handling"
+  ],
+  "references": [
+    "Effective Java - Joshua Bloch"
+  ]
+},
+{
+  "id": "prog-004",
+  "category": "Programming",
+  "topic": "Compile-Time vs Run-Time Errors",
+  "difficulty": "Easy",
+  "question": "What is the difference between Compile-Time Errors and Run-Time Errors?",
+  "shortAnswer": "Compile-time errors are caught by the compiler BEFORE the program runs (syntax errors, type mismatches). Run-time errors occur DURING program execution (division by zero, null pointer access).",
+  "detailedAnswer": "Compile-time errors prevent the program from being built at all; a missing semicolon, mismatched types, or an undeclared variable are caught by the compiler's static analysis before a single line runs, giving fast, immediate feedback.\n\nRun-time errors only surface while the program is actively executing; the code compiles successfully, but a specific execution path encounters an actual problem. Statically-typed languages catch more error categories at compile time, while dynamically-typed languages push more error detection to runtime.",
+  "keyPoints": [
+    "Compile-time: syntax errors, type mismatches — caught before execution, faster feedback loop",
+    "Run-time: logic-dependent errors surfacing only on specific execution paths — harder to catch without thorough testing",
+    "Statically-typed languages catch more errors at compile time; dynamically-typed languages defer more checks to runtime"
+  ],
+  "commonMistakes": [
+    "Assuming all bugs are caught by the compiler regardless of language",
+    "Not knowing dynamically-typed languages defer more error detection to runtime",
+    "Confusing run-time errors with logical errors (which don't necessarily crash the program)"
+  ],
+  "followUpQuestions": [
+    "Why do statically-typed languages catch more errors at compile time?",
+    "Can you give an example of a run-time error that only occurs on a specific execution path?",
+    "How does thorough testing help catch run-time errors before deployment?"
+  ],
+  "realWorldExample": "A Java program with a type mismatch fails to compile at all, while a Python script with a division-by-zero bug only crashes when that specific code path executes.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the build-time versus execution-time nature of these two error categories.",
+  "tags": [
+    "Compile-Time Errors",
+    "Run-Time Errors",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Static Typing vs Dynamic Typing",
+    "Syntax Error vs Logical Error",
+    "Exceptions"
+  ],
+  "references": [
+    "Compilers: Principles, Techniques, and Tools - Aho, Lam, Sethi, Ullman"
+  ]
+},
+{
+  "id": "prog-005",
+  "category": "Programming",
+  "topic": "Compiler vs Interpreter",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between a Compiler and an Interpreter?",
+  "shortAnswer": "A Compiler translates the entire source code into machine code BEFORE execution, producing a standalone executable. An Interpreter executes code line-by-line at runtime, without producing a separate executable file.",
+  "detailedAnswer": "Compiled languages such as C, C++, and Rust go through a build step that translates the whole program to machine code upfront; this executable then runs directly on the CPU without further translation, giving faster execution but requiring platform-specific builds.\n\nInterpreted languages such as Python and Ruby read and execute source code directly, line-by-line, at runtime, which is slower due to repeated translation overhead but requires no separate compile step, making code inherently platform-independent since the interpreter itself handles platform differences.",
+  "keyPoints": [
+    "Compiled: faster runtime execution, but a separate build step and platform-specific binaries are needed",
+    "Interpreted: no separate build step, immediately runnable, but generally slower execution",
+    "Hybrid: Java/Python compile to bytecode first, then a virtual machine/interpreter runs that bytecode"
+  ],
+  "commonMistakes": [
+    "Assuming all languages are strictly either compiled or interpreted, ignoring hybrid approaches",
+    "Not knowing Java and Python actually compile to bytecode before interpretation",
+    "Confusing interpreted languages' platform independence with compiled languages' need for platform-specific builds"
+  ],
+  "followUpQuestions": [
+    "How do Java and Python represent a hybrid approach between compiled and interpreted?",
+    "Why do compiled languages require platform-specific builds?",
+    "What is JIT compilation and how does it relate to interpretation?"
+  ],
+  "realWorldExample": "A C++ program is compiled once into a platform-specific executable, while a Python script is executed directly by the interpreter on any platform with Python installed.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the translation timing difference and know about hybrid bytecode approaches.",
+  "tags": [
+    "Compiler",
+    "Interpreter",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "JIT Compilation",
+    "Bytecode",
+    "Compile-Time vs Run-Time Errors"
+  ],
+  "references": [
+    "Compilers: Principles, Techniques, and Tools - Aho, Lam, Sethi, Ullman"
+  ]
+},
+{
+  "id": "prog-006",
+  "category": "Programming",
+  "topic": "Type Casting",
+  "difficulty": "Easy",
+  "question": "What is Type Casting? Explain Implicit vs Explicit Casting.",
+  "shortAnswer": "Type Casting converts a value from one data type to another. Implicit (automatic) casting happens without programmer intervention when safe (e.g., int to float). Explicit casting requires the programmer to manually specify the conversion.",
+  "detailedAnswer": "Implicit casting, also called coercion or widening conversion, happens automatically when a conversion is guaranteed to be safe and lossless, such as assigning an int to a double variable, since every integer value can be represented exactly as a double.\n\nExplicit casting requires the programmer to deliberately specify the conversion, typically because it might lose information or isn't guaranteed safe, such as converting a double to an int, which truncates the decimal portion, requiring the programmer to acknowledge this potential data loss by writing the cast explicitly.",
+  "keyPoints": [
+    "Implicit: safe, automatic — smaller type to larger type (int → double), no data loss",
+    "Explicit: manual, programmer-acknowledged risk — larger type to smaller type (double → int), potential data/precision loss",
+    "Downcasting in OOP (casting a parent reference to a child type) is also explicit and can throw a runtime error if the actual object isn't compatible"
+  ],
+  "commonMistakes": [
+    "Assuming explicit casting is always safe without potential data loss",
+    "Not knowing implicit casting only happens when the conversion is guaranteed lossless",
+    "Forgetting downcasting can throw a runtime error if the actual object isn't compatible"
+  ],
+  "followUpQuestions": [
+    "What happens when you explicitly cast a double to an int in most languages?",
+    "Why is downcasting in OOP considered explicit and potentially risky?",
+    "Can you give an example of implicit casting that happens automatically?"
+  ],
+  "realWorldExample": "Assigning an int to a double happens implicitly and safely, while converting a double like 3.99 to an int requires an explicit cast and truncates to 3.",
+  "codeExample": {
+    "language": "Java",
+    "code": "int x = 5;\ndouble y = x; // implicit casting\n\ndouble d = 3.99;\nint z = (int) d; // explicit casting, z = 3"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish safe automatic conversions from risky manual ones with correct examples.",
+  "tags": [
+    "Type Casting",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Static Typing vs Dynamic Typing",
+    "Strong vs Weak Typing",
+    "Value Types vs Reference Types"
+  ],
+  "references": [
+    "The Java Language Specification"
+  ]
+},
+{
+  "id": "prog-007",
+  "category": "Programming",
+  "topic": "Call by Value vs Call by Reference at Memory Level",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Call by Value and Call by Reference at the Assembly/Memory Level?",
+  "shortAnswer": "Call by Value pushes a COPY of the argument's actual data onto the function's stack frame. Call by Reference pushes only the MEMORY ADDRESS of the argument, so the function operates on the original data directly.",
+  "detailedAnswer": "When a function is called by value, the calling code copies the argument's bytes into the new stack frame allocated for the function call; any modification the function makes only affects this local copy, and the original variable remains untouched once the function returns.\n\nWhen called by reference, or when explicitly passing a pointer, only the memory address is copied into the function's stack frame; the function then dereferences this address to directly read/write the original data, meaning changes made inside the function are visible to the caller after it returns.",
+  "keyPoints": [
+    "Call by value: a full copy of the data is made — changes inside the function are isolated, original is unaffected",
+    "Call by reference/pointer: only an address is passed — changes inside the function directly modify the original data",
+    "Passing large objects/structs by value can be expensive (full copy); passing by reference/pointer avoids this copying overhead"
+  ],
+  "commonMistakes": [
+    "Not recognizing why passing large structs by value can be an expensive operation",
+    "Confusing dereferencing an address with copying the underlying data",
+    "Assuming call by reference always means the same thing as passing a pointer"
+  ],
+  "followUpQuestions": [
+    "Why is passing a large struct by value potentially expensive?",
+    "What does dereferencing a pointer actually do at the memory level?",
+    "How would you decide between passing by value versus by reference for performance?"
+  ],
+  "realWorldExample": "A C++ function accepting a large struct by reference avoids copying the entire struct's memory, improving performance compared to passing it by value.",
+  "codeExample": {
+    "language": "C++",
+    "code": "void modifyByValue(int x) { x = 100; }       // copy, no effect on caller\nvoid modifyByRef(int &x) { x = 100; }        // reference, affects caller"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the memory-level mechanics of copying data versus copying an address.",
+  "tags": [
+    "Call by Value",
+    "Call by Reference",
+    "Memory",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Pointers",
+    "Stack Memory",
+    "Value Types vs Reference Types"
+  ],
+  "references": [
+    "Computer Systems: A Programmer's Perspective"
+  ]
+},
+{
+  "id": "prog-008",
+  "category": "Programming",
+  "topic": "Memory Leaks",
+  "difficulty": "Medium",
+  "question": "What is a Memory Leak? How does it occur in languages with manual memory management vs garbage collection?",
+  "shortAnswer": "A Memory Leak occurs when a program allocates memory but never releases it, even though it's no longer needed — gradually consuming more and more memory over time, potentially crashing the application.",
+  "detailedAnswer": "In manually-managed languages like C and C++, a memory leak happens when a programmer allocates memory but forgets to explicitly free it once it's no longer needed; the memory remains reserved and unusable for the rest of the program's execution.\n\nIn garbage-collected languages like Java, Python, and JavaScript, true leaks are rarer but still possible; they typically occur when an object is unintentionally kept alive by a lingering reference, such as a growing cache never cleared or an event listener never unsubscribed, so the garbage collector can't reclaim the memory.",
+  "keyPoints": [
+    "Manual memory management (C/C++): forgetting to free()/delete allocated memory that's no longer needed",
+    "Garbage-collected languages: leaks occur via unintentional lingering references (unsubscribed listeners, unbounded caches) keeping objects \"alive\"",
+    "Symptoms: gradually increasing memory usage over time, eventually leading to degraded performance or an out-of-memory crash"
+  ],
+  "commonMistakes": [
+    "Assuming garbage-collected languages are entirely immune to memory leaks",
+    "Not recognizing an unsubscribed event listener as a common source of leaks in managed languages",
+    "Forgetting to free manually allocated memory in C/C++"
+  ],
+  "followUpQuestions": [
+    "How can a memory leak occur in a garbage-collected language like Java?",
+    "What tools would you use to detect a memory leak in production?",
+    "Why does an unbounded cache commonly cause memory leaks?"
+  ],
+  "realWorldExample": "A single-page web application accumulates memory over time because event listeners attached to removed DOM elements are never unsubscribed, keeping those elements alive in memory.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain leak causes in both manual and garbage-collected memory management contexts.",
+  "tags": [
+    "Memory Leak",
+    "Garbage Collection",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Heap Memory",
+    "Garbage Collection",
+    "Pointers"
+  ],
+  "references": [
+    "Effective Java - Joshua Bloch"
+  ]
+},
+{
+  "id": "prog-009",
+  "category": "Programming",
+  "topic": "Recursion vs Iteration",
+  "difficulty": "Medium",
+  "question": "What is Recursion vs Iteration? What are the trade-offs?",
+  "shortAnswer": "Recursion solves a problem by having a function call itself with a smaller input. Iteration solves it using loops. Recursion is often more elegant/readable for naturally recursive problems, but iteration is generally more memory-efficient.",
+  "detailedAnswer": "Recursive solutions naturally express problems with a self-similar structure, such as tree traversal or Fibonacci, very elegantly, but each recursive call adds a stack frame, consuming memory proportional to recursion depth and risking stack overflow for very deep recursion.\n\nIterative solutions using loops typically use constant or more predictable memory and can be significantly faster due to avoiding function call overhead, but can be less intuitive for genuinely recursive problem structures. Some languages optimize tail recursion into an equivalent loop internally, though standard Python does not perform this optimization.",
+  "keyPoints": [
+    "Recursion: often more elegant/readable for self-similar problems, but risks stack overflow on deep recursion",
+    "Iteration: generally more memory-efficient (no growing call stack), avoids function call overhead",
+    "Tail-call optimization: some languages/compilers convert tail-recursive calls into loops internally — Python notably does NOT do this"
+  ],
+  "commonMistakes": [
+    "Assuming all languages perform tail-call optimization",
+    "Using deep recursion for problems better suited to iteration, risking stack overflow",
+    "Not recognizing recursion's readability benefit for naturally self-similar problems"
+  ],
+  "followUpQuestions": [
+    "Why doesn't Python perform tail-call optimization?",
+    "How would you convert a recursive function into an iterative one?",
+    "What determines whether a recursive call is 'tail recursive'?"
+  ],
+  "realWorldExample": "A recursive tree traversal function is elegant and readable, but for extremely deep trees, an iterative approach using an explicit stack avoids the risk of a stack overflow.",
+  "codeExample": {
+    "language": "Python",
+    "code": "def factorial_recursive(n):\n    if n == 0:\n        return 1\n    return n * factorial_recursive(n - 1)\n\ndef factorial_iterative(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to weigh readability against memory efficiency and know about tail-call optimization limitations.",
+  "tags": [
+    "Recursion",
+    "Iteration",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Stack Memory",
+    "Tail Call Optimization",
+    "Algorithms"
+  ],
+  "references": [
+    "CLRS - Introduction to Algorithms"
+  ]
+},
+{
+  "id": "prog-010",
+  "category": "Programming",
+  "topic": "Array vs List",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between an Array and a List (as general programming concepts, not language-specific)?",
+  "shortAnswer": "An Array is typically a fixed-size, contiguous block of memory holding elements of the SAME type. A List is typically a more flexible, dynamically-resizable collection.",
+  "detailedAnswer": "In statically-typed, lower-level languages, an array has a fixed size determined at creation and holds elements of a single declared type, stored contiguously in memory for fast indexed access.\n\nA List, as a general concept like Java's ArrayList or Python's built-in list, typically wraps an underlying array but automatically handles resizing and often provides richer built-in methods, trading a small amount of performance overhead for significantly more convenience and flexibility. In dynamically-typed languages like Python, the built-in list can hold mixed types simultaneously, further blurring this distinction.",
+  "keyPoints": [
+    "Array: typically fixed-size, same-type elements, contiguous memory — very fast indexed access",
+    "List (as implemented in most languages): dynamically resizable, often richer built-in methods, small overhead vs raw arrays",
+    "Python's built-in \"list\" can hold mixed types — differs from the strict, single-type definition of a traditional array"
+  ],
+  "commonMistakes": [
+    "Assuming Python's 'list' behaves like a strict, fixed-type traditional array",
+    "Not knowing a List typically wraps an underlying array with resizing logic",
+    "Confusing array's fixed size with a List's dynamic resizability"
+  ],
+  "followUpQuestions": [
+    "How does a dynamic List handle resizing internally?",
+    "Why does Python's list not fit the strict definition of a traditional array?",
+    "What performance trade-off exists between raw arrays and dynamic lists?"
+  ],
+  "realWorldExample": "Java's ArrayList wraps an underlying fixed-size array, automatically resizing it by allocating a larger array and copying elements when capacity is exceeded.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish fixed-size, same-type arrays from dynamically resizable, richer-featured lists.",
+  "tags": [
+    "Array",
+    "List",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Dynamic Array",
+    "Data Structures",
+    "Value Types vs Reference Types"
+  ],
+  "references": [
+    "CLRS - Introduction to Algorithms"
+  ]
+},
+{
+  "id": "prog-011",
+  "category": "Programming",
+  "topic": "Pointers",
+  "difficulty": "Medium",
+  "question": "What is a Pointer? Why are Pointers Considered Powerful but Dangerous?",
+  "shortAnswer": "A Pointer is a variable that stores a MEMORY ADDRESS rather than a direct value — allowing indirect access to and manipulation of data. Powerful because it enables efficient memory manipulation and dynamic data structures; dangerous because misuse causes crashes, security vulnerabilities, and hard-to-debug errors.",
+  "detailedAnswer": "A pointer variable holds the memory address of another variable or object, rather than holding a value directly; dereferencing the pointer retrieves or modifies the actual data at that address. This enables powerful capabilities such as passing large data structures efficiently and building dynamic data structures like linked lists and trees.\n\nThe danger comes from a dangling pointer pointing to memory that's already been freed, or a null pointer dereference, both of which cause crashes or undefined behavior; pointer arithmetic errors can corrupt unrelated memory, and improper usage is a classic source of security vulnerabilities like buffer overflows.",
+  "keyPoints": [
+    "Dereferencing: accessing the actual value stored at the address a pointer points to",
+    "Dangling pointer: points to memory that's already been freed — using it causes undefined behavior/crashes",
+    "Managed languages (Java, Python, JavaScript) hide raw pointers entirely, using references instead, specifically to avoid these classes of bugs"
+  ],
+  "commonMistakes": [
+    "Dereferencing a dangling or null pointer",
+    "Confusing pointer arithmetic errors with simple type errors",
+    "Assuming managed languages entirely lack the concept of references just because they hide raw pointers"
+  ],
+  "followUpQuestions": [
+    "What is a dangling pointer and how does it cause undefined behavior?",
+    "Why do managed languages like Java hide raw pointers?",
+    "How can pointer arithmetic errors lead to security vulnerabilities like buffer overflows?"
+  ],
+  "realWorldExample": "A C program that frees memory but continues using the pointer to that memory, a use-after-free bug, is a classic source of security vulnerabilities exploited by attackers.",
+  "codeExample": {
+    "language": "C",
+    "code": "int x = 10;\nint *ptr = &x;\nprintf(\"%d\", *ptr); // dereferencing prints 10"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain dereferencing and identify specific danger scenarios like dangling pointers.",
+  "tags": [
+    "Pointers",
+    "Memory",
+    "C/C++",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Segmentation Fault",
+    "Heap Memory",
+    "Call by Reference"
+  ],
+  "references": [
+    "The C Programming Language - Kernighan & Ritchie"
+  ]
+},
+{
+  "id": "prog-012",
+  "category": "Programming",
+  "topic": "Static Typing vs Dynamic Typing",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Static Typing and Dynamic Typing?",
+  "shortAnswer": "Static Typing checks variable types at COMPILE time — types must be known/declared before running (Java, C++, TypeScript). Dynamic Typing checks types at RUN time — variables can hold any type, and type errors surface only when actually executed (Python, JavaScript).",
+  "detailedAnswer": "In a statically-typed language, declaring a variable explicitly commits it to always holding that type; attempting to later assign a different type is caught as a compile-time error, before the program even runs.\n\nIn a dynamically-typed language, a variable can later be reassigned to hold any type, and a type-related error is only discovered when that specific line actually executes at runtime. Static typing generally catches more bugs earlier and enables better IDE tooling; dynamic typing offers more flexibility and often faster initial development.",
+  "keyPoints": [
+    "Static typing: types checked at compile time — catches type errors early, before the program even runs",
+    "Dynamic typing: types checked at run time — more flexible, but type errors only surface when that code path actually executes",
+    "TypeScript adds static typing on top of JavaScript specifically to gain these compile-time safety benefits while still compiling to JS"
+  ],
+  "commonMistakes": [
+    "Confusing static/dynamic typing with strong/weak typing, which is a separate axis",
+    "Assuming dynamically-typed languages catch type errors as early as statically-typed ones",
+    "Not knowing TypeScript adds static typing on top of JavaScript"
+  ],
+  "followUpQuestions": [
+    "Why is static/dynamic typing a different axis from strong/weak typing?",
+    "How does TypeScript add static typing benefits to JavaScript?",
+    "What are the trade-offs of dynamic typing for rapid prototyping?"
+  ],
+  "realWorldExample": "TypeScript is used in large JavaScript codebases specifically to catch type mismatches at compile time, something plain JavaScript's dynamic typing can't do.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain when type checking occurs and correctly distinguish this from the strong/weak typing axis.",
+  "tags": [
+    "Static Typing",
+    "Dynamic Typing",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Strong vs Weak Typing",
+    "TypeScript",
+    "Compile-Time vs Run-Time Errors"
+  ],
+  "references": [
+    "Types and Programming Languages - Benjamin Pierce"
+  ]
+},
+{
+  "id": "prog-013",
+  "category": "Programming",
+  "topic": "Constants and Immutability",
+  "difficulty": "Medium",
+  "question": "What is a Constant/Immutable Variable? Why is Immutability Considered Good Practice?",
+  "shortAnswer": "A Constant is a variable whose value cannot be changed after initial assignment. Immutability is favored because it eliminates an entire class of bugs caused by unexpected mutation, and makes code easier to reason about, especially in concurrent contexts.",
+  "detailedAnswer": "Declaring a variable as constant signals both to the compiler and to other developers that this value will never change after its initial assignment, and the compiler can enforce this, catching accidental reassignment bugs.\n\nBeyond individual variables, immutable data structures, where the object's internal state genuinely cannot be modified after creation, are increasingly favored because they eliminate an entire category of unexpected mutation bugs. This becomes especially critical in concurrent code, where immutable data can be safely shared between threads without any risk of race conditions.",
+  "keyPoints": [
+    "Constants prevent accidental reassignment bugs, enforced by the compiler at compile time",
+    "Immutable data structures eliminate \"unexpected mutation\" bugs — a huge source of hard-to-trace issues in larger codebases",
+    "Especially valuable in concurrent/multi-threaded programming — immutable data can be safely shared across threads with zero risk of race conditions"
+  ],
+  "commonMistakes": [
+    "Assuming a constant reference prevents mutation of the object it points to",
+    "Not recognizing immutability's specific benefit for thread safety in concurrent code",
+    "Overusing mutable shared state when immutable alternatives would prevent bugs"
+  ],
+  "followUpQuestions": [
+    "Why is immutability especially valuable in multi-threaded programming?",
+    "Does declaring an object reference as const prevent mutation of the object's fields?",
+    "What is an example of a bug caused by unexpected mutation?"
+  ],
+  "realWorldExample": "A functional programming style using immutable data structures avoids race conditions entirely when the same data is read by multiple concurrent threads.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how immutability prevents mutation-related bugs and its particular value in concurrency.",
+  "tags": [
+    "Immutability",
+    "Constants",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Concurrency",
+    "Value Types vs Reference Types",
+    "Deep Copy"
+  ],
+  "references": [
+    "Effective Java - Joshua Bloch"
+  ]
+},
+{
+  "id": "prog-014",
+  "category": "Programming",
+  "topic": "Overloading vs Overriding",
+  "difficulty": "Medium",
+  "question": "What is Function Overloading vs Function Overriding — as general programming concepts?",
+  "shortAnswer": "Function Overloading defines multiple functions with the SAME name but different parameters WITHIN the same scope. Function Overriding redefines a function that ALREADY exists in a parent class/scope, with the identical signature, in a child class.",
+  "detailedAnswer": "Overloading provides multiple different implementations addressable by the same name, distinguished purely by their different parameter signatures, resolved at compile time based on what arguments are actually passed at the call site.\n\nOverriding specifically involves a subclass providing a new implementation for a method it inherited, using the exact same signature as the parent's version, resolved at runtime based on the actual object type being used, enabling polymorphic behavior.",
+  "keyPoints": [
+    "Overloading: same name, different parameters, resolved at compile time — not true polymorphism, just convenient naming reuse",
+    "Overriding: same name AND same parameters, defined in a subclass, resolved at runtime — enables true polymorphic behavior",
+    "Not every language supports true overloading (Python does not; it uses default arguments/*args instead to achieve similar flexibility)"
+  ],
+  "commonMistakes": [
+    "Confusing overloading with overriding despite their different resolution mechanisms",
+    "Assuming Python supports true method overloading like Java or C++",
+    "Not recognizing overriding as the mechanism behind runtime polymorphism"
+  ],
+  "followUpQuestions": [
+    "Why is overloading not considered true polymorphism?",
+    "How does Python achieve overloading-like flexibility without true overloading support?",
+    "Why is overriding resolved at runtime rather than compile time?"
+  ],
+  "realWorldExample": "A Calculator class overloads an add() method to accept different parameter types, while a Dog subclass overrides an Animal class's speak() method to provide dog-specific behavior.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish compile-time overloading from runtime overriding and know which languages lack true overloading.",
+  "tags": [
+    "Overloading",
+    "Overriding",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Polymorphism",
+    "Object-Oriented Design",
+    "Static Binding vs Dynamic Binding"
+  ],
+  "references": [
+    "Effective Java - Joshua Bloch"
+  ]
+},
+{
+  "id": "prog-015",
+  "category": "Programming",
+  "topic": "Namespaces and Packages",
+  "difficulty": "Easy",
+  "question": "What is a Namespace/Package/Module? Why is Code Organization Important?",
+  "shortAnswer": "A Namespace (or Package/Module, depending on the language) is a container that groups related code together and prevents naming CONFLICTS between identically-named items defined in different parts of a large codebase or between different libraries.",
+  "detailedAnswer": "As a codebase grows, or as multiple third-party libraries are used together, naming collisions become a genuine risk, since two different libraries might both define a function or class with the same name.\n\nNamespaces, packages, or modules solve this by providing a scoping mechanism; code is organized under a hierarchical name, and referencing something requires either the full qualified path or an explicit import, disambiguating which specific item is actually being referenced even if multiple exist with the same short name.",
+  "keyPoints": [
+    "Prevents naming collisions between identically-named items defined in different parts of a codebase or across different libraries",
+    "Enables logical code organization — related functionality grouped together, making a large codebase more navigable and maintainable",
+    "Examples: Java packages, Python modules/packages, C++ namespaces, JavaScript ES modules"
+  ],
+  "commonMistakes": [
+    "Not organizing code into logical namespaces, causing naming collisions as the codebase grows",
+    "Assuming naming collisions only happen within a single team's own code, not with third-party libraries",
+    "Confusing a namespace's scoping purpose with simple file organization"
+  ],
+  "followUpQuestions": [
+    "How would you resolve a naming collision between two imported libraries?",
+    "What is the difference between a namespace and a simple file directory structure?",
+    "Can you give an example of a namespace convention in a language you've used?"
+  ],
+  "realWorldExample": "Two different Java libraries both defining a class called Logger can coexist without conflict because they live in different fully-qualified packages, such as com.libA.Logger and com.libB.Logger.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain how namespaces prevent naming collisions and support logical code organization.",
+  "tags": [
+    "Namespace",
+    "Package",
+    "Module",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Code Organization",
+    "Modules",
+    "Import Systems"
+  ],
+  "references": [
+    "Clean Code - Robert C. Martin"
+  ]
+},
+{
+  "id": "prog-016",
+  "category": "Programming",
+  "topic": "Big O vs Omega vs Theta",
+  "difficulty": "Hard",
+  "question": "What is Big O vs Big Omega vs Big Theta Notation? (Complementing the DSA section with the formal distinction)",
+  "shortAnswer": "Big O describes the UPPER bound (worst-case) growth rate. Big Omega describes the LOWER bound (best-case) growth rate. Big Theta describes a TIGHT bound — when the upper and lower bounds match, giving the exact growth rate.",
+  "detailedAnswer": "While Big O, the worst-case bound, is what's colloquially used in almost all everyday discussion of algorithm complexity, formal complexity analysis actually has three distinct notations. Big Omega describes the best-case scenario, a lower bound on how well an algorithm could possibly perform.\n\nBig Theta is used when the upper bound and lower bound are actually the same, meaning the algorithm's growth rate is precisely, tightly characterized. In casual industry conversation, 'Big O' is very frequently used loosely to mean what would formally be 'Big Theta.'",
+  "keyPoints": [
+    "Big O (O): upper bound — worst-case, \"the algorithm is no slower than this\"",
+    "Big Omega (Ω): lower bound — best-case, \"the algorithm is no faster than this\"",
+    "Big Theta (Θ): tight bound — when upper and lower bounds coincide, giving the precise, exact growth rate"
+  ],
+  "commonMistakes": [
+    "Using 'Big O' loosely to mean 'Big Theta' without recognizing the technical distinction",
+    "Confusing Big Omega's best-case meaning with a lower bound on the worst case",
+    "Not knowing Big Theta requires the upper and lower bounds to actually coincide"
+  ],
+  "followUpQuestions": [
+    "Why is 'Big O' often used loosely to mean 'Big Theta' in casual conversation?",
+    "Can you give an example of an algorithm where the best case (Omega) differs significantly from the worst case (O)?",
+    "What does it mean for an algorithm to have a tight Theta bound?"
+  ],
+  "realWorldExample": "Quicksort has a worst-case Big O of O(n²) but a best/average-case closer to Θ(n log n), illustrating why the distinction between these notations matters for accurately describing performance.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly define all three notations and explain the common casual misuse of Big O.",
+  "tags": [
+    "Big O Notation",
+    "Big Omega",
+    "Big Theta",
+    "Complexity Analysis",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Time Complexity",
+    "Algorithms",
+    "Space Complexity"
+  ],
+  "references": [
+    "CLRS - Introduction to Algorithms"
+  ]
+},
+{
+  "id": "prog-017",
+  "category": "Programming",
+  "topic": "Value Types vs Reference Types",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Value Types and Reference Types in Memory?",
+  "shortAnswer": "Value Types store the actual data directly in the variable's memory location — copying a value type creates a fully independent copy. Reference Types store a pointer/reference to data located elsewhere (typically the heap) — copying a reference type copies only the reference, not the underlying data.",
+  "detailedAnswer": "Primitive types are typically value types; assigning one variable to another copies the actual value into a separate memory location, so subsequently modifying one has zero effect on the other since they're completely independent.\n\nObjects and arrays are typically reference types; assigning one variable to another copies only the reference, meaning both variables now point to the exact same underlying object in memory, and modifying the object through either variable is visible through the other.",
+  "keyPoints": [
+    "Value types (primitives in most languages): assignment copies the actual data — fully independent copies",
+    "Reference types (objects/arrays): assignment copies only the reference/address — both variables point to the SAME underlying data",
+    "This distinction is exactly why understanding shallow vs deep copy (see JavaScript section) matters when working with reference types"
+  ],
+  "commonMistakes": [
+    "Assuming assigning one object variable to another creates an independent copy",
+    "Confusing value type semantics with reference type semantics when predicting mutation behavior",
+    "Not connecting this distinction to shallow versus deep copy concepts"
+  ],
+  "followUpQuestions": [
+    "Why does mutating an object through one reference variable affect all other variables pointing to it?",
+    "How does this distinction relate to shallow versus deep copying?",
+    "Can you give an example where value type semantics avoid a bug that reference type semantics would cause?"
+  ],
+  "realWorldExample": "Assigning one integer variable to another creates two fully independent copies, but assigning one array variable to another means both point to the same underlying array, so mutating one affects both.",
+  "codeExample": {
+    "language": "Java",
+    "code": "int a = 5;\nint b = a;\nb = 10; // a is still 5\n\nint[] arr1 = {1, 2, 3};\nint[] arr2 = arr1;\narr2[0] = 99; // arr1[0] is also 99"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the copy-data versus copy-reference distinction and its practical mutation implications.",
+  "tags": [
+    "Value Types",
+    "Reference Types",
+    "Memory",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Shallow Copy",
+    "Deep Copy",
+    "Pass by Value"
+  ],
+  "references": [
+    "The Java Language Specification"
+  ]
+},
+{
+  "id": "prog-018",
+  "category": "Programming",
+  "topic": "Segmentation Fault",
+  "difficulty": "Medium",
+  "question": "What is a Segmentation Fault? What typically causes it?",
+  "shortAnswer": "A Segmentation Fault occurs when a program attempts to access a memory location it's not permitted to access — typically caused by dereferencing a null/invalid pointer, buffer overflows, or accessing already-freed memory.",
+  "detailedAnswer": "The operating system enforces memory protection between processes and between different regions within a single process's address space; a segmentation fault occurs specifically when the program's code attempts to read from or write to a memory address outside its permitted range, triggering the OS to immediately terminate the offending process.\n\nCommon causes include dereferencing a null pointer, buffer overflow, use-after-free, or stack overflow from excessively deep recursion. This is primarily a concern in languages with manual memory management, though managed languages have analogous higher-level errors.",
+  "keyPoints": [
+    "Occurs when a program accesses memory outside its permitted address range — OS immediately terminates the process",
+    "Common causes: null pointer dereference, buffer overflow, use-after-free, stack overflow from deep recursion",
+    "Primarily a C/C++ concern — managed languages (Java, Python) prevent this class of error by design, but have analogous higher-level exceptions instead"
+  ],
+  "commonMistakes": [
+    "Assuming segmentation faults occur in managed languages like Java or Python",
+    "Not recognizing use-after-free as a common cause",
+    "Confusing a segmentation fault with a simple logical error"
+  ],
+  "followUpQuestions": [
+    "Why don't segmentation faults occur in managed languages like Java?",
+    "What is the analogous error in Java when accessing an invalid array index?",
+    "How does a buffer overflow lead to a segmentation fault?"
+  ],
+  "realWorldExample": "A C program that continues using a pointer after calling free() on it triggers undefined behavior, often manifesting as a segmentation fault when the memory is later accessed.",
+  "codeExample": {
+    "language": "C",
+    "code": "int *ptr = malloc(sizeof(int));\nfree(ptr);\n*ptr = 5; // use-after-free, may cause a segmentation fault"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the OS memory protection mechanism and name common causes of segmentation faults.",
+  "tags": [
+    "Segmentation Fault",
+    "Memory",
+    "C/C++",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Pointers",
+    "Stack Memory",
+    "Memory Leak"
+  ],
+  "references": [
+    "Computer Systems: A Programmer's Perspective"
+  ]
+},
+{
+  "id": "prog-019",
+  "category": "Programming",
+  "topic": "Shallow Copy vs Deep Copy (General Concept)",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between a Deep Copy and a Shallow Copy (as a general concept, complementing the JavaScript-specific coverage)?",
+  "shortAnswer": "A Shallow Copy duplicates only the top-level structure, with nested/referenced objects still SHARED between the original and the copy. A Deep Copy recursively duplicates everything, including all nested structures, making the copy fully and completely independent.",
+  "detailedAnswer": "This concept applies across virtually all languages with reference types. When an object contains other objects as fields or elements, a shallow copy duplicates only the immediate top-level container, but the nested objects inside remain shared references between the original and the copy.\n\nA true deep copy recursively walks through and duplicates every single level of nesting, producing an entirely independent structure where no mutation on the copy can ever affect the original. Deep copies are more computationally expensive but necessary whenever genuine, complete independence is required.",
+  "keyPoints": [
+    "Shallow copy: only the top level is duplicated — nested objects remain SHARED references between original and copy",
+    "Deep copy: recursively duplicates every level of nesting — the result is fully, completely independent of the original",
+    "Deep copies are more computationally expensive but necessary whenever true independence is required (e.g., undo/redo history snapshots)"
+  ],
+  "commonMistakes": [
+    "Assuming a shallow copy fully duplicates all nested structures",
+    "Not recognizing the computational cost trade-off of a deep copy",
+    "Using a shallow copy when a scenario like undo/redo history genuinely requires full independence"
+  ],
+  "followUpQuestions": [
+    "Why is a deep copy more computationally expensive than a shallow copy?",
+    "Can you give a real-world scenario where a deep copy is genuinely necessary?",
+    "How would you implement a deep copy in a language of your choice?"
+  ],
+  "realWorldExample": "An undo/redo feature in an editor takes a deep copy snapshot of the document state at each step, ensuring later edits don't retroactively affect previously saved snapshots.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the general shallow-versus-deep copy distinction independent of any single language.",
+  "tags": [
+    "Shallow Copy",
+    "Deep Copy",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Value Types vs Reference Types",
+    "Immutability",
+    "Memory"
+  ],
+  "references": [
+    "Effective Java - Joshua Bloch"
+  ]
+},
+{
+  "id": "prog-020",
+  "category": "Programming",
+  "topic": "Endianness in Programming",
+  "difficulty": "Medium",
+  "question": "What is Endianness in the Context of General Programming (Not Just Hardware) — Why Does It Matter for Cross-Platform Data?",
+  "shortAnswer": "Endianness determines the byte order used to store multi-byte values in memory — it matters in programming whenever binary data is shared across systems (network protocols, file formats, cross-platform serialization) that might use different conventions.",
+  "detailedAnswer": "From a programming perspective, endianness becomes relevant whenever working with raw binary data that might be read by a different system than the one that wrote it. Network protocols define a standard network byte order, always big-endian, that all systems must convert to and from regardless of their own native endianness.\n\nBinary file formats often specify their expected byte order explicitly, and low-level serialization code handling raw bytes must correctly account for potential endianness differences, or the resulting values will be silently, incorrectly interpreted.",
+  "keyPoints": [
+    "Network protocols: define a standard byte order (big-endian, \"network byte order\") that all systems convert to/from",
+    "Binary file formats: typically specify their expected byte order explicitly in the format's specification",
+    "Text-based formats (JSON, XML) don't have this concern at all — endianness only matters for RAW binary data representation"
+  ],
+  "commonMistakes": [
+    "Assuming text-based formats like JSON are affected by endianness",
+    "Not converting between host and network byte order when transmitting binary data",
+    "Forgetting to check a binary file format's specified byte order before parsing"
+  ],
+  "followUpQuestions": [
+    "Why don't text-based formats like JSON need to worry about endianness?",
+    "How would you convert between host and network byte order in code?",
+    "What happens if you don't account for endianness differences when reading a cross-platform binary file?"
+  ],
+  "realWorldExample": "A network application running on a little-endian x86 machine must convert integers to big-endian network byte order using functions like htons() before sending them over a socket.",
+  "codeExample": {
+    "language": "C",
+    "code": "#include <arpa/inet.h>\n\nuint16_t port = 8080;\nuint16_t network_order_port = htons(port);"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain when endianness matters in application-level programming, beyond just hardware.",
+  "tags": [
+    "Endianness",
+    "Binary Data",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Big Endian vs Little Endian",
+    "Network Protocols",
+    "Serialization"
+  ],
+  "references": [
+    "Computer Organization and Design - Patterson & Hennessy"
+  ]
+},
+{
+  "id": "prog-021",
+  "category": "Programming",
+  "topic": "Strong Typing vs Weak Typing",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Strong Typing and Weak Typing (Distinct from Static vs Dynamic Typing)?",
+  "shortAnswer": "Strong Typing strictly enforces type rules, generally disallowing implicit conversions between unrelated types. Weak Typing allows more implicit, sometimes surprising, automatic type conversions between different types.",
+  "detailedAnswer": "This is a genuinely distinct axis from static/dynamic typing, and the two are commonly confused. A language can be dynamically typed and strongly typed simultaneously, such as Python, where adding a string and an integer throws a TypeError rather than silently converting.\n\nA language can also be dynamically typed and weakly typed, such as JavaScript, where adding a string and a number silently produces a concatenated string via implicit coercion. Statically-typed languages are typically also strongly typed, since the compile-time type system generally prevents this kind of implicit conversion.",
+  "keyPoints": [
+    "Distinct axis from static/dynamic typing — a language can independently combine strong/weak with static/dynamic",
+    "Strong typing: Python — \"5\" + 5 throws a TypeError, no implicit cross-type conversion allowed",
+    "Weak typing: JavaScript — \"5\" + 5 silently produces \"55\" via implicit coercion, a frequent source of subtle bugs"
+  ],
+  "commonMistakes": [
+    "Confusing strong/weak typing with static/dynamic typing as the same concept",
+    "Assuming all dynamically-typed languages are also weakly typed",
+    "Not recognizing JavaScript's implicit coercion as a common source of subtle bugs"
+  ],
+  "followUpQuestions": [
+    "Can you give an example of a language that is dynamically typed but strongly typed?",
+    "Why does JavaScript's weak typing cause frequent bugs?",
+    "How is strong/weak typing independent from static/dynamic typing?"
+  ],
+  "realWorldExample": "JavaScript's weak typing causes \"5\" - 3 to silently evaluate to 2 through implicit coercion, a frequent source of subtle bugs that Python's strong typing would instead raise as an explicit error.",
+  "codeExample": {
+    "language": "JavaScript",
+    "code": "\"5\" + 5;  // \"55\" — weak typing, implicit coercion\n\"5\" - 3;  // 2 — different implicit coercion"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to correctly distinguish strong/weak typing from static/dynamic typing with clear examples.",
+  "tags": [
+    "Strong Typing",
+    "Weak Typing",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Static Typing vs Dynamic Typing",
+    "Type Casting",
+    "JavaScript"
+  ],
+  "references": [
+    "Types and Programming Languages - Benjamin Pierce"
+  ]
+},
+{
+  "id": "prog-022",
+  "category": "Programming",
+  "topic": "Callback Functions (General Concept)",
+  "difficulty": "Easy",
+  "question": "What is a Callback Function (as a general programming concept, complementing the JavaScript-specific coverage)?",
+  "shortAnswer": "A Callback Function is a function passed as an ARGUMENT to another function, to be invoked/\"called back\" at a later point — typically once some operation completes, or when a specific event occurs.",
+  "detailedAnswer": "This is a general programming pattern that exists across many languages, not exclusive to JavaScript. A callback allows the called function to notify or hand control back to the caller at an appropriate moment, without the called function needing to know in advance exactly what should happen at that point.\n\nThis is the fundamental mechanism behind event handling, asynchronous operations, and customizable behavior, such as passing a custom comparison function to a generic sorting function.",
+  "keyPoints": [
+    "Enables customizable, decoupled behavior — the called function doesn't need to know in advance what the callback will actually do",
+    "Common uses: event handling (click handlers), async operation completion notification, customizable comparison/filter logic passed to generic functions",
+    "Higher-order functions (functions accepting other functions as arguments) are the general concept that callbacks are a specific application of"
+  ],
+  "commonMistakes": [
+    "Assuming callbacks are exclusive to JavaScript rather than a general programming pattern",
+    "Not recognizing custom comparison functions passed to sort as a form of callback",
+    "Confusing callbacks with higher-order functions as entirely separate concepts rather than related"
+  ],
+  "followUpQuestions": [
+    "How does passing a custom comparator to a sort function exemplify the callback pattern?",
+    "How do callbacks relate to higher-order functions?",
+    "What are some common uses of callbacks beyond asynchronous operations?"
+  ],
+  "realWorldExample": "A generic sort function accepts a custom comparison callback, letting the caller define the specific sorting logic without the sort function itself needing to know the details.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the general callback pattern and its relationship to higher-order functions.",
+  "tags": [
+    "Callback Function",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Higher-Order Functions",
+    "Event Handling",
+    "Asynchronous Programming"
+  ],
+  "references": [
+    "Structure and Interpretation of Computer Programs"
+  ]
+},
+{
+  "id": "prog-023",
+  "category": "Programming",
+  "topic": "Syntax Error vs Logical Error",
+  "difficulty": "Easy",
+  "question": "What is the Difference Between a Syntax Error and a Logical Error?",
+  "shortAnswer": "A Syntax Error violates the language's grammar rules and is caught by the compiler/interpreter BEFORE (or immediately as) the code runs. A Logical Error produces INCORRECT results despite the code being syntactically valid and running without crashing.",
+  "detailedAnswer": "Syntax errors, such as a missing closing bracket or misspelled keyword, are the easiest category of bug to catch, since the compiler or interpreter itself immediately flags them, usually pointing to the exact problematic line.\n\nLogical errors are far more insidious; the code is perfectly valid syntactically and runs without any crash, but produces the wrong result due to a flaw in the actual algorithm or logic, such as an off-by-one error. These require careful testing, debugging, and code review to actually discover.",
+  "keyPoints": [
+    "Syntax error: violates language grammar — caught automatically by the compiler/interpreter, easy to locate and fix",
+    "Logical error: code runs without crashing but produces incorrect results — much harder to detect, requires testing/debugging/review",
+    "Logical errors are the primary reason thorough testing (unit tests, code review) remains essential even for syntactically \"working\" code"
+  ],
+  "commonMistakes": [
+    "Assuming a program running without crashing means it's producing correct results",
+    "Not recognizing off-by-one errors as a classic example of a logical error",
+    "Underestimating the difficulty of finding logical errors compared to syntax errors"
+  ],
+  "followUpQuestions": [
+    "Why are logical errors generally harder to find than syntax errors?",
+    "Can you give an example of a classic logical error, like an off-by-one bug?",
+    "How does thorough unit testing help catch logical errors?"
+  ],
+  "realWorldExample": "A loop that iterates one time too many due to an incorrect boundary condition is a classic logical error, compiling and running without any crash but producing an incorrect result.",
+  "codeExample": {
+    "language": "Python",
+    "code": "for i in range(1, len(arr) + 1):  # off-by-one logical error\n    print(arr[i])  # IndexError only on the last iteration"
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish the grammar-violation nature of syntax errors from the correctness-flaw nature of logical errors.",
+  "tags": [
+    "Syntax Error",
+    "Logical Error",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Compile-Time vs Run-Time Errors",
+    "Debugging",
+    "Unit Testing"
+  ],
+  "references": [
+    "Code Complete - Steve McConnell"
+  ]
+},
+{
+  "id": "prog-024",
+  "category": "Programming",
+  "topic": "Code Refactoring",
+  "difficulty": "Medium",
+  "question": "What is Code Refactoring? Why is it Important, and What Distinguishes it From Simply \"Fixing Bugs\"?",
+  "shortAnswer": "Refactoring is the process of restructuring existing code to improve its internal structure, readability, and maintainability WITHOUT changing its external behavior/functionality — distinct from bug fixing, which specifically corrects incorrect behavior.",
+  "detailedAnswer": "The defining characteristic of refactoring is that the code's observable behavior remains exactly the same before and after; what changes is purely the internal implementation quality, such as reducing duplication, improving naming, or breaking an overly large function into smaller focused ones.\n\nThis is fundamentally different from bug fixing, which specifically changes the code's behavior to correct something that was previously producing wrong results. Regular, disciplined refactoring directly counters the accumulation of technical debt, and requires a solid test suite as a safety net to verify behavior hasn't actually changed.",
+  "keyPoints": [
+    "Defining characteristic: external observable behavior stays EXACTLY the same — only internal code structure/quality changes",
+    "Distinct from bug fixing: bug fixing specifically changes behavior to correct something that was wrong; refactoring doesn't change behavior at all",
+    "Requires a solid test suite as a safety net — automated tests verify that refactored code genuinely still behaves identically to before"
+  ],
+  "commonMistakes": [
+    "Confusing refactoring with bug fixing, since refactoring should never change observable behavior",
+    "Refactoring without a solid test suite to verify behavior hasn't changed",
+    "Treating refactoring as a one-time event rather than an ongoing discipline"
+  ],
+  "followUpQuestions": [
+    "Why is a solid test suite essential before undertaking a refactor?",
+    "How does refactoring differ specifically from bug fixing?",
+    "How does regular refactoring help counter technical debt accumulation?"
+  ],
+  "realWorldExample": "A developer breaks an overly large 500-line function into several smaller, well-named functions, verifying via existing unit tests that the application's behavior remains completely unchanged.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish behavior-preserving refactoring from behavior-changing bug fixing.",
+  "tags": [
+    "Refactoring",
+    "Code Quality",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Technical Debt",
+    "Unit Testing",
+    "Clean Code"
+  ],
+  "references": [
+    "Refactoring - Martin Fowler"
+  ]
+},
+{
+  "id": "prog-025",
+  "category": "Programming",
+  "topic": "DRY Principle",
+  "difficulty": "Medium",
+  "question": "What is the Principle of \"DRY\" (Don't Repeat Yourself)? What are its potential downsides if applied too aggressively?",
+  "shortAnswer": "DRY states that every piece of knowledge/logic should have a single, unambiguous representation within a system — avoiding duplicated code that must be updated in multiple places whenever the logic changes. Applied too aggressively, it can create premature, overly-clever abstractions that are harder to understand than the original duplication.",
+  "detailedAnswer": "The core motivation behind DRY is maintainability; if the same logic is duplicated in five different places, fixing a bug requires remembering to update all five locations correctly, and it's easy to miss one. Extracting shared logic into a single reusable function means there's only one place to update.\n\nHowever, DRY applied too zealously, especially prematurely before genuinely understanding whether two similar-looking pieces of code represent the same concept, can create a forced, overly-abstract shared function that's harder to understand than if the logic had simply been left duplicated. Some engineers advocate 'wait for the third occurrence' before extracting a shared abstraction.",
+  "keyPoints": [
+    "Motivation: single source of truth for any given piece of logic — reduces the risk of inconsistent updates across duplicated code",
+    "Downside of overzealous application: forcing a shared abstraction onto code that's only SUPERFICIALLY similar, not genuinely conceptually the same",
+    "Common guideline: \"wait for the third occurrence\" before extracting a shared abstraction, rather than abstracting immediately after just two instances"
+  ],
+  "commonMistakes": [
+    "Extracting a shared abstraction after just two superficially similar pieces of code without verifying they represent the same concept",
+    "Not recognizing that overzealous DRY can create harder-to-understand code than the original duplication",
+    "Applying DRY to code that only coincidentally looks similar rather than genuinely sharing the same underlying logic"
+  ],
+  "followUpQuestions": [
+    "What is the 'wait for the third occurrence' guideline and why is it useful?",
+    "Can you give an example where applying DRY too aggressively made code worse?",
+    "How would you decide whether two similar-looking code blocks genuinely represent the same concept?"
+  ],
+  "realWorldExample": "A developer prematurely extracts a shared function for two superficially similar validation checks, only to later realize they actually represent different business rules, requiring the abstraction to be awkwardly parameterized or eventually split back apart.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain DRY's maintainability motivation and articulate the risk of premature, overzealous abstraction.",
+  "tags": [
+    "DRY Principle",
+    "Code Quality",
+    "Programming Fundamentals",
+    "Interview"
+  ],
+  "relatedTopics": [
+    "Refactoring",
+    "Software Design",
+    "Abstraction"
+  ],
+  "references": [
+    "The Pragmatic Programmer - Hunt & Thomas"
+  ]
+}
 ];
