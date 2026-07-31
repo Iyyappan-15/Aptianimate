@@ -12376,5 +12376,830 @@ export const TECHNICAL_INTERVIEW_QUESTIONS = [
   "tags": ["HR Interview", "Closing Statement", "Interview"],
   "relatedTopics": ["Questions for Interviewer", "Follow-Up", "Professionalism"],
   "references": ["Cracking the Coding Interview - Gayle Laakmann McDowell"]
+},
+{
+  "id": "adv-001",
+  "category": "Advanced Topics",
+  "topic": "Distributed Consensus and Raft",
+  "difficulty": "Hard",
+  "question": "What is Distributed Consensus? Explain the Raft Algorithm at a high level.",
+  "shortAnswer": "Distributed Consensus is the problem of getting multiple independent nodes to agree on a single value/state despite failures. Raft solves this via leader election and log replication, designed to be more understandable than Paxos.",
+  "detailedAnswer": "In a distributed system, multiple nodes must agree on things like the current value of data or which node is the leader, even when some nodes crash or network messages are delayed. Raft elects a single Leader via randomized election timeouts and majority voting, and that leader handles all client writes.\n\nThe leader replicates its log of operations to Follower nodes, and an operation is considered committed once a majority of nodes have it in their log, ensuring correctness even if a minority of nodes fail. If the leader crashes, a new election occurs among the followers. Raft is used in etcd, Consul, and CockroachDB.",
+  "keyPoints": [
+    "Leader election: nodes use randomized timeouts to avoid split votes, majority wins becomes leader",
+    "Log replication: leader replicates operations to followers, committed once a MAJORITY acknowledge",
+    "Used in real systems: etcd (Kubernetes' backing store), Consul, CockroachDB"
+  ],
+  "commonMistakes": [
+    "Confusing Raft's majority-based commit with requiring all nodes to acknowledge",
+    "Not knowing what happens when the leader crashes",
+    "Assuming Raft is functionally identical to Paxos rather than a more understandable alternative"
+  ],
+  "followUpQuestions": [
+    "What happens when a Raft leader crashes mid-operation?",
+    "Why does Raft only require a majority rather than all nodes to commit?",
+    "What real-world systems use Raft for consensus?"
+  ],
+  "realWorldExample": "etcd, the backing key-value store for Kubernetes, uses Raft to maintain consistent cluster state across multiple nodes despite individual node failures.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain leader election and log replication, and why majority acknowledgment ensures correctness.",
+  "tags": ["Distributed Systems", "Raft", "Consensus", "Interview"],
+  "relatedTopics": ["Paxos", "CAP Theorem", "Leader Election"],
+  "references": ["In Search of an Understandable Consensus Algorithm - Ongaro & Ousterhout"]
+},
+{
+  "id": "adv-002",
+  "category": "Advanced Topics",
+  "topic": "Concurrency vs Parallelism",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Concurrency and Parallelism?",
+  "shortAnswer": "Concurrency is about dealing with MANY tasks at once (structuring a program to handle multiple things, possibly interleaved on one core). Parallelism is about doing MANY tasks simultaneously (actually executing multiple things at the exact same instant, requiring multiple cores).",
+  "detailedAnswer": "Concurrency is a program design concept; a single-core CPU can be concurrent by rapidly switching between multiple tasks through time-slicing, giving the illusion of simultaneous progress even though only one instruction executes at any given instant, which is exactly how Node.js's single-threaded event loop achieves high throughput for I/O-bound work.\n\nParallelism is a genuine execution concept requiring multiple physical cores, where multiple tasks are actually running at the exact same moment. A program can be concurrent without being parallel, and technically parallel without appearing concurrent in structure.",
+  "keyPoints": [
+    "Concurrency: program structure/design dealing with multiple tasks — possible even on a single core via time-slicing",
+    "Parallelism: genuine simultaneous execution — requires multiple physical cores/processors",
+    "Node.js is concurrent (event loop interleaves I/O-bound tasks) but NOT inherently parallel on a single main thread"
+  ],
+  "commonMistakes": [
+    "Using concurrency and parallelism interchangeably",
+    "Assuming Node.js is parallel because it handles many concurrent connections",
+    "Not knowing a program can be concurrent without being parallel and vice versa"
+  ],
+  "followUpQuestions": [
+    "Why is Node.js considered concurrent but not inherently parallel?",
+    "Can you give an example of something parallel but not concurrent in structure?",
+    "How does time-slicing enable concurrency on a single core?"
+  ],
+  "realWorldExample": "A single-core system running a web server handles concurrent requests via time-slicing, while a multi-core system running the same server can process multiple requests in true parallel execution.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to cite Rob Pike's distinction and give concrete examples separating design (concurrency) from execution (parallelism).",
+  "tags": ["Concurrency", "Parallelism", "Interview"],
+  "relatedTopics": ["Event Loop", "Multithreading", "Multicore"],
+  "references": ["Rob Pike - Concurrency is Not Parallelism"]
+},
+{
+  "id": "adv-003",
+  "category": "Advanced Topics",
+  "topic": "Race Condition vs Deadlock",
+  "difficulty": "Medium",
+  "question": "What is a Race Condition vs a Deadlock in Concurrent Programming?",
+  "shortAnswer": "A Race Condition occurs when the outcome depends on unpredictable timing of concurrent operations on shared data. A Deadlock occurs when two or more threads/processes permanently block each other, each waiting for a resource the other holds.",
+  "detailedAnswer": "These are the two most common concurrency bugs. A race condition produces incorrect results due to non-atomic read-modify-write sequences on shared state, such as two threads incrementing a shared counter simultaneously and losing an update; the program continues running but produces wrong output.\n\nA deadlock causes the program to hang entirely, since no forward progress is possible because each waiting thread holds a resource the other needs. Race conditions are fixed via proper synchronization, while deadlocks are prevented via consistent lock ordering or avoidance algorithms.",
+  "keyPoints": [
+    "Race condition: wrong RESULT due to unsynchronized concurrent access — program continues but produces incorrect output",
+    "Deadlock: program HANGS entirely — no forward progress possible, all involved threads permanently blocked",
+    "Race conditions fixed via proper locking/atomics; deadlocks prevented via consistent lock ordering across the codebase"
+  ],
+  "commonMistakes": [
+    "Confusing a race condition (wrong output) with a deadlock (program hangs)",
+    "Not knowing consistent lock ordering prevents deadlocks",
+    "Assuming both bugs have the same fix (synchronization alone doesn't prevent deadlock)"
+  ],
+  "followUpQuestions": [
+    "How would you detect a race condition versus a deadlock in production?",
+    "Why does consistent lock ordering prevent deadlocks?",
+    "What tools can help identify race conditions during development?"
+  ],
+  "realWorldExample": "Two threads incrementing a shared bank balance without a mutex produce a race condition with an incorrect final balance, while two threads each holding a lock the other needs produce a deadlock where neither makes progress.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to distinguish incorrect-output bugs from hanging-program bugs and describe respective fixes.",
+  "tags": ["Race Condition", "Deadlock", "Concurrency", "Interview"],
+  "relatedTopics": ["Mutex", "Critical Section", "Operating Systems"],
+  "references": ["Operating System Concepts - Silberschatz"]
+},
+{
+  "id": "adv-004",
+  "category": "Advanced Topics",
+  "topic": "Public Key Cryptography and RSA",
+  "difficulty": "Hard",
+  "question": "What is Public Key Cryptography (Asymmetric Encryption)? How does RSA work at a high level?",
+  "shortAnswer": "Public Key Cryptography uses a mathematically linked key pair — a public key (freely shareable) and a private key (kept secret) — where data encrypted with one can only be decrypted with the other. RSA's security relies on the mathematical difficulty of factoring large prime numbers.",
+  "detailedAnswer": "Unlike symmetric encryption, which uses one shared secret key, asymmetric encryption solves the key-distribution problem: you can freely publish your public key, and anyone can encrypt a message that only your private key can decrypt, or you can sign with your private key and anyone can verify it with your public key.\n\nRSA generates keys based on the product of two large prime numbers; the public key is derived from this product, while the private key requires knowing the original prime factors. Factoring a sufficiently large product back into its original primes is computationally infeasible with current classical computers, forming the mathematical foundation of RSA's security.",
+  "keyPoints": [
+    "Public key: freely shareable, used to encrypt (for confidentiality) or verify a signature (for authentication)",
+    "Private key: kept secret, used to decrypt (confidentiality) or create a signature (authentication)",
+    "RSA security: based on the computational difficulty of factoring the product of two large prime numbers back into its factors"
+  ],
+  "commonMistakes": [
+    "Confusing which key is used for encryption versus decryption in confidentiality scenarios",
+    "Not knowing RSA's security relies specifically on the difficulty of prime factorization",
+    "Assuming asymmetric encryption is used for all bulk data rather than just key exchange"
+  ],
+  "followUpQuestions": [
+    "Why is asymmetric encryption typically only used for key exchange rather than bulk data?",
+    "What would happen to RSA's security if factoring large numbers became computationally easy?",
+    "How does public key cryptography solve the key-distribution problem?"
+  ],
+  "realWorldExample": "TLS uses RSA or similar asymmetric algorithms during the handshake to securely exchange a symmetric session key, which then encrypts the actual bulk data.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the key pair mechanism and the prime-factorization basis of RSA's security.",
+  "tags": ["Cryptography", "RSA", "Public Key Cryptography", "Interview"],
+  "relatedTopics": ["Digital Signatures", "TLS", "Symmetric Encryption"],
+  "references": ["RFC 8017"]
+},
+{
+  "id": "adv-005",
+  "category": "Advanced Topics",
+  "topic": "Digital Signatures",
+  "difficulty": "Hard",
+  "question": "What is a Digital Signature? How is it different from Encryption?",
+  "shortAnswer": "A Digital Signature proves a message's authenticity and integrity (it genuinely came from the claimed sender and wasn't tampered with) — it does NOT provide confidentiality (the message itself isn't hidden), which is the opposite goal of encryption.",
+  "detailedAnswer": "To create a digital signature, the sender hashes the message, then encrypts that hash using their private key; this encrypted hash is the signature, attached to the still-readable plaintext message. Anyone can verify it using the sender's public key: decrypt the signature to get the original hash, independently compute the hash of the received message, and check if they match.\n\nIf they match, this proves the message genuinely came from the claimed sender and hasn't been tampered with in transit. This is the opposite direction of typical encryption for confidentiality: signing uses the private key to sign and the public key to verify.",
+  "keyPoints": [
+    "Signing direction: private key creates the signature, public key VERIFIES it — opposite of typical confidentiality encryption",
+    "Proves both authenticity (genuinely from the claimed sender) AND integrity (message wasn't altered in transit)",
+    "Does NOT provide confidentiality on its own — the underlying message remains readable/plaintext unless separately encrypted too"
+  ],
+  "commonMistakes": [
+    "Confusing signing's private-key-signs, public-key-verifies direction with encryption's opposite direction",
+    "Assuming a digital signature also hides the message content",
+    "Not understanding a changed message produces a different hash, revealing tampering"
+  ],
+  "followUpQuestions": [
+    "Why does signing use the private key while confidentiality encryption uses the public key?",
+    "How does a digital signature detect message tampering?",
+    "Would you need both signing and encryption to achieve confidentiality plus authenticity?"
+  ],
+  "realWorldExample": "Software packages are digitally signed by their publisher, allowing users to verify the package genuinely came from that publisher and wasn't tampered with during distribution.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the sign-with-private/verify-with-public direction and clarify signatures don't provide confidentiality.",
+  "tags": ["Digital Signatures", "Cryptography", "Interview"],
+  "relatedTopics": ["Public Key Cryptography", "RSA", "Hashing"],
+  "references": ["RFC 8017"]
+},
+{
+  "id": "adv-006",
+  "category": "Advanced Topics",
+  "topic": "Kubernetes Rolling Deployment",
+  "difficulty": "Medium",
+  "question": "What is Kubernetes Pod Autoscaling and Rolling Deployment? (Deeper Cloud-Native Concept)",
+  "shortAnswer": "A Rolling Deployment updates application instances GRADUALLY (one or a few at a time), keeping the application continuously available throughout the update — rather than taking everything down at once.",
+  "detailedAnswer": "With a rolling deployment strategy, Kubernetes replaces old Pod instances with new ones incrementally: it starts new Pods running the updated version, waits for them to pass health checks and become ready, then terminates a corresponding number of old Pods, repeating until all instances are updated.\n\nAt every point during this process, a sufficient number of healthy instances remain available to serve traffic, achieving zero-downtime deployment. If a health check on the new version fails, the rollout can be automatically halted or manually rolled back, limiting the blast radius of a bad deployment.",
+  "keyPoints": [
+    "Gradually replaces old instances with new ones, maintaining continuous availability throughout the update",
+    "Health checks gate the rollout: new Pods must pass readiness checks before old Pods are terminated",
+    "Limits blast radius of a bad deployment — a failing rollout can be halted/rolled back before ALL instances are affected"
+  ],
+  "commonMistakes": [
+    "Assuming a rolling deployment causes downtime like a full replace-all approach",
+    "Not knowing health checks gate progression through the rollout",
+    "Forgetting a failing rollout can be automatically halted before affecting all instances"
+  ],
+  "followUpQuestions": [
+    "What happens if a new Pod fails its readiness check during a rolling deployment?",
+    "How does a rolling deployment limit the blast radius of a bad release?",
+    "How does Pod Autoscaling relate to a rolling deployment strategy?"
+  ],
+  "realWorldExample": "A production Kubernetes deployment updates its application version using a rolling strategy, gradually replacing old Pods with new ones while health checks ensure zero downtime throughout.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe the incremental replacement process and the role of health checks in gating the rollout.",
+  "tags": ["Kubernetes", "Rolling Deployment", "Cloud-Native", "Interview"],
+  "relatedTopics": ["Horizontal Pod Autoscaling", "Circuit Breaker", "CI/CD"],
+  "references": ["Kubernetes Documentation - kubernetes.io"]
+},
+{
+  "id": "adv-007",
+  "category": "Advanced Topics",
+  "topic": "Blockchain and Distributed Ledgers",
+  "difficulty": "Hard",
+  "question": "What is Blockchain? How does a Distributed Ledger Achieve Trust Without a Central Authority?",
+  "shortAnswer": "A Blockchain is a distributed, append-only ledger where each block cryptographically references the previous one (via a hash), and consensus mechanisms (like Proof of Work or Proof of Stake) allow a decentralized network to agree on the valid chain state without needing a trusted central authority.",
+  "detailedAnswer": "Each block contains a set of transactions plus a cryptographic hash of the previous block; this chaining means altering any historical block would change its hash, invalidating every subsequent block's stored reference, making tampering computationally detectable and extremely difficult.\n\nConsensus mechanisms determine how the decentralized network agrees on which chain is valid when conflicts arise. Proof of Work requires solving a computationally expensive puzzle, used by Bitcoin, while Proof of Stake selects validators based on their economic stake in the network, used by modern Ethereum and far more energy-efficient.",
+  "keyPoints": [
+    "Each block's hash depends on the previous block's hash — tampering with history requires recomputing the entire chain after that point",
+    "Proof of Work: computationally expensive puzzle-solving determines who adds the next block (Bitcoin) — energy intensive",
+    "Proof of Stake: validators selected based on economic stake in the network (modern Ethereum) — far more energy-efficient"
+  ],
+  "commonMistakes": [
+    "Not understanding why tampering with an old block invalidates every subsequent block",
+    "Confusing Proof of Work with Proof of Stake's selection mechanism",
+    "Assuming blockchain requires no computational or economic cost to secure"
+  ],
+  "followUpQuestions": [
+    "Why does tampering with a historical block require redoing work on all subsequent blocks?",
+    "What is the key trade-off between Proof of Work and Proof of Stake?",
+    "How does a decentralized network resolve conflicting valid chains?"
+  ],
+  "realWorldExample": "Bitcoin's blockchain uses Proof of Work, requiring miners to solve computationally expensive puzzles to add new blocks, making historical tampering prohibitively expensive.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain block hash-chaining and compare Proof of Work with Proof of Stake.",
+  "tags": ["Blockchain", "Distributed Ledger", "Consensus", "Interview"],
+  "relatedTopics": ["Cryptography", "Distributed Consensus", "Proof of Work"],
+  "references": ["Bitcoin Whitepaper - Satoshi Nakamoto"]
+},
+{
+  "id": "adv-008",
+  "category": "Advanced Topics",
+  "topic": "Supervised, Unsupervised, Reinforcement Learning",
+  "difficulty": "Medium",
+  "question": "What is the Difference Between Supervised, Unsupervised, and Reinforcement Learning?",
+  "shortAnswer": "Supervised Learning trains on LABELED data (input-output pairs are known) to predict outputs for new inputs. Unsupervised Learning finds patterns in UNLABELED data (no known correct answer). Reinforcement Learning learns through trial-and-error interaction with an environment, guided by rewards/penalties.",
+  "detailedAnswer": "Supervised learning requires a training dataset where the correct answer for each example is already known; the model learns to map inputs to these known outputs, then generalizes to predict outputs for new, unseen inputs.\n\nUnsupervised learning works with data that has no labeled correct answers, aiming to discover inherent structure or patterns such as clustering or anomaly detection. Reinforcement learning is fundamentally different: an agent takes actions in an environment, receiving rewards or penalties, and learns over many iterations which strategies maximize cumulative reward over time.",
+  "keyPoints": [
+    "Supervised: labeled data (known correct answers) — classification (discrete categories) and regression (continuous values)",
+    "Unsupervised: unlabeled data, finds inherent structure — clustering, dimensionality reduction, anomaly detection",
+    "Reinforcement: trial-and-error learning via rewards/penalties from environment interaction — used in game AI, robotics"
+  ],
+  "commonMistakes": [
+    "Confusing classification and regression as separate learning paradigms rather than both being supervised",
+    "Not knowing reinforcement learning is fundamentally different from supervised/unsupervised in its trial-and-error approach",
+    "Assuming unsupervised learning has no practical real-world applications"
+  ],
+  "followUpQuestions": [
+    "Can you give an example of a real-world unsupervised learning application?",
+    "How does reinforcement learning differ from supervised learning in terms of feedback?",
+    "What is the difference between classification and regression within supervised learning?"
+  ],
+  "realWorldExample": "A recommendation system might use unsupervised clustering to group similar users, while a game-playing AI uses reinforcement learning to improve its strategy through trial and error.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to clearly distinguish the three paradigms by their data and feedback mechanisms.",
+  "tags": ["Machine Learning", "Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Interview"],
+  "relatedTopics": ["Overfitting", "Neural Networks", "AI"],
+  "references": ["Pattern Recognition and Machine Learning - Bishop"]
+},
+{
+  "id": "adv-009",
+  "category": "Advanced Topics",
+  "topic": "Overfitting in Machine Learning",
+  "difficulty": "Medium",
+  "question": "What is Overfitting in Machine Learning? How is it typically addressed?",
+  "shortAnswer": "Overfitting occurs when a model learns the TRAINING data too specifically (including its noise and random quirks), performing excellently on training data but poorly on new, unseen data — because it failed to learn genuinely GENERALIZABLE patterns.",
+  "detailedAnswer": "An overfit model essentially memorizes the specific training examples, including their noise and outliers, rather than learning the underlying general relationship that would apply to new data.\n\nCommon mitigation techniques include using more training data, regularization that adds a penalty term discouraging overly complex models, cross-validation to evaluate on held-out data during training, dropout that randomly disables neurons during neural network training, and early stopping that halts training once validation performance starts degrading.",
+  "keyPoints": [
+    "Symptom: excellent performance on training data, but poor performance on new, unseen data — model memorized rather than generalized",
+    "Regularization (L1/L2): adds a penalty for model complexity, discouraging the model from fitting noise too precisely",
+    "Cross-validation and a held-out validation set: essential for detecting overfitting DURING training, before deploying a bad model"
+  ],
+  "commonMistakes": [
+    "Not using a held-out validation set to detect overfitting during training",
+    "Assuming more model complexity always improves performance",
+    "Confusing overfitting with underfitting (which shows poor performance on both training and test data)"
+  ],
+  "followUpQuestions": [
+    "How does regularization help prevent overfitting?",
+    "What is the difference between overfitting and underfitting?",
+    "How does dropout specifically help prevent overfitting in neural networks?"
+  ],
+  "realWorldExample": "A model trained to classify images achieves 99% accuracy on training data but only 60% on new test images, indicating it memorized training examples rather than learning generalizable features.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the training-versus-generalization gap and describe multiple concrete mitigation techniques.",
+  "tags": ["Machine Learning", "Overfitting", "Regularization", "Interview"],
+  "relatedTopics": ["Supervised Learning", "Cross-Validation", "Neural Networks"],
+  "references": ["Pattern Recognition and Machine Learning - Bishop"]
+},
+{
+  "id": "adv-010",
+  "category": "Advanced Topics",
+  "topic": "Quantum Computing and Qubits",
+  "difficulty": "Hard",
+  "question": "What is Quantum Computing? What is a Qubit, and Why Does It Matter for Certain Problems?",
+  "shortAnswer": "Quantum Computing uses quantum mechanical phenomena (superposition and entanglement) to perform certain computations dramatically faster than classical computers for specific problem types. A Qubit, unlike a classical bit (strictly 0 or 1), can exist in a SUPERPOSITION of both states simultaneously.",
+  "detailedAnswer": "A classical bit is definitively either 0 or 1 at any given moment. A qubit, through superposition, exists in a probabilistic combination of both states simultaneously until measured; this allows a system of N qubits to represent an exponentially larger space of possible states simultaneously, compared to N classical bits which can only represent one specific combination at a time.\n\nCertain algorithms, such as Shor's algorithm for factoring large numbers or Grover's algorithm for unstructured search, can exploit this to achieve dramatic theoretical speedups for specific problem types, but quantum computers are not simply faster classical computers for general-purpose computing.",
+  "keyPoints": [
+    "Qubit: exists in superposition of both 0 and 1 simultaneously (until measured), unlike a classical bit's definite state",
+    "N qubits can represent 2^N states simultaneously — the source of quantum computing's theoretical exponential advantage for specific problems",
+    "NOT a general-purpose speedup — advantage is limited to specific problem classes (factoring, unstructured search) with the right structure"
+  ],
+  "commonMistakes": [
+    "Assuming quantum computers are simply faster classical computers for all tasks",
+    "Not understanding superposition collapses upon measurement",
+    "Confusing quantum computing's advantage as universal rather than limited to specific problem classes"
+  ],
+  "followUpQuestions": [
+    "Why isn't a quantum computer simply a faster classical computer for everyday tasks?",
+    "How does Shor's algorithm threaten RSA encryption?",
+    "What happens to a qubit's superposition when it is measured?"
+  ],
+  "realWorldExample": "Shor's algorithm run on a sufficiently powerful quantum computer could theoretically break RSA encryption by efficiently factoring the large prime products that secure it.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain superposition's role in exponential state representation and clarify quantum advantage is problem-specific, not universal.",
+  "tags": ["Quantum Computing", "Qubit", "Interview"],
+  "relatedTopics": ["RSA", "Cryptography", "Algorithms"],
+  "references": ["Quantum Computation and Quantum Information - Nielsen & Chuang"]
+},
+{
+  "id": "adv-011",
+  "category": "Advanced Topics",
+  "topic": "Two-Phase Commit",
+  "difficulty": "Hard",
+  "question": "What is Two-Phase Commit (2PC)? Why is it used for Distributed Transactions?",
+  "shortAnswer": "Two-Phase Commit coordinates a transaction spanning MULTIPLE separate databases/services, ensuring ALL participants either commit together or all abort together — via a Prepare phase followed by a Commit phase.",
+  "detailedAnswer": "When a single logical transaction needs to update data across multiple independent systems, simply committing each independently risks a partial failure leaving the overall system inconsistent. 2PC uses a coordinator: in Phase 1, the coordinator asks every participant if they can commit; each participant locks the necessary resources and responds yes or no without actually committing yet.\n\nIf all participants respond yes, Phase 2 instructs everyone to actually commit; if any participant says no or times out, the coordinator instructs everyone to abort. This guarantees atomicity but has known weaknesses: it's blocking, and the coordinator itself is a single point of failure.",
+  "keyPoints": [
+    "Phase 1 (Prepare): coordinator asks all participants if they CAN commit — they lock resources and respond, without committing yet",
+    "Phase 2 (Commit/Abort): based on unanimous yes votes, coordinator instructs all to actually commit, or all to abort if any said no",
+    "Known weaknesses: blocking protocol (locks held while waiting), coordinator is a single point of failure — modern systems often prefer Sagas instead"
+  ],
+  "commonMistakes": [
+    "Not knowing 2PC is blocking, since resources remain locked while awaiting the coordinator's decision",
+    "Forgetting the coordinator itself is a single point of failure",
+    "Confusing 2PC's immediate atomicity guarantee with the eventual consistency of the Saga pattern"
+  ],
+  "followUpQuestions": [
+    "What happens if the coordinator crashes mid-protocol?",
+    "Why is 2PC considered a blocking protocol?",
+    "When would you choose 2PC over the Saga pattern despite its weaknesses?"
+  ],
+  "realWorldExample": "A banking system transferring funds across two separate database systems uses 2PC to ensure both the debit and credit operations either both succeed or both fail together.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to describe both phases accurately and identify the blocking and single-point-of-failure weaknesses.",
+  "tags": ["Two-Phase Commit", "Distributed Transactions", "Interview"],
+  "relatedTopics": ["Saga Pattern", "Distributed Consensus", "ACID"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "adv-012",
+  "category": "Advanced Topics",
+  "topic": "Saga Pattern",
+  "difficulty": "Hard",
+  "question": "What is the Saga Pattern? How does it differ from Two-Phase Commit for Distributed Transactions?",
+  "shortAnswer": "The Saga Pattern breaks a distributed transaction into a sequence of LOCAL transactions, each with a corresponding COMPENSATING action to undo it if a later step fails — avoiding the blocking, tightly-coupled nature of Two-Phase Commit.",
+  "detailedAnswer": "Rather than 2PC's approach of locking resources across multiple systems while awaiting a coordinated decision, a Saga executes each step as an independent local transaction that commits immediately; if a later step fails, previously completed steps are undone by executing explicitly-defined compensating transactions.\n\nThis avoids 2PC's blocking nature and better fits microservices architectures where each service manages its own local database independently, at the cost of only achieving eventual consistency rather than immediate atomicity, and requiring careful design of correct compensating actions for every step.",
+  "keyPoints": [
+    "Sequence of local transactions, each committing independently, with a compensating action to undo it if a later step fails",
+    "Avoids 2PC's blocking/locking nature — better fits microservices where each service owns its own independent local database",
+    "Trade-off: only achieves EVENTUAL consistency, not immediate atomicity — requires careful, correct compensating action design for every step"
+  ],
+  "commonMistakes": [
+    "Assuming the Saga pattern provides the same immediate atomicity guarantee as 2PC",
+    "Not designing correct compensating actions for every step in the saga",
+    "Confusing local transaction commits with the overall saga's eventual consistency"
+  ],
+  "followUpQuestions": [
+    "What is a compensating transaction and why must it be carefully designed?",
+    "Why does the Saga pattern only achieve eventual consistency rather than immediate atomicity?",
+    "When would you choose Saga over 2PC in a microservices architecture?"
+  ],
+  "realWorldExample": "An e-commerce checkout saga reserves inventory, charges payment, and creates a shipment as separate local transactions; if payment fails, a compensating action releases the reserved inventory.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the local-transaction-plus-compensation model and contrast its eventual consistency trade-off with 2PC's atomicity.",
+  "tags": ["Saga Pattern", "Distributed Transactions", "Microservices", "Interview"],
+  "relatedTopics": ["Two-Phase Commit", "Eventual Consistency", "Microservices"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "adv-013",
+  "category": "Advanced Topics",
+  "topic": "Eventual vs Strong Consistency",
+  "difficulty": "Hard",
+  "question": "What is Eventual Consistency vs Strong Consistency in Distributed Databases? (Deeper Dive)",
+  "shortAnswer": "Strong Consistency guarantees every read reflects the most recent write immediately, everywhere. Eventual Consistency guarantees that, given enough time with no new updates, all replicas will eventually converge to the same value — but reads immediately after a write may temporarily return stale data.",
+  "detailedAnswer": "Strong consistency requires coordination, often synchronous replication or consensus protocols like Raft or Paxos, before a write is considered complete, ensuring every subsequent read sees that update immediately, but at the cost of higher write latency and potentially reduced availability during network partitions.\n\nEventual consistency allows writes to propagate to replicas asynchronously; a read immediately following a write on a different replica might return the old value temporarily until replication catches up. This trades some correctness for better availability and lower write latency, acceptable for social media feeds but unacceptable for financial balances.",
+  "keyPoints": [
+    "Strong consistency: every read reflects the latest write immediately, everywhere — requires coordination, higher latency",
+    "Eventual consistency: replicas converge over time, but reads can temporarily return stale data immediately after a write",
+    "Choice depends on use case: eventual consistency acceptable for social feeds; strong consistency required for financial transactions"
+  ],
+  "commonMistakes": [
+    "Applying eventual consistency to use cases that genuinely require strong correctness, like financial balances",
+    "Not connecting strong consistency's cost to the CAP theorem trade-off during partitions",
+    "Assuming eventual consistency means data is never correct rather than eventually converging"
+  ],
+  "followUpQuestions": [
+    "How does strong consistency relate to the CAP theorem's availability trade-off?",
+    "What consensus protocols are commonly used to achieve strong consistency?",
+    "Can you give a use case where eventual consistency would be unacceptable?"
+  ],
+  "realWorldExample": "A banking system requires strong consistency for account balance reads, while a social media platform's like counter can tolerate eventual consistency, briefly showing stale counts across different servers.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to connect consistency models to real trade-offs in latency, availability, and correctness for specific use cases.",
+  "tags": ["Eventual Consistency", "Strong Consistency", "Distributed Systems", "Interview"],
+  "relatedTopics": ["CAP Theorem", "Raft", "Replication"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "adv-014",
+  "category": "Advanced Topics",
+  "topic": "Bloom Filter",
+  "difficulty": "Hard",
+  "question": "What is a Bloom Filter? Why is it useful despite being a \"probabilistic\" data structure?",
+  "shortAnswer": "A Bloom Filter is a space-efficient probabilistic data structure that tests whether an element MIGHT be in a set — it can produce FALSE POSITIVES (incorrectly saying an element is present when it's not) but NEVER false negatives (if it says an element is definitely NOT present, that's always correct).",
+  "detailedAnswer": "A Bloom filter uses a bit array and multiple hash functions; adding an element sets several bits to 1, and checking membership hashes the element the same way and checks if all corresponding bits are set. If even one is 0, the element is definitely not in the set.\n\nHowever, since multiple different elements can collectively set the same bits through hash collisions, it's possible for a query to incorrectly report a false positive. This makes Bloom filters extremely memory-efficient for large-scale membership testing, used in web crawlers, databases, and network routers.",
+  "keyPoints": [
+    "Can produce false positives (\"might be in the set\" when it's actually not) but NEVER false negatives (definite \"not in set\" is always correct)",
+    "Extremely memory-efficient compared to storing the actual full set — trade-off between false positive rate and memory usage",
+    "Real-world uses: web crawlers (avoid re-crawling), databases (avoid unnecessary expensive disk lookups), network packet routing"
+  ],
+  "commonMistakes": [
+    "Assuming a Bloom filter can produce false negatives",
+    "Not knowing the false positive rate can be tuned by adjusting bit array size and hash function count",
+    "Using a Bloom filter when exact membership testing is strictly required"
+  ],
+  "followUpQuestions": [
+    "Why can't a Bloom filter produce false negatives?",
+    "How would you tune a Bloom filter's false positive rate?",
+    "What is a real-world use case where a Bloom filter's false positives are acceptable?"
+  ],
+  "realWorldExample": "A database uses a Bloom filter to quickly check if a key might exist before performing an expensive disk lookup, avoiding unnecessary I/O for keys that are definitely absent.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the false-positive-but-never-false-negative property and describe real-world applications.",
+  "tags": ["Bloom Filter", "Probabilistic Data Structures", "Interview"],
+  "relatedTopics": ["Hash Functions", "Web Crawler", "Databases"],
+  "references": ["CLRS - Introduction to Algorithms"]
+},
+{
+  "id": "adv-015",
+  "category": "Advanced Topics",
+  "topic": "Zero-Knowledge Proof",
+  "difficulty": "Hard",
+  "question": "What is Zero-Knowledge Proof? Give an intuitive explanation.",
+  "shortAnswer": "A Zero-Knowledge Proof allows one party to PROVE to another that they know a specific piece of information (a secret/credential) WITHOUT actually revealing the information itself.",
+  "detailedAnswer": "The classic intuitive example involves proving you know the password to a cave with two entrances meeting in the middle at a locked door, without revealing the actual password. A verifier randomly asks you to exit from either entrance, and you can only correctly comply if you genuinely know the secret.\n\nRepeated many times, the probability of correctly guessing without actually knowing the secret becomes vanishingly small, giving statistical confidence without revealing the password itself. This has real-world applications in privacy-preserving authentication, blockchain privacy, and secure identity verification.",
+  "keyPoints": [
+    "Proves KNOWLEDGE of a secret without actually revealing the secret itself — repeated challenges build statistical confidence",
+    "Real-world applications: privacy-preserving age verification, blockchain transaction privacy (Zcash), secure identity systems",
+    "Fundamental property: the verifier gains confidence in the claim's truth, without gaining any actual knowledge of the underlying secret"
+  ],
+  "commonMistakes": [
+    "Assuming a single challenge round provides absolute certainty rather than statistical confidence",
+    "Not understanding why repeated rounds are needed to build confidence",
+    "Confusing zero-knowledge proofs with simple hashing or password verification"
+  ],
+  "followUpQuestions": [
+    "Why does a zero-knowledge proof require repeated challenges to build confidence?",
+    "How is zero-knowledge proof used in privacy-preserving blockchain transactions?",
+    "Can you give a real-world example where proving age without revealing birthdate would be useful?"
+  ],
+  "realWorldExample": "Zcash uses zero-knowledge proofs to allow validating that a blockchain transaction is legitimate without revealing the transaction's amount or the parties involved.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the intuitive cave analogy and describe real-world privacy-preserving applications.",
+  "tags": ["Zero-Knowledge Proof", "Cryptography", "Privacy", "Interview"],
+  "relatedTopics": ["Blockchain", "Public Key Cryptography", "Privacy"],
+  "references": ["Zcash Protocol Documentation"]
+},
+{
+  "id": "adv-016",
+  "category": "Advanced Topics",
+  "topic": "Big Data 3 Vs",
+  "difficulty": "Medium",
+  "question": "What is Big Data's \"3 Vs\" (or \"5 Vs\")? Why Do Traditional Databases Struggle with It?",
+  "shortAnswer": "The \"3 Vs\" of Big Data are Volume (massive scale of data), Velocity (speed at which data is generated/must be processed), and Variety (diverse formats — structured, semi-structured, unstructured) — traditional relational databases weren't designed to handle all three simultaneously at scale.",
+  "detailedAnswer": "Volume refers to data at a scale that exceeds what a single traditional database server can practically store or query efficiently, requiring distributed storage and processing systems like Hadoop and Spark. Velocity refers to data arriving continuously at high speed, requiring real-time or near-real-time processing via stream processing systems like Kafka Streams or Flink.\n\nVariety refers to data existing in many different formats simultaneously, structured, semi-structured, and unstructured, while traditional relational databases are optimized specifically for structured, well-defined schemas. Some extended frameworks add Veracity and Value as additional Vs.",
+  "keyPoints": [
+    "Volume: scale exceeding single-server capacity — requires distributed storage/processing (Hadoop, Spark, distributed databases)",
+    "Velocity: continuous high-speed data requiring real-time processing — stream processing systems (Kafka, Flink) rather than batch-only",
+    "Variety: structured, semi-structured, and unstructured data together — traditional RDBMS optimized only for structured, well-defined schemas"
+  ],
+  "commonMistakes": [
+    "Only naming Volume and forgetting Velocity and Variety",
+    "Not knowing what the extended '5 Vs' framework adds beyond the original three",
+    "Assuming traditional RDBMS can handle all three Vs equally well at scale"
+  ],
+  "followUpQuestions": [
+    "What are the additional 'Vs' beyond the original three?",
+    "Why do traditional RDBMS struggle specifically with Variety?",
+    "What tools address Velocity specifically?"
+  ],
+  "realWorldExample": "Company processing millions of clickstream events per second (Velocity) across structured logs and unstructured user-generated content (Variety) uses Kafka and Spark rather than a traditional relational database.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to define all three Vs clearly and explain why traditional databases struggle with each.",
+  "tags": ["Big Data", "3 Vs", "Interview"],
+  "relatedTopics": ["MapReduce", "Hadoop", "Stream Processing"],
+  "references": ["Designing Data-Intensive Applications - Martin Kleppmann"]
+},
+{
+  "id": "adv-017",
+  "category": "Advanced Topics",
+  "topic": "MapReduce",
+  "difficulty": "Medium",
+  "question": "What is MapReduce? Explain the Map and Reduce phases with a simple example.",
+  "shortAnswer": "MapReduce is a programming model for processing massive datasets in parallel across a distributed cluster — the Map phase transforms/filters data into key-value pairs, and the Reduce phase aggregates values sharing the same key.",
+  "detailedAnswer": "Consider counting word frequency across a massive collection of documents. The Map phase runs in parallel across many machines, each processing a portion of the data; for word counting, each mapper reads its assigned documents and emits (word, 1) for every word occurrence.\n\nThe framework automatically shuffles and groups all emitted pairs by key across the cluster, so all pairs for the same word end up together. The Reduce phase then runs in parallel across different keys, receiving all values for a given key and aggregating them, such as summing all the 1s to get the total count for each word.",
+  "keyPoints": [
+    "Map phase: processes data in parallel across the cluster, transforms input into intermediate (key, value) pairs",
+    "Shuffle: framework automatically groups all intermediate pairs sharing the same key together across the cluster",
+    "Reduce phase: aggregates all values for each key in parallel — word count example simply sums the 1s for each word"
+  ],
+  "commonMistakes": [
+    "Forgetting the shuffle step that groups pairs by key between Map and Reduce",
+    "Assuming Map and Reduce run sequentially rather than each running in parallel across the cluster",
+    "Not knowing MapReduce is the foundational model behind Hadoop"
+  ],
+  "followUpQuestions": [
+    "What does the shuffle phase do between Map and Reduce?",
+    "How does MapReduce achieve parallelism across a cluster?",
+    "How does Spark relate to and improve upon the original MapReduce model?"
+  ],
+  "realWorldExample": "A word-count MapReduce job processes terabytes of text documents across a distributed cluster, with mappers emitting (word, 1) pairs and reducers summing counts per word.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to walk through the Map, Shuffle, and Reduce phases with a concrete example like word counting.",
+  "tags": ["MapReduce", "Big Data", "Hadoop", "Interview"],
+  "relatedTopics": ["Big Data 3 Vs", "Distributed Systems", "Spark"],
+  "references": ["MapReduce: Simplified Data Processing on Large Clusters - Dean & Ghemawat"]
+},
+{
+  "id": "adv-018",
+  "category": "Advanced Topics",
+  "topic": "Service Mesh",
+  "difficulty": "Hard",
+  "question": "What is Container Orchestration Beyond Basic Kubernetes — What is a Service Mesh (like Istio)?",
+  "shortAnswer": "A Service Mesh is a dedicated infrastructure layer that manages service-to-service communication in a microservices architecture — handling traffic routing, security (mTLS), observability, and resilience patterns (retries, circuit breaking) WITHOUT requiring changes to individual application code.",
+  "detailedAnswer": "As a microservices architecture grows, implementing cross-cutting concerns individually within every service's application code becomes repetitive and inconsistent. A service mesh deploys a lightweight network proxy, commonly Envoy, alongside every service instance; all inter-service network traffic is transparently routed through these sidecar proxies rather than directly between application containers.\n\nThis allows the mesh to uniformly enforce mTLS encryption, implement sophisticated traffic routing like canary deployments, automatic retries and circuit breaking, and rich observability, all configured centrally without modifying any individual service's application code.",
+  "keyPoints": [
+    "Sidecar proxy pattern: a lightweight proxy (typically Envoy) deployed alongside every service instance, intercepting all network traffic",
+    "Handles cross-cutting concerns uniformly WITHOUT application code changes: mTLS encryption, retries, circuit breaking, observability",
+    "Enables sophisticated traffic management: canary deployments, A/B testing via percentage-based traffic routing between service versions"
+  ],
+  "commonMistakes": [
+    "Implementing cross-cutting concerns like retries individually in every service instead of using a service mesh",
+    "Not knowing the sidecar pattern is how the mesh intercepts traffic transparently",
+    "Confusing a service mesh with an API Gateway, which sits at the edge rather than between internal services"
+  ],
+  "followUpQuestions": [
+    "How does the sidecar proxy pattern intercept traffic without application code changes?",
+    "How does a service mesh enable canary deployments?",
+    "What's the difference between a service mesh and an API Gateway?"
+  ],
+  "realWorldExample": "A large microservices platform uses Istio to enforce mTLS encryption between all services and route 10% of traffic to a canary version of a service, without modifying any service's code.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the sidecar proxy pattern and describe cross-cutting concerns it uniformly handles.",
+  "tags": ["Service Mesh", "Istio", "Microservices", "Interview"],
+  "relatedTopics": ["Kubernetes", "API Gateway", "Circuit Breaker"],
+  "references": ["Istio Documentation - istio.io"]
+},
+{
+  "id": "adv-019",
+  "category": "Advanced Topics",
+  "topic": "Homomorphic Encryption",
+  "difficulty": "Hard",
+  "question": "What is Homomorphic Encryption? Why is it significant?",
+  "shortAnswer": "Homomorphic Encryption allows computations to be performed DIRECTLY on encrypted data, producing an encrypted result that, when decrypted, matches the result of performing the same computation on the original unencrypted data — without ever needing to decrypt the data during processing.",
+  "detailedAnswer": "Normally, to perform any meaningful computation on data, it must first be decrypted, creating a security risk if that computation happens on infrastructure you don't fully trust. Fully Homomorphic Encryption allows arbitrary computations to be performed directly on the ciphertext itself, producing an encrypted result; the party performing the computation never sees the actual underlying plaintext data.\n\nThis is genuinely significant but still largely emerging and computationally expensive, with current FHE schemes orders of magnitude slower than computing on plaintext directly, and active research aimed at making it practical for real-world use cases.",
+  "keyPoints": [
+    "Enables computation directly on encrypted data — the party performing the computation never sees the actual plaintext data",
+    "Significant for privacy-preserving cloud computing: outsource computation to untrusted infrastructure without exposing sensitive data",
+    "Still computationally expensive in current practical implementations — an active area of ongoing cryptography research, not yet mainstream"
+  ],
+  "commonMistakes": [
+    "Assuming homomorphic encryption is already practical and widely deployed in production systems",
+    "Not understanding why computing on encrypted data avoids exposing sensitive information to third parties",
+    "Confusing homomorphic encryption with standard encryption at rest or in transit"
+  ],
+  "followUpQuestions": [
+    "Why is homomorphic encryption significant for privacy-preserving cloud computing?",
+    "What is the main practical limitation preventing widespread adoption of FHE today?",
+    "How does homomorphic encryption differ from standard encryption?"
+  ],
+  "realWorldExample": "A healthcare provider could theoretically use homomorphic encryption to have a third-party cloud service run analytics on encrypted patient data without ever exposing the actual sensitive medical records.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the compute-on-ciphertext concept and acknowledge its current performance limitations.",
+  "tags": ["Homomorphic Encryption", "Cryptography", "Privacy", "Interview"],
+  "relatedTopics": ["Zero-Knowledge Proof", "Cloud Computing", "Public Key Cryptography"],
+  "references": ["A Fully Homomorphic Encryption Scheme - Craig Gentry"]
+},
+{
+  "id": "adv-020",
+  "category": "Advanced Topics",
+  "topic": "Edge Computing",
+  "difficulty": "Medium",
+  "question": "What is Edge Computing? How does it differ from traditional Cloud Computing?",
+  "shortAnswer": "Edge Computing processes data physically CLOSE to where it's generated (on local devices or nearby edge servers), rather than sending everything to a centralized cloud data center — reducing latency and bandwidth usage for applications requiring fast, local response.",
+  "detailedAnswer": "Traditional cloud computing centralizes processing in large, distant data centers; data must travel over the network to reach the cloud, be processed, and travel back, introducing latency unacceptable for time-sensitive applications like autonomous vehicle sensor processing or augmented reality.\n\nEdge computing pushes computation physically closer to the data source, either directly on the device itself or on nearby edge servers, reducing latency dramatically and also reducing the volume of raw data that needs to be transmitted to a central cloud.",
+  "keyPoints": [
+    "Processes data physically close to its source (on-device or nearby edge servers) rather than a distant centralized cloud data center",
+    "Dramatically reduces latency for time-sensitive applications: autonomous vehicles, industrial IoT, augmented/virtual reality",
+    "Also reduces network bandwidth usage — only relevant, processed/filtered data needs to travel to the central cloud, not raw data"
+  ],
+  "commonMistakes": [
+    "Assuming edge computing replaces cloud computing entirely rather than complementing it",
+    "Not knowing why bandwidth reduction is a secondary benefit alongside latency reduction",
+    "Confusing edge computing with simple CDN caching"
+  ],
+  "followUpQuestions": [
+    "Why does even tens of milliseconds of latency matter for autonomous vehicles?",
+    "How does edge computing reduce bandwidth usage in addition to latency?",
+    "What's the difference between edge computing and a traditional CDN?"
+  ],
+  "realWorldExample": "A smart security camera performs initial object detection locally on-device before sending only relevant metadata to the cloud, rather than streaming raw video continuously.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the latency and bandwidth benefits of processing data near its source.",
+  "tags": ["Edge Computing", "Cloud Computing", "Interview"],
+  "relatedTopics": ["CDN", "IoT", "Latency"],
+  "references": ["Edge Computing: Vision and Challenges - Shi et al."]
+},
+{
+  "id": "adv-021",
+  "category": "Advanced Topics",
+  "topic": "WebAssembly",
+  "difficulty": "Medium",
+  "question": "What is WebAssembly (WASM)? Why is it significant beyond just \"faster JavaScript\"?",
+  "shortAnswer": "WebAssembly is a low-level, binary instruction format that runs in the browser at near-native speed — significant because it allows languages OTHER than JavaScript (C++, Rust, Go) to be compiled and run directly in web browsers, not just because it's faster.",
+  "detailedAnswer": "Before WebAssembly, browsers could only natively execute JavaScript; any performance-critical or existing codebase written in other languages needed to either be rewritten in JavaScript or run through slow transpilation. WebAssembly provides a compact binary format that browsers can parse and execute close to native machine code performance.\n\nCompilers exist to translate C, C++, Rust, Go, and other languages into this WASM binary format, meaning performance-critical code like video codecs, games, and CAD software can run directly in a browser. WASM typically runs alongside JavaScript, with JavaScript handling DOM manipulation and WASM handling computationally intensive logic.",
+  "keyPoints": [
+    "Binary instruction format executing at near-native speed in the browser — NOT human-readable source code like JavaScript",
+    "Enables compiling C++, Rust, Go, and other languages to run directly in browsers, not just faster JavaScript execution",
+    "Typically works ALONGSIDE JavaScript (not replacing it) — WASM handles compute-intensive logic, JS handles DOM/UI, communicating via interfaces"
+  ],
+  "commonMistakes": [
+    "Assuming WASM replaces JavaScript entirely rather than working alongside it",
+    "Thinking WASM's significance is purely about speed rather than enabling non-JS languages in the browser",
+    "Not knowing WASM code communicates with JavaScript via defined interfaces"
+  ],
+  "followUpQuestions": [
+    "Why does WASM typically work alongside JavaScript rather than replacing it?",
+    "What kinds of applications benefit most from WebAssembly?",
+    "How does WASM's binary format differ from JavaScript's text-based source code?"
+  ],
+  "realWorldExample": "An existing large C++ image editing application is compiled to WebAssembly, allowing it to run directly in a web browser at near-native performance without a full JavaScript rewrite.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain WASM's language-agnostic compilation benefit, not just its performance advantage.",
+  "tags": ["WebAssembly", "WASM", "Interview"],
+  "relatedTopics": ["JavaScript", "Compilation", "Web Performance"],
+  "references": ["WebAssembly Specification - webassembly.org"]
+},
+{
+  "id": "adv-022",
+  "category": "Advanced Topics",
+  "topic": "Serverless Computing",
+  "difficulty": "Medium",
+  "question": "What is Serverless Computing (FaaS)? What are its trade-offs compared to traditional server-based deployments?",
+  "shortAnswer": "Serverless Computing (Function as a Service — AWS Lambda, Azure Functions) lets developers deploy individual functions that automatically scale and are billed purely based on actual execution time/invocations — with no server infrastructure to manually provision or manage.",
+  "detailedAnswer": "Traditional deployments require provisioning and managing servers that run continuously whether or not they're actively handling traffic. Serverless functions are deployed as individual pieces of code that the cloud provider automatically invokes in response to triggers, handling all underlying infrastructure provisioning and scaling transparently.\n\nBilling is based purely on actual execution time and invocation count. Trade-offs include cold starts, where infrequently-invoked functions experience noticeable latency delay, execution time limits unsuitable for long-running processes, and potential vendor lock-in to a specific cloud provider's serverless platform.",
+  "keyPoints": [
+    "Billed purely on actual execution time/invocations — potentially near-zero cost for infrequently-used functionality, unlike always-on servers",
+    "No infrastructure provisioning/management needed — the cloud provider handles all underlying scaling completely transparently",
+    "Trade-offs: cold start latency for infrequently-invoked functions, execution time limits, and platform-specific vendor lock-in risk"
+  ],
+  "commonMistakes": [
+    "Assuming serverless functions can run indefinitely without execution time limits",
+    "Not accounting for cold start latency when designing latency-sensitive serverless applications",
+    "Underestimating vendor lock-in risk when adopting a specific cloud provider's serverless platform"
+  ],
+  "followUpQuestions": [
+    "What causes cold start latency in serverless functions?",
+    "How does serverless billing differ from traditional always-on server billing?",
+    "What kinds of workloads are poorly suited for serverless due to execution time limits?"
+  ],
+  "realWorldExample": "A company uses AWS Lambda to run an infrequently-triggered image resizing function, paying only for the milliseconds of actual execution time rather than maintaining an always-on server.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the pay-per-execution model and describe the cold start, time-limit, and vendor lock-in trade-offs.",
+  "tags": ["Serverless", "FaaS", "Cloud Computing", "Interview"],
+  "relatedTopics": ["AWS Lambda", "Cloud Computing", "Microservices"],
+  "references": ["AWS Lambda Documentation - aws.amazon.com"]
+},
+{
+  "id": "adv-023",
+  "category": "Advanced Topics",
+  "topic": "Shift-Left Security",
+  "difficulty": "Medium",
+  "question": "What is CI/CD Pipeline \"Shift-Left\" Security? What does it mean in practice?",
+  "shortAnswer": "\"Shift-Left\" Security means integrating security checks and testing EARLY in the development lifecycle (during coding and CI, before deployment) rather than treating security as a final gate right before/after production release — catching vulnerabilities when they're cheaper and easier to fix.",
+  "detailedAnswer": "Traditionally, security review often happened as a late-stage gate close to or even after deployment, making fixing a discovered vulnerability require unwinding significant already-completed work. Shifting security left means integrating automated security scanning directly into the CI pipeline: static application security testing scans source code for known vulnerability patterns on every commit, dependency scanning checks for known vulnerabilities in third-party libraries, and container image scanning checks for vulnerabilities before deployment.\n\nThis catches issues when they're cheap and easy to fix rather than expensive and disruptive.",
+  "keyPoints": [
+    "Integrates security scanning EARLY in the CI/CD pipeline (during coding/PR review) rather than as a late, pre-deployment gate",
+    "SAST (Static Application Security Testing): scans source code for known vulnerability patterns automatically on every commit/PR",
+    "Catches issues when cheap/easy to fix (a single recent commit) rather than expensive/disruptive (a live production security incident)"
+  ],
+  "commonMistakes": [
+    "Treating security review as only a final pre-deployment gate",
+    "Not knowing what SAST scans for specifically",
+    "Underestimating the cost difference between fixing a vulnerability early versus in production"
+  ],
+  "followUpQuestions": [
+    "What is SAST and how does it differ from dependency scanning?",
+    "Why is it cheaper to fix a vulnerability caught early in CI versus in production?",
+    "What automated tools would you integrate into a shift-left security pipeline?"
+  ],
+  "realWorldExample": "A CI pipeline runs SAST and dependency vulnerability scanning on every pull request, catching a vulnerable third-party library before it's ever merged into the main branch.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the cost-benefit of early security integration and name specific tooling like SAST.",
+  "tags": ["Shift-Left Security", "CI/CD", "DevSecOps", "Interview"],
+  "relatedTopics": ["CI/CD", "SAST", "Dependency Scanning"],
+  "references": ["OWASP DevSecOps Guideline"]
+},
+{
+  "id": "adv-024",
+  "category": "Advanced Topics",
+  "topic": "Chaos Engineering",
+  "difficulty": "Medium",
+  "question": "What is Chaos Engineering? Why do companies like Netflix deliberately break their own production systems?",
+  "shortAnswer": "Chaos Engineering is the practice of deliberately injecting controlled failures into a production (or production-like) system to proactively discover weaknesses BEFORE they cause a genuine, uncontrolled outage — building confidence in the system's actual resilience.",
+  "detailedAnswer": "Many systems are theoretically designed to be resilient, but these resilience mechanisms often go completely untested in practice until an actual, unplanned failure occurs. Chaos Engineering, pioneered publicly by Netflix's Chaos Monkey, proactively and deliberately injects controlled failures such as killing random instances or introducing artificial network latency, while carefully monitoring the system's actual behavior.\n\nThe goal is to verify that resilience mechanisms genuinely work as designed and discover previously-unknown weaknesses in a controlled manner, with engineers actively watching, rather than discovering them during a genuine unplanned outage.",
+  "keyPoints": [
+    "Deliberately, proactively injects controlled failures into production systems to discover weaknesses before a genuine uncontrolled outage",
+    "Netflix's \"Chaos Monkey\": randomly terminates production service instances during business hours, verifying failover actually works",
+    "Goal: build genuine confidence that resilience mechanisms (redundancy, failover, circuit breakers) work correctly under REAL failure conditions"
+  ],
+  "commonMistakes": [
+    "Assuming chaos engineering is reckless rather than deliberately controlled with engineers monitoring",
+    "Not understanding why testing resilience mechanisms in a controlled way is preferable to discovering failures during a real incident",
+    "Confusing chaos engineering with random, unmonitored production failures"
+  ],
+  "followUpQuestions": [
+    "What is Chaos Monkey and how does it work?",
+    "Why is it safer to discover a resilience weakness through chaos engineering than during a real outage?",
+    "What kinds of failures might a chaos engineering practice deliberately inject?"
+  ],
+  "realWorldExample": "Netflix's Chaos Monkey randomly terminates production service instances during business hours to verify that automatic failover mechanisms genuinely work as designed.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the controlled, proactive nature of chaos engineering and its goal of building genuine resilience confidence.",
+  "tags": ["Chaos Engineering", "Resilience", "Interview"],
+  "relatedTopics": ["Circuit Breaker", "System Design", "Fault Tolerance"],
+  "references": ["Chaos Engineering - Netflix Technology Blog"]
+},
+{
+  "id": "adv-025",
+  "category": "Advanced Topics",
+  "topic": "Technical Debt",
+  "difficulty": "Medium",
+  "question": "What is Technical Debt? How should engineering teams think about managing it strategically?",
+  "shortAnswer": "Technical Debt is the implied future cost of choosing an easier, faster, but suboptimal engineering solution NOW, in exchange for having to do more difficult/costly rework LATER — much like financial debt, it can be a reasonable strategic tool when taken on deliberately, but becomes dangerous when it accumulates unconsciously.",
+  "detailedAnswer": "The metaphor, coined by Ward Cunningham, intentionally parallels financial debt: taking on debt to ship a quick, imperfect solution to meet a deadline isn't inherently bad, and can be a genuinely reasonable strategic trade-off. The danger is unconscious or unmanaged debt, accumulating shortcuts and hacks without deliberately tracking or planning to address them, until the accumulated interest becomes crippling.\n\nMature engineering teams treat technical debt deliberately: consciously deciding when it's acceptable, explicitly tracking it, and allocating dedicated time to periodically pay it down before it compounds.",
+  "keyPoints": [
+    "Metaphor for the implied future cost/rework required from choosing an easier, faster, but suboptimal solution now",
+    "Deliberate, conscious debt (taken on for a clear strategic reason, tracked explicitly) can be a genuinely reasonable trade-off",
+    "Unconscious, unmanaged debt accumulates \"interest\" — increasingly slows development velocity and raises bug rates until addressed"
+  ],
+  "commonMistakes": [
+    "Treating all technical debt as inherently bad rather than sometimes a reasonable strategic choice",
+    "Not explicitly tracking deliberately-taken-on debt, allowing it to accumulate unconsciously",
+    "Never allocating dedicated time to pay down accumulated debt, letting it compound"
+  ],
+  "followUpQuestions": [
+    "How would you decide when taking on technical debt is a reasonable strategic choice?",
+    "How should a team track and prioritize paying down technical debt?",
+    "What are the symptoms of unmanaged technical debt compounding over time?"
+  ],
+  "realWorldExample": "A startup deliberately ships a quick, imperfect authentication solution to validate a product idea before a launch deadline, explicitly tracking it as a backlog item to properly rebuild once traction is confirmed.",
+  "codeExample": {
+    "language": "",
+    "code": ""
+  },
+  "interviewerExpectation": "The interviewer expects the candidate to explain the financial-debt metaphor and distinguish deliberate, tracked debt from dangerous, unconscious accumulation.",
+  "tags": ["Technical Debt", "Software Engineering", "Interview"],
+  "relatedTopics": ["Refactoring", "Software Design", "Engineering Management"],
+  "references": ["Ward Cunningham - The WyCash Portfolio Management System"]
 }
 ];
