@@ -327,14 +327,6 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
     alert('Analysis report copied to clipboard! 📋');
   };
 
-  // Score styling config
-  const getScoreColor = (score) => {
-    if (score >= 85) return '#10b981';
-    if (score >= 70) return '#3b82f6';
-    if (score >= 50) return '#f59e0b';
-    return '#ef4444';
-  };
-
   const getSeverityStyle = (sev) => {
     const s = (sev || '').toLowerCase();
     if (s === 'critical') return { color: '#ef4444', label: '🔴 Critical' };
@@ -956,8 +948,6 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                     const isExpanded = expandedQuestionId === q.id;
                     const isBookmarked = bookmarkedIds.includes(q.id);
                     const isCompleted = completedIds.includes(q.id);
-                    const difficultyColor = q.difficulty === 'Easy' ? 'var(--violet)' : q.difficulty === 'Medium' ? 'var(--violet)' : 'var(--violet)';
-
                     return (
                       <motion.div
                         key={q.id}
