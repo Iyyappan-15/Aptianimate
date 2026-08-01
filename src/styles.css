@@ -77,7 +77,7 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 button { cursor: pointer; font-family: inherit; border: none; outline: none; }
-input, textarea, select { font-family: inherit; outline: none; }
+input, textarea, select { font-family: inherit; outline: none; box-sizing: border-box; width: 100%; }
 a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 img, svg { display: block; }
@@ -175,7 +175,7 @@ img, svg { display: block; }
 }
 
 /* â”€â”€ Category Grid â”€â”€ */
-.category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-bottom: 40px; }
+.category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px; margin-bottom: 40px; }
 .category-card {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 20px 18px;
@@ -577,7 +577,7 @@ img, svg { display: block; }
 .cat-bar-fill { height: 100%; background: linear-gradient(90deg, var(--violet), var(--teal)); border-radius: 3px; transition: width 0.8s ease; }
 
 /* â”€â”€ Saved Page â”€â”€ */
-.saved-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.saved-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px; }
 .saved-card {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 18px;
@@ -729,6 +729,50 @@ img, svg { display: block; }
 .text-sm { font-size: 0.875rem; }
 .text-xs { font-size: 0.75rem; }
 .w-full { width: 100%; }
+
+/* ── Mobile Layout Fixes ── */
+@media (max-width: 768px) {
+  .page, .page-wide { padding: 0 16px 60px !important; }
+  .navbar { padding: 16px 16px 12px 16px !important; }
+  .hero h1 { font-size: 2.2rem !important; }
+  
+  .goal-selector {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start !important;
+    padding-bottom: 8px;
+  }
+  .goal-selector::-webkit-scrollbar { display: none; }
+  .goal-btn { white-space: nowrap; flex-shrink: 0; }
+  
+  .topics-chip-row {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 8px;
+  }
+  .topics-chip-row::-webkit-scrollbar { display: none; }
+  .topic-chip-btn { white-space: nowrap; flex-shrink: 0; }
+}
+
+@media (max-width: 480px) {
+  .page, .page-wide { padding: 0 12px 60px !important; }
+  .navbar { padding: 12px 12px 10px 12px !important; }
+  
+  .category-grid, .saved-grid, .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .btn {
+    min-height: 44px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 
 /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    CATEGORY PAGE â€” Redesigned Teaching & Topic Detail
