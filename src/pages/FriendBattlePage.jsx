@@ -242,13 +242,6 @@ const FriendBattlePage = ({ navigate }) => {
     }
   };
 
-  // ── Rematch Logic ─────────────────────────────────────────────────────────
-  useEffect(() => {
-    if (rematchRequested && opponentRematchRequested && isHost) {
-      createRematch();
-    }
-  }, [rematchRequested, opponentRematchRequested, isHost]);
-
   const createRematch = async () => {
     const selected = getRandomQuestions(config);
     const matchConfig = { ...config, selected_ids: selected.map(q => q.id) };
@@ -273,6 +266,13 @@ const FriendBattlePage = ({ navigate }) => {
        window.location.reload();
     }
   };
+
+  // ── Rematch Logic ─────────────────────────────────────────────────────────
+  useEffect(() => {
+    if (rematchRequested && opponentRematchRequested && isHost) {
+      createRematch();
+    }
+  }, [rematchRequested, opponentRematchRequested, isHost]);
 
 
   // ── Countdown + Host fetch ────────────────────────────────────────────────
@@ -381,7 +381,7 @@ const FriendBattlePage = ({ navigate }) => {
   }, [matchStatus, results]);
 
   // ── Submit ────────────────────────────────────────────────────────────────
-  const submitMatch = async () => {
+  async function submitMatch() {
     if (matchStatus === 'submitting' || matchStatus === 'completed') return;
     setMatchStatus('submitting');
     try {
@@ -432,9 +432,9 @@ const FriendBattlePage = ({ navigate }) => {
       alert('Failed to submit match!');
       setMatchStatus('lobby');
     }
-  };
+  }
 
-  const checkCompletion = (localMyStats) => {
+  function checkCompletion(localMyStats) {
     let attempts = 0;
     const t = setInterval(async () => {
       attempts++;
@@ -454,9 +454,9 @@ const FriendBattlePage = ({ navigate }) => {
         fetchFinalResults(localMyStats);
       }
     }, 3000);
-  };
+  }
 
-  const fetchFinalResults = async (localMyStats) => {
+  async function fetchFinalResults(localMyStats) {
     const { data } = await supabase.from('match_results').select('*').eq('match_id', matchId);
     const meRow = data?.find(d => d.player_id === user.id);
     const themRow = data?.find(d => d.player_id !== user.id);

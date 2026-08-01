@@ -109,30 +109,6 @@ const MockTestPage = ({ navigate }) => {
     return () => { mounted = false; };
   }, [navigate]);
 
-  // 2. Server-Synced Timer
-  useEffect(() => {
-    if (!testSession?.expires_at || isSubmitting) return;
-
-    const expiresAt = new Date(testSession.expires_at).getTime();
-
-    const updateTimer = () => {
-      const now = new Date().getTime();
-      const diff = expiresAt - now;
-      if (diff <= 0) {
-        setTimeLeft(0);
-        clearInterval(timerRef.current);
-        handleSubmitTest(); // auto submit
-      } else {
-        setTimeLeft(Math.floor(diff / 1000));
-      }
-    };
-
-    updateTimer(); // Initial call
-    timerRef.current = setInterval(updateTimer, 1000);
-
-    return () => clearInterval(timerRef.current);
-  }, [testSession, isSubmitting]);
-
   const handleSelectOption = (questionId, optionStr) => {
     if (isSubmitting) return;
     const newAnswers = { ...answers, [questionId]: optionStr };
@@ -180,6 +156,30 @@ const MockTestPage = ({ navigate }) => {
       }
     }
   }, [answers, isSubmitting, navigate, testSession]);
+
+  // 2. Server-Synced Timer
+  useEffect(() => {
+    if (!testSession?.expires_at || isSubmitting) return;
+
+    const expiresAt = new Date(testSession.expires_at).getTime();
+
+    const updateTimer = () => {
+      const now = new Date().getTime();
+      const diff = expiresAt - now;
+      if (diff <= 0) {
+        setTimeLeft(0);
+        clearInterval(timerRef.current);
+        handleSubmitTest(); // auto submit
+      } else {
+        setTimeLeft(Math.floor(diff / 1000));
+      }
+    };
+
+    updateTimer(); // Initial call
+    timerRef.current = setInterval(updateTimer, 1000);
+
+    return () => clearInterval(timerRef.current);
+  }, [testSession, isSubmitting, handleSubmitTest]);
 
   if (authLoading) {
     return <LoadingSpinner text="Checking authentication..." />;
