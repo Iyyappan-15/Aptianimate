@@ -1,5 +1,5 @@
 // src/pages/ResumePreparationPage.jsx
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { analyzeUserResume } from '../api/groqApi';
 
@@ -84,7 +84,6 @@ function ScoreRing({ score, color }) {
     const animate = (now) => {
       const elapsed = now - start;
       const progress = Math.min(elapsed / duration, 1);
-      // easeOutCubic
       const eased = 1 - Math.pow(1 - progress, 3);
       const currentScore = Math.round(eased * score);
       const offset = circumference - (eased * score / 100) * circumference;
@@ -97,31 +96,29 @@ function ScoreRing({ score, color }) {
   }, [score, circumference]);
 
   return (
-    <div style={{ position: 'relative', width: '128px', height: '128px', flexShrink: 0 }}>
-      <svg width="128" height="128" style={{ transform: 'rotate(-90deg)' }}>
-        {/* Background track */}
-        <circle cx="64" cy="64" r={radius} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="10" />
-        {/* Animated arc */}
+    <div style={{ position: 'relative', width: '120px', height: '120px', flexShrink: 0 }}>
+      <svg width="120" height="120" style={{ transform: 'rotate(-90deg)' }}>
+        <circle cx="60" cy="60" r={radius} fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth="9" />
         <circle
-          cx="64" cy="64" r={radius}
+          cx="60" cy="60" r={radius}
           fill="none"
           stroke={color}
-          strokeWidth="10"
+          strokeWidth="9"
           strokeLinecap="round"
           strokeDasharray={circumference}
           strokeDashoffset={dashOffset}
-          style={{ transition: 'none', filter: `drop-shadow(0 0 8px ${color}80)` }}
+          style={{ transition: 'none' }}
         />
       </svg>
       <div style={{
         position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column',
         alignItems: 'center', justifyContent: 'center', gap: '2px'
       }}>
-        <span style={{ fontSize: '1.9rem', fontWeight: 900, color, lineHeight: 1 }}>
+        <span style={{ fontSize: '1.75rem', fontWeight: 900, color, lineHeight: 1 }}>
           {animatedScore}
         </span>
-        <span style={{ fontSize: '0.6rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-          Readiness
+        <span style={{ fontSize: '0.58rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+          /100
         </span>
       </div>
     </div>
@@ -377,11 +374,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
   return (
     <div style={{ position: 'relative', minHeight: '100vh', background: 'var(--surface2, #0f1115)', color: 'var(--text-main)', overflowX: 'hidden' }}>
 
-      {/* ── Background ambient mesh ─────────────────────────────────────────── */}
-      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0 }}>
-        <div style={{ position: 'absolute', top: '5%', right: '0%', width: '55vw', height: '55vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(59,130,246,0.055) 0%, transparent 65%)', filter: 'blur(80px)' }} />
-        <div style={{ position: 'absolute', bottom: '10%', left: '-5%', width: '40vw', height: '40vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(16,185,129,0.04) 0%, transparent 65%)', filter: 'blur(80px)' }} />
-      </div>
+
 
       <div className="page-wide" style={{ position: 'relative', zIndex: 1, padding: '24px 24px 80px' }}>
 
@@ -392,9 +385,8 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
           transition={{ duration: 0.4 }}
           style={{
             background: 'var(--surface)', border: '1px solid var(--border)',
-            borderRadius: '24px', padding: '14px 24px', display: 'flex', alignItems: 'center',
-            justifyContent: 'space-between', marginBottom: '32px', boxShadow: 'var(--shadow)',
-            backdropFilter: 'blur(16px)'
+            borderRadius: '16px', padding: '12px 20px', display: 'flex', alignItems: 'center',
+            justifyContent: 'space-between', marginBottom: '28px', boxShadow: 'var(--shadow)'
           }}
         >
           <motion.button
@@ -415,7 +407,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
           </motion.button>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <span style={{ fontSize: '1.4rem', width: '34px', height: '34px', borderRadius: '8px', background: 'linear-gradient(135deg, #3b82f615, #10b98115)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <span style={{ fontSize: '1.4rem', width: '34px', height: '34px', borderRadius: '8px', background: 'var(--surface2)', border: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               📄
             </span>
             <div style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--text-main)', letterSpacing: '-0.3px' }}>
@@ -445,7 +437,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                 style={{ textAlign: 'center', marginBottom: '36px' }}
               >
                 <motion.div variants={fadeUp}>
-                  <h1 style={{ fontSize: '2.4rem', fontWeight: 900, marginBottom: '14px', lineHeight: 1.15, background: 'linear-gradient(135deg, #3b82f6 20%, #10b981 80%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                  <h1 style={{ fontSize: '2.1rem', fontWeight: 900, marginBottom: '14px', lineHeight: 1.2, color: 'var(--text-main)', letterSpacing: '-0.5px' }}>
                     Resume Preparation
                   </h1>
                 </motion.div>
@@ -477,15 +469,12 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                 onDrop={handleDrop}
                 onClick={() => document.getElementById('file-upload-input').click()}
                 animate={{
-                  scale: dragActive ? 1.02 : 1,
-                  borderColor: dragActive ? '#3b82f6' : 'rgba(255,255,255,0.1)',
-                  boxShadow: dragActive
-                    ? '0 0 0 4px rgba(59,130,246,0.18), 0 12px 48px rgba(59,130,246,0.12)'
-                    : '0 4px 24px rgba(0,0,0,0.15)',
-                  backgroundColor: dragActive ? 'rgba(59,130,246,0.06)' : 'var(--surface)',
+                  scale: dragActive ? 1.015 : 1,
+                  borderColor: dragActive ? 'var(--violet)' : 'var(--border)',
+                  backgroundColor: dragActive ? 'var(--surface2)' : 'var(--surface)',
                 }}
                 transition={{ type: 'spring', stiffness: 260, damping: 26 }}
-                whileHover={{ scale: 1.008, boxShadow: '0 8px 36px rgba(59,130,246,0.1)' }}
+                whileHover={{ scale: 1.005 }}
                 style={{
                   border: '2px dashed',
                   borderRadius: '28px',
@@ -496,8 +485,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                   overflow: 'hidden',
                 }}
               >
-                {/* Glow blob inside zone */}
-                <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translate(-50%, -50%)', width: '260px', height: '260px', borderRadius: '50%', background: dragActive ? 'radial-gradient(circle, rgba(59,130,246,0.08), transparent 70%)' : 'none', pointerEvents: 'none', transition: 'background 0.4s' }} />
+
 
                 <input
                   id="file-upload-input"
@@ -509,19 +497,19 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
 
                 {/* Cloud upload icon */}
                 <motion.div
-                  animate={dragActive ? { y: -8, scale: 1.15 } : { y: 0, scale: 1 }}
+                  animate={dragActive ? { y: -6, scale: 1.1 } : { y: 0, scale: 1 }}
                   transition={{ type: 'spring', stiffness: 280, damping: 20 }}
                   style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}
                 >
-                  <div style={{ width: '72px', height: '72px', borderRadius: '20px', background: dragActive ? 'linear-gradient(135deg, #3b82f625, #10b98120)' : 'rgba(255,255,255,0.04)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(255,255,255,0.08)', fontSize: '2.2rem', transition: 'all 0.3s' }}>
-                    {dragActive ? '📂' : '☁️'}
+                  <div style={{ width: '64px', height: '64px', borderRadius: '16px', background: 'var(--surface2)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--border)', fontSize: '1.9rem', transition: 'all 0.25s' }}>
+                    {dragActive ? '📂' : '📄'}
                   </div>
                 </motion.div>
 
                 <AnimatePresence mode="wait">
                   {dragActive ? (
                     <motion.div key="dragging" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-                      <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#3b82f6', marginBottom: '6px' }}>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '6px' }}>
                         Drop it here!
                       </h3>
                       <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Release to upload your resume</p>
@@ -536,9 +524,9 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                       </p>
 
                       <motion.span
-                        whileHover={{ scale: 1.05, y: -2 }}
+                        whileHover={{ scale: 1.03, y: -1 }}
                         whileTap={{ scale: 0.97 }}
-                        style={{ display: 'inline-block', background: 'linear-gradient(135deg, #3b82f6, #10b981)', color: '#fff', padding: '11px 30px', borderRadius: '14px', fontWeight: 700, fontSize: '0.92rem', cursor: 'pointer', boxShadow: '0 4px 20px rgba(59,130,246,0.35)' }}
+                        style={{ display: 'inline-block', background: 'var(--violet)', color: '#fff', padding: '10px 28px', borderRadius: '10px', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer', letterSpacing: '0.01em' }}
                       >
                         Upload Resume
                       </motion.span>
@@ -546,14 +534,11 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                   )}
                 </AnimatePresence>
 
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '28px', fontSize: '0.75rem', color: 'var(--muted)', fontWeight: 600 }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                    <span style={{ color: '#3b82f6' }}>•</span> PDF
-                  </span>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                    <span style={{ color: '#10b981' }}>•</span> DOCX
-                  </span>
-                  <span>•</span>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '28px', fontSize: '0.75rem', color: 'var(--muted)', fontWeight: 500 }}>
+                  <span>PDF</span>
+                  <span>·</span>
+                  <span>DOCX</span>
+                  <span>·</span>
                   <span>Max 10 MB</span>
                 </div>
               </motion.div>
@@ -563,16 +548,16 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.25, duration: 0.4 }}
-                style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', marginTop: '28px' }}
+                style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px', marginTop: '24px' }}
               >
                 {[
-                  { icon: '🎯', label: 'Interview Readiness Score' },
-                  { icon: '⚡', label: 'Personalized Questions' },
-                  { icon: '💡', label: 'Strengths & Weaknesses' },
-                  { icon: '🛡️', label: 'Private & Secure' },
-                ].map(({ icon, label }) => (
-                  <span key={label} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: '100px', padding: '6px 14px', fontSize: '0.8rem', color: 'var(--muted)', fontWeight: 600 }}>
-                    {icon} {label}
+                  { label: 'Readiness Score' },
+                  { label: 'Personalized Questions' },
+                  { label: 'Strengths & Weaknesses' },
+                  { label: 'Private & Secure' },
+                ].map(({ label }) => (
+                  <span key={label} style={{ display: 'inline-flex', alignItems: 'center', background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '100px', padding: '5px 14px', fontSize: '0.78rem', color: 'var(--muted)', fontWeight: 500 }}>
+                    {label}
                   </span>
                 ))}
               </motion.div>
@@ -582,7 +567,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                style={{ display: 'flex', gap: '12px', background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: '18px', padding: '16px 20px', marginTop: '28px', alignItems: 'flex-start' }}
+                style={{ display: 'flex', gap: '12px', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '14px', padding: '14px 18px', marginTop: '24px', alignItems: 'flex-start' }}
               >
                 <span style={{ fontSize: '1.1rem', flexShrink: 0, marginTop: '1px' }}>🛡️</span>
                 <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.6 }}>
@@ -604,22 +589,14 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
               exit="exit"
               style={{ maxWidth: '560px', margin: '0 auto', textAlign: 'center', padding: '32px 16px' }}
             >
-              {/* Orbital spinner */}
-              <div style={{ position: 'relative', width: '110px', height: '110px', margin: '0 auto 32px' }}>
-                {/* Outer ring */}
+              {/* Spinner */}
+              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 32px' }}>
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 2.2, repeat: Infinity, ease: 'linear' }}
-                  style={{ position: 'absolute', inset: 0, borderRadius: '50%', border: '3px solid transparent', borderTopColor: '#3b82f6', borderRightColor: '#10b981' }}
+                  transition={{ duration: 1.8, repeat: Infinity, ease: 'linear' }}
+                  style={{ position: 'absolute', inset: 0, borderRadius: '50%', border: '3px solid var(--border)', borderTopColor: 'var(--violet)' }}
                 />
-                {/* Inner ring (reverse) */}
-                <motion.div
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 1.6, repeat: Infinity, ease: 'linear' }}
-                  style={{ position: 'absolute', inset: '12px', borderRadius: '50%', border: '2px solid transparent', borderTopColor: '#10b981', opacity: 0.6 }}
-                />
-                {/* Center icon */}
-                <div style={{ position: 'absolute', inset: '20px', borderRadius: '50%', background: 'linear-gradient(135deg, rgba(59,130,246,0.15), rgba(16,185,129,0.15))', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.8rem' }}>
+                <div style={{ position: 'absolute', inset: '16px', borderRadius: '50%', background: 'var(--surface)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem' }}>
                   ⚡
                 </div>
               </div>
@@ -652,19 +629,19 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                       initial={{ opacity: 0, x: -12 }}
                       animate={{ opacity: isPending ? 0.3 : 1, x: 0 }}
                       transition={{ delay: idx * 0.06, duration: 0.35 }}
-                      style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '10px 12px', borderRadius: '12px', marginBottom: idx < PROCESSING_STEPS.length - 1 ? '2px' : 0, background: isActive ? 'linear-gradient(90deg, rgba(59,130,246,0.08), transparent)' : 'transparent', transition: 'background 0.4s' }}
+                      style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '10px 12px', borderRadius: '12px', marginBottom: idx < PROCESSING_STEPS.length - 1 ? '2px' : 0, background: isActive ? 'var(--surface2)' : 'transparent', transition: 'background 0.35s' }}
                     >
                       {/* Step indicator */}
-                      <div style={{ width: '32px', height: '32px', borderRadius: '10px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: isDone ? '#10b98118' : isActive ? '#3b82f618' : 'transparent', border: isDone ? '1px solid #10b98130' : isActive ? '1px solid #3b82f630' : '1px solid transparent', transition: 'all 0.35s' }}>
+                      <div style={{ width: '32px', height: '32px', borderRadius: '10px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', background: isDone ? 'var(--surface2)' : isActive ? 'var(--surface2)' : 'transparent', border: isDone ? '1px solid var(--border)' : isActive ? '1px solid var(--border)' : '1px solid transparent', transition: 'all 0.35s' }}>
                         {isDone ? (
-                          <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} style={{ color: '#10b981', fontWeight: 900, fontSize: '1rem' }}>✓</motion.span>
+                          <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} style={{ color: 'var(--violet)', fontWeight: 900, fontSize: '1rem' }}>✓</motion.span>
                         ) : isActive ? (
                           <motion.span animate={{ opacity: [1, 0.4, 1] }} transition={{ duration: 1.4, repeat: Infinity }}>{step.icon}</motion.span>
                         ) : (
                           <span style={{ opacity: 0.4 }}>{step.icon}</span>
                         )}
                       </div>
-                      <span style={{ fontSize: '0.9rem', fontWeight: isActive ? 700 : 500, color: isDone ? '#10b981' : isActive ? 'var(--text-main)' : 'var(--muted)', transition: 'all 0.3s' }}>
+                      <span style={{ fontSize: '0.9rem', fontWeight: isActive ? 700 : 500, color: isDone ? 'var(--text-main)' : isActive ? 'var(--text-main)' : 'var(--muted)', transition: 'all 0.3s' }}>
                         {step.label}
                       </span>
 
@@ -673,7 +650,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                         <motion.div
                           animate={{ scale: [1, 1.5, 1], opacity: [1, 0.5, 1] }}
                           transition={{ duration: 1.2, repeat: Infinity }}
-                          style={{ marginLeft: 'auto', width: '8px', height: '8px', borderRadius: '50%', background: '#3b82f6', flexShrink: 0 }}
+                          style={{ marginLeft: 'auto', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--violet)', flexShrink: 0 }}
                         />
                       )}
                     </motion.div>
@@ -698,13 +675,13 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
               {/* ── Hero Header with Animated Score Ring ──────────────────────── */}
               <motion.div
                 variants={fadeUp}
-                style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', alignItems: 'center', justifyContent: 'space-between', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '28px', padding: '32px', boxShadow: '0 8px 40px rgba(0,0,0,0.12)' }}
+                style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', alignItems: 'center', justifyContent: 'space-between', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', padding: '28px', boxShadow: 'var(--shadow)' }}
               >
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', alignItems: 'center' }}>
                   {/* Animated Score Ring */}
                   <ScoreRing
                     score={analysisResult.readinessScore}
-                    color={getScoreColor(analysisResult.readinessScore)}
+                    color={'var(--violet)'}
                   />
 
                   <div>
@@ -713,10 +690,11 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.3 }}
                       style={{
-                        fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em',
-                        color: getScoreColor(analysisResult.readinessScore),
-                        background: `${getScoreColor(analysisResult.readinessScore)}18`,
-                        padding: '4px 10px', borderRadius: '8px', display: 'inline-block', marginBottom: '10px'
+                        fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em',
+                        color: 'var(--violet)',
+                        background: 'var(--surface2)',
+                        padding: '3px 10px', borderRadius: '6px', display: 'inline-block', marginBottom: '10px',
+                        border: '1px solid var(--border)'
                       }}
                     >
                       {analysisResult.scoreDescription}
@@ -744,7 +722,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                     whileHover={{ scale: 1.03, y: -2 }}
                     whileTap={{ scale: 0.97 }}
                     onClick={() => setMode('PRACTICE')}
-                    style={{ background: 'linear-gradient(135deg, #3b82f6, #10b981)', color: '#fff', border: 'none', borderRadius: '12px', padding: '11px 24px', fontWeight: 800, cursor: 'pointer', fontSize: '0.88rem', boxShadow: '0 4px 20px rgba(59,130,246,0.35)' }}
+                    style={{ background: 'var(--violet)', color: '#fff', border: 'none', borderRadius: '10px', padding: '11px 22px', fontWeight: 700, cursor: 'pointer', fontSize: '0.88rem', letterSpacing: '0.01em' }}
                   >
                     🎯 Practice Questions ({analysisResult.questions.length})
                   </motion.button>
@@ -760,8 +738,8 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                   variants={fadeUp}
                   style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '24px', padding: '24px', boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}
                 >
-                  <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '18px', color: '#10b981', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#10b98118', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem' }}>✓</span>
+                  <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '16px', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--violet)', display: 'inline-block', flexShrink: 0 }} />
                     Resume Strengths
                   </h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -772,10 +750,10 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                           initial={{ opacity: 0, x: -10 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: idx * 0.07 }}
-                          whileHover={{ x: 3 }}
-                          style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', background: 'linear-gradient(90deg, #10b98108, transparent)', border: '1px solid #10b98115', borderRadius: '12px', padding: '12px 14px', cursor: 'default' }}
+                          whileHover={{ x: 2 }}
+                          style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '10px', padding: '11px 14px', cursor: 'default' }}
                         >
-                          <span style={{ color: '#10b981', fontWeight: 900, flexShrink: 0, marginTop: '1px' }}>★</span>
+                          <span style={{ color: 'var(--violet)', fontWeight: 700, flexShrink: 0, marginTop: '3px', fontSize: '0.7rem' }}>✓</span>
                           <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 500, lineHeight: 1.5 }}>{str}</span>
                         </motion.div>
                       ))
@@ -790,8 +768,8 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                   variants={fadeUp}
                   style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '24px', padding: '24px', boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}
                 >
-                  <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '18px', color: '#f59e0b', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#f59e0b18', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem' }}>⚠</span>
+                  <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '16px', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--violet)', display: 'inline-block', flexShrink: 0 }} />
                     Areas to Improve
                   </h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -802,10 +780,10 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                           initial={{ opacity: 0, x: 10 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: idx * 0.07 }}
-                          style={{ borderLeft: `3px solid ${getSeverityStyle(weak.severity).color}`, paddingLeft: '14px' }}
+                          style={{ borderLeft: '3px solid var(--violet)', paddingLeft: '14px' }}
                         >
                           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '5px' }}>
-                            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: getSeverityStyle(weak.severity).color, background: `${getSeverityStyle(weak.severity).color}15`, padding: '2px 8px', borderRadius: '6px' }}>
+                            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--violet)', background: 'var(--surface2)', padding: '2px 8px', borderRadius: '6px' }}>
                               {getSeverityStyle(weak.severity).label}
                             </span>
                           </div>
@@ -830,7 +808,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                 style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '24px', padding: '24px', boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}
               >
                 <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '18px', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#3b82f618', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem' }}>⚡</span>
+                  <span style={{ width: '28px', height: '28px', borderRadius: '8px', background: 'var(--surface2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem' }}>⚡</span>
                   Detected Skills &amp; Expertise
                 </h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
@@ -841,8 +819,8 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                         initial={{ opacity: 0, scale: 0.85 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: i * 0.04 }}
-                        whileHover={{ y: -2, scale: 1.04 }}
-                        style={{ fontSize: '0.84rem', color: 'var(--text-main)', background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '8px', padding: '6px 14px', fontWeight: 600, cursor: 'default' }}
+                        whileHover={{ y: -1 }}
+                        style={{ fontSize: '0.82rem', color: 'var(--text-main)', background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '6px', padding: '5px 12px', fontWeight: 500, cursor: 'default' }}
                       >
                         {skill}
                       </motion.span>
@@ -859,7 +837,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                 style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '24px', padding: '24px', boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}
               >
                 <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '18px', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#8b5cf618', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem' }}>🔨</span>
+                  <span style={{ width: '28px', height: '28px', borderRadius: '8px', background: 'var(--surface2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem' }}>🔨</span>
                   Detected Projects ({analysisResult.detectedProjects.length})
                 </h3>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '14px' }} className="grid-2col">
@@ -870,9 +848,9 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: idx * 0.08 }}
-                        whileHover={{ y: -2, boxShadow: '0 8px 28px rgba(59,130,246,0.1)' }}
+                        whileHover={{ y: -2, boxShadow: '0 8px 28px rgba(0,0,0,0.05)' }}
                         style={{ background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '16px', padding: '18px', transition: 'border-color 0.2s', cursor: 'default' }}
-                        onMouseOver={e => e.currentTarget.style.borderColor = '#3b82f640'}
+                        onMouseOver={e => e.currentTarget.style.borderColor = 'var(--violet)'}
                         onMouseOut={e => e.currentTarget.style.borderColor = 'var(--border)'}
                       >
                         <h4 style={{ fontSize: '0.98rem', fontWeight: 800, margin: '0 0 10px 0', color: 'var(--text-main)' }}>
@@ -880,7 +858,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                         </h4>
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '12px' }}>
                           {proj.technologies.map(tech => (
-                            <span key={tech} style={{ fontSize: '0.7rem', background: '#3b82f615', color: '#3b82f6', borderRadius: '6px', padding: '2px 8px', fontWeight: 700 }}>
+                            <span key={tech} style={{ fontSize: '0.7rem', background: 'var(--surface)', color: 'var(--violet)', borderRadius: '6px', padding: '2px 8px', fontWeight: 700 }}>
                               {tech}
                             </span>
                           ))}
@@ -925,7 +903,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
               style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}
             >
               {/* Header / Filter Toolbar */}
-              <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '24px', padding: '24px', display: 'flex', flexDirection: 'column', gap: '20px', boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}>
+              <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '16px', padding: '22px', display: 'flex', flexDirection: 'column', gap: '18px', boxShadow: 'var(--shadow)' }}>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center', justifyContent: 'space-between' }}>
                   <div>
                     <h3 style={{ fontSize: '1.25rem', fontWeight: 900, margin: 0, color: 'var(--text-main)' }}>
@@ -978,7 +956,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                     const isExpanded = expandedQuestionId === q.id;
                     const isBookmarked = bookmarkedIds.includes(q.id);
                     const isCompleted = completedIds.includes(q.id);
-                    const difficultyColor = q.difficulty === 'Easy' ? '#10b981' : q.difficulty === 'Medium' ? '#f59e0b' : '#ef4444';
+                    const difficultyColor = q.difficulty === 'Easy' ? 'var(--violet)' : q.difficulty === 'Medium' ? 'var(--violet)' : 'var(--violet)';
 
                     return (
                       <motion.div
@@ -988,19 +966,19 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                         transition={{ delay: idx * 0.04 }}
                         whileHover={{ y: -1 }}
                         style={{
-                          background: isCompleted ? 'rgba(16,185,129,0.03)' : 'var(--surface)',
-                          border: `1px solid ${isCompleted ? '#10b98120' : 'var(--border)'}`,
-                          borderRadius: '20px', padding: '20px', cursor: 'pointer',
-                          transition: 'all 0.25s', boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
+                          background: isCompleted ? 'rgba(16,185,129,0.02)' : 'var(--surface)',
+                          border: `1px solid ${isCompleted ? '#10b98118' : 'var(--border)'}`,
+                          borderRadius: '14px', padding: '18px', cursor: 'pointer',
+                          transition: 'border-color 0.2s', boxShadow: 'var(--shadow)'
                         }}
                         onClick={() => setExpandedQuestionId(isExpanded ? null : q.id)}
-                        onMouseOver={e => { if (!isCompleted) e.currentTarget.style.borderColor = '#3b82f640'; }}
-                        onMouseOut={e => { e.currentTarget.style.borderColor = isCompleted ? '#10b98120' : 'var(--border)'; }}
+                        onMouseOver={e => { if (!isCompleted) e.currentTarget.style.borderColor = 'var(--violet)'; }}
+                        onMouseOut={e => { e.currentTarget.style.borderColor = isCompleted ? '#10b98118' : 'var(--border)'; }}
                       >
                         {/* Top row */}
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <span style={{ background: `${difficultyColor}15`, color: difficultyColor, borderRadius: '8px', padding: '3px 8px', fontSize: '0.72rem', fontWeight: 700 }}>
+                            <span style={{ background: 'var(--surface2)', color: 'var(--violet)', borderRadius: '8px', padding: '3px 8px', fontSize: '0.72rem', fontWeight: 700 }}>
                               {q.difficulty}
                             </span>
                             <span style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--muted)' }}>
@@ -1036,7 +1014,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                         {q.tags && q.tags.length > 0 && (
                           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '10px' }}>
                             {q.tags.map(tag => (
-                              <span key={tag} style={{ fontSize: '0.72rem', color: 'var(--muted)', background: 'rgba(255,255,255,0.04)', borderRadius: '6px', padding: '2px 8px', border: '1px solid rgba(255,255,255,0.07)' }}>
+                              <span key={tag} style={{ fontSize: '0.72rem', color: 'var(--muted)', background: 'var(--surface2)', borderRadius: '6px', padding: '2px 8px', border: '1px solid var(--border)' }}>
                                 {tag}
                               </span>
                             ))}
@@ -1063,7 +1041,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                                 {q.shortAnswer && (
                                   <div>
                                     <h5 style={{ fontSize: '0.78rem', color: 'var(--muted)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>Short Answer</h5>
-                                    <div style={{ borderLeft: '3px solid #3b82f6', paddingLeft: '14px', color: 'var(--text-main)', fontSize: '0.92rem', fontWeight: 500, lineHeight: 1.55 }}>
+                                    <div style={{ borderLeft: '3px solid var(--violet)', paddingLeft: '14px', color: 'var(--text-main)', fontSize: '0.92rem', fontWeight: 500, lineHeight: 1.55 }}>
                                       {q.shortAnswer}
                                     </div>
                                   </div>
@@ -1090,7 +1068,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                                 )}
 
                                 {q.commonMistakes && q.commonMistakes.length > 0 && (
-                                  <div style={{ background: 'rgba(239,68,68,0.04)', border: '1px solid rgba(239,68,68,0.12)', borderRadius: '14px', padding: '14px 16px' }}>
+                                  <div style={{ background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: '14px', padding: '14px 16px' }}>
                                     <h5 style={{ fontSize: '0.78rem', color: '#ef4444', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>⚠️ Common Mistakes</h5>
                                     <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
                                       {q.commonMistakes.map((cm, i) => (
@@ -1103,15 +1081,15 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                                 {q.codeExample && q.codeExample.code && (
                                   <div>
                                     <h5 style={{ fontSize: '0.78rem', color: 'var(--muted)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>Code Example ({q.codeExample.language})</h5>
-                                    <pre style={{ background: '#1a1d24', color: '#f1f5f9', padding: '16px', borderRadius: '12px', overflowX: 'auto', fontFamily: 'monospace', fontSize: '0.85rem', margin: 0, border: '1px solid rgba(255,255,255,0.06)' }}>
+                                    <pre style={{ background: 'var(--surface2)', color: 'var(--text-main)', padding: '16px', borderRadius: '12px', overflowX: 'auto', fontFamily: 'monospace', fontSize: '0.85rem', margin: 0, border: '1px solid var(--border)' }}>
                                       <code>{q.codeExample.code}</code>
                                     </pre>
                                   </div>
                                 )}
 
                                 {q.interviewerExpectation && (
-                                  <div style={{ border: '1px solid #3b82f620', background: 'rgba(59,130,246,0.04)', borderRadius: '14px', padding: '14px 16px' }}>
-                                    <h5 style={{ fontSize: '0.78rem', color: '#3b82f6', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>🎯 Interviewer Expectation</h5>
+                                  <div style={{ border: '1px solid var(--violet)', background: 'var(--surface2)', borderRadius: '14px', padding: '14px 16px' }}>
+                                    <h5 style={{ fontSize: '0.78rem', color: 'var(--violet)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>🎯 Interviewer Expectation</h5>
                                     <p style={{ color: 'var(--text-sec)', fontSize: '0.9rem', lineHeight: 1.55, margin: 0 }}>
                                       {q.interviewerExpectation}
                                     </p>
@@ -1140,7 +1118,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '24px', padding: '56px', textAlign: 'center' }}
+                  style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '16px', padding: '48px', textAlign: 'center' }}
                 >
                   <span style={{ fontSize: '2.5rem', marginBottom: '14px', display: 'block' }}>🔍</span>
                   <h4 style={{ fontSize: '1.15rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '8px' }}>No questions match filters</h4>
@@ -1168,7 +1146,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: 'spring', stiffness: 300, damping: 28 }}
-              style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '28px', padding: '36px', maxWidth: '440px', width: '90%', boxShadow: '0 24px 60px rgba(0,0,0,0.4)', textAlign: 'center' }}
+              style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', padding: '32px', maxWidth: '420px', width: '90%', boxShadow: '0 16px 40px rgba(0,0,0,0.35)', textAlign: 'center' }}
             >
               <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📄</div>
               <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: '12px' }}>
@@ -1182,7 +1160,7 @@ ${analysisResult.detectedProjects.map(p => `• ${p.name} (${p.technologies.join
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => { setAnalysisResult(pendingAnalysis); localStorage.setItem('resume_prep_data', JSON.stringify(pendingAnalysis)); setShowHashConflictModal(false); setPendingAnalysis(null); setMode('REPORT'); }}
-                  style={{ background: 'linear-gradient(135deg, #3b82f6, #10b981)', color: '#fff', border: 'none', borderRadius: '14px', padding: '13px', fontWeight: 800, cursor: 'pointer', fontSize: '0.92rem' }}
+                  style={{ background: 'var(--violet)', color: '#fff', border: 'none', borderRadius: '10px', padding: '12px', fontWeight: 700, cursor: 'pointer', fontSize: '0.9rem' }}
                 >
                   Use Existing Analysis
                 </motion.button>
