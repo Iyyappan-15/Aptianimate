@@ -27,6 +27,36 @@ export default class ErrorBoundary extends React.Component {
     return { hasError: true, error };
   }
 
+  componentDidMount() {
+    this.handleUnhandledError = (event) => {
+      if (this.state.hasError) return;
+      this.setState({
+        hasError: true,
+        error: event.error || new Error(event.message || "Unhandled runtime error"),
+        errorInfo: { componentStack: `Line: ${event.lineno}, Col: ${event.colno}\nSource: ${event.filename}` }
+      });
+    };
+
+    this.handleUnhandledRejection = (event) => {
+      if (this.state.hasError) return;
+      const reason = event.reason;
+      const errorMsg = reason instanceof Error ? reason.message : String(reason);
+      this.setState({
+        hasError: true,
+        error: reason instanceof Error ? reason : new Error(errorMsg || "Unhandled Promise Rejection"),
+        errorInfo: { componentStack: reason?.stack || "Unhandled promise rejection with no stack trace available." }
+      });
+    };
+
+    window.addEventListener('error', this.handleUnhandledError);
+    window.addEventListener('unhandledrejection', this.handleUnhandledRejection);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('error', this.handleUnhandledError);
+    window.removeEventListener('unhandledrejection', this.handleUnhandledRejection);
+  }
+
   componentDidCatch(error, errorInfo) {
     this.setState({ errorInfo });
     console.error("ErrorBoundary caught an error:", error, errorInfo);
