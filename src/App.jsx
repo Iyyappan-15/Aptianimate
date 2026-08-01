@@ -182,21 +182,7 @@ function App() {
   } else if (route === 'admin/profile') {
     pageComponent = <AdminProfile />;
   } else {
-    pageComponent = (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', background: 'var(--bg-main)', color: 'var(--text-main)', textAlign: 'center', padding: '32px', gap: '16px' }}>
-        <div style={{ fontSize: '4rem', marginBottom: '8px' }}>🔍</div>
-        <h1 style={{ fontSize: '2rem', fontWeight: 900, margin: 0 }}>Page Not Found</h1>
-        <p style={{ color: 'var(--muted)', maxWidth: '400px', lineHeight: 1.6, margin: 0 }}>
-          The route <code style={{ background: 'var(--surface2)', padding: '2px 8px', borderRadius: '6px', fontSize: '0.9rem' }}>#{route}</code> doesn&apos;t exist.
-        </p>
-        <button
-          onClick={() => navigate('')}
-          style={{ marginTop: '8px', background: 'var(--violet)', color: '#fff', border: 'none', borderRadius: '12px', padding: '12px 28px', fontWeight: 700, fontSize: '0.95rem', cursor: 'pointer' }}
-        >
-          ← Back to Home
-        </button>
-      </div>
-    );
+    pageComponent = <HomePage navigate={navigate} />;
   }
 
   const role = profile?.role || 'user';
