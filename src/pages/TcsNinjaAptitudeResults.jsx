@@ -1,16 +1,7 @@
-/**
- * TcsNinjaAptitudeResults.jsx
- * Detailed results page shown after test submission.
- * Shows: Score, Correct, Incorrect, Unattempted, Accuracy %, Time Taken.
- * Expandable question-by-question breakdown.
- * Designed for future expansion (percentile, topic breakdown).
- */
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 
-function pad(n) {
-  return String(n).padStart(2, '0');
-}
+function pad(n) { return String(n).padStart(2, '0'); }
 
 function formatTime(secs) {
   const m = Math.floor(secs / 60);
@@ -18,36 +9,116 @@ function formatTime(secs) {
   return `${pad(m)}m ${pad(s)}s`;
 }
 
+function calculateSectionStats(sectionState) {
+  const { questions, answers, totalSeconds, secondsLeft } = sectionState;
+  const timeUsed = totalSeconds - secondsLeft;
+  
+  let correct = 0;
+  let incorrect = 0;
+  let skipped = 0;
+  const topics = {};
+
+  const LABELS = ['A', 'B', 'C', 'D'];
+
+  function getOption(options, label) {
+    if (!options) return label;
+    if (Array.isArray(options)) return options[LABELS.indexOf(label)] ?? label;
+    return options[label] ?? label;
+  }
+
+  const breakdown = questions.map((q) => {
+    const userAnswer = answers[q.id];
+    const isAttempted = !!userAnswer;
+    const isCorrect = isAttempted && userAnswer === q.correctAnswer;
+
+    if (!isAttempted) skipped++;
+    else if (isCorrect) correct++;
+    else incorrect++;
+
+    // Topic Analysis
+    if (q.topic) {
+      if (!topics[q.topic]) topics[q.topic] = { total: 0, correct: 0 };
+      topics[q.topic].total++;
+      if (isCorrect) topics[q.topic].correct++;
+    }
+
+    const optionsObj = Array.isArray(q.options)
+      ? LABELS.reduce((acc, l, i) => { acc[l] = q.options[i] ?? ''; return acc; }, {})
+      : q.options;
+
+    return {
+      id: q.id,
+      question: q.question,
+      options: optionsObj,
+      correctAnswer: q.correctAnswer,
+      userAnswer: userAnswer || null,
+      isCorrect,
+      isAttempted,
+      topic: q.topic || 'General',
+    };
+  });
+
+  const total = questions.length;
+  const attempted = correct + incorrect;
+  const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
+  const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+  return {
+    total, attempted, correct, incorrect, skipped, accuracy, percentage,
+    timeUsed, timeRemaining: secondsLeft, breakdown, topics
+  };
+}
+
 export default function TcsNinjaAptitudeResults({ navigate }) {
-  const [results, setResults] = useState(null);
-  const [showBreakdown, setShowBreakdown] = useState(false);
-  const [filter, setFilter] = useState('all'); // all | correct | incorrect | unattempted
+  const [resultsState, setResultsState] = useState(null);
+  const [activeTab, setActiveTab] = useState('overall'); // overall | aptitude | technical
 
   useEffect(() => {
     try {
-      const saved = sessionStorage.getItem('tcs_ninja_results');
+      const saved = sessionStorage.getItem('mock_test_results');
       if (saved) {
-        setResults(JSON.parse(saved));
+        setResultsState(JSON.parse(saved));
       }
     } catch (_) {}
   }, []);
 
-  if (!results) {
+  const { overall, sections } = useMemo(() => {
+    if (!resultsState) return { overall: null, sections: {} };
+    
+    const processedSections = {};
+    let totalQs = 0, totalCorrect = 0, totalTimeUsed = 0, totalTime = 0;
+
+    resultsState.sections.forEach(sec => {
+      const stats = calculateSectionStats(sec);
+      processedSections[sec.id] = stats;
+      totalQs += stats.total;
+      totalCorrect += stats.correct;
+      totalTimeUsed += stats.timeUsed;
+      totalTime += sec.totalSeconds;
+    });
+
+    const overallPct = totalQs > 0 ? Math.round((totalCorrect / totalQs) * 100) : 0;
+
+    return {
+      overall: {
+        score: totalCorrect,
+        total: totalQs,
+        percentage: overallPct,
+        timeUsed: totalTimeUsed,
+        timeRemaining: totalTime - totalTimeUsed
+      },
+      sections: processedSections
+    };
+  }, [resultsState]);
+
+  if (!resultsState) {
     return (
       <div style={{
-        minHeight: '60vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '16px',
-        color: 'var(--muted)',
-        textAlign: 'center',
-        padding: '40px 20px',
+        minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center',
+        justifyContent: 'center', gap: '16px', color: 'var(--muted)', textAlign: 'center',
       }}>
         <div style={{ fontSize: '3rem' }}>📋</div>
         <h2 style={{ color: 'var(--text)' }}>No Results Found</h2>
-        <p>Please complete a test session first.</p>
         <button
           onClick={() => navigate('tcs-ninja-mock')}
           style={{
@@ -61,258 +132,136 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
     );
   }
 
-  const {
-    score, total, correct, incorrect, unattempted,
-    attempted, accuracy, timeTaken, breakdown,
-  } = results;
-
-  const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
-
-  const getGrade = () => {
-    if (percentage >= 80) return { label: 'Excellent', color: '#22c55e', emoji: '🏆' };
-    if (percentage >= 60) return { label: 'Good', color: '#f59e0b', emoji: '👍' };
-    if (percentage >= 40) return { label: 'Average', color: '#f97316', emoji: '📈' };
-    return { label: 'Needs Practice', color: '#ef4444', emoji: '💪' };
-  };
-
-  const grade = getGrade();
-
-  const statCards = [
-    { label: 'Score', value: `${score} / ${total}`, color: '#8b5cf6', icon: '🎯' },
-    { label: 'Correct', value: correct, color: '#22c55e', icon: '✅' },
-    { label: 'Incorrect', value: incorrect, color: '#ef4444', icon: '❌' },
-    { label: 'Unattempted', value: unattempted, color: '#94a3b8', icon: '⬜' },
-    { label: 'Attempted', value: attempted, color: '#3b82f6', icon: '📝' },
-    { label: 'Accuracy', value: `${accuracy}%`, color: '#10b981', icon: '🎖️' },
-    { label: 'Time Taken', value: formatTime(timeTaken), color: '#f59e0b', icon: '⏱️' },
-  ];
-
-  const filteredBreakdown = breakdown.filter(q => {
-    if (filter === 'correct') return q.isCorrect;
-    if (filter === 'incorrect') return q.isAttempted && !q.isCorrect;
-    if (filter === 'unattempted') return !q.isAttempted;
-    return true;
-  });
-
-  return (
-    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px' }}>
-
-      {/* Hero score */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        style={{ textAlign: 'center', marginBottom: '40px' }}
-      >
-        <div style={{ fontSize: '3.5rem', marginBottom: '8px' }}>{grade.emoji}</div>
-        <h1 style={{ margin: '0 0 8px 0', fontSize: '2.2rem', fontWeight: 900, color: 'var(--text)' }}>
-          Test Completed!
-        </h1>
-        <p style={{ color: 'var(--muted)', margin: '0 0 16px 0' }}>
-          TCS Ninja — Aptitude Section
-        </p>
-
-        {/* Big score circle */}
-        <div style={{
-          width: '140px',
-          height: '140px',
-          borderRadius: '50%',
-          border: `6px solid ${grade.color}`,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          margin: '0 auto 16px auto',
-          background: `${grade.color}18`,
-        }}>
-          <span style={{ fontSize: '2.2rem', fontWeight: 900, color: grade.color }}>
-            {percentage}%
-          </span>
-          <span style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>score</span>
-        </div>
-
-        <span style={{
-          display: 'inline-block',
-          padding: '6px 20px',
-          borderRadius: '20px',
-          background: `${grade.color}22`,
-          color: grade.color,
-          fontWeight: 700,
-          fontSize: '0.95rem',
-        }}>
-          {grade.label}
-        </span>
-      </motion.div>
-
-      {/* Stats Grid */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.15 }}
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(110px, 1fr))',
-          gap: '14px',
-          marginBottom: '36px',
-        }}
-      >
-        {statCards.map(card => (
-          <div
-            key={card.label}
-            style={{
-              background: 'var(--card)',
-              border: `2px solid ${card.color}44`,
-              borderRadius: '14px',
-              padding: '18px 12px',
-              textAlign: 'center',
-            }}
-          >
-            <div style={{ fontSize: '1.4rem', marginBottom: '4px' }}>{card.icon}</div>
-            <div style={{ fontWeight: 800, fontSize: '1.25rem', color: card.color }}>
-              {card.value}
-            </div>
-            <div style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: '2px' }}>
-              {card.label}
-            </div>
-          </div>
-        ))}
-      </motion.div>
-
-      {/* Topic placeholder for future */}
-      <div style={{
-        background: 'rgba(139,92,246,0.05)',
-        border: '1px dashed rgba(139,92,246,0.3)',
-        borderRadius: '14px',
-        padding: '18px 24px',
-        textAlign: 'center',
-        color: 'var(--muted)',
-        fontSize: '0.85rem',
-        marginBottom: '28px',
-      }}>
-        📊 <strong>Topic-wise breakdown</strong> and <strong>Percentile ranking</strong> coming soon.
+  const renderSummaryCard = (title, stats, icon) => (
+    <div style={{
+      background: 'var(--card)', borderRadius: '16px', border: '1px solid var(--border)',
+      padding: '24px', flex: 1, minWidth: '300px'
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
+        <div style={{ fontSize: '1.5rem' }}>{icon}</div>
+        <h3 style={{ margin: 0, color: 'var(--text)', fontSize: '1.2rem' }}>{title}</h3>
       </div>
-
-      {/* Question Breakdown */}
-      <div style={{ marginBottom: '32px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexWrap: 'wrap', gap: '10px' }}>
-          <h2 style={{ margin: 0, fontWeight: 800, fontSize: '1.1rem', color: 'var(--text)' }}>
-            Question Review
-          </h2>
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {[
-              { key: 'all', label: `All (${total})` },
-              { key: 'correct', label: `✅ Correct (${correct})` },
-              { key: 'incorrect', label: `❌ Incorrect (${incorrect})` },
-              { key: 'unattempted', label: `⬜ Skipped (${unattempted})` },
-            ].map(f => (
-              <button
-                key={f.key}
-                onClick={() => setFilter(f.key)}
-                style={{
-                  padding: '6px 14px',
-                  borderRadius: '20px',
-                  border: filter === f.key ? '2px solid var(--violet)' : '2px solid var(--border)',
-                  background: filter === f.key ? 'rgba(139,92,246,0.1)' : 'transparent',
-                  color: filter === f.key ? 'var(--violet)' : 'var(--muted)',
-                  cursor: 'pointer',
-                  fontWeight: 600,
-                  fontSize: '0.8rem',
-                }}
-              >
-                {f.label}
-              </button>
-            ))}
+      
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+        <div>
+          <div style={{ color: 'var(--muted)', fontSize: '0.85rem' }}>Score</div>
+          <div style={{ color: 'var(--text)', fontSize: '1.4rem', fontWeight: 800 }}>
+            {stats.correct || stats.score} / {stats.total}
           </div>
         </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          {filteredBreakdown.map((q, i) => (
-            <motion.div
-              key={q.id}
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: i * 0.02 }}
-              style={{
-                background: 'var(--card)',
-                border: `1px solid ${q.isCorrect ? '#22c55e44' : q.isAttempted ? '#ef444444' : 'var(--border)'}`,
-                borderRadius: '12px',
-                padding: '16px 20px',
-              }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px', marginBottom: '10px' }}>
-                <p style={{ margin: 0, fontWeight: 600, color: 'var(--text)', fontSize: '0.9rem', flex: 1 }}>
-                  <span style={{
-                    display: 'inline-block',
-                    width: '24px',
-                    height: '24px',
-                    borderRadius: '50%',
-                    background: q.isCorrect ? '#22c55e' : q.isAttempted ? '#ef4444' : '#94a3b8',
-                    color: '#fff',
-                    fontSize: '0.65rem',
-                    fontWeight: 700,
-                    textAlign: 'center',
-                    lineHeight: '24px',
-                    marginRight: '10px',
-                    flexShrink: 0,
-                  }}>
-                    {q.isCorrect ? '✓' : q.isAttempted ? '✗' : '–'}
-                  </span>
-                  {q.question}
-                </p>
-              </div>
-              <div style={{ display: 'flex', gap: '16px', fontSize: '0.82rem', flexWrap: 'wrap', paddingLeft: '34px' }}>
-                <span>
-                  <strong>Your answer:</strong>{' '}
-                  <span style={{ color: q.isCorrect ? '#22c55e' : '#ef4444', fontWeight: 700 }}>
-                    {q.userAnswer ? `${q.userAnswer}: ${q.options[q.userAnswer]}` : 'Not Answered'}
-                  </span>
-                </span>
-                {!q.isCorrect && (
-                  <span>
-                    <strong>Correct:</strong>{' '}
-                    <span style={{ color: '#22c55e', fontWeight: 700 }}>
-                      {q.correctAnswer}: {q.options[q.correctAnswer]}
-                    </span>
-                  </span>
-                )}
-              </div>
-            </motion.div>
-          ))}
+        <div>
+          <div style={{ color: 'var(--muted)', fontSize: '0.85rem' }}>Percentage</div>
+          <div style={{ color: 'var(--text)', fontSize: '1.4rem', fontWeight: 800 }}>
+            {stats.percentage}%
+          </div>
         </div>
-      </div>
-
-      {/* Action buttons */}
-      <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-        <button
-          onClick={() => navigate('tcs-ninja-mock/aptitude')}
-          style={{
-            padding: '13px 32px',
-            borderRadius: '12px',
-            border: 'none',
-            background: 'var(--violet)',
-            color: '#fff',
-            fontWeight: 700,
-            cursor: 'pointer',
-            fontSize: '0.95rem',
-          }}
-        >
-          🔄 Reattempt Test
-        </button>
-        <button
-          onClick={() => navigate('tcs-ninja-mock')}
-          style={{
-            padding: '13px 32px',
-            borderRadius: '12px',
-            border: '2px solid var(--border)',
-            background: 'transparent',
-            color: 'var(--text)',
-            fontWeight: 700,
-            cursor: 'pointer',
-            fontSize: '0.95rem',
-          }}
-        >
-          ← Back to TCS Ninja
-        </button>
       </div>
     </div>
+  );
+
+  const renderDetailedStats = (stats) => (
+    <div style={{
+      background: 'var(--card)', borderRadius: '16px', border: '1px solid var(--border)',
+      padding: '24px', marginTop: '24px'
+    }}>
+      <h3 style={{ margin: '0 0 20px 0', color: 'var(--text)' }}>Detailed Analytics</h3>
+      <div style={{
+        display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '16px'
+      }}>
+        {[
+          { label: 'Attempted', val: stats.attempted },
+          { label: 'Correct', val: stats.correct, color: '#10b981' },
+          { label: 'Incorrect', val: stats.incorrect, color: '#ef4444' },
+          { label: 'Skipped', val: stats.skipped, color: '#f59e0b' },
+          { label: 'Accuracy', val: `${stats.accuracy}%` },
+          { label: 'Time Used', val: formatTime(stats.timeUsed) },
+          { label: 'Time Remaining', val: formatTime(stats.timeRemaining) },
+        ].map((item, i) => (
+          <div key={i} style={{ background: 'var(--bg)', padding: '16px', borderRadius: '12px' }}>
+            <div style={{ color: 'var(--muted)', fontSize: '0.8rem', marginBottom: '4px' }}>{item.label}</div>
+            <div style={{ color: item.color || 'var(--text)', fontSize: '1.2rem', fontWeight: 700 }}>{item.val}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  const renderTopicAnalysis = (topics) => {
+    if (!topics || Object.keys(topics).length === 0) return null;
+    return (
+      <div style={{
+        background: 'var(--card)', borderRadius: '16px', border: '1px solid var(--border)',
+        padding: '24px', marginTop: '24px'
+      }}>
+        <h3 style={{ margin: '0 0 20px 0', color: 'var(--text)' }}>Topic Analysis (Recommendation Engine)</h3>
+        <div style={{ display: 'grid', gap: '12px' }}>
+          {Object.entries(topics).map(([topic, data]) => {
+            const pct = Math.round((data.correct / data.total) * 100);
+            return (
+              <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <div style={{ width: '140px', fontSize: '0.9rem', color: 'var(--text)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {topic}
+                </div>
+                <div style={{ flex: 1, height: '8px', background: 'var(--bg)', borderRadius: '4px', overflow: 'hidden' }}>
+                  <div style={{ height: '100%', width: `${pct}%`, background: 'var(--violet)', borderRadius: '4px' }} />
+                </div>
+                <div style={{ width: '60px', textAlign: 'right', fontSize: '0.9rem', color: 'var(--muted)', fontWeight: 600 }}>
+                  {data.correct}/{data.total}
+                </div>
+                <div style={{ width: '50px', textAlign: 'right', fontSize: '0.9rem', color: 'var(--text)', fontWeight: 700 }}>
+                  {pct}%
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+
+  const activeStats = activeTab === 'overall' ? overall : sections[activeTab];
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ padding: '40px 24px', maxWidth: '1000px', margin: '0 auto' }}>
+      
+      <div style={{ display: 'flex', gap: '12px', marginBottom: '32px' }}>
+        {['overall', 'aptitude', 'technical'].map(tab => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            style={{
+              padding: '10px 24px', borderRadius: '20px', border: 'none',
+              background: activeTab === tab ? 'var(--text)' : 'var(--card)',
+              color: activeTab === tab ? 'var(--bg)' : 'var(--muted)',
+              fontWeight: 700, cursor: 'pointer', textTransform: 'capitalize',
+              border: activeTab !== tab ? '1px solid var(--border)' : 'none'
+            }}
+          >
+            {tab} Results
+          </button>
+        ))}
+      </div>
+
+      {activeTab === 'overall' && (
+        <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap' }}>
+          {renderSummaryCard('Overall Performance', overall, '🏆')}
+          {sections.aptitude && renderSummaryCard('Aptitude', sections.aptitude, '⏱️')}
+          {sections.technical && renderSummaryCard('Technical', sections.technical, '💻')}
+        </div>
+      )}
+
+      {activeTab !== 'overall' && activeStats && (
+        <>
+          {renderSummaryCard(
+            activeTab === 'aptitude' ? 'Aptitude Section' : 'Technical Section', 
+            activeStats, 
+            activeTab === 'aptitude' ? '⏱️' : '💻'
+          )}
+          {renderDetailedStats(activeStats)}
+          {renderTopicAnalysis(activeStats.topics)}
+        </>
+      )}
+
+    </motion.div>
   );
 }

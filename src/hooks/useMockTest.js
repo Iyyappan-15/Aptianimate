@@ -1,62 +1,101 @@
 /**
  * useMockTest.js
- * The core brain of the TCS Ninja Aptitude Test.
+ * The core brain of the Mock Test, managing multiple sections (e.g. Aptitude -> Technical).
  * Uses useReducer so the entire state is one object — trivially autosaved to sessionStorage on every action.
  */
 import { useReducer, useEffect, useCallback, useRef } from 'react';
 
-const SESSION_KEY = 'tcs_ninja_aptitude_session';
-const TAB_LOCK_KEY = 'tcs_ninja_active_tab';
-const TOTAL_SECONDS = 50 * 60; // 50 minutes
+const SESSION_KEY = 'mock_test_unified_session';
+const TAB_LOCK_KEY = 'mock_test_active_tab';
 
 // ──────────────────────────────────────────────────────────
 // State shape
 // ──────────────────────────────────────────────────────────
-function makeInitialState(questions, sessionId) {
-  return {
+function makeInitialState(sessionId, sectionsConfig) {
+  // sectionsConfig looks like: [{ id: 'aptitude', questions: [...], totalSeconds: 3000 }, ...]
+  const state = {
     sessionId,
-    questions,
-    currentIndex: 0,
-    answers: {},    // { questionId: 'A' | 'B' | 'C' | 'D' }
-    marked: {},     // { questionId: true }
-    secondsLeft: TOTAL_SECONDS,
-    submitted: false,
+    currentSectionIndex: 0,
+    sections: sectionsConfig.map(sec => ({
+      id: sec.id,
+      questions: sec.questions,
+      totalSeconds: sec.totalSeconds,
+      currentIndex: 0,
+      answers: {},    // { questionId: 'A' | 'B' | 'C' | 'D' }
+      marked: {},     // { questionId: true }
+      secondsLeft: sec.totalSeconds,
+      submitted: false,
+    })),
+    overallSubmitted: false,
     startedAt: Date.now(),
   };
+  return state;
 }
 
 // ──────────────────────────────────────────────────────────
 // Reducer
 // ──────────────────────────────────────────────────────────
 function reducer(state, action) {
+  if (state.overallSubmitted) return state;
+
+  const currentSection = state.sections[state.currentSectionIndex];
+  
   switch (action.type) {
-    case 'NAVIGATE':
-      return { ...state, currentIndex: action.index };
+    case 'NAVIGATE': {
+      const sections = [...state.sections];
+      sections[state.currentSectionIndex] = { ...currentSection, currentIndex: action.index };
+      return { ...state, sections };
+    }
 
     case 'SELECT_ANSWER': {
-      const answers = { ...state.answers, [action.questionId]: action.option };
-      return { ...state, answers };
+      const sections = [...state.sections];
+      sections[state.currentSectionIndex] = {
+        ...currentSection,
+        answers: { ...currentSection.answers, [action.questionId]: action.option }
+      };
+      return { ...state, sections };
     }
 
     case 'CLEAR_ANSWER': {
-      const answers = { ...state.answers };
+      const answers = { ...currentSection.answers };
       delete answers[action.questionId];
-      return { ...state, answers };
+      const sections = [...state.sections];
+      sections[state.currentSectionIndex] = { ...currentSection, answers };
+      return { ...state, sections };
     }
 
     case 'TOGGLE_MARK': {
-      const marked = { ...state.marked };
+      const marked = { ...currentSection.marked };
       if (marked[action.questionId]) delete marked[action.questionId];
       else marked[action.questionId] = true;
-      return { ...state, marked };
+      const sections = [...state.sections];
+      sections[state.currentSectionIndex] = { ...currentSection, marked };
+      return { ...state, sections };
     }
 
-    case 'TICK':
-      if (state.secondsLeft <= 0) return state;
-      return { ...state, secondsLeft: state.secondsLeft - 1 };
+    case 'TICK': {
+      if (currentSection.submitted) return state;
+      if (currentSection.secondsLeft <= 0) return state;
+      const sections = [...state.sections];
+      sections[state.currentSectionIndex] = {
+        ...currentSection,
+        secondsLeft: currentSection.secondsLeft - 1
+      };
+      return { ...state, sections };
+    }
 
-    case 'SUBMIT':
-      return { ...state, submitted: true };
+    case 'SUBMIT_SECTION': {
+      const sections = [...state.sections];
+      sections[state.currentSectionIndex] = { ...currentSection, submitted: true };
+      
+      const isLastSection = state.currentSectionIndex === state.sections.length - 1;
+      return {
+        ...state,
+        sections,
+        currentSectionIndex: isLastSection ? state.currentSectionIndex : state.currentSectionIndex + 1,
+        overallSubmitted: isLastSection
+      };
+    }
 
     case 'RESTORE':
       return action.state;
@@ -69,65 +108,73 @@ function reducer(state, action) {
 // ──────────────────────────────────────────────────────────
 // Hook
 // ──────────────────────────────────────────────────────────
-export function useMockTest({ questions, onSubmit, sessionId }) {
+export function useMockTest({ sectionsConfig, onSubmitOverall, sessionId }) {
   // Try to restore session from sessionStorage
   const [state, dispatch] = useReducer(reducer, null, () => {
     try {
       const saved = sessionStorage.getItem(SESSION_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        // Only restore if same session and not yet submitted
-        if (parsed.sessionId === sessionId && !parsed.submitted) {
+        // Only restore if same session and not completely submitted
+        if (parsed.sessionId === sessionId && !parsed.overallSubmitted) {
           return parsed;
         }
       }
     } catch (_) { /* ignore */ }
-    return makeInitialState(questions, sessionId);
+    return makeInitialState(sessionId, sectionsConfig);
   });
 
-  const onSubmitRef = useRef(onSubmit);
-  useEffect(() => { onSubmitRef.current = onSubmit; }, [onSubmit]);
+  const onSubmitRef = useRef(onSubmitOverall);
+  useEffect(() => { onSubmitRef.current = onSubmitOverall; }, [onSubmitOverall]);
 
   // ── Autosave on every state change ──────────────────────
   useEffect(() => {
-    if (!state.submitted) {
+    if (!state.overallSubmitted) {
       sessionStorage.setItem(SESSION_KEY, JSON.stringify(state));
+    } else {
+      sessionStorage.removeItem(SESSION_KEY);
     }
   }, [state]);
 
+  const activeSection = state.sections[state.currentSectionIndex];
+
   // ── Countdown timer ──────────────────────────────────────
   useEffect(() => {
-    if (state.submitted) return;
+    if (state.overallSubmitted || activeSection.submitted) return;
     const interval = setInterval(() => {
       dispatch({ type: 'TICK' });
     }, 1000);
     return () => clearInterval(interval);
-  }, [state.submitted]);
+  }, [state.overallSubmitted, activeSection.submitted, state.currentSectionIndex]);
 
-  // ── Auto-submit when time is up ──────────────────────────
+  // ── Auto-submit section when time is up ──────────────────
   useEffect(() => {
-    if (state.secondsLeft === 0 && !state.submitted) {
-      dispatch({ type: 'SUBMIT' });
-      sessionStorage.removeItem(SESSION_KEY);
-      const timeTaken = TOTAL_SECONDS; // used all time
-      onSubmitRef.current({ state: { ...state, submitted: true }, timeTaken });
+    if (activeSection.secondsLeft === 0 && !activeSection.submitted) {
+      dispatch({ type: 'SUBMIT_SECTION' });
     }
-  }, [state.secondsLeft, state.submitted]);
+  }, [activeSection.secondsLeft, activeSection.submitted]);
+  
+  // ── Final Submit Trigger ─────────────────────────────────
+  useEffect(() => {
+    if (state.overallSubmitted) {
+      onSubmitRef.current({ state });
+    }
+  }, [state.overallSubmitted]);
 
   // ── Prevent accidental exit (beforeunload) ───────────────
   useEffect(() => {
-    if (state.submitted) return;
+    if (state.overallSubmitted) return;
     const handler = (e) => {
       e.preventDefault();
       e.returnValue = 'Your test is in progress. Are you sure you want to leave?';
     };
     window.addEventListener('beforeunload', handler);
     return () => window.removeEventListener('beforeunload', handler);
-  }, [state.submitted]);
+  }, [state.overallSubmitted]);
 
   // ── Prevent Ctrl+R / F5 shortcuts ────────────────────────
   useEffect(() => {
-    if (state.submitted) return;
+    if (state.overallSubmitted) return;
     const handler = (e) => {
       if (
         e.key === 'F5' ||
@@ -140,47 +187,32 @@ export function useMockTest({ questions, onSubmit, sessionId }) {
     };
     window.addEventListener('keydown', handler, { capture: true });
     return () => window.removeEventListener('keydown', handler, { capture: true });
-  }, [state.submitted]);
+  }, [state.overallSubmitted]);
 
   // ──────────────────────────────────────────────────────────
   // Actions
   // ──────────────────────────────────────────────────────────
   const navigate = useCallback((index) => dispatch({ type: 'NAVIGATE', index }), []);
-
-  const selectAnswer = useCallback((questionId, option) => {
-    dispatch({ type: 'SELECT_ANSWER', questionId, option });
-  }, []);
-
-  const clearAnswer = useCallback((questionId) => {
-    dispatch({ type: 'CLEAR_ANSWER', questionId });
-  }, []);
-
-  const toggleMark = useCallback((questionId) => {
-    dispatch({ type: 'TOGGLE_MARK', questionId });
-  }, []);
-
-  const submitTest = useCallback(() => {
-    const timeTaken = TOTAL_SECONDS - state.secondsLeft;
-    dispatch({ type: 'SUBMIT' });
-    sessionStorage.removeItem(SESSION_KEY);
-    onSubmitRef.current({ state: { ...state, submitted: true }, timeTaken });
-  }, [state]);
+  const selectAnswer = useCallback((questionId, option) => dispatch({ type: 'SELECT_ANSWER', questionId, option }), []);
+  const clearAnswer = useCallback((questionId) => dispatch({ type: 'CLEAR_ANSWER', questionId }), []);
+  const toggleMark = useCallback((questionId) => dispatch({ type: 'TOGGLE_MARK', questionId }), []);
+  const submitSection = useCallback(() => dispatch({ type: 'SUBMIT_SECTION' }), []);
 
   // ──────────────────────────────────────────────────────────
-  // Derived
+  // Derived Data for the Active Section
   // ──────────────────────────────────────────────────────────
-  const currentQuestion = state.questions[state.currentIndex];
-  const unansweredCount = state.questions.filter(q => !state.answers[q.id]).length;
+  const currentQuestion = activeSection.questions[activeSection.currentIndex];
+  const unansweredCount = activeSection.questions.filter(q => !activeSection.answers[q.id]).length;
 
   return {
     state,
+    activeSection,
     currentQuestion,
     unansweredCount,
-    TOTAL_SECONDS,
     navigate,
     selectAnswer,
     clearAnswer,
     toggleMark,
-    submitTest,
+    submitSection,
   };
 }
