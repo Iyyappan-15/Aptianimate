@@ -8,7 +8,6 @@ import QuestionPalette from '../components/mock-test/QuestionPalette';
 import SubmitModal from '../components/mock-test/SubmitModal';
 
 const TAB_CHANNEL = 'tcs_ninja_test_tab';
-const TAB_LOCK_KEY = 'tcs_ninja_active_tab_id';
 
 // Generate a unique session ID per test
 function generateSessionId() {
@@ -18,7 +17,7 @@ function generateSessionId() {
 // ──────────────────────────────────────────────────────────
 // Pre-test instructions screen
 // ──────────────────────────────────────────────────────────
-function PreTestScreen({ onStart, onBack }) {
+function PreTestScreen({ onStart }) {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const handleStart = () => {
@@ -320,7 +319,7 @@ export default function TcsNinjaAptitudeTest({ navigate }) {
   }
 
   if (phase === 'instructions') {
-    return <PreTestScreen onStart={handleStart} onBack={() => navigate(-1)} />;
+    return <PreTestScreen onStart={handleStart} />;
   }
 
   if (phase === 'loading') {

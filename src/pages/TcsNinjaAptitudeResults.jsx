@@ -20,11 +20,6 @@ function calculateSectionStats(sectionState) {
 
   const LABELS = ['A', 'B', 'C', 'D'];
 
-  function getOption(options, label) {
-    if (!options) return label;
-    if (Array.isArray(options)) return options[LABELS.indexOf(label)] ?? label;
-    return options[label] ?? label;
-  }
 
   const breakdown = questions.map((q) => {
     const userAnswer = answers[q.id];
@@ -79,7 +74,9 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
       if (saved) {
         setResultsState(JSON.parse(saved));
       }
-    } catch (_) {}
+    } catch {
+      // ignore
+    }
   }, []);
 
   const { overall, sections } = useMemo(() => {
@@ -230,7 +227,7 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
             key={tab}
             onClick={() => setActiveTab(tab)}
             style={{
-              padding: '10px 24px', borderRadius: '20px', border: 'none',
+              padding: '10px 24px', borderRadius: '20px',
               background: activeTab === tab ? 'var(--text)' : 'var(--card)',
               color: activeTab === tab ? 'var(--bg)' : 'var(--muted)',
               fontWeight: 700, cursor: 'pointer', textTransform: 'capitalize',

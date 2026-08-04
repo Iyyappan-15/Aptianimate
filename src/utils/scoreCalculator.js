@@ -18,12 +18,6 @@ export function calculateScore({ questions, answers, marked, timeTakenSeconds, t
 
   const LABELS = ['A', 'B', 'C', 'D'];
 
-  function getOption(options, label) {
-    if (!options) return label;
-    if (Array.isArray(options)) return options[LABELS.indexOf(label)] ?? label;
-    return options[label] ?? label;
-  }
-
   const breakdown = questions.map((q) => {
     const userAnswer = answers[q.id];
     const isAttempted = !!userAnswer;
