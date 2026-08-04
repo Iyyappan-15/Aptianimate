@@ -6,7 +6,7 @@
 import { useReducer, useEffect, useCallback, useRef } from 'react';
 
 const SESSION_KEY = 'mock_test_unified_session';
-const TAB_LOCK_KEY = 'mock_test_active_tab';
+
 
 // ──────────────────────────────────────────────────────────
 // State shape
@@ -120,7 +120,7 @@ export function useMockTest({ sectionsConfig, onSubmitOverall, sessionId }) {
           return parsed;
         }
       }
-    } catch (_) { /* ignore */ }
+    } catch { /* ignore */ }
     return makeInitialState(sessionId, sectionsConfig);
   });
 

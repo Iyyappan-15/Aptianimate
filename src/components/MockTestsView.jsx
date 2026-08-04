@@ -33,11 +33,11 @@ export default function MockTestsView({ navigate }) {
           style={{ '--accent-color': '#10b981', width: '280px', padding: '32px 24px', textAlign: 'center', opacity: 0.8 }}
         >
           <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🏢</div>
-          <h3 style={{ margin: '0 0 12px 0' }}>TCS Ninja Pattern</h3>
+          <h3 style={{ margin: '0 0 12px 0' }}>TCS Pattern</h3>
           <p style={{ fontSize: '0.9rem', color: 'var(--muted)', margin: 0 }}>
             Company Specific
             <br />
-            Coming Soon
+            
           </p>
         </motion.div>
       </div>

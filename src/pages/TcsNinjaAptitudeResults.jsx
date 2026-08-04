@@ -112,43 +112,67 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
     return (
       <div style={{
         minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center',
-        justifyContent: 'center', gap: '16px', color: 'var(--muted)', textAlign: 'center',
+        justifyContent: 'center', gap: '20px', color: 'var(--muted)', textAlign: 'center',
       }}>
-        <div style={{ fontSize: '3rem' }}>📋</div>
-        <h2 style={{ color: 'var(--text)' }}>No Results Found</h2>
+        <div style={{
+          fontSize: '4rem', padding: '32px', background: 'var(--card)', borderRadius: '50%',
+          boxShadow: '0 20px 40px rgba(0,0,0,0.2)', border: '1px solid rgba(255,255,255,0.05)'
+        }}>📋</div>
+        <h2 style={{ color: 'var(--text)', fontSize: '2rem', fontWeight: 800 }}>No Results Found</h2>
+        <p style={{ maxWidth: '400px', lineHeight: 1.6, marginBottom: '16px' }}>
+          It looks like you haven't taken a test recently, or your results have expired.
+        </p>
         <button
           onClick={() => navigate('tcs-ninja-mock')}
           style={{
-            padding: '12px 28px', borderRadius: '10px', border: 'none',
-            background: 'var(--violet)', color: '#fff', fontWeight: 700, cursor: 'pointer',
+            padding: '14px 32px', borderRadius: '12px', border: 'none',
+            background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
+            color: '#fff', fontWeight: 800, cursor: 'pointer', fontSize: '1.1rem',
+            boxShadow: '0 8px 24px rgba(139,92,246,0.3)', transition: 'transform 0.2s'
           }}
+          onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+          onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
         >
-          Start a Test
+          Start a Mock Test
         </button>
       </div>
     );
   }
 
-  const renderSummaryCard = (title, stats, icon) => (
+  const renderSummaryCard = (title, stats, icon, accentColor = 'var(--violet)') => (
     <div style={{
-      background: 'var(--card)', borderRadius: '16px', border: '1px solid var(--border)',
-      padding: '24px', flex: 1, minWidth: '300px'
+      background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(10px)',
+      borderRadius: '24px', border: '1px solid rgba(255,255,255,0.08)',
+      padding: '32px', flex: 1, minWidth: '320px', position: 'relative', overflow: 'hidden',
+      boxShadow: '0 12px 40px rgba(0,0,0,0.2)'
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
-        <div style={{ fontSize: '1.5rem' }}>{icon}</div>
-        <h3 style={{ margin: 0, color: 'var(--text)', fontSize: '1.2rem' }}>{title}</h3>
+      {/* Accent glow */}
+      <div style={{
+        position: 'absolute', top: -50, right: -50, width: 150, height: 150,
+        background: accentColor, filter: 'blur(80px)', opacity: 0.15, borderRadius: '50%', pointerEvents: 'none'
+      }} />
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '32px' }}>
+        <div style={{
+          width: '56px', height: '56px', borderRadius: '16px', background: 'rgba(255,255,255,0.05)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.8rem',
+          border: '1px solid rgba(255,255,255,0.1)'
+        }}>
+          {icon}
+        </div>
+        <h3 style={{ margin: 0, color: 'var(--text)', fontSize: '1.4rem', fontWeight: 800 }}>{title}</h3>
       </div>
       
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-        <div>
-          <div style={{ color: 'var(--muted)', fontSize: '0.85rem' }}>Score</div>
-          <div style={{ color: 'var(--text)', fontSize: '1.4rem', fontWeight: 800 }}>
-            {stats.correct || stats.score} / {stats.total}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+        <div style={{ background: 'rgba(0,0,0,0.2)', padding: '20px', borderRadius: '16px' }}>
+          <div style={{ color: 'var(--muted)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Score</div>
+          <div style={{ color: 'var(--text)', fontSize: '2rem', fontWeight: 900 }}>
+            {stats.correct || stats.score} <span style={{ color: 'var(--muted)', fontSize: '1.2rem' }}>/ {stats.total}</span>
           </div>
         </div>
-        <div>
-          <div style={{ color: 'var(--muted)', fontSize: '0.85rem' }}>Percentage</div>
-          <div style={{ color: 'var(--text)', fontSize: '1.4rem', fontWeight: 800 }}>
+        <div style={{ background: 'rgba(0,0,0,0.2)', padding: '20px', borderRadius: '16px' }}>
+          <div style={{ color: 'var(--muted)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Accuracy</div>
+          <div style={{ color: accentColor, fontSize: '2rem', fontWeight: 900 }}>
             {stats.percentage}%
           </div>
         </div>
@@ -158,25 +182,32 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
 
   const renderDetailedStats = (stats) => (
     <div style={{
-      background: 'var(--card)', borderRadius: '16px', border: '1px solid var(--border)',
-      padding: '24px', marginTop: '24px'
+      background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(10px)',
+      borderRadius: '24px', border: '1px solid rgba(255,255,255,0.08)',
+      padding: '32px', marginTop: '24px', boxShadow: '0 12px 40px rgba(0,0,0,0.2)'
     }}>
-      <h3 style={{ margin: '0 0 20px 0', color: 'var(--text)' }}>Detailed Analytics</h3>
+      <h3 style={{ margin: '0 0 24px 0', color: 'var(--text)', fontSize: '1.4rem', fontWeight: 800 }}>Detailed Analytics</h3>
       <div style={{
-        display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '16px'
+        display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '16px'
       }}>
         {[
-          { label: 'Attempted', val: stats.attempted },
-          { label: 'Correct', val: stats.correct, color: '#10b981' },
-          { label: 'Incorrect', val: stats.incorrect, color: '#ef4444' },
-          { label: 'Skipped', val: stats.skipped, color: '#f59e0b' },
-          { label: 'Accuracy', val: `${stats.accuracy}%` },
-          { label: 'Time Used', val: formatTime(stats.timeUsed) },
-          { label: 'Time Remaining', val: formatTime(stats.timeRemaining) },
+          { label: 'Attempted', val: stats.attempted, icon: '📝' },
+          { label: 'Correct', val: stats.correct, color: '#10b981', icon: '✅' },
+          { label: 'Incorrect', val: stats.incorrect, color: '#ef4444', icon: '❌' },
+          { label: 'Skipped', val: stats.skipped, color: '#f59e0b', icon: '⏭️' },
+          { label: 'Accuracy', val: `${stats.accuracy}%`, icon: '🎯' },
+          { label: 'Time Used', val: formatTime(stats.timeUsed), icon: '⏱️' },
+          { label: 'Time Remaining', val: formatTime(stats.timeRemaining), icon: '⏳' },
         ].map((item, i) => (
-          <div key={i} style={{ background: 'var(--bg)', padding: '16px', borderRadius: '12px' }}>
-            <div style={{ color: 'var(--muted)', fontSize: '0.8rem', marginBottom: '4px' }}>{item.label}</div>
-            <div style={{ color: item.color || 'var(--text)', fontSize: '1.2rem', fontWeight: 700 }}>{item.val}</div>
+          <div key={i} style={{
+            background: 'rgba(0,0,0,0.2)', padding: '20px', borderRadius: '16px',
+            border: '1px solid rgba(255,255,255,0.03)', display: 'flex', flexDirection: 'column', gap: '8px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '1.1rem' }}>{item.icon}</span>
+              <div style={{ color: 'var(--muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{item.label}</div>
+            </div>
+            <div style={{ color: item.color || 'var(--text)', fontSize: '1.6rem', fontWeight: 800 }}>{item.val}</div>
           </div>
         ))}
       </div>
@@ -187,25 +218,37 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
     if (!topics || Object.keys(topics).length === 0) return null;
     return (
       <div style={{
-        background: 'var(--card)', borderRadius: '16px', border: '1px solid var(--border)',
-        padding: '24px', marginTop: '24px'
+        background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(10px)',
+        borderRadius: '24px', border: '1px solid rgba(255,255,255,0.08)',
+        padding: '32px', marginTop: '24px', boxShadow: '0 12px 40px rgba(0,0,0,0.2)'
       }}>
-        <h3 style={{ margin: '0 0 20px 0', color: 'var(--text)' }}>Topic Analysis (Recommendation Engine)</h3>
-        <div style={{ display: 'grid', gap: '12px' }}>
+        <h3 style={{ margin: '0 0 24px 0', color: 'var(--text)', fontSize: '1.4rem', fontWeight: 800 }}>Topic Analysis (Recommendation Engine)</h3>
+        <div style={{ display: 'grid', gap: '16px' }}>
           {Object.entries(topics).map(([topic, data]) => {
             const pct = Math.round((data.correct / data.total) * 100);
             return (
-              <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                <div style={{ width: '140px', fontSize: '0.9rem', color: 'var(--text)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              <div key={topic} style={{
+                display: 'flex', alignItems: 'center', gap: '20px',
+                background: 'rgba(0,0,0,0.2)', padding: '16px 20px', borderRadius: '16px',
+                border: '1px solid rgba(255,255,255,0.03)'
+              }}>
+                <div style={{ width: '180px', fontSize: '1rem', color: 'var(--text)', fontWeight: 600, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                   {topic}
                 </div>
-                <div style={{ flex: 1, height: '8px', background: 'var(--bg)', borderRadius: '4px', overflow: 'hidden' }}>
-                  <div style={{ height: '100%', width: `${pct}%`, background: 'var(--violet)', borderRadius: '4px' }} />
+                <div style={{ flex: 1, height: '10px', background: 'rgba(255,255,255,0.05)', borderRadius: '99px', overflow: 'hidden' }}>
+                  <div style={{
+                    height: '100%', width: `${pct}%`,
+                    background: pct >= 75 ? 'linear-gradient(90deg, #10b981, #059669)' : pct >= 40 ? 'linear-gradient(90deg, #f59e0b, #d97706)' : 'linear-gradient(90deg, #ef4444, #dc2626)',
+                    borderRadius: '99px', transition: 'width 1s ease'
+                  }} />
                 </div>
-                <div style={{ width: '60px', textAlign: 'right', fontSize: '0.9rem', color: 'var(--muted)', fontWeight: 600 }}>
-                  {data.correct}/{data.total}
+                <div style={{ width: '70px', textAlign: 'right', fontSize: '1rem', color: 'var(--muted)', fontWeight: 600 }}>
+                  {data.correct} / {data.total}
                 </div>
-                <div style={{ width: '50px', textAlign: 'right', fontSize: '0.9rem', color: 'var(--text)', fontWeight: 700 }}>
+                <div style={{
+                  width: '60px', textAlign: 'right', fontSize: '1.1rem', fontWeight: 800,
+                  color: pct >= 75 ? '#10b981' : pct >= 40 ? '#f59e0b' : '#ef4444'
+                }}>
                   {pct}%
                 </div>
               </div>
@@ -219,44 +262,60 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
   const activeStats = activeTab === 'overall' ? overall : sections[activeTab];
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ padding: '40px 24px', maxWidth: '1000px', margin: '0 auto' }}>
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} style={{ padding: '60px 24px', maxWidth: '1100px', margin: '0 auto' }}>
       
-      <div style={{ display: 'flex', gap: '12px', marginBottom: '32px' }}>
+      {/* Header */}
+      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '12px', background: 'linear-gradient(135deg, #fff, #a78bfa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          Test Results
+        </h1>
+        <p style={{ color: 'var(--muted)', fontSize: '1.1rem' }}>Review your performance and identify areas for improvement.</p>
+      </div>
+
+      <div style={{
+        display: 'flex', gap: '12px', marginBottom: '40px', background: 'rgba(0,0,0,0.3)',
+        padding: '8px', borderRadius: '100px', width: 'max-content', margin: '0 auto 40px auto', border: '1px solid rgba(255,255,255,0.05)'
+      }}>
         {['overall', 'aptitude', 'technical'].map(tab => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
             style={{
-              padding: '10px 24px', borderRadius: '20px',
-              background: activeTab === tab ? 'var(--text)' : 'var(--card)',
-              color: activeTab === tab ? 'var(--bg)' : 'var(--muted)',
-              fontWeight: 700, cursor: 'pointer', textTransform: 'capitalize',
-              border: activeTab !== tab ? '1px solid var(--border)' : 'none'
+              padding: '12px 32px', borderRadius: '100px',
+              background: activeTab === tab ? 'var(--violet)' : 'transparent',
+              color: activeTab === tab ? '#fff' : 'var(--muted)',
+              fontWeight: 800, cursor: 'pointer', textTransform: 'capitalize', fontSize: '1rem',
+              border: 'none', transition: 'all 0.2s', boxShadow: activeTab === tab ? '0 4px 12px rgba(139,92,246,0.4)' : 'none'
             }}
+            onMouseEnter={e => { if (activeTab !== tab) e.currentTarget.style.color = '#fff'; }}
+            onMouseLeave={e => { if (activeTab !== tab) e.currentTarget.style.color = 'var(--muted)'; }}
           >
-            {tab} Results
+            {tab}
           </button>
         ))}
       </div>
 
       {activeTab === 'overall' && (
-        <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap' }}>
-          {renderSummaryCard('Overall Performance', overall, '🏆')}
-          {sections.aptitude && renderSummaryCard('Aptitude', sections.aptitude, '⏱️')}
-          {sections.technical && renderSummaryCard('Technical', sections.technical, '💻')}
-        </div>
+        <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} style={{ display: 'flex', gap: '24px', flexWrap: 'wrap' }}>
+          {renderSummaryCard('Overall Performance', overall, '🏆', '#8b5cf6')}
+          {sections.aptitude && renderSummaryCard('Aptitude', sections.aptitude, '⏱️', '#3b82f6')}
+          {sections.technical && renderSummaryCard('Technical', sections.technical, '💻', '#10b981')}
+        </motion.div>
       )}
 
       {activeTab !== 'overall' && activeStats && (
-        <>
-          {renderSummaryCard(
-            activeTab === 'aptitude' ? 'Aptitude Section' : 'Technical Section', 
-            activeStats, 
-            activeTab === 'aptitude' ? '⏱️' : '💻'
-          )}
+        <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
+          <div style={{ display: 'flex', gap: '24px' }}>
+            {renderSummaryCard(
+              activeTab === 'aptitude' ? 'Aptitude Section' : 'Technical Section', 
+              activeStats, 
+              activeTab === 'aptitude' ? '⏱️' : '💻',
+              activeTab === 'aptitude' ? '#3b82f6' : '#10b981'
+            )}
+          </div>
           {renderDetailedStats(activeStats)}
           {renderTopicAnalysis(activeStats.topics)}
-        </>
+        </motion.div>
       )}
 
     </motion.div>
