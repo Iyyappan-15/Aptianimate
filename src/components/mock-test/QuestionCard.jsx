@@ -1,8 +1,19 @@
 /**
  * QuestionCard.jsx
  * Displays a single MCQ with 4 options.
+ * Supports options as ARRAY ["opt1","opt2","opt3","opt4"] OR object {A:..., B:..., C:..., D:...}
  * Actions: Save & Next | Mark for Review | Clear Response
  */
+const LABELS = ['A', 'B', 'C', 'D'];
+
+function getOption(options, label) {
+  if (!options) return '';
+  // If array: A=index 0, B=index 1, etc.
+  if (Array.isArray(options)) return options[LABELS.indexOf(label)] ?? '';
+  // If object: direct key access
+  return options[label] ?? '';
+}
+
 export default function QuestionCard({
   question,
   questionNumber,
@@ -13,91 +24,77 @@ export default function QuestionCard({
   onClearAnswer,
   onToggleMark,
   onPrev,
-  onNext,
   onSaveAndNext,
   isFirst,
   isLast,
 }) {
-  const optionLabels = ['A', 'B', 'C', 'D'];
-
-  const optionStyle = (label) => {
-    const isSelected = selectedAnswer === label;
-    return {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '12px',
-      padding: '14px 20px',
-      borderRadius: '10px',
-      border: `2px solid ${isSelected ? 'var(--violet)' : 'var(--border)'}`,
-      background: isSelected ? 'rgba(139,92,246,0.08)' : 'var(--card)',
-      cursor: 'pointer',
-      transition: 'all 0.15s ease',
-      color: 'var(--text)',
-      fontWeight: isSelected ? 600 : 400,
-      textAlign: 'left',
-    };
-  };
-
-  const labelStyle = (label) => {
-    const isSelected = selectedAnswer === label;
-    return {
-      width: '30px',
-      height: '30px',
-      borderRadius: '50%',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      flexShrink: 0,
-      fontWeight: 700,
-      fontSize: '0.85rem',
-      background: isSelected ? 'var(--violet)' : 'var(--border)',
-      color: isSelected ? '#fff' : 'var(--muted)',
-      transition: 'all 0.15s ease',
-    };
-  };
-
   return (
-    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+    <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '18px' }}>
 
-      {/* Header: Q number + section info */}
+      {/* Question meta bar */}
       <div style={{
         display: 'flex',
-        justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '12px 20px',
-        background: 'var(--violet)',
-        borderRadius: '12px',
-        color: '#fff',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        gap: '8px',
       }}>
-        <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>
-          Question {questionNumber} of {totalQuestions}
-        </span>
-        <span style={{ fontSize: '0.8rem', opacity: 0.85 }}>
-          Section: Aptitude | Marks: 1
-        </span>
-        <span style={{
-          fontSize: '0.8rem',
-          background: isMarked ? '#f59e0b' : 'rgba(255,255,255,0.2)',
-          padding: '3px 10px',
-          borderRadius: '20px',
-          fontWeight: 600,
-          transition: 'background 0.2s',
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
         }}>
-          {isMarked ? '🔖 Marked' : 'Not Marked'}
+          <span style={{
+            background: 'var(--violet)',
+            color: '#fff',
+            borderRadius: '8px',
+            padding: '4px 14px',
+            fontWeight: 700,
+            fontSize: '0.85rem',
+            letterSpacing: '0.5px',
+          }}>
+            Q {questionNumber} / {totalQuestions}
+          </span>
+          <span style={{
+            background: 'rgba(139,92,246,0.1)',
+            color: 'var(--violet)',
+            borderRadius: '8px',
+            padding: '4px 12px',
+            fontWeight: 600,
+            fontSize: '0.78rem',
+          }}>
+            +1 Mark
+          </span>
+          {isMarked && (
+            <span style={{
+              background: '#fef3c7',
+              color: '#92400e',
+              borderRadius: '8px',
+              padding: '4px 12px',
+              fontWeight: 600,
+              fontSize: '0.78rem',
+            }}>
+              🔖 Marked
+            </span>
+          )}
+        </div>
+        <span style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>
+          {question.topic} · {question.difficulty}
         </span>
       </div>
 
       {/* Question text */}
       <div style={{
         background: 'var(--card)',
-        border: '1px solid var(--border)',
-        borderRadius: '12px',
-        padding: '24px',
+        border: '1.5px solid var(--border)',
+        borderRadius: '16px',
+        padding: '28px 32px',
+        borderLeft: '4px solid var(--violet)',
       }}>
         <p style={{
           margin: 0,
           fontSize: '1.05rem',
-          lineHeight: 1.7,
+          lineHeight: 1.8,
           color: 'var(--text)',
           fontWeight: 500,
         }}>
@@ -107,28 +104,68 @@ export default function QuestionCard({
 
       {/* Options */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        {optionLabels.map((label) => (
-          <button
-            key={label}
-            onClick={() => onSelectAnswer(question.id, label)}
-            style={optionStyle(label)}
-            onMouseEnter={e => {
-              if (selectedAnswer !== label) {
-                e.currentTarget.style.borderColor = 'var(--violet)';
-                e.currentTarget.style.background = 'rgba(139,92,246,0.04)';
-              }
-            }}
-            onMouseLeave={e => {
-              if (selectedAnswer !== label) {
-                e.currentTarget.style.borderColor = 'var(--border)';
-                e.currentTarget.style.background = 'var(--card)';
-              }
-            }}
-          >
-            <div style={labelStyle(label)}>{label}</div>
-            <span style={{ fontSize: '0.95rem' }}>{question.options[label]}</span>
-          </button>
-        ))}
+        {LABELS.map((label) => {
+          const optionText = getOption(question.options, label);
+          const isSelected = selectedAnswer === label;
+          return (
+            <button
+              key={label}
+              onClick={() => onSelectAnswer(question.id, label)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '14px',
+                padding: '14px 20px',
+                borderRadius: '12px',
+                border: `2px solid ${isSelected ? 'var(--violet)' : 'var(--border)'}`,
+                background: isSelected ? 'rgba(139,92,246,0.07)' : 'var(--card)',
+                cursor: 'pointer',
+                textAlign: 'left',
+                transition: 'all 0.15s ease',
+                transform: isSelected ? 'translateX(4px)' : 'translateX(0)',
+              }}
+              onMouseEnter={e => {
+                if (!isSelected) {
+                  e.currentTarget.style.borderColor = 'rgba(139,92,246,0.5)';
+                  e.currentTarget.style.background = 'rgba(139,92,246,0.03)';
+                }
+              }}
+              onMouseLeave={e => {
+                if (!isSelected) {
+                  e.currentTarget.style.borderColor = 'var(--border)';
+                  e.currentTarget.style.background = 'var(--card)';
+                }
+              }}
+            >
+              {/* Label circle */}
+              <div style={{
+                width: '34px',
+                height: '34px',
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+                fontWeight: 800,
+                fontSize: '0.85rem',
+                background: isSelected ? 'var(--violet)' : 'transparent',
+                border: `2px solid ${isSelected ? 'var(--violet)' : 'var(--border)'}`,
+                color: isSelected ? '#fff' : 'var(--muted)',
+                transition: 'all 0.15s ease',
+              }}>
+                {label}
+              </div>
+              <span style={{
+                fontSize: '0.95rem',
+                color: 'var(--text)',
+                fontWeight: isSelected ? 600 : 400,
+                lineHeight: 1.5,
+              }}>
+                {optionText || <em style={{ color: 'var(--muted)' }}>No option text</em>}
+              </span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Action buttons */}
@@ -137,51 +174,59 @@ export default function QuestionCard({
         gap: '10px',
         flexWrap: 'wrap',
         borderTop: '1px solid var(--border)',
-        paddingTop: '16px',
+        paddingTop: '18px',
         marginTop: 'auto',
+        alignItems: 'center',
       }}>
+        {/* Left actions */}
         <button
           onClick={() => onToggleMark(question.id)}
           style={{
-            padding: '9px 18px',
-            borderRadius: '8px',
+            padding: '9px 16px',
+            borderRadius: '10px',
             border: `2px solid ${isMarked ? '#f59e0b' : 'var(--border)'}`,
             background: isMarked ? '#fef3c7' : 'transparent',
             color: isMarked ? '#92400e' : 'var(--muted)',
             cursor: 'pointer',
             fontWeight: 600,
-            fontSize: '0.85rem',
+            fontSize: '0.82rem',
             transition: 'all 0.15s',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
           }}
         >
-          🔖 {isMarked ? 'Unmark Review' : 'Mark for Review'}
+          🔖 {isMarked ? 'Unmark' : 'Mark for Review'}
         </button>
 
         <button
           onClick={() => onClearAnswer(question.id)}
           disabled={!selectedAnswer}
           style={{
-            padding: '9px 18px',
-            borderRadius: '8px',
+            padding: '9px 16px',
+            borderRadius: '10px',
             border: '2px solid var(--border)',
             background: 'transparent',
             color: selectedAnswer ? 'var(--muted)' : 'var(--border)',
             cursor: selectedAnswer ? 'pointer' : 'not-allowed',
             fontWeight: 600,
-            fontSize: '0.85rem',
-            transition: 'all 0.15s',
+            fontSize: '0.82rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
           }}
         >
-          ✕ Clear Response
+          ✕ Clear
         </button>
 
+        {/* Right: navigation */}
         <div style={{ marginLeft: 'auto', display: 'flex', gap: '10px' }}>
           <button
             onClick={onPrev}
             disabled={isFirst}
             style={{
-              padding: '9px 20px',
-              borderRadius: '8px',
+              padding: '10px 20px',
+              borderRadius: '10px',
               border: '2px solid var(--border)',
               background: 'transparent',
               color: isFirst ? 'var(--border)' : 'var(--text)',
@@ -190,26 +235,35 @@ export default function QuestionCard({
               fontSize: '0.85rem',
             }}
           >
-            ← Previous
+            ← Prev
           </button>
 
           <button
             onClick={onSaveAndNext}
             style={{
-              padding: '9px 24px',
-              borderRadius: '8px',
+              padding: '10px 26px',
+              borderRadius: '10px',
               border: 'none',
-              background: 'var(--violet)',
+              background: isLast
+                ? 'linear-gradient(135deg, #ef4444, #dc2626)'
+                : 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
               color: '#fff',
               cursor: 'pointer',
               fontWeight: 700,
               fontSize: '0.85rem',
-              transition: 'opacity 0.15s',
+              boxShadow: '0 4px 12px rgba(139,92,246,0.3)',
+              transition: 'opacity 0.15s, transform 0.15s',
             }}
-            onMouseEnter={e => { e.currentTarget.style.opacity = '0.88'; }}
-            onMouseLeave={e => { e.currentTarget.style.opacity = '1'; }}
+            onMouseEnter={e => {
+              e.currentTarget.style.opacity = '0.9';
+              e.currentTarget.style.transform = 'translateY(-1px)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.opacity = '1';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
           >
-            {isLast ? '✓ Review & Submit' : 'Save & Next →'}
+            {isLast ? '📋 Review & Submit' : 'Save & Next →'}
           </button>
         </div>
       </div>

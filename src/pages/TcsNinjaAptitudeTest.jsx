@@ -206,55 +206,102 @@ function TestView({ questions, sessionId, onSubmitResults, navigate }) {
 
   if (!currentQuestion) return null;
 
+  const answeredCount = questions.length - unansweredCount;
+  const progressPct = questions.length > 0 ? Math.round((answeredCount / questions.length) * 100) : 0;
+
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg)', paddingBottom: '40px' }}>
-      {/* Sticky header */}
+    <div style={{ minHeight: '100vh', background: 'var(--bg)', paddingBottom: '60px' }}>
+
+      {/* ── Sticky header ── */}
       <div style={{
         position: 'sticky',
         top: 0,
         zIndex: 100,
-        background: 'var(--bg)',
+        background: 'var(--card)',
         borderBottom: '1px solid var(--border)',
-        padding: '12px 24px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backdropFilter: 'blur(8px)',
+        backdropFilter: 'blur(12px)',
+        boxShadow: '0 2px 12px rgba(0,0,0,0.07)',
       }}>
-        <div>
-          <div style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--text)' }}>TCS Ninja — Aptitude</div>
-          <div style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>
-            {questions.length - unansweredCount} of {questions.length} answered
+        {/* Top bar */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '10px 28px',
+          gap: '16px',
+          flexWrap: 'wrap',
+        }}>
+          {/* Brand */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div style={{
+              width: '36px', height: '36px',
+              borderRadius: '10px',
+              background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: '1.1rem', flexShrink: 0,
+            }}>🧠</div>
+            <div>
+              <div style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--text)', lineHeight: 1.2 }}>
+                TCS Ninja · Aptitude
+              </div>
+              <div style={{ fontSize: '0.72rem', color: 'var(--muted)', lineHeight: 1.2 }}>
+                {answeredCount} / {questions.length} answered ({progressPct}%)
+              </div>
+            </div>
           </div>
+
+          {/* Timer (center) */}
+          <Timer secondsLeft={state.secondsLeft} totalSeconds={TOTAL_SECONDS} />
+
+          {/* Submit button */}
+          <button
+            onClick={() => setShowSubmitModal(true)}
+            style={{
+              padding: '9px 22px',
+              borderRadius: '10px',
+              border: '2px solid #ef4444',
+              background: 'transparent',
+              color: '#ef4444',
+              fontWeight: 700,
+              fontSize: '0.85rem',
+              cursor: 'pointer',
+              transition: 'all 0.15s',
+              display: 'flex', alignItems: 'center', gap: '6px',
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.background = '#ef4444';
+              e.currentTarget.style.color = '#fff';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.background = 'transparent';
+              e.currentTarget.style.color = '#ef4444';
+            }}
+          >
+            📤 Submit Test
+          </button>
         </div>
-        <Timer secondsLeft={state.secondsLeft} totalSeconds={TOTAL_SECONDS} />
-        <button
-          onClick={() => setShowSubmitModal(true)}
-          style={{
-            padding: '9px 20px',
-            borderRadius: '8px',
-            border: 'none',
-            background: '#ef4444',
-            color: '#fff',
-            fontWeight: 700,
-            fontSize: '0.85rem',
-            cursor: 'pointer',
-          }}
-        >
-          Submit Test
-        </button>
+
+        {/* Progress bar underneath */}
+        <div style={{ height: '3px', background: 'var(--border)' }}>
+          <div style={{
+            height: '100%',
+            width: `${progressPct}%`,
+            background: 'linear-gradient(90deg, #8b5cf6, #6d28d9)',
+            transition: 'width 0.4s ease',
+          }} />
+        </div>
       </div>
 
-      {/* Body */}
+      {/* ── Body ── */}
       <div style={{
-        maxWidth: '1100px',
+        maxWidth: '1160px',
         margin: '0 auto',
-        padding: '24px 20px',
+        padding: '32px 24px',
         display: 'flex',
         gap: '24px',
         alignItems: 'flex-start',
       }}>
-        {/* Left: Question */}
+        {/* Left: Question card */}
         <QuestionCard
           question={currentQuestion}
           questionNumber={currentIndex + 1}
@@ -265,7 +312,6 @@ function TestView({ questions, sessionId, onSubmitResults, navigate }) {
           onClearAnswer={clearAnswer}
           onToggleMark={toggleMark}
           onPrev={() => navTo(currentIndex - 1)}
-          onNext={() => navTo(currentIndex + 1)}
           onSaveAndNext={handleSaveAndNext}
           isFirst={isFirst}
           isLast={isLast}
