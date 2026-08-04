@@ -7,8 +7,6 @@ import QuestionCard from '../components/mock-test/QuestionCard';
 import QuestionPalette from '../components/mock-test/QuestionPalette';
 import SubmitModal from '../components/mock-test/SubmitModal';
 
-const TAB_CHANNEL = 'tcs_ninja_test_tab';
-
 // Generate a unique session ID per test
 function generateSessionId() {
   return `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
@@ -237,30 +235,6 @@ export default function TcsNinjaAptitudeTest({ navigate }) {
   const [phase, setPhase] = useState('instructions'); // instructions | loading | test | results
   const [sectionsConfig, setSectionsConfig] = useState([]);
   const [sessionId] = useState(generateSessionId);
-  const [dupTabWarning, setDupTabWarning] = useState(false);
-  const channelRef = useRef(null);
-  const tabIdRef = useRef(`tab_${Date.now()}_${Math.random()}`);
-
-  // ── Multi-tab prevention ──────────────────────────────
-  useEffect(() => {
-    if (phase !== 'test') return;
-    const myTabId = tabIdRef.current;
-    if (window.BroadcastChannel) {
-      const ch = new BroadcastChannel(TAB_CHANNEL);
-      channelRef.current = ch;
-      ch.postMessage({ type: 'TAB_OPEN', tabId: myTabId });
-      ch.onmessage = (event) => {
-        if (event.data.type === 'TAB_OPEN' && event.data.tabId !== myTabId) {
-          setDupTabWarning(true);
-          ch.postMessage({ type: 'TAB_CONFLICT', activeTabId: myTabId });
-        }
-        if (event.data.type === 'TAB_CONFLICT' && event.data.activeTabId !== myTabId) {
-          setDupTabWarning(true);
-        }
-      };
-      return () => ch.close();
-    }
-  }, [phase]);
 
   // ── Start test: fetch questions ───────────────────────
   const handleStart = useCallback(async () => {
@@ -294,29 +268,6 @@ export default function TcsNinjaAptitudeTest({ navigate }) {
     sessionStorage.setItem('mock_test_results', JSON.stringify(state));
     navigate('tcs-ninja-mock/results');
   }, [navigate]);
-
-  if (dupTabWarning) {
-    return (
-      <div style={{
-        minHeight: '80vh', display: 'flex', flexDirection: 'column',
-        alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '40px 20px',
-      }}>
-        <div style={{ fontSize: '3.5rem', marginBottom: '16px' }}>⚠️</div>
-        <h2 style={{ color: 'var(--text)', fontSize: '1.6rem', fontWeight: 800, marginBottom: '12px' }}>
-          Test Already Open in Another Tab
-        </h2>
-        <button
-          onClick={() => window.close()}
-          style={{
-            padding: '12px 28px', borderRadius: '10px', border: 'none', background: 'var(--violet)',
-            color: '#fff', fontWeight: 700, cursor: 'pointer', fontSize: '0.95rem',
-          }}
-        >
-          Close This Tab
-        </button>
-      </div>
-    );
-  }
 
   if (phase === 'instructions') {
     return <PreTestScreen onStart={handleStart} />;
@@ -383,19 +334,116 @@ function TestRunner({ sectionsConfig, sessionId, onOverallSubmit }) {
     submitSection
   } = useMockTest({ sectionsConfig, onSubmitOverall: onOverallSubmit, sessionId });
 
+  const [cheatStrikes, setCheatStrikes] = useState(0);
+  const [showCheatWarning, setShowCheatWarning] = useState(false);
+  const [showFullscreenWarning, setShowFullscreenWarning] = useState(false);
+  
+  // Use a ref to always have the latest state for the event listener without re-binding
+  const stateRef = useRef(state);
+  useEffect(() => {
+    stateRef.current = state;
+  }, [state]);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        setCheatStrikes(prev => {
+          const newStrikes = prev + 1;
+          if (newStrikes >= 4) {
+             onOverallSubmit({ state: stateRef.current });
+          } else {
+             setShowCheatWarning(true);
+          }
+          return newStrikes;
+        });
+      }
+    };
+
+    const handleFullscreenChange = () => {
+      if (!document.fullscreenElement) {
+        setShowFullscreenWarning(true);
+      } else {
+        setShowFullscreenWarning(false);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+    };
+  }, [onOverallSubmit]);
+
   const sectionConfig = sectionsConfig[state.currentSectionIndex];
 
   return (
-    <SectionView
-      sectionConfig={sectionConfig}
-      activeSection={activeSection}
-      currentQuestion={currentQuestion}
-      unansweredCount={unansweredCount}
-      navigate={navigate}
-      selectAnswer={selectAnswer}
-      clearAnswer={clearAnswer}
-      toggleMark={toggleMark}
-      submitSection={submitSection}
-    />
+    <>
+      <SectionView
+        sectionConfig={sectionConfig}
+        activeSection={activeSection}
+        currentQuestion={currentQuestion}
+        unansweredCount={unansweredCount}
+        navigate={navigate}
+        selectAnswer={selectAnswer}
+        clearAnswer={clearAnswer}
+        toggleMark={toggleMark}
+        submitSection={submitSection}
+      />
+      {showCheatWarning && (
+        <div style={{
+          position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(12px)',
+          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', zIndex: 99999, textAlign: 'center', padding: '20px'
+        }}>
+          <div style={{ fontSize: '4rem', marginBottom: '16px' }}>⚠️</div>
+          <h2 style={{ color: '#ef4444', fontSize: '2rem', fontWeight: 900, marginBottom: '12px' }}>Tab Switch Detected</h2>
+          <p style={{ color: '#fff', fontSize: '1.1rem', maxWidth: '400px', lineHeight: 1.6, marginBottom: '32px' }}>
+            Warning {cheatStrikes} of 3. Please do not leave this window or switch tabs during the test. Your test will automatically submit upon the 4th violation. The timer is still running.
+          </p>
+          <button
+            onClick={() => setShowCheatWarning(false)}
+            style={{
+              padding: '14px 32px', borderRadius: '12px', border: 'none', background: 'linear-gradient(135deg, #ef4444, #dc2626)',
+              color: '#fff', fontWeight: 800, fontSize: '1.1rem', cursor: 'pointer', boxShadow: '0 8px 24px rgba(239,68,68,0.4)',
+            }}
+          >
+            Continue Test
+          </button>
+        </div>
+      )}
+      {showFullscreenWarning && (
+        <div style={{
+          position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(12px)',
+          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', zIndex: 99999, textAlign: 'center', padding: '20px'
+        }}>
+          <div style={{ fontSize: '4rem', marginBottom: '16px' }}>📺</div>
+          <h2 style={{ color: '#f59e0b', fontSize: '2rem', fontWeight: 900, marginBottom: '12px' }}>Fullscreen Exited</h2>
+          <p style={{ color: '#fff', fontSize: '1.1rem', maxWidth: '400px', lineHeight: 1.6, marginBottom: '32px' }}>
+            For the best experience and to prevent accidental tab switches, please return to fullscreen mode.
+          </p>
+          <button
+            onClick={() => {
+              document.documentElement.requestFullscreen().catch(() => {});
+              setShowFullscreenWarning(false);
+            }}
+            style={{
+              padding: '14px 32px', borderRadius: '12px', border: 'none', background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+              color: '#fff', fontWeight: 800, fontSize: '1.1rem', cursor: 'pointer', boxShadow: '0 8px 24px rgba(245,158,11,0.4)',
+            }}
+          >
+            Return to Fullscreen
+          </button>
+          <button
+            onClick={() => setShowFullscreenWarning(false)}
+            style={{
+              marginTop: '16px', padding: '10px 24px', borderRadius: '8px', border: 'none', background: 'transparent',
+              color: 'var(--muted)', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer', textDecoration: 'underline'
+            }}
+          >
+            Continue Windowed
+          </button>
+        </div>
+      )}
+    </>
   );
 }
