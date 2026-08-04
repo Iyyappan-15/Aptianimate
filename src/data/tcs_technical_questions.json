@@ -1,0 +1,1872 @@
+[
+  {
+    "id": "tcs_tech_001",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "Python",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the output of: print(10 // 3) in Python?",
+    "options": [
+      "3.33",
+      "3",
+      "4",
+      "3.0"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_002",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Stacks",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which data structure uses LIFO principle?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Linked List"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_003",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Searching",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Time complexity of Binary Search is:",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_004",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does SQL stand for?",
+    "options": [
+      "Structured Query Language",
+      "Simple Query Language",
+      "Standard Query Language",
+      "Sequential Query Language"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_005",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "Programming Languages",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is not a programming language?",
+    "options": [
+      "Python",
+      "Java",
+      "HTML",
+      "C++"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_006",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "C",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the size of int data type in C?",
+    "options": [
+      "2 bytes",
+      "4 bytes",
+      "8 bytes",
+      "Depends on compiler"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_007",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which sorting algorithm is fastest on average?",
+    "options": [
+      "Bubble Sort",
+      "Selection Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_008",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Object-Oriented Programming",
+    "topic": "OOP Fundamentals",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does OOP stand for?",
+    "options": [
+      "Object Oriented Programming",
+      "Objective Oriented Programming",
+      "Order Of Programming",
+      "Object Order Programming"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_009",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "C",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is NOT a loop in C?",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "repeat-until"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "tcs_tech_010",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Object-Oriented Programming",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is encapsulation in OOP?",
+    "options": [
+      "Hiding implementation details",
+      "Creating multiple objects",
+      "Inheriting properties",
+      "Overloading functions"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_011",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which command is used to retrieve data from database?",
+    "options": [
+      "GET",
+      "FETCH",
+      "SELECT",
+      "RETRIEVE"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_012",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "DBMS",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is primary key?",
+    "options": [
+      "A key that uniquely identifies each record",
+      "The first key in table",
+      "A foreign key",
+      "An index"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_013",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which is NOT a DDL command?",
+    "options": [
+      "CREATE",
+      "ALTER",
+      "DROP",
+      "INSERT"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "tcs_tech_014",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "DBMS",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does RDBMS stand for?",
+    "options": [
+      "Relational Database Management System",
+      "Relative Database Management System",
+      "Record Database Management System",
+      "Remote Database Management System"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_015",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which clause is used to filter results in SQL?",
+    "options": [
+      "FILTER",
+      "WHERE",
+      "HAVING",
+      "SELECT"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_016",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is normalization?",
+    "options": [
+      "Organizing data to reduce redundancy",
+      "Creating backups",
+      "Indexing tables",
+      "Encrypting data"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_017",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "Joins",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which JOIN returns all records when there is a match in either table?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "tcs_tech_018",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the purpose of INDEX in database?",
+    "options": [
+      "To speed up data retrieval",
+      "To store data",
+      "To create relationships",
+      "To delete data"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_019",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which constraint ensures all values in a column are unique?",
+    "options": [
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "UNIQUE",
+      "CHECK"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_020",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Database",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is a transaction in database?",
+    "options": [
+      "A single operation",
+      "A sequence of operations performed as a single unit",
+      "A table",
+      "A query"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_021",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "TCP/IP",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does IP stand for?",
+    "options": [
+      "Internet Protocol",
+      "Internal Protocol",
+      "Internet Process",
+      "International Protocol"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_022",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "OSI Model",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which layer of OSI model handles routing?",
+    "options": [
+      "Physical Layer",
+      "Data Link Layer",
+      "Network Layer",
+      "Transport Layer"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_023",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "TCP/IP",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is the range of private IP addresses (Class A)?",
+    "options": [
+      "10.0.0.0 to 10.255.255.255",
+      "172.16.0.0 to 172.31.255.255",
+      "192.168.0.0 to 192.168.255.255",
+      "127.0.0.0 to 127.255.255.255"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_024",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "HTTP",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the default port for HTTP?",
+    "options": [
+      "21",
+      "22",
+      "80",
+      "443"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_025",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "HTTPS",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which protocol is used for secure communication?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "HTTPS",
+      "SMTP"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_026",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "DNS",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does DNS stand for?",
+    "options": [
+      "Domain Name System",
+      "Domain Network System",
+      "Digital Name System",
+      "Data Name System"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_027",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "OSI Model",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which device operates at Layer 2 of OSI model?",
+    "options": [
+      "Router",
+      "Switch",
+      "Hub",
+      "Repeater"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_028",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "TCP/IP",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is the purpose of subnet mask?",
+    "options": [
+      "To identify network and host portions of IP address",
+      "To encrypt data",
+      "To route packets",
+      "To store IP addresses"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_029",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "SMTP",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which protocol is used for email?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SMTP",
+      "TCP"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_030",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Networks",
+    "topic": "Networking Basics",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is bandwidth?",
+    "options": [
+      "The width of cable",
+      "The amount of data transmitted per unit time",
+      "The speed of processor",
+      "The size of memory"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_031",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Operating Systems",
+    "topic": "OS Functions",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is not a function of operating system?",
+    "options": [
+      "Memory Management",
+      "Process Management",
+      "Virus Protection",
+      "File Management"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_032",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Operating Systems",
+    "topic": "Deadlock",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is deadlock?",
+    "options": [
+      "When system crashes",
+      "When processes wait indefinitely for resources",
+      "When CPU is idle",
+      "When memory is full"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_033",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Operating Systems",
+    "topic": "CPU Scheduling",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which scheduling algorithm is non-preemptive?",
+    "options": [
+      "Round Robin",
+      "FCFS",
+      "Priority Scheduling",
+      "Multilevel Queue"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_034",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Operating Systems",
+    "topic": "Virtual Memory",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is virtual memory?",
+    "options": [
+      "RAM",
+      "Using disk space as extended RAM",
+      "ROM",
+      "Cache memory"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_035",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Operating Systems",
+    "topic": "Paging",
+    "difficulty": "Hard",
+    "questionType": "MCQ",
+    "question": "What is thrashing?",
+    "options": [
+      "High CPU utilization",
+      "Excessive paging activity",
+      "Virus attack",
+      "Memory overflow"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_036",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Linux",
+    "topic": "Process Commands",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which command shows running processes in Linux?",
+    "options": [
+      "ls",
+      "ps",
+      "cd",
+      "pwd"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_037",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Operating Systems",
+    "topic": "Semaphore",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is semaphore?",
+    "options": [
+      "A synchronization tool",
+      "A memory allocation technique",
+      "A file system",
+      "A network protocol"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_038",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Computer Organization",
+    "topic": "Cache Memory",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the purpose of cache memory?",
+    "options": [
+      "Permanent storage",
+      "Speed up data access",
+      "Backup data",
+      "Virtual memory"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_039",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Operating Systems",
+    "topic": "Operating System Types",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is a multi-user operating system?",
+    "options": [
+      "MS-DOS",
+      "Linux",
+      "Windows 95",
+      "Android"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_040",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Operating Systems",
+    "topic": "Process",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is context switching?",
+    "options": [
+      "Switching between applications",
+      "Storing and restoring process state",
+      "Changing user",
+      "Shutting down system"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_041",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Trees",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which traversal visits root node first?",
+    "options": [
+      "Inorder",
+      "Preorder",
+      "Postorder",
+      "Level order"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_042",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Searching",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the worst-case time complexity of linear search?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_043",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Graphs",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which data structure is used for BFS?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Graph"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_044",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Trees",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is a complete binary tree?",
+    "options": [
+      "All levels are completely filled",
+      "Only left subtree exists",
+      "Only right subtree exists",
+      "Has no children"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_045",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which has constant time insertion at beginning?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_046",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is a hash collision?",
+    "options": [
+      "Two keys map to same hash value",
+      "Hash function fails",
+      "Memory overflow",
+      "Invalid key"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_047",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which sorting algorithm is stable?",
+    "options": [
+      "Quick Sort",
+      "Heap Sort",
+      "Merge Sort",
+      "Selection Sort"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_048",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Trees",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is the height of a binary tree with n nodes (worst case)?",
+    "options": [
+      "log n",
+      "n",
+      "n²",
+      "1"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_049",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is NOT a type of linked list?",
+    "options": [
+      "Singly Linked List",
+      "Doubly Linked List",
+      "Circular Linked List",
+      "Binary Linked List"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "tcs_tech_050",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Recursion",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is the space complexity of recursive factorial?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_051",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which algorithm uses divide and conquer?",
+    "options": [
+      "Bubble Sort",
+      "Merge Sort",
+      "Selection Sort",
+      "Insertion Sort"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_052",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is dynamic programming?",
+    "options": [
+      "Writing dynamic code",
+      "Solving problems by breaking into overlapping subproblems",
+      "Allocating memory dynamically",
+      "Running programs dynamically"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_053",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Greedy",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which algorithm is greedy?",
+    "options": [
+      "Dijkstra's shortest path",
+      "Merge Sort",
+      "Binary Search",
+      "DFS"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_054",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Graphs",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the principle of BFS?",
+    "options": [
+      "LIFO",
+      "FIFO",
+      "Random",
+      "Priority"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_055",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Recursion",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is a recursive algorithm?",
+    "options": [
+      "Linear Search",
+      "Tower of Hanoi",
+      "Bubble Sort",
+      "All of the above"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_056",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is backtracking?",
+    "options": [
+      "Going back in code",
+      "Trying all possibilities and undoing wrong choices",
+      "Backward traversal",
+      "Reverse engineering"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_057",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which algorithm finds minimum spanning tree?",
+    "options": [
+      "Dijkstra's",
+      "Kruskal's",
+      "Binary Search",
+      "Quick Sort"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_058",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the time complexity of accessing an element in array by index?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_059",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Searching",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which search algorithm requires sorted data?",
+    "options": [
+      "Linear Search",
+      "Binary Search",
+      "DFS",
+      "BFS"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_060",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Data Structures & Algorithms",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is memoization?",
+    "options": [
+      "Remembering user inputs",
+      "Storing results of expensive function calls",
+      "Memory allocation",
+      "Creating notes"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_061",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "SDLC",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is NOT a phase of SDLC?",
+    "options": [
+      "Planning",
+      "Design",
+      "Marketing",
+      "Testing"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_062",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "SDLC",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is waterfall model?",
+    "options": [
+      "Sequential development model",
+      "Iterative model",
+      "Agile model",
+      "Spiral model"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_063",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Software Testing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is unit testing?",
+    "options": [
+      "Testing entire system",
+      "Testing individual components",
+      "Testing user interface",
+      "Testing database"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_064",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Object-Oriented Design",
+    "topic": "UML",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does UML stand for?",
+    "options": [
+      "Unified Modeling Language",
+      "Universal Modeling Language",
+      "Unified Management Language",
+      "Universal Management Language"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_065",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Agile Methodology",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is an agile methodology?",
+    "options": [
+      "Waterfall",
+      "Scrum",
+      "V-Model",
+      "Spiral"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_066",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Git & GitHub",
+    "topic": "Git Commands",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is version control?",
+    "options": [
+      "Controlling software versions",
+      "Testing versions",
+      "Creating versions",
+      "Deleting versions"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_067",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Software Testing",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is regression testing?",
+    "options": [
+      "Testing new features",
+      "Re-testing after changes to ensure existing functionality works",
+      "Testing performance",
+      "Testing security"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_068",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Agile Methodology",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is a sprint in Agile?",
+    "options": [
+      "A time-boxed iteration",
+      "A testing phase",
+      "A design phase",
+      "A deployment phase"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_069",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Software Testing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is black box testing?",
+    "options": [
+      "Testing without knowing internal structure",
+      "Testing with code access",
+      "Testing in dark room",
+      "Testing hardware"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_070",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Git & GitHub",
+    "topic": "Pull Request",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is code review?",
+    "options": [
+      "Reading code for errors and improvements",
+      "Writing code",
+      "Deleting code",
+      "Compiling code"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_071",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hypertext Markup Language",
+      "Hypertext Machine Language",
+      "Hightext Markup Language",
+      "Hyperlink Markup Language"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_072",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which tag is used for largest heading?",
+    "options": [
+      "<h1>",
+      "<h6>",
+      "<heading>",
+      "<head>"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_073",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Creative Style Sheets",
+      "Computer Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_074",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "React",
+    "topic": "Components",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is a JavaScript framework?",
+    "options": [
+      "Django",
+      "React",
+      "Laravel",
+      "Spring"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_075",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "HTML",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is the purpose of <div> tag?",
+    "options": [
+      "Division/container for HTML elements",
+      "Create divisions in math",
+      "Divide page",
+      "Delete content"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_076",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "APIs",
+    "topic": "HTTP Methods",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which HTTP method is used to send data to server?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_077",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "APIs",
+    "topic": "REST API",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is AJAX?",
+    "options": [
+      "Asynchronous JavaScript and XML",
+      "Advanced Java and XML",
+      "Asynchronous Java and XML",
+      "Advanced JavaScript and XHTML"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_078",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "Python",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is a backend language?",
+    "options": [
+      "HTML",
+      "CSS",
+      "Python",
+      "JavaScript (frontend)"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_079",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Programming",
+    "topic": "CSS",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is Bootstrap?",
+    "options": [
+      "A CSS framework",
+      "A JavaScript library",
+      "A database",
+      "An operating system"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_080",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "APIs",
+    "topic": "REST API",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does API stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Advanced Programming Interface",
+      "Application Process Interface",
+      "Advanced Process Interface"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_081",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is cloud computing?",
+    "options": [
+      "Computing in clouds",
+      "Delivery of computing services over internet",
+      "Weather prediction",
+      "Wireless computing"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_082",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which is a cloud service provider?",
+    "options": [
+      "Microsoft",
+      "AWS",
+      "Intel",
+      "Cisco"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_083",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is IaaS?",
+    "options": [
+      "Infrastructure as a Service",
+      "Internet as a Service",
+      "Information as a Service",
+      "Integration as a Service"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_084",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which is NOT a cloud deployment model?",
+    "options": [
+      "Public Cloud",
+      "Private Cloud",
+      "Hybrid Cloud",
+      "Local Cloud"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "tcs_tech_085",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is SaaS?",
+    "options": [
+      "Software as a Service",
+      "Security as a Service",
+      "Storage as a Service",
+      "System as a Service"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_086",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which service provides virtual machines?",
+    "options": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "DaaS"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_087",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is virtualization?",
+    "options": [
+      "Creating virtual version of resources",
+      "Making things invisible",
+      "Virtual reality",
+      "Online gaming"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_088",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "Which company owns Azure?",
+    "options": [
+      "Amazon",
+      "Google",
+      "Microsoft",
+      "IBM"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_089",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "System Design",
+    "topic": "Scalability",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is scalability in cloud?",
+    "options": [
+      "Ability to increase/decrease resources",
+      "Measuring cloud size",
+      "Cloud security",
+      "Cloud speed"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_090",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cloud Computing",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is cloud storage?",
+    "options": [
+      "Storing data on remote servers",
+      "Storing data in sky",
+      "Local storage",
+      "USB storage"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_091",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is encryption?",
+    "options": [
+      "Converting data into coded form",
+      "Deleting data",
+      "Copying data",
+      "Moving data"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_092",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is a firewall?",
+    "options": [
+      "A wall that burns",
+      "A security system that monitors network traffic",
+      "A virus",
+      "A browser"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_093",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is phishing?",
+    "options": [
+      "Catching fish",
+      "Fraudulent attempt to obtain sensitive information",
+      "Network error",
+      "Virus type"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_094",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does VPN stand for?",
+    "options": [
+      "Virtual Private Network",
+      "Very Private Network",
+      "Virtual Public Network",
+      "Verified Private Network"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_095",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is malware?",
+    "options": [
+      "Malicious software",
+      "Mail software",
+      "Male software",
+      "Main software"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_096",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is two-factor authentication?",
+    "options": [
+      "Using two passwords",
+      "Using two different verification methods",
+      "Logging in twice",
+      "Using two devices"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_097",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is ransomware?",
+    "options": [
+      "Malware that encrypts files and demands payment",
+      "Free software",
+      "Antivirus",
+      "Operating system"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_098",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is SSL?",
+    "options": [
+      "Secure Sockets Layer",
+      "Simple Security Layer",
+      "System Security Layer",
+      "Safe Sockets Layer"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_099",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is a DDoS attack?",
+    "options": [
+      "Distributed Denial of Service",
+      "Direct Denial of Service",
+      "Distributed Data of Service",
+      "Direct Data of Service"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_100",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Cybersecurity",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is a strong password characteristic?",
+    "options": [
+      "Contains mix of characters, numbers, symbols",
+      "Easy to remember name",
+      "Birth date",
+      "Simple word"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_101",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What does AI stand for?",
+    "options": [
+      "Artificial Intelligence",
+      "Automated Intelligence",
+      "Advanced Intelligence",
+      "Applied Intelligence"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_102",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is machine learning?",
+    "options": [
+      "Machines learning from humans",
+      "Algorithms that improve through experience",
+      "Building machines",
+      "Operating machines"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_103",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which is a supervised learning algorithm?",
+    "options": [
+      "K-means",
+      "Linear Regression",
+      "Apriori",
+      "PCA"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_104",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is neural network inspired by?",
+    "options": [
+      "Computer networks",
+      "Human brain",
+      "Internet",
+      "Cloud"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_105",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is deep learning?",
+    "options": [
+      "Learning deeply",
+      "ML using multiple layers neural networks",
+      "Underwater learning",
+      "Complex learning"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "tcs_tech_106",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is NLP?",
+    "options": [
+      "Natural Language Processing",
+      "New Language Processing",
+      "Network Language Processing",
+      "Native Language Processing"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_107",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "Which is an unsupervised learning technique?",
+    "options": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "All of above"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "tcs_tech_108",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Medium",
+    "questionType": "MCQ",
+    "question": "What is overfitting in ML?",
+    "options": [
+      "Model performs too well on training data but poorly on new data",
+      "Model is too simple",
+      "Too much data",
+      "Too many features"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_109",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is a training set?",
+    "options": [
+      "Data used to train ML model",
+      "Set of trainers",
+      "Exercise set",
+      "Test data"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "tcs_tech_110",
+    "company": "TCS",
+    "assessment": "Technical",
+    "section": "Advanced Topics",
+    "topic": "Machine Learning",
+    "difficulty": "Easy",
+    "questionType": "MCQ",
+    "question": "What is computer vision?",
+    "options": [
+      "Eye problems in computers",
+      "Enabling computers to interpret visual information",
+      "Computer monitors",
+      "Video games"
+    ],
+    "correctAnswer": "B"
+  }
+]
