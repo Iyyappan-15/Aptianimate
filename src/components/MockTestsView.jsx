@@ -28,7 +28,7 @@ export default function MockTestsView({ navigate }) {
 
         <motion.div 
           whileHover={{ scale: 1.05 }}
-          onClick={() => alert('TCS Ninja Mock is coming soon!')}
+          onClick={() => navigate('tcs-ninja-mock')}
           className="category-card"
           style={{ '--accent-color': '#10b981', width: '280px', padding: '32px 24px', textAlign: 'center', opacity: 0.8 }}
         >

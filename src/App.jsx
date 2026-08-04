@@ -27,6 +27,9 @@ const FriendBattlePage = lazy(() => import('./pages/FriendBattlePage'));
 const GovtPYQPracticePage = lazy(() => import('./pages/GovtPYQPracticePage'));
 const TechnicalInterviewTopicPage = lazy(() => import('./pages/TechnicalInterviewTopicPage'));
 const ResumePreparationPage = lazy(() => import('./pages/ResumePreparationPage'));
+const TcsNinjaMockLanding = lazy(() => import('./pages/TcsNinjaMockLanding'));
+const TcsNinjaAptitudeTest = lazy(() => import('./pages/TcsNinjaAptitudeTest'));
+const TcsNinjaAptitudeResults = lazy(() => import('./pages/TcsNinjaAptitudeResults'));
 
 import { signInWithGoogle } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
@@ -142,6 +145,12 @@ function App() {
     pageComponent = <SavedPage navigate={navigate} />;
   } else if (route === 'progress') {
     pageComponent = <ProgressPage navigate={navigate} />;
+  } else if (route === 'tcs-ninja-mock/results') {
+    pageComponent = <TcsNinjaAptitudeResults navigate={navigate} />;
+  } else if (route === 'tcs-ninja-mock/aptitude') {
+    pageComponent = <TcsNinjaAptitudeTest navigate={navigate} />;
+  } else if (route === 'tcs-ninja-mock') {
+    pageComponent = <TcsNinjaMockLanding navigate={navigate} />;
   } else if (route === 'mock-test') {
     pageComponent = <MockTestPage navigate={navigate} />;
   } else if (route.startsWith('mock-test/results/')) {
