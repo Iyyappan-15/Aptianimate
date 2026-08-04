@@ -16,25 +16,38 @@ export function calculateScore({ questions, answers, marked, timeTakenSeconds, t
   let incorrect = 0;
   let unattempted = 0;
 
+  const LABELS = ['A', 'B', 'C', 'D'];
+
+  function getOption(options, label) {
+    if (!options) return label;
+    if (Array.isArray(options)) return options[LABELS.indexOf(label)] ?? label;
+    return options[label] ?? label;
+  }
+
   const breakdown = questions.map((q) => {
     const userAnswer = answers[q.id];
     const isAttempted = !!userAnswer;
     const isCorrect = isAttempted && userAnswer === q.correctAnswer;
-    const isMarked = !!marked[q.id];
+    const isMarkedQ = !!marked[q.id];
 
     if (!isAttempted) unattempted++;
     else if (isCorrect) correct++;
     else incorrect++;
 
+    // Build options as object for consistent usage in results page
+    const optionsObj = Array.isArray(q.options)
+      ? LABELS.reduce((acc, l, i) => { acc[l] = q.options[i] ?? ''; return acc; }, {})
+      : q.options;
+
     return {
       id: q.id,
       question: q.question,
-      options: q.options,
+      options: optionsObj,
       correctAnswer: q.correctAnswer,
       userAnswer: userAnswer || null,
       isCorrect,
       isAttempted,
-      isMarked,
+      isMarked: isMarkedQ,
       topic: q.topic,
     };
   });
