@@ -10,7 +10,7 @@ export default defineConfig([
 
   // ── Node.js scripts (generators, importers, etc.) ──────────────────────────
   {
-    files: ['scripts/**/*.{js,cjs,mjs}'],
+    files: ['scripts/**/*.{js,cjs,mjs}', 'src/scripts/**/*.{js,cjs,mjs}'],
     languageOptions: {
       globals: { ...globals.node },
     },
