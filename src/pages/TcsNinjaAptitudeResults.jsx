@@ -165,13 +165,13 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
       
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
         <div style={{ background: 'var(--bg)', padding: '20px', borderRadius: '16px', border: '1px solid var(--border)' }}>
-          <div style={{ color: 'var(--text)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Score</div>
-          <div style={{ color: 'var(--text)', fontSize: '2rem', fontWeight: 900 }}>
-            {stats.correct || stats.score} <span style={{ color: 'var(--text)', fontSize: '1.2rem' }}>/ {stats.total}</span>
+          <div style={{ color: 'var(--text-h)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 700 }}>Score</div>
+          <div style={{ color: 'var(--text-h)', fontSize: '2rem', fontWeight: 900 }}>
+            {stats.correct || stats.score} <span style={{ color: 'var(--text-h)', fontSize: '1.2rem', opacity: 0.6 }}>/ {stats.total}</span>
           </div>
         </div>
         <div style={{ background: 'var(--bg)', padding: '20px', borderRadius: '16px', border: '1px solid var(--border)' }}>
-          <div style={{ color: 'var(--text)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Accuracy</div>
+          <div style={{ color: 'var(--text-h)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 700 }}>Accuracy</div>
           <div style={{ color: accentColor, fontSize: '2rem', fontWeight: 900 }}>
             {stats.percentage}%
           </div>
@@ -205,9 +205,9 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontSize: '1.1rem' }}>{item.icon}</span>
-              <div style={{ color: 'var(--text)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{item.label}</div>
+              <div style={{ color: 'var(--text-h)', fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{item.label}</div>
             </div>
-            <div style={{ color: item.color || 'var(--text)', fontSize: '1.6rem', fontWeight: 800 }}>{item.val}</div>
+            <div style={{ color: item.color || 'var(--text-h)', fontSize: '1.6rem', fontWeight: 900 }}>{item.val}</div>
           </div>
         ))}
       </div>
@@ -232,7 +232,7 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
                 background: 'var(--bg)', padding: '16px 20px', borderRadius: '16px',
                 border: '1px solid var(--border)'
               }}>
-                <div style={{ width: '180px', fontSize: '1rem', color: 'var(--text)', fontWeight: 600, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                <div style={{ width: '180px', fontSize: '1rem', color: 'var(--text-h)', fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                   {topic}
                 </div>
                 <div style={{ flex: 1, height: '10px', background: 'var(--border)', borderRadius: '99px', overflow: 'hidden' }}>
@@ -266,10 +266,10 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
       
       {/* Header */}
       <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '12px', background: 'linear-gradient(135deg, var(--text), var(--accent))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '12px', background: 'linear-gradient(135deg, var(--text-h), var(--accent))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
           Test Results
         </h1>
-        <p style={{ color: 'var(--text)', fontSize: '1.1rem' }}>Review your performance and identify areas for improvement.</p>
+        <p style={{ color: 'var(--text-h)', fontSize: '1.1rem', opacity: 0.8 }}>Review your performance and identify areas for improvement.</p>
       </div>
 
       <div style={{
@@ -282,13 +282,13 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
             onClick={() => setActiveTab(tab)}
             style={{
               padding: '12px 32px', borderRadius: '100px',
-              background: activeTab === tab ? 'var(--accent)' : 'transparent',
-              color: activeTab === tab ? '#fff' : 'var(--text)',
+              background: activeTab === tab ? 'linear-gradient(135deg, #8b5cf6, #6d28d9)' : 'transparent',
+              color: activeTab === tab ? '#fff' : 'var(--text-h)',
               fontWeight: 800, cursor: 'pointer', textTransform: 'capitalize', fontSize: '1rem',
               border: 'none', transition: 'all 0.2s', boxShadow: activeTab === tab ? '0 4px 12px rgba(139,92,246,0.4)' : 'none'
             }}
-            onMouseEnter={e => { if (activeTab !== tab) e.currentTarget.style.color = 'var(--text)'; }}
-            onMouseLeave={e => { if (activeTab !== tab) e.currentTarget.style.color = 'var(--text)'; }}
+            onMouseEnter={e => { if (activeTab !== tab) e.currentTarget.style.color = 'var(--accent)'; }}
+            onMouseLeave={e => { if (activeTab !== tab) e.currentTarget.style.color = 'var(--text-h)'; }}
           >
             {tab}
           </button>
