@@ -108,7 +108,7 @@ export default function QuestionCard({
           const optionText = getOption(question.options, label);
           const isSelected = selectedAnswer === label;
           return (
-            <button
+              <button
               key={label}
               onClick={() => onSelectAnswer(question.id, label)}
               style={{
@@ -118,11 +118,13 @@ export default function QuestionCard({
                 padding: '14px 20px',
                 borderRadius: '12px',
                 border: `2px solid ${isSelected ? 'var(--violet)' : 'var(--border)'}`,
-                background: isSelected ? 'rgba(139,92,246,0.07)' : 'var(--card)',
+                background: isSelected ? 'var(--violet)' : 'var(--card)',
+                color: isSelected ? '#fff' : 'var(--text)',
                 cursor: 'pointer',
                 textAlign: 'left',
                 transition: 'all 0.15s ease',
                 transform: isSelected ? 'translateX(4px)' : 'translateX(0)',
+                boxShadow: isSelected ? '0 4px 12px rgba(139,92,246,0.3)' : 'none',
               }}
               onMouseEnter={e => {
                 if (!isSelected) {
@@ -148,16 +150,16 @@ export default function QuestionCard({
                 flexShrink: 0,
                 fontWeight: 800,
                 fontSize: '0.85rem',
-                background: isSelected ? 'var(--violet)' : 'transparent',
-                border: `2px solid ${isSelected ? 'var(--violet)' : 'var(--border)'}`,
-                color: isSelected ? '#fff' : 'var(--muted)',
+                background: isSelected ? '#fff' : 'transparent',
+                border: `2px solid ${isSelected ? '#fff' : 'var(--border)'}`,
+                color: isSelected ? 'var(--violet)' : 'var(--muted)',
                 transition: 'all 0.15s ease',
               }}>
                 {label}
               </div>
               <span style={{
                 fontSize: '0.95rem',
-                color: 'var(--text)',
+                color: isSelected ? '#fff' : 'var(--text)',
                 fontWeight: isSelected ? 600 : 400,
                 lineHeight: 1.5,
               }}>
