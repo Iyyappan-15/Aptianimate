@@ -24,7 +24,7 @@ export default function SubmitModal({ unansweredCount, totalQuestions, onConfirm
       <div
         onClick={e => e.stopPropagation()}
         style={{
-          background: 'var(--card)',
+          background: 'var(--bg)',
           border: '1px solid var(--border)',
           borderRadius: '28px',
           padding: '40px',
@@ -81,7 +81,7 @@ export default function SubmitModal({ unansweredCount, totalQuestions, onConfirm
           </h2>
           <p style={{
             textAlign: 'center',
-            color: 'var(--muted)',
+            color: 'var(--text)',
             fontSize: '1rem',
             margin: '0 0 32px 0',
             lineHeight: 1.6,
@@ -91,7 +91,7 @@ export default function SubmitModal({ unansweredCount, totalQuestions, onConfirm
 
           {/* Progress visual */}
           <div style={{
-            background: 'var(--bg)',
+            background: 'var(--code-bg)',
             border: '1px solid var(--border)',
             borderRadius: '20px',
             padding: '24px',
@@ -121,12 +121,12 @@ export default function SubmitModal({ unansweredCount, totalQuestions, onConfirm
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               {[
                 { label: 'Answered', value: answeredCount, color: '#22c55e' },
-                { label: 'Unanswered', value: unansweredCount, color: unansweredCount > 0 ? '#ef4444' : 'var(--muted)' },
-                { label: 'Total', value: totalQuestions, color: 'var(--violet)' },
+                { label: 'Unanswered', value: unansweredCount, color: unansweredCount > 0 ? '#ef4444' : 'var(--text)' },
+                { label: 'Total', value: totalQuestions, color: 'var(--accent)' },
               ].map(s => (
                 <div key={s.label} style={{ textAlign: 'center' }}>
                   <div style={{ fontWeight: 900, fontSize: '1.6rem', color: s.color, marginBottom: '4px' }}>{s.value}</div>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--muted)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{s.label}</div>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{s.label}</div>
                 </div>
               ))}
             </div>

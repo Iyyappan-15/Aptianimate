@@ -112,10 +112,10 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
     return (
       <div style={{
         minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center',
-        justifyContent: 'center', gap: '20px', color: 'var(--muted)', textAlign: 'center',
+        justifyContent: 'center', gap: '20px', color: 'var(--text)', textAlign: 'center',
       }}>
         <div style={{
-          fontSize: '4rem', padding: '32px', background: 'var(--card)', borderRadius: '50%',
+          fontSize: '4rem', padding: '32px', background: 'var(--bg)', borderRadius: '50%',
           boxShadow: '0 20px 40px rgba(0,0,0,0.2)', border: '1px solid rgba(255,255,255,0.05)'
         }}>📋</div>
         <h2 style={{ color: 'var(--text)', fontSize: '2rem', fontWeight: 800 }}>No Results Found</h2>
@@ -126,7 +126,7 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
           onClick={() => navigate('tcs-ninja-mock')}
           style={{
             padding: '14px 32px', borderRadius: '12px', border: 'none',
-            background: 'linear-gradient(135deg, var(--violet), #6d28d9)',
+            background: 'linear-gradient(135deg, var(--accent), #6d28d9)',
             color: '#fff', fontWeight: 800, cursor: 'pointer', fontSize: '1.1rem',
             boxShadow: '0 8px 24px rgba(139,92,246,0.3)', transition: 'transform 0.2s'
           }}
@@ -139,9 +139,9 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
     );
   }
 
-  const renderSummaryCard = (title, stats, icon, accentColor = 'var(--violet)') => (
+  const renderSummaryCard = (title, stats, icon, accentColor = 'var(--accent)') => (
     <div style={{
-      background: 'var(--card)', backdropFilter: 'blur(10px)',
+      background: 'var(--bg)', backdropFilter: 'blur(10px)',
       borderRadius: '24px', border: '1px solid var(--border)',
       padding: '32px', flex: '1 1 300px', position: 'relative', overflow: 'hidden',
       boxShadow: '0 12px 40px rgba(0,0,0,0.2)'
@@ -165,13 +165,13 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
       
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
         <div style={{ background: 'var(--bg)', padding: '20px', borderRadius: '16px', border: '1px solid var(--border)' }}>
-          <div style={{ color: 'var(--muted)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Score</div>
+          <div style={{ color: 'var(--text)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Score</div>
           <div style={{ color: 'var(--text)', fontSize: '2rem', fontWeight: 900 }}>
-            {stats.correct || stats.score} <span style={{ color: 'var(--muted)', fontSize: '1.2rem' }}>/ {stats.total}</span>
+            {stats.correct || stats.score} <span style={{ color: 'var(--text)', fontSize: '1.2rem' }}>/ {stats.total}</span>
           </div>
         </div>
         <div style={{ background: 'var(--bg)', padding: '20px', borderRadius: '16px', border: '1px solid var(--border)' }}>
-          <div style={{ color: 'var(--muted)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Accuracy</div>
+          <div style={{ color: 'var(--text)', fontSize: '0.9rem', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Accuracy</div>
           <div style={{ color: accentColor, fontSize: '2rem', fontWeight: 900 }}>
             {stats.percentage}%
           </div>
@@ -182,7 +182,7 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
 
   const renderDetailedStats = (stats) => (
     <div style={{
-      background: 'var(--card)', backdropFilter: 'blur(10px)',
+      background: 'var(--bg)', backdropFilter: 'blur(10px)',
       borderRadius: '24px', border: '1px solid var(--border)',
       padding: '32px', marginTop: '24px', boxShadow: '0 12px 40px rgba(0,0,0,0.05)'
     }}>
@@ -205,7 +205,7 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontSize: '1.1rem' }}>{item.icon}</span>
-              <div style={{ color: 'var(--muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{item.label}</div>
+              <div style={{ color: 'var(--text)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{item.label}</div>
             </div>
             <div style={{ color: item.color || 'var(--text)', fontSize: '1.6rem', fontWeight: 800 }}>{item.val}</div>
           </div>
@@ -218,7 +218,7 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
     if (!topics || Object.keys(topics).length === 0) return null;
     return (
       <div style={{
-        background: 'var(--card)', backdropFilter: 'blur(10px)',
+        background: 'var(--bg)', backdropFilter: 'blur(10px)',
         borderRadius: '24px', border: '1px solid var(--border)',
         padding: '32px', marginTop: '24px', boxShadow: '0 12px 40px rgba(0,0,0,0.05)'
       }}>
@@ -242,7 +242,7 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
                     borderRadius: '99px', transition: 'width 1s ease'
                   }} />
                 </div>
-                <div style={{ width: '70px', textAlign: 'right', fontSize: '1rem', color: 'var(--muted)', fontWeight: 600 }}>
+                <div style={{ width: '70px', textAlign: 'right', fontSize: '1rem', color: 'var(--text)', fontWeight: 600 }}>
                   {data.correct} / {data.total}
                 </div>
                 <div style={{
@@ -266,10 +266,10 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
       
       {/* Header */}
       <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '12px', background: 'linear-gradient(135deg, var(--text), var(--violet))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '12px', background: 'linear-gradient(135deg, var(--text), var(--accent))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
           Test Results
         </h1>
-        <p style={{ color: 'var(--muted)', fontSize: '1.1rem' }}>Review your performance and identify areas for improvement.</p>
+        <p style={{ color: 'var(--text)', fontSize: '1.1rem' }}>Review your performance and identify areas for improvement.</p>
       </div>
 
       <div style={{
@@ -282,13 +282,13 @@ export default function TcsNinjaAptitudeResults({ navigate }) {
             onClick={() => setActiveTab(tab)}
             style={{
               padding: '12px 32px', borderRadius: '100px',
-              background: activeTab === tab ? 'var(--violet)' : 'transparent',
-              color: activeTab === tab ? '#fff' : 'var(--muted)',
+              background: activeTab === tab ? 'var(--accent)' : 'transparent',
+              color: activeTab === tab ? '#fff' : 'var(--text)',
               fontWeight: 800, cursor: 'pointer', textTransform: 'capitalize', fontSize: '1rem',
               border: 'none', transition: 'all 0.2s', boxShadow: activeTab === tab ? '0 4px 12px rgba(139,92,246,0.4)' : 'none'
             }}
             onMouseEnter={e => { if (activeTab !== tab) e.currentTarget.style.color = 'var(--text)'; }}
-            onMouseLeave={e => { if (activeTab !== tab) e.currentTarget.style.color = 'var(--muted)'; }}
+            onMouseLeave={e => { if (activeTab !== tab) e.currentTarget.style.color = 'var(--text)'; }}
           >
             {tab}
           </button>

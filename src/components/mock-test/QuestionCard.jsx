@@ -45,7 +45,7 @@ export default function QuestionCard({
           gap: '10px',
         }}>
           <span style={{
-            background: 'var(--violet)',
+            background: 'var(--accent)',
             color: '#fff',
             borderRadius: '8px',
             padding: '4px 14px',
@@ -57,7 +57,7 @@ export default function QuestionCard({
           </span>
           <span style={{
             background: 'rgba(139,92,246,0.1)',
-            color: 'var(--violet)',
+            color: 'var(--accent)',
             borderRadius: '8px',
             padding: '4px 12px',
             fontWeight: 600,
@@ -78,18 +78,18 @@ export default function QuestionCard({
             </span>
           )}
         </div>
-        <span style={{ fontSize: '0.78rem', color: 'var(--muted)' }}>
+        <span style={{ fontSize: '0.78rem', color: 'var(--text)' }}>
           {question.topic} · {question.difficulty}
         </span>
       </div>
 
       {/* Question text */}
       <div style={{
-        background: 'var(--card)',
+        background: 'var(--bg)',
         border: '1.5px solid var(--border)',
         borderRadius: '16px',
         padding: '28px 32px',
-        borderLeft: '4px solid var(--violet)',
+        borderLeft: '4px solid var(--accent)',
       }}>
         <p style={{
           margin: 0,
@@ -117,8 +117,8 @@ export default function QuestionCard({
                 gap: '14px',
                 padding: '14px 20px',
                 borderRadius: '12px',
-                border: `2px solid ${isSelected ? 'var(--violet)' : 'var(--border)'}`,
-                background: isSelected ? 'var(--violet)' : 'var(--card)',
+                border: `2px solid ${isSelected ? 'var(--accent)' : 'var(--border)'}`,
+                background: isSelected ? 'var(--accent)' : 'var(--bg)',
                 color: isSelected ? '#fff' : 'var(--text)',
                 cursor: 'pointer',
                 textAlign: 'left',
@@ -135,7 +135,7 @@ export default function QuestionCard({
               onMouseLeave={e => {
                 if (!isSelected) {
                   e.currentTarget.style.borderColor = 'var(--border)';
-                  e.currentTarget.style.background = 'var(--card)';
+                  e.currentTarget.style.background = 'var(--bg)';
                 }
               }}
             >
@@ -152,7 +152,7 @@ export default function QuestionCard({
                 fontSize: '0.85rem',
                 background: isSelected ? '#fff' : 'transparent',
                 border: `2px solid ${isSelected ? '#fff' : 'var(--border)'}`,
-                color: isSelected ? 'var(--violet)' : 'var(--muted)',
+                color: isSelected ? 'var(--accent)' : 'var(--text)',
                 transition: 'all 0.15s ease',
               }}>
                 {label}
@@ -163,7 +163,7 @@ export default function QuestionCard({
                 fontWeight: isSelected ? 600 : 400,
                 lineHeight: 1.5,
               }}>
-                {optionText || <em style={{ color: 'var(--muted)' }}>No option text</em>}
+                {optionText || <em style={{ color: 'var(--text)' }}>No option text</em>}
               </span>
             </button>
           );
@@ -188,7 +188,7 @@ export default function QuestionCard({
             borderRadius: '10px',
             border: `2px solid ${isMarked ? '#f59e0b' : 'var(--border)'}`,
             background: isMarked ? '#fef3c7' : 'transparent',
-            color: isMarked ? '#92400e' : 'var(--muted)',
+            color: isMarked ? '#92400e' : 'var(--text)',
             cursor: 'pointer',
             fontWeight: 600,
             fontSize: '0.82rem',
@@ -209,7 +209,7 @@ export default function QuestionCard({
             borderRadius: '10px',
             border: '2px solid var(--border)',
             background: 'transparent',
-            color: selectedAnswer ? 'var(--muted)' : 'var(--border)',
+            color: selectedAnswer ? 'var(--text)' : 'var(--border)',
             cursor: selectedAnswer ? 'pointer' : 'not-allowed',
             fontWeight: 600,
             fontSize: '0.82rem',
