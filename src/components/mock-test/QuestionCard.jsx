@@ -108,62 +108,17 @@ export default function QuestionCard({
           const optionText = getOption(question.options, label);
           const isSelected = selectedAnswer === label;
           return (
-              <button
+            <button
               key={label}
               onClick={() => onSelectAnswer(question.id, label)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '14px',
-                padding: '14px 20px',
-                borderRadius: '12px',
-                border: `2px solid ${isSelected ? '#3b82f6' : 'var(--border)'}`,
-                background: isSelected ? '#3b82f6' : 'var(--bg)',
-                color: isSelected ? '#fff' : 'var(--text)',
-                cursor: 'pointer',
-                textAlign: 'left',
-                transition: 'all 0.15s ease',
-                transform: isSelected ? 'translateX(4px)' : 'translateX(0)',
-                boxShadow: isSelected ? '0 4px 12px rgba(59,130,246,0.3)' : 'none',
-              }}
-              onMouseEnter={e => {
-                if (!isSelected) {
-                  e.currentTarget.style.borderColor = 'rgba(59,130,246,0.5)';
-                  e.currentTarget.style.background = 'rgba(59,130,246,0.03)';
-                }
-              }}
-              onMouseLeave={e => {
-                if (!isSelected) {
-                  e.currentTarget.style.borderColor = 'var(--border)';
-                  e.currentTarget.style.background = 'var(--bg)';
-                }
-              }}
+              className={`option-btn${isSelected ? ' selected' : ''}`}
             >
               {/* Label circle */}
-              <div style={{
-                width: '34px',
-                height: '34px',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexShrink: 0,
-                fontWeight: 800,
-                fontSize: '0.85rem',
-                background: isSelected ? '#fff' : 'transparent',
-                border: `2px solid ${isSelected ? '#fff' : 'var(--border)'}`,
-                color: isSelected ? '#3b82f6' : 'var(--text)',
-                transition: 'all 0.15s ease',
-              }}>
+              <div className="option-label">
                 {label}
               </div>
-              <span style={{
-                fontSize: '0.95rem',
-                color: isSelected ? '#fff' : 'var(--text)',
-                fontWeight: isSelected ? 600 : 400,
-                lineHeight: 1.5,
-              }}>
-                {optionText || <em style={{ color: 'var(--text)' }}>No option text</em>}
+              <span className="option-text">
+                {optionText || <em>No option text</em>}
               </span>
             </button>
           );
