@@ -117,19 +117,19 @@ export default function QuestionCard({
                 gap: '14px',
                 padding: '14px 20px',
                 borderRadius: '12px',
-                border: `2px solid ${isSelected ? 'var(--accent)' : 'var(--border)'}`,
-                background: isSelected ? 'var(--accent)' : 'var(--bg)',
+                border: `2px solid ${isSelected ? '#3b82f6' : 'var(--border)'}`,
+                background: isSelected ? '#3b82f6' : 'var(--bg)',
                 color: isSelected ? '#fff' : 'var(--text)',
                 cursor: 'pointer',
                 textAlign: 'left',
                 transition: 'all 0.15s ease',
                 transform: isSelected ? 'translateX(4px)' : 'translateX(0)',
-                boxShadow: isSelected ? '0 4px 12px rgba(139,92,246,0.3)' : 'none',
+                boxShadow: isSelected ? '0 4px 12px rgba(59,130,246,0.3)' : 'none',
               }}
               onMouseEnter={e => {
                 if (!isSelected) {
-                  e.currentTarget.style.borderColor = 'rgba(139,92,246,0.5)';
-                  e.currentTarget.style.background = 'rgba(139,92,246,0.03)';
+                  e.currentTarget.style.borderColor = 'rgba(59,130,246,0.5)';
+                  e.currentTarget.style.background = 'rgba(59,130,246,0.03)';
                 }
               }}
               onMouseLeave={e => {
@@ -152,7 +152,7 @@ export default function QuestionCard({
                 fontSize: '0.85rem',
                 background: isSelected ? '#fff' : 'transparent',
                 border: `2px solid ${isSelected ? '#fff' : 'var(--border)'}`,
-                color: isSelected ? 'var(--accent)' : 'var(--text)',
+                color: isSelected ? '#3b82f6' : 'var(--text)',
                 transition: 'all 0.15s ease',
               }}>
                 {label}

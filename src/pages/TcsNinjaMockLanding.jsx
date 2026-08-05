@@ -61,8 +61,8 @@ export default function TcsNinjaMockLanding({ navigate }) {
           flexWrap: 'wrap',
         }}>
           {[
-            { label: 'Questions', value: '50', icon: '📝' },
-            { label: 'Duration', value: '50 min', icon: '⏱️' },
+            { label: 'Questions', value: '60', icon: '📝' },
+            { label: 'Duration', value: '65 min', icon: '⏱️' },
             { label: 'Marking', value: '+1 / 0', icon: '🎯' },
           ].map(stat => (
             <div key={stat.label} style={{
@@ -74,7 +74,7 @@ export default function TcsNinjaMockLanding({ navigate }) {
             }}>
               <div style={{ fontSize: '1.2rem' }}>{stat.icon}</div>
               <div style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text)' }}>{stat.value}</div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>{stat.label}</div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text)' }}>{stat.label}</div>
             </div>
           ))}
         </div>
@@ -114,10 +114,10 @@ export default function TcsNinjaMockLanding({ navigate }) {
             🧠
           </div>
           <h2 style={{ margin: '0 0 10px 0', fontSize: '1.4rem', fontWeight: 800, color: 'var(--text)' }}>
-            Aptitude
+            Aptitude & Technical
           </h2>
-          <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 20px 0', lineHeight: 1.6 }}>
-            Quantitative, Logical Reasoning, and Verbal topics. 50 questions in 50 minutes.
+          <p style={{ color: 'var(--text)', fontSize: '0.9rem', margin: '0 0 20px 0', lineHeight: 1.6, opacity: 0.8 }}>
+            Part 1: Quantitative, Logical, Verbal (50 mins). Part 2: Technical (15 mins).
           </p>
           <div style={{
             display: 'flex',
@@ -126,12 +126,12 @@ export default function TcsNinjaMockLanding({ navigate }) {
             flexWrap: 'wrap',
             marginBottom: '24px',
           }}>
-            {['Quant', 'Logical', 'Verbal', 'DI'].map(tag => (
+            {['Quant', 'Logical', 'Verbal', 'Technical'].map(tag => (
               <span key={tag} style={{
                 padding: '3px 10px',
                 borderRadius: '20px',
-                background: 'rgba(139,92,246,0.1)',
-                color: 'var(--violet)',
+                background: 'var(--accent-bg, rgba(139,92,246,0.1))',
+                color: 'var(--accent, #aa3bff)',
                 fontSize: '0.75rem',
                 fontWeight: 600,
               }}>{tag}</span>
@@ -146,53 +146,6 @@ export default function TcsNinjaMockLanding({ navigate }) {
             fontSize: '0.95rem',
           }}>
             Start Test →
-          </div>
-        </motion.div>
-
-        {/* Coding Card - Coming Soon */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25, duration: 0.5 }}
-          style={{
-            width: '280px',
-            background: 'var(--card)',
-            border: '2px dashed var(--border)',
-            borderRadius: '20px',
-            padding: '36px 28px',
-            textAlign: 'center',
-            opacity: 0.65,
-            cursor: 'default',
-          }}
-        >
-          <div style={{
-            width: '72px',
-            height: '72px',
-            borderRadius: '50%',
-            background: 'var(--border)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            margin: '0 auto 20px auto',
-            fontSize: '2rem',
-          }}>
-            💻
-          </div>
-          <h2 style={{ margin: '0 0 10px 0', fontSize: '1.4rem', fontWeight: 800, color: 'var(--text)' }}>
-            Coding
-          </h2>
-          <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: '0 0 20px 0', lineHeight: 1.6 }}>
-            Programming challenges in C, C++, Java, Python. Browser-based code editor.
-          </p>
-          <div style={{
-            padding: '12px 24px',
-            borderRadius: '10px',
-            background: 'var(--border)',
-            color: 'var(--muted)',
-            fontWeight: 700,
-            fontSize: '0.95rem',
-          }}>
-            🚧 Coming Soon
           </div>
         </motion.div>
       </div>
