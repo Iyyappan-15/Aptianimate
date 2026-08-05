@@ -77,6 +77,65 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 button { cursor: pointer; font-family: inherit; border: none; outline: none; }
+
+/* ── Mock Test: Option Buttons ── */
+.option-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 2px solid var(--border) !important;
+  background: var(--bg) !important;
+  color: var(--text-h) !important;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: none;
+}
+.option-btn:hover {
+  border-color: rgba(59,130,246,0.5) !important;
+  background: rgba(59,130,246,0.05) !important;
+}
+.option-btn.selected {
+  border: 2px solid #3b82f6 !important;
+  background: #3b82f6 !important;
+  color: #fff !important;
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(59,130,246,0.35) !important;
+}
+.option-btn.selected .option-label {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: #3b82f6 !important;
+}
+.option-btn.selected .option-text {
+  color: #fff !important;
+  font-weight: 600;
+}
+.option-label {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 800;
+  font-size: 0.85rem;
+  background: transparent;
+  border: 2px solid var(--border);
+  color: var(--text-h);
+  transition: all 0.15s ease;
+}
+.option-text {
+  font-size: 0.95rem;
+  color: var(--text-h);
+  line-height: 1.5;
+}
 input, textarea, select { font-family: inherit; outline: none; box-sizing: border-box; width: 100%; }
 a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
