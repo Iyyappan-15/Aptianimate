@@ -25,7 +25,7 @@ export default function SubmitModal({ unansweredCount, totalQuestions, onConfirm
         onClick={e => e.stopPropagation()}
         style={{
           background: 'var(--card)',
-          border: '1px solid rgba(255,255,255,0.1)',
+          border: '1px solid var(--border)',
           borderRadius: '28px',
           padding: '40px',
           maxWidth: '480px',
@@ -101,7 +101,7 @@ export default function SubmitModal({ unansweredCount, totalQuestions, onConfirm
             {/* Bar */}
             <div style={{
               height: '10px',
-              background: 'rgba(255,255,255,0.05)',
+              background: 'var(--border)',
               borderRadius: '99px',
               overflow: 'hidden',
               marginBottom: '20px',
@@ -162,15 +162,15 @@ export default function SubmitModal({ unansweredCount, totalQuestions, onConfirm
                 padding: '16px',
                 borderRadius: '14px',
                 border: '1px solid var(--border)',
-                background: 'rgba(255,255,255,0.03)',
+                background: 'var(--bg)',
                 color: 'var(--text)',
                 cursor: 'pointer',
                 fontWeight: 700,
                 fontSize: '1rem',
                 transition: 'all 0.2s',
               }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.03)'; }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--border)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'var(--bg)'; }}
             >
               Cancel
             </button>
