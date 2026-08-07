@@ -45,7 +45,40 @@ function FormulaHighlight({ step, isActive }) {
   const timerRef = useRef(null);
 
   // Support both new format (render_data.formula_vars) and legacy (step.formula_vars)
-  const formulaVars = step.render_data?.formula_vars || step.formula_vars || [];
+  let formulaVars = step.render_data?.formula_vars || step.formula_vars || [];
+
+  const isOperator = (sym, color) =>
+    color === 'op' || ['=', '+', '-', '×', '÷', '−', '∗', '·', '±'].includes(sym?.trim());
+
+  // --- AI HALLUCINATION PATCH ---
+  // If the AI forgot the first term but included it in `formula_used`, 
+  // and the array starts with an operator like '=' or '-', reconstruct it!
+  if (formulaVars.length > 0 && step.formula_used) {
+    if (isOperator(formulaVars[0].symbol, formulaVars[0].color)) {
+      const opSymbol = formulaVars[0].symbol.trim();
+      // Only split if the formula_used contains the exact operator symbol
+      if (step.formula_used.includes(opSymbol)) {
+        const parts = step.formula_used.split(opSymbol);
+        if (parts.length > 1 && parts[0].trim().length > 0) {
+          const missingLhs = parts[0].trim();
+          let sym = missingLhs;
+          let lab = "";
+          
+          // Try to split into symbol and label based on the first space
+          const match = missingLhs.match(/^([^\s]+)\s+(.*)$/);
+          if (match) {
+             sym = match[1];
+             lab = match[2];
+          }
+
+          formulaVars = [
+            { symbol: sym, label: lab, color: 'a' }, // 'a' is default primary color
+            ...formulaVars
+          ];
+        }
+      }
+    }
+  }
 
   useEffect(() => {
     setVisibleVars([]);
@@ -78,9 +111,6 @@ function FormulaHighlight({ step, isActive }) {
     d:  { bg: 'rgba(220,38,38,0.12)',   text: '#DC2626', border: 'rgba(220,38,38,0.35)'  },
     op: { bg: 'transparent',            text: 'var(--muted)', border: 'transparent'       },
   };
-
-  const isOperator = (sym, color) =>
-    color === 'op' || ['=', '+', '-', '×', '÷', '→', '≈', '∴', '⟹'].includes(sym?.trim());
 
   return (
     <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', width: '100%' }}>
