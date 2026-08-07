@@ -411,8 +411,54 @@ img, svg { display: block; }
 /* ── Animation Player ── */
 .animation-panel {
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); overflow: hidden;
+  border-radius: var(--radius); overflow: visible;
   display: flex; flex-direction: column;
+}
+/* Two-column body: visual stage left, transcript right */
+.anim-body-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 320px;
+  overflow: hidden;
+}
+.anim-stage-col {
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  padding: 20px 12px;
+}
+.anim-stage-col .anim-stage {
+  width: 100%;
+  min-height: 260px;
+  padding: 0;
+  background: transparent;
+}
+.anim-transcript-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 16px;
+  overflow-y: auto;
+  max-height: 420px;
+}
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  .anim-body-layout {
+    grid-template-columns: 1fr;
+  }
+  .anim-stage-col {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    position: static;
+  }
+  .anim-transcript-col {
+    max-height: 280px;
+    padding: 14px 12px;
+  }
 }
 .anim-header {
   padding: 16px 20px; border-bottom: 1px solid var(--border);

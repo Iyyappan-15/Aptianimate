@@ -241,7 +241,6 @@ function App() {
                     <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
                       <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => { navigate(''); setIsMobileMenuOpen(false); }}>Home</button>
                       <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => { navigate('saved'); setIsMobileMenuOpen(false); }}>Saved</button>
-                      <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
                       {/* Ask AI nav button */}
                       <button
                         className={`nav-link ${route.startsWith('ask') ? 'active' : ''}`}
@@ -257,6 +256,8 @@ function App() {
                       >
                         AI Battle
                       </button>
+
+                      <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
 
                       {/* 🔐 Google Login / User Profile */}
                       {(!user || user.is_anonymous) ? (
