@@ -97,16 +97,18 @@ export default function AnimationPlayer({ animationScript, conceptSummary, formu
         <div className="anim-progress-fill" style={{ width: `${progress}%` }} />
       </div>
 
-      {/* Visual Build-up Stage */}
-      <div className="anim-steps-container" style={{ display: 'flex', flexDirection: 'column', gap: '32px', padding: '0 8px 24px' }}>
-        
-        {/* SINGLE PINNED STAGE */}
-        <div className="anim-stage" style={{ minHeight: 'unset', padding: '20px 12px', margin: 0, position: 'sticky', top: 0, zIndex: 10, background: 'var(--surface)', overflow: 'visible' }}>
-          <StepRenderer step={steps[currentStep]} isActive={true} />
+      {/* Two-column layout: Visual Stage (left) + Transcript (right) */}
+      <div className="anim-body-layout">
+
+        {/* LEFT: Pinned visual stage */}
+        <div className="anim-stage-col">
+          <div className="anim-stage" style={{ minHeight: 'unset', padding: '20px 12px', margin: 0 }}>
+            <StepRenderer step={steps[currentStep]} isActive={true} />
+          </div>
         </div>
 
-        {/* SCROLLING TRANSCRIPT */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+        {/* RIGHT: Scrolling transcript */}
+        <div className="anim-transcript-col">
           {steps.slice(0, currentStep + 1).map((s, idx) => {
             const isLatest = idx === currentStep;
             return (
@@ -115,10 +117,12 @@ export default function AnimationPlayer({ animationScript, conceptSummary, formu
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '8px',
-                opacity: isLatest ? 1 : 0.6,
-                transition: 'opacity 0.4s ease'
+                opacity: isLatest ? 1 : 0.55,
+                transition: 'opacity 0.4s ease',
+                borderBottom: '1px solid var(--border)',
+                paddingBottom: '16px',
               }}>
-                <div className="step-info" style={{ marginTop: 0, margin: 0 }}>
+                <div className="step-info" style={{ marginTop: 0, margin: 0, border: 'none', background: 'transparent', padding: '0' }}>
                   <div className="step-info-title">
                     <StepBadge num={idx + 1} /> {s.step_title || s.title || `Step ${idx + 1}`}
                   </div>
