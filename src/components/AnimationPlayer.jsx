@@ -110,9 +110,11 @@ export default function AnimationPlayer({ animationScript, conceptSummary, formu
         <div className="ap-progress-fill" style={{ width: `${progress}%` }} />
       </div>
 
-      {/* ── VISUAL STAGE (full width, large, breathing) ─ */}
+      {/* Visual Stage - inner wrapper fixes centered-overflow-left-clipping bug */}
       <div className="ap-stage">
-        <StepRenderer step={step} isActive={true} />
+        <div className="ap-stage-inner">
+          <StepRenderer step={step} isActive={true} />
+        </div>
       </div>
 
       {/* ── STEP DOT NAVIGATION ───────────────────── */}

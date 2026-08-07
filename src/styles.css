@@ -464,21 +464,36 @@ img, svg { display: block; }
 /* ── Visual Stage  (THE KEY CHANGE: full width, large, no overflow clip) ── */
 .ap-stage {
   width: 100%;
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 24px;
+  min-height: 320px;
+  /* OUTER = scroll container only — NO flex centering here.
+     flex centering on a scroll container causes content to bleed LEFT
+     which is permanently inaccessible (can't scroll to negative x). */
+  display: block;
+  padding: 28px 20px;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
-  overflow-x: auto;   /* allow inner content to scroll if wider than container */
+  overflow-x: auto;
   overflow-y: visible;
-  position: relative;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
 }
-/* Give all StepRenderer inner content a max width so it scales */
-.ap-stage > * {
-  max-width: 100%;
-  width: 100%;
+/* INNER = centering wrapper.
+   Because it's INSIDE the scroll container, centered overflow only
+   goes RIGHT — which is scrollable. Left side is never clipped. */
+.ap-stage-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: min-content;   /* grows to fit content naturally */
+  min-height: 240px;
+  width: 100%;              /* fills container when content is small */
+}
+/* Prevent StepRenderer children from squishing */
+.ap-stage-inner > * {
+  flex-shrink: 0;
+  max-width: none !important;  /* remove the old 100% width constraint */
+  width: auto !important;
 }
 
 /* ── Step dot nav ── */
@@ -660,7 +675,8 @@ img, svg { display: block; }
 
 /* Responsive */
 @media (max-width: 600px) {
-  .ap-stage { min-height: 220px; padding: 20px 14px; }
+  .ap-stage { min-height: 260px; padding: 16px 12px; }
+  .ap-stage-inner { min-height: 200px; }
   .ap-explain-card { padding: 16px 16px; }
   .ap-controls { padding: 10px 14px; }
   .ap-header { padding: 12px 14px; }
