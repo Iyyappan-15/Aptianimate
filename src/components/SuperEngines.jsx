@@ -223,10 +223,10 @@ export function NodeEngine({ step, isActive }) {
          * so overflow:hidden on parent panel NEVER clips it.
          */
         <div key={level} style={{
-          width: '100%',
-          overflowX: 'auto',
-          overflowY: 'visible',
-          textAlign: 'center',
+          minWidth: '100%',
+          width: 'max-content',
+          display: 'flex',
+          justifyContent: 'center',
           paddingBottom: '4px'
         }}>
           <div style={{
