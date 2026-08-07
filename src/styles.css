@@ -465,11 +465,12 @@ img, svg { display: block; }
 .ap-stage {
   width: 100%;
   min-height: 320px;
-  /* OUTER = scroll container only — NO flex centering here.
-     flex centering on a scroll container causes content to bleed LEFT
-     which is permanently inaccessible (can't scroll to negative x). */
-  display: block;
-  padding: 28px 20px;
+  /* The bulletproof centering + scrolling trick:
+     We use a flex container, and the content inside uses before/after spacers
+     to center when small, and left-align when overflowing, completely avoiding
+     the left-clip flex bug. */
+  display: flex;
+  padding: 28px 0;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
   overflow-x: auto;
@@ -478,21 +479,24 @@ img, svg { display: block; }
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
 }
-/* INNER = centering wrapper.
-   Because it's INSIDE the scroll container, centered overflow only
-   goes RIGHT — which is scrollable. Left side is never clipped. */
+/* We use pseudo-elements as flex spacers to push the content to the center.
+   When the content is too wide, these shrink to 0 and the content aligns left naturally. */
+.ap-stage::before, .ap-stage::after {
+  content: '';
+  flex: 1 0 auto;
+}
+
 .ap-stage-inner {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-width: min-content;   /* grows to fit content naturally */
+  flex-shrink: 0;           /* Do not shrink when wider than screen */
+  padding: 0 20px;          /* Ensure padding on sides when scrolling */
   min-height: 240px;
-  width: 100%;              /* fills container when content is small */
 }
 /* Prevent StepRenderer children from squishing */
 .ap-stage-inner > * {
   flex-shrink: 0;
-  max-width: none !important;  /* remove the old 100% width constraint */
+  max-width: none !important;
   width: auto !important;
 }
 

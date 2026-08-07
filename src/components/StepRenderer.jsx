@@ -94,16 +94,18 @@ function FormulaHighlight({ step, isActive }) {
         overflowX: 'auto',
         overflowY: 'visible',
         scrollbarWidth: 'thin',
-        display: 'block' // Outer must be block
+        display: 'flex' // Outer must be flex for the spacer trick
       }}>
+        {/* Left Spacer */}
+        <div style={{ flex: '1 0 auto' }} />
+
         <div className="custom-scrollbar" style={{
           display: 'flex',
-          width: 'max-content',
-          margin: '0 auto', // Centers when small, left-aligns when large
+          flexShrink: 0, // CRITICAL: Never shrink, let outer container scroll
           flexWrap: 'nowrap',
           alignItems: 'center',
           gap: '12px',
-          padding: '24px 32px',
+          padding: '24px 12px',
         }}>
         {formulaVars.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
@@ -157,6 +159,9 @@ function FormulaHighlight({ step, isActive }) {
           );
         })}
         </div>
+        
+        {/* Right Spacer */}
+        <div style={{ flex: '1 0 auto' }} />
       </div>
 
       {/* Formula description string */}
