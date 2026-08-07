@@ -113,7 +113,7 @@ export default function AnimationPlayer({ animationScript, conceptSummary, formu
       {/* Visual Stage - inner wrapper fixes centered-overflow-left-clipping bug */}
       <div className="ap-stage">
         <div className="ap-stage-inner">
-          <StepRenderer step={step} isActive={true} />
+          <StepRenderer step={step} isActive={true} steps={steps} currentStep={currentStep} />
         </div>
       </div>
 
