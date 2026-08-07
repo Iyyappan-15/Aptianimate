@@ -408,103 +408,264 @@ img, svg { display: block; }
 .hint-card .label { font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
 .hint-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 
-/* ── Animation Player ── */
-.animation-panel {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); overflow: visible;
-  display: flex; flex-direction: column;
-}
-/* Two-column body: visual stage left, transcript right */
-.anim-body-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 320px;
-  overflow: hidden;
-}
-.anim-stage-col {
-  border-right: 1px solid var(--border);
+
+/* ══════════════════════════════════════════════════════════════
+   ANIMATION PLAYER  —  Professional full-width redesign
+   ══════════════════════════════════════════════════════════════ */
+
+/* Shell */
+.ap-shell {
   background: var(--surface);
-  display: flex;
-  align-items: flex-start;
-  position: sticky;
-  top: 0;
-  align-self: start;
-  padding: 20px 12px;
-}
-.anim-stage-col .anim-stage {
-  width: 100%;
-  min-height: 260px;
-  padding: 0;
-  background: transparent;
-}
-.anim-transcript-col {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 20px 16px;
-  overflow-y: auto;
-  max-height: 420px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
 }
-/* Responsive: stack vertically on mobile */
-@media (max-width: 768px) {
-  .anim-body-layout {
-    grid-template-columns: 1fr;
-  }
-  .anim-stage-col {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-    position: static;
-  }
-  .anim-transcript-col {
-    max-height: 280px;
-    padding: 14px 12px;
-  }
+
+/* Empty state */
+.ap-empty {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; padding: 60px 20px;
+  color: var(--text-sec); font-size: 1rem;
 }
-.anim-header {
-  padding: 16px 20px; border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
-}
-.anim-title { font-size: 0.95rem; font-weight: 700; }
-.step-badge {
-  padding: 3px 10px; border-radius: var(--radius-pill);
-  background: var(--surface2); color: var(--violet); border: 1px solid var(--border);
-  font-size: 0.75rem; font-weight: 700;
-}
-.anim-progress-bar {
-  height: 4px; background: var(--surface3);
-  position: relative;
-}
-.anim-progress-fill {
-  height: 100%; background: var(--violet);
-  transition: width 0.4s ease;
-}
-.anim-stage {
-  flex: 1; min-height: 300px;
-  display: flex; align-items: center; justify-content: center;
-  padding: 24px 20px; position: relative; overflow: visible;
+
+/* ── Header ── */
+.ap-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
   background: var(--surface);
 }
-.anim-controls {
-  padding: 14px 20px; border-top: 1px solid var(--border);
-  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+.ap-header-left { display: flex; align-items: center; gap: 10px; }
+.ap-icon { font-size: 1.1rem; }
+.ap-title { font-size: 1rem; font-weight: 800; color: var(--text); }
+.ap-header-right { display: flex; align-items: center; gap: 12px; }
+.ap-step-label {
+  font-size: 0.78rem; font-weight: 700; color: var(--violet);
+  background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.25);
+  padding: 3px 12px; border-radius: 100px;
 }
-.anim-ctrl-center { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; }
-.anim-ctrl-right { display: flex; align-items: center; gap: 8px; margin-left: auto; }
-.speed-select {
+.ap-speed {
   background: var(--surface2); border: 1px solid var(--border);
   color: var(--text); font-size: 0.78rem; font-weight: 600;
-  padding: 4px 8px; border-radius: 6px; cursor: pointer;
+  padding: 4px 10px; border-radius: 8px; cursor: pointer;
 }
-.step-info {
-  padding: 16px 20px; border-top: 1px solid var(--border);
+
+/* ── Progress bar ── */
+.ap-progress-bar { height: 3px; background: var(--border); }
+.ap-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--violet), var(--teal));
+  transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ── Visual Stage  (THE KEY CHANGE: full width, large, no overflow clip) ── */
+.ap-stage {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;   /* allow inner content to scroll if wider than container */
+  overflow-y: visible;
+  position: relative;
+}
+/* Give all StepRenderer inner content a max width so it scales */
+.ap-stage > * {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* ── Step dot nav ── */
+.ap-dot-nav {
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px; padding: 14px 20px;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.ap-dot {
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 2px solid var(--border);
   background: var(--surface2);
+  color: var(--text-sec);
+  font-size: 0.7rem; font-weight: 800;
+  cursor: pointer; transition: all 0.2s ease;
+  display: flex; align-items: center; justify-content: center;
 }
+.ap-dot:hover { border-color: var(--violet); color: var(--violet); transform: scale(1.15); }
+.ap-dot.done {
+  background: rgba(16,185,129,0.12);
+  border-color: #10B981; color: #10B981;
+}
+.ap-dot.active {
+  background: linear-gradient(135deg, var(--violet), var(--teal));
+  border-color: transparent; color: #fff;
+  box-shadow: 0 2px 8px rgba(124,58,237,0.4);
+  transform: scale(1.2);
+}
+
+/* ── Step explanation card ── */
+.ap-explain-card {
+  padding: 20px 24px;
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+  animation: fadeIn 0.4s ease;
+}
+.ap-explain-num {
+  font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--violet); margin-bottom: 4px;
+}
+.ap-explain-title {
+  font-size: 1.05rem; font-weight: 800; color: var(--text);
+  margin-bottom: 8px; line-height: 1.4;
+}
+.ap-explain-text {
+  font-size: 0.92rem; line-height: 1.7; color: var(--text-sec);
+}
+.ap-analogy {
+  margin-top: 12px; padding: 10px 14px;
+  background: rgba(239,159,39,0.08);
+  border-left: 3px solid var(--amber);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.85rem; color: var(--amber);
+  display: flex; gap: 8px; align-items: flex-start;
+}
+.ap-analogy-icon { font-size: 1rem; flex-shrink: 0; }
+
+/* ── Playback controls ── */
+.ap-controls {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 20px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.ap-ctrl-group { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.ap-ctrl-spacer { width: 36px; }
+.ap-ctrl-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 6px; border-radius: 10px; cursor: pointer;
+  font-weight: 700; font-size: 0.85rem;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.ap-ctrl-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.ap-ctrl-ghost {
+  width: 36px; height: 36px; padding: 0;
+  background: transparent; border: 1.5px solid var(--border);
+  color: var(--text-sec);
+}
+.ap-ctrl-ghost:hover:not(:disabled) {
+  border-color: var(--violet); color: var(--violet);
+  background: rgba(124,58,237,0.06);
+}
+.ap-ctrl-play {
+  padding: 9px 22px; height: 36px;
+  background: linear-gradient(135deg, var(--violet), #6d28d9);
+  border: none; color: #fff;
+  box-shadow: 0 3px 10px rgba(124,58,237,0.35);
+}
+.ap-ctrl-play:hover { opacity: 0.92; transform: translateY(-1px); }
+
+/* ── Full walkthrough timeline (shows after finished) ── */
+.ap-timeline {
+  padding: 20px 24px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  display: flex; flex-direction: column; gap: 8px;
+  animation: slideUp 0.5s ease;
+}
+.ap-timeline-label {
+  font-size: 0.75rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--text-sec); margin-bottom: 4px;
+}
+.ap-timeline-item {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 12px 16px; border-radius: 12px;
+  background: var(--surface2); border: 1.5px solid var(--border);
+  cursor: pointer; text-align: left;
+  transition: all 0.15s ease; font-family: inherit;
+  color: var(--text);
+}
+.ap-timeline-item:hover { border-color: var(--violet); background: rgba(124,58,237,0.05); }
+.ap-timeline-active {
+  border-color: var(--violet) !important;
+  background: rgba(124,58,237,0.08) !important;
+}
+.ap-timeline-num {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet), var(--teal));
+  color: #fff; font-size: 0.7rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  margin-top: 2px;
+}
+.ap-timeline-content { display: flex; flex-direction: column; gap: 3px; }
+.ap-timeline-item-title { font-size: 0.88rem; font-weight: 700; color: var(--text); }
+.ap-timeline-item-text { font-size: 0.8rem; color: var(--text-sec); line-height: 1.5; }
+
+/* ── Concept summary ── */
+.ap-concept {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 18px 24px;
+  background: linear-gradient(135deg, rgba(124,58,237,0.07), rgba(20,184,166,0.07));
+  border-top: 1px solid var(--border);
+  animation: slideUp 0.5s ease;
+}
+.ap-concept-icon { font-size: 1.3rem; flex-shrink: 0; }
+.ap-concept-label { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--violet); margin-bottom: 5px; }
+.ap-concept-text { font-size: 0.92rem; line-height: 1.6; color: var(--text); }
+
+/* ── Formula + Verification ── */
+.ap-verify-panel {
+  padding: 20px 24px; display: flex; flex-direction: column; gap: 16px;
+  background: var(--surface2); border-top: 1px solid var(--border);
+  animation: slideUp 0.6s ease;
+}
+.ap-formula-label, .ap-verify-label {
+  font-size: 0.75rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.07em; color: var(--text-sec); margin-bottom: 8px;
+}
+.ap-formula-text {
+  font-family: monospace; font-size: 1rem;
+  color: var(--violet); padding: 14px 18px;
+  background: var(--bg); border: 1px dashed var(--border); border-radius: 10px;
+  word-break: break-word;
+}
+.ap-verify-body {
+  display: flex; flex-direction: column; gap: 8px;
+  font-size: 0.88rem; color: var(--text); line-height: 1.6;
+  padding: 14px 18px; background: var(--bg); border-radius: 10px; border: 1px solid var(--border);
+}
+
+/* ── Old class aliases (keep for any other code referencing them) ── */
+.animation-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; }
+.anim-progress-bar { height: 3px; background: var(--border); }
+.anim-progress-fill { height: 100%; background: linear-gradient(90deg, var(--violet), var(--teal)); transition: width 0.5s ease; }
+.anim-header { padding: 14px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.anim-title { font-size: 0.95rem; font-weight: 700; }
+.step-badge { padding: 3px 10px; border-radius: 100px; background: rgba(124,58,237,0.1); color: var(--violet); border: 1px solid rgba(124,58,237,0.25); font-size: 0.75rem; font-weight: 700; }
+.anim-stage { min-height: 280px; display: flex; align-items: center; justify-content: center; padding: 28px 24px; background: var(--bg); overflow-x: auto; }
+.anim-controls { padding: 12px 20px; border-top: 1px solid var(--border); display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.anim-ctrl-center { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.anim-ctrl-right { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.speed-select { background: var(--surface2); border: 1px solid var(--border); color: var(--text); font-size: 0.78rem; font-weight: 600; padding: 4px 10px; border-radius: 8px; cursor: pointer; }
+.step-info { padding: 16px 20px; border-top: 1px solid var(--border); background: var(--surface2); }
 .step-info-title { font-size: 0.8rem; font-weight: 700; color: var(--violet); margin-bottom: 4px; }
 .step-info-text { font-size: 0.875rem; line-height: 1.6; color: var(--text); }
-.step-formula {
-  margin-top: 8px; padding: 10px 14px; border-radius: var(--radius-sm);
-  background: var(--surface); border: 1px solid var(--border);
-  font-family: var(--mono); color: var(--violet); font-size: 0.85rem;
+.step-formula { margin-top: 8px; padding: 10px 14px; border-radius: 8px; background: var(--surface); border: 1px solid var(--border); font-family: var(--mono); color: var(--violet); font-size: 0.85rem; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .ap-stage { min-height: 220px; padding: 20px 14px; }
+  .ap-explain-card { padding: 16px 16px; }
+  .ap-controls { padding: 10px 14px; }
+  .ap-header { padding: 12px 14px; }
+  .ap-dot-nav { gap: 5px; padding: 10px 14px; }
+  .ap-dot { width: 24px; height: 24px; font-size: 0.65rem; }
 }
 
 /* â”€â”€ Step Renderer Visual Types â”€â”€ */
