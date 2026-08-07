@@ -84,11 +84,6 @@ function FormulaHighlight({ step, isActive }) {
 
   return (
     <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', width: '100%' }}>
-      {/*
-       * BULLETPROOF CENTERING: outer text-align:center + inner display:inline-flex
-       * Inline elements centered by text-align start at x≥0, so overflow:hidden on
-       * the parent panel can never clip the leftmost formula token.
-       */}
       <div style={{
         marginBottom: '24px',
         background: 'var(--surface2)',
@@ -99,16 +94,16 @@ function FormulaHighlight({ step, isActive }) {
         overflowX: 'auto',
         overflowY: 'visible',
         scrollbarWidth: 'thin',
-        textAlign: 'center'
+        display: 'block' // Outer must be block
       }}>
         <div className="custom-scrollbar" style={{
-          display: 'inline-flex',
+          display: 'flex',
+          width: 'max-content',
+          margin: '0 auto', // Centers when small, left-aligns when large
           flexWrap: 'nowrap',
           alignItems: 'center',
           gap: '12px',
           padding: '24px 32px',
-          textAlign: 'left',
-          verticalAlign: 'middle'
         }}>
         {formulaVars.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
