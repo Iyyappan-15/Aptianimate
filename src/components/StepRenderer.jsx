@@ -108,7 +108,6 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
             { ...missingVar, color: 'a' }, // reset to primary theme color
             ...formulaVars
           ];
-          prepended = true;
         } else {
           // Absolute fallback: just use the last introduced variable from previous steps
           const fallbackVar = previousVars[previousVars.length - 1];
@@ -117,7 +116,6 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
               { ...fallbackVar, color: 'a' },
               ...formulaVars
             ];
-            prepended = true;
           }
         }
       }
