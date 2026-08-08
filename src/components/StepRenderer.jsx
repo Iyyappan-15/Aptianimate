@@ -162,23 +162,23 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
 
   return (
     <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', width: '100%' }}>
-      <div style={{
+      <div className="custom-scrollbar" style={{
         marginBottom: '24px',
         background: 'var(--surface2)',
         borderRadius: '16px',
         border: '1px solid var(--border)',
         boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-        minWidth: '100%',
-        width: 'max-content',
-        display: 'flex',
-        justifyContent: 'center'
+        width: '100%',
+        overflowX: 'auto',
       }}>
-        <div className="custom-scrollbar" style={{
+        <div style={{
           display: 'flex',
           flexWrap: 'nowrap',
           alignItems: 'center',
           gap: '12px',
           padding: '24px 32px',
+          width: 'max-content',
+          margin: '0 auto',
         }}>
         {formulaVars.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;
