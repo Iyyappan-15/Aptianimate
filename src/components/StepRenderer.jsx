@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from 'react';
 // import { describeArc, CHART_COLORS } from '../utils/animationHelpers';
 import { GridEngine, NodeEngine, AxisEngine, BarEngine, EntityEngine, PieEngine, DirectionEngine } from './SuperEngines';
 
-export default function StepRenderer({ step, isActive }) {
+export default function StepRenderer({ step, isActive, steps, currentStep }) {
   if (!step) return null;
 
   // Route based on the new visual_engine field (or fallback to old visual_type for backwards compatibility)
@@ -22,10 +22,10 @@ export default function StepRenderer({ step, isActive }) {
     case 'direction_engine':  return <DirectionEngine step={step} isActive={isActive} />;
 
     // Formula engine — reads from render_data.formula_vars (new) or step.formula_vars (legacy)
-    case 'formula_engine':    return <FormulaHighlight step={step} isActive={isActive} />;
+    case 'formula_engine':    return <FormulaHighlight step={step} isActive={isActive} steps={steps} currentStep={currentStep} />;
 
     // Legacy support
-    case 'formula_highlight': return <FormulaHighlight step={step} isActive={isActive} />;
+    case 'formula_highlight': return <FormulaHighlight step={step} isActive={isActive} steps={steps} currentStep={currentStep} />;
     case 'equation_solve':    return <EquationSolve step={step} isActive={isActive} />;
     case 'number_morph':      return <NumberMorph step={step} isActive={isActive} />;
     case 'comparison_visual': return <ComparisonVisual step={step} isActive={isActive} />;
@@ -39,7 +39,7 @@ export default function StepRenderer({ step, isActive }) {
 // ─── FORMULA HIGHLIGHT ────────────────────────────────────────────────────────
 // Shows a formula building up piece by piece with colored labeled tokens
 // Reads from step.render_data.formula_vars (v2) OR step.formula_vars (legacy)
-function FormulaHighlight({ step, isActive }) {
+function FormulaHighlight({ step, isActive, steps, currentStep }) {
   const [visibleVars, setVisibleVars] = useState([]);
   const [showFormulaDesc, setShowFormulaDesc] = useState(false);
   const timerRef = useRef(null);
@@ -50,14 +50,32 @@ function FormulaHighlight({ step, isActive }) {
   const isOperator = (sym, color) =>
     color === 'op' || ['=', '+', '-', '×', '÷', '−', '∗', '·', '±'].includes(sym?.trim());
 
+  // Collect candidate variables from previous steps in this animation timeline
+  let previousVars = [];
+  if (Array.isArray(steps) && typeof currentStep === 'number' && currentStep > 0) {
+    for (let sIdx = 0; sIdx < currentStep; sIdx++) {
+      const prevStep = steps[sIdx];
+      const prevVars = prevStep.render_data?.formula_vars || prevStep.formula_vars || [];
+      prevVars.forEach(v => {
+        if (v && v.symbol && !isOperator(v.symbol, v.color)) {
+          // Avoid duplicate symbols
+          if (!previousVars.some(pv => pv.symbol.trim().toLowerCase() === v.symbol.trim().toLowerCase())) {
+            previousVars.push(v);
+          }
+        }
+      });
+    }
+  }
+
   // --- AI HALLUCINATION PATCH ---
-  // If the AI forgot the first term but included it in `formula_used`, 
-  // and the array starts with an operator like '=' or '-', reconstruct it!
-  if (formulaVars.length > 0 && step.formula_used) {
+  // If the AI forgot the first term but the array starts with an operator like '+' or '-', reconstruct it!
+  if (formulaVars.length > 0) {
     if (isOperator(formulaVars[0].symbol, formulaVars[0].color)) {
       const opSymbol = formulaVars[0].symbol.trim();
-      // Only split if the formula_used contains the exact operator symbol
-      if (step.formula_used.includes(opSymbol)) {
+      let prepended = false;
+
+      // Method 1: Try using step.formula_used if available
+      if (step.formula_used && step.formula_used.includes(opSymbol)) {
         const parts = step.formula_used.split(opSymbol);
         if (parts.length > 1 && parts[0].trim().length > 0) {
           const missingLhs = parts[0].trim();
@@ -75,6 +93,32 @@ function FormulaHighlight({ step, isActive }) {
             { symbol: sym, label: lab, color: 'a' }, // 'a' is default primary color
             ...formulaVars
           ];
+          prepended = true;
+        }
+      }
+
+      // Method 2: Fallback to previous steps in the animation timeline
+      if (!prepended && previousVars.length > 0) {
+        // Find a variable from previous steps that is NOT already in the current formulaVars
+        const missingVar = previousVars.find(pv => 
+          !formulaVars.some(fv => fv.symbol && fv.symbol.trim().toLowerCase() === pv.symbol.trim().toLowerCase())
+        );
+        if (missingVar) {
+          formulaVars = [
+            { ...missingVar, color: 'a' }, // reset to primary theme color
+            ...formulaVars
+          ];
+          prepended = true;
+        } else {
+          // Absolute fallback: just use the last introduced variable from previous steps
+          const fallbackVar = previousVars[previousVars.length - 1];
+          if (fallbackVar) {
+            formulaVars = [
+              { ...fallbackVar, color: 'a' },
+              ...formulaVars
+            ];
+            prepended = true;
+          }
         }
       }
     }
