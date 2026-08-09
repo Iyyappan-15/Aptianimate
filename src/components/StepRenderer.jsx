@@ -40,7 +40,7 @@ export default function StepRenderer({ step, isActive, steps, currentStep }) {
 // Shows a formula building up piece by piece with colored labeled tokens
 // Reads from step.render_data.formula_vars (v2) OR step.formula_vars (legacy)
 function FormulaHighlight({ step, isActive, steps, currentStep }) {
-  const [visibleVars, setVisibleVars] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(0);
   const [showFormulaDesc, setShowFormulaDesc] = useState(false);
   const timerRef = useRef(null);
 
@@ -129,7 +129,7 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
   }
 
   useEffect(() => {
-    setVisibleVars([]);
+    setVisibleCount(0);
     setShowFormulaDesc(false);
     if (!isActive) return;
 
@@ -138,15 +138,16 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
       return;
     }
 
-    let i = 0;
     const show = () => {
-      if (i < formulaVars.length) {
-        setVisibleVars(prev => [...prev, i]);
-        i++;
-        timerRef.current = setTimeout(show, 300);
-      } else {
-        timerRef.current = setTimeout(() => setShowFormulaDesc(true), 400);
-      }
+      setVisibleCount(prev => {
+        if (prev < formulaVars.length) {
+          timerRef.current = setTimeout(show, 300);
+          return prev + 1;
+        } else {
+          timerRef.current = setTimeout(() => setShowFormulaDesc(true), 400);
+          return prev;
+        }
+      });
     };
     timerRef.current = setTimeout(show, 200);
     return () => clearTimeout(timerRef.current);
@@ -187,8 +188,8 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
             <div
               key={i}
               style={{
-                opacity: visibleVars.includes(i) ? 1 : 0,
-                transform: visibleVars.includes(i) ? 'translateY(0) scale(1)' : 'translateY(-10px) scale(0.9)',
+                opacity: i < visibleCount ? 1 : 0,
+                transform: i < visibleCount ? 'translateY(0) scale(1)' : 'translateY(-10px) scale(0.9)',
                 transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
                 display: 'inline-flex',
                 flexDirection: 'column',
