@@ -46,7 +46,7 @@ export default function TcsNinjaMockLanding({ navigate }) {
       >
         <div style={{ fontSize: '3.5rem', marginBottom: '16px' }}>🏢</div>
         <h1 style={{ margin: '0 0 12px 0', fontSize: '2rem', fontWeight: 900, color: 'var(--text)' }}>
-          TCS Ninja Pattern
+          TCS Ninja Mock Test
         </h1>
         <p style={{ color: 'var(--muted)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.7 }}>
           Practice with the authentic TCS Ninja exam pattern. Choose a section to begin your timed mock test.
