@@ -44,10 +44,10 @@ function PreTestScreen({ onStart }) {
         }}>💼</div>
 
         <h1 style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--text)', marginBottom: '8px' }}>
-          TCS Ninja Mock Test
+          TCS Mock Test
         </h1>
         <p style={{ color: 'var(--muted)', fontSize: '1.1rem', marginBottom: '32px' }}>
-          Complete simulation of the TCS Ninja assessment.
+          Complete simulation of the TCS assessment.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '32px' }}>
@@ -153,7 +153,7 @@ function SectionView({
             }}>🧠</div>
             <div>
               <div style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--text)', lineHeight: 1.2 }}>
-                TCS Ninja · {sectionTitle}
+                TCS · {sectionTitle}
               </div>
               <div style={{ fontSize: '0.72rem', color: 'var(--muted)', lineHeight: 1.2 }}>
                 {answeredCount} / {questions.length} answered ({progressPct}%)
