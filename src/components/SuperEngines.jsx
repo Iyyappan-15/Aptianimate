@@ -572,124 +572,302 @@ export function BarEngine({ step, isActive }) {
 export function EntityEngine({ step, isActive }) {
   const data = step.render_data || {};
   const entities = data.entities || [];
+  const [triggered, setTriggered] = useState(false);
+
+  useEffect(() => {
+    if (!isActive) {
+      setTriggered(false);
+      return;
+    }
+    // Small delay to ensure layout is ready before animating
+    const t = setTimeout(() => setTriggered(true), 80);
+    return () => clearTimeout(t);
+  }, [isActive, step]);
 
   function getEmoji(type) {
     const map = {
-      car: '🚙',
-      train: '🚂',
+      car: '🚗',
+      train: '🚆',
       coin: '🪙',
-      worker: '👷‍♂️',
+      worker: '👷',
       box: '📦',
       clock: '⏳',
-      person: '🏃'
+      person: '🏃',
+      boat: '⛵',
+      plane: '✈️',
     };
     return map[(type || '').toLowerCase()] || '🔵';
   }
 
-  function getStartStyle(ent) {
-    return { left: (ent.startX || 0) + '%', opacity: 0, scale: 0.8 };
-  }
-
-  function getEndStyle(ent) {
-    return {
-      left: (isActive ? (ent.endX != null ? ent.endX : 50) : (ent.startX || 0)) + '%',
-      opacity: isActive ? 1 : 0,
-      scale: isActive ? 1 : 0.8
-    };
-  }
-
-  // Add subtle bobbing animation based on type
-  const getBobbing = (type) => {
-    if (['car', 'train', 'person', 'worker'].includes(type?.toLowerCase())) {
-      return {
-        y: [0, -6, 0],
-        transition: { repeat: Infinity, duration: 0.5, ease: "easeInOut" }
-      };
-    }
-    return {};
-  };
+  // Detect scenario type from entities
+  const hasObstacle = !!data.obstacle;
+  const isTwoEntity = entities.length >= 2;
+  const isOpposing = isTwoEntity && entities.some(e => (e.startX || 0) > 50 && (e.endX || 0) < 50);
+  const isSameDir  = isTwoEntity && !isOpposing && entities.every(e => (e.endX || 0) > (e.startX || 0));
 
   return (
-    <div style={{ width: '100%', height: '180px', position: 'relative', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
-      
-      {/* The Road / Track Background */}
-      <div style={{ 
-        position: 'absolute', 
-        bottom: '30px', 
-        width: '100%', 
-        height: '40px', 
-        background: 'var(--surface2)', 
-        borderTop: '2px solid var(--border)',
-        borderBottom: '4px solid var(--surface3)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        zIndex: 0
+    <div style={{
+      width: '100%',
+      padding: '0 8px 12px 8px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '0px',
+    }}>
+
+      {/* ── Track scene ── */}
+      <div style={{
+        position: 'relative',
+        width: '100%',
+        height: '160px',
+        overflow: 'hidden',
       }}>
-        {/* Dashed line in middle of road */}
-        <div style={{ width: '100%', height: '2px', background: 'var(--border)', opacity: 0.5, borderStyle: 'dashed', borderWidth: '2px', borderColor: 'var(--text-muted)' }} />
-      </div>
 
-      {/* Start and End Flags if distance is mentioned */}
-      {data.distance && (
-        <>
-          <div style={{ position: 'absolute', bottom: '10px', left: '5%', fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--muted)' }}>Start</div>
-          <div style={{ position: 'absolute', bottom: '10px', right: '5%', fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--muted)' }}>End ({data.distance})</div>
-        </>
-      )}
+        {/* Sky / background */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(180deg, var(--surface2) 0%, var(--card) 100%)',
+          borderRadius: '12px',
+        }} />
 
-      {entities.map((ent, i) => (
-        <motion.div
-          key={i}
-          initial={getStartStyle(ent)}
-          animate={getEndStyle(ent)}
-          transition={{ duration: ent.duration || 3, ease: 'easeInOut', delay: ent.delay || 0 }}
-          style={{
-            position: 'absolute',
-            bottom: '40px', // Sit on the road
-            transform: 'translateX(-50%)',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            zIndex: 10 + i
-          }}
-        >
-          {/* Label Bubble (Glassmorphism) */}
-          {ent.label && (
-            <motion.div 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: (ent.delay || 0) + 0.5 }}
-              style={{ 
-                fontSize: '0.85rem', 
-                fontWeight: '800', 
-                color: 'var(--text-main)', 
-                backgroundColor: 'rgba(255,255,255,0.85)',
-                backdropFilter: 'blur(4px)',
-                padding: '4px 12px', 
-                borderRadius: '12px', 
-                marginBottom: '10px',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-                border: '1px solid rgba(0,0,0,0.05)',
-                whiteSpace: 'nowrap'
+        {/* Ground strip */}
+        <div style={{
+          position: 'absolute', bottom: 0, left: 0, right: 0,
+          height: '44px',
+          background: 'var(--surface3)',
+          borderTop: '2px solid var(--border)',
+        }} />
+
+        {/* Rail tracks — two parallel lines */}
+        <div style={{
+          position: 'absolute', bottom: '28px', left: '4%', right: '4%',
+          height: '3px', background: 'var(--border)', borderRadius: '2px',
+        }} />
+        <div style={{
+          position: 'absolute', bottom: '36px', left: '4%', right: '4%',
+          height: '3px', background: 'var(--border)', borderRadius: '2px',
+        }} />
+        {/* Rail sleepers (cross-ties) */}
+        {Array.from({ length: 14 }).map((_, i) => (
+          <div key={i} style={{
+            position: 'absolute', bottom: '26px',
+            left: `${6 + i * 6.5}%`,
+            width: '12px', height: '14px',
+            background: 'var(--surface3)',
+            border: '1px solid var(--border)',
+            borderRadius: '2px',
+          }} />
+        ))}
+
+        {/* Obstacle: pole / platform / bridge */}
+        {hasObstacle && (
+          <motion.div
+            initial={{ opacity: 0, scaleY: 0 }}
+            animate={{ opacity: triggered ? 1 : 0, scaleY: triggered ? 1 : 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            style={{
+              position: 'absolute',
+              left: `${data.obstacle.x || 75}%`,
+              bottom: '28px',
+              transformOrigin: 'bottom',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '2px',
+            }}
+          >
+            {data.obstacle.type === 'pole' && (
+              <>
+                <div style={{
+                  width: '6px', height: '60px',
+                  background: 'linear-gradient(180deg, #D97706, #92400E)',
+                  borderRadius: '3px',
+                  boxShadow: '0 0 10px rgba(217,119,6,0.4)',
+                }} />
+                <div style={{
+                  fontSize: '0.65rem', fontWeight: 800,
+                  color: 'var(--amber)', whiteSpace: 'nowrap',
+                  background: 'var(--surface2)',
+                  padding: '2px 6px', borderRadius: '6px',
+                  border: '1px solid var(--amber)',
+                }}>
+                  {data.obstacle.label || 'Pole'}
+                </div>
+              </>
+            )}
+            {data.obstacle.type === 'platform' && (
+              <>
+                <div style={{
+                  width: '80px', height: '30px',
+                  background: 'linear-gradient(180deg, #6B7280, #374151)',
+                  borderRadius: '6px 6px 0 0',
+                  border: '1px solid var(--border)',
+                }} />
+                <div style={{
+                  fontSize: '0.65rem', fontWeight: 800,
+                  color: 'var(--text-sec)', whiteSpace: 'nowrap',
+                }}>
+                  {data.obstacle.label || 'Platform'}
+                </div>
+              </>
+            )}
+            {(!data.obstacle.type || data.obstacle.type === 'bridge') && (
+              <>
+                <div style={{
+                  width: `${data.obstacle.widthPct || 30}%`,
+                  minWidth: '60px',
+                  height: '14px',
+                  background: 'linear-gradient(180deg, #6B7280, #1F2937)',
+                  borderRadius: '4px 4px 0 0',
+                  border: '1px solid var(--border)',
+                }} />
+                <div style={{
+                  fontSize: '0.65rem', fontWeight: 800,
+                  color: 'var(--text-sec)', whiteSpace: 'nowrap',
+                }}>
+                  {data.obstacle.label || 'Bridge'}
+                </div>
+              </>
+            )}
+          </motion.div>
+        )}
+
+        {/* Direction arrows for opposing trains */}
+        {isOpposing && triggered && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            style={{
+              position: 'absolute', top: '12px', left: '50%',
+              transform: 'translateX(-50%)',
+              display: 'flex', alignItems: 'center', gap: '6px',
+              fontSize: '0.7rem', fontWeight: 800, color: 'var(--violet)',
+              background: 'rgba(124,58,237,0.1)',
+              border: '1px solid var(--violet)',
+              padding: '3px 10px', borderRadius: '20px',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            ← Approaching →
+          </motion.div>
+        )}
+
+        {/* Distance bracket label */}
+        {data.distance && triggered && (
+          <motion.div
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            style={{
+              position: 'absolute', top: '8px', left: '50%',
+              transform: 'translateX(-50%)',
+              fontSize: '0.7rem', fontWeight: 800, color: 'var(--teal)',
+              background: 'var(--surface2)',
+              border: '1px solid var(--teal)',
+              padding: '2px 10px', borderRadius: '20px',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {data.distance}
+          </motion.div>
+        )}
+
+        {/* ── Entities ── */}
+        {entities.map((ent, i) => {
+          const startPct = ent.startX ?? (i === 0 ? 5 : 90);
+          const endPct   = isActive && triggered ? (ent.endX ?? (i === 0 ? 75 : 20)) : startPct;
+          const flipH    = startPct > endPct; // Moving left — flip emoji
+
+          return (
+            <motion.div
+              key={i}
+              initial={false}
+              animate={{ left: `${endPct}%` }}
+              transition={{
+                duration: ent.duration ?? 2.5,
+                ease: 'easeInOut',
+                delay: ent.delay ?? 0,
+              }}
+              style={{
+                position: 'absolute',
+                bottom: '38px',
+                // Use marginLeft to center — NOT transform: translateX, which conflicts with Framer
+                marginLeft: '-24px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: '4px',
+                zIndex: 10 + i,
               }}
             >
-              {ent.label}
-            </motion.div>
-          )}
+              {/* Speed / label bubble */}
+              {ent.label && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: triggered ? 1 : 0, y: triggered ? 0 : 8 }}
+                  transition={{ delay: (ent.delay ?? 0) + 0.35 }}
+                  style={{
+                    fontSize: '0.72rem',
+                    fontWeight: 800,
+                    color: 'var(--text-main)',
+                    backgroundColor: i === 0 ? 'rgba(124,58,237,0.15)' : 'rgba(13,148,136,0.15)',
+                    border: `1px solid ${i === 0 ? 'var(--violet)' : 'var(--teal)'}`,
+                    backdropFilter: 'blur(4px)',
+                    padding: '3px 10px',
+                    borderRadius: '12px',
+                    whiteSpace: 'nowrap',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                  }}
+                >
+                  {ent.label}
+                </motion.div>
+              )}
 
-          {/* Emoji Character with Bobbing */}
-          <motion.div 
-            animate={isActive ? getBobbing(ent.type) : {}} 
-            style={{ fontSize: '3.5rem', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))' }}
-          >
-            {getEmoji(ent.type)}
-          </motion.div>
+              {/* Emoji */}
+              <motion.div
+                animate={triggered ? { y: [0, -4, 0] } : { y: 0 }}
+                transition={{ repeat: Infinity, duration: 0.7, ease: 'easeInOut' }}
+                style={{
+                  fontSize: '2.4rem',
+                  filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.25))',
+                  transform: flipH ? 'scaleX(-1)' : 'scaleX(1)',
+                  display: 'block',
+                }}
+              >
+                {ent.emoji || getEmoji(ent.type)}
+              </motion.div>
+            </motion.div>
+          );
+        })}
+      </div>
+
+      {/* ── Info bar below track ── */}
+      {(data.info || data.total_distance || data.formula) && (
+        <motion.div
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: triggered ? 1 : 0, y: triggered ? 0 : 6 }}
+          transition={{ delay: 0.7, duration: 0.4 }}
+          style={{
+            marginTop: '10px',
+            padding: '8px 14px',
+            background: 'var(--surface2)',
+            borderRadius: '10px',
+            border: '1px solid var(--border)',
+            fontSize: '0.82rem',
+            fontWeight: 700,
+            color: 'var(--text-main)',
+            textAlign: 'center',
+          }}
+        >
+          {data.total_distance && <span>Total distance = {data.total_distance} &nbsp;·&nbsp; </span>}
+          {data.formula && <span style={{ color: 'var(--violet)' }}>{data.formula}</span>}
+          {data.info && <span>{data.info}</span>}
         </motion.div>
-      ))}
+      )}
     </div>
   );
 }
+
 
 // ==========================================
 // 6. Pie Engine (Data Interpretation Donut Chart)
