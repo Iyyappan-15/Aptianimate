@@ -39,6 +39,20 @@ export default function MockTestsView({ navigate }) {
             Part 1 & 2
           </p>
         </motion.div>
+
+        <motion.div 
+          whileHover={{ scale: 1.05 }}
+          onClick={() => navigate('hexaware-mock')}
+          className="category-card"
+          style={{ '--accent-color': '#f59e0b', width: '280px', padding: '32px 24px', textAlign: 'center', opacity: 0.8 }}
+        >
+          <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🏬</div>
+          <h3 style={{ margin: '0 0 12px 0' }}>Hexaware Mock Test</h3>
+          <p style={{ fontSize: '0.9rem', color: 'var(--muted)', margin: 0 }}>
+            Company Specific<br />
+            Part 1 & 2
+          </p>
+        </motion.div>
       </div>
     </div>
   );

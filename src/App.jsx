@@ -31,6 +31,10 @@ const TcsNinjaMockLanding = lazy(() => import('./pages/TcsNinjaMockLanding'));
 const TcsNinjaAptitudeTest = lazy(() => import('./pages/TcsNinjaAptitudeTest'));
 const TcsNinjaAptitudeResults = lazy(() => import('./pages/TcsNinjaAptitudeResults'));
 
+const HexawareMockLanding = lazy(() => import('./pages/HexawareMockLanding'));
+const HexawareAptitudeTest = lazy(() => import('./pages/HexawareAptitudeTest'));
+const HexawareAptitudeResults = lazy(() => import('./pages/HexawareAptitudeResults'));
+
 import { signInWithGoogle } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
 
@@ -151,6 +155,12 @@ function App() {
     pageComponent = <TcsNinjaAptitudeTest navigate={navigate} />;
   } else if (route === 'tcs-ninja-mock') {
     pageComponent = <TcsNinjaMockLanding navigate={navigate} />;
+  } else if (route === 'hexaware-mock/results') {
+    pageComponent = <HexawareAptitudeResults navigate={navigate} />;
+  } else if (route === 'hexaware-mock/aptitude') {
+    pageComponent = <HexawareAptitudeTest navigate={navigate} />;
+  } else if (route === 'hexaware-mock') {
+    pageComponent = <HexawareMockLanding navigate={navigate} />;
   } else if (route === 'mock-test') {
     pageComponent = <MockTestPage navigate={navigate} />;
   } else if (route.startsWith('mock-test/results/')) {
