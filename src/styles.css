@@ -464,7 +464,7 @@ img, svg { display: block; }
 /* ── Visual Stage  (THE KEY CHANGE: full width, large, no overflow clip) ── */
 .ap-stage {
   width: 100%;
-  min-height: 520px;
+  min-height: 400px;
   /* The bulletproof centering + scrolling trick:
      We use a flex container, and the content inside uses before/after spacers
      to center when small, and left-align when overflowing, completely avoiding
@@ -491,7 +491,7 @@ img, svg { display: block; }
   align-items: center;
   flex-shrink: 0;           /* Do not shrink when wider than screen */
   padding: 0 20px;          /* Ensure padding on sides when scrolling */
-  min-height: 460px;
+  min-height: 340px;
   width: 100%;
 }
 /* Prevent StepRenderer children from squishing */
@@ -680,8 +680,8 @@ img, svg { display: block; }
 
 /* Responsive */
 @media (max-width: 600px) {
-  .ap-stage { min-height: 420px; padding: 12px 0; }
-  .ap-stage-inner { min-height: 380px; width: 100%; }
+  .ap-stage { min-height: 360px; padding: 12px 0; }
+  .ap-stage-inner { min-height: 300px; width: 100%; }
   .ap-explain-card { padding: 16px 16px; }
   .ap-controls { padding: 10px 14px; }
   .ap-header { padding: 12px 14px; }

@@ -452,8 +452,11 @@ export function BarEngine({ step, isActive }) {
   const getVal = (b) => parseFloat(b.val !== undefined ? b.val : b.value) || 0;
   const maxVal = Math.max(10, ...bars.map(getVal));
 
-  // ROOT FIX: Framer Motion CANNOT animate "0 → '80%'" — must use pixels
-  const CHART_H = 300;
+  // CHART_H = the max bar height in pixels.
+  // BADGE_SPACE = room reserved above bars for the value number badge.
+  // Container height = BADGE_SPACE + CHART_H so labels are NEVER clipped.
+  const CHART_H = 200;
+  const BADGE_SPACE = 52;
   const getBarPx = (val) => Math.max(4, (val / maxVal) * CHART_H);
 
   const PALETTE = [
@@ -484,12 +487,15 @@ export function BarEngine({ step, isActive }) {
         <div style={{
           display: 'flex', alignItems: 'flex-end',
           margin: '0 auto', width: 'max-content', minWidth: '100%',
-          justifyContent: 'center', // Center when small, left-aligned when overflowing
-          gap: '20px', height: `${CHART_H + 8}px`,
+          justifyContent: 'center',
+          gap: '20px',
+          height: `${CHART_H + BADGE_SPACE + 8}px`,
+          paddingTop: `${BADGE_SPACE}px`,
           position: 'relative',
           borderBottom: '3px solid var(--border)',
           borderLeft: '3px solid var(--border)',
           paddingBottom: '4px',
+          boxSizing: 'border-box',
         }}>
         {/* Y-axis grid lines at 25%, 50%, 75%, 100% */}
         {[0.25, 0.5, 0.75, 1].map((frac) => (
