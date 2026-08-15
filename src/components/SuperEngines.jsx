@@ -453,7 +453,7 @@ export function BarEngine({ step, isActive }) {
   const maxVal = Math.max(10, ...bars.map(getVal));
 
   // ROOT FIX: Framer Motion CANNOT animate "0 → '80%'" — must use pixels
-  const CHART_H = 160;
+  const CHART_H = 240;
   const getBarPx = (val) => Math.max(4, (val / maxVal) * CHART_H);
 
   const PALETTE = [
@@ -529,7 +529,7 @@ export function BarEngine({ step, isActive }) {
                 animate={{ height: isActive ? heightPx : 0, opacity: isActive ? 1 : 0 }}
                 transition={{ delay: i * 0.12, duration: 0.7, ease: [0.34, 1.56, 0.64, 1] }}
                 style={{
-                  width: '52px', background: getGradient(bar.color, i),
+                  width: '64px', background: getGradient(bar.color, i),
                   borderRadius: '8px 8px 2px 2px',
                   boxShadow: isHighlight
                     ? '0 0 24px rgba(245,158,11,0.5), 0 4px 12px rgba(0,0,0,0.2)'
@@ -558,7 +558,7 @@ export function BarEngine({ step, isActive }) {
         }}>
         {bars.map((bar, i) => (
           <div key={i} style={{
-            width: '52px', textAlign: 'center', fontSize: '0.78rem',
+            width: '64px', textAlign: 'center', fontSize: '0.78rem',
             color: bar.highlight ? 'var(--amber)' : 'var(--text-sec)',
             fontWeight: bar.highlight ? '800' : '600',
             letterSpacing: '0.03em', overflow: 'hidden',
