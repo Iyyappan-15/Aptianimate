@@ -34,15 +34,36 @@ export const aptitudeService = {
    * @param {number} limit Number of questions to return
    * @returns {Array} Array of question objects
    */
-  async getRandomQuestions(limit = 50) {
+  async getRandomQuestions(limit = 50, company = null) {
     if (!supabase) throw new Error("Supabase client is not initialized.");
 
+    // If company is specified, we fetch and shuffle locally to ensure filtering
+    if (company) {
+      const { data, error } = await supabase
+        .from('aptitude_questions')
+        .select('*')
+        .ilike('company', `%${company}%`);
+      
+      if (error) {
+        console.error("Error fetching aptitude questions by company:", error);
+        throw error;
+      }
+      
+      const shuffled = [...data].sort(() => 0.5 - Math.random());
+      const limited = shuffled.slice(0, limit);
+      
+      return limited.map(q => {
+        const { correctanswer, ...rest } = q;
+        return { ...rest, correctAnswer: correctanswer };
+      });
+    }
+
+    // Generic fallback (no company specified) via RPC
     const { data, error } = await supabase
       .rpc('get_random_questions', { limit_num: limit });
 
     if (error) {
       console.error("Error fetching random questions via RPC:", error);
-      // Fallback: fetch all and shuffle locally (if RPC not yet created)
       const { data: allData, error: fallbackError } = await supabase
         .from('aptitude_questions')
         .select('*');

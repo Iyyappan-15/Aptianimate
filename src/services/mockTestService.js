@@ -15,8 +15,7 @@ export const mockTestService = {
    */
   async getAptitudeQuestions(company = 'TCS') {
     const limit = this.getConfig(company)?.aptitude?.questions || 50;
-    // Currently aptitudeService is generic enough, but we could add company filtering later.
-    return await aptitudeService.getRandomQuestions(limit);
+    return await aptitudeService.getRandomQuestions(limit, company);
   },
 
   /**
