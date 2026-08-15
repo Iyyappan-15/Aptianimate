@@ -453,7 +453,7 @@ export function BarEngine({ step, isActive }) {
   const maxVal = Math.max(10, ...bars.map(getVal));
 
   // ROOT FIX: Framer Motion CANNOT animate "0 → '80%'" — must use pixels
-  const CHART_H = 240;
+  const CHART_H = 300;
   const getBarPx = (val) => Math.max(4, (val / maxVal) * CHART_H);
 
   const PALETTE = [
