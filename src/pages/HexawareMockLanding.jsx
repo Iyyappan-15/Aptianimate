@@ -17,25 +17,29 @@ export default function HexawareMockLanding({ navigate }) {
         padding: '40px 20px',
       }}
     >
-      {/* Breadcrumb */}
-      <button
-        onClick={() => navigate(-1)}
-        style={{
-          position: 'absolute',
-          top: '80px',
-          left: '24px',
-          background: 'transparent',
-          border: 'none',
-          color: 'var(--muted)',
-          cursor: 'pointer',
-          fontSize: '0.9rem',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px',
-        }}
-      >
-        ← Back
-      </button>
+      <div style={{ width: '100%', maxWidth: '900px', display: 'flex', justifyContent: 'flex-end', marginBottom: '20px' }}>
+        <button
+          onClick={() => navigate(-1)}
+          style={{
+            background: 'var(--surface2)',
+            border: '1px solid var(--border)',
+            color: 'var(--text)',
+            cursor: 'pointer',
+            fontSize: '0.9rem',
+            fontWeight: 600,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            padding: '8px 16px',
+            borderRadius: 'var(--radius-pill)',
+            transition: 'all 0.2s',
+          }}
+          onMouseEnter={e => e.currentTarget.style.background = 'var(--surface3)'}
+          onMouseLeave={e => e.currentTarget.style.background = 'var(--surface2)'}
+        >
+          Back ↩
+        </button>
+      </div>
 
       {/* Header */}
       <motion.div
@@ -46,10 +50,10 @@ export default function HexawareMockLanding({ navigate }) {
       >
         <div style={{ fontSize: '3.5rem', marginBottom: '16px' }}>🏢</div>
         <h1 style={{ margin: '0 0 12px 0', fontSize: '2rem', fontWeight: 900, color: 'var(--text)' }}>
-          Hexaware Mock Test
+          Hexaware Pattern Mock Test
         </h1>
-        <p style={{ color: 'var(--muted)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.7 }}>
-          Practice with the authentic Hexaware exam pattern. Choose a section to begin your timed mock test.
+        <p style={{ color: 'var(--muted)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', lineHeight: 1.6 }}>
+          Practice assessment based on publicly available and candidate-reported material. Choose a section to begin your timed mock test.
         </p>
 
         {/* Stats bar */}
