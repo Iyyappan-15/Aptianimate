@@ -23,6 +23,13 @@ export const mockTestService = {
    */
   async getTechnicalQuestions(company = 'TCS', assessment = 'Technical') {
     const limit = this.getConfig(company)?.technical?.questions || 10;
-    return await technicalService.getRandomQuestions({ company, assessment, limit });
+    let questions = await technicalService.getRandomQuestions({ company, assessment, limit });
+    
+    // Fallback to generic/TCS questions if company-specific ones aren't available yet
+    if (!questions || questions.length === 0) {
+      questions = await technicalService.getRandomQuestions({ company: 'TCS', assessment, limit });
+    }
+    
+    return questions;
   }
 };
