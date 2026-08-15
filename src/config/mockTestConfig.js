@@ -18,5 +18,15 @@ export const MOCK_TEST_CONFIG = {
       questions: 15,
       duration: 20 * 60,
     }
+  },
+  Hexaware: {
+    aptitude: {
+      questions: 50,
+      duration: 50 * 60,
+    },
+    technical: {
+      questions: 10,
+      duration: 15 * 60,
+    }
   }
 };
