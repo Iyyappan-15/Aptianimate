@@ -74,21 +74,28 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
       const opSymbol = formulaVars[0].symbol.trim();
       let didPrepend = false;
 
-      // Method 1: Try using step.formula_used if available
-      if (step.formula_used && step.formula_used.includes(opSymbol)) {
-        const parts = step.formula_used.split(opSymbol);
+      // Method 1: Try using step.formula_used OR step.explanation
+      const sourceText = step.formula_used || step.explanation;
+      if (sourceText && sourceText.includes(opSymbol)) {
+        const parts = sourceText.split(opSymbol);
         if (parts.length > 1 && parts[0].trim().length > 0) {
-          const missingLhs = parts[0].trim();
+          // Look for the last word/number before the operator in the source text
+          const lhsWords = parts[0].trim().split(/\s+/);
+          const missingLhs = lhsWords[lhsWords.length - 1]; // take the immediate word before the operator
+          
           let sym = missingLhs;
           let lab = "";
 
-          // Try to split into symbol and label based on the first space
+          // Try to split into symbol and label based on the first space if we took more than one word
+          // (which we didn't, but let's keep it safe)
+
           const match = missingLhs.match(/^([^\s]+)\s+(.*)$/);
           if (match) {
             sym = match[1];
             lab = match[2];
           }
 
+          // If the symbol is just a word like "total" or a number, it's a good candidate
           formulaVars = [
             { symbol: sym, label: lab, color: 'a' },
             ...formulaVars
@@ -155,23 +162,23 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
 
   return (
     <div className="sr-formula" style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', width: '100%' }}>
-      <div style={{
+      <div className="custom-scrollbar" style={{
         marginBottom: '24px',
         background: 'var(--surface2)',
         borderRadius: '16px',
         border: '1px solid var(--border)',
         boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-        minWidth: '100%',
-        width: 'max-content',
-        display: 'flex',
-        justifyContent: 'center'
+        width: '100%',
+        overflowX: 'auto',
       }}>
-        <div className="custom-scrollbar" style={{
+        <div style={{
           display: 'flex',
           flexWrap: 'nowrap',
           alignItems: 'center',
           gap: '12px',
           padding: '24px 32px',
+          width: 'max-content',
+          margin: '0 auto',
         }}>
         {formulaVars.map((v, i) => {
           const c = colorMap[v.color] || colorMap.a;

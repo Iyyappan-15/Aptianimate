@@ -222,20 +222,19 @@ export function NodeEngine({ step, isActive }) {
          * This guarantees leftmost node is ALWAYS at x=0+ (never negative),
          * so overflow:hidden on parent panel NEVER clips it.
          */
-        <div key={level} style={{
+        <div key={level} className="custom-scrollbar" style={{
           minWidth: '100%',
-          width: 'max-content',
-          display: 'flex',
-          justifyContent: 'center',
-          paddingBottom: '4px'
+          overflowX: 'auto',
+          paddingBottom: '8px'
         }}>
           <div style={{
-            display: 'inline-flex',
+            display: 'flex',
             flexWrap: 'nowrap',
             gap: '24px',
             zIndex: 1,
-            textAlign: 'left',
-            verticalAlign: 'middle',
+            alignItems: 'center',
+            width: 'max-content',
+            margin: '0 auto',
             padding: '4px 8px'
           }}>
             {levelNodes.map((node) => {
@@ -481,14 +480,17 @@ export function BarEngine({ step, isActive }) {
   return (
     <div style={{ width: '100%', padding: '16px 8px 4px 8px' }}>
       {/* Chart area with border axes */}
-      <div style={{
-        display: 'flex', alignItems: 'flex-end', justifyContent: 'center',
-        gap: '20px', height: `${CHART_H + 8}px`, width: '100%',
-        position: 'relative',
-        borderBottom: '3px solid var(--border)',
-        borderLeft: '3px solid var(--border)',
-        paddingBottom: '4px',
-      }}>
+      <div className="custom-scrollbar" style={{ width: '100%', overflowX: 'auto', paddingBottom: '16px' }}>
+        <div style={{
+          display: 'flex', alignItems: 'flex-end',
+          margin: '0 auto', width: 'max-content', minWidth: '100%',
+          justifyContent: 'center', // Center when small, left-aligned when overflowing
+          gap: '20px', height: `${CHART_H + 8}px`,
+          position: 'relative',
+          borderBottom: '3px solid var(--border)',
+          borderLeft: '3px solid var(--border)',
+          paddingBottom: '4px',
+        }}>
         {/* Y-axis grid lines at 25%, 50%, 75%, 100% */}
         {[0.25, 0.5, 0.75, 1].map((frac) => (
           <div key={frac} style={{
@@ -545,9 +547,15 @@ export function BarEngine({ step, isActive }) {
           );
         })}
       </div>
+      </div>
 
       {/* X-axis labels */}
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '8px' }}>
+      <div className="custom-scrollbar" style={{ width: '100%', overflowX: 'auto' }}>
+        <div style={{ 
+          display: 'flex', 
+          margin: '0 auto', width: 'max-content', minWidth: '100%',
+          gap: '20px', marginTop: '8px' 
+        }}>
         {bars.map((bar, i) => (
           <div key={i} style={{
             width: '52px', textAlign: 'center', fontSize: '0.78rem',
@@ -559,6 +567,7 @@ export function BarEngine({ step, isActive }) {
             {bar.label}
           </div>
         ))}
+        </div>
       </div>
     </div>
   );
