@@ -464,13 +464,13 @@ img, svg { display: block; }
 /* ── Visual Stage  (THE KEY CHANGE: full width, large, no overflow clip) ── */
 .ap-stage {
   width: 100%;
-  min-height: 320px;
+  min-height: 420px;
   /* The bulletproof centering + scrolling trick:
      We use a flex container, and the content inside uses before/after spacers
      to center when small, and left-align when overflowing, completely avoiding
      the left-clip flex bug. */
   display: flex;
-  padding: 28px 0;
+  padding: 16px 0;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
   overflow-x: auto;
@@ -491,13 +491,14 @@ img, svg { display: block; }
   align-items: center;
   flex-shrink: 0;           /* Do not shrink when wider than screen */
   padding: 0 20px;          /* Ensure padding on sides when scrolling */
-  min-height: 240px;
+  min-height: 380px;
+  width: 100%;
 }
 /* Prevent StepRenderer children from squishing */
 .ap-stage-inner > * {
   flex-shrink: 0;
   max-width: none !important;
-  width: auto !important;
+  width: 100% !important;
 }
 
 /* ── Step dot nav ── */
@@ -679,8 +680,8 @@ img, svg { display: block; }
 
 /* Responsive */
 @media (max-width: 600px) {
-  .ap-stage { min-height: 260px; padding: 16px 12px; }
-  .ap-stage-inner { min-height: 200px; }
+  .ap-stage { min-height: 340px; padding: 12px 0; }
+  .ap-stage-inner { min-height: 300px; width: 100%; }
   .ap-explain-card { padding: 16px 16px; }
   .ap-controls { padding: 10px 14px; }
   .ap-header { padding: 12px 14px; }
