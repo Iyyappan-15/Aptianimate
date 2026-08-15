@@ -88,7 +88,7 @@ export default function HexawareMockLanding({ navigate }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.5 }}
           whileHover={{ scale: 1.04, y: -4 }}
-          onClick={() => navigate('Hexaware-ninja-mock/aptitude')}
+          onClick={() => navigate('hexaware-mock/aptitude')}
           style={{
             width: '280px',
             background: 'var(--card)',
