@@ -110,7 +110,7 @@ export default function QuestionCard({
           return (
             <button
               key={label}
-              onClick={() => onSelectAnswer(question.id, label)}
+              onClick={() => onSelectAnswer(label)}
               className={`option-btn${isSelected ? ' selected' : ''}`}
             >
               {/* Label circle */}
