@@ -72,7 +72,7 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
   if (formulaVars.length > 0) {
     if (isOperator(formulaVars[0].symbol, formulaVars[0].color)) {
       const opSymbol = formulaVars[0].symbol.trim();
-      let prepended = false;
+      let didPrepend = false;
 
       // Method 1: Try using step.formula_used OR step.explanation
       const sourceText = step.formula_used || step.explanation;
@@ -85,37 +85,36 @@ function FormulaHighlight({ step, isActive, steps, currentStep }) {
           
           let sym = missingLhs;
           let lab = "";
-          
+
           // Try to split into symbol and label based on the first space if we took more than one word
           // (which we didn't, but let's keep it safe)
+
           const match = missingLhs.match(/^([^\s]+)\s+(.*)$/);
           if (match) {
-             sym = match[1];
-             lab = match[2];
+            sym = match[1];
+            lab = match[2];
           }
 
           // If the symbol is just a word like "total" or a number, it's a good candidate
           formulaVars = [
-            { symbol: sym, label: lab, color: 'a' }, // 'a' is default primary color
+            { symbol: sym, label: lab, color: 'a' },
             ...formulaVars
           ];
-          prepended = true;
+          didPrepend = true;
         }
       }
 
       // Method 2: Fallback to previous steps in the animation timeline
-      if (!prepended && previousVars.length > 0) {
-        // Find a variable from previous steps that is NOT already in the current formulaVars
-        const missingVar = previousVars.find(pv => 
+      if (!didPrepend && previousVars.length > 0) {
+        const missingVar = previousVars.find(pv =>
           !formulaVars.some(fv => fv.symbol && fv.symbol.trim().toLowerCase() === pv.symbol.trim().toLowerCase())
         );
         if (missingVar) {
           formulaVars = [
-            { ...missingVar, color: 'a' }, // reset to primary theme color
+            { ...missingVar, color: 'a' },
             ...formulaVars
           ];
         } else {
-          // Absolute fallback: just use the last introduced variable from previous steps
           const fallbackVar = previousVars[previousVars.length - 1];
           if (fallbackVar) {
             formulaVars = [

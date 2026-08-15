@@ -612,7 +612,7 @@ export function EntityEngine({ step, isActive }) {
   const hasObstacle = !!data.obstacle;
   const isTwoEntity = entities.length >= 2;
   const isOpposing = isTwoEntity && entities.some(e => (e.startX || 0) > 50 && (e.endX || 0) < 50);
-  const isSameDir  = isTwoEntity && !isOpposing && entities.every(e => (e.endX || 0) > (e.startX || 0));
+  const _isSameDir = isTwoEntity && !isOpposing && entities.every(e => (e.endX || 0) > (e.startX || 0));
 
   return (
     <div style={{
