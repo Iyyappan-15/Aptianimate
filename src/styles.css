@@ -78,64 +78,7 @@ body {
 }
 button { cursor: pointer; font-family: inherit; border: none; outline: none; }
 
-/* ── Mock Test: Option Buttons ── */
-.option-btn {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  width: 100%;
-  padding: 14px 20px;
-  border-radius: 12px;
-  border: 2px solid var(--border) !important;
-  background: var(--bg) !important;
-  color: var(--text-h) !important;
-  cursor: pointer;
-  text-align: left;
-  transition: all 0.15s ease;
-  font-family: inherit;
-  font-size: 1rem;
-  box-shadow: none;
-}
-.option-btn:hover {
-  border-color: rgba(59,130,246,0.5) !important;
-  background: rgba(59,130,246,0.05) !important;
-}
-.option-btn.selected {
-  border: 2px solid #3b82f6 !important;
-  background: #3b82f6 !important;
-  color: #fff !important;
-  transform: translateX(4px);
-  box-shadow: 0 4px 16px rgba(59,130,246,0.35) !important;
-}
-.option-btn.selected .option-label {
-  background: #fff !important;
-  border-color: #fff !important;
-  color: #3b82f6 !important;
-}
-.option-btn.selected .option-text {
-  color: #fff !important;
-  font-weight: 600;
-}
-.option-label {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-weight: 800;
-  font-size: 0.85rem;
-  background: transparent;
-  border: 2px solid var(--border);
-  color: var(--text-h);
-  transition: all 0.15s ease;
-}
-.option-text {
-  font-size: 0.95rem;
-  color: var(--text-h);
-  line-height: 1.5;
-}
+
 input, textarea, select { font-family: inherit; outline: none; box-sizing: border-box; width: 100%; }
 a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
@@ -327,37 +270,51 @@ img, svg { display: block; }
 }
 .option-btn.selected {
   border-color: var(--violet);
-  background: var(--surface);
+  background: rgba(139, 92, 246, 0.08); /* Light violet highlight */
   color: var(--text);
   font-weight: 600;
+  box-shadow: 0 0 0 1px var(--violet);
 }
 .option-btn.correct {
   border-color: var(--teal);
-  background: var(--surface);
+  background: rgba(20, 184, 166, 0.08);
   color: var(--text);
   font-weight: 600;
+  box-shadow: 0 0 0 1px var(--teal);
 }
 .option-btn.wrong {
   border-color: var(--coral);
-  background: var(--surface);
+  background: rgba(244, 63, 94, 0.08);
   color: var(--text);
   font-weight: 600;
+  box-shadow: 0 0 0 1px var(--coral);
 }
 .option-btn:disabled { cursor: default; opacity: 0.8; }
-.opt-letter {
-  width: 28px; height: 28px; border-radius: 8px; flex-shrink: 0;
+
+.opt-letter, .option-label {
+  width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
   background: var(--surface3); display: flex; align-items: center; justify-content: center;
-  font-size: 0.75rem; font-weight: 700; color: var(--muted);
+  font-size: 0.85rem; font-weight: 700; color: var(--muted);
   transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
   border: 1px solid var(--border);
 }
-.option-btn.selected .opt-letter {
+.option-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.option-btn.selected .opt-letter, .option-btn.selected .option-label {
   background: var(--violet);
   color: #fff;
   border-color: transparent;
 }
-.option-btn.correct .opt-letter { background: var(--teal); color: #fff; border-color: transparent; }
-.option-btn.wrong .opt-letter { background: var(--coral); color: #fff; border-color: transparent; }
+.option-btn.correct .opt-letter, .option-btn.correct .option-label { 
+  background: var(--teal); color: #fff; border-color: transparent; 
+}
+.option-btn.wrong .opt-letter, .option-btn.wrong .option-label { 
+  background: var(--coral); color: #fff; border-color: transparent; 
+}
 .qc-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
 /* â”€â”€ Buttons â”€â”€ */
