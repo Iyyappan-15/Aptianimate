@@ -4,6 +4,7 @@ import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import AuthPrompt from '../components/AuthPrompt';
 import testConfigs from '../config/testConfigs.json';
+import TopicPicker from '../components/battle/TopicPicker';
 
 import { getRandomQuestions } from '../data/aiBank';
 
@@ -27,7 +28,8 @@ const generateAIProfile = (totalQuestions) => {
 
 const BattlePage = ({ navigate }) => {
   const { user, loading: authLoading } = useAuth();
-  const [mode, setMode] = useState(null); // 'select' | 'ai' | 'friend'
+  const [mode, setMode] = useState(null); // null | 'topic-pick' | 'ai' | 'friend'
+  const [pendingMode, setPendingMode] = useState(null); // which battle type is pending topic selection
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState([]);
   const [testSession, setTestSession] = useState(null); // { test_id, expires_at }
@@ -52,12 +54,12 @@ const BattlePage = ({ navigate }) => {
   const clockRef = useRef(null);
   const [globalSearching, setGlobalSearching] = useState(false);
 
-  const startAIBattle = async () => {
+  const startAIBattle = async (selectedTopics) => {
     setLoading(true);
     try {
-      const selectedQuestions = getRandomQuestions(testConfigs.aiBattle);
+      const selectedQuestions = getRandomQuestions(testConfigs.aiBattle, selectedTopics);
       if (!selectedQuestions || selectedQuestions.length === 0) {
-        throw new Error("No questions found in local bank. Make sure the JSONs are in public/assessment-bank/ai-battle");
+        throw new Error("No questions found for the selected topics. Please select more topics.");
       }
 
       setQuestions(selectedQuestions);
@@ -72,14 +74,16 @@ const BattlePage = ({ navigate }) => {
       setMode('ai');
     } catch (err) {
       console.error(err);
-      alert("Failed to start AI Battle.");
+      alert(err.message || "Failed to start AI Battle.");
     } finally {
       setLoading(false);
     }
   };
 
-  const startFriendBattle = () => {
-    navigate('battle/friend');
+  const startFriendBattle = (selectedTopics) => {
+    // Encode topics into URL so FriendBattlePage can read them
+    const topicParam = encodeURIComponent(JSON.stringify(selectedTopics));
+    navigate(`battle/friend?topics=${topicParam}`);
   };
 
   // Clock Hook
@@ -200,7 +204,7 @@ const BattlePage = ({ navigate }) => {
     );
   }
 
-  const startGlobalBattle = async () => {
+  const startGlobalBattle = async (selectedTopics) => {
     setGlobalSearching(true);
     try {
       // 1. Try to join an existing global match
@@ -213,14 +217,14 @@ const BattlePage = ({ navigate }) => {
       }
 
       // 2. No match found, act as host and create a waiting match
-      // We must use the database RPC to generate valid UUIDs for questions
       const baseConfig = testConfigs.friendBattle || { 
         categories: {'Quantitative Aptitude': 2, 'Logical Reasoning': 2, 'Verbal Ability': 1}, 
         difficulty: {easy: 60, medium: 40} 
       };
       
-      const selected = getRandomQuestions(baseConfig);
-      const matchConfig = { ...baseConfig, selected_ids: selected.map(q => q.id) };
+      const selected = getRandomQuestions(baseConfig, selectedTopics);
+      const topicParam = selectedTopics ? encodeURIComponent(JSON.stringify(selectedTopics)) : '';
+      const matchConfig = { ...baseConfig, selected_ids: selected.map(q => q.id), selectedTopics: selectedTopics || null };
       
       const { data: createData, error: createError } = await supabase.rpc('create_friendly_match', { p_config: matchConfig });
       if (createError) throw createError;
@@ -234,7 +238,7 @@ const BattlePage = ({ navigate }) => {
       if (updateError) throw updateError;
       
       // Navigate to FriendBattlePage which will wait for opponent
-      navigate(`battle/friend?match=${createData.match_id}&global=true`);
+      navigate(`battle/friend?match=${createData.match_id}&global=true${topicParam ? `&topics=${topicParam}` : ''}`);
       
     } catch (err) {
       console.error("Global Matchmaking Error:", err);
@@ -249,6 +253,25 @@ const BattlePage = ({ navigate }) => {
       <AuthPrompt 
         title="Login Required" 
         message="Please login to play the AI Battle and challenge your friends." 
+      />
+    );
+  }
+
+  // ── Topic Picker screen (shown before AI or Friend battle) ────────────────
+  if (mode === 'topic-pick') {
+    return (
+      <TopicPicker
+        mode={pendingMode}
+        onBack={() => { setMode(null); setPendingMode(null); }}
+        onStart={(selectedTopics) => {
+          if (pendingMode === 'ai') {
+            startAIBattle(selectedTopics);
+          } else if (pendingMode === 'friend') {
+            startFriendBattle(selectedTopics);
+          } else if (pendingMode === 'global') {
+            startGlobalBattle(selectedTopics);
+          }
+        }}
       />
     );
   }
@@ -275,7 +298,7 @@ const BattlePage = ({ navigate }) => {
           <motion.button 
             whileHover={{ scale: 1.03, y: -8, boxShadow: '0 20px 40px rgba(16, 185, 129, 0.2)', borderColor: '#10b981' }}
             whileTap={{ scale: 0.98 }}
-            onClick={startGlobalBattle}
+            onClick={() => { setPendingMode('global'); setMode('topic-pick'); }}
             disabled={globalSearching}
             style={{ 
               position: 'relative', overflow: 'hidden', padding: '48px 32px', 
@@ -303,7 +326,7 @@ const BattlePage = ({ navigate }) => {
           <motion.button 
             whileHover={{ scale: 1.03, y: -8, boxShadow: '0 20px 40px rgba(124, 58, 237, 0.2)', borderColor: 'var(--violet)' }}
             whileTap={{ scale: 0.98 }}
-            onClick={startAIBattle}
+            onClick={() => { setPendingMode('ai'); setMode('topic-pick'); }}
             style={{ 
               position: 'relative', overflow: 'hidden', padding: '48px 32px', 
               background: 'var(--card-bg)', 
@@ -332,7 +355,7 @@ const BattlePage = ({ navigate }) => {
           <motion.button 
             whileHover={{ scale: 1.03, y: -8, boxShadow: '0 20px 40px rgba(59, 130, 246, 0.2)', borderColor: '#3b82f6' }}
             whileTap={{ scale: 0.98 }}
-            onClick={startFriendBattle}
+            onClick={() => { setPendingMode('friend'); setMode('topic-pick'); }}
             style={{ 
               position: 'relative', overflow: 'hidden', padding: '48px 32px', 
               background: 'var(--card-bg)', 
