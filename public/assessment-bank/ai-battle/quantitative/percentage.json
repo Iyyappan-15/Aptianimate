@@ -154,5 +154,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0031",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Find 30% of 700.",
+    "options": [
+      "190",
+      "200",
+      "210",
+      "220"
+    ],
+    "correct_answer": "210",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0032",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If a number increases from 50 to 70, what is the percentage increase?",
+    "options": [
+      "30%",
+      "35%",
+      "40%",
+      "45%"
+    ],
+    "correct_answer": "40%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0033",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A shirt costs ₹800. After a 15% discount, what is the selling price?",
+    "options": [
+      "₹650",
+      "₹660",
+      "₹680",
+      "₹700"
+    ],
+    "correct_answer": "₹680",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0034",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In an exam, a student scores 420 out of 600. What is the percentage?",
+    "options": [
+      "65%",
+      "68%",
+      "70%",
+      "72%"
+    ],
+    "correct_answer": "70%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0035",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The price of a book is increased from ₹200 to ₹250. Find the percentage increase.",
+    "options": [
+      "20%",
+      "22%",
+      "25%",
+      "28%"
+    ],
+    "correct_answer": "25%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0036",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A number is decreased by 20%. If the new number is 80, find the original number.",
+    "options": [
+      "90",
+      "95",
+      "100",
+      "105"
+    ],
+    "correct_answer": "100",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0037",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "25% of a number is 75. Find the number.",
+    "options": [
+      "250",
+      "280",
+      "300",
+      "320"
+    ],
+    "correct_answer": "300",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0038",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In a class of 80 students, 60% are boys. How many girls are there?",
+    "options": [
+      "24",
+      "28",
+      "32",
+      "36"
+    ],
+    "correct_answer": "32",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0039",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A product is marked up by 40% above cost price. If CP = ₹500, find the marked price.",
+    "options": [
+      "₹650",
+      "₹680",
+      "₹700",
+      "₹720"
+    ],
+    "correct_answer": "₹700",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0040",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If 20% of a number is 40, what is 50% of that number?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "110"
+    ],
+    "correct_answer": "100",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0041",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The salary of an employee is ₹25,000. After a 10% hike, what is the new salary?",
+    "options": [
+      "₹26,500",
+      "₹27,000",
+      "₹27,500",
+      "₹28,000"
+    ],
+    "correct_answer": "₹27,500",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0042",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A number is first increased by 20% and then decreased by 20%. What is the net percentage change?",
+    "options": [
+      "No change",
+      "2% decrease",
+      "4% decrease",
+      "5% decrease"
+    ],
+    "correct_answer": "4% decrease",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0043",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "In a survey, 65% of people liked a product. If 350 people liked it, how many were surveyed?",
+    "options": [
+      "Approximately 500",
+      "Approximately 520",
+      "Approximately 538",
+      "Approximately 560"
+    ],
+    "correct_answer": "Approximately 538",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0044",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A shopkeeper sells an item at a profit of 25%. If the selling price is ₹1250, find the cost price.",
+    "options": [
+      "₹900",
+      "₹950",
+      "₹1000",
+      "₹1050"
+    ],
+    "correct_answer": "₹1000",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0045",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The population of a town is 20,000. It increases by 5% annually. What will be the population after 1 year?",
+    "options": [
+      "20,500",
+      "21,000",
+      "21,500",
+      "22,000"
+    ],
+    "correct_answer": "21,000",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0046",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "40% of students in a school are girls. If there are 480 boys, find the total number of students.",
+    "options": [
+      "720",
+      "760",
+      "800",
+      "840"
+    ],
+    "correct_answer": "800",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0047",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A mobile phone is sold at a loss of 10%. If the selling price is ₹9000, find the cost price.",
+    "options": [
+      "₹9500",
+      "₹9800",
+      "₹10,000",
+      "₹10,500"
+    ],
+    "correct_answer": "₹10,000",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0048",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If 30% of a number is 90, what is 70% of that number?",
+    "options": [
+      "190",
+      "200",
+      "210",
+      "220"
+    ],
+    "correct_answer": "210",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0049",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A candidate needs 40% marks to pass. He scores 150 and fails by 10 marks. What is the maximum marks?",
+    "options": [
+      "350",
+      "380",
+      "400",
+      "420"
+    ],
+    "correct_answer": "400",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0050",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "The price of sugar increases by 20%. By what percentage should a family reduce consumption to keep expenditure same?",
+    "options": [
+      "10%",
+      "12.5%",
+      "16.67% (approx)",
+      "20%"
+    ],
+    "correct_answer": "16.67% (approx)",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0051",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A number is increased by 25%. By what percentage must it be reduced to return to the original?",
+    "options": [
+      "15%",
+      "18%",
+      "20%",
+      "25%"
+    ],
+    "correct_answer": "20%",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0052",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "In an election, a candidate got 55% of the votes and won by 300 votes. Find the total votes polled.",
+    "options": [
+      "2500",
+      "2800",
+      "3000",
+      "3200"
+    ],
+    "correct_answer": "3000",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0053",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A shopkeeper marks his goods 20% above cost price and gives a discount of 10% on the marked price. Find his profit percentage.",
+    "options": [
+      "6%",
+      "7%",
+      "8%",
+      "9%"
+    ],
+    "correct_answer": "8%",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0054",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The cost of an article is ₹800. It is sold at a gain of 15%. Find the selling price.",
+    "options": [
+      "₹880",
+      "₹900",
+      "₹920",
+      "₹940"
+    ],
+    "correct_answer": "₹920",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0055",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A student's marks were wrongly entered as 85 instead of 58. Due to this, the average increased by 0.5. How many students are there?",
+    "options": [
+      "48",
+      "50",
+      "54",
+      "58"
+    ],
+    "correct_answer": "54",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0056",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If 15% of x = 45, find x.",
+    "options": [
+      "250",
+      "280",
+      "300",
+      "320"
+    ],
+    "correct_answer": "300",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0057",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A number is first decreased by 10% and then increased by 10%. What is the net percentage change?",
+    "options": [
+      "No change",
+      "1% decrease",
+      "1% increase",
+      "2% decrease"
+    ],
+    "correct_answer": "1% decrease",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0058",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The price of a laptop is reduced by 20% in a sale. If the sale price is ₹40,000, find the original price.",
+    "options": [
+      "₹46,000",
+      "₹48,000",
+      "₹50,000",
+      "₹52,000"
+    ],
+    "correct_answer": "₹50,000",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0059",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In a company, 60% of employees are male. If there are 240 female employees, find the total number of employees.",
+    "options": [
+      "540",
+      "570",
+      "600",
+      "630"
+    ],
+    "correct_answer": "600",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PCT_0060",
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A person spends 70% of his income and saves ₹9000. Find his monthly income.",
+    "options": [
+      "₹27,000",
+      "₹28,000",
+      "₹30,000",
+      "₹32,000"
+    ],
+    "correct_answer": "₹30,000",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
