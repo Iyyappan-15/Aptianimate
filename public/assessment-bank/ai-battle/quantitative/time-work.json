@@ -248,5 +248,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0151",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A can do a work in 10 days. How much work does he do in 1 day?",
+    "options": [
+      "1/8 of the work",
+      "1/9 of the work",
+      "1/10 of the work",
+      "1/12 of the work"
+    ],
+    "correct_answer": "1/10 of the work",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0152",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can do a work in 12 days and B in 18 days. In how many days will they finish it together?",
+    "options": [
+      "6 days",
+      "6.8 days",
+      "7.2 days",
+      "8 days"
+    ],
+    "correct_answer": "7.2 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0153",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A and B together can do a work in 6 days. A alone can do it in 10 days. In how many days can B alone do it?",
+    "options": [
+      "12 days",
+      "15 days",
+      "18 days",
+      "20 days"
+    ],
+    "correct_answer": "15 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0154",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 8 days, B in 12 days. They work together for 2 days, then A leaves. How many more days will B take to finish the work?",
+    "options": [
+      "5 days",
+      "6 days",
+      "7 days",
+      "8 days"
+    ],
+    "correct_answer": "7 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0155",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A, B, and C can do a work in 10, 15, and 30 days respectively. In how many days will they finish it together?",
+    "options": [
+      "4 days",
+      "5 days",
+      "6 days",
+      "7 days"
+    ],
+    "correct_answer": "5 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0156",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 20 days. He works for 5 days and leaves. B finishes the remaining work in 10 days. In how many days can B alone do the whole work?",
+    "options": [
+      "12 days",
+      "13.33 days (approx)",
+      "14 days",
+      "15 days"
+    ],
+    "correct_answer": "13.33 days (approx)",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0157",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A and B together can do a work in 8 days. B and C together in 12 days. A and C together in 10 days. In how many days can A, B, and C together do it?",
+    "options": [
+      "5.5 days (approx)",
+      "6.49 days (approx)",
+      "7.2 days",
+      "8 days"
+    ],
+    "correct_answer": "6.49 days (approx)",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0158",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 15 days, B in 20 days. They work together for 5 days, then B leaves. How many more days will A take to finish?",
+    "options": [
+      "5.25 days",
+      "5.75 days",
+      "6.25 days",
+      "6.75 days"
+    ],
+    "correct_answer": "6.25 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0159",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A is twice as efficient as B. If B can do a work in 24 days, in how many days will A do it?",
+    "options": [
+      "10 days",
+      "12 days",
+      "14 days",
+      "16 days"
+    ],
+    "correct_answer": "12 days",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0160",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A and B together can do a work in 10 days. A alone can do it in 15 days. In how many days can B alone do it?",
+    "options": [
+      "24 days",
+      "27 days",
+      "30 days",
+      "33 days"
+    ],
+    "correct_answer": "30 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0161",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can do a work in 12 days. He works for 3 days and leaves. B finishes the remaining work in 6 days. In how many days can B alone do the whole work?",
+    "options": [
+      "6 days",
+      "7 days",
+      "8 days",
+      "9 days"
+    ],
+    "correct_answer": "8 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0162",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A, B, and C can do a work in 6, 9, and 18 days respectively. In how many days will they finish it together?",
+    "options": [
+      "2 days",
+      "3 days",
+      "4 days",
+      "5 days"
+    ],
+    "correct_answer": "3 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0163",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can do a work in 10 days, B in 15 days. They work alternately starting with A. In how many days will the work be completed?",
+    "options": [
+      "10 days",
+      "11 days",
+      "12 days",
+      "13 days"
+    ],
+    "correct_answer": "12 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0164",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A and B together can do a work in 12 days. After working together for 4 days, B leaves. A finishes the remaining work in 12 days. In how many days can A alone do the whole work?",
+    "options": [
+      "16 days",
+      "18 days",
+      "20 days",
+      "22 days"
+    ],
+    "correct_answer": "18 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0165",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 20 days, B in 30 days. They work together for 5 days, then A leaves. How many more days will B take to finish?",
+    "options": [
+      "15.5 days",
+      "16.5 days",
+      "17.5 days",
+      "18.5 days"
+    ],
+    "correct_answer": "17.5 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0166",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is thrice as efficient as B. If together they can do a work in 12 days, in how many days can B alone do it?",
+    "options": [
+      "36 days",
+      "42 days",
+      "48 days",
+      "54 days"
+    ],
+    "correct_answer": "48 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0167",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 16 days, B in 24 days. They work together for 6 days, then B leaves. How many more days will A take?",
+    "options": [
+      "4 days",
+      "5 days",
+      "6 days",
+      "7 days"
+    ],
+    "correct_answer": "6 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0168",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A, B, and C together can do a work in 10 days. A and B together in 15 days. In how many days can C alone do it?",
+    "options": [
+      "24 days",
+      "27 days",
+      "30 days",
+      "33 days"
+    ],
+    "correct_answer": "30 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0169",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can do a work in 12 days. He works for 4 days and leaves. B finishes the remaining work in 16 days. In how many days can B alone do the whole work?",
+    "options": [
+      "20 days",
+      "22 days",
+      "24 days",
+      "26 days"
+    ],
+    "correct_answer": "24 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0170",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A and B together can do a work in 9 days. B and C together in 12 days. A and C together in 18 days. In how many days can A, B, and C together do it?",
+    "options": [
+      "6 days",
+      "7 days",
+      "8 days",
+      "9 days"
+    ],
+    "correct_answer": "8 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0171",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 10 days, B in 20 days. They work together for 3 days, then A leaves. How many more days will B take?",
+    "options": [
+      "9 days",
+      "10 days",
+      "11 days",
+      "12 days"
+    ],
+    "correct_answer": "11 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0172",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 15 days, B in 30 days. They work together for 5 days, then B leaves. How many more days will A take?",
+    "options": [
+      "6.5 days",
+      "7 days",
+      "7.5 days",
+      "8 days"
+    ],
+    "correct_answer": "7.5 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0173",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is twice as efficient as B. Together they finish a work in 10 days. In how many days can A alone do it?",
+    "options": [
+      "12 days",
+      "14 days",
+      "15 days",
+      "16 days"
+    ],
+    "correct_answer": "15 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0174",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 18 days, B in 24 days. They work together for 6 days, then A leaves. How many more days will B take?",
+    "options": [
+      "8 days",
+      "9 days",
+      "10 days",
+      "11 days"
+    ],
+    "correct_answer": "10 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0175",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A, B, and C can do a work in 12, 18, and 36 days respectively. In how many days will they finish it together?",
+    "options": [
+      "5 days",
+      "6 days",
+      "7 days",
+      "8 days"
+    ],
+    "correct_answer": "6 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0176",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 20 days. He works for 8 days and leaves. B finishes the remaining work in 24 days. In how many days can B alone do the whole work?",
+    "options": [
+      "35 days",
+      "38 days",
+      "40 days",
+      "42 days"
+    ],
+    "correct_answer": "40 days",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0177",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A and B together can do a work in 15 days. A alone can do it in 25 days. In how many days can B alone do it?",
+    "options": [
+      "32.5 days",
+      "35 days",
+      "37.5 days",
+      "40 days"
+    ],
+    "correct_answer": "37.5 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0178",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "A can do a work in 14 days, B in 21 days. They work together for 4 days, then B leaves. How many more days will A take?",
+    "options": [
+      "6.33 days (approx)",
+      "6.83 days (approx)",
+      "7.33 days (approx)",
+      "7.83 days (approx)"
+    ],
+    "correct_answer": "7.33 days (approx)",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0179",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A can do a work in 16 days, B in 32 days. They work together for 8 days, then A leaves. How many more days will B take?",
+    "options": [
+      "6 days",
+      "7 days",
+      "8 days",
+      "9 days"
+    ],
+    "correct_answer": "8 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_TW_0180",
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A, B, and C together can do a work in 8 days. A and B together in 12 days. In how many days can C alone do it?",
+    "options": [
+      "20 days",
+      "22 days",
+      "24 days",
+      "26 days"
+    ],
+    "correct_answer": "24 days",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

@@ -22,5 +22,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0241",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All engineers are good at math. Conclusion: Some people good at math are engineers.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0242",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some phones are expensive. Conclusion: All expensive things are phones.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0243",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: No cat is a dog. Conclusion: Some dogs are not cats.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0244",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All roses are flowers. Some flowers fade quickly. Conclusion: Some roses fade quickly.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0245",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some students are lazy. All lazy people fail. Conclusion: Some students fail.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0246",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All cars are vehicles. Some vehicles are fast. Conclusion: Some cars are fast.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0247",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: No teacher is late. Conclusion: All late people are not teachers.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0248",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some mobiles are smartphones. All smartphones are expensive. Conclusion: Some mobiles are expensive.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0249",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All cats are animals. Some animals are pets. Conclusion: Some cats are pets.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0250",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some books are novels. All novels are interesting. Conclusion: Some books are interesting.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0251",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: No man is perfect. Conclusion: Some perfect beings are not men.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0252",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All doctors are educated. Some educated people are kind. Conclusion: Some doctors are kind.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0253",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some fruits are sweet. All sweet things are liked by children. Conclusion: Some fruits are liked by children.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0254",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All pens are stationery. Some stationery is costly. Conclusion: Some pens are costly.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0255",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: No bird is a fish. Conclusion: Some fish are not birds.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0256",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some players are cricketers. All cricketers are fit. Conclusion: Some players are fit.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0257",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All laptops are computers. Some computers are slow. Conclusion: Some laptops are slow.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0258",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some teachers are authors. All authors are readers. Conclusion: Some teachers are readers.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0259",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: No honest person is a liar. Conclusion: All liars are not honest.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0260",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All mobiles are electronic. Some electronic items are cheap. Conclusion: Some mobiles are cheap.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0261",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some cars are SUVs. All SUVs are spacious. Conclusion: Some cars are spacious.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0262",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All keys are tools. Some tools are useful. Conclusion: Some keys are useful.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0263",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: No student is late today. Conclusion: All who are late today are not students.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0264",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some flowers are red. All red things are attractive. Conclusion: Some flowers are attractive.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0265",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All phones are gadgets. Some gadgets are costly. Conclusion: Some phones are costly.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0266",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some engineers are managers. All managers are leaders. Conclusion: Some engineers are leaders.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0267",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: No dog is a cat. Conclusion: Some cats are not dogs.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0268",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All shoes are footwear. Some footwear is leather. Conclusion: Some shoes are leather.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0269",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: Some movies are hits. All hits are profitable. Conclusion: Some movies are profitable.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion follows",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0270",
+    "category": "Logical Reasoning",
+    "topic": "Statement and Conclusion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Statement: All chairs are furniture. Some furniture is wooden. Conclusion: Some chairs are wooden.",
+    "options": [
+      "Conclusion follows",
+      "Conclusion does not follow",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Conclusion does not follow",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

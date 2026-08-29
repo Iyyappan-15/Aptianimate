@@ -21,5 +21,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0211",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In a class of 50, Ravi is 15th from top. His rank from bottom is:",
+    "options": [
+      "36th",
+      "35th",
+      "34th",
+      "37th"
+    ],
+    "correct_answer": "36th",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0212",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "In a row of 40, A is 12th from left, B is 15th from right. People between them?",
+    "options": [
+      "13",
+      "14",
+      "12",
+      "15"
+    ],
+    "correct_answer": "13",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0213",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Sita is 8th from either end of a row. Total people?",
+    "options": [
+      "15",
+      "16",
+      "14",
+      "17"
+    ],
+    "correct_answer": "15",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0214",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In a class of 60, Neetu is 22nd from top. What is her rank from bottom?",
+    "options": [
+      "39th",
+      "38th",
+      "40th",
+      "41st"
+    ],
+    "correct_answer": "39th",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0215",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is 10th from left, B is 12th from right. After swapping, A is 18th from left. Total?",
+    "options": [
+      "29",
+      "30",
+      "28",
+      "31"
+    ],
+    "correct_answer": "29",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0216",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "In a queue, X is 14th from front, Y is 16th from back. There are 6 between them. Total?",
+    "options": [
+      "36",
+      "35",
+      "34",
+      "37"
+    ],
+    "correct_answer": "36",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0217",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is 7th from top, Q is 9th from bottom. There are 5 between them. Total?",
+    "options": [
+      "21",
+      "20",
+      "22",
+      "23"
+    ],
+    "correct_answer": "21",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0218",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In a row of 45, M is 18th from left. His position from right?",
+    "options": [
+      "28th",
+      "27th",
+      "29th",
+      "30th"
+    ],
+    "correct_answer": "28th",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0219",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "K is 12th from top in 50 students. What is rank from bottom?",
+    "options": [
+      "39th",
+      "38th",
+      "40th",
+      "41st"
+    ],
+    "correct_answer": "39th",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0220",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "In a line, A is 9th from left, B is 11th from right. There are 4 between. Total?",
+    "options": [
+      "24",
+      "23",
+      "25",
+      "26"
+    ],
+    "correct_answer": "24",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0221",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "R is 16th from either end. Total in row?",
+    "options": [
+      "31",
+      "30",
+      "32",
+      "33"
+    ],
+    "correct_answer": "31",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0222",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In 100 students, T is 40th from top. Rank from bottom?",
+    "options": [
+      "61st",
+      "60th",
+      "62nd",
+      "59th"
+    ],
+    "correct_answer": "61st",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0223",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "M is 5th from left, N is 7th from right. After swapping, M is 10th from left. Total?",
+    "options": [
+      "16",
+      "15",
+      "17",
+      "18"
+    ],
+    "correct_answer": "16",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0224",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In 60 people, A is 25th from top. What is rank from bottom?",
+    "options": [
+      "36th",
+      "35th",
+      "37th",
+      "38th"
+    ],
+    "correct_answer": "36th",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0225",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is 14th from front, Y is 18th from back. 5 between them. Total?",
+    "options": [
+      "37",
+      "36",
+      "38",
+      "35"
+    ],
+    "correct_answer": "37",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0226",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is 11th from top, Q is 13th from bottom. 6 between them. Total?",
+    "options": [
+      "30",
+      "29",
+      "31",
+      "32"
+    ],
+    "correct_answer": "30",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0227",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In 80 people, K is 30th from top. Rank from bottom?",
+    "options": [
+      "51st",
+      "50th",
+      "52nd",
+      "49th"
+    ],
+    "correct_answer": "51st",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0228",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is 8th from left, B is 10th from right. 3 between. Total?",
+    "options": [
+      "21",
+      "20",
+      "22",
+      "23"
+    ],
+    "correct_answer": "21",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0229",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "R is 20th from either end. Total?",
+    "options": [
+      "39",
+      "38",
+      "40",
+      "41"
+    ],
+    "correct_answer": "39",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0230",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In 45 students, M is 15th from top. Rank from bottom?",
+    "options": [
+      "31st",
+      "30th",
+      "32nd",
+      "29th"
+    ],
+    "correct_answer": "31st",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0231",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is 12th from front, Y is 14th from back. 4 between. Total?",
+    "options": [
+      "30",
+      "29",
+      "31",
+      "32"
+    ],
+    "correct_answer": "30",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0232",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is 9th from top, Q is 11th from bottom. 5 between. Total?",
+    "options": [
+      "25",
+      "24",
+      "26",
+      "27"
+    ],
+    "correct_answer": "25",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0233",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In 70 people, A is 28th from top. Rank from bottom?",
+    "options": [
+      "43rd",
+      "42nd",
+      "44th",
+      "41st"
+    ],
+    "correct_answer": "43rd",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0234",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "K is 6th from left, L is 8th from right. After swap, K is 12th from left. Total?",
+    "options": [
+      "19",
+      "18",
+      "20",
+      "21"
+    ],
+    "correct_answer": "19",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0235",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In 55 students, T is 20th from top. Rank from bottom?",
+    "options": [
+      "36th",
+      "35th",
+      "37th",
+      "38th"
+    ],
+    "correct_answer": "36th",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0236",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "M is 10th from either end. Total?",
+    "options": [
+      "19",
+      "18",
+      "20",
+      "21"
+    ],
+    "correct_answer": "19",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0237",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is 7th from left, B is 9th from right. 2 between. Total?",
+    "options": [
+      "18",
+      "17",
+      "19",
+      "20"
+    ],
+    "correct_answer": "18",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0238",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In 90 people, X is 35th from top. Rank from bottom?",
+    "options": [
+      "56th",
+      "55th",
+      "57th",
+      "54th"
+    ],
+    "correct_answer": "56th",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0239",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is 13th from top, Q is 15th from bottom. 7 between. Total?",
+    "options": [
+      "35",
+      "34",
+      "36",
+      "37"
+    ],
+    "correct_answer": "35",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_RK_0240",
+    "category": "Logical Reasoning",
+    "topic": "Ranking",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In 65 students, K is 22nd from top. Rank from bottom?",
+    "options": [
+      "44th",
+      "43rd",
+      "45th",
+      "42nd"
+    ],
+    "correct_answer": "44th",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
