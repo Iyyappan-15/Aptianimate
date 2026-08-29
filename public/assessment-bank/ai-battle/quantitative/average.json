@@ -223,5 +223,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0121",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Find the average of 10, 20, 30, 40, 50.",
+    "options": [
+      "25",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct_answer": "30",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0122",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 5 numbers is 20. If four numbers are 15, 25, 20, 30, find the fifth.",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct_answer": "10",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0123",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average age of 3 boys is 15 years. If two are 13 and 17, find the third boy's age.",
+    "options": [
+      "13 years",
+      "14 years",
+      "15 years",
+      "16 years"
+    ],
+    "correct_answer": "15 years",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0124",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 10 numbers is 25. If each number is increased by 5, what is the new average?",
+    "options": [
+      "25",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct_answer": "30",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0125",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 8 numbers is 12. If one number 20 is removed, find the new average.",
+    "options": [
+      "9.5",
+      "10.5",
+      "10.857 (approx)",
+      "11.5"
+    ],
+    "correct_answer": "10.857 (approx)",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0126",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average marks of 20 students is 45. If 5 students with average 55 leave, find the new average.",
+    "options": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "correct_answer": "42",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0127",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 5 consecutive integers is 21. Find the largest integer.",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "correct_answer": "23",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0128",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 3 numbers is 18. If two numbers are 15 and 21, find the third.",
+    "options": [
+      "15",
+      "16",
+      "18",
+      "20"
+    ],
+    "correct_answer": "18",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0129",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average weight of 10 persons is 60 kg. If a person weighing 70 kg is replaced by a person weighing 50 kg, find the new average.",
+    "options": [
+      "56 kg",
+      "57 kg",
+      "58 kg",
+      "59 kg"
+    ],
+    "correct_answer": "58 kg",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0130",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 6 numbers is 15. If one number is 21, find the average of the remaining 5.",
+    "options": [
+      "12.8",
+      "13.2",
+      "13.8",
+      "14.2"
+    ],
+    "correct_answer": "13.8",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0131",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 4 numbers is 20. If one number is doubled, the new average becomes 24. Find the original number that was doubled.",
+    "options": [
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "correct_answer": "16",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0132",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average height of 5 students is 150 cm. If a new student joins and the average becomes 152 cm, find the new student's height.",
+    "options": [
+      "156 cm",
+      "158 cm",
+      "160 cm",
+      "162 cm"
+    ],
+    "correct_answer": "162 cm",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0133",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 7 numbers is 25. If one number is excluded, the average becomes 24. Find the excluded number.",
+    "options": [
+      "25",
+      "28",
+      "31",
+      "34"
+    ],
+    "correct_answer": "31",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0134",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 10 numbers is 30. If each number is multiplied by 2, what is the new average?",
+    "options": [
+      "30",
+      "45",
+      "60",
+      "90"
+    ],
+    "correct_answer": "60",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0135",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 3 numbers is 12. If one number is 9 and another is 15, find the third.",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_answer": "12",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0136",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 5 numbers is 18. If one number is increased by 10, what is the new average?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "correct_answer": "20",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0137",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average age of a family of 4 is 30 years. If a new member joins and the average becomes 28 years, find the new member's age.",
+    "options": [
+      "16 years",
+      "18 years",
+      "20 years",
+      "22 years"
+    ],
+    "correct_answer": "20 years",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0138",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 8 numbers is 20. If two numbers 25 and 15 are removed, find the new average.",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "correct_answer": "20",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0139",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 6 consecutive even numbers is 23. Find the largest number.",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30"
+    ],
+    "correct_answer": "28",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0140",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 5 numbers is 24. If one number is 20, find the average of the other 4.",
+    "options": [
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "correct_answer": "25",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0141",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 10 numbers is 15. If one number is excluded, the average becomes 16. Find the excluded number.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0142",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 7 numbers is 18. If each number is decreased by 3, what is the new average?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "correct_answer": "15",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0143",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 4 numbers is 25. If one number is 30, find the average of the other 3.",
+    "options": [
+      "22.33",
+      "23.33 (approx)",
+      "24.33",
+      "25.33"
+    ],
+    "correct_answer": "23.33 (approx)",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0144",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 9 numbers is 20. If one number is 28, find the average of the remaining 8.",
+    "options": [
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "correct_answer": "19",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0145",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 5 numbers is 16. If two numbers 12 and 20 are removed, find the new average.",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "correct_answer": "16",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0146",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 6 numbers is 14. If one number is doubled, the new average becomes 16. Find the original number that was doubled.",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct_answer": "12",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0147",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "The average of 8 numbers is 18. If a new number is added and the average becomes 19, find the new number.",
+    "options": [
+      "21",
+      "24",
+      "27",
+      "30"
+    ],
+    "correct_answer": "27",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0148",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 3 numbers is 21. If one number is 15 and another is 27, find the third.",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "correct_answer": "21",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0149",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 10 numbers is 22. If each number is increased by 10%, what is the new average?",
+    "options": [
+      "22.2",
+      "23.2",
+      "24.2",
+      "25.2"
+    ],
+    "correct_answer": "24.2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AVG_0150",
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The average of 5 numbers is 18. If one number is 10, find the average of the other 4.",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "correct_answer": "20",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
