@@ -22,5 +22,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0271",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Find CI on ₹1000 at 10% p.a. for 2 years, compounded annually.",
+    "options": [
+      "₹210",
+      "₹200",
+      "₹220",
+      "₹230"
+    ],
+    "correct_answer": "₹210",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0272",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹5000 at 8% p.a. CI for 2 years. Amount?",
+    "options": [
+      "₹5832",
+      "₹5800",
+      "₹5900",
+      "₹5850"
+    ],
+    "correct_answer": "₹5832",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0273",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CI on ₹2000 at 5% for 2 years?",
+    "options": [
+      "₹205",
+      "₹200",
+      "₹210",
+      "₹215"
+    ],
+    "correct_answer": "₹205",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0274",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹10000 at 10% CI for 3 years. Amount?",
+    "options": [
+      "₹13310",
+      "₹13000",
+      "₹13200",
+      "₹13100"
+    ],
+    "correct_answer": "₹13310",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0275",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Difference between CI and SI on ₹5000 at 10% for 2 years?",
+    "options": [
+      "₹50",
+      "₹100",
+      "₹150",
+      "₹200"
+    ],
+    "correct_answer": "₹50",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0276",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "CI on ₹8000 at 12.5% for 2 years?",
+    "options": [
+      "₹2125",
+      "₹2000",
+      "₹2100",
+      "₹2050"
+    ],
+    "correct_answer": "₹2125",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0277",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "₹3000 at 20% CI for 2 years. Amount?",
+    "options": [
+      "₹4320",
+      "₹4200",
+      "₹4300",
+      "₹4250"
+    ],
+    "correct_answer": "₹4320",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0278",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "CI on ₹6000 at 10% for 3 years?",
+    "options": [
+      "₹1986",
+      "₹1800",
+      "₹2000",
+      "₹1900"
+    ],
+    "correct_answer": "₹1986",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0279",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "₹4000 at 5% CI for 2 years. CI?",
+    "options": [
+      "₹410",
+      "₹400",
+      "₹420",
+      "₹430"
+    ],
+    "correct_answer": "₹410",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0280",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Amount of ₹7000 at 10% CI for 2 years?",
+    "options": [
+      "₹8470",
+      "₹8400",
+      "₹8500",
+      "₹8450"
+    ],
+    "correct_answer": "₹8470",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0281",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "CI on ₹9000 at 8% for 2 years?",
+    "options": [
+      "₹1497.6",
+      "₹1440",
+      "₹1500",
+      "₹1480"
+    ],
+    "correct_answer": "₹1497.6",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0282",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹2000 at 10% CI for 3 years. Amount?",
+    "options": [
+      "₹2662",
+      "₹2600",
+      "₹2650",
+      "₹2640"
+    ],
+    "correct_answer": "₹2662",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0283",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Difference CI–SI on ₹8000 at 10% for 2 years?",
+    "options": [
+      "₹80",
+      "₹100",
+      "₹120",
+      "₹150"
+    ],
+    "correct_answer": "₹80",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0284",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹5000 at 12% CI for 2 years. Amount?",
+    "options": [
+      "₹6272",
+      "₹6200",
+      "₹6250",
+      "₹6240"
+    ],
+    "correct_answer": "₹6272",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0285",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CI on ₹10000 at 5% for 2 years?",
+    "options": [
+      "₹1025",
+      "₹1000",
+      "₹1050",
+      "₹1030"
+    ],
+    "correct_answer": "₹1025",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0286",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹6000 at 10% CI for 2 years. CI?",
+    "options": [
+      "₹1260",
+      "₹1200",
+      "₹1250",
+      "₹1240"
+    ],
+    "correct_answer": "₹1260",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0287",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Amount of ₹3000 at 20% CI for 2 years?",
+    "options": [
+      "₹4320",
+      "₹4200",
+      "₹4300",
+      "₹4280"
+    ],
+    "correct_answer": "₹4320",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0288",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "CI on ₹4000 at 10% for 3 years?",
+    "options": [
+      "₹1324",
+      "₹1200",
+      "₹1300",
+      "₹1280"
+    ],
+    "correct_answer": "₹1324",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0289",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "₹8000 at 5% CI for 2 years. Amount?",
+    "options": [
+      "₹8820",
+      "₹8800",
+      "₹8850",
+      "₹8840"
+    ],
+    "correct_answer": "₹8820",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0290",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Difference CI–SI on ₹10000 at 10% for 2 years?",
+    "options": [
+      "₹100",
+      "₹150",
+      "₹200",
+      "₹250"
+    ],
+    "correct_answer": "₹100",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0291",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹2000 at 8% CI for 2 years. CI?",
+    "options": [
+      "₹332.8",
+      "₹320",
+      "₹330",
+      "₹328"
+    ],
+    "correct_answer": "₹332.8",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0292",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Amount of ₹9000 at 10% CI for 3 years?",
+    "options": [
+      "₹11979",
+      "₹11700",
+      "₹11900",
+      "₹11950"
+    ],
+    "correct_answer": "₹11979",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0293",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "CI on ₹7000 at 12% for 2 years?",
+    "options": [
+      "₹1766.4",
+      "₹1680",
+      "₹1750",
+      "₹1760"
+    ],
+    "correct_answer": "₹1766.4",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0294",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹5000 at 10% CI for 3 years. Amount?",
+    "options": [
+      "₹6655",
+      "₹6500",
+      "₹6600",
+      "₹6640"
+    ],
+    "correct_answer": "₹6655",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0295",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CI on ₹3000 at 10% for 2 years?",
+    "options": [
+      "₹630",
+      "₹600",
+      "₹620",
+      "₹610"
+    ],
+    "correct_answer": "₹630",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0296",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹10000 at 8% CI for 2 years. Amount?",
+    "options": [
+      "₹11664",
+      "₹11600",
+      "₹11650",
+      "₹11640"
+    ],
+    "correct_answer": "₹11664",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0297",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Difference CI–SI on ₹6000 at 10% for 2 years?",
+    "options": [
+      "₹60",
+      "₹100",
+      "₹120",
+      "₹150"
+    ],
+    "correct_answer": "₹60",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0298",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "₹4000 at 12% CI for 2 years. CI?",
+    "options": [
+      "₹1017.6",
+      "₹960",
+      "₹1000",
+      "₹1010"
+    ],
+    "correct_answer": "₹1017.6",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0299",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Amount of ₹2000 at 10% CI for 2 years?",
+    "options": [
+      "₹2420",
+      "₹2400",
+      "₹2410",
+      "₹2430"
+    ],
+    "correct_answer": "₹2420",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CI_0300",
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "CI on ₹8000 at 10% for 3 years?",
+    "options": [
+      "₹2648",
+      "₹2400",
+      "₹2600",
+      "₹2620"
+    ],
+    "correct_answer": "₹2648",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
