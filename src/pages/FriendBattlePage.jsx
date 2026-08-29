@@ -61,6 +61,17 @@ const FriendBattlePage = ({ navigate }) => {
   const [isHost, setIsHost] = useState(false);
   const [channel, setChannel] = useState(null);
 
+  // Read selected topics from URL (passed by BattlePage via TopicPicker)
+  const selectedTopics = (() => {
+    try {
+      const rawHash = window.location.hash;
+      if (!rawHash.includes('?')) return null;
+      const params = new URLSearchParams(rawHash.split('?')[1]);
+      const t = params.get('topics');
+      return t ? JSON.parse(decodeURIComponent(t)) : null;
+    } catch { return null; }
+  })();
+
   const [config, _setConfig] = useState({
     categories: {
       'Quantitative Aptitude': 10,
@@ -204,8 +215,12 @@ const FriendBattlePage = ({ navigate }) => {
     if (!user) return alert('Please login first');
     setMatchStatus('creating');
     try {
-      const selected = getRandomQuestions(config);
-      const matchConfig = { ...config, selected_ids: selected.map(q => q.id) };
+      const selected = getRandomQuestions(config, selectedTopics);
+      const matchConfig = {
+        ...config,
+        selected_ids: selected.map(q => q.id),
+        selectedTopics: selectedTopics || null, // store topics in config for rematch
+      };
       const { data, error } = await supabase.rpc('create_friendly_match', { p_config: matchConfig });
       if (error) throw error;
       setRoomCode(data.join_code);
