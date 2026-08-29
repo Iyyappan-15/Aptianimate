@@ -22,5 +22,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0181",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "You have a 3-liter jug and a 5-liter jug. How can you measure exactly 4 liters?",
+    "options": [
+      "Fill 5L, pour into 3L, empty 3L, pour 2L into 3L, fill 5L, top up 3L",
+      "Fill 3L twice and pour into 5L",
+      "Fill 5L and pour out 1L",
+      "Fill 3L and pour into 5L twice"
+    ],
+    "correct_answer": "Fill 5L, pour into 3L, empty 3L, pour 2L into 3L, fill 5L, top up 3L",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0182",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "There are 3 switches outside a room and 1 bulb inside. Only one switch controls the bulb. You can enter the room only once. How do you find the correct switch?",
+    "options": [
+      "Turn on switch 1 for 5 min, off; turn on switch 2; enter and feel/check bulb",
+      "Turn on all switches and enter",
+      "Turn on switch 1 and enter immediately",
+      "Randomly pick a switch"
+    ],
+    "correct_answer": "Turn on switch 1 for 5 min, off; turn on switch 2; enter and feel/check bulb",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0183",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A farmer has 17 sheep. All but 9 die. How many are left?",
+    "options": [
+      "9",
+      "8",
+      "17",
+      "0"
+    ],
+    "correct_answer": "9",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0184",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "You are in a dark room with a candle, a wood stove, and a gas lamp. You only have one match. What do you light first?",
+    "options": [
+      "The match",
+      "The candle",
+      "The wood stove",
+      "The gas lamp"
+    ],
+    "correct_answer": "The match",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0185",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "options": [
+      "The letter 'M'",
+      "The letter 'E'",
+      "The letter 'T'",
+      "The letter 'S'"
+    ],
+    "correct_answer": "The letter 'M'",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0186",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "Blood Relations",
+    "difficulty": "medium",
+    "question": "A man is looking at a photograph. He says, 'Brothers and sisters, I have none. That man's father is my father's son.' Who is in the photograph?",
+    "options": [
+      "His son",
+      "His father",
+      "Himself",
+      "His nephew"
+    ],
+    "correct_answer": "His son",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0187",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If you have a bowl with 6 apples and you take away 4, how many do you have?",
+    "options": [
+      "4",
+      "2",
+      "6",
+      "0"
+    ],
+    "correct_answer": "4",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0188",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which is heavier: a pound of feathers or a pound of bricks?",
+    "options": [
+      "Both weigh the same",
+      "Feathers",
+      "Bricks",
+      "Depends on size"
+    ],
+    "correct_answer": "Both weigh the same",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0189",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A train leaves Chennai at 60 km/h. Another leaves Delhi at 80 km/h towards Chennai. When they meet, which is farther from Chennai?",
+    "options": [
+      "Both are at the same point",
+      "Chennai train",
+      "Delhi train",
+      "Cannot say"
+    ],
+    "correct_answer": "Both are at the same point",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0190",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "How many months have 28 days?",
+    "options": [
+      "12",
+      "1",
+      "2",
+      "6"
+    ],
+    "correct_answer": "12",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0191",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "You see a boat filled with people. It has not sunk, but when you look again you don't see a single person on the boat. Why?",
+    "options": [
+      "All are married",
+      "Everyone jumped out",
+      "Boat sank",
+      "You closed your eyes"
+    ],
+    "correct_answer": "All are married",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0192",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What can you catch but not throw?",
+    "options": [
+      "A cold",
+      "A ball",
+      "A stone",
+      "A rope"
+    ],
+    "correct_answer": "A cold",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0193",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If two's company and three's a crowd, what are four and five?",
+    "options": [
+      "9",
+      "A party",
+      "A crowd",
+      "Friends"
+    ],
+    "correct_answer": "9",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0194",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "I speak without a mouth and hear without ears. I have no body, but come alive with wind. What am I?",
+    "options": [
+      "An echo",
+      "A cloud",
+      "A ghost",
+      "A bird"
+    ],
+    "correct_answer": "An echo",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0195",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "The more you take, the more you leave behind. What is it?",
+    "options": [
+      "Footsteps",
+      "Money",
+      "Time",
+      "Photos"
+    ],
+    "correct_answer": "Footsteps",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0196",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What has keys but can't open locks?",
+    "options": [
+      "A piano",
+      "A map",
+      "A book",
+      "A computer"
+    ],
+    "correct_answer": "A piano",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0197",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What has a head and a tail but no body?",
+    "options": [
+      "A coin",
+      "A snake",
+      "A lizard",
+      "A rope"
+    ],
+    "correct_answer": "A coin",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0198",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What can travel around the world while staying in a corner?",
+    "options": [
+      "A stamp",
+      "A plane",
+      "A ship",
+      "A car"
+    ],
+    "correct_answer": "A stamp",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0199",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What gets wetter the more it dries?",
+    "options": [
+      "A towel",
+      "A sponge",
+      "Cloth",
+      "Paper"
+    ],
+    "correct_answer": "A towel",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0200",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "You have 12 balls, one is either heavier or lighter. Using a balance scale, what's the minimum number of weighings to find the odd ball?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "correct_answer": "3",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0201",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A snail is at the bottom of a 30-foot well. Each day it climbs 3 feet, each night it slides 2 feet. How many days to reach the top?",
+    "options": [
+      "28",
+      "30",
+      "27",
+      "29"
+    ],
+    "correct_answer": "28",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0202",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "There are 100 statements. Statement 1: 'At least 1 is false.' Statement 2: 'At least 2 are false.' ... Statement 100: 'At least 100 are false.' How many are true?",
+    "options": [
+      "50",
+      "0",
+      "1",
+      "99"
+    ],
+    "correct_answer": "50",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0203",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "You have 2 ropes, each burns in 60 minutes but not uniformly. How do you measure 45 minutes?",
+    "options": [
+      "Light rope 1 at both ends and rope 2 at one end; when rope 1 finishes, light other end of rope 2",
+      "Light both ropes at one end",
+      "Cut ropes in half",
+      "Use a watch"
+    ],
+    "correct_answer": "Light rope 1 at both ends and rope 2 at one end; when rope 1 finishes, light other end of rope 2",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0204",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A man pushes his car to a hotel and loses his fortune. What happened?",
+    "options": [
+      "He was playing Monopoly",
+      "He lost a bet",
+      "Car broke down",
+      "Hotel was expensive"
+    ],
+    "correct_answer": "He was playing Monopoly",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0205",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "What comes next: 2, 6, 12, 20, 30, ...?",
+    "options": [
+      "42",
+      "40",
+      "36",
+      "44"
+    ],
+    "correct_answer": "42",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0206",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "Clock",
+    "difficulty": "medium",
+    "question": "A clock strikes 4 in 3 seconds. How long to strike 7?",
+    "options": [
+      "6 seconds",
+      "5 seconds",
+      "7 seconds",
+      "8 seconds"
+    ],
+    "correct_answer": "6 seconds",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0207",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "You have 8 identical balls, one is heavier. Minimum weighings to find it using a balance scale?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correct_answer": "2",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0208",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "What is the maximum number of regions you can get by making 3 straight cuts on a pizza?",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "9"
+    ],
+    "correct_answer": "7",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0209",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A bat and ball cost $1.10. The bat costs $1 more than the ball. How much is the ball?",
+    "options": [
+      "$0.05",
+      "$0.10",
+      "$0.15",
+      "$0.20"
+    ],
+    "correct_answer": "$0.05",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PZ_0210",
+    "category": "Logical Reasoning",
+    "topic": "Puzzle",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In a race, you overtake the person in 2nd place. What position are you in now?",
+    "options": [
+      "2nd",
+      "1st",
+      "3rd",
+      "4th"
+    ],
+    "correct_answer": "2nd",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
