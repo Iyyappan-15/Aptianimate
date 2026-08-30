@@ -9,8 +9,8 @@
     "options": [
       "138 gallons",
       "120 gallons",
-      "156 gallons",
-      "60 gallons"
+      "60 gallons",
+      "156 gallons"
     ],
     "correct_answer": "120 gallons",
     "estimated_time": 60,
@@ -30,10 +30,10 @@
     "difficulty": "easy",
     "question": "Pipe A fills a tank in 10 hrs, Pipe B in 15 hrs. Together time?",
     "options": [
-      "6 hrs",
       "5 hrs",
-      "7 hrs",
-      "8 hrs"
+      "6 hrs",
+      "8 hrs",
+      "7 hrs"
     ],
     "correct_answer": "6 hrs",
     "estimated_time": 45,
@@ -56,10 +56,10 @@
     "difficulty": "medium",
     "question": "A fills in 12 hrs, B empties in 20 hrs. Both open, tank fills in?",
     "options": [
-      "30 hrs",
-      "20 hrs",
       "25 hrs",
-      "15 hrs"
+      "15 hrs",
+      "20 hrs",
+      "30 hrs"
     ],
     "correct_answer": "30 hrs",
     "estimated_time": 60,
@@ -84,8 +84,8 @@
     "options": [
       "4.8 hrs",
       "5 hrs",
-      "6 hrs",
-      "4 hrs"
+      "4 hrs",
+      "6 hrs"
     ],
     "correct_answer": "4.8 hrs",
     "estimated_time": 45,
@@ -108,10 +108,10 @@
     "difficulty": "medium",
     "question": "A fills in 6 hrs, B empties in 9 hrs. Both open, time to fill?",
     "options": [
-      "18 hrs",
+      "10 hrs",
       "12 hrs",
       "15 hrs",
-      "10 hrs"
+      "18 hrs"
     ],
     "correct_answer": "18 hrs",
     "estimated_time": 60,
@@ -160,10 +160,10 @@
     "difficulty": "medium",
     "question": "A fills in 15 hrs, B empties in 30 hrs. Net time to fill?",
     "options": [
-      "30 hrs",
       "20 hrs",
-      "25 hrs",
-      "15 hrs"
+      "30 hrs",
+      "15 hrs",
+      "25 hrs"
     ],
     "correct_answer": "30 hrs",
     "estimated_time": 60,
@@ -186,10 +186,10 @@
     "difficulty": "easy",
     "question": "A fills in 5 hrs, B in 10 hrs. Together?",
     "options": [
-      "3.33 hrs",
-      "4 hrs",
       "3 hrs",
-      "3.5 hrs"
+      "3.33 hrs",
+      "3.5 hrs",
+      "4 hrs"
     ],
     "correct_answer": "3.33 hrs",
     "estimated_time": 45,
@@ -212,10 +212,10 @@
     "difficulty": "medium",
     "question": "A fills in 8 hrs, B empties in 12 hrs. Both open, time?",
     "options": [
-      "24 hrs",
-      "20 hrs",
       "18 hrs",
-      "22 hrs"
+      "22 hrs",
+      "24 hrs",
+      "20 hrs"
     ],
     "correct_answer": "24 hrs",
     "estimated_time": 60,
@@ -238,10 +238,10 @@
     "difficulty": "easy",
     "question": "A fills in 9 hrs, B in 18 hrs. Together?",
     "options": [
-      "6 hrs",
       "7 hrs",
+      "5 hrs",
       "8 hrs",
-      "5 hrs"
+      "6 hrs"
     ],
     "correct_answer": "6 hrs",
     "estimated_time": 45,
@@ -264,10 +264,10 @@
     "difficulty": "medium",
     "question": "A fills in 10 hrs, B empties in 15 hrs. Net time?",
     "options": [
-      "30 hrs",
-      "25 hrs",
+      "15 hrs",
       "20 hrs",
-      "15 hrs"
+      "25 hrs",
+      "30 hrs"
     ],
     "correct_answer": "30 hrs",
     "estimated_time": 60,
@@ -290,10 +290,10 @@
     "difficulty": "easy",
     "question": "A fills in 12 hrs, B in 24 hrs. Together?",
     "options": [
-      "8 hrs",
-      "9 hrs",
       "10 hrs",
-      "7 hrs"
+      "7 hrs",
+      "8 hrs",
+      "9 hrs"
     ],
     "correct_answer": "8 hrs",
     "estimated_time": 45,
@@ -317,9 +317,9 @@
     "question": "A fills in 6 hrs, B in 12 hrs. Together?",
     "options": [
       "4 hrs",
-      "5 hrs",
+      "3 hrs",
       "6 hrs",
-      "3 hrs"
+      "5 hrs"
     ],
     "correct_answer": "4 hrs",
     "estimated_time": 45,
@@ -342,10 +342,10 @@
     "difficulty": "medium",
     "question": "A fills in 10 hrs, B empties in 20 hrs. Net?",
     "options": [
-      "20 hrs",
-      "15 hrs",
+      "30 hrs",
       "25 hrs",
-      "30 hrs"
+      "20 hrs",
+      "15 hrs"
     ],
     "correct_answer": "20 hrs",
     "estimated_time": 60,
@@ -368,10 +368,10 @@
     "difficulty": "easy",
     "question": "A fills in 8 hrs, B in 16 hrs. Together?",
     "options": [
-      "5.33 hrs",
-      "6 hrs",
       "5 hrs",
-      "4.5 hrs"
+      "6 hrs",
+      "4.5 hrs",
+      "5.33 hrs"
     ],
     "correct_answer": "5.33 hrs",
     "estimated_time": 45,
@@ -394,10 +394,10 @@
     "difficulty": "easy",
     "question": "A fills in 15 hrs, B in 30 hrs. Together?",
     "options": [
-      "10 hrs",
-      "12 hrs",
       "11 hrs",
-      "9 hrs"
+      "9 hrs",
+      "10 hrs",
+      "12 hrs"
     ],
     "correct_answer": "10 hrs",
     "estimated_time": 45,
@@ -420,8 +420,8 @@
     "difficulty": "medium",
     "question": "A fills in 7 hrs, B empties in 14 hrs. Net?",
     "options": [
-      "14 hrs",
       "10 hrs",
+      "14 hrs",
       "12 hrs",
       "16 hrs"
     ],
@@ -446,10 +446,10 @@
     "difficulty": "easy",
     "question": "A fills in 9 hrs, B in 27 hrs. Together?",
     "options": [
-      "6.75 hrs",
-      "7 hrs",
       "8 hrs",
-      "6 hrs"
+      "6 hrs",
+      "6.75 hrs",
+      "7 hrs"
     ],
     "correct_answer": "6.75 hrs",
     "estimated_time": 45,
@@ -472,10 +472,10 @@
     "difficulty": "easy",
     "question": "A fills in 10 hrs, B in 30 hrs. Together?",
     "options": [
-      "7.5 hrs",
-      "8 hrs",
       "7 hrs",
-      "6 hrs"
+      "6 hrs",
+      "8 hrs",
+      "7.5 hrs"
     ],
     "correct_answer": "7.5 hrs",
     "estimated_time": 45,
@@ -498,10 +498,10 @@
     "difficulty": "medium",
     "question": "A fills in 12 hrs, B empties in 24 hrs. Net?",
     "options": [
-      "24 hrs",
-      "20 hrs",
       "18 hrs",
-      "22 hrs"
+      "24 hrs",
+      "22 hrs",
+      "20 hrs"
     ],
     "correct_answer": "24 hrs",
     "estimated_time": 60,
@@ -524,10 +524,10 @@
     "difficulty": "easy",
     "question": "A fills in 5 hrs, B in 15 hrs. Together?",
     "options": [
-      "3.75 hrs",
-      "4 hrs",
       "3.5 hrs",
-      "3 hrs"
+      "3 hrs",
+      "4 hrs",
+      "3.75 hrs"
     ],
     "correct_answer": "3.75 hrs",
     "estimated_time": 45,
@@ -550,10 +550,10 @@
     "difficulty": "medium",
     "question": "A fills in 8 hrs, B empties in 16 hrs. Net?",
     "options": [
-      "16 hrs",
-      "12 hrs",
       "14 hrs",
-      "10 hrs"
+      "10 hrs",
+      "12 hrs",
+      "16 hrs"
     ],
     "correct_answer": "16 hrs",
     "estimated_time": 60,
@@ -577,8 +577,8 @@
     "question": "A fills in 6 hrs, B in 18 hrs. Together?",
     "options": [
       "4.5 hrs",
-      "5 hrs",
       "6 hrs",
+      "5 hrs",
       "4 hrs"
     ],
     "correct_answer": "4.5 hrs",
@@ -603,9 +603,9 @@
     "question": "A fills in 10 hrs, B empties in 25 hrs. Net?",
     "options": [
       "50/3 hrs (≈16.67)",
-      "15 hrs",
       "20 hrs",
-      "18 hrs"
+      "18 hrs",
+      "15 hrs"
     ],
     "correct_answer": "50/3 hrs (≈16.67)",
     "estimated_time": 60,
@@ -628,10 +628,10 @@
     "difficulty": "easy",
     "question": "A fills in 12 hrs, B in 36 hrs. Together?",
     "options": [
-      "9 hrs",
-      "10 hrs",
       "8 hrs",
-      "11 hrs"
+      "11 hrs",
+      "9 hrs",
+      "10 hrs"
     ],
     "correct_answer": "9 hrs",
     "estimated_time": 45,
@@ -654,10 +654,10 @@
     "difficulty": "easy",
     "question": "A fills in 8 hrs, B in 24 hrs. Together?",
     "options": [
-      "6 hrs",
-      "7 hrs",
+      "5 hrs",
       "8 hrs",
-      "5 hrs"
+      "7 hrs",
+      "6 hrs"
     ],
     "correct_answer": "6 hrs",
     "estimated_time": 45,
@@ -680,10 +680,10 @@
     "difficulty": "medium",
     "question": "A fills in 15 hrs, B empties in 45 hrs. Net?",
     "options": [
-      "45 hrs",
-      "40 hrs",
       "35 hrs",
-      "30 hrs"
+      "30 hrs",
+      "40 hrs",
+      "45 hrs"
     ],
     "correct_answer": "45 hrs",
     "estimated_time": 60,
@@ -706,10 +706,10 @@
     "difficulty": "easy",
     "question": "A fills in 7 hrs, B in 21 hrs. Together?",
     "options": [
-      "5.25 hrs",
-      "6 hrs",
       "5 hrs",
-      "4.5 hrs"
+      "6 hrs",
+      "4.5 hrs",
+      "5.25 hrs"
     ],
     "correct_answer": "5.25 hrs",
     "estimated_time": 45,
@@ -732,10 +732,10 @@
     "difficulty": "medium",
     "question": "A fills in 9 hrs, B empties in 18 hrs. Net?",
     "options": [
-      "18 hrs",
       "15 hrs",
-      "16 hrs",
-      "14 hrs"
+      "14 hrs",
+      "18 hrs",
+      "16 hrs"
     ],
     "correct_answer": "18 hrs",
     "estimated_time": 60,
@@ -758,10 +758,10 @@
     "difficulty": "easy",
     "question": "A fills in 10 hrs, B in 40 hrs. Together?",
     "options": [
-      "8 hrs",
-      "9 hrs",
+      "7 hrs",
       "10 hrs",
-      "7 hrs"
+      "9 hrs",
+      "8 hrs"
     ],
     "correct_answer": "8 hrs",
     "estimated_time": 45,
