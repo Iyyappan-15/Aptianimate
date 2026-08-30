@@ -7,10 +7,10 @@
     "difficulty": "hard",
     "question": "Six swimmers (Anu, Benny, Chandru, Dolly, Esha, Furpreet) finish a race under specific conditions: Benny is 3rd, Esha is 5th, Dolly is 2nd, Anu is 6th, and Furpreet is 1st. How many swimmers separate Furpreet and Benny?",
     "options": [
-      "Three",
+      "Two",
       "None",
-      "One (Dolly)",
-      "Two"
+      "Three",
+      "One (Dolly)"
     ],
     "correct_answer": "One (Dolly)",
     "estimated_time": 90,
@@ -30,10 +30,10 @@
     "difficulty": "easy",
     "question": "In a class of 50, Ravi is 15th from top. His rank from bottom is:",
     "options": [
-      "36th",
       "35th",
       "34th",
-      "37th"
+      "37th",
+      "36th"
     ],
     "correct_answer": "36th",
     "estimated_time": 45,
@@ -56,9 +56,9 @@
     "difficulty": "medium",
     "question": "In a row of 40, A is 12th from left, B is 15th from right. People between them?",
     "options": [
-      "13",
-      "14",
       "12",
+      "14",
+      "13",
       "15"
     ],
     "correct_answer": "13",
@@ -83,9 +83,9 @@
     "question": "Sita is 8th from either end of a row. Total people?",
     "options": [
       "15",
+      "17",
       "16",
-      "14",
-      "17"
+      "14"
     ],
     "correct_answer": "15",
     "estimated_time": 45,
@@ -108,10 +108,10 @@
     "difficulty": "easy",
     "question": "In a class of 60, Neetu is 22nd from top. What is her rank from bottom?",
     "options": [
-      "39th",
+      "41st",
       "38th",
       "40th",
-      "41st"
+      "39th"
     ],
     "correct_answer": "39th",
     "estimated_time": 45,
@@ -134,9 +134,9 @@
     "difficulty": "medium",
     "question": "A is 10th from left, B is 12th from right. After swapping, A is 18th from left. Total?",
     "options": [
-      "29",
-      "30",
       "28",
+      "30",
+      "29",
       "31"
     ],
     "correct_answer": "29",
@@ -160,10 +160,10 @@
     "difficulty": "medium",
     "question": "In a queue, X is 14th from front, Y is 16th from back. There are 6 between them. Total?",
     "options": [
-      "36",
-      "35",
       "34",
-      "37"
+      "37",
+      "35",
+      "36"
     ],
     "correct_answer": "36",
     "estimated_time": 60,
@@ -186,10 +186,10 @@
     "difficulty": "medium",
     "question": "P is 7th from top, Q is 9th from bottom. There are 5 between them. Total?",
     "options": [
-      "21",
-      "20",
       "22",
-      "23"
+      "23",
+      "21",
+      "20"
     ],
     "correct_answer": "21",
     "estimated_time": 60,
@@ -213,8 +213,8 @@
     "question": "In a row of 45, M is 18th from left. His position from right?",
     "options": [
       "28th",
-      "27th",
       "29th",
+      "27th",
       "30th"
     ],
     "correct_answer": "28th",
@@ -238,8 +238,8 @@
     "difficulty": "easy",
     "question": "K is 12th from top in 50 students. What is rank from bottom?",
     "options": [
-      "39th",
       "38th",
+      "39th",
       "40th",
       "41st"
     ],
@@ -264,10 +264,10 @@
     "difficulty": "medium",
     "question": "In a line, A is 9th from left, B is 11th from right. There are 4 between. Total?",
     "options": [
+      "26",
       "24",
       "23",
-      "25",
-      "26"
+      "25"
     ],
     "correct_answer": "24",
     "estimated_time": 60,
@@ -291,9 +291,9 @@
     "question": "R is 16th from either end. Total in row?",
     "options": [
       "31",
-      "30",
+      "33",
       "32",
-      "33"
+      "30"
     ],
     "correct_answer": "31",
     "estimated_time": 45,
@@ -316,10 +316,10 @@
     "difficulty": "easy",
     "question": "In 100 students, T is 40th from top. Rank from bottom?",
     "options": [
-      "61st",
-      "60th",
       "62nd",
-      "59th"
+      "59th",
+      "61st",
+      "60th"
     ],
     "correct_answer": "61st",
     "estimated_time": 45,
@@ -342,10 +342,10 @@
     "difficulty": "medium",
     "question": "M is 5th from left, N is 7th from right. After swapping, M is 10th from left. Total?",
     "options": [
-      "16",
       "15",
-      "17",
-      "18"
+      "18",
+      "16",
+      "17"
     ],
     "correct_answer": "16",
     "estimated_time": 60,
@@ -368,9 +368,9 @@
     "difficulty": "easy",
     "question": "In 60 people, A is 25th from top. What is rank from bottom?",
     "options": [
-      "36th",
       "35th",
       "37th",
+      "36th",
       "38th"
     ],
     "correct_answer": "36th",
@@ -395,9 +395,9 @@
     "question": "X is 14th from front, Y is 18th from back. 5 between them. Total?",
     "options": [
       "37",
+      "35",
       "36",
-      "38",
-      "35"
+      "38"
     ],
     "correct_answer": "37",
     "estimated_time": 60,
@@ -421,8 +421,8 @@
     "question": "P is 11th from top, Q is 13th from bottom. 6 between them. Total?",
     "options": [
       "30",
-      "29",
       "31",
+      "29",
       "32"
     ],
     "correct_answer": "30",
@@ -446,10 +446,10 @@
     "difficulty": "easy",
     "question": "In 80 people, K is 30th from top. Rank from bottom?",
     "options": [
-      "51st",
-      "50th",
       "52nd",
-      "49th"
+      "49th",
+      "50th",
+      "51st"
     ],
     "correct_answer": "51st",
     "estimated_time": 45,
@@ -472,10 +472,10 @@
     "difficulty": "medium",
     "question": "A is 8th from left, B is 10th from right. 3 between. Total?",
     "options": [
-      "21",
+      "23",
       "20",
       "22",
-      "23"
+      "21"
     ],
     "correct_answer": "21",
     "estimated_time": 60,
@@ -498,10 +498,10 @@
     "difficulty": "easy",
     "question": "R is 20th from either end. Total?",
     "options": [
-      "39",
+      "41",
       "38",
       "40",
-      "41"
+      "39"
     ],
     "correct_answer": "39",
     "estimated_time": 45,
@@ -524,10 +524,10 @@
     "difficulty": "easy",
     "question": "In 45 students, M is 15th from top. Rank from bottom?",
     "options": [
+      "29th",
       "31st",
-      "30th",
       "32nd",
-      "29th"
+      "30th"
     ],
     "correct_answer": "31st",
     "estimated_time": 45,
@@ -550,9 +550,9 @@
     "difficulty": "medium",
     "question": "X is 12th from front, Y is 14th from back. 4 between. Total?",
     "options": [
+      "31",
       "30",
       "29",
-      "31",
       "32"
     ],
     "correct_answer": "30",
@@ -576,10 +576,10 @@
     "difficulty": "medium",
     "question": "P is 9th from top, Q is 11th from bottom. 5 between. Total?",
     "options": [
-      "25",
+      "27",
       "24",
       "26",
-      "27"
+      "25"
     ],
     "correct_answer": "25",
     "estimated_time": 60,
@@ -602,10 +602,10 @@
     "difficulty": "easy",
     "question": "In 70 people, A is 28th from top. Rank from bottom?",
     "options": [
-      "43rd",
-      "42nd",
       "44th",
-      "41st"
+      "42nd",
+      "41st",
+      "43rd"
     ],
     "correct_answer": "43rd",
     "estimated_time": 45,
@@ -629,9 +629,9 @@
     "question": "K is 6th from left, L is 8th from right. After swap, K is 12th from left. Total?",
     "options": [
       "19",
+      "21",
       "18",
-      "20",
-      "21"
+      "20"
     ],
     "correct_answer": "19",
     "estimated_time": 60,
@@ -654,10 +654,10 @@
     "difficulty": "easy",
     "question": "In 55 students, T is 20th from top. Rank from bottom?",
     "options": [
-      "36th",
       "35th",
       "37th",
-      "38th"
+      "38th",
+      "36th"
     ],
     "correct_answer": "36th",
     "estimated_time": 45,
@@ -680,10 +680,10 @@
     "difficulty": "easy",
     "question": "M is 10th from either end. Total?",
     "options": [
-      "19",
+      "21",
       "18",
       "20",
-      "21"
+      "19"
     ],
     "correct_answer": "19",
     "estimated_time": 45,
@@ -707,9 +707,9 @@
     "question": "A is 7th from left, B is 9th from right. 2 between. Total?",
     "options": [
       "18",
-      "17",
       "19",
-      "20"
+      "20",
+      "17"
     ],
     "correct_answer": "18",
     "estimated_time": 60,
@@ -732,10 +732,10 @@
     "difficulty": "easy",
     "question": "In 90 people, X is 35th from top. Rank from bottom?",
     "options": [
-      "56th",
       "55th",
       "57th",
-      "54th"
+      "54th",
+      "56th"
     ],
     "correct_answer": "56th",
     "estimated_time": 45,
@@ -760,8 +760,8 @@
     "options": [
       "35",
       "34",
-      "36",
-      "37"
+      "37",
+      "36"
     ],
     "correct_answer": "35",
     "estimated_time": 60,
@@ -784,10 +784,10 @@
     "difficulty": "easy",
     "question": "In 65 students, K is 22nd from top. Rank from bottom?",
     "options": [
-      "44th",
       "43rd",
-      "45th",
-      "42nd"
+      "42nd",
+      "44th",
+      "45th"
     ],
     "correct_answer": "44th",
     "estimated_time": 45,
