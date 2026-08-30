@@ -70,5 +70,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0660",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Happy':",
+    "options": [
+      "Joyful",
+      "Cheerful",
+      "Glad",
+      "Sad"
+    ],
+    "correct_answer": "Sad",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0661",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Brave':",
+    "options": [
+      "Bold",
+      "Fearless",
+      "Cowardly",
+      "Courageous"
+    ],
+    "correct_answer": "Cowardly",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0662",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Kind':",
+    "options": [
+      "Nice",
+      "Cruel",
+      "Gentle",
+      "Good"
+    ],
+    "correct_answer": "Cruel",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0663",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Fast':",
+    "options": [
+      "Quick",
+      "Slow",
+      "Swift",
+      "Rapid"
+    ],
+    "correct_answer": "Slow",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0664",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Smart':",
+    "options": [
+      "Intelligent",
+      "Bright",
+      "Clever",
+      "Foolish"
+    ],
+    "correct_answer": "Foolish",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0665",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Beautiful':",
+    "options": [
+      "Lovely",
+      "Ugly",
+      "Gorgeous",
+      "Pretty"
+    ],
+    "correct_answer": "Ugly",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0666",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Angry':",
+    "options": [
+      "Mad",
+      "Furious",
+      "Calm",
+      "Irritated"
+    ],
+    "correct_answer": "Calm",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0667",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Sad':",
+    "options": [
+      "Sorrowful",
+      "Unhappy",
+      "Happy",
+      "Gloomy"
+    ],
+    "correct_answer": "Happy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0668",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Big':",
+    "options": [
+      "Large",
+      "Huge",
+      "Small",
+      "Giant"
+    ],
+    "correct_answer": "Small",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0669",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Small':",
+    "options": [
+      "Tiny",
+      "Mini",
+      "Big",
+      "Little"
+    ],
+    "correct_answer": "Big",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0670",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Hard':",
+    "options": [
+      "Difficult",
+      "Soft",
+      "Firm",
+      "Tough"
+    ],
+    "correct_answer": "Soft",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0671",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Easy':",
+    "options": [
+      "Hard",
+      "Light",
+      "Easygoing",
+      "Simple"
+    ],
+    "correct_answer": "Hard",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0672",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Rich':",
+    "options": [
+      "Prosperous",
+      "Poor",
+      "Affluent",
+      "Wealthy"
+    ],
+    "correct_answer": "Poor",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0673",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Poor':",
+    "options": [
+      "Rich",
+      "Impoverished",
+      "Destitute",
+      "Needy"
+    ],
+    "correct_answer": "Rich",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0674",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Old':",
+    "options": [
+      "Elderly",
+      "Young",
+      "Ancient",
+      "Aged"
+    ],
+    "correct_answer": "Young",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0675",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'New':",
+    "options": [
+      "Old",
+      "Modern",
+      "Recent",
+      "Fresh"
+    ],
+    "correct_answer": "Old",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0676",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Strong':",
+    "options": [
+      "Mighty",
+      "Powerful",
+      "Sturdy",
+      "Weak"
+    ],
+    "correct_answer": "Weak",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0677",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Weak':",
+    "options": [
+      "Fragile",
+      "Feeble",
+      "Delicate",
+      "Strong"
+    ],
+    "correct_answer": "Strong",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0678",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Hot':",
+    "options": [
+      "Warm",
+      "Cold",
+      "Scorching",
+      "Burning"
+    ],
+    "correct_answer": "Cold",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0679",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Cold':",
+    "options": [
+      "Hot",
+      "Icy",
+      "Chilly",
+      "Freezing"
+    ],
+    "correct_answer": "Hot",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0680",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Bright':",
+    "options": [
+      "Luminous",
+      "Shining",
+      "Dark",
+      "Radiant"
+    ],
+    "correct_answer": "Dark",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0681",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Dark':",
+    "options": [
+      "Bright",
+      "Dim",
+      "Shadowy",
+      "Dull"
+    ],
+    "correct_answer": "Bright",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0682",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Loud':",
+    "options": [
+      "Quiet",
+      "Noisy",
+      "Boisterous",
+      "Deafening"
+    ],
+    "correct_answer": "Quiet",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0683",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Quiet':",
+    "options": [
+      "Calm",
+      "Peaceful",
+      "Loud",
+      "Silent"
+    ],
+    "correct_answer": "Loud",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0684",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Quick':",
+    "options": [
+      "Rapid",
+      "Fast",
+      "Slow",
+      "Swift"
+    ],
+    "correct_answer": "Slow",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0685",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Slow':",
+    "options": [
+      "Sluggish",
+      "Delayed",
+      "Quick",
+      "Late"
+    ],
+    "correct_answer": "Quick",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0686",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Tall':",
+    "options": [
+      "Lofty",
+      "Short",
+      "Elevated",
+      "High"
+    ],
+    "correct_answer": "Short",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0687",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Short':",
+    "options": [
+      "Tall",
+      "Little",
+      "Small",
+      "Low"
+    ],
+    "correct_answer": "Tall",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0688",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Clean':",
+    "options": [
+      "Dirty",
+      "Tidy",
+      "Pure",
+      "Neat"
+    ],
+    "correct_answer": "Dirty",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AN_0689",
+    "category": "Verbal Ability",
+    "topic": "Antonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Antonym of 'Dirty':",
+    "options": [
+      "Filthy",
+      "Unclean",
+      "Soiled",
+      "Clean"
+    ],
+    "correct_answer": "Clean",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

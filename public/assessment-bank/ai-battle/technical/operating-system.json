@@ -76,5 +76,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0630",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Primary function of OS?",
+    "options": [
+      "Edit text",
+      "Manage hardware resources",
+      "Browse internet",
+      "Compile code"
+    ],
+    "correct_answer": "Manage hardware resources",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0631",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which is not an OS?",
+    "options": [
+      "Oracle",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "correct_answer": "Oracle",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0632",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Process state 'Running' means:",
+    "options": [
+      "Process is waiting",
+      "Process is terminated",
+      "Process is ready",
+      "Process is executing"
+    ],
+    "correct_answer": "Process is executing",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0633",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Deadlock occurs when:",
+    "options": [
+      "Process finishes quickly",
+      "Memory is full",
+      "CPU is idle",
+      "Processes wait indefinitely for resources"
+    ],
+    "correct_answer": "Processes wait indefinitely for resources",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0634",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Scheduling is done by:",
+    "options": [
+      "User",
+      "Application",
+      "Compiler",
+      "OS"
+    ],
+    "correct_answer": "OS",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0635",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Virtual memory is used to:",
+    "options": [
+      "Improve graphics",
+      "Extend RAM using disk",
+      "Reduce disk usage",
+      "Increase CPU speed"
+    ],
+    "correct_answer": "Extend RAM using disk",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0636",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Page fault occurs when:",
+    "options": [
+      "Page is in memory",
+      "Required page not in memory",
+      "Disk is full",
+      "CPU is slow"
+    ],
+    "correct_answer": "Required page not in memory",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0637",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Thrashing is due to:",
+    "options": [
+      "High disk speed",
+      "Low CPU usage",
+      "Excessive page faults",
+      "Low memory size only"
+    ],
+    "correct_answer": "Excessive page faults",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0638",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Context switching is:",
+    "options": [
+      "Deleting process",
+      "Saving/restoring process state",
+      "Ending process",
+      "Creating process"
+    ],
+    "correct_answer": "Saving/restoring process state",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0639",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Semaphore is used for:",
+    "options": [
+      "File management",
+      "Device handling",
+      "Process synchronization",
+      "Memory allocation"
+    ],
+    "correct_answer": "Process synchronization",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0640",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Fragmentation occurs in:",
+    "options": [
+      "File systems only",
+      "Memory management",
+      "CPU scheduling",
+      "Networking"
+    ],
+    "correct_answer": "Memory management",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0641",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Demand paging loads:",
+    "options": [
+      "Pages only when needed",
+      "Only first page",
+      "No pages",
+      "All pages at once"
+    ],
+    "correct_answer": "Pages only when needed",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0642",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Turnaround time is:",
+    "options": [
+      "Completion time - arrival time",
+      "Arrival time - completion time",
+      "Waiting time only",
+      "Execution time only"
+    ],
+    "correct_answer": "Completion time - arrival time",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0643",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which is a real-time OS?",
+    "options": [
+      "Windows 10",
+      "VxWorks",
+      "macOS",
+      "Ubuntu"
+    ],
+    "correct_answer": "VxWorks",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0644",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Multitasking means:",
+    "options": [
+      "Running one process",
+      "Running multiple processes",
+      "Multiple CPUs only",
+      "Multiple users only"
+    ],
+    "correct_answer": "Running multiple processes",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0645",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Spooling is related to:",
+    "options": [
+      "Printing",
+      "Networking",
+      "CPU",
+      "Memory"
+    ],
+    "correct_answer": "Printing",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0646",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Banker's algorithm is for:",
+    "options": [
+      "Scheduling",
+      "Deadlock detection",
+      "Deadlock avoidance",
+      "Memory allocation"
+    ],
+    "correct_answer": "Deadlock avoidance",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0647",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Aging in OS is used for:",
+    "options": [
+      "Ending processes",
+      "Increasing priority",
+      "Preventing starvation",
+      "Decreasing priority"
+    ],
+    "correct_answer": "Preventing starvation",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0648",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Which is not a scheduling algorithm?",
+    "options": [
+      "Round Robin",
+      "FCFS",
+      "SJF",
+      "HTTP"
+    ],
+    "correct_answer": "HTTP",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0649",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Time quantum is used in:",
+    "options": [
+      "Priority",
+      "Round Robin",
+      "SJF",
+      "FCFS"
+    ],
+    "correct_answer": "Round Robin",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0650",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Throughput is:",
+    "options": [
+      "CPU speed",
+      "Processes completed per unit time",
+      "Memory used",
+      "Time per process"
+    ],
+    "correct_answer": "Processes completed per unit time",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0651",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Which memory is fastest?",
+    "options": [
+      "Register",
+      "Cache",
+      "RAM",
+      "Disk"
+    ],
+    "correct_answer": "Register",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0652",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "TLB stands for:",
+    "options": [
+      "Translation Line Buffer",
+      "Transfer Line Buffer",
+      "Translation Lookaside Buffer",
+      "Transfer Look Buffer"
+    ],
+    "correct_answer": "Translation Lookaside Buffer",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0653",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Monolithic kernel is:",
+    "options": [
+      "Single large kernel",
+      "Small modular kernel",
+      "Hybrid kernel",
+      "Microkernel"
+    ],
+    "correct_answer": "Single large kernel",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0654",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Linux is:",
+    "options": [
+      "Open-source OS",
+      "Proprietary OS",
+      "Database",
+      "Compiler"
+    ],
+    "correct_answer": "Open-source OS",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0655",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Windows is:",
+    "options": [
+      "Open-source OS",
+      "Proprietary OS",
+      "Language",
+      "Database"
+    ],
+    "correct_answer": "Proprietary OS",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0656",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "File system manages:",
+    "options": [
+      "Files and directories",
+      "CPU",
+      "Processes",
+      "Memory"
+    ],
+    "correct_answer": "Files and directories",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0657",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "IPC stands for:",
+    "options": [
+      "Internal Program Control",
+      "Internal Process Control",
+      "Inter-Process Communication",
+      "Inter-Program Communication"
+    ],
+    "correct_answer": "Inter-Process Communication",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0658",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Race condition occurs when:",
+    "options": [
+      "Multiple processes access shared data unsafely",
+      "Single process runs",
+      "No sharing",
+      "CPU is idle"
+    ],
+    "correct_answer": "Multiple processes access shared data unsafely",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OS_0659",
+    "category": "Technical",
+    "topic": "Operating System",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Critical section is:",
+    "options": [
+      "Code for I/O",
+      "Code for networking",
+      "Code accessing shared resources",
+      "Code that never runs"
+    ],
+    "correct_answer": "Code accessing shared resources",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
