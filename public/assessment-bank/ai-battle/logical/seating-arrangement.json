@@ -46,5 +46,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0450",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "6 people A–F in a row. A is next to B, C is at extreme left. Who is at extreme right?",
+    "options": [
+      "B",
+      "A",
+      "Cannot say",
+      "F"
+    ],
+    "correct_answer": "Cannot say",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0451",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "5 people in a circle. A is opposite B. C is immediate right of A. Who is immediate left of B?",
+    "options": [
+      "C",
+      "D",
+      "E",
+      "Cannot say"
+    ],
+    "correct_answer": "C",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0452",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "7 people in a row. D is 4th from left, E is 3rd from right. How many between?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correct_answer": "0",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0453",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "8 people around a circle. A is 3rd to right of B. C is immediate left of B. Who is opposite A?",
+    "options": [
+      "Cannot say",
+      "B",
+      "D",
+      "C"
+    ],
+    "correct_answer": "Cannot say",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0454",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "6 people in a row. P is 2nd from left, Q is 3rd from right. How many between?",
+    "options": [
+      "0",
+      "2",
+      "1",
+      "3"
+    ],
+    "correct_answer": "1",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0455",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "5 people A–E in a row. A is left of B, C is right of B. Who is in middle?",
+    "options": [
+      "C",
+      "Cannot say",
+      "B",
+      "A"
+    ],
+    "correct_answer": "B",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0456",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "7 people in a circle. X is opposite Y. Z is immediate right of X. Who is immediate left of Y?",
+    "options": [
+      "Z",
+      "W",
+      "Cannot say",
+      "V"
+    ],
+    "correct_answer": "Z",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0457",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "6 people in a row. M is 3rd from left, N is 2nd from right. How many between?",
+    "options": [
+      "2",
+      "0",
+      "3",
+      "1"
+    ],
+    "correct_answer": "1",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0458",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "8 people in a row. A is 5th from left, B is 4th from right. How many between?",
+    "options": [
+      "3",
+      "2",
+      "0",
+      "1"
+    ],
+    "correct_answer": "1",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0459",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "5 people in a circle. P is immediate right of Q. R is opposite P. Who is immediate left of Q?",
+    "options": [
+      "T",
+      "S",
+      "Cannot say",
+      "R"
+    ],
+    "correct_answer": "R",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0460",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "6 people A–F in a row. C is at left end, F at right end. Who is 3rd from left?",
+    "options": [
+      "B",
+      "Cannot say",
+      "A",
+      "D"
+    ],
+    "correct_answer": "Cannot say",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0461",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "7 people in a row. K is 4th from left, L is 3rd from right. How many between?",
+    "options": [
+      "2",
+      "3",
+      "0",
+      "1"
+    ],
+    "correct_answer": "0",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0462",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "8 people around a circle. M is 2nd to right of N. O is opposite M. Who is immediate left of N?",
+    "options": [
+      "Q",
+      "P",
+      "O",
+      "Cannot say"
+    ],
+    "correct_answer": "Cannot say",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0463",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "5 people in a row. A is at left end, B at right end. Who is in middle?",
+    "options": [
+      "Cannot say",
+      "A",
+      "B",
+      "C"
+    ],
+    "correct_answer": "C",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0464",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "6 people in a circle. X is opposite Y. Z is immediate right of X. Who is immediate left of Y?",
+    "options": [
+      "Z",
+      "W",
+      "Cannot say",
+      "V"
+    ],
+    "correct_answer": "Z",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0465",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "7 people in a row. P is 3rd from left, Q is 4th from right. How many between?",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ],
+    "correct_answer": "0",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0466",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "8 people in a row. A is 2nd from left, B is 3rd from right. How many between?",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct_answer": "3",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0467",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "5 people in a circle. C is opposite D. E is immediate right of C. Who is immediate left of D?",
+    "options": [
+      "E",
+      "G",
+      "Cannot say",
+      "F"
+    ],
+    "correct_answer": "E",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0468",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "6 people in a row. M is 4th from left, N is 2nd from right. How many between?",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "0"
+    ],
+    "correct_answer": "0",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0469",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "7 people around a circle. A is 3rd to right of B. C is immediate left of B. Who is opposite A?",
+    "options": [
+      "D",
+      "Cannot say",
+      "B",
+      "C"
+    ],
+    "correct_answer": "Cannot say",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0470",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "8 people in a row. X is 5th from left, Y is 4th from right. How many between?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_answer": "1",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0471",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "5 people in a row. P is 2nd from left, Q is 3rd from right. How many between?",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "0"
+    ],
+    "correct_answer": "0",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0472",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "6 people in a circle. K is opposite L. M is immediate right of K. Who is immediate left of L?",
+    "options": [
+      "Cannot say",
+      "N",
+      "O",
+      "M"
+    ],
+    "correct_answer": "M",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0473",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "7 people in a row. A is 4th from left, B is 3rd from right. How many between?",
+    "options": [
+      "3",
+      "2",
+      "0",
+      "1"
+    ],
+    "correct_answer": "0",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0474",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "8 people in a circle. P is 2nd to right of Q. R is opposite P. Who is immediate left of Q?",
+    "options": [
+      "Cannot say",
+      "R",
+      "T",
+      "S"
+    ],
+    "correct_answer": "Cannot say",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0475",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "5 people in a row. C is at left end, E at right end. Who is 3rd from left?",
+    "options": [
+      "C",
+      "D",
+      "Cannot say",
+      "E"
+    ],
+    "correct_answer": "D",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0476",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "6 people in a row. X is 3rd from left, Y is 2nd from right. How many between?",
+    "options": [
+      "0",
+      "3",
+      "1",
+      "2"
+    ],
+    "correct_answer": "1",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0477",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "7 people in a circle. M is opposite N. O is immediate right of M. Who is immediate left of N?",
+    "options": [
+      "P",
+      "O",
+      "Q",
+      "Cannot say"
+    ],
+    "correct_answer": "O",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0478",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "8 people in a row. A is 6th from left, B is 3rd from right. How many between?",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "3"
+    ],
+    "correct_answer": "1",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SA_0479",
+    "category": "Logical Reasoning",
+    "topic": "Seating Arrangement",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "5 people in a circle. A is opposite B. C is immediate right of A. Who is immediate left of B?",
+    "options": [
+      "C",
+      "Cannot say",
+      "D",
+      "E"
+    ],
+    "correct_answer": "C",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

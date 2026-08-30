@@ -46,5 +46,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0480",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: 2x + 3 = 7",
+    "options": [
+      "x=4",
+      "x=3",
+      "x=1",
+      "x=2"
+    ],
+    "correct_answer": "x=2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0481",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: 3x - 5 = 10",
+    "options": [
+      "x=4",
+      "x=5",
+      "x=6",
+      "x=3"
+    ],
+    "correct_answer": "x=5",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0482",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If x + y = 10 and x - y = 2, find x.",
+    "options": [
+      "4",
+      "7",
+      "5",
+      "6"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0483",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: 4x = 20",
+    "options": [
+      "x=4",
+      "x=5",
+      "x=6",
+      "x=3"
+    ],
+    "correct_answer": "x=5",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0484",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: x/2 = 6",
+    "options": [
+      "x=12",
+      "x=14",
+      "x=10",
+      "x=8"
+    ],
+    "correct_answer": "x=12",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0485",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If 2x + 1 = 9, find x.",
+    "options": [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    "correct_answer": "4",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0486",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Solve: 5x - 3 = 12",
+    "options": [
+      "x=5",
+      "x=4",
+      "x=2",
+      "x=3"
+    ],
+    "correct_answer": "x=3",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0487",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If x + 3 = 8, find x.",
+    "options": [
+      "5",
+      "3",
+      "6",
+      "4"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0488",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Solve: 3x + 2 = 11",
+    "options": [
+      "x=5",
+      "x=3",
+      "x=4",
+      "x=2"
+    ],
+    "correct_answer": "x=3",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0489",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If 2x = 14, find x.",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "7",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0490",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: x - 4 = 10",
+    "options": [
+      "x=16",
+      "x=12",
+      "x=14",
+      "x=13"
+    ],
+    "correct_answer": "x=14",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0491",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 20, find x.",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0492",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Solve: 2x - 3 = 7",
+    "options": [
+      "x=3",
+      "x=5",
+      "x=6",
+      "x=4"
+    ],
+    "correct_answer": "x=5",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0493",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If x/3 = 4, find x.",
+    "options": [
+      "14",
+      "11",
+      "10",
+      "12"
+    ],
+    "correct_answer": "12",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0494",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Solve: 4x + 1 = 13",
+    "options": [
+      "x=3",
+      "x=4",
+      "x=2",
+      "x=5"
+    ],
+    "correct_answer": "x=3",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0495",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If 5x = 25, find x.",
+    "options": [
+      "4",
+      "3",
+      "6",
+      "5"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0496",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: x + 7 = 15",
+    "options": [
+      "x=8",
+      "x=9",
+      "x=7",
+      "x=6"
+    ],
+    "correct_answer": "x=8",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0497",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If 2x + 5 = 15, find x.",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "6"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0498",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Solve: 3x - 2 = 13",
+    "options": [
+      "x=6",
+      "x=4",
+      "x=3",
+      "x=5"
+    ],
+    "correct_answer": "x=5",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0499",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If x - 3 = 7, find x.",
+    "options": [
+      "10",
+      "8",
+      "11",
+      "9"
+    ],
+    "correct_answer": "10",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0500",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: 6x = 36",
+    "options": [
+      "x=5",
+      "x=6",
+      "x=4",
+      "x=7"
+    ],
+    "correct_answer": "x=6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0501",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If 4x - 1 = 15, find x.",
+    "options": [
+      "3",
+      "5",
+      "4",
+      "6"
+    ],
+    "correct_answer": "4",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0502",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: x/4 = 5",
+    "options": [
+      "x=20",
+      "x=19",
+      "x=18",
+      "x=22"
+    ],
+    "correct_answer": "x=20",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0503",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If 2x + 7 = 17, find x.",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "4"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0504",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Solve: 5x + 2 = 22",
+    "options": [
+      "x=6",
+      "x=4",
+      "x=3",
+      "x=5"
+    ],
+    "correct_answer": "x=4",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0505",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If 3x = 21, find x.",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": "7",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0506",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Solve: x + 5 = 12",
+    "options": [
+      "x=7",
+      "x=8",
+      "x=6",
+      "x=5"
+    ],
+    "correct_answer": "x=7",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0507",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If 2x - 1 = 9, find x.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "3"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0508",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Solve: 4x - 3 = 13",
+    "options": [
+      "x=4",
+      "x=3",
+      "x=6",
+      "x=5"
+    ],
+    "correct_answer": "x=5",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_AL_0509",
+    "category": "Quantitative Aptitude",
+    "topic": "Algebra",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If x/5 = 3, find x.",
+    "options": [
+      "13",
+      "15",
+      "14",
+      "16"
+    ],
+    "correct_answer": "15",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
