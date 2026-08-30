@@ -76,5 +76,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0600",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "OSI model has how many layers?",
+    "options": [
+      "7",
+      "5",
+      "4",
+      "6"
+    ],
+    "correct_answer": "7",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0601",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which layer handles routing?",
+    "options": [
+      "Transport",
+      "Network",
+      "Data Link",
+      "Session"
+    ],
+    "correct_answer": "Network",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0602",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "HTTP works on which layer?",
+    "options": [
+      "Application",
+      "Data Link",
+      "Transport",
+      "Network"
+    ],
+    "correct_answer": "Application",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0603",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "TCP is a:",
+    "options": [
+      "Connection-oriented protocol",
+      "None",
+      "Both",
+      "Connectionless protocol"
+    ],
+    "correct_answer": "Connection-oriented protocol",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0604",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "UDP is a:",
+    "options": [
+      "Both",
+      "Connection-oriented protocol",
+      "Connectionless protocol",
+      "None"
+    ],
+    "correct_answer": "Connectionless protocol",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0605",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "IP address is at which layer?",
+    "options": [
+      "Data Link",
+      "Transport",
+      "Network",
+      "Physical"
+    ],
+    "correct_answer": "Network",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0606",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "MAC address is at which layer?",
+    "options": [
+      "Network",
+      "Transport",
+      "Data Link",
+      "Application"
+    ],
+    "correct_answer": "Data Link",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0607",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Full form of HTTP?",
+    "options": [
+      "HyperText Transfer Protocol",
+      "HyperText Transfer Process",
+      "HyperText Transmission Protocol",
+      "HyperText Transmission Process"
+    ],
+    "correct_answer": "HyperText Transfer Protocol",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0608",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Port number of HTTP?",
+    "options": [
+      "80",
+      "21",
+      "443",
+      "22"
+    ],
+    "correct_answer": "80",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0609",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Port number of HTTPS?",
+    "options": [
+      "443",
+      "80",
+      "22",
+      "21"
+    ],
+    "correct_answer": "443",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0610",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "DNS stands for:",
+    "options": [
+      "Digital Network System",
+      "Domain Name System",
+      "Digital Name System",
+      "Domain Network System"
+    ],
+    "correct_answer": "Domain Name System",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0611",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which device works at Layer 2?",
+    "options": [
+      "Switch",
+      "Hub",
+      "Router",
+      "Repeater"
+    ],
+    "correct_answer": "Switch",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0612",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which device works at Layer 3?",
+    "options": [
+      "Bridge",
+      "Router",
+      "Switch",
+      "Hub"
+    ],
+    "correct_answer": "Router",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0613",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "LAN stands for:",
+    "options": [
+      "Linked Area Network",
+      "Large Area Network",
+      "Long Area Network",
+      "Local Area Network"
+    ],
+    "correct_answer": "Local Area Network",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0614",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "WAN stands for:",
+    "options": [
+      "Wired Area Network",
+      "Wide Area Network",
+      "Wire Area Network",
+      "Web Area Network"
+    ],
+    "correct_answer": "Wide Area Network",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0615",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Which is a private IP?",
+    "options": [
+      "8.8.8.8",
+      "192.168.1.1",
+      "1.1.1.1",
+      "203.0.113.1"
+    ],
+    "correct_answer": "192.168.1.1",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0616",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "IPv4 address size?",
+    "options": [
+      "16-bit",
+      "64-bit",
+      "32-bit",
+      "128-bit"
+    ],
+    "correct_answer": "32-bit",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0617",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "IPv6 address size?",
+    "options": [
+      "128-bit",
+      "32-bit",
+      "16-bit",
+      "64-bit"
+    ],
+    "correct_answer": "128-bit",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0618",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which protocol is used for email sending?",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "POP3",
+      "IMAP"
+    ],
+    "correct_answer": "SMTP",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0619",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which protocol is used for email receiving?",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "FTP",
+      "POP3"
+    ],
+    "correct_answer": "POP3",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0620",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "FTP stands for:",
+    "options": [
+      "File Transfer Process",
+      "File Transfer Protocol",
+      "File Transmission Process",
+      "File Transmission Protocol"
+    ],
+    "correct_answer": "File Transfer Protocol",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0621",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which topology has a central node?",
+    "options": [
+      "Ring",
+      "Mesh",
+      "Bus",
+      "Star"
+    ],
+    "correct_answer": "Star",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0622",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which topology uses a single cable?",
+    "options": [
+      "Star",
+      "Ring",
+      "Bus",
+      "Mesh"
+    ],
+    "correct_answer": "Bus",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0623",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ping uses which protocol?",
+    "options": [
+      "TCP",
+      "UDP",
+      "HTTP",
+      "ICMP"
+    ],
+    "correct_answer": "ICMP",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0624",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Subnet mask is used for:",
+    "options": [
+      "Routing packets",
+      "Resolving DNS",
+      "Dividing network into subnets",
+      "Encrypting data"
+    ],
+    "correct_answer": "Dividing network into subnets",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0625",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Default gateway is used to:",
+    "options": [
+      "Filter packets",
+      "Resolve DNS",
+      "Connect to other networks",
+      "Assign IP"
+    ],
+    "correct_answer": "Connect to other networks",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0626",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Which is not a routing protocol?",
+    "options": [
+      "BGP",
+      "HTTP",
+      "RIP",
+      "OSPF"
+    ],
+    "correct_answer": "HTTP",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0627",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Firewall is used for:",
+    "options": [
+      "Security",
+      "Switching",
+      "Routing",
+      "DNS"
+    ],
+    "correct_answer": "Security",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0628",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "DHCP is used for:",
+    "options": [
+      "Switching",
+      "Automatic IP assignment",
+      "DNS resolution",
+      "Routing"
+    ],
+    "correct_answer": "Automatic IP assignment",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CN_0629",
+    "category": "Technical",
+    "topic": "Computer Networks",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "NAT stands for:",
+    "options": [
+      "Network Address Translation",
+      "Node Area Translation",
+      "Network Area Translation",
+      "Node Address Translation"
+    ],
+    "correct_answer": "Network Address Translation",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

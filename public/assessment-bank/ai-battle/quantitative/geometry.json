@@ -44,5 +44,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0510",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Sum of angles in a triangle?",
+    "options": [
+      "180 degrees",
+      "360 degrees",
+      "90 degrees",
+      "270 degrees"
+    ],
+    "correct_answer": "180 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0511",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Sum of angles in a quadrilateral?",
+    "options": [
+      "90 degrees",
+      "270 degrees",
+      "360 degrees",
+      "180 degrees"
+    ],
+    "correct_answer": "360 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0512",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Formula for area of rectangle?",
+    "options": [
+      "length/breadth",
+      "length + breadth",
+      "2(length + breadth)",
+      "length × breadth"
+    ],
+    "correct_answer": "length × breadth",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0513",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Formula for perimeter of rectangle?",
+    "options": [
+      "2(length + breadth)",
+      "length × breadth",
+      "length/breadth",
+      "length + breadth"
+    ],
+    "correct_answer": "2(length + breadth)",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0514",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Area of triangle?",
+    "options": [
+      "base × height",
+      "2 × base × height",
+      "1/2 × base × height",
+      "base + height"
+    ],
+    "correct_answer": "1/2 × base × height",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0515",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Circumference of circle?",
+    "options": [
+      "2pr^2",
+      "pr^2",
+      "2pr",
+      "pr"
+    ],
+    "correct_answer": "2pr",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0516",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Area of circle?",
+    "options": [
+      "2pr",
+      "2pr^2",
+      "pr^2",
+      "pr"
+    ],
+    "correct_answer": "pr^2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0517",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of sides in a pentagon?",
+    "options": [
+      "6",
+      "4",
+      "3",
+      "5"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0518",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of sides in a hexagon?",
+    "options": [
+      "6",
+      "7",
+      "4",
+      "5"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0519",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "All angles equal in equilateral triangle?",
+    "options": [
+      "Yes",
+      "No",
+      "Cannot say",
+      "None"
+    ],
+    "correct_answer": "Yes",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0520",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "All sides equal in square?",
+    "options": [
+      "Yes",
+      "Cannot say",
+      "None",
+      "No"
+    ],
+    "correct_answer": "Yes",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0521",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Diagonals of square are:",
+    "options": [
+      "None",
+      "Perpendicular only",
+      "Equal and perpendicular",
+      "Equal only"
+    ],
+    "correct_answer": "Equal and perpendicular",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0522",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Sum of interior angles of pentagon?",
+    "options": [
+      "360 degrees",
+      "180 degrees",
+      "540 degrees",
+      "720 degrees"
+    ],
+    "correct_answer": "540 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0523",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Sum of interior angles of hexagon?",
+    "options": [
+      "360 degrees",
+      "180 degrees",
+      "720 degrees",
+      "540 degrees"
+    ],
+    "correct_answer": "720 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0524",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Volume of cube with side a?",
+    "options": [
+      "a^2",
+      "6a^2",
+      "3a^2",
+      "a^3"
+    ],
+    "correct_answer": "a^3",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0525",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Surface area of cube?",
+    "options": [
+      "a^3",
+      "2a^2",
+      "4a^2",
+      "6a^2"
+    ],
+    "correct_answer": "6a^2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0526",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Volume of cuboid?",
+    "options": [
+      "lb + bh + lh",
+      "l + b + h",
+      "2(lb + bh + lh)",
+      "l × b × h"
+    ],
+    "correct_answer": "l × b × h",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0527",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Total surface area of cuboid?",
+    "options": [
+      "l + b + h",
+      "lb + bh + lh",
+      "2(lb + bh + lh)",
+      "l × b × h"
+    ],
+    "correct_answer": "2(lb + bh + lh)",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0528",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Radius is half of:",
+    "options": [
+      "Chord",
+      "Area",
+      "Diameter",
+      "Circumference"
+    ],
+    "correct_answer": "Diameter",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0529",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Longest chord in a circle?",
+    "options": [
+      "Radius",
+      "Tangent",
+      "Secant",
+      "Diameter"
+    ],
+    "correct_answer": "Diameter",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0530",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle in a semicircle?",
+    "options": [
+      "45 degrees",
+      "180 degrees",
+      "60 degrees",
+      "90 degrees"
+    ],
+    "correct_answer": "90 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0531",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "All radii of a circle are:",
+    "options": [
+      "Unequal",
+      "None",
+      "Cannot say",
+      "Equal"
+    ],
+    "correct_answer": "Equal",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0532",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of vertices in triangle?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "correct_answer": "3",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0533",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of vertices in rectangle?",
+    "options": [
+      "6",
+      "4",
+      "5",
+      "3"
+    ],
+    "correct_answer": "4",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0534",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Pythagoras theorem applies to:",
+    "options": [
+      "Square",
+      "Any triangle",
+      "Circle",
+      "Right-angled triangle"
+    ],
+    "correct_answer": "Right-angled triangle",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0535",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "In right triangle, hypotenuse is:",
+    "options": [
+      "Shortest side",
+      "Middle side",
+      "None",
+      "Longest side"
+    ],
+    "correct_answer": "Longest side",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0536",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Area of square with side a?",
+    "options": [
+      "4a",
+      "a^3",
+      "a^2",
+      "2a"
+    ],
+    "correct_answer": "a^2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0537",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Perimeter of square?",
+    "options": [
+      "a^2",
+      "a^3",
+      "2a",
+      "4a"
+    ],
+    "correct_answer": "4a",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0538",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of diagonals in quadrilateral?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "correct_answer": "2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_GM_0539",
+    "category": "Quantitative Aptitude",
+    "topic": "Geometry",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of diagonals in pentagon?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct_answer": "5",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
