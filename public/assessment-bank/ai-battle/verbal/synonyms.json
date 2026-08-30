@@ -21,5 +21,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0360",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Happy':",
+    "options": [
+      "Angry",
+      "Sad",
+      "Joyful",
+      "Tired"
+    ],
+    "correct_answer": "Joyful",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0361",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Brave':",
+    "options": [
+      "Weak",
+      "Scared",
+      "Courageous",
+      "Cowardly"
+    ],
+    "correct_answer": "Courageous",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0362",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Kind':",
+    "options": [
+      "Harsh",
+      "Rude",
+      "Cruel",
+      "Gentle"
+    ],
+    "correct_answer": "Gentle",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0363",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Fast':",
+    "options": [
+      "Quick",
+      "Lazy",
+      "Late",
+      "Slow"
+    ],
+    "correct_answer": "Quick",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0364",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Smart':",
+    "options": [
+      "Intelligent",
+      "Stupid",
+      "Dull",
+      "Foolish"
+    ],
+    "correct_answer": "Intelligent",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0365",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Beautiful':",
+    "options": [
+      "Ugly",
+      "Plain",
+      "Dull",
+      "Pretty"
+    ],
+    "correct_answer": "Pretty",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0366",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Angry':",
+    "options": [
+      "Relaxed",
+      "Furious",
+      "Calm",
+      "Happy"
+    ],
+    "correct_answer": "Furious",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0367",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Sad':",
+    "options": [
+      "Cheerful",
+      "Unhappy",
+      "Joyful",
+      "Glad"
+    ],
+    "correct_answer": "Unhappy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0368",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Big':",
+    "options": [
+      "Tiny",
+      "Little",
+      "Large",
+      "Small"
+    ],
+    "correct_answer": "Large",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0369",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Small':",
+    "options": [
+      "Large",
+      "Tiny",
+      "Huge",
+      "Big"
+    ],
+    "correct_answer": "Tiny",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0370",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Hard':",
+    "options": [
+      "Soft",
+      "Difficult",
+      "Simple",
+      "Easy"
+    ],
+    "correct_answer": "Difficult",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0371",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Easy':",
+    "options": [
+      "Difficult",
+      "Simple",
+      "Complex",
+      "Hard"
+    ],
+    "correct_answer": "Simple",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0372",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Rich':",
+    "options": [
+      "Needy",
+      "Wealthy",
+      "Broke",
+      "Poor"
+    ],
+    "correct_answer": "Wealthy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0373",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Poor':",
+    "options": [
+      "Wealthy",
+      "Rich",
+      "Affluent",
+      "Needy"
+    ],
+    "correct_answer": "Needy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0374",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Old':",
+    "options": [
+      "New",
+      "Fresh",
+      "Young",
+      "Aged"
+    ],
+    "correct_answer": "Aged",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0375",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'New':",
+    "options": [
+      "Fresh",
+      "Ancient",
+      "Old",
+      "Aged"
+    ],
+    "correct_answer": "Fresh",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0376",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Strong':",
+    "options": [
+      "Fragile",
+      "Powerful",
+      "Weak",
+      "Feeble"
+    ],
+    "correct_answer": "Powerful",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0377",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Weak':",
+    "options": [
+      "Powerful",
+      "Mighty",
+      "Feeble",
+      "Strong"
+    ],
+    "correct_answer": "Feeble",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0378",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Hot':",
+    "options": [
+      "Chilly",
+      "Cool",
+      "Warm",
+      "Cold"
+    ],
+    "correct_answer": "Warm",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0379",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Cold':",
+    "options": [
+      "Burning",
+      "Chilly",
+      "Warm",
+      "Hot"
+    ],
+    "correct_answer": "Chilly",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0380",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Bright':",
+    "options": [
+      "Dark",
+      "Shining",
+      "Dull",
+      "Dim"
+    ],
+    "correct_answer": "Shining",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0381",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Dark':",
+    "options": [
+      "Shining",
+      "Dim",
+      "Bright",
+      "Light"
+    ],
+    "correct_answer": "Dim",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0382",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Loud':",
+    "options": [
+      "Noisy",
+      "Soft",
+      "Quiet",
+      "Silent"
+    ],
+    "correct_answer": "Noisy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0383",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Quiet':",
+    "options": [
+      "Silent",
+      "Noisy",
+      "Loud",
+      "Boisterous"
+    ],
+    "correct_answer": "Silent",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0384",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Quick':",
+    "options": [
+      "Sluggish",
+      "Rapid",
+      "Slow",
+      "Late"
+    ],
+    "correct_answer": "Rapid",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0385",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Slow':",
+    "options": [
+      "Sluggish",
+      "Quick",
+      "Fast",
+      "Rapid"
+    ],
+    "correct_answer": "Sluggish",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0386",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Tall':",
+    "options": [
+      "High",
+      "Short",
+      "Small",
+      "Low"
+    ],
+    "correct_answer": "High",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0387",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Short':",
+    "options": [
+      "Long",
+      "High",
+      "Small",
+      "Tall"
+    ],
+    "correct_answer": "Small",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0388",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Clean':",
+    "options": [
+      "Filthy",
+      "Messy",
+      "Dirty",
+      "Tidy"
+    ],
+    "correct_answer": "Tidy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SY_0389",
+    "category": "Verbal Ability",
+    "topic": "Synonyms",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Synonym of 'Dirty':",
+    "options": [
+      "Clean",
+      "Filthy",
+      "Neat",
+      "Pure"
+    ],
+    "correct_answer": "Filthy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

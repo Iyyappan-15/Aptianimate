@@ -22,5 +22,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0330",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting head in a single coin toss?",
+    "options": [
+      "1/3",
+      "1/4",
+      "2/3",
+      "1/2"
+    ],
+    "correct_answer": "1/2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0331",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting a 3 on a die?",
+    "options": [
+      "1/5",
+      "1/6",
+      "1/2",
+      "1/3"
+    ],
+    "correct_answer": "1/6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0332",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of drawing a red card from a deck?",
+    "options": [
+      "2/3",
+      "1/3",
+      "1/4",
+      "1/2"
+    ],
+    "correct_answer": "1/2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0333",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting an even number on a die?",
+    "options": [
+      "1/3",
+      "2/3",
+      "1/6",
+      "1/2"
+    ],
+    "correct_answer": "1/2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0334",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting a king from a deck?",
+    "options": [
+      "1/13",
+      "1/4",
+      "1/52",
+      "1/26"
+    ],
+    "correct_answer": "1/13",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0335",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting sum 7 on two dice?",
+    "options": [
+      "1/18",
+      "1/12",
+      "1/36",
+      "1/6"
+    ],
+    "correct_answer": "1/6",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0336",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting at least one head in 2 tosses?",
+    "options": [
+      "2/3",
+      "1/4",
+      "3/4",
+      "1/2"
+    ],
+    "correct_answer": "3/4",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0337",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of drawing an ace from a deck?",
+    "options": [
+      "1/52",
+      "1/26",
+      "1/13",
+      "1/4"
+    ],
+    "correct_answer": "1/13",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0338",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting a prime number on a die?",
+    "options": [
+      "1/6",
+      "1/2",
+      "2/3",
+      "1/3"
+    ],
+    "correct_answer": "1/2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0339",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting both heads in 2 tosses?",
+    "options": [
+      "3/4",
+      "1/3",
+      "1/4",
+      "1/2"
+    ],
+    "correct_answer": "1/4",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0340",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of drawing a spade from a deck?",
+    "options": [
+      "1/2",
+      "1/13",
+      "1/3",
+      "1/4"
+    ],
+    "correct_answer": "1/4",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0341",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting a number >4 on a die?",
+    "options": [
+      "2/3",
+      "1/2",
+      "1/3",
+      "1/6"
+    ],
+    "correct_answer": "1/3",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0342",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting no head in 2 tosses?",
+    "options": [
+      "1/2",
+      "1/3",
+      "3/4",
+      "1/4"
+    ],
+    "correct_answer": "1/4",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0343",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of drawing a face card (J,Q,K) from a deck?",
+    "options": [
+      "1/26",
+      "1/13",
+      "1/4",
+      "3/13"
+    ],
+    "correct_answer": "3/13",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0344",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting sum 11 on two dice?",
+    "options": [
+      "1/36",
+      "1/12",
+      "1/18",
+      "1/6"
+    ],
+    "correct_answer": "1/18",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0345",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting a multiple of 3 on a die?",
+    "options": [
+      "1/2",
+      "2/3",
+      "1/3",
+      "1/6"
+    ],
+    "correct_answer": "1/3",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0346",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of drawing a red king from a deck?",
+    "options": [
+      "1/52",
+      "1/26",
+      "1/13",
+      "1/4"
+    ],
+    "correct_answer": "1/26",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0347",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting exactly one head in 2 tosses?",
+    "options": [
+      "1/3",
+      "3/4",
+      "1/4",
+      "1/2"
+    ],
+    "correct_answer": "1/2",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0348",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting a number ≤2 on a die?",
+    "options": [
+      "1/6",
+      "2/3",
+      "1/3",
+      "1/2"
+    ],
+    "correct_answer": "1/3",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0349",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of drawing a queen from a deck?",
+    "options": [
+      "1/26",
+      "1/4",
+      "1/13",
+      "1/52"
+    ],
+    "correct_answer": "1/13",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0350",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting sum 8 on two dice?",
+    "options": [
+      "1/18",
+      "5/36",
+      "1/12",
+      "1/6"
+    ],
+    "correct_answer": "5/36",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0351",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting an odd number on a die?",
+    "options": [
+      "2/3",
+      "1/6",
+      "1/3",
+      "1/2"
+    ],
+    "correct_answer": "1/2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0352",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of drawing a black card from a deck?",
+    "options": [
+      "1/3",
+      "2/3",
+      "1/2",
+      "1/4"
+    ],
+    "correct_answer": "1/2",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0353",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting at least one tail in 2 tosses?",
+    "options": [
+      "3/4",
+      "1/4",
+      "2/3",
+      "1/2"
+    ],
+    "correct_answer": "3/4",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0354",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting a 1 or 6 on a die?",
+    "options": [
+      "1/6",
+      "1/2",
+      "2/3",
+      "1/3"
+    ],
+    "correct_answer": "1/3",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0355",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of drawing a heart from a deck?",
+    "options": [
+      "1/3",
+      "1/13",
+      "1/4",
+      "1/2"
+    ],
+    "correct_answer": "1/4",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0356",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting sum 5 on two dice?",
+    "options": [
+      "1/18",
+      "1/9",
+      "1/6",
+      "1/12"
+    ],
+    "correct_answer": "1/9",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0357",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of getting a composite number on a die?",
+    "options": [
+      "2/3",
+      "1/6",
+      "1/3",
+      "1/2"
+    ],
+    "correct_answer": "1/3",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0358",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Probability of drawing a diamond from a deck?",
+    "options": [
+      "1/4",
+      "1/13",
+      "1/2",
+      "1/3"
+    ],
+    "correct_answer": "1/4",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PR_0359",
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Probability of getting doublets (same number) on two dice?",
+    "options": [
+      "1/18",
+      "1/12",
+      "1/6",
+      "1/36"
+    ],
+    "correct_answer": "1/6",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
