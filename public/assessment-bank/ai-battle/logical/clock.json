@@ -44,5 +44,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0420",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle between hands at 3:00?",
+    "options": [
+      "180 degrees",
+      "120 degrees",
+      "60 degrees",
+      "90 degrees"
+    ],
+    "correct_answer": "90 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0421",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 6:00?",
+    "options": [
+      "120 degrees",
+      "0 degrees",
+      "180 degrees",
+      "90 degrees"
+    ],
+    "correct_answer": "180 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0422",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 12:00?",
+    "options": [
+      "0 degrees",
+      "360 degrees",
+      "90 degrees",
+      "180 degrees"
+    ],
+    "correct_answer": "0 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0423",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 3:20?",
+    "options": [
+      "20 degrees",
+      "40 degrees",
+      "30 degrees",
+      "10 degrees"
+    ],
+    "correct_answer": "20 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0424",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Hour hand rotates how many degrees in 12 hours?",
+    "options": [
+      "360",
+      "270",
+      "90",
+      "180"
+    ],
+    "correct_answer": "360",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0425",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Minute hand rotates how many degrees in 60 minutes?",
+    "options": [
+      "360",
+      "180",
+      "270",
+      "90"
+    ],
+    "correct_answer": "360",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0426",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 2:00?",
+    "options": [
+      "30 degrees",
+      "60 degrees",
+      "90 degrees",
+      "120 degrees"
+    ],
+    "correct_answer": "60 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0427",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 4:00?",
+    "options": [
+      "60 degrees",
+      "120 degrees",
+      "180 degrees",
+      "90 degrees"
+    ],
+    "correct_answer": "120 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0428",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 9:00?",
+    "options": [
+      "270 degrees",
+      "180 degrees",
+      "90 degrees",
+      "0 degrees"
+    ],
+    "correct_answer": "90 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0429",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 1:00?",
+    "options": [
+      "120 degrees",
+      "60 degrees",
+      "30 degrees",
+      "90 degrees"
+    ],
+    "correct_answer": "30 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0430",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 5:00?",
+    "options": [
+      "90 degrees",
+      "120 degrees",
+      "180 degrees",
+      "150 degrees"
+    ],
+    "correct_answer": "150 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0431",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 7:00?",
+    "options": [
+      "120 degrees",
+      "150 degrees",
+      "180 degrees",
+      "90 degrees"
+    ],
+    "correct_answer": "150 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0432",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 8:00?",
+    "options": [
+      "180 degrees",
+      "90 degrees",
+      "150 degrees",
+      "120 degrees"
+    ],
+    "correct_answer": "120 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0433",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 10:00?",
+    "options": [
+      "30 degrees",
+      "90 degrees",
+      "120 degrees",
+      "60 degrees"
+    ],
+    "correct_answer": "60 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0434",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Angle at 11:00?",
+    "options": [
+      "60 degrees",
+      "90 degrees",
+      "30 degrees",
+      "120 degrees"
+    ],
+    "correct_answer": "30 degrees",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0435",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "How many times do hands coincide in 12 hours?",
+    "options": [
+      "24",
+      "11",
+      "12",
+      "10"
+    ],
+    "correct_answer": "11",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0436",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "How many times are hands at right angles in 12 hours?",
+    "options": [
+      "24",
+      "22",
+      "12",
+      "20"
+    ],
+    "correct_answer": "22",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0437",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 3:30?",
+    "options": [
+      "45 degrees",
+      "90 degrees",
+      "75 degrees",
+      "60 degrees"
+    ],
+    "correct_answer": "75 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0438",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 4:30?",
+    "options": [
+      "60 degrees",
+      "30 degrees",
+      "90 degrees",
+      "45 degrees"
+    ],
+    "correct_answer": "45 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0439",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 2:30?",
+    "options": [
+      "105 degrees",
+      "90 degrees",
+      "75 degrees",
+      "120 degrees"
+    ],
+    "correct_answer": "105 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0440",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 5:30?",
+    "options": [
+      "30 degrees",
+      "15 degrees",
+      "60 degrees",
+      "45 degrees"
+    ],
+    "correct_answer": "15 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0441",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 6:30?",
+    "options": [
+      "45 degrees",
+      "15 degrees",
+      "30 degrees",
+      "0 degrees"
+    ],
+    "correct_answer": "15 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0442",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 9:30?",
+    "options": [
+      "75 degrees",
+      "90 degrees",
+      "120 degrees",
+      "105 degrees"
+    ],
+    "correct_answer": "105 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0443",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "How many times are hands opposite in 12 hours?",
+    "options": [
+      "12",
+      "22",
+      "24",
+      "11"
+    ],
+    "correct_answer": "11",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0444",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 12:30?",
+    "options": [
+      "150 degrees",
+      "135 degrees",
+      "165 degrees",
+      "180 degrees"
+    ],
+    "correct_answer": "165 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0445",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 1:30?",
+    "options": [
+      "135 degrees",
+      "150 degrees",
+      "120 degrees",
+      "105 degrees"
+    ],
+    "correct_answer": "135 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0446",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 7:30?",
+    "options": [
+      "45 degrees",
+      "60 degrees",
+      "30 degrees",
+      "15 degrees"
+    ],
+    "correct_answer": "45 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0447",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 8:30?",
+    "options": [
+      "60 degrees",
+      "90 degrees",
+      "75 degrees",
+      "45 degrees"
+    ],
+    "correct_answer": "75 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0448",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 10:30?",
+    "options": [
+      "150 degrees",
+      "135 degrees",
+      "105 degrees",
+      "120 degrees"
+    ],
+    "correct_answer": "135 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CK_0449",
+    "category": "Logical Reasoning",
+    "topic": "Clock",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Angle at 11:30?",
+    "options": [
+      "165 degrees",
+      "150 degrees",
+      "135 degrees",
+      "180 degrees"
+    ],
+    "correct_answer": "165 degrees",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
