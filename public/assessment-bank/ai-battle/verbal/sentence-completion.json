@@ -70,5 +70,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0690",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'He ___ to school every day.'",
+    "options": [
+      "goes",
+      "go",
+      "gone",
+      "going"
+    ],
+    "correct_answer": "goes",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0691",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'They ___ playing football.'",
+    "options": [
+      "am",
+      "is",
+      "be",
+      "are"
+    ],
+    "correct_answer": "are",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0692",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'She ___ a book yesterday.'",
+    "options": [
+      "reading",
+      "readed",
+      "read",
+      "reads"
+    ],
+    "correct_answer": "read",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0693",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Choose correct: 'I ___ here since 2020.'",
+    "options": [
+      "lived",
+      "living",
+      "live",
+      "have lived"
+    ],
+    "correct_answer": "have lived",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0694",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'He is ___ honest man.'",
+    "options": [
+      "the",
+      "an",
+      "a",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0695",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: '___ sun rises in the east.'",
+    "options": [
+      "An",
+      "No article",
+      "The",
+      "A"
+    ],
+    "correct_answer": "The",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0696",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'She is good ___ math.'",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "with"
+    ],
+    "correct_answer": "at",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0697",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'He is interested ___ music.'",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "with"
+    ],
+    "correct_answer": "in",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0698",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'They ___ to Chennai last year.'",
+    "options": [
+      "go",
+      "went",
+      "going",
+      "gone"
+    ],
+    "correct_answer": "went",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0699",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'I have ___ apple.'",
+    "options": [
+      "the",
+      "no article",
+      "an",
+      "a"
+    ],
+    "correct_answer": "an",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0700",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'He ___ not like coffee.'",
+    "options": [
+      "does",
+      "are",
+      "do",
+      "is"
+    ],
+    "correct_answer": "does",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0701",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'She ___ working now.'",
+    "options": [
+      "are",
+      "am",
+      "is",
+      "be"
+    ],
+    "correct_answer": "is",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0702",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Choose correct: 'We ___ friends since childhood.'",
+    "options": [
+      "been",
+      "have been",
+      "are",
+      "were"
+    ],
+    "correct_answer": "have been",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0703",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'He is ___ engineer.'",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct_answer": "an",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0704",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: '___ Ganga is a holy river.'",
+    "options": [
+      "A",
+      "An",
+      "No article",
+      "The"
+    ],
+    "correct_answer": "The",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0705",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'She is afraid ___ dogs.'",
+    "options": [
+      "with",
+      "from",
+      "at",
+      "of"
+    ],
+    "correct_answer": "of",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0706",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'He is fond ___ sweets.'",
+    "options": [
+      "from",
+      "at",
+      "of",
+      "with"
+    ],
+    "correct_answer": "of",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0707",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Choose correct: 'They ___ waiting for an hour.'",
+    "options": [
+      "were",
+      "are",
+      "have been",
+      "been"
+    ],
+    "correct_answer": "have been",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0708",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'I ___ him yesterday.'",
+    "options": [
+      "meeting",
+      "meets",
+      "meet",
+      "met"
+    ],
+    "correct_answer": "met",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0709",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'She ___ to market every Sunday.'",
+    "options": [
+      "go",
+      "gone",
+      "going",
+      "goes"
+    ],
+    "correct_answer": "goes",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0710",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'He is ___ tallest boy.'",
+    "options": [
+      "the",
+      "a",
+      "an",
+      "no article"
+    ],
+    "correct_answer": "the",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0711",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'I have ___ idea.'",
+    "options": [
+      "the",
+      "no article",
+      "a",
+      "an"
+    ],
+    "correct_answer": "an",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0712",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Choose correct: 'They ___ playing since 5 PM.'",
+    "options": [
+      "are",
+      "were",
+      "been",
+      "have been"
+    ],
+    "correct_answer": "have been",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0713",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'She ___ not come yesterday.'",
+    "options": [
+      "has",
+      "does",
+      "did",
+      "do"
+    ],
+    "correct_answer": "did",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0714",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'He is ___ best student.'",
+    "options": [
+      "an",
+      "a",
+      "no article",
+      "the"
+    ],
+    "correct_answer": "the",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0715",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'I ___ reading now.'",
+    "options": [
+      "am",
+      "be",
+      "is",
+      "are"
+    ],
+    "correct_answer": "am",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0716",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'We ___ to Delhi next week.'",
+    "options": [
+      "gone",
+      "go",
+      "are going",
+      "going"
+    ],
+    "correct_answer": "are going",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0717",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'She ___ a letter now.'",
+    "options": [
+      "is writing",
+      "wrote",
+      "written",
+      "writes"
+    ],
+    "correct_answer": "is writing",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0718",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Choose correct: 'They ___ not present yesterday.'",
+    "options": [
+      "been",
+      "were",
+      "are",
+      "is"
+    ],
+    "correct_answer": "were",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SC_0719",
+    "category": "Verbal Ability",
+    "topic": "Sentence Completion",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Choose correct: 'He ___ working since morning.'",
+    "options": [
+      "have been",
+      "has been",
+      "is",
+      "are"
+    ],
+    "correct_answer": "has been",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
