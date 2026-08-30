@@ -73,5 +73,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0570",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If EARTH is coded as FCUXM, how is MOON coded?",
+    "options": [
+      "NPOQ",
+      "NPPQ",
+      "NOOP",
+      "MPPN"
+    ],
+    "correct_answer": "NPPQ",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0571",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If CAT is coded as DBU, how is DOG coded?",
+    "options": [
+      "EPH",
+      "FPH",
+      "FQI",
+      "EQH"
+    ],
+    "correct_answer": "EPH",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0572",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If BOOK is coded as CPPL, how is PEN coded?",
+    "options": [
+      "RFO",
+      "RGP",
+      "QFO",
+      "QFP"
+    ],
+    "correct_answer": "QFO",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0573",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "If APPLE is coded as BQQMF, how is GRAPE coded?",
+    "options": [
+      "HSBPG",
+      "HSBQF",
+      "ITBQF",
+      "ITCRG"
+    ],
+    "correct_answer": "HSBQF",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0574",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If DOG is coded as EPH, how is CAT coded?",
+    "options": [
+      "DBU",
+      "ECV",
+      "DBV",
+      "ECU"
+    ],
+    "correct_answer": "DBU",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0575",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "If MAN is coded as NBO, how is WOMAN coded?",
+    "options": [
+      "YQOBO",
+      "XPNBP",
+      "YQOCP",
+      "XPNBO"
+    ],
+    "correct_answer": "XPNBO",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0576",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If SUN is coded as TVO, how is MON coded?",
+    "options": [
+      "OPO",
+      "OQP",
+      "NPP",
+      "NPO"
+    ],
+    "correct_answer": "NPO",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0577",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If BAT=CBV, how is RAT coded?",
+    "options": [
+      "SBU",
+      "TCV",
+      "SBV",
+      "TCU"
+    ],
+    "correct_answer": "SBU",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0578",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "hard",
+    "question": "If RED is coded as SFE, how is BLUE coded?",
+    "options": [
+      "DNWF",
+      "CMVE",
+      "DNWG",
+      "CMVF"
+    ],
+    "correct_answer": "CMVF",
+    "estimated_time": 75,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0579",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If FISH is coded as GJTI, how is BIRD coded?",
+    "options": [
+      "DKSE",
+      "DKTF",
+      "CJTE",
+      "CJSE"
+    ],
+    "correct_answer": "CJSE",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0580",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If CAT is 3120, how is DOG coded?",
+    "options": [
+      "4157",
+      "5168",
+      "4167",
+      "5157"
+    ],
+    "correct_answer": "4157",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0581",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If A=1, B=2, C=3, what is CAB?",
+    "options": [
+      "132",
+      "312",
+      "123",
+      "321"
+    ],
+    "correct_answer": "312",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0582",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "If Z=1, Y=2, X=3, what is ZYX?",
+    "options": [
+      "132",
+      "321",
+      "213",
+      "123"
+    ],
+    "correct_answer": "123",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0583",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If BAT=2120, how is CAT coded?",
+    "options": [
+      "3120",
+      "3130",
+      "2130",
+      "2120"
+    ],
+    "correct_answer": "3120",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0584",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If DOG=4157, how is CAT coded?",
+    "options": [
+      "4120",
+      "3120",
+      "3140",
+      "4130"
+    ],
+    "correct_answer": "3120",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0585",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If PEN=16514, how is TEN coded?",
+    "options": [
+      "19614",
+      "19514",
+      "20514",
+      "20614"
+    ],
+    "correct_answer": "20514",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0586",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If RED=1854, how is BED coded?",
+    "options": [
+      "255",
+      "254",
+      "264",
+      "265"
+    ],
+    "correct_answer": "254",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0587",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If SUN=192114, how is MON coded?",
+    "options": [
+      "131514",
+      "131415",
+      "121514",
+      "121413"
+    ],
+    "correct_answer": "131514",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0588",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If BAT=2120, how is RAT coded?",
+    "options": [
+      "18120",
+      "17120",
+      "17130",
+      "18130"
+    ],
+    "correct_answer": "18120",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0589",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If CAT=3120, how is MAT coded?",
+    "options": [
+      "13130",
+      "13120",
+      "12120",
+      "12130"
+    ],
+    "correct_answer": "13120",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0590",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If DOG=4157, how is LOG coded?",
+    "options": [
+      "12157",
+      "12167",
+      "11157",
+      "11167"
+    ],
+    "correct_answer": "12157",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0591",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If PEN=16514, how is MEN coded?",
+    "options": [
+      "13514",
+      "12614",
+      "12514",
+      "13614"
+    ],
+    "correct_answer": "13514",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0592",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If RED=1854, how is LED coded?",
+    "options": [
+      "1254",
+      "1154",
+      "1164",
+      "1264"
+    ],
+    "correct_answer": "1254",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0593",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If SUN=192114, how is RUN coded?",
+    "options": [
+      "182114",
+      "172214",
+      "182214",
+      "172114"
+    ],
+    "correct_answer": "182114",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0594",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If BAT=2120, how is FAT coded?",
+    "options": [
+      "6130",
+      "6120",
+      "5120",
+      "5130"
+    ],
+    "correct_answer": "6120",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0595",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If CAT=3120, how is PAT coded?",
+    "options": [
+      "16130",
+      "16120",
+      "15120",
+      "15130"
+    ],
+    "correct_answer": "16120",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0596",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If DOG=4157, how is COG coded?",
+    "options": [
+      "2167",
+      "3167",
+      "2157",
+      "3157"
+    ],
+    "correct_answer": "3157",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0597",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If PEN=16514, how is DEN coded?",
+    "options": [
+      "3514",
+      "4614",
+      "4514",
+      "3614"
+    ],
+    "correct_answer": "4514",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0598",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If RED=1854, how is FED coded?",
+    "options": [
+      "554",
+      "654",
+      "664",
+      "564"
+    ],
+    "correct_answer": "654",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_CD_0599",
+    "category": "Logical Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "If SUN=192114, how is FUN coded?",
+    "options": [
+      "62214",
+      "62114",
+      "52114",
+      "52214"
+    ],
+    "correct_answer": "62114",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

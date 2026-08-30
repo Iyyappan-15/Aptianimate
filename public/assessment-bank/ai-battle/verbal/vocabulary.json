@@ -46,5 +46,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0540",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Abundant':",
+    "options": [
+      "Plentiful",
+      "Scarce",
+      "Few",
+      "Rare"
+    ],
+    "correct_answer": "Plentiful",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0541",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Brief':",
+    "options": [
+      "Short",
+      "Long",
+      "Big",
+      "Tall"
+    ],
+    "correct_answer": "Short",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0542",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Cautious':",
+    "options": [
+      "Reckless",
+      "Bold",
+      "Careless",
+      "Careful"
+    ],
+    "correct_answer": "Careful",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0543",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Diligent':",
+    "options": [
+      "Slow",
+      "Careless",
+      "Hardworking",
+      "Lazy"
+    ],
+    "correct_answer": "Hardworking",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0544",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Eager':",
+    "options": [
+      "Indifferent",
+      "Bored",
+      "Enthusiastic",
+      "Uninterested"
+    ],
+    "correct_answer": "Enthusiastic",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0545",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Famous':",
+    "options": [
+      "Unknown",
+      "Common",
+      "Ordinary",
+      "Well-known"
+    ],
+    "correct_answer": "Well-known",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0546",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Generous':",
+    "options": [
+      "Mean",
+      "Selfish",
+      "Kind",
+      "Greedy"
+    ],
+    "correct_answer": "Kind",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0547",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Honest':",
+    "options": [
+      "Lying",
+      "Deceitful",
+      "Truthful",
+      "Fake"
+    ],
+    "correct_answer": "Truthful",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0548",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Intelligent':",
+    "options": [
+      "Foolish",
+      "Smart",
+      "Stupid",
+      "Dull"
+    ],
+    "correct_answer": "Smart",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0549",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Joyful':",
+    "options": [
+      "Happy",
+      "Sad",
+      "Angry",
+      "Tired"
+    ],
+    "correct_answer": "Happy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0550",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Kind':",
+    "options": [
+      "Rude",
+      "Cruel",
+      "Harsh",
+      "Gentle"
+    ],
+    "correct_answer": "Gentle",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0551",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Loyal':",
+    "options": [
+      "Unfaithful",
+      "Faithful",
+      "Betraying",
+      "False"
+    ],
+    "correct_answer": "Faithful",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0552",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Modest':",
+    "options": [
+      "Arrogant",
+      "Proud",
+      "Boastful",
+      "Humble"
+    ],
+    "correct_answer": "Humble",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0553",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Neat':",
+    "options": [
+      "Tidy",
+      "Messy",
+      "Dirty",
+      "Untidy"
+    ],
+    "correct_answer": "Tidy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0554",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Obvious':",
+    "options": [
+      "Unclear",
+      "Clear",
+      "Vague",
+      "Hidden"
+    ],
+    "correct_answer": "Clear",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0555",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Polite':",
+    "options": [
+      "Courteous",
+      "Impolite",
+      "Harsh",
+      "Rude"
+    ],
+    "correct_answer": "Courteous",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0556",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Quiet':",
+    "options": [
+      "Loud",
+      "Boisterous",
+      "Silent",
+      "Noisy"
+    ],
+    "correct_answer": "Silent",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0557",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Rapid':",
+    "options": [
+      "Late",
+      "Slow",
+      "Sluggish",
+      "Fast"
+    ],
+    "correct_answer": "Fast",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0558",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Simple':",
+    "options": [
+      "Difficult",
+      "Hard",
+      "Easy",
+      "Complex"
+    ],
+    "correct_answer": "Easy",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0559",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Tiny':",
+    "options": [
+      "Large",
+      "Small",
+      "Big",
+      "Huge"
+    ],
+    "correct_answer": "Small",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0560",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Unique':",
+    "options": [
+      "Normal",
+      "Common",
+      "Ordinary",
+      "One of a kind"
+    ],
+    "correct_answer": "One of a kind",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0561",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Victory':",
+    "options": [
+      "Failure",
+      "Defeat",
+      "Loss",
+      "Win"
+    ],
+    "correct_answer": "Win",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0562",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Wise':",
+    "options": [
+      "Dull",
+      "Stupid",
+      "Smart",
+      "Foolish"
+    ],
+    "correct_answer": "Smart",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0563",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Youth':",
+    "options": [
+      "Middle age",
+      "Young age",
+      "Old age",
+      "Childhood"
+    ],
+    "correct_answer": "Young age",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0564",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Zealous':",
+    "options": [
+      "Bored",
+      "Indifferent",
+      "Enthusiastic",
+      "Uninterested"
+    ],
+    "correct_answer": "Enthusiastic",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0565",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Angry':",
+    "options": [
+      "Relaxed",
+      "Furious",
+      "Calm",
+      "Happy"
+    ],
+    "correct_answer": "Furious",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0566",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Brave':",
+    "options": [
+      "Scared",
+      "Courageous",
+      "Cowardly",
+      "Fearful"
+    ],
+    "correct_answer": "Courageous",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0567",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Calm':",
+    "options": [
+      "Excited",
+      "Peaceful",
+      "Agitated",
+      "Angry"
+    ],
+    "correct_answer": "Peaceful",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0568",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Danger':",
+    "options": [
+      "Risk",
+      "Safety",
+      "Security",
+      "Protection"
+    ],
+    "correct_answer": "Risk",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_VC_0569",
+    "category": "Verbal Ability",
+    "topic": "Vocabulary",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Meaning of 'Early':",
+    "options": [
+      "Soon",
+      "Postponed",
+      "Late",
+      "Delayed"
+    ],
+    "correct_answer": "Soon",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
