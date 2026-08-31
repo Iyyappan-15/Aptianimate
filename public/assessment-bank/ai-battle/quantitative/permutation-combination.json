@@ -94,5 +94,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0750",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of ways to arrange 3 books on a shelf?",
+    "options": [
+      "3",
+      "9",
+      "6",
+      "12"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0751",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of ways to choose 2 out of 4 people?",
+    "options": [
+      "6",
+      "4",
+      "8",
+      "12"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0752",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Value of 5!?",
+    "options": [
+      "60",
+      "24",
+      "120",
+      "100"
+    ],
+    "correct_answer": "120",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0753",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Value of 4!?",
+    "options": [
+      "120",
+      "6",
+      "12",
+      "24"
+    ],
+    "correct_answer": "24",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0754",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Number of permutations of 3 items taken 2 at a time?",
+    "options": [
+      "3",
+      "9",
+      "6",
+      "12"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0755",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Number of combinations of 4 items taken 2 at a time?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0756",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Ways to arrange letters of 'CAT'?",
+    "options": [
+      "9",
+      "12",
+      "6",
+      "3"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0757",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to choose a captain and vice-captain from 5 players?",
+    "options": [
+      "20",
+      "10",
+      "25",
+      "15"
+    ],
+    "correct_answer": "20",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0758",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to select a committee of 2 from 6 people?",
+    "options": [
+      "20",
+      "12",
+      "15",
+      "10"
+    ],
+    "correct_answer": "15",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0759",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Value of 3! × 2!?",
+    "options": [
+      "24",
+      "12",
+      "6",
+      "18"
+    ],
+    "correct_answer": "12",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0760",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of ways to arrange 4 people in a row?",
+    "options": [
+      "120",
+      "12",
+      "6",
+      "24"
+    ],
+    "correct_answer": "24",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0761",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Number of ways to choose 3 out of 5?",
+    "options": [
+      "25",
+      "10",
+      "20",
+      "15"
+    ],
+    "correct_answer": "10",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0762",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Ways to arrange letters of 'DOG'?",
+    "options": [
+      "9",
+      "12",
+      "6",
+      "3"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0763",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to select 2 captains from 6 players?",
+    "options": [
+      "15",
+      "10",
+      "20",
+      "12"
+    ],
+    "correct_answer": "15",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0764",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Value of 6! / 3!?",
+    "options": [
+      "24",
+      "120",
+      "60",
+      "720"
+    ],
+    "correct_answer": "120",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0765",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Number of permutations of 5 items taken 3 at a time?",
+    "options": [
+      "120",
+      "30",
+      "20",
+      "60"
+    ],
+    "correct_answer": "60",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0766",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Number of combinations of 6 items taken 3 at a time?",
+    "options": [
+      "20",
+      "10",
+      "30",
+      "15"
+    ],
+    "correct_answer": "20",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0767",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to arrange 5 books on a shelf?",
+    "options": [
+      "720",
+      "120",
+      "60",
+      "24"
+    ],
+    "correct_answer": "120",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0768",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to choose 4 out of 7?",
+    "options": [
+      "28",
+      "14",
+      "35",
+      "21"
+    ],
+    "correct_answer": "35",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0769",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Value of 0!?",
+    "options": [
+      "2",
+      "Undefined",
+      "1",
+      "0"
+    ],
+    "correct_answer": "1",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0770",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Ways to arrange letters of 'BAT'?",
+    "options": [
+      "12",
+      "9",
+      "3",
+      "6"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0771",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to select a president and secretary from 4 people?",
+    "options": [
+      "12",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct_answer": "12",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0772",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Number of ways to choose 1 out of 10?",
+    "options": [
+      "10",
+      "9",
+      "1",
+      "11"
+    ],
+    "correct_answer": "10",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0773",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Value of 5! / 2!?",
+    "options": [
+      "60",
+      "24",
+      "30",
+      "120"
+    ],
+    "correct_answer": "60",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0774",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to arrange 3 people in a circle?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "6"
+    ],
+    "correct_answer": "2",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0775",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to choose 2 out of 5 and arrange them?",
+    "options": [
+      "15",
+      "10",
+      "20",
+      "25"
+    ],
+    "correct_answer": "20",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0776",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Number of permutations of 4 items taken 3 at a time?",
+    "options": [
+      "12",
+      "6",
+      "60",
+      "24"
+    ],
+    "correct_answer": "24",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0777",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Number of combinations of 5 items taken 2 at a time?",
+    "options": [
+      "25",
+      "20",
+      "10",
+      "15"
+    ],
+    "correct_answer": "10",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0778",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Ways to arrange letters of 'PEN'?",
+    "options": [
+      "9",
+      "6",
+      "12",
+      "3"
+    ],
+    "correct_answer": "6",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PC_0779",
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Ways to select 3 out of 8?",
+    "options": [
+      "40",
+      "48",
+      "64",
+      "56"
+    ],
+    "correct_answer": "56",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

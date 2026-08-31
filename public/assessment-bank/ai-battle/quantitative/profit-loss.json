@@ -94,5 +94,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0780",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹100, SP=₹120. Profit%?",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correct_answer": "20%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0781",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹200, SP=₹180. Loss%?",
+    "options": [
+      "5%",
+      "15%",
+      "10%",
+      "20%"
+    ],
+    "correct_answer": "10%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0782",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹500, Profit=20%. SP?",
+    "options": [
+      "₹550",
+      "₹580",
+      "₹620",
+      "₹600"
+    ],
+    "correct_answer": "₹600",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0783",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹440, Loss=12%. CP?",
+    "options": [
+      "₹450",
+      "₹480",
+      "₹520",
+      "₹500"
+    ],
+    "correct_answer": "₹500",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0784",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹800, SP=₹960. Profit%?",
+    "options": [
+      "15%",
+      "25%",
+      "20%",
+      "10%"
+    ],
+    "correct_answer": "20%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0785",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹300, Loss=10%. SP?",
+    "options": [
+      "₹260",
+      "₹270",
+      "₹290",
+      "₹280"
+    ],
+    "correct_answer": "₹270",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0786",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹660, Profit=10%. CP?",
+    "options": [
+      "₹580",
+      "₹600",
+      "₹640",
+      "₹620"
+    ],
+    "correct_answer": "₹600",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0787",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹1000, SP=₹850. Loss%?",
+    "options": [
+      "15%",
+      "25%",
+      "10%",
+      "20%"
+    ],
+    "correct_answer": "15%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0788",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹400, Profit=25%. SP?",
+    "options": [
+      "₹500",
+      "₹480",
+      "₹450",
+      "₹520"
+    ],
+    "correct_answer": "₹500",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0789",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹720, Loss=20%. CP?",
+    "options": [
+      "₹800",
+      "₹880",
+      "₹850",
+      "₹900"
+    ],
+    "correct_answer": "₹900",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0790",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹600, SP=₹720. Profit%?",
+    "options": [
+      "20%",
+      "25%",
+      "15%",
+      "10%"
+    ],
+    "correct_answer": "20%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0791",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "CP=₹250, Loss=8%. SP?",
+    "options": [
+      "₹220",
+      "₹240",
+      "₹210",
+      "₹230"
+    ],
+    "correct_answer": "₹230",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0792",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹550, Profit=10%. CP?",
+    "options": [
+      "₹480",
+      "₹540",
+      "₹520",
+      "₹500"
+    ],
+    "correct_answer": "₹500",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0793",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹900, SP=₹810. Loss%?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correct_answer": "10%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0794",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹350, Profit=20%. SP?",
+    "options": [
+      "₹420",
+      "₹410",
+      "₹400",
+      "₹430"
+    ],
+    "correct_answer": "₹420",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0795",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹980, Loss=2%. CP?",
+    "options": [
+      "₹950",
+      "₹1020",
+      "₹990",
+      "₹1000"
+    ],
+    "correct_answer": "₹1000",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0796",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹700, SP=₹840. Profit%?",
+    "options": [
+      "25%",
+      "20%",
+      "10%",
+      "15%"
+    ],
+    "correct_answer": "20%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0797",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹150, Loss=10%. SP?",
+    "options": [
+      "₹140",
+      "₹145",
+      "₹135",
+      "₹130"
+    ],
+    "correct_answer": "₹135",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0798",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹330, Profit=10%. CP?",
+    "options": [
+      "₹320",
+      "₹290",
+      "₹310",
+      "₹300"
+    ],
+    "correct_answer": "₹300",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0799",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹500, SP=₹400. Loss%?",
+    "options": [
+      "25%",
+      "15%",
+      "20%",
+      "10%"
+    ],
+    "correct_answer": "20%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0800",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "CP=₹450, Profit=12%. SP?",
+    "options": [
+      "₹504",
+      "₹520",
+      "₹500",
+      "₹510"
+    ],
+    "correct_answer": "₹504",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0801",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹640, Loss=20%. CP?",
+    "options": [
+      "₹800",
+      "₹820",
+      "₹750",
+      "₹780"
+    ],
+    "correct_answer": "₹800",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0802",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹800, SP=₹880. Profit%?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correct_answer": "10%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0803",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹200, Loss=5%. SP?",
+    "options": [
+      "₹195",
+      "₹180",
+      "₹190",
+      "₹185"
+    ],
+    "correct_answer": "₹190",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0804",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹440, Profit=10%. CP?",
+    "options": [
+      "₹380",
+      "₹400",
+      "₹420",
+      "₹410"
+    ],
+    "correct_answer": "₹400",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0805",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹600, SP=₹540. Loss%?",
+    "options": [
+      "5%",
+      "20%",
+      "15%",
+      "10%"
+    ],
+    "correct_answer": "10%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0806",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹300, Profit=15%. SP?",
+    "options": [
+      "₹350",
+      "₹340",
+      "₹345",
+      "₹330"
+    ],
+    "correct_answer": "₹345",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0807",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "SP=₹760, Loss=5%. CP?",
+    "options": [
+      "₹800",
+      "₹810",
+      "₹790",
+      "₹780"
+    ],
+    "correct_answer": "₹800",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0808",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹1000, SP=₹1200. Profit%?",
+    "options": [
+      "10%",
+      "15%",
+      "25%",
+      "20%"
+    ],
+    "correct_answer": "20%",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_PL_0809",
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "CP=₹350, Loss=10%. SP?",
+    "options": [
+      "₹325",
+      "₹310",
+      "₹315",
+      "₹320"
+    ],
+    "correct_answer": "₹315",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
