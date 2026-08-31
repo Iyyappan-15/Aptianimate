@@ -118,5 +118,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0720",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A is B's father. B is C's father. How is A related to C?",
+    "options": [
+      "Brother",
+      "Grandfather",
+      "Uncle",
+      "Father"
+    ],
+    "correct_answer": "Grandfather",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0721",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is Y's brother. Y is Z's mother. How is X related to Z?",
+    "options": [
+      "Grandfather",
+      "Father",
+      "Brother",
+      "Uncle"
+    ],
+    "correct_answer": "Uncle",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0722",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is Q's sister. Q is R's father. How is P related to R?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Grandmother",
+      "Aunt"
+    ],
+    "correct_answer": "Aunt",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0723",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "M is N's son. N is O's daughter. How is M related to O?",
+    "options": [
+      "Grandson",
+      "Nephew",
+      "Brother",
+      "Son"
+    ],
+    "correct_answer": "Grandson",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0724",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is B's husband. B is C's mother. How is A related to C?",
+    "options": [
+      "Uncle",
+      "Brother",
+      "Father",
+      "Grandfather"
+    ],
+    "correct_answer": "Father",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0725",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is Y's wife. Y is Z's son. How is X related to Z?",
+    "options": [
+      "Wife",
+      "Mother",
+      "Sister",
+      "Daughter-in-law"
+    ],
+    "correct_answer": "Daughter-in-law",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0726",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is Q's brother. Q is R's sister. How is P related to R?",
+    "options": [
+      "Grandfather",
+      "Uncle",
+      "Brother",
+      "Father"
+    ],
+    "correct_answer": "Brother",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0727",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "M is N's father. N is O's brother. How is M related to O?",
+    "options": [
+      "Father",
+      "Grandfather",
+      "Uncle",
+      "Brother"
+    ],
+    "correct_answer": "Father",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0728",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is B's mother. B is C's wife. How is A related to C?",
+    "options": [
+      "Aunt",
+      "Mother",
+      "Sister",
+      "Mother-in-law"
+    ],
+    "correct_answer": "Mother-in-law",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0729",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is Y's son. Y is Z's husband. How is X related to Z?",
+    "options": [
+      "Father",
+      "Brother",
+      "Son",
+      "Uncle"
+    ],
+    "correct_answer": "Son",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0730",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is Q's daughter. Q is R's mother. How is P related to R?",
+    "options": [
+      "Aunt",
+      "Grandmother",
+      "Mother",
+      "Sister"
+    ],
+    "correct_answer": "Sister",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0731",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "M is N's uncle. N is O's son. How is M related to O?",
+    "options": [
+      "Uncle",
+      "Grandfather",
+      "Brother",
+      "Father"
+    ],
+    "correct_answer": "Uncle",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0732",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is B's sister. B is C's brother. How is A related to C?",
+    "options": [
+      "Mother",
+      "Grandmother",
+      "Sister",
+      "Aunt"
+    ],
+    "correct_answer": "Sister",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0733",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is Y's father. Y is Z's sister. How is X related to Z?",
+    "options": [
+      "Brother",
+      "Father",
+      "Grandfather",
+      "Uncle"
+    ],
+    "correct_answer": "Father",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0734",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is Q's mother. Q is R's father. How is P related to R?",
+    "options": [
+      "Sister",
+      "Aunt",
+      "Grandmother",
+      "Mother"
+    ],
+    "correct_answer": "Grandmother",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0735",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "M is N's husband. N is O's daughter. How is M related to O?",
+    "options": [
+      "Son",
+      "Son-in-law",
+      "Brother",
+      "Father"
+    ],
+    "correct_answer": "Son-in-law",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0736",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is B's wife. B is C's son. How is A related to C?",
+    "options": [
+      "Daughter-in-law",
+      "Mother",
+      "Sister",
+      "Wife"
+    ],
+    "correct_answer": "Daughter-in-law",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0737",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is Y's brother. Y is Z's wife. How is X related to Z?",
+    "options": [
+      "Brother-in-law",
+      "Uncle",
+      "Brother",
+      "Father"
+    ],
+    "correct_answer": "Brother-in-law",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0738",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is Q's father. Q is R's sister. How is P related to R?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Father",
+      "Grandfather"
+    ],
+    "correct_answer": "Father",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0739",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "M is N's mother. N is O's husband. How is M related to O?",
+    "options": [
+      "Mother",
+      "Mother-in-law",
+      "Aunt",
+      "Sister"
+    ],
+    "correct_answer": "Mother-in-law",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0740",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is B's son. B is C's daughter. How is A related to C?",
+    "options": [
+      "Son",
+      "Grandson",
+      "Nephew",
+      "Brother"
+    ],
+    "correct_answer": "Grandson",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0741",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is Y's daughter. Y is Z's son. How is X related to Z?",
+    "options": [
+      "Sister",
+      "Niece",
+      "Daughter",
+      "Granddaughter"
+    ],
+    "correct_answer": "Granddaughter",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0742",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is Q's brother. Q is R's mother. How is P related to R?",
+    "options": [
+      "Brother",
+      "Father",
+      "Grandfather",
+      "Uncle"
+    ],
+    "correct_answer": "Uncle",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0743",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "M is N's sister. N is O's father. How is M related to O?",
+    "options": [
+      "Sister",
+      "Aunt",
+      "Mother",
+      "Grandmother"
+    ],
+    "correct_answer": "Aunt",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0744",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is B's father. B is C's sister. How is A related to C?",
+    "options": [
+      "Uncle",
+      "Father",
+      "Grandfather",
+      "Brother"
+    ],
+    "correct_answer": "Father",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0745",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is Y's mother. Y is Z's brother. How is X related to Z?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Grandmother",
+      "Aunt"
+    ],
+    "correct_answer": "Mother",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0746",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "P is Q's husband. Q is R's sister. How is P related to R?",
+    "options": [
+      "Uncle",
+      "Brother",
+      "Father",
+      "Brother-in-law"
+    ],
+    "correct_answer": "Brother-in-law",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0747",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "M is N's wife. N is O's brother. How is M related to O?",
+    "options": [
+      "Sister-in-law",
+      "Mother",
+      "Sister",
+      "Wife"
+    ],
+    "correct_answer": "Sister-in-law",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0748",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A is B's son. B is C's brother. How is A related to C?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Nephew",
+      "Son"
+    ],
+    "correct_answer": "Nephew",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_BR_0749",
+    "category": "Logical Reasoning",
+    "topic": "Blood Relations",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "X is Y's daughter. Y is Z's sister. How is X related to Z?",
+    "options": [
+      "Niece",
+      "Sister",
+      "Daughter",
+      "Aunt"
+    ],
+    "correct_answer": "Niece",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
