@@ -94,5 +94,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0870",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'He go to school every day.'",
+    "options": [
+      "He go to school every day.",
+      "He gone to school every day.",
+      "He goes to school every day.",
+      "He going to school every day."
+    ],
+    "correct_answer": "He goes to school every day.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0871",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'They is playing football.'",
+    "options": [
+      "They be playing football.",
+      "They is playing football.",
+      "They are playing football.",
+      "They am playing football."
+    ],
+    "correct_answer": "They are playing football.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0872",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'She read a book yesterday.'",
+    "options": [
+      "She reading a book yesterday.",
+      "She read a book yesterday.",
+      "She readed a book yesterday.",
+      "She reads a book yesterday."
+    ],
+    "correct_answer": "She read a book yesterday.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0873",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Correct: 'I has lived here since 2020.'",
+    "options": [
+      "I lived here since 2020.",
+      "I has lived here since 2020.",
+      "I living here since 2020.",
+      "I have lived here since 2020."
+    ],
+    "correct_answer": "I have lived here since 2020.",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0874",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'He is a honest man.'",
+    "options": [
+      "He is honest man.",
+      "He is a honest man.",
+      "He is an honest man.",
+      "He is the honest man."
+    ],
+    "correct_answer": "He is an honest man.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0875",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'Sun rises in the east.'",
+    "options": [
+      "The sun rises in the east.",
+      "An sun rises in the east.",
+      "Sun rises in the east.",
+      "A sun rises in the east."
+    ],
+    "correct_answer": "The sun rises in the east.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0876",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'She is good in math.'",
+    "options": [
+      "She is good at math.",
+      "She is good with math.",
+      "She is good on math.",
+      "She is good in math."
+    ],
+    "correct_answer": "She is good at math.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0877",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'He is interested on music.'",
+    "options": [
+      "He is interested at music.",
+      "He is interested with music.",
+      "He is interested in music.",
+      "He is interested on music."
+    ],
+    "correct_answer": "He is interested in music.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0878",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'They go to Chennai last year.'",
+    "options": [
+      "They went to Chennai last year.",
+      "They going to Chennai last year.",
+      "They gone to Chennai last year.",
+      "They go to Chennai last year."
+    ],
+    "correct_answer": "They went to Chennai last year.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0879",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'I have a apple.'",
+    "options": [
+      "I have the apple.",
+      "I have an apple.",
+      "I have a apple.",
+      "I have apple."
+    ],
+    "correct_answer": "I have an apple.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0880",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'He do not like coffee.'",
+    "options": [
+      "He is not like coffee.",
+      "He does not like coffee.",
+      "He do not like coffee.",
+      "He are not like coffee."
+    ],
+    "correct_answer": "He does not like coffee.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0881",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'She are working now.'",
+    "options": [
+      "She am working now.",
+      "She be working now.",
+      "She is working now.",
+      "She are working now."
+    ],
+    "correct_answer": "She is working now.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0882",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Correct: 'We are friends since childhood.'",
+    "options": [
+      "We are friends since childhood.",
+      "We were friends since childhood.",
+      "We been friends since childhood.",
+      "We have been friends since childhood."
+    ],
+    "correct_answer": "We have been friends since childhood.",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0883",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'He is a engineer.'",
+    "options": [
+      "He is engineer.",
+      "He is the engineer.",
+      "He is an engineer.",
+      "He is a engineer."
+    ],
+    "correct_answer": "He is an engineer.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0884",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'Ganga is a holy river.'",
+    "options": [
+      "The Ganga is a holy river.",
+      "A Ganga is a holy river.",
+      "Ganga is a holy river.",
+      "An Ganga is a holy river."
+    ],
+    "correct_answer": "The Ganga is a holy river.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0885",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'She is afraid from dogs.'",
+    "options": [
+      "She is afraid with dogs.",
+      "She is afraid from dogs.",
+      "She is afraid of dogs.",
+      "She is afraid at dogs."
+    ],
+    "correct_answer": "She is afraid of dogs.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0886",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'He is fond from sweets.'",
+    "options": [
+      "He is fond with sweets.",
+      "He is fond at sweets.",
+      "He is fond from sweets.",
+      "He is fond of sweets."
+    ],
+    "correct_answer": "He is fond of sweets.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0887",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Correct: 'They are waiting for an hour.'",
+    "options": [
+      "They have been waiting for an hour.",
+      "They been waiting for an hour.",
+      "They were waiting for an hour.",
+      "They are waiting for an hour."
+    ],
+    "correct_answer": "They have been waiting for an hour.",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0888",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'I meet him yesterday.'",
+    "options": [
+      "I meeting him yesterday.",
+      "I met him yesterday.",
+      "I meet him yesterday.",
+      "I meets him yesterday."
+    ],
+    "correct_answer": "I met him yesterday.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0889",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'She go to market every Sunday.'",
+    "options": [
+      "She go to market every Sunday.",
+      "She going to market every Sunday.",
+      "She gone to market every Sunday.",
+      "She goes to market every Sunday."
+    ],
+    "correct_answer": "She goes to market every Sunday.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0890",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'He is a tallest boy.'",
+    "options": [
+      "He is a tallest boy.",
+      "He is the tallest boy.",
+      "He is an tallest boy.",
+      "He is tallest boy."
+    ],
+    "correct_answer": "He is the tallest boy.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0891",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'I have idea.'",
+    "options": [
+      "I have idea.",
+      "I have the idea.",
+      "I have a idea.",
+      "I have an idea."
+    ],
+    "correct_answer": "I have an idea.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0892",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Correct: 'They are playing since 5 PM.'",
+    "options": [
+      "They been playing since 5 PM.",
+      "They were playing since 5 PM.",
+      "They are playing since 5 PM.",
+      "They have been playing since 5 PM."
+    ],
+    "correct_answer": "They have been playing since 5 PM.",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0893",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'She did not came yesterday.'",
+    "options": [
+      "She does not come yesterday.",
+      "She did not come yesterday.",
+      "She has not come yesterday.",
+      "She did not came yesterday."
+    ],
+    "correct_answer": "She did not come yesterday.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0894",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'He is a best student.'",
+    "options": [
+      "He is the best student.",
+      "He is an best student.",
+      "He is best student.",
+      "He is a best student."
+    ],
+    "correct_answer": "He is the best student.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0895",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'I is reading now.'",
+    "options": [
+      "I be reading now.",
+      "I am reading now.",
+      "I is reading now.",
+      "I are reading now."
+    ],
+    "correct_answer": "I am reading now.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0896",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'We go to Delhi next week.'",
+    "options": [
+      "We gone to Delhi next week.",
+      "We go to Delhi next week.",
+      "We going to Delhi next week.",
+      "We are going to Delhi next week."
+    ],
+    "correct_answer": "We are going to Delhi next week.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0897",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'She write a letter now.'",
+    "options": [
+      "She written a letter now.",
+      "She write a letter now.",
+      "She wrote a letter now.",
+      "She is writing a letter now."
+    ],
+    "correct_answer": "She is writing a letter now.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0898",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Correct: 'They is not present yesterday.'",
+    "options": [
+      "They been not present yesterday.",
+      "They are not present yesterday.",
+      "They were not present yesterday.",
+      "They is not present yesterday."
+    ],
+    "correct_answer": "They were not present yesterday.",
+    "estimated_time": 30,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_SE_0899",
+    "category": "Verbal Ability",
+    "topic": "Sentence Correction",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Correct: 'He is working since morning.'",
+    "options": [
+      "He is working since morning.",
+      "He was working since morning.",
+      "He has been working since morning.",
+      "He been working since morning."
+    ],
+    "correct_answer": "He has been working since morning.",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
