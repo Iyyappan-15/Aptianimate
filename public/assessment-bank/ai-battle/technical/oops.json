@@ -102,5 +102,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0840",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "OOP stands for:",
+    "options": [
+      "Object-Oriented Procedure",
+      "Object-Oriented Process",
+      "Object-Oriented Protocol",
+      "Object-Oriented Programming"
+    ],
+    "correct_answer": "Object-Oriented Programming",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0841",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which is not an OOP pillar?",
+    "options": [
+      "Encapsulation",
+      "Compilation",
+      "Polymorphism",
+      "Inheritance"
+    ],
+    "correct_answer": "Compilation",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0842",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Encapsulation means:",
+    "options": [
+      "Bundling data and methods",
+      "Inheriting classes",
+      "Overloading methods",
+      "Hiding data only"
+    ],
+    "correct_answer": "Bundling data and methods",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0843",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Inheritance allows:",
+    "options": [
+      "Hiding data",
+      "Overloading methods",
+      "Creating objects",
+      "One class to acquire properties of another"
+    ],
+    "correct_answer": "One class to acquire properties of another",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0844",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Polymorphism means:",
+    "options": [
+      "Hidden form",
+      "One form",
+      "No form",
+      "Many forms"
+    ],
+    "correct_answer": "Many forms",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0845",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Abstraction means:",
+    "options": [
+      "Hiding internal details",
+      "Creating objects",
+      "Showing all details",
+      "Inheriting classes"
+    ],
+    "correct_answer": "Hiding internal details",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0846",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A class is a:",
+    "options": [
+      "Object",
+      "Variable",
+      "Function",
+      "Blueprint"
+    ],
+    "correct_answer": "Blueprint",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0847",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "An object is a:",
+    "options": [
+      "Blueprint",
+      "Instance of a class",
+      "Variable",
+      "Function"
+    ],
+    "correct_answer": "Instance of a class",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0848",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Constructor is used to:",
+    "options": [
+      "Delete objects",
+      "Copy objects",
+      "Initialize objects",
+      "Compare objects"
+    ],
+    "correct_answer": "Initialize objects",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0849",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Destructor is used to:",
+    "options": [
+      "Create objects",
+      "Copy objects",
+      "Compare objects",
+      "Clean up resources"
+    ],
+    "correct_answer": "Clean up resources",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0850",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Method overloading is:",
+    "options": [
+      "Different name, same parameters",
+      "Same name, same parameters",
+      "Different name, different parameters",
+      "Same name, different parameters"
+    ],
+    "correct_answer": "Same name, different parameters",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0851",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Method overriding is:",
+    "options": [
+      "Different name, different parameters",
+      "Different name, same parameters",
+      "Same name and parameters in subclass",
+      "Same name, different parameters"
+    ],
+    "correct_answer": "Same name and parameters in subclass",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0852",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which access modifier is most restrictive?",
+    "options": [
+      "public",
+      "default",
+      "private",
+      "protected"
+    ],
+    "correct_answer": "private",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0853",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which access modifier is least restrictive?",
+    "options": [
+      "public",
+      "default",
+      "protected",
+      "private"
+    ],
+    "correct_answer": "public",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0854",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Inheritance promotes:",
+    "options": [
+      "Reusability",
+      "Redundancy",
+      "Duplication",
+      "Complexity"
+    ],
+    "correct_answer": "Reusability",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0855",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A class inheriting from another is called:",
+    "options": [
+      "Parent class",
+      "Subclass",
+      "Base class",
+      "Superclass"
+    ],
+    "correct_answer": "Subclass",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0856",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "A class being inherited is called:",
+    "options": [
+      "Base class",
+      "Derived class",
+      "Child class",
+      "Subclass"
+    ],
+    "correct_answer": "Base class",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0857",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Multiple inheritance is supported in:",
+    "options": [
+      "C#",
+      "Java",
+      "All",
+      "C++"
+    ],
+    "correct_answer": "C++",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0858",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Interface contains:",
+    "options": [
+      "Abstract methods",
+      "Concrete methods only",
+      "Variables only",
+      "Constructors"
+    ],
+    "correct_answer": "Abstract methods",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0859",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Abstract class can have:",
+    "options": [
+      "Only concrete methods",
+      "Only abstract methods",
+      "No methods",
+      "Both abstract and concrete methods"
+    ],
+    "correct_answer": "Both abstract and concrete methods",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0860",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Polymorphism is achieved via:",
+    "options": [
+      "Encapsulation only",
+      "Overloading and overriding",
+      "Abstraction only",
+      "Inheritance only"
+    ],
+    "correct_answer": "Overloading and overriding",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0861",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Encapsulation is achieved via:",
+    "options": [
+      "Access modifiers",
+      "Inheritance",
+      "Abstraction",
+      "Polymorphism"
+    ],
+    "correct_answer": "Access modifiers",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0862",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Data hiding is part of:",
+    "options": [
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction",
+      "Inheritance"
+    ],
+    "correct_answer": "Encapsulation",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0863",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Which is not a type of inheritance?",
+    "options": [
+      "Multiple",
+      "Single",
+      "Multilevel",
+      "Multidimensional"
+    ],
+    "correct_answer": "Multidimensional",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0864",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Super keyword is used to:",
+    "options": [
+      "Call child class methods",
+      "Call parent class methods",
+      "Create objects",
+      "Delete objects"
+    ],
+    "correct_answer": "Call parent class methods",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0865",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "This keyword refers to:",
+    "options": [
+      "Method",
+      "Class",
+      "Parent object",
+      "Current object"
+    ],
+    "correct_answer": "Current object",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0866",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Static method belongs to:",
+    "options": [
+      "Class",
+      "Variable only",
+      "Method only",
+      "Object"
+    ],
+    "correct_answer": "Class",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0867",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Final class cannot be:",
+    "options": [
+      "Modified",
+      "Deleted",
+      "Instantiated",
+      "Inherited"
+    ],
+    "correct_answer": "Inherited",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0868",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Final method cannot be:",
+    "options": [
+      "Created",
+      "Overridden",
+      "Called",
+      "Overloaded"
+    ],
+    "correct_answer": "Overridden",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_OP_0869",
+    "category": "Technical",
+    "topic": "OOPs",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Final variable is a:",
+    "options": [
+      "Constant",
+      "Method",
+      "Variable",
+      "Object"
+    ],
+    "correct_answer": "Constant",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]

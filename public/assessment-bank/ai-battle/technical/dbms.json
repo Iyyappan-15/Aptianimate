@@ -102,5 +102,785 @@
     ],
     "status": "published",
     "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0810",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "DBMS stands for:",
+    "options": [
+      "Database Management System",
+      "Data Backup Management System",
+      "Data Base Management Software",
+      "Digital Base Management System"
+    ],
+    "correct_answer": "Database Management System",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0811",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which is a DBMS?",
+    "options": [
+      "Oracle C",
+      "MySQL",
+      "Windows",
+      "Linux"
+    ],
+    "correct_answer": "MySQL",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0812",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Primary key must be:",
+    "options": [
+      "Null only",
+      "Duplicate allowed",
+      "Any value",
+      "Unique and not null"
+    ],
+    "correct_answer": "Unique and not null",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0813",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "SQL stands for:",
+    "options": [
+      "Simple Query Language",
+      "Structured Question Language",
+      "Structured Query Language",
+      "Simple Question Language"
+    ],
+    "correct_answer": "Structured Query Language",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0814",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which command retrieves data?",
+    "options": [
+      "INSERT",
+      "DELETE",
+      "UPDATE",
+      "SELECT"
+    ],
+    "correct_answer": "SELECT",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0815",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which command adds new rows?",
+    "options": [
+      "UPDATE",
+      "DELETE",
+      "INSERT",
+      "SELECT"
+    ],
+    "correct_answer": "INSERT",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0816",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which command modifies existing rows?",
+    "options": [
+      "UPDATE",
+      "SELECT",
+      "INSERT",
+      "DELETE"
+    ],
+    "correct_answer": "UPDATE",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0817",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which command removes rows?",
+    "options": [
+      "INSERT",
+      "SELECT",
+      "DELETE",
+      "UPDATE"
+    ],
+    "correct_answer": "DELETE",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0818",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Foreign key is used to:",
+    "options": [
+      "Link two tables",
+      "Store primary key",
+      "Delete rows",
+      "Insert rows"
+    ],
+    "correct_answer": "Link two tables",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0819",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "Normalization is used to:",
+    "options": [
+      "Insert data",
+      "Reduce redundancy",
+      "Delete data",
+      "Increase redundancy"
+    ],
+    "correct_answer": "Reduce redundancy",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0820",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "1NF requires:",
+    "options": [
+      "No nulls",
+      "Unique keys",
+      "No duplicates",
+      "Atomic values"
+    ],
+    "correct_answer": "Atomic values",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0821",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "2NF removes:",
+    "options": [
+      "All dependencies",
+      "Partial dependency",
+      "No dependency",
+      "Transitive dependency"
+    ],
+    "correct_answer": "Partial dependency",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0822",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "3NF removes:",
+    "options": [
+      "Partial dependency",
+      "Transitive dependency",
+      "No dependency",
+      "All dependencies"
+    ],
+    "correct_answer": "Transitive dependency",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0823",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which is a DDL command?",
+    "options": [
+      "CREATE",
+      "INSERT",
+      "UPDATE",
+      "SELECT"
+    ],
+    "correct_answer": "CREATE",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0824",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "Which is a DML command?",
+    "options": [
+      "DROP",
+      "ALTER",
+      "CREATE",
+      "INSERT"
+    ],
+    "correct_answer": "INSERT",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0825",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "JOIN is used to:",
+    "options": [
+      "Update rows",
+      "Combine rows from tables",
+      "Insert rows",
+      "Delete rows"
+    ],
+    "correct_answer": "Combine rows from tables",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0826",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "INNER JOIN returns:",
+    "options": [
+      "All rows from left",
+      "Matching rows only",
+      "All rows from right",
+      "All rows"
+    ],
+    "correct_answer": "Matching rows only",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0827",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "LEFT JOIN returns:",
+    "options": [
+      "All rows from left + matching from right",
+      "Matching only",
+      "No rows",
+      "All rows from right"
+    ],
+    "correct_answer": "All rows from left + matching from right",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0828",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "GROUP BY is used with:",
+    "options": [
+      "UPDATE",
+      "Aggregate functions",
+      "INSERT",
+      "DELETE"
+    ],
+    "correct_answer": "Aggregate functions",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0829",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "medium",
+    "question": "HAVING clause filters:",
+    "options": [
+      "Columns",
+      "Rows",
+      "Tables",
+      "Groups"
+    ],
+    "correct_answer": "Groups",
+    "estimated_time": 60,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0830",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "WHERE clause filters:",
+    "options": [
+      "Groups",
+      "Columns",
+      "Rows",
+      "Tables"
+    ],
+    "correct_answer": "Rows",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0831",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "ORDER BY is used to:",
+    "options": [
+      "Sort results",
+      "Join tables",
+      "Group rows",
+      "Filter rows"
+    ],
+    "correct_answer": "Sort results",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0832",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "COUNT() is used to:",
+    "options": [
+      "Count rows",
+      "Average values",
+      "Find max",
+      "Sum values"
+    ],
+    "correct_answer": "Count rows",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0833",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "SUM() is used to:",
+    "options": [
+      "Sum values",
+      "Average values",
+      "Count rows",
+      "Find min"
+    ],
+    "correct_answer": "Sum values",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0834",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "AVG() is used to:",
+    "options": [
+      "Count rows",
+      "Find max",
+      "Sum values",
+      "Average values"
+    ],
+    "correct_answer": "Average values",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0835",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "MAX() is used to:",
+    "options": [
+      "Find minimum",
+      "Find maximum value",
+      "Count rows",
+      "Sum values"
+    ],
+    "correct_answer": "Find maximum value",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0836",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "MIN() is used to:",
+    "options": [
+      "Sum values",
+      "Count rows",
+      "Find maximum",
+      "Find minimum value"
+    ],
+    "correct_answer": "Find minimum value",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0837",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A table is also called:",
+    "options": [
+      "Function",
+      "Relation",
+      "Query",
+      "View"
+    ],
+    "correct_answer": "Relation",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0838",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A row is also called:",
+    "options": [
+      "Attribute",
+      "Tuple",
+      "Field",
+      "Column"
+    ],
+    "correct_answer": "Tuple",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
+  },
+  {
+    "id": "Q_DB_0839",
+    "category": "Technical",
+    "topic": "DBMS",
+    "subtopic": "General",
+    "difficulty": "easy",
+    "question": "A column is also called:",
+    "options": [
+      "Record",
+      "Attribute",
+      "Tuple",
+      "Row"
+    ],
+    "correct_answer": "Attribute",
+    "estimated_time": 45,
+    "company_tags": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "capgemini",
+      "cognizant"
+    ],
+    "status": "published",
+    "created_by": "bulk_import"
   }
 ]
