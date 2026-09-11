@@ -68,10 +68,31 @@ export default function HomePage({ navigate }) {
   return (
     <div className="page" style={{ animation: 'fadeIn 0.5s ease' }}>
       <div className="hero">
-        <div className="hero-badge">✨ Interactive Learning Engine</div>
+        <div className="hero-badge">🎯 Built for Campus Placement &amp; Competitive Exams</div>
         <h1>Master Aptitude<br/>Visually.</h1>
-        <p>Don't just memorize formulas. Understand them through interactive animations and step-by-step logic.</p>
-        
+        <p>Stop memorizing. Start understanding. Learn through animations, battle friends in live quizzes, and practice 800+ questions — completely free.</p>
+
+        {/* CTA Buttons */}
+        <div className="hero-cta-row">
+          <button className="hero-btn-primary" onClick={() => handleGoalSelect('Campus Placements')}>
+            ▶ Start Practicing Free
+          </button>
+          <button className="hero-btn-secondary" onClick={() => navigate('battle')}>
+            ⚔️ Challenge a Friend
+          </button>
+        </div>
+
+        {/* Stats Bar */}
+        <div className="hero-stats-bar">
+          <div className="hero-stat"><span className="hero-stat-num">800+</span><span className="hero-stat-label">Questions</span></div>
+          <div className="hero-stat-divider" />
+          <div className="hero-stat"><span className="hero-stat-num">30+</span><span className="hero-stat-label">Topics</span></div>
+          <div className="hero-stat-divider" />
+          <div className="hero-stat"><span className="hero-stat-num">6</span><span className="hero-stat-label">Companies</span></div>
+          <div className="hero-stat-divider" />
+          <div className="hero-stat"><span className="hero-stat-num">100%</span><span className="hero-stat-label">Free</span></div>
+        </div>
+
         {/* Global Search Box */}
         <div className="home-search-container" ref={searchRef}>
           <div className={`home-search-box ${isSearchFocused ? 'focused' : ''}`}>
@@ -118,6 +139,28 @@ export default function HomePage({ navigate }) {
               </div>
             </div>
           )}
+        </div>
+      </div>
+
+      {/* Feature Highlight Cards */}
+      <div className="hero-features">
+        <div className="hero-feature-card" onClick={() => handleGoalSelect('Campus Placements')}>
+          <div className="hero-feature-icon">🎬</div>
+          <div className="hero-feature-title">Animated Learning</div>
+          <div className="hero-feature-desc">Complex topics made visual and simple — learn concepts that actually stick.</div>
+          <div className="hero-feature-link">Explore Topics →</div>
+        </div>
+        <div className="hero-feature-card hero-feature-card--battle" onClick={() => navigate('battle')}>
+          <div className="hero-feature-icon">⚔️</div>
+          <div className="hero-feature-title">AI Battle Mode</div>
+          <div className="hero-feature-desc">Challenge friends to live aptitude quizzes. Turn studying into a competition.</div>
+          <div className="hero-feature-link">Start a Battle →</div>
+        </div>
+        <div className="hero-feature-card" onClick={() => handleGoalSelect('Campus Placements')}>
+          <div className="hero-feature-icon">📚</div>
+          <div className="hero-feature-title">800+ Question Bank</div>
+          <div className="hero-feature-desc">Company-tagged questions across Quant, Verbal, Logical &amp; Technical topics.</div>
+          <div className="hero-feature-link">Browse Bank →</div>
         </div>
       </div>
 

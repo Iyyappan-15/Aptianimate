@@ -250,7 +250,19 @@ function App() {
                   <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                     <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
                       <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => { navigate(''); setIsMobileMenuOpen(false); }}>Home</button>
+
+                      {/* AI Battle — colored standout button */}
+                      <button
+                        className={`nav-link nav-link--battle ${route.startsWith('battle') ? 'active' : ''}`}
+                        onClick={() => { navigate('battle'); setIsMobileMenuOpen(false); }}
+                      >
+                        ⚔️ AI Battle
+                      </button>
+
+                      <button className={`nav-link ${route === 'mock-test' ? 'active' : ''}`} onClick={() => { navigate('mock-test'); setIsMobileMenuOpen(false); }}>Mock Tests</button>
+                      <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
                       <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => { navigate('saved'); setIsMobileMenuOpen(false); }}>Saved</button>
+
                       {/* Ask AI nav button */}
                       <button
                         className={`nav-link ${route.startsWith('ask') ? 'active' : ''}`}
@@ -258,16 +270,6 @@ function App() {
                       >
                         Ask AI
                       </button>
-
-                      {/* AI Battle nav button */}
-                      <button
-                        className={`nav-link ${route.startsWith('battle') ? 'active' : ''}`}
-                        onClick={() => { navigate('battle'); setIsMobileMenuOpen(false); }}
-                      >
-                        AI Battle
-                      </button>
-
-                      <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
 
                       {/* 🔐 Google Login / User Profile */}
                       {(!user || user.is_anonymous) ? (
