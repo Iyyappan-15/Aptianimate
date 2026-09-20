@@ -47,6 +47,27 @@ export const GOVT_PYQ_REGISTRY = [
         file: "/assessment-bank/government/ldc/ldc-2026-set-4.json"
       }
     ]
+  },
+  {
+    id: "general-awareness",
+    title: "General Awareness",
+    description: "Previous year General Awareness questions covering GK, Science, History, Current Affairs, English and Sports — commonly asked in SSC, IBPS and State PSC exams.",
+    icon: "🌐",
+    totalQuestions: 35,
+    totalSets: 1,
+    questionsPerSet: 35,
+    totalMarks: 35,
+    duration: 30, // minutes
+    categories: ["General Knowledge", "Science", "History", "Current Affairs", "English", "Sports", "Technology"],
+    practiceSets: [
+      {
+        id: "set-1",
+        title: "Practice Set 1",
+        description: "Questions 1 – 35 | GK, Science, History, English & Sports",
+        questionRange: "Q_GA_001 – Q_GA_035",
+        file: "/assessment-bank/government/general-awareness/ga-set-1.json"
+      }
+    ]
   }
   // ─── Future exams go here ─────────────────────────────────────────────────
   // {

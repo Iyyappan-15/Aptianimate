@@ -1,0 +1,667 @@
+[
+  {
+    "id": "Q_GA_001",
+    "category": "Science",
+    "topic": "Biology",
+    "subtopic": "Disease & Cause",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Chickenpox is caused by?",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Virus" },
+      { "label": "B", "text": "Bacteria" },
+      { "label": "C", "text": "Fungus" },
+      { "label": "D", "text": "Protozoa" }
+    ]
+  },
+  {
+    "id": "Q_GA_002",
+    "category": "Current Affairs",
+    "topic": "Politics",
+    "subtopic": "State Elections",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Sikkim Krantikari Morcha (SKM) president Prem Singh Tamang is popularly known as",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "P S Goley" },
+      { "label": "B", "text": "P S Gola" },
+      { "label": "C", "text": "P S Golay" },
+      { "label": "D", "text": "P S Gol" }
+    ]
+  },
+  {
+    "id": "Q_GA_003",
+    "category": "Current Affairs",
+    "topic": "Business",
+    "subtopic": "Corporate Appointments",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who was appointed as the Chief Technology Officer of Walmart in May 2019?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Kevin Systrom" },
+      { "label": "B", "text": "Suresh Kumar" },
+      { "label": "C", "text": "Adam D'Angelo" },
+      { "label": "D", "text": "Bret Taylor" }
+    ]
+  },
+  {
+    "id": "Q_GA_004",
+    "category": "Sports",
+    "topic": "Sports Awards & Cups",
+    "subtopic": "Football",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Scissor Cup is associated with which sport?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Hockey" },
+      { "label": "B", "text": "Cricket" },
+      { "label": "C", "text": "Badminton" },
+      { "label": "D", "text": "Football" }
+    ]
+  },
+  {
+    "id": "Q_GA_005",
+    "category": "General Knowledge",
+    "topic": "Banking & Finance",
+    "subtopic": "Abbreviations",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "IMPS stands for",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Immediate Management Processing System" },
+      { "label": "B", "text": "Inquiry Management Processing System" },
+      { "label": "C", "text": "Inquiry Management Service" },
+      { "label": "D", "text": "Immediate Payment Service" }
+    ]
+  },
+  {
+    "id": "Q_GA_006",
+    "category": "General Knowledge",
+    "topic": "India – Monuments",
+    "subtopic": "Statues",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "What is the height of the Statue of Unity?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "180 meters" },
+      { "label": "B", "text": "172 meters" },
+      { "label": "C", "text": "178 meters" },
+      { "label": "D", "text": "182 meters" }
+    ]
+  },
+  {
+    "id": "Q_GA_007",
+    "category": "General Knowledge",
+    "topic": "India – Geography",
+    "subtopic": "Climate & Places",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which is the coldest inhabited place in India?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Siachen Glacier" },
+      { "label": "B", "text": "Dras" },
+      { "label": "C", "text": "Leh" },
+      { "label": "D", "text": "Srinagar" }
+    ]
+  },
+  {
+    "id": "Q_GA_008",
+    "category": "Current Affairs",
+    "topic": "Defence",
+    "subtopic": "Military Appointments",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who assumed command of the Indian Navy on 31 May 2019 as the 24th Chief of the Naval Staff?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Admiral Sunil Lanba" },
+      { "label": "B", "text": "Admiral Bimal Verma" },
+      { "label": "C", "text": "Admiral Devendra Kumar Joshi" },
+      { "label": "D", "text": "Admiral Karambir Singh" }
+    ]
+  },
+  {
+    "id": "Q_GA_009",
+    "category": "Science",
+    "topic": "Physics",
+    "subtopic": "Inventions",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who coined the term \"battery\"?",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Benjamin Franklin" },
+      { "label": "B", "text": "Alessandro Volta" },
+      { "label": "C", "text": "Luigi Galvani" },
+      { "label": "D", "text": "Michael Faraday" }
+    ]
+  },
+  {
+    "id": "Q_GA_010",
+    "category": "History",
+    "topic": "Books & Authors",
+    "subtopic": "Economics Literature",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who wrote the book \"Principles of Political Economy (1848)\"?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "David Ricardo" },
+      { "label": "B", "text": "John Stuart Mill" },
+      { "label": "C", "text": "Adam Smith" },
+      { "label": "D", "text": "Alfred Marshall" }
+    ]
+  },
+  {
+    "id": "Q_GA_011",
+    "category": "Science",
+    "topic": "Biology",
+    "subtopic": "Human Body",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Which organ produces the enzymes amylase, lipase and protease?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Liver" },
+      { "label": "B", "text": "Gallbladder" },
+      { "label": "C", "text": "Spleen" },
+      { "label": "D", "text": "Pancreas" }
+    ]
+  },
+  {
+    "id": "Q_GA_012",
+    "category": "History",
+    "topic": "Indian Freedom Struggle",
+    "subtopic": "Social Reformers",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who dedicated his book Gulamgiri to the American movement to free slaves?",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Jyotirao Govindrao Phule (Mahatma)" },
+      { "label": "B", "text": "Dayananda Saraswati" },
+      { "label": "C", "text": "Annie Besant" },
+      { "label": "D", "text": "Ram Mohan Roy" }
+    ]
+  },
+  {
+    "id": "Q_GA_013",
+    "category": "Technology",
+    "topic": "Internet",
+    "subtopic": "History of Internet",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "The first search engine ever created was",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Archie" },
+      { "label": "B", "text": "Google" },
+      { "label": "C", "text": "Bing" },
+      { "label": "D", "text": "Yahoo" }
+    ]
+  },
+  {
+    "id": "Q_GA_014",
+    "category": "History",
+    "topic": "Modern India",
+    "subtopic": "1971 War",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who was India's Defence Minister during the 1971 war?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Yashwantrao Chavan" },
+      { "label": "B", "text": "Sardar Swaran Singh" },
+      { "label": "C", "text": "Indira Gandhi" },
+      { "label": "D", "text": "Jagjivan Ram" }
+    ]
+  },
+  {
+    "id": "Q_GA_015",
+    "category": "General Knowledge",
+    "topic": "India – Geography",
+    "subtopic": "States & Borders",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Chhattisgarh shares its borders with which of the following states?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Uttar Pradesh" },
+      { "label": "B", "text": "Madhya Pradesh" },
+      { "label": "C", "text": "Maharashtra" },
+      { "label": "D", "text": "All of the above" }
+    ]
+  },
+  {
+    "id": "Q_GA_016",
+    "category": "Sports",
+    "topic": "Cricket",
+    "subtopic": "ICC World Cup",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "The first match of ICC Cricket World Cup 2019 was played between hosts England and which country?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "India" },
+      { "label": "B", "text": "South Africa" },
+      { "label": "C", "text": "Australia" },
+      { "label": "D", "text": "West Indies" }
+    ]
+  },
+  {
+    "id": "Q_GA_017",
+    "category": "English",
+    "topic": "Synonyms",
+    "subtopic": "Vocabulary",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Choose the synonym of: Native",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Alien" },
+      { "label": "B", "text": "Foreigner" },
+      { "label": "C", "text": "Inhabitant" },
+      { "label": "D", "text": "Immigrant" }
+    ]
+  },
+  {
+    "id": "Q_GA_018",
+    "category": "English",
+    "topic": "Synonyms",
+    "subtopic": "Vocabulary",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Choose the synonym of: Expose",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Hide" },
+      { "label": "B", "text": "Cover" },
+      { "label": "C", "text": "Reveal" },
+      { "label": "D", "text": "Bury" }
+    ]
+  },
+  {
+    "id": "Q_GA_019",
+    "category": "English",
+    "topic": "Antonyms",
+    "subtopic": "Vocabulary",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Choose the antonym of: Minuscule",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Large" },
+      { "label": "B", "text": "Microscopic" },
+      { "label": "C", "text": "Meagre" },
+      { "label": "D", "text": "Gigantic" }
+    ]
+  },
+  {
+    "id": "Q_GA_020",
+    "category": "English",
+    "topic": "Spelling",
+    "subtopic": "Error Detection",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Spot the incorrectly spelt word.",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Accommodate" },
+      { "label": "B", "text": "Magnificient" },
+      { "label": "C", "text": "Celebration" },
+      { "label": "D", "text": "Acquaintance" }
+    ]
+  },
+  {
+    "id": "Q_GA_021",
+    "category": "English",
+    "topic": "Synonyms",
+    "subtopic": "Vocabulary",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Choose the synonym of: Adversary",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Ally" },
+      { "label": "B", "text": "Friend" },
+      { "label": "C", "text": "Supporter" },
+      { "label": "D", "text": "Enemy" }
+    ]
+  },
+  {
+    "id": "Q_GA_022",
+    "category": "English",
+    "topic": "Idioms & Phrases",
+    "subtopic": "Meaning of Idioms",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "What does the idiom \"Dance to someone's tune\" mean?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Dance with enjoyment" },
+      { "label": "B", "text": "Dance according to the music" },
+      { "label": "C", "text": "Follow someone in dancing" },
+      { "label": "D", "text": "To do what someone (else) wants or forces." }
+    ]
+  },
+  {
+    "id": "Q_GA_023",
+    "category": "English",
+    "topic": "Synonyms",
+    "subtopic": "Vocabulary",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Choose the synonym of: Perpetrate",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Prevent" },
+      { "label": "B", "text": "Commit" },
+      { "label": "C", "text": "Protect" },
+      { "label": "D", "text": "Guard" }
+    ]
+  },
+  {
+    "id": "Q_GA_024",
+    "category": "Science",
+    "topic": "Biology",
+    "subtopic": "Disease & Cause",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Ringworm is caused by?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Virus" },
+      { "label": "B", "text": "Bacteria" },
+      { "label": "C", "text": "Fungus" },
+      { "label": "D", "text": "Protozoa" }
+    ]
+  },
+  {
+    "id": "Q_GA_025",
+    "category": "Current Affairs",
+    "topic": "Business",
+    "subtopic": "Summits & Events",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "The Global Venture Capital Summit 2018 kicked off in which city?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Chennai" },
+      { "label": "B", "text": "Mumbai" },
+      { "label": "C", "text": "Delhi" },
+      { "label": "D", "text": "Goa" }
+    ]
+  },
+  {
+    "id": "Q_GA_026",
+    "category": "Current Affairs",
+    "topic": "Politics",
+    "subtopic": "State Elections",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who was sworn in as the 6th Chief Minister of Sikkim on 27 May 2019?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Kiren Rijiju" },
+      { "label": "B", "text": "Jual Oram" },
+      { "label": "C", "text": "Prem Singh Tamang" },
+      { "label": "D", "text": "Arvind Kejriwal" }
+    ]
+  },
+  {
+    "id": "Q_GA_027",
+    "category": "Technology",
+    "topic": "Operating Systems",
+    "subtopic": "UNIX & Linux",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "AIX (Advanced Interactive eXecutive) is an open operating system from IBM that is based on a version of?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Android" },
+      { "label": "B", "text": "Windows" },
+      { "label": "C", "text": "UNIX" },
+      { "label": "D", "text": "MAC" }
+    ]
+  },
+  {
+    "id": "Q_GA_028",
+    "category": "Technology",
+    "topic": "Blockchain",
+    "subtopic": "India & Technology",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which state signed an MoU with Tech Mahindra to launch India's first Blockchain District?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Andhra Pradesh" },
+      { "label": "B", "text": "Karnataka" },
+      { "label": "C", "text": "Telangana" },
+      { "label": "D", "text": "Tamil Nadu" }
+    ]
+  },
+  {
+    "id": "Q_GA_029",
+    "category": "General Knowledge",
+    "topic": "India – Geography",
+    "subtopic": "Border Crossings",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "The border crossing of India/Nepal is traditionally known as?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Nathu La" },
+      { "label": "B", "text": "Sunauli" },
+      { "label": "C", "text": "Moreh" },
+      { "label": "D", "text": "Mizoram" }
+    ]
+  },
+  {
+    "id": "Q_GA_030",
+    "category": "General Knowledge",
+    "topic": "Art & Culture",
+    "subtopic": "UNESCO Heritage",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Which art form of Kerala is in UNESCO's list of the Intangible Cultural Heritage of Humanity?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Kathakali" },
+      { "label": "B", "text": "Kutiyattam" },
+      { "label": "C", "text": "Ottamthullal" },
+      { "label": "D", "text": "Mohiniyattam" }
+    ]
+  },
+  {
+    "id": "Q_GA_031",
+    "category": "Science",
+    "topic": "Biology",
+    "subtopic": "Branches of Biology",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Which branch of biology is concerned with the study of the structure of organisms and their parts?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Botany" },
+      { "label": "B", "text": "Anatomy" },
+      { "label": "C", "text": "Zoology" },
+      { "label": "D", "text": "Mycology" }
+    ]
+  },
+  {
+    "id": "Q_GA_032",
+    "category": "General Knowledge",
+    "topic": "India – Geography",
+    "subtopic": "Dams & Rivers",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Walayar Dam is located in which district of Kerala?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Idukki" },
+      { "label": "B", "text": "Palakkad" },
+      { "label": "C", "text": "Wayanad" },
+      { "label": "D", "text": "Thrissur" }
+    ]
+  },
+  {
+    "id": "Q_GA_033",
+    "category": "General Knowledge",
+    "topic": "Books & Authors",
+    "subtopic": "Biographies",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who is the author of \"Devil's Advocate: The Untold Story\"?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Shashi Tharoor" },
+      { "label": "B", "text": "Arundhati Roy" },
+      { "label": "C", "text": "Karan Thapar" },
+      { "label": "D", "text": "Khushwant Singh" }
+    ]
+  },
+  {
+    "id": "Q_GA_034",
+    "category": "Sports",
+    "topic": "Motor Racing",
+    "subtopic": "Indian Racing",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who won the Indian National Racing Championship placing 7th out of ten races in the Formula Maruti series in 2000?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Narain Karthikeyan" },
+      { "label": "B", "text": "Gaurav Gill" },
+      { "label": "C", "text": "Aditya Patel" },
+      { "label": "D", "text": "Karun Chandhok" }
+    ]
+  },
+  {
+    "id": "Q_GA_035",
+    "category": "General Knowledge",
+    "topic": "Art & Culture",
+    "subtopic": "Dance Forms",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which dance form originated in the 18th century and became a popular art form of Kerala?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Kathakali" },
+      { "label": "B", "text": "Mohiniyattam" },
+      { "label": "C", "text": "Ottamthullal" },
+      { "label": "D", "text": "Bharatanatyam" }
+    ]
+  }
+]
