@@ -53,10 +53,10 @@ export const GOVT_PYQ_REGISTRY = [
     title: "General Awareness",
     description: "Previous year General Awareness questions covering GK, Science, History, Current Affairs, English and Sports — commonly asked in SSC, IBPS and State PSC exams.",
     icon: "🌐",
-    totalQuestions: 35,
+    totalQuestions: 51,
     totalSets: 1,
-    questionsPerSet: 35,
-    totalMarks: 35,
+    questionsPerSet: 51,
+    totalMarks: 51,
     duration: 30, // minutes
     categories: ["General Knowledge", "Science", "History", "Current Affairs", "English", "Sports", "Technology"],
     practiceSets: [

@@ -663,5 +663,309 @@
       { "label": "C", "text": "Ottamthullal" },
       { "label": "D", "text": "Bharatanatyam" }
     ]
+  },
+  {
+    "id": "Q_GA_036",
+    "category": "Sports",
+    "topic": "Motor Racing",
+    "subtopic": "Indian Racing Personalities",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Karun Chandhok was born on 19 January 1984 in which state?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Kerala" },
+      { "label": "B", "text": "Karnataka" },
+      { "label": "C", "text": "Tamil Nadu" },
+      { "label": "D", "text": "Andhra Pradesh" }
+    ]
+  },
+  {
+    "id": "Q_GA_037",
+    "category": "Sports",
+    "topic": "Football",
+    "subtopic": "Indian Football",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "As of March 2023, India men's football team captain Sunil Chhetri became the __________ highest goal scorer in International Football.",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Fifth" },
+      { "label": "B", "text": "Fourth" },
+      { "label": "C", "text": "Third" },
+      { "label": "D", "text": "Sixth" }
+    ]
+  },
+  {
+    "id": "Q_GA_038",
+    "category": "General Knowledge",
+    "topic": "Indian Polity",
+    "subtopic": "Government Bodies",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "Which of the following bodies was replaced by the NITI Aayog?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "The NITI Aayog" },
+      { "label": "B", "text": "The Parliament" },
+      { "label": "C", "text": "The Finance Commission" },
+      { "label": "D", "text": "The Planning Commission" }
+    ]
+  },
+  {
+    "id": "Q_GA_039",
+    "category": "General Knowledge",
+    "topic": "Indian Polity",
+    "subtopic": "Acts & Laws",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "In which of the following years was the Right to Education Act implemented?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "2006" },
+      { "label": "B", "text": "2007" },
+      { "label": "C", "text": "2009" },
+      { "label": "D", "text": "2008" }
+    ]
+  },
+  {
+    "id": "Q_GA_040",
+    "category": "History",
+    "topic": "Books & Authors",
+    "subtopic": "Freedom Struggle Literature",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "The book titled 'India Wins Freedom' is an autobiography of which Indian leader?",
+    "correct_answer": "B",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Dr. Rajendra Prasad" },
+      { "label": "B", "text": "Maulana Abul Kalam Azad" },
+      { "label": "C", "text": "Jawaharlal Nehru" },
+      { "label": "D", "text": "Sardar Vallabhbhai Patel" }
+    ]
+  },
+  {
+    "id": "Q_GA_041",
+    "category": "General Knowledge",
+    "topic": "Indian Constitution",
+    "subtopic": "Articles",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which Article of the Indian Constitution deals with the formation of new states and alteration of areas, boundaries or names of existing states?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Article 5" },
+      { "label": "B", "text": "Article 2" },
+      { "label": "C", "text": "Article 3" },
+      { "label": "D", "text": "Article 4" }
+    ]
+  },
+  {
+    "id": "Q_GA_042",
+    "category": "General Knowledge",
+    "topic": "Art & Culture",
+    "subtopic": "Festivals",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Which of the following festivals is celebrated in the state of Odisha?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Lohri" },
+      { "label": "B", "text": "Pongal" },
+      { "label": "C", "text": "Bihu" },
+      { "label": "D", "text": "Bali Tritiya" }
+    ]
+  },
+  {
+    "id": "Q_GA_043",
+    "category": "History",
+    "topic": "Indian Freedom Struggle",
+    "subtopic": "Subhas Chandra Bose",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "In which year was the 'Delhi Chalo' call given by Subhas Chandra Bose?",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "1943" },
+      { "label": "B", "text": "1940" },
+      { "label": "C", "text": "1941" },
+      { "label": "D", "text": "1942" }
+    ]
+  },
+  {
+    "id": "Q_GA_044",
+    "category": "History",
+    "topic": "Ancient India",
+    "subtopic": "Dynasties",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who among the following was the founder of the Pala Dynasty?",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Gopala" },
+      { "label": "B", "text": "Dhruva" },
+      { "label": "C", "text": "Nagabhata I" },
+      { "label": "D", "text": "Harsha" }
+    ]
+  },
+  {
+    "id": "Q_GA_045",
+    "category": "General Knowledge",
+    "topic": "Indian Constitution",
+    "subtopic": "President of India",
+    "difficulty": "hard",
+    "estimated_time": 60,
+    "question": "The President of India is elected by an Electoral College consisting of the elected members of",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Both the Houses of Parliament, the elected members of the Legislative Assemblies of the States and the Union Territories of Delhi and Puducherry" },
+      { "label": "B", "text": "The Lok Sabha and the Rajya Sabha only" },
+      { "label": "C", "text": "The Rajya Sabha, the Lok Sabha and the State Legislative Councils" },
+      { "label": "D", "text": "The Rajya Sabha and the State Legislative Councils only" }
+    ]
+  },
+  {
+    "id": "Q_GA_046",
+    "category": "Current Affairs",
+    "topic": "Government Appointments",
+    "subtopic": "NITI Aayog",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "Who was appointed as the Chief Executive Officer of NITI Aayog on February 20, 2023?",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "B. V. R. Subrahmanyam" },
+      { "label": "B", "text": "Parameswaran Iyer" },
+      { "label": "C", "text": "Shashi Kant Sharma" },
+      { "label": "D", "text": "Arvind Subramanian" }
+    ]
+  },
+  {
+    "id": "Q_GA_047",
+    "category": "General Knowledge",
+    "topic": "Art & Culture",
+    "subtopic": "UNESCO Heritage",
+    "difficulty": "hard",
+    "estimated_time": 60,
+    "question": "Which of the following dance forms is NOT listed in UNESCO's Intangible Cultural Heritage?",
+    "correct_answer": "C",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Mudiyettu" },
+      { "label": "B", "text": "Ramman" },
+      { "label": "C", "text": "Bhangra" },
+      { "label": "D", "text": "Kalbelia" }
+    ]
+  },
+  {
+    "id": "Q_GA_048",
+    "category": "General Knowledge",
+    "topic": "Indian Constitution",
+    "subtopic": "Parliament",
+    "difficulty": "medium",
+    "estimated_time": 45,
+    "question": "The maximum gap allowed between two sessions of Parliament is",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "6 Months" },
+      { "label": "B", "text": "3 Months" },
+      { "label": "C", "text": "9 Months" },
+      { "label": "D", "text": "12 Months" }
+    ]
+  },
+  {
+    "id": "Q_GA_049",
+    "category": "General Knowledge",
+    "topic": "Books & Authors",
+    "subtopic": "Economics Literature",
+    "difficulty": "hard",
+    "estimated_time": 60,
+    "question": "The book titled 'The Poverty of Political Economy' has been authored by whom?",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Meghnad Desai" },
+      { "label": "B", "text": "Jagdish Bhagwati" },
+      { "label": "C", "text": "Vijay Kelkar" },
+      { "label": "D", "text": "Bibek Debroy" }
+    ]
+  },
+  {
+    "id": "Q_GA_050",
+    "category": "General Knowledge",
+    "topic": "Biology",
+    "subtopic": "Zoology – Collectors",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "A Lepidopterist is a person who studies or collects?",
+    "correct_answer": "A",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Butterflies" },
+      { "label": "B", "text": "Postcards" },
+      { "label": "C", "text": "Coins" },
+      { "label": "D", "text": "Stamps" }
+    ]
+  },
+  {
+    "id": "Q_GA_051",
+    "category": "Technology",
+    "topic": "Banking & Payments",
+    "subtopic": "Digital Payments",
+    "difficulty": "easy",
+    "estimated_time": 30,
+    "question": "IMPS offers an inter-bank electronic fund transfer service through?",
+    "correct_answer": "D",
+    "exam_tags": ["SSC", "IBPS", "General Recruitment", "State PSC"],
+    "verification_status": "Verified",
+    "status": "published",
+    "options": [
+      { "label": "A", "text": "Internet Banking" },
+      { "label": "B", "text": "Debit Cards" },
+      { "label": "C", "text": "Credit Cards" },
+      { "label": "D", "text": "Mobile phones" }
+    ]
   }
 ]
