@@ -133,6 +133,9 @@ export function completeLocalDailyChallenge(score) {
   s.daily_challenge = { lastDate: today, score };
   // Award 1 streak freeze up to max 2
   s.streak_freezes = Math.min(2, (s.streak_freezes || 0) + 1);
+  // Credit 5 questions towards today's goal
+  if (!s.daily_answers) s.daily_answers = {};
+  s.daily_answers[today] = (s.daily_answers[today] || 0) + 5;
   saveStore(s);
   return s.streak_freezes;
 }

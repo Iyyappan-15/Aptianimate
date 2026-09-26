@@ -18,6 +18,8 @@ export default function DailyChallenge({ onChallengeCompleted, onStreakUpdate })
   const [completed, setCompleted] = useState(false);
   const [freezeWon, setFreezeWon] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [showResultScreen, setShowResultScreen] = useState(false);
+  const [finalScore, setFinalScore] = useState(0);
 
   useEffect(() => {
     setQuestions(getDailyChallengeQuestions());
@@ -64,7 +66,9 @@ export default function DailyChallenge({ onChallengeCompleted, onStreakUpdate })
   };
 
   const finishChallenge = async () => {
-    const finalScore = Object.values(answers).filter(a => a.isCorrect).length;
+    const score = Object.values(answers).filter(a => a.isCorrect).length;
+    setFinalScore(score);
+    setShowResultScreen(true);
     setCompleted(true);
     setShowConfetti(true);
     setFreezeWon(true);
@@ -72,7 +76,7 @@ export default function DailyChallenge({ onChallengeCompleted, onStreakUpdate })
     // 1. Record in DB if logged in
     if (user?.id) {
       try {
-        await recordDailyChallenge(user.id, finalScore);
+        await recordDailyChallenge(user.id, score);
         const results = questions.map((q, idx) => ({
           questionId: q.id,
           solved: answers[idx]?.isCorrect || false
@@ -82,10 +86,14 @@ export default function DailyChallenge({ onChallengeCompleted, onStreakUpdate })
         console.error('Error saving daily challenge:', err);
       }
     } else {
-      completeLocalDailyChallenge(finalScore);
+      completeLocalDailyChallenge(score);
     }
 
-    if (onChallengeCompleted) onChallengeCompleted(finalScore);
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('streak-updated'));
+    }
+
+    if (onChallengeCompleted) onChallengeCompleted(score);
     if (onStreakUpdate) onStreakUpdate();
   };
 
@@ -244,159 +252,238 @@ export default function DailyChallenge({ onChallengeCompleted, onStreakUpdate })
                 position: 'relative'
               }}
             >
-              {/* Header */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span style={{ fontSize: '1.2rem' }}>🎯</span>
-                  <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--text-main)' }}>
-                    Daily Challenge
-                  </span>
-                  <span style={{
-                    fontSize: '0.75rem',
-                    background: 'var(--surface-hover)',
-                    color: 'var(--text-muted)',
-                    padding: '2px 8px',
-                    borderRadius: 8,
-                    fontWeight: 700
+              {showResultScreen ? (
+                /* ── Challenge Completion Screen ── */
+                <div style={{ textAlign: 'center', padding: '16px 8px' }}>
+                  <div style={{ fontSize: '3.6rem', marginBottom: 12 }}>🎉</div>
+                  <h2 style={{ fontSize: '1.65rem', fontWeight: 900, margin: '0 0 8px', color: 'var(--text-main)' }}>
+                    Daily Challenge Complete!
+                  </h2>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', margin: '0 0 24px' }}>
+                    You scored <strong style={{ color: 'var(--violet)' }}>{finalScore} of {questions.length}</strong> correct today.
+                  </p>
+
+                  <div style={{
+                    background: 'rgba(37, 99, 235, 0.1)',
+                    border: '1.5px solid rgba(37, 99, 235, 0.3)',
+                    borderRadius: 16,
+                    padding: '16px 20px',
+                    marginBottom: 16,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 14,
+                    textAlign: 'left'
                   }}>
-                    {currentIndex + 1} of {questions.length}
-                  </span>
-                </div>
-                <button
-                  onClick={() => setIsOpen(false)}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    fontSize: '1.3rem',
-                    cursor: 'pointer',
-                    color: 'var(--text-muted)'
-                  }}
-                >
-                  ✕
-                </button>
-              </div>
+                    <span style={{ fontSize: '2.2rem' }}>🛡️</span>
+                    <div>
+                      <div style={{ fontWeight: 800, color: '#2563eb', fontSize: '0.95rem' }}>+1 Streak Freeze Earned!</div>
+                      <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: 2 }}>
+                        Your streak is now protected against an accidental missed day.
+                      </div>
+                    </div>
+                  </div>
 
-              {/* Progress dots */}
-              <div style={{ display: 'flex', gap: 6, marginBottom: 20 }}>
-                {questions.map((_, i) => (
-                  <div
-                    key={i}
-                    style={{
-                      flex: 1,
-                      height: 6,
-                      borderRadius: 3,
-                      background: answers[i]
-                        ? answers[i].isCorrect ? '#10b981' : '#ef4444'
-                        : i === currentIndex ? 'var(--violet)' : 'var(--border)'
-                    }}
-                  />
-                ))}
-              </div>
+                  <div style={{
+                    background: 'rgba(16, 185, 129, 0.1)',
+                    border: '1.5px solid rgba(16, 185, 129, 0.3)',
+                    borderRadius: 16,
+                    padding: '14px 20px',
+                    marginBottom: 28,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 12,
+                    textAlign: 'left'
+                  }}>
+                    <span style={{ fontSize: '1.8rem' }}>🔥</span>
+                    <div>
+                      <div style={{ fontWeight: 800, color: '#059669', fontSize: '0.92rem' }}>Today's Goal Updated!</div>
+                      <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: 2 }}>
+                        +5 questions counted toward today's streak target.
+                      </div>
+                    </div>
+                  </div>
 
-              {/* Category pill */}
-              <div style={{ marginBottom: 12 }}>
-                <span style={{
-                  fontSize: '0.72rem',
-                  fontWeight: 700,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.5px',
-                  color: 'var(--violet)',
-                  background: 'rgba(124, 58, 237, 0.1)',
-                  padding: '3px 10px',
-                  borderRadius: 12
-                }}>
-                  {currentQ.category || 'General'}
-                </span>
-              </div>
-
-              {/* Question Text */}
-              <div style={{
-                fontSize: '1.05rem',
-                fontWeight: 700,
-                color: 'var(--text-main)',
-                lineHeight: 1.5,
-                marginBottom: 20
-              }}>
-                {currentQ.question}
-              </div>
-
-              {/* Options */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 24 }}>
-                {(currentQ.options || []).map((opt) => {
-                  const optText = typeof opt === 'object' ? opt.text : opt;
-                  const optLabel = typeof opt === 'object' ? opt.label : null;
-                  const isChosen = (selectedOption === optText) || (selectedOption === optLabel);
-                  const isCorrect = (optText === currentQ.correct_answer) || (optLabel === currentQ.correct_answer);
-
-                  let bg = 'var(--surface-hover)';
-                  let border = '1px solid var(--border)';
-                  let color = 'var(--text-main)';
-
-                  if (isCurrentAnswered) {
-                    if (isCorrect) {
-                      bg = 'rgba(16, 185, 129, 0.15)';
-                      border = '1.5px solid #10b981';
-                      color = '#059669';
-                    } else if (isChosen) {
-                      bg = 'rgba(239, 68, 68, 0.12)';
-                      border = '1.5px solid #ef4444';
-                      color = '#dc2626';
-                    }
-                  }
-
-                  return (
-                    <motion.button
-                      key={optText}
-                      whileHover={!isCurrentAnswered ? { x: 4 } : {}}
-                      onClick={() => handleSelect(optLabel || optText)}
-                      disabled={isCurrentAnswered}
-                      style={{
-                        padding: '14px 18px',
-                        borderRadius: 14,
-                        background: bg,
-                        border: border,
-                        color: color,
-                        fontWeight: isChosen ? 700 : 500,
-                        fontSize: '0.92rem',
-                        textAlign: 'left',
-                        cursor: isCurrentAnswered ? 'default' : 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        transition: 'all 0.15s ease'
-                      }}
-                    >
-                      <span>{optText}</span>
-                      {isCurrentAnswered && isCorrect && <span style={{ color: '#10b981', fontWeight: 800 }}>✓</span>}
-                      {isCurrentAnswered && isChosen && !isCorrect && <span style={{ color: '#ef4444', fontWeight: 800 }}>✕</span>}
-                    </motion.button>
-                  );
-                })}
-              </div>
-
-              {/* Next / Submit Button */}
-              {isCurrentAnswered && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  style={{ display: 'flex', justifyContent: 'flex-end' }}
-                >
                   <button
-                    onClick={handleNext}
+                    onClick={() => {
+                      setIsOpen(false);
+                      setShowResultScreen(false);
+                      if (typeof window !== 'undefined') {
+                        window.dispatchEvent(new CustomEvent('streak-updated'));
+                      }
+                    }}
                     style={{
                       background: 'var(--violet)',
                       color: '#fff',
                       border: 'none',
-                      borderRadius: 12,
-                      padding: '12px 28px',
-                      fontWeight: 700,
-                      fontSize: '0.92rem',
-                      cursor: 'pointer'
+                      borderRadius: 14,
+                      padding: '14px 32px',
+                      fontWeight: 800,
+                      fontSize: '1rem',
+                      cursor: 'pointer',
+                      width: '100%',
+                      boxShadow: '0 4px 16px rgba(124, 58, 237, 0.4)'
                     }}
                   >
-                    {currentIndex < questions.length - 1 ? 'Next Question →' : 'Finish Challenge 🎉'}
+                    Return to Home →
                   </button>
-                </motion.div>
+                </div>
+              ) : (
+                <>
+                  {/* Header */}
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <span style={{ fontSize: '1.2rem' }}>🎯</span>
+                      <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--text-main)' }}>
+                        Daily Challenge
+                      </span>
+                      <span style={{
+                        fontSize: '0.75rem',
+                        background: 'var(--surface-hover)',
+                        color: 'var(--text-muted)',
+                        padding: '2px 8px',
+                        borderRadius: 8,
+                        fontWeight: 700
+                      }}>
+                        {currentIndex + 1} of {questions.length}
+                      </span>
+                    </div>
+                    <button
+                      onClick={() => setIsOpen(false)}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        fontSize: '1.3rem',
+                        cursor: 'pointer',
+                        color: 'var(--text-muted)'
+                      }}
+                    >
+                      ✕
+                    </button>
+                  </div>
+
+                  {/* Progress dots */}
+                  <div style={{ display: 'flex', gap: 6, marginBottom: 20 }}>
+                    {questions.map((_, i) => (
+                      <div
+                        key={i}
+                        style={{
+                          flex: 1,
+                          height: 6,
+                          borderRadius: 3,
+                          background: answers[i]
+                            ? answers[i].isCorrect ? '#10b981' : '#ef4444'
+                            : i === currentIndex ? 'var(--violet)' : 'var(--border)'
+                        }}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Category pill */}
+                  <div style={{ marginBottom: 12 }}>
+                    <span style={{
+                      fontSize: '0.72rem',
+                      fontWeight: 700,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px',
+                      color: 'var(--violet)',
+                      background: 'rgba(124, 58, 237, 0.1)',
+                      padding: '3px 10px',
+                      borderRadius: 12
+                    }}>
+                      {currentQ.category || 'General'}
+                    </span>
+                  </div>
+
+                  {/* Question Text */}
+                  <div style={{
+                    fontSize: '1.05rem',
+                    fontWeight: 700,
+                    color: 'var(--text-main)',
+                    lineHeight: 1.5,
+                    marginBottom: 20
+                  }}>
+                    {currentQ.question}
+                  </div>
+
+                  {/* Options */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 24 }}>
+                    {(currentQ.options || []).map((opt) => {
+                      const optText = typeof opt === 'object' ? opt.text : opt;
+                      const optLabel = typeof opt === 'object' ? opt.label : null;
+                      const isChosen = (selectedOption === optText) || (selectedOption === optLabel);
+                      const isCorrect = (optText === currentQ.correct_answer) || (optLabel === currentQ.correct_answer);
+
+                      let bg = 'var(--surface-hover)';
+                      let border = '1px solid var(--border)';
+                      let color = 'var(--text-main)';
+
+                      if (isCurrentAnswered) {
+                        if (isCorrect) {
+                          bg = 'rgba(16, 185, 129, 0.15)';
+                          border = '1.5px solid #10b981';
+                          color = '#059669';
+                        } else if (isChosen) {
+                          bg = 'rgba(239, 68, 68, 0.12)';
+                          border = '1.5px solid #ef4444';
+                          color = '#dc2626';
+                        }
+                      }
+
+                      return (
+                        <motion.button
+                          key={optText}
+                          whileHover={!isCurrentAnswered ? { x: 4 } : {}}
+                          onClick={() => handleSelect(optLabel || optText)}
+                          disabled={isCurrentAnswered}
+                          style={{
+                            padding: '14px 18px',
+                            borderRadius: 14,
+                            background: bg,
+                            border: border,
+                            color: color,
+                            fontWeight: isChosen ? 700 : 500,
+                            fontSize: '0.92rem',
+                            textAlign: 'left',
+                            cursor: isCurrentAnswered ? 'default' : 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            transition: 'all 0.15s ease'
+                          }}
+                        >
+                          <span>{optText}</span>
+                          {isCurrentAnswered && isCorrect && <span style={{ color: '#10b981', fontWeight: 800 }}>✓</span>}
+                          {isCurrentAnswered && isChosen && !isCorrect && <span style={{ color: '#ef4444', fontWeight: 800 }}>✕</span>}
+                        </motion.button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Next / Submit Button */}
+                  {isCurrentAnswered && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      style={{ display: 'flex', justifyContent: 'flex-end' }}
+                    >
+                      <button
+                        onClick={handleNext}
+                        style={{
+                          background: 'var(--violet)',
+                          color: '#fff',
+                          border: 'none',
+                          borderRadius: 12,
+                          padding: '12px 28px',
+                          fontWeight: 700,
+                          fontSize: '0.92rem',
+                          cursor: 'pointer'
+                        }}
+                      >
+                        {currentIndex < questions.length - 1 ? 'Next Question →' : 'Finish Challenge 🎉'}
+                      </button>
+                    </motion.div>
+                  )}
+                </>
               )}
             </motion.div>
           </div>

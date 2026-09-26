@@ -30,6 +30,9 @@ export default function TodayGoalProgress({ navigate, onOpenDailyChallenge }) {
 
   useEffect(() => {
     loadProgress();
+    const handleUpdate = () => loadProgress();
+    window.addEventListener('streak-updated', handleUpdate);
+    return () => window.removeEventListener('streak-updated', handleUpdate);
   }, [loadProgress]);
 
   const streak = user?.id ? memberStreak : (getTodayProgress().streak?.count || 0);

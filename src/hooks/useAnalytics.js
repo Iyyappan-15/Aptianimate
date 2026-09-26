@@ -104,6 +104,11 @@ export const useStreak = () => {
     }
   }, [user?.id]);
 
-  useEffect(() => { fetch(); }, [fetch]);
+  useEffect(() => { 
+    fetch(); 
+    const handleUpdate = () => fetch();
+    window.addEventListener('streak-updated', handleUpdate);
+    return () => window.removeEventListener('streak-updated', handleUpdate);
+  }, [fetch]);
   return { currentStreak, longestStreak, loading, refresh: fetch };
 };

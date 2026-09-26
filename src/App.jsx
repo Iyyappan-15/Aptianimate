@@ -79,11 +79,16 @@ function App() {
   const [unlockedMilestone, setUnlockedMilestone] = useState(null);
 
   useEffect(() => {
-    if (user?.id) {
-      getTodayActivity(user.id).then(act => setTodaySolved(act.problems_solved || 0)).catch(() => {});
-    } else {
-      setTodaySolved(guestProgress.count || 0);
-    }
+    const updateToday = () => {
+      if (user?.id) {
+        getTodayActivity(user.id).then(act => setTodaySolved(act.problems_solved || 0)).catch(() => {});
+      } else {
+        setTodaySolved(getTodayProgress().count || 0);
+      }
+    };
+    updateToday();
+    window.addEventListener('streak-updated', updateToday);
+    return () => window.removeEventListener('streak-updated', updateToday);
   }, [user?.id, route]);
 
   useEffect(() => {
