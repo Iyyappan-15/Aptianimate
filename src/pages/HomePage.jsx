@@ -10,6 +10,8 @@ import AptitudeRoadmapView from '../components/AptitudeRoadmapView';
 import VisualExplanationDemo from '../components/VisualExplanationDemo';
 import MockTestsView from '../components/MockTestsView';
 import TechnicalInterviewPrepView from '../components/TechnicalInterviewPrepView';
+import TodayGoalProgress from '../components/TodayGoalProgress';
+import DailyChallenge from '../components/DailyChallenge';
 
 export default function HomePage({ navigate }) {
   const [goal, setLocalGoal] = useState(() => {
@@ -120,6 +122,12 @@ export default function HomePage({ navigate }) {
           )}
         </div>
       </div>
+
+      {/* ── Today's Goal Progress ── */}
+      <TodayGoalProgress navigate={navigate} />
+
+      {/* ── Daily Challenge Widget ── */}
+      <DailyChallenge />
 
       <div className="goal-selector">
         {['Campus Placements', 'Government Exams', 'Aptitude Roadmap', 'Mock Tests', 'Technical Interview Prep'].map(g => (

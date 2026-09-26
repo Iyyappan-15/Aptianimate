@@ -654,6 +654,135 @@ export default function ProfilePage({ navigate }) {
         </div>
       </div>
 
+      {/* ── Streak & Badges Showcase ── */}
+      <Section title="Streak & Milestones" icon="🔥" isCollapsible={false} defaultOpen={true}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, marginBottom: 20 }}>
+          {/* Streak Freeze Card */}
+          <div style={{
+            flex: '1 1 240px',
+            background: 'var(--surface2, rgba(255,255,255,0.03))',
+            borderRadius: 16,
+            padding: '16px 18px',
+            border: '1px solid var(--border)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: 14,
+          }}>
+            <div style={{
+              fontSize: '2rem',
+              width: 48,
+              height: 48,
+              borderRadius: 12,
+              background: 'rgba(37, 99, 235, 0.12)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#2563eb',
+            }}>
+              🛡️
+            </div>
+            <div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--muted)', fontWeight: 700, textTransform: 'uppercase' }}>
+                Streak Freezes
+              </div>
+              <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text)' }}>
+                {profile?.streak_freeze_count || 0} / 2 Ready
+              </div>
+              <p style={{ margin: '2px 0 0', fontSize: '0.74rem', color: 'var(--muted)' }}>
+                Protects 1 missed day · Earn via Daily Challenge
+              </p>
+            </div>
+          </div>
+
+          {/* Current Flame Tier */}
+          <div style={{
+            flex: '1 1 240px',
+            background: 'var(--surface2, rgba(255,255,255,0.03))',
+            borderRadius: 16,
+            padding: '16px 18px',
+            border: '1px solid var(--border)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: 14,
+          }}>
+            <div style={{
+              fontSize: '2rem',
+              width: 48,
+              height: 48,
+              borderRadius: 12,
+              background: 'rgba(239, 68, 68, 0.12)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              🔥
+            </div>
+            <div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--muted)', fontWeight: 700, textTransform: 'uppercase' }}>
+                Current Streak
+              </div>
+              <div style={{ fontSize: '1.2rem', fontWeight: 800, color: '#ef4444' }}>
+                {profile?.current_streak || 0} Days
+              </div>
+              <p style={{ margin: '2px 0 0', fontSize: '0.74rem', color: 'var(--muted)' }}>
+                Longest: {profile?.longest_streak_ever || profile?.current_streak || 0} days
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Badges Grid */}
+        <div>
+          <h3 style={{ fontSize: '0.9rem', fontWeight: 800, color: 'var(--text)', margin: '0 0 12px', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+            Earned Badges
+          </h3>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))',
+            gap: 12,
+          }}>
+            {[
+              { id: 'streak_3', days: 3, name: 'Just Starting', icon: '🌱' },
+              { id: 'streak_7', days: 7, name: 'Week Warrior', icon: '⚡' },
+              { id: 'streak_14', days: 14, name: 'Fortnight Fighter', icon: '💪' },
+              { id: 'streak_30', days: 30, name: 'Month Master', icon: '🔥' },
+              { id: 'streak_60', days: 60, name: 'Scholar', icon: '🎯' },
+              { id: 'streak_100', days: 100, name: 'Champion', icon: '💎' },
+              { id: 'streak_365', days: 365, name: 'Legend', icon: '👑' },
+            ].map(b => {
+              const currentStreak = profile?.current_streak || 0;
+              const userBadges = Array.isArray(profile?.badges) ? profile.badges : [];
+              const isUnlocked = currentStreak >= b.days || userBadges.some(ub => ub.id === b.id);
+
+              return (
+                <div
+                  key={b.id}
+                  style={{
+                    background: isUnlocked ? 'var(--surface2)' : 'rgba(0,0,0,0.03)',
+                    border: isUnlocked ? '1.5px solid var(--violet)' : '1px dashed var(--border)',
+                    borderRadius: 14,
+                    padding: '14px 10px',
+                    textAlign: 'center',
+                    opacity: isUnlocked ? 1 : 0.45,
+                    transition: 'all 0.2s ease',
+                  }}
+                >
+                  <div style={{ fontSize: '1.8rem', marginBottom: 4, filter: isUnlocked ? 'none' : 'grayscale(1)' }}>
+                    {b.icon}
+                  </div>
+                  <div style={{ fontSize: '0.8rem', fontWeight: 800, color: isUnlocked ? 'var(--text)' : 'var(--muted)' }}>
+                    {b.name}
+                  </div>
+                  <div style={{ fontSize: '0.7rem', color: isUnlocked ? 'var(--violet)' : 'var(--muted)', fontWeight: 600, marginTop: 2 }}>
+                    {b.days}d streak
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </Section>
+
       {/* ── Account Settings ── */}
       <Section title="Account Settings" icon="⚙️" isCollapsible={false} defaultOpen={true}>
         <AccountSettings user={user} profile={profile} signOut={signOut} />

@@ -78,3 +78,5 @@ export const getQuestionsByIds = (ids) => {
   if (!ids || ids.length === 0) return [];
   return ids.map(id => ALL_QUESTIONS.find(q => q.id === id)).filter(Boolean);
 };
+
+export { ALL_QUESTIONS };

@@ -9,6 +9,14 @@ const guard = (name) => {
 };
 
 // ─────────────────────────────────────────────
+// Date Helpers (IST UTC+5:30)
+// ─────────────────────────────────────────────
+export const getISTDateStr = (date = new Date()) => {
+  const ist = new Date(date.getTime() + (5.5 * 60 * 60 * 1000));
+  return ist.toISOString().slice(0, 10);
+};
+
+// ─────────────────────────────────────────────
 // Write helpers (called from existing practice flow)
 // ─────────────────────────────────────────────
 
@@ -17,7 +25,7 @@ const guard = (name) => {
  */
 export const recordSession = async (userId, { questionId, topic, solved, timeSeconds }) => {
   if (guard('recordSession')) return null;
-  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  const today = getISTDateStr();
 
   // 1. Insert raw session
   const { error: se } = await supabase.from('practice_sessions').insert({
@@ -63,7 +71,7 @@ export const recordBulkSessions = async (userId, topic, totalTimeSeconds, result
   if (guard('recordBulkSessions')) return null;
   if (!results || results.length === 0) return true;
 
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getISTDateStr();
 
   // 1. Bulk insert raw sessions
   const sessionsToInsert = results.map(r => ({
@@ -232,10 +240,23 @@ export const getStatistics = async (userId) => {
 };
 
 /**
- * Current streak (consecutive days with activity up to today).
+ * Current streak (consecutive days with activity up to today) with Freeze support and IST timezone.
  */
 export const getCurrentStreak = async (userId) => {
   if (guard('getCurrentStreak')) return 0;
+
+  // 1. Fetch user's profile to check streak_freeze_count
+  let freezeCount = 0;
+  try {
+    const { data: prof } = await supabase
+      .from('profiles')
+      .select('streak_freeze_count')
+      .eq('id', userId)
+      .maybeSingle();
+    freezeCount = prof?.streak_freeze_count || 0;
+  } catch {
+    // Column might not exist yet
+  }
 
   const { data, error } = await supabase
     .from('daily_activity')
@@ -246,21 +267,39 @@ export const getCurrentStreak = async (userId) => {
   if (error || !data?.length) return 0;
 
   const activeDates = new Set(
-    data.filter(d => d.problems_solved > 0 || d.minutes_practiced > 0).map(d => d.activity_date)
+    data.filter(d => (d.problems_solved || 0) > 0 || (d.minutes_practiced || 0) > 0).map(d => d.activity_date)
   );
 
   let streak = 0;
-  const today = new Date();
+  let freezesAvailable = freezeCount;
+
+  // Reference date in IST
+  const nowIST = new Date(Date.now() + 5.5 * 3600000);
+
   for (let i = 0; i <= 365; i++) {
-    const d = new Date(today);
+    const d = new Date(nowIST);
     d.setDate(d.getDate() - i);
     const key = d.toISOString().slice(0, 10);
+
     if (activeDates.has(key)) {
       streak++;
-    } else if (i > 0) {
-      break; // gap found
+    } else if (i === 0) {
+      // Today not completed yet — streak from yesterday is still valid!
+      continue;
+    } else if (freezesAvailable > 0) {
+      // User missed day i (e.g. yesterday). Streak freeze protects it!
+      freezesAvailable--;
+      streak++;
+    } else {
+      break; // gap found and no freeze available
     }
   }
+
+  // Update denormalized streak in profiles if column exists
+  try {
+    await supabase.from('profiles').update({ current_streak: streak }).eq('id', userId);
+  } catch {}
+
   return streak;
 };
 
@@ -279,7 +318,7 @@ export const getLongestStreak = async (userId) => {
   if (error || !data?.length) return 0;
 
   const activeDates = data
-    .filter(d => d.problems_solved > 0 || d.minutes_practiced > 0)
+    .filter(d => (d.problems_solved || 0) > 0 || (d.minutes_practiced || 0) > 0)
     .map(d => d.activity_date)
     .sort();
 
@@ -298,7 +337,186 @@ export const getLongestStreak = async (userId) => {
       current = 1;
     }
   }
+
+  try {
+    await supabase.from('profiles').update({ longest_streak_ever: longest }).eq('id', userId);
+  } catch {}
+
   return longest;
+};
+
+/**
+ * Get today's activity progress for logged-in user.
+ */
+export const getTodayActivity = async (userId) => {
+  if (guard('getTodayActivity')) return { problems_solved: 0, target: 5, isComplete: false, percentage: 0 };
+  const today = getISTDateStr();
+  try {
+    const { data } = await supabase
+      .from('daily_activity')
+      .select('problems_solved, minutes_practiced')
+      .eq('user_id', userId)
+      .eq('activity_date', today)
+      .maybeSingle();
+
+    const solved = data?.problems_solved || 0;
+    return {
+      problems_solved: solved,
+      target: 5,
+      isComplete: solved >= 5,
+      percentage: Math.min(100, Math.round((solved / 5) * 100)),
+    };
+  } catch {
+    return { problems_solved: 0, target: 5, isComplete: false, percentage: 0 };
+  }
+};
+
+/**
+ * Record daily challenge completion and award 1 Streak Freeze.
+ */
+export const recordDailyChallenge = async (userId, score = 5) => {
+  if (guard('recordDailyChallenge')) return null;
+  const today = getISTDateStr();
+
+  try {
+    const { data: prof } = await supabase
+      .from('profiles')
+      .select('streak_freeze_count, daily_challenge_last_date')
+      .eq('id', userId)
+      .maybeSingle();
+
+    if (prof?.daily_challenge_last_date === today) {
+      return { alreadyCompleted: true, streakFreezeCount: prof.streak_freeze_count || 0 };
+    }
+
+    const newFreezeCount = Math.min(2, (prof?.streak_freeze_count || 0) + 1);
+
+    await supabase.from('profiles').update({
+      streak_freeze_count: newFreezeCount,
+      daily_challenge_last_date: today,
+    }).eq('id', userId);
+
+    return { alreadyCompleted: false, streakFreezeCount: newFreezeCount };
+  } catch (err) {
+    console.warn('recordDailyChallenge error:', err.message);
+    return { alreadyCompleted: false, streakFreezeCount: 1 };
+  }
+};
+
+/**
+ * Save updated badges to user's profile.
+ */
+export const saveUserBadges = async (userId, badges) => {
+  if (guard('saveUserBadges')) return false;
+  try {
+    await supabase.from('profiles').update({ badges }).eq('id', userId);
+    return true;
+  } catch (err) {
+    console.warn('saveUserBadges error:', err.message);
+    return false;
+  }
+};
+
+/**
+ * Public Streak Leaderboard (All-time and Weekly).
+ */
+export const getStreakLeaderboard = async (tab = 'all') => {
+  if (guard('getStreakLeaderboard')) return [];
+  try {
+    if (tab === 'weekly') {
+      const now = new Date(Date.now() + 5.5 * 3600000);
+      const day = now.getDay();
+      const diffToMonday = (day === 0 ? -6 : 1) - day;
+      const monday = new Date(now);
+      monday.setDate(now.getDate() + diffToMonday);
+      const mondayStr = monday.toISOString().slice(0, 10);
+
+      const { data: acts, error: actErr } = await supabase
+        .from('daily_activity')
+        .select('user_id, problems_solved, activity_date')
+        .gte('activity_date', mondayStr);
+
+      if (actErr || !acts || acts.length === 0) return [];
+
+      const userScores = {};
+      acts.forEach(a => {
+        if (!userScores[a.user_id]) userScores[a.user_id] = { user_id: a.user_id, active_days: 0, problems: 0 };
+        if (a.problems_solved > 0) userScores[a.user_id].active_days += 1;
+        userScores[a.user_id].problems += (a.problems_solved || 0);
+      });
+
+      const userIds = Object.keys(userScores);
+      if (!userIds.length) return [];
+
+      const { data: profs } = await supabase
+        .from('profiles')
+        .select('id, username, full_name, avatar_url, current_streak, badges')
+        .in('id', userIds);
+
+      const profileMap = Object.fromEntries((profs || []).map(p => [p.id, p]));
+
+      return Object.values(userScores)
+        .map(u => ({
+          id: u.user_id,
+          username: profileMap[u.user_id]?.username || 'Aptitude Learner',
+          full_name: profileMap[u.user_id]?.full_name || '',
+          avatar_url: profileMap[u.user_id]?.avatar_url || '',
+          streak: u.active_days,
+          badges: profileMap[u.user_id]?.badges || [],
+          problems_this_week: u.problems,
+        }))
+        .sort((a, b) => b.streak !== a.streak ? b.streak - a.streak : b.problems_this_week - a.problems_this_week)
+        .slice(0, 50);
+    }
+
+    // All-time:
+    const { data: profs, error } = await supabase
+      .from('profiles')
+      .select('id, username, full_name, avatar_url, current_streak, badges')
+      .gt('current_streak', 0)
+      .order('current_streak', { ascending: false })
+      .limit(50);
+
+    if (error || !profs || profs.length === 0) {
+      // Fallback if current_streak column is empty or not created yet
+      const { data: topActive } = await supabase
+        .from('daily_activity')
+        .select('user_id, problems_solved')
+        .limit(100);
+
+      if (!topActive?.length) return [];
+      const counts = {};
+      topActive.forEach(a => {
+        counts[a.user_id] = (counts[a.user_id] || 0) + 1;
+      });
+      const ids = Object.keys(counts).slice(0, 20);
+      const { data: fallbackProfs } = await supabase
+        .from('profiles')
+        .select('id, username, full_name, avatar_url, badges')
+        .in('id', ids);
+
+      return (fallbackProfs || []).map(p => ({
+        id: p.id,
+        username: p.username || 'Aptitude Learner',
+        full_name: p.full_name || '',
+        avatar_url: p.avatar_url || '',
+        streak: counts[p.id] || 1,
+        badges: p.badges || [],
+      })).sort((a, b) => b.streak - a.streak);
+    }
+
+    return profs.map(p => ({
+      id: p.id,
+      username: p.username || 'Aptitude Learner',
+      full_name: p.full_name || '',
+      avatar_url: p.avatar_url || '',
+      streak: p.current_streak || 0,
+      badges: p.badges || [],
+    }));
+  } catch (err) {
+    console.error('getStreakLeaderboard error:', err);
+    return [];
+  }
 };
 
 /**

@@ -5,6 +5,7 @@ import WeeklyChart from '../components/profile/WeeklyChart';
 import ActivityHeatmap from '../components/profile/ActivityHeatmap';
 import StatsCards from '../components/profile/StatsCards';
 import TopicRadarChart from '../components/profile/TopicRadarChart';
+import StreakLeaderboard from '../components/profile/StreakLeaderboard';
 
 // ─── Section Wrapper ───────────────────────────────────────────────────────
 function Section({ title, icon, children }) {
@@ -105,6 +106,11 @@ export default function ProgressPage({ navigate }) {
           <ActivityHeatmap />
         </div>
       </Section>
+
+      {/* ── Streak Leaderboard ── */}
+      <div style={{ marginTop: 28 }}>
+        <StreakLeaderboard onSignInClick={() => {}} />
+      </div>
 
     </div>
   );

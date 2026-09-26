@@ -34,9 +34,16 @@ const TcsNinjaAptitudeResults = lazy(() => import('./pages/TcsNinjaAptitudeResul
 const HexawareMockLanding = lazy(() => import('./pages/HexawareMockLanding'));
 const HexawareAptitudeTest = lazy(() => import('./pages/HexawareAptitudeTest'));
 const HexawareAptitudeResults = lazy(() => import('./pages/HexawareAptitudeResults'));
+const StreakLeaderboardPage = lazy(() => import('./pages/StreakLeaderboardPage'));
 
 import { signInWithGoogle } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
+import { useStreak } from './hooks/useAnalytics';
+import { getTodayProgress } from './utils/localStorage';
+import { getFlameTier, checkNewBadges } from './utils/badgeEngine';
+import { getTodayActivity, saveUserBadges } from './repositories/analyticsRepository';
+import StreakDangerBanner from './components/StreakDangerBanner';
+import MilestoneModal from './components/MilestoneModal';
 
 // Admin Components (Lazy loaded)
 import AdminRoute from './components/admin/AdminRoute';
@@ -61,13 +68,36 @@ function App() {
   const [systemSettings, setSystemSettings] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [loginMessage, setLoginMessage] = useState(null);
-  
+
+  // ── Streak & Milestone Tracking ──
+  const { currentStreak: memberStreak } = useStreak();
+  const guestProgress = getTodayProgress();
+  const streak = user?.id ? memberStreak : (guestProgress.streak?.count || 0);
+  const flame = getFlameTier(streak);
+
+  const [todaySolved, setTodaySolved] = useState(0);
+  const [unlockedMilestone, setUnlockedMilestone] = useState(null);
+
   useEffect(() => {
-    if (user) {
-      console.log("✅ SUPABASE AUTH SUCCESS! Your Anonymous User ID is:", user.id);
-      console.log("Profile Data:", profile);
+    if (user?.id) {
+      getTodayActivity(user.id).then(act => setTodaySolved(act.problems_solved || 0)).catch(() => {});
+    } else {
+      setTodaySolved(guestProgress.count || 0);
     }
-  }, [user, profile]);
+  }, [user?.id, route]);
+
+  useEffect(() => {
+    if (streak > 0) {
+      const existingBadges = Array.isArray(profile?.badges) ? profile.badges : [];
+      const newBadges = checkNewBadges(streak, existingBadges);
+      if (newBadges.length > 0) {
+        setUnlockedMilestone(newBadges[0]);
+        if (user?.id) {
+          saveUserBadges(user.id, [...existingBadges, ...newBadges]);
+        }
+      }
+    }
+  }, [streak, user?.id, profile?.badges]);
 
   useEffect(() => {
     let mounted = true;
@@ -188,6 +218,8 @@ function App() {
     pageComponent = <GovtRoadmapPage navigate={navigate} />;
   } else if (route === 'govt-daily') {
     pageComponent = <GovtDailyPracticePage navigate={navigate} />;
+  } else if (route === 'leaderboard') {
+    pageComponent = <StreakLeaderboardPage navigate={navigate} />;
   } else if (route === 'profile') {
     pageComponent = <ProfilePage navigate={navigate} />;
   } else if (route === 'admin') {
@@ -236,38 +268,72 @@ function App() {
             className="app-shell"
           >
             {!isRouteAdmin && (
-              <nav className="navbar">
-                {systemSettings?.announcement_text && (
-                  <div style={{ background: 'var(--violet)', color: '#fff', textAlign: 'center', padding: '8px 16px', fontSize: '0.9rem', fontWeight: 'bold' }}>
-                    {systemSettings.announcement_text}
-                  </div>
-                )}
-                <div className="navbar-inner">
-                  <div className="nav-brand" onClick={() => navigate('')}>
-                    <img src={logoImg} alt="AptiAnimate Logo" className="nav-logo" />
-                    AptiAnimate
-                  </div>
-                  <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
-                      <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => { navigate(''); setIsMobileMenuOpen(false); }}>Home</button>
-                      <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => { navigate('saved'); setIsMobileMenuOpen(false); }}>Saved</button>
-                      {/* Ask AI nav button */}
+              <>
+                <StreakDangerBanner
+                  streak={streak}
+                  todaySolved={todaySolved}
+                  streakFreezes={profile?.streak_freeze_count || guestProgress.streakFreezes || 0}
+                  onPracticeClick={() => navigate('category/quantitative-aptitude')}
+                />
+                <nav className="navbar">
+                  {systemSettings?.announcement_text && (
+                    <div style={{ background: 'var(--violet)', color: '#fff', textAlign: 'center', padding: '8px 16px', fontSize: '0.9rem', fontWeight: 'bold' }}>
+                      {systemSettings.announcement_text}
+                    </div>
+                  )}
+                  <div className="navbar-inner">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <div className="nav-brand" onClick={() => navigate('')}>
+                        <img src={logoImg} alt="AptiAnimate Logo" className="nav-logo" />
+                        AptiAnimate
+                      </div>
                       <button
-                        className={`nav-link ${route.startsWith('ask') ? 'active' : ''}`}
-                        onClick={() => { navigate('ask'); setIsMobileMenuOpen(false); }}
+                        className="nav-streak-pill"
+                        onClick={() => { navigate('leaderboard'); setIsMobileMenuOpen(false); }}
+                        title={`🔥 ${streak} Day Streak (${flame.label}) · Open Leaderboard`}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '5px',
+                          background: `${flame.color}18`,
+                          border: `1.5px solid ${flame.color}50`,
+                          borderRadius: '100px',
+                          padding: '4px 10px',
+                          cursor: 'pointer',
+                          color: flame.color,
+                          fontWeight: 800,
+                          fontSize: '0.84rem',
+                          boxShadow: flame.glow,
+                          transition: 'all 0.2s ease',
+                        }}
                       >
-                        Ask AI
+                        <span style={{ fontSize: '0.95rem' }}>🔥</span>
+                        <span>{streak}</span>
                       </button>
+                    </div>
 
-                      {/* AI Battle nav button */}
-                      <button
-                        className={`nav-link ${route.startsWith('battle') ? 'active' : ''}`}
-                        onClick={() => { navigate('battle'); setIsMobileMenuOpen(false); }}
-                      >
-                        AI Battle
-                      </button>
+                    <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
+                        <button className={`nav-link ${route === '' ? 'active' : ''}`} onClick={() => { navigate(''); setIsMobileMenuOpen(false); }}>Home</button>
+                        <button className={`nav-link ${route === 'saved' ? 'active' : ''}`} onClick={() => { navigate('saved'); setIsMobileMenuOpen(false); }}>Saved</button>
+                        {/* Ask AI nav button */}
+                        <button
+                          className={`nav-link ${route.startsWith('ask') ? 'active' : ''}`}
+                          onClick={() => { navigate('ask'); setIsMobileMenuOpen(false); }}
+                        >
+                          Ask AI
+                        </button>
 
-                      <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
+                        {/* AI Battle nav button */}
+                        <button
+                          className={`nav-link ${route.startsWith('battle') ? 'active' : ''}`}
+                          onClick={() => { navigate('battle'); setIsMobileMenuOpen(false); }}
+                        >
+                          AI Battle
+                        </button>
+
+                        <button className={`nav-link ${route === 'leaderboard' ? 'active' : ''}`} onClick={() => { navigate('leaderboard'); setIsMobileMenuOpen(false); }}>Leaderboard</button>
+                        <button className={`nav-link ${route === 'progress' ? 'active' : ''}`} onClick={() => { navigate('progress'); setIsMobileMenuOpen(false); }}>Progress</button>
 
                       {/* 🔐 Google Login / User Profile */}
                       {(!user || user.is_anonymous) ? (
@@ -341,6 +407,7 @@ function App() {
                   </div>
                 </div>
               </nav>
+              </>
             )}
             
             {isRouteAdmin ? (
@@ -363,6 +430,16 @@ function App() {
       {!isRouteAdmin && <DoodleOverlay />}
       <UsernameModal />
       <Analytics />
+
+      {/* ── Streak Milestone Celebration Modal ── */}
+      {unlockedMilestone && (
+        <MilestoneModal
+          milestone={unlockedMilestone}
+          streak={streak}
+          username={profile?.username || 'Learner'}
+          onClose={() => setUnlockedMilestone(null)}
+        />
+      )}
     </>
   );
 }
