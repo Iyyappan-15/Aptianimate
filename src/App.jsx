@@ -35,6 +35,7 @@ const HexawareMockLanding = lazy(() => import('./pages/HexawareMockLanding'));
 const HexawareAptitudeTest = lazy(() => import('./pages/HexawareAptitudeTest'));
 const HexawareAptitudeResults = lazy(() => import('./pages/HexawareAptitudeResults'));
 const StreakLeaderboardPage = lazy(() => import('./pages/StreakLeaderboardPage'));
+const ResumeInterviewPage = lazy(() => import('./pages/ResumeInterviewPage'));
 
 import { signInWithGoogle } from './services/authService';
 import { getSystemSettings } from './repositories/adminRepository';
@@ -198,6 +199,8 @@ function App() {
     pageComponent = <HexawareMockLanding navigate={navigate} />;
   } else if (route === 'mock-test') {
     pageComponent = <MockTestPage navigate={navigate} />;
+  } else if (route === 'resume-interview') {
+    pageComponent = <ResumeInterviewPage navigate={navigate} />;
   } else if (route.startsWith('mock-test/results/')) {
     const id = route.split('/')[2].split('?')[0]; // Strip query params just in case
     pageComponent = <MockTestResultsPage testId={id} navigate={navigate} />;
