@@ -311,7 +311,10 @@ export const getCurrentStreak = async (userId) => {
   // Update denormalized streak in profiles if column exists
   try {
     await supabase.from('profiles').update({ current_streak: streak }).eq('id', userId);
-  } catch {}
+  } catch (err) {
+    // Column might not exist yet
+    console.debug('Streak update skipped:', err?.message);
+  }
 
   return streak;
 };
@@ -353,7 +356,9 @@ export const getLongestStreak = async (userId) => {
 
   try {
     await supabase.from('profiles').update({ longest_streak_ever: longest }).eq('id', userId);
-  } catch {}
+  } catch (err) {
+    console.debug('Longest streak update skipped:', err?.message);
+  }
 
   return longest;
 };
@@ -387,7 +392,7 @@ export const getTodayActivity = async (userId) => {
 /**
  * Record daily challenge completion and award 1 Streak Freeze.
  */
-export const recordDailyChallenge = async (userId, score = 5) => {
+export const recordDailyChallenge = async (userId, _score = 5) => {
   if (guard('recordDailyChallenge')) return null;
   const today = getISTDateStr();
 

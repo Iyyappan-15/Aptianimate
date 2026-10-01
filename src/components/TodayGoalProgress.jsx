@@ -9,7 +9,7 @@ import { getFlameTier } from '../utils/badgeEngine';
 
 export default function TodayGoalProgress({ navigate, onOpenDailyChallenge }) {
   const { user } = useAuth();
-  const { currentStreak: memberStreak, loading: streakLoading, refresh: refreshStreak } = useStreak();
+  const { currentStreak: memberStreak } = useStreak();
 
   const [todaySolved, setTodaySolved] = useState(0);
   const target = 5;

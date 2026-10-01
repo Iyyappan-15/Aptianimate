@@ -16,7 +16,6 @@ export default function DailyChallenge({ onChallengeCompleted, onStreakUpdate })
   const [selectedOption, setSelectedOption] = useState(null);
   const [answers, setAnswers] = useState({}); // idx -> { selected, isCorrect }
   const [completed, setCompleted] = useState(false);
-  const [freezeWon, setFreezeWon] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showResultScreen, setShowResultScreen] = useState(false);
   const [finalScore, setFinalScore] = useState(0);
@@ -71,7 +70,6 @@ export default function DailyChallenge({ onChallengeCompleted, onStreakUpdate })
     setShowResultScreen(true);
     setCompleted(true);
     setShowConfetti(true);
-    setFreezeWon(true);
 
     // 1. Record in DB if logged in
     if (user?.id) {

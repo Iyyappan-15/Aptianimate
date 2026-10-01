@@ -7,7 +7,7 @@ import { getTodayProgress } from '../../utils/localStorage';
 import { getFlameTier } from '../../utils/badgeEngine';
 
 export default function StreakLeaderboard({ onSignInClick }) {
-  const { user, profile } = useAuth();
+  const { user } = useAuth();
   const [tab, setTab] = useState('weekly'); // 'weekly' | 'all'
   const [leaders, setLeaders] = useState([]);
   const [loading, setLoading] = useState(true);
