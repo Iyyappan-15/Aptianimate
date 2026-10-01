@@ -56,6 +56,47 @@ export function saveGroqKey(key, target = 'both') {
   }
 }
 
+const PROXY_API_URL = '/api/interview';
+
+/**
+ * Executes a Groq completion request.
+ * Tries the secure serverless proxy (/api/interview) first so the secret key stays hidden on the server.
+ * If the proxy is unavailable (e.g. running in standard local Vite dev), falls back to direct client call if clientApiKey is provided.
+ */
+async function executeGroqRequest({ model, messages, temperature = 0.7, max_tokens = 150, clientApiKey }) {
+  // 1. Try secure serverless proxy (Zero key exposure in browser)
+  try {
+    const proxyRes = await fetch(PROXY_API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model, messages, temperature, max_tokens })
+    });
+    if (proxyRes.ok) {
+      const data = await proxyRes.json();
+      return data;
+    }
+  } catch {
+    // Serverless proxy not accessible in current environment
+  }
+
+  // 2. Direct fallback if a client key is configured in localStorage or .env
+  if (clientApiKey) {
+    const directRes = await fetch(GROQ_API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${clientApiKey}`
+      },
+      body: JSON.stringify({ model, messages, temperature, max_tokens })
+    });
+    if (directRes.ok) {
+      return await directRes.json();
+    }
+  }
+
+  throw new Error('Groq execution failed.');
+}
+
 /**
  * Generates the next question or live conversational reply from the AI interviewer.
  * Uses llama-3.1-8b-instant for sub-400ms low-latency response.
@@ -91,11 +132,6 @@ export async function getNextInterviewTurn({
   }
 
   const apiKey = getActiveInterviewKey();
-
-  // If no Groq API Key is configured, use structured professional fallback turns
-  if (!apiKey) {
-    return getOfflineInterviewerTurn({ questionIndex, candidateName, skills, projects, latestCandidateAnswer });
-  }
 
   const promptStages = [
     "Question 1 (Self Intro already completed)",
@@ -142,32 +178,21 @@ INSTRUCTIONS FOR YOUR RESPONSE:
   }
 
   try {
-    const res = await fetch(GROQ_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
-      },
-      body: JSON.stringify({
-        model: MODEL_CONVERSATION,
-        messages,
-        temperature: 0.7,
-        max_tokens: 150
-      })
+    const data = await executeGroqRequest({
+      model: MODEL_CONVERSATION,
+      messages,
+      temperature: 0.7,
+      max_tokens: 150,
+      clientApiKey: apiKey
     });
 
-    if (!res.ok) {
-      console.warn('Groq conversational turn failed, falling back to built-in turn.', res.statusText);
-      return getOfflineInterviewerTurn({ questionIndex, candidateName, skills, projects, latestCandidateAnswer });
-    }
-
-    const data = await res.json();
     const reply = data.choices?.[0]?.message?.content?.trim();
+    if (!reply) throw new Error('Empty response from Groq');
     // Clean any accidental markdown asterisks so speech synthesis reads naturally
     const cleanReply = reply.replace(/[*#_~]/g, '');
     return { interviewerText: cleanReply };
   } catch (err) {
-    console.error('Error fetching Groq interview turn:', err);
+    console.warn('Groq conversational turn using fallback turn:', err.message);
     return getOfflineInterviewerTurn({ questionIndex, candidateName, skills, projects, latestCandidateAnswer });
   }
 }
@@ -212,10 +237,6 @@ export async function generateInterviewScorecard({
   targetRole = 'Software Engineer'
 }) {
   const apiKey = getActiveScorecardKey();
-
-  if (!apiKey) {
-    return generateOfflineScorecard({ candidateName, skills, qaPairs });
-  }
 
   const prompt = `You are a Lead Technical Interviewer and Placement Director.
 Candidate Name: ${candidateName}
@@ -264,33 +285,22 @@ Provide a strict, professional assessment in valid JSON with EXACTLY this struct
 Ensure the response contains ONLY pure JSON without markdown code fences or backticks.`;
 
   try {
-    const res = await fetch(GROQ_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
-      },
-      body: JSON.stringify({
-        model: MODEL_EVALUATION,
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.4,
-        max_tokens: 1500
-      })
+    const data = await executeGroqRequest({
+      model: MODEL_EVALUATION,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.4,
+      max_tokens: 1500,
+      clientApiKey: apiKey
     });
 
-    if (!res.ok) {
-      console.warn('Groq 70b evaluation failed, generating offline scorecard.');
-      return generateOfflineScorecard({ candidateName, skills, qaPairs });
-    }
-
-    const data = await res.json();
     let text = data.choices?.[0]?.message?.content?.trim();
+    if (!text) throw new Error('No content received from evaluation engine');
     if (text.startsWith('```json')) text = text.replace(/```json\n?/, '').replace(/\n?```$/, '');
     else if (text.startsWith('```')) text = text.replace(/```\n?/, '').replace(/\n?```$/, '');
 
     return JSON.parse(text);
   } catch (err) {
-    console.error('Error generating scorecard with Groq:', err);
+    console.warn('Groq 70b evaluation failed, generating offline scorecard:', err.message);
     return generateOfflineScorecard({ candidateName, skills, qaPairs });
   }
 }
