@@ -5,24 +5,54 @@ const MODEL_CONVERSATION = 'llama-3.1-8b-instant';
 const MODEL_EVALUATION = 'llama-3.3-70b-versatile';
 
 /**
- * Gets the active Groq API Key from environment or local storage.
+ * Gets the active Groq API Key for live conversational turns (llama-3.1-8b-instant).
  */
-export function getActiveGroqKey() {
-  const envKey = import.meta.env.VITE_GROQ_API_KEY;
+export function getActiveInterviewKey() {
+  const envKey = import.meta.env.VITE_GROQ_INTERVIEW_KEY || import.meta.env.VITE_GROQ_API_KEY;
   if (envKey && envKey.trim()) return envKey.trim();
-  const localKey = localStorage.getItem('aptianimate_groq_key');
+  const localKey = localStorage.getItem('aptianimate_groq_interview_key') || localStorage.getItem('aptianimate_groq_key');
   if (localKey && localKey.trim()) return localKey.trim();
   return null;
 }
 
 /**
+ * Gets the active Groq API Key for comprehensive scorecard evaluation (llama-3.3-70b-versatile).
+ */
+export function getActiveScorecardKey() {
+  const envKey = import.meta.env.VITE_GROQ_SCORECARD_KEY || import.meta.env.VITE_GROQ_API_KEY;
+  if (envKey && envKey.trim()) return envKey.trim();
+  const localKey = localStorage.getItem('aptianimate_groq_scorecard_key') || localStorage.getItem('aptianimate_groq_key');
+  if (localKey && localKey.trim()) return localKey.trim();
+  return null;
+}
+
+/**
+ * Legacy/general getter that returns the primary active key.
+ */
+export function getActiveGroqKey() {
+  return getActiveInterviewKey();
+}
+
+/**
  * Saves a custom Groq API key in localStorage.
  */
-export function saveGroqKey(key) {
+export function saveGroqKey(key, target = 'both') {
   if (!key) {
-    localStorage.removeItem('aptianimate_groq_key');
+    if (target === 'interview' || target === 'both') {
+      localStorage.removeItem('aptianimate_groq_interview_key');
+      localStorage.removeItem('aptianimate_groq_key');
+    }
+    if (target === 'scorecard' || target === 'both') {
+      localStorage.removeItem('aptianimate_groq_scorecard_key');
+    }
   } else {
-    localStorage.setItem('aptianimate_groq_key', key.trim());
+    if (target === 'interview') {
+      localStorage.setItem('aptianimate_groq_interview_key', key.trim());
+    } else if (target === 'scorecard') {
+      localStorage.setItem('aptianimate_groq_scorecard_key', key.trim());
+    } else {
+      localStorage.setItem('aptianimate_groq_key', key.trim());
+    }
   }
 }
 
@@ -60,7 +90,7 @@ export async function getNextInterviewTurn({
     };
   }
 
-  const apiKey = getActiveGroqKey();
+  const apiKey = getActiveInterviewKey();
 
   // If no Groq API Key is configured, use structured professional fallback turns
   if (!apiKey) {
@@ -181,7 +211,7 @@ export async function generateInterviewScorecard({
   qaPairs = [],
   targetRole = 'Software Engineer'
 }) {
-  const apiKey = getActiveGroqKey();
+  const apiKey = getActiveScorecardKey();
 
   if (!apiKey) {
     return generateOfflineScorecard({ candidateName, skills, qaPairs });
