@@ -2,7 +2,7 @@
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { extractTextFromPDF, extractTextFromDOCX, analyzeParsedResume } from '../../utils/resumeParser';
-import { getActiveGroqKey, saveGroqKey } from '../../services/aiInterviewService';
+import { getActiveInterviewKey, getActiveScorecardKey, getActiveGroqKey, saveGroqKey } from '../../services/aiInterviewService';
 
 export default function ResumeUploadStep({ onStartInterview }) {
   const [file, setFile] = useState(null);
@@ -25,7 +25,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
 
   // Groq API Key Modal
   const [showKeyModal, setShowKeyModal] = useState(false);
-  const [groqKeyInput, setGroqKeyInput] = useState(getActiveGroqKey() || '');
+  const [groqInterviewKeyInput, setGroqInterviewKeyInput] = useState(getActiveInterviewKey() || '');
+  const [groqScorecardKeyInput, setGroqScorecardKeyInput] = useState(getActiveScorecardKey() || '');
   const [keySavedMsg, setKeySavedMsg] = useState(false);
 
   const fileInputRef = useRef(null);
@@ -139,7 +140,12 @@ export default function ResumeUploadStep({ onStartInterview }) {
   };
 
   const handleSaveKey = () => {
-    saveGroqKey(groqKeyInput);
+    if (groqInterviewKeyInput.trim() && !groqScorecardKeyInput.trim()) {
+      saveGroqKey(groqInterviewKeyInput.trim(), 'both');
+    } else {
+      saveGroqKey(groqInterviewKeyInput.trim(), 'interview');
+      saveGroqKey(groqScorecardKeyInput.trim(), 'scorecard');
+    }
     setKeySavedMsg(true);
     setTimeout(() => {
       setKeySavedMsg(false);
@@ -584,33 +590,61 @@ export default function ResumeUploadStep({ onStartInterview }) {
               boxShadow: '0 20px 40px rgba(0,0,0,0.5)'
             }}>
               <h3 style={{ margin: '0 0 8px', fontSize: '1.2rem', color: 'var(--text)' }}>
-                🔑 Configure Custom Groq API Key
+                🔑 Configure Groq Cloud API Keys
               </h3>
               <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.5, marginBottom: '16px' }}>
-                Groq offers ultra-fast AI inference (~750 tokens/sec) and a 100% free tier (14,400 requests/day). 
-                Adding your own key ensures zero wait time and dedicated rate limits.
+                Groq offers ultra-fast AI inference (~750 tokens/sec) and a generous 100% free tier. 
+                You can create separate keys on <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: '#818cf8', textDecoration: 'underline' }}>console.groq.com</a> to isolate quotas:
               </p>
 
-              <input
-                type="password"
-                placeholder="gsk_..."
-                value={groqKeyInput}
-                onChange={(e) => setGroqKeyInput(e.target.value)}
-                style={{
-                  width: '100%',
-                  padding: '10px 14px',
-                  borderRadius: '8px',
-                  background: 'var(--bg, #0f172a)',
-                  border: '1px solid var(--border-color, #334155)',
-                  color: 'var(--text)',
-                  fontSize: '0.9rem',
-                  marginBottom: '16px'
-                }}
-              />
+              <div style={{ marginBottom: '14px' }}>
+                <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text)', marginBottom: '4px' }}>
+                  Key 1: Live Interview Turns (<span style={{ color: '#818cf8' }}>llama-3.1-8b-instant</span>)
+                </label>
+                <input
+                  type="password"
+                  placeholder="gsk_..."
+                  value={groqInterviewKeyInput}
+                  onChange={(e) => setGroqInterviewKeyInput(e.target.value)}
+                  style={{
+                    width: '100%',
+                    padding: '9px 12px',
+                    borderRadius: '8px',
+                    background: 'var(--bg, #0f172a)',
+                    border: '1px solid var(--border-color, #334155)',
+                    color: 'var(--text)',
+                    fontSize: '0.88rem'
+                  }}
+                />
+              </div>
+
+              <div style={{ marginBottom: '16px' }}>
+                <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text)', marginBottom: '4px' }}>
+                  Key 2: Final Scorecard (<span style={{ color: '#ec4899' }}>llama-3.3-70b-versatile</span>) - <span style={{ color: 'var(--muted)', fontWeight: 400 }}>Optional</span>
+                </label>
+                <input
+                  type="password"
+                  placeholder="gsk_... (Leave blank to use Key 1 for both)"
+                  value={groqScorecardKeyInput}
+                  onChange={(e) => setGroqScorecardKeyInput(e.target.value)}
+                  style={{
+                    width: '100%',
+                    padding: '9px 12px',
+                    borderRadius: '8px',
+                    background: 'var(--bg, #0f172a)',
+                    border: '1px solid var(--border-color, #334155)',
+                    color: 'var(--text)',
+                    fontSize: '0.88rem'
+                  }}
+                />
+                <span style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '4px', display: 'block' }}>
+                  💡 Tip: If you only have 1 Groq API key, put it in Key 1 and it will automatically handle both!
+                </span>
+              </div>
 
               {keySavedMsg && (
                 <div style={{ color: '#10b981', fontSize: '0.85rem', marginBottom: '12px' }}>
-                  ✅ Key saved successfully!
+                  ✅ API Keys saved successfully!
                 </div>
               )}
 
