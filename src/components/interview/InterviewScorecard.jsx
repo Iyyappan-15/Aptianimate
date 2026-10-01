@@ -117,9 +117,10 @@ export default function InterviewScorecard({
         margin: '60px auto',
         padding: '40px 20px',
         textAlign: 'center',
-        background: 'var(--card-bg, #1e293b)',
+        background: 'var(--surface)',
         borderRadius: '20px',
-        border: '1px solid var(--border-color, #334155)'
+        border: '1px solid var(--border)',
+        boxShadow: 'var(--shadow)'
       }}>
         <motion.div
           animate={{ rotate: 360 }}
@@ -142,14 +143,14 @@ export default function InterviewScorecard({
   const durationSec = durationSeconds % 60;
 
   return (
-    <div style={{ maxWidth: '960px', margin: '0 auto', padding: '24px 16px' }}>
+    <div style={{ maxWidth: '960px', margin: '0 auto', padding: '32px 16px 48px' }}>
       {/* Top Banner with Big Score */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         style={{
-          background: 'linear-gradient(135deg, rgba(99,102,241,0.12), rgba(236,72,153,0.12))',
-          border: '1px solid rgba(99,102,241,0.3)',
+          background: 'linear-gradient(135deg, rgba(99,102,241,0.08), rgba(236,72,153,0.08))',
+          border: '1px solid rgba(99,102,241,0.25)',
           borderRadius: '24px',
           padding: '32px 24px',
           marginBottom: '28px',
@@ -186,17 +187,17 @@ export default function InterviewScorecard({
           width: '130px',
           height: '130px',
           borderRadius: '50%',
-          background: 'conic-gradient(#6366f1 0%, #ec4899 80%, #334155 80%)',
+          background: 'conic-gradient(#6366f1 0%, #ec4899 80%, var(--surface3, #e2e8f0) 80%)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          boxShadow: '0 8px 24px rgba(99,102,241,0.3)'
+          boxShadow: '0 8px 24px rgba(99,102,241,0.25)'
         }}>
           <div style={{
             width: '105px',
             height: '105px',
             borderRadius: '50%',
-            background: 'var(--card-bg, #1e293b)',
+            background: 'var(--surface)',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -221,8 +222,9 @@ export default function InterviewScorecard({
           <div
             key={i}
             style={{
-              background: 'var(--card-bg, #1e293b)',
-              border: '1px solid var(--border-color, #334155)',
+              background: 'var(--surface)',
+              border: '1px solid var(--border)',
+              boxShadow: 'var(--shadow-sm)',
               borderRadius: '16px',
               padding: '16px',
               textAlign: 'center'
@@ -234,7 +236,7 @@ export default function InterviewScorecard({
             <div style={{ fontSize: '1.8rem', fontWeight: 800, color: item.color, marginBottom: '8px' }}>
               {item.score}%
             </div>
-            <div style={{ height: '6px', background: 'rgba(255,255,255,0.08)', borderRadius: '3px', overflow: 'hidden' }}>
+            <div style={{ height: '6px', background: 'var(--surface3, #e2e8f0)', borderRadius: '3px', overflow: 'hidden' }}>
               <div style={{ width: `${item.score}%`, height: '100%', background: item.color, borderRadius: '3px' }} />
             </div>
           </div>
@@ -264,8 +266,9 @@ export default function InterviewScorecard({
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '32px' }}>
         {/* Strengths */}
         <div style={{
-          background: 'var(--card-bg, #1e293b)',
-          border: '1px solid var(--border-color, #334155)',
+          background: 'var(--surface)',
+          border: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-sm)',
           borderRadius: '16px',
           padding: '20px'
         }}>
@@ -281,8 +284,9 @@ export default function InterviewScorecard({
 
         {/* Areas for Improvement */}
         <div style={{
-          background: 'var(--card-bg, #1e293b)',
-          border: '1px solid var(--border-color, #334155)',
+          background: 'var(--surface)',
+          border: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-sm)',
           borderRadius: '16px',
           padding: '20px'
         }}>
@@ -299,8 +303,9 @@ export default function InterviewScorecard({
 
       {/* Question-by-Question Review Accordion */}
       <div style={{
-        background: 'var(--card-bg, #1e293b)',
-        border: '1px solid var(--border-color, #334155)',
+        background: 'var(--surface)',
+        border: '1px solid var(--border)',
+        boxShadow: 'var(--shadow-sm)',
         borderRadius: '16px',
         padding: '20px',
         marginBottom: '32px'
@@ -318,9 +323,9 @@ export default function InterviewScorecard({
               <div
                 key={idx}
                 style={{
-                  border: '1px solid var(--border-color, #334155)',
+                  border: '1px solid var(--border)',
                   borderRadius: '10px',
-                  background: 'var(--bg, #0f172a)',
+                  background: 'var(--surface2)',
                   overflow: 'hidden'
                 }}
               >
@@ -356,14 +361,14 @@ export default function InterviewScorecard({
                 </div>
 
                 {isOpen && (
-                  <div style={{ padding: '16px', borderTop: '1px solid var(--border-color, #334155)' }}>
+                  <div style={{ padding: '16px', borderTop: '1px solid var(--border)' }}>
                     <div style={{ marginBottom: '12px' }}>
                       <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', display: 'block' }}>FULL QUESTION:</span>
                       <p style={{ margin: '4px 0 0', fontSize: '0.88rem', color: 'var(--text)' }}>{pair.question}</p>
                     </div>
 
                     <div style={{ marginBottom: '12px' }}>
-                      <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#818cf8', display: 'block' }}>YOUR RESPONSE:</span>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--violet, #6366f1)', display: 'block' }}>YOUR RESPONSE:</span>
                       <p style={{ margin: '4px 0 0', fontSize: '0.88rem', color: 'var(--muted)', fontStyle: 'italic' }}>
                         "{pair.answer}"
                       </p>
@@ -403,8 +408,8 @@ export default function InterviewScorecard({
           style={{
             padding: '12px 20px',
             borderRadius: '10px',
-            background: 'transparent',
-            border: '1px solid var(--border-color, #334155)',
+            background: 'var(--surface2)',
+            border: '1px solid var(--border)',
             color: 'var(--text)',
             fontWeight: 600,
             cursor: 'pointer',

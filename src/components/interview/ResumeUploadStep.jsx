@@ -170,25 +170,25 @@ export default function ResumeUploadStep({ onStartInterview }) {
   };
 
   return (
-    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '24px 16px' }}>
+    <div style={{ maxWidth: '960px', margin: '0 auto', padding: '32px 16px 48px' }}>
       {/* Header Banner */}
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        style={{ textAlign: 'center', marginBottom: '32px' }}
+        style={{ textAlign: 'center', marginBottom: '32px', paddingTop: '16px' }}
       >
         <div style={{
           display: 'inline-flex',
           alignItems: 'center',
           gap: '8px',
-          background: 'linear-gradient(135deg, rgba(236,72,153,0.15), rgba(99,102,241,0.15))',
-          padding: '6px 16px',
+          background: 'rgba(236,72,153,0.1)',
+          padding: '8px 18px',
           borderRadius: '24px',
           border: '1px solid rgba(236,72,153,0.3)',
-          marginBottom: '12px'
+          marginBottom: '16px'
         }}>
           <span style={{ fontSize: '1.2rem' }}>🎙️</span>
-          <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#ec4899', letterSpacing: '0.5px' }}>
+          <span style={{ fontSize: '0.85rem', fontWeight: 700, color: '#ec4899', letterSpacing: '0.5px' }}>
             AI-POWERED VOICE INTERVIEW
           </span>
           <span style={{ background: '#ec4899', color: '#fff', fontSize: '0.7rem', padding: '2px 8px', borderRadius: '10px', fontWeight: 700 }}>
@@ -209,8 +209,9 @@ export default function ResumeUploadStep({ onStartInterview }) {
         
         {/* Step 1: Upload Card */}
         <div style={{
-          background: 'var(--card-bg, #1e293b)',
-          border: '1px solid var(--border-color, #334155)',
+          background: 'var(--surface)',
+          border: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-sm)',
           borderRadius: '16px',
           padding: '24px',
           display: 'flex',
@@ -218,7 +219,7 @@ export default function ResumeUploadStep({ onStartInterview }) {
           justifyContent: 'space-between'
         }}>
           <div>
-            <h3 style={{ margin: '0 0 16px', fontSize: '1.15rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <h3 style={{ margin: '0 0 16px', fontSize: '1.15rem', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text)' }}>
               <span>📄</span> 1. Upload Your Resume
             </h3>
 
@@ -228,12 +229,12 @@ export default function ResumeUploadStep({ onStartInterview }) {
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
               style={{
-                border: '2px dashed #6366f1',
+                border: '2px dashed var(--violet, #6366f1)',
                 borderRadius: '12px',
                 padding: '36px 20px',
                 textAlign: 'center',
                 cursor: 'pointer',
-                background: 'rgba(99,102,241,0.04)',
+                background: 'var(--surface2)',
                 transition: 'all 0.2s ease'
               }}
             >
@@ -275,7 +276,7 @@ export default function ResumeUploadStep({ onStartInterview }) {
               padding: '12px 16px',
               borderRadius: '10px',
               background: 'rgba(16, 185, 129, 0.08)',
-              border: '1px solid rgba(16, 185, 129, 0.25)',
+              border: '1px solid rgba(16, 185, 129, 0.3)',
               display: 'flex',
               alignItems: 'center',
               gap: '12px'
@@ -293,7 +294,7 @@ export default function ResumeUploadStep({ onStartInterview }) {
           </div>
 
           {/* Quick API Key Trigger */}
-          <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border-color, #334155)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ fontSize: '0.82rem', color: 'var(--muted)' }}>
               Engine: <strong style={{ color: '#6366f1' }}>Groq Llama 3.1 & 3.3</strong>
             </span>
@@ -315,8 +316,9 @@ export default function ResumeUploadStep({ onStartInterview }) {
 
         {/* Step 2: Settings & Detected Profile */}
         <div style={{
-          background: 'var(--card-bg, #1e293b)',
-          border: '1px solid var(--border-color, #334155)',
+          background: 'var(--surface)',
+          border: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-sm)',
           borderRadius: '16px',
           padding: '24px',
           display: 'flex',
@@ -324,7 +326,7 @@ export default function ResumeUploadStep({ onStartInterview }) {
           justifyContent: 'space-between'
         }}>
           <div>
-            <h3 style={{ margin: '0 0 16px', fontSize: '1.15rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <h3 style={{ margin: '0 0 16px', fontSize: '1.15rem', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text)' }}>
               <span>⚙️</span> 2. Call Preferences
             </h3>
 
@@ -342,9 +344,9 @@ export default function ResumeUploadStep({ onStartInterview }) {
                   width: '100%',
                   padding: '10px 14px',
                   borderRadius: '8px',
-                  background: 'var(--bg, #0f172a)',
-                  border: '1px solid var(--border-color, #334155)',
-                  color: 'var(--text, #fff)',
+                  background: 'var(--surface2)',
+                  border: '1px solid var(--border)',
+                  color: 'var(--text)',
                   fontSize: '0.95rem'
                 }}
               />
@@ -362,8 +364,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
                   style={{
                     padding: '10px',
                     borderRadius: '8px',
-                    border: voiceGender === 'female' ? '2px solid #ec4899' : '1px solid var(--border-color, #334155)',
-                    background: voiceGender === 'female' ? 'rgba(236,72,153,0.15)' : 'var(--bg, #0f172a)',
+                    border: voiceGender === 'female' ? '2px solid #ec4899' : '1px solid var(--border)',
+                    background: voiceGender === 'female' ? 'rgba(236,72,153,0.1)' : 'var(--surface2)',
                     color: voiceGender === 'female' ? '#ec4899' : 'var(--text)',
                     cursor: 'pointer',
                     fontWeight: 600,
@@ -381,8 +383,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
                   style={{
                     padding: '10px',
                     borderRadius: '8px',
-                    border: voiceGender === 'male' ? '2px solid #3b82f6' : '1px solid var(--border-color, #334155)',
-                    background: voiceGender === 'male' ? 'rgba(59,130,246,0.15)' : 'var(--bg, #0f172a)',
+                    border: voiceGender === 'male' ? '2px solid #3b82f6' : '1px solid var(--border)',
+                    background: voiceGender === 'male' ? 'rgba(59,130,246,0.1)' : 'var(--surface2)',
                     color: voiceGender === 'male' ? '#3b82f6' : 'var(--text)',
                     cursor: 'pointer',
                     fontWeight: 600,
@@ -409,9 +411,9 @@ export default function ResumeUploadStep({ onStartInterview }) {
                   width: '100%',
                   padding: '10px 14px',
                   borderRadius: '8px',
-                  background: 'var(--bg, #0f172a)',
-                  border: '1px solid var(--border-color, #334155)',
-                  color: 'var(--text, #fff)',
+                  background: 'var(--surface2)',
+                  border: '1px solid var(--border)',
+                  color: 'var(--text)',
                   fontSize: '0.9rem'
                 }}
               >
@@ -433,20 +435,21 @@ export default function ResumeUploadStep({ onStartInterview }) {
                   <span
                     key={skill}
                     style={{
-                      background: 'rgba(99,102,241,0.15)',
-                      color: '#a5b4fc',
+                      background: 'rgba(99,102,241,0.12)',
+                      color: 'var(--violet, #6366f1)',
                       fontSize: '0.78rem',
                       padding: '3px 8px',
                       borderRadius: '6px',
                       display: 'inline-flex',
                       alignItems: 'center',
-                      gap: '4px'
+                      gap: '4px',
+                      fontWeight: 600
                     }}
                   >
                     {skill}
                     <button
                       onClick={() => handleRemoveSkill(skill)}
-                      style={{ background: 'transparent', border: 'none', color: '#a5b4fc', cursor: 'pointer', padding: 0 }}
+                      style={{ background: 'transparent', border: 'none', color: 'inherit', cursor: 'pointer', padding: 0 }}
                     >
                       ×
                     </button>
@@ -464,8 +467,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
                     flex: 1,
                     padding: '6px 10px',
                     borderRadius: '6px',
-                    background: 'var(--bg, #0f172a)',
-                    border: '1px solid var(--border-color, #334155)',
+                    background: 'var(--surface2)',
+                    border: '1px solid var(--border)',
                     color: 'var(--text)',
                     fontSize: '0.82rem'
                   }}
@@ -480,7 +483,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
                     color: '#fff',
                     border: 'none',
                     fontSize: '0.82rem',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    fontWeight: 600
                   }}
                 >
                   Add
@@ -492,8 +496,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
             <div style={{
               padding: '12px 14px',
               borderRadius: '8px',
-              background: 'var(--bg, #0f172a)',
-              border: '1px solid var(--border-color, #334155)',
+              background: 'var(--surface2)',
+              border: '1px solid var(--border)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between'
@@ -514,9 +518,9 @@ export default function ResumeUploadStep({ onStartInterview }) {
                 onClick={handleTestMic}
                 disabled={micStatus === 'testing'}
                 style={{
-                  background: micStatus === 'success' ? '#10b981' : '#334155',
-                  color: '#fff',
-                  border: 'none',
+                  background: micStatus === 'success' ? '#10b981' : 'var(--surface3, #e2e8f0)',
+                  color: micStatus === 'success' ? '#fff' : 'var(--text)',
+                  border: '1px solid var(--border)',
                   padding: '6px 12px',
                   borderRadius: '6px',
                   fontSize: '0.8rem',
@@ -540,8 +544,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
               borderRadius: '10px',
               background: parsedData
                 ? 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%)'
-                : '#475569',
-              color: '#fff',
+                : 'var(--surface3, #e2e8f0)',
+              color: parsedData ? '#ffffff' : 'var(--muted)',
               border: 'none',
               fontSize: '1.05rem',
               fontWeight: 700,
@@ -572,22 +576,23 @@ export default function ResumeUploadStep({ onStartInterview }) {
               left: 0,
               right: 0,
               bottom: 0,
-              background: 'rgba(0,0,0,0.75)',
+              background: 'rgba(0,0,0,0.6)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               padding: '20px',
-              zIndex: 9999
+              zIndex: 9999,
+              backdropFilter: 'blur(4px)'
             }}
           >
             <div style={{
-              background: 'var(--card-bg, #1e293b)',
-              border: '1px solid var(--border-color, #334155)',
+              background: 'var(--surface)',
+              border: '1px solid var(--border)',
               borderRadius: '16px',
               padding: '24px',
               maxWidth: '480px',
               width: '100%',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.5)'
+              boxShadow: 'var(--shadow)'
             }}>
               <h3 style={{ margin: '0 0 8px', fontSize: '1.2rem', color: 'var(--text)' }}>
                 🔑 Configure Groq Cloud API Keys
@@ -610,8 +615,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
                     width: '100%',
                     padding: '9px 12px',
                     borderRadius: '8px',
-                    background: 'var(--bg, #0f172a)',
-                    border: '1px solid var(--border-color, #334155)',
+                    background: 'var(--surface2)',
+                    border: '1px solid var(--border)',
                     color: 'var(--text)',
                     fontSize: '0.88rem'
                   }}
@@ -631,8 +636,8 @@ export default function ResumeUploadStep({ onStartInterview }) {
                     width: '100%',
                     padding: '9px 12px',
                     borderRadius: '8px',
-                    background: 'var(--bg, #0f172a)',
-                    border: '1px solid var(--border-color, #334155)',
+                    background: 'var(--surface2)',
+                    border: '1px solid var(--border)',
                     color: 'var(--text)',
                     fontSize: '0.88rem'
                   }}
@@ -654,7 +659,7 @@ export default function ResumeUploadStep({ onStartInterview }) {
                   onClick={() => setShowKeyModal(false)}
                   style={{
                     background: 'transparent',
-                    border: '1px solid var(--border-color, #334155)',
+                    border: '1px solid var(--border)',
                     color: 'var(--text)',
                     padding: '8px 16px',
                     borderRadius: '8px',

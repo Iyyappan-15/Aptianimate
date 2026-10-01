@@ -311,10 +311,11 @@ export default function VoiceCallRoom({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'var(--card-bg, #1e293b)',
+        background: 'var(--surface)',
         padding: '12px 20px',
         borderRadius: '16px',
-        border: '1px solid var(--border-color, #334155)',
+        border: '1px solid var(--border)',
+        boxShadow: 'var(--shadow-sm)',
         marginBottom: '20px'
       }}>
         {/* Candidate & Stage */}
@@ -373,7 +374,7 @@ export default function VoiceCallRoom({
             }}
             style={{
               background: 'transparent',
-              border: '1px solid var(--border-color, #334155)',
+              border: '1px solid var(--border)',
               color: 'var(--muted)',
               padding: '6px 12px',
               borderRadius: '8px',
@@ -414,8 +415,9 @@ export default function VoiceCallRoom({
       }}>
         {/* Glowing Audio Visualizer Card */}
         <div style={{
-          background: 'radial-gradient(circle at center, rgba(99,102,241,0.08) 0%, var(--card-bg, #1e293b) 70%)',
-          border: '1px solid var(--border-color, #334155)',
+          background: 'radial-gradient(circle at center, rgba(99,102,241,0.08) 0%, var(--surface) 70%)',
+          border: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-sm)',
           borderRadius: '20px',
           padding: '28px 20px',
           display: 'flex',
@@ -491,8 +493,8 @@ export default function VoiceCallRoom({
             color: 'var(--text)',
             padding: '12px 18px',
             borderRadius: '12px',
-            background: 'rgba(0,0,0,0.25)',
-            border: '1px solid var(--border-color, #334155)',
+            background: 'var(--surface2)',
+            border: '1px solid var(--border)',
             marginBottom: '16px'
           }}>
             "{currentQuestionText || 'Loading question...'}"
@@ -517,8 +519,9 @@ export default function VoiceCallRoom({
 
         {/* Live Transcript / Response Section */}
         <div style={{
-          background: 'var(--card-bg, #1e293b)',
-          border: '1px solid var(--border-color, #334155)',
+          background: 'var(--surface)',
+          border: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-sm)',
           borderRadius: '16px',
           padding: '20px',
           display: 'flex',
@@ -563,14 +566,14 @@ export default function VoiceCallRoom({
                   maxWidth: '85%',
                   padding: '8px 12px',
                   borderRadius: '10px',
-                  background: msg.role === 'candidate' ? 'rgba(99, 102, 241, 0.2)' : 'rgba(255, 255, 255, 0.05)',
-                  border: msg.role === 'candidate' ? '1px solid rgba(99, 102, 241, 0.4)' : '1px solid var(--border-color, #334155)',
+                  background: msg.role === 'candidate' ? 'rgba(99, 102, 241, 0.12)' : 'var(--surface2)',
+                  border: msg.role === 'candidate' ? '1px solid rgba(99, 102, 241, 0.3)' : '1px solid var(--border)',
                   fontSize: '0.85rem',
                   lineHeight: 1.4,
                   color: 'var(--text)'
                 }}
               >
-                <div style={{ fontSize: '0.7rem', color: msg.role === 'candidate' ? '#818cf8' : '#ec4899', fontWeight: 700, marginBottom: '2px' }}>
+                <div style={{ fontSize: '0.7rem', color: msg.role === 'candidate' ? '#6366f1' : '#ec4899', fontWeight: 700, marginBottom: '2px' }}>
                   {msg.role === 'candidate' ? 'You' : 'Interviewer'} • {msg.timestamp}
                 </div>
                 {msg.text}
@@ -584,7 +587,7 @@ export default function VoiceCallRoom({
                 maxWidth: '85%',
                 padding: '8px 12px',
                 borderRadius: '10px',
-                background: 'rgba(16, 185, 129, 0.15)',
+                background: 'rgba(16, 185, 129, 0.12)',
                 border: '1px dashed #10b981',
                 fontSize: '0.85rem',
                 color: '#10b981',
@@ -614,8 +617,8 @@ export default function VoiceCallRoom({
                     width: '100%',
                     padding: '8px 12px',
                     borderRadius: '8px',
-                    background: 'var(--bg, #0f172a)',
-                    border: '1px solid #6366f1',
+                    background: 'var(--surface2)',
+                    border: '1px solid var(--border)',
                     color: 'var(--text)',
                     fontSize: '0.88rem',
                     resize: 'none'
@@ -651,9 +654,9 @@ export default function VoiceCallRoom({
             style={{
               padding: '10px 18px',
               borderRadius: '10px',
-              background: isListening ? '#10b981' : '#334155',
-              color: '#fff',
-              border: 'none',
+              background: isListening ? '#10b981' : 'var(--surface3, #e2e8f0)',
+              color: isListening ? '#fff' : 'var(--text)',
+              border: '1px solid var(--border)',
               fontWeight: 600,
               fontSize: '0.88rem',
               cursor: 'pointer',
@@ -678,7 +681,7 @@ export default function VoiceCallRoom({
               padding: '10px 16px',
               borderRadius: '10px',
               background: 'transparent',
-              border: '1px solid var(--border-color, #334155)',
+              border: '1px solid var(--border)',
               color: 'var(--muted)',
               fontSize: '0.88rem',
               cursor: 'pointer'
