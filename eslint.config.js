@@ -5,8 +5,8 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  // Ignore generated/build directories and coverage
-  globalIgnores(['dist', 'coverage']),
+  // Ignore generated/build directories, coverage, and scratch files
+  globalIgnores(['dist', 'coverage', 'scratch']),
 
   // ── Node.js scripts (generators, importers, etc.) ──────────────────────────
   {
