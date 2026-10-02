@@ -126,7 +126,11 @@ export default function InterviewScorecard({
     try {
       const result = await captureCardAndShare(shareCardRef, {
         score: scorecard.overallScore,
-        role: candidateConfig.targetRole
+        verdict: scorecard.verdict,
+        role: candidateConfig.targetRole,
+        name: candidateConfig.candidateName,
+        durationSeconds,
+        categoryScores: scorecard.categoryScores
       });
       setShareResult(result || 'error');
     } catch {
@@ -136,7 +140,7 @@ export default function InterviewScorecard({
       // Auto-clear toast after 6 seconds
       setTimeout(() => setShareResult(null), 6000);
     }
-  }, [scorecard, isCapturing, candidateConfig.targetRole]);
+  }, [scorecard, isCapturing, candidateConfig.targetRole, candidateConfig.candidateName, durationSeconds]);
 
   if (isLoading) {
     return (
@@ -169,6 +173,8 @@ export default function InterviewScorecard({
 
   const durationMin = Math.floor(durationSeconds / 60);
   const durationSec = durationSeconds % 60;
+  const overallScoreVal = scorecard.overallScore ?? 0;
+  const ringColorVal = overallScoreVal >= 80 ? '#10b981' : overallScoreVal >= 65 ? '#f59e0b' : overallScoreVal > 0 ? '#ef4444' : '#64748b';
 
   return (
     <div style={{ maxWidth: '960px', margin: '0 auto', padding: '32px 16px 48px' }}>
@@ -192,7 +198,7 @@ export default function InterviewScorecard({
         <div>
           <div style={{
             display: 'inline-block',
-            background: scorecard.overallScore >= 80 ? '#10b981' : '#f59e0b',
+            background: overallScoreVal >= 80 ? '#10b981' : overallScoreVal >= 65 ? '#f59e0b' : '#ef4444',
             color: '#fff',
             padding: '4px 12px',
             borderRadius: '20px',
@@ -200,7 +206,7 @@ export default function InterviewScorecard({
             fontWeight: 700,
             marginBottom: '10px'
           }}>
-            {scorecard.verdict || 'Placement Ready'}
+            {scorecard.verdict || (overallScoreVal >= 80 ? 'Placement Ready' : overallScoreVal >= 65 ? 'Good Foundation' : 'Needs More Practice')}
           </div>
           <h1 style={{ fontSize: '2rem', fontWeight: 800, margin: '0 0 8px', color: 'var(--text)' }}>
             Interview Evaluation Report
@@ -215,11 +221,13 @@ export default function InterviewScorecard({
           width: '130px',
           height: '130px',
           borderRadius: '50%',
-          background: 'conic-gradient(#6366f1 0%, #ec4899 80%, var(--surface3, #e2e8f0) 80%)',
+          background: overallScoreVal === 0
+            ? 'var(--surface3, #334155)'
+            : `conic-gradient(${ringColorVal} 0%, ${ringColorVal} ${overallScoreVal}%, var(--surface3, #334155) ${overallScoreVal}%)`,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          boxShadow: '0 8px 24px rgba(99,102,241,0.25)'
+          boxShadow: overallScoreVal > 0 ? `0 8px 24px rgba(99,102,241,0.25)` : 'none'
         }}>
           <div style={{
             width: '105px',
@@ -232,7 +240,7 @@ export default function InterviewScorecard({
             justifyContent: 'center'
           }}>
             <span style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text)' }}>
-              {scorecard.overallScore}
+              {overallScoreVal}
             </span>
             <span style={{ fontSize: '0.7rem', color: 'var(--muted)', fontWeight: 600 }}>OUT OF 100</span>
           </div>
@@ -242,10 +250,10 @@ export default function InterviewScorecard({
       {/* 4 Category Metric Cards */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '28px' }}>
         {[
-          { label: '🗣️ Communication', score: scorecard.categoryScores?.communication || 82, color: '#3b82f6' },
-          { label: '💻 Technical Depth', score: scorecard.categoryScores?.technicalDepth || 76, color: '#10b981' },
-          { label: '🏗️ Project Clarity', score: scorecard.categoryScores?.projectClarity || 85, color: '#ec4899' },
-          { label: '🧩 Problem Solving', score: scorecard.categoryScores?.problemSolving || 80, color: '#f59e0b' }
+          { label: '🗣️ Communication', score: scorecard.categoryScores?.communication ?? 0, color: '#3b82f6' },
+          { label: '💻 Technical Depth', score: scorecard.categoryScores?.technicalDepth ?? 0, color: '#10b981' },
+          { label: '🏗️ Project Clarity', score: scorecard.categoryScores?.projectClarity ?? 0, color: '#ec4899' },
+          { label: '🧩 Problem Solving', score: scorecard.categoryScores?.problemSolving ?? 0, color: '#f59e0b' }
         ].map((item, i) => (
           <div
             key={i}

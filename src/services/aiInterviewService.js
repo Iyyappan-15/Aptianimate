@@ -219,6 +219,22 @@ function getOfflineInterviewerTurn({ questionIndex, candidateName, skills, proje
 }
 
 /**
+ * Helper to identify if a question answer was skipped or empty
+ */
+export function isQuestionSkipped(answer) {
+  if (!answer) return true;
+  const cleaned = answer.trim().toLowerCase();
+  if (cleaned.length < 5) return true;
+  return (
+    cleaned.includes('candidate moved to next question') ||
+    cleaned.includes('skipped') ||
+    cleaned.includes('no response') ||
+    cleaned.includes('no answer') ||
+    cleaned === 'self introduction completed.'
+  );
+}
+
+/**
  * Generates the comprehensive post-interview scorecard using llama-3.3-70b-versatile.
  * Evaluates candidate responses against industry placement benchmarks.
  *
@@ -236,6 +252,14 @@ export async function generateInterviewScorecard({
   qaPairs = [],
   targetRole = 'Software Engineer'
 }) {
+  const totalQuestions = Math.max(qaPairs.length, 1);
+  const answeredCount = qaPairs.filter(p => !isQuestionSkipped(p.answer)).length;
+
+  // ── ALL QUESTIONS SKIPPED: strictly return 0 scorecard immediately ──
+  if (answeredCount === 0) {
+    return generateOfflineScorecard({ candidateName, skills, qaPairs });
+  }
+
   const apiKey = getActiveScorecardKey();
 
   const prompt = `You are a Lead Technical Interviewer and Placement Director.
@@ -246,6 +270,11 @@ Candidate Projects: ${projects.join('; ')}
 
 Here is the full transcript of questions and the candidate's spoken/typed answers:
 ${JSON.stringify(qaPairs, null, 2)}
+
+SCORING RULES (CRITICAL):
+1. Any question answer marked "(Skipped)" or containing no response MUST receive score = 0.
+2. Deduct points proportionally for skipped questions. The candidate answered ${answeredCount} of ${totalQuestions} questions.
+3. If overall score is below 65, verdict must be "Needs More Practice".
 
 Provide a strict, professional assessment in valid JSON with EXACTLY this structure:
 {
@@ -262,13 +291,10 @@ Provide a strict, professional assessment in valid JSON with EXACTLY this struct
     "feedback": "Concise overview of education and passion, but could explicitly mention target career milestones."
   },
   "strengths": [
-    "Clear explanation of project tech choices",
-    "Good understanding of fundamental concepts",
-    "Confident spoken pace"
+    "Clear explanation of project tech choices"
   ],
   "areasForImprovement": [
-    "Elaborate more on quantifiable metrics (e.g. latency reduced, users served)",
-    "Deepen database indexing rationale"
+    "Elaborate more on quantifiable metrics"
   ],
   "questionReviews": [
     {
@@ -277,7 +303,7 @@ Provide a strict, professional assessment in valid JSON with EXACTLY this struct
       "candidateAnswerSnippet": "...",
       "score": 85,
       "feedback": "Strong self introduction.",
-      "modelAnswer": "A benchmark candidate should cover: 1) Current education/experience, 2) Key technical stack mastered, 3) 1 notable project highlight with outcome, 4) Career ambition."
+      "modelAnswer": "A benchmark candidate should cover: 1) Education, 2) Technical stack, 3) Projects."
     }
   ]
 }
@@ -298,7 +324,40 @@ Ensure the response contains ONLY pure JSON without markdown code fences or back
     if (text.startsWith('```json')) text = text.replace(/```json\n?/, '').replace(/\n?```$/, '');
     else if (text.startsWith('```')) text = text.replace(/```\n?/, '').replace(/\n?```$/, '');
 
-    return JSON.parse(text);
+    const result = JSON.parse(text);
+
+    // Enforce 0 score on any skipped questions
+    if (result.questionReviews && Array.isArray(result.questionReviews)) {
+      result.questionReviews = result.questionReviews.map((rev, idx) => {
+        const originalAnswer = qaPairs[idx]?.answer;
+        if (isQuestionSkipped(originalAnswer)) {
+          return {
+            ...rev,
+            candidateAnswerSnippet: '(Skipped — no response recorded)',
+            score: 0,
+            feedback: 'This question was skipped. Score: 0/100.'
+          };
+        }
+        return rev;
+      });
+    }
+
+    // Apply proportional score cap based on answered fraction
+    const answeredRatio = answeredCount / totalQuestions;
+    if (answeredRatio < 1) {
+      result.overallScore = Math.min(result.overallScore, Math.round(result.overallScore * answeredRatio));
+      if (result.categoryScores) {
+        result.categoryScores.communication = Math.round((result.categoryScores.communication || 0) * answeredRatio);
+        result.categoryScores.technicalDepth = Math.round((result.categoryScores.technicalDepth || 0) * answeredRatio);
+        result.categoryScores.projectClarity = Math.round((result.categoryScores.projectClarity || 0) * answeredRatio);
+        result.categoryScores.problemSolving = Math.round((result.categoryScores.problemSolving || 0) * answeredRatio);
+      }
+      if (result.overallScore < 65) {
+        result.verdict = 'Needs More Practice';
+      }
+    }
+
+    return result;
   } catch (err) {
     console.warn('Groq 70b evaluation failed, generating offline scorecard:', err.message);
     return generateOfflineScorecard({ candidateName, skills, qaPairs });
@@ -308,7 +367,8 @@ Ensure the response contains ONLY pure JSON without markdown code fences or back
 /**
  * Intelligent deterministic scorecard generator used as fallback.
  * Analyzes answer quality beyond just length — detects garbled speech,
- * penalizes incoherent answers, and rewards well-structured technical responses.
+ * penalizes incoherent/skipped answers, and rewards well-structured technical responses.
+ * Skipped questions score 0. All-skipped = 0/100.
  */
 function generateOfflineScorecard({ candidateName: _candidateName, skills: _skills, qaPairs = [] }) {
   const technicalKeywords = [
@@ -322,7 +382,8 @@ function generateOfflineScorecard({ candidateName: _candidateName, skills: _skil
   ];
 
   const analyzeAnswer = (answer) => {
-    if (!answer || answer.trim().length < 5) return { score: 30, quality: 'empty' };
+    // No answer / skipped → strictly 0 score
+    if (isQuestionSkipped(answer)) return { score: 0, quality: 'skipped' };
 
     const words = answer.trim().split(/\s+/).filter(w => w.length > 1);
     const wordCount = words.length;
@@ -335,18 +396,20 @@ function generateOfflineScorecard({ candidateName: _candidateName, skills: _skil
     // Count technical keyword matches
     const keywordCount = technicalKeywords.filter(kw => lowerAnswer.includes(kw)).length;
 
-    // Detect incoherent patterns (garbled speech often has many short unrelated words)
+    // Detect incoherent patterns (garbled speech has short unrelated words)
     const avgWordLength = words.reduce((sum, w) => sum + w.length, 0) / Math.max(words.length, 1);
     const isLikelyGarbled = realWordRatio < 0.7 || avgWordLength < 3.2;
 
-    if (isLikelyGarbled && wordCount < 15) return { score: 35, quality: 'garbled' };
-    if (isLikelyGarbled) return { score: 48, quality: 'garbled' };
+    // Garbled speech: low score (12–25) — better than skipped but barely
+    if (isLikelyGarbled && wordCount < 15) return { score: 12, quality: 'garbled' };
+    if (isLikelyGarbled) return { score: 25, quality: 'garbled' };
 
     // Score based on: word count (max 30pts), keywords (max 40pts), coherence (max 30pts)
     const lengthScore = Math.min(30, Math.round((wordCount / 80) * 30));
     const keywordScore = Math.min(40, keywordCount * 6);
     const coherenceScore = realWordRatio >= 0.9 ? 28 : realWordRatio >= 0.8 ? 20 : 12;
 
+    // Minimum for a real answered question is 35 (not applied to skipped/garbled)
     return {
       score: Math.max(35, Math.min(92, lengthScore + keywordScore + coherenceScore)),
       quality: keywordCount >= 3 ? 'good' : 'basic'
@@ -355,40 +418,82 @@ function generateOfflineScorecard({ candidateName: _candidateName, skills: _skil
 
   const analyses = qaPairs.map(p => analyzeAnswer(p.answer));
   const questionScores = analyses.map(a => a.score);
-  const avgScore = questionScores.length > 0
-    ? Math.round(questionScores.reduce((a, b) => a + b, 0) / questionScores.length)
-    : 50;
 
-  // Apply a slight variance per category
-  const communication = Math.min(95, Math.max(30, avgScore + 4));
-  const technicalDepth = Math.min(92, Math.max(30, avgScore - 5));
-  const projectClarity = Math.min(93, Math.max(30, avgScore + 2));
-  const problemSolving = Math.min(90, Math.max(30, avgScore - 2));
+  // Count actually answered questions (not skipped)
+  const answeredCount = analyses.filter(a => a.quality !== 'skipped').length;
+  const totalQuestions = qaPairs.length || 6;
+
+  // avgScore is weighted: skipped questions count as 0 in the average
+  const rawAvg = questionScores.length > 0
+    ? questionScores.reduce((a, b) => a + b, 0) / totalQuestions
+    : 0;
+  const avgScore = Math.round(rawAvg);
+
+  // ── ALL SKIPPED: return zero scorecard ──────────────────────────────
+  if (answeredCount === 0) {
+    return {
+      overallScore: 0,
+      verdict: 'No Answers Recorded',
+      categoryScores: { communication: 0, technicalDepth: 0, projectClarity: 0, problemSolving: 0 },
+      selfIntroAnalysis: {
+        score: 0,
+        feedback: 'No self-introduction was recorded. Click "Practice Another Resume" to try again and speak clearly when the microphone is active.'
+      },
+      strengths: [],
+      areasForImprovement: [
+        'No answers were captured during this session.',
+        'Ensure your microphone is working before starting the interview.',
+        'Try using "Switch to Type Mode" if voice recognition is not working for you.'
+      ],
+      questionReviews: qaPairs.map((p, idx) => ({
+        questionNumber: idx + 1,
+        question: p.question,
+        candidateAnswerSnippet: '(No response captured — question was skipped)',
+        score: 0,
+        feedback: 'This question was skipped. Every question you answer improves your score.',
+        modelAnswer: 'Focus on technical architecture, specific library decisions, performance considerations, and lessons learned from production or testing.'
+      }))
+    };
+  }
+
+  // ── PARTIAL ANSWERS: penalize proportionally ─────────────────────────
+  // Apply category-level variance around the weighted average
+  const communication = Math.min(95, Math.max(0, avgScore + 4));
+  const technicalDepth = Math.min(92, Math.max(0, avgScore - 5));
+  const projectClarity = Math.min(93, Math.max(0, avgScore + 2));
+  const problemSolving = Math.min(90, Math.max(0, avgScore - 2));
 
   const overallScore = Math.round((communication + technicalDepth + projectClarity + problemSolving) / 4);
 
+  const skippedCount = totalQuestions - answeredCount;
+  const verdict = overallScore >= 80
+    ? 'Placement Ready'
+    : overallScore >= 65
+    ? 'Good Foundation — Needs Polish'
+    : overallScore >= 35
+    ? 'Needs More Practice'
+    : 'Needs More Practice';
+
   return {
     overallScore,
-    verdict: overallScore >= 80 ? 'Placement Ready' : overallScore >= 65 ? 'Good Foundation - Needs Polish' : 'Needs More Practice',
-    categoryScores: {
-      communication,
-      technicalDepth,
-      projectClarity,
-      problemSolving
-    },
+    verdict,
+    categoryScores: { communication, technicalDepth, projectClarity, problemSolving },
     selfIntroAnalysis: {
-      score: Math.min(90, avgScore + 1),
-      feedback: "You covered your academic background and interests clearly. Next time, try framing your introduction using the 'Present-Past-Future' formula."
+      score: Math.min(90, Math.max(0, avgScore + 1)),
+      feedback: analyses[0]?.quality === 'skipped'
+        ? 'The self-introduction question was not answered. This is the most important question — always start with a clear 60-second introduction.'
+        : "You covered your academic background and interests clearly. Next time, try framing your introduction using the 'Present-Past-Future' formula."
     },
     strengths: avgScore >= 70 ? [
       'Good willingness to articulate thought process directly.',
       'Practical familiarity with key tools from your resume.',
       'Clear conversational pace and tone.'
-    ] : [
-      'Completed the interview session.',
+    ] : answeredCount > 0 ? [
+      `Answered ${answeredCount} of ${totalQuestions} questions.`,
       'Showed willingness to engage with technical questions.'
-    ],
+    ] : [],
     areasForImprovement: [
+      ...(skippedCount > 0 ? [`${skippedCount} question${skippedCount > 1 ? 's were' : ' was'} skipped — each skipped question scores 0 and lowers your overall score.`] : []),
       'Incorporate the STAR technique (Situation, Task, Action, Result) when discussing project challenges.',
       'Provide specific real-world metrics (e.g., response time, error rates) rather than generic descriptions.',
       ...(analyses.some(a => a.quality === 'garbled')
@@ -396,22 +501,24 @@ function generateOfflineScorecard({ candidateName: _candidateName, skills: _skil
         : [])
     ],
     questionReviews: qaPairs.map((p, idx) => {
-      const analysis = analyses[idx] || { score: 50, quality: 'basic' };
+      const analysis = analyses[idx] || { score: 0, quality: 'skipped' };
+      const isSkipped = analysis.quality === 'skipped';
       const isGarbled = analysis.quality === 'garbled';
       return {
         questionNumber: idx + 1,
         question: p.question,
-        candidateAnswerSnippet: p.answer || '(No response captured)',
+        candidateAnswerSnippet: p.answer || '(No response captured — skipped)',
         score: analysis.score,
-        feedback: isGarbled
+        feedback: isSkipped
+          ? 'This question was skipped (0 points). Answering even briefly is better than skipping.'
+          : isGarbled
           ? 'The voice recognition could not capture a clear answer. Try using the "Switch to Type Mode" button for technical questions, or speak closer to your microphone.'
           : analysis.quality === 'good'
           ? 'Good technical depth and relevant points mentioned. Structure your answer with clear steps for maximum impact.'
-          : p.answer && p.answer.length > 20
-          ? 'Answer captured. Try to include more specific technical details and concrete examples from your past projects.'
-          : 'Try to speak more elaborately and provide concrete examples from your past projects.',
+          : 'Answer captured. Try to include more specific technical details and concrete examples from your past projects.',
         modelAnswer: 'Focus on technical architecture, specific library decisions, performance considerations, and lessons learned from production or testing.'
       };
     })
   };
 }
+
