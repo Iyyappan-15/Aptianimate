@@ -131,11 +131,14 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
         position: 'fixed',
         top: '-9999px',
         left: '-9999px',
-        visibility: 'hidden',   // shareCard.js temporarily sets this to visible before capture
+        // NOTE: Do NOT use visibility:hidden — html2canvas can't render those.
+        // opacity:0 keeps the element painted by the browser (needed for html2canvas).
+        // shareCard.js temporarily sets top:0/left:0 + opacity:1 before capture.
+        opacity: '0',
+        pointerEvents: 'none',
         width: '1200px',
         height: '630px',
         overflow: 'hidden',
-        // Dark indigo gradient background
         background: 'linear-gradient(135deg, #0a0e1a 0%, #0f172a 40%, #1a0e2e 70%, #0f172a 100%)',
         fontFamily: '"Inter", "Segoe UI", system-ui, -apple-system, sans-serif',
         display: 'flex',

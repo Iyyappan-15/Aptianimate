@@ -117,17 +117,24 @@ export default function InterviewScorecard({
   };
 
   // ── Share as Flashcard Image (html2canvas → Web Share API / PNG download) ──
+  const [shareResult, setShareResult] = useState(null); // 'shared' | 'downloaded' | 'error'
+
   const handleShareCard = useCallback(async () => {
     if (!scorecard || isCapturing) return;
     setIsCapturing(true);
+    setShareResult(null);
     try {
-      await captureCardAndShare(shareCardRef, {
+      const result = await captureCardAndShare(shareCardRef, {
         score: scorecard.overallScore,
-        verdict: scorecard.verdict,
         role: candidateConfig.targetRole
       });
+      setShareResult(result || 'error');
+    } catch {
+      setShareResult('error');
     } finally {
       setIsCapturing(false);
+      // Auto-clear toast after 6 seconds
+      setTimeout(() => setShareResult(null), 6000);
     }
   }, [scorecard, isCapturing, candidateConfig.targetRole]);
 
@@ -452,6 +459,35 @@ export default function InterviewScorecard({
             <div style={{ fontSize: '0.83rem', color: 'var(--muted)' }}>
               Beautiful image card • Works on WhatsApp, Instagram, LinkedIn • Auto-downloads on desktop
             </div>
+
+            {/* Result toast shown after capture */}
+            {shareResult === 'shared' && (
+              <div style={{
+                marginTop: '8px', padding: '8px 12px', borderRadius: '8px',
+                background: 'rgba(16,185,129,0.12)', border: '1px solid rgba(16,185,129,0.4)',
+                fontSize: '0.82rem', color: '#10b981', fontWeight: 600
+              }}>
+                ✅ Card shared successfully!
+              </div>
+            )}
+            {shareResult === 'downloaded' && (
+              <div style={{
+                marginTop: '8px', padding: '8px 12px', borderRadius: '8px',
+                background: 'rgba(99,102,241,0.1)', border: '1px solid rgba(99,102,241,0.35)',
+                fontSize: '0.82rem', color: '#818cf8', fontWeight: 600, lineHeight: 1.4
+              }}>
+                📥 Card saved to Downloads! WhatsApp Web has opened — attach the image from your Downloads folder and send.
+              </div>
+            )}
+            {shareResult === 'error' && (
+              <div style={{
+                marginTop: '8px', padding: '8px 12px', borderRadius: '8px',
+                background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)',
+                fontSize: '0.82rem', color: '#f87171', fontWeight: 600
+              }}>
+                ❌ Could not generate card. Please try again.
+              </div>
+            )}
           </div>
         </div>
 
@@ -463,6 +499,8 @@ export default function InterviewScorecard({
             borderRadius: '12px',
             background: isCapturing
               ? 'rgba(99,102,241,0.5)'
+              : shareResult === 'downloaded' || shareResult === 'shared'
+              ? '#10b981'
               : 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
             color: '#fff',
             border: 'none',
@@ -474,7 +512,7 @@ export default function InterviewScorecard({
             alignItems: 'center',
             gap: '8px',
             whiteSpace: 'nowrap',
-            transition: 'all 0.2s'
+            transition: 'all 0.3s'
           }}
         >
           {isCapturing ? (
@@ -488,11 +526,16 @@ export default function InterviewScorecard({
               </motion.span>
               Generating card...
             </>
+          ) : shareResult === 'downloaded' ? (
+            <>✅ Saved! Share on WhatsApp →</>
+          ) : shareResult === 'shared' ? (
+            <>✅ Shared!</>
           ) : (
             <>📤 Share as Flashcard</>
           )}
         </button>
       </div>
+
 
       {/* ── Action Footer ── */}
       <div style={{
