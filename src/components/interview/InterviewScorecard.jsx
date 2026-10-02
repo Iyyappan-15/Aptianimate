@@ -1,8 +1,10 @@
 // src/components/interview/InterviewScorecard.jsx
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import jsPDF from 'jspdf';
 import { generateInterviewScorecard } from '../../services/aiInterviewService';
+import ScoreShareCard from './ScoreShareCard';
+import { captureCardAndShare } from '../../utils/shareCard';
 
 export default function InterviewScorecard({
   candidateConfig,
@@ -13,6 +15,10 @@ export default function InterviewScorecard({
   const [scorecard, setScorecard] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [activeAccordion, setActiveAccordion] = useState(0);
+  const [isCapturing, setIsCapturing] = useState(false);
+
+  // Ref pointing to the hidden 1200×630 flashcard div for html2canvas capture
+  const shareCardRef = useRef(null);
 
   useEffect(() => {
     let isMounted = true;
@@ -109,6 +115,21 @@ export default function InterviewScorecard({
     );
     window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
   };
+
+  // ── Share as Flashcard Image (html2canvas → Web Share API / PNG download) ──
+  const handleShareCard = useCallback(async () => {
+    if (!scorecard || isCapturing) return;
+    setIsCapturing(true);
+    try {
+      await captureCardAndShare(shareCardRef, {
+        score: scorecard.overallScore,
+        verdict: scorecard.verdict,
+        role: candidateConfig.targetRole
+      });
+    } finally {
+      setIsCapturing(false);
+    }
+  }, [scorecard, isCapturing, candidateConfig.targetRole]);
 
   if (isLoading) {
     return (
@@ -395,7 +416,85 @@ export default function InterviewScorecard({
         </div>
       </div>
 
-      {/* Action Footer */}
+      {/* ── SHARE FLASHCARD BANNER ── */}
+      <div style={{
+        background: 'linear-gradient(135deg, rgba(99,102,241,0.1) 0%, rgba(168,85,247,0.1) 100%)',
+        border: '1px solid rgba(99,102,241,0.3)',
+        borderRadius: '20px',
+        padding: '24px 28px',
+        marginBottom: '24px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        gap: '20px'
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          {/* Card preview thumbnail */}
+          <div style={{
+            width: '72px',
+            height: '40px',
+            borderRadius: '8px',
+            background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)',
+            border: '1.5px solid rgba(99,102,241,0.4)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexShrink: 0,
+            fontSize: '1.2rem'
+          }}>
+            🃏
+          </div>
+          <div>
+            <div style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text)', marginBottom: '3px' }}>
+              Share your score as a flashcard
+            </div>
+            <div style={{ fontSize: '0.83rem', color: 'var(--muted)' }}>
+              Beautiful image card • Works on WhatsApp, Instagram, LinkedIn • Auto-downloads on desktop
+            </div>
+          </div>
+        </div>
+
+        <button
+          onClick={handleShareCard}
+          disabled={isCapturing}
+          style={{
+            padding: '13px 28px',
+            borderRadius: '12px',
+            background: isCapturing
+              ? 'rgba(99,102,241,0.5)'
+              : 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
+            color: '#fff',
+            border: 'none',
+            fontWeight: 700,
+            fontSize: '0.95rem',
+            cursor: isCapturing ? 'not-allowed' : 'pointer',
+            boxShadow: '0 4px 20px rgba(99,102,241,0.4)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            whiteSpace: 'nowrap',
+            transition: 'all 0.2s'
+          }}
+        >
+          {isCapturing ? (
+            <>
+              <motion.span
+                animate={{ rotate: 360 }}
+                transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+                style={{ display: 'inline-block' }}
+              >
+                ⚙️
+              </motion.span>
+              Generating card...
+            </>
+          ) : (
+            <>📤 Share as Flashcard</>
+          )}
+        </button>
+      </div>
+
+      {/* ── Action Footer ── */}
       <div style={{
         display: 'flex',
         alignItems: 'center',
@@ -433,7 +532,7 @@ export default function InterviewScorecard({
               cursor: 'pointer'
             }}
           >
-            💬 Share on WhatsApp
+            💬 WhatsApp (Text)
           </button>
 
           <button
@@ -449,7 +548,7 @@ export default function InterviewScorecard({
               cursor: 'pointer'
             }}
           >
-            🔗 Share on LinkedIn
+            🔗 LinkedIn
           </button>
 
           <button
@@ -466,10 +565,18 @@ export default function InterviewScorecard({
               boxShadow: '0 4px 15px rgba(99,102,241,0.35)'
             }}
           >
-            📄 Download PDF Report
+            📄 PDF Report
           </button>
         </div>
       </div>
+
+      {/* ── Hidden flashcard div — captured by html2canvas ── */}
+      <ScoreShareCard
+        ref={shareCardRef}
+        scorecard={scorecard}
+        candidateConfig={candidateConfig}
+        durationSeconds={durationSeconds}
+      />
     </div>
   );
 }
