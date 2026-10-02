@@ -9,7 +9,7 @@ import html2canvas from 'html2canvas';
  * @param {React.RefObject} cardRef - ref pointing to the hidden flashcard <div>
  * @param {Object} shareData - { score, verdict, role }
  */
-export async function captureCardAndShare(cardRef, { score, verdict, role } = {}) {
+export async function captureCardAndShare(cardRef, { score, verdict: _verdict, role } = {}) {
   if (!cardRef?.current) {
     console.warn('shareCard: cardRef is not mounted');
     return;
