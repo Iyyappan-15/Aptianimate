@@ -97,7 +97,14 @@ function App() {
       const existingBadges = Array.isArray(profile?.badges) ? profile.badges : [];
       const newBadges = checkNewBadges(streak, existingBadges);
       if (newBadges.length > 0) {
-        setUnlockedMilestone(newBadges[0]);
+        // Only show the milestone popup once per badge (tracked in localStorage with 24h cooldown)
+        const shownKey = `milestone_shown_${newBadges[0].name}`;
+        const lastShown = parseInt(localStorage.getItem(shownKey) || '0', 10);
+        const hoursSince = (Date.now() - lastShown) / 3600000;
+        if (hoursSince > 24) {
+          setUnlockedMilestone(newBadges[0]);
+          localStorage.setItem(shownKey, String(Date.now()));
+        }
         if (user?.id) {
           saveUserBadges(user.id, [...existingBadges, ...newBadges]);
         }
