@@ -47,14 +47,20 @@ export default function VoiceCallRoom({
 
     if (isFemale) {
       return (
-        voices.find(v => /female|zira|samantha|karen|victoria|google uk english female/i.test(v.name)) ||
-        voices.find(v => v.lang.startsWith('en')) ||
+        // Prefer high-quality Google voices first for natural, pleasant sound
+        voices.find(v => /google uk english female/i.test(v.name)) ||
+        voices.find(v => /google.*female|microsoft.*zira|samantha|karen|victoria/i.test(v.name)) ||
+        voices.find(v => v.lang === 'en-GB' && /female/i.test(v.name)) ||
+        voices.find(v => v.lang.startsWith('en-')) ||
         voices[0]
       );
     } else {
       return (
-        voices.find(v => /male|david|daniel|george|google uk english male/i.test(v.name)) ||
-        voices.find(v => v.lang.startsWith('en')) ||
+        // Prefer high-quality Google voices first for natural, pleasant sound
+        voices.find(v => /google uk english male/i.test(v.name)) ||
+        voices.find(v => /google.*male|microsoft.*david|daniel|george/i.test(v.name)) ||
+        voices.find(v => v.lang === 'en-GB' && /male/i.test(v.name)) ||
+        voices.find(v => v.lang.startsWith('en-')) ||
         voices[0]
       );
     }
@@ -68,36 +74,59 @@ export default function VoiceCallRoom({
     }
 
     synthRef.current.cancel(); // Stop any pending speech
-    const utterance = new SpeechSynthesisUtterance(text);
-    const chosenVoice = getSelectedVoice();
-    if (chosenVoice) utterance.voice = chosenVoice;
 
-    utterance.rate = 1.0;
-    utterance.pitch = candidateConfig.voiceGender === 'female' ? 1.1 : 0.95;
+    const doSpeak = () => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      const chosenVoice = getSelectedVoice();
+      if (chosenVoice) utterance.voice = chosenVoice;
 
-    utterance.onstart = () => {
-      setIsAiSpeaking(true);
-      // Temporarily pause recognition so AI doesn't hear itself
-      if (recognitionRef.current && isListening) {
-        recognitionRef.current.stop();
-      }
+      // More natural, professional pace
+      utterance.rate = 0.92;
+      utterance.pitch = candidateConfig.voiceGender === 'female' ? 1.05 : 0.9;
+      utterance.volume = 1.0;
+
+      utterance.onstart = () => {
+        setIsAiSpeaking(true);
+        // Stop recognition so AI doesn't hear itself — use ref to avoid stale closure
+        if (recognitionRef.current) {
+          try { recognitionRef.current.stop(); } catch { /* already stopped */ }
+        }
+      };
+
+      utterance.onend = () => {
+        setIsAiSpeaking(false);
+        onFinish?.();
+      };
+
+      utterance.onerror = (e) => {
+        if (e.error === 'interrupted' || e.error === 'canceled') {
+          // These are normal when cancel() is called — not real errors
+          return;
+        }
+        console.warn('SpeechSynthesis error:', e.error);
+        setIsAiSpeaking(false);
+        onFinish?.();
+      };
+
+      synthRef.current.speak(utterance);
     };
 
-    utterance.onend = () => {
-      setIsAiSpeaking(false);
-      onFinish?.();
-    };
-
-    utterance.onerror = (e) => {
-      console.warn('SpeechSynthesis error:', e);
-      setIsAiSpeaking(false);
-      onFinish?.();
-    };
-
-    synthRef.current.speak(utterance);
-  }, [candidateConfig.voiceGender, getSelectedVoice, isListening]);
+    // Chrome loads voices asynchronously — wait if not ready yet
+    const voices = synthRef.current.getVoices();
+    if (voices && voices.length > 0) {
+      doSpeak();
+    } else {
+      synthRef.current.onvoiceschanged = () => {
+        synthRef.current.onvoiceschanged = null;
+        doSpeak();
+      };
+    }
+  }, [candidateConfig.voiceGender, getSelectedVoice]);
 
   // ── Initialize Speech Recognition ──────────────────────────────────────
+  // Use a ref to track whether we WANT recognition active so we can auto-restart
+  const wantsListeningRef = useRef(false);
+
   const startListening = useCallback(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
@@ -105,6 +134,8 @@ export default function VoiceCallRoom({
       setIsTypingMode(true);
       return;
     }
+
+    wantsListeningRef.current = true;
 
     if (recognitionRef.current) {
       try {
@@ -117,6 +148,7 @@ export default function VoiceCallRoom({
     const recognition = new SpeechRecognition();
     recognition.continuous = true;
     recognition.interimResults = true;
+    recognition.maxAlternatives = 1;
     recognition.lang = 'en-US';
 
     recognition.onstart = () => {
@@ -125,32 +157,59 @@ export default function VoiceCallRoom({
 
     recognition.onresult = (event) => {
       let interim = '';
-      let final = '';
+      let newFinal = '';
 
       for (let i = event.resultIndex; i < event.results.length; ++i) {
-        if (event.results[i].isFinal) {
-          final += event.results[i][0].transcript + ' ';
+        const result = event.results[i];
+        const confidence = result[0].confidence;
+        const text = result[0].transcript;
+
+        if (result.isFinal) {
+          // Discard clearly low-confidence garbled results (< 0.35)
+          // but accept them if confidence is 0 (some browsers don't report it)
+          if (confidence === 0 || confidence >= 0.35) {
+            newFinal += text + ' ';
+          }
         } else {
-          interim += event.results[i][0].transcript;
+          interim += text;
         }
       }
 
-      if (final) {
-        currentAnswerAccumulator.current += final;
+      if (newFinal) {
+        currentAnswerAccumulator.current += newFinal;
       }
       setCurrentSpokenInput(currentAnswerAccumulator.current + interim);
     };
 
     recognition.onerror = (event) => {
       console.warn('SpeechRecognition error:', event.error);
-      if (event.error === 'not-allowed') {
+      if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+        wantsListeningRef.current = false;
         setIsListening(false);
         setIsTypingMode(true);
+      } else if (event.error === 'no-speech') {
+        // No-speech is normal — don't treat it as failure; recognition.onend will auto-restart
+      } else if (event.error === 'network') {
+        setIsListening(false);
       }
     };
 
     recognition.onend = () => {
       setIsListening(false);
+      // Auto-restart only if we still want to be listening (prevents mic from "pausing")
+      if (wantsListeningRef.current) {
+        setTimeout(() => {
+          if (wantsListeningRef.current && recognitionRef.current === recognition) {
+            try {
+              recognition.start();
+              setIsListening(true);
+            } catch {
+              // If restart fails, create a new instance next time startListening is called
+              recognitionRef.current = null;
+            }
+          }
+        }, 300);
+      }
     };
 
     recognitionRef.current = recognition;
@@ -162,6 +221,7 @@ export default function VoiceCallRoom({
   }, []);
 
   const stopListening = useCallback(() => {
+    wantsListeningRef.current = false;
     if (recognitionRef.current) {
       try {
         recognitionRef.current.stop();
@@ -320,23 +380,32 @@ export default function VoiceCallRoom({
       }}>
         {/* Candidate & Stage */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          {/* Professional AI interviewer icon — no emoji */}
           <div style={{
             width: '40px',
             height: '40px',
             borderRadius: '50%',
-            background: candidateConfig.voiceGender === 'female' ? '#ec4899' : '#3b82f6',
+            background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
             color: '#fff',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: '1.2rem',
-            fontWeight: 700
+            flexShrink: 0,
+            boxShadow: '0 2px 8px rgba(99,102,241,0.4)'
           }}>
-            {candidateConfig.voiceGender === 'female' ? '👩' : '👨'}
+            {/* AI chip / circuit SVG icon */}
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7" y="7" width="10" height="10" rx="2" stroke="white" strokeWidth="1.5"/>
+              <path d="M10 9.5h4M10 12h4M10 14.5h2.5" stroke="white" strokeWidth="1.2" strokeLinecap="round"/>
+              <path d="M9 4v3M12 4v3M15 4v3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+              <path d="M9 17v3M12 17v3M15 17v3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+              <path d="M4 9h3M4 12h3M4 15h3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+              <path d="M17 9h3M17 12h3M17 15h3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+            </svg>
           </div>
           <div>
             <div style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--text)' }}>
-              AI Interviewer ({candidateConfig.voiceGender === 'female' ? 'Female' : 'Male'} Voice)
+              AI Interviewer
             </div>
             <div style={{ fontSize: '0.78rem', color: '#a855f7', fontWeight: 600 }}>
               {STAGE_LABELS[currentQuestionIndex] || `Question ${currentQuestionIndex + 1} of 6`}
@@ -430,19 +499,19 @@ export default function VoiceCallRoom({
           {/* Pulsing AI Orb */}
           <motion.div
             animate={{
-              scale: isAiSpeaking ? [1, 1.25, 1.08, 1.3, 1] : isListening ? [1, 1.08, 1] : 1,
+              scale: isAiSpeaking ? [1, 1.2, 1.06, 1.25, 1] : isListening ? [1, 1.06, 1] : 1,
               boxShadow: isAiSpeaking
                 ? [
-                    '0 0 20px rgba(236,72,153,0.4)',
-                    '0 0 50px rgba(236,72,153,0.8)',
+                    '0 0 20px rgba(99,102,241,0.4)',
+                    '0 0 50px rgba(168,85,247,0.8)',
                     '0 0 25px rgba(99,102,241,0.6)'
                   ]
                 : isListening
                 ? '0 0 25px rgba(16,185,129,0.5)'
-                : '0 0 10px rgba(99,102,241,0.2)'
+                : '0 0 8px rgba(99,102,241,0.15)'
             }}
             transition={{
-              duration: isAiSpeaking ? 1.5 : 2,
+              duration: isAiSpeaking ? 1.4 : 2,
               repeat: Infinity,
               ease: 'easeInOut'
             }}
@@ -451,19 +520,39 @@ export default function VoiceCallRoom({
               height: '120px',
               borderRadius: '50%',
               background: isAiSpeaking
-                ? 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)'
+                ? 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)'
                 : isListening
-                ? 'linear-gradient(135deg, #10b981 0%, #3b82f6 100%)'
-                : 'linear-gradient(135deg, #475569 0%, #334155 100%)',
+                ? 'linear-gradient(135deg, #10b981 0%, #06b6d4 100%)'
+                : 'linear-gradient(135deg, #64748b 0%, #475569 100%)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '3rem',
               color: '#fff',
               marginBottom: '16px'
             }}
           >
-            {isAiSpeaking ? '🗣️' : isListening ? '🎙️' : '🎧'}
+            {isAiSpeaking ? (
+              /* Sound waves / speaking icon */
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 5L6 9H2v6h4l5 4V5z" fill="white" fillOpacity="0.9"/>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+                <path d="M18.07 5.93a9 9 0 0 1 0 12.14" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+              </svg>
+            ) : isListening ? (
+              /* Microphone icon */
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" y="2" width="6" height="11" rx="3" fill="white"/>
+                <path d="M5 10a7 7 0 0 0 14 0" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+                <path d="M12 17v4M9 21h6" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+              </svg>
+            ) : (
+              /* Headphones / paused icon */
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+                <rect x="3" y="14" width="4" height="7" rx="2" fill="white"/>
+                <rect x="17" y="14" width="4" height="7" rx="2" fill="white"/>
+              </svg>
+            )}
           </motion.div>
 
           {/* Status Label */}

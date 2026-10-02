@@ -307,44 +307,111 @@ Ensure the response contains ONLY pure JSON without markdown code fences or back
 
 /**
  * Intelligent deterministic scorecard generator used as fallback.
+ * Analyzes answer quality beyond just length — detects garbled speech,
+ * penalizes incoherent answers, and rewards well-structured technical responses.
  */
 function generateOfflineScorecard({ candidateName: _candidateName, skills: _skills, qaPairs = [] }) {
-  const answeredCount = qaPairs.filter(p => p.answer && p.answer.trim().length > 10).length;
-  const wordCount = qaPairs.reduce((acc, p) => acc + (p.answer ? p.answer.split(/\s+/).length : 0), 0);
+  const technicalKeywords = [
+    'database', 'api', 'server', 'client', 'function', 'variable', 'array', 'object', 'class', 'method',
+    'algorithm', 'complexity', 'performance', 'optimize', 'debug', 'error', 'exception', 'test', 'deploy',
+    'framework', 'library', 'component', 'module', 'interface', 'async', 'promise', 'callback', 'state',
+    'design', 'pattern', 'architecture', 'scalable', 'system', 'network', 'request', 'response', 'cache',
+    'security', 'authentication', 'query', 'schema', 'index', 'constraint', 'model', 'view', 'controller',
+    'experience', 'project', 'built', 'developed', 'implemented', 'worked', 'team', 'problem', 'solution',
+    'example', 'approach', 'consider', 'ensure', 'manage', 'handle', 'process', 'data', 'user', 'feature'
+  ];
 
-  const baseScore = Math.min(94, Math.max(65, Math.round(55 + (answeredCount * 5) + Math.min(20, wordCount / 12))));
+  const analyzeAnswer = (answer) => {
+    if (!answer || answer.trim().length < 5) return { score: 30, quality: 'empty' };
+
+    const words = answer.trim().split(/\s+/).filter(w => w.length > 1);
+    const wordCount = words.length;
+    const lowerAnswer = answer.toLowerCase();
+
+    // Detect garbled/nonsensical text: very low real-word ratio
+    const realWordCount = words.filter(w => /^[a-zA-Z'-]{2,}$/.test(w)).length;
+    const realWordRatio = realWordCount / Math.max(wordCount, 1);
+
+    // Count technical keyword matches
+    const keywordCount = technicalKeywords.filter(kw => lowerAnswer.includes(kw)).length;
+
+    // Detect incoherent patterns (garbled speech often has many short unrelated words)
+    const avgWordLength = words.reduce((sum, w) => sum + w.length, 0) / Math.max(words.length, 1);
+    const isLikelyGarbled = realWordRatio < 0.7 || avgWordLength < 3.2;
+
+    if (isLikelyGarbled && wordCount < 15) return { score: 35, quality: 'garbled' };
+    if (isLikelyGarbled) return { score: 48, quality: 'garbled' };
+
+    // Score based on: word count (max 30pts), keywords (max 40pts), coherence (max 30pts)
+    const lengthScore = Math.min(30, Math.round((wordCount / 80) * 30));
+    const keywordScore = Math.min(40, keywordCount * 6);
+    const coherenceScore = realWordRatio >= 0.9 ? 28 : realWordRatio >= 0.8 ? 20 : 12;
+
+    return {
+      score: Math.max(35, Math.min(92, lengthScore + keywordScore + coherenceScore)),
+      quality: keywordCount >= 3 ? 'good' : 'basic'
+    };
+  };
+
+  const analyses = qaPairs.map(p => analyzeAnswer(p.answer));
+  const questionScores = analyses.map(a => a.score);
+  const avgScore = questionScores.length > 0
+    ? Math.round(questionScores.reduce((a, b) => a + b, 0) / questionScores.length)
+    : 50;
+
+  // Apply a slight variance per category
+  const communication = Math.min(95, Math.max(30, avgScore + 4));
+  const technicalDepth = Math.min(92, Math.max(30, avgScore - 5));
+  const projectClarity = Math.min(93, Math.max(30, avgScore + 2));
+  const problemSolving = Math.min(90, Math.max(30, avgScore - 2));
+
+  const overallScore = Math.round((communication + technicalDepth + projectClarity + problemSolving) / 4);
 
   return {
-    overallScore: baseScore,
-    verdict: baseScore >= 80 ? "Placement Ready" : "Good Foundation - Needs Polish",
+    overallScore,
+    verdict: overallScore >= 80 ? 'Placement Ready' : overallScore >= 65 ? 'Good Foundation - Needs Polish' : 'Needs More Practice',
     categoryScores: {
-      communication: Math.min(95, baseScore + 2),
-      technicalDepth: Math.max(60, baseScore - 3),
-      projectClarity: Math.min(92, baseScore + 4),
-      problemSolving: Math.max(65, baseScore - 2)
+      communication,
+      technicalDepth,
+      projectClarity,
+      problemSolving
     },
     selfIntroAnalysis: {
-      score: Math.min(90, baseScore + 1),
+      score: Math.min(90, avgScore + 1),
       feedback: "You covered your academic background and interests clearly. Next time, try framing your introduction using the 'Present-Past-Future' formula."
     },
-    strengths: [
-      "Good willingness to articulate thought process directly.",
-      "Practical familiarity with key tools from your resume.",
-      "Clear conversational pace and tone."
+    strengths: avgScore >= 70 ? [
+      'Good willingness to articulate thought process directly.',
+      'Practical familiarity with key tools from your resume.',
+      'Clear conversational pace and tone.'
+    ] : [
+      'Completed the interview session.',
+      'Showed willingness to engage with technical questions.'
     ],
     areasForImprovement: [
-      "Incorporate the STAR technique (Situation, Task, Action, Result) when discussing project challenges.",
-      "Provide specific real-world metrics (e.g., response time, error rates) rather than generic descriptions."
+      'Incorporate the STAR technique (Situation, Task, Action, Result) when discussing project challenges.',
+      'Provide specific real-world metrics (e.g., response time, error rates) rather than generic descriptions.',
+      ...(analyses.some(a => a.quality === 'garbled')
+        ? ['Speak clearly and at a steady pace — some answers were not fully captured by voice recognition. Consider using Type Mode for complex answers.']
+        : [])
     ],
-    questionReviews: qaPairs.map((p, idx) => ({
-      questionNumber: idx + 1,
-      question: p.question,
-      candidateAnswerSnippet: p.answer || "(No response captured)",
-      score: p.answer && p.answer.length > 20 ? Math.min(90, 75 + (idx % 15)) : 50,
-      feedback: p.answer && p.answer.length > 20
-        ? "Good key points mentioned. Structure your answer with clear bulleted steps for maximum impact."
-        : "Try to speak more elaborately and provide concrete examples from your past projects.",
-      modelAnswer: "Focus on technical architecture, specific library decisions, performance considerations, and lessons learned from production or testing."
-    }))
+    questionReviews: qaPairs.map((p, idx) => {
+      const analysis = analyses[idx] || { score: 50, quality: 'basic' };
+      const isGarbled = analysis.quality === 'garbled';
+      return {
+        questionNumber: idx + 1,
+        question: p.question,
+        candidateAnswerSnippet: p.answer || '(No response captured)',
+        score: analysis.score,
+        feedback: isGarbled
+          ? 'The voice recognition could not capture a clear answer. Try using the "Switch to Type Mode" button for technical questions, or speak closer to your microphone.'
+          : analysis.quality === 'good'
+          ? 'Good technical depth and relevant points mentioned. Structure your answer with clear steps for maximum impact.'
+          : p.answer && p.answer.length > 20
+          ? 'Answer captured. Try to include more specific technical details and concrete examples from your past projects.'
+          : 'Try to speak more elaborately and provide concrete examples from your past projects.',
+        modelAnswer: 'Focus on technical architecture, specific library decisions, performance considerations, and lessons learned from production or testing.'
+      };
+    })
   };
 }
