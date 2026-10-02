@@ -130,7 +130,9 @@ export default function InterviewScorecard({
         role: candidateConfig.targetRole,
         name: candidateConfig.candidateName,
         durationSeconds,
-        categoryScores: scorecard.categoryScores
+        categoryScores: scorecard.categoryScores,
+        strengths: scorecard.strengths,
+        areasForImprovement: scorecard.areasForImprovement
       });
       setShareResult(result || 'error');
     } catch {
@@ -627,6 +629,7 @@ export default function InterviewScorecard({
         scorecard={scorecard}
         candidateConfig={candidateConfig}
         durationSeconds={durationSeconds}
+        qaPairs={qaPairs}
       />
     </div>
   );
