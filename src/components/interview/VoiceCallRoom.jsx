@@ -295,7 +295,7 @@ export default function VoiceCallRoom({
     if (synthRef.current) synthRef.current.cancel();
 
     const answer = (isTypingMode ? typedInput : currentSpokenInput).trim();
-    const finalAnswer = answer || "(Candidate moved to next question)";
+    const finalAnswer = answer || "(Skipped)";
 
     // Record Q&A
     const updatedQAPairs = [
@@ -330,15 +330,29 @@ export default function VoiceCallRoom({
     if (synthRef.current) synthRef.current.cancel();
 
     const durationTaken = 480 - secondsRemaining;
+    const currentAns = (isTypingMode ? typedInput : currentSpokenInput).trim();
+
+    let finalPairs = [...completedQAPairs];
+    if (currentQuestionText && !finalPairs.some(p => p.question === currentQuestionText)) {
+      finalPairs.push({
+        question: currentQuestionText,
+        answer: currentAns || "(Skipped)"
+      });
+    }
+
+    if (finalPairs.length === 0) {
+      finalPairs = [
+        { question: currentQuestionText || "Self Introduction", answer: "(Skipped)" }
+      ];
+    }
+
     onComplete({
       candidateConfig,
-      qaPairs: completedQAPairs.length > 0 ? completedQAPairs : [
-        { question: currentQuestionText, answer: currentSpokenInput || typedInput || "Self introduction completed." }
-      ],
+      qaPairs: finalPairs,
       durationSeconds: durationTaken,
       transcript
     });
-  }, [stopListening, secondsRemaining, onComplete, candidateConfig, qaPairs, currentQuestionText, currentSpokenInput, typedInput, transcript]);
+  }, [stopListening, secondsRemaining, onComplete, candidateConfig, qaPairs, currentQuestionText, currentSpokenInput, typedInput, isTypingMode, transcript]);
 
   // Format time mm:ss
   const formatTime = (secs) => {

@@ -1,13 +1,14 @@
 // src/components/interview/ScoreShareCard.jsx
 // The hidden 1200×630px flashcard div captured by html2canvas for social sharing.
 // Positioned off-screen so it's rendered by the browser but invisible to the user.
-// Uses only inline styles + SVG/canvas-safe rendering (no CSS vars, no external fonts needed).
+// Uses only inline styles + SVG/canvas-safe rendering (no CSS vars, no conic-gradient, no 8-digit hex).
 
 import { forwardRef } from 'react';
 
 // Category bar row inside the card
 function CategoryBar({ label, score, color, barBg }) {
-  const barWidth = `${Math.max(4, score)}%`;
+  const safeScore = Math.max(0, Math.min(100, score ?? 0));
+  const barWidth = `${Math.max(4, safeScore)}%`;
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '14px' }}>
       <div style={{
@@ -42,55 +43,82 @@ function CategoryBar({ label, score, color, barBg }) {
         color,
         flexShrink: 0
       }}>
-        {score}%
+        {safeScore}%
       </div>
     </div>
   );
 }
 
-// Donut score ring — drawn as pure DOM (html2canvas-compatible)
+// Donut score ring — drawn via pure SVG circle (100% html2canvas-compatible, no conic-gradient)
 function ScoreRing({ score }) {
-  // We fake a conic-gradient ring with a nested circle
-  const pct = Math.max(0, Math.min(100, score));
-  const ringColor = pct >= 80 ? '#10b981' : pct >= 65 ? '#f59e0b' : '#ef4444';
+  const pct = Math.max(0, Math.min(100, score ?? 0));
+  const ringColor = pct >= 80 ? '#10b981' : pct >= 65 ? '#f59e0b' : pct > 0 ? '#ef4444' : '#64748b';
+  const radius = 64;
+  const circumference = 2 * Math.PI * radius; // ~402.12
+  const strokeDashoffset = circumference - (pct / 100) * circumference;
+
   return (
     <div style={{
       width: '170px',
       height: '170px',
-      borderRadius: '50%',
-      background: `conic-gradient(${ringColor} ${pct}%, #1e293b ${pct}%)`,
+      position: 'relative',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      boxShadow: `0 0 40px ${ringColor}55, 0 0 80px ${ringColor}22`,
       flexShrink: 0
     }}>
-      {/* Inner white/dark circle */}
+      <svg width="170" height="170" viewBox="0 0 170 170" style={{ transform: 'rotate(-90deg)' }}>
+        {/* Track circle */}
+        <circle
+          cx="85"
+          cy="85"
+          r={radius}
+          fill="#0f172a"
+          stroke="#1e293b"
+          strokeWidth="14"
+        />
+        {/* Progress arc */}
+        {pct > 0 && (
+          <circle
+            cx="85"
+            cy="85"
+            r={radius}
+            fill="none"
+            stroke={ringColor}
+            strokeWidth="14"
+            strokeDasharray={circumference}
+            strokeDashoffset={strokeDashoffset}
+            strokeLinecap="round"
+          />
+        )}
+      </svg>
+      {/* Inner score text */}
       <div style={{
-        width: '130px',
-        height: '130px',
-        borderRadius: '50%',
-        background: '#0f172a',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center'
       }}>
         <div style={{
-          fontSize: '42px',
+          fontSize: '44px',
           fontWeight: 900,
           color: '#f1f5f9',
           lineHeight: 1,
           letterSpacing: '-1px'
         }}>
-          {score}
+          {pct}
         </div>
         <div style={{
           fontSize: '11px',
           color: '#64748b',
           fontWeight: 700,
           letterSpacing: '1px',
-          marginTop: '2px'
+          marginTop: '4px'
         }}>
           OUT OF 100
         </div>
@@ -102,43 +130,47 @@ function ScoreRing({ score }) {
 const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidateConfig, durationSeconds }, ref) {
   if (!scorecard) return null;
 
-  const score = scorecard.overallScore || 0;
-  const verdict = scorecard.verdict || 'Placement Ready';
+  const score = scorecard.overallScore ?? 0;
+  const verdict = scorecard.verdict || (score >= 80 ? 'Placement Ready' : score >= 65 ? 'Good Foundation' : 'Needs More Practice');
   const role = candidateConfig?.targetRole || 'Software Engineer';
   const name = candidateConfig?.candidateName || 'Candidate';
   const durationMin = Math.floor((durationSeconds || 0) / 60);
   const durationSec = (durationSeconds || 0) % 60;
 
-  const verdictColor = verdict.toLowerCase().includes('ready') || verdict.toLowerCase().includes('strong')
+  const verdictLower = verdict.toLowerCase();
+  const verdictColor = (verdictLower.includes('ready') || verdictLower.includes('strong')) && score >= 70
     ? '#10b981'
-    : verdict.toLowerCase().includes('good')
+    : verdictLower.includes('good') && score >= 50
     ? '#f59e0b'
     : '#ef4444';
 
+  const verdictBg = (verdictLower.includes('ready') || verdictLower.includes('strong')) && score >= 70
+    ? 'rgba(16, 185, 129, 0.15)'
+    : verdictLower.includes('good') && score >= 50
+    ? 'rgba(245, 158, 11, 0.15)'
+    : 'rgba(239, 68, 68, 0.15)';
+
   const cat = scorecard.categoryScores || {};
   const categories = [
-    { label: '💬  Communication',   score: cat.communication  || 80, color: '#60a5fa', barBg: '#1e3a5f' },
-    { label: '🔬  Technical Depth',  score: cat.technicalDepth || 75, color: '#34d399', barBg: '#0d2e22' },
-    { label: '📁  Project Clarity',  score: cat.projectClarity || 82, color: '#f472b6', barBg: '#3b1a2e' },
-    { label: '🧩  Problem Solving',  score: cat.problemSolving || 78, color: '#fbbf24', barBg: '#2e230a' }
+    { label: '💬  Communication',   score: cat.communication  ?? 0, color: '#60a5fa', barBg: '#1e3a5f' },
+    { label: '🔬  Technical Depth',  score: cat.technicalDepth ?? 0, color: '#34d399', barBg: '#0d2e22' },
+    { label: '📁  Project Clarity',  score: cat.projectClarity ?? 0, color: '#f472b6', barBg: '#3b1a2e' },
+    { label: '🧩  Problem Solving',  score: cat.problemSolving ?? 0, color: '#fbbf24', barBg: '#2e230a' }
   ];
 
   return (
-    // Positioned off-screen so html2canvas can render it without it being visible
+    // Positioned off-screen so html2canvas can render it without it being visible to the user
     <div
       ref={ref}
+      id="score-share-card"
       style={{
         position: 'fixed',
         top: '-9999px',
         left: '-9999px',
-        // NOTE: Do NOT use visibility:hidden — html2canvas can't render those.
-        // opacity:0 keeps the element painted by the browser (needed for html2canvas).
-        // shareCard.js temporarily sets top:0/left:0 + opacity:1 before capture.
-        opacity: '0',
-        pointerEvents: 'none',
         width: '1200px',
         height: '630px',
         overflow: 'hidden',
+        pointerEvents: 'none',
         background: 'linear-gradient(135deg, #0a0e1a 0%, #0f172a 40%, #1a0e2e 70%, #0f172a 100%)',
         fontFamily: '"Inter", "Segoe UI", system-ui, -apple-system, sans-serif',
         display: 'flex',
@@ -147,17 +179,17 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
         boxSizing: 'border-box'
       }}
     >
-      {/* ── Decorative glow blobs ── */}
+      {/* ── Decorative glow blobs (using simple rgba to avoid gradient bugs) ── */}
       <div style={{
-        position: 'absolute', top: '-80px', right: '-60px',
-        width: '320px', height: '320px', borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 70%)',
+        position: 'absolute', top: '-60px', right: '-60px',
+        width: '300px', height: '300px', borderRadius: '50%',
+        background: 'rgba(99, 102, 241, 0.12)',
         pointerEvents: 'none'
       }} />
       <div style={{
-        position: 'absolute', bottom: '-80px', left: '-40px',
-        width: '280px', height: '280px', borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(168,85,247,0.14) 0%, transparent 70%)',
+        position: 'absolute', bottom: '-60px', left: '-40px',
+        width: '260px', height: '260px', borderRadius: '50%',
+        background: 'rgba(168, 85, 247, 0.10)',
         pointerEvents: 'none'
       }} />
 
@@ -169,8 +201,7 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
           <div style={{
             width: '44px', height: '44px', borderRadius: '12px',
             background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 4px 16px rgba(99,102,241,0.5)'
+            display: 'flex', alignItems: 'center', justifyContent: 'center'
           }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <rect x="7" y="7" width="10" height="10" rx="2" stroke="white" strokeWidth="1.5"/>
@@ -195,7 +226,7 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
         <div style={{
           padding: '8px 20px',
           borderRadius: '24px',
-          background: `${verdictColor}18`,
+          background: verdictBg,
           border: `1.5px solid ${verdictColor}`,
           fontSize: '14px',
           fontWeight: 800,
@@ -219,7 +250,7 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
               {name}
             </div>
             <div style={{
-              fontSize: '13px', color: '#7c3aed',
+              fontSize: '13px', color: '#a78bfa',
               fontWeight: 600,
               maxWidth: '200px',
               textAlign: 'center',
@@ -227,8 +258,8 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
             }}>
               {role}
             </div>
-            <div style={{ fontSize: '12px', color: '#475569', marginTop: '6px', fontWeight: 500 }}>
-              ⏱ {durationMin}m {String(durationSec).padStart(2, '0')}s  •  6 Questions
+            <div style={{ fontSize: '12px', color: '#64748b', marginTop: '6px', fontWeight: 500 }}>
+              ⏱ {durationMin}m {String(durationSec).padStart(2, '0')}s  •  Interview Completed
             </div>
           </div>
         </div>
@@ -237,7 +268,7 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
         <div style={{
           width: '1px',
           alignSelf: 'stretch',
-          background: 'linear-gradient(to bottom, transparent, #334155 30%, #334155 70%, transparent)',
+          background: '#334155',
           flexShrink: 0
         }} />
 
@@ -246,18 +277,18 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
           <div style={{
             fontSize: '12px',
             fontWeight: 700,
-            color: '#475569',
+            color: '#64748b',
             letterSpacing: '1.5px',
             marginBottom: '20px'
           }}>
             PERFORMANCE BREAKDOWN
           </div>
-          {categories.map((cat, i) => (
-            <CategoryBar key={i} {...cat} />
+          {categories.map((item, i) => (
+            <CategoryBar key={i} {...item} />
           ))}
 
-          {/* Strengths snippet */}
-          {scorecard.strengths?.[0] && (
+          {/* Strengths or encouragement snippet */}
+          {scorecard.strengths?.[0] ? (
             <div style={{
               marginTop: '18px',
               padding: '12px 16px',
@@ -269,6 +300,19 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
               lineHeight: 1.4
             }}>
               ✅ {scorecard.strengths[0]}
+            </div>
+          ) : (
+            <div style={{
+              marginTop: '18px',
+              padding: '12px 16px',
+              borderRadius: '10px',
+              background: 'rgba(239,68,68,0.08)',
+              border: '1px solid rgba(239,68,68,0.2)',
+              fontSize: '13px',
+              color: '#fca5a5',
+              lineHeight: 1.4
+            }}>
+              💡 Practice answering technical questions with concrete examples to boost your placement readiness.
             </div>
           )}
         </div>
@@ -283,7 +327,7 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
         paddingTop: '16px',
         borderTop: '1px solid #1e293b'
       }}>
-        <div style={{ fontSize: '13px', color: '#334155', fontWeight: 500 }}>
+        <div style={{ fontSize: '13px', color: '#64748b', fontWeight: 500 }}>
           aptianimate.vercel.app  •  AI-powered mock interviews tailored to your resume
         </div>
         <div style={{
