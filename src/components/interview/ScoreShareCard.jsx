@@ -1,165 +1,201 @@
 // src/components/interview/ScoreShareCard.jsx
-// The hidden 1200×630px flashcard div captured by html2canvas for social sharing.
-// Positioned off-screen so it's rendered by the browser but invisible to the user.
-// Uses only inline styles + SVG/canvas-safe rendering (no CSS vars, no conic-gradient, no 8-digit hex).
+// World-Class UI/UX Pro Placement Assessment Flashcard (1200×675 - 16:9 Widescreen).
+// Captures as high-resolution PNG for LinkedIn, WhatsApp, Twitter/X & Instagram.
+// Designed with executive glassmorphism, SVG gauges, competency matrices, and recruiter takeaways.
 
 import { forwardRef } from 'react';
 
-// Category bar row inside the card
-function CategoryBar({ label, score, color, barBg }) {
+// Competency Pillar Row
+function CompetencyRow({ icon, title, score, color, trackBg }) {
   const safeScore = Math.max(0, Math.min(100, score ?? 0));
-  const barWidth = `${Math.max(4, safeScore)}%`;
-  return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '14px' }}>
-      <div style={{
-        width: '180px',
-        fontSize: '15px',
-        fontWeight: 600,
-        color: '#cbd5e1',
-        flexShrink: 0,
-        letterSpacing: '0.2px'
-      }}>
-        {label}
-      </div>
-      <div style={{
-        flex: 1,
-        height: '10px',
-        background: barBg,
-        borderRadius: '5px',
-        overflow: 'hidden'
-      }}>
-        <div style={{
-          width: barWidth,
-          height: '100%',
-          background: color,
-          borderRadius: '5px'
-        }} />
-      </div>
-      <div style={{
-        width: '48px',
-        textAlign: 'right',
-        fontSize: '15px',
-        fontWeight: 800,
-        color,
-        flexShrink: 0
-      }}>
-        {safeScore}%
-      </div>
-    </div>
-  );
-}
-
-// Donut score ring — drawn via pure SVG circle (100% html2canvas-compatible, no conic-gradient)
-function ScoreRing({ score }) {
-  const pct = Math.max(0, Math.min(100, score ?? 0));
-  const ringColor = pct >= 80 ? '#10b981' : pct >= 65 ? '#f59e0b' : pct > 0 ? '#ef4444' : '#64748b';
-  const radius = 64;
-  const circumference = 2 * Math.PI * radius; // ~402.12
-  const strokeDashoffset = circumference - (pct / 100) * circumference;
+  const tagText = safeScore >= 80 ? 'Exceptional' : safeScore >= 65 ? 'Proficient' : safeScore > 0 ? 'Needs Polish' : 'Unattempted';
+  const tagColor = safeScore >= 80 ? '#34d399' : safeScore >= 65 ? '#fbbf24' : safeScore > 0 ? '#f87171' : '#64748b';
+  const tagBg = safeScore >= 80 ? 'rgba(52,211,153,0.12)' : safeScore >= 65 ? 'rgba(251,191,36,0.12)' : safeScore > 0 ? 'rgba(248,113,113,0.12)' : 'rgba(100,116,139,0.12)';
 
   return (
     <div style={{
-      width: '170px',
-      height: '170px',
-      position: 'relative',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      flexShrink: 0
+      background: 'rgba(30, 41, 59, 0.45)',
+      border: '1px solid rgba(255, 255, 255, 0.06)',
+      borderRadius: '12px',
+      padding: '12px 16px',
+      marginBottom: '10px'
     }}>
-      <svg width="170" height="170" viewBox="0 0 170 170" style={{ transform: 'rotate(-90deg)' }}>
-        {/* Track circle */}
-        <circle
-          cx="85"
-          cy="85"
-          r={radius}
-          fill="#0f172a"
-          stroke="#1e293b"
-          strokeWidth="14"
-        />
-        {/* Progress arc */}
-        {pct > 0 && (
-          <circle
-            cx="85"
-            cy="85"
-            r={radius}
-            fill="none"
-            stroke={ringColor}
-            strokeWidth="14"
-            strokeDasharray={circumference}
-            strokeDashoffset={strokeDashoffset}
-            strokeLinecap="round"
-          />
-        )}
-      </svg>
-      {/* Inner score text */}
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
-        <div style={{
-          fontSize: '44px',
-          fontWeight: 900,
-          color: '#f1f5f9',
-          lineHeight: 1,
-          letterSpacing: '-1px'
-        }}>
-          {pct}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span style={{ fontSize: '15px' }}>{icon}</span>
+          <span style={{ fontSize: '13px', fontWeight: 700, color: '#f1f5f9', letterSpacing: '0.2px' }}>
+            {title}
+          </span>
         </div>
-        <div style={{
-          fontSize: '11px',
-          color: '#64748b',
-          fontWeight: 700,
-          letterSpacing: '1px',
-          marginTop: '4px'
-        }}>
-          OUT OF 100
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <span style={{
+            fontSize: '10px',
+            fontWeight: 800,
+            textTransform: 'uppercase',
+            letterSpacing: '0.5px',
+            padding: '2px 8px',
+            borderRadius: '10px',
+            color: tagColor,
+            background: tagBg,
+            border: `1px solid ${tagColor}33`
+          }}>
+            {tagText}
+          </span>
+          <span style={{ fontSize: '15px', fontWeight: 900, color, minWidth: '40px', textAlign: 'right' }}>
+            {safeScore}%
+          </span>
         </div>
+      </div>
+
+      {/* Progress Track */}
+      <div style={{ height: '7px', background: trackBg, borderRadius: '4px', overflow: 'hidden' }}>
+        <div style={{
+          width: `${Math.max(safeScore > 0 ? 3 : 0, safeScore)}%`,
+          height: '100%',
+          background: color,
+          borderRadius: '4px'
+        }} />
       </div>
     </div>
   );
 }
 
-const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidateConfig, durationSeconds }, ref) {
+// Circular Score Dial
+function ScoreDial({ score }) {
+  const safeScore = Math.max(0, Math.min(100, score ?? 0));
+  const radius = 62;
+  const circumference = 2 * Math.PI * radius; // ~389.5
+  const strokeDashoffset = circumference - (safeScore / 100) * circumference;
+
+  const ringColor = safeScore >= 80 ? '#10b981' : safeScore >= 65 ? '#f59e0b' : safeScore > 0 ? '#ef4444' : '#64748b';
+  const tierLabel = safeScore >= 80 ? 'TIER 1 • READY' : safeScore >= 65 ? 'TIER 2 • QUALIFIED' : safeScore > 0 ? 'NEEDS PRACTICE' : 'NOT ATTEMPTED';
+
+  return (
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      position: 'relative'
+    }}>
+      <div style={{ width: '160px', height: '160px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <svg width="160" height="160" viewBox="0 0 160 160" style={{ transform: 'rotate(-90deg)' }}>
+          {/* Subtle outer halo */}
+          <circle
+            cx="80"
+            cy="80"
+            r="74"
+            fill="none"
+            stroke="rgba(255, 255, 255, 0.04)"
+            strokeWidth="1"
+            strokeDasharray="4 4"
+          />
+          {/* Background track */}
+          <circle
+            cx="80"
+            cy="80"
+            r={radius}
+            fill="#0b1120"
+            stroke="rgba(30, 41, 59, 0.8)"
+            strokeWidth="12"
+          />
+          {/* Progress arc */}
+          {safeScore > 0 && (
+            <circle
+              cx="80"
+              cy="80"
+              r={radius}
+              fill="none"
+              stroke={ringColor}
+              strokeWidth="12"
+              strokeDasharray={circumference}
+              strokeDashoffset={strokeDashoffset}
+              strokeLinecap="round"
+            />
+          )}
+        </svg>
+
+        {/* Center Text */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          <span style={{ fontSize: '46px', fontWeight: 900, color: '#f8fafc', lineHeight: 1, letterSpacing: '-1px' }}>
+            {safeScore}
+          </span>
+          <span style={{ fontSize: '10px', fontWeight: 800, color: '#64748b', letterSpacing: '1.2px', marginTop: '4px' }}>
+            OUT OF 100
+          </span>
+        </div>
+      </div>
+
+      <div style={{
+        marginTop: '10px',
+        padding: '3px 12px',
+        borderRadius: '20px',
+        background: `${ringColor}1a`,
+        border: `1px solid ${ringColor}44`,
+        fontSize: '10px',
+        fontWeight: 800,
+        color: ringColor,
+        letterSpacing: '0.8px'
+      }}>
+        {tierLabel}
+      </div>
+    </div>
+  );
+}
+
+const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidateConfig, durationSeconds, qaPairs = [] }, ref) {
   if (!scorecard) return null;
 
   const score = scorecard.overallScore ?? 0;
-  const verdict = scorecard.verdict || (score >= 80 ? 'Placement Ready' : score >= 65 ? 'Good Foundation' : 'Needs More Practice');
-  const role = candidateConfig?.targetRole || 'Software Engineer';
+  const role = candidateConfig?.targetRole || 'Full-Stack Software Engineer';
   const name = candidateConfig?.candidateName || 'Candidate';
   const durationMin = Math.floor((durationSeconds || 0) / 60);
   const durationSec = (durationSeconds || 0) % 60;
+  const questionsCount = qaPairs.length > 0 ? qaPairs.length : 6;
 
-  const verdictLower = verdict.toLowerCase();
-  const verdictColor = (verdictLower.includes('ready') || verdictLower.includes('strong')) && score >= 70
-    ? '#10b981'
-    : verdictLower.includes('good') && score >= 50
-    ? '#f59e0b'
-    : '#ef4444';
+  // Verdict config
+  const isHigh = score >= 80;
+  const isMid = score >= 65 && score < 80;
+  const isLow = score > 0 && score < 65;
+  const isZero = score === 0;
 
-  const verdictBg = (verdictLower.includes('ready') || verdictLower.includes('strong')) && score >= 70
+  const verdictText = isZero
+    ? 'NO ANSWERS RECORDED'
+    : isHigh
+    ? 'PLACEMENT READY'
+    : isMid
+    ? 'GOOD FOUNDATION'
+    : 'NEEDS MORE PRACTICE';
+
+  const verdictColor = isHigh ? '#10b981' : isMid ? '#f59e0b' : isLow ? '#f87171' : '#94a3b8';
+  const verdictBg = isHigh
     ? 'rgba(16, 185, 129, 0.15)'
-    : verdictLower.includes('good') && score >= 50
+    : isMid
     ? 'rgba(245, 158, 11, 0.15)'
-    : 'rgba(239, 68, 68, 0.15)';
+    : isLow
+    ? 'rgba(248, 113, 113, 0.15)'
+    : 'rgba(148, 163, 184, 0.12)';
 
   const cat = scorecard.categoryScores || {};
-  const categories = [
-    { label: '💬  Communication',   score: cat.communication  ?? 0, color: '#60a5fa', barBg: '#1e3a5f' },
-    { label: '🔬  Technical Depth',  score: cat.technicalDepth ?? 0, color: '#34d399', barBg: '#0d2e22' },
-    { label: '📁  Project Clarity',  score: cat.projectClarity ?? 0, color: '#f472b6', barBg: '#3b1a2e' },
-    { label: '🧩  Problem Solving',  score: cat.problemSolving ?? 0, color: '#fbbf24', barBg: '#2e230a' }
-  ];
+
+  // Extract initial
+  const initial = (name || 'C').trim().charAt(0).toUpperCase();
+
+  // Pick top strength & improvement
+  const topStrength = scorecard.strengths?.[0] || 'Structured thought process and technical readiness.';
+  const topArea = scorecard.areasForImprovement?.[0] || 'Provide quantifiable STAR metrics in project explanations.';
 
   return (
-    // Positioned off-screen so html2canvas can render it without it being visible to the user
     <div
       ref={ref}
       id="score-share-card"
@@ -168,178 +204,395 @@ const ScoreShareCard = forwardRef(function ScoreShareCard({ scorecard, candidate
         top: '-9999px',
         left: '-9999px',
         width: '1200px',
-        height: '630px',
+        height: '675px',
         overflow: 'hidden',
         pointerEvents: 'none',
-        background: 'linear-gradient(135deg, #0a0e1a 0%, #0f172a 40%, #1a0e2e 70%, #0f172a 100%)',
-        fontFamily: '"Inter", "Segoe UI", system-ui, -apple-system, sans-serif',
+        background: 'linear-gradient(135deg, #060913 0%, #0c1222 45%, #140d28 80%, #060913 100%)',
+        fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
         display: 'flex',
         flexDirection: 'column',
-        padding: '44px 52px 36px',
+        justifyContent: 'space-between',
+        padding: '36px 44px 30px',
         boxSizing: 'border-box'
       }}
     >
-      {/* ── Decorative glow blobs (using simple rgba to avoid gradient bugs) ── */}
+      {/* ── Ambient Background Lighting ── */}
       <div style={{
-        position: 'absolute', top: '-60px', right: '-60px',
-        width: '300px', height: '300px', borderRadius: '50%',
+        position: 'absolute', top: '-100px', right: '-100px',
+        width: '450px', height: '450px', borderRadius: '50%',
         background: 'rgba(99, 102, 241, 0.12)',
         pointerEvents: 'none'
       }} />
       <div style={{
-        position: 'absolute', bottom: '-60px', left: '-40px',
-        width: '260px', height: '260px', borderRadius: '50%',
+        position: 'absolute', bottom: '-80px', left: '-60px',
+        width: '400px', height: '400px', borderRadius: '50%',
         background: 'rgba(168, 85, 247, 0.10)',
         pointerEvents: 'none'
       }} />
+      <div style={{
+        position: 'absolute', top: '40%', left: '45%',
+        width: '300px', height: '300px', borderRadius: '50%',
+        background: 'rgba(6, 182, 212, 0.05)',
+        pointerEvents: 'none'
+      }} />
 
-      {/* ── TOP ROW: Logo + Header ── */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '28px' }}>
-        {/* Logo */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          {/* AI chip icon */}
+      {/* ══════════════════════════════════════════════════════════════
+          HEADER BAR
+      ══════════════════════════════════════════════════════════════ */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '22px' }}>
+        {/* Brand & Title */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <div style={{
-            width: '44px', height: '44px', borderRadius: '12px',
+            width: '46px',
+            height: '46px',
+            borderRadius: '13px',
             background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center'
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 4px 18px rgba(99,102,241,0.45)'
           }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <rect x="7" y="7" width="10" height="10" rx="2" stroke="white" strokeWidth="1.5"/>
-              <path d="M10 9.5h4M10 12h4M10 14.5h2.5" stroke="white" strokeWidth="1.2" strokeLinecap="round"/>
-              <path d="M9 4v3M12 4v3M15 4v3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M9 17v3M12 17v3M15 17v3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M4 9h3M4 12h3M4 15h3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M17 9h3M17 12h3M17 15h3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+              <rect x="7" y="7" width="10" height="10" rx="2" stroke="white" strokeWidth="1.8"/>
+              <path d="M10 9.5h4M10 12h4M10 14.5h2.5" stroke="white" strokeWidth="1.4" strokeLinecap="round"/>
+              <path d="M9 4v3M12 4v3M15 4v3" stroke="white" strokeWidth="1.6" strokeLinecap="round"/>
+              <path d="M9 17v3M12 17v3M15 17v3" stroke="white" strokeWidth="1.6" strokeLinecap="round"/>
+              <path d="M4 9h3M4 12h3M4 15h3" stroke="white" strokeWidth="1.6" strokeLinecap="round"/>
+              <path d="M17 9h3M17 12h3M17 15h3" stroke="white" strokeWidth="1.6" strokeLinecap="round"/>
             </svg>
           </div>
           <div>
-            <div style={{ fontSize: '20px', fontWeight: 800, color: '#f1f5f9', letterSpacing: '-0.3px' }}>
-              AptIAnimate
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '24px', fontWeight: 900, color: '#f8fafc', letterSpacing: '-0.5px' }}>
+                AptIAnimate
+              </span>
+              <span style={{
+                fontSize: '11px',
+                fontWeight: 800,
+                color: '#818cf8',
+                background: 'rgba(99,102,241,0.15)',
+                border: '1px solid rgba(99,102,241,0.3)',
+                padding: '2px 8px',
+                borderRadius: '6px',
+                letterSpacing: '0.4px'
+              }}>
+                PRO
+              </span>
             </div>
-            <div style={{ fontSize: '12px', color: '#6366f1', fontWeight: 600, letterSpacing: '1px' }}>
-              AI INTERVIEW CERTIFICATE
+            <div style={{ fontSize: '11px', color: '#94a3b8', fontWeight: 600, letterSpacing: '1px', textTransform: 'uppercase' }}>
+              AI Technical Interview Evaluation • Placement Audit
             </div>
           </div>
         </div>
 
-        {/* Verdict badge */}
-        <div style={{
-          padding: '8px 20px',
-          borderRadius: '24px',
-          background: verdictBg,
-          border: `1.5px solid ${verdictColor}`,
-          fontSize: '14px',
-          fontWeight: 800,
-          color: verdictColor,
-          letterSpacing: '0.5px'
-        }}>
-          {verdict.toUpperCase()}
+        {/* Verdict Badge */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <div style={{ textAlign: 'right' }}>
+            <div style={{ fontSize: '10px', color: '#64748b', fontWeight: 700, letterSpacing: '1px' }}>
+              VERIFICATION AUDIT
+            </div>
+            <div style={{ fontSize: '12px', color: '#94a3b8', fontWeight: 600 }}>
+              ID: APT-{(name || 'USR').slice(0, 3).toUpperCase()}-2026
+            </div>
+          </div>
+          <div style={{
+            padding: '10px 22px',
+            borderRadius: '24px',
+            background: verdictBg,
+            border: `1.5px solid ${verdictColor}`,
+            fontSize: '13px',
+            fontWeight: 900,
+            color: verdictColor,
+            letterSpacing: '0.8px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px'
+          }}>
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: verdictColor }} />
+            {verdictText}
+          </div>
         </div>
       </div>
 
-      {/* ── MAIN CONTENT ROW: Score Ring + Categories ── */}
-      <div style={{ display: 'flex', gap: '52px', flex: 1, alignItems: 'center' }}>
+      {/* ══════════════════════════════════════════════════════════════
+          MAIN 3-COLUMN REPORT GRID
+      ══════════════════════════════════════════════════════════════ */}
+      <div style={{ display: 'grid', gridTemplateColumns: '310px 480px 280px', gap: '20px', flex: 1, alignItems: 'stretch' }}>
 
-        {/* LEFT: Score ring + meta */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flexShrink: 0 }}>
-          <ScoreRing score={score} />
+        {/* ── COLUMN 1: Score & Candidate Identity Card ── */}
+        <div style={{
+          background: 'rgba(15, 23, 42, 0.7)',
+          border: '1px solid rgba(255, 255, 255, 0.08)',
+          borderRadius: '18px',
+          padding: '22px 18px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          boxShadow: '0 8px 30px rgba(0,0,0,0.35)'
+        }}>
+          {/* Circular Score */}
+          <ScoreDial score={score} />
 
-          {/* Candidate info below ring */}
-          <div style={{ textAlign: 'center', marginTop: '20px' }}>
-            <div style={{ fontSize: '16px', fontWeight: 700, color: '#f1f5f9', marginBottom: '4px' }}>
+          {/* Divider */}
+          <div style={{ width: '100%', height: '1px', background: 'rgba(255, 255, 255, 0.08)', margin: '14px 0' }} />
+
+          {/* Candidate Card */}
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <div style={{
+              width: '42px',
+              height: '42px',
+              borderRadius: '50%',
+              background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
+              color: '#fff',
+              fontWeight: 900,
+              fontSize: '18px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              margin: '0 auto 8px',
+              border: '2px solid rgba(255, 255, 255, 0.2)',
+              boxShadow: '0 4px 12px rgba(59, 130, 246, 0.3)'
+            }}>
+              {initial}
+            </div>
+            <div style={{ fontSize: '17px', fontWeight: 800, color: '#f8fafc', marginBottom: '2px' }}>
               {name}
             </div>
             <div style={{
-              fontSize: '13px', color: '#a78bfa',
-              fontWeight: 600,
-              maxWidth: '200px',
-              textAlign: 'center',
-              lineHeight: 1.3
+              fontSize: '12px',
+              color: '#c084fc',
+              fontWeight: 700,
+              padding: '2px 10px',
+              borderRadius: '8px',
+              background: 'rgba(168, 85, 247, 0.12)',
+              display: 'inline-block',
+              marginBottom: '10px'
             }}>
               {role}
             </div>
-            <div style={{ fontSize: '12px', color: '#64748b', marginTop: '6px', fontWeight: 500 }}>
-              ⏱ {durationMin}m {String(durationSec).padStart(2, '0')}s  •  Interview Completed
+
+            {/* Quick Meta Stats */}
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: '12px',
+              fontSize: '11px',
+              color: '#64748b',
+              fontWeight: 600
+            }}>
+              <span>⏱ {durationMin}m {String(durationSec).padStart(2, '0')}s</span>
+              <span>•</span>
+              <span>❓ {questionsCount} Questions</span>
+              <span>•</span>
+              <span>⚡ AI Evaluated</span>
             </div>
           </div>
         </div>
 
-        {/* Divider line */}
+        {/* ── COLUMN 2: 4 Core Competency Pillars ── */}
         <div style={{
-          width: '1px',
-          alignSelf: 'stretch',
-          background: '#334155',
-          flexShrink: 0
-        }} />
+          background: 'rgba(15, 23, 42, 0.7)',
+          border: '1px solid rgba(255, 255, 255, 0.08)',
+          borderRadius: '18px',
+          padding: '20px 22px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          boxShadow: '0 8px 30px rgba(0,0,0,0.35)'
+        }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+              <span style={{ fontSize: '12px', fontWeight: 800, color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase' }}>
+                CORE COMPETENCY BREAKDOWN
+              </span>
+              <span style={{ fontSize: '11px', color: '#64748b', fontWeight: 600 }}>
+                BENCHMARK: 80%+
+              </span>
+            </div>
 
-        {/* RIGHT: Category bars */}
-        <div style={{ flex: 1 }}>
-          <div style={{
-            fontSize: '12px',
-            fontWeight: 700,
-            color: '#64748b',
-            letterSpacing: '1.5px',
-            marginBottom: '20px'
-          }}>
-            PERFORMANCE BREAKDOWN
+            <CompetencyRow
+              icon="💬"
+              title="Communication & Clarity"
+              score={cat.communication}
+              color="#60a5fa"
+              trackBg="#172554"
+            />
+            <CompetencyRow
+              icon="🔬"
+              title="Technical Depth & Architecture"
+              score={cat.technicalDepth}
+              color="#34d399"
+              trackBg="#064e3b"
+            />
+            <CompetencyRow
+              icon="📁"
+              title="Project Context & STAR Method"
+              score={cat.projectClarity}
+              color="#f472b6"
+              trackBg="#500724"
+            />
+            <CompetencyRow
+              icon="🧩"
+              title="Problem Solving & Critical Logic"
+              score={cat.problemSolving}
+              color="#fbbf24"
+              trackBg="#451a03"
+            />
           </div>
-          {categories.map((item, i) => (
-            <CategoryBar key={i} {...item} />
-          ))}
 
-          {/* Strengths or encouragement snippet */}
-          {scorecard.strengths?.[0] ? (
-            <div style={{
-              marginTop: '18px',
-              padding: '12px 16px',
-              borderRadius: '10px',
-              background: 'rgba(16,185,129,0.08)',
-              border: '1px solid rgba(16,185,129,0.2)',
-              fontSize: '13px',
-              color: '#6ee7b7',
-              lineHeight: 1.4
-            }}>
-              ✅ {scorecard.strengths[0]}
+          {/* Benchmarking Note */}
+          <div style={{
+            fontSize: '11px',
+            color: '#64748b',
+            background: 'rgba(2, 6, 23, 0.5)',
+            padding: '8px 12px',
+            borderRadius: '8px',
+            border: '1px solid rgba(255, 255, 255, 0.04)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between'
+          }}>
+            <span>🎯 Placement standard requires &gt;75% across all 4 pillars</span>
+            <span style={{ color: '#38bdf8', fontWeight: 700 }}>Industry Calibrated</span>
+          </div>
+        </div>
+
+        {/* ── COLUMN 3: AI Recruiter Takeaways & Recommendations ── */}
+        <div style={{
+          background: 'rgba(15, 23, 42, 0.7)',
+          border: '1px solid rgba(255, 255, 255, 0.08)',
+          borderRadius: '18px',
+          padding: '20px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          boxShadow: '0 8px 30px rgba(0,0,0,0.35)'
+        }}>
+          <div>
+            <div style={{ fontSize: '12px', fontWeight: 800, color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '14px' }}>
+              RECRUITER QUICK-TAKE
             </div>
-          ) : (
-            <div style={{
-              marginTop: '18px',
-              padding: '12px 16px',
-              borderRadius: '10px',
-              background: 'rgba(239,68,68,0.08)',
-              border: '1px solid rgba(239,68,68,0.2)',
-              fontSize: '13px',
-              color: '#fca5a5',
-              lineHeight: 1.4
-            }}>
-              💡 Practice answering technical questions with concrete examples to boost your placement readiness.
+
+            {isZero ? (
+              <div style={{
+                background: 'rgba(239, 68, 68, 0.08)',
+                border: '1px solid rgba(239, 68, 68, 0.25)',
+                borderRadius: '12px',
+                padding: '14px',
+                marginBottom: '12px'
+              }}>
+                <div style={{ fontSize: '13px', fontWeight: 800, color: '#fca5a5', marginBottom: '6px' }}>
+                  ⚠️ Session Incomplete
+                </div>
+                <div style={{ fontSize: '11.5px', color: '#cbd5e1', lineHeight: 1.5 }}>
+                  No spoken or typed responses were recorded. Check your microphone or practice in Type Mode to receive a verified score.
+                </div>
+              </div>
+            ) : (
+              <>
+                {/* Strength */}
+                <div style={{
+                  background: 'rgba(16, 185, 129, 0.08)',
+                  border: '1px solid rgba(16, 185, 129, 0.25)',
+                  borderRadius: '12px',
+                  padding: '12px',
+                  marginBottom: '10px'
+                }}>
+                  <div style={{ fontSize: '11px', fontWeight: 800, color: '#34d399', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>
+                    🌟 Core Strength
+                  </div>
+                  <div style={{ fontSize: '11.5px', color: '#e2e8f0', lineHeight: 1.4, fontWeight: 500 }}>
+                    {topStrength}
+                  </div>
+                </div>
+
+                {/* Focus Area */}
+                <div style={{
+                  background: 'rgba(245, 158, 11, 0.08)',
+                  border: '1px solid rgba(245, 158, 11, 0.25)',
+                  borderRadius: '12px',
+                  padding: '12px'
+                }}>
+                  <div style={{ fontSize: '11px', fontWeight: 800, color: '#fbbf24', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>
+                    🎯 Priority Focus
+                  </div>
+                  <div style={{ fontSize: '11.5px', color: '#e2e8f0', lineHeight: 1.4, fontWeight: 500 }}>
+                    {topArea}
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* Skill Tag Pills */}
+          <div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '12px' }}>
+              {['#SystemDesign', '#Algorithms', '#Architecture', '#Communication'].map((tag, i) => (
+                <span key={i} style={{
+                  fontSize: '10px',
+                  fontWeight: 700,
+                  color: '#94a3b8',
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  padding: '3px 8px',
+                  borderRadius: '6px'
+                }}>
+                  {tag}
+                </span>
+              ))}
             </div>
-          )}
+
+            {/* Official Audit Seal */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '8px 10px',
+              borderRadius: '8px',
+              background: 'rgba(99, 102, 241, 0.1)',
+              border: '1px solid rgba(99, 102, 241, 0.25)'
+            }}>
+              <span style={{ fontSize: '16px' }}>🛡️</span>
+              <div style={{ fontSize: '10px', color: '#c7d2fe', fontWeight: 600 }}>
+                AptIAnimate Certified AI Rubric
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* ── BOTTOM: Branding + CTA ── */}
+      {/* ══════════════════════════════════════════════════════════════
+          FOOTER BAR
+      ══════════════════════════════════════════════════════════════ */}
       <div style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginTop: '24px',
-        paddingTop: '16px',
-        borderTop: '1px solid #1e293b'
+        marginTop: '18px',
+        paddingTop: '14px',
+        borderTop: '1px solid rgba(255, 255, 255, 0.08)'
       }}>
-        <div style={{ fontSize: '13px', color: '#64748b', fontWeight: 500 }}>
-          aptianimate.vercel.app  •  AI-powered mock interviews tailored to your resume
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span style={{ fontSize: '13px', color: '#64748b', fontWeight: 600 }}>
+            aptianimate.vercel.app  •  AI-Powered Placement Prep &amp; Technical Interviews
+          </span>
         </div>
+
         <div style={{
-          padding: '8px 20px',
+          padding: '8px 22px',
           borderRadius: '20px',
           background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
-          fontSize: '13px',
-          fontWeight: 700,
+          fontSize: '12px',
+          fontWeight: 800,
           color: '#fff',
-          letterSpacing: '0.3px'
+          letterSpacing: '0.4px',
+          boxShadow: '0 4px 15px rgba(99,102,241,0.4)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '6px'
         }}>
-          Try it free →
+          <span>Practice Your Resume Free</span>
+          <span>➔</span>
         </div>
       </div>
     </div>
