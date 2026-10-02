@@ -58,11 +58,7 @@ export async function captureCardAndShare(cardRef, { score, role } = {}) {
       width: 1200,
       height: 630,
       windowWidth: 1200,
-      windowHeight: 630,
-      ignoreElements: (node) => {
-        // Skip the node itself's parent scroll offsets
-        return false;
-      }
+      windowHeight: 630
     });
   } catch (err) {
     console.error('html2canvas capture failed:', err);
