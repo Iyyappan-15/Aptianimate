@@ -21,13 +21,14 @@ export default function ClockPhysicsEngine({ step, isActive }) {
   // Extract time from step text (e.g., "3:30", "4:20", "8:15")
   const stepText = ((step?.explanation || '') + ' ' + (step?.title || '') + ' ' + JSON.stringify(data));
   const timeMatch = stepText.match(/(\d{1,2}):(\d{2})/);
-  
+
   const hours = timeMatch ? parseInt(timeMatch[1], 10) : (data.hours || 3);
   const minutes = timeMatch ? parseInt(timeMatch[2], 10) : (data.minutes || 30);
 
   // Exact Clock Math:
-  // Minute hand moves 6° per minute
+  // Minute hand moves 6° per minute  (0 min = top = 0°, 15 min = 90°, 30 min = 180°, etc.)
   // Hour hand moves 30° per hour + 0.5° per minute
+  // 0° = pointing UP (12 o'clock)
   const minuteAngle = (minutes * 6) % 360;
   const hourAngle = ((hours % 12) * 30 + minutes * 0.5) % 360;
 
@@ -36,18 +37,43 @@ export default function ClockPhysicsEngine({ step, isActive }) {
   if (diffAngle > 180) diffAngle = 360 - diffAngle;
   const formattedAngle = Math.round(diffAngle * 10) / 10;
 
-  // Arc path calculation for SVG sector
+  // Clock center & dimensions
   const cx = 190;
-  const cy = 110;
-  const arcRadius = 45;
+  const cy = 115;
+  const R = 88;       // outer bezel radius
+  const arcRadius = 46;
 
-  const startRad = ((Math.min(hourAngle, minuteAngle) - 90) * Math.PI) / 180;
-  const endRad = ((Math.max(hourAngle, minuteAngle) - 90) * Math.PI) / 180;
-  const x1 = cx + arcRadius * Math.cos(startRad);
-  const y1 = cy + arcRadius * Math.sin(startRad);
-  const x2 = cx + arcRadius * Math.cos(endRad);
-  const y2 = cy + arcRadius * Math.sin(endRad);
-  const largeArcFlag = diffAngle > 180 ? 1 : 0;
+  // Arc for the angle sector between the two hands
+  // Angles measured from 12 o'clock (top), clockwise
+  const toRad = (deg) => ((deg - 90) * Math.PI) / 180;
+  const minStartAngle = Math.min(hourAngle, minuteAngle);
+  const maxEndAngle   = Math.max(hourAngle, minuteAngle);
+
+  const arcLarge = (maxEndAngle - minStartAngle) > 180 ? 1 : 0;
+  const ax1 = cx + arcRadius * Math.cos(toRad(minStartAngle));
+  const ay1 = cy + arcRadius * Math.sin(toRad(minStartAngle));
+  const ax2 = cx + arcRadius * Math.cos(toRad(maxEndAngle));
+  const ay2 = cy + arcRadius * Math.sin(toRad(maxEndAngle));
+
+  // Midpoint of the arc for the angle label
+  const midAngle = (minStartAngle + maxEndAngle) / 2;
+  const labelR = arcRadius + 14;
+  const labelX = cx + labelR * Math.cos(toRad(midAngle));
+  const labelY = cy + labelR * Math.sin(toRad(midAngle));
+
+  // Hour hand — shorter, wider, dark navy
+  // Points upward at 0°; rotation applied via SVG transform
+  const hourHandLength = 52;
+  const hourHandWidth  = 5;
+
+  // Minute hand — longer, slender, dark slate
+  const minuteHandLength = 72;
+  const minuteHandWidth  = 3;
+
+  // Helper: hand tip coordinates (in unrotated state pointing straight up)
+  // Hand rotates around (cx, cy)
+  const handTransform = (angle) =>
+    `rotate(${angle}, ${cx}, ${cy})`;
 
   return (
     <div style={{
@@ -86,7 +112,7 @@ export default function ClockPhysicsEngine({ step, isActive }) {
           </span>
 
           <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-main)' }}>
-            Given Time: <strong style={{ color: 'var(--violet)' }}>{hours}:{minutes < 10 ? `0${minutes}` : minutes}</strong>
+            Time: <strong style={{ color: 'var(--violet)' }}>{hours}:{minutes < 10 ? `0${minutes}` : minutes}</strong>
           </span>
         </div>
 
@@ -102,7 +128,7 @@ export default function ClockPhysicsEngine({ step, isActive }) {
           padding: '4px 10px',
           borderRadius: '20px',
         }}>
-          <span>Subtended Angle θ:</span>
+          <span>Angle θ:</span>
           <strong>{formattedAngle}°</strong>
         </div>
       </div>
@@ -111,7 +137,6 @@ export default function ClockPhysicsEngine({ step, isActive }) {
       <div style={{
         position: 'relative',
         width: '100%',
-        height: '240px',
         background: 'linear-gradient(180deg, var(--surface2) 0%, var(--card) 100%)',
         borderRadius: '16px',
         overflow: 'hidden',
@@ -119,8 +144,9 @@ export default function ClockPhysicsEngine({ step, isActive }) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        padding: '12px 0',
       }}>
-        <svg width="380" height="220" viewBox="0 0 380 220" fill="none">
+        <svg width="380" height="240" viewBox="0 0 380 240" fill="none" style={{ maxWidth: '100%' }}>
           <defs>
             <radialGradient id="clockDialGrad" cx="50%" cy="50%" r="50%">
               <stop offset="0%" stopColor="#ffffff" />
@@ -135,35 +161,15 @@ export default function ClockPhysicsEngine({ step, isActive }) {
           </defs>
 
           {/* Clock Outer Bezel */}
-          <circle cx={cx} cy={cy} r="88" fill="url(#bezelGrad)" stroke="#0f172a" strokeWidth="2" />
-          <circle cx={cx} cy={cy} r="83" fill="url(#clockDialGrad)" stroke="#cbd5e1" strokeWidth="1.5" />
-
-          {/* 12 Hour Number Markings */}
-          {[12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((num, i) => {
-            const rad = ((i * 30 - 60) * Math.PI) / 180;
-            const tx = cx + 66 * Math.cos(rad);
-            const ty = cy + 66 * Math.sin(rad) + 4;
-            return (
-              <text
-                key={num}
-                x={tx}
-                y={ty}
-                textAnchor="middle"
-                fontSize="11"
-                fontWeight="800"
-                fill="#334155"
-              >
-                {num}
-              </text>
-            );
-          })}
+          <circle cx={cx} cy={cy} r={R}      fill="url(#bezelGrad)" stroke="#0f172a" strokeWidth="2" />
+          <circle cx={cx} cy={cy} r={R - 5}  fill="url(#clockDialGrad)" stroke="#cbd5e1" strokeWidth="1.5" />
 
           {/* 60 Minute Tick Marks */}
           {Array.from({ length: 60 }).map((_, m) => {
-            const isHourTick = m % 5 === 0;
-            const rad = ((m * 6 - 90) * Math.PI) / 180;
-            const rInner = isHourTick ? 74 : 77;
-            const rOuter = 81;
+            const isHour = m % 5 === 0;
+            const rad = toRad(m * 6);
+            const rInner = isHour ? R - 19 : R - 13;
+            const rOuter = R - 7;
             return (
               <line
                 key={m}
@@ -171,75 +177,139 @@ export default function ClockPhysicsEngine({ step, isActive }) {
                 y1={cy + rInner * Math.sin(rad)}
                 x2={cx + rOuter * Math.cos(rad)}
                 y2={cy + rOuter * Math.sin(rad)}
-                stroke={isHourTick ? '#0f172a' : '#94a3b8'}
-                strokeWidth={isHourTick ? 2 : 1}
+                stroke={isHour ? '#1e293b' : '#94a3b8'}
+                strokeWidth={isHour ? 2.5 : 1}
               />
             );
           })}
 
-          {/* Highlighted Angle Arc / Sector */}
-          {triggered && diffAngle > 0 && diffAngle <= 180 && (
-            <path
-              d={`M ${cx} ${cy} L ${x1} ${y1} A ${arcRadius} ${arcRadius} 0 ${largeArcFlag} 1 ${x2} ${y2} Z`}
-              fill="rgba(13, 148, 136, 0.18)"
+          {/* 12 Hour Number Markings */}
+          {[12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((num, i) => {
+            const rad = toRad(i * 30);
+            const tx = cx + (R - 30) * Math.cos(rad);
+            const ty = cy + (R - 30) * Math.sin(rad) + 4;
+            return (
+              <text
+                key={num}
+                x={tx}
+                y={ty}
+                textAnchor="middle"
+                fontSize="12"
+                fontWeight="800"
+                fill="#1e293b"
+              >
+                {num}
+              </text>
+            );
+          })}
+
+          {/* ── Highlighted Angle Arc / Sector ── */}
+          {triggered && diffAngle > 0 && (
+            <motion.path
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+              d={`M ${cx} ${cy} L ${ax1} ${ay1} A ${arcRadius} ${arcRadius} 0 ${arcLarge} 1 ${ax2} ${ay2} Z`}
+              fill="rgba(13, 148, 136, 0.20)"
               stroke="#0d9488"
               strokeWidth="1.5"
             />
           )}
 
-          {/* Angle Callout Label */}
-          {triggered && (
-            <text
-              x={cx + 5}
-              y={cy - 22}
+          {/* Angle label near arc midpoint */}
+          {triggered && diffAngle > 0 && (
+            <motion.text
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, delay: 1.2 }}
+              x={labelX}
+              y={labelY}
               textAnchor="middle"
-              fontSize="12"
+              dominantBaseline="middle"
+              fontSize="11"
               fontWeight="900"
               fill="#0f766e"
             >
               {formattedAngle}°
-            </text>
+            </motion.text>
           )}
 
-          {/* ── HOUR HAND ── */}
-          <motion.g
-            initial={{ rotate: 0 }}
-            animate={{ rotate: triggered ? hourAngle : 0 }}
+          {/* ── HOUR HAND ── dark navy, short & wide ── */}
+          {/* Drawn pointing straight up, rotated around center */}
+          <motion.line
+            x1={cx}
+            y1={cy + 12}                  /* tail extends slightly below center */
+            x2={cx}
+            y2={cy - hourHandLength}       /* tip */
+            stroke="#1e293b"
+            strokeWidth={hourHandWidth}
+            strokeLinecap="round"
+            initial={false}
+            animate={{ rotate: triggered ? hourAngle : hourAngle }}
+            style={{ transformOrigin: `${cx}px ${cy}px` }}
             transition={{ duration: 1.2, ease: 'easeOut' }}
-            style={{ transformOrigin: `${cx}px ${cy}px` }}
-          >
-            {/* Shorter, elegant hour sword */}
-            <path
-              d={`M ${cx - 3} ${cy} L ${cx} ${cy - 48} L ${cx + 3} ${cy} Z`}
-              fill="#2563eb"
-              stroke="#1e40af"
-              strokeWidth="1"
-            />
-            <line x1={cx} y1={cy} x2={cx} y2={cy + 10} stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" />
-          </motion.g>
+          />
 
-          {/* ── MINUTE HAND ── */}
-          <motion.g
-            initial={{ rotate: 0 }}
-            animate={{ rotate: triggered ? minuteAngle : 0 }}
+          {/* ── MINUTE HAND ── mid-blue, longer & slender ── */}
+          <motion.line
+            x1={cx}
+            y1={cy + 16}
+            x2={cx}
+            y2={cy - minuteHandLength}
+            stroke="#2563eb"
+            strokeWidth={minuteHandWidth}
+            strokeLinecap="round"
+            initial={false}
+            animate={{ rotate: triggered ? minuteAngle : minuteAngle }}
+            style={{ transformOrigin: `${cx}px ${cy}px` }}
             transition={{ duration: 1.4, ease: 'easeOut' }}
-            style={{ transformOrigin: `${cx}px ${cy}px` }}
-          >
-            {/* Longer, slender minute hand */}
-            <path
-              d={`M ${cx - 2} ${cy} L ${cx} ${cy - 72} L ${cx + 2} ${cy} Z`}
-              fill="#0f172a"
-              stroke="#334155"
-              strokeWidth="1"
-            />
-            <circle cx={cx} cy={cy - 50} r="2.5" fill="#38bdf8" />
-            <line x1={cx} y1={cy} x2={cx} y2={cy + 14} stroke="#0f172a" strokeWidth="2" strokeLinecap="round" />
-          </motion.g>
+          />
 
-          {/* Center Pinion Cap */}
-          <circle cx={cx} cy={cy} r="5" fill="#f59e0b" stroke="#78350f" strokeWidth="1.5" />
-          <circle cx={cx} cy={cy} r="2" fill="#ffffff" />
+          {/* ── SECOND HAND thin accent (decorative, fixed at 0°) ── */}
+          <line
+            x1={cx}
+            y1={cy + 18}
+            x2={cx}
+            y2={cy - 78}
+            stroke="#dc2626"
+            strokeWidth="1"
+            strokeLinecap="round"
+          />
+
+          {/* Center cap layers */}
+          <circle cx={cx} cy={cy} r="7"   fill="#334155" stroke="#0f172a" strokeWidth="1.5" />
+          <circle cx={cx} cy={cy} r="4"   fill="#f59e0b" stroke="#78350f" strokeWidth="1" />
+          <circle cx={cx} cy={cy} r="1.5" fill="#ffffff" />
         </svg>
+
+        {/* Legend */}
+        <div style={{
+          position: 'absolute',
+          bottom: '14px',
+          right: '16px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '4px',
+          background: 'rgba(255,255,255,0.92)',
+          border: '1px solid var(--border)',
+          borderRadius: '8px',
+          padding: '6px 10px',
+          fontSize: '0.65rem',
+          fontWeight: 700,
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <div style={{ width: '22px', height: '4px', background: '#1e293b', borderRadius: '2px' }} />
+            <span style={{ color: '#1e293b' }}>Hour hand</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <div style={{ width: '22px', height: '3px', background: '#2563eb', borderRadius: '2px' }} />
+            <span style={{ color: '#2563eb' }}>Minute hand</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <div style={{ width: '22px', height: '2px', background: '#dc2626', borderRadius: '1px' }} />
+            <span style={{ color: '#dc2626' }}>Ref (12)</span>
+          </div>
+        </div>
       </div>
 
       {/* ── 3. METRICS FOOTER ── */}
