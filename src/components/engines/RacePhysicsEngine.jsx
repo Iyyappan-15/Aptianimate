@@ -20,19 +20,31 @@ export default function RacePhysicsEngine({ step, isActive }) {
   }, [isActive, step]);
 
   const stepText = ((step?.explanation || '') + ' ' + (step?.title || '') + ' ' + JSON.stringify(data)).toLowerCase();
-  
-  // Extract headstart if mentioned (e.g., "start of 20m", "headstart of 10m", "beats by 15m")
+
+  // Extract headstart value from text
   const headstartMatch = stepText.match(/(?:start|headstart|beats?.*by)\s*(?:of)?\s*(\d+)\s*m/i);
-  const headstartText = headstartMatch ? `${headstartMatch[1]} m` : (data.distance || '20 m');
+  const headstartText = headstartMatch ? `${headstartMatch[1]}m` : (data.distance || '20m');
 
-  const runnerA = entities[0] || { label: 'Runner A', startX: 6, endX: 86, duration: 2.8 };
-  const runnerB = entities[1] || { label: 'Runner B (+Start)', startX: 25, endX: 74, duration: 2.8 };
+  // Extract race distance (e.g. "100m")
+  const raceDistMatch = stepText.match(/(\d+)\s*m(?:eter)?s?\s*(?:race|course|sprint|run)/i)
+    || stepText.match(/race.*?(\d+)\s*m/i);
+  const raceDistLabel = raceDistMatch ? `${raceDistMatch[1]}m` : (data.total_distance || '100m');
 
-  const startA = runnerA.startX ?? 6;
-  const endA = triggered ? (runnerA.endX ?? 86) : startA;
+  // Runners from entities or defaults
+  const runnerA = entities[0] || {};
+  const runnerB = entities[1] || {};
 
-  const startB = runnerB.startX ?? 25;
-  const endB = triggered ? (runnerB.endX ?? 74) : startB;
+  // Clamp animation endpoints so runners stay 8%–80% (leaving room for the badge)
+  const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+
+  const startA = clamp(runnerA.startX ?? 6, 6, 78);
+  const endA   = triggered ? clamp(runnerA.endX ?? 80, 6, 80) : startA;
+
+  const startB = clamp(runnerB.startX ?? 22, 6, 78);
+  const endB   = triggered ? clamp(runnerB.endX ?? 72, 6, 80) : startB;
+
+  // Headstart bracket spans from start line (8%) to B's starting position
+  const bStartPct = clamp(runnerB.startX ?? 22, 6, 78);
 
   return (
     <div style={{
@@ -42,7 +54,7 @@ export default function RacePhysicsEngine({ step, isActive }) {
       gap: '12px',
       padding: '4px 0 16px',
     }}>
-      {/* ── 1. HUD: RACE DISTANCE & HEADSTART ── */}
+      {/* ── 1. HUD ── */}
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -67,11 +79,11 @@ export default function RacePhysicsEngine({ step, isActive }) {
             padding: '3px 8px',
             borderRadius: '20px',
           }}>
-            🏁 Track Race & Headstart
+            🏁 Track Race &amp; Headstart
           </span>
 
           <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-main)' }}>
-            Headstart Advantage: <strong style={{ color: 'var(--coral)' }}>{headstartText}</strong>
+            Headstart: <strong style={{ color: 'var(--coral)' }}>{headstartText}</strong>
           </span>
         </div>
 
@@ -88,176 +100,146 @@ export default function RacePhysicsEngine({ step, isActive }) {
           borderRadius: '20px',
         }}>
           <span>Race Course:</span>
-          <strong>{data.total_distance || '100 m Sprint Course'}</strong>
+          <strong>{raceDistLabel}</strong>
         </div>
       </div>
 
-      {/* ── 2. ATHLETIC STADIUM TRACK CANVAS ── */}
+      {/* ── 2. STADIUM TRACK (fully contained SVG) ── */}
       <div style={{
         position: 'relative',
         width: '100%',
-        height: '230px',
-        background: 'linear-gradient(180deg, #991b1b 0%, #b91c1c 50%, #991b1b 100%)',
         borderRadius: '16px',
         overflow: 'hidden',
         border: '1px solid var(--border)',
-        boxShadow: 'inset 0 2px 14px rgba(0,0,0,0.3)',
       }}>
-        {/* Track Lanes Dividing Lines */}
-        <div style={{
-          position: 'absolute', top: '115px', left: 0, right: 0, height: '3px',
-          borderBottom: '2px dashed rgba(255,255,255,0.7)',
-        }} />
+        {/*
+          Using a single SVG for the whole track avoids any overflow.
+          viewBox is 600×200 — runners and labels are drawn as SVG elements,
+          so nothing can escape the container.
+        */}
+        <svg
+          width="100%"
+          viewBox="0 0 600 200"
+          fill="none"
+          style={{ display: 'block' }}
+        >
+          {/* ── Track background ── */}
+          <rect width="600" height="200" fill="#991b1b" rx="12" />
+          {/* Subtle lane gradient */}
+          <rect width="600" height="200" fill="url(#trackGrad)" rx="12" opacity="0.4" />
+          <defs>
+            <linearGradient id="trackGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#b91c1c" />
+              <stop offset="100%" stopColor="#7f1d1d" />
+            </linearGradient>
+          </defs>
 
-        {/* Start Line Marking */}
-        <div style={{
-          position: 'absolute', top: 0, bottom: 0, left: '8%', width: '4px',
-          background: 'rgba(255,255,255,0.9)',
-          boxShadow: '0 0 8px rgba(255,255,255,0.5)',
-        }}>
-          <span style={{
-            position: 'absolute', top: '8px', left: '-28px',
-            fontSize: '0.62rem', fontWeight: 900, color: '#fecaca', letterSpacing: '0.5px',
-          }}>
-            START
-          </span>
-        </div>
+          {/* Lane divider (horizontal dashed line) */}
+          <line x1="0" y1="100" x2="600" y2="100" stroke="rgba(255,255,255,0.6)" strokeWidth="2" strokeDasharray="10,8" />
 
-        {/* Finish Line (Checkered Pattern) */}
-        <div style={{
-          position: 'absolute', top: 0, bottom: 0, right: '8%', width: '12px',
-          background: 'repeating-linear-gradient(0deg, #ffffff 0px, #ffffff 8px, #0f172a 8px, #0f172a 16px)',
-          boxShadow: '0 0 10px rgba(255,255,255,0.6)',
-        }}>
-          <span style={{
-            position: 'absolute', top: '8px', right: '-44px',
-            fontSize: '0.62rem', fontWeight: 900, color: '#fef08a', letterSpacing: '0.5px',
-          }}>
-            FINISH
-          </span>
-        </div>
+          {/* ── START LINE ── */}
+          <rect x="46" y="0" width="4" height="200" fill="rgba(255,255,255,0.9)" />
+          <text x="50" y="15" fontSize="10" fontWeight="900" fill="#fca5a5" letterSpacing="0.5">START</text>
 
-        {/* Headstart Dimension Bracket on Lane 2 */}
-        <div style={{
-          position: 'absolute',
-          top: '125px',
-          left: '8%',
-          width: '18%',
-          height: '16px',
-          borderBottom: '2px dashed #fef08a',
-          borderLeft: '2px solid #fef08a',
-          borderRight: '2px solid #fef08a',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}>
-          <span style={{
-            fontSize: '0.65rem',
-            fontWeight: 800,
-            color: '#fef08a',
-            background: 'rgba(0,0,0,0.6)',
-            padding: '1px 6px',
-            borderRadius: '4px',
-            marginBottom: '16px',
-            whiteSpace: 'nowrap',
-          }}>
-            |← {headstartText} Start →|
-          </span>
-        </div>
+          {/* ── FINISH LINE (checkered) ── */}
+          {/* Alternate 10px black/white squares across the finish strip */}
+          {Array.from({ length: 20 }).map((_, i) => (
+            <rect
+              key={i}
+              x={554}
+              y={i * 10}
+              width="10"
+              height="10"
+              fill={i % 2 === 0 ? '#ffffff' : '#0f172a'}
+            />
+          ))}
+          <text x="565" y="15" fontSize="10" fontWeight="900" fill="#fef08a" letterSpacing="0.5">FINISH</text>
 
-        {/* ── LANE 1: RUNNER A (TOP LANE) ── */}
-        <div style={{ position: 'absolute', top: '24px', left: 0, right: 0, height: '80px' }}>
-          <motion.div
+          {/* ── HEADSTART BRACKET on Lane 2 ── */}
+          {/* From start-line x=50 to B's start x position */}
+          {(() => {
+            const bx = 50 + (bStartPct / 100) * 510;
+            return (
+              <g>
+                {/* bracket line */}
+                <line x1="50" y1="142" x2={bx} y2="142" stroke="#fef08a" strokeWidth="1.5" strokeDasharray="4,3" />
+                <line x1="50"  y1="138" x2="50"  y2="146" stroke="#fef08a" strokeWidth="2" />
+                <line x1={bx} y1="138" x2={bx} y2="146" stroke="#fef08a" strokeWidth="2" />
+                {/* bracket label */}
+                <rect
+                  x={25 + (bx - 50) / 2 - 22}
+                  y="148"
+                  width="44"
+                  height="14"
+                  rx="4"
+                  fill="rgba(0,0,0,0.65)"
+                />
+                <text
+                  x={25 + (bx - 50) / 2}
+                  y="158"
+                  textAnchor="middle"
+                  fontSize="9"
+                  fontWeight="800"
+                  fill="#fef08a"
+                >
+                  ← {headstartText} →
+                </text>
+              </g>
+            );
+          })()}
+
+          {/* ── RUNNER A (top lane, blue) ── */}
+          <motion.g
             initial={false}
-            animate={{ left: `${endA}%` }}
-            transition={{
-              duration: runnerA.duration ?? 2.8,
-              ease: 'easeInOut',
-            }}
-            style={{
-              position: 'absolute',
-              top: '4px',
-              marginLeft: '-22px',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              zIndex: 15,
-            }}
+            animate={{ x: (endA / 100) * 510 }}
+            transition={{ duration: runnerA.duration ?? 2.8, ease: 'easeInOut' }}
+            style={{ originX: 0, originY: 0 }}
           >
-            {/* Runner A Badge */}
-            <div style={{
-              fontSize: '0.65rem',
-              fontWeight: 800,
-              color: '#0f172a',
-              background: '#ffffff',
-              border: '1px solid #38bdf8',
-              padding: '2px 8px',
-              borderRadius: '10px',
-              marginBottom: '2px',
-              whiteSpace: 'nowrap',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
-            }}>
-              🏃 {runnerA.label || 'Runner A (Scratch)'}
-            </div>
+            {/* Badge */}
+            <rect x="-30" y="18" width="60" height="16" rx="8" fill="#ffffff" stroke="#38bdf8" strokeWidth="1.2" />
+            <text x="0" y="29" textAnchor="middle" fontSize="8.5" fontWeight="800" fill="#0f172a">
+              {runnerA.label || 'Runner A'}
+            </text>
+            {/* Head */}
+            <circle cx="2" cy="42" r="7" fill="#38bdf8" />
+            {/* Body */}
+            <line x1="2" y1="49" x2="2" y2="66" stroke="#0284c7" strokeWidth="5" strokeLinecap="round" />
+            {/* Right arm */}
+            <line x1="2" y1="53" x2="14" y2="60" stroke="#38bdf8" strokeWidth="3" strokeLinecap="round" />
+            {/* Left arm */}
+            <line x1="2" y1="53" x2="-10" y2="58" stroke="#bae6fd" strokeWidth="3" strokeLinecap="round" />
+            {/* Right leg */}
+            <line x1="2" y1="66" x2="12" y2="78" stroke="#38bdf8" strokeWidth="3" strokeLinecap="round" />
+            {/* Left leg */}
+            <line x1="2" y1="66" x2="-8" y2="80" stroke="#bae6fd" strokeWidth="3" strokeLinecap="round" />
+          </motion.g>
 
-            {/* SVG Runner A (Blue Jersey) */}
-            <svg width="34" height="42" viewBox="0 0 34 42" fill="none">
-              <circle cx="20" cy="7" r="4.5" fill="#38bdf8" />
-              <path d="M19 12 L15 23 L18 25 L23 15 Z" fill="#0284c7" />
-              <path d="M19 14 L26 18 L24 22" stroke="#38bdf8" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M17 15 L10 17 L8 13" stroke="#bae6fd" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M17 24 L24 29 L27 38" stroke="#38bdf8" strokeWidth="3" strokeLinecap="round" />
-              <path d="M15 24 L11 31 L4 33" stroke="#bae6fd" strokeWidth="3" strokeLinecap="round" />
-            </svg>
-          </motion.div>
-        </div>
-
-        {/* ── LANE 2: RUNNER B (BOTTOM LANE) ── */}
-        <div style={{ position: 'absolute', top: '135px', left: 0, right: 0, height: '80px' }}>
-          <motion.div
+          {/* ── RUNNER B (bottom lane, gold) ── */}
+          <motion.g
             initial={false}
-            animate={{ left: `${endB}%` }}
-            transition={{
-              duration: runnerB.duration ?? 2.8,
-              ease: 'easeInOut',
-            }}
-            style={{
-              position: 'absolute',
-              top: '4px',
-              marginLeft: '-22px',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              zIndex: 15,
-            }}
+            animate={{ x: (endB / 100) * 510 }}
+            transition={{ duration: runnerB.duration ?? 2.8, ease: 'easeInOut' }}
+            style={{ originX: 0, originY: 0 }}
           >
-            {/* Runner B Badge */}
-            <div style={{
-              fontSize: '0.65rem',
-              fontWeight: 800,
-              color: '#0f172a',
-              background: '#fef08a',
-              border: '1px solid #ca8a04',
-              padding: '2px 8px',
-              borderRadius: '10px',
-              marginBottom: '2px',
-              whiteSpace: 'nowrap',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
-            }}>
-              🏃 {runnerB.label || 'Runner B'}
-            </div>
-
-            {/* SVG Runner B (Amber/Gold Jersey) */}
-            <svg width="34" height="42" viewBox="0 0 34 42" fill="none">
-              <circle cx="20" cy="7" r="4.5" fill="#facc15" />
-              <path d="M19 12 L15 23 L18 25 L23 15 Z" fill="#ca8a04" />
-              <path d="M19 14 L26 18 L24 22" stroke="#facc15" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M17 15 L10 17 L8 13" stroke="#fde047" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M17 24 L24 29 L27 38" stroke="#facc15" strokeWidth="3" strokeLinecap="round" />
-              <path d="M15 24 L11 31 L4 33" stroke="#fde047" strokeWidth="3" strokeLinecap="round" />
-            </svg>
-          </motion.div>
-        </div>
+            {/* Badge */}
+            <rect x="-36" y="108" width="72" height="16" rx="8" fill="#fef08a" stroke="#ca8a04" strokeWidth="1.2" />
+            <text x="0" y="119" textAnchor="middle" fontSize="8.5" fontWeight="800" fill="#0f172a">
+              {runnerB.label || 'Runner B (+Start)'}
+            </text>
+            {/* Head */}
+            <circle cx="2" cy="132" r="7" fill="#facc15" />
+            {/* Body */}
+            <line x1="2" y1="139" x2="2" y2="156" stroke="#ca8a04" strokeWidth="5" strokeLinecap="round" />
+            {/* Right arm */}
+            <line x1="2" y1="143" x2="14" y2="150" stroke="#facc15" strokeWidth="3" strokeLinecap="round" />
+            {/* Left arm */}
+            <line x1="2" y1="143" x2="-10" y2="148" stroke="#fde047" strokeWidth="3" strokeLinecap="round" />
+            {/* Right leg */}
+            <line x1="2" y1="156" x2="12" y2="168" stroke="#facc15" strokeWidth="3" strokeLinecap="round" />
+            {/* Left leg */}
+            <line x1="2" y1="156" x2="-8" y2="170" stroke="#fde047" strokeWidth="3" strokeLinecap="round" />
+          </motion.g>
+        </svg>
       </div>
 
       {/* ── 3. METRICS FOOTER ── */}
@@ -276,7 +258,7 @@ export default function RacePhysicsEngine({ step, isActive }) {
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span>⏱️</span>
           <span style={{ color: 'var(--text-main)', fontWeight: 600 }}>
-            {data.info || 'Time taken by Winner = Distance ÷ Speed of Winner'}
+            {data.info || 'B only needs to cover: Race Distance − Headstart'}
           </span>
         </div>
 
@@ -288,6 +270,7 @@ export default function RacePhysicsEngine({ step, isActive }) {
           border: '1px solid var(--coral)',
           padding: '3px 10px',
           borderRadius: '8px',
+          whiteSpace: 'nowrap',
         }}>
           Effective Distance for B: Course − Headstart
         </div>
