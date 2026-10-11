@@ -9,7 +9,7 @@
 //    Production  : VITE_API_URL=https://<your-render-backend>.onrender.com
 // ─────────────────────────────────────────────────────────────────
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://aptianimate-api.onrender.com';
 
 /**
  * Send a question (and optional chart/table image) to the backend.
