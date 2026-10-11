@@ -4,12 +4,27 @@
 import { useEffect, useState, useRef } from 'react';
 // import { describeArc, CHART_COLORS } from '../utils/animationHelpers';
 import { GridEngine, NodeEngine, AxisEngine, BarEngine, EntityEngine, PieEngine, DirectionEngine } from './SuperEngines';
+import TrainPhysicsEngine from './engines/TrainPhysicsEngine';
 
 export default function StepRenderer({ step, isActive, steps, currentStep }) {
   if (!step) return null;
 
   // Route based on the new visual_engine field (or fallback to old visual_type for backwards compatibility)
   const engine = step.visual_engine || step.visual_type;
+
+  // Check if this step is a train scenario (Pilot Test for Problems on Trains)
+  const isTrainScenario = engine === 'train_engine' || (
+    engine === 'entity_engine' && (
+      (step.render_data?.entities || []).some(e => (e.type || '').toLowerCase() === 'train') ||
+      (step.render_data?.obstacle?.type || '').toLowerCase() === 'train' ||
+      (step.title || '').toLowerCase().includes('train') ||
+      (step.explanation || '').toLowerCase().includes('train')
+    )
+  );
+
+  if (isTrainScenario) {
+    return <TrainPhysicsEngine step={step} isActive={isActive} />;
+  }
 
   switch (engine) {
     // ── SUPER ENGINES v2.0 ──
