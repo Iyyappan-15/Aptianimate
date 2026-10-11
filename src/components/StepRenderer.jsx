@@ -5,6 +5,10 @@ import { useEffect, useState, useRef } from 'react';
 // import { describeArc, CHART_COLORS } from '../utils/animationHelpers';
 import { GridEngine, NodeEngine, AxisEngine, BarEngine, EntityEngine, PieEngine, DirectionEngine } from './SuperEngines';
 import TrainPhysicsEngine from './engines/TrainPhysicsEngine';
+import BoatPhysicsEngine from './engines/BoatPhysicsEngine';
+import CisternPhysicsEngine from './engines/CisternPhysicsEngine';
+import ClockPhysicsEngine from './engines/ClockPhysicsEngine';
+import RacePhysicsEngine from './engines/RacePhysicsEngine';
 
 export default function StepRenderer({ step, isActive, steps, currentStep }) {
   if (!step) return null;
@@ -12,7 +16,7 @@ export default function StepRenderer({ step, isActive, steps, currentStep }) {
   // Route based on the new visual_engine field (or fallback to old visual_type for backwards compatibility)
   const engine = step.visual_engine || step.visual_type;
 
-  // Check if this step is a train scenario (Pilot Test for Problems on Trains)
+  // 1. Train & Relative Speed
   const isTrainScenario = engine === 'train_engine' || (
     engine === 'entity_engine' && (
       (step.render_data?.entities || []).some(e => (e.type || '').toLowerCase() === 'train') ||
@@ -21,9 +25,63 @@ export default function StepRenderer({ step, isActive, steps, currentStep }) {
       (step.explanation || '').toLowerCase().includes('train')
     )
   );
-
   if (isTrainScenario) {
     return <TrainPhysicsEngine step={step} isActive={isActive} />;
+  }
+
+  // 2. Boats & Streams
+  const isBoatScenario = engine === 'boat_engine' || (
+    (engine === 'entity_engine' || !engine) && (
+      (step.render_data?.entities || []).some(e => (e.type || '').toLowerCase() === 'boat') ||
+      (step.title || '').toLowerCase().includes('boat') ||
+      (step.title || '').toLowerCase().includes('stream') ||
+      (step.explanation || '').toLowerCase().includes('upstream') ||
+      (step.explanation || '').toLowerCase().includes('downstream')
+    )
+  );
+  if (isBoatScenario) {
+    return <BoatPhysicsEngine step={step} isActive={isActive} />;
+  }
+
+  // 3. Pipes & Cisterns / Water Tanks
+  const isCisternScenario = engine === 'cistern_engine' || engine === 'tank_engine' || (
+    (engine === 'entity_engine' || engine === 'bar_engine' || !engine) && (
+      (step.title || '').toLowerCase().includes('pipe') ||
+      (step.title || '').toLowerCase().includes('cistern') ||
+      (step.title || '').toLowerCase().includes('tank') ||
+      (step.explanation || '').toLowerCase().includes('inlet') ||
+      (step.explanation || '').toLowerCase().includes('cistern') ||
+      (step.explanation || '').toLowerCase().includes('empty the tank')
+    )
+  );
+  if (isCisternScenario) {
+    return <CisternPhysicsEngine step={step} isActive={isActive} />;
+  }
+
+  // 4. Clocks & Angles
+  const isClockScenario = engine === 'clock_engine' || (
+    (step.render_data?.entities || []).some(e => (e.type || '').toLowerCase() === 'clock') ||
+    (step.title || '').toLowerCase().includes('clock') ||
+    (step.title || '').toLowerCase().includes('hands of a clock') ||
+    (step.explanation || '').toLowerCase().includes('minute hand') ||
+    (step.explanation || '').toLowerCase().includes('hour hand')
+  );
+  if (isClockScenario) {
+    return <ClockPhysicsEngine step={step} isActive={isActive} />;
+  }
+
+  // 5. Races & Headstarts
+  const isRaceScenario = engine === 'race_engine' || (
+    engine === 'entity_engine' && (
+      (step.title || '').toLowerCase().includes('race') ||
+      (step.title || '').toLowerCase().includes('headstart') ||
+      (step.explanation || '').toLowerCase().includes('head start') ||
+      (step.explanation || '').toLowerCase().includes('headstart') ||
+      (step.explanation || '').toLowerCase().includes('beats b by')
+    )
+  );
+  if (isRaceScenario) {
+    return <RacePhysicsEngine step={step} isActive={isActive} />;
   }
 
   switch (engine) {
