@@ -88,7 +88,6 @@ export default function CisternPhysicsEngine({ step, isActive }) {
       <div style={{
         position: 'relative',
         width: '100%',
-        height: '240px',
         background: 'linear-gradient(180deg, var(--surface2) 0%, var(--card) 100%)',
         borderRadius: '16px',
         overflow: 'hidden',
@@ -96,8 +95,9 @@ export default function CisternPhysicsEngine({ step, isActive }) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        padding: '12px 0',
       }}>
-        <svg width="380" height="220" viewBox="0 0 380 220" fill="none">
+        <svg width="100%" viewBox="0 0 380 220" preserveAspectRatio="xMidYMid meet" fill="none" style={{ display: 'block', maxWidth: '380px' }}>
           <defs>
             <linearGradient id="waterFluidGrad" x1="0" y1="0" x2="0" y2="140" gradientUnits="userSpaceOnUse">
               <stop stopColor="#38bdf8" />

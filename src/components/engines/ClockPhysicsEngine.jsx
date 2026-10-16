@@ -104,16 +104,17 @@ export default function ClockPhysicsEngine({ step, isActive }) {
         background: 'linear-gradient(180deg, var(--surface2) 0%, var(--card) 100%)',
         borderRadius: '16px', border: '1px solid var(--border)', padding: '16px 0',
         position: 'relative',
+        overflow: 'hidden',
       }}>
         {/*
           viewBox: 280×280  — clock center at (140,140), radius 110
-          Everything is drawn inside this box; nothing overflows.
+          Everything is drawn inside this box; overflow hidden on parent.
         */}
         <svg
           viewBox="0 0 280 280"
           width="280"
           height="280"
-          style={{ maxWidth: '100%', overflow: 'visible' }}
+          style={{ maxWidth: '100%', display: 'block' }}
         >
           <defs>
             <radialGradient id="dialGrad" cx="50%" cy="50%" r="50%">
