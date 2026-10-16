@@ -1,6 +1,6 @@
 // src/pages/AskPage.jsx
 import { useState, useEffect, useRef } from "react";
-import { parseUserQuestion } from "../api/groqApi";
+import { parseUserQuestion, pingBackend } from "../api/groqApi";
 import AnimationPlayer from "../components/AnimationPlayer";
 import AIThinkingLoader from "../components/AIThinkingLoader";
 
@@ -22,6 +22,7 @@ export default function AskPage({ navigate: _navigate, initialQuery = "" }) {
   const [state, setState] = useState(STATES.IDLE);
   const [result, setResult] = useState(null);
   const [errorMsg, setErrorMsg] = useState("");
+  const [retryMsg, setRetryMsg] = useState("");        // live retry feedback
   const [history, setHistory] = useState(loadHistory);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
@@ -33,28 +34,31 @@ export default function AskPage({ navigate: _navigate, initialQuery = "" }) {
   const handleSubmit = async (e, overrideQ) => {
     if (e) e.preventDefault();
     const q = (overrideQ !== undefined ? overrideQ : question).trim();
-    if (!q && !selectedImage) return; // Allow empty question if image is present
+    if (!q && !selectedImage) return;
     setState(STATES.LOADING);
-    setResult(null); setErrorMsg("");
+    setResult(null); setErrorMsg(""); setRetryMsg("");
     setSelectedOption(null); setShowExplanation(false); setShowFollowUp(false);
-    
-    // Only save to history if there is text
+
     if (q) {
       saveToHistory(q);
       setHistory(loadHistory());
     }
 
     try {
-      const data = await parseUserQuestion(q, selectedImage);
+      const data = await parseUserQuestion(q, selectedImage, (msg) => setRetryMsg(msg));
       setResult(data);
       setState(STATES.SUCCESS);
+      setRetryMsg("");
     } catch (err) {
       setErrorMsg(err.message || "Something went wrong. Please try again.");
       setState(STATES.ERROR);
+      setRetryMsg("");
     }
   };
 
+  // Wake up Render backend on mount + auto-submit if initialQuery is set
   useEffect(() => {
+    pingBackend(); // silent warm-up — no await needed
     if (initialQuery && initialQuery.trim()) handleSubmit(null, initialQuery.trim());
     else setTimeout(() => textareaRef.current?.focus(), 300);
   }, []); // eslint-disable-line
@@ -175,7 +179,30 @@ export default function AskPage({ navigate: _navigate, initialQuery = "" }) {
 
       {/* Loading */}
       {state === STATES.LOADING && (
-        <AIThinkingLoader question={question} />
+        <div>
+          <AIThinkingLoader question={question} />
+          {retryMsg && (
+            <div style={{
+              margin: "12px auto 0",
+              maxWidth: "480px",
+              padding: "10px 16px",
+              background: "rgba(245,158,11,0.08)",
+              border: "1px solid rgba(245,158,11,0.4)",
+              borderRadius: "10px",
+              fontSize: "0.85rem",
+              fontWeight: "600",
+              color: "#b45309",
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              textAlign: "center",
+              justifyContent: "center",
+            }}>
+              <span>⏳</span>
+              <span>{retryMsg}</span>
+            </div>
+          )}
+        </div>
       )}
 
       {/* Result */}
