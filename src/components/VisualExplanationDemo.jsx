@@ -6,41 +6,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function VisualExplanationDemo({ navigate }) {
-  const [step, setStep] = useState(0);
-  const [playing, setPlaying] = useState(true);
-
-  const nextStep = () => { if (step < 5) setStep(s => s + 1); };
-  const replay   = () => { setStep(0); setPlaying(true); };
-
-  // Auto-advance timer
-  useEffect(() => {
-    if (!playing) return;
-    const delays = [1000, 2400, 2000, 2000, 2200, 0];
-    if (step >= 5) return;
-    const t = setTimeout(() => setStep(s => s + 1), delays[step]);
-    return () => clearTimeout(t);
-  }, [step, playing]);
-
-  // Train A: starts left, moves right (→)  target ~43%
-  const trainAEnd = step >= 1 ? 43 : 5;
-  // Train B: starts right, moves left (←)  target ~47% (from right side)
-  const trainBEnd = step >= 1 ? 47 : 90;
-  // Both trains reach meeting zone by step 2
-
-  const showMeet    = step >= 2 && step < 4;
-  const showStep1   = step >= 2;
-  const showStep2   = step >= 3;
-  const showAnswer  = step >= 4;
-  const showCTA     = step >= 5;
-
-  // ── HUD badge text ──────────────────────────────────────────────────────
-  const scenarioBadge = step < 2 ? 'Two Trains Approaching' :
-                        step < 4 ? '💥 Meeting Point Found!' :
-                        '✅ Solved!';
-
-  // ── SVG Train A (same gradient as TrainPhysicsEngine) ──────────────────
-  const TrainSVG_A = () => (
+// ── SVG Train A (same gradient as TrainPhysicsEngine) ──────────────────
+function TrainSVG_A() {
+  return (
     <svg width="220" height="48" viewBox="0 0 220 48" fill="none">
       <defs>
         <linearGradient id="heroEngineGrad" x1="0" y1="0" x2="220" y2="48" gradientUnits="userSpaceOnUse">
@@ -83,9 +51,11 @@ export default function VisualExplanationDemo({ navigate }) {
       <circle cx="198" cy="38" r="6" fill="#1e293b" stroke="#94a3b8" strokeWidth="1.5" />
     </svg>
   );
+}
 
-  // ── SVG Train B — red/amber scheme, FLIPPED horizontally (faces left) ──
-  const TrainSVG_B = () => (
+// ── SVG Train B — red/amber scheme, FLIPPED horizontally (faces left) ──
+function TrainSVG_B() {
+  return (
     <svg width="220" height="48" viewBox="0 0 220 48" fill="none" style={{ transform: 'scaleX(-1)' }}>
       <defs>
         <linearGradient id="heroEngineGrad2" x1="0" y1="0" x2="220" y2="48" gradientUnits="userSpaceOnUse">
@@ -125,6 +95,40 @@ export default function VisualExplanationDemo({ navigate }) {
       <circle cx="198" cy="38" r="6" fill="#1e293b" stroke="#94a3b8" strokeWidth="1.5" />
     </svg>
   );
+}
+
+export default function VisualExplanationDemo({ navigate }) {
+  const [step, setStep] = useState(0);
+  const [playing, setPlaying] = useState(true);
+
+  const nextStep = () => { if (step < 5) setStep(s => s + 1); };
+  const replay   = () => { setStep(0); setPlaying(true); };
+
+  // Auto-advance timer
+  useEffect(() => {
+    if (!playing) return;
+    const delays = [1000, 2400, 2000, 2000, 2200, 0];
+    if (step >= 5) return;
+    const t = setTimeout(() => setStep(s => s + 1), delays[step]);
+    return () => clearTimeout(t);
+  }, [step, playing]);
+
+  // Train A: starts left, moves right (→)  target ~43%
+  const trainAEnd = step >= 1 ? 43 : 5;
+  // Train B: starts right, moves left (←)  target ~47% (from right side)
+  const trainBEnd = step >= 1 ? 47 : 90;
+  // Both trains reach meeting zone by step 2
+
+  const showMeet    = step >= 2 && step < 4;
+  const showStep1   = step >= 2;
+  const showStep2   = step >= 3;
+  const showAnswer  = step >= 4;
+  const showCTA     = step >= 5;
+
+  // ── HUD badge text ──────────────────────────────────────────────────────
+  const scenarioBadge = step < 2 ? 'Two Trains Approaching' :
+                        step < 4 ? '💥 Meeting Point Found!' :
+                        '✅ Solved!';
 
   return (
     <div className="demo-section">

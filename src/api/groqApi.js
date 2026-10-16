@@ -14,62 +14,6 @@
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://aptianimate-api.onrender.com';
 
-// ── Retry helper ─────────────────────────────────────────────────
-// Retries up to `maxAttempts` times with exponential backoff.
-// Treats HTTP 429, 503, 502 and network errors as retryable.
-async function fetchWithRetry(url, options, maxAttempts = 3) {
-  const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
-  let lastError;
-
-  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-    let response;
-    try {
-      response = await fetch(url, options);
-    } catch (networkErr) {
-      // Pure network failure (offline, DNS, CORS)
-      lastError = new Error('Could not connect to the server. Please check your internet connection.');
-      if (attempt < maxAttempts) {
-        await sleep(attempt * 2000); // 2s → 4s
-        continue;
-      }
-      throw lastError;
-    }
-
-    // Parse body once
-    let data;
-    try {
-      data = await response.json();
-    } catch {
-      throw new Error('Server returned an unexpected response. Please try again.');
-    }
-
-    // Success path
-    if (response.ok && data.success) return data;
-
-    // Retryable server errors (rate limit / cold start)
-    if (RETRYABLE_STATUS.has(response.status) && attempt < maxAttempts) {
-      const waitMs = attempt * 2500; // 2.5s → 5s
-      lastError = new Error(
-        `AI is under high demand. Auto-retrying in ${Math.round(waitMs / 1000)}s… (attempt ${attempt}/${maxAttempts})`
-      );
-      // Re-throw a special retrying error so the UI can show "Retrying…"
-      lastError.retrying = true;
-      lastError.retryIn = waitMs;
-      // We don't throw here — we wait and loop
-      await sleep(waitMs);
-      continue;
-    }
-
-    // Non-retryable error
-    throw new Error(data?.error || `Server error (${response.status}). Please try again.`);
-  }
-
-  // All attempts exhausted
-  throw new Error(
-    lastError?.message ||
-    'The AI is under high demand. Please wait a moment and try again.'
-  );
-}
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
