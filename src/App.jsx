@@ -54,10 +54,18 @@ const AdminUsers = lazy(() => import('./pages/admin/AdminUsers'));
 const AdminBugReports = lazy(() => import('./pages/admin/AdminBugReports'));
 const AdminSettings = lazy(() => import('./pages/admin/AdminSettings'));
 const AdminProfile = lazy(() => import('./pages/admin/AdminProfile'));
+const SeoLandingPage = lazy(() => import('./pages/SeoLandingPage'));
+
+function getActiveRoute() {
+  const hash = window.location.hash.replace(/^#\/?/, '');
+  if (hash) return hash;
+  const path = window.location.pathname.replace(/^\/+/, '');
+  return path || '';
+}
 
 
 function App() {
-  const [route, setRoute] = useState(window.location.hash.replace('#/', '') || '');
+  const [route, setRoute] = useState(getActiveRoute);
   const [showSplash, setShowSplash] = useState(() => {
     return !sessionStorage.getItem('splash_seen');
   });
@@ -128,19 +136,26 @@ function App() {
   }, [theme]);
 
   useEffect(() => {
-    const handleHashChange = () => {
-      setRoute(window.location.hash.replace('#/', ''));
+    const handleLocationChange = () => {
+      setRoute(getActiveRoute());
       window.scrollTo(0, 0);
     };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handleLocationChange);
+    window.addEventListener('hashchange', handleLocationChange);
+    return () => {
+      window.removeEventListener('popstate', handleLocationChange);
+      window.removeEventListener('hashchange', handleLocationChange);
+    };
   }, []);
 
   const navigate = (path) => {
     if (path === -1) {
       window.history.back();
     } else {
-      window.location.hash = `/${path}`;
+      const clean = String(path).replace(/^\/+/, '');
+      window.history.pushState(null, '', '/' + clean);
+      setRoute(clean);
+      window.scrollTo(0, 0);
     }
   };
 
@@ -171,6 +186,12 @@ function App() {
 
   if (route === '') {
     pageComponent = <HomePage navigate={navigate} />;
+  } else if (route.startsWith('topics/') || route.startsWith('placements/')) {
+    const key = route.split('/')[1] || '';
+    const normalizedKey = key === 'trains' ? 'problems-on-trains' :
+                          key === 'boats-streams' ? 'boats-and-streams' :
+                          key === 'pipes-cisterns' ? 'pipes-and-cisterns' : key;
+    pageComponent = <SeoLandingPage topicKey={normalizedKey} navigate={navigate} />;
   } else if (route.startsWith('category/')) {
     const id = route.split('/')[1];
     pageComponent = <CategoryPage categoryId={id} navigate={navigate} />;
