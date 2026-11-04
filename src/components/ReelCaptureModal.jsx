@@ -1,11 +1,16 @@
 // src/components/ReelCaptureModal.jsx
 // Mobile 9:16 vertical preview & recording helper for creating viral YouTube Shorts & Instagram Reels.
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ReelCaptureModal({ isOpen, onClose, topicTitle, hookText, children, formulaPill, shareUrl }) {
   const [copied, setCopied] = useState(false);
+  const [captionCopied, setCaptionCopied] = useState(false);
+  const [isRecording, setIsRecording] = useState(false);
+  const [countdown, setCountdown] = useState(15);
+  const mediaRecorderRef = useRef(null);
+  const timerRef = useRef(null);
 
   if (!isOpen) return null;
 
@@ -16,9 +21,96 @@ export default function ReelCaptureModal({ isOpen, onClose, topicTitle, hookText
     setTimeout(() => setCopied(false), 2500);
   };
 
+  const handleCopyCaption = () => {
+    const caption = `🔥 ${hookText || `Why do formulas work? Watch ${topicTitle}!`}
+
+Master aptitude visually in seconds with interactive step-by-step physics simulations!
+👉 Try it free at: ${shareUrl || 'https://aptianimate.vercel.app'}
+
+#campusplacements #aptitudepreparation #tcsnqt #quantitativeaptitude #placementprep #shortcuts #shorts #reels`;
+    navigator.clipboard.writeText(caption);
+    setCaptionCopied(true);
+    setTimeout(() => setCaptionCopied(false), 2500);
+  };
+
   const handleWhatsAppShare = () => {
     const textToShare = `🔥 Master ${topicTitle} visually! Watch this interactive shortcut:\n👉 ${shareUrl || window.location.href}`;
     window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(textToShare)}`, '_blank');
+  };
+
+  const handleAutoRecord = async () => {
+    if (isRecording) {
+      if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+        mediaRecorderRef.current.stop();
+      }
+      if (timerRef.current) clearInterval(timerRef.current);
+      setIsRecording(false);
+      setCountdown(15);
+      return;
+    }
+
+    try {
+      if (!navigator.mediaDevices?.getDisplayMedia) {
+        alert("In-browser recording works best on desktop Chrome or Edge. On mobile phones, swipe down from top and tap your phone's built-in Screen Recorder!");
+        return;
+      }
+
+      const stream = await navigator.mediaDevices.getDisplayMedia({
+        video: { displaySurface: 'browser' },
+        audio: false,
+      });
+
+      const mimeType = MediaRecorder.isTypeSupported('video/webm;codecs=vp9')
+        ? 'video/webm;codecs=vp9'
+        : MediaRecorder.isTypeSupported('video/webm')
+        ? 'video/webm'
+        : 'video/mp4';
+
+      const mediaRecorder = new MediaRecorder(stream, { mimeType });
+      mediaRecorderRef.current = mediaRecorder;
+      const chunks = [];
+
+      mediaRecorder.ondataavailable = (e) => {
+        if (e.data && e.data.size > 0) chunks.push(e.data);
+      };
+
+      mediaRecorder.onstop = () => {
+        stream.getTracks().forEach((track) => track.stop());
+        const blob = new Blob(chunks, { type: mimeType });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        const fileExt = mimeType.includes('mp4') ? 'mp4' : 'webm';
+        a.href = url;
+        const cleanName = (topicTitle || 'aptianimate-clip').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        a.download = `${cleanName}-short.${fileExt}`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        setIsRecording(false);
+        setCountdown(15);
+      };
+
+      mediaRecorder.start();
+      setIsRecording(true);
+      let timeLeft = 15;
+      setCountdown(timeLeft);
+
+      timerRef.current = setInterval(() => {
+        timeLeft -= 1;
+        setCountdown(timeLeft);
+        if (timeLeft <= 0) {
+          clearInterval(timerRef.current);
+          if (mediaRecorder.state !== 'inactive') {
+            mediaRecorder.stop();
+          }
+        }
+      }, 1000);
+    } catch (err) {
+      console.error('Recording cancelled or not permitted:', err);
+      setIsRecording(false);
+      setCountdown(15);
+    }
   };
 
   return (
@@ -193,15 +285,67 @@ export default function ReelCaptureModal({ isOpen, onClose, topicTitle, hookText
               fontSize: '0.82rem',
               display: 'flex',
               flexDirection: 'column',
-              gap: '8px',
+              gap: '6px',
             }}>
-              <div style={{ fontWeight: 700, color: 'var(--violet)' }}>💡 3-Step Quick Guide:</div>
-              <div>1. Press <kbd style={{ background: 'var(--surface)', padding: '2px 6px', borderRadius: '4px', border: '1px solid var(--border)' }}>Win + Alt + R</kbd> on PC to start screen recording.</div>
-              <div>2. Record the 15-second animated motion of this card.</div>
-              <div>3. Upload to YouTube Shorts / Instagram with the hashtag <strong>#campusplacements #aptitudetricks</strong> and link your site!</div>
+              <div style={{ fontWeight: 700, color: 'var(--violet)' }}>💡 Quick Video Creation:</div>
+              <div>• Click <strong>1-Click Record</strong> below to capture this 15-second animated clip and download it automatically.</div>
+              <div>• Click <strong>Copy Post Caption</strong> to get viral hashtags and links ready to paste on YouTube Shorts / Instagram!</div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-sec)', marginTop: '2px' }}>
+                (On mobile phones: use your phone’s built-in Screen Recorder from the quick settings menu)
+              </div>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '6px' }}>
+              {/* 1-Click Auto-Record & Download */}
+              <button
+                onClick={handleAutoRecord}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  background: isRecording ? '#dc2626' : 'linear-gradient(135deg, #ef4444, #f59e0b)',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '12px',
+                  padding: '13px 18px',
+                  fontWeight: 800,
+                  fontSize: '0.92rem',
+                  cursor: 'pointer',
+                  boxShadow: isRecording ? '0 0 16px rgba(220, 38, 38, 0.7)' : '0 4px 14px rgba(239, 68, 68, 0.35)',
+                  transition: 'all 0.2s',
+                }}
+              >
+                <span>{isRecording ? '⏹️' : '🔴'}</span>
+                {isRecording
+                  ? `Recording... ${countdown}s left (Click to Stop & Save)`
+                  : '1-Click Record & Download Clip (15s)'}
+              </button>
+
+              {/* Copy Ready-to-Post Caption */}
+              <button
+                onClick={handleCopyCaption}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  background: captionCopied ? '#10b981' : 'var(--surface2)',
+                  color: captionCopied ? '#fff' : 'var(--text)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '12px',
+                  padding: '11px 18px',
+                  fontWeight: 700,
+                  fontSize: '0.88rem',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                }}
+              >
+                <span>{captionCopied ? '✅' : '📋'}</span>
+                {captionCopied ? 'Viral Caption & Tags Copied!' : 'Copy Viral Caption & Tags'}
+              </button>
+
+              {/* Share to WhatsApp */}
               <button
                 onClick={handleWhatsAppShare}
                 style={{
@@ -213,16 +357,17 @@ export default function ReelCaptureModal({ isOpen, onClose, topicTitle, hookText
                   color: '#fff',
                   border: 'none',
                   borderRadius: '12px',
-                  padding: '12px 18px',
-                  fontWeight: 800,
-                  fontSize: '0.9rem',
+                  padding: '11px 18px',
+                  fontWeight: 700,
+                  fontSize: '0.88rem',
                   cursor: 'pointer',
-                  boxShadow: '0 4px 14px rgba(37, 211, 102, 0.35)',
+                  boxShadow: '0 4px 12px rgba(37, 211, 102, 0.3)',
                 }}
               >
                 <span>💬</span> Share to WhatsApp Group
               </button>
 
+              {/* Direct Topic Link */}
               <button
                 onClick={handleCopyLink}
                 style={{
@@ -234,15 +379,15 @@ export default function ReelCaptureModal({ isOpen, onClose, topicTitle, hookText
                   color: '#fff',
                   border: 'none',
                   borderRadius: '12px',
-                  padding: '12px 18px',
-                  fontWeight: 800,
-                  fontSize: '0.9rem',
+                  padding: '11px 18px',
+                  fontWeight: 700,
+                  fontSize: '0.88rem',
                   cursor: 'pointer',
                   transition: 'all 0.2s',
                 }}
               >
                 <span>{copied ? '✅' : '🔗'}</span>
-                {copied ? 'Link Copied to Clipboard!' : 'Copy Direct Topic Link'}
+                {copied ? 'Topic Link Copied!' : 'Copy Topic Link'}
               </button>
             </div>
           </div>
