@@ -9,7 +9,6 @@ import TrainPhysicsEngine from '../components/engines/TrainPhysicsEngine';
 import BoatPhysicsEngine from '../components/engines/BoatPhysicsEngine';
 import ClockPhysicsEngine from '../components/engines/ClockPhysicsEngine';
 import CisternPhysicsEngine from '../components/engines/CisternPhysicsEngine';
-import ReelCaptureModal from '../components/ReelCaptureModal';
 
 const SEO_TOPICS = {
   'problems-on-trains': {
@@ -291,7 +290,6 @@ const SEO_TOPICS = {
 
 export default function SeoLandingPage({ topicKey, navigate }) {
   const [openFaq, setOpenFaq] = useState(null);
-  const [isReelModalOpen, setIsReelModalOpen] = useState(false);
   const [simPreset, setSimPreset] = useState('opposite');
 
   const topic = SEO_TOPICS[topicKey] || SEO_TOPICS['problems-on-trains'];
@@ -479,25 +477,6 @@ export default function SeoLandingPage({ topicKey, navigate }) {
             }}
           >
             <span>🚀</span> Start Practicing 80+ Questions
-          </button>
-
-          <button
-            onClick={() => setIsReelModalOpen(true)}
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              background: 'var(--surface2)',
-              border: '1.5px solid var(--border)',
-              color: 'var(--text-main)',
-              padding: '12px 20px',
-              borderRadius: '12px',
-              fontWeight: 800,
-              fontSize: '0.95rem',
-              cursor: 'pointer',
-            }}
-          >
-            <span>🎬</span> Create Short / Reel
           </button>
 
           <button
@@ -798,18 +777,6 @@ export default function SeoLandingPage({ topicKey, navigate }) {
           Start Practice Now →
         </button>
       </div>
-
-      {/* ── Shorts / Reel Studio Modal ── */}
-      <ReelCaptureModal
-        isOpen={isReelModalOpen}
-        onClose={() => setIsReelModalOpen(false)}
-        topicTitle={topic.h1}
-        hookText={topic.hook}
-        formulaPill={topic.formulaPill}
-        shareUrl={`https://aptianimate.vercel.app/topics/${topicKey}`}
-      >
-        {renderEngine()}
-      </ReelCaptureModal>
     </div>
   );
 }
