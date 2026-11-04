@@ -123,6 +123,52 @@ export default function HomePage({ navigate }) {
         </div>
       </div>
 
+      {/* ── Trending Visual Engines Quick Access ── */}
+      <div style={{ maxWidth: 900, margin: '0 auto 16px', width: '100%', boxSizing: 'border-box' }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          overflowX: 'auto',
+          padding: '4px',
+          scrollbarWidth: 'none',
+        }}>
+          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--violet)', whiteSpace: 'nowrap', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+            🔥 Visual Shortcuts:
+          </span>
+          {[
+            { label: '🚂 Trains & Relative Speed', path: 'topics/problems-on-trains' },
+            { label: '🚤 Boats & Streams', path: 'topics/boats-and-streams' },
+            { label: '🕒 Clock Angles', path: 'topics/clock-problems' },
+            { label: '🚰 Pipes & Cisterns', path: 'topics/pipes-and-cisterns' },
+            { label: '🎯 TCS NQT Shortcuts', path: 'placements/tcs-nqt-aptitude' },
+          ].map((item, idx) => (
+            <button
+              key={idx}
+              onClick={() => navigate(item.path)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                whiteSpace: 'nowrap',
+                background: 'var(--surface)',
+                border: '1px solid var(--border)',
+                borderRadius: '20px',
+                padding: '6px 14px',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                color: 'var(--text-main)',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease',
+              }}
+              onMouseOver={e => { e.currentTarget.style.borderColor = 'var(--violet)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
+              onMouseOut={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* ── Today's Goal Progress ── */}
       <TodayGoalProgress navigate={navigate} />
 
