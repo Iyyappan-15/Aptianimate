@@ -135,13 +135,12 @@ export default function HomePage({ navigate }) {
         }}>
           <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--violet)', whiteSpace: 'nowrap', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
             🔥 Visual Shortcuts:
-          </span>
-          {[
-            { label: '🚂 Trains & Relative Speed', path: 'topics/problems-on-trains' },
-            { label: '🚤 Boats & Streams', path: 'topics/boats-and-streams' },
-            { label: '🕒 Clock Angles', path: 'topics/clock-problems' },
-            { label: '🚰 Pipes & Cisterns', path: 'topics/pipes-and-cisterns' },
-            { label: '🎯 TCS NQT Shortcuts', path: 'placements/tcs-nqt-aptitude' },
+          </span>          {[
+            { label: '🚂 Problems on Trains', path: 'topic/trains/Problems%20on%20Trains' },
+            { label: '🚤 Boats & Streams', path: 'topic/boats-streams/Boats%20and%20Streams' },
+            { label: '🚰 Pipes & Cisterns', path: 'topic/pipes-cisterns/Pipes%20and%20Cisterns' },
+            { label: '🔢 Decimal Fractions', path: 'topic/decimal-fractions/Decimal%20Fractions' },
+            { label: '⚡ Time & Work', path: 'topic/time-work/Time%20and%20Work' },
           ].map((item, idx) => (
             <button
               key={idx}
