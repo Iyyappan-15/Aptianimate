@@ -54,7 +54,6 @@ const AdminUsers = lazy(() => import('./pages/admin/AdminUsers'));
 const AdminBugReports = lazy(() => import('./pages/admin/AdminBugReports'));
 const AdminSettings = lazy(() => import('./pages/admin/AdminSettings'));
 const AdminProfile = lazy(() => import('./pages/admin/AdminProfile'));
-const SeoLandingPage = lazy(() => import('./pages/SeoLandingPage'));
 
 function getActiveRoute() {
   const hash = window.location.hash.replace(/^#\/?/, '');
@@ -186,23 +185,18 @@ function App() {
 
   if (route === '') {
     pageComponent = <HomePage navigate={navigate} />;
-  } else if (route.startsWith('topics/') || route.startsWith('placements/')) {
-    const key = route.split('/')[1] || '';
-    const normalizedKey = key === 'trains' ? 'problems-on-trains' :
-                          key === 'boats-streams' ? 'boats-and-streams' :
-                          key === 'pipes-cisterns' ? 'pipes-and-cisterns' : key;
-    pageComponent = <SeoLandingPage topicKey={normalizedKey} navigate={navigate} />;
   } else if (route.startsWith('category/')) {
     const id = route.split('/')[1];
     pageComponent = <CategoryPage categoryId={id} navigate={navigate} />;
   } else if (route.startsWith('practice/')) {
     const id = route.split('/')[1];
     pageComponent = <PracticePage questionId={id} navigate={navigate} />;
-  } else if (route.startsWith('topic/')) {
-    const parts = route.split('/');
+  } else if (route.startsWith('topic/') || route.startsWith('topics/')) {
+    const clean = route.replace(/^topics\//, 'topic/');
+    const parts = clean.split('/');
     const slug = parts[1];
     const name = parts.slice(2).join('/');
-    pageComponent = <TopicPage topicSlug={slug} topicName={decodeURIComponent(name)} navigate={navigate} />;
+    pageComponent = <TopicPage topicSlug={slug} topicName={decodeURIComponent(name || '')} navigate={navigate} />;
   } else if (route === 'interview-topic/resume-preparation') {
     pageComponent = <ResumePreparationPage navigate={navigate} />;
   } else if (route.startsWith('interview-topic/')) {

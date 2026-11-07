@@ -9,38 +9,38 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- High-Volume SEO Landing Pages (Visual Physics Engines) -->
+  <!-- Popular Quantitative Aptitude Topics -->
   <url>
-    <loc>https://aptianimate.vercel.app/topics/problems-on-trains</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://aptianimate.vercel.app/topic/trains/Problems%20on%20Trains</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://aptianimate.vercel.app/topics/boats-and-streams</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://aptianimate.vercel.app/topic/boats-streams/Boats%20and%20Streams</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://aptianimate.vercel.app/topics/clock-problems</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://aptianimate.vercel.app/topic/pipes-cisterns/Pipes%20and%20Cisterns</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://aptianimate.vercel.app/topics/pipes-and-cisterns</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://aptianimate.vercel.app/topic/decimal-fractions/Decimal%20Fractions</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://aptianimate.vercel.app/placements/tcs-nqt-aptitude</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://aptianimate.vercel.app/topic/time-speed-distance/Time%20Speed%20Distance</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
